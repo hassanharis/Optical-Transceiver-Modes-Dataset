@@ -1,0 +1,68 @@
+{
+  "multi_valued": {
+    "model": [
+      "LQ-DAC1140-xMNx",
+      "LQ-DAC1140-0M5N",
+      "LQ-DAC1140-1MN",
+      "LQ-DAC1140-2MN",
+      "LQ-DAC1140-3MN",
+      "LQ-DAC1140-0M5NI",
+      "LQ-DAC1140-1MNI",
+      "LQ-DAC1140-2MNI",
+      "LQ-DAC1140-3MNI"
+    ],
+    "standards_code": [
+      "40GBASE-CR4",
+      "SFF-8436",
+      "QSFP+ MSA",
+      "IEEE P802.3ba"
+    ],
+    "bit_rate_gbps": [
+      1.0,
+      10.0,
+      40.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "QSFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8436",
+      "QSFP+ MSA",
+      "IEEE P802.3ba"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "power_consumption_w": [
+      0.02
+    ],
+    "reach_km": [
+      0.003
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "penalties": [],
+    "notes": "Passive QSFP+ to QSFP+ copper DAC (4-channel full-duplex); not an optical transceiver. Copper link length up to 3 m (passive limiting). Standard ordering variants: 0 to +70°C case; Industrial (-40 to +85°C) part numbers suffixed with I. Recommended operating case temperature typical 25°C. Power supply +3.3 V. Storage temperature -40 to 85°C. Mechanical cable lengths 0.5, 1, 2, 3 m (30 AWG). Product Characteristics list electrical cable metrics (differential impedance 100±10 ohm, IL, NEXT ≥26 dB @ 10 MHz to 5.0 GHz, intra-pair skew ≤100 ps / ≤400 ps) not mapped to optical schema fields. reach_km derived from stated 3 m maximum copper length.",
+    "provenance_datasheet_sections": [
+      "LQ-DAC1140-xMNx",
+      "RoHS Compliant 40Gb/s QSFP+ to QSFP+ Copper Cable",
+      "Features",
+      "Applications",
+      "General Description",
+      "Recommended Operating Conditions",
+      "Product Characteristics",
+      "Mechanical Specifications",
+      "Ordering information"
+    ],
+    "suggestions": "Consider reach_m or cable_length_m for DAC products; optional fields for supply voltage (3.3 V), passive/active media type, and per-channel electrical data rate range."
+  }
+}

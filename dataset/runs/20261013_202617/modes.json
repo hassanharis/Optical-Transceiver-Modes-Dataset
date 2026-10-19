@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "LAN-WDM ch1 1294.53\u20131296.59 nm",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "power_consumption_w": 4.5,
+      "standards_code": "100GE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -12.5,
+      "los_assert_dbm": -14.0
+    },
+    {
+      "label": "LAN-WDM ch2 1299.02\u20131301.09 nm",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "power_consumption_w": 4.5,
+      "standards_code": "100GE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -12.5,
+      "los_assert_dbm": -14.0
+    },
+    {
+      "label": "LAN-WDM ch3 1303.54\u20131305.63 nm",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "power_consumption_w": 4.5,
+      "standards_code": "100GE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -12.5,
+      "los_assert_dbm": -14.0
+    },
+    {
+      "label": "LAN-WDM ch4 1308.09\u20131310.19 nm",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "power_consumption_w": 4.5,
+      "standards_code": "100GE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -12.5,
+      "los_assert_dbm": -14.0
+    }
+  ]
+}

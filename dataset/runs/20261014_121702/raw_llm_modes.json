@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "100GbE",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "wavelength_band": "LAN-WDM",
+      "host_interface_name": "QSFP28 MSA",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 103.12,
+      "tx_power_min_dbm": -0.3,
+      "tx_power_max_dbm": 6.5,
+      "rx_sensitivity_dbm": -18.3,
+      "rx_overload_dbm": -3.5,
+      "fec_type": "RS_528_514",
+      "pre_fec_ber_threshold": 5e-05
+    },
+    {
+      "label": "OTU4",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "wavelength_band": "LAN-WDM",
+      "host_interface_name": "QSFP28 MSA",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 111.81,
+      "tx_power_min_dbm": 0.6,
+      "tx_power_max_dbm": 5.1,
+      "rx_sensitivity_dbm": -18.9,
+      "rx_overload_dbm": -4.9,
+      "fec_type": "RS_528_514",
+      "pre_fec_ber_threshold": 1e-06
+    }
+  ]
+}

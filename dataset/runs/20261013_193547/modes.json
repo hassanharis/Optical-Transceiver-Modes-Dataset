@@ -1,0 +1,26 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-ER @ 10.3125 Gbps",
+      "host_interface_name": "ER",
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 40.0,
+      "tx_power_min_dbm": -3.0,
+      "tx_power_max_dbm": 3.0,
+      "rx_sensitivity_dbm": -14.1,
+      "rx_overload_dbm": 0.5
+    },
+    {
+      "label": "10GBASE-EW @ 9.953 Gbps",
+      "host_interface_name": "10GBase",
+      "standards_code": "10GBASE-EW",
+      "bit_rate_gbps": 9.953,
+      "reach_km": 40.0,
+      "tx_power_min_dbm": -3.0,
+      "tx_power_max_dbm": 3.0,
+      "rx_sensitivity_dbm": -14.1,
+      "rx_overload_dbm": 0.5
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T14:15:15.299407+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-155m-l80d-cxxx.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.85,
+    "extract_atoms": 31.886,
+    "store_run": 0.009,
+    "synthesize_modes": 37.955,
+    "store_modes": 0.002,
+    "total": 74.703
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:19:10.924644+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-ts2016-tune-so-sfp28-25g-dwdm-tune-r6.0.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.576,
+    "extract_atoms": 20.236,
+    "store_run": 0.015,
+    "synthesize_modes": 16.774,
+    "store_modes": 0.004,
+    "total": 40.605
+  }
+}

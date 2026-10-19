@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-qsfp-dd-2c-10-r5.1.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 5984,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 23
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

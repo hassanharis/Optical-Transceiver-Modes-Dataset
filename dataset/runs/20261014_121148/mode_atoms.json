@@ -1,0 +1,93 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-QSFP28-AOC1M",
+      "SO-QSFP28-AOC2M",
+      "SO-QSFP28-AOC3M",
+      "SO-QSFP28-AOC4M",
+      "SO-QSFP28-AOC5M",
+      "SO-QSFP28-AOC6M",
+      "SO-QSFP28-AOC7M",
+      "SO-QSFP28-AOC8M",
+      "SO-QSFP28-AOC9M",
+      "SO-QSFP28-AOC10M",
+      "SO-QSFP28-AOC12M",
+      "SO-QSFP28-AOC15M",
+      "SO-QSFP28-AOC20M",
+      "SO-QSFP28-AOC30M",
+      "SO-QSFP28-AOC50M",
+      "SO-QSFP28-AOC70M"
+    ],
+    "standards_code": [
+      "100GBase",
+      "100GbE",
+      "100G InfiniBand EDR"
+    ],
+    "bit_rate_gbps": [
+      25.0,
+      100.0
+    ],
+    "reach_km": [
+      0.001,
+      0.002,
+      0.003,
+      0.004,
+      0.005,
+      0.006,
+      0.007,
+      0.008,
+      0.009,
+      0.01,
+      0.012,
+      0.015,
+      0.02,
+      0.03,
+      0.05,
+      0.07
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "SFF-8665",
+      "IEEE802.3bj"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "fiber_type": [
+      "MMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "fec_type": [
+      "RS_528_514"
+    ],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "penalties": [],
+    "notes": "Active Optical Cable (AOC): two QSFP28 transceivers with multimode ribbon fiber; not a pluggable optical module datasheet. FEC required in host per IEEE802.3bj (Reed Solomon RS(528,514)). Without FEC, BER less than 5 x 10^-5; with FEC, BER better than 1 x 10^-12. Power stated as <2.5W. Cable lengths 1–70 m (3.3–230 ft). Storage temperature -40°C to +85°C stated separately from operating 0°C to +70°C.",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

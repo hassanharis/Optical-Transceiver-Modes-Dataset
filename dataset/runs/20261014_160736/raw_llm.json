@@ -1,0 +1,138 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP28-SR"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "25GBASE-SR",
+    "SFP28",
+    "SFF-8402",
+    "IEEE 802.3"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    1
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [
+    "25GbE",
+    "10GbE-WAN",
+    "10GbE-LAN"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "25GBASE-SR"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "25GBASE-SR",
+    "25GbE",
+    "10GbE-WAN",
+    "10GbE-LAN"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    25.78,
+    9.953,
+    10.312,
+    28.0
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.07,
+    0.1
+  ],
+  "tx_power_min_dbm": [
+    -8.4
+  ],
+  "tx_power_max_dbm": [
+    2.4
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -10.3
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    3.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    5e-05,
+    1e-05
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -13.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    1
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Power budget 0 – 1.9dB @ 25GbE. Power consumption stated as < 1W. Transmitter output power and receiver min/overload are average power (footnote 3). Receiver minimum input power -10.3dBm and overload +3.0dBm at 25.78 Gbps (25GE) and BER 5E-5 (footnote 4). Overview states BER 1 x 10^-5 for 25G Ethernet optical parameters; FEC required on host. CDR engaged: 25.78 Gbps; CDR disengaged: 9.953 / 10.312 Gbps. Storage temperature -40°C to +85°C. Title lists 1.9dB power budget. Transmit max printed as +2.4Bm.",
+  "provenance_datasheet_sections": [
+    "SO-SFP28-SR",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "CDR RATE SELECT LOGIC",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether form_factor should include SFP+ when both SFP+ and SFP28 are named. Reach values are given in meters (70m@OM3, 100m@OM4); stored as km per schema. Consider separate reach_m field to avoid unit conversion."
+}

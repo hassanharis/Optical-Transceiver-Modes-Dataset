@@ -1,0 +1,26 @@
+{
+  "modes": [
+    {
+      "label": "LQD-M31400-DR4C QSFP-DD 400G-DR4",
+      "model": "LQD-M31400-DR4C",
+      "form_factor": "QSFP-DD",
+      "power_consumption_w": 9.5,
+      "frame": "8x53.125Gb/s",
+      "standards_code": "400G-DR4",
+      "bit_rate_gbps": 400.0,
+      "rx_sensitivity_dbm": -4.6,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "LQ4-M31400-DR4C QSFP56-DD 400G DR4",
+      "model": "LQ4-M31400-DR4C",
+      "form_factor": "QSFP56-DD",
+      "power_consumption_w": 9.5,
+      "frame": "8x53.125Gb/s",
+      "standards_code": "DR4",
+      "bit_rate_gbps": 400.0,
+      "rx_sensitivity_dbm": -4.6,
+      "number_of_lanes": 4
+    }
+  ]
+}

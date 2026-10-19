@@ -1,0 +1,85 @@
+{
+  "modes": [
+    {
+      "label": "40GBASE-LR4 Lite CWDM lane 1",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "standards_code": "40GBASE-LR4 Lite",
+      "bit_rate_gbps": 10.3,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "40GBASE-LR4 Lite CWDM lane 2",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "standards_code": "40GBASE-LR4 Lite",
+      "bit_rate_gbps": 10.3,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "40GBASE-LR4 Lite CWDM lane 3",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "standards_code": "40GBASE-LR4 Lite",
+      "bit_rate_gbps": 10.3,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "40GBASE-LR4 Lite CWDM lane 4",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "40GBASE-LR4 Lite",
+      "bit_rate_gbps": 10.3,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "40GBASE-LR4 Lite CWDM lane 1 (stressed receiver)",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 10.313,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -8.5
+    },
+    {
+      "label": "40GBASE-LR4 Lite CWDM lane 2 (stressed receiver)",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 10.313,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -8.5
+    },
+    {
+      "label": "40GBASE-LR4 Lite CWDM lane 3 (stressed receiver)",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "standards_code": "XLPPI",
+      "bit_rate_gbps": 10.313,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -8.5
+    },
+    {
+      "label": "40GBASE-LR4 Lite CWDM lane 4 (stressed receiver)",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "IEEE 802.3ba",
+      "bit_rate_gbps": 10.313,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -8.5
+    },
+    {
+      "label": "40GBASE-LR4 Lite 40G aggregate",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "IEEE 802.3ba",
+      "bit_rate_gbps": 41.2,
+      "tx_power_max_dbm": 8.3,
+      "rx_sensitivity_dbm": -10.5
+    }
+  ]
+}

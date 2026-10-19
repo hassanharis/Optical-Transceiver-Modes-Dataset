@@ -1,0 +1,107 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP28-4SFP28-PCUxM",
+    "SO-QSFP28-4SFP28-PCU1M",
+    "SO-QSFP28-4SFP28-PCU2M",
+    "SO-QSFP28-4SFP28-PCU3M",
+    "SO-QSFP28-4SFP28-PCU5M"
+  ],
+  "form_factor": [
+    "QSFP28",
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFF-8665",
+    "SFF-8402",
+    "SFF-8431",
+    "SFF-8432",
+    "IEEE 802.3bj",
+    "P802.3by"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": null,
+  "fiber_type": null,
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "QSFP28",
+    "SFP28",
+    "SFF-8665",
+    "SFF-8402",
+    "25GbE-SFP28"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "4x 25G"
+  ],
+  "standards_code": [
+    "100GBase",
+    "100GbE",
+    "1000GbE",
+    "EDR InfiniBand"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    100,
+    25
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": null,
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": null,
+  "notes": "Passive 100G to 4x25G Ethernet Direct Attach Cable (DAC) coax solution; not an optical transceiver. Cable lengths 1 to 5 m (3.3 to 16.4 ft). Break-out from QSFP28 side is direct for 2 m and below; for 3 m and above, break-out from QSFP28 is at 1 m. AWG30 for 1m/2m/3m variants per part table; AWG26 for 5m (PCU5M). Operating case temperature 0 to +70 C. Protocol agnostic support stated as 1000GbE and EDR InfiniBand.",
+  "provenance_datasheet_sections": [
+    "SO-QSFP28-4SFP28-PCUxM",
+    "OVERVIEW",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "INFORMATION",
+    "MECHANICAL DRAWING"
+  ],
+  "suggestions": "Document is a passive electrical DAC; optical and FEC fields are appropriately absent. Consider mapping cable length (1–5 m) in a dedicated field if schema is extended for DAC/copper assemblies. Vendor name is only implied via smartoptics.com footer, not a formal manufacturer line on the cover."
+}

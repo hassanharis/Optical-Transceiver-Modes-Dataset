@@ -1,0 +1,14 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-GE-FE-LX Transmit",
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "100Base-LX"
+    },
+    {
+      "label": "SO-SFP-GE-FE-LX Receive",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "FE"
+    }
+  ]
+}

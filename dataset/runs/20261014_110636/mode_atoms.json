@@ -1,0 +1,108 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "wavelength_band": [
+      "CWDM",
+      "grey"
+    ],
+    "bit_rate_gbps": [
+      39.813,
+      43.018,
+      9.95,
+      11.3,
+      10.31,
+      40.0
+    ],
+    "tx_power_max_dbm": [
+      8.3,
+      2.3
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-CFP-40GBASE-LR4"
+    ],
+    "form_factor": [
+      "CFP"
+    ],
+    "standards_claimed": [
+      "40GBASE-LR4",
+      "40GBASE-LR",
+      "CFP MSA"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -10.0,
+    "temp_max_c": 75.0,
+    "power_consumption_w": [
+      8.0
+    ],
+    "standards_code": [
+      "40GBASE-LR4"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -7.0
+    ],
+    "rx_sensitivity_dbm": [
+      -13.7
+    ],
+    "rx_overload_dbm": [
+      2.3
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -25.0
+    ],
+    "los_deassert_dbm": [
+      -15.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Technology listed as Grey CFP; four CWDM lanes @ 10Gbps for Ethernet, SDH/SONET, or OTN. Bit rates: 39.813–43.018 Gbps aggregated (footnote 1); 9.95–11.3 Gbps per lane (footnote 2). Transmitter/receiver power values are average power (footnote 3). Minimum input power and overload specified at BER 1x10-12, PRBS 2^31-1 @ 10.31 Gbps per lane (footnote 4). Power budget 0–6.7 dB. Per-lane TX output Min -7.0 dBm / Max +2.3 dBm; total TX output Max +8.3 dBm. Transmission media stated as SM (2x LC). Storage temperature -40°C to +85°C (not normal operating range). Protocol support includes 40GbE, STM-256/OC768, OTU3.",
+    "provenance_datasheet_sections": [
+      "SO-CFP-40GBASE-LR4",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Clarify whether post_fec_ber_target should be recorded when only 'BER 1x10-12' is given without explicit FEC. Emitter and photodetector types are absent. Host/media interface IDs and modulation format are not in this excerpt."
+  }
+}

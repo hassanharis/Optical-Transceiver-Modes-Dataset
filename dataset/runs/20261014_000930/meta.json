@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T00:09:30.696441+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lqd-dco400-zrc.pdf",
+  "page_count": 14,
+  "table_count": 20,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 18.246,
+    "extract_atoms": 20.957,
+    "store_run": 0.011,
+    "synthesize_modes": 57.662,
+    "store_modes": 0.005,
+    "total": 96.881
+  }
+}

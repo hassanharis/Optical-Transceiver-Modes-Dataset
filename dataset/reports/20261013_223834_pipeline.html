@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Finisar [&#x27;FTCE4517E1PxA-2N&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">ftce4517e1pxa-2n-transceiver-ds.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">7</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">9</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 22:38</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">Finisar Transceiver 
+
+
+# **Preliminary Product Specification 800G (2x400 DR4) OSFP Optical Finisar Transceiver** 
+
+## **FTCE4517E1PxA-2N** 
+
+## **PRODUCT FEATURES** 
+
+- Hot-pluggable Type 2 OSFP form factor 
+
+- Supports 850Gb/s aggregate bit rate 
+
+- Power dissipation &lt;17W 
+
+- RoHS-6 compliant 
+
+- Case temperature range of 20°C to +60°C (limited temp) or 0°C to +70°C (c-temp) 
+
+
+## **APPLICATIONS** 
+
+- Single 3.3V power supply 
+
+- Aligned with IEEE 802.3bs 
+
+- 8x100G PAM4 retimed 106.25Gb/s PAM4 electrical interface aligned to IEEE 802.3ck 
+
+   - 8 x 100GbE applications 
+
+   - 2 x 400GbE applications 
+
+   - 4 x 200Gbe applications 
+
+   - NDR Infiniband 
+
+- DUAL MPO-12, APC receptacles 
+
+- I2C management interface 
+
+The FTCE4517E1PxA-2N (2 x DR4) OSFP transceiver modules are designed for use in (2 x 400) Gigabit Ethernet links on up to 500m of single mode fiber.  They are compliant with the OSFP MSA, IEEE 802.3bs[6 ] and IEEE P802.3ck[7] Digital diagnostic functions are available via the I2C interface, as specified by the OSFP MSA. The optical transceiver is RoHS compliant as described in Application Note AN-2038[2,3] . 
+
+. 
+
+## **PRODUCT SELECTION** 
+
+E: Ethernet protocol P: Pull-tab type release x: C = Commercial or L limited temperature A: Dual MPO-12 receptacle 2N : No Heat Sink Design 
+
+© Coherent Corp.  Oct. 2023 Rev A1 – Coherent Corp. Confidential 
+
+Page 1 
+
+Finisar Transceiver 
+
+FTCE4517E1PxA-2N Product Specification 
+
+## **I. Pin Descriptions** 
+
+The electrical pinout of the OSFP module is shown in Figure 1 below 
+
+
+**Figure 1 – OSFP Module Pinout (per OSFP MSA)** 
+
+## **II. Absolute Maximum Ratings** 
+
+Module performance is not guaranteed beyond the operating range (see Section VI). Exceeding the limits below may damage the transceiver module permanently. 
+
+|**Parameter**|**Symbol**|**Min**|**Typ**|**Max**|**Unit**|**Ref.**|
+|---|---|---|---|---|---|---|
+|Maximum Supply Voltage|Vcc|-0.5||4.0|V||
+|Storage Temperature|TS|-40||+85|C||
+|Case Operating Tempera
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Finisar"</span>,
+  <span class="key">"model"</span>: [
+    "FTCE4517E1PxA-2N"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "OSFP"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "OSFP MSA",
+    "IEEE <span class="num">802.3</span>bs",
+    "IEEE P802.3ck"
+  ],
+  <span class="key">"emitter_type"</span>: [],
+  <span class="key">"photodetector_type"</span>: [],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1304.5</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1317.5</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [],
+  <span class="key">"wavelength_band"</span>: [],
+  <span class="key">"frequency_min_thz"</span>: [],
+  <span class="key">"frequency_max_thz"</span>: [],
+  <span class="key">"channel_spacing_ghz"</span>: [],
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "MPO"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF",
+    "SMF_G652"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">17</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "400GAUI-4-L C2M",
+    "400GAUI-4-S C2M",
+    "200GAUI-2-L C2M",
+    "200GAUI-2-S C2M",
+    "100GAUI-1-L C2M",
+    "100GAUI-1-S C2M",
+    "200GAUI-4 C2M",
+    "CAUI-4 C2M"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: [
+    "0x50",
+    "0x4F",
+    "0x4E",
+    "0x4D",
+    "0x4C",
+    "0x4B",
+    "0x0F",
+    "0x0B"
+  ],
+  <span class="key">"host_interface_id"</span>: [
+    <span class="num">80</span>,
+    <span class="num">79</span>,
+    <span class="num">78</span>,
+    <span class="num">77</span>,
+    <span class="num">76</span>,
+    <span class="num">75</span>,
+    <span class="num">15</span>,
+    <span class="num">11</span>
+  ],
+  <span class="key">"media_interface_name"</span>: [
+    "400GBASE-DR4",
+    "100GBASE-DR",
+    "200GBASE-DR4",
+    "100G PSM4 MSA Spec"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: [
+    "0x1C",
+    "0x14",
+    "0x17",
+    "0x0F"
+  ],
+  <span class="key">"media_interface_id"</span>: [
+    <span class="num">28</span>,
+    <span class="num">20</span>,
+    <span class="num">23</span>,
+    <span class="num">15</span>
+  ],
+  <span class="key">"frame"</span>: [
+    "8x100G PAM4",
+    "8 x <span class="num">100</span>GbE",
+    "2 x <span class="num">400</span>GbE",
+    "4 x <span class="num">200</span>Gbe"
+  ],
+  <span class="key">"standards_code"</span>: [
+    "400GBASE-DR4",
+    "100GBASE-DR",
+    "200GBASE-DR4",
+    "100G PSM4",
+    "IEEE P802.3bs",
+    "IEEE P802.3ck"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [
+    <span class="num">53.125</span>
+  ],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">850</span>,
+    <span class="num">106.25</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: [],
+  <span class="key">"modulation_format"</span>: [
+    "PAM4"
+  ],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-2.9</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: [],
+  <span class="key">"tx_out_of_band_osnr_db"</span>: [],
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-4.4</span>,
+    <span class="num">-1.9</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: [],
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: [],
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">4</span>,
+    <span class="num">4.2</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [],
+  <span class="key">"pdl_db"</span>: [],
+  <span class="key">"pmd_tolerance_ps"</span>: [],
+  <span class="key">"fec_type"</span>: [],
+  <span class="key">"fec_overhead_percent"</span>: [],
+  <span class="key">"pre_fec_ber_threshold"</span>: [
+    <span class="num">0.00024</span>
+  ],
+  <span class="key">"post_fec_ber_target"</span>: [],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">3.5</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [],
+  <span class="key">"los_deassert_dbm"</span>: [],
+  <span class="key">"channel_insertion_loss_db"</span>: [],
+  <span class="key">"receiver_reflectance_db"</span>: [
+    <span class="num">-26</span>
+  ],
+  <span class="key">"transmitter_reflectance_db"</span>: [
+    <span class="num">-26</span>
+  ],
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">3.5</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [
+    <span class="num">21.4</span>
+  ],
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">8</span>,
+    <span class="num">4</span>,
+    <span class="num">2</span>,
+    <span class="num">1</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [
+    <span class="num">30</span>
+  ],
+  <span class="key">"los_hysteresis_db"</span>: [],
+  <span class="key">"total_jitter_ps"</span>: [],
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"800G aggregate (2x400 DR4) OSFP Type <span class="num">2</span>; optional limited case temperature <span class="num">20</span>°C to +60°C vs commercial <span class="num">0</span>°C to +70°C. Reach <span class="num">500</span> m on SMF G.652. Average launch power min <span class="num">-2.9</span> dBm and average receive power min <span class="num">-5.9</span> dBm are informative per IEEE <span class="num">802.3</span>bs notes. Receiver sensitivity (OMAouter) max <span class="num">-4.4</span> dBm defined for transmitter SECQ <span class="num">0.9</span> dB; stressed receiver sensitivity (OMAouter) max <span class="num">-1.9</span> dBm per conformance test at TP3 for BER in <span class="num">124.1</span>.1 with SECQ <span class="num">3.4</span> dB and aggressor OMAouter <span class="num">4.2</span> dBm. Signaling rate per lane <span class="num">53.125</span> ± <span class="num">100</span> ppm. Module total power max <span class="num">17</span> W across full temperature and voltage range. Regulatory section references FTCE4517E1PCA-2N (variant spelling). CMIS <span class="num">4.0</span> per MSA."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "Preliminary Product Specification <span class="num">800</span>G (2x400 DR4) OSFP Optical Finisar Transceiver",
+    "FTCE4517E1PxA-2N",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "PRODUCT SELECTION",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (EOL, TOP = <span class="num">0</span> to +70 °C, VCC = <span class="num">3.135</span> to <span class="num">3.465</span> Volts) Aligned to IEEE P802.3ck",
+    "IV. Optical Characteristics (EOL, TOP = <span class="num">0</span> to +70 °C, VCC = <span class="num">3.135</span> to <span class="num">3.465</span> Volts) Meets <span class="num">400</span>GBASE-DR4 as being defined by IEEE P802.3bs",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "IX. Memory Contents",
+    "XI. Mechanical Specifications"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Consider mapping TDECQ/SECQ and OMAouter fields if useful for PAM4 DR modules. Emitter and detector types are not stated in this preliminary sheet."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>host_interface_name</td><td><span class="badge">400GAUI-4-L C2M</span> <span class="badge">400GAUI-4-S C2M</span> <span class="badge">200GAUI-2-L C2M</span> <span class="badge">200GAUI-2-S C2M</span> <span class="badge">100GAUI-1-L C2M</span> <span class="badge">100GAUI-1-S C2M</span> <span class="badge">200GAUI-4 C2M</span> <span class="badge">CAUI-4 C2M</span></td></tr>
+<tr><td>host_interface_id_hex</td><td><span class="badge">0x50</span> <span class="badge">0x4F</span> <span class="badge">0x4E</span> <span class="badge">0x4D</span> <span class="badge">0x4C</span> <span class="badge">0x4B</span> <span class="badge">0x0F</span> <span class="badge">0x0B</span></td></tr>
+<tr><td>host_interface_id</td><td><span class="badge">80</span> <span class="badge">79</span> <span class="badge">78</span> <span class="badge">77</span> <span class="badge">76</span> <span class="badge">75</span> <span class="badge">15</span> <span class="badge">11</span></td></tr>
+<tr><td>media_interface_name</td><td><span class="badge">400GBASE-DR4</span> <span class="badge">100GBASE-DR</span> <span class="badge">200GBASE-DR4</span> <span class="badge">100G PSM4 MSA Spec</span></td></tr>
+<tr><td>media_interface_id_hex</td><td><span class="badge">0x1C</span> <span class="badge">0x14</span> <span class="badge">0x17</span> <span class="badge">0x0F</span></td></tr>
+<tr><td>media_interface_id</td><td><span class="badge">28</span> <span class="badge">20</span> <span class="badge">23</span> <span class="badge">15</span></td></tr>
+<tr><td>frame</td><td><span class="badge">8x100G PAM4</span> <span class="badge">8 x 100GbE</span> <span class="badge">2 x 400GbE</span> <span class="badge">4 x 200Gbe</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">400GBASE-DR4</span> <span class="badge">100GBASE-DR</span> <span class="badge">200GBASE-DR4</span> <span class="badge">100G PSM4</span> <span class="badge">IEEE P802.3bs</span> <span class="badge">IEEE P802.3ck</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">850.0</span> <span class="badge">106.25</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-4.4</span> <span class="badge">-1.9</span></td></tr>
+<tr><td>rx_overload_dbm</td><td><span class="badge">4.0</span> <span class="badge">4.2</span></td></tr>
+<tr><td>number_of_lanes</td><td><span class="badge">8</span> <span class="badge">4</span> <span class="badge">2</span> <span class="badge">1</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Finisar</td></tr>
+<tr><td>model</td><td>FTCE4517E1PxA-2N</td></tr>
+<tr><td>form_factor</td><td>OSFP</td></tr>
+<tr><td>standards_claimed</td><td>OSFP MSA, IEEE 802.3bs, IEEE P802.3ck</td></tr>
+<tr><td>emitter_type</td><td></td></tr>
+<tr><td>photodetector_type</td><td></td></tr>
+<tr><td>wavelength_min_nm</td><td>1304.5</td></tr>
+<tr><td>wavelength_max_nm</td><td>1317.5</td></tr>
+<tr><td>wavelength_center_nm</td><td></td></tr>
+<tr><td>wavelength_band</td><td></td></tr>
+<tr><td>frequency_min_thz</td><td></td></tr>
+<tr><td>frequency_max_thz</td><td></td></tr>
+<tr><td>channel_spacing_ghz</td><td></td></tr>
+<tr><td>mounting_type</td><td>pluggable_hot, pluggable</td></tr>
+<tr><td>connector_type</td><td>MPO</td></tr>
+<tr><td>fiber_type</td><td>SMF, SMF_G652</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>17.0</td></tr>
+<tr><td>baud_rate_gbaud</td><td>53.125</td></tr>
+<tr><td>roll_off_percent</td><td></td></tr>
+<tr><td>modulation_format</td><td>PAM4</td></tr>
+<tr><td>reach_km</td><td>0.5</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-2.9</td></tr>
+<tr><td>tx_power_max_dbm</td><td>4.0</td></tr>
+<tr><td>tx_in_band_osnr_db</td><td></td></tr>
+<tr><td>tx_out_of_band_osnr_db</td><td></td></tr>
+<tr><td>rx_osnr_db</td><td></td></tr>
+<tr><td>rx_osnr_tolerance_db_max</td><td></td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td></td></tr>
+<tr><td>pdl_db</td><td></td></tr>
+<tr><td>pmd_tolerance_ps</td><td></td></tr>
+<tr><td>fec_type</td><td></td></tr>
+<tr><td>fec_overhead_percent</td><td></td></tr>
+<tr><td>pre_fec_ber_threshold</td><td>0.00024</td></tr>
+<tr><td>post_fec_ber_target</td><td></td></tr>
+<tr><td>extinction_ratio_db</td><td>3.5</td></tr>
+<tr><td>los_assert_dbm</td><td></td></tr>
+<tr><td>los_deassert_dbm</td><td></td></tr>
+<tr><td>channel_insertion_loss_db</td><td></td></tr>
+<tr><td>receiver_reflectance_db</td><td>-26.0</td></tr>
+<tr><td>transmitter_reflectance_db</td><td>-26.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>3.5</td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td>21.4</td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td>30.0</td></tr>
+<tr><td>los_hysteresis_db</td><td></td></tr>
+<tr><td>total_jitter_ps</td><td></td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>800G aggregate (2x400 DR4) OSFP Type 2; optional limited case temperature 20°C to +60°C vs commercial 0°C to +70°C. Reach 500 m on SMF G.652. Average launch power min -2.9 dBm and average receive power min -5.9 dBm are informative per IEEE 802.3bs notes. Receiver sensitivity (OMAouter) max -4.4 dBm defined for transmitter SECQ 0.9 dB; stressed receiver sensitivity (OMAouter) max -1.9 dBm per conformance test at TP3 for BER in 124.1.1 with SECQ 3.4 dB and aggressor OMAouter 4.2 dBm. Signaling rate per lane 53.125 ± 100 ppm. Module total power max 17 W across full temperature and voltage range. Regulatory section references FTCE4517E1PCA-2N (variant spelling). CMIS 4.0 per MSA.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>Preliminary Product Specification 800G (2x400 DR4) OSFP Optical Finisar Transceiver, FTCE4517E1PxA-2N, PRODUCT FEATURES, APPLICATIONS, PRODUCT SELECTION, II. Absolute Maximum Ratings, III. Electrical Characteristics (EOL, TOP = 0 to +70 °C, VCC = 3.135 to 3.465 Volts) Aligned to IEEE P802.3ck, IV. Optical Characteristics (EOL, TOP = 0 to +70 °C, VCC = 3.135 to 3.465 Volts) Meets 400GBASE-DR4 as being defined by IEEE P802.3bs, V. General Specifications, VI. Environmental Specifications, IX. Memory Contents, XI. Mechanical Specifications</td></tr>
+<tr><td>suggestions</td><td>Consider mapping TDECQ/SECQ and OMAouter fields if useful for PAM4 DR modules. Emitter and detector types are not stated in this preliminary sheet.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>host_interface_name</th><th>host_interface_id_hex</th><th>host_interface_id</th><th>media_interface_name</th><th>media_interface_id_hex</th><th>media_interface_id</th><th>frame</th><th>standards_code</th><th>bit_rate_gbps</th><th>number_of_lanes</th></tr><tr><td><strong>400G-DR4 long mode (Appl 1)</strong></td><td>400GAUI-4-L C2M</td><td><span class="badge">0x50</span></td><td>80</td><td>400GBASE-DR4</td><td><span class="badge">0x1C</span></td><td>28</td><td>2 x 400GbE</td><td>400GBASE-DR4</td><td>106.25</td><td>4</td></tr><tr><td><strong>400G-DR4 short mode (Appl 2)</strong></td><td>400GAUI-4-S C2M</td><td><span class="badge">0x4F</span></td><td>79</td><td>400GBASE-DR4</td><td><span class="badge">0x1C</span></td><td>28</td><td>2 x 400GbE</td><td>400GBASE-DR4</td><td>106.25</td><td>4</td></tr><tr><td><strong>200G-DR2 long mode (Appl 3)</strong></td><td>200GAUI-2-L C2M</td><td><span class="badge">0x4E</span></td><td>78</td><td>400GBASE-DR4</td><td><span class="badge">0x1C</span></td><td>28</td><td>4 x 200Gbe</td><td>400GBASE-DR4</td><td>106.25</td><td>2</td></tr><tr><td><strong>200G-DR2 short mode (Appl 4)</strong></td><td>200GAUI-2-S C2M</td><td><span class="badge">0x4D</span></td><td>77</td><td>400GBASE-DR4</td><td><span class="badge">0x1C</span></td><td>28</td><td>4 x 200Gbe</td><td>400GBASE-DR4</td><td>106.25</td><td>2</td></tr><tr><td><strong>100G-DR long mode (Appl 5)</strong></td><td>100GAUI-1-L C2M</td><td><span class="badge">0x4C</span></td><td>76</td><td>100GBASE-DR</td><td><span class="badge">0x14</span></td><td>20</td><td>8 x 100GbE</td><td>100GBASE-DR</td><td>106.25</td><td>1</td></tr><tr><td><strong>100G-DR short mode (Appl 6)</strong></td><td>100GAUI-1-S C2M</td><td><span class="badge">0x4B</span></td><td>75</td><td>100GBASE-DR</td><td><span class="badge">0x14</span></td><td>20</td><td>8 x 100GbE</td><td>100GBASE-DR</td><td>106.25</td><td>1</td></tr><tr><td><strong>200G-DR4 (custom AppSel)</strong></td><td>200GAUI-4 C2M</td><td><span class="badge">0x0F</span></td><td>15</td><td>200GBASE-DR4</td><td><span class="badge">0x17</span></td><td>23</td><td>4 x 200Gbe</td><td>200GBASE-DR4</td><td>106.25</td><td>4</td></tr><tr><td><strong>100G-PSM4 (custom AppSel)</strong></td><td>CAUI-4 C2M</td><td><span class="badge">0x0B</span></td><td>11</td><td>100G PSM4 MSA Spec</td><td><span class="badge">0x0F</span></td><td>15</td><td>8x100G PAM4</td><td>100G PSM4</td><td>106.25</td><td>4</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 22:38
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "modes": [
+    {
+      "label": "BGA socket 16x16 (no clip)",
+      "model": "H2-TR4-SKT-R3",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "BGA socket 16x16 with clip",
+      "model": "H2-TR4-CLP-R3",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "Standard hybrid transceiver \u2014 1 in fiber (Option 001)",
+      "model": "H2-TR4-S001",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "Standard hybrid transceiver \u2014 6 in fiber (Option 002)",
+      "model": "H2-TR4-S002",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "Hybrid transceiver custom fiber/termini (Sxxx)",
+      "model": "H2-TR4-Sxxx",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "Hybrid transceiver custom fiber/termini (Sxxx) \u2014 up to 2.5 Gbps",
+      "model": "H2-TR4-Sxxx",
+      "bit_rate_gbps": 2.5
+    },
+    {
+      "label": "Extraction tool",
+      "model": "H2-TR4-PULL",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "Pin straightening tool",
+      "model": "H2-TR4-PIN",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "HTP evaluation card (socket + transceiver)",
+      "model": "H2-TR4-EVAL",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "HTP evaluation card \u2014 up to 2.5 Gbps per port",
+      "model": "H2-TR4-EVAL",
+      "bit_rate_gbps": 2.5
+    }
+  ]
+}

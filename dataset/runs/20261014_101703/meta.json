@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:17:03.409953+00:00",
+  "source_file": "C:\\Haris\\datasheets\\PeakOptical PSFP10-1541SF.pdf",
+  "page_count": 8,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 14.181,
+    "extract_atoms": 29.863,
+    "store_run": 0.004,
+    "synthesize_modes": 53.989,
+    "store_modes": 0.003,
+    "total": 98.04
+  }
+}

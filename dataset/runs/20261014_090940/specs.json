@@ -1,0 +1,111 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-MM851G-S5C",
+    "LS-MM851G-S5I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    830.0
+  ],
+  "wavelength_max_nm": [
+    870.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF 50/125µm",
+    "MMF_OM1"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "Gigabit Ethernet",
+    "1.063Gbps Fiber Channel"
+  ],
+  "bit_rate_gbps": [
+    0.1,
+    1.063,
+    1.25
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    0.55,
+    0.3
+  ],
+  "tx_power_min_dbm": [
+    -9.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -18.0
+  ],
+  "rx_overload_dbm": [
+    -1.0
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -38.0
+  ],
+  "los_deassert_dbm": [
+    -19.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "LS-MM851G-S5C ordering: 0°C~+70°C with DDM; LS-MM851G-S5I: -40°C~+85°C with DDM. Reach 550m on 50/125µm MMF; 300m on 62.5/125µm MMF. Recommended operating case temperature also lists Extended -20°C to +85°C and Industrial -40°C to +85°C. Receiver sensitivity and overload measured with PRBS 2^7-1 @ 1250Mbps, BER ≤1×10^-12. Average output power launched into MMF. Supply current Icc max 300 mA at 3.135–3.465 V; power in watts not stated. SMSR table shows '-' only, no numeric SMSR. Diagnostic TX power range -9 to 0 dBm; RX power -20 to -1 dBm.",
+  "provenance_datasheet_sections": [
+    "LS-MM851G-S5C",
+    "1.25Gbps SFP Transceiver, Multi Mode, 550m Reach",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Diagnostics",
+    "Ordering information"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "model": [
+    "FN-TRAN-GC-COM"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "IEEE 802.3-2002",
+    "IEEE 802.3ab",
+    "Gigabit Ethernet",
+    "1000BASE-T",
+    "10/100/1000BASE-T"
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "RJ-45"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.05,
+    1.2
+  ],
+  "host_interface_name": [
+    "SERDES",
+    "SGMII",
+    "1000BASE-T"
+  ],
+  "media_interface_name": [
+    "1000BASE-T"
+  ],
+  "standards_code": [
+    "1000BASE-T",
+    "IEEE 802.3"
+  ],
+  "bit_rate_gbps": [
+    0.01,
+    0.1,
+    1.0,
+    1.25
+  ],
+  "modulation_format": [
+    "PAM"
+  ],
+  "reach_km": [
+    0.1
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "penalties": [],
+  "notes": "Copper (UTP Category 5) module, not optical. Data rate table lists 10–1,000 Mb/sec (IEEE 802.3). Symbol rate 250 Mbps on each of four pairs; line frequency 125 MHz (5-level encoding per IEEE 802.3). Power: 1.05 W typical (Features); supply table notes 1.2 W max over full voltage and temperature; caution states power consumption and surge current exceed SFP MSA. Electrical input described as +5 V ±5% with note that 3.3 V max is not allowed for continuous operation; Vcc table 3.13–3.47 V typ 3.3 V. Reach 100 m Category 5 UTP, BER <10^-12. RX_LOS optional per ordering; when not used tied to ground. Document titled/referenced for Fortinet; manufacturer brand not stated.",
+  "provenance_datasheet_sections": [
+    "FN-TRAN-GC-COM",
+    "Copper SFP Transceiver",
+    "Features",
+    "Applications",
+    "Description",
+    "+3.3V Volt Electrical Power Interface",
+    "High-Speed Electrical Interface",
+    "High-speed electrical interface, host-SFP",
+    "General Specifications",
+    "Environmental Specifications",
+    "Mechanical Specifications",
+    "References",
+    "Ordering information"
+  ],
+  "suggestions": "Consider schema fields for copper media (Cat5/Cat5e), RJ-45, and electrical line rate (MHz) vs optical GBaud. post_fec_ber_target from cable BER note may need a distinct copper/Ethernet BER field."
+}

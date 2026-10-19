@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SFP-1G-13-80K-D Commercial 1550nm TX\",\n      \"model\": \"SFP-1G-13-80K-D\",\n      \"wavelength_min_nm\": 1530.0,\n      \"wavelength_max_nm\": 1570.0,\n      \"wavelength_center_nm\": 1550.0\n    },\n    {\n      \"label\": \"SFP-1G-13-80K-DI Industrial 1310nm ordering\",\n      \"model\": \"SFP-1G-13-80K-DI\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1610.0,\n      \"wavelength_center_nm\": 1310.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

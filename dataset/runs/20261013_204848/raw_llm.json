@@ -1,0 +1,120 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "DS-8G-ZR"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1260,
+    1544.5
+  ],
+  "wavelength_max_nm": [
+    1557.5,
+    1620
+  ],
+  "wavelength_center_nm": [
+    1550
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.6
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "2G FC",
+    "4G FC",
+    "8G FC",
+    "FICON"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    2.125,
+    8.5
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    70
+  ],
+  "tx_power_min_dbm": [
+    -0.5
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -23.5
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -7.0
+  ],
+  "cd_tolerance_ps_nm": [
+    1400
+  ],
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -35
+  ],
+  "los_deassert_dbm": [
+    -23.5
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Technology: Grey SFP+. Transmission media: SM (2x LC). Power budget 11 – 23dB. Optical path penalty Max 3dB. Power consumption < 1.6W. Storage temperature -40°C to +85°C. Transmitter/receiver min input power and overload footnote 1): At 8.5Gbps (8G FC) using PRBS7 @ BER 1x10-12. Footnote 2): Average power for output power and receiver power specs. Layer-1 tested and approved by Cisco. RoHS-6/6 compliant. Title/ordering: 23dB link budget, 70km.",
+  "provenance_datasheet_sections": [
+    "DS-8G-ZR",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": null
+}

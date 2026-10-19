@@ -1,0 +1,81 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP-40G-AOC1M",
+    "SO-QSFP-40G-AOC2M",
+    "SO-QSFP-40G-AOC3M",
+    "SO-QSFP-40G-AOC4M",
+    "SO-QSFP-40G-AOC5M",
+    "SO-QSFP-40G-AOC6M",
+    "SO-QSFP-40G-AOC7M",
+    "SO-QSFP-40G-AOC8M",
+    "SO-QSFP-40G-AOC9M",
+    "SO-QSFP-40G-AOC10M",
+    "SO-QSFP-40G-AOC15M",
+    "SO-QSFP-40G-AOC20M",
+    "SO-QSFP-40G-AOC30M",
+    "SO-QSFP-40G-AOC50M",
+    "SO-QSFP-40G-AOC100M"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8436",
+    "IEEE 802.3ba",
+    "40GBASE-SR4"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "fiber_type": [
+    "MMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "QSFP+"
+  ],
+  "standards_code": [
+    "40GBASE-SR4",
+    "IEEE 802.3ba"
+  ],
+  "bit_rate_gbps": [
+    40.0,
+    10.0,
+    5.0,
+    2.5
+  ],
+  "reach_km": [
+    0.001,
+    0.002,
+    0.003,
+    0.004,
+    0.005,
+    0.006,
+    0.007,
+    0.008,
+    0.009,
+    0.01,
+    0.015,
+    0.02,
+    0.03,
+    0.05,
+    0.1
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "penalties": [],
+  "notes": "Active Optical Cable (AOC) with 2x QSFP+ transceivers and multimode ribbon fiber; lengths 1–100 m (3.3–328 ft). Storage temperature 0°C to +85°C. Applications include InfiniBand QDR (4x 10Gbps), DDR (4x 5Gbps), and SDR (4x 2.5Gbps) in addition to 40G Ethernet. Vendor identified only via smartoptics.com footer; product line name SO-QSFP-40G-AOCxM.",
+  "provenance_datasheet_sections": [
+    "OVERVIEW",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Datasheet lacks optical/electrical performance tables (wavelength, power, sensitivity). MECHANICAL DRAWING section had no extractable text. Consider mapping 40GBASE-SR4 to media interface codes if added in a fuller spec sheet."
+}

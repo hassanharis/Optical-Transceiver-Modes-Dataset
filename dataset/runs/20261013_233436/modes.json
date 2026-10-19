@@ -1,0 +1,47 @@
+{
+  "modes": [
+    {
+      "label": "default",
+      "model": [
+        "L9-SD312M-20TTC"
+      ],
+      "form_factor": [
+        "1x9"
+      ],
+      "wavelength_min_nm": [
+        1260.0
+      ],
+      "wavelength_max_nm": [
+        1360.0
+      ],
+      "wavelength_center_nm": [
+        1310.0
+      ],
+      "reach_km": [
+        20.0
+      ],
+      "tx_power_min_dbm": [
+        -8.0
+      ],
+      "tx_power_max_dbm": [
+        -3.0
+      ],
+      "rx_sensitivity_dbm": [
+        -18.0
+      ],
+      "rx_overload_dbm": [
+        -3.0
+      ],
+      "extinction_ratio_db": [
+        10.0
+      ],
+      "los_assert_dbm": [
+        -18.0
+      ],
+      "los_deassert_dbm": [
+        -30.0
+      ],
+      "penalties": []
+    }
+  ]
+}

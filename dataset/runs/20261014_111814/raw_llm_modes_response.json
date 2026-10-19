@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100GBASE-SR4 / 100GbE aggregate OM3\",\n      \"host_interface_name\": \"100GBASE-SR4\",\n      \"bit_rate_gbps\": 103.12,\n      \"reach_km\": 70.0\n    },\n    {\n      \"label\": \"100GBASE-SR4 / 100GbE aggregate OM4\",\n      \"host_interface_name\": \"100GbE\",\n      \"bit_rate_gbps\": 103.12,\n      \"reach_km\": 100.0\n    },\n    {\n      \"label\": \"100GBASE-SR4 per-lane OM3\",\n      \"host_interface_name\": \"100GBASE-SR4\",\n      \"bit_rate_gbps\": 25.78,\n      \"reach_km\": 70.0\n    },\n    {\n      \"label\": \"100GBASE-SR4 per-lane OM4\",\n      \"host_interface_name\": \"100GBASE-SR4\",\n      \"bit_rate_gbps\": 25.78,\n      \"reach_km\": 100.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

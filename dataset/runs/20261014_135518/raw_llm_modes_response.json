@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SO-SFP-10GE-T 10GBASE-T RJ45\",\n      \"standards_code\": \"10GBASE-T\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

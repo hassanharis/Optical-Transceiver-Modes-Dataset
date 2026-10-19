@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T12:25:15.028861+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-qsfp28-psm4-r5.2.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.749,
+    "extract_atoms": 34.702,
+    "store_run": 0.007,
+    "synthesize_modes": 45.165,
+    "store_modes": 0.002,
+    "total": 84.624
+  }
+}

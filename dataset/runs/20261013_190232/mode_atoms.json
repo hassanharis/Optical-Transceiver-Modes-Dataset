@@ -1,0 +1,110 @@
+{
+  "multi_valued": {
+    "model": [
+      "QT-WDM-02020 B SD",
+      "QT-WDM-0220BSID",
+      "QT-WDM-0220BSD"
+    ],
+    "wavelength_min_nm": [
+      1510.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1570.0,
+      1360.0
+    ],
+    "wavelength_center_nm": [
+      1550.0,
+      1310.0
+    ],
+    "host_interface_name": [
+      "1000BASE-BX-U",
+      "Gigabit Ethernet",
+      "Fiber Channel"
+    ],
+    "standards_code": [
+      "1000BASE-BX-U",
+      "SFF-8472",
+      "SONET OC-24-LR-1"
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      1.063
+    ],
+    "reach_km": [
+      20.0,
+      3.0
+    ]
+  },
+  "general": {
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472",
+      "SONET OC-24-LR-1",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "connector_type": [
+      "SC",
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "tx_power_min_dbm": [
+      -12.0
+    ],
+    "tx_power_max_dbm": [
+      -6.0
+    ],
+    "rx_sensitivity_dbm": [
+      -21.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -23.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "los_hysteresis_db": [
+      1.0,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "Title and features describe 20 km SMF BIDI 1550 nm TX / 1310 nm RX; ordering table lists QT-WDM-0220* variants at 3 km with LC and DDM. Operating case temperature also offered as Industrial -40 to +85°C (features). Supply Icc max 300 mA at 3.3 V; power not given in W. Receiver sensitivity and overload per note 3: PRBS 2^7-1 @ 1250 Mbps, BER ≤ 1×10^-12. Transmitter average output power note 1: launched into SMF. Simplex SC receptacle on this product line per features; LC on listed order codes.",
+    "provenance_datasheet_sections": [
+      "BIDI SFP 1550nm-TX/1310nm-RX 20KM SMF Transceiver",
+      "P/N: QT- WDM-02020 B SD",
+      "FEATURES",
+      "APPLICATIONS",
+      "1. Absolute Maximum Ratings",
+      "2. Recommended Operating Conditions",
+      "3. Optical and Electrical Characteristics",
+      "Notes:",
+      "7. Ordering information"
+    ],
+    "suggestions": "Add fields for spectral width (RMS), supply current, and dual operating temperature profiles (standard vs industrial). Clarify whether vendor name appears on cover art only."
+  }
+}

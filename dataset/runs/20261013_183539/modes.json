@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "QT-WDM-0240BD 1.25G 1550nm-TX/1310nm-RX",
+      "model": "QT-WDM-0240BD",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0240BID 1.25G 1550nm-TX/1310nm-RX",
+      "model": "QT-WDM-0240BID",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

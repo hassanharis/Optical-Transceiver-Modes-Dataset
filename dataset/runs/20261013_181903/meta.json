@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T18:19:03.334877+00:00",
+  "source_file": "C:\\Haris\\datasheets\\16g-er-br2.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.259,
+    "extract_atoms": 15.097,
+    "store_run": 0.007,
+    "synthesize_modes": 22.258,
+    "store_modes": 0.003,
+    "total": 40.624
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"STM4/OC12\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1600.0,\n      \"host_interface_name\": \"STM4/OC12\",\n      \"standards_code\": \"STM4/OC12\",\n      \"rx_sensitivity_dbm\": -37.0\n    },\n    {\n      \"label\": \"STM1/OC3\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1600.0,\n      \"host_interface_name\": \"STM1/OC3\",\n      \"standards_code\": \"STM1/OC3\",\n      \"rx_sensitivity_dbm\": -38.0\n    },\n    {\n      \"label\": \"100M FE\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1600.0,\n      \"host_interface_name\": \"FE\",\n      \"standards_code\": \"FE\",\n      \"rx_sensitivity_dbm\": -39.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

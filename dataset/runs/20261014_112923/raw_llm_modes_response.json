@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"40G passive DAC (family)\",\n      \"model\": \"SO-QSFP-40G-PCUxM\",\n      \"standards_code\": \"40GBase\",\n      \"bit_rate_gbps\": 40.0\n    },\n    {\n      \"label\": \"40G DAC 0.5m AWG30\",\n      \"model\": \"SO-QSFP-40G-PCU0.5M\",\n      \"standards_code\": \"40GbE\",\n      \"bit_rate_gbps\": 40.0\n    },\n    {\n      \"label\": \"40G DAC 1m AWG30\",\n      \"model\": \"SO-QSFP-40G-PCU1M\",\n      \"standards_code\": \"40GbE\",\n      \"bit_rate_gbps\": 40.0\n    },\n    {\n      \"label\": \"40G DAC 2m AWG30\",\n      \"model\": \"SO-QSFP-40G-PCU2M\",\n      \"standards_code\": \"40GbE\",\n      \"bit_rate_gbps\": 40.0\n    },\n    {\n      \"label\": \"40G DAC 3m AWG28\",\n      \"model\": \"SO-QSFP-40G-PCU3M\",\n      \"standards_code\": \"40GbE\",\n      \"bit_rate_gbps\": 40.0\n    },\n    {\n      \"label\": \"40G DAC 5m AWG26\",\n      \"model\": \"SO-QSFP-40G-PCU5M\",\n      \"standards_code\": \"40GbE\",\n      \"bit_rate_gbps\": 40.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

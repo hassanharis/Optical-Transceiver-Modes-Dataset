@@ -1,0 +1,104 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "QSFP-100G-ZR4-SO"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "SFF-8636"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1294.53,
+    1299.02,
+    1303.54,
+    1308.09
+  ],
+  "wavelength_max_nm": [
+    1296.59,
+    1301.09,
+    1305.63,
+    1310.19
+  ],
+  "wavelength_center_nm": [
+    1295.56,
+    1300.05,
+    1304.58,
+    1309.14
+  ],
+  "wavelength_band": [
+    "LAN-WDM",
+    "grey"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    5.0
+  ],
+  "host_interface_name": [
+    "100GBASE-ZR4"
+  ],
+  "standards_code": [
+    "100GBASE-ZR4",
+    "IEEE802.3bj"
+  ],
+  "bit_rate_gbps": [
+    103.12,
+    25.78
+  ],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    2.0
+  ],
+  "tx_power_max_dbm": [
+    7.0,
+    13.0
+  ],
+  "rx_sensitivity_dbm": [
+    -29.0
+  ],
+  "rx_overload_dbm": [
+    4.5
+  ],
+  "fec_type": [
+    "RS_528_514",
+    "RS_GENERIC"
+  ],
+  "pre_fec_ber_threshold": [
+    5e-05
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "penalties": [],
+  "notes": "Aggregated line rate 103.12 Gbps for 100GbE; 25.78 Gbps per lane. Power budget 2.5–31.0 dB. Dispersion penalty 1.0 dB (reduction of power budget to maintain BER). Diff in power between lanes max 3.6 dB. Output power total max +13.0 dBm; per-lane min +2.0 dBm and max +7.0 dBm are average power (footnote 3). Receiver min input -29.0 dBm and overload +4.5 dBm per 25.78 Gbps lane, PRBS31 @ BER 5E-5 (footnote 4). FEC per IEEE802.3bj required by host; optical parameters provide BER 5×10^-5, FEC yields better than 1×10^-12. Power consumption max <5 W worst case at high temp limit (footnote 5). Storage temperature -40°C to +85°C. Tested by Cisco in unsupported mode. Transmission media stated as SM (2x LC).",
+  "provenance_datasheet_sections": [
+    "QSFP-100G-ZR4-SO",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Clarify whether +13.0 dBm total TX max should be modeled separately from per-lane limits. Dispersion penalty 1.0 dB lacks paired penalized metric and condition for penalties[] entry."
+}

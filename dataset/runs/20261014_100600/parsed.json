@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\oi-100g-qsfp28-transceivers.pdf",
+  "page_count": 4,
+  "table_count": 3,
+  "markdown_chars": 6636,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 19
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 21
+    }
+  ]
+}

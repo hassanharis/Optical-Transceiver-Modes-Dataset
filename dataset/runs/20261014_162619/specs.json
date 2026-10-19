@@ -1,0 +1,103 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-XFP-10GE-BX40D-2733",
+    "SO-XFP-10GE-BX40D-3327"
+  ],
+  "form_factor": [
+    "XFP"
+  ],
+  "standards_claimed": [
+    "INF-8077i",
+    "XFP MSA",
+    "IEEE 802.3ae"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260.0,
+    1320.0
+  ],
+  "wavelength_max_nm": [
+    1280.0,
+    1340.0
+  ],
+  "wavelength_center_nm": [
+    1270.0,
+    1330.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    2.0
+  ],
+  "host_interface_name": [
+    "INF-8077i",
+    "XFP MSA"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "10GBASE-ER",
+    "10GBASE-EW",
+    "10GbE-LAN",
+    "10GbE-WAN",
+    "OTU2",
+    "OTU2e",
+    "STM-64",
+    "OC192"
+  ],
+  "bit_rate_gbps": [
+    9.95,
+    11.1,
+    11.3
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    1.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -15.0
+  ],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -29.0
+  ],
+  "los_deassert_dbm": [
+    -17.0
+  ],
+  "penalties": [],
+  "notes": "BiDi pair: SO-XFP-10GE-BX40D-2733 is Tx/Rx 1270/1330 nm (transmit 1260–1280 nm, receive 1320–1340 nm per footnote 1); SO-XFP-10GE-BX40D-3327 is Tx/Rx 1330/1270 nm (transmit 1320–1340 nm, receive 1260–1280 nm per footnote 2). Output power and receiver min/overload are average power (footnote 3). Receiver minimum input power -15.0 dBm and overload +0.5 dBm at 10.3 Gbps, BER ≤ 1×10⁻¹², PRBS 2³¹-1, back-to-back (footnote 4). Power budget between transmitter and receiver w/o optical path penalties: 4.5–16 dB. Power consumption stated as < 2 W. Storage temperature -40°C to +85°C (not operating). IEEE 802.3ae 10GBASE-ER/EW is defined only at 1550 nm; standard cited for bridgeable distance only.",
+  "provenance_datasheet_sections": [
+    "SO-XFP-10GE-BX40D-2733/-3327 XFP, BiDi, 10G Multirate, 1270/1330nm, DDM, 16dB, 40km",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Add power_budget_db (e.g. 4.5–16 dB) and storage_temp range; clarify whether bit_rate_gbps should include ordering range 9.95–11.1 vs table 9.95–11.3 Gbps."
+}

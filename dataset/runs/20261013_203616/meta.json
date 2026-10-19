@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:36:16.525545+00:00",
+  "source_file": "C:\\Haris\\datasheets\\DoNetwork DO-GLC-BX-D 20KM.pdf",
+  "page_count": 8,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 7.825,
+    "extract_atoms": 22.493,
+    "store_run": 0.01,
+    "synthesize_modes": 13.853,
+    "store_modes": 0.003,
+    "total": 44.184
+  }
+}

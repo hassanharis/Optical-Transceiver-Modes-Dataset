@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\qsfp-dd-osfp-800g-zr-zr-plus-coherent-optics.pdf",
+  "page_count": 7,
+  "table_count": 4,
+  "markdown_chars": 9775,
+  "tables": [
+    {
+      "page": 3,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 3
+    }
+  ]
+}

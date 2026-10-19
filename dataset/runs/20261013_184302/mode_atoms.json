@@ -1,0 +1,138 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "bit_rate_gbps": [
+      41.3,
+      40.0,
+      10.3
+    ],
+    "tx_power_min_dbm": [
+      -2.7,
+      0.3
+    ],
+    "tx_power_max_dbm": [
+      4.5,
+      5.0,
+      10.5
+    ],
+    "rx_sensitivity_dbm": [
+      -19.0,
+      -16.8
+    ]
+  },
+  "general": {
+    "vendor": "QSFPTek",
+    "model": [
+      "QT-QSFP+-ER4"
+    ],
+    "form_factor": [
+      "QSFP+"
+    ],
+    "standards_claimed": [
+      "40GBASE-ER4",
+      "IEEE P802.3ba",
+      "QSFP+ MSA",
+      "RoHS-6"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_center_nm": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      3.5
+    ],
+    "host_interface_name": [
+      "XLPPI"
+    ],
+    "media_interface_name": [
+      "40GBASE-ER4"
+    ],
+    "standards_code": [
+      "40GBASE-ER4"
+    ],
+    "baud_rate_gbaud": [
+      10.3125
+    ],
+    "modulation_format": [],
+    "reach_km": [
+      40.0
+    ],
+    "rx_overload_dbm": [
+      3.8
+    ],
+    "fec_type": [],
+    "extinction_ratio_db": [
+      5.5
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -19.0
+    ],
+    "channel_insertion_loss_db": [
+      18.5
+    ],
+    "transmitter_reflectance_db": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      5.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      20.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      1.0
+    ],
+    "penalties": [],
+    "notes": "Power dissipation stated as < 3.5 W. Aggregate bit rate 41.3 Gb/s; ordering lists 40 Gb/s. Lane wavelengths given as four CWDM ranges (1264.5–1277.5, 1284.5–1297.5, 1304.5–1317.5, 1324.5–1337.5 nm). Title/marketing uses 1310 nm; ordering 1271~1331 nm. Transmitter: uncooled 4×10 Gb/s CWDM (4 lasers); receiver: 4 photodetectors at up to 10.3125 Gb/s. RXPx min -21.2 dBm informative; max -4.5 dBm based on min 9 dB loss. Transmitter Dispersion Penalty (TDP) max 2.6 dB; vertical eye closure penalty max 2.2 dB per lane. Return Loss (RL) -26 dB at receiver. Optical Return Loss Tolerance 20 dB (transmitter). Average launch power OFF transmitter per lane max -30 dBm. Relative Intensity Noise (RIN) typ -128 dB/Hz (scaled per footnote 3). Difference in launch power between any two lanes (OMA) max 4.7 dB. Launch power (OMA) minus TDP per lane min -0.5 dBm. Receive Power (OMA) per lane max -4.0 dBm. Damage Threshold (DT) per lane 3.8 dBm matches optical PMAX. Vendor identified from repeated www.qsfptek.com on datasheet.",
+    "provenance_datasheet_sections": [
+      "40GBASE-ER4 QSFP+ 1310nm 40km DDM SMF Transceiver",
+      "P/N: QT-QSFP+-ER4",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "1 Absolute Maximum Ratings",
+      "2 . Environmental Specifications",
+      "3. Electrical Characteristics (TOP = 0 to 70°C, VCC = 3.1 to 3.47 Volts)",
+      "4. Optical Characteristics (TOP = 0 to 70°C, VCC = 3.1 to 3.47 Volts)",
+      "5. Pin Descriptions",
+      "6. Mechanical Specifications",
+      "7. Ordering information"
+    ],
+    "suggestions": "Emitter is described only as uncooled CWDM lasers (no DFB/FP/APD/PIN). No explicit modulation format, FEC, OSNR, or chromatic-dispersion tolerance in ps/nm despite TDP. Penalty table rows (TDP, VECP) lack the @-condition triples required for penalties[]. Consider mapping RL -26 dB to receiver_reflectance_db if that is intended as reflectance."
+  }
+}

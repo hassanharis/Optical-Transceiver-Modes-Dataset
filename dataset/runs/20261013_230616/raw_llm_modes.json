@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "8GFC",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "tx_power_min_dbm": -8.2,
+      "rx_sensitivity_dbm": -11.2,
+      "post_fec_ber_target": 1e-12
+    },
+    {
+      "label": "16GFC",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "tx_power_min_dbm": -7.8,
+      "rx_sensitivity_dbm": -10.5,
+      "post_fec_ber_target": 1e-12
+    },
+    {
+      "label": "32GFC FEC",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "tx_power_min_dbm": -6.7,
+      "rx_sensitivity_dbm": -10.2,
+      "post_fec_ber_target": 1e-06
+    }
+  ]
+}

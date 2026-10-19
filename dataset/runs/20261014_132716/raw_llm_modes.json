@@ -1,0 +1,48 @@
+{
+  "modes": [
+    {
+      "label": "BiDi 1270nm TX / 1330nm RX (C-temp)",
+      "model": "SO-SFP-10GE-BX40D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8431",
+      "media_interface_name": "10GBASE-ER",
+      "standards_code": "IEEE 802.3ae",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "BiDi 1330nm TX / 1270nm RX (C-temp)",
+      "model": "SO-SFP-10GE-BX40D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "SFF-8431",
+      "media_interface_name": "10GBASE-ER",
+      "standards_code": "IEEE 802.3ae",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "BiDi 1270nm TX / 1330nm RX (I-temp)",
+      "model": "SO-SFP-10GE-BX40D-2733-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8431",
+      "media_interface_name": "10GBASE-ER",
+      "standards_code": "IEEE 802.3ae",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "BiDi 1330nm TX / 1270nm RX (I-temp)",
+      "model": "SO-SFP-10GE-BX40D-3327-I",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "SFF-8431",
+      "media_interface_name": "10GBASE-ER",
+      "standards_code": "IEEE 802.3ae",
+      "bit_rate_gbps": 11.3
+    }
+  ]
+}

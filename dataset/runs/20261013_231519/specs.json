@@ -1,0 +1,204 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLX3671DTCxx",
+    "FTLX3671DTC20",
+    "FTLX3671DTC21",
+    "FTLX3671DTC22",
+    "FTLX3671DTC23",
+    "FTLX3671DTC24",
+    "FTLX3671DTC25",
+    "FTLX3671DTC26",
+    "FTLX3671DTC27",
+    "FTLX3671DTC28",
+    "FTLX3671DTC29",
+    "FTLX3671DTC30",
+    "FTLX3671DTC31",
+    "FTLX3671DTC32",
+    "FTLX3671DTC33",
+    "FTLX3671DTC34",
+    "FTLX3671DTC35",
+    "FTLX3671DTC36",
+    "FTLX3671DTC37",
+    "FTLX3671DTC38",
+    "FTLX3671DTC39",
+    "FTLX3671DTC40",
+    "FTLX3671DTC41",
+    "FTLX3671DTC42",
+    "FTLX3671DTC43",
+    "FTLX3671DTC44",
+    "FTLX3671DTC45",
+    "FTLX3671DTC46",
+    "FTLX3671DTC47",
+    "FTLX3671DTC48",
+    "FTLX3671DTC49",
+    "FTLX3671DTC50",
+    "FTLX3671DTC51",
+    "FTLX3671DTC52",
+    "FTLX3671DTC53",
+    "FTLX3671DTC54",
+    "FTLX3671DTC55",
+    "FTLX3671DTC56",
+    "FTLX3671DTC57",
+    "FTLX3671DTC58",
+    "FTLX3671DTC59",
+    "FTLX3671DTC60"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "SFP MSA"
+  ],
+  "emitter_type": [
+    "LASER_EML"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1529.55
+  ],
+  "wavelength_max_nm": [
+    1561.42
+  ],
+  "wavelength_center_nm": [
+    1561.42,
+    1560.61,
+    1559.79,
+    1558.98,
+    1558.17,
+    1557.36,
+    1556.55,
+    1555.75,
+    1554.94,
+    1554.13,
+    1553.33,
+    1552.52,
+    1551.72,
+    1550.92,
+    1550.12,
+    1549.32,
+    1548.51,
+    1547.72,
+    1546.92,
+    1546.12,
+    1545.32,
+    1544.53,
+    1543.73,
+    1542.94,
+    1542.14,
+    1541.35,
+    1540.56,
+    1539.77,
+    1538.98,
+    1538.19,
+    1537.4,
+    1536.61,
+    1535.82,
+    1535.04,
+    1534.25,
+    1533.47,
+    1532.68,
+    1531.9,
+    1531.12,
+    1530.33,
+    1529.55
+  ],
+  "wavelength_band": [
+    "C-band",
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    192.0
+  ],
+  "frequency_max_thz": [
+    196.0
+  ],
+  "channel_spacing_ghz": [
+    100.0
+  ],
+  "channel_total": [
+    41
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF_G652",
+    "SMF"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    1.6
+  ],
+  "standards_code": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "bit_rate_gbps": [
+    1.2,
+    1.2288,
+    10.7,
+    11.1,
+    11.3,
+    11.3176
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    1.0
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -16.0,
+    -15.0,
+    -14.0
+  ],
+  "rx_overload_dbm": [
+    -1.0,
+    0.0
+  ],
+  "cd_tolerance_ps_nm": [
+    800.0
+  ],
+  "extinction_ratio_db": [
+    8.2
+  ],
+  "receiver_reflectance_db": [
+    -27.0
+  ],
+  "optical_extinction_ratio_db": [
+    8.2
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "penalties": [],
+  "notes": "Center wavelength per ITU-T 694.1; EOL center wavelength λc±100pm. Optical wavelength row lists unit as dBm in table (likely typo); center wavelengths from Table 1. Sensitivity (0ps/nm): -16.0 dBm at 1.2–10.7 Gb/s BER<10^-12; -15.0 dBm at 11.1–11.3 Gb/s BER<10^-6. Sensitivity (800ps/nm): -15.0 dBm at 1.2–10.7 Gb/s; -14.0 dBm at 11.1–11.3 Gb/s. 800 ps/nm max chromatic dispersion tolerance over 40 km G.652 SMF. Receiver optical center wavelength range 1260–1600 nm. Average launch power when Tx OFF max -30 dBm. Power consumption 1.6 W at 85°C case, BOL, 3.3 V. Cooled 1550 nm EML laser (nominal; per-channel λC in ordering table). Regulatory section references FTLF8538P5BCz (likely template error). Duplex LC connector stated in features.",
+  "provenance_datasheet_sections": [
+    "FTLX3671DTCXX",
+    "Industrial Temperature DWDM 1.2G-11.3G, 40km SFP+ Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "Product Ordering Codes / Channel Selection",
+    "III. Electrical Characteristics (TOP = -40 to 85 °C)",
+    "IV. Optical Characteristics (TOP = -40 to 85 °C, VCC = 3.14 to 3.46 Volts)",
+    "V. General Specifications",
+    "VII. Environmental Specifications",
+    "X. Mechanical Specifications"
+  ],
+  "suggestions": "Clarify whether bit_rate list should include only Table V bounds (1.2288–11.3176) vs sensitivity row rates (1.2÷10.7). Explicit modulation format and lane count are absent. No OSNR or FEC parameters in this legacy SFP+ DWDM datasheet."
+}

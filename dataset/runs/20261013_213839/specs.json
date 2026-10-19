@@ -1,0 +1,151 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TQ2009-SL4X-SO",
+    "TQ2009-SL4E-SO",
+    "TQ2009-SL4I-SO"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "100G 4WDM-40 MSA",
+    "QSFP28 MSA",
+    "100GBASE-ER4"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1294.53,
+    1299.02,
+    1303.54,
+    1308.09
+  ],
+  "wavelength_max_nm": [
+    1296.59,
+    1301.09,
+    1305.63,
+    1310.19
+  ],
+  "wavelength_center_nm": [
+    1295.56,
+    1300.05,
+    1304.58,
+    1309.14,
+    1296.0,
+    1300.0,
+    1305.0,
+    1309.0
+  ],
+  "wavelength_band": [
+    "LAN-WDM",
+    "grey"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    5.0,
+    5.5
+  ],
+  "host_interface_name": [
+    "100GbE"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [
+    "100G 4WDM-40"
+  ],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "100G 4WDM-40",
+    "100GBASE-ER4",
+    "IEEE802.3bj",
+    "RS(528,514)"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    103.12,
+    25.78
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    40.0,
+    30.0
+  ],
+  "tx_power_min_dbm": [
+    -0.3
+  ],
+  "tx_power_max_dbm": [
+    6.5,
+    12.5
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -18.3
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -3.5
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [
+    "RS_528_514"
+  ],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [
+    5e-05
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -25.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Forward Error Correction (FEC) required in host per IEEE802.3bj RS(528,514). Optical parameters at BER 5x10-5; FEC yields BER better than 1x10-12. Without FEC: reach reduced to 30km and power budget about 16dB. Power budget 10–18 dB; optical path penalty 2dB. Operating temperature -20°C to +85°C (TQ2009-SL4E-SO) or -40°C to +85°C (TQ2009-SL4I-SO). Storage -40°C to +85°C. Tx/Rx power values are average power (footnote 3). Rx min input and overload specified at BER 5x10-5 (footnote 4). Technology listed as Grey QSFP28.",
+  "provenance_datasheet_sections": [
+    "QSFP28 100G-ER4",
+    "TQ2009-SL4X-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "temp_min_c/temp_max_c are single floats but two SKUs use different min operating temps (-20 vs -40); consider per-SKU fields or list[float]. Power budget 10–18 dB and optical path penalty 2dB have no dedicated schema fields."
+}

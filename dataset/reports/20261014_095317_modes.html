@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Nokia</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Nokia</div>
+  <div class="subtitle"></div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Nokia</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">GR-3160-Core, GR-326-Core, GR-1435-Core, RoHS-6, FCC Part 15 Class A, EN55032/CISPR Class A, ANSI Class 1M, IEC Class 1M, EN 60825-1/2, UL 62368-1, CSA22.2 62368-1, EN 62368-1, IEC 62368-1</div></div>
+      <div class="spec-item"><div class="label">Channel Spacing (GHz)</div><div class="value">0.05</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC, CS, SN, MPO</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">-10.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">1.5</div></div>
+      <div class="spec-item"><div class="label">Pmd Tolerance Ps</div><div class="value">130.0</div></div>
+      <div class="spec-item"><div class="label">Fec Type</div><div class="value">SDFEC</div></div>
+      <div class="spec-item"><div class="label">Fec Overhead Percent</div><div class="value">15.0</div></div>
+      <div class="spec-item"><div class="label">Number Of Lanes</div><div class="value">2</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">CHM7 operating temperature -5 C to +55 C in 1830 GX G42; CHM7X operating temperature +5 C to +40 C in 1830 GX G31/G32. Transport and storage -40 C to +70 C. Power 258W (CHM7) and 250W (CHM7X) is for 2x1.2 Tb/s typical excluding client pluggables. Line data rate 200 Gb/s to 1200 Gb/s in 100 Gb/s increments. Baud 68 to 140+ GBaud with increments 0.1 GBaud (lower) to 0.7 GBaud (higher). Roll-off configurable 0.1% to 100% in 0.1% increments; 2% optimal in most scenarios. Chromatic dispersion tolerance &gt;800,000 ps/nm at 68 GBaud and &gt;300,000 ps/nm at 140 GBaud. Reach values stated as 1.2 Tb/s to 400+ km, 1 Tb/s to 1,500+ km, 800 Gb/s to 3,000+ km, 600 Gb/s to 5,500+ km terrestrial. SOP rotation tolerance up to 20 Mrad/s mode dependent. Spectrum widths: Extended C 4.8 THz, Super C 6.1 THz, Extended L 4.8 THz, Super L 5.5 THz. Wavelength tuning 50 MHz increments.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">Technical specifications, Applications, Line Interfaces, Client Interfaces, Environmental, Regulatory and Compliance, Leverage the latest 5-nm/140 GBaud coherent technology with ICE7, Reduce cost, power consumptionand footprint by ~30%-40%, Boost fiber capacity with Super C, L-band and Super L, Optimize spectral efficiency with a continuously tunable baud rate</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Schema temp_min_c/temp_max_c could not hold distinct CHM7 vs CHM7X without duplicate objects or product-qualified fields. Consider product_variant on environmental fields. SOP rotation (Mrad/s) and spectrum bandwidth (THz) are major line-side specs not in schema.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Wavelength Min</th><th>Wavelength Max</th><th>Wavelength Band</th><th>frequency_min_thz</th><th>frequency_max_thz</th><th>Power (W)</th><th>Host Interface</th><th>frame</th><th>Standards code</th><th>Baud Rate (GBaud)</th><th>Bit Rate (Gbps)</th><th>roll_off_percent</th><th>modulation_format</th><th>Reach (km)</th><th>CD Tolerance (ps/nm)</th></tr>
+      <tr><td><strong>CHM7 full C-band line</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X full C-band line</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 Extended C-band</strong></td><td>CHM7</td><td>1528.3</td><td>1567.337</td><td>Extended C-band</td><td>191.275</td><td>196.125</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X Extended C-band</strong></td><td>CHM7X</td><td>1528.3</td><td>1567.337</td><td>Extended C-band</td><td>191.275</td><td>196.125</td><td>250.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 Super C-band</strong></td><td>CHM7</td><td>1523.916</td><td>1572.682</td><td>Super C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X Super C-band</strong></td><td>CHM7X</td><td>1523.916</td><td>1572.682</td><td>Super C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 Super C spectrum label</strong></td><td>CHM7</td><td>1523.916</td><td>1572.682</td><td>Super C</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 Extended L-band variant</strong></td><td>CHM7</td><td>1569.183</td><td>1611.354</td><td>Extended L-band</td><td>186.05</td><td>191.05</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 L-band variant</strong></td><td>CHM7</td><td>1569.183</td><td>1611.354</td><td>L-band</td><td>186.05</td><td>191.05</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 Super L-band variant</strong></td><td>CHM7</td><td>1575.161</td><td>1622.034</td><td>Super L-band</td><td>184.825</td><td>190.325</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 Super L spectrum label</strong></td><td>CHM7</td><td>1575.161</td><td>1622.034</td><td>Super L</td><td>184.825</td><td>190.325</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 C+L combined spectrum</strong></td><td>CHM7</td><td>1523.9</td><td>1611.354</td><td>C+L</td><td>186.05</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 68 GBaud CD tolerance</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>68.0</td><td>600.0</td><td>2.0</td><td>PCS_QAM_64</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X 68 GBaud CD tolerance</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>68.0</td><td>600.0</td><td>2.0</td><td>PCS_QAM_64</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7 140 GBaud CD tolerance</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X 140 GBaud CD tolerance</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 roll-off 0.1% minimum</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>0.1</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 roll-off 100% maximum</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>100.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 1.2 Tb/s 400 km terrestrial</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X 1.2 Tb/s 400 km terrestrial</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 1 Tb/s 1500 km terrestrial</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-32QAM</td><td>140.0</td><td>1000.0</td><td>2.0</td><td>PCS_QAM_32</td><td>1500.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X 1 Tb/s 1500 km terrestrial</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-32QAM</td><td>140.0</td><td>1000.0</td><td>2.0</td><td>PCS_QAM_32</td><td>1500.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 800 Gb/s 3000 km terrestrial</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>OTU4</td><td>OTU4</td><td>PCS-16QAM</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_16QAM</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X 800 Gb/s 3000 km terrestrial</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>OTU4</td><td>OTU4</td><td>PCS-16QAM</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_16QAM</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 600 Gb/s 5500 km terrestrial</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>68.0</td><td>600.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X 600 Gb/s 5500 km terrestrial</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>68.0</td><td>600.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7 line rate 200 Gb/s tunable</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>400 GbE</td><td>400 GbE</td><td>64QAM</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QAM_64</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7 line rate 300 Gb/s tunable</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>400 GbE</td><td>400 GbE</td><td>32QAM</td><td>68.0</td><td>300.0</td><td>2.0</td><td>QAM_32</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7 line rate 500 Gb/s tunable</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>400 GbE</td><td>400 GbE</td><td>16QAM</td><td>140.0</td><td>500.0</td><td>2.0</td><td>QAM_16</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 line rate 700 Gb/s tunable</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>8QAM</td><td>140.0</td><td>700.0</td><td>2.0</td><td>QAM_8</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 line rate 900 Gb/s tunable</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-32QAM</td><td>140.0</td><td>900.0</td><td>2.0</td><td>PCS_QAM_32</td><td>1500.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 line rate 1100 Gb/s tunable</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>800 GbE</td><td>800 GbE</td><td>PCS-64QAM</td><td>140.0</td><td>1100.0</td><td>2.0</td><td>PCS_QAM_64</td><td>400.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 OTN transponder OTUk</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>OTU4</td><td>OTU4</td><td>OTUk</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X OTN transponder OTUk</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>OTU4</td><td>OTU4</td><td>OTUk</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 OTN FlexO</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>OTU4</td><td>OTU4</td><td>FlexO</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD800 DR4</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD800</td><td>800 GbE</td><td>DR4</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD800 DR4</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD800</td><td>800 GbE</td><td>DR4</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD800 2xDR4</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD800</td><td>800 GbE</td><td>2xDR4</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD800 2xDR4</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD800</td><td>800 GbE</td><td>2xDR4</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD800 LR4</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD800</td><td>800 GbE</td><td>LR4</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD800 LR4</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD800</td><td>800 GbE</td><td>LR4</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD800 2xLR4</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD800</td><td>800 GbE</td><td>2xLR4</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD800 2xLR4</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD800</td><td>800 GbE</td><td>2xLR4</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD800 FR4</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD800</td><td>800 GbE</td><td>FR4</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD800 FR4</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD800</td><td>800 GbE</td><td>FR4</td><td>140.0</td><td>800.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD 400G DR4</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD</td><td>400 GbE</td><td>DR4</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD 400G DR4</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD</td><td>400 GbE</td><td>DR4</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD 400G FR4</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD</td><td>400 GbE</td><td>FR4</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD 400G FR4</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD</td><td>400 GbE</td><td>FR4</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD 400G LR4</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD</td><td>400 GbE</td><td>LR4</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD 400G LR4</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD</td><td>400 GbE</td><td>LR4</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD 400G PLR4</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD</td><td>400 GbE</td><td>PLR4</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD 400G PLR4</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD</td><td>400 GbE</td><td>PLR4</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD 4x100G LR1</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD</td><td>100 GbE</td><td>100G LR1</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD 4x100G LR1</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD</td><td>100 GbE</td><td>100G LR1</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD 4x100G FR1</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD</td><td>100 GbE</td><td>100G FR1</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD 4x100G FR1</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD</td><td>100 GbE</td><td>100G FR1</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD 4x100G DR1</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD</td><td>100 GbE</td><td>100G DR1</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD 4x100G DR1</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD</td><td>100 GbE</td><td>100G DR1</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD 2x100G LR4 OTU4</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>100 GbE</td><td>OTU4</td><td>100G LR4</td><td>140.0</td><td>200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD 2x100G LR4 OTU4</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>100 GbE</td><td>OTU4</td><td>100G LR4</td><td>140.0</td><td>200.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 QSFP-DD 4x100GBASE-DR1 OTU4</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>QSFP-DD</td><td>OTU4</td><td>100GBASE-DR1</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7X QSFP-DD 4x100GBASE-DR1 OTU4</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>QSFP-DD</td><td>OTU4</td><td>100GBASE-DR1</td><td>140.0</td><td>400.0</td><td>2.0</td><td>PCS_QAM_64</td><td>3000.0</td><td>300000.0</td></tr>
+      <tr><td><strong>CHM7 UCM4 10 GbE</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>10 GbE</td><td>10 GbE</td><td>ODUflex</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7 UCM4 OC-192</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>OC-192</td><td>10 GbE</td><td>ODUflex</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7 UCM4 STM-64</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>STM-64</td><td>10 GbE</td><td>ODUflex</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7 UCM4 OTU2</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>OTU2</td><td>OTU2</td><td>OTUk</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7 UCM4 OTU2e</strong></td><td>CHM7</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>258.0</td><td>OTU2e</td><td>OTU2e</td><td>OTUk</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X UTM2 1GbE</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>1GbE</td><td>1GbE</td><td>ODUflex</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X UTM2 1G Fibre Channel</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>1G Fibre Channel</td><td>1GbE</td><td>ODUflex</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X UTM2 STM-16</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>STM-16</td><td>1GbE</td><td>ODUflex</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X UTM2 OC-48</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>OC-48</td><td>1GbE</td><td>ODUflex</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X UTM2 4G Fibre Channel</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>4G Fibre Channel</td><td>1GbE</td><td>ODUflex</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X UTM2 10 GbE</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>10 GbE</td><td>10 GbE</td><td>ODUflex</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X UTM2 OC-192</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>OC-192</td><td>10 GbE</td><td>ODUflex</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X UTM2 STM-64</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>STM-64</td><td>10 GbE</td><td>ODUflex</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X UTM2 OTU2</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>OTU2</td><td>OTU2</td><td>OTUk</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+      <tr><td><strong>CHM7X UTM2 OTU2e</strong></td><td>CHM7X</td><td>1523.9</td><td>1572.682</td><td>C-band</td><td>190.625</td><td>196.725</td><td>250.0</td><td>OTU2e</td><td>OTU2e</td><td>OTUk</td><td>68.0</td><td>200.0</td><td>2.0</td><td>QPSK</td><td>5500.0</td><td>800000.0</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">CHM7</span> <span class="badge">CHM7X</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">1523.9</span> <span class="badge">1528.3</span> <span class="badge">1523.916</span> <span class="badge">1569.183</span> <span class="badge">1575.161</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">1572.682</span> <span class="badge">1567.337</span> <span class="badge">1572.682</span> <span class="badge">1611.354</span> <span class="badge">1622.034</span></td></tr>
+      <tr><td>wavelength_band</td><td><span class="badge">Extended C-band</span> <span class="badge">Super C-band</span> <span class="badge">Extended L-band</span> <span class="badge">Super L-band</span> <span class="badge">C-band</span> <span class="badge">L-band</span> <span class="badge">C+L</span> <span class="badge">Super C</span> <span class="badge">Super L</span></td></tr>
+      <tr><td>frequency_min_thz</td><td><span class="badge">190.625</span> <span class="badge">191.275</span> <span class="badge">190.625</span> <span class="badge">186.05</span> <span class="badge">184.825</span></td></tr>
+      <tr><td>frequency_max_thz</td><td><span class="badge">196.725</span> <span class="badge">196.125</span> <span class="badge">196.725</span> <span class="badge">191.05</span> <span class="badge">190.325</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">258.0</span> <span class="badge">250.0</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">QSFP-DD800</span> <span class="badge">QSFP-DD</span> <span class="badge">800 GbE</span> <span class="badge">400 GbE</span> <span class="badge">100 GbE</span> <span class="badge">OTU4</span> <span class="badge">10 GbE</span> <span class="badge">OC-192</span> <span class="badge">STM-64</span> <span class="badge">OTU2</span> <span class="badge">OTU2e</span> <span class="badge">1GbE</span> <span class="badge">1G Fibre Channel</span> <span class="badge">STM-16</span> <span class="badge">OC-48</span> <span class="badge">4G Fibre Channel</span></td></tr>
+      <tr><td>frame</td><td><span class="badge">800 GbE</span> <span class="badge">400 GbE</span> <span class="badge">100 GbE</span> <span class="badge">OTU4</span> <span class="badge">OTU2</span> <span class="badge">OTU2e</span> <span class="badge">10 GbE</span> <span class="badge">1GbE</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">DR4</span> <span class="badge">2xDR4</span> <span class="badge">LR4</span> <span class="badge">2xLR4</span> <span class="badge">FR4</span> <span class="badge">PLR4</span> <span class="badge">100G LR1</span> <span class="badge">100G FR1</span> <span class="badge">100G DR1</span> <span class="badge">100GBASE-DR1</span> <span class="badge">100G LR4</span> <span class="badge">PCS-64QAM</span> <span class="badge">PCS-32QAM</span> <span class="badge">PCS-16QAM</span> <span class="badge">ODUflex</span> <span class="badge">OTUk</span> <span class="badge">FlexO</span></td></tr>
+      <tr><td>baud_rate_gbaud</td><td><span class="badge">68.0</span> <span class="badge">140.0</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">200.0</span> <span class="badge">300.0</span> <span class="badge">400.0</span> <span class="badge">500.0</span> <span class="badge">600.0</span> <span class="badge">700.0</span> <span class="badge">800.0</span> <span class="badge">900.0</span> <span class="badge">1000.0</span> <span class="badge">1100.0</span> <span class="badge">1200.0</span></td></tr>
+      <tr><td>roll_off_percent</td><td><span class="badge">0.1</span> <span class="badge">2.0</span> <span class="badge">100.0</span></td></tr>
+      <tr><td>modulation_format</td><td><span class="badge">PCS_QAM_64</span> <span class="badge">PCS_QAM_32</span> <span class="badge">PCS_16QAM</span> <span class="badge">QAM_64</span> <span class="badge">QAM_32</span> <span class="badge">QAM_16</span> <span class="badge">QAM_8</span> <span class="badge">QPSK</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">400.0</span> <span class="badge">1500.0</span> <span class="badge">3000.0</span> <span class="badge">5500.0</span></td></tr>
+      <tr><td>cd_tolerance_ps_nm</td><td><span class="badge">800000.0</span> <span class="badge">300000.0</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 09:53
+</footer>
+
+</div>
+</body>
+</html>

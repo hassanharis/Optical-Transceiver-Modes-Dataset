@@ -1,0 +1,111 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP28-32GFC-LR10-Cxx",
+      "SO-SFP28-32GFC-LR10-C27",
+      "SO-SFP28-32GFC-LR10-C29",
+      "SO-SFP28-32GFC-LR10-C31",
+      "SO-SFP28-32GFC-LR10-C33"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1271.0
+    ],
+    "wavelength_max_nm": [
+      1331.0,
+      1350.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1310.0,
+      1330.0
+    ],
+    "host_interface_name": [
+      "SFF-8472",
+      "SFF-8402"
+    ],
+    "standards_code": [
+      "32G FC",
+      "25GE",
+      "25GbE",
+      "10GbE-WAN",
+      "10GbE-LAN",
+      "10GbE"
+    ],
+    "bit_rate_gbps": [
+      28.05,
+      25.78,
+      10.31,
+      9.95
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP28"
+    ],
+    "standards_claimed": [
+      "SFF-8402",
+      "SFF-8472",
+      "G.694.2",
+      "ITU G.694.2"
+    ],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.2
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -3.0
+    ],
+    "tx_power_max_dbm": [
+      2.0
+    ],
+    "rx_sensitivity_dbm": [
+      -12.4
+    ],
+    "rx_overload_dbm": [
+      2.0
+    ],
+    "post_fec_ber_target": [
+      1e-06
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -17.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Title states 9.4dB power budget and 1270nm-1330nm (4ch). Power budget for 32G FC is 0 – 9.4dB. Dispersion penalty max 4.5dB stated without a paired penalized parameter and operating condition for penalty objects. Transmitter output power and receiver min input/overload are average power (footnote 1). Receiver minimum input power and overload for 32G FC are @ BER 1x10-6, PRBS 2^31-1, back-to-back (footnote 2). FEC required to be implemented by the host for 32G FC and 25G Ethernet. Operating temperature listed as -0°C to +70°C. Ordering code SO-SFP28-32GFC-LR10-C29 description prints 12790nm (likely typo for 1279nm); wavelength_center_nm uses only explicitly plausible nm values from ordering (1270, 1310, 1330). Storage temperature -40°C to +85°C is not normal operating range.",
+    "provenance_datasheet_sections": [
+      "SO-SFP28-32GFC-LR10-Cxx",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "RATE_SELECT OPERATION",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Consider mapping power budget (dB) and dispersion penalty (dB) to dedicated schema fields. Clarify whether -0°C operating minimum should be recorded as 0°C."
+  }
+}

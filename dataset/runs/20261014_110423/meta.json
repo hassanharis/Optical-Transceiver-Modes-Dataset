@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T11:04:23.232483+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Smith-Brochure_Optical-Transceivers.pdf",
+  "page_count": 8,
+  "table_count": 0,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 18.876,
+    "extract_atoms": 44.627,
+    "store_run": 0.004,
+    "synthesize_modes": 55.361,
+    "store_modes": 0.003,
+    "total": 118.871
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "modes": [
+    {
+      "label": "CMIS app 1 — OIF 400ZR amplified 400GBASE-R",
+      "form_factor": "QSFP-DD_type-2A",
+      "wavelength_band": "ITU C-Band",
+      "channel_spacing_ghz": 6.25,
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "OIF 400ZR, app code 0x01",
+      "media_interface_id_hex": "0x3E",
+      "frame": "1x 400GAUI-8",
+      "standards_code": "app code 0x01",
+      "baud_rate_gbaud": 59.8,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -20.0,
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 26.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 27.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -15.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1"
+        }
+      ]
+    },
+    {
+      "label": "CMIS app 2 — OIF 400ZR unamplified 400GBASE-R",
+      "form_factor": "QSFP-DD_type-2A",
+      "wavelength_band": "ITU C-Band",
+      "channel_spacing_ghz": 6.25,
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "OIF 400ZR, app code 0x02",
+      "media_interface_id_hex": "0x3F",
+      "frame": "1x 400GAUI-8",
+      "standards_code": "app code 0x02",
+      "baud_rate_gbaud": 59.8,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -20.0,
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 26.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 27.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -15.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2"
+        }
+      ]
+    },
+    {
+      "label": "CMIS app 3 — OIF 400ZR amplified 4×100GBASE-R",
+      "form_factor": "QSFP-DD_type-2A",
+      "wavelength_band": "ITU C-Band",
+      "channel_spacing_ghz": 6.25,
+      "host_interface_name": "100GAUI-2",
+      "media_interface_name": "OIF 400ZR, app code 0x01",
+      "media_interface_id_hex": "0x3E",
+      "frame": "4x 100GAUI-2",
+      "standards_code": "4 × 100GBASE-R",
+      "baud_rate_gbaud": 59.8,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -21.0,
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 26.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 27.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -15.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3"
+        }
+      ]
+    }
+  ]
+}

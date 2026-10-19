@@ -1,0 +1,54 @@
+{
+  "modes": [
+    {
+      "label": "100M Fast Ethernet",
+      "wavelength_min_nm": 1280.0,
+      "wavelength_max_nm": 1335.0,
+      "host_interface_name": "FE",
+      "media_interface_name": "STM4 L-4.1",
+      "standards_code": "STM4 L-4.1",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -30.0
+    },
+    {
+      "label": "STM1/OC3",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "host_interface_name": "STM1/OC3",
+      "media_interface_name": "OC12 LR-1",
+      "standards_code": "OC12 LR-1",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -29.0
+    },
+    {
+      "label": "STM4/OC12",
+      "wavelength_min_nm": 1280.0,
+      "wavelength_max_nm": 1335.0,
+      "host_interface_name": "STM4/OC12",
+      "media_interface_name": "STM4 L-4.1",
+      "standards_code": "STM4 L-4.1",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -28.0
+    },
+    {
+      "label": "STM4 L-4.1",
+      "wavelength_min_nm": 1280.0,
+      "wavelength_max_nm": 1335.0,
+      "host_interface_name": "STM4 L-4.1",
+      "media_interface_name": "STM4 L-4.1",
+      "standards_code": "STM4 L-4.1",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -28.0
+    },
+    {
+      "label": "OC12 LR-1",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "host_interface_name": "OC12 LR-1",
+      "media_interface_name": "OC12 LR-1",
+      "standards_code": "OC12 LR-1",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -28.0
+    }
+  ]
+}

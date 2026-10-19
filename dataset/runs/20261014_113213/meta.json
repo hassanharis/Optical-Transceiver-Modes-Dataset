@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T11:32:13.078639+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-qsfp-4x10g-aocxm.pdf",
+  "page_count": 2,
+  "table_count": 0,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 1.527,
+    "extract_atoms": 21.608,
+    "store_run": 0.007,
+    "synthesize_modes": 26.55,
+    "store_modes": 0.004,
+    "total": 49.696
+  }
+}

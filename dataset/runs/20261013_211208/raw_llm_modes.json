@@ -1,0 +1,34 @@
+{
+  "modes": [
+    {
+      "label": "200G DAC AWG30 1m",
+      "model": "DQ5002-001C-SO",
+      "bit_rate_gbps": 200.0
+    },
+    {
+      "label": "200G DAC AWG30 1.5m",
+      "model": "DQ5002-1M5C-SO",
+      "bit_rate_gbps": 200.0
+    },
+    {
+      "label": "200G DAC AWG26 2m",
+      "model": "DQ5002-002C-SO",
+      "bit_rate_gbps": 200.0
+    },
+    {
+      "label": "200G DAC AWG26 3m",
+      "model": "DQ5002-003C-SO",
+      "bit_rate_gbps": 200.0
+    },
+    {
+      "label": "200G Ethernet / HDR (family)",
+      "model": "DQ5002-xxxC-SO",
+      "bit_rate_gbps": 200.0
+    },
+    {
+      "label": "2x100G breakout (family)",
+      "model": "DQ5002-xxxC-SO",
+      "bit_rate_gbps": 100.0
+    }
+  ]
+}

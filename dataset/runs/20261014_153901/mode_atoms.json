@@ -1,0 +1,89 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-MR25-BX40D-35",
+      "SO-SFP-MR25-BX40D-53",
+      "SO-SFP-MR25-BX40D-35-I",
+      "SO-SFP-MR25-BX40D-53-I"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1530.0
+    ],
+    "wavelength_max_nm": [
+      1360.0,
+      1570.0
+    ],
+    "wavelength_center_nm": [
+      1310.0,
+      1550.0
+    ],
+    "bit_rate_gbps": [
+      0.1,
+      2.7,
+      2.67
+    ],
+    "reach_km": [
+      10.0,
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      1.0,
+      -5.0
+    ],
+    "tx_power_max_dbm": [
+      5.0,
+      0.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "rx_sensitivity_dbm": [
+      -18.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -19.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "BiDi pair: SO-SFP-MR25-BX40D-35 (Tx/Rx 1310/1550 nm) and SO-SFP-MR25-BX40D-53 (Tx/Rx 1550/1310 nm) on single fiber. Overview states bridgeable distance up to 10 km; TECHNICAL DATA and ordering state typical reach 40 km. Power budget 8–19 dB (1310 nm direction) and 3–13 dB (1550 nm direction); ordering lists 19 dB/13 dB and 13 dB/19 dB per variant. Operating temperature also -40°C to +85°C for -BxxI- (Industrial) variants. Storage -40°C to +85°C. Tx/Rx wavelength ranges footnoted per -35 vs -53. Minimum input power and overload at BER ≤ 1×10⁻¹², back-to-back (footnote 4). Transmitter output power is average power (footnote 3). Dispersion penalty max 1 dB stated without paired tolerance in ps/nm. DDM per SFF-8472. Protocols cited: FE, GbE, STM1/OC3, STM4/OC12, STM16/OC48, OTU1, 1G FC, 2G FC, CPRI Opt 1/2/3, OBSAI 1x/2x.",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "POWER BUDGET INFORMATION",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Schema temp_min_c/temp_max_c are scalars; this family has C-temp (0 to +70°C) and I-temp (-40 to +85°C) variants—consider list fields or variant-specific records. Power budget (dB) and dispersion penalty (max 1 dB) have no dedicated fields. Reach 10 km vs 40 km conflict may need vendor clarification."
+  }
+}

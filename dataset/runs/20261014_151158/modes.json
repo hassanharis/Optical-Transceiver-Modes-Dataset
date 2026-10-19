@@ -1,0 +1,1012 @@
+{
+  "modes": [
+    {
+      "label": "DWDM D919 1562.23nm",
+      "model": "SO-SFP-L120DH-D919",
+      "wavelength_center_nm": 1562.23,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D920 1561.42nm",
+      "model": "SO-SFP-L120DH-D920",
+      "wavelength_center_nm": 1561.42,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D921 1560.61nm",
+      "model": "SO-SFP-L120DH-D921",
+      "wavelength_center_nm": 1560.61,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D922 1559.79nm",
+      "model": "SO-SFP-L120DH-D922",
+      "wavelength_center_nm": 1559.79,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D923 1558.98nm",
+      "model": "SO-SFP-L120DH-D923",
+      "wavelength_center_nm": 1558.98,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D924 1558.17nm",
+      "model": "SO-SFP-L120DH-D924",
+      "wavelength_center_nm": 1558.17,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D925 1557.36nm",
+      "model": "SO-SFP-L120DH-D925",
+      "wavelength_center_nm": 1557.36,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D926 1556.55nm",
+      "model": "SO-SFP-L120DH-D926",
+      "wavelength_center_nm": 1556.55,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D927 1555.75nm",
+      "model": "SO-SFP-L120DH-D927",
+      "wavelength_center_nm": 1555.75,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D928 1554.94nm",
+      "model": "SO-SFP-L120DH-D928",
+      "wavelength_center_nm": 1554.94,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D929 1554.13nm",
+      "model": "SO-SFP-L120DH-D929",
+      "wavelength_center_nm": 1554.13,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D930 1553.33nm",
+      "model": "SO-SFP-L120DH-D930",
+      "wavelength_center_nm": 1553.33,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D931 1552.52nm",
+      "model": "SO-SFP-L120DH-D931",
+      "wavelength_center_nm": 1552.52,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D932 1551.72nm",
+      "model": "SO-SFP-L120DH-D932",
+      "wavelength_center_nm": 1551.72,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D933 1550.92nm",
+      "model": "SO-SFP-L120DH-D933",
+      "wavelength_center_nm": 1550.92,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D934 1550.12nm",
+      "model": "SO-SFP-L120DH-D934",
+      "wavelength_center_nm": 1550.12,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D935 1549.32nm",
+      "model": "SO-SFP-L120DH-D935",
+      "wavelength_center_nm": 1549.32,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D936 1548.51nm",
+      "model": "SO-SFP-L120DH-D936",
+      "wavelength_center_nm": 1548.51,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D937 1547.72nm",
+      "model": "SO-SFP-L120DH-D937",
+      "wavelength_center_nm": 1547.72,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D938 1546.92nm",
+      "model": "SO-SFP-L120DH-D938",
+      "wavelength_center_nm": 1546.92,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D939 1546.12nm",
+      "model": "SO-SFP-L120DH-D939",
+      "wavelength_center_nm": 1546.12,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D940 1545.32nm",
+      "model": "SO-SFP-L120DH-D940",
+      "wavelength_center_nm": 1545.32,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D941 1544.53nm",
+      "model": "SO-SFP-L120DH-D941",
+      "wavelength_center_nm": 1544.53,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D942 1543.73nm",
+      "model": "SO-SFP-L120DH-D942",
+      "wavelength_center_nm": 1543.73,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D943 1542.94nm",
+      "model": "SO-SFP-L120DH-D943",
+      "wavelength_center_nm": 1542.94,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D944 1542.14nm",
+      "model": "SO-SFP-L120DH-D944",
+      "wavelength_center_nm": 1542.14,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D945 1541.35nm",
+      "model": "SO-SFP-L120DH-D945",
+      "wavelength_center_nm": 1541.35,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D946 1540.56nm",
+      "model": "SO-SFP-L120DH-D946",
+      "wavelength_center_nm": 1540.56,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D947 1539.77nm",
+      "model": "SO-SFP-L120DH-D947",
+      "wavelength_center_nm": 1539.77,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D948 1538.98nm",
+      "model": "SO-SFP-L120DH-D948",
+      "wavelength_center_nm": 1538.98,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D949 1538.19nm",
+      "model": "SO-SFP-L120DH-D949",
+      "wavelength_center_nm": 1538.19,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D950 1537.40nm",
+      "model": "SO-SFP-L120DH-D950",
+      "wavelength_center_nm": 1537.4,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D951 1536.61nm",
+      "model": "SO-SFP-L120DH-D951",
+      "wavelength_center_nm": 1536.61,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D952 1535.82nm",
+      "model": "SO-SFP-L120DH-D952",
+      "wavelength_center_nm": 1535.82,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D953 1535.04nm",
+      "model": "SO-SFP-L120DH-D953",
+      "wavelength_center_nm": 1535.04,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D954 1534.25nm",
+      "model": "SO-SFP-L120DH-D954",
+      "wavelength_center_nm": 1534.25,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D955 1533.47nm",
+      "model": "SO-SFP-L120DH-D955",
+      "wavelength_center_nm": 1533.47,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D956 1532.68nm",
+      "model": "SO-SFP-L120DH-D956",
+      "wavelength_center_nm": 1532.68,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D957 1531.90nm",
+      "model": "SO-SFP-L120DH-D957",
+      "wavelength_center_nm": 1531.9,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D958 1531.12nm",
+      "model": "SO-SFP-L120DH-D958",
+      "wavelength_center_nm": 1531.12,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D959 1530.33nm",
+      "model": "SO-SFP-L120DH-D959",
+      "wavelength_center_nm": 1530.33,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    },
+    {
+      "label": "DWDM D960 1529.55nm",
+      "model": "SO-SFP-L120DH-D960",
+      "wavelength_center_nm": 1529.55,
+      "host_interface_name": [
+        "SFF-8431",
+        "SFF-8432",
+        "SFF-8472"
+      ],
+      "standards_code": [
+        "G.694.1",
+        "FE",
+        "GbE",
+        "STM4/OC12",
+        "STM1/OC3",
+        "1G FC",
+        "CPRI Opt, 1, 2",
+        "OBSAI 1x"
+      ],
+      "bit_rate_gbps": [
+        0.1,
+        1.25
+      ]
+    }
+  ]
+}

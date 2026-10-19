@@ -1,0 +1,94 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-GE-FE-FX"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1360.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [
+    "SGMII"
+  ],
+  "media_interface_name": [
+    "100Base-FX"
+  ],
+  "standards_code": [
+    "100Base-FX",
+    "FE",
+    "SGMII"
+  ],
+  "bit_rate_gbps": [
+    100.0,
+    125.0
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    0.55,
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -20.0
+  ],
+  "tx_power_max_dbm": [
+    -14.0
+  ],
+  "rx_sensitivity_dbm": [
+    -30.0
+  ],
+  "rx_overload_dbm": [
+    -8.0
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -31.0
+  ],
+  "los_hysteresis_db": [
+    1.0
+  ],
+  "penalties": [],
+  "notes": "Technology listed as Grey SFP. Transmission media: MM (2x LC). Typical reach: 550m@62.5/125μm, 2km@50/125μm. Power budget 0 – 10dB. Footnote 1): Average power for TX output and RX min/overload. Footnote 2): Minimum input power measured @ 155Mbps, BER 1x10-12, PRBS 231-1 (bit rate support table states 100 to 125Mbps). Transmitter minimum output printed as -20dB (max as -14dBm). Receiver wavelength range 1260nm – 1600nm. Storage temperature -40°C to +85°C. Operating temperature table shows -0°C to +70°C. Power consumption stated as < 1.0W. DDM: Yes.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-GE-FE-FX",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Clarify whether tx_power_min -20dB is -20dBm. Schema bit_rate_gbps may need Mbps variant for FE modules. Power budget 0–10dB has no dedicated schema field."
+}

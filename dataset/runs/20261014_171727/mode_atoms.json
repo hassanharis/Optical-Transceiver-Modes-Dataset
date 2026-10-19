@@ -1,0 +1,229 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-L80D-Dxxx",
+      "SO-SFP-L80D-Dxxx-E",
+      "SO-SFP-L80D-D919",
+      "SO-SFP-L80D-D919-E",
+      "SO-SFP-L80D-D920",
+      "SO-SFP-L80D-D920-E",
+      "SO-SFP-L80D-D921",
+      "SO-SFP-L80D-D921-E",
+      "SO-SFP-L80D-D922",
+      "SO-SFP-L80D-D922-E",
+      "SO-SFP-L80D-D923",
+      "SO-SFP-L80D-D923-E",
+      "SO-SFP-L80D-D924",
+      "SO-SFP-L80D-D924-E",
+      "SO-SFP-L80D-D925",
+      "SO-SFP-L80D-D925-E",
+      "SO-SFP-L80D-D926",
+      "SO-SFP-L80D-D926-E",
+      "SO-SFP-L80D-D927",
+      "SO-SFP-L80D-D927-E",
+      "SO-SFP-L80D-D928",
+      "SO-SFP-L80D-D928-E",
+      "SO-SFP-L80D-D929",
+      "SO-SFP-L80D-D929-E",
+      "SO-SFP-L80D-D930",
+      "SO-SFP-L80D-D930-E",
+      "SO-SFP-L80D-D931",
+      "SO-SFP-L80D-D931-E",
+      "SO-SFP-L80D-D932",
+      "SO-SFP-L80D-D932-E",
+      "SO-SFP-L80D-D933",
+      "SO-SFP-L80D-D933-E",
+      "SO-SFP-L80D-D934",
+      "SO-SFP-L80D-D934-E",
+      "SO-SFP-L80D-D935",
+      "SO-SFP-L80D-D935-E",
+      "SO-SFP-L80D-D936",
+      "SO-SFP-L80D-D936-E",
+      "SO-SFP-L80D-D937",
+      "SO-SFP-L80D-D937-E",
+      "SO-SFP-L80D-D938",
+      "SO-SFP-L80D-D938-E",
+      "SO-SFP-L80D-D939",
+      "SO-SFP-L80D-D939-E",
+      "SO-SFP-L80D-D940",
+      "SO-SFP-L80D-D940-E",
+      "SO-SFP-L80D-D941",
+      "SO-SFP-L80D-D941-E",
+      "SO-SFP-L80D-D942",
+      "SO-SFP-L80D-D942-E",
+      "SO-SFP-L80D-D943",
+      "SO-SFP-L80D-D943-E",
+      "SO-SFP-L80D-D944",
+      "SO-SFP-L80D-D944-E",
+      "SO-SFP-L80D-D945",
+      "SO-SFP-L80D-D945-E",
+      "SO-SFP-L80D-D946",
+      "SO-SFP-L80D-D946-E",
+      "SO-SFP-L80D-D947",
+      "SO-SFP-L80D-D947-E",
+      "SO-SFP-L80D-D948",
+      "SO-SFP-L80D-D948-E",
+      "SO-SFP-L80D-D949",
+      "SO-SFP-L80D-D949-E",
+      "SO-SFP-L80D-D950",
+      "SO-SFP-L80D-D950-E",
+      "SO-SFP-L80D-D951",
+      "SO-SFP-L80D-D951-E",
+      "SO-SFP-L80D-D952",
+      "SO-SFP-L80D-D952-E",
+      "SO-SFP-L80D-D953",
+      "SO-SFP-L80D-D953-E",
+      "SO-SFP-L80D-D954",
+      "SO-SFP-L80D-D954-E",
+      "SO-SFP-L80D-D955",
+      "SO-SFP-L80D-D955-E",
+      "SO-SFP-L80D-D956",
+      "SO-SFP-L80D-D956-E",
+      "SO-SFP-L80D-D957",
+      "SO-SFP-L80D-D957-E",
+      "SO-SFP-L80D-D958",
+      "SO-SFP-L80D-D958-E",
+      "SO-SFP-L80D-D959",
+      "SO-SFP-L80D-D959-E",
+      "SO-SFP-L80D-D960",
+      "SO-SFP-L80D-D960-E"
+    ],
+    "wavelength_center_nm": [
+      1562.23,
+      1561.42,
+      1560.61,
+      1559.79,
+      1558.98,
+      1558.17,
+      1557.36,
+      1556.55,
+      1555.75,
+      1554.94,
+      1554.13,
+      1553.33,
+      1552.52,
+      1551.72,
+      1550.92,
+      1550.12,
+      1549.32,
+      1548.51,
+      1547.72,
+      1546.92,
+      1546.12,
+      1545.32,
+      1544.53,
+      1543.73,
+      1542.94,
+      1542.14,
+      1541.35,
+      1540.56,
+      1539.77,
+      1538.98,
+      1538.19,
+      1537.4,
+      1536.61,
+      1535.82,
+      1535.04,
+      1534.25,
+      1533.47,
+      1532.68,
+      1531.9,
+      1531.12,
+      1530.33,
+      1529.55
+    ],
+    "frame": [
+      "FE",
+      "GbE",
+      "STM4/OC12",
+      "STM1/OC3",
+      "1G FC",
+      "CPRI Opt, 1, 2",
+      "OBSAI 1x"
+    ],
+    "bit_rate_gbps": [
+      0.1,
+      1.25
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "ITU-T G.694.1",
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_min_nm": [
+      1520.0
+    ],
+    "wavelength_max_nm": [
+      1566.0
+    ],
+    "wavelength_band": [
+      "DWDM"
+    ],
+    "frequency_min_thz": [
+      191.9
+    ],
+    "frequency_max_thz": [
+      196.0
+    ],
+    "channel_spacing_ghz": [
+      100.0
+    ],
+    "channel_total": [
+      42
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -20.0,
+    "temp_max_c": 75.0,
+    "power_consumption_w": [
+      1.5
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      0.0
+    ],
+    "tx_power_max_dbm": [
+      5.0
+    ],
+    "rx_sensitivity_dbm": [
+      -28.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "cd_tolerance_ps_nm": [
+      2080.0
+    ],
+    "los_assert_dbm": [
+      -42.0
+    ],
+    "los_deassert_dbm": [
+      -29.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Power budget: 8 – 28dB. Power consumption is stated as < 1.5W. Dispersion tolerance is stated as Typical 2080ps/nm. Standard operating temperature is 0°C to +70°C; extended-temperature (-E) models are -20°C to +75°C. Storage temperature is -40°C to +85°C. Transmitter output power is average power. Receiver minimum input power and overload are specified at 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back. LOS Assert is stated as Min -42dBm; LOS De-assert as Max -29dBm; LOS Hysteresis as Min 0.5dB.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-L80D-Dxxx & Dxxx-E",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Add fields for power-budget range, storage-temperature range, protocol support, diagnostic monitoring, and inequality or typical-value qualifiers."
+  }
+}

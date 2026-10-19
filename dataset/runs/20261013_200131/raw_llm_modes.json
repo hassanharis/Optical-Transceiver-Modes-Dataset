@@ -1,0 +1,16 @@
+{
+  "modes": [
+    {
+      "label": "1442120G1 SFP 1000Base-BX-D 10km",
+      "model": "1442120G1",
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "1000Base-BX-D"
+    },
+    {
+      "label": "1442120G1-C SFP 1000Base-BX-D 10km",
+      "model": "1442120G1-C",
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "1000Base-BX-D"
+    }
+  ]
+}

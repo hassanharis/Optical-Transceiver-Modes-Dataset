@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"400GBase-PLR4\",\n      \"frame\": \"8x53.125Gbps (PAM4)\",\n      \"standards_code\": \"400GBase-PLR4\",\n      \"baud_rate_gbaud\": 53.125,\n      \"bit_rate_gbps\": 400.0,\n      \"rx_sensitivity_dbm\": -6.1,\n      \"rx_overload_dbm\": 4.8\n    },\n    {\n      \"label\": \"400G PLR4 optical lane\",\n      \"frame\": \"4x100Gbps\",\n      \"standards_code\": \"PLR4\",\n      \"baud_rate_gbaud\": 53.125,\n      \"bit_rate_gbps\": 106.25,\n      \"rx_sensitivity_dbm\": -4.1,\n      \"rx_overload_dbm\": 5.8\n    },\n    {\n      \"label\": \"400GAUI-8 electrical\",\n      \"frame\": \"8x53.125Gbps (PAM4)\",\n      \"standards_code\": \"IEEE 802.3bs\",\n      \"baud_rate_gbaud\": 26.5625,\n      \"bit_rate_gbps\": 425.0,\n      \"rx_sensitivity_dbm\": -6.1,\n      \"rx_overload_dbm\": 4.8\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

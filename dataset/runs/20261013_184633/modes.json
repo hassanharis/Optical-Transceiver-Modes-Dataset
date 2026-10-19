@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "Low-rate register (25.78 Gbps, Rx optical band)",
+      "form_factor": "SFP28",
+      "wavelength_min_nm": 770.0,
+      "host_interface_name": "SFP28",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "High-rate register (up to 28 Gbps, Tx 850 nm)",
+      "form_factor": "SFP+",
+      "wavelength_min_nm": 840.0,
+      "host_interface_name": "SFP+ MSA",
+      "bit_rate_gbps": 28.0
+    }
+  ]
+}

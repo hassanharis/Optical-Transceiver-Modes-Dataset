@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "LS-SC2510-20IN2 TX 1270 nm (Industrial)",
+      "model": "LS-SC2510-20IN2",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "G.987.1",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "LS-SC2510-20IN2 RX 1577 nm (Industrial)",
+      "model": "LS-SC2510-20IN2",
+      "wavelength_min_nm": 1575.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1577.0,
+      "standards_code": "XGSPON",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "LS-SC2510-20CN2 TX 1270 nm (Commercial)",
+      "model": "LS-SC2510-20CN2",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "G.987.1",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "LS-SC2510-20CN2 RX 1577 nm (Commercial)",
+      "model": "LS-SC2510-20CN2",
+      "wavelength_min_nm": 1575.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1577.0,
+      "standards_code": "XGSPON",
+      "bit_rate_gbps": 9.953
+    }
+  ]
+}

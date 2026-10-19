@@ -1,0 +1,78 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\xp-85b1-02da-4.pdf",
+  "page_count": 9,
+  "table_count": 14,
+  "markdown_chars": 11538,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 14
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 9
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 8,
+      "label": null,
+      "rows": 3
+    }
+  ]
+}

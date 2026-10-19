@@ -1,0 +1,133 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP28-4xSFP28-AOCxM",
+    "SO-QSFP28-4XSFP28-AOC1M",
+    "SO-QSFP28-4XSFP28-AOC2M",
+    "SO-QSFP28-4XSFP28-AOC3M",
+    "SO-QSFP28-4XSFP28-AOC4M",
+    "SO-QSFP28-4XSFP28-AOC5M",
+    "SO-QSFP28-4XSFP28-AOC6M",
+    "SO-QSFP28-4XSFP28-AOC7M",
+    "SO-QSFP28-4XSFP28-AOC8M",
+    "SO-QSFP28-4XSFP28-AOC9M",
+    "SO-QSFP28-4XSFP28-AOC10M",
+    "SO-QSFP28-4XSFP28-AOC12M",
+    "SO-QSFP28-4XSFP28-AOC15M",
+    "SO-QSFP28-4XSFP28-AOC20M",
+    "SO-QSFP28-4XSFP28-AOC30M",
+    "SO-QSFP28-4XSFP28-AOC50M",
+    "SO-QSFP28-4XSFP28-AOC70M"
+  ],
+  "form_factor": [
+    "QSFP28",
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8436",
+    "SFF-8665",
+    "SFF-8402",
+    "IEEE802.3bj"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [],
+  "wavelength_max_nm": [],
+  "wavelength_center_nm": [],
+  "wavelength_band": [],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [],
+  "fiber_type": [
+    "MMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [],
+  "host_interface_name": [
+    "QSFP28",
+    "SFP28",
+    "SFF-8665",
+    "SFF-8402"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [
+    "100GBase"
+  ],
+  "standards_code": [
+    "100GBase",
+    "IEEE802.3bj",
+    "25G Ethernet",
+    "Infiniband QDR",
+    "Infiniband SDR",
+    "Infiniband DDR"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    100,
+    25
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    0.07
+  ],
+  "tx_power_min_dbm": [],
+  "tx_power_max_dbm": [],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [
+    "RS_528_514"
+  ],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [
+    5e-05
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [],
+  "los_deassert_dbm": [],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Active Optical Cable (AOC) break-out assembly, not a pluggable transceiver module. Forward Error Correction required in host per IEEE802.3bj; without FEC BER will be less than 5 x 10^-5. Low power (SFP28) stated as <1W (no exact W value). Storage temperature -20°C to +85°C. Cable lengths 1m to 70m (ordering codes); other lengths available via sales. Breakout point distances vary by total length (see MECHANICAL DRAWING). RoHS compliant. Digital diagnostics via I2C.",
+  "provenance_datasheet_sections": [
+    "SO-QSFP28-4xSFP28-AOCxM",
+    "OVERVIEW",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION",
+    "Ordering code",
+    "Description",
+    "MECHANICAL DRAWING"
+  ],
+  "suggestions": "Datasheet omits optical wavelength, TX/RX power, and host/media interface ID hex codes. power_consumption_w could accept upper-bound strings like '<1W' or a dedicated field for AOC/cable assemblies."
+}

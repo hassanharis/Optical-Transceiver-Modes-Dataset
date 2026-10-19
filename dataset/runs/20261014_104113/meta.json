@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:41:13.285190+00:00",
+  "source_file": "C:\\Haris\\datasheets\\sfp64gfc-sw_cdr_semtech_transceiver_datasheet_v1p0.pdf",
+  "page_count": 12,
+  "table_count": 14,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 20.921,
+    "extract_atoms": 36.6,
+    "store_run": 0.014,
+    "synthesize_modes": 64.804,
+    "store_modes": 0.003,
+    "total": 122.342
+  }
+}

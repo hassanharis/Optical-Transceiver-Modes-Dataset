@@ -1,0 +1,126 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "host_interface_name": [
+      "400GAUI-8",
+      "100GAUI-2"
+    ],
+    "media_interface_name": [
+      "400GBASE-FR4",
+      "100GBASE-FR1"
+    ],
+    "frame": [
+      "1x 400GAUI-8 (8x 50G)",
+      "4x 100GAUI-2 (2x 50G)"
+    ],
+    "standards_code": [
+      "400GBASE-FR4",
+      "100GBASE-FR1",
+      "400GBASE-R",
+      "100GBASE-R"
+    ],
+    "bit_rate_gbps": [
+      425.0,
+      400.0
+    ],
+    "fec_type": [
+      "RS_GENERIC",
+      "RS_528_514"
+    ],
+    "number_of_lanes": [
+      4,
+      8
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-QSFP-DD-4C-FR4-4"
+    ],
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "QSFP-DD MSA",
+      "CMIS4.0",
+      "IEEE 802.3bj",
+      "400GBASE-FR4"
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      10.0
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -3.3
+    ],
+    "tx_power_max_dbm": [
+      3.5
+    ],
+    "rx_sensitivity_dbm": [
+      -7.3
+    ],
+    "rx_overload_dbm": [
+      3.5
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "los_assert_dbm": [
+      -15.0
+    ],
+    "los_deassert_dbm": [
+      -9.5
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Power budget 0–4.0 dB (no optical path penalties). FEC required on host per IEEE 802.3bj Reed Solomon RS(528,514). Optical parameters and receiver min/overload specified at BER 2.4×10⁻⁴. Tx/Rx power per lane is average power (footnote 3). Storage temperature -40°C to +85°C. Power consumption stated as < 10 W worst case. CMIS application code 2 enables 400G to 4×100G break-out.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP-DD-4C-FR4-4",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "APPLICATION CODE LIST",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

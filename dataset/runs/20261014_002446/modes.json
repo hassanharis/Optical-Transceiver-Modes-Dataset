@@ -1,0 +1,1012 @@
+{
+  "modes": [
+    {
+      "label": "LS-CWxx1G-80x 1270nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1270nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1290nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1290.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1290nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1290.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1310nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1310nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1330nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1330nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1350nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1350.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1350nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1350.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1370nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1370.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1370nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1370.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1390nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1390.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1390nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1390.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1410nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1410.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1410nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1410.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1430nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1430.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1430nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1430.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1450nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1450.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1450nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1450.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1470nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1470nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1490nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1490nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1510nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1510nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1530nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1530nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1550nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1550nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1570nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1570nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1590nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1590nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80x 1610nm GE",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80x 1610nm FC",
+      "model": "LS-CWxx1G-80x",
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1270nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1270nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1290nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1290.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1290nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1290.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1310nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1310nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1330nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1330nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1350nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1350.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1350nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1350.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1370nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1370.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1370nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1370.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1390nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1390.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1390nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1390.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1410nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1410.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1410nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1410.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1430nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1430.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1430nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1430.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1450nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1450.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1450nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1450.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1470nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1470nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1490nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1490nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1510nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1510nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1530nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1530nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1550nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1550nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1570nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1570nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1590nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1590nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80C 1610nm GE",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80C 1610nm FC",
+      "model": "LS-CWxx1G-80C",
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1270nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1270nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1290nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1290.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1290nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1290.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1310nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1310nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1330nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1330nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1350nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1350.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1350nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1350.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1370nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1370.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1370nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1370.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1390nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1390.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1390nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1390.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1410nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1410.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1410nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1410.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1430nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1430.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1430nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1430.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1450nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1450.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1450nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1450.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1470nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1470nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1490nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1490nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1510nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1510nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1530nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1530nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1550nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1550nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1570nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1570nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1590nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1590nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "LS-CWxx1G-80I 1610nm GE",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-CWxx1G-80I 1610nm FC",
+      "model": "LS-CWxx1G-80I",
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1270nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1270nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1290nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1290.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1290nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1290.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1310nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1310nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1330nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1330nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1350nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1350.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1350nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1350.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1370nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1370.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1370nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1370.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1390nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1390.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1390nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1390.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1410nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1410.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1410nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1410.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1430nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1430.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1430nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1430.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1450nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1450.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1450nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1450.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1470nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1470nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1490nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1490nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1510nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1510nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1530nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1530nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1550nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1550nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1570nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1570nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1590nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1590nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1610nm GE",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SFP-CWxx24-L8Dx 1610nm FC",
+      "model": "SFP-CWxx24-L8Dx",
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063
+    }
+  ]
+}

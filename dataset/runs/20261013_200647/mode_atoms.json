@@ -1,0 +1,140 @@
+{
+  "multi_valued": {
+    "model": [
+      "HFBR-5963LZ",
+      "HFBR-5963ALZ",
+      "HFBR-5963xxZ"
+    ],
+    "form_factor": [
+      "SFF",
+      "2 x 5 DIP"
+    ],
+    "wavelength_center_nm": [
+      1300.0,
+      1308.0
+    ],
+    "power_consumption_w": [
+      0.4,
+      0.64,
+      0.225,
+      0.44
+    ],
+    "standards_code": [
+      "OC-3",
+      "STM-1",
+      "Fast Ethernet",
+      "FDDI",
+      "100Base-FX",
+      "SONET OC-3",
+      "SDH STM-1"
+    ],
+    "baud_rate_gbaud": [
+      25.0,
+      125.0,
+      155.52
+    ],
+    "modulation_format": [
+      "NRZI",
+      "NRZI_4B5B"
+    ],
+    "tx_power_min_dbm": [
+      -19.0,
+      -20.0,
+      -22.5,
+      -23.5
+    ],
+    "rx_sensitivity_dbm": [
+      -30.0,
+      -31.0,
+      -31.8
+    ],
+    "extinction_ratio_db": [
+      -47.0,
+      -27.0
+    ],
+    "los_assert_dbm": [
+      -31.0,
+      -33.0
+    ]
+  },
+  "general": {
+    "vendor": "Broadcom",
+    "standards_claimed": [
+      "ATM Forum",
+      "FDDI PMD",
+      "IEEE802.3u",
+      "100Base-FX",
+      "SONET OC-3",
+      "SDH STM-1"
+    ],
+    "emitter_type": [
+      "LED_INGAASP",
+      "LED"
+    ],
+    "photodetector_type": [
+      "PIN_InGaAs",
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      1270.0
+    ],
+    "wavelength_max_nm": [
+      1380.0
+    ],
+    "mounting_type": [
+      "solder_post",
+      "solder_wave",
+      "hand solder"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF_OM1",
+      "MMF 50/125µm",
+      "MMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "tx_power_max_dbm": [
+      -14.0
+    ],
+    "rx_overload_dbm": [
+      -14.0
+    ],
+    "pre_fec_ber_threshold": [
+      2.5e-10
+    ],
+    "post_fec_ber_target": [
+      2.5e-10
+    ],
+    "los_deassert_dbm": [
+      -45.0
+    ],
+    "optical_extinction_ratio_db": [
+      -47.0,
+      -27.0
+    ],
+    "los_hysteresis_db": [
+      1.5
+    ],
+    "penalties": [],
+    "notes": "HFBR-5963LZ case temperature 0 °C to +70 °C; HFBR-5963ALZ –40 °C to +85 °C. Supply +3.3 V (2.97–3.63 V). Tx output power and extinction ratio differ for 62.5/125 µm (NA=0.275) vs 50/125 µm (NA=0.20) fiber; BOL vs EOL tx power rows apply. Rx input power limits split OC-3 vs FE and window-edge vs eye-center (Notes a–d). Signal Detect assert PA is PD+1.5 dB with table max –31–33 dBm avg. BER ≤2.5×10^–10 over dynamic range per Note b. Optical power measurements at 1 m fiber with cladding modes removed; 25 MBd (12.5 MHz square-wave) for several tx optical tests.",
+    "provenance_datasheet_sections": [
+      "Description",
+      "Features",
+      "Applications",
+      "Transmitter Section",
+      "Receiver Section",
+      "Package",
+      "Ordering Information",
+      "Recommended Operating Conditions",
+      "Transmitter Electrical Characteristics",
+      "Receiver Electrical Characteristics",
+      "Transmitter Optical Characteristics",
+      "Receiver Optical and Electrical Characteristics",
+      "Transceiver Optical Power Budget versus Link Length"
+    ],
+    "suggestions": "Add schema fields for supply voltage, signal detect assert/deassert times, and jitter components (SJ/DCD/DDJ/RJ) if useful for legacy MMF modules. Consider per-SKU temperature objects when temp_min_c/temp_max_c are single floats."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-doc001-xxxc-so-osfp-800g-aec-c5.2-r6.2.pdf",
+  "page_count": 3,
+  "table_count": 3,
+  "markdown_chars": 6946,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 25
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

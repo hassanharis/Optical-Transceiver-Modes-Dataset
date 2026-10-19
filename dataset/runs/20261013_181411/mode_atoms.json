@@ -1,0 +1,134 @@
+{
+  "multi_valued": {
+    "form_factor": [
+      "OSFP",
+      "OSFP_RHS"
+    ],
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "standards_code": [
+      "2xFR4",
+      "IEEE 802.3dj-2024",
+      "IEEE 802.3dj"
+    ],
+    "tx_power_max_dbm": [
+      4.9,
+      4.8
+    ],
+    "rx_overload_dbm": [
+      4.9,
+      4.8
+    ],
+    "number_of_lanes": [
+      4,
+      8
+    ]
+  },
+  "general": {
+    "vendor": "XGIGA",
+    "model": [
+      "OP27PI8-02D-R"
+    ],
+    "standards_claimed": [
+      "OSFP MSA rev5.0",
+      "OIF-CMIS rev5.1",
+      "IEEE 802.3dj-2024",
+      "ROHS"
+    ],
+    "emitter_type": [
+      "LASER_SILICON",
+      "Laser"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_center_nm": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable",
+      "pluggable_hot_electrical"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      30.0
+    ],
+    "media_interface_name": [
+      "2xFR4"
+    ],
+    "baud_rate_gbaud": [
+      113.4375
+    ],
+    "bit_rate_gbps": [
+      226.875
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -1.8
+    ],
+    "rx_sensitivity_dbm": [
+      -3.7
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "penalties": [],
+    "notes": "Datasheet distributed via https://www.amphenol-cs.com/optics.html while footer identifies XGIGA Communication Technology Co.,ltd. Total Output Average Launch Power and several electrical parameters marked TBD. Transmit OMA per Lane (min) is 0.8 dBm for TDECQ<0.9 dB and -0.1+TDECQ dBm for 0.9 dB≤TDECQ≤3.4 dB. Receiver Sensitivity (OMA) per Lane is -4.6+TECQ dBm for 0.9 dB≤TECQ≤SECQ (formula; SECQ not numerically defined in excerpt). Receiver sensitivity measured with PRBS31Q, BER 2.4×10^-4 per Optical Characteristics Note 2. Host must implement FEC; FEC type not specified on module. Supply Current Icc listed as 9090 mA at Vcc 3.3 V as printed. Signaling speed tolerance ± 50 ppm. Case temperature 0–70 °C without air flow. Optical receiver damage threshold 5.9 dBm per lane (Absolute Maximum Ratings and Optical Characteristics). Average launch Power off per lane max -16 dBm. RIN17.1 OMA max -139 dB/Hz.",
+    "provenance_datasheet_sections": [
+      "1.6T 2xFR4 OSFP‐RHS (retimer)",
+      "OP27PI8-02D-R",
+      "PRODUCT FEATURES",
+      "REFERENCE STANDARD",
+      "APPLICATIONS",
+      "PRODUCT SPECIFICATION",
+      "I. Absolute Maximum Ratings",
+      "II. Recommended Operating Conditions",
+      "III. Optical Characteristics",
+      "IV. Electrical Characteristics",
+      "V. Pin Assignment"
+    ],
+    "suggestions": "Clarify whether commercial brand is Amphenol or XGIGA. Add host/media interface IDs per OSFP MSA and IEEE 802.3dj. Replace TBD fields. Define SECQ for receiver sensitivity row. Distinguish OMA vs average power limits in schema if both are used."
+  }
+}

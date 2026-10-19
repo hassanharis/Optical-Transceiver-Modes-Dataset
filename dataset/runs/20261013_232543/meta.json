@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:25:43.892901+00:00",
+  "source_file": "C:\\Haris\\datasheets\\l9-sc315501-60ctc.pdf",
+  "page_count": 4,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.182,
+    "extract_atoms": 29.771,
+    "store_run": 0.008,
+    "synthesize_modes": 78.388,
+    "store_modes": 0.005,
+    "total": 113.353
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLF1323F2XTR",
+    "FTLF1323F2xTR",
+    "FTLF1323S2xTR",
+    "FTLF1323F2GTR",
+    "FTLF1323F2MTR",
+    "FTLF1323F2HTR"
+  ],
+  "form_factor": [
+    "SFF",
+    "2x5 SFF"
+  ],
+  "standards_claimed": [
+    "Small Form Factor Multi-Sourcing Agreement (MSA)",
+    "SONET OC-3 SR-1",
+    "SDH STM I-1",
+    "SONET OC-3 IR-1",
+    "SDH STM S-1.1",
+    "Bellcore GR-253",
+    "ITU-T G.957",
+    "IEEE Std 802.3 Clause 38 PMD Type 1000BASE-LX",
+    "FC-PI 13.0"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1260,
+    1261
+  ],
+  "wavelength_max_nm": [
+    1360,
+    1600
+  ],
+  "wavelength_center_nm": [
+    1310
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "2x5 pin SFF footprint",
+    "Mounting Studs"
+  ],
+  "connector_type": [
+    "LC",
+    "Duplex LC"
+  ],
+  "fiber_type": [
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": -40,
+  "temp_max_c": 85,
+  "power_consumption_w": [
+    0.7
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "OC-3 SR-1",
+    "STM I-1",
+    "OC-3 IR-1",
+    "STM S-1.1",
+    "SONET OC-3",
+    "SDH STM-1"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": null,
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    15
+  ],
+  "tx_power_min_dbm": [
+    -15
+  ],
+  "tx_power_max_dbm": [
+    -8
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -28
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-10
+  ],
+  "extinction_ratio_db": [
+    8.2
+  ],
+  "los_assert_dbm": [
+    -34
+  ],
+  "los_deassert_dbm": [
+    -45
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    8.2
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5,
+    5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Data rate stated as 125–156 Mb/sec (not Gbps). Rx Sensitivity rows list Min -28 dBm and Max -8 dBm; Min taken as sensitivity. Supply current Icc Typ 190 mA, Max 300 mA at Vcc 3.0–3.6 V; power also stated as <700 mW typical. Product Selection line includes ordering code letters (E: 40GBASE-SR4, 1: First generation, C: Commercial temperature) for FTLF1323F2xTR variants. Link length 15 km uses 0.55 dB/km attenuation per GR-253 CORE (indicative). Rx sensitivity measured with PRBS 2^23-1, worst-case extinction ratio. BER tested with PRBS 2^31-1. Copyright/legal entity: Coherent Corp. (2023).",
+  "provenance_datasheet_sections": [
+    "FTLF1323F2XTR",
+    "OC-3 SR-1/STM I-1 or OC-3 IR-1/STM S-1.1 2x5 SFF Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "Product Selection",
+    "FTLF1323F2xTR",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (TOP = -40 to 85 °C, VCC = 3.0 to 3.6 Volts)",
+    "Optical Characteristics (TOP = -40 to 85°C, VCC = 3.0 to 3.6 Volts)",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "VIII. Mechanical Specifications"
+  ],
+  "suggestions": "Add schema fields for data rate in Mb/s, spectral width (nm), RIN (dB/Hz), and jitter in UI for legacy SONET/SDH SFF modules."
+}

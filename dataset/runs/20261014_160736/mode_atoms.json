@@ -1,0 +1,112 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "25GbE",
+      "10GbE-WAN",
+      "10GbE-LAN"
+    ],
+    "standards_code": [
+      "25GBASE-SR",
+      "25GbE",
+      "10GbE-WAN",
+      "10GbE-LAN"
+    ],
+    "bit_rate_gbps": [
+      25.78,
+      9.953,
+      10.312,
+      28.0
+    ],
+    "reach_km": [
+      0.07,
+      0.1
+    ],
+    "post_fec_ber_target": [
+      5e-05,
+      1e-05
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP28-SR"
+    ],
+    "form_factor": [
+      "SFP28"
+    ],
+    "standards_claimed": [
+      "25GBASE-SR",
+      "SFP28",
+      "SFF-8402",
+      "IEEE 802.3"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_min_nm": [
+      840.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      1
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM3",
+      "MMF_OM4"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "media_interface_name": [
+      "25GBASE-SR"
+    ],
+    "tx_power_min_dbm": [
+      -8.4
+    ],
+    "tx_power_max_dbm": [
+      2.4
+    ],
+    "rx_sensitivity_dbm": [
+      -10.3
+    ],
+    "rx_overload_dbm": [
+      3.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -13.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Power budget 0 – 1.9dB @ 25GbE. Power consumption stated as < 1W. Transmitter output power and receiver min/overload are average power (footnote 3). Receiver minimum input power -10.3dBm and overload +3.0dBm at 25.78 Gbps (25GE) and BER 5E-5 (footnote 4). Overview states BER 1 x 10^-5 for 25G Ethernet optical parameters; FEC required on host. CDR engaged: 25.78 Gbps; CDR disengaged: 9.953 / 10.312 Gbps. Storage temperature -40°C to +85°C. Title lists 1.9dB power budget. Transmit max printed as +2.4Bm.",
+    "provenance_datasheet_sections": [
+      "SO-SFP28-SR",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "CDR RATE SELECT LOGIC",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether form_factor should include SFP+ when both SFP+ and SFP28 are named. Reach values are given in meters (70m@OM3, 100m@OM4); stored as km per schema. Consider separate reach_m field to avoid unit conversion."
+  }
+}

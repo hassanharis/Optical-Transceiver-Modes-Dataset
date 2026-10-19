@@ -1,0 +1,122 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TQ2023-S31C-SO"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "SFF-8636",
+    "SFF-8679",
+    "SFF-8661",
+    "100G-ER1 MSA",
+    "OIF CEI-28G-VSR"
+  ],
+  "wavelength_min_nm": [
+    1307.0
+  ],
+  "wavelength_max_nm": [
+    1313.0
+  ],
+  "wavelength_center_nm": [
+    1311.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "channel_total": [
+    1
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    4.0
+  ],
+  "host_interface_name": [
+    "CEI-28G-VSR"
+  ],
+  "media_interface_name": [
+    "100G-ER1 MSA"
+  ],
+  "frame": [
+    "4x 25.78Gbps"
+  ],
+  "standards_code": [
+    "100G-ER1",
+    "100GbE"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    103.12,
+    100.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    1.7
+  ],
+  "tx_power_max_dbm": [
+    7.1
+  ],
+  "rx_sensitivity_dbm": [
+    -13.8,
+    -14.5,
+    -16.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "fec_type": [
+    "KP4"
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    5.0,
+    5.5
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -10.0
+  ],
+  "optical_extinction_ratio_db": [
+    5.0,
+    5.5
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Aggregated line rate 103.12Gbps (footnote 1); line baud rate 53.125Gbd (footnote 2). Output power and minimum input power footnotes 3–4: average power; min receive power is informative. Typical values footnote 5. Receiver sensitivity, overload, and related specs footnote 6 at BER 2.4x10-4. Host system shall not have FEC activated; module includes KP4 FEC. OMA: TX min +4.7dBm max +7.9dBm; RX sensitivity OMA -13.8dBm. Power budget 10.1–18.5dB. Power consumption stated as < 4W. Storage temperature -40°C to +85°C. Transmission media listed as SM (2x LC).",
+  "provenance_datasheet_sections": [
+    "QSFP28 100G ER1 40KM",
+    "TQ2023-S31C-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

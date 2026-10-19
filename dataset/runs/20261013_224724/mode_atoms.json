@@ -1,0 +1,163 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1294.53,
+      1299.02,
+      1303.54,
+      1308.09
+    ],
+    "wavelength_max_nm": [
+      1296.59,
+      1301.09,
+      1305.63,
+      1310.19
+    ],
+    "standards_code": [
+      "100GBASE-LR4",
+      "OTU4 4I1-9D1F",
+      "4WDM"
+    ],
+    "baud_rate_gbaud": [
+      25.78125,
+      27.9525
+    ],
+    "bit_rate_gbps": [
+      25.78,
+      27.95,
+      103.1,
+      112.0
+    ],
+    "reach_km": [
+      10.0,
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -4.3,
+      -0.6
+    ],
+    "tx_power_max_dbm": [
+      4.0,
+      4.5,
+      10.0,
+      10.5
+    ],
+    "rx_sensitivity_dbm": [
+      -12.5,
+      -10.0,
+      -8.6,
+      -8.4
+    ],
+    "rx_overload_dbm": [
+      4.0,
+      4.5,
+      5.5,
+      10.0
+    ],
+    "extinction_ratio_db": [
+      4.0,
+      6.5
+    ],
+    "los_assert_dbm": [
+      -24.0,
+      -14.0,
+      -13.6
+    ],
+    "los_deassert_dbm": [
+      -13.5,
+      -11.6
+    ]
+  },
+  "general": {
+    "vendor": "Finisar",
+    "model": [
+      "FTLC1154SDPLD"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "IEEE 802.3ba 100GBASE-LR4",
+      "IEEE 802.3bm CAUI-4",
+      "OTU4 4I1-9D1F",
+      "ITU-T G.959.1",
+      "ITU-T G.709",
+      "G.sup39",
+      "RoHS-6 Directive 2011/65/EU",
+      "SFF-8665",
+      "SFF-8679",
+      "4WDM MSA"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "wavelength_band": [
+      "LAN-WDM"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF_G652"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "power_consumption_w": [
+      4.5
+    ],
+    "host_interface_name": [
+      "CAUI-4"
+    ],
+    "pre_fec_ber_threshold": [
+      1e-06
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "transmitter_reflectance_db": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      4.0,
+      6.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      20.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      1.5
+    ],
+    "penalties": [],
+    "notes": "FEATURES lists maximum link length 10 km on SMF; title and V. General Specifications list 20 km (Lmax1) on SMF per G.652. OTU4 receiver sensitivity and optical path penalty at BER 10^-6 (pre-FEC) per G.sup39; post-FEC BER 10^-12 required for OTU4 112 Gb/s per note in V. General Specifications. Power consumption ≤4.5 W when stabilized (Tx and Rx CDR locked); may be ≤5 W during locking acquisition. Supply current Icc max 1.6 A. Stressed Receiver Sensitivity (LR4) measured with vertical eye closure penalty 1.8 dB max, J2 0.30 UI, J9 0.47 UI; with 4WDM MSA conformance test signal at TP3 for 5x10^-5 BER.",
+    "provenance_datasheet_sections": [
+      "FTLC1154SDPLD",
+      "100G 20km eLR4 QSFP28 Optical Transceiver Module (WDM-20)",
+      "FEATURES",
+      "APPLICATIONS",
+      "Product Selection",
+      "II. Absolute Maximum Ratings",
+      "III. Electrical Characteristics  (EOL, TOP = -40 to +85 °C, VCC = 3.135 to 3.465 Volts)",
+      "IV. Optical Characteristics (EOL, TOP = -40 to 85 °C, VCC = 3.315 to 3.465 Volts)",
+      "OTU4 4I1-9D1F Operation",
+      "100GBASE-LR4 Operation",
+      "V. General Specifications",
+      "VI. Environmental Specifications",
+      "XI. Mechanical Specifications"
+    ],
+    "suggestions": "Datasheet uses OTU4 code 4I1-9D1F in tables/headings and 4I19D1F in opening paragraph; both captured only where printed. Clarify whether photodetector is PIN. Explicit modulation format not stated. No structured penalty columns (e.g. Rx OSNR @ X dB penalty); Optical Path Penalty 1.5 dB max is a single limit without paired penalized OSNR/sensitivity rows."
+  }
+}

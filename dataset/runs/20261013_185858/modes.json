@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "QT-WDM-0203ASD 1000BASE-BX-U 1.25G TX",
+      "model": "QT-WDM-0203ASD",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "1000BASE-BX-U",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0203ASD OC-24-LR-1 1.063G RX",
+      "model": "QT-WDM-0203ASD",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "OC-24-LR-1",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "QT-WDM-0203ASID 1000BASE-BX-U 1.25G TX",
+      "model": "QT-WDM-0203ASID",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "1000BASE-BX-U",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0203ASID OC-24-LR-1 1.063G RX",
+      "model": "QT-WDM-0203ASID",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "OC-24-LR-1",
+      "bit_rate_gbps": 1.063
+    }
+  ]
+}

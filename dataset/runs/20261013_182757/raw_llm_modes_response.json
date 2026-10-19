@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"10GBASE-SR\",\n      \"wavelength_min_nm\": 840.0,\n      \"wavelength_max_nm\": 860.0,\n      \"wavelength_center_nm\": 850.0,\n      \"power_consumption_w\": 0.6,\n      \"standards_code\": \"10GBASE-SR\",\n      \"bit_rate_gbps\": 10.3125,\n      \"rx_sensitivity_dbm\": -11.1\n    },\n    {\n      \"label\": \"10GBASE-SW\",\n      \"wavelength_min_nm\": 840.0,\n      \"wavelength_max_nm\": 860.0,\n      \"wavelength_center_nm\": 850.0,\n      \"power_consumption_w\": 0.8,\n      \"standards_code\": \"10GBASE-SW\",\n      \"bit_rate_gbps\": 9.953,\n      \"rx_sensitivity_dbm\": -7.5\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,144 @@
+{
+  "modes": [
+    {
+      "label": "8.5 Gb/s average sensitivity",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.6,
+      "host_interface_name": "XFI",
+      "standards_code": "8.5G Fibre Channel",
+      "bit_rate_gbps": 8.5,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "9.95 Gb/s OC-192 average sensitivity",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.6,
+      "host_interface_name": "XFI",
+      "standards_code": "OC-192",
+      "bit_rate_gbps": 9.95,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "STM-64.2b average sensitivity",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.6,
+      "host_interface_name": "XFI",
+      "standards_code": "STM-64.2b",
+      "bit_rate_gbps": 9.95,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "10GBASE-ER CDRs off",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.4,
+      "host_interface_name": "SFP+",
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 10.3,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "10GBASE-EW CDRs off",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.5,
+      "host_interface_name": "SFP+",
+      "standards_code": "10GBASE-EW",
+      "bit_rate_gbps": 10.3,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "10G Fibre Channel average sensitivity",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.5,
+      "host_interface_name": "SFP+",
+      "standards_code": "10G Fibre Channel",
+      "bit_rate_gbps": 10.3,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "OTU2 average sensitivity",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.6,
+      "host_interface_name": "XFI",
+      "standards_code": "OTU2",
+      "bit_rate_gbps": 10.3,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "10.3 Gb/s stressed sensitivity OMA",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.6,
+      "host_interface_name": "XFI",
+      "standards_code": "OTU2",
+      "bit_rate_gbps": 10.3,
+      "rx_sensitivity_dbm": -1.0
+    },
+    {
+      "label": "10.7 Gb/s average sensitivity",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.6,
+      "host_interface_name": "XFI",
+      "standards_code": "STM-64.3b",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "OTU2e 10.7 Gb/s average sensitivity",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.7,
+      "host_interface_name": "XFI",
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "11.1 Gb/s OMA sensitivity",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.7,
+      "host_interface_name": "XFI",
+      "standards_code": "OTU1e",
+      "bit_rate_gbps": 11.1,
+      "rx_sensitivity_dbm": -15.0
+    },
+    {
+      "label": "11.3 Gb/s P1S1-2D2b OMA sensitivity",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.7,
+      "host_interface_name": "XFI",
+      "standards_code": "P1S1-2D2b",
+      "bit_rate_gbps": 11.3,
+      "rx_sensitivity_dbm": -15.0
+    },
+    {
+      "label": "11.3168 Gb/s max bit rate OMA sensitivity",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.7,
+      "host_interface_name": "XFI",
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 11.3168,
+      "rx_sensitivity_dbm": -15.0
+    },
+    {
+      "label": "Receiver optical center wavelength",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "power_consumption_w": 1.6,
+      "host_interface_name": "XFI",
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 11.3168,
+      "rx_sensitivity_dbm": -15.0
+    }
+  ]
+}

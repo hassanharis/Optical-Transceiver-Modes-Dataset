@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "800G OSFP 2xDR4+",
+      "power_consumption_w": 8.0,
+      "standards_code": "IEEE 802.3cu-2021",
+      "bit_rate_gbps": 800.0,
+      "tx_power_min_dbm": -3.2,
+      "tx_power_max_dbm": 4.4,
+      "rx_overload_dbm": 4.4
+    },
+    {
+      "label": "Per-lane OMA (TDECQ < 1.4 dB)",
+      "power_consumption_w": 8.0,
+      "standards_code": "800G Ethernet",
+      "bit_rate_gbps": 106.25,
+      "tx_power_min_dbm": -0.2,
+      "tx_power_max_dbm": 3.7,
+      "rx_overload_dbm": 3.7
+    },
+    {
+      "label": "Per-lane OMA (1.4 dB \u2264 TDECQ \u2264 3.4 dB)",
+      "power_consumption_w": 8.0,
+      "standards_code": "2xDR4+",
+      "bit_rate_gbps": 106.25,
+      "tx_power_min_dbm": -1.6,
+      "tx_power_max_dbm": 3.7,
+      "rx_overload_dbm": 3.7
+    },
+    {
+      "label": "Maximum power dissipation",
+      "power_consumption_w": 8.5,
+      "standards_code": "IEEE 802.3cu-2021",
+      "bit_rate_gbps": 800.0,
+      "tx_power_min_dbm": -3.2,
+      "tx_power_max_dbm": 10.4,
+      "rx_overload_dbm": 4.4
+    }
+  ]
+}

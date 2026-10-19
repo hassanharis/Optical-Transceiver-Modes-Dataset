@@ -1,0 +1,60 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-M85100-SR4C"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "IEEE Std 802.3bm",
+    "SFF-8665"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "MPO12"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    2.5
+  ],
+  "standards_code": [
+    "100GBASE-SR4",
+    "IEEE 802.3bm"
+  ],
+  "bit_rate_gbps": [
+    25.78125
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "penalties": [],
+  "notes": "Transmission data rate up to 25.78125 Gbps per channel; module described as 4×25Gbps. Reach stated as 70 m on OM3 or 100 m on OM4 with FEC (units meters, not km). Single +3.3V power supply. Electrical interface: 38 pins edge connector. RoHS complaint (as printed).",
+  "provenance_datasheet_sections": [
+    "LQ-M85100-SR4C 100G QSFP28 SR4 Optical Transceiver",
+    "Features",
+    "Applications",
+    "General Description",
+    "QSFP28 Connector and Pinout Description",
+    "Functional Block Diagram",
+    "Mechanical Specifications"
+  ],
+  "suggestions": "Provided excerpt lacks optical/electrical parameter tables (Tx/Rx power, sensitivity, etc.) that may exist on pages 2–5 in the full PDF; re-run extraction when those tables are available."
+}

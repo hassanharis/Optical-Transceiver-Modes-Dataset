@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T19:56:31.046018+00:00",
+  "source_file": "C:\\Haris\\datasheets\\aop13pi8-xxx-3.pdf",
+  "page_count": 7,
+  "table_count": 11,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 9.992,
+    "extract_atoms": 28.967,
+    "store_run": 0.006,
+    "synthesize_modes": 21.749,
+    "store_modes": 0.003,
+    "total": 60.717
+  }
+}

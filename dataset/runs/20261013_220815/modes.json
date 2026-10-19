@@ -1,0 +1,82 @@
+{
+  "modes": [
+    {
+      "label": "400GBASE-R RS-FEC CWDM 1296 nm (Appl 1)",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1296.0,
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400G ER4",
+      "frame": "8x 50G",
+      "standards_code": "RS(528,514)",
+      "bit_rate_gbps": 425.0,
+      "rx_sensitivity_dbm": -12.1,
+      "fec_type": "RS_GENERIC"
+    },
+    {
+      "label": "400GBASE-R RS-FEC CWDM 1300 nm (Appl 1)",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.0,
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400G ER4",
+      "frame": "8x 50G",
+      "standards_code": "400G ER4",
+      "bit_rate_gbps": 425.0,
+      "rx_sensitivity_dbm": -12.1,
+      "fec_type": "RS_GENERIC"
+    },
+    {
+      "label": "400GBASE-R RS-FEC CWDM 1305 nm (Appl 1)",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1305.0,
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400G ER4 Lite",
+      "frame": "8x 50G",
+      "standards_code": "400G ER4 Lite",
+      "bit_rate_gbps": 425.0,
+      "rx_sensitivity_dbm": -15.1,
+      "fec_type": "RS_GENERIC"
+    },
+    {
+      "label": "400GBASE-R RS-FEC CWDM 1309 nm (Appl 1)",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.0,
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400G ER4 Lite",
+      "frame": "8x 50G",
+      "standards_code": "400G ER4 Lite",
+      "bit_rate_gbps": 425.0,
+      "rx_sensitivity_dbm": -15.1,
+      "fec_type": "RS_GENERIC"
+    },
+    {
+      "label": "4x100GBASE-R RS-FEC (Appl 2)",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1296.0,
+      "host_interface_name": "100GAUI-2",
+      "media_interface_name": "100G ER1-30",
+      "frame": "2x 50G",
+      "standards_code": "100G ER1-30",
+      "bit_rate_gbps": 400.0,
+      "rx_sensitivity_dbm": -12.1,
+      "fec_type": "RS_GENERIC"
+    },
+    {
+      "label": "400GBASE-R P-FEC (Appl 3)",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1296.0,
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400G ER4",
+      "frame": "8x 50G",
+      "standards_code": "400G ER4",
+      "bit_rate_gbps": 425.0,
+      "rx_sensitivity_dbm": -12.1,
+      "fec_type": "PFEC"
+    }
+  ]
+}

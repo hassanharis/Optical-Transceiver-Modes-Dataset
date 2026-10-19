@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"1550 nm DFB transmitter 20 km SMF\",\n      \"wavelength_min_nm\": 1510.0,\n      \"wavelength_max_nm\": 1590.0,\n      \"standards_code\": \"G.957\",\n      \"reach_km\": 20.0\n    },\n    {\n      \"label\": \"PIN receiver 20 km (1260\u20131610 nm)\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1610.0,\n      \"standards_code\": \"STM-1/OC-3\",\n      \"reach_km\": 20.0\n    },\n    {\n      \"label\": \"62.5/125 \u00b5m MMF max reach\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1610.0,\n      \"standards_code\": \"G.957\",\n      \"reach_km\": 0.55\n    },\n    {\n      \"label\": \"9/125 \u00b5m SMF max reach\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1610.0,\n      \"standards_code\": \"G.957\",\n      \"reach_km\": 60.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

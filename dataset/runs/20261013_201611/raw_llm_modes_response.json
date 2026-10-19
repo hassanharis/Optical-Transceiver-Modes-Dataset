@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Evidence from the datasheet: receiver sensitivity is defined in two rows (125 Mbaud / \u221226 dBm and 250 Mbaud / \u221222 dBm). Power (150 mW typ / 200 mW max) is module-wide, not per rate. Reach (50 m NA 0.5 vs 70 m NA 0.3) is not tied to those sensitivity rows, so pairing reach to a rate would be speculative\u20140.05 km is only assigned where Fast Ethernet + 0.5 NA POF is the stated application context.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"Fast Ethernet 125 Mbaud\",\n      \"power_consumption_w\": 0.15,\n      \"baud_rate_gbaud\": 0.125,\n      \"reach_km\": 0.05,\n      \"rx_sensitivity_dbm\": -26.0\n    },\n    {\n      \"label\": \"250 Mbaud\",\n      \"power_consumption_w\": 0.15,\n      \"baud_rate_gbaud\": 0.25,\n      \"reach_km\": 0.05,\n      \"rx_sensitivity_dbm\": -22.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

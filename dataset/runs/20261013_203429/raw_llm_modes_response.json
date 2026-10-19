@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"CVR-QSFP28-SFP28 (25G SFP28 on QSFP28 lane 1)\",\n      \"form_factor\": \"QSFP+\",\n      \"host_interface_name\": \"QSFP28\",\n      \"media_interface_name\": \"SFP28\",\n      \"standards_code\": \"SFF-8665\",\n      \"bit_rate_gbps\": 25.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

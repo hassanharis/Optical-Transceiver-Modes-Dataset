@@ -1,0 +1,138 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP-ER4"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "QSFP+ MSA",
+    "SFF-8436"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5
+  ],
+  "wavelength_center_nm": [
+    1271.0,
+    1291.0,
+    1311.0,
+    1331.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [
+    "40GBASE-ER4"
+  ],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "40GBASE-ER4",
+    "40GbE",
+    "OTU3"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    41.25,
+    43.018,
+    10.3125,
+    10.7546
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -2.7
+  ],
+  "tx_power_max_dbm": [
+    10.5,
+    4.5
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -21.2
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -4.5
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -34.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Technology row lists Grey QSFP+; title/ordering describe CWDM 1271/1291/1311/1331 nm. Bit rates: 41.25/43.018 Gbps aggregated (footnote 1); 10.3125/10.7546 Gbps per lane (footnote 2). Tx/Rx power and receiver min/overload are average power (footnote 3). Min input power and overload at BER less than 10^-12 with 2^31-1 PRBS (footnote 4). Power budget 9–18.5 dB. Optical path penalty 2.6 dB. Storage temperature -40°C to +85°C. DDM Yes. Output power total: Max +10.5 dBm only (no min stated).",
+  "provenance_datasheet_sections": [
+    "SO-QSFP-ER4",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": ""
+}

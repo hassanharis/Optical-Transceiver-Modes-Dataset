@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T11:05:49.945655+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-cfp-40gbase-lr4-20.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.97,
+    "extract_atoms": 26.33,
+    "store_run": 0.007,
+    "synthesize_modes": 23.142,
+    "store_modes": 0.002,
+    "total": 54.451
+  }
+}

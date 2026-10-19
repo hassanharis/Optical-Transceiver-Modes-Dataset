@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"2\u00d7DR4 MPO-12\",\n      \"model\": \"OP13LI8-005D\",\n      \"power_consumption_w\": 10.0,\n      \"media_interface_name\": \"2*DR4\",\n      \"standards_code\": \"2\\u00d7DR4\",\n      \"rx_sensitivity_dbm\": -3.4,\n      \"rx_overload_dbm\": 4.0\n    },\n    {\n      \"label\": \"DR8 MPO-16\",\n      \"model\": \"OP13LI8-005D-2\",\n      \"power_consumption_w\": 10.0,\n      \"media_interface_name\": \"DR8\",\n      \"standards_code\": \"DR8\",\n      \"rx_sensitivity_dbm\": -0.9,\n      \"rx_overload_dbm\": 4.2\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

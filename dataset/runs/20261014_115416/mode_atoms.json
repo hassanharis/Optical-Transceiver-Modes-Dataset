@@ -1,0 +1,96 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "40GBASE-IR4",
+      "40GbE"
+    ],
+    "bit_rate_gbps": [
+      41.25,
+      10.3125
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-QSFP-IR4-PSM"
+    ],
+    "form_factor": [
+      "QSFP+"
+    ],
+    "standards_claimed": [
+      "40GBASE-IR4",
+      "QSFP+ MSA",
+      "SFF-8436",
+      "SFF-8472"
+    ],
+    "wavelength_min_nm": [
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1360.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "MPO",
+      "MTP"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      3.5
+    ],
+    "host_interface_name": [
+      "40GBASE-IR4"
+    ],
+    "frame": [
+      "4x 10Gbps"
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -5.2
+    ],
+    "tx_power_max_dbm": [
+      0.5
+    ],
+    "rx_sensitivity_dbm": [
+      -12.6
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -15.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "notes": "Aggregated line rate 41.25 Gbps (footnote 1); per-lane bit rate 10.3125 Gbps (footnote 2). Transmitter output power and receiver min/overload are average power (footnote 3). Receiver minimum input power and overload at BER less than 10^-12 with 2^31-1 PRBS (footnote 4). Power budget 0–7.4 dB stated without optical path penalties. Storage temperature -40°C to +85°C (not operating). MPO/MTP connector with 8-degree APC required to minimize connection-induced reflections. Transport over MPO/MTP12 or 8 ribbon fiber cable.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP-IR4-PSM",
+      "QSFP+, 40G Ethernet IR4, SM, 1310nm, 2km, 7.4dB, MPO (APC)",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

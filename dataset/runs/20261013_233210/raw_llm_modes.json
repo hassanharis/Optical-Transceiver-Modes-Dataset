@@ -1,0 +1,32 @@
+{
+  "modes": [
+    {
+      "label": "1550 nm DFB transmitter 20 km SMF",
+      "wavelength_min_nm": 1510.0,
+      "wavelength_max_nm": 1590.0,
+      "standards_code": "G.957",
+      "reach_km": 20.0
+    },
+    {
+      "label": "PIN receiver 20 km (1260\u20131610 nm)",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "standards_code": "STM-1/OC-3",
+      "reach_km": 20.0
+    },
+    {
+      "label": "62.5/125 \u00b5m MMF max reach",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "standards_code": "G.957",
+      "reach_km": 0.55
+    },
+    {
+      "label": "9/125 \u00b5m SMF max reach",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "standards_code": "G.957",
+      "reach_km": 60.0
+    }
+  ]
+}

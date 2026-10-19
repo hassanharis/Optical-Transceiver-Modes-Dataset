@@ -1,0 +1,95 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP28-AOC1M 1m AOC",
+      "model": "SO-SFP28-AOC1M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.001,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC2M 2m AOC",
+      "model": "SO-SFP28-AOC2M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.002,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC3M 3m AOC",
+      "model": "SO-SFP28-AOC3M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.003,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC4M 4m AOC",
+      "model": "SO-SFP28-AOC4M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.004,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC5M 5m AOC",
+      "model": "SO-SFP28-AOC5M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.005,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC6M 6m AOC",
+      "model": "SO-SFP28-AOC6M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.006,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC7M 7m AOC",
+      "model": "SO-SFP28-AOC7M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.007,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC8M 8m AOC",
+      "model": "SO-SFP28-AOC8M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.008,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC9M 9m AOC",
+      "model": "SO-SFP28-AOC9M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.009,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC10M 10m AOC",
+      "model": "SO-SFP28-AOC10M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.01,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC12M 12m AOC",
+      "model": "SO-SFP28-AOC12M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.012,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC15M 15m AOC",
+      "model": "SO-SFP28-AOC15M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.015,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SO-SFP28-AOC20M 20m AOC",
+      "model": "SO-SFP28-AOC20M",
+      "standards_code": "25G Ethernet",
+      "reach_km": 0.02,
+      "fec_type": "RS_528_514"
+    }
+  ]
+}

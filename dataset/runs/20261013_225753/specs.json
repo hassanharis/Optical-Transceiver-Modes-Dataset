@@ -1,0 +1,124 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLF1318P3BTL"
+  ],
+  "form_factor": [
+    "SFF"
+  ],
+  "standards_claimed": [
+    "Small Form Factor Pluggable Multi-Sourcing Agreement (MSA)",
+    "SFP MSA",
+    "IEEE Std 802.3",
+    "1000BASE-LX",
+    "Gigabit Ethernet",
+    "FC-PI-4 Rev. 8.003",
+    "1x Fibre Channel",
+    "RoHS Directive 2011/65/EU"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "wavelength_min_nm": [
+    1270.0
+  ],
+  "wavelength_max_nm": [
+    1355.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "channel_total": [
+    1
+  ],
+  "mounting_type": [
+    "pluggable",
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    0.6
+  ],
+  "host_interface_name": [
+    "1000Base-LX",
+    "Gigabit Ethernet",
+    "1x Fibre Channel"
+  ],
+  "standards_code": [
+    "1000BASE-LX",
+    "FC-PI-4 Rev. 8.00",
+    "IEEE 802.3"
+  ],
+  "bit_rate_gbps": [
+    1.06,
+    1.062,
+    1.25
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -9.5
+  ],
+  "tx_power_max_dbm": [
+    -3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -21.0,
+    -19.0,
+    -14.5
+  ],
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -19.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [
+    122.4
+  ],
+  "penalties": [],
+  "notes": "Data rate table lists 1062–1250 Mb/sec; features cite 1.06 Gb/s Fibre Channel and 1.25 Gb/s Ethernet. Rx sensitivity -19 dBm @ 1.25 Gb/s (Gigabit Ethernet) and -21 dBm @ 1.06 Gb/s (1X Fibre Channel) per PRBS 2^7-1 at 10^-12 BER; Stressed RX sens. = 1.25 Gb/s is -14.5 dBm. Link length 10 km uses 0.55 dB/km attenuation and is dispersion-limited per FC-PI-4 Rev. 8.00 (indicative). Power: '<600mW typical' dissipation; Icc max 300 mA. Optical center wavelength λC table spans 1265–1600 nm; product is specified as 1310 nm Fabry-Perot. Transmitter total jitter TX Δ TJ is specified in ns (50–119 ns), not ps. Digital diagnostic Tx power monitor range -11.5 to -1 dBm; Rx -23 to +2 dBm.",
+  "provenance_datasheet_sections": [
+    "FTLF1318P3BTL",
+    "Industrial Temperature 1.25 Gb/s RoHS Compliant  LongWavelength Pluggable SFP Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (TA = -40 to 85 °C, VCC = 3.0 to 3.6 Volts)",
+    "IV. Optical Characteristics (Top =-40 to 85°C, VCC = 3.00 to 3.60 Volts)",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "IX. Digital Diagnostic Specifications"
+  ],
+  "suggestions": "Consider mapping SFP explicitly in form_factor enum. Clarify whether Return Loss 12 dB maps to optical_return_loss_tolerance_db vs receiver_reflectance. Stressed sensitivity could be modeled as a penalty only if a penalty_db column is defined in source."
+}

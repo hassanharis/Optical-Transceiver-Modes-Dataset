@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T00:01:04.971867+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lq-dw40-a04c.pdf",
+  "page_count": 11,
+  "table_count": 10,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 12.786,
+    "extract_atoms": 21.222,
+    "store_run": 0.012,
+    "synthesize_modes": 16.1,
+    "store_modes": 0.005,
+    "total": 50.125
+  }
+}

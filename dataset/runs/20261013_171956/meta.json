@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-13T17:19:56.916625+00:00",
+  "source_file": "C:\\Users\\hhassan\\AppData\\Local\\Temp\\tmpnb4hypni.pdf",
+  "page_count": 3,
+  "table_count": 8,
+  "model_id": "cursor/gpt-5.6-luna",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 9.199,
+    "extract_atoms": 27.114,
+    "store_run": 0.007,
+    "total": 73.067,
+    "synthesize_modes": 36.743,
+    "store_modes": 0.004
+  },
+  "content_stats": {
+    "content_chars": 10678,
+    "content_headings": 8,
+    "provenance_chars": 7471,
+    "provenance_headings": 5
+  }
+}

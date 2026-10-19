@@ -1,0 +1,101 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-SM3116-10C"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP+ MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1270.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1350.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "SFP+"
+  ],
+  "bit_rate_gbps": [
+    4.25,
+    8.5,
+    14.025
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    -0.5
+  ],
+  "rx_sensitivity_dbm": [
+    -12.0
+  ],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -13.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Transmitter note 1 states optical power is launched into MMF while product is SM 10km. Receiver sensitivity and overload measured with PRBS 2^31-1 @ 14025Mbps, BER ≤1×10^-12. Diagnostic TX power monitor range -7.8 to -0.5 dBm; RX power monitor range -16 to -0.5 dBm (not optical spec limits). Supply current Icc max 300 mA at 3.135–3.465 V; power in watts not stated.",
+  "provenance_datasheet_sections": [
+    "LS-SM3116-10C",
+    "14.025Gbps SFP+ Transceiver, Single Mode, 10km Reach",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Diagnostics",
+    "Ordering information"
+  ],
+  "suggestions": "Clarify whether wavelength_min_nm/max_nm should be separate lists for TX vs RX ranges or merged distinct endpoints. post_fec_ber_target is from BER ≤1×10^-12 test condition without explicit FEC naming."
+}

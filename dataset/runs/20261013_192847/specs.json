@@ -1,0 +1,120 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "OP27GI4-02D"
+  ],
+  "form_factor": [
+    "OSFP"
+  ],
+  "standards_claimed": [
+    "OSFP MSA rev5.0",
+    "OIF-CMIS rev5.1",
+    "IEEE 802.3dj-2024"
+  ],
+  "emitter_type": [
+    "LASER_SILICON",
+    "CWDM"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    16.0
+  ],
+  "standards_code": [
+    "800G Ethernet",
+    "FR4",
+    "IEEE 802.3dj"
+  ],
+  "baud_rate_gbaud": [
+    113.4375
+  ],
+  "bit_rate_gbps": [
+    226.875
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -1.8
+  ],
+  "tx_power_max_dbm": [
+    4.9
+  ],
+  "rx_sensitivity_dbm": [
+    -3.7
+  ],
+  "rx_overload_dbm": [
+    4.8
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "transmitter_reflectance_db": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "penalties": [],
+  "notes": "Datasheet hosted at amphenol-cs.com/optics.html; legal entity repeated as XGIGA Communication Technology Co.,ltd. Receiver sensitivity (-3.7 dBm OMA per lane) measured with PRBS31Q, BER@2.4*10^-4, for TECQ<0.9 dB; alternate formula -4.6+TECQ for 0.9 dB≤TECQ≤SECQ. Transmit OMA min: 0.8 dBm for TDECQ<0.9 dB; -0.1+TDECQ for 0.9 dB≤TDECQ≤3.4 dB. Average launch power off per lane Poff -16 dBm. RIN17.1OMA max -139 dB/Hz. Optical receiver damage threshold Pdmg 5.9 dBm per lane. Total output average launch power Pout and several electrical parameters marked TBD. Power dissipation stated as <16 W in features; Total Power max 16 W in electrical table. Supply current Icc max 4848 mA at Vcc 3.3 V. Signaling speed 113.4375 ± 50 ppm GBd per lane. Host must implement FEC for reliable operation; no module FEC type specified.",
+  "provenance_datasheet_sections": [
+    "800G FR4 OSFP (gearbox)",
+    "OP27GI4-02D",
+    "PRODUCT FEATURES",
+    "REFERENCE STANDARD",
+    "APPLICATIONS",
+    "PRODUCT SPECIFICATION",
+    "I. Absolute Maximum Ratings",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "IV. Electrical Characteristics"
+  ],
+  "suggestions": "Clarify whether vendor brand is Amphenol, XGIGA, or both. Add explicit center wavelengths per CWDM lane if available in a future revision. Distinguish electrical lane count vs four λ CWDM channels in schema if both matter for 800G FR4 gearbox products."
+}

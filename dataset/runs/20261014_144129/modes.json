@@ -1,0 +1,14 @@
+{
+  "modes": [
+    {
+      "label": "100M Fast Ethernet",
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0
+    },
+    {
+      "label": "STM-4/OC-12 (622Mbps SDH/SONET)",
+      "standards_code": "STM4/OC12",
+      "bit_rate_gbps": 622.0
+    }
+  ]
+}

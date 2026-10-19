@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:40:20.684445+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tq2011-sl4i-so-qsfp28-100g-lr4-s-rate-i-temp-r6.1.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.545,
+    "extract_atoms": 22.806,
+    "store_run": 0.007,
+    "synthesize_modes": 51.483,
+    "store_modes": 0.005,
+    "total": 77.846
+  }
+}

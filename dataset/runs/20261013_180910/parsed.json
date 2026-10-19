@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\New folder\\so-sfp-100base-l160d_20261013_180328.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 4715,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 13
+    },
+    {
+      "page": 0,
+      "label": null,
+      "rows": 14
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

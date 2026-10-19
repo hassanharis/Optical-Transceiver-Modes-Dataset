@@ -1,0 +1,112 @@
+{
+  "multi_valued": {
+    "model": [
+      "QT-WDM-0220BD",
+      "QT-WDM-0220BID"
+    ],
+    "wavelength_min_nm": [
+      1480.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1580.0,
+      1360.0
+    ],
+    "wavelength_center_nm": [
+      1550.0,
+      1310.0
+    ],
+    "host_interface_name": [
+      "Gigabit Ethernet",
+      "Fiber Channel"
+    ],
+    "standards_code": [
+      "Gigabit Ethernet",
+      "Fiber Channel",
+      "OC-24-LR-1"
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      1.063
+    ]
+  },
+  "general": {
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472",
+      "SONET OC-24-LR-1",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_band": [],
+    "channel_total": [
+      1
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -9.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -22.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -24.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "los_hysteresis_db": [
+      1.0,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "Primary P/N QT-WDM-0220BD: operating case temperature 0 to +70°C. Ordering variant QT-WDM-0220BID: -40°C to +85°C extended temperature. Receiver sensitivity and overload per Note 3: PRBS 2^7-1 @ 1250 Mbps, BER ≤ 1×10^-12. Optical average output power per Note 1 launched into SMF. Supply Vcc 3.13–3.47 V (typ 3.3 V); Icc max 300 mA in recommended operating conditions—not stated as power in W. Absolute max storage temperature -40 to +85°C; operating humidity 5–85% not mapped in schema. BIDI: 1550 nm TX / 1310 nm RX on SMF, 20 km.",
+    "provenance_datasheet_sections": [
+      "BIDI SFP 1550nm-TX/1310nm-RX 20KM SMF Transceiver",
+      "P/N: QT- WDM-0220BD",
+      "FEATURES",
+      "APPLICATIONS",
+      "2. Recommended Operating Conditions",
+      "3. Optical and Electrical Characteristics",
+      "Notes:",
+      "7. Ordering information"
+    ],
+    "suggestions": "Consider mapping Icc (mA) and Vcc if electrical power (W) is needed. Extended-temp variant could be a separate SKU record or temp_min_c/temp_max_c as lists aligned to model variants."
+  }
+}

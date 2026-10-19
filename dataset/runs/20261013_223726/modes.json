@@ -1,0 +1,100 @@
+{
+  "modes": [
+    {
+      "label": "FTCE4516E1PCM 800G DR8 FEC",
+      "model": "FTCE4516E1PCM",
+      "form_factor": "QSFP-DD800_type-2A",
+      "power_consumption_w": 17.5,
+      "media_interface_name": "800G DR8",
+      "frame": "8x100G",
+      "standards_code": "800G DR8",
+      "bit_rate_gbps": 850.0,
+      "rx_sensitivity_dbm": -4.4,
+      "rx_overload_dbm": 4.2
+    },
+    {
+      "label": "FTCE4516E1PCM 2x400G DR4",
+      "model": "FTCE4516E1PCM",
+      "form_factor": "QSFP-DD800_type-2A",
+      "power_consumption_w": 17.5,
+      "media_interface_name": "400GBASE-DR4",
+      "frame": "2 x 400Gbe DR4",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 800.0,
+      "rx_sensitivity_dbm": -4.4,
+      "rx_overload_dbm": 4.2
+    },
+    {
+      "label": "FTCE4516E1PCM 8x100GbE breakout",
+      "model": "FTCE4516E1PCM",
+      "form_factor": "QSFP-DD800_type-2A",
+      "power_consumption_w": 17.5,
+      "media_interface_name": "800G DR8",
+      "frame": "8 x 100GbE",
+      "standards_code": "IEEE P802.3ck",
+      "bit_rate_gbps": 106.25,
+      "rx_sensitivity_dbm": -4.4,
+      "rx_overload_dbm": 4.2
+    },
+    {
+      "label": "FTCE4516E1PCM 4x200 breakout",
+      "model": "FTCE4516E1PCM",
+      "form_factor": "QSFP-DD800_type-2A",
+      "power_consumption_w": 17.5,
+      "media_interface_name": "800G DR8",
+      "frame": "4x200",
+      "standards_code": "400G/800G Ethernet",
+      "bit_rate_gbps": 850.0,
+      "rx_sensitivity_dbm": -4.4,
+      "rx_overload_dbm": 4.2
+    },
+    {
+      "label": "FTCE4516E1PxM 800G DR8 FEC",
+      "model": "FTCE4516E1PxM",
+      "form_factor": "QSFP-DD800_type-2A",
+      "power_consumption_w": 17.0,
+      "media_interface_name": "800G DR8",
+      "frame": "8x100G",
+      "standards_code": "800G DR8",
+      "bit_rate_gbps": 850.0,
+      "rx_sensitivity_dbm": -4.4,
+      "rx_overload_dbm": 4.2
+    },
+    {
+      "label": "FTCE4516E1PxM 2x400G DR4",
+      "model": "FTCE4516E1PxM",
+      "form_factor": "QSFP-DD800_type-2A",
+      "power_consumption_w": 17.0,
+      "media_interface_name": "400GBASE-DR4",
+      "frame": "2 x 400Gbe DR4",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 800.0,
+      "rx_sensitivity_dbm": -4.4,
+      "rx_overload_dbm": 4.2
+    },
+    {
+      "label": "FTCE4516E1PxM 8x100GbE breakout",
+      "model": "FTCE4516E1PxM",
+      "form_factor": "QSFP-DD800_type-2A",
+      "power_consumption_w": 17.0,
+      "media_interface_name": "800G DR8",
+      "frame": "8 x 100GbE",
+      "standards_code": "IEEE P802.3ck",
+      "bit_rate_gbps": 106.25,
+      "rx_sensitivity_dbm": -4.4,
+      "rx_overload_dbm": 4.2
+    },
+    {
+      "label": "FTCE4516E1PxM 4x200 breakout",
+      "model": "FTCE4516E1PxM",
+      "form_factor": "QSFP-DD800_type-2A",
+      "power_consumption_w": 17.0,
+      "media_interface_name": "800G DR8",
+      "frame": "4x200",
+      "standards_code": "400G/800G Ethernet",
+      "bit_rate_gbps": 850.0,
+      "rx_sensitivity_dbm": -4.4,
+      "rx_overload_dbm": 4.2
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "modes": [
+    {
+      "label": "100GBASE-DR 100GbE (TSD001-S31C-SO)",
+      "standards_code": "100GBASE-DR",
+      "baud_rate_gbaud": 50.0,
+      "bit_rate_gbps": 103.12,
+      "rx_sensitivity_dbm": -5.9,
+      "fec_type": "RS_544_514",
+      "number_of_lanes": 1
+    }
+  ]
+}

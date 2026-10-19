@@ -1,0 +1,125 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQD-DM31800XDR8C"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3cu-2021",
+    "IEEE 802.3ck-2022",
+    "QSFP-DD MSA HW Rev 7.0 type 2B",
+    "CMIS Rev 5.0"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1311.0
+  ],
+  "channel_total": [
+    8
+  ],
+  "connector_type": [
+    "MPO-12/APC",
+    "MPO-12"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    18.0,
+    2.5
+  ],
+  "host_interface_name": [
+    "100GAUI-1",
+    "8x100GAUI-1 C2M",
+    "8x100GAUI-1"
+  ],
+  "media_interface_name": [
+    "100GBASE-FR1",
+    "8x100GBASE-FR1",
+    "800GBASE-XDR8"
+  ],
+  "frame": [
+    "8x100GAUI-1"
+  ],
+  "standards_code": [
+    "800GBASE-XDR8",
+    "100GBASE-FR1",
+    "XDR4",
+    "FR",
+    "IEEE 802.3cu",
+    "IEEE 802.3ck",
+    "IEEE P802.3ck"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    100.0,
+    400.0,
+    800.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -3.1
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -4.5,
+    -2.5
+  ],
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "transmitter_reflectance_db": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    17.1
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "penalties": [],
+  "notes": "Average launch power each lane min (-3.1 dBm) is informative and not the principal indicator of signal strength. Transmitter reflectance defined looking into the transmitter. Receiver sensitivity (OMAouter) max (-4.5 dBm and –5.9+TECQ for 1.4dB<=TECQ<=3.4dB) is informative for SECQ up to 3.4 dB. Stressed Receiver Sensitivity measured with conformance test signal at TP3 for BER = 2.4x10-4; SECQ 3.4 dB for stressed test. Operating distance table: Min 2 m, Max 2000 m. Damage threshold each lane min 5 dBm. OMAouter launch/receive limits also specified separately from average power.",
+  "provenance_datasheet_sections": [
+    "LQD-DM31800XDR8C 800G QSFP-DD XDR8 1310nm 2km Dual MPO-12/APC DOM Transceiver",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical Characteristics Transmitter Optical Specifications",
+    "Receiver Optical Specifications",
+    "Ordering information"
+  ]
+}

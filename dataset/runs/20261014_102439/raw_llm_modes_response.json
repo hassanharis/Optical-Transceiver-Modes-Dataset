@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100Base-FX on 62.5/125 \u00b5m MMF\",\n      \"wavelength_center_nm\": 1308.0,\n      \"power_consumption_w\": 0.26,\n      \"host_interface_name\": \"100Base-FX\",\n      \"standards_code\": \"IEEE802.3u\",\n      \"tx_power_min_dbm\": -20.0,\n      \"tx_power_max_dbm\": -14.0\n    },\n    {\n      \"label\": \"100Base-FX on 50/125 \u00b5m MMF\",\n      \"wavelength_center_nm\": 1310.0,\n      \"power_consumption_w\": 0.145,\n      \"host_interface_name\": \"Fast Ethernet\",\n      \"standards_code\": \"100Base-FX\",\n      \"tx_power_min_dbm\": -24.0,\n      \"tx_power_max_dbm\": -17.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

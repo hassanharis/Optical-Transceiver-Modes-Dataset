@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:27:26.532335+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Coherent ftlc1155rgplc-transceiver-ds.pdf",
+  "page_count": 8,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 9.716,
+    "extract_atoms": 22.007,
+    "store_run": 0.009,
+    "synthesize_modes": 83.174,
+    "store_modes": 0.007,
+    "total": 114.913
+  }
+}

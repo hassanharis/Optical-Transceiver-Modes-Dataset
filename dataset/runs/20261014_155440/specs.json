@@ -1,0 +1,99 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP28-32GFC-SD"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFF-8402",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM4",
+    "MMF_OM3"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "standards_code": [
+    "8G FC",
+    "16G FC",
+    "32G FC",
+    "25GE",
+    "10GbE",
+    "SFF-8472 Rev12.2"
+  ],
+  "bit_rate_gbps": [
+    8.5,
+    14.025,
+    28.05,
+    10.31,
+    25.78
+  ],
+  "reach_km": [
+    0.1,
+    0.07
+  ],
+  "tx_power_min_dbm": [
+    -1.4,
+    -8.4
+  ],
+  "tx_power_max_dbm": [
+    2.0,
+    2.4
+  ],
+  "rx_sensitivity_dbm": [
+    -8.4,
+    -10.3
+  ],
+  "rx_overload_dbm": [
+    2.4
+  ],
+  "post_fec_ber_target": [
+    1e-06,
+    5e-05
+  ],
+  "los_assert_dbm": [
+    -20.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "channel_insertion_loss_db": [
+    7.0,
+    1.9
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Transmitter and receiver power values are average power (footnote 1). Receiver minimum input power and overload at BER 1x10^-6, back-to-back (footnote 2). Overview states BER 1x10^-6 for 32G FC and 5x10^-5 for 25GbE with FEC implemented by host. No minimum distance (no minimum attenuation). Typical reach 100m @ OM4, 70m @ OM3. Power budget 0–7.0 dB for 32G FC and 0–1.9 dB for 25GE. Operating temperature listed as -0°C to +70°C. Storage temperature -40°C to +85°C not mapped to operating temp fields. Rate_Select per SFF-8472 Rev12.2.",
+  "provenance_datasheet_sections": [
+    "SO-SFP28-32GFC-SD",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "RATE_SELECT OPERATION",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

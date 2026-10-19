@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:21:42.247253+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Cisco NCS 2000 400 Gbps XPonder.pdf",
+  "page_count": 17,
+  "table_count": 11,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 14.617,
+    "extract_atoms": 32.256,
+    "store_run": 0.004,
+    "synthesize_modes": 99.565,
+    "store_modes": 0.004,
+    "total": 146.446
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "vendor": "Stratos",
+  "model": [
+    "MIL-SNK-ST31M",
+    "MIL-STK-ST31M",
+    "MIL-SxK-ST31M"
+  ],
+  "form_factor": [
+    "SFF"
+  ],
+  "standards_claimed": [
+    "IEEE Gigabit Ethernet",
+    "1x Fibre channel",
+    "IEEE 802.3z",
+    "ANSI X3.297",
+    "FC-PH-2",
+    "EN-60825",
+    "IEC-825",
+    "CDRH Class 1"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    770.0,
+    830.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "mounting_type": [
+    "Mounting Studs"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM1",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "standards_code": [
+    "IEEE 802.3z",
+    "ANSI X3.297",
+    "FC-PH-2"
+  ],
+  "bit_rate_gbps": [
+    1.0625,
+    1.25
+  ],
+  "modulation_format": [
+    "NRZ"
+  ],
+  "reach_km": [
+    0.15,
+    0.3,
+    0.55
+  ],
+  "tx_power_min_dbm": [
+    -9.5
+  ],
+  "tx_power_max_dbm": [
+    -4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -23.0,
+    -22.0,
+    -21.0
+  ],
+  "post_fec_ber_target": [
+    1e-10
+  ],
+  "extinction_ratio_db": [
+    10.0
+  ],
+  "los_assert_dbm": [
+    -21.0
+  ],
+  "optical_extinction_ratio_db": [
+    10.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    1.5,
+    2.25,
+    3.5
+  ],
+  "total_jitter_ps": [
+    80.0
+  ],
+  "penalties": [],
+  "notes": "Optical sensitivity table columns Min/Typical/Max: FC (1.0625 Gbps) -22/-23/0 dBm; GE (1.25 Gbps) -21/-22/0 dBm at BER=10^-10, PRBS 27-1, NRZ. Signal Detect Deassert Level SDOFF is <10 dBm. Link distances in Link Distance table are 150 m (Gigabit Ethernet per fiber grade) and 300 m (Fibre Channel); overview text states up to 550 meters. Supply current TX 55–75 mA, RX 120 mA at VCC 3.135–3.465 V; power in watts not stated. MSA 2x5 footprint referenced under Features.",
+  "provenance_datasheet_sections": [
+    "MIL-SxK-ST31M Military SFF Optical Transceiver",
+    "Gigabit Ethernet / 1x Fibre Channel Applications 3.3 V, 850 nm VCSEL, multimode, up to 550 meters",
+    "Features & Benefits",
+    "Applications",
+    "Ordering Information",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Transmitter[ 2]",
+    "Receiver[ 2]",
+    "Link Distance",
+    "Regulatory Compliance",
+    "Pin Functions",
+    "Mechanical Detail, EMI Clip Shell Option Part number MIL-STK-ST31M"
+  ],
+  "suggestions": "Clarify whether rx_sensitivity should map to Min, Typical, or Max column when Max is 0 dBm. Consider reach_km in meters when datasheet only prints m. los_deassert_dbm may need a rule for '<10 dBm' threshold-only specs."
+}

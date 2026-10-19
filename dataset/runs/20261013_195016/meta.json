@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T19:50:16.869015+00:00",
+  "source_file": "C:\\Haris\\datasheets\\AFBR-710ISMZ_Data_Sheet.pdf",
+  "page_count": 19,
+  "table_count": 16,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 27.808,
+    "extract_atoms": 38.366,
+    "store_run": 0.01,
+    "synthesize_modes": 79.585,
+    "store_modes": 0.003,
+    "total": 145.771
+  }
+}

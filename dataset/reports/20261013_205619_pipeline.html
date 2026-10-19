@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Cinch Connectivity Solutions [&#x27;Lx10G-ST11xx&#x27;, &#x27;RR10G-ST11xx&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">ds-ccs-strat-lx10g-st11xx-series.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">0</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 20:56</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">
+
+## **Lx10G-ST11xx Low Profile Optical Transceiver** 
+
+10G Ethernet (10.3125Gbps), 3.3V, 850nm VCSEL, Multimode, Up to 50 Meters 
+
+## **Applications** 
+
+The Lx10G-ST11xx multimode optical fiber transceivers provide low profile, cost effective solutions for rate agile 10G Ethernet multimode optical fiber data links, with a duplex LC connector interface. These transceivers are intended to work with 10G Ethernet applications but can be used for any other data communications purpose within their operating parameters. 
+
+## **Product Overview** 
+
+
+The Cinch Connectivity Solutions Lx10G-ST11xx fiber optic transceivers consist of transmitter and receiver functions combined in a Low Profile RJ Format module. The optical transmitter is a high output 850nm VCSEL. The transmitter input lines are driven with differential LVPECL Signals applied to the Transmit (TX+ and TX-) pins. These signals are internally converted to a suitable modulation current by a CMOS integrated circuit. A Transmit Disable (TDIS) function is provided to enable control of the VCSEL optical output. The optical receivers consist of PIN and Preamplifier assemblies and CMOS limiting post-amplifier integrated circuits. Outputs from the receivers consist of differential CML data signals on the Receive (RX+ and RX-)pins and a single ended LVTTL signal detect function on the Signal Detect (SD) pin. The RX data is squelched (JAM) upon Signal Detect deassert to prevent garbage data output when no optical signal is present. 
+
+## **Features** 
+
+- Low profile design-0.386” max height 
+
+- Surface mount I/O pins for high speed signal integrity 
+
+- All metal body, solder or screw mount options 
+
+- Industrial temp range, vibration tolerant design 
+
+- RX data squelch on Signal Detect deassert 
+
+- Individual (separate) +3.3 V power supply per port 
+
+- Industry standard duplex multimode LC receptacle 
+
+- EN-60825/IEC-825/CDRH Class 1 Compliant 
+
+- Optional Parylene C Conformal Coating 
+
+- Optional addition of fiber pigtail 
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Cinch Connectivity Solutions"</span>,
+  <span class="key">"model"</span>: [
+    "Lx10G-ST11xx",
+    "RR10G-ST11xx"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "Low Profile RJ",
+    "Low Rider RJ"
+  ],
+  <span class="key">"standards_claimed"</span>: [],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_VCSEL"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "PIN"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_max_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">850</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [],
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "solder",
+    "screw",
+    "mount_surface"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "MMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-40</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85</span>,
+  <span class="key">"power_consumption_w"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_name"</span>: [],
+  <span class="key">"host_interface_id_hex"</span>: [],
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: [],
+  <span class="key">"media_interface_id_hex"</span>: [],
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: [],
+  <span class="key">"standards_code"</span>: [
+    "10G Ethernet"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">10.3125</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [],
+  <span class="key">"reach_km"</span>: <span class="null">null</span>,
+  <span class="key">"tx_power_min_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"tx_power_max_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: [],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: <span class="null">null</span>,
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"los_deassert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Title states up to <span class="num">50</span> Meters reach; schema field is km so not converted per exact-copy rule. Supply is +3.3 V per port; power in watts not stated. Max mechanical height <span class="num">0.386</span> in. Ordering suffixes: N/T shell GND tabs; BLANK/B solder vs screw posts; H/M for <span class="num">-40</span> to <span class="num">85</span> C with optional conformal coating. EN-60825/IEC-825/CDRH Class <span class="num">1</span> compliant. Optional fiber pigtail and Parylene C coating."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "Lx10G-ST11xx Low Profile Optical Transceiver",
+    "Applications",
+    "Product Overview",
+    "Features",
+    "Ordering Information"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Add reach_m or allow reach with unit from source; add supply_voltage_v for <span class="num">3.3</span> V modules without W rating."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">Lx10G-ST11xx</span> <span class="badge">RR10G-ST11xx</span></td></tr>
+<tr><td>form_factor</td><td><span class="badge">Low Profile RJ</span> <span class="badge">Low Rider RJ</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Cinch Connectivity Solutions</td></tr>
+<tr><td>standards_claimed</td><td></td></tr>
+<tr><td>emitter_type</td><td>LASER_VCSEL</td></tr>
+<tr><td>photodetector_type</td><td>PIN</td></tr>
+<tr><td>wavelength_center_nm</td><td>850.0</td></tr>
+<tr><td>wavelength_band</td><td></td></tr>
+<tr><td>mounting_type</td><td>solder, screw, mount_surface</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>MMF</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>host_interface_name</td><td></td></tr>
+<tr><td>host_interface_id_hex</td><td></td></tr>
+<tr><td>media_interface_name</td><td></td></tr>
+<tr><td>media_interface_id_hex</td><td></td></tr>
+<tr><td>frame</td><td></td></tr>
+<tr><td>standards_code</td><td>10G Ethernet</td></tr>
+<tr><td>bit_rate_gbps</td><td>10.3125</td></tr>
+<tr><td>modulation_format</td><td></td></tr>
+<tr><td>fec_type</td><td></td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Title states up to 50 Meters reach; schema field is km so not converted per exact-copy rule. Supply is +3.3 V per port; power in watts not stated. Max mechanical height 0.386 in. Ordering suffixes: N/T shell GND tabs; BLANK/B solder vs screw posts; H/M for -40 to 85 C with optional conformal coating. EN-60825/IEC-825/CDRH Class 1 compliant. Optional fiber pigtail and Parylene C coating.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>Lx10G-ST11xx Low Profile Optical Transceiver, Applications, Product Overview, Features, Ordering Information</td></tr>
+<tr><td>suggestions</td><td>Add reach_m or allow reach with unit from source; add supply_voltage_v for 3.3 V modules without W rating.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>form_factor</th></tr><tr><td><strong>Lx10G-ST11xx Low Profile RJ</strong></td><td>Lx10G-ST11xx</td><td>Low Profile RJ</td></tr><tr><td><strong>RR10G-ST11xx Low Rider RJ</strong></td><td>RR10G-ST11xx</td><td>Low Rider RJ</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 20:56
+</footer>
+
+</div>
+</body>
+</html>

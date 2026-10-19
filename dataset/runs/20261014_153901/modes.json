@@ -1,0 +1,48 @@
+{
+  "modes": [
+    {
+      "label": "BX40D-35 1310nm Tx / 1550nm Rx",
+      "model": "SO-SFP-MR25-BX40D-35",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 2.67,
+      "reach_km": 40.0,
+      "tx_power_min_dbm": 1.0,
+      "tx_power_max_dbm": 5.0
+    },
+    {
+      "label": "BX40D-53 1550nm Tx / 1310nm Rx",
+      "model": "SO-SFP-MR25-BX40D-53",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 2.67,
+      "reach_km": 40.0,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 0.0
+    },
+    {
+      "label": "BX40D-35-I 1310nm Tx / 1550nm Rx (I-temp)",
+      "model": "SO-SFP-MR25-BX40D-35-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 2.67,
+      "reach_km": 40.0,
+      "tx_power_min_dbm": 1.0,
+      "tx_power_max_dbm": 5.0
+    },
+    {
+      "label": "BX40D-53-I 1550nm Tx / 1310nm Rx (I-temp)",
+      "model": "SO-SFP-MR25-BX40D-53-I",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 2.67,
+      "reach_km": 40.0,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 0.0
+    }
+  ]
+}

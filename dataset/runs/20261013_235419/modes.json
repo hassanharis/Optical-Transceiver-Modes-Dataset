@@ -1,0 +1,224 @@
+{
+  "modes": [
+    {
+      "label": "SGMII 10/100/1000 Industrial Realtek",
+      "model": "LP-SFP-TMRI",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SGMII 10/100/1000 Commercial Realtek",
+      "model": "LP-SFP-TMRC",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SERDES 1000BASE-T Commercial Realtek",
+      "model": "LP-SFP-MSRC",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SGMII 10/100/1000 Commercial Marvel",
+      "model": "LP-SFP-TM8C",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SERDES 1000BASE-T Commercial Marvel",
+      "model": "LP-SFP-MS8C",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SERDES 1000BASE-T Industrial Realtek",
+      "model": "LP-SFP-MSRI",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SGMII 10/100/1000 Industrial Marvel",
+      "model": "LP-SFP-TM8I",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SERDES 1000BASE-T Industrial Marvel",
+      "model": "LP-SFP-MS8I",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SGMII 10/100/1000 Commercial Marvel no Tx-dis no Rx-LOS",
+      "model": "LP-SFP-TM8CNN",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SGMII 10/100/1000 Industrial Marvel no Tx-dis no Rx-LOS",
+      "model": "LP-SFP-TM8INN",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SERDES 1000BASE-T Commercial Marvel no Tx-dis Rx-LOS",
+      "model": "LP-SFP-MS8CNY",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SERDES 1000BASE-T Industrial Marvel no Tx-dis Rx-LOS",
+      "model": "LP-SFP-MS8INY",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SERDES 1000BASE-T Commercial Marvel no Tx-dis no Rx-LOS",
+      "model": "LP-SFP-MS8CNN",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SERDES 1000BASE-T Industrial Marvel no Tx-dis no Rx-LOS",
+      "model": "LP-SFP-MS8INN",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SGMII 10/100/1000 Commercial Marvel no Tx-dis Rx-LOS",
+      "model": "LP-SFP-TM8CNY",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SGMII 10/100/1000 Industrial Marvel no Tx-dis Rx-LOS",
+      "model": "LP-SFP-TM8INY",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SGMII 10/100/1000 Commercial Marvel Tx-dis no Rx-LOS",
+      "model": "LP-SFP-TM8CYN",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SERDES 1000BASE-T Commercial Marvel Tx-dis Rx-LOS",
+      "model": "LP-SFP-MS8CYY",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SERDES 1000BASE-T Industrial Marvel Tx-dis Rx-LOS",
+      "model": "LP-SFP-MS8IYY",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SERDES 1000BASE-T Commercial Marvel Tx-dis no Rx-LOS",
+      "model": "LP-SFP-MS8CYN",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SGMII 10/100/1000 Commercial Marvel Tx-dis Rx-LOS",
+      "model": "LP-SFP-TM8CYY",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    },
+    {
+      "label": "SGMII 10/100/1000 Industrial Marvel Tx-dis Rx-LOS",
+      "model": "LP-SFP-TM8IYY",
+      "form_factor": "SFP",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LP-RJ45TGE-3YC"
+  ],
+  "form_factor": [
+    "Front Panel Plug RJ",
+    "SFF"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "IEEE 802.3az",
+    "IEEE 802.3an",
+    "IEEE 802.3bz",
+    "SFP+ MSA",
+    "SFP MSA"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "Hot-swappable",
+    "pluggable"
+  ],
+  "connector_type": [
+    "RJ45"
+  ],
+  "fiber_type": null,
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    2.5
+  ],
+  "host_interface_name": [
+    "XFI",
+    "5GBASE-R",
+    "2500BASE-X",
+    "SGMII"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "10GBASE-T",
+    "5GBASE-T",
+    "2.5GBASE-T",
+    "1000BASE-T"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "10GBASE-T",
+    "5GBASE-T",
+    "2.5GBASE-T",
+    "1000BASE-T",
+    "IEEE 802.3az-2015",
+    "802.3a"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    10,
+    5,
+    2.5,
+    1.25,
+    1,
+    0.1,
+    0.01
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM"
+  ],
+  "reach_km": [
+    0.03
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Copper 10GBASE-T SFP+ electrical module over twisted pair (Cat 6A/7 UTP for up to 30 m at 10G; Cat 5e for 100/1000M). Table 5 reach condition: BER <10^-12. Clock tolerance +/-50 ppm. Default full-duplex preferred master mode. 16-level PAM on 10G link per Description. Supply current 500–750 mA at 3.3 V (Table 1). Line frequency 800 MHz (Table 3). I2C at A0h; PHY access at ACh.",
+  "provenance_datasheet_sections": [
+    "LP-RJ45TGE-3YC",
+    "10GBase-T Copper SFP+ RJ45 30m Transceiver",
+    "Product Features",
+    "Applications",
+    "Description",
+    "+3.3V Volt Electrical Power Interface",
+    "General Specifications",
+    "Table 5. General specifications",
+    "Environmental Specifications",
+    "Table 6. Environmental specifications",
+    "Serial Communication Protocol",
+    "Mechanical Specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Schema is optical-centric; consider copper-specific fields (cable category, max reach per rate, electrical line rate MHz, BER). form_factor enum lacks SFP+; connector_type enum lacks RJ45. bit_rate_gbps from ordering uses mixed units (10M/100M vs G); clarify whether 0.01/0.1 Gbps is desired vs literal strings."
+}

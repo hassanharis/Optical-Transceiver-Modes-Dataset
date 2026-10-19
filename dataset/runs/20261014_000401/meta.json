@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T00:04:01.256778+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lq-m85100-sr4c.pdf",
+  "page_count": 7,
+  "table_count": 0,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.723,
+    "extract_atoms": 19.494,
+    "store_run": 0.012,
+    "synthesize_modes": 22.302,
+    "store_modes": 0.003,
+    "total": 46.533
+  }
+}

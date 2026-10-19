@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SO-SFP-GE-FE-LX Transmit\",\n      \"wavelength_max_nm\": 1360.0,\n      \"standards_code\": \"100Base-LX\"\n    },\n    {\n      \"label\": \"SO-SFP-GE-FE-LX Receive\",\n      \"wavelength_max_nm\": 1600.0,\n      \"standards_code\": \"FE\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,63 @@
+{
+  "multi_valued": {
+    "model": [
+      "1442120G1",
+      "1442120G1-C"
+    ],
+    "host_interface_name": [
+      "SFP",
+      "Gigabit Ethernet"
+    ],
+    "standards_code": [
+      "1000Base-BX-D",
+      "BX-D"
+    ]
+  },
+  "general": {
+    "vendor": "ATGBICS",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "MSA Standards"
+    ],
+    "wavelength_min_nm": [
+      1310.0
+    ],
+    "wavelength_max_nm": [
+      1490.0
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "MMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "media_interface_name": [
+      "BX-D"
+    ],
+    "bit_rate_gbps": [
+      1.25
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "penalties": [],
+    "notes": "Bidirectional BX-D unit (Tx1490nm/Rx1310nm); must be paired with a complementing-wavelength transceiver or appliance. Maximum data transfer rate stated as 1250 Mbit/s. Maximum transfer distance stated as 10000 m. Tx/Rx wavelengths labeled as max: 1490 nm and 1310 nm respectively. Compatibility reference AdTran1442120G1=. Input voltage 3.3 V, maximum voltage 3.5 V. Storage temperature -40 to 85 °C. DOM/DDM supported.",
+    "provenance_datasheet_sections": [
+      "ATGBICS 1442120G1 AdTran Compatible Transceiver SFP 1000Base-BX-D (Tx1490nm/Rx1310nm, 10km, SMF, DOM)",
+      "Brand :",
+      "Performance table (Power, Operational conditions, Ethernet LAN, Features, Weight & dimensions, Packaging data, Technical details)"
+    ],
+    "suggestions": "bit_rate_gbps: source prints 1250 Mbit/s; schema expects Gbps (1.25). Consider a dedicated field for Mbit/s or require explicit Gbps in source. Optical power, sensitivity, and BER parameters are absent from this marketing/spec summary sheet."
+  }
+}

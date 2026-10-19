@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"QT-SFP-10G-T 10GBASE-T SFP+ 30m\",\n      \"host_interface_name\": \"SFP+\",\n      \"standards_code\": \"10GBASE-T\",\n      \"bit_rate_gbps\": 10.125\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

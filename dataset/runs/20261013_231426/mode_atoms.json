@@ -1,0 +1,132 @@
+{
+  "multi_valued": {
+    "model": [
+      "FTLX2471DC0xx",
+      "FTLX2471DC027",
+      "FTLX2471DC029",
+      "FTLX2471DC031",
+      "FTLX2471DC033"
+    ],
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5,
+      1600.0
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "standards_code": [
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "1200-SM-LL-L4"
+    ],
+    "bit_rate_gbps": [
+      9.95,
+      10.3,
+      10.5
+    ],
+    "tx_power_min_dbm": [
+      -3.0,
+      -2.5
+    ],
+    "rx_sensitivity_dbm": [
+      -12.6,
+      -10.3
+    ]
+  },
+  "general": {
+    "vendor": "Finisar",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "IEEE 802.3ae",
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "10G Fibre Channel 1200-SM-LL-L4",
+      "SFF-8472",
+      "RoHS Directive 2011/65/EU"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -5.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "SFP+"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_max_dbm": [
+      3.0
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -17.0
+    ],
+    "receiver_reflectance_db": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Transmitter optical wavelength per variant is (λ−6.5) to (λ+6.5) nm around center λ from Product Selection (1271, 1291, 1311, 1331 nm). Power dissipation stated as < 1 W (no single numeric W value). Dispersion Penalty (DP) max 2 dB and Transmitter and Dispersion Penalty (TDP) max 3.2 dB are listed without @-condition penalty triplets. Receiver sensitivity −12.6 dBm OMA @ 10.5 Gb/s (BER<10−12, 2^31−1 PRBS, 1260–1355 nm); stressed sensitivity −10.3 dBm OMA @ 10.3 Gb/s per IEEE 802.3ae. Average launch/receive power figures noted informative per IEEE 802.3ae. Module is a limiting receiver (not EDC). POFF (OFF transmitter) max −30 dBm; RIN typ −128 dB/Hz.",
+    "provenance_datasheet_sections": [
+      "FEATURES",
+      "Product Selection",
+      "FTLX2471DC0xx",
+      "IV. Optical Characteristics (TO = -5 to 70°C, VCC3 = 3.14 to 3.46 Volts)",
+      "V. General Specifications",
+      "VII. Environmental Specifications",
+      "III. Electrical Characteristics (TOP= -5 to 70 °C , VCC = 3.14 to 3.46 Volts)"
+    ],
+    "suggestions": "Clarify whether vendor should be Finisar vs Coherent Corp. (footer). Photodetector type (PIN vs APD) not stated—limiting receiver only. Consider capturing POFF, RIN, DP/TDP max, and supply current Icc if schema extended."
+  }
+}

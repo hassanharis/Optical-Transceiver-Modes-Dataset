@@ -1,0 +1,122 @@
+{
+  "multi_valued": {
+    "model": [
+      "LS-BL293025-60C",
+      "LS-BL293025-60I",
+      "LS-BL302925-60C",
+      "LS-BL302925-60I"
+    ],
+    "wavelength_min_nm": [
+      1281.0,
+      1306.0
+    ],
+    "wavelength_max_nm": [
+      1297.0,
+      1322.0
+    ],
+    "wavelength_center_nm": [
+      1295.0,
+      1309.0
+    ],
+    "standards_code": [
+      "IEEE 802.3cc",
+      "25GE",
+      "CPRI"
+    ],
+    "bit_rate_gbps": [
+      25.78125,
+      25.78
+    ],
+    "reach_km": [
+      40.0,
+      60.0
+    ],
+    "rx_sensitivity_dbm": [
+      -19.0,
+      -21.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP28"
+    ],
+    "standards_claimed": [
+      "IEEE 802.3cc",
+      "SFF-8402",
+      "SFF-8419",
+      "SFP28 MSA",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "emitter_type": [
+      "LASER_EML"
+    ],
+    "photodetector_type": [
+      "APD"
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.6
+    ],
+    "host_interface_name": [
+      "CEI-28G-VSR"
+    ],
+    "tx_power_min_dbm": [
+      1.0
+    ],
+    "tx_power_max_dbm": [
+      6.0
+    ],
+    "rx_overload_dbm": [
+      -4.0
+    ],
+    "extinction_ratio_db": [
+      4.0
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -21.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      4.0
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      5.0
+    ],
+    "penalties": [],
+    "notes": "Datasheet title and primary PN LS-BL293025-60C: Tx 1295 nm / Rx 1309 nm BIDI; ordering LS-BL293025-60C is 0°C to 70°C commercial. Link up to 40 km SMF without FEC; up to 60 km with FEC (FEC type not specified). Receiver sensitivity (OMA): -19 dBm at 40 km NO FEC; -21 dBm at 60 km with FEC. Optical tables also list wavelength ranges for LS-BL302925-60x (reverse Tx/Rx wavelengths). Industrial variants LS-BL293025-60I: -40°C to 85°C, power <1.8 W, ICC max 540 mA. Transmitter OMA (POMA) 2 to 6 dBm; average output power (laser off) POFF max -30 dBm. TDP (transmitter and dispersion penalty) max 2.7 dB. Spectrum bandwidth @ -20 dB max 1 nm.",
+    "provenance_datasheet_sections": [
+      "LS-BL293025-60C",
+      "25.78Gbps SFP28 LC BIDI Tx1295nm/Rx1309nm 60km Transceiver",
+      "Product Feature",
+      "Applications",
+      "Standard",
+      "Product Description",
+      "Recommended Operating Conditions",
+      "Electrical Characteristics",
+      "Optical Characteristics",
+      "Digital Diagnostic Monitoring Interface",
+      "Ordering information"
+    ]
+  }
+}

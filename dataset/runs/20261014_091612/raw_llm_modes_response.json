@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"LS-MM858G-S3C Fiber Channel 2.125G\",\n      \"model\": \"LS-MM858G-S3C\",\n      \"bit_rate_gbps\": 2.125\n    },\n    {\n      \"label\": \"LS-MM858G-S3C Fiber Channel 4.25G\",\n      \"model\": \"LS-MM858G-S3C\",\n      \"bit_rate_gbps\": 4.25\n    },\n    {\n      \"label\": \"LS-MM858G-S3C 8.5Gbps\",\n      \"model\": \"LS-MM858G-S3C\",\n      \"bit_rate_gbps\": 8.5\n    },\n    {\n      \"label\": \"LS-MM858G-S3I Fiber Channel 2.125G\",\n      \"model\": \"LS-MM858G-S3I\",\n      \"bit_rate_gbps\": 2.125\n    },\n    {\n      \"label\": \"LS-MM858G-S3I Fiber Channel 4.25G\",\n      \"model\": \"LS-MM858G-S3I\",\n      \"bit_rate_gbps\": 4.25\n    },\n    {\n      \"label\": \"LS-MM858G-S3I 8.5Gbps\",\n      \"model\": \"LS-MM858G-S3I\",\n      \"bit_rate_gbps\": 8.5\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

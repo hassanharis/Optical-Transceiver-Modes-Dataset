@@ -1,0 +1,103 @@
+{
+  "multi_valued": {
+    "model": [
+      "160-9116-900-C",
+      "160-9116-900"
+    ],
+    "standards_code": [
+      "10GBase-SR",
+      "IEEE 802.3ae"
+    ],
+    "bit_rate_gbps": [
+      10.0,
+      10.31,
+      11.3
+    ],
+    "rx_sensitivity_dbm": [
+      -9.9,
+      -11.1
+    ]
+  },
+  "general": {
+    "vendor": "ProLabs",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8432",
+      "SFF-8472",
+      "MSA",
+      "SFF-8431"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      840.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "media_interface_name": [
+      "10GBase-SR"
+    ],
+    "reach_km": [
+      0.3
+    ],
+    "tx_power_min_dbm": [
+      -7.3
+    ],
+    "tx_power_max_dbm": [
+      -1.2
+    ],
+    "rx_overload_dbm": [
+      -1.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      3.0
+    ],
+    "channel_insertion_loss_db": [
+      2.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.0
+    ],
+    "penalties": [],
+    "notes": "Ciena 160-9116-900 compatible module. DOM supported. Receiver sensitivity (average -9.9 dBm): average power, back-to-back, @10.31Gbps, BER 1E-12, PRBS 2^31-1 per note 3. Receiver sensitivity (OMA -11.1 dBm) per IEEE 802.3ae note 2. Optical power and OMA coupled into multi-mode fibre note 1. Exceeding receiver overload (-1 dBm) can physically damage the module per note 4. Maximum bitrate Bmax 11.3 Gbps in absolute maximum ratings. Icc max 303 mA; storage temperature -40 to 85 °C.",
+    "provenance_datasheet_sections": [
+      "160-9116-900-C",
+      "Features:",
+      "Applications:",
+      "Product Description",
+      "Absolute Maximum Ratings",
+      "Electrical Characteristics (TOP=25°C, Vcc=3.3Volts)",
+      "Optical Characteristics",
+      "Notes:",
+      "Mechanical Specifications"
+    ]
+  }
+}

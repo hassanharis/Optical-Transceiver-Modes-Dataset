@@ -1,0 +1,97 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-155M-L40D"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1360.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "100Base-EXD",
+    "FE",
+    "STM1/OC3",
+    "STM-1",
+    "OC3"
+  ],
+  "bit_rate_gbps": [
+    100.0,
+    155.0
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -34.0
+  ],
+  "rx_overload_dbm": [
+    -10.0
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -35.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Bit rate stated as 100 to 155 Mbps (not Gbps). Power budget 10–29 dB stated; not mapped to a dedicated schema field. Transmit output power min listed as -5.0dB (footnote: average power). Receiver minimum input power -34 dBm at 155 Mbps, BER 1×10⁻¹², PRBS 2³¹-1. Power consumption < 1.0 W. Operating temperature -0°C to +70°C. Storage temperature -40°C to +85°C not used for temp_min_c/temp_max_c (normal operating only). DDM per SFF-8472. Technology: Grey SFP.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-155M-L40D",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Clarify whether bit_rate_gbps should accept Mbps literals or require unit-normalized Gbps. Map optional field for power budget (10–29 dB) if commonly needed for legacy SFP datasheets."
+}

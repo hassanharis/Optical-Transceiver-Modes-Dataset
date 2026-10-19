@@ -1,0 +1,115 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "wavelength_band": [
+      "grey",
+      "CWDM"
+    ],
+    "standards_code": [
+      "CWDM4",
+      "100GBASE-CWDM4"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      25.78
+    ],
+    "tx_power_max_dbm": [
+      8.5,
+      2.5
+    ],
+    "fec_type": [
+      "RS_528_514",
+      "RS_GENERIC"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-QSFP28-CWDM4"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "CWDM4 MSA",
+      "100GBASE-CWDM4",
+      "IEEE802.3bj"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      3.5
+    ],
+    "host_interface_name": [
+      "QSFP28"
+    ],
+    "media_interface_name": [
+      "100GBASE-CWDM4"
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -3.8
+    ],
+    "rx_sensitivity_dbm": [
+      -8.8
+    ],
+    "rx_overload_dbm": [
+      2.5
+    ],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -25.0
+    ],
+    "los_deassert_dbm": [
+      -12.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Title and ordering: 5 dB power budget, 2 km reach. Technology listed as Grey QSFP28. FEC required in host per CWDM4 MSA; FEC type IEEE802.3bj RS(528,514). Optical parameters specified at BER 5x10^-5; FEC yields BER better than 1x10^-12. Footnote 3): average power. Footnote 4): receiver min input and overload specified at BER 5x10^-5. Optical path penalty 3 dB stated without paired @ condition for penalty objects. Power budget 0–5 dB. Storage temperature -40°C to +85°C (not operating). Transmission media stated as SM (2x LC).",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

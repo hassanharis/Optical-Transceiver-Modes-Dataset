@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Finisar</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Finisar</div>
+  <div class="subtitle">SFP+ &middot; DWDM &middot; [45] channels</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Finisar</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">SFP+</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">SFF-8431, SFF-8432, G.698.1 DS100S1-2Dz(C), 10G Ethernet ZR, 10G Fibre Channel, SFF-8472, SFP MSA, RoHS Directive 2011/65/EU</div></div>
+      <div class="spec-item"><div class="label">Emitter Type</div><div class="value">LASER_EML</div></div>
+      <div class="spec-item"><div class="label">Wavelength Min</div><div class="value">1260.0</div></div>
+      <div class="spec-item"><div class="label">Wavelength Max</div><div class="value">1600.0</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">DWDM</div></div>
+      <div class="spec-item"><div class="label">Frequency Min Thz</div><div class="value">191.7</div></div>
+      <div class="spec-item"><div class="label">Frequency Max Thz</div><div class="value">196.1</div></div>
+      <div class="spec-item"><div class="label">Channel Spacing (GHz)</div><div class="value">100.0</div></div>
+      <div class="spec-item"><div class="label">Channel Total</div><div class="value">45</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable_hot</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF_G652, SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-5.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Reach (km)</div><div class="value">80.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">-1.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">3.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">-7.0</div></div>
+      <div class="spec-item"><div class="label">Extinction Ratio Db</div><div class="value">8.2</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-28.0</div></div>
+      <div class="spec-item"><div class="label">Receiver Reflectance Db</div><div class="value">-27.0</div></div>
+      <div class="spec-item"><div class="label">Optical Extinction Ratio Db</div><div class="value">8.2</div></div>
+      <div class="spec-item"><div class="label">Side Mode Suppression Ratio Db</div><div class="value">30.0</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">0.5</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Transmitter optical wavelength λC per ITU-T 694.1 (Table 1 per channel). Center wavelength at end of life λc_EOL: λc±100pm. Cooled 1550nm EML laser (feature); receiver is limiting electrical interface. Sensitivity measured with worst ER=8.2dB; 2^31-1 PRBS. Max chromatic dispersion tolerance over 80km G.652 SMF: 1450 ps/nm (80km sens. 8.5, 9.95-10.7 Gb/s, BER&lt;10^-12); 1300 ps/nm (80km 11.1 Gb/s, BER&lt;10^-4); 1100 ps/nm (80km 11.3 Gb/s, BER&lt;10^-4). Supports 8.5 and 9.95 to 11.3 Gb/s (features); bit rate table max 11.3168 Gb/s. Typical power consumption at 70°C case, beginning of life, 3.3V. Power Level II; typical consumption may exceed 1.5W SFF-8431 limit. Receiver optical damage threshold RxDamage 5 dBm (absolute max). Average launch power when Tx OFF POFF max -30 dBm. Duplex LC connector.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">FTLX3871DCCXX, 10Gb/s DWDM 80km Multi-Rate SFP+ Transceiver, FEATURES, APPLICATIONS, Product Selection, FTLX3871DCCxx, Product Channel Selection, III. Electrical Characteristics (TOP = -5 to 70 °C ), IV. Optical Characteristics (TOP = -5 to 70 °C, VCC = 3.14 to 3.46 Volts)), V. General Specifications, VI. Environmental Specifications, X. SFF-8431 Power-up Sequence</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>wavelength_center_nm</th><th>Power (W)</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>RX Sensitivity (dBm)</th><th>CD Tolerance (ps/nm)</th><th>post_fec_ber_target</th><th>los_assert_dbm</th></tr>
+      <tr><td><strong>Ch17 1563.86nm 80km 8.5Gb/s</strong></td><td>FTLX3871DCC17</td><td>1563.86</td><td>1.6</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>8.5</td><td>-21.0</td><td>1450.0</td><td>1e-12</td><td>-37.0</td></tr>
+      <tr><td><strong>Ch17 1563.86nm 80km 9.95Gb/s</strong></td><td>FTLX3871DCC17</td><td>1563.86</td><td>1.6</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>9.95</td><td>-21.0</td><td>1450.0</td><td>1e-12</td><td>-37.0</td></tr>
+      <tr><td><strong>Ch17 1563.86nm 80km 10.7Gb/s</strong></td><td>FTLX3871DCC17</td><td>1563.86</td><td>1.6</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>10.7</td><td>-21.0</td><td>1450.0</td><td>1e-12</td><td>-37.0</td></tr>
+      <tr><td><strong>Ch17 1563.86nm 80km 11.1Gb/s</strong></td><td>FTLX3871DCC17</td><td>1563.86</td><td>1.6</td><td>10G Ethernet ZR</td><td>11.1</td><td>-24.0</td><td>1300.0</td><td>0.0001</td><td>-37.0</td></tr>
+      <tr><td><strong>Ch17 1563.86nm 80km 11.3Gb/s</strong></td><td>FTLX3871DCC17</td><td>1563.86</td><td>1.6</td><td>10G Ethernet ZR</td><td>11.3</td><td>-24.0</td><td>1100.0</td><td>0.0001</td><td>-37.0</td></tr>
+      <tr><td><strong>Ch18 1563.05nm 80km 8.5Gb/s</strong></td><td>FTLX3871DCC18</td><td>1563.05</td><td>1.6</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>8.5</td><td>-21.0</td><td>1450.0</td><td>1e-12</td><td>-37.0</td></tr>
+      <tr><td><strong>Ch18 1563.05nm 80km 9.95Gb/s</strong></td><td>FTLX3871DCC18</td><td>1563.05</td><td>1.6</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>9.95</td><td>-21.0</td><td>1450.0</td><td>1e-12</td><td>-37.0</td></tr>
+      <tr><td><strong>Ch18 1563.05nm 80km 10.7Gb/s</strong></td><td>FTLX3871DCC18</td><td>1563.05</td><td>1.6</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>10.7</td><td>-21.0</td><td>1450.0</td><td>1e-12</td><td>-37.0</td></tr>
+      <tr><td><strong>Ch18 1563.05nm 80km 11.1Gb/s</strong></td><td>FTLX3871DCC18</td><td>1563.05</td><td>1.6</td><td>10G Ethernet ZR</td><td>11.1</td><td>-24.0</td><td>1300.0</td><td>0.0001</td><td>-37.0</td></tr>
+      <tr><td><strong>Ch18 1563.05nm 80km 11.3Gb/s</strong></td><td>FTLX3871DCC18</td><td>1563.05</td><td>1.6</td><td>10G Ethernet ZR</td><td>11.3</td><td>-24.0</td><td>1100.0</td><td>0.0001</td><td>-37.0</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">FTLX3871DCCXX</span> <span class="badge">FTLX3871DCCxx</span> <span class="badge">FTLX3871DCC17</span> <span class="badge">FTLX3871DCC18</span> <span class="badge">FTLX3871DCC19</span> <span class="badge">FTLX3871DCC20</span> <span class="badge">FTLX3871DCC21</span> <span class="badge">FTLX3871DCC22</span> <span class="badge">FTLX3871DCC23</span> <span class="badge">FTLX3871DCC24</span> <span class="badge">FTLX3871DCC25</span> <span class="badge">FTLX3871DCC26</span> <span class="badge">FTLX3871DCC27</span> <span class="badge">FTLX3871DCC28</span> <span class="badge">FTLX3871DCC29</span> <span class="badge">FTLX3871DCC30</span> <span class="badge">FTLX3871DCC31</span> <span class="badge">FTLX3871DCC32</span> <span class="badge">FTLX3871DCC33</span> <span class="badge">FTLX3871DCC34</span> <span class="badge">FTLX3871DCC35</span> <span class="badge">FTLX3871DCC36</span> <span class="badge">FTLX3871DCC37</span> <span class="badge">FTLX3871DCC38</span> <span class="badge">FTLX3871DCC39</span> <span class="badge">FTLX3871DCC40</span> <span class="badge">FTLX3871DCC41</span> <span class="badge">FTLX3871DCC42</span> <span class="badge">FTLX3871DCC43</span> <span class="badge">FTLX3871DCC44</span> <span class="badge">FTLX3871DCC45</span> <span class="badge">FTLX3871DCC46</span> <span class="badge">FTLX3871DCC47</span> <span class="badge">FTLX3871DCC48</span> <span class="badge">FTLX3871DCC49</span> <span class="badge">FTLX3871DCC50</span> <span class="badge">FTLX3871DCC51</span> <span class="badge">FTLX3871DCC52</span> <span class="badge">FTLX3871DCC53</span> <span class="badge">FTLX3871DCC54</span> <span class="badge">FTLX3871DCC55</span> <span class="badge">FTLX3871DCC56</span> <span class="badge">FTLX3871DCC57</span> <span class="badge">FTLX3871DCC58</span> <span class="badge">FTLX3871DCC59</span> <span class="badge">FTLX3871DCC60</span> <span class="badge">FTLX3871DCC61</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">1563.86</span> <span class="badge">1563.05</span> <span class="badge">1562.23</span> <span class="badge">1561.42</span> <span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1545.32</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span> <span class="badge">1528.77</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">1.6</span> <span class="badge">1.7</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">DS100S1-2Dz(C)</span> <span class="badge">10G Ethernet ZR</span> <span class="badge">ITU-T G.698.1 DS100S1-2Dz(C)</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">8.5</span> <span class="badge">9.95</span> <span class="badge">10.7</span> <span class="badge">11.1</span> <span class="badge">11.3</span> <span class="badge">11.3168</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-24.0</span> <span class="badge">-27.0</span> <span class="badge">-21.0</span></td></tr>
+      <tr><td>cd_tolerance_ps_nm</td><td><span class="badge">1450.0</span> <span class="badge">1300.0</span> <span class="badge">1100.0</span></td></tr>
+      <tr><td>post_fec_ber_target</td><td><span class="badge">1e-12</span> <span class="badge">0.0001</span></td></tr>
+      <tr><td>los_assert_dbm</td><td><span class="badge">-37.0</span> <span class="badge">-30.0</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 23:16
+</footer>
+
+</div>
+</body>
+</html>

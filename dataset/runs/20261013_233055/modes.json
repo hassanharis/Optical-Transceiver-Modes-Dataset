@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "L9-SC315501-20PPC 1310nm FP commercial temp",
+      "model": "L9-SC315501-20PPC",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "L9-SC553101-20PPC 1550nm FP commercial temp",
+      "model": "L9-SC553101-20PPC",
+      "wavelength_min_nm": 1510.0,
+      "wavelength_max_nm": 1590.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "L9-SC315501-20PPI 1310nm FP industrial temp",
+      "model": "L9-SC315501-20PPI",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "L9-SC553101-20PPI 1550nm FP industrial temp",
+      "model": "L9-SC553101-20PPI",
+      "wavelength_min_nm": 1510.0,
+      "wavelength_max_nm": 1590.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "ITU-T G.957"
+    }
+  ]
+}

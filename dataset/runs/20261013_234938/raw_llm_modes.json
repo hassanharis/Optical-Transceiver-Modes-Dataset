@@ -1,0 +1,224 @@
+{
+  "modes": [
+    {
+      "label": "TMRC 10/100/1000 SGMII Commercial",
+      "model": "LP-SFP-TMRC",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "MSRC 1000 SERDES Commercial",
+      "model": "LP-SFP-MSRC",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "TM8C 10/100/1000 SGMII Commercial",
+      "model": "LP-SFP-TM8C",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "MS8C 1000 SERDES Commercial",
+      "model": "LP-SFP-MS8C",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "TMRI 10/100/1000 SGMII Industrial",
+      "model": "LP-SFP-TMRI",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "MSRI 1000 SERDES Industrial",
+      "model": "LP-SFP-MSRI",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "TM8I 10/100/1000 SGMII Industrial",
+      "model": "LP-SFP-TM8I",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "MS8I 1000 SERDES Industrial",
+      "model": "LP-SFP-MS8I",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "TM8CNN 10/100/1000 SGMII 0.1km Commercial",
+      "model": "LP-SFP-TM8CNN",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "TM8INN 10/100/1000 SGMII 0.1km Industrial",
+      "model": "LP-SFP-TM8INN",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "MS8CNY 1000 SERDES 0.1km Commercial",
+      "model": "LP-SFP-MS8CNY",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "MS8INY 1000 SERDES 0.1km Industrial",
+      "model": "LP-SFP-MS8INY",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "MS8CNN 1000 SERDES 0.1km Commercial",
+      "model": "LP-SFP-MS8CNN",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "MS8INN 1000 SERDES 0.1km Industrial",
+      "model": "LP-SFP-MS8INN",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "TM8CNY 10/100/1000 SGMII 0.1km Commercial",
+      "model": "LP-SFP-TM8CNY",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "TM8INY 10/100/1000 SGMII 0.1km Industrial",
+      "model": "LP-SFP-TM8INY",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "TM8CYN 10/100/1000 SGMII 0.1km Commercial",
+      "model": "LP-SFP-TM8CYN",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "MS8CYY 1000 SERDES 0.1km Commercial",
+      "model": "LP-SFP-MS8CYY",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "MS8IYY 1000 SERDES 0.1km Industrial",
+      "model": "LP-SFP-MS8IYY",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "MS8CYN 1000 SERDES 0.1km Commercial",
+      "model": "LP-SFP-MS8CYN",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "TM8CYY 10/100/1000 SGMII 0.1km Commercial",
+      "model": "LP-SFP-TM8CYY",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "TM8IYY 10/100/1000 SGMII 0.1km Industrial",
+      "model": "LP-SFP-TM8IYY",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    }
+  ]
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;32G-IR-Dxxx-BR&#x27;, &#x27;32G-IR-D200-BR&#x27;, &#x27;32G-IR-D210-BR&#x27;, &#x27;32G-IR-D220-BR&#x27;, &#x27;32G-IR-D230-BR&#x27;, &#x27;32G-IR-D240-BR&#x27;, &#x27;32G-IR-D250-BR&#x27;, &#x27;32G-IR-D260-BR&#x27;, &#x27;32G-IR-D270-BR&#x27;, &#x27;32G-IR-D280-BR&#x27;, &#x27;32G-IR-D290-BR&#x27;, &#x27;32G-IR-D300-BR&#x27;, &#x27;32G-IR-D310-BR&#x27;, &#x27;32G-IR-D320-BR&#x27;, &#x27;32G-IR-D330-BR&#x27;, &#x27;32G-IR-D340-BR&#x27;, &#x27;32G-IR-D350-BR&#x27;, &#x27;32G-IR-D360-BR&#x27;, &#x27;32G-IR-D370-BR&#x27;, &#x27;32G-IR-D380-BR&#x27;, &#x27;32G-IR-D390-BR&#x27;, &#x27;32G-IR-D400-BR&#x27;, &#x27;32G-IR-D410-BR&#x27;, &#x27;32G-IR-D420-BR&#x27;, &#x27;32G-IR-D430-BR&#x27;, &#x27;32G-IR-D440-BR&#x27;, &#x27;32G-IR-D450-BR&#x27;, &#x27;32G-IR-D460-BR&#x27;, &#x27;32G-IR-D470-BR&#x27;, &#x27;32G-IR-D480-BR&#x27;, &#x27;32G-IR-D490-BR&#x27;, &#x27;32G-IR-D500-BR&#x27;, &#x27;32G-IR-D510-BR&#x27;, &#x27;32G-IR-D520-BR&#x27;, &#x27;32G-IR-D530-BR&#x27;, &#x27;32G-IR-D540-BR&#x27;, &#x27;32G-IR-D550-BR&#x27;, &#x27;32G-IR-D560-BR&#x27;, &#x27;32G-IR-D570-BR&#x27;, &#x27;32G-IR-D580-BR&#x27;, &#x27;32G-IR-D590-BR&#x27;, &#x27;32G-IR-D600-BR&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">32g-ir-dxxx-br.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">3</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">4</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 19:24</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.5 
+
+
+## **32G-IR-Dxxx-BR** 
+
+## SFP28, 8/16/32G FC, DWDM 100GHz, DDM, 7dB, 10km, D200-D600 (41ch) 
+
+## OVERVIEW 
+
+The 32G-IR-Dxxx-BR is a versatile DWDM transceiver in SFP28 form-factor supporting a wide range of Fiber Channel (FC) services (8G to 32G). The transceiver is provided in versions covering all C-band channels in the 100GHz DWDM grid as specified in the ITU-T G.694.1 standard. The transceiver has been layer-1 tested and approved by Brocade. 
+
+The transceiver has an inbuilt 3-mode CDR (Clock Data Recovery) function; 
+
+- High data rate mode for 32G FC - Low data rate mode for 16G FC 
+
+- Bypass mode for 8 GFC 
+
+The optical performance provides a bridgeable distance of up to 10km (without dispersion compensation) for 32G FC. This transceiver provides digital diagnostic functions via a 2-wire serial interface as defined by the SFF-8472 specification. 
+
+The transceiver module is compliant to RoHS-6/6. 
+
+## TECHNICAL DATA 
+
+|**Parameter**|**Value**&lt;br&gt;DWDM 100GHz SFP28&lt;br&gt;SM (2x LC)&lt;br&gt;10km&lt;br&gt;192.00 - 196.00THz&lt;br&gt;28.05Gbps&lt;br&gt;14.025Gbps&lt;br&gt;8.500Gbps&lt;br&gt;32GFC&lt;br&gt;16GFC&lt;br&gt;8GFC&lt;br&gt;0 – 7.0dB&lt;br&gt;-170 to +170ps/nm&lt;br&gt;&lt; 2.0W&lt;br&gt;0°C to +70°C&lt;br&gt;-40°C to +85°C|**Parameter**|**Value**|
+|---|---|---|---|
+|Technology||**Transmitter data:**||
+|Transmission media||Output power|Min: -3.0dBm2)|
+|Typical reach|||Max: +2.0dBm2)|
+|Nominal wavelengths||Transmit wavelengths|192.00 - 196.00THz|
+|Bit rate support|||100GHz (ITU-T G.694.1)|
+|||**Receiver data:**||
+|||Minimum input power|-10.0dBm1) 2)|
+|Protocol support||Overload (max power)|+2.0dBm1) 2)|
+|||Wavelength range|1480 - 1580nm|
+|||DDM|Yes|
+|Power budget||MSA compliance|SFP28 MSA|
+|Dispersion tolerance|||SFF-8402|
+|Power consumption||||
+|Operating temperature||||
+|Storage temperature||||
+
+
+
+1) @ 28.05 Gbps (32G FC) and BER &lt; 10-6 using PRBS 231-1 
+
+- 2) Average power 
+
+
+## **Safety/regulatory compliance:** 
+
+TUV/UL/FDA (contact Smartoptics for latest certification information) RoHS compliance 
+
+Note: Optical BE
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "32G-IR-Dxxx-BR",
+    "32G-IR-D200-BR",
+    "32G-IR-D210-BR",
+    "32G-IR-D220-BR",
+    "32G-IR-D230-BR",
+    "32G-IR-D240-BR",
+    "32G-IR-D250-BR",
+    "32G-IR-D260-BR",
+    "32G-IR-D270-BR",
+    "32G-IR-D280-BR",
+    "32G-IR-D290-BR",
+    "32G-IR-D300-BR",
+    "32G-IR-D310-BR",
+    "32G-IR-D320-BR",
+    "32G-IR-D330-BR",
+    "32G-IR-D340-BR",
+    "32G-IR-D350-BR",
+    "32G-IR-D360-BR",
+    "32G-IR-D370-BR",
+    "32G-IR-D380-BR",
+    "32G-IR-D390-BR",
+    "32G-IR-D400-BR",
+    "32G-IR-D410-BR",
+    "32G-IR-D420-BR",
+    "32G-IR-D430-BR",
+    "32G-IR-D440-BR",
+    "32G-IR-D450-BR",
+    "32G-IR-D460-BR",
+    "32G-IR-D470-BR",
+    "32G-IR-D480-BR",
+    "32G-IR-D490-BR",
+    "32G-IR-D500-BR",
+    "32G-IR-D510-BR",
+    "32G-IR-D520-BR",
+    "32G-IR-D530-BR",
+    "32G-IR-D540-BR",
+    "32G-IR-D550-BR",
+    "32G-IR-D560-BR",
+    "32G-IR-D570-BR",
+    "32G-IR-D580-BR",
+    "32G-IR-D590-BR",
+    "32G-IR-D600-BR"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP28"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "ITU-T G.694.1",
+    "SFP28 MSA",
+    "SFF-8402",
+    "SFF-8472"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1480.0</span>,
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1561.42</span>,
+    <span class="num">1580.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1561.42</span>,
+    <span class="num">1560.61</span>,
+    <span class="num">1559.79</span>,
+    <span class="num">1558.98</span>,
+    <span class="num">1558.17</span>,
+    <span class="num">1557.36</span>,
+    <span class="num">1556.55</span>,
+    <span class="num">1555.75</span>,
+    <span class="num">1554.94</span>,
+    <span class="num">1554.13</span>,
+    <span class="num">1553.33</span>,
+    <span class="num">1552.52</span>,
+    <span class="num">1551.72</span>,
+    <span class="num">1550.92</span>,
+    <span class="num">1550.12</span>,
+    <span class="num">1549.32</span>,
+    <span class="num">1548.51</span>,
+    <span class="num">1547.72</span>,
+    <span class="num">1546.92</span>,
+    <span class="num">1546.12</span>,
+    <span class="num">1545.32</span>,
+    <span class="num">1544.53</span>,
+    <span class="num">1543.73</span>,
+    <span class="num">1542.94</span>,
+    <span class="num">1542.14</span>,
+    <span class="num">1541.35</span>,
+    <span class="num">1540.56</span>,
+    <span class="num">1539.77</span>,
+    <span class="num">1538.98</span>,
+    <span class="num">1538.19</span>,
+    <span class="num">1537.4</span>,
+    <span class="num">1536.61</span>,
+    <span class="num">1535.82</span>,
+    <span class="num">1535.04</span>,
+    <span class="num">1534.25</span>,
+    <span class="num">1533.47</span>,
+    <span class="num">1532.68</span>,
+    <span class="num">1531.9</span>,
+    <span class="num">1531.12</span>,
+    <span class="num">1530.33</span>,
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "DWDM",
+    "C-band"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">192.0</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.0</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">41</span>
+  ],
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">2.0</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "32GFC",
+    "16GFC",
+    "8GFC"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "32GFC",
+    "16GFC",
+    "8GFC",
+    "ITU-T G.694.1"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">28.05</span>,
+    <span class="num">14.025</span>,
+    <span class="num">8.5</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">10.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-3.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">2.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-10.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">2.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">-170.0</span>,
+    <span class="num">170.0</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: [
+    "RS_GENERIC"
+  ],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-06
+  ],
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"los_deassert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Power budget <span class="num">0</span>–7.0 dB (TECHNICAL DATA). Rx minimum input power and overload specified at <span class="num">28.05</span> Gbps (32G FC), BER &lt; <span class="num">10</span>^-6, PRBS <span class="num">231</span>-1 (footnote <span class="num">1</span>); average power (footnote <span class="num">2</span>). Bridgeable distance up to <span class="num">10</span> km without dispersion compensation for <span class="num">32</span>G FC. Inbuilt <span class="num">3</span>-mode CDR: high rate <span class="num">32</span>G FC, low rate <span class="num">16</span>G FC, bypass <span class="num">8</span> GFC. Layer-1 tested and approved by Brocade. Storage temperature <span class="num">-40</span>°C to +85°C. RoHS-6/6 compliant. Optical BER performance note: specified at BER <span class="num">1</span>E-6 with Reed Solomon RS-FEC. Rate select: RS0/RS1 High/1 → <span class="num">28.05</span> Gbps Tx/Rx; Low/0 → <span class="num">14.025</span>/8.5 Gbps Tx/Rx per LOOPBACK/RATE SELECT table. TECHNICAL DATA header lists SM (2x LC), <span class="num">100</span>GHz (ITU-T G.694.1)."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "32G-IR-Dxxx-BR",
+    "SFP28, <span class="num">8</span>/16/32G FC, DWDM <span class="num">100</span>GHz, DDM, <span class="num">7</span>dB, <span class="num">10</span>km, D200-D600 (41ch)",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "Safety/regulatory compliance:",
+    "RATE SELECT OPERATION",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Clarify whether power budget <span class="num">0</span>–7.0 dB maps to a dedicated schema field. Emitter and photodetector types are not stated. Host/media interface IDs in hex/decimal are not provided."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">32G-IR-Dxxx-BR</span> <span class="badge">32G-IR-D200-BR</span> <span class="badge">32G-IR-D210-BR</span> <span class="badge">32G-IR-D220-BR</span> <span class="badge">32G-IR-D230-BR</span> <span class="badge">32G-IR-D240-BR</span> <span class="badge">32G-IR-D250-BR</span> <span class="badge">32G-IR-D260-BR</span> <span class="badge">32G-IR-D270-BR</span> <span class="badge">32G-IR-D280-BR</span> <span class="badge">32G-IR-D290-BR</span> <span class="badge">32G-IR-D300-BR</span> <span class="badge">32G-IR-D310-BR</span> <span class="badge">32G-IR-D320-BR</span> <span class="badge">32G-IR-D330-BR</span> <span class="badge">32G-IR-D340-BR</span> <span class="badge">32G-IR-D350-BR</span> <span class="badge">32G-IR-D360-BR</span> <span class="badge">32G-IR-D370-BR</span> <span class="badge">32G-IR-D380-BR</span> <span class="badge">32G-IR-D390-BR</span> <span class="badge">32G-IR-D400-BR</span> <span class="badge">32G-IR-D410-BR</span> <span class="badge">32G-IR-D420-BR</span> <span class="badge">32G-IR-D430-BR</span> <span class="badge">32G-IR-D440-BR</span> <span class="badge">32G-IR-D450-BR</span> <span class="badge">32G-IR-D460-BR</span> <span class="badge">32G-IR-D470-BR</span> <span class="badge">32G-IR-D480-BR</span> <span class="badge">32G-IR-D490-BR</span> <span class="badge">32G-IR-D500-BR</span> <span class="badge">32G-IR-D510-BR</span> <span class="badge">32G-IR-D520-BR</span> <span class="badge">32G-IR-D530-BR</span> <span class="badge">32G-IR-D540-BR</span> <span class="badge">32G-IR-D550-BR</span> <span class="badge">32G-IR-D560-BR</span> <span class="badge">32G-IR-D570-BR</span> <span class="badge">32G-IR-D580-BR</span> <span class="badge">32G-IR-D590-BR</span> <span class="badge">32G-IR-D600-BR</span></td></tr>
+<tr><td>wavelength_min_nm</td><td><span class="badge">1480.0</span> <span class="badge">1529.55</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1561.42</span> <span class="badge">1580.0</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1561.42</span> <span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1545.32</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span></td></tr>
+<tr><td>wavelength_band</td><td><span class="badge">DWDM</span> <span class="badge">C-band</span></td></tr>
+<tr><td>host_interface_name</td><td><span class="badge">32GFC</span> <span class="badge">16GFC</span> <span class="badge">8GFC</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">32GFC</span> <span class="badge">16GFC</span> <span class="badge">8GFC</span> <span class="badge">ITU-T G.694.1</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">28.05</span> <span class="badge">14.025</span> <span class="badge">8.5</span></td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td><span class="badge">-170.0</span> <span class="badge">170.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>SFP28</td></tr>
+<tr><td>standards_claimed</td><td>ITU-T G.694.1, SFP28 MSA, SFF-8402, SFF-8472</td></tr>
+<tr><td>frequency_min_thz</td><td>192.0</td></tr>
+<tr><td>frequency_max_thz</td><td>196.0</td></tr>
+<tr><td>channel_spacing_ghz</td><td>100.0</td></tr>
+<tr><td>channel_total</td><td>41</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>2.0</td></tr>
+<tr><td>reach_km</td><td>10.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-3.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>2.0</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-10.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>2.0</td></tr>
+<tr><td>fec_type</td><td>RS_GENERIC</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-06</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Power budget 0–7.0 dB (TECHNICAL DATA). Rx minimum input power and overload specified at 28.05 Gbps (32G FC), BER &lt; 10^-6, PRBS 231-1 (footnote 1); average power (footnote 2). Bridgeable distance up to 10 km without dispersion compensation for 32G FC. Inbuilt 3-mode CDR: high rate 32G FC, low rate 16G FC, bypass 8 GFC. Layer-1 tested and approved by Brocade. Storage temperature -40°C to +85°C. RoHS-6/6 compliant. Optical BER performance note: specified at BER 1E-6 with Reed Solomon RS-FEC. Rate select: RS0/RS1 High/1 → 28.05 Gbps Tx/Rx; Low/0 → 14.025/8.5 Gbps Tx/Rx per LOOPBACK/RATE SELECT table. TECHNICAL DATA header lists SM (2x LC), 100GHz (ITU-T G.694.1).</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>32G-IR-Dxxx-BR, SFP28, 8/16/32G FC, DWDM 100GHz, DDM, 7dB, 10km, D200-D600 (41ch), OVERVIEW, TECHNICAL DATA, Safety/regulatory compliance:, RATE SELECT OPERATION, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+<tr><td>suggestions</td><td>Clarify whether power budget 0–7.0 dB maps to a dedicated schema field. Emitter and photodetector types are not stated. Host/media interface IDs in hex/decimal are not provided.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_center_nm</th><th>wavelength_band</th><th>host_interface_name</th><th>standards_code</th><th>bit_rate_gbps</th><th>cd_tolerance_ps_nm</th></tr><tr><td><strong>32G-IR-D200-BR 32GFC DWDM</strong></td><td>32G-IR-D200-BR</td><td>1529.55</td><td>1561.42</td><td>1561.42</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D200-BR 16GFC DWDM</strong></td><td>32G-IR-D200-BR</td><td>1529.55</td><td>1561.42</td><td>1561.42</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D200-BR 8GFC DWDM</strong></td><td>32G-IR-D200-BR</td><td>1529.55</td><td>1561.42</td><td>1561.42</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D210-BR 32GFC DWDM</strong></td><td>32G-IR-D210-BR</td><td>1529.55</td><td>1561.42</td><td>1560.61</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D210-BR 16GFC DWDM</strong></td><td>32G-IR-D210-BR</td><td>1529.55</td><td>1561.42</td><td>1560.61</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D210-BR 8GFC DWDM</strong></td><td>32G-IR-D210-BR</td><td>1529.55</td><td>1561.42</td><td>1560.61</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D220-BR 32GFC DWDM</strong></td><td>32G-IR-D220-BR</td><td>1529.55</td><td>1561.42</td><td>1559.79</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D220-BR 16GFC DWDM</strong></td><td>32G-IR-D220-BR</td><td>1529.55</td><td>1561.42</td><td>1559.79</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D220-BR 8GFC DWDM</strong></td><td>32G-IR-D220-BR</td><td>1529.55</td><td>1561.42</td><td>1559.79</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D230-BR 32GFC DWDM</strong></td><td>32G-IR-D230-BR</td><td>1529.55</td><td>1561.42</td><td>1558.98</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D230-BR 16GFC DWDM</strong></td><td>32G-IR-D230-BR</td><td>1529.55</td><td>1561.42</td><td>1558.98</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D230-BR 8GFC DWDM</strong></td><td>32G-IR-D230-BR</td><td>1529.55</td><td>1561.42</td><td>1558.98</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D240-BR 32GFC DWDM</strong></td><td>32G-IR-D240-BR</td><td>1529.55</td><td>1561.42</td><td>1558.17</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D240-BR 16GFC DWDM</strong></td><td>32G-IR-D240-BR</td><td>1529.55</td><td>1561.42</td><td>1558.17</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D240-BR 8GFC DWDM</strong></td><td>32G-IR-D240-BR</td><td>1529.55</td><td>1561.42</td><td>1558.17</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D250-BR 32GFC DWDM</strong></td><td>32G-IR-D250-BR</td><td>1529.55</td><td>1561.42</td><td>1557.36</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D250-BR 16GFC DWDM</strong></td><td>32G-IR-D250-BR</td><td>1529.55</td><td>1561.42</td><td>1557.36</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D250-BR 8GFC DWDM</strong></td><td>32G-IR-D250-BR</td><td>1529.55</td><td>1561.42</td><td>1557.36</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D260-BR 32GFC DWDM</strong></td><td>32G-IR-D260-BR</td><td>1529.55</td><td>1561.42</td><td>1556.55</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D260-BR 16GFC DWDM</strong></td><td>32G-IR-D260-BR</td><td>1529.55</td><td>1561.42</td><td>1556.55</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D260-BR 8GFC DWDM</strong></td><td>32G-IR-D260-BR</td><td>1529.55</td><td>1561.42</td><td>1556.55</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D270-BR 32GFC DWDM</strong></td><td>32G-IR-D270-BR</td><td>1529.55</td><td>1561.42</td><td>1555.75</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D270-BR 16GFC DWDM</strong></td><td>32G-IR-D270-BR</td><td>1529.55</td><td>1561.42</td><td>1555.75</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D270-BR 8GFC DWDM</strong></td><td>32G-IR-D270-BR</td><td>1529.55</td><td>1561.42</td><td>1555.75</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D280-BR 32GFC DWDM</strong></td><td>32G-IR-D280-BR</td><td>1529.55</td><td>1561.42</td><td>1554.94</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D280-BR 16GFC DWDM</strong></td><td>32G-IR-D280-BR</td><td>1529.55</td><td>1561.42</td><td>1554.94</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D280-BR 8GFC DWDM</strong></td><td>32G-IR-D280-BR</td><td>1529.55</td><td>1561.42</td><td>1554.94</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D290-BR 32GFC DWDM</strong></td><td>32G-IR-D290-BR</td><td>1529.55</td><td>1561.42</td><td>1554.13</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D290-BR 16GFC DWDM</strong></td><td>32G-IR-D290-BR</td><td>1529.55</td><td>1561.42</td><td>1554.13</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D290-BR 8GFC DWDM</strong></td><td>32G-IR-D290-BR</td><td>1529.55</td><td>1561.42</td><td>1554.13</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D300-BR 32GFC DWDM</strong></td><td>32G-IR-D300-BR</td><td>1529.55</td><td>1561.42</td><td>1553.33</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D300-BR 16GFC DWDM</strong></td><td>32G-IR-D300-BR</td><td>1529.55</td><td>1561.42</td><td>1553.33</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D300-BR 8GFC DWDM</strong></td><td>32G-IR-D300-BR</td><td>1529.55</td><td>1561.42</td><td>1553.33</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D310-BR 32GFC DWDM</strong></td><td>32G-IR-D310-BR</td><td>1529.55</td><td>1561.42</td><td>1552.52</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D310-BR 16GFC DWDM</strong></td><td>32G-IR-D310-BR</td><td>1529.55</td><td>1561.42</td><td>1552.52</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D310-BR 8GFC DWDM</strong></td><td>32G-IR-D310-BR</td><td>1529.55</td><td>1561.42</td><td>1552.52</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D320-BR 32GFC DWDM</strong></td><td>32G-IR-D320-BR</td><td>1529.55</td><td>1561.42</td><td>1551.72</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D320-BR 16GFC DWDM</strong></td><td>32G-IR-D320-BR</td><td>1529.55</td><td>1561.42</td><td>1551.72</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D320-BR 8GFC DWDM</strong></td><td>32G-IR-D320-BR</td><td>1529.55</td><td>1561.42</td><td>1551.72</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D330-BR 32GFC DWDM</strong></td><td>32G-IR-D330-BR</td><td>1529.55</td><td>1561.42</td><td>1550.92</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D330-BR 16GFC DWDM</strong></td><td>32G-IR-D330-BR</td><td>1529.55</td><td>1561.42</td><td>1550.92</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D330-BR 8GFC DWDM</strong></td><td>32G-IR-D330-BR</td><td>1529.55</td><td>1561.42</td><td>1550.92</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D340-BR 32GFC DWDM</strong></td><td>32G-IR-D340-BR</td><td>1529.55</td><td>1561.42</td><td>1550.12</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D340-BR 16GFC DWDM</strong></td><td>32G-IR-D340-BR</td><td>1529.55</td><td>1561.42</td><td>1550.12</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D340-BR 8GFC DWDM</strong></td><td>32G-IR-D340-BR</td><td>1529.55</td><td>1561.42</td><td>1550.12</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D350-BR 32GFC DWDM</strong></td><td>32G-IR-D350-BR</td><td>1529.55</td><td>1561.42</td><td>1549.32</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D350-BR 16GFC DWDM</strong></td><td>32G-IR-D350-BR</td><td>1529.55</td><td>1561.42</td><td>1549.32</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D350-BR 8GFC DWDM</strong></td><td>32G-IR-D350-BR</td><td>1529.55</td><td>1561.42</td><td>1549.32</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D360-BR 32GFC DWDM</strong></td><td>32G-IR-D360-BR</td><td>1529.55</td><td>1561.42</td><td>1548.51</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D360-BR 16GFC DWDM</strong></td><td>32G-IR-D360-BR</td><td>1529.55</td><td>1561.42</td><td>1548.51</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D360-BR 8GFC DWDM</strong></td><td>32G-IR-D360-BR</td><td>1529.55</td><td>1561.42</td><td>1548.51</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D370-BR 32GFC DWDM</strong></td><td>32G-IR-D370-BR</td><td>1529.55</td><td>1561.42</td><td>1547.72</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D370-BR 16GFC DWDM</strong></td><td>32G-IR-D370-BR</td><td>1529.55</td><td>1561.42</td><td>1547.72</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D370-BR 8GFC DWDM</strong></td><td>32G-IR-D370-BR</td><td>1529.55</td><td>1561.42</td><td>1547.72</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D380-BR 32GFC DWDM</strong></td><td>32G-IR-D380-BR</td><td>1529.55</td><td>1561.42</td><td>1546.92</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D380-BR 16GFC DWDM</strong></td><td>32G-IR-D380-BR</td><td>1529.55</td><td>1561.42</td><td>1546.92</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D380-BR 8GFC DWDM</strong></td><td>32G-IR-D380-BR</td><td>1529.55</td><td>1561.42</td><td>1546.92</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D390-BR 32GFC DWDM</strong></td><td>32G-IR-D390-BR</td><td>1529.55</td><td>1561.42</td><td>1546.12</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D390-BR 16GFC DWDM</strong></td><td>32G-IR-D390-BR</td><td>1529.55</td><td>1561.42</td><td>1546.12</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D390-BR 8GFC DWDM</strong></td><td>32G-IR-D390-BR</td><td>1529.55</td><td>1561.42</td><td>1546.12</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D400-BR 32GFC DWDM</strong></td><td>32G-IR-D400-BR</td><td>1529.55</td><td>1561.42</td><td>1545.32</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D400-BR 16GFC DWDM</strong></td><td>32G-IR-D400-BR</td><td>1529.55</td><td>1561.42</td><td>1545.32</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D400-BR 8GFC DWDM</strong></td><td>32G-IR-D400-BR</td><td>1529.55</td><td>1561.42</td><td>1545.32</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D410-BR 32GFC DWDM</strong></td><td>32G-IR-D410-BR</td><td>1529.55</td><td>1561.42</td><td>1544.53</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D410-BR 16GFC DWDM</strong></td><td>32G-IR-D410-BR</td><td>1529.55</td><td>1561.42</td><td>1544.53</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D410-BR 8GFC DWDM</strong></td><td>32G-IR-D410-BR</td><td>1529.55</td><td>1561.42</td><td>1544.53</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D420-BR 32GFC DWDM</strong></td><td>32G-IR-D420-BR</td><td>1529.55</td><td>1561.42</td><td>1543.73</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D420-BR 16GFC DWDM</strong></td><td>32G-IR-D420-BR</td><td>1529.55</td><td>1561.42</td><td>1543.73</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D420-BR 8GFC DWDM</strong></td><td>32G-IR-D420-BR</td><td>1529.55</td><td>1561.42</td><td>1543.73</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D430-BR 32GFC DWDM</strong></td><td>32G-IR-D430-BR</td><td>1529.55</td><td>1561.42</td><td>1542.94</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D430-BR 16GFC DWDM</strong></td><td>32G-IR-D430-BR</td><td>1529.55</td><td>1561.42</td><td>1542.94</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D430-BR 8GFC DWDM</strong></td><td>32G-IR-D430-BR</td><td>1529.55</td><td>1561.42</td><td>1542.94</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D440-BR 32GFC DWDM</strong></td><td>32G-IR-D440-BR</td><td>1529.55</td><td>1561.42</td><td>1542.14</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D440-BR 16GFC DWDM</strong></td><td>32G-IR-D440-BR</td><td>1529.55</td><td>1561.42</td><td>1542.14</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D440-BR 8GFC DWDM</strong></td><td>32G-IR-D440-BR</td><td>1529.55</td><td>1561.42</td><td>1542.14</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D450-BR 32GFC DWDM</strong></td><td>32G-IR-D450-BR</td><td>1529.55</td><td>1561.42</td><td>1541.35</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D450-BR 16GFC DWDM</strong></td><td>32G-IR-D450-BR</td><td>1529.55</td><td>1561.42</td><td>1541.35</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D450-BR 8GFC DWDM</strong></td><td>32G-IR-D450-BR</td><td>1529.55</td><td>1561.42</td><td>1541.35</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D460-BR 32GFC DWDM</strong></td><td>32G-IR-D460-BR</td><td>1529.55</td><td>1561.42</td><td>1540.56</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D460-BR 16GFC DWDM</strong></td><td>32G-IR-D460-BR</td><td>1529.55</td><td>1561.42</td><td>1540.56</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D460-BR 8GFC DWDM</strong></td><td>32G-IR-D460-BR</td><td>1529.55</td><td>1561.42</td><td>1540.56</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D470-BR 32GFC DWDM</strong></td><td>32G-IR-D470-BR</td><td>1529.55</td><td>1561.42</td><td>1539.77</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D470-BR 16GFC DWDM</strong></td><td>32G-IR-D470-BR</td><td>1529.55</td><td>1561.42</td><td>1539.77</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D470-BR 8GFC DWDM</strong></td><td>32G-IR-D470-BR</td><td>1529.55</td><td>1561.42</td><td>1539.77</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D480-BR 32GFC DWDM</strong></td><td>32G-IR-D480-BR</td><td>1529.55</td><td>1561.42</td><td>1538.98</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D480-BR 16GFC DWDM</strong></td><td>32G-IR-D480-BR</td><td>1529.55</td><td>1561.42</td><td>1538.98</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D480-BR 8GFC DWDM</strong></td><td>32G-IR-D480-BR</td><td>1529.55</td><td>1561.42</td><td>1538.98</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D490-BR 32GFC DWDM</strong></td><td>32G-IR-D490-BR</td><td>1529.55</td><td>1561.42</td><td>1538.19</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D490-BR 16GFC DWDM</strong></td><td>32G-IR-D490-BR</td><td>1529.55</td><td>1561.42</td><td>1538.19</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D490-BR 8GFC DWDM</strong></td><td>32G-IR-D490-BR</td><td>1529.55</td><td>1561.42</td><td>1538.19</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D500-BR 32GFC DWDM</strong></td><td>32G-IR-D500-BR</td><td>1529.55</td><td>1561.42</td><td>1537.4</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D500-BR 16GFC DWDM</strong></td><td>32G-IR-D500-BR</td><td>1529.55</td><td>1561.42</td><td>1537.4</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D500-BR 8GFC DWDM</strong></td><td>32G-IR-D500-BR</td><td>1529.55</td><td>1561.42</td><td>1537.4</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D510-BR 32GFC DWDM</strong></td><td>32G-IR-D510-BR</td><td>1529.55</td><td>1561.42</td><td>1536.61</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D510-BR 16GFC DWDM</strong></td><td>32G-IR-D510-BR</td><td>1529.55</td><td>1561.42</td><td>1536.61</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D510-BR 8GFC DWDM</strong></td><td>32G-IR-D510-BR</td><td>1529.55</td><td>1561.42</td><td>1536.61</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D520-BR 32GFC DWDM</strong></td><td>32G-IR-D520-BR</td><td>1529.55</td><td>1561.42</td><td>1535.82</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D520-BR 16GFC DWDM</strong></td><td>32G-IR-D520-BR</td><td>1529.55</td><td>1561.42</td><td>1535.82</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D520-BR 8GFC DWDM</strong></td><td>32G-IR-D520-BR</td><td>1529.55</td><td>1561.42</td><td>1535.82</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D530-BR 32GFC DWDM</strong></td><td>32G-IR-D530-BR</td><td>1529.55</td><td>1561.42</td><td>1535.04</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D530-BR 16GFC DWDM</strong></td><td>32G-IR-D530-BR</td><td>1529.55</td><td>1561.42</td><td>1535.04</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D530-BR 8GFC DWDM</strong></td><td>32G-IR-D530-BR</td><td>1529.55</td><td>1561.42</td><td>1535.04</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D540-BR 32GFC DWDM</strong></td><td>32G-IR-D540-BR</td><td>1529.55</td><td>1561.42</td><td>1534.25</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D540-BR 16GFC DWDM</strong></td><td>32G-IR-D540-BR</td><td>1529.55</td><td>1561.42</td><td>1534.25</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D540-BR 8GFC DWDM</strong></td><td>32G-IR-D540-BR</td><td>1529.55</td><td>1561.42</td><td>1534.25</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D550-BR 32GFC DWDM</strong></td><td>32G-IR-D550-BR</td><td>1529.55</td><td>1561.42</td><td>1533.47</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D550-BR 16GFC DWDM</strong></td><td>32G-IR-D550-BR</td><td>1529.55</td><td>1561.42</td><td>1533.47</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D550-BR 8GFC DWDM</strong></td><td>32G-IR-D550-BR</td><td>1529.55</td><td>1561.42</td><td>1533.47</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D560-BR 32GFC DWDM</strong></td><td>32G-IR-D560-BR</td><td>1529.55</td><td>1561.42</td><td>1532.68</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D560-BR 16GFC DWDM</strong></td><td>32G-IR-D560-BR</td><td>1529.55</td><td>1561.42</td><td>1532.68</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D560-BR 8GFC DWDM</strong></td><td>32G-IR-D560-BR</td><td>1529.55</td><td>1561.42</td><td>1532.68</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D570-BR 32GFC DWDM</strong></td><td>32G-IR-D570-BR</td><td>1529.55</td><td>1561.42</td><td>1531.9</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D570-BR 16GFC DWDM</strong></td><td>32G-IR-D570-BR</td><td>1529.55</td><td>1561.42</td><td>1531.9</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D570-BR 8GFC DWDM</strong></td><td>32G-IR-D570-BR</td><td>1529.55</td><td>1561.42</td><td>1531.9</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D580-BR 32GFC DWDM</strong></td><td>32G-IR-D580-BR</td><td>1529.55</td><td>1561.42</td><td>1531.12</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D580-BR 16GFC DWDM</strong></td><td>32G-IR-D580-BR</td><td>1529.55</td><td>1561.42</td><td>1531.12</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D580-BR 8GFC DWDM</strong></td><td>32G-IR-D580-BR</td><td>1529.55</td><td>1561.42</td><td>1531.12</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D590-BR 32GFC DWDM</strong></td><td>32G-IR-D590-BR</td><td>1529.55</td><td>1561.42</td><td>1530.33</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D590-BR 16GFC DWDM</strong></td><td>32G-IR-D590-BR</td><td>1529.55</td><td>1561.42</td><td>1530.33</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D590-BR 8GFC DWDM</strong></td><td>32G-IR-D590-BR</td><td>1529.55</td><td>1561.42</td><td>1530.33</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>32G-IR-D600-BR 32GFC DWDM</strong></td><td>32G-IR-D600-BR</td><td>1529.55</td><td>1561.42</td><td>1529.55</td><td>DWDM</td><td>32GFC</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>32G-IR-D600-BR 16GFC DWDM</strong></td><td>32G-IR-D600-BR</td><td>1529.55</td><td>1561.42</td><td>1529.55</td><td>DWDM</td><td>16GFC</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>32G-IR-D600-BR 8GFC DWDM</strong></td><td>32G-IR-D600-BR</td><td>1529.55</td><td>1561.42</td><td>1529.55</td><td>DWDM</td><td>8GFC</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 19:24
+</footer>
+
+</div>
+</body>
+</html>

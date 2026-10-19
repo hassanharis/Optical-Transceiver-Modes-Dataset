@@ -1,0 +1,14 @@
+{
+  "modes": [
+    {
+      "label": "Lx10G-ST11xx Low Profile RJ",
+      "model": "Lx10G-ST11xx",
+      "form_factor": "Low Profile RJ"
+    },
+    {
+      "label": "RR10G-ST11xx Low Rider RJ",
+      "model": "RR10G-ST11xx",
+      "form_factor": "Low Rider RJ"
+    }
+  ]
+}

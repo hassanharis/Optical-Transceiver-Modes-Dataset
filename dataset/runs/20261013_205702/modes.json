@@ -1,0 +1,344 @@
+{
+  "modes": [
+    {
+      "label": "LxF-LP11xx Fast Ethernet IEEE 802.3U",
+      "model": "LxF-LP11xx",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LxF-LP11xx FDDI PMD",
+      "model": "LxF-LP11xx",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11H Fast Ethernet IEEE 802.3U",
+      "model": "LNF-LP11H",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11H FDDI PMD",
+      "model": "LNF-LP11H",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11M Fast Ethernet IEEE 802.3U",
+      "model": "LNF-LP11M",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11M FDDI PMD",
+      "model": "LNF-LP11M",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11HB Fast Ethernet IEEE 802.3U",
+      "model": "LNF-LP11HB",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11HB FDDI PMD",
+      "model": "LNF-LP11HB",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11MB Fast Ethernet IEEE 802.3U",
+      "model": "LNF-LP11MB",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11MB FDDI PMD",
+      "model": "LNF-LP11MB",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11H Fast Ethernet IEEE 802.3U",
+      "model": "LTF-LP11H",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11H FDDI PMD",
+      "model": "LTF-LP11H",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11M Fast Ethernet IEEE 802.3U",
+      "model": "LTF-LP11M",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11M FDDI PMD",
+      "model": "LTF-LP11M",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11HB Fast Ethernet IEEE 802.3U",
+      "model": "LTF-LP11HB",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11HB FDDI PMD",
+      "model": "LTF-LP11HB",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11MB Fast Ethernet IEEE 802.3U",
+      "model": "LTF-LP11MB",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11MB FDDI PMD",
+      "model": "LTF-LP11MB",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11H-R6 Fast Ethernet IEEE 802.3U",
+      "model": "LNF-LP11H-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11H-R6 FDDI PMD",
+      "model": "LNF-LP11H-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11M-R6 Fast Ethernet IEEE 802.3U",
+      "model": "LNF-LP11M-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11M-R6 FDDI PMD",
+      "model": "LNF-LP11M-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11HB-R6 Fast Ethernet IEEE 802.3U",
+      "model": "LNF-LP11HB-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11HB-R6 FDDI PMD",
+      "model": "LNF-LP11HB-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11MB-R6 Fast Ethernet IEEE 802.3U",
+      "model": "LNF-LP11MB-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LNF-LP11MB-R6 FDDI PMD",
+      "model": "LNF-LP11MB-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11H-R6 Fast Ethernet IEEE 802.3U",
+      "model": "LTF-LP11H-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11H-R6 FDDI PMD",
+      "model": "LTF-LP11H-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11M-R6 Fast Ethernet IEEE 802.3U",
+      "model": "LTF-LP11M-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11M-R6 FDDI PMD",
+      "model": "LTF-LP11M-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11HB-R6 Fast Ethernet IEEE 802.3U",
+      "model": "LTF-LP11HB-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11HB-R6 FDDI PMD",
+      "model": "LTF-LP11HB-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11MB-R6 Fast Ethernet IEEE 802.3U",
+      "model": "LTF-LP11MB-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "IEEE 802.3U",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    },
+    {
+      "label": "LTF-LP11MB-R6 FDDI PMD",
+      "model": "LTF-LP11MB-R6",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3",
+      "rx_sensitivity_dbm": -32.0,
+      "los_assert_dbm": -32.5,
+      "los_deassert_dbm": -32.0
+    }
+  ]
+}

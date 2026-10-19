@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp28-bx10d-2733-3327-i.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 5929,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 22
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

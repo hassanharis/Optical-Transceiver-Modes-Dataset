@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SO-SFP-10GE-BX80D-4955 Tx 1490nm / Rx 1550nm\",\n      \"model\": \"SO-SFP-10GE-BX80D-4955\",\n      \"wavelength_min_nm\": 1480.0,\n      \"wavelength_max_nm\": 1500.0,\n      \"wavelength_center_nm\": 1490.0,\n      \"host_interface_name\": \"SFF-8431\",\n      \"standards_code\": \"10GBASE-ZR\",\n      \"bit_rate_gbps\": 9.8\n    },\n    {\n      \"label\": \"SO-SFP-10GE-BX80D-5549 Tx 1550nm / Rx 1490nm\",\n      \"model\": \"SO-SFP-10GE-BX80D-5549\",\n      \"wavelength_min_nm\": 1540.0,\n      \"wavelength_max_nm\": 1560.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"host_interface_name\": \"SFF-8431\",\n      \"standards_code\": \"10GBASE-ZR\",\n      \"bit_rate_gbps\": 9.8\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

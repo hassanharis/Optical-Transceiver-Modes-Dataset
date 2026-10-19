@@ -1,0 +1,55 @@
+{
+  "multi_valued": {
+    "model": [
+      "DQ5001-0M5C-SO",
+      "DQ5001-001C-SO",
+      "DQ5001-1M5C-SO",
+      "DQ5001-002C-SO",
+      "DQ5001-003C-SO",
+      "DQ5001-xxxC-SO"
+    ],
+    "standards_code": [
+      "200GAUI-2",
+      "IEEE 802.3",
+      "InfiniBand HDR"
+    ],
+    "reach_km": [
+      0.0005,
+      0.003
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP56"
+    ],
+    "standards_claimed": [
+      "QSFP56 MSA",
+      "IEEE 802.3"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "200GAUI-2"
+    ],
+    "frame": [
+      "200GAUI-2"
+    ],
+    "bit_rate_gbps": [
+      200.0
+    ],
+    "penalties": [],
+    "notes": "Passive Direct Attach Cable (DAC), Twinax copper; not an optical transceiver. Cable lengths 0.5 to 3 m; AWG30 (0.5 m, 1 m, 1.5 m variants) and AWG26 (2 m, 3 m). Minimum bend radius AWG30: 23 mm; AWG26: 28 mm. RoSH compliant. Vendor identified via smartoptics.com footer only.",
+    "provenance_datasheet_sections": [
+      "DQ5001-XXXC-SO",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "ORDERING INFORMATION",
+      "MECHANICAL DRAWING"
+    ],
+    "suggestions": "Schema reach_km may be better served by a cable_length_m field for passive DAC products. mounting_type 'Pluggable' inferred from 'fits into QSFP56 ports'; not a literal datasheet phrase."
+  }
+}

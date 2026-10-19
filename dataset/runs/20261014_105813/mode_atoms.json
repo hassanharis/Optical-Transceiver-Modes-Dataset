@@ -1,0 +1,130 @@
+{
+  "multi_valued": {
+    "channel_spacing_ghz": [
+      50.0,
+      100.0
+    ],
+    "host_interface_name": [
+      "CAUI-4",
+      "QSFP28"
+    ],
+    "standards_code": [
+      "100GBASE-ZR",
+      "SC-FEC",
+      "G.694.1",
+      "SFF-8636",
+      "SFF-8665",
+      "SFF-8661",
+      "SFF-8679",
+      "100GbE"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      100.0
+    ],
+    "modulation_format": [
+      "QPSK-DP",
+      "NRZ"
+    ],
+    "reach_km": [
+      80.0,
+      120.0,
+      300.0
+    ],
+    "rx_sensitivity_dbm": [
+      -30.0,
+      -18.0,
+      -22.0
+    ],
+    "cd_tolerance_ps_nm": [
+      2400.0,
+      6000.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TQ2028-TUNC-SO"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "SFF-8636",
+      "SFF-8661",
+      "SFF-8665",
+      "SFF-8679",
+      "QSFP28 MSA",
+      "CAUI-4",
+      "IEEE P802.3bm Annex 83E",
+      "ITU-T G.694.1",
+      "100GBASE-ZR"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "DWDM"
+    ],
+    "frequency_min_thz": [
+      191.35
+    ],
+    "frequency_max_thz": [
+      196.1
+    ],
+    "channel_total": [
+      96
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      5.5
+    ],
+    "media_interface_name": [
+      "100GBASE-ZR"
+    ],
+    "frame": [
+      "4x 25 Gbps NRZ"
+    ],
+    "tx_power_min_dbm": [
+      -8.0
+    ],
+    "tx_power_max_dbm": [
+      -4.0
+    ],
+    "rx_osnr_db": [
+      16.5
+    ],
+    "rx_osnr_tolerance_db_max": [
+      16.5
+    ],
+    "rx_overload_dbm": [
+      3.0
+    ],
+    "fec_type": [
+      "SCFEC"
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "penalties": [],
+    "notes": "Typical reach 80 km limited by power budget; 120 km limited by dispersion compensation; 300 km extended mode set through host in Low Power mode (+0.2 W power consumption). Power budget 0–22 dB. Transmitter/receiver output and input powers are average (footnote 4). Minimum input power unamplified at BER per general definitions (normally 1E-12) with OSNR >35 dB/0.1 nm (footnotes 5–6); 100G DQPSK SC-FEC. Amplified minimum input -18 dBm; extended range -22 dBm with Rx input power range where performance guaranteed with <1 dB OSNR penalty relative to Rx OSNR tolerance limit (footnote 7). Dispersion ±6000 ps/nm applies to extended mode (footnote 3). Storage temperature -40°C to +85°C. Media FEC SC-FEC latency 17 µs. Rx power monitor: signal -21 dBm to +3 dBm; total -21 dBm to +6 dBm.",
+    "provenance_datasheet_sections": [
+      "QSFP28 100G COHERENT DWDM SFF-8636",
+      "TQ2028-TUNC-SO",
+      "TECHNICAL DATA",
+      "Safety/regulatory compliance",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Wavelength range is given only in THz (191.35–196.10); nm fields left null. Consider mapping power budget 0–22 dB if added to schema. Footnote 7 describes OSNR penalty qualitatively but lacks a tabular penalized value for structured penalties."
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "vendor": "Cinch Connectivity Solutions",
+  "model": [
+    "FNK-ER12x",
+    "FNK-ER12"
+  ],
+  "form_factor": [
+    "Front Load Pluggable",
+    "Low Profile RJ",
+    "Low Rider RJ"
+  ],
+  "standards_claimed": [
+    "IEEE Gigabit Ethernet",
+    "ANSI 1x Fiber Channel",
+    "IEEE-802.3z",
+    "ANSI X3.297",
+    "FC-PH-2",
+    "SFP Multi-Source Agreement (MSA)",
+    "SFF-8472 Rev. 9.3"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    830.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    860.0,
+    1625.0
+  ],
+  "wavelength_center_nm": [
+    850.0,
+    1550.0
+  ],
+  "mounting_type": [
+    "Front load pluggable",
+    "screw_post",
+    "solder_post"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "standards_code": [
+    "IEEE-802.3z",
+    "ANSI X3.297",
+    "FC-PH-2",
+    "SFF-8472 Rev. 9.3"
+  ],
+  "bit_rate_gbps": [
+    1.25
+  ],
+  "modulation_format": [
+    "NRZ"
+  ],
+  "reach_km": [
+    55.0
+  ],
+  "tx_power_min_dbm": [
+    -9.5
+  ],
+  "tx_power_max_dbm": [
+    -4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -20.0
+  ],
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    10.0
+  ],
+  "los_assert_dbm": [
+    -20.0
+  ],
+  "los_deassert_dbm": [
+    -32.0
+  ],
+  "optical_extinction_ratio_db": [
+    10.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    1.0,
+    2.25,
+    4.0
+  ],
+  "total_jitter_ps": [
+    153.0
+  ],
+  "penalties": [],
+  "notes": "Product narrative and ordering code ER12 state 1550 nm SM 55 km DFB; Transmitter table lists Optical Output Wavelength 830 / 850 / 860 nm (Min/Typical/Max). Reach 55 km assumes 0.25 dB/km singlemode cable. Optical Sensitivity and TX specs at BER = 10^-12 @ 1.25 Gbps, PRBS 27-1, NRZ. Features list duplex LC receptacle described as multimode LC while module is singlemode. DDMI alarm thresholds include TX power low -9.5 dBm / high -3 dBm and RX power low -21 dBm / high -0.5 dBm (digital diagnostics table). Connector pin numbering differs from MSA SFP standards per pin notes.",
+  "provenance_datasheet_sections": [
+    "FNK-ER12x",
+    "Features & Benefits",
+    "Ordering Information",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Transmitter",
+    "FNK-ER12x Technical Specifications",
+    "Receiver",
+    "Regulatory Compliance",
+    "FNK-ER12x DIGITAL DIAGNOSTICS MONITORING INTERFACE – BASE ADDRESS A2h",
+    "Timing Parameters"
+  ],
+  "suggestions": "Clarify whether Transmitter wavelength table applies to ER12 (1550 nm) or is shared template; add fields for spectral width RMS, rise/fall time, and supply current if useful for 1G modules."
+}

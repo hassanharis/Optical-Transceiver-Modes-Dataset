@@ -1,0 +1,84 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP28-BX10D-2733 25GE Tx 1270nm",
+      "model": "SO-SFP28-BX10D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "25GE",
+      "standards_code": "25G Ethernet",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX10D-2733 CPRI opt 10 Tx 1270nm",
+      "model": "SO-SFP28-BX10D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "CPRI opt 10",
+      "standards_code": "CPRI option 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "SO-SFP28-BX10D-3327 25GE Tx 1330nm",
+      "model": "SO-SFP28-BX10D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "25GE",
+      "standards_code": "25G Ethernet",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX10D-3327 CPRI opt 10 Tx 1330nm",
+      "model": "SO-SFP28-BX10D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "CPRI opt 10",
+      "standards_code": "CPRI option 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "SO-SFP28-BX10D-2733-I 25GE Tx 1270nm",
+      "model": "SO-SFP28-BX10D-2733-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "25GE",
+      "standards_code": "25G Ethernet",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX10D-2733-I CPRI opt 10 Tx 1270nm",
+      "model": "SO-SFP28-BX10D-2733-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "CPRI opt 10",
+      "standards_code": "CPRI option 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "SO-SFP28-BX10D-3327-I 25GE Tx 1330nm",
+      "model": "SO-SFP28-BX10D-3327-I",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "25GE",
+      "standards_code": "25G Ethernet",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX10D-3327-I CPRI opt 10 Tx 1330nm",
+      "model": "SO-SFP28-BX10D-3327-I",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "CPRI opt 10",
+      "standards_code": "CPRI option 10",
+      "bit_rate_gbps": 24.33
+    }
+  ]
+}

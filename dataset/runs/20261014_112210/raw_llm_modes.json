@@ -1,0 +1,46 @@
+{
+  "modes": [
+    {
+      "label": "CSFP BiDi C-temp \u2014 transmitter 1490 nm",
+      "model": "SO-CSFP-1000BASE-BX20D-43-O2",
+      "wavelength_min_nm": 1490.0,
+      "wavelength_max_nm": 1500.0,
+      "wavelength_center_nm": 1490.0
+    },
+    {
+      "label": "CSFP BiDi C-temp \u2014 receiver 1310 nm",
+      "model": "SO-CSFP-1000BASE-BX20D-43-O2",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0
+    },
+    {
+      "label": "CSFP BiDi C-temp \u2014 transmitter 1490 nm",
+      "model": "SO-CSFP-1000Base-BX20D-43-O2",
+      "wavelength_min_nm": 1490.0,
+      "wavelength_max_nm": 1500.0,
+      "wavelength_center_nm": 1490.0
+    },
+    {
+      "label": "CSFP BiDi C-temp \u2014 receiver 1310 nm",
+      "model": "SO-CSFP-1000Base-BX20D-43-O2",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0
+    },
+    {
+      "label": "CSFP BiDi I-temp \u2014 transmitter 1490 nm",
+      "model": "SO-CSFP-1000Base-BX20D-43-O2-I",
+      "wavelength_min_nm": 1490.0,
+      "wavelength_max_nm": 1500.0,
+      "wavelength_center_nm": 1490.0
+    },
+    {
+      "label": "CSFP BiDi I-temp \u2014 receiver 1310 nm",
+      "model": "SO-CSFP-1000Base-BX20D-43-O2-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0
+    }
+  ]
+}

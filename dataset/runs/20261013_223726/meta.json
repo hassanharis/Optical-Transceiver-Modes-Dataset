@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:37:26.338676+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftce4516e1pcm-transceiver-ds.pdf",
+  "page_count": 10,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 13.926,
+    "extract_atoms": 24.523,
+    "store_run": 0.012,
+    "synthesize_modes": 36.012,
+    "store_modes": 0.01,
+    "total": 74.483
+  }
+}

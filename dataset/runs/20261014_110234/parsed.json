@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\Smartoptics TS2017-S31C-SO.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 6329,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 23
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

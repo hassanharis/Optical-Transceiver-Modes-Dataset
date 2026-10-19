@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T19:27:50.211726+00:00",
+  "source_file": "C:\\Haris\\datasheets\\800g-osfp-dr4-op13gi4-005d.pdf",
+  "page_count": 9,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 8.748,
+    "extract_atoms": 34.359,
+    "store_run": 0.004,
+    "synthesize_modes": 27.068,
+    "store_modes": 0.003,
+    "total": 70.182
+  }
+}

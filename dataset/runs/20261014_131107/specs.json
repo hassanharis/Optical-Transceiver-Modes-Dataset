@@ -1,0 +1,136 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-100Base-L160D-C47",
+    "SO-SFP-100Base-L160D-C49",
+    "SO-SFP-100Base-L160D-C51",
+    "SO-SFP-100Base-L160D-C53",
+    "SO-SFP-100Base-L160D-C55",
+    "SO-SFP-100Base-L160D-C57",
+    "SO-SFP-100Base-L160D-C59",
+    "SO-SFP-100Base-L160D-C61"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "G.694.2"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1470.0,
+    1471.0
+  ],
+  "wavelength_max_nm": [
+    1610.0,
+    1611.0
+  ],
+  "wavelength_center_nm": [
+    1470.0,
+    1490.0,
+    1510.0,
+    1530.0,
+    1550.0,
+    1570.0,
+    1590.0,
+    1610.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    8
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "G.694.2",
+    "FE",
+    "STM-1",
+    "OC-3",
+    "100BASE"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    125.0,
+    155.0
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    160.0
+  ],
+  "tx_power_min_dbm": [
+    2.0
+  ],
+  "tx_power_max_dbm": [
+    7.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -35.0
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -10.0
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [
+    1e-10
+  ],
+  "post_fec_ber_target": [],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -36.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Series designation SO-SFP-100BASE-L160D-CXX. Bit rate stated as 125Mbps–155Mbps. Power consumption stated as < 1 W (no single numeric watt value). Power budget 17–37 dB. Optical path penalty 1 dB. Reach 160 km dependent on actual optical path attenuation. Tx output power and Rx min/overload footnote 3): average power; footnote 2): measured at 155Mbps using PRBS23 @ BER 1x10-10. Receiver wavelength range 1100–1650 nm. Storage temperature -40°C to +85°C (not operating). DDM Yes. Safety/regulatory: TUV/UL/FDA, RoHS.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-100BASE-L160D-CXX",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Consider accepting Mbps in bit_rate field or a separate bit_rate_mbps field. Power budget (17–37 dB) and optical path penalty (1 dB) are not in schema. SFP form factor not in form_factor enum examples."
+}

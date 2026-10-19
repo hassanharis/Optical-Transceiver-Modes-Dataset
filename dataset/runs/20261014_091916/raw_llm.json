@@ -1,0 +1,139 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-SC2510-20CN2",
+    "LS-SC2510-20IN2"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "ITU-T G.987.1",
+    "RoHS",
+    "WEEE"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260,
+    1575
+  ],
+  "wavelength_max_nm": [
+    1280,
+    1580
+  ],
+  "wavelength_center_nm": [
+    1270,
+    1577
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "SC",
+    "SC/UPC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "SFP+"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [],
+  "standards_code": [
+    "XGSPON",
+    "XG-PON",
+    "G.987.1",
+    "Class N2"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    9.953,
+    9.95328
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [],
+  "reach_km": [
+    20
+  ],
+  "tx_power_min_dbm": [
+    4.0
+  ],
+  "tx_power_max_dbm": [
+    9.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -28.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -8.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    0.001
+  ],
+  "extinction_ratio_db": [
+    6
+  ],
+  "los_assert_dbm": [
+    -44
+  ],
+  "los_deassert_dbm": [
+    -29
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    6
+  ],
+  "optical_return_loss_tolerance_db": [
+    -15
+  ],
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": [
+    30
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    6
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "LS-SC2510-20CN2 ordering specifies 0°C~+70°C; LS-SC2510-20IN2 specifies -40°C~+85°C Industrial operating case temperature. Recommended Operating Conditions also lists Industrial Tc -40 to 85°C and Standard 0 to 70°C. Receiver sensitivity note 3: measured with PRBS 223-1 @9.953Gbps with Tx on ER=8.2dB, BER=10^-3. Transmitter note 2: Transmit on 20km SMF. Note 1: PRBS 223-1 @9.953Gbps. Transmitter Dispersion Penalty max 1.5 dB (note 3). LOS rows labeled LOS Optical Dessert (deassert) and LOS Optical Assert with unit dB as printed. Off level light max -45 dBm. Burst turn on/off time max 128 bit. TXSD delay time max 1000 ns. WDM filter isolation min 35 dB. Spectral Width (@-20dB) max 1 nm on transmitter. Eye Diagram compliant with ITU-T G.987.1. +3.3V single power supply; Vcc 3.135 to 3.465 V.",
+  "provenance_datasheet_sections": [
+    "LS-SC2510-20CN2",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical Characteristics",
+    "Electrical Characteristics",
+    "Ordering information"
+  ],
+  "suggestions": "Clarify whether LOS thresholds are dBm despite dB unit in table. Map Transmitter Dispersion Penalty 1.5 dB to penalties schema if penalized parameter and conditions are defined. Add fields for WDM isolation, burst timing, and off-level optical power if needed for PON ONUs."
+}

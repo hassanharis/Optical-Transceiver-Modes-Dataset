@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"Gigabit Ethernet (IEEE 802.3z)\",\n      \"host_interface_name\": \"Gigabit Ethernet\",\n      \"standards_code\": \"IEEE 802.3z\"\n    },\n    {\n      \"label\": \"1x Fiber Channel (ANSI X3.297)\",\n      \"host_interface_name\": \"1x Fiber Channel\",\n      \"standards_code\": \"ANSI X3.297\"\n    },\n    {\n      \"label\": \"1x Fiber Channel (FC-PH-2)\",\n      \"host_interface_name\": \"1x Fiber Channel\",\n      \"standards_code\": \"FC-PH-2\"\n    }\n  ]\n}\n```\n\n**Evidence:** The **Link Distances** table defines two applications: **Gigabit Ethernet \u2013 IEEE 802.3z** and **Fiber Channel \u2013 ANSI X3.297**. The transmitter note ties **1x Fiber Channel** compliance to **ANSI X3.297 / FC-PH-2** in the same spec line; **FC-PH-2** is not a separate table row, so a third mode for it is optional. If you want **only** table-backed modes, drop the third entry and keep the first two.",
+  "reasoning_content": null
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:47:45.290222+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Smartoptics QSFP-DD SO-TQSFPDD4CCZRP.pdf",
+  "page_count": 3,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 8.421,
+    "extract_atoms": 53.401,
+    "store_run": 0.005,
+    "synthesize_modes": 79.637,
+    "store_modes": 0.006,
+    "total": 141.469
+  }
+}

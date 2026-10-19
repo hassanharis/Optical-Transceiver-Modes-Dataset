@@ -1,0 +1,86 @@
+{
+  "modes": [
+    {
+      "label": "CWDM Lane 1 (1271 nm)",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "wavelength_center_nm": 1271.0,
+      "wavelength_band": "CWDM",
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_max_dbm": 2.3
+    },
+    {
+      "label": "CWDM Lane 2 (1291 nm)",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "wavelength_center_nm": 1291.0,
+      "wavelength_band": "CWDM",
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_max_dbm": 2.3
+    },
+    {
+      "label": "CWDM Lane 3 (1311 nm)",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "wavelength_band": "CWDM",
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_max_dbm": 2.3
+    },
+    {
+      "label": "CWDM Lane 4 (1331 nm)",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "wavelength_center_nm": 1331.0,
+      "wavelength_band": "CWDM",
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_max_dbm": 2.3
+    },
+    {
+      "label": "Aggregated line rate 41.25 Gbps",
+      "wavelength_band": "1300nm band",
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 41.25,
+      "tx_power_max_dbm": 8.3
+    },
+    {
+      "label": "Aggregated line rate 43.018 Gbps",
+      "wavelength_band": "1300nm band",
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 43.018,
+      "tx_power_max_dbm": 8.3
+    },
+    {
+      "label": "Per-lane 10.7546 Gbps",
+      "wavelength_band": "CWDM",
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 10.7546,
+      "tx_power_max_dbm": 2.3
+    },
+    {
+      "label": "Grey QSFP+ (module technology)",
+      "wavelength_band": "grey",
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 41.25,
+      "tx_power_max_dbm": 8.3
+    },
+    {
+      "label": "Protocol 40GbE",
+      "wavelength_band": "1300nm band",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "tx_power_max_dbm": 8.3
+    },
+    {
+      "label": "Protocol OTU3",
+      "wavelength_band": "1300nm band",
+      "standards_code": "OTU3",
+      "bit_rate_gbps": 43.018,
+      "tx_power_max_dbm": 8.3
+    }
+  ]
+}

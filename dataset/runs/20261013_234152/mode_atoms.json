@@ -1,0 +1,142 @@
+{
+  "multi_valued": {
+    "form_factor": [
+      "OSFP",
+      "OSFP1600",
+      "OSFP FlatTop",
+      "OSFP_RHS"
+    ],
+    "power_consumption_w": [
+      30.0,
+      2.0
+    ],
+    "host_interface_name": [
+      "1.6TAUI-8 C2M",
+      "1.6TAUI-8"
+    ],
+    "frame": [
+      "8x200G Ethernet",
+      "8x 100GAUI-1"
+    ],
+    "standards_code": [
+      "1.6TBASE-DR8",
+      "DR8",
+      "DR4/DR8",
+      "1.6TAUI-8"
+    ],
+    "bit_rate_gbps": [
+      1600.0,
+      200.0,
+      800.0
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "rx_sensitivity_dbm": [
+      -3.4,
+      -0.9
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LO-DM311T-DR8C"
+    ],
+    "standards_claimed": [
+      "IEEE802.3dj D1p3:1.6TBASE-DR8 optical interface",
+      "IEEE802.3dj D1p3:1.6TAUI-8 C2M electrical interface",
+      "OSFP MSA Specification Rev 5.1",
+      "CMIS Rev 5.3"
+    ],
+    "emitter_type": [
+      "LASER_EML"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [],
+    "channel_total": [
+      8
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "MPO-12/APC",
+      "Dual MPO-12/APC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "media_interface_name": [
+      "1.6TBASE-DR8"
+    ],
+    "baud_rate_gbaud": [
+      106.25
+    ],
+    "reach_km": [
+      0.5
+    ],
+    "tx_power_min_dbm": [
+      -3.3
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_overload_dbm": [
+      4.0
+    ],
+    "post_fec_ber_target": [
+      6.4e-05
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      21.4
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "penalties": [],
+    "notes": "Aggregate bit rate 1.6 Tb/s; twin-port 2x 800 Gb/s. Operating distance stated as 2–500 m (reach_km recorded as 0.5 km from 500 m max). Lane signaling rate 106.25 ± 50 ppm GBd. Receiver sensitivity SOMA also given as formulas: -4.3 + TECQ dBm for 0.9 dB ≤ TECQ ≤ SECQ; stressed receiver sensitivity SRS -0.9 dBm at BER = 6.4x10^-5 (Note 1, conformance test at TP3). Tx launch power min -3.3 dBm noted informative (Note 2). Max power dissipation 30 W; low-power mode 2 W. Damage threshold AOPD 5 dBm min per lane.",
+    "provenance_datasheet_sections": [
+      "LO-DM311T-DR8C",
+      "1.6T DR8 OSFP FlatTop 1310nm 500m Dual MPO-12/APC DOM Transceiver",
+      "Features",
+      "Applications",
+      "Description",
+      "Absolute Maximum Ratings",
+      "Recommended Operating Conditions",
+      "Optical Characteristics",
+      "Electrical Characteristics",
+      "Electrical Characteristics Low Speed Signal",
+      "Ordering information"
+    ],
+    "suggestions": "Clarify whether reach should remain in meters (500) vs converted km. Host/media interface ID hex fields absent from datasheet. frame field had no explicit 8x100GAUI-1—remove if only explicitly stated strings are allowed."
+  }
+}

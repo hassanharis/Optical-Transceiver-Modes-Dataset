@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SO-SFP-100Base-BX40D-35 (Tx 1310 nm / Rx 1550 nm)\",\n      \"model\": \"SO-SFP-100Base-BX40D-35\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1360.0,\n      \"wavelength_center_nm\": 1310.0,\n      \"standards_code\": \"100BASE-BX40D\",\n      \"bit_rate_gbps\": 0.1\n    },\n    {\n      \"label\": \"SO-SFP-100Base-BX40D-53 (Tx 1550 nm / Rx 1310 nm)\",\n      \"model\": \"SO-SFP-100Base-BX40D-53\",\n      \"wavelength_min_nm\": 1500.0,\n      \"wavelength_max_nm\": 1580.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"standards_code\": \"100BASE-BX40D\",\n      \"bit_rate_gbps\": 0.1\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

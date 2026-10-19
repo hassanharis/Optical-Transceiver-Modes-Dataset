@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — LINK-PP</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">LINK-PP</div>
+  <div class="subtitle">SFP</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">LINK-PP</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">SFP</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">SFP MSA, IEEE 802.3, IEEE 802.3-2002, IEEE 802.3ab, Gigabit Ethernet, 1000BASE-T, 1000 BASE-T</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable_hot</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">RJ-45</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">COPPER_CAT5</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-40.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">85.0</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-12</div></div>
+      <div class="spec-item"><div class="label">Number Of Lanes</div><div class="value">4</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Copper (electrical) SFP over Cat 5 UTP; not an optical transceiver. Datasheet title LP-SFP-MSRI: 1000 Mbps only, SERDES interface, -40~85°C (Industrial). Features also list Commercial 0 to +70°C for other variants. Electrical input: document states LP-SFP-xxxx input voltage +5V +/- 5%; Table 1 specifies +3.3V supply (Vcc 3.13–3.47 V). Caution: power consumption and surge current higher than SFP MSA. Reach stated as 100 m (Table 5, Description) and 0.1 Km (ordering); BER &lt;10^-12 at 100 m Cat 5. Symbol rate 250 Mbps on each of four pairs. Line frequency 125 MHz (Table 3). LOS pin reflects link/receiver status per standard, not optical power in dBm.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">LP-SFP-MSRI, Copper SFP Transceiver, Features, Applications, Description, Electrical Power Interface, High-Speed Electrical Interface, High-speed electrical interface, host-SFP, General Specifications, Table 5. General specifications, Environmental Specifications, Table 6. Environmental specifications, Ordering information</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Add copper/RJ-45 form factors (SFP, RJ-45) to enums. reach_km: table uses 100 m while ordering uses 0.1 Km—same distance, different units. Consider host electrical params (125 MHz line rate, 250 Mbps per pair) in schema. post_fec_ber_target sourced from cable BER note, not FEC block.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Power (W)</th><th>Host Interface</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>modulation_format</th><th>Reach (km)</th></tr>
+      <tr><td><strong>TMRC 10/100/1000 SGMII Commercial</strong></td><td>LP-SFP-TMRC</td><td>1.05</td><td>SGMII</td><td>10/100/1000Mbps</td><td>1.25</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>MSRC 1000 SERDES Commercial</strong></td><td>LP-SFP-MSRC</td><td>1.05</td><td>SERDES</td><td>1000BASE-T</td><td>1.0</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>TM8C 10/100/1000 SGMII Commercial</strong></td><td>LP-SFP-TM8C</td><td>1.05</td><td>SGMII</td><td>10/100/1000Mbps</td><td>1.25</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>MS8C 1000 SERDES Commercial</strong></td><td>LP-SFP-MS8C</td><td>1.05</td><td>SERDES</td><td>1000BASE-T</td><td>1.0</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>TMRI 10/100/1000 SGMII Industrial</strong></td><td>LP-SFP-TMRI</td><td>1.05</td><td>SGMII</td><td>10/100/1000Mbps</td><td>1.25</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>MSRI 1000 SERDES Industrial</strong></td><td>LP-SFP-MSRI</td><td>1.05</td><td>SERDES</td><td>1000BASE-T</td><td>1.0</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>TM8I 10/100/1000 SGMII Industrial</strong></td><td>LP-SFP-TM8I</td><td>1.05</td><td>SGMII</td><td>10/100/1000Mbps</td><td>1.25</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>MS8I 1000 SERDES Industrial</strong></td><td>LP-SFP-MS8I</td><td>1.05</td><td>SERDES</td><td>1000BASE-T</td><td>1.0</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>TM8CNN 10/100/1000 SGMII 0.1km Commercial</strong></td><td>LP-SFP-TM8CNN</td><td>1.05</td><td>SGMII</td><td>10/100/1000Mbps</td><td>1.25</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>TM8INN 10/100/1000 SGMII 0.1km Industrial</strong></td><td>LP-SFP-TM8INN</td><td>1.05</td><td>SGMII</td><td>10/100/1000Mbps</td><td>1.25</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>MS8CNY 1000 SERDES 0.1km Commercial</strong></td><td>LP-SFP-MS8CNY</td><td>1.05</td><td>SERDES</td><td>1000BASE-T</td><td>1.0</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>MS8INY 1000 SERDES 0.1km Industrial</strong></td><td>LP-SFP-MS8INY</td><td>1.05</td><td>SERDES</td><td>1000BASE-T</td><td>1.0</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>MS8CNN 1000 SERDES 0.1km Commercial</strong></td><td>LP-SFP-MS8CNN</td><td>1.05</td><td>SERDES</td><td>1000BASE-T</td><td>1.0</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>MS8INN 1000 SERDES 0.1km Industrial</strong></td><td>LP-SFP-MS8INN</td><td>1.05</td><td>SERDES</td><td>1000BASE-T</td><td>1.0</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>TM8CNY 10/100/1000 SGMII 0.1km Commercial</strong></td><td>LP-SFP-TM8CNY</td><td>1.05</td><td>SGMII</td><td>10/100/1000Mbps</td><td>1.25</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>TM8INY 10/100/1000 SGMII 0.1km Industrial</strong></td><td>LP-SFP-TM8INY</td><td>1.05</td><td>SGMII</td><td>10/100/1000Mbps</td><td>1.25</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>TM8CYN 10/100/1000 SGMII 0.1km Commercial</strong></td><td>LP-SFP-TM8CYN</td><td>1.05</td><td>SGMII</td><td>10/100/1000Mbps</td><td>1.25</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>MS8CYY 1000 SERDES 0.1km Commercial</strong></td><td>LP-SFP-MS8CYY</td><td>1.05</td><td>SERDES</td><td>1000BASE-T</td><td>1.0</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>MS8IYY 1000 SERDES 0.1km Industrial</strong></td><td>LP-SFP-MS8IYY</td><td>1.05</td><td>SERDES</td><td>1000BASE-T</td><td>1.0</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>MS8CYN 1000 SERDES 0.1km Commercial</strong></td><td>LP-SFP-MS8CYN</td><td>1.05</td><td>SERDES</td><td>1000BASE-T</td><td>1.0</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>TM8CYY 10/100/1000 SGMII 0.1km Commercial</strong></td><td>LP-SFP-TM8CYY</td><td>1.05</td><td>SGMII</td><td>10/100/1000Mbps</td><td>1.25</td><td>PAM5</td><td>0.1</td></tr>
+      <tr><td><strong>TM8IYY 10/100/1000 SGMII 0.1km Industrial</strong></td><td>LP-SFP-TM8IYY</td><td>1.05</td><td>SGMII</td><td>10/100/1000Mbps</td><td>1.25</td><td>PAM5</td><td>0.1</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">LP-SFP-MSRI</span> <span class="badge">LP-SFP-TMRC</span> <span class="badge">LP-SFP-MSRC</span> <span class="badge">LP-SFP-TM8C</span> <span class="badge">LP-SFP-MS8C</span> <span class="badge">LP-SFP-TMRI</span> <span class="badge">LP-SFP-TM8I</span> <span class="badge">LP-SFP-MS8I</span> <span class="badge">LP-SFP-TM8CNN</span> <span class="badge">LP-SFP-TM8INN</span> <span class="badge">LP-SFP-MS8CNY</span> <span class="badge">LP-SFP-MS8INY</span> <span class="badge">LP-SFP-MS8CNN</span> <span class="badge">LP-SFP-MS8INN</span> <span class="badge">LP-SFP-TM8CNY</span> <span class="badge">LP-SFP-TM8INY</span> <span class="badge">LP-SFP-TM8CYN</span> <span class="badge">LP-SFP-MS8CYY</span> <span class="badge">LP-SFP-MS8IYY</span> <span class="badge">LP-SFP-MS8CYN</span> <span class="badge">LP-SFP-TM8CYY</span> <span class="badge">LP-SFP-TM8IYY</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">1.05</span> <span class="badge">1.2</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">SERDES</span> <span class="badge">SGMII</span> <span class="badge">1000BASE-T</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">1000BASE-T</span> <span class="badge">1000 BASE-T</span> <span class="badge">IEEE 802.3</span> <span class="badge">10/100/1000Mbps</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">1.25</span> <span class="badge">1.0</span> <span class="badge">0.01</span></td></tr>
+      <tr><td>modulation_format</td><td><span class="badge">PAM</span> <span class="badge">PAM5</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">0.1</span> <span class="badge">100.0</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 23:49
+</footer>
+
+</div>
+</body>
+</html>

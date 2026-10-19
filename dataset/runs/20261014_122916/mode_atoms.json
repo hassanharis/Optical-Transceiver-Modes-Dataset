@@ -1,0 +1,118 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1294.53,
+      1299.02,
+      1303.54,
+      1308.09
+    ],
+    "wavelength_max_nm": [
+      1296.59,
+      1301.09,
+      1305.63,
+      1310.19
+    ],
+    "wavelength_center_nm": [
+      1295.56,
+      1300.05,
+      1304.58,
+      1309.14
+    ],
+    "wavelength_band": [
+      "grey",
+      "LAN-WDM"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      25.78
+    ],
+    "tx_power_max_dbm": [
+      7.0,
+      13.0
+    ],
+    "fec_type": [
+      "RS_528_514",
+      "RS_GENERIC"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-QSFP28-ZR4"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "SFF-8636",
+      "IEEE802.3bj"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF_G652"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      5.0
+    ],
+    "host_interface_name": [
+      "QSFP28"
+    ],
+    "media_interface_name": [
+      "100GBASE-ZR4"
+    ],
+    "standards_code": [
+      "100GBASE-ZR4"
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      2.0
+    ],
+    "rx_sensitivity_dbm": [
+      -29.0
+    ],
+    "rx_overload_dbm": [
+      -5.0
+    ],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -40.0
+    ],
+    "los_deassert_dbm": [
+      -31.5
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Power budget 12.0–31.0 dB. Dispersion penalty 1.0 dB (power budget reduction; no paired penalized OSNR/Rx value at a stated condition). Diff in power between lanes max 3.6 dB. Rx min/overload per 25.78 Gbps lane, PRBS31 @ BER 5E-5. Tx/Rx powers are average per footnote 3). Aggregated 103.12 Gbps is 100GbE line rate; FEC required by host per IEEE802.3bj. Storage temperature -40°C to +85°C. Title lists 31 dB and wavelengths 1296/1300/1305/1309 nm (rounded/nominal labels).",
+    "provenance_datasheet_sections": [
+      "SO-QSFP28-ZR4",
+      "QSFP28, 100G Ethernet ZR4, SM 1296/1300/1305/1309nm, 80km, 31dB, LC",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Clarify whether post-FEC BER target is strictly better than 1e-12 or 1e-12 inclusive. Map dispersion penalty 1.0 dB to schema if a standard representation for budget-only penalties is desired."
+  }
+}

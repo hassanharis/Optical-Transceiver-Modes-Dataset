@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;SO-QSFP-DD-4C-FR4-M&#x27;, &#x27;SO-QSFP-DD-4C-FR4-4-M&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">so-qsfp-dd-4c-fr4-m-r5.1.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">4</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 11:43</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.1 
+
+## **SO-QSFP-DD-4C-FR4-M / FR4-4-M** 
+
+QSFP-DD 400G-FR4 Ethernet, 4x100G-FR, PAM4 CMIS3.0/CMIS4.0, 4x1311nm, 2km, 4dB, MPO 
+
+## OVERVIEW 
+
+The SO-QSFP-DD-4C-FR4 is a QSFP-DD form-factor transceiver for 400Gbps Ethernet applications. It is intended for use in data center interconnect between switches, routers, storage equipment etc. for optical distances up to 2km over a SingleMode (SM) ribbon fiber cable. 
+
+The electrical interface consists of eight 53.125G signals (400GAUI-8) that are converted to eight PAM4-modulated channels/lanes to transport the Ethernet signal. The transceiver can also be set in 4x100GAUI-2 mode to enable 400G to 4x 100G break-out configurations. Digital diagnostics functions are available via an I[2] C interface, as specified by the QSFP-DD MSA. The optical interface to the transceiver is an MPO12 connector. 
+
+Forward Error Correction (FEC) is required to be implemented by the host to ensure reliable system operation. The FEC type shall be as defined in IEEE802.3bj, i.e. Reed Solomon RS(528,514). The optical parameters will provide a bit error ratio (BER) of 2.4 x 10[-4] . 
+
+The transceiver is provided in two versions, compliant with Common Management Interface Specification CMIS3.0 and CMIS4.0. 
+
+## TECHNICAL DATA 
+
+|**Parameter**|**Value**&lt;br&gt;Grey QSFP-DD&lt;br&gt;SM (MPO-12)&lt;br&gt;2km&lt;br&gt;4x1311nm&lt;br&gt;100G-FR1 MSA&lt;br&gt;400GAUI-8 or 4x100GAUI-2&lt;br&gt;425Gbps1)&lt;br&gt;53.125Gbd2)&lt;br&gt;400GbE, 4x100GbE&lt;br&gt;0 – 4.0dB&lt;br&gt;&lt; 10W&lt;br&gt;0°C to +70°C&lt;br&gt;-40°C to +85°C|**Parameter**|**Value**|
+|---|---|---|---|
+|Technology||**Transmitter data:**||
+|Transmission media||Output power, per lane|Min: -2.4dBm3)|
+|Typical reach|||Max: +4.0dBm3)|
+|Nominal wavelengths||Transmit wavelengths|1304.5 - 1317.5nm|
+|Interface standards||**Receiver data:**&lt;br&gt;Minimum input power, per lane&lt;br&gt;Overload (max power), per lane||
+|Electrical interfaces|||-6.4dBm3) 4)|
+|Bit rate support|||+4.0dBm3) 4)|
+|||Wavelength range|1304.5 - 1317.5nm|
+|Protocol support||LOS Assert|Min -15dBm|
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "SO-QSFP-DD-4C-FR4-M",
+    "SO-QSFP-DD-4C-FR4-4-M"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "QSFP-DD"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "QSFP-DD MSA",
+    "CMIS3.0",
+    "CMIS4.0",
+    "IEEE802.3bj",
+    "100GBASE-DR (Clause <span class="num">140</span>)",
+    "100GBASE-FR1 (Clause <span class="num">140</span>)",
+    "400GBASE-DR4 (Clause <span class="num">124</span>)",
+    "100G-FR1 MSA"
+  ],
+  <span class="key">"emitter_type"</span>: [],
+  <span class="key">"photodetector_type"</span>: [],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1304.5</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1317.5</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1311</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "grey"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [],
+  <span class="key">"frequency_max_thz"</span>: [],
+  <span class="key">"channel_spacing_ghz"</span>: [],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"mounting_type"</span>: [],
+  <span class="key">"connector_type"</span>: [
+    "MPO",
+    "MPO12",
+    "MPO-12"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">10</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "400GAUI-8",
+    "4x100GAUI-2",
+    "4 x <span class="num">100</span>GAUI-2 (2x <span class="num">50</span>G)",
+    "1x <span class="num">400</span>GAUI-8 (8x <span class="num">50</span>G)"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: [],
+  <span class="key">"host_interface_id"</span>: [],
+  <span class="key">"media_interface_name"</span>: [
+    "100GBASE-FR1",
+    "100GBASE-DR",
+    "400GBASE-DR4",
+    "100G-FR1 MSA"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: [],
+  <span class="key">"media_interface_id"</span>: [],
+  <span class="key">"frame"</span>: [
+    "8x <span class="num">50</span>G",
+    "2x <span class="num">50</span>G"
+  ],
+  <span class="key">"standards_code"</span>: [
+    "100GBASE-DR",
+    "100GBASE-FR1",
+    "400GBASE-DR4",
+    "4 x <span class="num">100</span>GBASE-R",
+    "400GBASE-R"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [
+    <span class="num">53.125</span>
+  ],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">425</span>,
+    <span class="num">400</span>,
+    <span class="num">100</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: [],
+  <span class="key">"modulation_format"</span>: [
+    "PAM4"
+  ],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">2</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-2.4</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">4.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: [],
+  <span class="key">"tx_out_of_band_osnr_db"</span>: [],
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-6.4</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: [],
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: [],
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">4.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [],
+  <span class="key">"pdl_db"</span>: [],
+  <span class="key">"pmd_tolerance_ps"</span>: [],
+  <span class="key">"fec_type"</span>: [
+    "RS_GENERIC",
+    "RS_528_514"
+  ],
+  <span class="key">"fec_overhead_percent"</span>: [],
+  <span class="key">"pre_fec_ber_threshold"</span>: [
+    <span class="num">0.00024</span>
+  ],
+  <span class="key">"post_fec_ber_target"</span>: [],
+  <span class="key">"extinction_ratio_db"</span>: [],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-15</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-9.5</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: [],
+  <span class="key">"receiver_reflectance_db"</span>: [],
+  <span class="key">"transmitter_reflectance_db"</span>: [],
+  <span class="key">"optical_extinction_ratio_db"</span>: [],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [],
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">4</span>,
+    <span class="num">8</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [],
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: [],
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Aggregated line rate <span class="num">425</span> Gbps for <span class="num">400</span>GbE (footnote <span class="num">1</span>). Line baud rate <span class="num">53.125</span> Gbd per lane (footnote <span class="num">2</span>). Tx/Rx power values are average power per lane (footnote <span class="num">3</span>). Minimum input power and overload specified at BER <span class="num">2.4</span>x10-4 (footnote <span class="num">4</span>). Power budget <span class="num">0</span>–4.0 dB. Power consumption stated as &lt; <span class="num">10</span> W. Storage temperature <span class="num">-40</span>°C to +85°C (separate from operating <span class="num">0</span>°C to +70°C). Optical parameters BER <span class="num">2.4</span> x <span class="num">10</span>^-4; FEC required on host per IEEE802.3bj."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "SO-QSFP-DD-4C-FR4-M / FR4-4-M",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "APPLICATION CODE LIST",
+    "ORDERING INFORMATION"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">""</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">SO-QSFP-DD-4C-FR4-M</span> <span class="badge">SO-QSFP-DD-4C-FR4-4-M</span></td></tr>
+<tr><td>host_interface_name</td><td><span class="badge">400GAUI-8</span> <span class="badge">4x100GAUI-2</span> <span class="badge">4 x 100GAUI-2 (2x 50G)</span> <span class="badge">1x 400GAUI-8 (8x 50G)</span></td></tr>
+<tr><td>media_interface_name</td><td><span class="badge">100GBASE-FR1</span> <span class="badge">100GBASE-DR</span> <span class="badge">400GBASE-DR4</span> <span class="badge">100G-FR1 MSA</span></td></tr>
+<tr><td>frame</td><td><span class="badge">8x 50G</span> <span class="badge">2x 50G</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">100GBASE-DR</span> <span class="badge">100GBASE-FR1</span> <span class="badge">400GBASE-DR4</span> <span class="badge">4 x 100GBASE-R</span> <span class="badge">400GBASE-R</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">425.0</span> <span class="badge">400.0</span> <span class="badge">100.0</span></td></tr>
+<tr><td>fec_type</td><td><span class="badge">RS_GENERIC</span> <span class="badge">RS_528_514</span></td></tr>
+<tr><td>number_of_lanes</td><td><span class="badge">4</span> <span class="badge">8</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>QSFP-DD</td></tr>
+<tr><td>standards_claimed</td><td>QSFP-DD MSA, CMIS3.0, CMIS4.0, IEEE802.3bj, 100GBASE-DR (Clause 140), 100GBASE-FR1 (Clause 140), 400GBASE-DR4 (Clause 124), 100G-FR1 MSA</td></tr>
+<tr><td>emitter_type</td><td></td></tr>
+<tr><td>photodetector_type</td><td></td></tr>
+<tr><td>wavelength_min_nm</td><td>1304.5</td></tr>
+<tr><td>wavelength_max_nm</td><td>1317.5</td></tr>
+<tr><td>wavelength_center_nm</td><td>1311.0</td></tr>
+<tr><td>wavelength_band</td><td>grey</td></tr>
+<tr><td>frequency_min_thz</td><td></td></tr>
+<tr><td>frequency_max_thz</td><td></td></tr>
+<tr><td>channel_spacing_ghz</td><td></td></tr>
+<tr><td>channel_total</td><td>4</td></tr>
+<tr><td>mounting_type</td><td></td></tr>
+<tr><td>connector_type</td><td>MPO, MPO12, MPO-12</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>10.0</td></tr>
+<tr><td>host_interface_id_hex</td><td></td></tr>
+<tr><td>host_interface_id</td><td></td></tr>
+<tr><td>media_interface_id_hex</td><td></td></tr>
+<tr><td>media_interface_id</td><td></td></tr>
+<tr><td>baud_rate_gbaud</td><td>53.125</td></tr>
+<tr><td>roll_off_percent</td><td></td></tr>
+<tr><td>modulation_format</td><td>PAM4</td></tr>
+<tr><td>reach_km</td><td>2.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-2.4</td></tr>
+<tr><td>tx_power_max_dbm</td><td>4.0</td></tr>
+<tr><td>tx_in_band_osnr_db</td><td></td></tr>
+<tr><td>tx_out_of_band_osnr_db</td><td></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-6.4</td></tr>
+<tr><td>rx_osnr_db</td><td></td></tr>
+<tr><td>rx_osnr_tolerance_db_max</td><td></td></tr>
+<tr><td>rx_overload_dbm</td><td>4.0</td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td></td></tr>
+<tr><td>pdl_db</td><td></td></tr>
+<tr><td>pmd_tolerance_ps</td><td></td></tr>
+<tr><td>fec_overhead_percent</td><td></td></tr>
+<tr><td>pre_fec_ber_threshold</td><td>0.00024</td></tr>
+<tr><td>post_fec_ber_target</td><td></td></tr>
+<tr><td>extinction_ratio_db</td><td></td></tr>
+<tr><td>los_assert_dbm</td><td>-15.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-9.5</td></tr>
+<tr><td>channel_insertion_loss_db</td><td></td></tr>
+<tr><td>receiver_reflectance_db</td><td></td></tr>
+<tr><td>transmitter_reflectance_db</td><td></td></tr>
+<tr><td>optical_extinction_ratio_db</td><td></td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td></td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td></td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>total_jitter_ps</td><td></td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Aggregated line rate 425 Gbps for 400GbE (footnote 1). Line baud rate 53.125 Gbd per lane (footnote 2). Tx/Rx power values are average power per lane (footnote 3). Minimum input power and overload specified at BER 2.4x10-4 (footnote 4). Power budget 0–4.0 dB. Power consumption stated as &lt; 10 W. Storage temperature -40°C to +85°C (separate from operating 0°C to +70°C). Optical parameters BER 2.4 x 10^-4; FEC required on host per IEEE802.3bj.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>SO-QSFP-DD-4C-FR4-M / FR4-4-M, OVERVIEW, TECHNICAL DATA, APPLICATION CODE LIST, ORDERING INFORMATION</td></tr>
+<tr><td>suggestions</td><td></td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>host_interface_name</th><th>media_interface_name</th><th>frame</th><th>standards_code</th><th>bit_rate_gbps</th><th>fec_type</th><th>number_of_lanes</th></tr><tr><td><strong>CMIS App1 4x100G DR (CMIS3.0)</strong></td><td>SO-QSFP-DD-4C-FR4-M</td><td>4 x 100GAUI-2 (2x 50G)</td><td>100GBASE-DR</td><td>2x 50G</td><td>4 x 100GBASE-R</td><td>400.0</td><td>RS_GENERIC</td><td>8</td></tr><tr><td><strong>CMIS App1 4x100G DR (CMIS4.0)</strong></td><td>SO-QSFP-DD-4C-FR4-4-M</td><td>4 x 100GAUI-2 (2x 50G)</td><td>100GBASE-DR</td><td>2x 50G</td><td>4 x 100GBASE-R</td><td>400.0</td><td>RS_GENERIC</td><td>8</td></tr><tr><td><strong>CMIS App2 4x100G FR1 (CMIS3.0)</strong></td><td>SO-QSFP-DD-4C-FR4-M</td><td>4 x 100GAUI-2 (2x 50G)</td><td>100GBASE-FR1</td><td>2x 50G</td><td>4 x 100GBASE-R</td><td>400.0</td><td>RS_GENERIC</td><td>8</td></tr><tr><td><strong>CMIS App2 4x100G FR1 (CMIS4.0)</strong></td><td>SO-QSFP-DD-4C-FR4-4-M</td><td>4 x 100GAUI-2 (2x 50G)</td><td>100GBASE-FR1</td><td>2x 50G</td><td>4 x 100GBASE-R</td><td>400.0</td><td>RS_GENERIC</td><td>8</td></tr><tr><td><strong>CMIS App3 400G DR4 (CMIS3.0)</strong></td><td>SO-QSFP-DD-4C-FR4-M</td><td>1x 400GAUI-8 (8x 50G)</td><td>400GBASE-DR4</td><td>8x 50G</td><td>400GBASE-R</td><td>400.0</td><td>RS_GENERIC</td><td>8</td></tr><tr><td><strong>CMIS App3 400G DR4 (CMIS4.0)</strong></td><td>SO-QSFP-DD-4C-FR4-4-M</td><td>1x 400GAUI-8 (8x 50G)</td><td>400GBASE-DR4</td><td>8x 50G</td><td>400GBASE-R</td><td>400.0</td><td>RS_GENERIC</td><td>8</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 11:43
+</footer>
+
+</div>
+</body>
+</html>

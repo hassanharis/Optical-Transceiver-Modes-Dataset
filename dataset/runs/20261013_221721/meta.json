@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:17:21.514840+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-ts2014-s30x-so-sfp28-25g-zr.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.905,
+    "extract_atoms": 17.53,
+    "store_run": 0.006,
+    "synthesize_modes": 37.16,
+    "store_modes": 0.004,
+    "total": 58.605
+  }
+}

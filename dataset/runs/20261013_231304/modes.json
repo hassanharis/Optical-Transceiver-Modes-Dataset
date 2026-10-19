@@ -1,0 +1,95 @@
+{
+  "modes": [
+    {
+      "label": "8.5 Gb/s (8.5G Fibre Channel)",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.8,
+      "bit_rate_gbps": 8.5,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "9.95 Gb/s (SONET/SDH)",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.8,
+      "bit_rate_gbps": 9.95,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "OTU2 / P1S1-2D2b",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.8,
+      "standards_code": "OTU2",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "OTN P1S1-2D2b",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.8,
+      "standards_code": "P1S1-2D2b",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "10GBASE-ER (CDRs off, Ethernet)",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.5,
+      "standards_code": "10GBASE-ER",
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "10GBASE-EW (CDRs off, Ethernet)",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.5,
+      "standards_code": "10GBASE-EW",
+      "rx_sensitivity_dbm": -16.0
+    },
+    {
+      "label": "OTU1e",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.8,
+      "standards_code": "OTU1e",
+      "bit_rate_gbps": 11.1,
+      "rx_sensitivity_dbm": -15.0
+    },
+    {
+      "label": "11.1 Gb/s",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.8,
+      "bit_rate_gbps": 11.1,
+      "rx_sensitivity_dbm": -15.0
+    },
+    {
+      "label": "OTU2e",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.8,
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 11.3168,
+      "rx_sensitivity_dbm": -15.0
+    },
+    {
+      "label": "11.3 Gb/s",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "power_consumption_w": 1.8,
+      "bit_rate_gbps": 11.3,
+      "rx_sensitivity_dbm": -15.0
+    },
+    {
+      "label": "Receiver optical center wavelength",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "power_consumption_w": 1.8,
+      "rx_sensitivity_dbm": -16.0
+    }
+  ]
+}

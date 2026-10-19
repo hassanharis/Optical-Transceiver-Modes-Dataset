@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T17:05:24.333287+00:00",
+  "source_file": "C:\\Haris\\datasheets\\xp-t96-02-2-prod-spec.pdf",
+  "page_count": 7,
+  "table_count": 11,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 11.272,
+    "extract_atoms": 20.423,
+    "store_run": 0.004,
+    "synthesize_modes": 26.245,
+    "store_modes": 0.006,
+    "total": 57.95
+  }
+}

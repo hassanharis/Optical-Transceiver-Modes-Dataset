@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"1.25 Gb/s Gigabit Ethernet (1000Base-LX)\",\n      \"host_interface_name\": \"1000Base-LX\",\n      \"standards_code\": \"IEEE 802.3\",\n      \"bit_rate_gbps\": 1.25,\n      \"rx_sensitivity_dbm\": -19.0\n    },\n    {\n      \"label\": \"1.06 Gb/s 1x Fibre Channel\",\n      \"host_interface_name\": \"1x Fibre Channel\",\n      \"standards_code\": \"FC-PI-4 Rev. 8.00\",\n      \"bit_rate_gbps\": 1.062,\n      \"rx_sensitivity_dbm\": -21.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

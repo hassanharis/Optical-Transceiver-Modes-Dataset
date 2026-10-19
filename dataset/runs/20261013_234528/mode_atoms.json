@@ -1,0 +1,66 @@
+{
+  "multi_valued": {
+    "power_consumption_w": [
+      2.5,
+      1.2
+    ],
+    "media_interface_name": [
+      "2.5GBASE-T",
+      "1000BASE-T"
+    ],
+    "standards_code": [
+      "2.5GBASE-T",
+      "1000BASE-T",
+      "IEEE 802.3bz"
+    ],
+    "bit_rate_gbps": [
+      2.5,
+      1.0,
+      0.1
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LP-RJ452G-TI"
+    ],
+    "form_factor": [
+      "SFF"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "IEEE 802.3az",
+      "IEEE 802.3an",
+      "IEEE 802.3bz"
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "host_interface_name": [
+      "SFP"
+    ],
+    "modulation_format": [
+      "PAM5"
+    ],
+    "notes": "Copper RJ-45 transceiver (not optical). Cable reach stated as 100 m (Cat 6a); schema reach_km not populated. Data rate in Table 5 given as 1000–2500 Mb/sec (IEEE 802.3 compatible). Power: Features state max 2.5 W; Table 1 notes 1.2 W max over full voltage/temperature range; supply current max 375 mA. Electrical power section text mentions +5 V +/- 5% while Table 1 defines Vcc 3.13–3.47 V (+3.3 V interface). LOS described relative to receiver sensitivity per standard in use; no optical LOS thresholds in dBm. Caution: power consumption and surge current higher than SFP MSA values.",
+    "provenance_datasheet_sections": [
+      "LP-RJ452G-TI",
+      "Features",
+      "Applications",
+      "Description",
+      "+3.3V Volt Electrical Power Interface",
+      "Table 1. +3.3V Volt electrical power interface",
+      "High-Speed Electrical Interface",
+      "High-speed electrical interface, host-SFP",
+      "General Specifications",
+      "Environmental Specifications",
+      "Mechanical Specifications",
+      "Ordering information"
+    ],
+    "suggestions": "Add copper media types (Cat 5e, Cat 6a) and RJ-45 to connector_type; add SFP/SFP+ to form_factor; add cable_reach_m for non-fiber modules; clarify bit_rate field when source uses Mb/sec vs Gb/s without conversion."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "BX20D-53-O2 Tx 1550nm C-temp",
+      "model": "SO-CSFP-1000BASE-BX20D-53-O2",
+      "wavelength_min_nm": 1540.0,
+      "wavelength_max_nm": 1560.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-53-O2 Rx 1310nm C-temp",
+      "model": "SO-CSFP-1000Base-BX20D-53-O2",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-53-O2 Tx 1550nm I-temp",
+      "model": "SO-CSFP-1000Base-BX20D-53-O2-I",
+      "wavelength_min_nm": 1540.0,
+      "wavelength_max_nm": 1560.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-53-O2 Rx 1310nm I-temp",
+      "model": "SO-CSFP-1000Base-BX20D-53-O2-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-53-O2 100M Rx 1310nm C-temp",
+      "model": "SO-CSFP-1000Base-BX20D-53-O2",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "BX20D-53-O2 100M Rx 1310nm I-temp",
+      "model": "SO-CSFP-1000Base-BX20D-53-O2-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 0.1
+    }
+  ]
+}

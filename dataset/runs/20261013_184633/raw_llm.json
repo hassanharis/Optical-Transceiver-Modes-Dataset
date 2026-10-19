@@ -1,0 +1,135 @@
+{
+  "vendor": "QSFPTek",
+  "model": [
+    "QT-SFP28-SR"
+  ],
+  "form_factor": [
+    "SFP28",
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF 8472",
+    "SFP+ MSA",
+    "SFF-8431"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    770,
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM4",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1
+  ],
+  "host_interface_name": [
+    "SFP28",
+    "SFP+ MSA"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "25GBASE-SR"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    25.78,
+    28
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.1
+  ],
+  "tx_power_min_dbm": [
+    -8.4
+  ],
+  "tx_power_max_dbm": [
+    2.4
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -10.3
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    1
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-05
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -22
+  ],
+  "los_deassert_dbm": [
+    -11
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Product features list Industry case temperature -40°C to 85°C; Recommended Operating Conditions and ordering for QT-SFP28-SR specify Commercial 0°C to +70°C. Power dissipation stated as < 1W. Rx sensitivity Note 2: PRBS 2^31-1 @25.78Gb/s, BER<10^-5. Note on data rate: Low rate 24~26 Gb/s and High rate 25~28 Gb/s with different register settings, not auto-negotiation. Datasheet text spells emitter as VSCEL; interpreted as VCSEL. Transmission distance 100 m on OM4 coupled fiber.",
+  "provenance_datasheet_sections": [
+    "25GBASE-SR SFP28 850nm 100m DDM MMF Transceiver",
+    "P/N: QT-SFP28-SR",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "2. Recommended Operating Conditions",
+    "3. Optical Characteristics",
+    "Notes:",
+    "4. Electrical Characteristics",
+    "7. Ordering information"
+  ],
+  "suggestions": null
+}

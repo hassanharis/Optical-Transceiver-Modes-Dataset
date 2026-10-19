@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:56:25.389992+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tq2036-sl4c-so-qsfp28-100g-ezr4-r6.1.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.69,
+    "extract_atoms": 19.447,
+    "store_run": 0.01,
+    "synthesize_modes": 20.415,
+    "store_modes": 0.006,
+    "total": 43.567
+  }
+}

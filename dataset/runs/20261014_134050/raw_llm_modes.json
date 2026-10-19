@@ -1,0 +1,88 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-10GE-LR (C-temp)",
+      "model": "SO-SFP-10GE-LR",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": [
+        "10GBASE-LR",
+        "10GBASE-LW",
+        "GbE",
+        "10GbE-LAN",
+        "10GbE-WAN",
+        "OTU1",
+        "OTU2",
+        "OTU2e",
+        "STM-64/OC192",
+        "STM-16/OC48",
+        "STM-4/OC12",
+        "1G FC",
+        "2G FC",
+        "4G FC",
+        "8G FC",
+        "10G FC",
+        "CPRI Opt 1",
+        "CPRI Opt 2",
+        "CPRI Opt 3",
+        "CPRI Opt 4",
+        "CPRI Opt 5",
+        "CPRI Opt 6",
+        "CPRI Opt 7",
+        "CPRI Opt 7A",
+        "CPRI Opt 8",
+        "OBSAI 1x",
+        "OBSAI 2x",
+        "OBSAI 4x",
+        "OBSAI 8x"
+      ],
+      "bit_rate_gbps": [
+        0.6,
+        10.3,
+        11.3
+      ]
+    },
+    {
+      "label": "SO-SFP-10GE-LR-I (I-temp)",
+      "model": "SO-SFP-10GE-LR-I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": [
+        "10GBASE-LR",
+        "10GBASE-LW",
+        "GbE",
+        "10GbE-LAN",
+        "10GbE-WAN",
+        "OTU1",
+        "OTU2",
+        "OTU2e",
+        "STM-64/OC192",
+        "STM-16/OC48",
+        "STM-4/OC12",
+        "1G FC",
+        "2G FC",
+        "4G FC",
+        "8G FC",
+        "10G FC",
+        "CPRI Opt 1",
+        "CPRI Opt 2",
+        "CPRI Opt 3",
+        "CPRI Opt 4",
+        "CPRI Opt 5",
+        "CPRI Opt 6",
+        "CPRI Opt 7",
+        "CPRI Opt 7A",
+        "CPRI Opt 8",
+        "OBSAI 1x",
+        "OBSAI 2x",
+        "OBSAI 4x",
+        "OBSAI 8x"
+      ],
+      "bit_rate_gbps": [
+        0.6,
+        10.3,
+        11.3
+      ]
+    }
+  ]
+}

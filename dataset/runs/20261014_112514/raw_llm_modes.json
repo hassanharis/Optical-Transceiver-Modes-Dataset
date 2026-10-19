@@ -1,0 +1,44 @@
+{
+  "modes": [
+    {
+      "label": "400G AEC family 0.5\u20135 m",
+      "model": "SO-QDD-4C-CUx-4",
+      "standards_code": "CMIS4"
+    },
+    {
+      "label": "400G AEC 0.5 m AWG32",
+      "model": "SO-QDD-4C-0CU5-4",
+      "standards_code": "CMIS4"
+    },
+    {
+      "label": "400G AEC 1 m AWG32",
+      "model": "SO-QDD-4C-CU1-4",
+      "standards_code": "CMIS4"
+    },
+    {
+      "label": "400G AEC 1.5 m AWG32",
+      "model": "SO-QDD-4C-1CU5-4",
+      "standards_code": "CMIS4"
+    },
+    {
+      "label": "400G AEC 2 m AWG32",
+      "model": "SO-QDD-4C-CU2-4",
+      "standards_code": "CMIS4"
+    },
+    {
+      "label": "400G AEC 2.5 m AWG32",
+      "model": "SO-QDD-4C-2CU5-4",
+      "standards_code": "CMIS4"
+    },
+    {
+      "label": "400G AEC 3 m AWG32",
+      "model": "SO-QDD-4C-CU3-4",
+      "standards_code": "CMIS4"
+    },
+    {
+      "label": "400G AEC 5 m AWG30",
+      "model": "SO-QDD-4C-CU5-4",
+      "standards_code": "CMIS4"
+    }
+  ]
+}

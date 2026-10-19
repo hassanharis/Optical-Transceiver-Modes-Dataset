@@ -1,0 +1,145 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-LW100-ER4C",
+    "LQ-LW100-ER4I"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3-2012 Clause 88",
+    "IEEE 802.3bm CAUI-4",
+    "ITU-T G.959.1-2012-02",
+    "QSFP28 Multi-Source Agreement (MSA)"
+  ],
+  "emitter_type": [
+    "LASER_EML"
+  ],
+  "photodetector_type": [
+    "APD"
+  ],
+  "wavelength_min_nm": [
+    1294.53,
+    1299.02,
+    1303.54,
+    1308.09
+  ],
+  "wavelength_max_nm": [
+    1296.59,
+    1301.09,
+    1305.63,
+    1310.19
+  ],
+  "wavelength_center_nm": [
+    1295.56,
+    1300.05,
+    1304.58,
+    1309.14,
+    1296.0,
+    1300.0,
+    1305.0,
+    1309.0
+  ],
+  "wavelength_band": [
+    "LAN WDM",
+    "LWDM"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.3,
+    5.0
+  ],
+  "host_interface_name": [
+    "CAUI-4"
+  ],
+  "media_interface_name": [
+    "100GBASE-ER4"
+  ],
+  "standards_code": [
+    "100GBASE-ER4",
+    "100GBASE-ER4 lite",
+    "OTU4"
+  ],
+  "bit_rate_gbps": [
+    25.78125,
+    27.9525,
+    103.125,
+    111.81
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -2.0,
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    4.0,
+    8.3
+  ],
+  "rx_sensitivity_dbm": [
+    -16.0,
+    -21.0
+  ],
+  "rx_overload_dbm": [
+    -7.0
+  ],
+  "extinction_ratio_db": [
+    8.0
+  ],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -25.0
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    8.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    20.0,
+    12.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Receiver sensitivity -16 dBm per lane without FEC (Optical Parameters Note 2); -21 dBm per lane with FEC (Note 3). Average power at receiver input each lane -22 to -7 dBm (Ref. 3 With FEC). Total average launch power PT 0 to 8.3 dBm; per-lane average launch -2 to 4 dBm. OMA per lane -4 to 4.5 dBm. TDP each lane max 2.2 dB; launch power in OMA minus TDP each lane -4.8 dBm. LQ-LW100-ER4I ordering variant specifies -40~85°C case temperature vs 0~70°C for LQ-LW100-ER4C. Optical return loss tolerance max 20 dB; optical return loss T Total max 12 dB (12 dB Reflection per Note 1). Damage threshold per lane -6 dBm.",
+  "provenance_datasheet_sections": [
+    "LQ-LW100-ER4C",
+    "40km 100G QSFP28 ER4 Optical Transceiver Module",
+    "Features:",
+    "Applications",
+    "Description",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Environment:",
+    "Electrical Characteristics (TOP = 0 to 70 °C, VCC = 3.13 to 3.47 Volts)",
+    "Optical Parameters(TOP = 0 to 70 °C, VCC = 3.0 to 3.6 Volts)",
+    "Note:",
+    "Ordering Information"
+  ],
+  "suggestions": "Datasheet does not state host/media interface IDs, FEC type names, modulation format, OSNR, or CD/PMD tolerance. TDP 2.2 dB is listed but not paired with a penalty-column style @condition for the penalties array."
+}

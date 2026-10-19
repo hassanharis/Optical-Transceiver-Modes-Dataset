@@ -1,0 +1,167 @@
+{
+  "vendor": "Broadcom",
+  "model": [
+    "AFBR-735SMZ"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFP",
+    "SFP28",
+    "SFF-8432",
+    "SFF-8419",
+    "SFF-8472",
+    "IEEE 802.3"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "25GBASE-SR",
+    "10GBASE-SR"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "25GBASE-SR",
+    "10GBASE-SR",
+    "IEEE 802.3"
+  ],
+  "baud_rate_gbaud": [
+    10.3125,
+    25.78125
+  ],
+  "bit_rate_gbps": [
+    10.3125,
+    25.78,
+    25.78125
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.07,
+    0.1
+  ],
+  "tx_power_min_dbm": [
+    -8.4
+  ],
+  "tx_power_max_dbm": [
+    0,
+    2.4
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -11.1,
+    -7.5,
+    -5.2,
+    -10.3
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -1.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [
+    "RS_528_514"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    2,
+    3.0
+  ],
+  "los_assert_dbm": [
+    -30
+  ],
+  "los_deassert_dbm": [
+    -9.1
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -12
+  ],
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    2,
+    3.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5,
+    4
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Factory default per SFF-8472 is 10G mode (RS low, CDR bypassed); host must change hardware/software for 25G operation. 25GbE requires FEC RS(528,514) per IEEE 802.3. Link distance in EEPROM: 70 m OM3 50/125-µm at 25GbE, 100 m OM4 50/125-µm at 25GbE. Recommended case temperature 0°C to 70°C; absolute max case/storage –40°C to 85°C. Table 12 extinction ratio min 3.0 listed with unit dBm in source (likely dB). Stressed receiver sensitivity –5.2 dBm OMA at 25.78125 Gbaud per conformance test; –7.5 dBm OMA stressed sensitivity at 10.3125 Gbaud; receive sensitivity (OMA) –11.1 dBm at 10G. Damage threshold +3.4 dBm continuous exposure without damage (operation not required at that level).",
+  "provenance_datasheet_sections": [
+    "AFBR-735SMZ",
+    "Description",
+    "Features",
+    "Transmitter Section",
+    "Receiver Section",
+    "Digital Diagnostics",
+    "Rate Select Control",
+    "Table 3: Pin Description",
+    "Table 6: Recommended Operating Conditions",
+    "Table 7: Transceiver Electrical Characteristics",
+    "Table 8: High-Speed Electrical Module Input Characteristics",
+    "Table 10: High-Speed Electrical Module Output Characteristics",
+    "Table 11: High-Speed Optical Transmitter Characteristics",
+    "Table 12: High-Speed Optical Transmitter Characteristics, TX Rate Select = Low",
+    "Table 13: High-Speed Optical Receiver Characteristics",
+    "Table 14: High-Speed Optical Receiver Characteristics, RX Rate Select = Low",
+    "Table 17: EEPROM Serial ID Memory Contents – Address A0h",
+    "Customer Manufacturing Processes"
+  ],
+  "suggestions": "Add schema fields for OMA launch/receive limits, TDEC/TDP/SEC penalties as standalone metrics, and reach with fiber type qualifiers (OM3/OM4). Clarify whether rx_sensitivity should use OMA vs average power per rate select."
+}

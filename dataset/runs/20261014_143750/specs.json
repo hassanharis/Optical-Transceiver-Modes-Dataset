@@ -1,0 +1,109 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-622M-L160D-Cxx",
+    "SO-SFP-622M-L160D-C47",
+    "SO-SFP-622M-L160D-C49",
+    "SO-SFP-622M-L160D-C51",
+    "SO-SFP-622M-L160D-C53",
+    "SO-SFP-622M-L160D-C55",
+    "SO-SFP-622M-L160D-C57",
+    "SO-SFP-622M-L160D-C59",
+    "SO-SFP-622M-L160D-C61"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "G.694.2"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1470.0,
+    1471.0,
+    1100.0
+  ],
+  "wavelength_max_nm": [
+    1610.0,
+    1611.0,
+    1650.0
+  ],
+  "wavelength_center_nm": [
+    1470.0,
+    1490.0,
+    1510.0,
+    1530.0,
+    1550.0,
+    1570.0,
+    1590.0,
+    1610.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "channel_total": [
+    8,
+    9
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "standards_code": [
+    "G.694.2",
+    "FE",
+    "STM1/OC3",
+    "STM4/OC12"
+  ],
+  "reach_km": [
+    160.0
+  ],
+  "tx_power_min_dbm": [
+    4.0
+  ],
+  "tx_power_max_dbm": [
+    7.0
+  ],
+  "rx_sensitivity_dbm": [
+    -37.0,
+    -38.0,
+    -39.0
+  ],
+  "rx_overload_dbm": [
+    -8.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -38.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Bit rate support stated as 125 to 622Mbps (not Gbps). Power budget 17–41dB @ STM4/OC12. Dispersion penalty max 1dB (no paired penalized value/condition for penalties schema). Transmitter output min printed as +4.0dB; max as +7.0dBm; footnote 1) average power. Rx sensitivity at BER 1x10-12, PRBS 223-1: STM4/OC12 -37dBm, STM1/OC3 -38dBm, 100M FE -39dBm. Nominal wavelength listed as 1470–1610nm (9ch) in table vs 8 CWDM wavelengths 1471–1611nm in overview. Operating temperature printed as -0°C to +70°C. Power consumption < 1.0W. Reach 160km dependent on actual optical path attenuation; lower CWDM channel 1471nm faces higher fiber attenuation. Storage temperature -40°C to +85°C (not normal operating). Transmission media SM (2x LC).",
+  "provenance_datasheet_sections": [
+    "SO-SFP-622M-L160D-Cxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether channel count is 8 or 9. Normalize transmitter min power unit (dB vs dBm). Consider schema fields for power_budget_db and dispersion_penalty_max_db when only max penalty is given without @ conditions."
+}

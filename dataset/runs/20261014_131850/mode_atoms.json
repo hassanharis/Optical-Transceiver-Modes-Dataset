@@ -1,0 +1,49 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-100BASE-T",
+      "SO-SFP-100Base-T-I"
+    ],
+    "standards_code": [
+      "100BASE-TX",
+      "10BASE-TX",
+      "IEEE 802.3"
+    ],
+    "bit_rate_gbps": [
+      0.01,
+      0.1
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "100BASE-TX IEEE 802.3",
+      "10BASE-TX IEEE 802.3"
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "RJ45"
+    ],
+    "temp_min_c": -10.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      0.1
+    ],
+    "penalties": [],
+    "notes": "Copper (electrical) Grey SFP; transmission media Electrical (1x RJ45). Power consumption stated as < 1W (no exact numeric). SO-SFP-100BASE-T operating temperature -10\u00b0C to +70\u00b0C; SO-SFP-100Base-T-I (-T-I) operating temperature -40\u00b0C to +85\u00b0C. Storage temperature -40\u00b0C to +85\u00b0C. Distance 10M and Distance 100M both 100m CAT5 UTP. RX_LOS Yes; Auto-neg Yes (on line i/f); DDM No. Transceivers with manufacturing date Nov 2019 or more recent also support half-duplex configurations. bit_rate_gbps derived from stated 10-Megabit and 100-Megabit Ethernet (10 Mbps, 100 Mbps). reach_km from stated 100m typical reach and CAT5 distances.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-100BASE-T & -T-I",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider schema fields for copper SFP (transmission_media electrical, CAT5 UTP, auto-negotiation, half-duplex) and separate temp_min_c/temp_max_c per SKU or list form for C-temp vs I-temp variants."
+  }
+}

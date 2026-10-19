@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:57:02.411770+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-ccs-strat-lxf-lp11xx-series.pdf",
+  "page_count": 11,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 14.072,
+    "extract_atoms": 18.499,
+    "store_run": 0.009,
+    "synthesize_modes": 82.776,
+    "store_modes": 0.004,
+    "total": 115.36
+  }
+}

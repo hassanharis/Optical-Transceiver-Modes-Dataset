@@ -1,0 +1,99 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TS2015-Bxxy-SO",
+    "TS2015-BUVI-SO",
+    "TS2015-BVUI-SO",
+    "TS2015-BxxC-SO",
+    "TS2015-BxxI-SO",
+    "TS2015-BUVC-SO",
+    "TS2015-BVUC-SO",
+    "TS2015-BUVI-SO",
+    "TS2015-BVUI-SO"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFP28 MSA",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1294.53,
+    1308.09
+  ],
+  "wavelength_max_nm": [
+    1296.59,
+    1310.19
+  ],
+  "wavelength_center_nm": [
+    1295.56,
+    1309.14
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    2.5,
+    3.3
+  ],
+  "host_interface_name": [
+    "OIF CEI-28G-VSR",
+    "SFP28 MSA"
+  ],
+  "standards_code": [
+    "25GBASE 80km",
+    "25GbE",
+    "25G Ethernet"
+  ],
+  "bit_rate_gbps": [
+    25.78
+  ],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    2.0
+  ],
+  "tx_power_max_dbm": [
+    7.0
+  ],
+  "rx_sensitivity_dbm": [
+    -29.0
+  ],
+  "rx_overload_dbm": [
+    -6.0
+  ],
+  "post_fec_ber_target": [
+    5e-05
+  ],
+  "los_assert_dbm": [
+    -32.5
+  ],
+  "los_deassert_dbm": [
+    -29.5
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "BiDi pair: TS2015-BUVy-SO (footnote 1) Tx 1294.53–1296.59 nm / Rx 1308.09–1310.19 nm; TS2015-BVUy-SO (footnote 2) Tx 1308.09–1310.19 nm / Rx 1294.53–1296.59 nm. Nominal Tx/Rx pairing also stated as 1295.56/1309.14 nm and 1309.14/1295.56 nm. Power budget 8 – 31.0 dB. Tx output power and Rx min/overload are average power per lane (footnote 3). Rx minimum input power specified at BER 5x10-5 (footnote 4). Operating temperature 0°C to +70°C for TS2015-BxxC-SO; -40°C to +85°C for TS2015-BxxI-SO. Power consumption <2.5 W (C-temp) and <3.3 W (I-temp). FEC required to be implemented by host equipment per 25G Ethernet standards. Storage temperature -40°C to +85°C.",
+  "provenance_datasheet_sections": [
+    "SFP28 25GE BiDi 80km",
+    "SFP28, BiDi, 25G Eth, Tx/Rx=1309.14/1295.56nm, SM 80km, 31dB, C-/I-temp, LC",
+    "TS2015-Bxxy-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Schema could add power_budget_db_min/max for values like 8–31.0 dB; separate operating temp per SKU (C-temp vs I-temp); and clarify whether post_fec_ber_target applies when FEC is host-implemented only."
+}

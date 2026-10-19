@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:44:59.080557+00:00",
+  "source_file": "C:\\Haris\\datasheets\\sfp64gfc-sw_transceiver_datasheet_v0p4.pdf",
+  "page_count": 26,
+  "table_count": 28,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 52.288,
+    "extract_atoms": 39.315,
+    "store_run": 0.008,
+    "synthesize_modes": 27.557,
+    "store_modes": 0.002,
+    "total": 119.169
+  }
+}

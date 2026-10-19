@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "SONET OC-192 / SDH STM-64",
+      "standards_code": "OC-192",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "SONET OC-192 / SDH STM-64",
+      "standards_code": "STM-64",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "OC-192 over FEC",
+      "standards_code": "OC-192",
+      "bit_rate_gbps": 10.709
+    },
+    {
+      "label": "10GE over G.709",
+      "standards_code": "G.709",
+      "bit_rate_gbps": 11.09
+    }
+  ]
+}

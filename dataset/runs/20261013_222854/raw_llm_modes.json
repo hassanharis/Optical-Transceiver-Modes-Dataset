@@ -1,0 +1,108 @@
+{
+  "modes": [
+    {
+      "label": "400GBASE-ZR unamplified (120 km)",
+      "form_factor": "QSFP-DD_type-2A",
+      "wavelength_band": "Flex-grid",
+      "standards_code": "400GBASE-ZR",
+      "baud_rate_gbaud": 60.14,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 120.0,
+      "rx_sensitivity_dbm": -24.0,
+      "rx_osnr_db": 24.0,
+      "cd_tolerance_ps_nm": 12000.0
+    },
+    {
+      "label": "400GBASE-ZR amplified (500 km EDFA)",
+      "form_factor": "QSFP-DD_type-2A",
+      "wavelength_band": "Flex-grid",
+      "standards_code": "400GBASE-ZR",
+      "baud_rate_gbaud": 60.14,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 500.0,
+      "rx_sensitivity_dbm": -24.0,
+      "rx_osnr_db": 24.0,
+      "cd_tolerance_ps_nm": 12000.0
+    },
+    {
+      "label": "300GBASE-ZR unamplified (120 km)",
+      "form_factor": "QSFP-DD_type-2A",
+      "wavelength_band": "Flex-grid",
+      "standards_code": "300GBASE-ZR",
+      "baud_rate_gbaud": 60.14,
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 120.0,
+      "rx_sensitivity_dbm": -26.0,
+      "rx_osnr_db": 21.0,
+      "cd_tolerance_ps_nm": 20000.0
+    },
+    {
+      "label": "300GBASE-ZR amplified (500 km EDFA)",
+      "form_factor": "QSFP-DD_type-2A",
+      "wavelength_band": "Flex-grid",
+      "standards_code": "300GBASE-ZR",
+      "baud_rate_gbaud": 60.14,
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 500.0,
+      "rx_sensitivity_dbm": -26.0,
+      "rx_osnr_db": 21.0,
+      "cd_tolerance_ps_nm": 20000.0
+    },
+    {
+      "label": "200GBASE-ZR unamplified (120 km)",
+      "form_factor": "QSFP-DD_type-2A",
+      "wavelength_band": "Flex-grid",
+      "standards_code": "200GBASE-ZR",
+      "baud_rate_gbaud": 60.14,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 120.0,
+      "rx_sensitivity_dbm": -28.0,
+      "rx_osnr_db": 16.0,
+      "cd_tolerance_ps_nm": 30000.0
+    },
+    {
+      "label": "200GBASE-ZR amplified (500 km EDFA)",
+      "form_factor": "QSFP-DD_type-2A",
+      "wavelength_band": "Flex-grid",
+      "standards_code": "200GBASE-ZR",
+      "baud_rate_gbaud": 60.14,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 500.0,
+      "rx_sensitivity_dbm": -28.0,
+      "rx_osnr_db": 16.0,
+      "cd_tolerance_ps_nm": 30000.0
+    },
+    {
+      "label": "100GBASE-ZR unamplified (120 km)",
+      "form_factor": "QSFP-DD_type-2A",
+      "wavelength_band": "Flex-grid",
+      "standards_code": "100GBASE-ZR",
+      "baud_rate_gbaud": 30.07,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 120.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_osnr_db": 12.5,
+      "cd_tolerance_ps_nm": 50000.0
+    },
+    {
+      "label": "100GBASE-ZR amplified (500 km EDFA)",
+      "form_factor": "QSFP-DD_type-2A",
+      "wavelength_band": "Flex-grid",
+      "standards_code": "100GBASE-ZR",
+      "baud_rate_gbaud": 30.07,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 500.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_osnr_db": 12.5,
+      "cd_tolerance_ps_nm": 50000.0
+    }
+  ]
+}

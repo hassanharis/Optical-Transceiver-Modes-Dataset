@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:28:54.818972+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Fiberworks QDD-400G-DCO-0ZRP.pdf",
+  "page_count": 2,
+  "table_count": 2,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 2.619,
+    "extract_atoms": 15.851,
+    "store_run": 0.007,
+    "synthesize_modes": 20.335,
+    "store_modes": 0.003,
+    "total": 38.815
+  }
+}

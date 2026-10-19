@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "XPBL-273396-10D Commercial 1270nm TX",
+      "model": "XPBL-273396-10D",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "XPBL-332796-10D Commercial 1330nm TX",
+      "model": "XPBL-332796-10D",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "XPBL-273396-10DA Industrial 1270nm TX",
+      "model": "XPBL-273396-10DA",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "XPBL-332796-10DA Industrial 1330nm TX",
+      "model": "XPBL-332796-10DA",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 10.3125
+    }
+  ]
+}

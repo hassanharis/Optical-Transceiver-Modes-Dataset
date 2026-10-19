@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "QT-WDM20-1413D standard temp TX 1490nm",
+      "model": "QT-WDM20-1413D",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM20-1413ID industrial temp TX 1490nm",
+      "model": "QT-WDM20-1413ID",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM20-1413D standard temp RX 1310nm",
+      "model": "QT-WDM20-1413D",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "QT-WDM20-1413ID industrial temp RX 1310nm",
+      "model": "QT-WDM20-1413ID",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 1.063
+    }
+  ]
+}

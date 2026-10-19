@@ -1,0 +1,85 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-CSFP-1000BASE-BX20D-43-O2",
+      "SO-CSFP-1000Base-BX20D-43-O2",
+      "SO-CSFP-1000Base-BX20D-43-O2-I"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1490.0
+    ],
+    "wavelength_max_nm": [
+      1360.0,
+      1500.0
+    ],
+    "wavelength_center_nm": [
+      1490.0,
+      1310.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "CSFP"
+    ],
+    "standards_claimed": [
+      "CSFP MSA Opt 2",
+      "SFF-8472"
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "power_consumption_w": [
+      1.0
+    ],
+    "standards_code": [
+      "1000BASE-BX20"
+    ],
+    "bit_rate_gbps": [
+      1.25
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -8.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -22.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -23.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Bit rate support stated as 100 Mbps to 1.25 Gbps. Protocols: FE, GbE, 1G FC, STM1/OC3, STM4/OC12. Power budget 0–14dB; dispersion penalty Max 1dB (table summary). Operating temperature: 0°C to +70°C (C-temp); -40°C to +85°C (I-temp, ordering SO-CSFP-1000Base-BX20D-43-O2-I). Power consumption: < 1.0W per BiDi channel. Footnote 1) Average power for Tx/Rx power levels. Footnote 2) Receiver minimum input power and overload @ 1.25Gbps, BER ≤ 1x10-12, PRBS 27-1, back-to-back. Tx/Rx nominal wavelengths 1490nm/1310nm; transmit wavelength 1490nm–1500nm; receiver wavelength range 1260–1360nm. DDM Yes. Two BiDi channels (2x LC) on CSFP.",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Schema temp_min_c/temp_max_c are singular floats; this part has distinct C-temp (0 to +70°C) and I-temp (-40 to +85°C) variants. Consider variant-specific fields or list-of-ranges. bit_rate_gbps could accept Mbps literals (100) or a paired unit field to avoid Gbps-only conversion for 100 Mbps."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T00:22:21.778228+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ls-cwxx10-10i.pdf",
+  "page_count": 8,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 7.844,
+    "extract_atoms": 17.113,
+    "store_run": 0.011,
+    "synthesize_modes": 53.459,
+    "store_modes": 0.005,
+    "total": 78.432
+  }
+}

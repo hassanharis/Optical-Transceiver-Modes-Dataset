@@ -1,0 +1,12 @@
+{
+  "modes": [
+    {
+      "label": "Transmitter \u2014 Output center wavelength (Table 3)",
+      "wavelength_max_nm": 1360.0
+    },
+    {
+      "label": "Receiver \u2014 Operation center wavelength (Table 3)",
+      "wavelength_max_nm": 1620.0
+    }
+  ]
+}

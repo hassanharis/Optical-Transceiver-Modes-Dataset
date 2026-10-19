@@ -1,0 +1,111 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TQ2036-SL4C-SO"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "100GBASE-ZR4",
+    "QSFP28 MSA",
+    "SFF-8636",
+    "IEEE802.3bj"
+  ],
+  "wavelength_min_nm": [
+    1294.53,
+    1299.02,
+    1303.54,
+    1308.09
+  ],
+  "wavelength_max_nm": [
+    1296.59,
+    1301.09,
+    1305.63,
+    1310.19
+  ],
+  "wavelength_center_nm": [
+    1295.56,
+    1300.05,
+    1304.58,
+    1309.14
+  ],
+  "wavelength_band": [
+    "grey",
+    "LAN-WDM"
+  ],
+  "channel_total": [
+    4
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    6.0
+  ],
+  "host_interface_name": [
+    "QSFP28"
+  ],
+  "standards_code": [
+    "100GBASE-ZR4",
+    "100G Eth ZR4+",
+    "ZR4+"
+  ],
+  "bit_rate_gbps": [
+    103.12,
+    25.78
+  ],
+  "reach_km": [
+    100.0
+  ],
+  "tx_power_min_dbm": [
+    3.0
+  ],
+  "tx_power_max_dbm": [
+    12.5,
+    6.5
+  ],
+  "rx_sensitivity_dbm": [
+    -29.5
+  ],
+  "rx_overload_dbm": [
+    4.5
+  ],
+  "fec_type": [
+    "RS_528_514"
+  ],
+  "pre_fec_ber_threshold": [
+    5e-05
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -28.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Forward Error Correction (FEC) required by host per IEEE802.3bj RS(528,514). Stated optical BER 5 x 10^-5; FEC yields BER better than 1 x 10^-12. Power budget 2.0 – 32.5 dB. Dispersion penalty 1.0 dB (power budget reduction context per GENERAL DEFINITIONS). Per-lane receiver metrics measured with PRBS31 (2^31-1) @ BER 5E-5; average power per footnotes 3) and 4). Damage threshold per lane +5.5 dBm. Storage temperature -40°C to +85°C. Power consumption max < 6.0 W worst case at high temp limit. Nominal wavelength centers also referenced as 1296/1300/1305/1309 nm in ordering description.",
+  "provenance_datasheet_sections": [
+    "QSFP28 100G-ZR4, 100KM QSFP28, 100G Eth ZR4+, SM 1296/1300/1305/1309nm, 100km, 32.5dB, LC",
+    "TQ2036-SL4C-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Explicit emitter/photodetector types, modulation format, OSNR thresholds, and host/media interface ID hex codes are absent. Dispersion penalty 1.0 dB is stated without a paired penalized parameter value and operating condition, so it was not modeled as a penalties[] entry under the three-part rule."
+}

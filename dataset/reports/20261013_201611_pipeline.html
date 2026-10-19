@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Broadcom [&#x27;AFBR-5972EZ&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">AV02-5972EZ-12-2-2025.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">9</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">9</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 20:16</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">## **Data Sheet** 
+
+## **AFBR-5972EZ** 
+
+**Compact 650-nm Transceiver with Compact Versatile-Link Connector for Fast Ethernet and up to 250 Mbaud over POF** 
+
+
+## **Description** 
+
+The Broadcom[®] AFBR-5972EZ transceiver provides the system designer with the ability to implement Fast Ethernet (100 Mb/s) over standard bandwidth 0.5 ± 0.05 NA POF. This transceiver features a compact Versatile-Link duplex connector that is compatible with existing Versatile-Link simplex connectors, and it features a very compact design with a form factor similar to a UTP connector. 
+
+The AFBR-5972EZ transceiver is lead-free and compliant with RoHS. 
+
+## **Features** 
+
+- Fast Ethernet communications over POF 
+
+- Link lengths up to 50m POF (NA 0.5) or 70m POF (NA 0.3) 
+
+- Compact footprint 
+
+- 3.3V operation 
+
+- Data rates up to 250 Mbaud 
+
+- LVDS input and output data connections 
+
+- Analog RSSI (receiver signal strength) monitor output 
+
+- Temperature range –40°C to 85°C 
+
+## **Figure 1:  Block Diagram** 
+
+
+**----- Start of picture text -----**&lt;br&gt;
+Differential&lt;br&gt;Data Output&lt;br&gt;Integrated&lt;br&gt;Receiver&lt;br&gt;Integrated&lt;br&gt;RSSI Output Photodiode&lt;br&gt;LED&lt;br&gt;Driver&lt;br&gt;Differential&lt;br&gt;Data Input&lt;br&gt;LED&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+## **Applications** 
+
+- Factory automation at Fast Ethernet speeds 
+
+- Fast Ethernet networking over POF 
+
+- Proprietary communication over POF up to 250 Mbaud 
+
+AV02-4953EN December 2, 2025 
+
+Broadcom 
+
+Compact 650-nm Transceiver with Compact Versatile-Link Connector for Fast Ethernet and up to 250 Mbaud over POF 
+
+**AFBR-5972EZ** Data Sheet 
+
+## **Transmitter** 
+
+The transmitter contains a 650-nm LED with a driver IC. The LED driver operates at 3.3V. It receives an LVDS electrical input and converts it into a modulated current driving the LED. The IC and LED are packaged in an optical subassembly integrating the transmitter section. The optical subassembly couples the output optical power efficiently into POF fiber. 
+
+## **Receiver** 
+
+The receiver I
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Broadcom"</span>,
+  <span class="key">"model"</span>: [
+    "AFBR-5972EZ"
+  ],
+  <span class="key">"form_factor"</span>: [],
+  <span class="key">"standards_claimed"</span>: [],
+  <span class="key">"emitter_type"</span>: [
+    "LED"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "photodiode"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">635.0</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">675.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">650.0</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [],
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "solder"
+  ],
+  <span class="key">"connector_type"</span>: [],
+  <span class="key">"fiber_type"</span>: [
+    "POF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-40.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">0.15</span>,
+    <span class="num">0.2</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "LVDS"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: [
+    "Versatile-Link"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: [],
+  <span class="key">"standards_code"</span>: [
+    "Fast Ethernet"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [
+    <span class="num">0.01</span>,
+    <span class="num">0.125</span>,
+    <span class="num">0.25</span>
+  ],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">0.1</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">0.05</span>,
+    <span class="num">0.07</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-10.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">-3.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-26.0</span>,
+    <span class="num">-22.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-3.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: [],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">2.5</span>e-10
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">10.0</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-31.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-32.5</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">10.0</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">2.0</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Link lengths stated as <span class="num">50</span> m POF (NA <span class="num">0.5</span>) and <span class="num">70</span> m POF (NA <span class="num">0.3</span>). Power Dissipation in source is <span class="num">150</span> mW typ / <span class="num">200</span> mW max (Transceiver Electrical Characteristics). Supply voltage <span class="num">3.3</span> V (2.97–3.63 V). Assert (PA) and Deassert (PD) input power levels note d states levels are also described as dB below unstressed receiver sensitivity for POF while table uses dBm. Rx sensitivity CSEN125 at <span class="num">125</span> Mbaud; CSEN250 at <span class="num">250</span> Mbaud; BER &lt; <span class="num">2.5</span> × <span class="num">10</span>^-10. Average launched power and many TX/RX specs at <span class="num">1</span>-mm POF NA=0.5, PRBS <span class="num">2</span>^7-1, <span class="num">250</span> Mbaud where noted. Signaling: <span class="num">4</span>B/5B at <span class="num">125</span> Mbaud (Fast Ethernet); general <span class="num">10</span>–250 Mbaud (8B/10B max per note d). No MSA pluggable form factor or LC/SC/MPO connector codes claimed."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "Description",
+    "Features",
+    "Transmitter",
+    "Receiver",
+    "Recommended Operating Conditions",
+    "Transceiver Electrical Characteristics",
+    "Transmitter Optical Characteristics",
+    "Receiver Electrical Characteristics",
+    "Receiver Optical Characteristics",
+    "Transceiver Diagnostics Timing Characteristics"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Consider schema fields for POF NA, link length in meters, RSSI responsivity (A/W), and jitter in ns; Versatile-Link as connector family."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>power_consumption_w</td><td><span class="badge">0.15</span> <span class="badge">0.2</span></td></tr>
+<tr><td>baud_rate_gbaud</td><td><span class="badge">0.01</span> <span class="badge">0.125</span> <span class="badge">0.25</span></td></tr>
+<tr><td>reach_km</td><td><span class="badge">0.05</span> <span class="badge">0.07</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-26.0</span> <span class="badge">-22.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Broadcom</td></tr>
+<tr><td>model</td><td>AFBR-5972EZ</td></tr>
+<tr><td>form_factor</td><td></td></tr>
+<tr><td>standards_claimed</td><td></td></tr>
+<tr><td>emitter_type</td><td>LED</td></tr>
+<tr><td>photodetector_type</td><td>photodiode</td></tr>
+<tr><td>wavelength_min_nm</td><td>635.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>675.0</td></tr>
+<tr><td>wavelength_center_nm</td><td>650.0</td></tr>
+<tr><td>wavelength_band</td><td></td></tr>
+<tr><td>mounting_type</td><td>solder</td></tr>
+<tr><td>connector_type</td><td></td></tr>
+<tr><td>fiber_type</td><td>POF</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>host_interface_name</td><td>LVDS</td></tr>
+<tr><td>media_interface_name</td><td>Versatile-Link</td></tr>
+<tr><td>frame</td><td></td></tr>
+<tr><td>standards_code</td><td>Fast Ethernet</td></tr>
+<tr><td>bit_rate_gbps</td><td>0.1</td></tr>
+<tr><td>modulation_format</td><td></td></tr>
+<tr><td>tx_power_min_dbm</td><td>-10.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>-3.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-3.0</td></tr>
+<tr><td>fec_type</td><td></td></tr>
+<tr><td>post_fec_ber_target</td><td>2.5e-10</td></tr>
+<tr><td>extinction_ratio_db</td><td>10.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-31.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-32.5</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>10.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>2.0</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Link lengths stated as 50 m POF (NA 0.5) and 70 m POF (NA 0.3). Power Dissipation in source is 150 mW typ / 200 mW max (Transceiver Electrical Characteristics). Supply voltage 3.3 V (2.97–3.63 V). Assert (PA) and Deassert (PD) input power levels note d states levels are also described as dB below unstressed receiver sensitivity for POF while table uses dBm. Rx sensitivity CSEN125 at 125 Mbaud; CSEN250 at 250 Mbaud; BER &lt; 2.5 × 10^-10. Average launched power and many TX/RX specs at 1-mm POF NA=0.5, PRBS 2^7-1, 250 Mbaud where noted. Signaling: 4B/5B at 125 Mbaud (Fast Ethernet); general 10–250 Mbaud (8B/10B max per note d). No MSA pluggable form factor or LC/SC/MPO connector codes claimed.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>Description, Features, Transmitter, Receiver, Recommended Operating Conditions, Transceiver Electrical Characteristics, Transmitter Optical Characteristics, Receiver Electrical Characteristics, Receiver Optical Characteristics, Transceiver Diagnostics Timing Characteristics</td></tr>
+<tr><td>suggestions</td><td>Consider schema fields for POF NA, link length in meters, RSSI responsivity (A/W), and jitter in ns; Versatile-Link as connector family.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>power_consumption_w</th><th>baud_rate_gbaud</th><th>reach_km</th><th>rx_sensitivity_dbm</th></tr><tr><td><strong>Fast Ethernet 125 Mbaud</strong></td><td>0.15</td><td>0.125</td><td>0.05</td><td>-26.0</td></tr><tr><td><strong>250 Mbaud</strong></td><td>0.15</td><td>0.25</td><td>0.05</td><td>-22.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 20:16
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "DS-16G-ER-Cxx",
+    "DS-16G-ER-C47",
+    "DS-16G-ER-C49",
+    "DS-16G-ER-C51",
+    "DS-16G-ER-C53",
+    "DS-16G-ER-C55"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "G.694.2"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260.0,
+    1471.0
+  ],
+  "wavelength_max_nm": [
+    1551.0,
+    1620.0
+  ],
+  "wavelength_center_nm": [
+    1470.0,
+    1490.0,
+    1510.0,
+    1530.0,
+    1550.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    5
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.9
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "G.694.2",
+    "SFF-8472",
+    "SFP MSA"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    4.25,
+    14.025
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -1.0
+  ],
+  "tx_power_max_dbm": [
+    3.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -14.0
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    1.0
+  ],
+  "cd_tolerance_ps_nm": [
+    800.0
+  ],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -24.0
+  ],
+  "los_deassert_dbm": [
+    -14.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Power budget 2–13 dB (w/o optical path penalties). Optical path penalty 2 dB. Rx min input power and overload at 14.025 Gbps (16G FC) using PRBS31 @ BER 1x10-12; transmitter/receiver power values footnote 2) average power. Storage temperature -40°C to +85°C. Typical reach 40 km without dispersion compensation for 16G FC. Layer-1 tested and approved by Cisco. RoHS-6/6 compliant.",
+  "provenance_datasheet_sections": [
+    "DS-16G-ER-Cxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Protocol support (4G FC, 8G FC, 16G FC) could map to host_interface_name if FC application codes are desired. Optical path penalty 2 dB is not modeled as a penalty object without paired penalized parameter and conditions."
+}

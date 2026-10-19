@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "64GFC PAM4",
+      "power_consumption_w": 2.0,
+      "media_interface_name": "64GFC",
+      "standards_code": "FC-PI-7",
+      "baud_rate_gbaud": 28.9,
+      "bit_rate_gbps": 57.8,
+      "modulation_format": "PAM4",
+      "fec_type": "KP4",
+      "pre_fec_ber_threshold": 0.000109
+    },
+    {
+      "label": "32GFC NRZ",
+      "power_consumption_w": 2.0,
+      "media_interface_name": "32GFC",
+      "standards_code": "FC-PI-6",
+      "baud_rate_gbaud": 28.05,
+      "bit_rate_gbps": 28.05,
+      "modulation_format": "NRZ",
+      "fec_type": "RS_528_514",
+      "pre_fec_ber_threshold": 1e-06
+    },
+    {
+      "label": "16GFC NRZ",
+      "power_consumption_w": 2.0,
+      "media_interface_name": "16GFC",
+      "standards_code": "FC-PI-5",
+      "baud_rate_gbaud": 14.025,
+      "bit_rate_gbps": 14.025,
+      "modulation_format": "NRZ",
+      "pre_fec_ber_threshold": 1e-12
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "modes": [
+    {
+      "label": "LWDM \u03bbC0 400GBASE-ER8 (receiver sensitivity)",
+      "wavelength_min_nm": 1272.55,
+      "wavelength_max_nm": 1274.54,
+      "wavelength_center_nm": 1273.55,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -16.1
+    },
+    {
+      "label": "LWDM \u03bbC1 400GBASE-ER8 (receiver sensitivity)",
+      "wavelength_min_nm": 1276.89,
+      "wavelength_max_nm": 1278.89,
+      "wavelength_center_nm": 1277.89,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -16.1
+    },
+    {
+      "label": "LWDM \u03bbC2 400GBASE-ER8 (receiver sensitivity)",
+      "wavelength_min_nm": 1281.25,
+      "wavelength_max_nm": 1283.27,
+      "wavelength_center_nm": 1282.26,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -16.1
+    },
+    {
+      "label": "LWDM \u03bbC3 400GBASE-ER8 (receiver sensitivity)",
+      "wavelength_min_nm": 1285.65,
+      "wavelength_max_nm": 1287.68,
+      "wavelength_center_nm": 1286.67,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -16.1
+    },
+    {
+      "label": "LWDM \u03bbC4 400GBASE-ER8 (receiver sensitivity)",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -16.1
+    },
+    {
+      "label": "LWDM \u03bbC5 400GBASE-ER8 (receiver sensitivity)",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.06,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -16.1
+    },
+    {
+      "label": "LWDM \u03bbC6 400GBASE-ER8 (receiver sensitivity)",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.59,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -16.1
+    },
+    {
+      "label": "LWDM \u03bbC7 400GBASE-ER8 (receiver sensitivity)",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -16.1
+    },
+    {
+      "label": "LWDM \u03bbC0 400GBASE-ER8 (stressed receiver sensitivity)",
+      "wavelength_min_nm": 1272.55,
+      "wavelength_max_nm": 1274.54,
+      "wavelength_center_nm": 1273.55,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -14.1
+    },
+    {
+      "label": "LWDM \u03bbC1 400GBASE-ER8 (stressed receiver sensitivity)",
+      "wavelength_min_nm": 1276.89,
+      "wavelength_max_nm": 1278.89,
+      "wavelength_center_nm": 1277.89,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -14.1
+    },
+    {
+      "label": "LWDM \u03bbC2 400GBASE-ER8 (stressed receiver sensitivity)",
+      "wavelength_min_nm": 1281.25,
+      "wavelength_max_nm": 1283.27,
+      "wavelength_center_nm": 1282.26,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -14.1
+    },
+    {
+      "label": "LWDM \u03bbC3 400GBASE-ER8 (stressed receiver sensitivity)",
+      "wavelength_min_nm": 1285.65,
+      "wavelength_max_nm": 1287.68,
+      "wavelength_center_nm": 1286.67,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -14.1
+    },
+    {
+      "label": "LWDM \u03bbC4 400GBASE-ER8 (stressed receiver sensitivity)",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -14.1
+    },
+    {
+      "label": "LWDM \u03bbC5 400GBASE-ER8 (stressed receiver sensitivity)",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.06,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -14.1
+    },
+    {
+      "label": "LWDM \u03bbC6 400GBASE-ER8 (stressed receiver sensitivity)",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.59,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -14.1
+    },
+    {
+      "label": "LWDM \u03bbC7 400GBASE-ER8 (stressed receiver sensitivity)",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "standards_code": "400GBASE-ER8",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 5.6,
+      "rx_sensitivity_dbm": -14.1
+    }
+  ]
+}

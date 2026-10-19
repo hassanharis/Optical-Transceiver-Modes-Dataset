@@ -1,0 +1,107 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-1000BASE-BX60D-35",
+      "SO-SFP-1000BASE-BX60D-53",
+      "SO-SFP-1000Base-BX60D-35",
+      "SO-SFP-1000Base-BX60D-33",
+      "SO-SFP-1000Base-BX60D-35-I",
+      "SO-SFP-1000BASE-BX60D-53-I"
+    ],
+    "wavelength_min_nm": [
+      1290.0,
+      1480.0
+    ],
+    "wavelength_max_nm": [
+      1330.0,
+      1580.0
+    ],
+    "wavelength_center_nm": [
+      1310.0,
+      1550.0
+    ],
+    "host_interface_name": [
+      "1000BASE-BX",
+      "GbE",
+      "1G FC"
+    ],
+    "standards_code": [
+      "1000BASE-BX",
+      "1G FC"
+    ],
+    "bit_rate_gbps": [
+      1.063,
+      1.25
+    ],
+    "tx_power_min_dbm": [
+      0.0,
+      -2.0
+    ],
+    "tx_power_max_dbm": [
+      5.0,
+      3.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "modulation_format": [],
+    "reach_km": [
+      60.0
+    ],
+    "rx_sensitivity_dbm": [
+      -24.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "fec_type": [],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -25.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "BiDi pair: SO-SFP-1000BASE-BX60D-35 TX/RX 1310/1550 nm; SO-SFP-1000BASE-BX60D-53 TX/RX 1550/1310 nm. Power budget 8–24 dB (1310 nm direction, -35) and 6–22 dB (1550 nm direction, -53). Dispersion penalty max 1 dB stated for -53 direction. Standard operating temperature 0°C to +70°C; industrial (I-temp) -40°C to +85°C. Transmitter/receiver levels footnote 3: average power. Receiver minimum input power footnote 4: @ 1.25 Gbps, BER ≤ 1×10⁻¹², PRBS 2⁷-1, back-to-back. Power consumption listed as < 1.0 W. Ordering table lists SO-SFP-1000Base-BX60D-33 with 1550/1310 nm description (likely -53 variant). Fiber attenuation guidance ~0.4 dB/km at 1310 nm and ~0.25 dB/km at 1550 nm (link planning, not module spec).",
+    "provenance_datasheet_sections": [
+      "SO-SFP-1000BASE-BX60D-35 & -53",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "POWER BUDGET INFORMATION",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether temp_min_c/temp_max_c should represent C-temp only (0/70) vs envelope including I-temp (-40/85). Power budget min/max (8–24, 6–22 dB) has no dedicated schema field. Dispersion penalty max 1 dB lacks paired penalized parameter for penalties[] structure."
+  }
+}

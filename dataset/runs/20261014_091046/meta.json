@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T09:10:46.712701+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ls-mm851g-s5i.pdf",
+  "page_count": 8,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.887,
+    "extract_atoms": 30.634,
+    "store_run": 0.01,
+    "synthesize_modes": 61.426,
+    "store_modes": 0.007,
+    "total": 102.965
+  }
+}

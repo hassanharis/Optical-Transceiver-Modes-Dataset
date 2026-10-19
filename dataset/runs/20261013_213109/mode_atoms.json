@@ -1,0 +1,163 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "wavelength_band": [
+      "grey",
+      "CWDM"
+    ],
+    "host_interface_name": [
+      "800GAUI-8",
+      "2x400GAUI-4",
+      "2x200GAUI-4",
+      "2x 400GAUI-4-L C2M",
+      "2x 400GAUI-4-S C2M",
+      "1x 800GAUI-8 L C2M",
+      "1x 800GAUI-8 S C2M",
+      "4x 200GAUI-2-L C2M",
+      "4x 200GAUI-2-S C2M",
+      "8 x 100GAUI-1-L C2M",
+      "8 x 100GAUI-1-S C2M"
+    ],
+    "media_interface_name": [
+      "400G-FR4 MSA / 400GBASE-FR4",
+      "800G 2xFR4 (Undefined)",
+      "200G-FR2* (Undefined)",
+      "100G-FR1* (Undefined)"
+    ],
+    "media_interface_id_hex": [
+      "0x1D",
+      "0xC0",
+      "0xC1",
+      "0xC2"
+    ],
+    "media_interface_id": [
+      29,
+      192,
+      193,
+      194
+    ],
+    "frame": [
+      "800GAUI-8",
+      "2x400GAUI-4",
+      "2x200GAUI-4",
+      "8x 106.25G"
+    ],
+    "standards_code": [
+      "2x400GBASE-FR4",
+      "800GBASE-R",
+      "2 x 400GBASE-R",
+      "4 x 200GBASE-R",
+      "8 x100GBASE-R",
+      "RS(528,514)"
+    ],
+    "bit_rate_gbps": [
+      850.0,
+      800.0,
+      400.0,
+      200.0,
+      100.0
+    ],
+    "tx_power_min_dbm": [
+      -3.2,
+      -0.2
+    ],
+    "tx_power_max_dbm": [
+      4.4,
+      3.7
+    ],
+    "rx_sensitivity_dbm": [
+      -7.4,
+      -4.6
+    ],
+    "fec_type": [
+      "RS_GENERIC",
+      "RS_528_514"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TOC003-SC4C-SO"
+    ],
+    "form_factor": [
+      "OSFP112"
+    ],
+    "standards_claimed": [
+      "OSFP MSA",
+      "CMIS5.0",
+      "IEEE802.3bj",
+      "400G-FR4 MSA",
+      "400GBASE-FR4"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      14.0
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "rx_overload_dbm": [
+      4.4
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "los_assert_dbm": [
+      -16.0
+    ],
+    "los_deassert_dbm": [
+      -10.0
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Power budget 0 – 4.2 dB stated without optical path penalties. Aggregated line rate 850 Gbps (footnote 1); line baud rate 53.125 Gbd per lane (footnote 2). Optical interface two duplex LC (UPC). FEC required by host per IEEE802.3bj; optical parameters BER 2.4 x 10^-4. Media IDs 0xC0–0xC2 vendor-specific per APPLICATION CODE LIST. Tx/Rx min/max given as Average and OMA per lane.",
+    "provenance_datasheet_sections": [
+      "OSFP112 800G 2xFR4, CMIS5.0",
+      "TOC003-SC4C-SO",
+      "TECHNICAL DATA",
+      "APPLICATION CODE LIST",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

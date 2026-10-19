@@ -1,0 +1,116 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-100BASE-L80D-Cxx",
+      "SO-SFP-100Base-L80D-C47",
+      "SO-SFP-100Base-L80D-C49",
+      "SO-SFP-100Base-L80D-C51",
+      "SO-SFP-100Base-L80D-C53",
+      "SO-SFP-100Base-L80D-C55",
+      "SO-SFP-100Base-L80D-C57",
+      "SO-SFP-100Base-L80D-C59",
+      "SO-SFP-100Base-L80D-C61"
+    ],
+    "wavelength_min_nm": [
+      1470.0,
+      1471.0,
+      1160.0
+    ],
+    "wavelength_max_nm": [
+      1610.0,
+      1611.0,
+      1650.0
+    ],
+    "wavelength_center_nm": [
+      1470.0,
+      1490.0,
+      1510.0,
+      1530.0,
+      1550.0,
+      1570.0,
+      1590.0,
+      1610.0
+    ],
+    "standards_code": [
+      "G.694.2",
+      "FE",
+      "STM1/OC3",
+      "STM-1/OC-3",
+      "100BASE",
+      "100M Ethernet"
+    ],
+    "bit_rate_gbps": [
+      0.1,
+      0.155
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "G.694.2",
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      8
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      -5.0
+    ],
+    "tx_power_max_dbm": [
+      0.0
+    ],
+    "rx_sensitivity_dbm": [
+      -34.0
+    ],
+    "rx_overload_dbm": [
+      -8.0
+    ],
+    "cd_tolerance_ps_nm": [
+      1600.0
+    ],
+    "pre_fec_ber_threshold": [
+      1e-10
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -35.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Operating temperature printed as -0°C to +70°C. Storage temperature -40°C to +85°C. Power budget 8–29dB. Dispersion penalty max 1dB (no paired penalized metric and condition for penalty objects). Transmitter output power table labels Min: -5.0dB (footnote 1: Average power). Minimum input power -34dBm at 155Mbps, BER 1x10-10, PRBS 2^31-1 (footnote 2). Receiver wavelength range 1160nm–1650nm. Power consumption < 1.0W. Bit rates stated as 100 to 155Mbps.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-100BASE-L80D-Cxx",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether operating temp min is 0°C or -0°C. Add explicit emitter/photodetector types if available. Channel spacing per G.694.2 could be listed if taken from standard reference in datasheet only."
+  }
+}

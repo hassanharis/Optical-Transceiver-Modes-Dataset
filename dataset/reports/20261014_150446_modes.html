@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics</div>
+  <div class="subtitle">SFP &middot; CWDM &middot; [18] channels</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">SFP</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">SFF-8431, SFF-8432, SFF-8472</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">CWDM</div></div>
+      <div class="spec-item"><div class="label">Channel Total</div><div class="value">18</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Reach (km)</div><div class="value">120.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">5.0</div></div>
+      <div class="spec-item"><div class="label">RX Sensitivity (dBm)</div><div class="value">-34.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">-10.0</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-12</div></div>
+      <div class="spec-item"><div class="label">Los Assert Dbm</div><div class="value">-45.0</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-35.0</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">0.5</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Title/header cites 34dB (power budget context) and 1270–1610nm (18ch). Power budget 10–34dB and dispersion penalty Max 1dB stated without paired penalty-point triplets. Power consumption given as &lt; 1W (no numeric Watt value). Operating temperature also lists -20°C to +85°C (-E) and -40°C to +85°C; extended -20°C to +85°C called out in OVERVIEW. Footnote 1): average power for TX/RX power specs. Footnote 2): minimum input power and overload @ 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back. Transmit wavelength 1271 to 1611nm (G.694.2); receiver wavelength range 1260nm–1620nm. DDM: Yes. Safety: TUV/UL/FDA (contact vendor), RoHS.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">SO-SFP-L120D-Cxx &amp; -Cxx-E, OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION, Ordering code, Description, GENERAL DEFINITIONS</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Add optional fields for power_budget_db and dispersion_penalty_db_max when only headline values are given. Consider temp_min_c/temp_max_c as list or variant objects for C-temp vs E-temp SKUs.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Wavelength Min</th><th>Wavelength Max</th><th>wavelength_center_nm</th><th>Standards code</th><th>Bit Rate (Gbps)</th></tr>
+      <tr><td><strong>CWDM 1270nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C27</td><td>1260.0</td><td>1620.0</td><td>1270.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1270nm extended temp</strong></td><td>SO-SFP-L120D-C27-E</td><td>1260.0</td><td>1620.0</td><td>1270.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1290nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C29</td><td>1260.0</td><td>1620.0</td><td>1290.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1290nm extended temp</strong></td><td>SO-SFP-L120D-C29-E</td><td>1260.0</td><td>1620.0</td><td>1290.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1310nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C31</td><td>1260.0</td><td>1620.0</td><td>1310.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1310nm extended temp</strong></td><td>SO-SFP-L120D-C31-E</td><td>1260.0</td><td>1620.0</td><td>1310.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1330nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C33</td><td>1260.0</td><td>1620.0</td><td>1330.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1330nm extended temp</strong></td><td>SO-SFP-L120D-C33-E</td><td>1260.0</td><td>1620.0</td><td>1330.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1350nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C35</td><td>1260.0</td><td>1620.0</td><td>1350.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1350nm extended temp</strong></td><td>SO-SFP-L120D-C35-E</td><td>1260.0</td><td>1620.0</td><td>1350.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1370nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C37</td><td>1260.0</td><td>1620.0</td><td>1370.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1370nm extended temp</strong></td><td>SO-SFP-L120D-C37-E</td><td>1260.0</td><td>1620.0</td><td>1370.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1390nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C39</td><td>1260.0</td><td>1620.0</td><td>1390.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1390nm extended temp</strong></td><td>SO-SFP-L120D-C39-E</td><td>1260.0</td><td>1620.0</td><td>1390.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1410nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C41</td><td>1260.0</td><td>1620.0</td><td>1410.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1410nm extended temp</strong></td><td>SO-SFP-L120D-C41-E</td><td>1260.0</td><td>1620.0</td><td>1410.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1430nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C43</td><td>1260.0</td><td>1620.0</td><td>1430.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1430nm extended temp</strong></td><td>SO-SFP-L120D-C43-E</td><td>1260.0</td><td>1620.0</td><td>1430.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1450nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C45</td><td>1260.0</td><td>1620.0</td><td>1450.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1450nm extended temp</strong></td><td>SO-SFP-L120D-C45-E</td><td>1260.0</td><td>1620.0</td><td>1450.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1470nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C47</td><td>1260.0</td><td>1620.0</td><td>1470.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1470nm extended temp</strong></td><td>SO-SFP-L120D-C47-E</td><td>1260.0</td><td>1620.0</td><td>1470.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1490nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C49</td><td>1260.0</td><td>1620.0</td><td>1490.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1490nm extended temp</strong></td><td>SO-SFP-L120D-C49-E</td><td>1260.0</td><td>1620.0</td><td>1490.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1510nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C51</td><td>1260.0</td><td>1620.0</td><td>1510.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1510nm extended temp</strong></td><td>SO-SFP-L120D-C51-E</td><td>1260.0</td><td>1620.0</td><td>1510.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1530nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C53</td><td>1260.0</td><td>1620.0</td><td>1530.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1530nm extended temp</strong></td><td>SO-SFP-L120D-C53-E</td><td>1260.0</td><td>1620.0</td><td>1530.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1550nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C55</td><td>1260.0</td><td>1620.0</td><td>1550.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1550nm extended temp</strong></td><td>SO-SFP-L120D-C55-E</td><td>1260.0</td><td>1620.0</td><td>1550.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1570nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C57</td><td>1260.0</td><td>1620.0</td><td>1570.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1570nm extended temp</strong></td><td>SO-SFP-L120D-C57-E</td><td>1260.0</td><td>1620.0</td><td>1570.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1590nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C59</td><td>1260.0</td><td>1620.0</td><td>1590.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1590nm extended temp</strong></td><td>SO-SFP-L120D-C59-E</td><td>1260.0</td><td>1620.0</td><td>1590.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1610nm 0°C to +70°C</strong></td><td>SO-SFP-L120D-C61</td><td>1260.0</td><td>1620.0</td><td>1610.0</td><td>G.694.2</td><td>1.25</td></tr>
+      <tr><td><strong>CWDM 1610nm extended temp</strong></td><td>SO-SFP-L120D-C61-E</td><td>1260.0</td><td>1620.0</td><td>1610.0</td><td>G.694.2</td><td>1.25</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">SO-SFP-L120D-C27</span> <span class="badge">SO-SFP-L120D-C27-E</span> <span class="badge">SO-SFP-L120D-C29</span> <span class="badge">SO-SFP-L120D-C29-E</span> <span class="badge">SO-SFP-L120D-C31</span> <span class="badge">SO-SFP-L120D-C31-E</span> <span class="badge">SO-SFP-L120D-C33</span> <span class="badge">SO-SFP-L120D-C33-E</span> <span class="badge">SO-SFP-L120D-C35</span> <span class="badge">SO-SFP-L120D-C35-E</span> <span class="badge">SO-SFP-L120D-C37</span> <span class="badge">SO-SFP-L120D-C37-E</span> <span class="badge">SO-SFP-L120D-C39</span> <span class="badge">SO-SFP-L120D-C39-E</span> <span class="badge">SO-SFP-L120D-C41</span> <span class="badge">SO-SFP-L120D-C41-E</span> <span class="badge">SO-SFP-L120D-C43</span> <span class="badge">SO-SFP-L120D-C43-E</span> <span class="badge">SO-SFP-L120D-C45</span> <span class="badge">SO-SFP-L120D-C45-E</span> <span class="badge">SO-SFP-L120D-C47</span> <span class="badge">SO-SFP-L120D-C47-E</span> <span class="badge">SO-SFP-L120D-C49</span> <span class="badge">SO-SFP-L120D-C49-E</span> <span class="badge">SO-SFP-L120D-C51</span> <span class="badge">SO-SFP-L120D-C51-E</span> <span class="badge">SO-SFP-L120D-C53</span> <span class="badge">SO-SFP-L120D-C53-E</span> <span class="badge">SO-SFP-L120D-C55</span> <span class="badge">SO-SFP-L120D-C55-E</span> <span class="badge">SO-SFP-L120D-C57</span> <span class="badge">SO-SFP-L120D-C57-E</span> <span class="badge">SO-SFP-L120D-C59</span> <span class="badge">SO-SFP-L120D-C59-E</span> <span class="badge">SO-SFP-L120D-C61</span> <span class="badge">SO-SFP-L120D-C61-E</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">1260.0</span> <span class="badge">1270.0</span> <span class="badge">1271.0</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">1610.0</span> <span class="badge">1611.0</span> <span class="badge">1620.0</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">1270.0</span> <span class="badge">1290.0</span> <span class="badge">1310.0</span> <span class="badge">1330.0</span> <span class="badge">1350.0</span> <span class="badge">1370.0</span> <span class="badge">1390.0</span> <span class="badge">1410.0</span> <span class="badge">1430.0</span> <span class="badge">1450.0</span> <span class="badge">1470.0</span> <span class="badge">1490.0</span> <span class="badge">1510.0</span> <span class="badge">1530.0</span> <span class="badge">1550.0</span> <span class="badge">1570.0</span> <span class="badge">1590.0</span> <span class="badge">1610.0</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">G.694.2</span> <span class="badge">GbE</span> <span class="badge">1G FC</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">1.0625</span> <span class="badge">1.25</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 15:04
+</footer>
+
+</div>
+</body>
+</html>

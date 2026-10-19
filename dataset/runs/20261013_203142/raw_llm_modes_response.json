@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"CVR-QSFP-SFP+\",\n      \"standards_code\": [\n        \"SFF-8436\",\n        \"SFF-8418\",\n        \"SFF-8419\",\n        \"SFF-8636\"\n      ]\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Evidence from the datasheet: Applications list **10GBASE-ZR @ 10.3125 Gbps** and **10GBASE-ZW @ 9.953 Gbps**; transmitter centre wavelength is **1530\u20131565 nm** (1550 nm EML). **1260 / 1600 nm** are receiver centre-wavelength limits on the same module for both applications, not separate selectable modes. **1.0**, **10.3**, and **10.7 Gbps** are min/typ/max data rate in Recommended Operating Conditions, not distinct application rows.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"10GBASE-ZR\",\n      \"wavelength_min_nm\": 1530.0,\n      \"wavelength_max_nm\": 1565.0,\n      \"standards_code\": \"10GBASE-ZR\",\n      \"bit_rate_gbps\": 10.3125\n    },\n    {\n      \"label\": \"10GBASE-ZW\",\n      \"wavelength_min_nm\": 1530.0,\n      \"wavelength_max_nm\": 1565.0,\n      \"standards_code\": \"10GBASE-ZW\",\n      \"bit_rate_gbps\": 9.953\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

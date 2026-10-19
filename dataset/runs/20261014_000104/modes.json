@@ -1,0 +1,56 @@
+{
+  "modes": [
+    {
+      "label": "DWDM lane 1 (1530.33 nm)",
+      "wavelength_min_nm": 1530.23,
+      "wavelength_max_nm": 1530.43,
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "DWDM",
+      "power_consumption_w": 2.5,
+      "standards_code": "40GBASE-EZR4",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_min_dbm": 1.0,
+      "tx_power_max_dbm": 5.0,
+      "extinction_ratio_db": 5.5
+    },
+    {
+      "label": "DWDM lane 2 (1535.04 nm)",
+      "wavelength_min_nm": 1534.94,
+      "wavelength_max_nm": 1535.14,
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "DWDM",
+      "power_consumption_w": 2.5,
+      "standards_code": "40GBASE-EZR4",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_min_dbm": 1.0,
+      "tx_power_max_dbm": 5.0,
+      "extinction_ratio_db": 5.5
+    },
+    {
+      "label": "DWDM lane 3 (1539.77 nm)",
+      "wavelength_min_nm": 1539.67,
+      "wavelength_max_nm": 1539.87,
+      "wavelength_center_nm": 1539.77,
+      "wavelength_band": "DWDM",
+      "power_consumption_w": 2.5,
+      "standards_code": "40GBASE-EZR4",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_min_dbm": 1.0,
+      "tx_power_max_dbm": 5.0,
+      "extinction_ratio_db": 5.5
+    },
+    {
+      "label": "DWDM lane 4 (1544.53 nm)",
+      "wavelength_min_nm": 1544.43,
+      "wavelength_max_nm": 1544.63,
+      "wavelength_center_nm": 1544.53,
+      "wavelength_band": "DWDM",
+      "power_consumption_w": 2.5,
+      "standards_code": "40GBASE-EZR4",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_min_dbm": 1.0,
+      "tx_power_max_dbm": 5.0,
+      "extinction_ratio_db": 5.5
+    }
+  ]
+}

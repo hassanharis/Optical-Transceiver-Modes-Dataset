@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-td8004-sc4c-so-qsfp-dd800-800g-2xlr4-r6.4.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 6804,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 23
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 9
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

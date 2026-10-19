@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Evidence from the **PRODUCT SPECIFICATION** table: two part numbers share **212.5 Gbps**, **2xDR4**, and **SMF**; they differ only by housing (**IHS** vs **RHS**). **1600.0** is aggregate (1.6T product) and does not appear on a separate row. **AOP13PI8-XXX-3(R)** is the family title, not a third table row.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"AOP13PI8-XXX-3 212.5G 2xDR4 IHS\",\n      \"model\": \"AOP13PI8-XXX-3\",\n      \"standards_code\": \"2xDR4\",\n      \"bit_rate_gbps\": 212.5\n    },\n    {\n      \"label\": \"AOP13PI8-XXX-3R 212.5G 2xDR4 RHS\",\n      \"model\": \"AOP13PI8-XXX-3R\",\n      \"standards_code\": \"2xDR4\",\n      \"bit_rate_gbps\": 212.5\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

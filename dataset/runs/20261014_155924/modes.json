@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP28-ER-I 25GE",
+      "model": "SO-SFP28-ER-I",
+      "host_interface_name": "25GE",
+      "standards_code": "25GBASE-ER",
+      "bit_rate_gbps": 25.78,
+      "rx_sensitivity_dbm": -19.0
+    },
+    {
+      "label": "SO-SFP28-ER-I CPRI Option 10",
+      "model": "SO-SFP28-ER-I",
+      "host_interface_name": "CPRI opt 10",
+      "standards_code": "CPRI Option 10",
+      "bit_rate_gbps": 24.33,
+      "rx_sensitivity_dbm": -21.0
+    },
+    {
+      "label": "SO-SFP28-ER 25GE",
+      "model": "SO-SFP28-ER",
+      "host_interface_name": "25GE",
+      "standards_code": "25GBASE-ER",
+      "bit_rate_gbps": 25.78,
+      "rx_sensitivity_dbm": -19.0
+    },
+    {
+      "label": "SO-SFP28-ER CPRI Option 10",
+      "model": "SO-SFP28-ER",
+      "host_interface_name": "CPRI opt 10",
+      "standards_code": "CPRI Option 10",
+      "bit_rate_gbps": 24.33,
+      "rx_sensitivity_dbm": -21.0
+    }
+  ]
+}

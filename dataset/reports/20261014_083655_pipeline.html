@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;DS-32G-IR-Dxxxx&#x27;, &#x27;DS-32G-IR-D6142&#x27;, &#x27;DS-32G-IR-D6061&#x27;, &#x27;DS-32G-IR-D5979&#x27;, &#x27;DS-32G-IR-D5898&#x27;, &#x27;DS-32G-IR-D5817&#x27;, &#x27;DS-32G-IR-D5736&#x27;, &#x27;DS-32G-IR-D5655&#x27;, &#x27;DS-32G-IR-D5575&#x27;, &#x27;DS-32G-IR-D5494&#x27;, &#x27;DS-32G-IR-D5413&#x27;, &#x27;DS-32G-IR-D5333&#x27;, &#x27;DS-32G-IR-D5252&#x27;, &#x27;DS-32G-IR-D5172&#x27;, &#x27;DS-32G-IR-D5092&#x27;, &#x27;DS-32G-IR-D5012&#x27;, &#x27;DS-32G-IR-D4932&#x27;, &#x27;DS-32G-IR-D4851&#x27;, &#x27;DS-32G-IR-D4772&#x27;, &#x27;DS-32G-IR-D4692&#x27;, &#x27;DS-32G-IR-D4612&#x27;, &#x27;DS-32G-IR-D4532&#x27;, &#x27;DS-32G-IR-D4453&#x27;, &#x27;DS-32G-IR-D4373&#x27;, &#x27;DS-32G-IR-D4294&#x27;, &#x27;DS-32G-IR-D4214&#x27;, &#x27;DS-32G-IR-D4135&#x27;, &#x27;DS-32G-IR-D4056&#x27;, &#x27;DS-32G-IR-D3977&#x27;, &#x27;DS-32G-IR-D3898&#x27;, &#x27;DS-32G-IR-D3819&#x27;, &#x27;DS-32G-IR-D3740&#x27;, &#x27;DS-32G-IR-D3661&#x27;, &#x27;DS-32G-IR-D3582&#x27;, &#x27;DS-32G-IR-D3504&#x27;, &#x27;DS-32G-IR-D3425&#x27;, &#x27;DS-32G-IR-D3347&#x27;, &#x27;DS-32G-IR-D3268&#x27;, &#x27;DS-32G-IR-D3190&#x27;, &#x27;DS-32G-IR-D3112&#x27;, &#x27;DS-32G-IR-D3033&#x27;, &#x27;DS-32G-IR-D2955&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">ds-32g-ir-dxxxx-r5.1.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">3</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">4</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 08:36</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.1 
+
+
+## **DS-32G-IR-Dxxxx** 
+
+SFP28, 32/16/8G FC, DWDM 100GHz grid, 192.00 - 196.00THz (41ch), 10km, 7dB, LC, D2955-D6142 
+
+## OVERVIEW 
+
+The DS-32G-IR-Dxxxx is a versatile DWDM transceiver in SFP28 form-factor supporting a wide range of Fiber Channel (FC) services (8G to 32G). The transceiver is provided in versions covering all C-band channels in the 100GHz DWDM grid as specified in the ITU-T G.694.1 standard. The transceiver has been layer-1 tested and approved by Cisco. 
+
+The transceiver has an inbuilt 3-mode CDR (Clock Data Recovery) function; 
+
+- High data rate mode for 32G FC 
+
+- Low data rate mode for 16G FC 
+
+- Bypass mode for 8 GFC 
+
+The optical performance provides a bridgeable distance of up to 10km (without dispersion compensation) for 32G FC. This transceiver provides digital diagnostic functions via a 2-wire serial interface as defined by the SFF-8472 specification. 
+
+The transceiver module is compliant to RoHS-6/6. 
+
+## TECHNICAL DATA 
+
+|Parameter|Value&lt;br&gt;DWDM 100GHz SFP28&lt;br&gt;SM (2x LC)&lt;br&gt;10km&lt;br&gt;192.00 - 196.00THz&lt;br&gt;28.05Gbps&lt;br&gt;14.025Gbps&lt;br&gt;8.500Gbps&lt;br&gt;32GFC&lt;br&gt;16GFC&lt;br&gt;8GFC&lt;br&gt;0 – 7.0dB&lt;br&gt;-170 to +170ps/nm&lt;br&gt;&lt; 2.0W&lt;br&gt;0°C to +70°C&lt;br&gt;-40°C to +85°C|Parameter|Value|
+|---|---|---|---|
+|Technology||**Transmitter data:**||
+|Transmission media||Output power|Min: -3.0dBm2)|
+|Typical reach|||Max: +2.0dBm2)|
+|Nominal wavelengths||Transmit wavelengths|192.00 - 196.00THz|
+|Bit rate support|||100GHz (ITU-T G.694.1)|
+|||**Receiver data:**||
+|||Minimum input power|-10.0dBm1) 2)|
+|Protocol support||Overload (max power)|+2.0dBm1) 2)|
+|||Wavelength range|1480 - 1580nm|
+|||DDM|Yes|
+|Power budget||MSA compliance|SFP28 MSA|
+|Dispersion tolerance|||SFF-8402|
+|Power consumption||||
+|Operating temperature||||
+|Storage temperature||||
+
+
+
+1) @ 28.05 Gbps (32G FC) and BER &lt; 10-6 using PRBS 231-1 2) Average power Safety/regulatory compliance: TUV/UL/FDA (contact Smartoptics for latest certification information) RoHS compliance 
+
+
+Note: Optical BER perf
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "DS-32G-IR-Dxxxx",
+    "DS-32G-IR-D6142",
+    "DS-32G-IR-D6061",
+    "DS-32G-IR-D5979",
+    "DS-32G-IR-D5898",
+    "DS-32G-IR-D5817",
+    "DS-32G-IR-D5736",
+    "DS-32G-IR-D5655",
+    "DS-32G-IR-D5575",
+    "DS-32G-IR-D5494",
+    "DS-32G-IR-D5413",
+    "DS-32G-IR-D5333",
+    "DS-32G-IR-D5252",
+    "DS-32G-IR-D5172",
+    "DS-32G-IR-D5092",
+    "DS-32G-IR-D5012",
+    "DS-32G-IR-D4932",
+    "DS-32G-IR-D4851",
+    "DS-32G-IR-D4772",
+    "DS-32G-IR-D4692",
+    "DS-32G-IR-D4612",
+    "DS-32G-IR-D4532",
+    "DS-32G-IR-D4453",
+    "DS-32G-IR-D4373",
+    "DS-32G-IR-D4294",
+    "DS-32G-IR-D4214",
+    "DS-32G-IR-D4135",
+    "DS-32G-IR-D4056",
+    "DS-32G-IR-D3977",
+    "DS-32G-IR-D3898",
+    "DS-32G-IR-D3819",
+    "DS-32G-IR-D3740",
+    "DS-32G-IR-D3661",
+    "DS-32G-IR-D3582",
+    "DS-32G-IR-D3504",
+    "DS-32G-IR-D3425",
+    "DS-32G-IR-D3347",
+    "DS-32G-IR-D3268",
+    "DS-32G-IR-D3190",
+    "DS-32G-IR-D3112",
+    "DS-32G-IR-D3033",
+    "DS-32G-IR-D2955"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP28"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "ITU-T G.694.1",
+    "SFP28 MSA",
+    "SFF-8402",
+    "SFF-8472",
+    "RoHS-6/6"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1561.42</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_band"</span>: [
+    "C-band",
+    "DWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">192.0</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.0</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">41</span>
+  ],
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">2.0</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "SFP28 MSA",
+    "SFF-8402"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "32GFC",
+    "16GFC",
+    "8GFC",
+    "G.694.1"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">28.05</span>,
+    <span class="num">25.78</span>,
+    <span class="num">14.025</span>,
+    <span class="num">8.5</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">10.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-3.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">2.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-10.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">2.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">-170.0</span>,
+    <span class="num">170.0</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: [
+    "RS_GENERIC"
+  ],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: [
+    <span class="num">1</span>e-06
+  ],
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-06
+  ],
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"los_deassert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Title line states <span class="num">7</span>dB power budget. Receiver minimum input power and overload are specified at <span class="num">28.05</span> Gbps (32G FC) and BER &lt; <span class="num">10</span>-6 using PRBS <span class="num">231</span>-1; transmitter output power is average power (footnote <span class="num">2</span>). Optical BER performance is specified at BER <span class="num">1</span>E-6 with Reed Solomon RS-FEC encoding/decoding. Bridgeable distance up to <span class="num">10</span>km without dispersion compensation for <span class="num">32</span>G FC. Receiver wavelength range <span class="num">1480</span>-1580nm. Storage temperature <span class="num">-40</span>°C to +85°C. Rate select: RS0/RS1 High/1 gives <span class="num">28.05</span>Gbps Tx/Rx; Low/0 gives <span class="num">14.025</span>/8.5Gbps. Power budget row in technical table: <span class="num">0</span> – <span class="num">7.0</span>dB."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "DS-32G-IR-Dxxxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "RATE SELECT OPERATION",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="null">null</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">DS-32G-IR-Dxxxx</span> <span class="badge">DS-32G-IR-D6142</span> <span class="badge">DS-32G-IR-D6061</span> <span class="badge">DS-32G-IR-D5979</span> <span class="badge">DS-32G-IR-D5898</span> <span class="badge">DS-32G-IR-D5817</span> <span class="badge">DS-32G-IR-D5736</span> <span class="badge">DS-32G-IR-D5655</span> <span class="badge">DS-32G-IR-D5575</span> <span class="badge">DS-32G-IR-D5494</span> <span class="badge">DS-32G-IR-D5413</span> <span class="badge">DS-32G-IR-D5333</span> <span class="badge">DS-32G-IR-D5252</span> <span class="badge">DS-32G-IR-D5172</span> <span class="badge">DS-32G-IR-D5092</span> <span class="badge">DS-32G-IR-D5012</span> <span class="badge">DS-32G-IR-D4932</span> <span class="badge">DS-32G-IR-D4851</span> <span class="badge">DS-32G-IR-D4772</span> <span class="badge">DS-32G-IR-D4692</span> <span class="badge">DS-32G-IR-D4612</span> <span class="badge">DS-32G-IR-D4532</span> <span class="badge">DS-32G-IR-D4453</span> <span class="badge">DS-32G-IR-D4373</span> <span class="badge">DS-32G-IR-D4294</span> <span class="badge">DS-32G-IR-D4214</span> <span class="badge">DS-32G-IR-D4135</span> <span class="badge">DS-32G-IR-D4056</span> <span class="badge">DS-32G-IR-D3977</span> <span class="badge">DS-32G-IR-D3898</span> <span class="badge">DS-32G-IR-D3819</span> <span class="badge">DS-32G-IR-D3740</span> <span class="badge">DS-32G-IR-D3661</span> <span class="badge">DS-32G-IR-D3582</span> <span class="badge">DS-32G-IR-D3504</span> <span class="badge">DS-32G-IR-D3425</span> <span class="badge">DS-32G-IR-D3347</span> <span class="badge">DS-32G-IR-D3268</span> <span class="badge">DS-32G-IR-D3190</span> <span class="badge">DS-32G-IR-D3112</span> <span class="badge">DS-32G-IR-D3033</span> <span class="badge">DS-32G-IR-D2955</span></td></tr>
+<tr><td>wavelength_band</td><td><span class="badge">C-band</span> <span class="badge">DWDM</span></td></tr>
+<tr><td>host_interface_name</td><td><span class="badge">SFP28 MSA</span> <span class="badge">SFF-8402</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">32GFC</span> <span class="badge">16GFC</span> <span class="badge">8GFC</span> <span class="badge">G.694.1</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">28.05</span> <span class="badge">25.78</span> <span class="badge">14.025</span> <span class="badge">8.5</span></td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td><span class="badge">-170.0</span> <span class="badge">170.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>SFP28</td></tr>
+<tr><td>standards_claimed</td><td>ITU-T G.694.1, SFP28 MSA, SFF-8402, SFF-8472, RoHS-6/6</td></tr>
+<tr><td>wavelength_min_nm</td><td>1529.55</td></tr>
+<tr><td>wavelength_max_nm</td><td>1561.42</td></tr>
+<tr><td>frequency_min_thz</td><td>192.0</td></tr>
+<tr><td>frequency_max_thz</td><td>196.0</td></tr>
+<tr><td>channel_spacing_ghz</td><td>100.0</td></tr>
+<tr><td>channel_total</td><td>41</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>2.0</td></tr>
+<tr><td>reach_km</td><td>10.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-3.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>2.0</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-10.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>2.0</td></tr>
+<tr><td>fec_type</td><td>RS_GENERIC</td></tr>
+<tr><td>pre_fec_ber_threshold</td><td>1e-06</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-06</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Title line states 7dB power budget. Receiver minimum input power and overload are specified at 28.05 Gbps (32G FC) and BER &lt; 10-6 using PRBS 231-1; transmitter output power is average power (footnote 2). Optical BER performance is specified at BER 1E-6 with Reed Solomon RS-FEC encoding/decoding. Bridgeable distance up to 10km without dispersion compensation for 32G FC. Receiver wavelength range 1480-1580nm. Storage temperature -40°C to +85°C. Rate select: RS0/RS1 High/1 gives 28.05Gbps Tx/Rx; Low/0 gives 14.025/8.5Gbps. Power budget row in technical table: 0 – 7.0dB.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>DS-32G-IR-Dxxxx, OVERVIEW, TECHNICAL DATA, RATE SELECT OPERATION, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_band</th><th>host_interface_name</th><th>standards_code</th><th>bit_rate_gbps</th><th>cd_tolerance_ps_nm</th></tr><tr><td><strong>DS-32G-IR-D6142 32G FC</strong></td><td>DS-32G-IR-D6142</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D6142 16G FC</strong></td><td>DS-32G-IR-D6142</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D6142 8G FC</strong></td><td>DS-32G-IR-D6142</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D6061 32G FC</strong></td><td>DS-32G-IR-D6061</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D6061 16G FC</strong></td><td>DS-32G-IR-D6061</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D6061 8G FC</strong></td><td>DS-32G-IR-D6061</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5979 32G FC</strong></td><td>DS-32G-IR-D5979</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5979 16G FC</strong></td><td>DS-32G-IR-D5979</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5979 8G FC</strong></td><td>DS-32G-IR-D5979</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5898 32G FC</strong></td><td>DS-32G-IR-D5898</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5898 16G FC</strong></td><td>DS-32G-IR-D5898</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5898 8G FC</strong></td><td>DS-32G-IR-D5898</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5817 32G FC</strong></td><td>DS-32G-IR-D5817</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5817 16G FC</strong></td><td>DS-32G-IR-D5817</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5817 8G FC</strong></td><td>DS-32G-IR-D5817</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5736 32G FC</strong></td><td>DS-32G-IR-D5736</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5736 16G FC</strong></td><td>DS-32G-IR-D5736</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5736 8G FC</strong></td><td>DS-32G-IR-D5736</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5655 32G FC</strong></td><td>DS-32G-IR-D5655</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5655 16G FC</strong></td><td>DS-32G-IR-D5655</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5655 8G FC</strong></td><td>DS-32G-IR-D5655</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5575 32G FC</strong></td><td>DS-32G-IR-D5575</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5575 16G FC</strong></td><td>DS-32G-IR-D5575</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5575 8G FC</strong></td><td>DS-32G-IR-D5575</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5494 32G FC</strong></td><td>DS-32G-IR-D5494</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5494 16G FC</strong></td><td>DS-32G-IR-D5494</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5494 8G FC</strong></td><td>DS-32G-IR-D5494</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5413 32G FC</strong></td><td>DS-32G-IR-D5413</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5413 16G FC</strong></td><td>DS-32G-IR-D5413</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5413 8G FC</strong></td><td>DS-32G-IR-D5413</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5333 32G FC</strong></td><td>DS-32G-IR-D5333</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5333 16G FC</strong></td><td>DS-32G-IR-D5333</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5333 8G FC</strong></td><td>DS-32G-IR-D5333</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5252 32G FC</strong></td><td>DS-32G-IR-D5252</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5252 16G FC</strong></td><td>DS-32G-IR-D5252</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5252 8G FC</strong></td><td>DS-32G-IR-D5252</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5172 32G FC</strong></td><td>DS-32G-IR-D5172</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5172 16G FC</strong></td><td>DS-32G-IR-D5172</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5172 8G FC</strong></td><td>DS-32G-IR-D5172</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5092 32G FC</strong></td><td>DS-32G-IR-D5092</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5092 16G FC</strong></td><td>DS-32G-IR-D5092</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5092 8G FC</strong></td><td>DS-32G-IR-D5092</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5012 32G FC</strong></td><td>DS-32G-IR-D5012</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5012 16G FC</strong></td><td>DS-32G-IR-D5012</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D5012 8G FC</strong></td><td>DS-32G-IR-D5012</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4932 32G FC</strong></td><td>DS-32G-IR-D4932</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4932 16G FC</strong></td><td>DS-32G-IR-D4932</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4932 8G FC</strong></td><td>DS-32G-IR-D4932</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4851 32G FC</strong></td><td>DS-32G-IR-D4851</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4851 16G FC</strong></td><td>DS-32G-IR-D4851</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4851 8G FC</strong></td><td>DS-32G-IR-D4851</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4772 32G FC</strong></td><td>DS-32G-IR-D4772</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4772 16G FC</strong></td><td>DS-32G-IR-D4772</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4772 8G FC</strong></td><td>DS-32G-IR-D4772</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4692 32G FC</strong></td><td>DS-32G-IR-D4692</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4692 16G FC</strong></td><td>DS-32G-IR-D4692</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4692 8G FC</strong></td><td>DS-32G-IR-D4692</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4612 32G FC</strong></td><td>DS-32G-IR-D4612</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4612 16G FC</strong></td><td>DS-32G-IR-D4612</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4612 8G FC</strong></td><td>DS-32G-IR-D4612</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4532 32G FC</strong></td><td>DS-32G-IR-D4532</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4532 16G FC</strong></td><td>DS-32G-IR-D4532</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4532 8G FC</strong></td><td>DS-32G-IR-D4532</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4453 32G FC</strong></td><td>DS-32G-IR-D4453</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4453 16G FC</strong></td><td>DS-32G-IR-D4453</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4453 8G FC</strong></td><td>DS-32G-IR-D4453</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4373 32G FC</strong></td><td>DS-32G-IR-D4373</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4373 16G FC</strong></td><td>DS-32G-IR-D4373</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4373 8G FC</strong></td><td>DS-32G-IR-D4373</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4294 32G FC</strong></td><td>DS-32G-IR-D4294</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4294 16G FC</strong></td><td>DS-32G-IR-D4294</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4294 8G FC</strong></td><td>DS-32G-IR-D4294</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4214 32G FC</strong></td><td>DS-32G-IR-D4214</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4214 16G FC</strong></td><td>DS-32G-IR-D4214</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4214 8G FC</strong></td><td>DS-32G-IR-D4214</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4135 32G FC</strong></td><td>DS-32G-IR-D4135</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4135 16G FC</strong></td><td>DS-32G-IR-D4135</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4135 8G FC</strong></td><td>DS-32G-IR-D4135</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4056 32G FC</strong></td><td>DS-32G-IR-D4056</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4056 16G FC</strong></td><td>DS-32G-IR-D4056</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D4056 8G FC</strong></td><td>DS-32G-IR-D4056</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3977 32G FC</strong></td><td>DS-32G-IR-D3977</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3977 16G FC</strong></td><td>DS-32G-IR-D3977</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3977 8G FC</strong></td><td>DS-32G-IR-D3977</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3898 32G FC</strong></td><td>DS-32G-IR-D3898</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3898 16G FC</strong></td><td>DS-32G-IR-D3898</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3898 8G FC</strong></td><td>DS-32G-IR-D3898</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3819 32G FC</strong></td><td>DS-32G-IR-D3819</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3819 16G FC</strong></td><td>DS-32G-IR-D3819</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3819 8G FC</strong></td><td>DS-32G-IR-D3819</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3740 32G FC</strong></td><td>DS-32G-IR-D3740</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3740 16G FC</strong></td><td>DS-32G-IR-D3740</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3740 8G FC</strong></td><td>DS-32G-IR-D3740</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3661 32G FC</strong></td><td>DS-32G-IR-D3661</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3661 16G FC</strong></td><td>DS-32G-IR-D3661</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3661 8G FC</strong></td><td>DS-32G-IR-D3661</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3582 32G FC</strong></td><td>DS-32G-IR-D3582</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3582 16G FC</strong></td><td>DS-32G-IR-D3582</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3582 8G FC</strong></td><td>DS-32G-IR-D3582</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3504 32G FC</strong></td><td>DS-32G-IR-D3504</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3504 16G FC</strong></td><td>DS-32G-IR-D3504</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3504 8G FC</strong></td><td>DS-32G-IR-D3504</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3425 32G FC</strong></td><td>DS-32G-IR-D3425</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3425 16G FC</strong></td><td>DS-32G-IR-D3425</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3425 8G FC</strong></td><td>DS-32G-IR-D3425</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3347 32G FC</strong></td><td>DS-32G-IR-D3347</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3347 16G FC</strong></td><td>DS-32G-IR-D3347</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3347 8G FC</strong></td><td>DS-32G-IR-D3347</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3268 32G FC</strong></td><td>DS-32G-IR-D3268</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3268 16G FC</strong></td><td>DS-32G-IR-D3268</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3268 8G FC</strong></td><td>DS-32G-IR-D3268</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3190 32G FC</strong></td><td>DS-32G-IR-D3190</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3190 16G FC</strong></td><td>DS-32G-IR-D3190</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3190 8G FC</strong></td><td>DS-32G-IR-D3190</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3112 32G FC</strong></td><td>DS-32G-IR-D3112</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3112 16G FC</strong></td><td>DS-32G-IR-D3112</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3112 8G FC</strong></td><td>DS-32G-IR-D3112</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3033 32G FC</strong></td><td>DS-32G-IR-D3033</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3033 16G FC</strong></td><td>DS-32G-IR-D3033</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D3033 8G FC</strong></td><td>DS-32G-IR-D3033</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D2955 32G FC</strong></td><td>DS-32G-IR-D2955</td><td>DWDM</td><td>SFP28 MSA</td><td>32GFC</td><td>28.05</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D2955 16G FC</strong></td><td>DS-32G-IR-D2955</td><td>DWDM</td><td>SFP28 MSA</td><td>16GFC</td><td>14.025</td><td>170.0</td></tr><tr><td><strong>DS-32G-IR-D2955 8G FC</strong></td><td>DS-32G-IR-D2955</td><td>DWDM</td><td>SFP28 MSA</td><td>8GFC</td><td>8.5</td><td>170.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 08:36
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Nokia</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Nokia</div>
+  <div class="subtitle"></div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Nokia</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">IEEE 802.3</div></div>
+      <div class="spec-item"><div class="label">Channel Spacing (GHz)</div><div class="value">0.05</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF_G655</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-5.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">55.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">-6.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">9.0</div></div>
+      <div class="spec-item"><div class="label">Fec Type</div><div class="value">SDFEC</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">CHM6 C-band tuneability 191.325–196.125 THz; CHM6L L-band 186.05–191.050 THz. Line data rate 100–800 Gb/s in 50 G increments; baud 31–96 Gbaud (ICE6) or 100.4 Gbaud (ICE6 Turbo); intro also cites 31–100+ Gbaud and up to 100+ Gbaud. Reach values are terrestrial examples at 800, 600, and 400 Gb/s per wavelength (can exceed stated km). CD tolerance 150,000–400,000 ps/nm, max DGD ~100–160 ps, SOP rotation up to 6 Mrad/s depend on line mode. Power 213–445 W by configuration; separate mention ~0.2 W/G/s. Two embedded line interfaces; client mix 8× QSFP28, 4× QSFP28/56, 4× QSFP28/56/DD. No rx OSNR/sensitivity penalty table with @ notation in source.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">Leveraging Industry-leading Optical Engine Technology, 1830 GX G42 CHM6 in Terrestrial Networks, 1830 GX G42 CHM6 in Subsea Networks, Technical Specifications — Applications, Technical Specifications — Physical Interface, Technical Specifications — Line Interfaces, Technical Specifications — Client Interfaces, Technical Specifications — Environmental</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Datasheet is system/module marketing spec; add fields for SOP rotation (Mrad/s), subcarrier count, protection switch time (ms), and line-mode-conditional reach tuples (rate Gb/s, km) if the schema targets coherent line cards.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Form Factor</th><th>Wavelength Band</th><th>frequency_min_thz</th><th>frequency_max_thz</th><th>Power (W)</th><th>Host Interface</th><th>Standards code</th><th>Baud Rate (GBaud)</th><th>Bit Rate (Gbps)</th><th>modulation_format</th><th>Reach (km)</th><th>CD Tolerance (ps/nm)</th><th>pmd_tolerance_ps</th><th>fec_overhead_percent</th><th>number_of_lanes</th></tr>
+      <tr><td><strong>CHM6 C-band 800Gb/s 1000km</strong></td><td>CHM6</td><td>QSFP-DD</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>445.0</td><td>QSFP28/56</td><td>OTU4</td><td>96.0</td><td>800.0</td><td>PCS_LC</td><td>1000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>2</td></tr>
+      <tr><td><strong>CHM6 C-band 600Gb/s 3000km</strong></td><td>CHM6</td><td>QSFP-DD</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>445.0</td><td>QSFP28/56</td><td>OTU4</td><td>96.0</td><td>600.0</td><td>PCS_LC</td><td>3000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>2</td></tr>
+      <tr><td><strong>CHM6 C-band 400Gb/s 7500km</strong></td><td>CHM6</td><td>QSFP-DD</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>445.0</td><td>QSFP28/56</td><td>OTU4</td><td>96.0</td><td>400.0</td><td>PCS_LC</td><td>7500.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>2</td></tr>
+      <tr><td><strong>CHM6L L-band 800Gb/s 1000km</strong></td><td>CHM6L</td><td>QSFP-DD</td><td>extended L-band</td><td>186.05</td><td>191.05</td><td>445.0</td><td>QSFP28/56</td><td>OTU4</td><td>96.0</td><td>800.0</td><td>PCS_LC</td><td>1000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>2</td></tr>
+      <tr><td><strong>CHM6L L-band 600Gb/s 3000km</strong></td><td>CHM6L</td><td>QSFP-DD</td><td>extended L-band</td><td>186.05</td><td>191.05</td><td>445.0</td><td>QSFP28/56</td><td>OTU4</td><td>96.0</td><td>600.0</td><td>PCS_LC</td><td>3000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>2</td></tr>
+      <tr><td><strong>CHM6L L-band 400Gb/s 7500km</strong></td><td>CHM6L</td><td>QSFP-DD</td><td>extended L-band</td><td>186.05</td><td>191.05</td><td>445.0</td><td>QSFP28/56</td><td>OTU4</td><td>96.0</td><td>400.0</td><td>PCS_LC</td><td>7500.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>2</td></tr>
+      <tr><td><strong>CHM6 C-band ICE6 Turbo 100.4 Gbaud</strong></td><td>CHM6</td><td>QSFP-DD</td><td>C-band</td><td>191.325</td><td>196.125</td><td>445.0</td><td>QSFP-DD</td><td>OTU4</td><td>100.4</td><td>800.0</td><td>QAM_64</td><td>1000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>2</td></tr>
+      <tr><td><strong>CHM6 1.6T dual-carrier line</strong></td><td>CHM6</td><td>QSFP-DD</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>445.0</td><td>QSFP28/56</td><td>OTU4</td><td>96.0</td><td>1600.0</td><td>PCS_LC</td><td>1000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>2</td></tr>
+      <tr><td><strong>CHM6 33% SD-FEC overhead</strong></td><td>CHM6</td><td>QSFP-DD</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>445.0</td><td>QSFP28/56</td><td>OTU4</td><td>96.0</td><td>600.0</td><td>PCS_LC</td><td>3000.0</td><td>400000.0</td><td>160.0</td><td>33.0</td><td>2</td></tr>
+      <tr><td><strong>CHM6 subsea 4D modulation</strong></td><td>CHM6</td><td>QSFP-DD</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>445.0</td><td>QSFP28/56</td><td>OTU4</td><td>96.0</td><td>800.0</td><td>4D</td><td>1000.0</td><td>400000.0</td><td>160.0</td><td>20.0</td><td>2</td></tr>
+      <tr><td><strong>CHM6 subsea 8D modulation</strong></td><td>CHM6</td><td>QSFP-DD</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>445.0</td><td>QSFP28/56</td><td>OTU4</td><td>96.0</td><td>800.0</td><td>8D</td><td>1000.0</td><td>400000.0</td><td>160.0</td><td>20.0</td><td>2</td></tr>
+      <tr><td><strong>8x QSFP28 client</strong></td><td>CHM6</td><td>QSFP28</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>213.0</td><td>QSFP28</td><td>OTU4</td><td>31.0</td><td>100.0</td><td>PCS</td><td>1000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>8</td></tr>
+      <tr><td><strong>4x QSFP28/56 client</strong></td><td>CHM6</td><td>QSFP28</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>213.0</td><td>QSFP28/56</td><td>OTU4</td><td>31.0</td><td>400.0</td><td>PCS</td><td>1000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>16</td></tr>
+      <tr><td><strong>4x QSFP-DD client</strong></td><td>CHM6</td><td>QSFP-DD</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>213.0</td><td>QSFP-DD</td><td>OTU4</td><td>31.0</td><td>400.0</td><td>PCS</td><td>1000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>16</td></tr>
+      <tr><td><strong>UCM4 10G OTU2 client</strong></td><td>CHM6</td><td>QSFP28</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>213.0</td><td>QSFP28</td><td>OTU2</td><td>31.0</td><td>10.0</td><td>QPSK</td><td>1000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>8</td></tr>
+      <tr><td><strong>UCM4 10G OTU2e client</strong></td><td>CHM6</td><td>QSFP28</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>213.0</td><td>QSFP28</td><td>OTU2e</td><td>31.0</td><td>10.0</td><td>QPSK</td><td>1000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>8</td></tr>
+      <tr><td><strong>UCM4 10G OC192 client</strong></td><td>CHM6</td><td>QSFP28</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>213.0</td><td>QSFP28</td><td>OC192</td><td>31.0</td><td>10.0</td><td>QPSK</td><td>1000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>8</td></tr>
+      <tr><td><strong>UCM4 10G STM64 client</strong></td><td>CHM6</td><td>QSFP28</td><td>extended C-band</td><td>191.325</td><td>196.125</td><td>213.0</td><td>QSFP28</td><td>STM64</td><td>31.0</td><td>10.0</td><td>QPSK</td><td>1000.0</td><td>150000.0</td><td>100.0</td><td>20.0</td><td>8</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">CHM6</span> <span class="badge">CHM6L</span></td></tr>
+      <tr><td>form_factor</td><td><span class="badge">QSFP28</span> <span class="badge">QSFP-DD</span></td></tr>
+      <tr><td>wavelength_band</td><td><span class="badge">C-band</span> <span class="badge">L-band</span> <span class="badge">extended C-band</span> <span class="badge">extended L-band</span></td></tr>
+      <tr><td>frequency_min_thz</td><td><span class="badge">186.05</span> <span class="badge">191.325</span></td></tr>
+      <tr><td>frequency_max_thz</td><td><span class="badge">191.05</span> <span class="badge">196.125</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">213.0</span> <span class="badge">445.0</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">QSFP28</span> <span class="badge">QSFP28/56</span> <span class="badge">QSFP-DD</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">OTU4</span> <span class="badge">OTU2</span> <span class="badge">OTU2e</span> <span class="badge">OC192</span> <span class="badge">STM64</span></td></tr>
+      <tr><td>baud_rate_gbaud</td><td><span class="badge">31.0</span> <span class="badge">96.0</span> <span class="badge">100.4</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">10.0</span> <span class="badge">100.0</span> <span class="badge">400.0</span> <span class="badge">600.0</span> <span class="badge">800.0</span> <span class="badge">1600.0</span></td></tr>
+      <tr><td>modulation_format</td><td><span class="badge">PCS</span> <span class="badge">QAM_64</span> <span class="badge">PCS_LC</span> <span class="badge">QAM_32</span> <span class="badge">QAM_16</span> <span class="badge">QAM_8</span> <span class="badge">QPSK</span> <span class="badge">QAM_4/3</span> <span class="badge">4D</span> <span class="badge">8D</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">1000.0</span> <span class="badge">3000.0</span> <span class="badge">7500.0</span></td></tr>
+      <tr><td>cd_tolerance_ps_nm</td><td><span class="badge">150000.0</span> <span class="badge">400000.0</span></td></tr>
+      <tr><td>pmd_tolerance_ps</td><td><span class="badge">100.0</span> <span class="badge">160.0</span></td></tr>
+      <tr><td>fec_overhead_percent</td><td><span class="badge">20.0</span> <span class="badge">33.0</span></td></tr>
+      <tr><td>number_of_lanes</td><td><span class="badge">2</span> <span class="badge">8</span> <span class="badge">16</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 10:03
+</footer>
+
+</div>
+</body>
+</html>

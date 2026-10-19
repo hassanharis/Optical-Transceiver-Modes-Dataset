@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — LINK-PP [&#x27;LQD-CW400-LR4C&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">lqd-cw400-lr4c.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">10</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">16</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 00:06</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LQD-CW400-LR4C Rev1.0- Sep.2021 
+
+
+## **LQD-CW400-LR4C** 
+
+## 400G QSFP-DD LR4 Transceiver 
+
+## **Product Features** 
+
+- Compliant with IEEE Std 802.3bs 
+
+- Compliant with 400G-LR4 optical specifications 
+
+- Compliant with QSFP-DD MSA 
+
+- Compliant with CMIS4.0 Management interface specifications 
+
+- 8x53.125Gb/s electrical interface (400GAUI-8) 
+
+- Up to 10km transmission on single mode fiber (SMF) with FEC 
+
+- Single +3.3V power supply 
+
+- Case temperature range: 0 ~ +70℃ 
+
+- Maximum power consumption 9.5W 
+
+- RoHS complaint 
+
+## **Applications** 
+
+- 400G Ethernet 
+
+- Data Center Interconnect 
+
+- Infiniband Interconnect 
+
+- Enterprise Networking 
+
+## **Standards** 
+
+- IEEE 802.3cd 
+
+- QSFP-DD MSA 
+
+- CMIS4.0 
+
+
+## **Descriptions** 
+
+LQD-CW400-LR4C is a transceiver module designed for 10km optical communication applications, and it is compliant to 100G Lambda MSA standard. This module can convert 8-channel 53.125Gb/s electrical data to 4- channel 106.25Gb/s optical signals, and multiplex them into a single channel for 425Gb/s optical transmission. Similarly, it optically de-multiplexes a 425Gb/s input into 4-channel signals, and converts them to 8-channel output electrical data on the receiver side. It has been designed to meet the harshest external operating conditions including temperature, humidity and EMI interference. The module offers very high functionality and feature integration, accessible via a two-wire serial interface. 
+
+**ww** www.link-pp.com w.l-p.com **w.l-p.com** 
+
+Copyright © 2021 LINK-PP AlI Rights Reserved 
+
+Page 1 of 10 
+
+LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LQD-CW400-LR4C Rev1.0- Sep.2021 
+
+
+## **Absolute Maximum Ratings** 
+
+It has to be noted that the operation in excess of any individual absolute maximum ratings might cause permanent damage to this module. 
+
+|**Parameter**|**Symbol**|**Min**|**Max**|**Units**|
+|---|---|---|---|---|
+|Storage Temperature Range|TSTG|-40|+85|⁰C|
+|SupplyVoltage|VCC|0|4|V
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"LINK-PP"</span>,
+  <span class="key">"model"</span>: [
+    "LQD-CW400-LR4C"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "QSFP-DD"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "IEEE Std <span class="num">802.3</span>bs",
+    "400G-LR4 optical specifications",
+    "QSFP-DD MSA",
+    "CMIS4.0 Management interface specifications",
+    "IEEE <span class="num">802.3</span>cd",
+    "CMIS <span class="num">5.0</span>"
+  ],
+  <span class="key">"emitter_type"</span>: [],
+  <span class="key">"photodetector_type"</span>: [],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1264.5</span>,
+    <span class="num">1284.5</span>,
+    <span class="num">1304.5</span>,
+    <span class="num">1324.5</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1277.5</span>,
+    <span class="num">1297.5</span>,
+    <span class="num">1317.5</span>,
+    <span class="num">1337.5</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1271</span>,
+    <span class="num">1291</span>,
+    <span class="num">1311</span>,
+    <span class="num">1331</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "LAN-WDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [],
+  <span class="key">"frequency_max_thz"</span>: [],
+  <span class="key">"channel_spacing_ghz"</span>: [],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"mounting_type"</span>: [
+    "pluggable"
+  ],
+  <span class="key">"connector_type"</span>: [],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">9.5</span>,
+    <span class="num">12</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "400GAUI-8"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: [],
+  <span class="key">"host_interface_id"</span>: [],
+  <span class="key">"media_interface_name"</span>: [],
+  <span class="key">"media_interface_id_hex"</span>: [],
+  <span class="key">"media_interface_id"</span>: [],
+  <span class="key">"frame"</span>: [
+    "8x53.125Gb/s electrical interface (400GAUI-8)"
+  ],
+  <span class="key">"standards_code"</span>: [
+    "400G-LR4",
+    "IEEE <span class="num">802.3</span>bs",
+    "100G Lambda MSA",
+    "IEEE <span class="num">802.3</span>cd"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [
+    <span class="num">53.125</span>,
+    <span class="num">26.5625</span>
+  ],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">400</span>,
+    <span class="num">425</span>,
+    <span class="num">53.125</span>,
+    <span class="num">106.25</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: [],
+  <span class="key">"modulation_format"</span>: [
+    "PAM4"
+  ],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">10</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-2.7</span>,
+    <span class="num">-16</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">5.1</span>,
+    <span class="num">11.1</span>,
+    <span class="num">5.2</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: [],
+  <span class="key">"tx_out_of_band_osnr_db"</span>: [],
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-6.8</span>,
+    <span class="num">-4.3</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: [],
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: [],
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">5.1</span>,
+    <span class="num">6.1</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [],
+  <span class="key">"pdl_db"</span>: [],
+  <span class="key">"pmd_tolerance_ps"</span>: [],
+  <span class="key">"fec_type"</span>: [
+    "FEC"
+  ],
+  <span class="key">"fec_overhead_percent"</span>: [],
+  <span class="key">"pre_fec_ber_threshold"</span>: [
+    <span class="num">0.00024</span>
+  ],
+  <span class="key">"post_fec_ber_target"</span>: [],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">3.5</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-20.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-12.2</span>,
+    <span class="num">-10.3</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: [],
+  <span class="key">"receiver_reflectance_db"</span>: [
+    <span class="num">-26</span>
+  ],
+  <span class="key">"transmitter_reflectance_db"</span>: [
+    <span class="num">-26</span>
+  ],
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">3.5</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [
+    <span class="num">15.6</span>
+  ],
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">4</span>,
+    <span class="num">8</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [
+    <span class="num">30</span>
+  ],
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: [],
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Receiver Sensitivity each lane (OMAouter): for TECQ&lt;1.4dB max <span class="num">-6.8</span> dBm; for <span class="num">1.4</span>dB&lt;=TECQ&lt;=3.9dB max <span class="num">-8.2</span>+TECQ dBm (formula, not a single numeric). OMAouter launch/receive limits and TDECQ/TECQ/SECQ constraints apply per lane. Link Distance in Operating Conditions is <span class="num">2</span>–10000 M (10 km max with FEC per features). RX_LOS_De-Assert appears as <span class="num">-12.2</span> dBm (page <span class="num">4</span>) and <span class="num">-10.3</span> dBm (page <span class="num">5</span>). Descriptions cite <span class="num">100</span>G Lambda MSA; Product Features cite <span class="num">400</span>G-LR4 and CMIS4.0; Memory map cites CMIS <span class="num">5.0</span>. Supply +3.3V; case temp <span class="num">0</span>~+70°C in features matches TCASE <span class="num">0</span>–70°C."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "LQD-CW400-LR4C",
+    "400G QSFP-DD LR4 Transceiver",
+    "Product Features",
+    "Applications",
+    "Standards",
+    "Descriptions",
+    "Absolute Maximum Ratings",
+    "Operating Conditions",
+    "Optical Characteristics",
+    "Receiver Optical Specifications",
+    "Electrical Characteristics",
+    "Receiver Output Power Thresholds for Loss of Signal(LOS)",
+    "Digital Diagnostic Monitoring Specifications",
+    "High Speed Electrical Specifications",
+    "Receiver Output Power Thresholds for Loss of Signal (LOS)",
+    "Memory map",
+    "Ordering information"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Clarify whether RX_LOS_De-Assert <span class="num">-12.2</span> vs <span class="num">-10.3</span> is revision or typ/max. Map <span class="num">400</span>GAUI-8 to host_interface_id if MSA hex IDs are added. Separate electrical lane count (8) vs optical lane count (4) in schema if needed. Extract connector type if present on mechanical drawing pages not included in text."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>wavelength_min_nm</td><td><span class="badge">1264.5</span> <span class="badge">1284.5</span> <span class="badge">1304.5</span> <span class="badge">1324.5</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1277.5</span> <span class="badge">1297.5</span> <span class="badge">1317.5</span> <span class="badge">1337.5</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1271.0</span> <span class="badge">1291.0</span> <span class="badge">1311.0</span> <span class="badge">1331.0</span></td></tr>
+<tr><td>power_consumption_w</td><td><span class="badge">9.5</span> <span class="badge">12.0</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">400G-LR4</span> <span class="badge">IEEE 802.3bs</span> <span class="badge">100G Lambda MSA</span> <span class="badge">IEEE 802.3cd</span></td></tr>
+<tr><td>baud_rate_gbaud</td><td><span class="badge">53.125</span> <span class="badge">26.5625</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">400.0</span> <span class="badge">425.0</span> <span class="badge">53.125</span> <span class="badge">106.25</span></td></tr>
+<tr><td>tx_power_min_dbm</td><td><span class="badge">-2.7</span> <span class="badge">-16.0</span></td></tr>
+<tr><td>tx_power_max_dbm</td><td><span class="badge">5.1</span> <span class="badge">11.1</span> <span class="badge">5.2</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-6.8</span> <span class="badge">-4.3</span></td></tr>
+<tr><td>rx_overload_dbm</td><td><span class="badge">5.1</span> <span class="badge">6.1</span></td></tr>
+<tr><td>los_deassert_dbm</td><td><span class="badge">-12.2</span> <span class="badge">-10.3</span></td></tr>
+<tr><td>number_of_lanes</td><td><span class="badge">4</span> <span class="badge">8</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>LINK-PP</td></tr>
+<tr><td>model</td><td>LQD-CW400-LR4C</td></tr>
+<tr><td>form_factor</td><td>QSFP-DD</td></tr>
+<tr><td>standards_claimed</td><td>IEEE Std 802.3bs, 400G-LR4 optical specifications, QSFP-DD MSA, CMIS4.0 Management interface specifications, IEEE 802.3cd, CMIS 5.0</td></tr>
+<tr><td>emitter_type</td><td></td></tr>
+<tr><td>photodetector_type</td><td></td></tr>
+<tr><td>wavelength_band</td><td>LAN-WDM</td></tr>
+<tr><td>frequency_min_thz</td><td></td></tr>
+<tr><td>frequency_max_thz</td><td></td></tr>
+<tr><td>channel_spacing_ghz</td><td></td></tr>
+<tr><td>channel_total</td><td>4</td></tr>
+<tr><td>mounting_type</td><td>pluggable</td></tr>
+<tr><td>connector_type</td><td></td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>host_interface_name</td><td>400GAUI-8</td></tr>
+<tr><td>host_interface_id_hex</td><td></td></tr>
+<tr><td>host_interface_id</td><td></td></tr>
+<tr><td>media_interface_name</td><td></td></tr>
+<tr><td>media_interface_id_hex</td><td></td></tr>
+<tr><td>media_interface_id</td><td></td></tr>
+<tr><td>frame</td><td>8x53.125Gb/s electrical interface (400GAUI-8)</td></tr>
+<tr><td>roll_off_percent</td><td></td></tr>
+<tr><td>modulation_format</td><td>PAM4</td></tr>
+<tr><td>reach_km</td><td>10.0</td></tr>
+<tr><td>tx_in_band_osnr_db</td><td></td></tr>
+<tr><td>tx_out_of_band_osnr_db</td><td></td></tr>
+<tr><td>rx_osnr_db</td><td></td></tr>
+<tr><td>rx_osnr_tolerance_db_max</td><td></td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td></td></tr>
+<tr><td>pdl_db</td><td></td></tr>
+<tr><td>pmd_tolerance_ps</td><td></td></tr>
+<tr><td>fec_type</td><td>FEC</td></tr>
+<tr><td>fec_overhead_percent</td><td></td></tr>
+<tr><td>pre_fec_ber_threshold</td><td>0.00024</td></tr>
+<tr><td>post_fec_ber_target</td><td></td></tr>
+<tr><td>extinction_ratio_db</td><td>3.5</td></tr>
+<tr><td>los_assert_dbm</td><td>-20.0</td></tr>
+<tr><td>channel_insertion_loss_db</td><td></td></tr>
+<tr><td>receiver_reflectance_db</td><td>-26.0</td></tr>
+<tr><td>transmitter_reflectance_db</td><td>-26.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>3.5</td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td>15.6</td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td>30.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>total_jitter_ps</td><td></td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Receiver Sensitivity each lane (OMAouter): for TECQ&lt;1.4dB max -6.8 dBm; for 1.4dB&lt;=TECQ&lt;=3.9dB max -8.2+TECQ dBm (formula, not a single numeric). OMAouter launch/receive limits and TDECQ/TECQ/SECQ constraints apply per lane. Link Distance in Operating Conditions is 2–10000 M (10 km max with FEC per features). RX_LOS_De-Assert appears as -12.2 dBm (page 4) and -10.3 dBm (page 5). Descriptions cite 100G Lambda MSA; Product Features cite 400G-LR4 and CMIS4.0; Memory map cites CMIS 5.0. Supply +3.3V; case temp 0~+70°C in features matches TCASE 0–70°C.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>LQD-CW400-LR4C, 400G QSFP-DD LR4 Transceiver, Product Features, Applications, Standards, Descriptions, Absolute Maximum Ratings, Operating Conditions, Optical Characteristics, Receiver Optical Specifications, Electrical Characteristics, Receiver Output Power Thresholds for Loss of Signal(LOS), Digital Diagnostic Monitoring Specifications, High Speed Electrical Specifications, Receiver Output Power Thresholds for Loss of Signal (LOS), Memory map, Ordering information</td></tr>
+<tr><td>suggestions</td><td>Clarify whether RX_LOS_De-Assert -12.2 vs -10.3 is revision or typ/max. Map 400GAUI-8 to host_interface_id if MSA hex IDs are added. Separate electrical lane count (8) vs optical lane count (4) in schema if needed. Extract connector type if present on mechanical drawing pages not included in text.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_center_nm</th><th>power_consumption_w</th><th>standards_code</th><th>baud_rate_gbaud</th><th>bit_rate_gbps</th><th>tx_power_min_dbm</th><th>tx_power_max_dbm</th><th>rx_sensitivity_dbm</th><th>rx_overload_dbm</th><th>los_deassert_dbm</th><th>number_of_lanes</th></tr><tr><td><strong>400G-LR4 Lane 0</strong></td><td>1264.5</td><td>1277.5</td><td>1271.0</td><td>12.0</td><td>400G-LR4</td><td>53.125</td><td>106.25</td><td>-2.7</td><td>5.1</td><td>-6.8</td><td>5.1</td><td>-12.2</td><td>4</td></tr><tr><td><strong>400G-LR4 Lane 1</strong></td><td>1284.5</td><td>1297.5</td><td>1291.0</td><td>12.0</td><td>400G-LR4</td><td>53.125</td><td>106.25</td><td>-2.7</td><td>5.1</td><td>-6.8</td><td>5.1</td><td>-12.2</td><td>4</td></tr><tr><td><strong>400G-LR4 Lane 2</strong></td><td>1304.5</td><td>1317.5</td><td>1311.0</td><td>12.0</td><td>400G-LR4</td><td>53.125</td><td>106.25</td><td>-2.7</td><td>5.1</td><td>-6.8</td><td>5.1</td><td>-12.2</td><td>4</td></tr><tr><td><strong>400G-LR4 Lane 3</strong></td><td>1324.5</td><td>1337.5</td><td>1331.0</td><td>12.0</td><td>400G-LR4</td><td>53.125</td><td>106.25</td><td>-2.7</td><td>5.1</td><td>-6.8</td><td>5.1</td><td>-12.2</td><td>4</td></tr><tr><td><strong>400GAUI-8 electrical host</strong></td><td>1264.5</td><td>1277.5</td><td>1271.0</td><td>9.5</td><td>IEEE 802.3bs</td><td>26.5625</td><td>400.0</td><td>-2.7</td><td>5.1</td><td>-6.8</td><td>5.1</td><td>-10.3</td><td>8</td></tr><tr><td><strong>LR4 stressed receiver (per lane)</strong></td><td>1264.5</td><td>1277.5</td><td>1271.0</td><td>12.0</td><td>100G Lambda MSA</td><td>53.125</td><td>425.0</td><td>-16.0</td><td>11.1</td><td>-4.3</td><td>6.1</td><td>-12.2</td><td>4</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 00:06
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:17:37.225230+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Avago av02-1794en_ds_afbr-79q4xz.pdf",
+  "page_count": 18,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 23.272,
+    "extract_atoms": 28.275,
+    "store_run": 0.009,
+    "synthesize_modes": 44.683,
+    "store_modes": 0.004,
+    "total": 96.243
+  }
+}

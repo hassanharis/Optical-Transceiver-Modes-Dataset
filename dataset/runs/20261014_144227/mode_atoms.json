@@ -1,0 +1,123 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-622M-L40D-CXX",
+      "SO-SFP-622M-L40D-C47",
+      "SO-SFP-622M-L40D-C49",
+      "SO-SFP-622M-L40D-C51",
+      "SO-SFP-622M-L40D-C53",
+      "SO-SFP-622M-L40D-C55",
+      "SO-SFP-622M-L40D-C57",
+      "SO-SFP-622M-L40D-C59",
+      "SO-SFP-622M-L40D-C61"
+    ],
+    "wavelength_min_nm": [
+      1100.0,
+      1470.0,
+      1471.0
+    ],
+    "wavelength_max_nm": [
+      1610.0,
+      1611.0,
+      1650.0
+    ],
+    "wavelength_center_nm": [
+      1470.0,
+      1490.0,
+      1510.0,
+      1530.0,
+      1550.0,
+      1570.0,
+      1590.0,
+      1610.0
+    ],
+    "standards_code": [
+      "G.694.2",
+      "FE",
+      "STM1/OC3",
+      "STM4/OC12"
+    ],
+    "bit_rate_gbps": [
+      125.0,
+      622.0
+    ],
+    "rx_sensitivity_dbm": [
+      -28.0,
+      -29.0,
+      -30.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      8
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "modulation_format": [],
+    "reach_km": [
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      -5.0
+    ],
+    "tx_power_max_dbm": [
+      0.0
+    ],
+    "rx_overload_dbm": [
+      -8.0
+    ],
+    "fec_type": [],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -42.0
+    ],
+    "los_deassert_dbm": [
+      -29.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Title/overview: 23dB power budget at 40 km, 8 CWDM channels 1470nm–1610nm. Power budget stated as 8 – 23dB @ STM4/OC12 (not mapped to a dedicated schema field). Bit rate support printed as 125 to 622Mbps. Power consumption printed as < 1.0W. Operating temperature printed as -0°C to +70°C. Storage temperature -40°C to +85°C. Transmitter/receiver optical levels footnote 1): average power. Receiver minimum input power footnote 2): BER 1x10-12, PRBS 223-1. Rx sensitivity -28/-29/-30 dBm correspond to STM4/OC12, STM1/OC3, and 100M FE respectively. Transmit wavelength 1471nm – 1611nm per G.694.2; nominal wavelength 1470 – 1610nm (8ch). Transmitter output min printed as -5.0dB (likely dBm). DDM per SFF-8472.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-622M-L40D-CXX",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Consider a dedicated power_budget_db field (min/max) and bit_rate_mbps for sub-1G rates. Clarify whether temp_min -0°C should be recorded as 0°C."
+  }
+}

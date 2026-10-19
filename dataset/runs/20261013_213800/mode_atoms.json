@@ -1,0 +1,117 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "400GAUI-8",
+      "100GAUI-2"
+    ],
+    "media_interface_name": [
+      "400GBASE-DR4",
+      "100GBASE-DR"
+    ],
+    "frame": [
+      "1x 400GAUI-8 (8x 50G)",
+      "4x 100GAUI-2 (2x 50G)"
+    ],
+    "standards_code": [
+      "400GBASE-DR4",
+      "4x100GBASE-DR"
+    ],
+    "bit_rate_gbps": [
+      425.0,
+      400.0
+    ],
+    "fec_type": [
+      "RS_GENERIC",
+      "RS_528_514"
+    ],
+    "number_of_lanes": [
+      4,
+      8
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TOS002-S31C-SO"
+    ],
+    "form_factor": [
+      "OSFP"
+    ],
+    "standards_claimed": [
+      "OSFP MSA",
+      "CMIS4.0",
+      "400GBASE-DR4",
+      "IEEE802.3bj"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1311.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "MPO12"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      8.0
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      500.0
+    ],
+    "tx_power_min_dbm": [
+      -2.9
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_sensitivity_dbm": [
+      -5.9
+    ],
+    "rx_overload_dbm": [
+      4.0
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "los_assert_dbm": [
+      -15.0
+    ],
+    "los_deassert_dbm": [
+      -10.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Power consumption listed as < 8W. TX/RX power levels are average power per lane (footnote 3). RX min input power and overload specified at BER 2.4x10-4 (footnote 4). Line rate 425Gbps aggregated for 400GbE (footnote 1); 53.125Gbd line baud rate per lane (footnote 2). Power budget 0 – 3.0dB. Host FEC required per IEEE802.3bj. Optical parameters BER 2.4 x 10-4 stated in module description.",
+    "provenance_datasheet_sections": [
+      "OSFP 400GBASE-DR4, CMIS4.0",
+      "TOS002-S31C-SO",
+      "TECHNICAL DATA",
+      "APPLICATION CODE LIST",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

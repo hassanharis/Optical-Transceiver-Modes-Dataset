@@ -1,0 +1,16 @@
+{
+  "modes": [
+    {
+      "label": "InfiniBand 1X-LX @ 1.25 Gbps",
+      "model": "LxP-LT12xx",
+      "standards_code": "InfiniBand 1X-LX",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LT12xx InfiniBand 1X-LX @ 1.25 Gbps",
+      "model": "LT12xx",
+      "standards_code": "1X-LX",
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

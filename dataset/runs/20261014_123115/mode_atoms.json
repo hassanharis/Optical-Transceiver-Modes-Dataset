@@ -1,0 +1,86 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-QSFPDD-AOCxxM-4",
+      "SO-QSFPDD-AOC01M-4",
+      "SO-QSFPDD-AOC02M-4",
+      "SO-QSFPDD-AOC03M-4",
+      "SO-QSFPDD-AOC05M-4",
+      "SO-QSFPDD-AOC07M-4",
+      "SO-QSFPDD-AOC10M-4",
+      "SO-QSFPDD-AOC15M-4",
+      "SO-QSFPDD-AOC20M-4",
+      "SO-QSFPDD-AOC30M-4"
+    ],
+    "frame": [
+      "8x 26.5625GBd (PAM4) Electrical Interface (400GAUI-8)",
+      "400GAUI-8"
+    ],
+    "standards_code": [
+      "400G Ethernet-SR8",
+      "CMIS4.0",
+      "SR8"
+    ],
+    "baud_rate_gbaud": [
+      25.0,
+      26.5625
+    ],
+    "reach_km": [
+      0.001,
+      0.002,
+      0.003,
+      0.005,
+      0.007,
+      0.01,
+      0.015,
+      0.02,
+      0.03
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "QSFP-DD MSA",
+      "Common Management Interface Specification (CMIS 4.0)",
+      "CMIS 4.0"
+    ],
+    "channel_total": [
+      8
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "fiber_type": [
+      "MMF_OM4",
+      "MMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "400GAUI-8"
+    ],
+    "bit_rate_gbps": [
+      400.0
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "penalties": [],
+    "notes": "Electrical power stated as '<10W' (no exact numeric value). Storage temperature -40°C to +85°C (-40°F to +185°F) not mapped to schema fields. Cable lengths 1 to 30 meters (3.3 to 98.4 ft); ordering SKUs at 1m, 2m, 3m, 5m, 7m, 10m, 15m, 20m, 30m. Document also references SO-QSFPDD-AOCxxM alongside SO-QSFPDD-AOCxxM-4. Overview states eight data lanes (25Gbd); product features state 8x 26.5625GBd.",
+    "provenance_datasheet_sections": [
+      "SO-QSFPDD-AOCxxM-4",
+      "OVERVIEW",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "ORDERING INFORMATION",
+      "Parameter Value",
+      "MECHANICAL DRAWING"
+    ]
+  }
+}

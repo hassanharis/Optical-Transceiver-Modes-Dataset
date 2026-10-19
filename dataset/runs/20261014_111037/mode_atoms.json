@@ -1,0 +1,102 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1294.53,
+      1299.02,
+      1303.54,
+      1308.09
+    ],
+    "wavelength_max_nm": [
+      1296.59,
+      1301.09,
+      1305.63,
+      1310.19
+    ],
+    "wavelength_center_nm": [
+      1295.56,
+      1300.05,
+      1304.58,
+      1309.14
+    ],
+    "wavelength_band": [
+      "grey",
+      "1310nm"
+    ],
+    "media_interface_name": [
+      "100GBASE-ER4",
+      "OTU4 4L1-9C1F"
+    ],
+    "standards_code": [
+      "100GBASE-ER4",
+      "OTU4",
+      "4L1-9C1F"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      111.81,
+      25.78,
+      27.95
+    ],
+    "tx_power_min_dbm": [
+      -2.9,
+      -2.7
+    ],
+    "tx_power_max_dbm": [
+      8.9,
+      2.9
+    ],
+    "rx_sensitivity_dbm": [
+      -20.9,
+      -20.7
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-CFP2-ER4"
+    ],
+    "form_factor": [
+      "CFP2"
+    ],
+    "standards_claimed": [
+      "100GBASE-ER4",
+      "OTU4",
+      "CFP2 MSA",
+      "100GBASE-ER"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      9.0
+    ],
+    "reach_km": [
+      40.0
+    ],
+    "rx_overload_dbm": [
+      4.5
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "penalties": [],
+    "notes": "Power consumption stated as < 9W (worst case). Transmitter output power footnote 3): Average power. Per lane 100GbE: min -2.9 dBm, max +2.9 dBm; per lane OTU4: min -2.7 dBm, max +2.9 dBm; total output power max +8.9 dBm. Receiver minimum input power -20.9 dBm (footnote 4, per lane 100GbE) and -20.7 dBm (footnote 5, per lane OTU4). Overload +4.5 dBm (footnotes 4 and 5). Bit rates footnote 1): aggregated line rate 100GbE / OTU4; footnote 2): per lane 100GbE / OTU4. Power budget 0 – 18 dB. Dispersion penalty max 2.5 dB (not structured as a penalty point with paired operating condition). Storage temperature -40°C to +85°C (not normal operating range). DDM: Yes.",
+    "provenance_datasheet_sections": [
+      "SO-CFP2-ER4",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

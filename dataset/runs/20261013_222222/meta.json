@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:22:22.062662+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tsd003-s31c-so-sfp-dd-100g-lr-r6.0.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.788,
+    "extract_atoms": 20.787,
+    "store_run": 0.009,
+    "synthesize_modes": 18.375,
+    "store_modes": 0.004,
+    "total": 42.963
+  }
+}

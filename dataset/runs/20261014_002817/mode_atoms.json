@@ -1,0 +1,72 @@
+{
+  "multi_valued": {
+    "model": [
+      "LS-DAC1110-xxN",
+      "LS-DAC1110-0M5N",
+      "LS-DAC1110-1MN",
+      "LS-DAC1110-3MN",
+      "LS-DAC1110-5MN",
+      "LS-DAC1110-7MN",
+      "LS-DAC1110-0M5NI",
+      "LS-DAC1110-1MNI",
+      "LS-DAC1110-3MNI",
+      "LS-DAC1110-5MNI",
+      "LS-DAC1110-7MNI"
+    ],
+    "standards_code": [
+      "10G Ethernet",
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "bit_rate_gbps": [
+      10.3125,
+      10.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [],
+    "fiber_type": [],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "host_interface_name": [
+      "SFP+"
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "modulation_format": [],
+    "fec_type": [],
+    "penalties": [],
+    "notes": "SFP+ Direct Attach Copper Cable (DAC); not an optical transceiver. Transmission reach stated as up to 7 m (Features) and cable lengths 0.5, 1, 3, 5, 7 m (Ordering Information). Operating temperature: Features and -40~85℃ NI order codes use -40 to +85°C; General Product Characteristics and N-suffix order codes state 0 to +70°C or -40 to +85°C. Supply voltage 3.3 V nominal; no electrical power consumption in Watts given. High Speed Characteristics include electrical parameters only (e.g. dWDPc max 6.75 dB, VMA Loss max 4.4 dB). Pin table references INF-8074i for I2C lines. Wire gauge 30 AWG (1 m, 3 m) and 24 AWG (5 m, 7 m) per Mechanical Specifications.",
+    "provenance_datasheet_sections": [
+      "LS-DAC1110-xxN",
+      "Features",
+      "Applications",
+      "General Description",
+      "General Product Characteristics",
+      "High Speed Characteristics",
+      "Mechanical Specifications",
+      "Ordering Information"
+    ],
+    "suggestions": "Consider reach_m or reach_length_m for copper DAC products; optional temp_min_c/temp_max_c as lists or variant tags (N vs NI) when one datasheet covers multiple temperature grades."
+  }
+}

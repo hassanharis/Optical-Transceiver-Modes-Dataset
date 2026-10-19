@@ -1,0 +1,162 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTCE4516E1PCM",
+    "FTCE4516E1PxM"
+  ],
+  "form_factor": [
+    "QSFP-DD",
+    "QSFP-DD800_type-2A"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "IEEE 802.3bs",
+    "IEEE P802.3ck",
+    "CMIS 5.0",
+    "CMIS 4",
+    "CMIS 5.1"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    8
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "MPO-16",
+    "MPO16"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    17,
+    17.5
+  ],
+  "host_interface_name": [
+    "400GAUI-4 C2M"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "800G DR8",
+    "400GBASE-DR4"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "8 x 100GbE",
+    "2 x 400Gbe DR4",
+    "8x100G",
+    "4x200"
+  ],
+  "standards_code": [
+    "800G DR8",
+    "400GBASE-DR4",
+    "IEEE 802.3bs",
+    "IEEE P802.3ck",
+    "400G/800G Ethernet"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    850,
+    800,
+    106.25
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.5
+  ],
+  "tx_power_min_dbm": [
+    -2
+  ],
+  "tx_power_max_dbm": [
+    4.5
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -4.4,
+    -1.9
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4,
+    4.2
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -26
+  ],
+  "transmitter_reflectance_db": [
+    -26
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    21.4
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": [
+    30
+  ],
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Signaling rate shown as 53.125 ± 100 ppm GBd/Gbd across sections. Pre-FEC BER stated as 2.4e-4 per IEEE P802.3bs. Average launch power min (-2 dBm) and average receive power min (-5.9 dBm) are informative per optical table notes. Receiver sensitivity (OMAouter) -4.4 dBm max defined for transmitter SECQ 0.9 dB; stressed receiver sensitivity -1.9 dBm measured per 124.8.9 at BER in 124.1.1. Stressed sensitivity test uses SECQ 3.4 dB and OMAouter of each aggressor lane 4.2 dBm (test conditions, not receiver characteristics). Link distance 500 m; datasheet notes 2 km version available as separate product. Absolute max case operating temperature lists L-temp as tbd. Supply current Icc typ/max tbd. Regulatory contact Coherent Corp.; product branded Finisar.",
+  "provenance_datasheet_sections": [
+    "800G-DR8 QSFP-DD800 Optical Finisar® Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "Product Selection",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics  (EOL, TOP = 0 to 70 °C, VCC = 3.135 to 3.465 Volts)",
+    "IV. Optical Characteristics (EOL, TOP = 0 to 70 °C, VCC = 3.135 to 3.465 Volts)",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "IX. Management Interface",
+    "X. Mechanical Specifications",
+    "XII. References"
+  ],
+  "suggestions": "Consider mapping OMAouter launch/receive ranges (-0.8 to 4.2 dBm TX, receive OMAouter to 4.2 dBm) if OMA is in scope. TDECQ 3.4 dB and SECQ 3.4 dB appear but have no schema fields. Damage threshold 5 dBm per lane could map to a dedicated field distinct from rx_overload."
+}

@@ -1,0 +1,94 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1295.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1325.0,
+      1370.0
+    ],
+    "host_interface_name": [
+      "SFF-8431",
+      "SFF-8472",
+      "16G FC",
+      "1600-SM-LC-L"
+    ],
+    "standards_code": [
+      "1600-SM-LC-L",
+      "16G FC",
+      "FC-PI-5"
+    ],
+    "bit_rate_gbps": [
+      4.25,
+      8.5,
+      14.025
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-16GFC-LD"
+    ],
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8472",
+      "FC-PI-5"
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.2
+    ],
+    "media_interface_name": [
+      "1600-SM-LC-L"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -4.0
+    ],
+    "tx_power_max_dbm": [
+      2.0
+    ],
+    "rx_sensitivity_dbm": [
+      -10.9
+    ],
+    "rx_overload_dbm": [
+      2.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -19.0
+    ],
+    "penalties": [],
+    "notes": "Transmitter output power and receiver min/overload are average power (footnote 1). Receiver minimum input power and overload are specified at 14.025 Gbps, BER 1x10-12, back-to-back (footnote 2). Power budget 0–6.9 dB; dispersion penalty max 4.4 dB. No minimum distance (no minimum attenuation). Transmission media stated as SM (2x LC). Technology: Grey SFP+. Protocol support: 4G, 8G, 16G FC. Storage temperature -40°C to +85°C (not operating).",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

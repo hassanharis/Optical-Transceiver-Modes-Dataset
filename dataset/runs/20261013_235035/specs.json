@@ -1,0 +1,69 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LP-SFP-TM8C"
+  ],
+  "form_factor": [
+    "SFF"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "IEEE 802.3",
+    "IEEE 802.3-2002",
+    "IEEE 802.3ab",
+    "Gigabit Ethernet",
+    "1000BASE-T"
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.05,
+    1.2
+  ],
+  "host_interface_name": [
+    "SGMII"
+  ],
+  "media_interface_name": [
+    "1000BASE-T"
+  ],
+  "standards_code": [
+    "IEEE 802.3",
+    "1000BASE-T",
+    "1000BASE-T only"
+  ],
+  "bit_rate_gbps": [
+    0.01,
+    0.1,
+    1.0,
+    1.25
+  ],
+  "modulation_format": [
+    "PAM"
+  ],
+  "reach_km": [
+    0.1
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "penalties": [],
+  "notes": "Copper twisted-pair (Category 5 UTP) module; no optical emitter or photodetector. RJ-45 connector assembly (electrical, not listed in optical connector enum). Features cite industrial case temperature -40 to +85°C for other orderable variants; LP-SFP-TM8C ordering row specifies 0~70°C. Symbol rate 250Mbps on each of four pairs; line frequency 125 MHz (Table 3). Power consumption and surge current stated higher than SFP MSA limits. Data rate table: 10 to 1,000 Mb/sec IEEE 802.3 compatible. Reach 100 m Category 5 UTP at BER <10^-12.",
+  "provenance_datasheet_sections": [
+    "LP-SFP-TM8C Copper SFP RJ45 10/100/1000Mbps 100m Transceiver",
+    "Features",
+    "Applications",
+    "Description",
+    "Electrical Power Interface",
+    "High-Speed Electrical Interface",
+    "General Specifications",
+    "Environmental Specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Add form factors SFP and copper/RJ45 media types (e.g. RJ-45, Cat5 UTP) to schema; distinguish electrical line rate (125 MHz, 250 Mb/s per pair) from optical baud_rate_gbaud."
+}

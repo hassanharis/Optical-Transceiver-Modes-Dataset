@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-100BASE-T 10 Mbps",
+      "model": "SO-SFP-100BASE-T",
+      "standards_code": "10BASE-TX",
+      "bit_rate_gbps": 0.01
+    },
+    {
+      "label": "SO-SFP-100BASE-T 100 Mbps",
+      "model": "SO-SFP-100BASE-T",
+      "standards_code": "100BASE-TX",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "SO-SFP-100Base-T-I 10 Mbps",
+      "model": "SO-SFP-100Base-T-I",
+      "standards_code": "10BASE-TX",
+      "bit_rate_gbps": 0.01
+    },
+    {
+      "label": "SO-SFP-100Base-T-I 100 Mbps",
+      "model": "SO-SFP-100Base-T-I",
+      "standards_code": "100BASE-TX",
+      "bit_rate_gbps": 0.1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T08:56:17.768102+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ls-dwxx10-80c.pdf",
+  "page_count": 9,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.219,
+    "extract_atoms": 40.753,
+    "store_run": 0.003,
+    "synthesize_modes": 224.954,
+    "store_modes": 0.003,
+    "total": 269.93
+  }
+}

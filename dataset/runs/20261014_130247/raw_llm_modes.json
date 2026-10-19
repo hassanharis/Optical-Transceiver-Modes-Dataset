@@ -1,0 +1,68 @@
+{
+  "modes": [
+    {
+      "label": "TX SGMII 1000BASE-T",
+      "model": "SO-SFP-1000Base-TX",
+      "host_interface_name": "SGMII",
+      "media_interface_name": "1000BASE-T",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "TX SGMII 100BASE-T",
+      "model": "SO-SFP-1000Base-TX",
+      "host_interface_name": "SGMII",
+      "media_interface_name": "100BASE-T",
+      "standards_code": "100BASE-T",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "TX SGMII 10BASE-T",
+      "model": "SO-SFP-1000Base-TX",
+      "host_interface_name": "SGMII",
+      "media_interface_name": "10BASE-T",
+      "standards_code": "10BASE-T",
+      "bit_rate_gbps": 0.01
+    },
+    {
+      "label": "TX SERDES 1000BASE-T",
+      "model": "SO-SFP-1000Base-TX",
+      "host_interface_name": "SERDES",
+      "media_interface_name": "1000BASE-T",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "TX-I SGMII 1000BASE-T",
+      "model": "SO-SFP-1000Base-TX-I",
+      "host_interface_name": "SGMII",
+      "media_interface_name": "1000BASE-T",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "TX-I SGMII 100BASE-T",
+      "model": "SO-SFP-1000Base-TX-I",
+      "host_interface_name": "SGMII",
+      "media_interface_name": "100BASE-T",
+      "standards_code": "100BASE-T",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "TX-I SGMII 10BASE-T",
+      "model": "SO-SFP-1000Base-TX-I",
+      "host_interface_name": "SGMII",
+      "media_interface_name": "10BASE-T",
+      "standards_code": "10BASE-T",
+      "bit_rate_gbps": 0.01
+    },
+    {
+      "label": "TX-I SERDES 1000BASE-T",
+      "model": "SO-SFP-1000Base-TX-I",
+      "host_interface_name": "SERDES",
+      "media_interface_name": "1000BASE-T",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    }
+  ]
+}

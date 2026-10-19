@@ -1,0 +1,118 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "standards_code": [
+      "40GBASE-LR4",
+      "IEEE 802.3ba"
+    ],
+    "bit_rate_gbps": [
+      11.1,
+      10.3125,
+      40.0
+    ],
+    "tx_power_max_dbm": [
+      2.3,
+      8.3
+    ]
+  },
+  "general": {
+    "model": [
+      "QT-QSFP+-LR4"
+    ],
+    "form_factor": [
+      "QSFP+"
+    ],
+    "standards_claimed": [
+      "QSFP+ MSA",
+      "IEEE 802.3ba",
+      "RoHS"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "frame": [],
+    "modulation_format": [],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -7.0
+    ],
+    "rx_sensitivity_dbm": [
+      -13.7
+    ],
+    "rx_overload_dbm": [
+      2.3
+    ],
+    "fec_type": [],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "penalties": [],
+    "notes": "Power dissipation stated as < 2.5 W. Rx sensitivity per lane (OMA) measured with PRBS 2^31-1 @10.325Gb/s, BER<10^-12 (Note 1 under Optical Characteristics). Data rate in Recommended Operating Conditions is 10.3125 Gbps each channel; product features cite up to 11.1 Gbps per wavelength. Total output power max 8.3 dBm; average launch power per lane -7 to 2.3 dBm. Average launch power off per lane max -30 dBm. Spectral width (-20 dB) max 1 nm. RIN max -128 dB/Hz. Case operating temperature without air flow. Ordering line for QT-QSFP+-LR4: 1271~1331 nm.",
+    "provenance_datasheet_sections": [
+      "40GBASE-LR4 QSFP+ 1310nm 10km DDM SMF Transceiver",
+      "P/N: QT-QSFP+-LR4",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "2. Recommended Operating Conditions",
+      "3. Optical Characteristics",
+      "Notes:",
+      "7. Ordering information"
+    ],
+    "suggestions": "Vendor is not named in body text (only qsfptek.com in header imagery); add optional field for spectral width or RIN if commonly needed. Distinguish total vs per-lane TX power in schema."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:51:47.758500+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lp-sfp-tm8i.pdf",
+  "page_count": 8,
+  "table_count": 11,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 11.718,
+    "extract_atoms": 22.115,
+    "store_run": 0.01,
+    "synthesize_modes": 59.628,
+    "store_modes": 0.005,
+    "total": 93.477
+  }
+}

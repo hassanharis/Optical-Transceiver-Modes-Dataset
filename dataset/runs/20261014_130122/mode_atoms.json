@@ -1,0 +1,57 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-1000Base-TR",
+      "SO-SFP-1000Base-TR-I"
+    ],
+    "standards_code": [
+      "1000BASE-T",
+      "IEEE 802.3"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFF"
+    ],
+    "standards_claimed": [
+      "1000BASE-T IEEE 802.3",
+      "SFP MSA",
+      "SFF-8472"
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "RJ45"
+    ],
+    "power_consumption_w": [
+      1.2
+    ],
+    "host_interface_name": [
+      "SFP"
+    ],
+    "media_interface_name": [
+      "1000BASE-T"
+    ],
+    "bit_rate_gbps": [
+      1.0
+    ],
+    "reach_km": [
+      0.1
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "penalties": [],
+    "notes": "Grey SFP (copper), electrical 1x RJ45. Typical reach 100m (footnote 1: using CAT5e cable or better). Operating temperature 0\u00b0C to +70\u00b0C (-TR) and -40\u00b0C to +85\u00b0C (-TR-I); two orderable variants. Power consumption < 1.2W. Transmission media: copper/LAN cable (1000 Mbps Ethernet). Technology: Sync on line side; preferred master (footnote 2: master mode uses local clock to transmit to other side). Auto-negotiation: No. Rx LOS: Yes. Storage temperature row in TECHNICAL DATA table has no values. Safety/regulatory: TUV/UL/FDA (contact Smartoptics for latest certification information), RoHS compliance.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-1000BASE-TR & -TR-I",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Add SFP to form_factor enum. Consider list or per-model fields for temp_min_c/temp_max_c when multiple SKUs share one datasheet. reach_km stores 0.1 from explicit 100m; document unit handling. connector_type enum is optical-focused; RJ45 is explicit for this product."
+  }
+}

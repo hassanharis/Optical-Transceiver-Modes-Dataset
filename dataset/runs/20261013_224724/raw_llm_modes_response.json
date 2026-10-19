@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"OTU4 4I1-9D1F\",\n      \"wavelength_min_nm\": 1294.53,\n      \"wavelength_max_nm\": 1310.19,\n      \"standards_code\": \"OTU4 4I1-9D1F\",\n      \"baud_rate_gbaud\": 27.9525,\n      \"bit_rate_gbps\": 112.0,\n      \"reach_km\": 20.0,\n      \"tx_power_min_dbm\": -0.6,\n      \"tx_power_max_dbm\": 4.0,\n      \"rx_sensitivity_dbm\": -8.4,\n      \"rx_overload_dbm\": 4.0,\n      \"extinction_ratio_db\": 4.0,\n      \"los_assert_dbm\": -13.6,\n      \"los_deassert_dbm\": -11.6\n    },\n    {\n      \"label\": \"100GBASE-LR4\",\n      \"wavelength_min_nm\": 1294.53,\n      \"wavelength_max_nm\": 1310.19,\n      \"standards_code\": \"100GBASE-LR4\",\n      \"baud_rate_gbaud\": 25.78125,\n      \"bit_rate_gbps\": 103.1,\n      \"reach_km\": 20.0,\n      \"tx_power_min_dbm\": -4.3,\n      \"tx_power_max_dbm\": 4.5,\n      \"rx_sensitivity_dbm\": -8.6,\n      \"rx_overload_dbm\": 4.5,\n      \"extinction_ratio_db\": 4.0,\n      \"los_assert_dbm\": -14.0,\n      \"los_deassert_dbm\": -13.5\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:34:35.705462+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-xfp-er.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.351,
+    "extract_atoms": 35.166,
+    "store_run": 0.006,
+    "synthesize_modes": 52.841,
+    "store_modes": 0.045,
+    "total": 92.41
+  }
+}

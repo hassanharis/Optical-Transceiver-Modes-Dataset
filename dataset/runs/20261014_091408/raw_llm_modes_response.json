@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"850nm 2.5G MM 300m, 0\u00b0C to +70\u00b0C (Commercial)\",\n      \"model\": \"LS-MM852G-S3C\"\n    },\n    {\n      \"label\": \"850nm 2.5G MM 300m, -40\u00b0C to +85\u00b0C (Industrial)\",\n      \"model\": \"LS-MM852G-S3I\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

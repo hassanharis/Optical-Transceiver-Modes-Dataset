@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:03:37.582071+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tqd017-tunc-so-high-power-400g-otn-qdd-enc-cmis5-r6.5.pdf",
+  "page_count": 4,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 6.869,
+    "extract_atoms": 27.661,
+    "store_run": 0.008,
+    "synthesize_modes": 42.532,
+    "store_modes": 0.005,
+    "total": 77.076
+  }
+}

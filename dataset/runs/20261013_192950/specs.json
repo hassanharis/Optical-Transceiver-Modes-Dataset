@@ -1,0 +1,120 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "OP13LD8-02D"
+  ],
+  "form_factor": [
+    "OSFP"
+  ],
+  "standards_claimed": [
+    "OSFP MSA rev5.0",
+    "OIF-CMIS rev5.0",
+    "IEEE 802.3cu-2021",
+    "ROHS"
+  ],
+  "emitter_type": [
+    "LASER_DFB",
+    "Silicon photonics modulator"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "MPO-12"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    8.0,
+    8.5
+  ],
+  "standards_code": [
+    "IEEE 802.3cu-2021",
+    "800G Ethernet",
+    "2xDR4+"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    106.25,
+    800.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -3.2,
+    -0.2,
+    -1.6
+  ],
+  "tx_power_max_dbm": [
+    4.4,
+    10.4,
+    3.7
+  ],
+  "rx_sensitivity_dbm": [
+    -4.6
+  ],
+  "rx_overload_dbm": [
+    4.4,
+    3.7
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "channel_insertion_loss_db": [
+    4.0
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "transmitter_reflectance_db": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "penalties": [],
+  "notes": "Forward error correction (FEC) is required to be implemented by the host. Case operating temperature 0°C to 70°C without air flow. Receiver sensitivity note 2: measured with PRBS31Q test pattern, BER@2.4*10^-4. Transmit OMA per lane (min) and receiver sensitivity (OMA) per lane are conditional on TDECQ/TECQ (<1.4 dB vs 1.4dB≤TDECQ≤3.4dB): min launch -0.2 dBm for TDECQ<1.4dB; -1.6+TDECQ dBm for 1.4dB≤TDECQ≤3.4dB; RXsens -4.6 dBm for TECQ<1.4 dB; -6+TECQ dBm for 1.4dB≤TECQ≤3.4dB. Wavelength assignment 1304.5–1317.5 nm suitable for all channels (note 3). Link power budget 7.8 dB typ for maximum TDECQ; allocation for penalties 3.8 dB for maximum TDECQ. LPO module does not have a CDR (VI Notes). Power dissipation typical 8 W, <8.5 W. Optical receiver damage threshold input 5.4 dBm (absolute max); damage threshold per lane 5.4 dBm (receiver).",
+  "provenance_datasheet_sections": [
+    "800G OSFP 2xDR4+ Transceiver",
+    "OP13LD8-02D",
+    "PRODUCT FEATURES",
+    "REFERENCE STANDARD",
+    "APPLICATIONS",
+    "I. Absolute Maximum Ratings",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "Notes:",
+    "IV.Link Power Budget",
+    "VI. Host - Transceiver Interface Block Diagram",
+    "Notes:"
+  ],
+  "suggestions": "Host electrical interface IDs and CMIS application codes are not tabulated in this excerpt. Clarify whether vendor should be Amphenol (branding URL) vs XGIGA (footer legal entity). Penalty rows could be modeled if TDECQ/TECQ breakpoints are treated as conditions with explicit dB penalty columns."
+}

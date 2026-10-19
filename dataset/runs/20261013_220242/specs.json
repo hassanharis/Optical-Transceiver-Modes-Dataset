@@ -1,0 +1,135 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TQD016-S31C-SO"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "CMIS3.0",
+    "100G-LR1 MSA",
+    "IEEE802.3bj"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1311.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "channel_total": [
+    4
+  ],
+  "connector_type": [
+    "MPO",
+    "MPO-12",
+    "MPO12"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    10.0
+  ],
+  "host_interface_name": [
+    "400GAUI-8",
+    "4x100GAUI-2",
+    "100GAUI-2"
+  ],
+  "media_interface_name": [
+    "100G-LR1 MSA",
+    "400GBASE-LR4",
+    "100GBASE-DR",
+    "100GBASE-FR1",
+    "100GBASE-LR1",
+    "400GBASE-DR4"
+  ],
+  "frame": [
+    "8x 50G",
+    "2x 50G"
+  ],
+  "standards_code": [
+    "400GBASE-LR4",
+    "400G-LR4",
+    "400GbE",
+    "4x100GbE",
+    "100GBASE-R",
+    "400GBASE-R",
+    "CMIS3.0",
+    "100GBASE-DR",
+    "100GBASE-FR1",
+    "100GBASE-LR1",
+    "400GBASE-DR4"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    425.0,
+    400.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -1.4,
+    0.7
+  ],
+  "tx_power_max_dbm": [
+    4.5,
+    4.7
+  ],
+  "rx_sensitivity_dbm": [
+    -6.1,
+    -4.9,
+    -7.7
+  ],
+  "rx_overload_dbm": [
+    4.5
+  ],
+  "fec_type": [
+    "RS_528_514",
+    "RS_GENERIC"
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    5.0
+  ],
+  "los_assert_dbm": [
+    -15.0
+  ],
+  "los_deassert_dbm": [
+    -10.0
+  ],
+  "optical_extinction_ratio_db": [
+    5.0
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "notes": "Forward Error Correction required by host per IEEE802.3bj Reed Solomon RS(528,514). Optical parameters specified at BER 2.4x10-4. Power budget 0 – 6.8dB. Footnote 3): average receive power min is informative; below min cannot be compliant, above does not ensure compliance. Footnote 4): receiver sensitivity and minimum input power at BER 2.4x10-4. Footnote 5): typical receiver sensitivity varies between components. Storage temperature -40°C to +85°C. APC Angled Polished Connector on optical interface. CMIS4.0 variant: TQD015-S31C-SO.",
+  "provenance_datasheet_sections": [
+    "TQD016-S31C-SO",
+    "TECHNICAL DATA",
+    "APPLICATION CODE LIST",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

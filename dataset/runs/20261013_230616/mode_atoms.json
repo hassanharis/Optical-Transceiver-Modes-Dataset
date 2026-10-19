@@ -1,0 +1,109 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "FC-PI-6a",
+      "FC-PI-4",
+      "32GFC",
+      "16GFC",
+      "8GFC",
+      "Fibre Channel"
+    ],
+    "bit_rate_gbps": [
+      8.5,
+      14.025,
+      28.05
+    ],
+    "tx_power_min_dbm": [
+      -8.2,
+      -7.8,
+      -6.7
+    ],
+    "rx_sensitivity_dbm": [
+      -11.2,
+      -10.5,
+      -10.2
+    ],
+    "post_fec_ber_target": [
+      1e-12,
+      1e-06
+    ]
+  },
+  "general": {
+    "vendor": "Finisar",
+    "model": [
+      "FTLF8532P4BNV"
+    ],
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "FC-PI-6a",
+      "SFF-8472 Rev 12.2c",
+      "SFF-8432b",
+      "SFF-8431 Rev 4.1d",
+      "SFP MSA",
+      "INF-8074",
+      "SFF-8081",
+      "SFF-8402",
+      "RoHS Directive 2011/65/EU"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "wavelength_min_nm": [
+      840.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM4",
+      "MMF_OM3",
+      "MMF_OM2"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "rx_overload_dbm": [
+      2.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -13.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      12.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "FEATURES lists operating temperature 0°C to 85°C; Case Operating Temperature in II, VI, and IX DDM is 0°C to 70°C. Absolute Maximum Ratings Case Operating Temperature TOP is 0°C to 70°C. Fiber reach is specified in meters (e.g. 100 m OM4/M5F at 28.05 Gb/s, 70 m OM3/M5E, 20 m OM2/M5 at 28.05 Gb/s; additional lengths at 8.5 and 14.025 Gb/s in Section V). Supply current Icc max 290 mA; note 1 states total power dissipation could exceed 1 W during link establishment below 25°C case temperature—no nominal power consumption in Watts given. Unstressed receiver sensitivity at 10^-12 BER for 8.5 and 14.025 Gb/s; for 32GFC with FEC, sensitivity at 10^-6 BER per optical table note 6. RxMAX 2 dBm is Receiver Optical Modulation Amplitude maximum. Stress receiver sensitivity wavelength range λC 770–860 nm. Spectral width (RMS) max 0.57 nm at 28.05 Gb/s. RIN max -129 dB/Hz at 28.05 Gb/s and -128 dB/Hz at 14.025 and 8.5 Gb/s. TWDP max 4.3 dB at 8.5 Gb/s; VECPQ max 2.56 dB at 14.025 Gb/s and 3.13 dB at 28.05 Gb/s—not mapped to penalty schema without paired penalized values and conditions. Copyright footer: Coherent Corp. 2023. Section IX header references FTLF8532P4BCV in error.",
+    "provenance_datasheet_sections": [
+      "FTLF8532P4BNV",
+      "32GFC RoHS Compliant Short Wavelength SFP+ Transceiver",
+      "FEATURES",
+      "APPLICATIONS",
+      "Product Selection",
+      "II. Absolute Maximum Ratings",
+      "III. Electrical Characteristics (TA ,  VCC = 3.15 to 3.46 Volts)",
+      "IV. Optical Characteristics (TA , VCC = 3.15 to 3.46 Volts)",
+      "V. General Specifications",
+      "VI. Environmental Specifications",
+      "IX. Digital Diagnostic Specifications"
+    ],
+    "suggestions": "Add reach_m or allow reach in meters for MMF modules. Include SFP+ in form_factor enum. Map TWDP/VECPQ to path or dispersion penalty objects if penalized eye metric and conditions are defined in FC-PI."
+  }
+}

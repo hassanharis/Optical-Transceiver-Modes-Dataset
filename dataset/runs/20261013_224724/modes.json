@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "OTU4 4I1-9D1F",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1310.19,
+      "standards_code": "OTU4 4I1-9D1F",
+      "baud_rate_gbaud": 27.9525,
+      "bit_rate_gbps": 112.0,
+      "reach_km": 20.0,
+      "tx_power_min_dbm": -0.6,
+      "tx_power_max_dbm": 4.0,
+      "rx_sensitivity_dbm": -8.4,
+      "rx_overload_dbm": 4.0,
+      "extinction_ratio_db": 4.0,
+      "los_assert_dbm": -13.6,
+      "los_deassert_dbm": -11.6
+    },
+    {
+      "label": "100GBASE-LR4",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1310.19,
+      "standards_code": "100GBASE-LR4",
+      "baud_rate_gbaud": 25.78125,
+      "bit_rate_gbps": 103.1,
+      "reach_km": 20.0,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6,
+      "rx_overload_dbm": 4.5,
+      "extinction_ratio_db": 4.0,
+      "los_assert_dbm": -14.0,
+      "los_deassert_dbm": -13.5
+    }
+  ]
+}

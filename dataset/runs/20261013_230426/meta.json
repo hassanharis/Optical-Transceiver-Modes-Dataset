@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:04:26.971547+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftlf8519f2xnl-transceiver-ds.pdf",
+  "page_count": 9,
+  "table_count": 6,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 9.577,
+    "extract_atoms": 24.206,
+    "store_run": 0.016,
+    "synthesize_modes": 70.049,
+    "store_modes": 0.007,
+    "total": 103.854
+  }
+}

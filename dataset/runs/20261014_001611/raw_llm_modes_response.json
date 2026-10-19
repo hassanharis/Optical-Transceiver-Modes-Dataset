@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"400G-PLR4 LR4 normal operation\",\n      \"power_consumption_w\": 9.0,\n      \"media_interface_name\": \"400G-PLR4\",\n      \"frame\": \"400GAUI-8\",\n      \"standards_code\": \"IEEE802.3bs\",\n      \"rx_sensitivity_dbm\": -6.1\n    },\n    {\n      \"label\": \"400G-PLR4 LR4 low power mode\",\n      \"power_consumption_w\": 1.5,\n      \"media_interface_name\": \"400G-PLR4\",\n      \"frame\": \"400GAUI-8\",\n      \"standards_code\": \"IEEE802.3bs\",\n      \"rx_sensitivity_dbm\": -6.1\n    },\n    {\n      \"label\": \"400G-PLR4 LR4 stressed receiver (SRS)\",\n      \"power_consumption_w\": 9.0,\n      \"media_interface_name\": \"400G-PLR4\",\n      \"frame\": \"400GAUI-8\",\n      \"standards_code\": \"IEEE802.3bs\",\n      \"rx_sensitivity_dbm\": -4.1\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

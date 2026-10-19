@@ -1,0 +1,132 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQD-M85800-SR8C"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3-2022: 8x100GBASE-SR1 Optical Interface",
+    "IEEE 802.3ck-2022: 8x100GAUI-1 C2M Electrical Interface",
+    "CMIS Rev 5.0",
+    "QSFP-DD MSA standards"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "channel_total": [
+    8
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "MTP/MPO-16/APC",
+    "MPO-16/APC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF_OM5"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    16.0,
+    2.0
+  ],
+  "host_interface_name": [
+    "8x100GAUI-1 C2M Electrical Interface",
+    "100GAUI-1"
+  ],
+  "media_interface_name": [
+    "8x100GBASE-SR1 Optical Interface",
+    "100GBASE-SR1"
+  ],
+  "frame": [
+    "8x100GAUI-1"
+  ],
+  "standards_code": [
+    "800GBASE-SR8",
+    "100GBASE-SR1",
+    "100GAUI-1",
+    "SR8",
+    "IEEE 802.3-2022",
+    "IEEE 802.3ck-2022",
+    "CMIS 5.0"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    850.0,
+    800.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.05,
+    0.03
+  ],
+  "tx_power_min_dbm": [
+    -4.6
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -4.6,
+    -6.4,
+    -2.0
+  ],
+  "rx_overload_dbm": [
+    5.0
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    2.5
+  ],
+  "receiver_reflectance_db": [
+    -15.0
+  ],
+  "optical_extinction_ratio_db": [
+    2.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    14.0
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "penalties": [],
+  "notes": "Operating distance note 1: 0.5 m to 30 m for OM3, 0.5 m to 50 m for OM4 and OM5, with FEC; table Operating Distance min 2 m max 50 m. Receiver Sensitivity (OMAouter): –4.6 dBm for TECQ < 1.4 dB; –6.4 + TECQ dBm for 1.4 dB <= TECQ <= 3.4 dB. Stressed Receiver Sensitivity (OMAouter) measured with conformance test signal at TP3 for BER = 2.4x10-4 (note 2). OMAouter launch/receive specs conditional on Max(TECQ, TDECQ). TDECQ and TECQ limits listed as TBD in table. RMS Spectral Width note: standard deviation of the spectrum; table max 0.6 dB.",
+  "provenance_datasheet_sections": [
+    "LQD-M85800-SR8C",
+    "800GBASE-SR8 QSFP-DD 850nm 50m MTP/MPO-16/APC DOM Transceiver",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical Characteristics",
+    "Digital Diagnostic Monitoring Specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Datasheet states reach in meters (50 m, 30 m OM3); reach_km uses km equivalents. Consider schema field reach_m or allow m for SR modules. Sensitivity -6.4 + TECQ is parametric, not a single float."
+}

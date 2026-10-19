@@ -1,0 +1,33 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\Fortinet fortigate_3600e-dc Series.pdf",
+  "page_count": 7,
+  "table_count": 5,
+  "markdown_chars": 21840,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 40
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 22
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 28
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 20
+    }
+  ]
+}

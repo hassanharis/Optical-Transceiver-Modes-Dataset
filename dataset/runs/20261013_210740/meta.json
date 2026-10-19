@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:07:40.893798+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-ccs-strat-rjs-st31-series.pdf",
+  "page_count": 3,
+  "table_count": 2,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 2.901,
+    "extract_atoms": 28.809,
+    "store_run": 0.007,
+    "synthesize_modes": 47.642,
+    "store_modes": 0.004,
+    "total": 79.363
+  }
+}

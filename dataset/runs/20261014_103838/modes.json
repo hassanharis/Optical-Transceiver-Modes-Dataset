@@ -1,0 +1,76 @@
+{
+  "modes": [
+    {
+      "label": "10.709 Gbps @ -700 ps/nm dispersion",
+      "model": "TRS7091FNCDP000-x",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "GR-253",
+      "bit_rate_gbps": 10.709,
+      "rx_osnr_db": 17.0,
+      "cd_tolerance_ps_nm": -700.0,
+      "post_fec_ber_target": 0.0001
+    },
+    {
+      "label": "10.709 Gbps @ 0 ps/nm dispersion",
+      "model": "TRS7091FNCDP000-x",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "GR-253",
+      "bit_rate_gbps": 10.709,
+      "rx_osnr_db": 15.0,
+      "cd_tolerance_ps_nm": 0.0,
+      "post_fec_ber_target": 0.0001
+    },
+    {
+      "label": "10.709 Gbps @ +700 ps/nm dispersion",
+      "model": "TRS7091FNCDP000-x",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "GR-253",
+      "bit_rate_gbps": 10.709,
+      "rx_osnr_db": 17.0,
+      "cd_tolerance_ps_nm": 700.0,
+      "post_fec_ber_target": 0.0001
+    },
+    {
+      "label": "10.709 Gbps back-to-back minimum sensitivity",
+      "model": "TRS7091FNCDP000-x",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.691",
+      "bit_rate_gbps": 10.709,
+      "rx_osnr_db": 35.0,
+      "cd_tolerance_ps_nm": 0.0,
+      "post_fec_ber_target": 1e-12
+    },
+    {
+      "label": "9.953 Gbps SONET framed (jitter characterization)",
+      "model": "TRS7091FNC",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_band": "C-band",
+      "standards_code": "SONET/SDH",
+      "bit_rate_gbps": 9.953,
+      "rx_osnr_db": 35.0,
+      "cd_tolerance_ps_nm": 0.0,
+      "post_fec_ber_target": 1e-12
+    },
+    {
+      "label": "SONET/SDH and 10GE multiprotocol (ordering)",
+      "model": "TRS7091FNC",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_band": "C-band",
+      "standards_code": "10GE",
+      "bit_rate_gbps": 11.3,
+      "rx_osnr_db": 15.0,
+      "cd_tolerance_ps_nm": 700.0,
+      "post_fec_ber_target": 0.0001
+    }
+  ]
+}

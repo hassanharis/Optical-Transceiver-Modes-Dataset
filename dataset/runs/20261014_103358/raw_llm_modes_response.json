@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100GBASE-LR4 (100G Ethernet)\",\n      \"standards_code\": \"100GBASE-LR4\",\n      \"bit_rate_gbps\": 103.125\n    },\n    {\n      \"label\": \"100GBASE-LR4 per-lane\",\n      \"standards_code\": \"100GBASE-LR4\",\n      \"bit_rate_gbps\": 25.78125\n    },\n    {\n      \"label\": \"OTU4\",\n      \"standards_code\": \"OTU4\",\n      \"bit_rate_gbps\": 111.81\n    },\n    {\n      \"label\": \"OTU4 per-lane\",\n      \"standards_code\": \"OTU4\",\n      \"bit_rate_gbps\": 27.9525\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,107 @@
+{
+  "multi_valued": {
+    "form_factor": [
+      "SFP28",
+      "SFP+"
+    ],
+    "wavelength_min_nm": [
+      770.0,
+      840.0
+    ],
+    "host_interface_name": [
+      "SFP28",
+      "SFP+ MSA"
+    ],
+    "bit_rate_gbps": [
+      25.78,
+      28.0
+    ]
+  },
+  "general": {
+    "vendor": "QSFPTek",
+    "model": [
+      "QT-SFP28-SR"
+    ],
+    "standards_claimed": [
+      "SFF 8472",
+      "SFP+ MSA",
+      "SFF-8431"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "wavelength_band": [],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM4",
+      "MMF 50/125µm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "standards_code": [
+      "25GBASE-SR"
+    ],
+    "reach_km": [
+      0.1
+    ],
+    "tx_power_min_dbm": [
+      -8.4
+    ],
+    "tx_power_max_dbm": [
+      2.4
+    ],
+    "rx_sensitivity_dbm": [
+      -10.3
+    ],
+    "rx_overload_dbm": [
+      1.0
+    ],
+    "post_fec_ber_target": [
+      1e-05
+    ],
+    "los_assert_dbm": [
+      -22.0
+    ],
+    "los_deassert_dbm": [
+      -11.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Product features list Industry case temperature -40°C to 85°C; Recommended Operating Conditions and ordering for QT-SFP28-SR specify Commercial 0°C to +70°C. Power dissipation stated as < 1W. Rx sensitivity Note 2: PRBS 2^31-1 @25.78Gb/s, BER<10^-5. Note on data rate: Low rate 24~26 Gb/s and High rate 25~28 Gb/s with different register settings, not auto-negotiation. Datasheet text spells emitter as VSCEL; interpreted as VCSEL. Transmission distance 100 m on OM4 coupled fiber.",
+    "provenance_datasheet_sections": [
+      "25GBASE-SR SFP28 850nm 100m DDM MMF Transceiver",
+      "P/N: QT-SFP28-SR",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "2. Recommended Operating Conditions",
+      "3. Optical Characteristics",
+      "Notes:",
+      "4. Electrical Characteristics",
+      "7. Ordering information"
+    ]
+  }
+}

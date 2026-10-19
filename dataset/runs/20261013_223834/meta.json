@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:38:34.135309+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftce4517e1pxa-2n-transceiver-ds.pdf",
+  "page_count": 7,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.736,
+    "extract_atoms": 20.988,
+    "store_run": 0.009,
+    "synthesize_modes": 21.992,
+    "store_modes": 0.004,
+    "total": 53.728
+  }
+}

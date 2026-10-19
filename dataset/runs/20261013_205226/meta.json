@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:52:26.765788+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-ccs-strat-fnk-lt12x-series.pdf",
+  "page_count": 13,
+  "table_count": 10,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 13.827,
+    "extract_atoms": 21.491,
+    "store_run": 0.013,
+    "synthesize_modes": 19.266,
+    "store_modes": 0.005,
+    "total": 54.601
+  }
+}

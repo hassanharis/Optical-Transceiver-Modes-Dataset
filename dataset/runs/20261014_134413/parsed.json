@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp-10ge-lr20.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 5261,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 20
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

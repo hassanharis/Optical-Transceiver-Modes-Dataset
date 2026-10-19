@@ -1,0 +1,56 @@
+{
+  "modes": [
+    {
+      "label": "100G eLR4 lane 1296 nm",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1296.0,
+      "media_interface_name": "100G Ethernet eLR4",
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -14.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "100G eLR4 lane 1300 nm",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.0,
+      "media_interface_name": "100G Ethernet eLR4",
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -14.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "100G eLR4 lane 1305 nm",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1305.0,
+      "media_interface_name": "100G Ethernet eLR4",
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -14.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "100G eLR4 lane 1309 nm",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.0,
+      "media_interface_name": "100G Ethernet eLR4",
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -14.5,
+      "fec_type": "RS_528_514"
+    }
+  ]
+}

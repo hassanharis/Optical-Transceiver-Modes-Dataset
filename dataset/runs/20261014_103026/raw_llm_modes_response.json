@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"400G QSFP112 DR4 Ethernet\",\n      \"host_interface_name\": \"QSFP112\",\n      \"media_interface_name\": \"DR4\",\n      \"standards_code\": \"DR4\",\n      \"bit_rate_gbps\": 400.0\n    },\n    {\n      \"label\": \"106.25G per-lane CEI / 100G-DR-LPO\",\n      \"host_interface_name\": \"CEI-112G-LINEAR-PAM4\",\n      \"media_interface_name\": \"100G-DR-LPO\",\n      \"standards_code\": \"100G-DR-LPO\",\n      \"bit_rate_gbps\": 106.25\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

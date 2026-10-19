@@ -1,0 +1,53 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\AV02-1088EN_DS_HFBR-5963xLZ_2018-12-14.pdf",
+  "page_count": 16,
+  "table_count": 9,
+  "markdown_chars": 38430,
+  "tables": [
+    {
+      "page": 9,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 9,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 10,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 10,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 11,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 11,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 12,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 13,
+      "label": null,
+      "rows": 14
+    },
+    {
+      "page": 14,
+      "label": null,
+      "rows": 2
+    }
+  ]
+}

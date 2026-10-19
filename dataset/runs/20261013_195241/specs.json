@@ -1,0 +1,140 @@
+{
+  "vendor": "Broadcom",
+  "model": [
+    "AFBR-735SMZ"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFP",
+    "SFP28",
+    "SFF-8432",
+    "SFF-8419",
+    "SFF-8472",
+    "IEEE 802.3"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "media_interface_name": [
+    "25GBASE-SR",
+    "10GBASE-SR"
+  ],
+  "standards_code": [
+    "25GBASE-SR",
+    "10GBASE-SR",
+    "IEEE 802.3"
+  ],
+  "baud_rate_gbaud": [
+    10.3125,
+    25.78125
+  ],
+  "bit_rate_gbps": [
+    10.3125,
+    25.78,
+    25.78125
+  ],
+  "reach_km": [
+    0.07,
+    0.1
+  ],
+  "tx_power_min_dbm": [
+    -8.4
+  ],
+  "tx_power_max_dbm": [
+    0.0,
+    2.4
+  ],
+  "rx_sensitivity_dbm": [
+    -11.1,
+    -7.5,
+    -5.2,
+    -10.3
+  ],
+  "rx_overload_dbm": [
+    -1.0
+  ],
+  "fec_type": [
+    "RS_528_514"
+  ],
+  "extinction_ratio_db": [
+    2.0,
+    3.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -9.1
+  ],
+  "receiver_reflectance_db": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    2.0,
+    3.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Factory default per SFF-8472 is 10G mode (RS low, CDR bypassed); host must change hardware/software for 25G operation. 25GbE requires FEC RS(528,514) per IEEE 802.3. Link distance in EEPROM: 70 m OM3 50/125-µm at 25GbE, 100 m OM4 50/125-µm at 25GbE. Recommended case temperature 0°C to 70°C; absolute max case/storage –40°C to 85°C. Table 12 extinction ratio min 3.0 listed with unit dBm in source (likely dB). Stressed receiver sensitivity –5.2 dBm OMA at 25.78125 Gbaud per conformance test; –7.5 dBm OMA stressed sensitivity at 10.3125 Gbaud; receive sensitivity (OMA) –11.1 dBm at 10G. Damage threshold +3.4 dBm continuous exposure without damage (operation not required at that level).",
+  "provenance_datasheet_sections": [
+    "AFBR-735SMZ",
+    "Description",
+    "Features",
+    "Transmitter Section",
+    "Receiver Section",
+    "Digital Diagnostics",
+    "Rate Select Control",
+    "Table 3: Pin Description",
+    "Table 6: Recommended Operating Conditions",
+    "Table 7: Transceiver Electrical Characteristics",
+    "Table 8: High-Speed Electrical Module Input Characteristics",
+    "Table 10: High-Speed Electrical Module Output Characteristics",
+    "Table 11: High-Speed Optical Transmitter Characteristics",
+    "Table 12: High-Speed Optical Transmitter Characteristics, TX Rate Select = Low",
+    "Table 13: High-Speed Optical Receiver Characteristics",
+    "Table 14: High-Speed Optical Receiver Characteristics, RX Rate Select = Low",
+    "Table 17: EEPROM Serial ID Memory Contents – Address A0h",
+    "Customer Manufacturing Processes"
+  ],
+  "suggestions": "Add schema fields for OMA launch/receive limits, TDEC/TDP/SEC penalties as standalone metrics, and reach with fiber type qualifiers (OM3/OM4). Clarify whether rx_sensitivity should use OMA vs average power per rate select."
+}

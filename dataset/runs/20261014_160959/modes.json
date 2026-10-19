@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "CFP-DCO 100GbE DWDM 6.25 GHz",
+      "form_factor": "CFP-DCO",
+      "channel_spacing_ghz": 6.25,
+      "standards_code": "100GbE"
+    },
+    {
+      "label": "CFP-DCO 100GbE DWDM 50 GHz",
+      "form_factor": "CFP-DCO",
+      "channel_spacing_ghz": 50.0,
+      "standards_code": "100GbE"
+    },
+    {
+      "label": "CFP 100GbE DWDM 12.5 GHz",
+      "form_factor": "CFP",
+      "channel_spacing_ghz": 12.5,
+      "standards_code": "100GbE"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP-40G-AOC1M",
+    "SO-QSFP-40G-AOC2M",
+    "SO-QSFP-40G-AOC3M",
+    "SO-QSFP-40G-AOC4M",
+    "SO-QSFP-40G-AOC5M",
+    "SO-QSFP-40G-AOC6M",
+    "SO-QSFP-40G-AOC7M",
+    "SO-QSFP-40G-AOC8M",
+    "SO-QSFP-40G-AOC9M",
+    "SO-QSFP-40G-AOC10M",
+    "SO-QSFP-40G-AOC15M",
+    "SO-QSFP-40G-AOC20M",
+    "SO-QSFP-40G-AOC30M",
+    "SO-QSFP-40G-AOC50M",
+    "SO-QSFP-40G-AOC100M"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8436",
+    "IEEE 802.3ba",
+    "40GBASE-SR4"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": null,
+  "fiber_type": [
+    "MMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "QSFP+"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "40GBASE-SR4",
+    "IEEE 802.3ba"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    40,
+    10,
+    5,
+    2.5
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.001,
+    0.002,
+    0.003,
+    0.004,
+    0.005,
+    0.006,
+    0.007,
+    0.008,
+    0.009,
+    0.01,
+    0.015,
+    0.02,
+    0.03,
+    0.05,
+    0.1
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Active Optical Cable (AOC) with 2x QSFP+ transceivers and multimode ribbon fiber; lengths 1–100 m (3.3–328 ft). Storage temperature 0°C to +85°C. Applications include InfiniBand QDR (4x 10Gbps), DDR (4x 5Gbps), and SDR (4x 2.5Gbps) in addition to 40G Ethernet. Vendor identified only via smartoptics.com footer; product line name SO-QSFP-40G-AOCxM.",
+  "provenance_datasheet_sections": [
+    "OVERVIEW",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Datasheet lacks optical/electrical performance tables (wavelength, power, sensitivity). MECHANICAL DRAWING section had no extractable text. Consider mapping 40GBASE-SR4 to media interface codes if added in a fuller spec sheet."
+}

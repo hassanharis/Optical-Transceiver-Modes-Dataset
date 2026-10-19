@@ -1,0 +1,76 @@
+{
+  "modes": [
+    {
+      "label": "Gigabit Ethernet 802.3z 220 m",
+      "model": "LxK-S-R2xx",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.22
+    },
+    {
+      "label": "Gigabit Ethernet 802.3z 220 m",
+      "model": "RR-K-S-R2xx",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.22
+    },
+    {
+      "label": "Gigabit Ethernet 802.3z 275 m",
+      "model": "LxK-S-R2xx",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.275
+    },
+    {
+      "label": "Gigabit Ethernet 802.3z 275 m",
+      "model": "RR-K-S-R2xx",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.275
+    },
+    {
+      "label": "Gigabit Ethernet 802.3z 500 m",
+      "model": "LxK-S-R2xx",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.5
+    },
+    {
+      "label": "Gigabit Ethernet 802.3z 500 m",
+      "model": "RR-K-S-R2xx",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.5
+    },
+    {
+      "label": "Gigabit Ethernet 802.3z 550 m",
+      "model": "LxK-S-R2xx",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "Gigabit Ethernet 802.3z 550 m",
+      "model": "RR-K-S-R2xx",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "Fiber Channel ANSI X3.297 300 m",
+      "model": "LxK-S-R2xx",
+      "standards_code": "ANSI X3.297",
+      "reach_km": 0.3
+    },
+    {
+      "label": "Fiber Channel ANSI X3.297 300 m",
+      "model": "RR-K-S-R2xx",
+      "standards_code": "ANSI X3.297",
+      "reach_km": 0.3
+    },
+    {
+      "label": "Fiber Channel ANSI X3.297 500 m",
+      "model": "LxK-S-R2xx",
+      "standards_code": "ANSI X3.297",
+      "reach_km": 0.5
+    },
+    {
+      "label": "Fiber Channel ANSI X3.297 500 m",
+      "model": "RR-K-S-R2xx",
+      "standards_code": "ANSI X3.297",
+      "reach_km": 0.5
+    }
+  ]
+}

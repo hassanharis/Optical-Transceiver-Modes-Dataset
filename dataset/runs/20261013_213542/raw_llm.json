@@ -1,0 +1,324 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TOC006-TUNC-SO"
+  ],
+  "form_factor": [
+    "OSFP800"
+  ],
+  "standards_claimed": [
+    "OpenROADM MSA",
+    "OSFP800 MSA",
+    "CMIS5.3",
+    "400-800G OpenROADM",
+    "SFF-8024"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": [
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    191.25
+  ],
+  "frequency_max_thz": [
+    196.1
+  ],
+  "channel_spacing_ghz": [
+    6.25,
+    75.0,
+    87.5,
+    100.0,
+    125.0,
+    150.0
+  ],
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 15.0,
+  "temp_max_c": 75.0,
+  "power_consumption_w": [
+    25.0,
+    25.5,
+    26.5,
+    27.0,
+    28.5,
+    29.0,
+    30.0
+  ],
+  "host_interface_name": [
+    "800GAUI-8",
+    "400GAUI-4",
+    "200GAUI-2",
+    "100GAUI-1"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "FlexO-8(e)",
+    "FlexO-6(e)",
+    "FlexO-4(e)",
+    "FlexO-8e-MPCS131-NOS-E",
+    "FLEXO-8e-DPO-16QAM",
+    "FOICe8.8-DPO",
+    "FlexO-6e-MPCS131-NOS-E",
+    "FlexO-4e-MPCS131-NOS",
+    "FlexO-4e-MPCS066-OS",
+    "FlexO-4e-MPCS075-OS",
+    "FlexO-4e-MPCS087-OS",
+    "FlexO-4e-MPCS108-OS"
+  ],
+  "media_interface_id_hex": [
+    "0xF7",
+    "0x68",
+    "0xF5",
+    "0xEC",
+    "0xC0",
+    "0xC2",
+    "0xC9",
+    "0xE5"
+  ],
+  "media_interface_id": [
+    247,
+    104,
+    245,
+    236,
+    192,
+    194,
+    201,
+    229
+  ],
+  "frame": [
+    "800GAUI-8",
+    "400GAUI-4",
+    "200GAUI-2",
+    "100GAUI-1",
+    "FlexO-8(e)",
+    "FlexO-6(e)",
+    "FlexO-4(e)"
+  ],
+  "standards_code": [
+    "OpenROADM",
+    "FlexO-8e-MPCS131-NOS-E",
+    "FLEXO-8e-DPO-16QAM",
+    "FOICe8.8-DPO",
+    "FlexO-6e-MPCS131-NOS-E",
+    "FlexO-4e-MPCS131-NOS",
+    "FlexO-4e-MPCS066-OS",
+    "FlexO-4e-MPCS075-OS",
+    "FlexO-4e-MPCS087-OS",
+    "FlexO-4e-MPCS108-OS"
+  ],
+  "baud_rate_gbaud": [
+    65.7,
+    75.0,
+    87.4,
+    108.5,
+    131.2,
+    131.3
+  ],
+  "bit_rate_gbps": [
+    400.0,
+    600.0,
+    800.0
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PCS_131",
+    "PCS_66",
+    "PCS_75",
+    "PCS_87",
+    "PCS_108",
+    "QAM_16"
+  ],
+  "reach_km": null,
+  "tx_power_min_dbm": [
+    1.0
+  ],
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": [
+    37.0
+  ],
+  "tx_out_of_band_osnr_db": [
+    36.0
+  ],
+  "rx_sensitivity_dbm": [
+    -27.0,
+    -26.5,
+    -26.0,
+    -24.5,
+    -24.0,
+    -20.5
+  ],
+  "rx_osnr_db": [
+    18.0,
+    18.7,
+    18.9,
+    19.5,
+    19.6,
+    20.3,
+    20.6,
+    21.2,
+    21.3,
+    21.4,
+    22.0,
+    22.2,
+    24.7,
+    25.4,
+    25.5,
+    26.2
+  ],
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    1.0,
+    15.0
+  ],
+  "cd_tolerance_ps_nm": [
+    24000.0,
+    29000.0,
+    47000.0,
+    57000.0,
+    66000.0,
+    75000.0,
+    94000.0,
+    125000.0,
+    150000.0
+  ],
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xF7",
+      "penalized_value": 25.5,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -17.0
+        }
+      ]
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0x68",
+      "penalized_value": 26.2,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -17.0
+        }
+      ]
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xF5",
+      "penalized_value": 22.2,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -20.0
+        }
+      ]
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xEC",
+      "penalized_value": 18.9,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -22.0
+        }
+      ]
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xC0",
+      "penalized_value": 22.0,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -20.0
+        }
+      ]
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xC2",
+      "penalized_value": 21.4,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -20.0
+        }
+      ]
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xC9",
+      "penalized_value": 20.3,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -21.0
+        }
+      ]
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xE5",
+      "penalized_value": 19.6,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -22.0
+        }
+      ]
+    }
+  ],
+  "notes": "Nominal wavelengths stated as 191.25–196.1 THz tunable on 6.25 GHz grid, not in nm. Rx sens values at OSNR > 36 dB. Rx @ OSNR column is [Min OSNR @ Min Rx power for the OSNR value] per footnote 2. Minimum Tx power 1 dBm; module Tx power can be attenuated up to 10 dB from maximum available; max Tx dBm not numerically specified. Operating temp +15°C to +75°C; cold start from -5°C ambient until self-heated to min spec temp. Absolute max: Rx signal input +1 dBm, Rx total input +15 dBm. Default vs maximum CDC search ranges differ per media code; max CDC search increases power consumption. Overview table references TOC005-TUNC-SO in one place while product is TOC006-TUNC-SO. Technology: DWDM OSFP800 type 2a, coherent dual polarity.",
+  "provenance_datasheet_sections": [
+    "TOC006-TUNC-SO",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "GENERIC",
+    "OPTICAL SPECIFICATION – NTWK/MEDIA CODES",
+    "ELECTICAL CHARACTERISTICS",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Link optical rows to host_interface_name and standards_code per media code in a structured sub-schema. Separate default CDC vs maximum CDC search fields. Capture storage temperature (-40°C to +85°C) if schema adds storage_temp fields."
+}

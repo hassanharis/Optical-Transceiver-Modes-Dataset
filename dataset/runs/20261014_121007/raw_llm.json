@@ -1,0 +1,122 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP28-50GE-BX10D-2733",
+    "SO-QSFP28-50GE-BX10D-3327"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "SFF-8472",
+    "50GbE IEEE802.3cd"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260,
+    1320
+  ],
+  "wavelength_max_nm": [
+    1280,
+    1340
+  ],
+  "wavelength_center_nm": [
+    1270,
+    1330
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    4.5
+  ],
+  "host_interface_name": [
+    "50GbE"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "2x26.5625Gbps"
+  ],
+  "standards_code": [
+    "IEEE802.3cd",
+    "50GbE"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    52.125,
+    50,
+    53.125
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    10
+  ],
+  "tx_power_min_dbm": [
+    -4.5
+  ],
+  "tx_power_max_dbm": [
+    4.2
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -10.8
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4.2
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    2.4e-05
+  ],
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    2
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Product is a BiDi pair: SO-QSFP28-50GE-BX10D-2733 (Tx 1270nm / Rx 1330nm) and SO-QSFP28-50GE-BX10D-3327 (Tx 1330nm / Rx 1270nm). Power budget 0 – 6.3dB. Optical parameters specified for BER 2.4E-5 at 50GbE (53.125 Gbps); FEC is required in host equipment. Transmitter/receiver levels are average power, per lane. Storage temperature -40°C to +85°C. Table header lists SM (1x LC).",
+  "provenance_datasheet_sections": [
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether 6.3dB is optical power budget only; add explicit host electrical interface MSA names/IDs if applicable; separate operating vs storage temperature in schema if needed."
+}

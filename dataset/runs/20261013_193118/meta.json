@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T19:31:18.020099+00:00",
+  "source_file": "C:\\Haris\\datasheets\\8g-er-dxxx-br1.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.089,
+    "extract_atoms": 20.568,
+    "store_run": 0.009,
+    "synthesize_modes": 68.23,
+    "store_modes": 0.004,
+    "total": 92.9
+  }
+}

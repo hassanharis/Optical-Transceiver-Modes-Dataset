@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "FE 100M 550m MM (62.5/125\u00b5m)",
+      "standards_code": "FE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.55
+    },
+    {
+      "label": "100Base-FX 100M 2km MM (50/125\u00b5m)",
+      "standards_code": "100Base-FX",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 2.0
+    },
+    {
+      "label": "SGMII 125Mbps up to 2km",
+      "standards_code": "SGMII",
+      "bit_rate_gbps": 125.0,
+      "reach_km": 2.0
+    }
+  ]
+}

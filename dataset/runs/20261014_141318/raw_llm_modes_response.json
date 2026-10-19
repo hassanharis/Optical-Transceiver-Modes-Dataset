@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Evidence from the datasheet: one part number (`SO-SFP-155M-L2D`), **Protocol support** lists two services on one row (`FE, STM1/OC3`), and the overview pairs **100M Fast Ethernet (FE)** with **STM-1/OC-3**. `100Base-FXD`, `FE`, and `100M Fast Ethernet` are the same Ethernet mode; `STM1/OC3` and `STM-1/OC-3` are the same SDH/SONET mode. No mode-specific penalties appear in the source.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100M Fast Ethernet\",\n      \"standards_code\": \"FE\"\n    },\n    {\n      \"label\": \"STM-1/OC-3\",\n      \"standards_code\": \"STM1/OC3\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

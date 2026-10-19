@@ -1,0 +1,93 @@
+{
+  "vendor": "Cinch Connectivity Solutions",
+  "model": [
+    "LxPx-ST11xx",
+    "LxP-ST11xx",
+    "LxP2-ST11xx",
+    "LxP3-ST11xx",
+    "LxP5-ST11xx",
+    "ST11xx",
+    "Roughrider RR"
+  ],
+  "form_factor": [
+    "Low Rider RJ"
+  ],
+  "standards_claimed": [
+    "InfiniBand 1x Architecture",
+    "InfiniBand",
+    "EN-60825",
+    "IEC-825",
+    "CDRH Class 1"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "mounting_type": [
+    "solder",
+    "screw"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM1",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "standards_code": [
+    "InfiniBand"
+  ],
+  "baud_rate_gbaud": [
+    2.5
+  ],
+  "bit_rate_gbps": [
+    2.5
+  ],
+  "modulation_format": [
+    "NRZ"
+  ],
+  "reach_km": [
+    0.125,
+    0.15
+  ],
+  "tx_power_min_dbm": [
+    -10.0,
+    -8.0,
+    -7.0,
+    -5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -15.0
+  ],
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "penalties": [],
+  "notes": "Title states Up to 150 Meters. Link distances table gives 125M (62.5/125, 200MHz*Km) and 150M (50/125, 500MHz*Km) for Infiniband (2.5Gbps). reach_km values are meters from table expressed as km for schema. Rx sensitivity footnote: BER=10-12 @ 2.5 Gigabaud, PRBS 27-1, NRZ, Compliant with InfniBand Architecture Specifcation; assuming Extinction Ratio of 9 dB. Tx PO table lists MIN and Typical only (no MAX column values for optical output power). Ordering External Margin Link: +2dB, +3dB, +5dB margin variants. VCCTX 3.135V to 3.465V; individual +3.3 V power supply per port. Tx OMA typical 196 µW; Rx OMA min 50 µW. Low profile max height 0.386 inches.",
+  "provenance_datasheet_sections": [
+    "Applications",
+    "Features",
+    "Ordering Information",
+    "Transmitters:",
+    "Receivers:",
+    "Link Distances"
+  ],
+  "suggestions": "Add fields for supply voltage (VCCTX/VCCRX), OMA (µW), and max module height. Clarify whether post_fec_ber_target should capture BER=10^-12 without FEC named. Form factor may need a non-RJ low-profile mount category beyond Low Rider RJ."
+}

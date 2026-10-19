@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:30:26.625315+00:00",
+  "source_file": "C:\\Haris\\datasheets\\qxp13ld4-005d.pdf",
+  "page_count": 8,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 14.185,
+    "extract_atoms": 37.715,
+    "store_run": 0.007,
+    "synthesize_modes": 29.921,
+    "store_modes": 0.002,
+    "total": 81.83
+  }
+}

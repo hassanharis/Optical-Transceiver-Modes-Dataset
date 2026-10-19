@@ -1,0 +1,131 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-M85200-SR4C"
+  ],
+  "form_factor": [
+    "QSFP56"
+  ],
+  "standards_claimed": [
+    "QSFP MSA",
+    "IEEE 802.3cd",
+    "CMIS V4.0",
+    "200GBASE-SR4"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF_OM5"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    4.1,
+    4.5
+  ],
+  "host_interface_name": [
+    "200GAUI-4"
+  ],
+  "frame": [
+    "200GAUI-4"
+  ],
+  "standards_code": [
+    "200GBASE-SR4",
+    "IEEE 802.3cd",
+    "CMIS V4.0"
+  ],
+  "baud_rate_gbaud": [
+    26.5625
+  ],
+  "bit_rate_gbps": [
+    212.5,
+    103.125
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -7.0,
+    -3.0
+  ],
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    3.0
+  ],
+  "los_assert_dbm": [
+    -10.0
+  ],
+  "los_deassert_dbm": [
+    -8.5
+  ],
+  "receiver_reflectance_db": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Features state low power dissipation <5W and aggregate bit rates 212.5 Gb/s and 103.125 Gb/s if required. Maximum link length stated as 70 m on OM3 MMF and 100 m on OM4 and OM5 MMF (title: 100mReach); not given in km. Receiver Sensitivity (OMAouter) -7 dBm per Note3 measured with conformance test signal at TP3 for BER = 2.4E-4 Pre-FEC. Stressed Receiver Sensitivity (OMAouter) -3 dBm. Electrical BER Note2 max 2.4E-4 compliant with 200GBASE-SR4 electrical specification in IEEE 802.3cd. Optical connector described as single MPO12 receptacle and male MPO connector. RMS spectral width max 0.6 nm. Damage threshold (receiver) max 4 dBm. LPMode section references QSFP28 modules in error; product is QSFP56.",
+  "provenance_datasheet_sections": [
+    "LQ-M85200-SR4C",
+    "200GBASE-SR4 QSFP56, Optical Transceiver Module, 100mReach",
+    "Features",
+    "Applications",
+    "Description",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Note:",
+    "Optical Characteristics",
+    "Note3. Measured with conformance test signal at TP3 for BER = 2.4E-4 Pre-FEC",
+    "Optical Interface Lanes and Assignment",
+    "DIAGNOSTIC MONITORING INTERFACE",
+    "References",
+    "Ordering information"
+  ],
+  "suggestions": "Add reach_m or accept meter values for SR modules; map QSFP56 to form_factor enum; optional fields for OMAouter launch/receive limits and TDECQ."
+}

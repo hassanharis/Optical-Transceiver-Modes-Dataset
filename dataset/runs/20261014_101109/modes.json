@@ -1,0 +1,25 @@
+{
+  "modes": [
+    {
+      "label": "1 Mbps SMF 1310 nm Commercial (0\u201370\u00b0C)",
+      "model": "OSP1-3120NCR",
+      "wavelength_max_nm": 1360.0,
+      "host_interface_name": "PECL",
+      "standards_code": "SFP MSA"
+    },
+    {
+      "label": "1 Mbps SMF 1310 nm Industrial (\u221240\u201385\u00b0C)",
+      "model": "OSP1-3120NTR",
+      "wavelength_max_nm": 1360.0,
+      "host_interface_name": "PECL",
+      "standards_code": "SFP MSA"
+    },
+    {
+      "label": "1 Mbps SMF 1310 nm NxR family",
+      "model": "OSP1-3120NxR",
+      "wavelength_max_nm": 1610.0,
+      "host_interface_name": "SFP MSA",
+      "standards_code": "IEEE802.3 z"
+    }
+  ]
+}

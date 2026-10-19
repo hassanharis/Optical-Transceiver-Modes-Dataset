@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T17:04:24.319367+00:00",
+  "source_file": "C:\\Haris\\datasheets\\xp-85b1-02de_rev5.0.pdf",
+  "page_count": 8,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 15.729,
+    "extract_atoms": 24.071,
+    "store_run": 0.011,
+    "synthesize_modes": 28.254,
+    "store_modes": 0.002,
+    "total": 68.068
+  }
+}

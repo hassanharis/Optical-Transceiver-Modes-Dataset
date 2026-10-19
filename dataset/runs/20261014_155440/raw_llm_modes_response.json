@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"32G FC (Rate Select high)\",\n      \"standards_code\": \"32G FC\",\n      \"bit_rate_gbps\": 28.05,\n      \"reach_km\": 0.1,\n      \"tx_power_min_dbm\": -1.4,\n      \"tx_power_max_dbm\": 2.0,\n      \"rx_sensitivity_dbm\": -8.4,\n      \"post_fec_ber_target\": 1e-06\n    },\n    {\n      \"label\": \"25GbE (Rate Select high)\",\n      \"standards_code\": \"25GE\",\n      \"bit_rate_gbps\": 25.78,\n      \"reach_km\": 0.07,\n      \"tx_power_min_dbm\": -8.4,\n      \"tx_power_max_dbm\": 2.4,\n      \"rx_sensitivity_dbm\": -10.3,\n      \"post_fec_ber_target\": 5e-05\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

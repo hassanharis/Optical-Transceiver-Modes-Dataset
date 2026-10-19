@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T19:35:47.424816+00:00",
+  "source_file": "C:\\Haris\\datasheets\\AdTran 1442440F1 Datasheet.pdf",
+  "page_count": 3,
+  "table_count": 5,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.881,
+    "extract_atoms": 27.316,
+    "store_run": 0.008,
+    "synthesize_modes": 25.714,
+    "store_modes": 0.005,
+    "total": 57.923
+  }
+}

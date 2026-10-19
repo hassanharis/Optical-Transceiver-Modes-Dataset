@@ -1,0 +1,156 @@
+{
+  "multi_valued": {
+    "wavelength_band": [
+      "C-band",
+      "DWDM"
+    ],
+    "channel_spacing_ghz": [
+      50.0,
+      100.0
+    ],
+    "host_interface_name": [
+      "10GBASE-ER",
+      "10GBASE-EW"
+    ],
+    "standards_code": [
+      "10GBASE-ER",
+      "10GBASE-EW",
+      "10GbE-LAN",
+      "10GbE-WAN",
+      "OTU2",
+      "OTU2e",
+      "STM-64",
+      "OC192",
+      "10G FC",
+      "CPRI Opt, 8",
+      "G.694.1",
+      "INF-8077i"
+    ],
+    "bit_rate_gbps": [
+      9.95,
+      11.1,
+      11.3,
+      11.35
+    ],
+    "rx_osnr_db": [
+      19.0,
+      35.0
+    ],
+    "cd_tolerance_ps_nm": [
+      -400.0,
+      0.0,
+      1500.0,
+      1600.0
+    ],
+    "post_fec_ber_target": [
+      0.0001,
+      1e-12
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-TXFP-10G-ZR-DWDM-A"
+    ],
+    "form_factor": [
+      "XFP"
+    ],
+    "standards_claimed": [
+      "XFP MSA",
+      "INF-8077i",
+      "SFF-8477",
+      "ITU-T G.694.1",
+      "RoHS-6/6"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_min_nm": [
+      1525.0
+    ],
+    "wavelength_max_nm": [
+      1575.0
+    ],
+    "wavelength_center_nm": [],
+    "frequency_min_thz": [
+      191.35
+    ],
+    "frequency_max_thz": [
+      196.1
+    ],
+    "channel_total": [
+      96
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -5.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "modulation_format": [],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      -1.0
+    ],
+    "tx_power_max_dbm": [
+      3.0
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_sensitivity_dbm": [
+      -26.0
+    ],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [
+      -5.0
+    ],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [
+      -33.0
+    ],
+    "los_deassert_dbm": [
+      -26.5
+    ],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Title and ordering list 25dB power budget; technical table lists power budget 8–25dB. Technology row states DWDM 100GHz XFP while nominal/transmit wavelength states 50GHz (G.694.1). Transmitter output min printed as -1.0dB (footnote 1: average power). Receiver min input power, overload, and footnote 2: @ 10.7Gbps, BER 1x10-12, PRBS 2^31-1, OSNR> 35dB. System performance: noise loaded row 10.709Gb/s, -10 to -20dBm, 0.25nm filter BW; unamplified links 10.709Gb/s, -22dBm, 0.25nm filter BW, OSNR >35 dB. Dispersion penalty max 2dB stated without paired penalized parameter at explicit condition. Bit rate ranges differ: overview 9.95–11.3 Gbps, technical 9.95–11.1 Gbps, ordering 9.95–11.35 Gbps.",
+    "provenance_datasheet_sections": [
+      "SO-TXFP-10G-ZR-DWDM-A",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether Technology '100GHz' is a typo for 50GHz tunable grid. Schema could capture power_budget_db, tuning_speed_ms, storage temperature, and DDM yes/no."
+  }
+}

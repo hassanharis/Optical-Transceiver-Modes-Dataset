@@ -1,0 +1,115 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP-DD-4C-DR4-4-M"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "CMIS4.0"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1311.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "channel_total": [
+    4
+  ],
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    10.0
+  ],
+  "host_interface_name": [
+    "400GAUI-8",
+    "100GAUI-2"
+  ],
+  "host_interface_id": [
+    1,
+    2
+  ],
+  "media_interface_name": [
+    "400GBASE-DR4",
+    "100GBASE-DR"
+  ],
+  "frame": [
+    "1x 400GAUI-8 (8x 50G)",
+    "4x 100GAUI-2 (2x 50G)"
+  ],
+  "standards_code": [
+    "400GBASE-DR4",
+    "DR4 (Clause 124)",
+    "100GBASE-DR (Clause 140)",
+    "400GBASE-R",
+    "100GBASE-R"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    425.0,
+    400.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "tx_power_min_dbm": [
+    -2.9
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -5.9
+  ],
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "fec_type": [
+    "RS_GENERIC",
+    "RS_528_514"
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "los_assert_dbm": [
+    -15.0
+  ],
+  "los_deassert_dbm": [
+    -10.0
+  ],
+  "number_of_lanes": [
+    8,
+    4
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Typical reach stated as 500m (not converted to km). Power consumption stated as < 10W. Aggregated line rate 425Gbps (footnote 1); protocol 400GbE. Line baud rate 53.125Gbd per lane (footnote 2). Tx/Rx power per lane average (footnote 3). Minimum input power and overload specified at BER 2.4x10-4 (footnote 4). FEC required in host per IEEE802.3bj Reed Solomon RS(528,514). Optical parameters BER 2.4 x 10-4. Power budget 0 – 3.0dB. Storage temperature -40°C to +85°C. MPO12 APC optical interface. Title/description: 3dB, MPO12/APC.",
+  "provenance_datasheet_sections": [
+    "SO-QSFP-DD-4C-DR4-4-M",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "APPLICATION CODE LIST",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider reach_m or allow reach with unit from source when only meters are printed. CMIS host_interface_id mapping from APPLICATION CODE LIST column 1 (values 1, 2) may need validation against CMIS spec."
+}

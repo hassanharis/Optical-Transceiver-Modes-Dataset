@@ -1,0 +1,76 @@
+{
+  "modes": [
+    {
+      "label": "MIL-SNK-ST31M Gigabit Ethernet IEEE 802.3z",
+      "model": "MIL-SNK-ST31M",
+      "wavelength_min_nm": 770.0,
+      "standards_code": "IEEE 802.3z",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -21.0
+    },
+    {
+      "label": "MIL-STK-ST31M Gigabit Ethernet IEEE 802.3z",
+      "model": "MIL-STK-ST31M",
+      "wavelength_min_nm": 770.0,
+      "standards_code": "IEEE 802.3z",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -21.0
+    },
+    {
+      "label": "MIL-SNK-ST31M Fibre Channel ANSI X3.297",
+      "model": "MIL-SNK-ST31M",
+      "wavelength_min_nm": 770.0,
+      "standards_code": "ANSI X3.297",
+      "bit_rate_gbps": 1.0625,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -23.0
+    },
+    {
+      "label": "MIL-STK-ST31M Fibre Channel ANSI X3.297",
+      "model": "MIL-STK-ST31M",
+      "wavelength_min_nm": 770.0,
+      "standards_code": "ANSI X3.297",
+      "bit_rate_gbps": 1.0625,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -23.0
+    },
+    {
+      "label": "MIL-SNK-ST31M Fibre Channel FC-PH-2",
+      "model": "MIL-SNK-ST31M",
+      "wavelength_min_nm": 770.0,
+      "standards_code": "FC-PH-2",
+      "bit_rate_gbps": 1.0625,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -22.0
+    },
+    {
+      "label": "MIL-STK-ST31M Fibre Channel FC-PH-2",
+      "model": "MIL-STK-ST31M",
+      "wavelength_min_nm": 770.0,
+      "standards_code": "FC-PH-2",
+      "bit_rate_gbps": 1.0625,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -22.0
+    },
+    {
+      "label": "MIL-SNK-ST31M 850 nm transmit",
+      "model": "MIL-SNK-ST31M",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "IEEE 802.3z",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -22.0
+    },
+    {
+      "label": "MIL-STK-ST31M 850 nm transmit",
+      "model": "MIL-STK-ST31M",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "IEEE 802.3z",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -22.0
+    }
+  ]
+}

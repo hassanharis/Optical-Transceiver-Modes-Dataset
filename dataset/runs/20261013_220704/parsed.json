@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-tqd022-ms2c-so-qsfpdd-400g-sr4p2-c5p1-r6.3.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 7128,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 19
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 23
+    }
+  ]
+}

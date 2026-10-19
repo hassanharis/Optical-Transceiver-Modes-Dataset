@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "100G BiDi Tx 1271nm / Rx 1331nm",
+      "model": "TQ2020-BADC-SO",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "wavelength_center_nm": 1271.0,
+      "standards_code": "100G-LR",
+      "baud_rate_gbaud": 52.125,
+      "bit_rate_gbps": 106.25,
+      "rx_sensitivity_dbm": -6.1,
+      "extinction_ratio_db": 3.5
+    },
+    {
+      "label": "100G BiDi Tx 1331nm / Rx 1271nm",
+      "model": "TQ2020-BDAC-SO",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "wavelength_center_nm": 1331.0,
+      "standards_code": "100G-LR",
+      "baud_rate_gbaud": 52.125,
+      "bit_rate_gbps": 106.25,
+      "rx_sensitivity_dbm": -6.1,
+      "extinction_ratio_db": 3.5
+    }
+  ]
+}

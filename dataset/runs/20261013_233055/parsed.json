@@ -1,0 +1,48 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\l9-sc553101-20ppc.pdf",
+  "page_count": 4,
+  "table_count": 8,
+  "markdown_chars": 5040,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 13
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 7
+    }
+  ]
+}

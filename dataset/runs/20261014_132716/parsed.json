@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp-10ge-bx40d.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 6225,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 19
+    },
+    {
+      "page": 0,
+      "label": null,
+      "rows": 17
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

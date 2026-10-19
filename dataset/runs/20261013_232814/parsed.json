@@ -1,0 +1,53 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\l9-sc31551g-20ppc.pdf",
+  "page_count": 7,
+  "table_count": 9,
+  "markdown_chars": 7261,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 14
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 7
+    }
+  ]
+}

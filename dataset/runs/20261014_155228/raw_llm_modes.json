@@ -1,0 +1,39 @@
+{
+  "modes": [
+    {
+      "label": "8G FC (low rate select)",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "16G FC (low rate select)",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "32G FC (high rate select)",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "standards_code": "32G FC",
+      "bit_rate_gbps": 28.05
+    },
+    {
+      "label": "25G Ethernet (high rate select)",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "OTU4 quarter-rate (high rate select)",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 27.95
+    }
+  ]
+}

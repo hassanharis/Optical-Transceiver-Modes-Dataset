@@ -1,0 +1,108 @@
+{
+  "multi_valued": {
+    "form_factor": [
+      "SFP28",
+      "SFP+"
+    ],
+    "standards_code": [
+      "25GBASE-SR",
+      "25GbE",
+      "10GbE-WAN",
+      "10GbE-LAN"
+    ],
+    "bit_rate_gbps": [
+      25.78,
+      9.953,
+      10.312,
+      28.0,
+      9.95,
+      10.31
+    ],
+    "reach_km": [
+      0.07,
+      0.1
+    ],
+    "pre_fec_ber_threshold": [
+      1e-05,
+      5e-05
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TS2010-M85I-SO"
+    ],
+    "standards_claimed": [
+      "25GBASE-SR",
+      "IEEE -SR",
+      "SFP28",
+      "SFF-8402"
+    ],
+    "wavelength_min_nm": [
+      840.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      1
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM3",
+      "MMF_OM4"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "power_consumption_w": [
+      1.5
+    ],
+    "media_interface_name": [
+      "25GBASE-SR"
+    ],
+    "tx_power_min_dbm": [
+      -7.6
+    ],
+    "tx_power_max_dbm": [
+      2.4
+    ],
+    "rx_sensitivity_dbm": [
+      -10.3
+    ],
+    "rx_overload_dbm": [
+      2.4
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -11.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Typical reach stated as 70m @ OM3 and 100m @ OM4 (reach_km stored as 0.07 and 0.1). Power budget 0–2.7dB @ 25GbE. Power consumption < 1.5W. Tx/Rx levels footnote 3) average power; footnote 4) at 25.78 Gbps (25GE) and BER 5E-5. Optical parameters also described at BER 1 x 10^-5 for 25G Ethernet. Tx max overload printed as +2.4Bm in one row and +2.4dBm in overload row. Host must implement FEC. Storage temperature -40°C to +85°C same as operating.",
+    "provenance_datasheet_sections": [
+      "SFP28 25G-SR, I-TEMP",
+      "TS2010-M85I-SO",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "CDR RATE SELECT LOGIC",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Add link_power_budget_db distinct from channel_insertion_loss_db. Allow reach in meters or require explicit km in source. Map DDM Yes to a boolean field."
+  }
+}

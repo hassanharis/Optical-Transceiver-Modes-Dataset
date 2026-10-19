@@ -1,0 +1,223 @@
+{
+  "multi_valued": {
+    "model": [
+      "QXP85B4-02D",
+      "QXP85B4-02D-2",
+      "QXP29B4-10D",
+      "QXP29B4-10DE-2",
+      "QXP29B4-10DA",
+      "QXP29B4-10D-4",
+      "QXP29B4-10D-V4",
+      "QXP29B4-10D-V4-1",
+      "QXP29B4-20D-V4",
+      "QXP29B4-30D",
+      "QXP29B4-30D-2",
+      "QXP29B4-30DA",
+      "QXP29B4-40D-V2",
+      "QXP29B4-40D-3",
+      "QXP29B4-40DA-3",
+      "QXP29B4-80D",
+      "QXP29B4-80DA",
+      "AQP85B4-XXX",
+      "AQP-XPB4-XXX",
+      "QXP27B4-02D-2",
+      "QXP27B4-10D-2",
+      "QXP29B4-10D(E)-2"
+    ],
+    "wavelength_min_nm": [
+      850.0,
+      1271.0,
+      1291.0,
+      1295.0,
+      1300.0,
+      1304.0,
+      1309.0,
+      1311.0,
+      1331.0
+    ],
+    "wavelength_max_nm": [
+      850.0,
+      1271.0,
+      1291.0,
+      1295.0,
+      1300.0,
+      1304.0,
+      1309.0,
+      1311.0,
+      1331.0
+    ],
+    "wavelength_center_nm": [
+      850.0,
+      1271.0,
+      1291.0,
+      1295.0,
+      1300.0,
+      1304.0,
+      1309.0,
+      1311.0,
+      1331.0
+    ],
+    "power_consumption_w": [
+      2.0,
+      2.5,
+      3.5,
+      4.5,
+      5.0,
+      5.2,
+      5.5,
+      6.5,
+      7.5
+    ],
+    "standards_code": [
+      "SR4",
+      "CWDM4",
+      "LR4",
+      "ER4 Lite",
+      "ER4",
+      "ZR4",
+      "AOC"
+    ],
+    "bit_rate_gbps": [
+      27.95,
+      100.0,
+      103.1,
+      111.8
+    ],
+    "reach_km": [
+      0.07,
+      0.1,
+      0.15,
+      2.0,
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      -8.4,
+      -6.5,
+      -4.3,
+      -2.9,
+      -2.5,
+      -2.0,
+      1.0
+    ],
+    "tx_power_max_dbm": [
+      2.4,
+      2.5,
+      2.9,
+      4.5,
+      6.5
+    ],
+    "rx_sensitivity_dbm": [
+      -28.0,
+      -27.0,
+      -21.4,
+      -20.4,
+      -18.5,
+      -11.5,
+      -10.6,
+      -10.3
+    ],
+    "rx_overload_dbm": [
+      -5.0,
+      2.4,
+      2.5,
+      3.5,
+      4.5
+    ]
+  },
+  "general": {
+    "vendor": "Amphenol",
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "SFF-8636",
+      "IEEE802.3BM",
+      "ITU-T G959.1",
+      "QSFP28 MSA",
+      "RoHS",
+      "SFF-8679",
+      "SFF-8661",
+      "IEEE 802.3ba",
+      "IEEE 802.3bm"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable_hot_electrical"
+    ],
+    "connector_type": [
+      "LC",
+      "MPO"
+    ],
+    "fiber_type": [
+      "MMF",
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "modulation_format": [],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [],
+    "post_fec_ber_target": [],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [],
+    "los_deassert_dbm": [],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Family-level datasheet covering multiple SKUs (SR4, CWDM4, LR4, ER4 Lite, ER4, ZR4, AOC). Case operating temperature also stated as -40°C to 85°C or -10°C to 85°C on select parts (I-temp/E-temp). Single 3.3V power supply. Rx Input and Tx Output are per-product ranges in KEY PARAMETER SPECIFICATIONS; BER/OSNR/FEC not stated. Reach includes 70m(OM3), 100m(OM4), 150m(OM3) where applicable. Dual-rate 111.8Gb/s on some LR4/ER4 Lite variants. Power values are maximum (≤).",
+    "provenance_datasheet_sections": [
+      "100Gb/s QSFP28  Transceivers",
+      "DESIGNED FOR USE IN 100GB/S  DATA RATE LINKS. COMPLIANT WITH THE SFF-8636, IEEE802.3BM OR ITU-T G959.1",
+      "FEATURES & BENEFITS",
+      "TECHNICAL INFORMATION",
+      "ELECTRICAL PERFORMANCE",
+      "SPECIFICATIONS",
+      "TARGET MARKETS/APPLICATIONS",
+      "APPROVALS & CERTIFICATION",
+      "PART NUMBERS",
+      "KEY PARAMETER SPECIFICATIONS"
+    ],
+    "suggestions": "Per-SKU JSON would avoid mixing incompatible tx/rx/reach tuples. Clarify whether Rx Input lower bound is sensitivity at a defined BER. Add explicit wavelength_band for LR4 LAN-WDM only if vendor labels it. Host/media interface IDs from SFF-8636 are not on this marketing page."
+  }
+}

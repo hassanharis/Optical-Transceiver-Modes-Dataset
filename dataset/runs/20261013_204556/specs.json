@@ -1,0 +1,108 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "DS-8G-ZR-Cxx",
+    "DS-8G-ZR-C47",
+    "DS-8G-ZR-C49",
+    "DS-8G-ZR-C51",
+    "DS-8G-ZR-C53",
+    "DS-8G-ZR-C55",
+    "DS-8G-ZR-C57",
+    "DS-8G-ZR-C59",
+    "DS-8G-ZR-C61"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "ITU-T G.694.2"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1470.0,
+    1471.0
+  ],
+  "wavelength_max_nm": [
+    1561.0,
+    1610.0,
+    1611.0,
+    1620.0
+  ],
+  "wavelength_center_nm": [
+    1470.0,
+    1490.0,
+    1510.0,
+    1530.0,
+    1550.0,
+    1570.0,
+    1590.0,
+    1610.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "channel_total": [
+    8
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.6
+  ],
+  "standards_code": [
+    "G.694.2",
+    "2G FC",
+    "4G FC",
+    "8G FC",
+    "FICON"
+  ],
+  "bit_rate_gbps": [
+    2.125,
+    8.5
+  ],
+  "reach_km": [
+    70.0
+  ],
+  "tx_power_min_dbm": [
+    -0.5
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -23.5
+  ],
+  "rx_overload_dbm": [
+    -7.0
+  ],
+  "cd_tolerance_ps_nm": [
+    1400.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -23.5
+  ],
+  "penalties": [],
+  "notes": "Power budget 11–23 dB stated in TECHNICAL DATA; ordering/title '23dB' refers to power budget not OSNR. Receiver minimum input power and overload footnotes: 1) At 8.5 Gbps (8G FC) using PRBS7; 2) Average power; @ BER 1x10-12. Transmitter output power footnote 2) Average power. Overload printed as '-7.0Bm' (units as in source). Nominal wavelengths 1471–1611 nm (8 ch) vs overview/title 1470–1610 nm; transmit wavelength row gives 1471 to 1561 nm (G.694.2). Receiver wavelength range 1260–1620 nm. Storage temperature -40°C to +85°C. Optical path penalty max 3 dB (no paired penalized parameter/condition for penalty objects). Dispersion tolerance 1400 ps/nm. Cisco layer-1 tested and approved (OVERVIEW). RoHS-6/6 compliant.",
+  "provenance_datasheet_sections": [
+    "DS-8G-ZR-Cxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether transmitter wavelength 1471–1561 nm is intentional subset of 8-channel nominal range. Explicitly label overload units as dBm. Separate power budget (23 dB) from any OSNR metrics if applicable. State channel spacing (nm/GHz) per G.694.2 if required for CWDM schema fields."
+}

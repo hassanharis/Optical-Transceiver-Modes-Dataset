@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"TS5001-M85C-SO SFP56 50GBASE-SR\",\n      \"form_factor\": \"SFP56\",\n      \"host_interface_name\": \"50GBASE-SR\",\n      \"bit_rate_gbps\": 53.125,\n      \"reach_km\": 0.07,\n      \"rx_sensitivity_dbm\": -6.5\n    },\n    {\n      \"label\": \"TS5001-M85C-SO SFP56 50GBASE-SR OM4\",\n      \"form_factor\": \"SFP56\",\n      \"host_interface_name\": \"50GBASE-SR\",\n      \"bit_rate_gbps\": 53.125,\n      \"reach_km\": 0.1,\n      \"rx_sensitivity_dbm\": -6.5\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

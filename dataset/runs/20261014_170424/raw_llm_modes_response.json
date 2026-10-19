@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"XP-85B1-02D Commercial 25.78G 850nm MMF\",\n      \"model\": \"XP-85B1-02D\",\n      \"form_factor\": \"SFP28\",\n      \"wavelength_min_nm\": 840.0,\n      \"standards_code\": \"SFF-8431\",\n      \"bit_rate_gbps\": 25.78\n    },\n    {\n      \"label\": \"XP-85B1-02DE Extensional 25.78G 850nm MMF\",\n      \"model\": \"XP-85B1-02DE\",\n      \"form_factor\": \"SFP28\",\n      \"wavelength_min_nm\": 840.0,\n      \"standards_code\": \"SFF-8431\",\n      \"bit_rate_gbps\": 25.78\n    }\n  ]\n}\n```\n\n**Evidence:** Ordering table rows tie each part number to 25.78 Gbps, 850 nm, and MMF; only case temperature range differs (0\u201370 \u00b0C vs 0\u201385 \u00b0C). Shared datasheet text covers SFP28 / SFP+ footprint, SFF-8431 and SFF 8472, and optical table Tx \u03bb min 840 nm at 25.78 Gb/s\u2014no separate row or PN for 28.0 Gb/s or Rx \u03bb min 770 nm as its own mode. `SFF 8472`, `SFP+`, `28.0`, and `770.0` are module-wide or non-ordering variants and are not split across modes without a documented co-occurrence row.",
+  "reasoning_content": null
+}

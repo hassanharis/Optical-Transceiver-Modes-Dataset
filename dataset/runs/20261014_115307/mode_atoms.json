@@ -1,0 +1,98 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "40GbE",
+      "Infiniband QDR/DDR"
+    ],
+    "standards_code": [
+      "40GBASE-eSR4",
+      "eSR4"
+    ],
+    "bit_rate_gbps": [
+      41.25,
+      10.3125
+    ],
+    "reach_km": [
+      0.3,
+      0.4
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-QSFP-ESR4"
+    ],
+    "form_factor": [
+      "QSFP+"
+    ],
+    "standards_claimed": [
+      "IEEE Std 802.3ba",
+      "40GBASE-eSR4",
+      "SFF-8472",
+      "SFF-8636",
+      "QSFP+ MSA"
+    ],
+    "wavelength_min_nm": [
+      830.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "MPO",
+      "MTP"
+    ],
+    "fiber_type": [
+      "SMF",
+      "MMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.5
+    ],
+    "media_interface_name": [
+      "40GBASE-eSR4"
+    ],
+    "frame": [
+      "4x 10 Gbps"
+    ],
+    "tx_power_min_dbm": [
+      -7.6
+    ],
+    "tx_power_max_dbm": [
+      2.4
+    ],
+    "rx_sensitivity_dbm": [
+      -9.5
+    ],
+    "rx_overload_dbm": [
+      2.4
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "penalties": [],
+    "notes": "Transmitter output power min/max and receiver min input power and overload are footnote 3) Average power. Receiver min input power and overload footnote 4) Measured with PRBS 231-1 test pattern, 10.3125Gb/s, BER<10-12. Power budget 0 – 1.9 dB. Technical DATA table lists Transmission media as SM (1x MPO); OVERVIEW and ORDERING describe OM4 MultiMode (MM) and reach 300m/400m OM3/OM4. Bit rate footnote 1) Aggregated line rate; 2) Per channel. Module is SR4 compliant with extended reach up to 400m over OM4 MM per OVERVIEW.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP-ESR4",
+      "QSFP+, 40G Ethernet eSR4, MM, 850nm, 400m, 1.9dB, MPO",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

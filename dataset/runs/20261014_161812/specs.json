@@ -1,0 +1,104 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-TSFP-10G-ZR-DWDM-I"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8690",
+    "SFF-8472",
+    "ITU-T 694.1"
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "wavelength_band": [
+    "C-band"
+  ],
+  "frequency_min_thz": [
+    191.0,
+    191.35
+  ],
+  "frequency_max_thz": [
+    196.1,
+    197.0
+  ],
+  "channel_spacing_ghz": [
+    50.0
+  ],
+  "channel_total": [
+    96
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    2.3
+  ],
+  "standards_code": [
+    "10GBASE-ZR",
+    "10GBASE-ZW",
+    "G.694.1"
+  ],
+  "bit_rate_gbps": [
+    1.2,
+    10.3,
+    11.3
+  ],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    -1.0
+  ],
+  "tx_power_max_dbm": [
+    3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -24.0,
+    -23.0,
+    -21.0
+  ],
+  "rx_osnr_db": [
+    35.0
+  ],
+  "rx_overload_dbm": [
+    -7.0
+  ],
+  "cd_tolerance_ps_nm": [
+    -300.0,
+    1400.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -27.0
+  ],
+  "los_deassert_dbm": [
+    -25.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Transmit/nominal wavelength 191.35–196.10 THz; receiver wavelength range 191.00–197.00 THz; 50 GHz steps (96 ch) D9135–D9610. Power budget 10–23 dB. Dispersion penalty max 3 dB. Output power, receiver sensitivity, and overload are average power (footnote 1). Rx sensitivity footnotes: 2) back-to-back @ 10.3 Gbps, BER 1×10⁻¹², OSNR >35 dB → -24.0 dBm; 3) +1100 ps/nm @ 10.3 Gbps, BER 1×10⁻¹², OSNR >35 dB → -23.0 dBm; 4) -300 to +1400 ps/nm @ 10.3 Gbps, BER 1×10⁻¹², OSNR >35 dB → -21.0 dBm. Tuning speed min 10 s channel-to-channel. Power consumption <2.3 W worst case. 10GBASE-ZR/ZW referenced for bridgeable distance; standard defined only at 1550 nm for other DWDM wavelengths.",
+  "provenance_datasheet_sections": [
+    "SO-TSFP-10G-ZR-DWDM-I",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether rx_osnr_db should capture only receiver OSNR requirements vs. test conditions (OSNR >35 dB). Dispersion penalty max 3 dB lacks paired penalized metric for penalties[] schema. Host/media MSA interface IDs not in this datasheet."
+}

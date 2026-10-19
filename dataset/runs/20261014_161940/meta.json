@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:19:40.607415+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-tsfp-10g-zr-dwdm.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.93,
+    "extract_atoms": 22.548,
+    "store_run": 0.007,
+    "synthesize_modes": 59.834,
+    "store_modes": 0.002,
+    "total": 87.322
+  }
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — LINK-PP [&#x27;LS-CWxx1G-A0x&#x27;, &#x27;LS-CWxx1G-A0C&#x27;, &#x27;LS-CWxx1G-A0I&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">ls-cwxx1g-a0x.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">8</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">9</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 00:26</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LS-CWxx1G-A0x Rev1.0- Sep.2016 
+
+
+## **LS-CWxx1G-A0x** 
+
+## 1.25Gbps SFP CWDM Transceiver, Single Mode, 100km Reach 
+
+## **Product Features** 
+
+- Supports up to 1.25Gbps bit rates 
+
+- Hot-pluggable SFP footprint 
+
+- CWDM DFB laser and APD photo detector, Up to 100km for SMF transmission 
+
+- Compliant with SFP MSA and SFF-8472 with duplex LC receptacle 
+
+- Compatible with RoHS 
+
+- Single +3.3V power supply 
+
+- Real Time Digital Diagnostic Monitoring 
+
+- Operating case temperature: Standard: 0 to +70°C 
+
+   - Industrial: -40 to +85°C 
+
+## **Applications** 
+
+- 1.25Gbps Optical systems 
+
+- Gigabit Ethernet 
+
+- 1.063Gbps Fiber Channel 
+
+- Other Optical links 
+
+
+## **Description** 
+
+The SFP transceivers are high performance, cost effective modules supporting data rate of 1.25Gbps and 100km transmission distance with SMF. 
+
+The transceiver consists of three sections: a CWDM DFB laser transmitter, a APD photodiode integrated with a trans-impedance preamplifier (TIA) and MCU control unit. All modules satisfy class I laser safety requirements. 
+
+The transceivers are compatible with SFP Multi-Source Agreement and SFF-8472 digital diagnostics functions. 
+
+&gt; www.link-pp.com **www.l-p.com** .com 
+
+Copyright © 2016 LINK-PP AlI Rights Reserved 
+
+Page 1 of 8 
+
+LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LS-CWxx1G-A0x Rev1.0- Sep.2016 
+
+
+
+**----- Start of picture text -----**&lt;br&gt;
+TD+/-&lt;br&gt;LD&lt;br&gt;TxFault LD Driver&lt;br&gt;TxDis&lt;br&gt;LOS&lt;br&gt;Post Amp APD+TIA&lt;br&gt;RD+/-&lt;br&gt;POWER&lt;br&gt;I2C Controller Temp&lt;br&gt;Vcc&lt;br&gt;LD Bias&lt;br&gt;SCL&lt;br&gt;EEPROM ADC/DAC Tx Power&lt;br&gt;SDA&lt;br&gt;Rx Power&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+## **Transceiver functional diagram** 
+
+## **Absolute Maximum Ratings** 
+
+|**Parameter**|**Symbol**|**Min**|**Max**|**Unit**|
+|---|---|---|---|---|
+|Supply Voltage|Vcc|-0.5|4.5|V|
+|Storage Temperature|Ts|-40|+85|°C|
+|Operating Humidity|-|5|85|%|
+
+
+
+## **Recommended Operating Conditions** 
+
+|**Parameter**||**Symbol**|**Min**|**Typical**|**Max**|**Unit*
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"LINK-PP"</span>,
+  <span class="key">"model"</span>: [
+    "LS-CWxx1G-A0x",
+    "LS-CWxx1G-A0C",
+    "LS-CWxx1G-A0I"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_DFB_CWDM",
+    "LASER_DFB"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "APD"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1270</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1610</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1270</span>,
+    <span class="num">1290</span>,
+    <span class="num">1310</span>,
+    <span class="num">1330</span>,
+    <span class="num">1350</span>,
+    <span class="num">1370</span>,
+    <span class="num">1390</span>,
+    <span class="num">1410</span>,
+    <span class="num">1430</span>,
+    <span class="num">1450</span>,
+    <span class="num">1470</span>,
+    <span class="num">1490</span>,
+    <span class="num">1510</span>,
+    <span class="num">1530</span>,
+    <span class="num">1550</span>,
+    <span class="num">1570</span>,
+    <span class="num">1590</span>,
+    <span class="num">1610</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "CWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "pluggable_hot"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-40</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85</span>,
+  <span class="key">"power_consumption_w"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: <span class="null">null</span>,
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">0.1</span>,
+    <span class="num">1.063</span>,
+    <span class="num">1.25</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">100</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">5.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-32</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-9</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">9.0</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-40</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-33</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">9.0</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [
+    <span class="num">30</span>
+  ],
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>,
+    <span class="num">4</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Operating case temperature grades: Standard <span class="num">0</span> to +70°C, Extended <span class="num">-20</span> to +85°C, Industrial <span class="num">-40</span> to +85°C (LS-CWxx1G-A0C <span class="num">0</span>°C~+70°C, LS-CWxx1G-A0I <span class="num">-40</span>°C~+85°C). Transmitter centre wavelength min/max given as λc-6.5 nm and λc+6.5 nm per order-code λC. Receiver sensitivity and overload per Note <span class="num">3</span>: PRBS <span class="num">2</span>^7-1 @1250Mbps, BER ≤1×10^-12. Average output power Note <span class="num">1</span>: launched into SMF. Supply current Icc max <span class="num">300</span> mA at Vcc <span class="num">3.135</span>–3.465 V (not stated as power in W). Compatible with RoHS."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "LS-CWxx1G-A0x",
+    "1.25Gbps SFP CWDM Transceiver, Single Mode, <span class="num">100</span>km Reach",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Diagnostics",
+    "Ordering information"
+  ],
+  <span class="key">"suggestions"</span>: <span class="null">null</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">LS-CWxx1G-A0x</span> <span class="badge">LS-CWxx1G-A0C</span> <span class="badge">LS-CWxx1G-A0I</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1270.0</span> <span class="badge">1290.0</span> <span class="badge">1310.0</span> <span class="badge">1330.0</span> <span class="badge">1350.0</span> <span class="badge">1370.0</span> <span class="badge">1390.0</span> <span class="badge">1410.0</span> <span class="badge">1430.0</span> <span class="badge">1450.0</span> <span class="badge">1470.0</span> <span class="badge">1490.0</span> <span class="badge">1510.0</span> <span class="badge">1530.0</span> <span class="badge">1550.0</span> <span class="badge">1570.0</span> <span class="badge">1590.0</span> <span class="badge">1610.0</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">0.1</span> <span class="badge">1.063</span> <span class="badge">1.25</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>LINK-PP</td></tr>
+<tr><td>form_factor</td><td>SFP</td></tr>
+<tr><td>standards_claimed</td><td>SFP MSA, SFF-8472</td></tr>
+<tr><td>emitter_type</td><td>LASER_DFB_CWDM, LASER_DFB</td></tr>
+<tr><td>photodetector_type</td><td>APD</td></tr>
+<tr><td>wavelength_min_nm</td><td>1270.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>1610.0</td></tr>
+<tr><td>wavelength_band</td><td>CWDM</td></tr>
+<tr><td>mounting_type</td><td>pluggable_hot</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>reach_km</td><td>100.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>0.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>5.0</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-32.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-9.0</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>extinction_ratio_db</td><td>9.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-40.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-33.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>9.0</td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td>30.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5, 4.0</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Operating case temperature grades: Standard 0 to +70°C, Extended -20 to +85°C, Industrial -40 to +85°C (LS-CWxx1G-A0C 0°C~+70°C, LS-CWxx1G-A0I -40°C~+85°C). Transmitter centre wavelength min/max given as λc-6.5 nm and λc+6.5 nm per order-code λC. Receiver sensitivity and overload per Note 3: PRBS 2^7-1 @1250Mbps, BER ≤1×10^-12. Average output power Note 1: launched into SMF. Supply current Icc max 300 mA at Vcc 3.135–3.465 V (not stated as power in W). Compatible with RoHS.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>LS-CWxx1G-A0x, 1.25Gbps SFP CWDM Transceiver, Single Mode, 100km Reach, Product Features, Applications, Description, Recommended Operating Conditions, Optical and Electrical Characteristics, Notes:, Diagnostics, Ordering information</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_center_nm</th><th>bit_rate_gbps</th></tr><tr><td><strong>CWDM 1270 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1270.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1290 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1290.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1310 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1310.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1330 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1330.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1350 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1350.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1370 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1370.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1390 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1390.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1410 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1410.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1430 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1430.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1450 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1450.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1470 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1470.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1490 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1490.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1510 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1510.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1530 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1530.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1550 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1550.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1570 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1570.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1590 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1590.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1610 nm, 1.25 Gbps, commercial (0 to +70 °C)</strong></td><td>LS-CWxx1G-A0C</td><td>1610.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1270 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1270.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1290 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1290.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1310 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1310.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1330 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1330.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1350 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1350.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1370 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1370.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1390 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1390.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1410 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1410.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1430 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1430.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1450 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1450.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1470 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1470.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1490 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1490.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1510 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1510.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1530 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1530.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1550 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1550.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1570 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1570.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1590 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1590.0</td><td>1.25</td></tr><tr><td><strong>CWDM 1610 nm, 1.25 Gbps, industrial (-40 to +85 °C)</strong></td><td>LS-CWxx1G-A0I</td><td>1610.0</td><td>1.25</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 00:26
+</footer>
+
+</div>
+</body>
+</html>

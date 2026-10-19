@@ -1,0 +1,88 @@
+{
+  "modes": [
+    {
+      "label": "FCBG110SD1Cxx-WX 0.5 m (Z5)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.5
+    },
+    {
+      "label": "FCBG110SD1Cxx-WX 1 m (01)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 1.0
+    },
+    {
+      "label": "FCBG110SD1Cxx-WX 1.5 m (A5)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 1.5
+    },
+    {
+      "label": "FCBG110SD1Cxx-WX 2 m (02)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 2.0
+    },
+    {
+      "label": "FCBG110SD1Cxx-WX 2.5 m (B5)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 2.5
+    },
+    {
+      "label": "FCBG110SD1Cxx-WX 3 m (03)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 3.0
+    },
+    {
+      "label": "FCBG110SD1Cxx-WX 3.5 m (C5)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 3.5
+    },
+    {
+      "label": "FCBG110SD1Cxx-WX 7 m (07)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 7.0
+    },
+    {
+      "label": "FCBG110SD1Cxx-WX 10 m (10)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 10.0
+    },
+    {
+      "label": "FCBG110SD1Cxx-WX 15 m (15)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 15.0
+    },
+    {
+      "label": "FCBG110SD1Cxx-WX 20 m (20)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 20.0
+    },
+    {
+      "label": "FCBG110SD1Cxx-WX 30 m (30)",
+      "host_interface_name": "SFI Limiting",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 30.0
+    }
+  ]
+}

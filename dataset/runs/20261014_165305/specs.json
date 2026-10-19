@@ -1,0 +1,206 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TQD032-TUNC-SO"
+  ],
+  "form_factor": [
+    "QSFP-DD",
+    "QSFP-DD_type-2",
+    "QSFP-DD_type-2A"
+  ],
+  "standards_claimed": [
+    "OIF 400ZR",
+    "IEEE 802.3bs",
+    "IEEE P802.3bs",
+    "QSFP-DD MSA",
+    "CMIS5.0"
+  ],
+  "wavelength_band": [
+    "C-band",
+    "ITU C-Band",
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    191.3
+  ],
+  "frequency_max_thz": [
+    196.1
+  ],
+  "channel_spacing_ghz": [
+    6.25,
+    75.0,
+    100.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    17.9
+  ],
+  "host_interface_name": [
+    "400GAUI-8",
+    "100GAUI-2",
+    "400GBASE-R",
+    "100GBASE-R"
+  ],
+  "media_interface_name": [
+    "OIF 400ZR, app code 0x01",
+    "OIF 400ZR, app code 0x02"
+  ],
+  "media_interface_id_hex": [
+    "0x3E",
+    "0x3F"
+  ],
+  "frame": [
+    "1x 400GAUI-8",
+    "8x 50G",
+    "4x 100GAUI-2",
+    "2x 50G"
+  ],
+  "standards_code": [
+    "OIF 400ZR",
+    "app code 0x01",
+    "app code 0x02",
+    "400GBASE-R",
+    "4 × 100GBASE-R"
+  ],
+  "baud_rate_gbaud": [
+    59.8,
+    60.0
+  ],
+  "bit_rate_gbps": [
+    400.0
+  ],
+  "modulation_format": [
+    "QAM_16-DP",
+    "QAM_16"
+  ],
+  "reach_km": [
+    120.0
+  ],
+  "tx_power_min_dbm": [
+    -10.0
+  ],
+  "tx_power_max_dbm": [
+    -6.0
+  ],
+  "tx_in_band_osnr_db": [
+    34.0
+  ],
+  "tx_out_of_band_osnr_db": [
+    30.0
+  ],
+  "rx_sensitivity_dbm": [
+    -20.0,
+    -21.0
+  ],
+  "rx_osnr_db": [
+    26.0
+  ],
+  "rx_overload_dbm": [
+    1.0
+  ],
+  "cd_tolerance_ps_nm": [
+    4000.0
+  ],
+  "fec_type": [
+    "CFEC"
+  ],
+  "los_assert_dbm": [
+    -28.0
+  ],
+  "number_of_lanes": [
+    8,
+    2
+  ],
+  "penalties": [
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 0.5,
+      "penalized_value": 26.5,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -14.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 27.0,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -15.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 0.5,
+      "penalized_value": 26.5,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -14.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 27.0,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -15.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 0.5,
+      "penalized_value": 26.5,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -14.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 27.0,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -15.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3"
+    }
+  ],
+  "notes": "Overview states commercial C-temp 0°C to 70°C; GENERIC lists operating temperature +15°C to +75°C with footnote that module turns up from cold start at -5°C and reaches spec after self-heating to min temperature. Nominal wavelengths line lists 6.25GHz Grid; OVERVIEW states tunable ITU C-Band at 100 GHz grid (75 GHz grid optional). Title includes D9128-D9612. Rx sens measured at OSNR > 36dB. Rx @ OSNR and Rx OSNR penalty columns per footnote 2: [Min OSNR Value @ Min Rx power for the OSNR value]. Tx power footnote: minimum without attenuation; up to 10dB attenuation from max; provisional range 10dB. Power consumption 17.9W @400G EOL; +0.6W if CD range doubled. Absolute max Rx signal +13dBm, Rx total +15dBm. Application code 3 row uses host format 4x 100GAUI-2 in overview CMIS table but application optical table lists 1x 400GAUI-8 for all three codes. LOS assert set for 400G modes, configurable per module.",
+  "provenance_datasheet_sections": [
+    "TQD032-TUNC-SO",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "GENERIC",
+    "OPTICAL SPECIFICATION - APPLICATION CODES",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether channel grid is 6.25 GHz, 75 GHz, or 100 GHz as primary. Consider schema fields for storage temperature, receiver turn-up time, absolute maximum input power, and latency (8us stated in ordering)."
+}

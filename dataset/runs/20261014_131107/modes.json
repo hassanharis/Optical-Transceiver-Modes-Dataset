@@ -1,0 +1,76 @@
+{
+  "modes": [
+    {
+      "label": "CWDM 1470nm 160km FE/STM-1",
+      "model": "SO-SFP-100Base-L160D-C47",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0
+    },
+    {
+      "label": "CWDM 1490nm 160km FE/STM-1",
+      "model": "SO-SFP-100Base-L160D-C49",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0
+    },
+    {
+      "label": "CWDM 1510nm 160km FE/STM-1",
+      "model": "SO-SFP-100Base-L160D-C51",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0
+    },
+    {
+      "label": "CWDM 1530nm 160km FE/STM-1",
+      "model": "SO-SFP-100Base-L160D-C53",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0
+    },
+    {
+      "label": "CWDM 1550nm 160km FE/STM-1",
+      "model": "SO-SFP-100Base-L160D-C55",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0
+    },
+    {
+      "label": "CWDM 1570nm 160km FE/STM-1",
+      "model": "SO-SFP-100Base-L160D-C57",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0
+    },
+    {
+      "label": "CWDM 1590nm 160km FE/STM-1",
+      "model": "SO-SFP-100Base-L160D-C59",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0
+    },
+    {
+      "label": "CWDM 1610nm 160km FE/STM-1",
+      "model": "SO-SFP-100Base-L160D-C61",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0
+    }
+  ]
+}

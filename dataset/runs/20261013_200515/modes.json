@@ -1,0 +1,108 @@
+{
+  "modes": [
+    {
+      "label": "HFBR-5961LZ SONET OC-3/STM-1",
+      "model": "HFBR-5961LZ",
+      "wavelength_center_nm": 1308.0,
+      "power_consumption_w": 0.4,
+      "standards_code": "SONET OC-3",
+      "baud_rate_gbaud": 0.15552,
+      "tx_power_min_dbm": -22.5,
+      "rx_sensitivity_dbm": -31.0,
+      "post_fec_ber_target": 1e-10,
+      "los_assert_dbm": -31.0,
+      "los_deassert_dbm": -45.0
+    },
+    {
+      "label": "HFBR-5961LZ Fast Ethernet/FDDI",
+      "model": "HFBR-5961LZ",
+      "wavelength_center_nm": 1308.0,
+      "power_consumption_w": 0.4,
+      "standards_code": "Fast Ethernet",
+      "baud_rate_gbaud": 0.125,
+      "tx_power_min_dbm": -22.5,
+      "rx_sensitivity_dbm": -31.8,
+      "post_fec_ber_target": 2.5e-10,
+      "los_assert_dbm": -33.0,
+      "los_deassert_dbm": -45.0
+    },
+    {
+      "label": "HFBR-5961ALZ SONET OC-3/STM-1",
+      "model": "HFBR-5961ALZ",
+      "wavelength_center_nm": 1308.0,
+      "power_consumption_w": 0.4,
+      "standards_code": "SONET OC-3",
+      "baud_rate_gbaud": 0.15552,
+      "tx_power_min_dbm": -22.5,
+      "rx_sensitivity_dbm": -31.0,
+      "post_fec_ber_target": 1e-10,
+      "los_assert_dbm": -31.0,
+      "los_deassert_dbm": -45.0
+    },
+    {
+      "label": "HFBR-5961ALZ Fast Ethernet/FDDI",
+      "model": "HFBR-5961ALZ",
+      "wavelength_center_nm": 1308.0,
+      "power_consumption_w": 0.4,
+      "standards_code": "Fast Ethernet",
+      "baud_rate_gbaud": 0.125,
+      "tx_power_min_dbm": -22.5,
+      "rx_sensitivity_dbm": -31.8,
+      "post_fec_ber_target": 2.5e-10,
+      "los_assert_dbm": -33.0,
+      "los_deassert_dbm": -45.0
+    },
+    {
+      "label": "HFBR-5961GZ SONET OC-3/STM-1",
+      "model": "HFBR-5961GZ",
+      "wavelength_center_nm": 1308.0,
+      "power_consumption_w": 0.4,
+      "standards_code": "SONET OC-3",
+      "baud_rate_gbaud": 0.15552,
+      "tx_power_min_dbm": -22.5,
+      "rx_sensitivity_dbm": -31.0,
+      "post_fec_ber_target": 1e-10,
+      "los_assert_dbm": -31.0,
+      "los_deassert_dbm": -45.0
+    },
+    {
+      "label": "HFBR-5961GZ Fast Ethernet/FDDI",
+      "model": "HFBR-5961GZ",
+      "wavelength_center_nm": 1308.0,
+      "power_consumption_w": 0.4,
+      "standards_code": "Fast Ethernet",
+      "baud_rate_gbaud": 0.125,
+      "tx_power_min_dbm": -22.5,
+      "rx_sensitivity_dbm": -31.8,
+      "post_fec_ber_target": 2.5e-10,
+      "los_assert_dbm": -33.0,
+      "los_deassert_dbm": -45.0
+    },
+    {
+      "label": "HFBR-5961AGZ SONET OC-3/STM-1",
+      "model": "HFBR-5961AGZ",
+      "wavelength_center_nm": 1308.0,
+      "power_consumption_w": 0.4,
+      "standards_code": "SONET OC-3",
+      "baud_rate_gbaud": 0.15552,
+      "tx_power_min_dbm": -22.5,
+      "rx_sensitivity_dbm": -31.0,
+      "post_fec_ber_target": 1e-10,
+      "los_assert_dbm": -31.0,
+      "los_deassert_dbm": -45.0
+    },
+    {
+      "label": "HFBR-5961AGZ Fast Ethernet/FDDI",
+      "model": "HFBR-5961AGZ",
+      "wavelength_center_nm": 1308.0,
+      "power_consumption_w": 0.4,
+      "standards_code": "Fast Ethernet",
+      "baud_rate_gbaud": 0.125,
+      "tx_power_min_dbm": -22.5,
+      "rx_sensitivity_dbm": -31.8,
+      "post_fec_ber_target": 2.5e-10,
+      "los_assert_dbm": -33.0,
+      "los_deassert_dbm": -45.0
+    }
+  ]
+}

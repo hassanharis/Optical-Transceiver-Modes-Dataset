@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — QSFPTek [&#x27;QT-QSFP28-ZR4&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">2021-09-27108228.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">7</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">10</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 19:05</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">
+**----- Start of picture text -----**&lt;br&gt;
+100GBASE-ZR4 QSFP28 1310nm 80km DDM SMF Transceiver www.qsfptek.com&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+# **100GBASE-ZR4 QSFP28 1310nm 80km DDM SMF Transceiver** 
+
+# **P/N: QT-QSFP28-ZR4** 
+
+## **Product Features** 
+
+- Hot pluggable QSFP28 MSA form factor 
+
+- Compliant to Ethernet 100GBASE-ZR4 Lite 
+
+- Supports 103.1Gb/s aggregate bit rate 
+
+- Up to 80km reach for G.652 SMF with FEC 
+
+- Single +3.3V power supply 
+
+- Operating case temperature: 0~70oC 
+
+- Transmitter: cooled 4x25Gb/s LAN WDM EML TOSA (1295.56, 1300.05,1304.58,1309.14nm) 
+
+- Receiver: 4x25Gb/s APD ROSA 
+
+- 4x25G electrical interface (OIF CEI-28G-VSR) 
+
+- Maximum power consumption 4.5W 
+
+- Duplex LC receptacle 
+
+- RoHS-6 compliant 
+
+## **Applications** 
+
+- 100GBASE-ZR4 Ethernet Links 
+
+- Infiniband QDR and DDR interconnects 
+
+- Client-side 100G Telecom connections 
+
+sales@qsfptek.com 
+
+1/7 
+
+Rev1.0 
+
+
+**----- Start of picture text -----**&lt;br&gt;
+100GBASE-ZR4 QSFP28 1310nm 80km DDM SMF Transceiver www.qsfptek.com&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+## **1. Absolute Maximum Ratings** 
+
+It has to be noted that the operation in excess of any individual absolute maximum ratings might cause permanent damage to this module. 
+
+|**Parameter**|**Symbol**|**Min**|**Max**|**Units**|**Notes**|
+|---|---|---|---|---|---|
+|Storage Temperature|TS|-40|85|degC||
+|OperatingCase Temperature|TOP|0|70|degC||
+|Power SupplyVoltage|VCC|-0.5|3.6|V||
+|Relative Humidity (non-condensation)|RH|0|85|%||
+|Damage Threshold,each Lane|THd|-3.0||dBm||
+
+
+
+## **2. Recommended Operating Conditions and Power Supply Requirements** 
+
+|**Parameter**|**Symbol**|**Min**|**Typical**|**Max**|**Units**|**Notes**|
+|---|---|---|---|---|---|---|
+|OperatingCase Temperature|TOP|0||70|degC||
+|Power SupplyVoltage|VCC|3.135|3.3|3.465|V||
+|Data Rate,each Lane|||25.78125||Gb/s||
+|Data Rate Accuracy||-100||100|ppm||
+|Control Input Voltage High||2||Vcc|V||
+|Control Input Voltage Low||0||0.8|V||
+|Link Dist
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"QSFPTek"</span>,
+  <span class="key">"model"</span>: [
+    "QT-QSFP28-ZR4"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "QSFP28"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "QSFP28 MSA",
+    "Ethernet <span class="num">100</span>GBASE-ZR4 Lite",
+    "OIF CEI-28G-VSR",
+    "RoHS-6"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_EML"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "APD"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1294.53</span>,
+    <span class="num">1299.02</span>,
+    <span class="num">1303.54</span>,
+    <span class="num">1308.09</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1296.59</span>,
+    <span class="num">1301.09</span>,
+    <span class="num">1305.63</span>,
+    <span class="num">1310.19</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1295.56</span>,
+    <span class="num">1300.05</span>,
+    <span class="num">1304.58</span>,
+    <span class="num">1309.14</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "LAN WDM",
+    "1310nm"
+  ],
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"mounting_type"</span>: [
+    "pluggable_hot"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF_G652",
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">4.5</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "CEI-28G-VSR"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: [
+    "100GBASE-ZR4"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: [
+    "4x25G"
+  ],
+  <span class="key">"standards_code"</span>: [
+    "100GBASE-ZR4 Lite",
+    "100GBASE-ZR4"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">103.1</span>,
+    <span class="num">25.78125</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">80</span>,
+    <span class="num">30</span>,
+    <span class="num">40</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-2.9</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">4.5</span>,
+    <span class="num">10.5</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-14.65</span>,
+    <span class="num">-12.65</span>,
+    <span class="num">-18.65</span>,
+    <span class="num">-16.65</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-4.9</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: [
+    <span class="num">5</span>e-05
+  ],
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">7</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-26</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-24</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: [
+    <span class="num">-26</span>
+  ],
+  <span class="key">"transmitter_reflectance_db"</span>: [
+    <span class="num">-12</span>
+  ],
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">7</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [
+    <span class="num">20</span>
+  ],
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [
+    <span class="num">30</span>
+  ],
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Aggregate bit rate <span class="num">103.1</span> Gb/s stated in features. Reach: up to <span class="num">80</span> km on G.652 SMF with FEC (features/ordering); Section <span class="num">2</span> lists link distance without FEC max <span class="num">30</span> km and with FEC max <span class="num">40</span> km (Note <span class="num">1</span>: for fiber insertion loss <span class="num">0.4</span> dB/km). Rx sensitivity values are OMA at stated BER (1e-12 or <span class="num">5</span>e-5); stressed vs unstressed pairs listed. Average receive power ranges <span class="num">-16.9</span> to <span class="num">-4.9</span> dBm (30 km) and <span class="num">-20.9</span> to <span class="num">-4.9</span> dBm (40 km). TDP each lane <span class="num">-0.65</span> to <span class="num">2.5</span> dB; vertical eye closure penalty <span class="num">1.5</span> dB is a stressed sensitivity test condition per Note <span class="num">4</span>, not a module penalty point. Min launch power based on ER not exceeding <span class="num">9.5</span> dB per optical Note <span class="num">1.</span>"</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "100GBASE-ZR4 QSFP28 <span class="num">1310</span>nm <span class="num">80</span>km DDM SMF Transceiver",
+    "P/N: QT-QSFP28-ZR4",
+    "Product Features",
+    "Applications",
+    "1. Absolute Maximum Ratings",
+    "2. Recommended Operating Conditions and Power Supply Requirements",
+    "3. Electrical Characteristics",
+    "4. Optical Characteristics",
+    "5. Digital Diagnostic Functions",
+    "6. Pin Assignment and Description",
+    "8. Ordering Information"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Datasheet does not state modulation format, FEC type, OSNR, or CD/PMD/PDL tolerance. tx_power_max includes both per-lane average launch (4.5 dBm) and total average launch power (10.5 dBm)—consider splitting schema fields for per-lane vs aggregate TX power."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>wavelength_min_nm</td><td><span class="badge">1294.53</span> <span class="badge">1299.02</span> <span class="badge">1303.54</span> <span class="badge">1308.09</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1296.59</span> <span class="badge">1301.09</span> <span class="badge">1305.63</span> <span class="badge">1310.19</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1295.56</span> <span class="badge">1300.05</span> <span class="badge">1304.58</span> <span class="badge">1309.14</span></td></tr>
+<tr><td>wavelength_band</td><td><span class="badge">LAN WDM</span> <span class="badge">1310nm</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">100GBASE-ZR4 Lite</span> <span class="badge">100GBASE-ZR4</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">103.1</span> <span class="badge">25.78125</span></td></tr>
+<tr><td>reach_km</td><td><span class="badge">80.0</span> <span class="badge">30.0</span> <span class="badge">40.0</span></td></tr>
+<tr><td>tx_power_max_dbm</td><td><span class="badge">4.5</span> <span class="badge">10.5</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-14.65</span> <span class="badge">-12.65</span> <span class="badge">-18.65</span> <span class="badge">-16.65</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>QSFPTek</td></tr>
+<tr><td>model</td><td>QT-QSFP28-ZR4</td></tr>
+<tr><td>form_factor</td><td>QSFP28</td></tr>
+<tr><td>standards_claimed</td><td>QSFP28 MSA, Ethernet 100GBASE-ZR4 Lite, OIF CEI-28G-VSR, RoHS-6</td></tr>
+<tr><td>emitter_type</td><td>LASER_EML</td></tr>
+<tr><td>photodetector_type</td><td>APD</td></tr>
+<tr><td>channel_total</td><td>4</td></tr>
+<tr><td>mounting_type</td><td>pluggable_hot</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF_G652, SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>4.5</td></tr>
+<tr><td>host_interface_name</td><td>CEI-28G-VSR</td></tr>
+<tr><td>media_interface_name</td><td>100GBASE-ZR4</td></tr>
+<tr><td>frame</td><td>4x25G</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-2.9</td></tr>
+<tr><td>rx_overload_dbm</td><td>-4.9</td></tr>
+<tr><td>pre_fec_ber_threshold</td><td>5e-05</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>extinction_ratio_db</td><td>7.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-26.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-24.0</td></tr>
+<tr><td>receiver_reflectance_db</td><td>-26.0</td></tr>
+<tr><td>transmitter_reflectance_db</td><td>-12.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>7.0</td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td>20.0</td></tr>
+<tr><td>number_of_lanes</td><td>4</td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td>30.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Aggregate bit rate 103.1 Gb/s stated in features. Reach: up to 80 km on G.652 SMF with FEC (features/ordering); Section 2 lists link distance without FEC max 30 km and with FEC max 40 km (Note 1: for fiber insertion loss 0.4 dB/km). Rx sensitivity values are OMA at stated BER (1e-12 or 5e-5); stressed vs unstressed pairs listed. Average receive power ranges -16.9 to -4.9 dBm (30 km) and -20.9 to -4.9 dBm (40 km). TDP each lane -0.65 to 2.5 dB; vertical eye closure penalty 1.5 dB is a stressed sensitivity test condition per Note 4, not a module penalty point. Min launch power based on ER not exceeding 9.5 dB per optical Note 1.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>100GBASE-ZR4 QSFP28 1310nm 80km DDM SMF Transceiver, P/N: QT-QSFP28-ZR4, Product Features, Applications, 1. Absolute Maximum Ratings, 2. Recommended Operating Conditions and Power Supply Requirements, 3. Electrical Characteristics, 4. Optical Characteristics, 5. Digital Diagnostic Functions, 6. Pin Assignment and Description, 8. Ordering Information</td></tr>
+<tr><td>suggestions</td><td>Datasheet does not state modulation format, FEC type, OSNR, or CD/PMD/PDL tolerance. tx_power_max includes both per-lane average launch (4.5 dBm) and total average launch power (10.5 dBm)—consider splitting schema fields for per-lane vs aggregate TX power.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_center_nm</th><th>wavelength_band</th><th>standards_code</th><th>bit_rate_gbps</th><th>reach_km</th><th>tx_power_max_dbm</th><th>rx_sensitivity_dbm</th></tr><tr><td><strong>LAN WDM lane L0</strong></td><td>1294.53</td><td>1296.59</td><td>1295.56</td><td>LAN WDM</td><td>100GBASE-ZR4 Lite</td><td>25.78125</td><td>80.0</td><td>4.5</td><td>-14.65</td></tr><tr><td><strong>LAN WDM lane L1</strong></td><td>1299.02</td><td>1301.09</td><td>1300.05</td><td>LAN WDM</td><td>100GBASE-ZR4 Lite</td><td>25.78125</td><td>80.0</td><td>4.5</td><td>-12.65</td></tr><tr><td><strong>LAN WDM lane L2</strong></td><td>1303.54</td><td>1305.63</td><td>1304.58</td><td>LAN WDM</td><td>100GBASE-ZR4 Lite</td><td>25.78125</td><td>80.0</td><td>4.5</td><td>-18.65</td></tr><tr><td><strong>LAN WDM lane L3</strong></td><td>1308.09</td><td>1310.19</td><td>1309.14</td><td>LAN WDM</td><td>100GBASE-ZR4 Lite</td><td>25.78125</td><td>80.0</td><td>4.5</td><td>-16.65</td></tr><tr><td><strong>G.652 30 km without FEC</strong></td><td>1294.53</td><td>1296.59</td><td>1295.56</td><td>1310nm</td><td>100GBASE-ZR4</td><td>103.1</td><td>30.0</td><td>10.5</td><td>-14.65</td></tr><tr><td><strong>G.652 40 km with FEC</strong></td><td>1294.53</td><td>1296.59</td><td>1295.56</td><td>1310nm</td><td>100GBASE-ZR4</td><td>103.1</td><td>40.0</td><td>10.5</td><td>-12.65</td></tr><tr><td><strong>G.652 80 km with FEC (ZR4)</strong></td><td>1294.53</td><td>1296.59</td><td>1295.56</td><td>1310nm</td><td>100GBASE-ZR4 Lite</td><td>103.1</td><td>80.0</td><td>10.5</td><td>-18.65</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 19:05
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "L9-SC31551G-20PPI5"
+  ],
+  "form_factor": [
+    "1x9"
+  ],
+  "standards_claimed": [
+    "ITU-T G.957",
+    "IEC 825"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1270.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1350.0,
+    1610.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    1
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "SC",
+    "ST",
+    "FC"
+  ],
+  "fiber_type": [
+    "MMF_OM1",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "PECL",
+    "LVPECL"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "G.957",
+    "STM-1/OC-3"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1.25
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [],
+  "reach_km": [
+    0.55,
+    20.0,
+    60.0
+  ],
+  "tx_power_min_dbm": [
+    -8.0
+  ],
+  "tx_power_max_dbm": [
+    -3.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -23.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    8.2
+  ],
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    8.2
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    1
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "L9-SC31551G-20PPI5 order row: 1310nm FP Tx, PIN Rx, -40~85°C industrial, 20km, Simplex SC, 5V, PECL TX/RX/SD. Launch power, sensitivity, and max input power rows are noted for 20km. Recommended operating data rate is 10–1250–1500 Mbps; order table rate is 1.25 Gbps. Features cite up to 0.55 km on 62.5/125μm MMF and up to 60 km on 9/125μm SMF; order table reach for this PN is 20km. Signal detect optical range -38 to -23 dBm; hysteresis 0.5 dB. Supply current Icc max 260 mA (recommended) / 250 mA (transmitter electrical table); power in watts not stated.",
+  "provenance_datasheet_sections": [
+    "L9-SC31551G-20PPI5",
+    "1×9 1.25Gbps SC Bi-Directional Transceiver",
+    "Features",
+    "Applications",
+    "Standard",
+    "Order Information",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Transmitter Optical ,Electrical characteristics",
+    "Receiver Optical Electrical Characteristics",
+    "Regulatory Compliance"
+  ],
+  "suggestions": "Add schema fields for supply voltage (3.3V/5V), supply current (mA), signal detect range (dBm), optical rise/fall time, and output spectrum width (Δλ). Clarify mapping of signal detect range to LOS assert/deassert."
+}

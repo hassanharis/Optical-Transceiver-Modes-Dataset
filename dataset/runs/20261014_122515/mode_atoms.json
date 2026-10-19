@@ -1,0 +1,140 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "100GBASE-PSM4",
+      "IEEE802.3bj",
+      "100GbE"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      25.78
+    ],
+    "reach_km": [
+      2.0,
+      0.5
+    ],
+    "tx_power_max_dbm": [
+      8.0,
+      2.0
+    ],
+    "rx_sensitivity_dbm": [
+      -10.2,
+      -7.8
+    ],
+    "fec_type": [
+      "RS_528_514"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-QSFP28-PSM4"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "100GBASE-PSM4",
+      "QSFP28 MSA",
+      "IEEE802.3bj"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_min_nm": [
+      1295.0
+    ],
+    "wavelength_max_nm": [
+      1325.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "MPO",
+      "MPO/APC",
+      "MTP"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      3.5
+    ],
+    "host_interface_name": [
+      "QSFP28"
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [
+      "100GBASE-PSM4"
+    ],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "modulation_format": [],
+    "tx_power_min_dbm": [
+      -5.5
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [
+      2.0
+    ],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -15.0
+    ],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "100GBASE PSM4 MSA minimum operating range up to 500m over SM 8-fiber ribbon; module optical performance enables up to 2km. FEC required by host per IEEE802.3bj RS(528,514). Optical parameters BER 5 x 10[-5]; FEC yields BER better than 1 x 10[-12]. Power budget 0 – 3.3dB; path penalty 2.9dB. Footnote 1) aggregated line rate 100GbE; 2) per lane; 3) average power; 4) receiver min input and overload specified at BER 5x10-5. Storage temperature -40°C to +85°C. Transmission media SM (1x MPO/APC); single 12 lane optical fiber MPO/MTP-connector interface.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP28-PSM4",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Table lists two minimum input power values (-10.2dBm and -7.8dBm) without distinct row labels; clarify which BER or condition applies to each. Path penalty 2.9dB is not tied to a penalized optical parameter in the table."
+  }
+}

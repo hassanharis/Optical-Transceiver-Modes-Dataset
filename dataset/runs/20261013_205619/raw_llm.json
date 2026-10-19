@@ -1,0 +1,96 @@
+{
+  "vendor": "Cinch Connectivity Solutions",
+  "model": [
+    "Lx10G-ST11xx",
+    "RR10G-ST11xx"
+  ],
+  "form_factor": [
+    "Low Profile RJ",
+    "Low Rider RJ"
+  ],
+  "standards_claimed": [],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "solder",
+    "screw",
+    "mount_surface"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF"
+  ],
+  "temp_min_c": -40,
+  "temp_max_c": 85,
+  "power_consumption_w": null,
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": null,
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": null,
+  "frame": [],
+  "standards_code": [
+    "10G Ethernet"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    10.3125
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [],
+  "reach_km": null,
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Title states up to 50 Meters reach; schema field is km so not converted per exact-copy rule. Supply is +3.3 V per port; power in watts not stated. Max mechanical height 0.386 in. Ordering suffixes: N/T shell GND tabs; BLANK/B solder vs screw posts; H/M for -40 to 85 C with optional conformal coating. EN-60825/IEC-825/CDRH Class 1 compliant. Optional fiber pigtail and Parylene C coating.",
+  "provenance_datasheet_sections": [
+    "Lx10G-ST11xx Low Profile Optical Transceiver",
+    "Applications",
+    "Product Overview",
+    "Features",
+    "Ordering Information"
+  ],
+  "suggestions": "Add reach_m or allow reach with unit from source; add supply_voltage_v for 3.3 V modules without W rating."
+}

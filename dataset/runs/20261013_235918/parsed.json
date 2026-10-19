@@ -1,0 +1,48 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\lq-dac1140-xmnx.pdf",
+  "page_count": 7,
+  "table_count": 8,
+  "markdown_chars": 9452,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 20
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 20
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 16
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 9
+    }
+  ]
+}

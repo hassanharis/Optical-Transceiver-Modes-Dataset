@@ -1,0 +1,177 @@
+{
+  "vendor": "Broadcom",
+  "model": [
+    "AFBR-52H5PZ"
+  ],
+  "form_factor": [
+    "SFP-DD"
+  ],
+  "standards_claimed": [
+    "SFP-DD MSA Rev 4.2",
+    "SFP-DD MIS Rev 2.0",
+    "ANSI Fibre Channel FC-PI-7",
+    "SFF-8472",
+    "SFF-8431",
+    "FC-PI-7",
+    "FC-PI-6",
+    "FC-PI-5",
+    "SN-60092019"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "SN"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF 50/125µm",
+    "MMF_OM3"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 75.0,
+  "power_consumption_w": [
+    3.2
+  ],
+  "host_interface_name": [
+    "16GFC",
+    "32GFC",
+    "64GFC"
+  ],
+  "host_interface_id_hex": [
+    "0x27",
+    "0x28",
+    "0x29"
+  ],
+  "host_interface_id": [
+    39,
+    40,
+    41
+  ],
+  "media_interface_id_hex": [
+    "0x15",
+    "0x16",
+    "0x17"
+  ],
+  "media_interface_id": [
+    21,
+    22,
+    23
+  ],
+  "standards_code": [
+    "64GFC",
+    "32GFC",
+    "16GFC",
+    "FC-PI-7",
+    "FC-PI-6",
+    "FC-PI-5"
+  ],
+  "baud_rate_gbaud": [
+    28.9,
+    28.05,
+    14.025
+  ],
+  "bit_rate_gbps": [
+    57.8,
+    28.05,
+    14.025
+  ],
+  "modulation_format": [
+    "PAM4",
+    "NRZ"
+  ],
+  "tx_power_min_dbm": [
+    -7.5,
+    -6.2,
+    -7.8,
+    -4.5,
+    -5.9
+  ],
+  "tx_power_max_dbm": [
+    4.0,
+    3.0,
+    2.0
+  ],
+  "rx_sensitivity_dbm": [
+    -7.0,
+    -2.4,
+    -10.2,
+    -5.8,
+    -10.5,
+    -7.7
+  ],
+  "rx_overload_dbm": [
+    4.0,
+    5.0,
+    2.0,
+    0.0
+  ],
+  "fec_type": [
+    "KP4",
+    "RS_528_514"
+  ],
+  "post_fec_ber_target": [
+    0.000109,
+    1e-06,
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -7.0
+  ],
+  "receiver_reflectance_db": [
+    12.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Dual SFP-DD data paths (legacy SFP+ channel and DD channel); rates selected via Rate Select and I2C. 64GFC uses PAM4 at 28.9 GBd with RS(544,514) FEC per FC-PI-7; 32GFC NRZ 28.05 GBd with RS(528,514); 16GFC NRZ 14.025 GBd with no FEC per FC-PI-5. Many optical limits are OMAouter or average power per mode (Tables 10–15). 64GFC receiver sensitivity and stressed sensitivity are OMAouter at BER 1.09E-4. 32GFC/16GFC sensitivities are input OMA (peak-to-peak) with Fibre Channel encoded input. Max transmitter average power for 32GFC/16GFC is lesser of Class 1 laser limits or receive power max. Storage temperature –40°C to 85°C (absolute max) vs case operating 0°C to 75°C. No OSNR or reach (km) specifications stated.",
+  "provenance_datasheet_sections": [
+    "Description",
+    "Features",
+    "Transmitter Section",
+    "Receiver Section",
+    "Table 4:  Recommended Operating Conditions",
+    "Table 5:  Transceiver Electrical Characteristics",
+    "Table 6:  High-Speed Electrical Module Input Characteristics",
+    "Table 9:  High-Speed Electrical Module Output Characteristics",
+    "Table 10:  64GFC Mode Optical Transmitter Characteristics",
+    "Table 11:  64GFC Mode Optical Receiver Characteristics (per PC-PI-7)",
+    "Table 12:  32GFC Mode Optical Transmitter Characteristics",
+    "Table 13:  32GFC Mode Optical Receiver Characteristics",
+    "Table 14:  16GFC Mode Optical Transmitter Characteristics",
+    "Table 15:  16GFC Mode Optical Receiver Characteristics",
+    "Table 16:  Application Advertising Registers"
+  ],
+  "suggestions": "Add connector_type enum value SN for SN connector per SN-60092019. Clarify whether rx_sensitivity_dbm should separate OMA vs average power and per-rate tags. Host/media interface code names (beyond hex) are in SFP-DD MIS, not in this datasheet."
+}

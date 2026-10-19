@@ -1,0 +1,89 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-SM3106-40C",
+    "LS-SM3106-40I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1360.0,
+    1610.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "standards_code": [
+    "SONET OC-12"
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -9.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -28.0
+  ],
+  "rx_overload_dbm": [
+    -8.0
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -39.0
+  ],
+  "los_deassert_dbm": [
+    -29.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Data rate stated as 622 Mbps (not Gbps). Receiver sensitivity and overload measured with PRBS 2^23-1 @ 622 Mbps, BER ≤ 1×10^-12 (Note 3). Optical power launched into SMF (Note 1). Operating case temperature variants: Standard 0 to +70°C (LS-SM3106-40C), Extended -20 to +85°C, Industrial -40 to +85°C (LS-SM3106-40I). Supply current Icc max 300 mA at 3.135–3.465 V; power in Watts not stated. Transmitter centre wavelength 1260–1360 nm; receiver centre wavelength 1260–1610 nm. SMSR table entries are dashes with no numeric limits.",
+  "provenance_datasheet_sections": [
+    "LS-SM3106-40C",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Diagnostics",
+    "Ordering information"
+  ],
+  "suggestions": "Consider accepting bit_rate in Mbps or mapping 622 Mbps explicitly. SMSR row has no numeric values—distinguish missing vs N/A. Power draw could be derived only if policy allows V×Icc."
+}

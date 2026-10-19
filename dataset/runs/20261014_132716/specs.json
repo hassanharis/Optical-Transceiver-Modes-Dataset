@@ -1,0 +1,87 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-10GE-BX40D-2733",
+    "SO-SFP-10GE-BX40D-3327",
+    "SO-SFP-10GE-BX40D-2733-I",
+    "SO-SFP-10GE-BX40D-3327-I"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "IEEE 802.3ae"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1320.0
+  ],
+  "wavelength_max_nm": [
+    1280.0,
+    1340.0
+  ],
+  "wavelength_center_nm": [
+    1270.0,
+    1330.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "SFF-8431",
+    "SFF-8432"
+  ],
+  "media_interface_name": [
+    "10GBASE-ER",
+    "10GBASE-EW"
+  ],
+  "standards_code": [
+    "10GBASE-ER",
+    "10GBASE-EW",
+    "IEEE 802.3ae"
+  ],
+  "bit_rate_gbps": [
+    0.6,
+    11.3
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    1.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -15.0
+  ],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -18.0
+  ],
+  "penalties": [],
+  "notes": "Solution uses paired modules SO-SFP-10GE-BX40D-2733 (footnote 1: Tx 1260–1280 nm, Rx 1320–1340 nm) and SO-SFP-10GE-BX40D-3327 (footnote 2: Tx 1320–1340 nm, Rx 1260–1280 nm). Nominal wavelength Tx/Rx: 1270nm/1330nm and 1330nm/1270nm. Power budget 4.5 – 16dB. Operating temperature also -40°C to +85°C for I-temp (-I) ordering options. Storage temperature -40°C to +85°C. Tx output and Rx min/overload are average power (footnote 3). Rx sensitivity and overload measured at 10.3Gbps, BER ≤ 1x10-12, PRBS 231-1, back-to-back (footnote 4). IEEE 802.3ae 10GBASE-ER/EW defined only at 1550 nm; standard cited for bridgeable distance only.",
+  "provenance_datasheet_sections": [
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

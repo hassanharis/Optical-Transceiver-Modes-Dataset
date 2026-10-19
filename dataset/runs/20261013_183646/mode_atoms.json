@@ -1,0 +1,109 @@
+{
+  "multi_valued": {
+    "power_consumption_w": [
+      1.2,
+      1.5
+    ],
+    "standards_code": [
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "IEEE 802.3ae"
+    ],
+    "bit_rate_gbps": [
+      10.3125,
+      9.953
+    ],
+    "rx_sensitivity_dbm": [
+      -14.4,
+      -13.4,
+      -12.6,
+      -11.6,
+      -10.3
+    ]
+  },
+  "general": {
+    "model": [
+      "QT-SFP+-LR"
+    ],
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "IEEE 802.3ae",
+      "SFF-8431",
+      "SFF-8083"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1355.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "SFF-8431"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -6.5
+    ],
+    "tx_power_max_dbm": [
+      -0.5
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "receiver_reflectance_db": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      12.0
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "penalties": [],
+    "notes": "Operating case temperature also lists Industrial -40 to 85 °C as a product line option; ordering for QT-SFP+-LR specifies 0 °C ~ 70 °C. Receive sensitivity values include 10 km and 20 km footnote conditions (Notes3). Minimum launched power -6.5 dBm and extinction ratio Notes1/Notes2 reference trade-offs and MMF launch for optical power (Note 2). Transmitter and dispersion penalty 0 dB and BER ≤ 10^-12 per Notes4 @ 10.3125 Gbps PRBS 2^31-1. Absolute maximum RX input average power Pmax 0 dBm; receiver power damage max 1.5 dBm. Power consumption typical 1200 mW, max 1500 mW.",
+    "provenance_datasheet_sections": [
+      "10GBASE-LR SFP+ 1310nm 10km Transceiver",
+      "P/N: QT-SFP+-LR",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "1. Absolute maximum rating",
+      "2. Optical characteristics",
+      "Notes :",
+      "3. Electrical characteristics",
+      "6. Ordering information"
+    ]
+  }
+}

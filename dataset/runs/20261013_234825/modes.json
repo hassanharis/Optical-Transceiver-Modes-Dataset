@@ -1,0 +1,25 @@
+{
+  "modes": [
+    {
+      "label": "1000 Mbps only \u2014 SERDES host",
+      "power_consumption_w": 1.2,
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "10 Mbps \u2014 SGMII host (10/100/1000)",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "IEEE 802.3",
+      "bit_rate_gbps": 0.01
+    },
+    {
+      "label": "1000 Mbps \u2014 SGMII host (10/100/1000)",
+      "power_consumption_w": 1.05,
+      "host_interface_name": "SGMII",
+      "standards_code": "1000 Mb/s",
+      "bit_rate_gbps": 1.0
+    }
+  ]
+}

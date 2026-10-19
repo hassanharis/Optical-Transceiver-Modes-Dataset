@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "40GBASE-IR4 40GbE IR4 2km",
+      "standards_code": "40GBASE-IR4",
+      "bit_rate_gbps": 41.25
+    },
+    {
+      "label": "40GBASE-IR4 per-lane",
+      "standards_code": "40GBASE-IR4",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "40GbE aggregated",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25
+    },
+    {
+      "label": "40GbE per-lane",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 10.3125
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics</div>
+  <div class="subtitle">QSFP-DD &middot; DWDM</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">QSFP-DD</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">OpenROADM MSA, OpenROADM 2.0, OpenROADM 5.0, OpenZR+ MSA, QSFP-DD MSA, CMIS5.0</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">DWDM</div></div>
+      <div class="spec-item"><div class="label">Frequency Min Thz</div><div class="value">191.3</div></div>
+      <div class="spec-item"><div class="label">Frequency Max Thz</div><div class="value">196.1</div></div>
+      <div class="spec-item"><div class="label">Channel Spacing (GHz)</div><div class="value">100.0</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">15.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">75.0</div></div>
+      <div class="spec-item"><div class="label">Tx In Band Osnr Db</div><div class="value">38.0</div></div>
+      <div class="spec-item"><div class="label">Tx Out Of Band Osnr Db</div><div class="value">42.0</div></div>
+      <div class="spec-item"><div class="label">Los Assert Dbm</div><div class="value">-28.0</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">QSFP-DD type 2a. Wavelengths given as 191.3–196.1 THz (tunable), 100 GHz spacing; no nm values printed. Operating +15°C to +75°C; footnote 1: turn-up from cold at ambient as low as -5°C until self-heating to min operating temperature. Storage -40°C to +85°C. GENERIC Tx Power Min 0 dBm; optical table Tx Power1) 1 dBm minimum without attenuation; up to 10 dB attenuation from maximum; unprovisioned TX defaults to maximum within 10 dB range. Rx sens @ OSNR &gt;36 dB. Rx LOS assert -28.0 dBm4) for 400G modes; per-module configurable. Absolute max: Rx signal +13 dBm, Rx total +15 dBm. Power consumption EOL: 24.7 W @400G, 24.1 W @300G, 22.6 W @200G, 19.6 W @100G. Encryption AES-256. Increasing maximum CDC search range increases power consumption.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">OVERVIEW – TQD017-TUNC-SO, TECHNICAL DATA, GENERIC, OPTICAL SPECIFICATION - APPLICATION CODES, ORDERING INFORMATION, GENERAL DEFINITIONS</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Power (W)</th><th>Host Interface</th><th>Media Interface</th><th>frame</th><th>Standards code</th><th>Baud Rate (GBaud)</th><th>Bit Rate (Gbps)</th><th>modulation_format</th><th>TX Power Min (dBm)</th><th>RX Sensitivity (dBm)</th><th>RX OSNR (dB)</th><th>RX Overload (dBm)</th><th>CD Tolerance (ps/nm)</th><th>fec_type</th><th>number_of_lanes</th><th>Penalties</th></tr>
+      <tr><td><strong>OpenROADM 5.0 400G oFEC 4x100GAUI-2 DP-16QAM</strong></td><td>TQD017-TUNC-SO</td><td>24.7</td><td>4x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>4x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>63.1</td><td>400.0</td><td>QAM_16-DP</td><td>1.0</td><td>-20.0</td><td>25.0</td><td>13.0</td><td>12000.0</td><td>OFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=25.0) [rx_power_dbm=-16.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 300G oFEC 3x100GAUI-2 DP-8QAM</strong></td><td>TQD017-TUNC-SO</td><td>24.1</td><td>3x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>3x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>63.1</td><td>300.0</td><td>QAM_8-DP</td><td>1.0</td><td>-23.0</td><td>21.5</td><td>13.0</td><td>48000.0</td><td>OFEC</td><td>3</td><td>rx_osnr_db +1.0 dB (val=21.5) [rx_power_dbm=-20.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 200G oFEC 2x100GAUI-2 DP-QPSK</strong></td><td>TQD017-TUNC-SO</td><td>22.6</td><td>2x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>2x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>63.1</td><td>200.0</td><td>QPSK-DP</td><td>1.0</td><td>-28.0</td><td>15.8</td><td>13.0</td><td>48000.0</td><td>OFEC</td><td>2</td><td>rx_osnr_db +1.0 dB (val=15.8) [rx_power_dbm=-28.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 200G oFEC 2x100GAUI-2 DP-16QAM</strong></td><td>TQD017-TUNC-SO</td><td>22.6</td><td>2x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>2x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>31.6</td><td>200.0</td><td>QAM_16-DP</td><td>1.0</td><td>-23.0</td><td>21.5</td><td>13.0</td><td>30000.0</td><td>OFEC</td><td>2</td><td>rx_osnr_db +1.0 dB (val=21.5) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 100G oFEC 100GAUI-2 DP-QPSK</strong></td><td>TQD017-TUNC-SO</td><td>19.6</td><td>100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>31.6</td><td>100.0</td><td>QPSK-DP</td><td>1.0</td><td>-32.0</td><td>12.8</td><td>13.0</td><td>77000.0</td><td>OFEC</td><td>1</td><td>rx_osnr_db +1.0 dB (val=12.8) [rx_power_dbm=-25.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 400G oFEC 400GAUI-8 DP-16QAM</strong></td><td>TQD017-TUNC-SO</td><td>24.7</td><td>1x 400GAUI-8 (8x 50G)</td><td>OpenROADM 5.0</td><td>1x 400GAUI-8 (8x 50G)</td><td>OpenROADM 5.0</td><td>63.1</td><td>400.0</td><td>QAM_16-DP</td><td>1.0</td><td>-20.0</td><td>25.0</td><td>13.0</td><td>12000.0</td><td>OFEC</td><td>8</td><td>rx_osnr_db +1.0 dB (val=25.0) [rx_power_dbm=-16.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 200G oFEC 200GAUI-4 DP-QPSK</strong></td><td>TQD017-TUNC-SO</td><td>22.6</td><td>200GAUI-4 (2x 200G)</td><td>OpenROADM 5.0</td><td>200GAUI-4 (2x 200G)</td><td>OpenROADM 5.0</td><td>63.1</td><td>200.0</td><td>QPSK-DP</td><td>1.0</td><td>-28.0</td><td>15.8</td><td>13.0</td><td>48000.0</td><td>OFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=15.8) [rx_power_dbm=-28.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 200G oFEC 200GAUI-4 DP-16QAM</strong></td><td>TQD017-TUNC-SO</td><td>22.6</td><td>200GAUI-4 (2x 200G)</td><td>OpenROADM 5.0</td><td>200GAUI-4 (2x 200G)</td><td>OpenROADM 5.0</td><td>31.6</td><td>200.0</td><td>QAM_16-DP</td><td>1.0</td><td>-23.0</td><td>21.5</td><td>13.0</td><td>30000.0</td><td>OFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=21.5) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 100G oFEC CAUI-4 w/o FEC DP-QPSK</strong></td><td>TQD017-TUNC-SO</td><td>19.6</td><td>CAUI-4 w/o FEC (4x 25G)</td><td>OpenROADM 5.0</td><td>CAUI-4 w/o FEC (4x 25G)</td><td>100GBASE-R</td><td>31.6</td><td>100.0</td><td>QPSK-DP</td><td>1.0</td><td>-32.0</td><td>12.8</td><td>13.0</td><td>77000.0</td><td>OFEC</td><td>4</td><td></td></tr>
+      <tr><td><strong>OpenROADM 5.0 100G oFEC CAUI-4 with FEC DP-QPSK</strong></td><td>TQD017-TUNC-SO</td><td>19.6</td><td>CAUI-4 with FEC (4x 25G)</td><td>OpenROADM 5.0</td><td>CAUI-4 with FEC (4x 25G)</td><td>100GBASE-R</td><td>31.6</td><td>100.0</td><td>QPSK-DP</td><td>1.0</td><td>-32.0</td><td>12.8</td><td>13.0</td><td>77000.0</td><td>OFEC</td><td>4</td><td></td></tr>
+      <tr><td><strong>OpenROADM 2.0 100G SC-FEC CAUI-4 w/o FEC DP-DQPSK</strong></td><td>TQD017-TUNC-SO</td><td>19.6</td><td>CAUI-4 w/o FEC (4x 25G)</td><td>OpenROADM 2.0</td><td>CAUI-4 w/o FEC (4x 25G)</td><td>OpenROADM 2.0</td><td>31.6</td><td>100.0</td><td>DQPSK-DP</td><td>1.0</td><td>-30.0</td><td>15.5</td><td>13.0</td><td>80000.0</td><td>SCFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=15.5) [rx_power_dbm=-24.0]</td></tr>
+      <tr><td><strong>OpenROADM 2.0 100G SC-FEC CAUI-4 with FEC DP-DQPSK</strong></td><td>TQD017-TUNC-SO</td><td>19.6</td><td>CAUI-4 with FEC (4x 25G)</td><td>OpenROADM 2.0</td><td>CAUI-4 with FEC (4x 25G)</td><td>OpenROADM 2.0</td><td>31.6</td><td>100.0</td><td>DQPSK-DP</td><td>1.0</td><td>-30.0</td><td>15.5</td><td>13.0</td><td>80000.0</td><td>SCFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=15.5) [rx_power_dbm=-24.0]</td></tr>
+      <tr><td><strong>OpenROADM 2.0 100G SC-FEC OTU4 OTL4.4 DP-DQPSK</strong></td><td>TQD017-TUNC-SO</td><td>19.6</td><td>OTL4.4 (4x 28G)</td><td>OpenROADM 2.0</td><td>OTL4.4 (4x 28G)</td><td>OTU4</td><td>31.6</td><td>100.0</td><td>DQPSK-DP</td><td>1.0</td><td>-30.0</td><td>15.5</td><td>13.0</td><td>80000.0</td><td>SCFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=15.5) [rx_power_dbm=-24.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 400G oFEC 4x100GAUI-2 DP-16QAM</strong></td><td>SO-TQD017-TUNC-SO</td><td>24.7</td><td>4x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>4x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>63.1</td><td>400.0</td><td>QAM_16-DP</td><td>1.0</td><td>-20.0</td><td>25.0</td><td>13.0</td><td>12000.0</td><td>OFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=25.0) [rx_power_dbm=-16.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 300G oFEC 3x100GAUI-2 DP-8QAM</strong></td><td>SO-TQD017-TUNC-SO</td><td>24.1</td><td>3x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>3x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>63.1</td><td>300.0</td><td>QAM_8-DP</td><td>1.0</td><td>-23.0</td><td>21.5</td><td>13.0</td><td>48000.0</td><td>OFEC</td><td>3</td><td>rx_osnr_db +1.0 dB (val=21.5) [rx_power_dbm=-20.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 200G oFEC 2x100GAUI-2 DP-QPSK</strong></td><td>SO-TQD017-TUNC-SO</td><td>22.6</td><td>2x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>2x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>63.1</td><td>200.0</td><td>QPSK-DP</td><td>1.0</td><td>-28.0</td><td>15.8</td><td>13.0</td><td>48000.0</td><td>OFEC</td><td>2</td><td>rx_osnr_db +1.0 dB (val=15.8) [rx_power_dbm=-28.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 200G oFEC 2x100GAUI-2 DP-16QAM</strong></td><td>SO-TQD017-TUNC-SO</td><td>22.6</td><td>2x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>2x 100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>31.6</td><td>200.0</td><td>QAM_16-DP</td><td>1.0</td><td>-23.0</td><td>21.5</td><td>13.0</td><td>30000.0</td><td>OFEC</td><td>2</td><td>rx_osnr_db +1.0 dB (val=21.5) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 100G oFEC 100GAUI-2 DP-QPSK</strong></td><td>SO-TQD017-TUNC-SO</td><td>19.6</td><td>100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>100GAUI-2 (2x 50G)</td><td>OpenROADM 5.0</td><td>31.6</td><td>100.0</td><td>QPSK-DP</td><td>1.0</td><td>-32.0</td><td>12.8</td><td>13.0</td><td>77000.0</td><td>OFEC</td><td>1</td><td>rx_osnr_db +1.0 dB (val=12.8) [rx_power_dbm=-25.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 400G oFEC 400GAUI-8 DP-16QAM</strong></td><td>SO-TQD017-TUNC-SO</td><td>24.7</td><td>1x 400GAUI-8 (8x 50G)</td><td>OpenROADM 5.0</td><td>1x 400GAUI-8 (8x 50G)</td><td>OpenROADM 5.0</td><td>63.1</td><td>400.0</td><td>QAM_16-DP</td><td>1.0</td><td>-20.0</td><td>25.0</td><td>13.0</td><td>12000.0</td><td>OFEC</td><td>8</td><td>rx_osnr_db +1.0 dB (val=25.0) [rx_power_dbm=-16.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 200G oFEC 200GAUI-4 DP-QPSK</strong></td><td>SO-TQD017-TUNC-SO</td><td>22.6</td><td>200GAUI-4 (2x 200G)</td><td>OpenROADM 5.0</td><td>200GAUI-4 (2x 200G)</td><td>OpenROADM 5.0</td><td>63.1</td><td>200.0</td><td>QPSK-DP</td><td>1.0</td><td>-28.0</td><td>15.8</td><td>13.0</td><td>48000.0</td><td>OFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=15.8) [rx_power_dbm=-28.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 200G oFEC 200GAUI-4 DP-16QAM</strong></td><td>SO-TQD017-TUNC-SO</td><td>22.6</td><td>200GAUI-4 (2x 200G)</td><td>OpenROADM 5.0</td><td>200GAUI-4 (2x 200G)</td><td>OpenROADM 5.0</td><td>31.6</td><td>200.0</td><td>QAM_16-DP</td><td>1.0</td><td>-23.0</td><td>21.5</td><td>13.0</td><td>30000.0</td><td>OFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=21.5) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenROADM 5.0 100G oFEC CAUI-4 w/o FEC DP-QPSK</strong></td><td>SO-TQD017-TUNC-SO</td><td>19.6</td><td>CAUI-4 w/o FEC (4x 25G)</td><td>OpenROADM 5.0</td><td>CAUI-4 w/o FEC (4x 25G)</td><td>100GBASE-R</td><td>31.6</td><td>100.0</td><td>QPSK-DP</td><td>1.0</td><td>-32.0</td><td>12.8</td><td>13.0</td><td>77000.0</td><td>OFEC</td><td>4</td><td></td></tr>
+      <tr><td><strong>OpenROADM 5.0 100G oFEC CAUI-4 with FEC DP-QPSK</strong></td><td>SO-TQD017-TUNC-SO</td><td>19.6</td><td>CAUI-4 with FEC (4x 25G)</td><td>OpenROADM 5.0</td><td>CAUI-4 with FEC (4x 25G)</td><td>100GBASE-R</td><td>31.6</td><td>100.0</td><td>QPSK-DP</td><td>1.0</td><td>-32.0</td><td>12.8</td><td>13.0</td><td>77000.0</td><td>OFEC</td><td>4</td><td></td></tr>
+      <tr><td><strong>OpenROADM 2.0 100G SC-FEC CAUI-4 w/o FEC DP-DQPSK</strong></td><td>SO-TQD017-TUNC-SO</td><td>19.6</td><td>CAUI-4 w/o FEC (4x 25G)</td><td>OpenROADM 2.0</td><td>CAUI-4 w/o FEC (4x 25G)</td><td>OpenROADM 2.0</td><td>31.6</td><td>100.0</td><td>DQPSK-DP</td><td>1.0</td><td>-30.0</td><td>15.5</td><td>13.0</td><td>80000.0</td><td>SCFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=15.5) [rx_power_dbm=-24.0]</td></tr>
+      <tr><td><strong>OpenROADM 2.0 100G SC-FEC CAUI-4 with FEC DP-DQPSK</strong></td><td>SO-TQD017-TUNC-SO</td><td>19.6</td><td>CAUI-4 with FEC (4x 25G)</td><td>OpenROADM 2.0</td><td>CAUI-4 with FEC (4x 25G)</td><td>OpenROADM 2.0</td><td>31.6</td><td>100.0</td><td>DQPSK-DP</td><td>1.0</td><td>-30.0</td><td>15.5</td><td>13.0</td><td>80000.0</td><td>SCFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=15.5) [rx_power_dbm=-24.0]</td></tr>
+      <tr><td><strong>OpenROADM 2.0 100G SC-FEC OTU4 OTL4.4 DP-DQPSK</strong></td><td>SO-TQD017-TUNC-SO</td><td>19.6</td><td>OTL4.4 (4x 28G)</td><td>OpenROADM 2.0</td><td>OTL4.4 (4x 28G)</td><td>OTU4</td><td>31.6</td><td>100.0</td><td>DQPSK-DP</td><td>1.0</td><td>-30.0</td><td>15.5</td><td>13.0</td><td>80000.0</td><td>SCFEC</td><td>4</td><td>rx_osnr_db +1.0 dB (val=15.5) [rx_power_dbm=-24.0]</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">TQD017-TUNC-SO</span> <span class="badge">SO-TQD017-TUNC-SO</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">24.7</span> <span class="badge">24.1</span> <span class="badge">22.6</span> <span class="badge">19.6</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">4x 100GAUI-2 (2x 50G)</span> <span class="badge">3x 100GAUI-2 (2x 50G)</span> <span class="badge">2x 100GAUI-2 (2x 50G)</span> <span class="badge">100GAUI-2 (2x 50G)</span> <span class="badge">1x 400GAUI-8 (8x 50G)</span> <span class="badge">200GAUI-4 (2x 200G)</span> <span class="badge">CAUI-4 w/o FEC (4x 25G)</span> <span class="badge">CAUI-4 with FEC (4x 25G)</span> <span class="badge">OTL4.4 (4x 28G)</span> <span class="badge">4x 100GAUI-2</span> <span class="badge">3x 100GAUI-2</span> <span class="badge">2x 100GAUI-2</span> <span class="badge">1x 400GAUI-8</span> <span class="badge">1x 200GAUI-4</span> <span class="badge">CAUI-4 w/o FEC</span> <span class="badge">CAUI-4 with FEC</span> <span class="badge">OTU4</span></td></tr>
+      <tr><td>media_interface_name</td><td><span class="badge">OpenROADM 5.0</span> <span class="badge">OpenROADM 2.0</span></td></tr>
+      <tr><td>frame</td><td><span class="badge">4x 100GAUI-2 (2x 50G)</span> <span class="badge">3x 100GAUI-2 (2x 50G)</span> <span class="badge">2x 100GAUI-2 (2x 50G)</span> <span class="badge">100GAUI-2 (2x 50G)</span> <span class="badge">1x 400GAUI-8 (8x 50G)</span> <span class="badge">200GAUI-4 (2x 200G)</span> <span class="badge">CAUI-4 w/o FEC (4x 25G)</span> <span class="badge">CAUI-4 with FEC (4x 25G)</span> <span class="badge">OTL4.4 (4x 28G)</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">OpenROADM 5.0</span> <span class="badge">OpenROADM 2.0</span> <span class="badge">OpenZR+</span> <span class="badge">100GBASE-R</span> <span class="badge">400GBASE-R</span> <span class="badge">200GBASE-R</span> <span class="badge">OTU4</span></td></tr>
+      <tr><td>baud_rate_gbaud</td><td><span class="badge">63.1</span> <span class="badge">31.6</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">400.0</span> <span class="badge">300.0</span> <span class="badge">200.0</span> <span class="badge">100.0</span></td></tr>
+      <tr><td>modulation_format</td><td><span class="badge">QAM_16-DP</span> <span class="badge">QAM_8-DP</span> <span class="badge">QPSK-DP</span> <span class="badge">DQPSK-DP</span></td></tr>
+      <tr><td>tx_power_min_dbm</td><td><span class="badge">0.0</span> <span class="badge">1.0</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-20.0</span> <span class="badge">-23.0</span> <span class="badge">-28.0</span> <span class="badge">-32.0</span> <span class="badge">-30.0</span></td></tr>
+      <tr><td>rx_osnr_db</td><td><span class="badge">23.5</span> <span class="badge">20.5</span> <span class="badge">14.8</span> <span class="badge">11.8</span> <span class="badge">14.5</span> <span class="badge">25.0</span> <span class="badge">21.5</span> <span class="badge">15.8</span> <span class="badge">12.8</span> <span class="badge">15.5</span></td></tr>
+      <tr><td>rx_overload_dbm</td><td><span class="badge">13.0</span> <span class="badge">15.0</span></td></tr>
+      <tr><td>cd_tolerance_ps_nm</td><td><span class="badge">12000.0</span> <span class="badge">48000.0</span> <span class="badge">96000.0</span> <span class="badge">30000.0</span> <span class="badge">77000.0</span> <span class="badge">154000.0</span> <span class="badge">80000.0</span> <span class="badge">115000.0</span></td></tr>
+      <tr><td>fec_type</td><td><span class="badge">OFEC</span> <span class="badge">SCFEC</span> <span class="badge">CFEC</span></td></tr>
+      <tr><td>number_of_lanes</td><td><span class="badge">4</span> <span class="badge">3</span> <span class="badge">2</span> <span class="badge">1</span> <span class="badge">8</span></td></tr>
+      <tr><td>penalties</td><td><span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 25.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -16.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=1&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 21.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -20.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=2&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 15.8, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -28.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=3&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 21.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=4&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 25.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -16.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=6&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 15.8, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -28.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=7&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 21.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=8&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 15.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -24.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=11&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 15.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -24.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=12&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 15.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -24.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=13&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 12.8, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -25.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode 5&#x27;}</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 10:51
+</footer>
+
+</div>
+</body>
+</html>

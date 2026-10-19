@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp28-32gfc-lr10-cxx.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 6323,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 19
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

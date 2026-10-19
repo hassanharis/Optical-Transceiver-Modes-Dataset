@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:46:05.748937+00:00",
+  "source_file": "C:\\Haris\\datasheets\\sfpwire-10gbs-sfp-plus-aoc-fcbg110sd1cxx-wx-ds.pdf",
+  "page_count": 9,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 13.5,
+    "extract_atoms": 25.554,
+    "store_run": 0.009,
+    "synthesize_modes": 37.664,
+    "store_modes": 0.003,
+    "total": 76.73
+  }
+}

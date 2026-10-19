@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "100GBASE-SR4 / 100GbE aggregate OM3",
+      "host_interface_name": "100GBASE-SR4",
+      "bit_rate_gbps": 103.12,
+      "reach_km": 70.0
+    },
+    {
+      "label": "100GBASE-SR4 / 100GbE aggregate OM4",
+      "host_interface_name": "100GbE",
+      "bit_rate_gbps": 103.12,
+      "reach_km": 100.0
+    },
+    {
+      "label": "100GBASE-SR4 per-lane OM3",
+      "host_interface_name": "100GBASE-SR4",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 70.0
+    },
+    {
+      "label": "100GBASE-SR4 per-lane OM4",
+      "host_interface_name": "100GBASE-SR4",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 100.0
+    }
+  ]
+}

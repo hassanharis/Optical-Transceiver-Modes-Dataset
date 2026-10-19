@@ -1,0 +1,131 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "host_interface_name": [
+      "200GAUI-4",
+      "CEI-56G-VSR-PAM4"
+    ],
+    "standards_code": [
+      "200GBASE-FR4",
+      "200GE FR4",
+      "IEEE 802.3-2018"
+    ],
+    "bit_rate_gbps": [
+      53.125,
+      212.5
+    ],
+    "tx_power_max_dbm": [
+      4.7,
+      10.7
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LQ-CW200-FR4C"
+    ],
+    "form_factor": [
+      "QSFP56"
+    ],
+    "standards_claimed": [
+      "IEEE 802.3-2018",
+      "IEEE 802.3bs",
+      "200GBASE-FR4",
+      "200GE FR4",
+      "SFF-8679 Rev 1.8",
+      "QSFP-DD CMIS Rev 4.0",
+      "CEI-56G-VSR-PAM4",
+      "SFF-8662",
+      "SFF-8672",
+      "RoHS 2"
+    ],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF_G652"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      6.0
+    ],
+    "media_interface_name": [
+      "200GBASE-FR4"
+    ],
+    "frame": [
+      "200GAUI-4"
+    ],
+    "baud_rate_gbaud": [
+      26.5625
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -4.2
+    ],
+    "rx_sensitivity_dbm": [
+      -3.6
+    ],
+    "rx_overload_dbm": [
+      5.7
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      17.1
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "penalties": [],
+    "notes": "Receiver sensitivity (OMA), each lane is specified as max (-5.5, SECQ-6.9) dBm, not a single fixed value. Stressed receiver sensitivity (OMA) -3.6 dBm is under stated SECQ 3.3 dB and OMAouter of each aggressor lane 0.5 dBm. Link distance with G.652 is 2 to 2000 m. Signaling rate per lane is 26.5625 GBd ± 100 ppm. Datasheet titles module as QSFP56 while also stating Software QSFP-DD CMIS Rev 4.0 compliant.",
+    "provenance_datasheet_sections": [
+      "LQ-CW200-FR4C",
+      "200GBASE-FR4 QSFP56, Optical Transceiver Module, 2km Reach",
+      "Features",
+      "Applications",
+      "Description",
+      "Absolute Maximum Ratings",
+      "Operating Environments",
+      "Electrical Characteristics",
+      "Optical Characteristics",
+      "Ordering information"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "modes": [
+    {
+      "label": "100GBASE-SR4",
+      "standards_code": "100GBASE-SR4"
+    },
+    {
+      "label": "100GBASE-SR4",
+      "standards_code": "IEEE 802.3bm"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "200GBASE-SR4 (212.5 Gb/s aggregate)",
+      "power_consumption_w": 4.1,
+      "standards_code": "200GBASE-SR4",
+      "bit_rate_gbps": 212.5,
+      "rx_sensitivity_dbm": -7.0
+    },
+    {
+      "label": "103.125 Gb/s aggregate (if required)",
+      "power_consumption_w": 4.5,
+      "standards_code": "IEEE 802.3cd",
+      "bit_rate_gbps": 103.125,
+      "rx_sensitivity_dbm": -3.0
+    }
+  ]
+}

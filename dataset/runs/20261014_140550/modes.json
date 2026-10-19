@@ -1,0 +1,16 @@
+{
+  "modes": [
+    {
+      "label": "100M Ethernet",
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "100M Ethernet",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "STM-1 / OC3",
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "STM-1",
+      "bit_rate_gbps": 0.155
+    }
+  ]
+}

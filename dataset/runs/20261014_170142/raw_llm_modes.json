@@ -1,0 +1,64 @@
+{
+  "modes": [
+    {
+      "label": "8G FC (8.5 Gbps) OM3 70 m",
+      "wavelength_min_nm": 840.0,
+      "standards_code": "FC-PI-41",
+      "bit_rate_gbps": 8.5,
+      "reach_km": 0.07,
+      "tx_power_min_dbm": -8.2,
+      "rx_sensitivity_dbm": -11.2,
+      "post_fec_ber_target": 1e-12
+    },
+    {
+      "label": "8G FC (8.5 Gbps) OM4 100 m",
+      "wavelength_min_nm": 840.0,
+      "standards_code": "FC-PI-41",
+      "bit_rate_gbps": 8.5,
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -8.2,
+      "rx_sensitivity_dbm": -11.2,
+      "post_fec_ber_target": 1e-12
+    },
+    {
+      "label": "16G FC (14.025 Gbps) OM3 70 m",
+      "wavelength_min_nm": 840.0,
+      "standards_code": "FC-PI-6",
+      "bit_rate_gbps": 14.025,
+      "reach_km": 0.07,
+      "tx_power_min_dbm": -7.8,
+      "rx_sensitivity_dbm": -10.5,
+      "post_fec_ber_target": 1e-12
+    },
+    {
+      "label": "16G FC (14.025 Gbps) OM4 100 m",
+      "wavelength_min_nm": 840.0,
+      "standards_code": "FC-PI-6",
+      "bit_rate_gbps": 14.025,
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -7.8,
+      "rx_sensitivity_dbm": -10.5,
+      "post_fec_ber_target": 1e-12
+    },
+    {
+      "label": "32G FC (28.05 Gbps) OM3 70 m",
+      "wavelength_min_nm": 840.0,
+      "standards_code": "FC-PI-6",
+      "bit_rate_gbps": 28.05,
+      "reach_km": 0.07,
+      "tx_power_min_dbm": -6.7,
+      "rx_sensitivity_dbm": -10.2,
+      "post_fec_ber_target": 1e-06
+    },
+    {
+      "label": "32G FC (28.05 Gbps) OM4 100 m",
+      "wavelength_min_nm": 840.0,
+      "standards_code": "FC-PI-6",
+      "bit_rate_gbps": 28.05,
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -6.7,
+      "rx_sensitivity_dbm": -10.2,
+      "post_fec_ber_target": 1e-06
+    }
+  ]
+}

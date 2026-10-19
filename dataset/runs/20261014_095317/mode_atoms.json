@@ -1,0 +1,203 @@
+{
+  "multi_valued": {
+    "model": [
+      "CHM7",
+      "CHM7X"
+    ],
+    "wavelength_min_nm": [
+      1523.9,
+      1528.3,
+      1523.916,
+      1569.183,
+      1575.161
+    ],
+    "wavelength_max_nm": [
+      1572.682,
+      1567.337,
+      1572.682,
+      1611.354,
+      1622.034
+    ],
+    "wavelength_band": [
+      "Extended C-band",
+      "Super C-band",
+      "Extended L-band",
+      "Super L-band",
+      "C-band",
+      "L-band",
+      "C+L",
+      "Super C",
+      "Super L"
+    ],
+    "frequency_min_thz": [
+      190.625,
+      191.275,
+      190.625,
+      186.05,
+      184.825
+    ],
+    "frequency_max_thz": [
+      196.725,
+      196.125,
+      196.725,
+      191.05,
+      190.325
+    ],
+    "power_consumption_w": [
+      258.0,
+      250.0
+    ],
+    "host_interface_name": [
+      "QSFP-DD800",
+      "QSFP-DD",
+      "800 GbE",
+      "400 GbE",
+      "100 GbE",
+      "OTU4",
+      "10 GbE",
+      "OC-192",
+      "STM-64",
+      "OTU2",
+      "OTU2e",
+      "1GbE",
+      "1G Fibre Channel",
+      "STM-16",
+      "OC-48",
+      "4G Fibre Channel"
+    ],
+    "frame": [
+      "800 GbE",
+      "400 GbE",
+      "100 GbE",
+      "OTU4",
+      "OTU2",
+      "OTU2e",
+      "10 GbE",
+      "1GbE"
+    ],
+    "standards_code": [
+      "DR4",
+      "2xDR4",
+      "LR4",
+      "2xLR4",
+      "FR4",
+      "PLR4",
+      "100G LR1",
+      "100G FR1",
+      "100G DR1",
+      "100GBASE-DR1",
+      "100G LR4",
+      "PCS-64QAM",
+      "PCS-32QAM",
+      "PCS-16QAM",
+      "ODUflex",
+      "OTUk",
+      "FlexO"
+    ],
+    "baud_rate_gbaud": [
+      68.0,
+      140.0
+    ],
+    "bit_rate_gbps": [
+      200.0,
+      300.0,
+      400.0,
+      500.0,
+      600.0,
+      700.0,
+      800.0,
+      900.0,
+      1000.0,
+      1100.0,
+      1200.0
+    ],
+    "roll_off_percent": [
+      0.1,
+      2.0,
+      100.0
+    ],
+    "modulation_format": [
+      "PCS_QAM_64",
+      "PCS_QAM_32",
+      "PCS_16QAM",
+      "QAM_64",
+      "QAM_32",
+      "QAM_16",
+      "QAM_8",
+      "QPSK"
+    ],
+    "reach_km": [
+      400.0,
+      1500.0,
+      3000.0,
+      5500.0
+    ],
+    "cd_tolerance_ps_nm": [
+      800000.0,
+      300000.0
+    ]
+  },
+  "general": {
+    "vendor": "Nokia",
+    "standards_claimed": [
+      "GR-3160-Core",
+      "GR-326-Core",
+      "GR-1435-Core",
+      "RoHS-6",
+      "FCC Part 15 Class A",
+      "EN55032/CISPR Class A",
+      "ANSI Class 1M",
+      "IEC Class 1M",
+      "EN 60825-1/2",
+      "UL 62368-1",
+      "CSA22.2 62368-1",
+      "EN 62368-1",
+      "IEC 62368-1"
+    ],
+    "channel_spacing_ghz": [
+      0.05
+    ],
+    "connector_type": [
+      "LC",
+      "CS",
+      "SN",
+      "MPO"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "tx_power_min_dbm": [
+      -10.0
+    ],
+    "tx_power_max_dbm": [
+      1.5
+    ],
+    "pmd_tolerance_ps": [
+      130.0
+    ],
+    "fec_type": [
+      "SDFEC"
+    ],
+    "fec_overhead_percent": [
+      15.0
+    ],
+    "number_of_lanes": [
+      2
+    ],
+    "penalties": [],
+    "notes": "CHM7 operating temperature -5 C to +55 C in 1830 GX G42; CHM7X operating temperature +5 C to +40 C in 1830 GX G31/G32. Transport and storage -40 C to +70 C. Power 258W (CHM7) and 250W (CHM7X) is for 2x1.2 Tb/s typical excluding client pluggables. Line data rate 200 Gb/s to 1200 Gb/s in 100 Gb/s increments. Baud 68 to 140+ GBaud with increments 0.1 GBaud (lower) to 0.7 GBaud (higher). Roll-off configurable 0.1% to 100% in 0.1% increments; 2% optimal in most scenarios. Chromatic dispersion tolerance >800,000 ps/nm at 68 GBaud and >300,000 ps/nm at 140 GBaud. Reach values stated as 1.2 Tb/s to 400+ km, 1 Tb/s to 1,500+ km, 800 Gb/s to 3,000+ km, 600 Gb/s to 5,500+ km terrestrial. SOP rotation tolerance up to 20 Mrad/s mode dependent. Spectrum widths: Extended C 4.8 THz, Super C 6.1 THz, Extended L 4.8 THz, Super L 5.5 THz. Wavelength tuning 50 MHz increments.",
+    "provenance_datasheet_sections": [
+      "Technical specifications",
+      "Applications",
+      "Line Interfaces",
+      "Client Interfaces",
+      "Environmental",
+      "Regulatory and Compliance",
+      "Leverage the latest 5-nm/140 GBaud coherent technology with ICE7",
+      "Reduce cost, power consumptionand footprint by ~30%-40%",
+      "Boost fiber capacity with Super C, L-band and Super L",
+      "Optimize spectral efficiency with a continuously tunable baud rate"
+    ],
+    "suggestions": "Schema temp_min_c/temp_max_c could not hold distinct CHM7 vs CHM7X without duplicate objects or product-qualified fields. Consider product_variant on environmental fields. SOP rotation (Mrad/s) and spectrum bandwidth (THz) are major line-side specs not in schema."
+  }
+}

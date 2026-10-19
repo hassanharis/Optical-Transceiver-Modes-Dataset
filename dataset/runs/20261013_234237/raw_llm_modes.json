@@ -1,0 +1,31 @@
+{
+  "modes": [
+    {
+      "label": "800GBASE-DR8",
+      "host_interface_name": "2x400GAUI-4",
+      "media_interface_name": "800GBASE-DR8",
+      "standards_code": "DR8",
+      "bit_rate_gbps": 800.0,
+      "rx_sensitivity_dbm": -3.9,
+      "rx_overload_dbm": 4.0
+    },
+    {
+      "label": "2x400GBASE-DR4 breakout",
+      "host_interface_name": "2x400GAUI-4",
+      "media_interface_name": "2x400GBASE-DR4",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 400.0,
+      "rx_sensitivity_dbm": -3.9,
+      "rx_overload_dbm": 4.0
+    },
+    {
+      "label": "400GBASE-DR4 per port",
+      "host_interface_name": "400GAUI-4 C2M",
+      "media_interface_name": "400GBASE-DR4",
+      "standards_code": "DR4",
+      "bit_rate_gbps": 400.0,
+      "rx_sensitivity_dbm": -1.9,
+      "rx_overload_dbm": 5.0
+    }
+  ]
+}

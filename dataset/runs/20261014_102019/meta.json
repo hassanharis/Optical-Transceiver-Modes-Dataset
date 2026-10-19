@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:20:19.136244+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Prolab QSFP-100G-LR4-ARISTA-C.pdf",
+  "page_count": 8,
+  "table_count": 5,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 12.841,
+    "extract_atoms": 32.829,
+    "store_run": 0.007,
+    "synthesize_modes": 54.078,
+    "store_modes": 0.002,
+    "total": 99.758
+  }
+}

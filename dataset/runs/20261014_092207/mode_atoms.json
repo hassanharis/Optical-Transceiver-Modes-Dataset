@@ -1,0 +1,106 @@
+{
+  "multi_valued": {
+    "model": [
+      "LS-SC5210-20CN1",
+      "LG-SC5210-20CN1",
+      "LG-SC5210-20IN1"
+    ],
+    "wavelength_min_nm": [
+      1575.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1580.0,
+      1280.0
+    ],
+    "wavelength_center_nm": [
+      1577.0,
+      1270.0
+    ],
+    "standards_code": [
+      "XGSPON",
+      "ITU-T G.9807.1",
+      "ITU-T G.987.2",
+      "Class N1"
+    ],
+    "bit_rate_gbps": [
+      9.95328,
+      2.48832
+    ],
+    "rx_sensitivity_dbm": [
+      -26.0,
+      -27.5
+    ],
+    "rx_overload_dbm": [
+      -5.0,
+      -7.0
+    ],
+    "los_deassert_dbm": [
+      -27.0,
+      -28.5
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "RoHS&WEEE",
+      "SFP MSA",
+      "SFF 8472",
+      "ITU-T G.9807.1"
+    ],
+    "emitter_type": [
+      "LASER_EML"
+    ],
+    "photodetector_type": [
+      "APD-TIA"
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "SC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      2.0
+    ],
+    "tx_power_max_dbm": [
+      5.0
+    ],
+    "extinction_ratio_db": [
+      8.2
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      6.0
+    ],
+    "notes": "XGSPON OLT Class N1; single-fiber bidirectional 9.953G downstream and 9.953G/2.488G upstream. Receiver sensitivity at 9.953G measured with PRBS 2^31-1 @ 9.95328 Gbps, BER = 10^-3; at 2.488G with PRBS 2^23-1 @ 2.48832 Gbps, BER = 10^-4. Transmitter dispersion penalty max 1 dB with transmit on 20 km SMF (note 2). Extinction ratio measured with PRBS 2^31-1 @ 9.95328 Gbps. LOS deassert rows use unit dB in table (labeled 'LOS Optical Dessert'). Ordering lists LG-SC5210-20CN1 (0°C~+70°C) and LG-SC5210-20IN1 (-40°C~+85°C Industrial); datasheet header part is LS-SC5210-20CN1. Pout @ TX-Disable asserted max -39 dBm. Spectral width (@-20 dB) max 1 nm on TX.",
+    "provenance_datasheet_sections": [
+      "LS-SC5210-20CN1",
+      "Product Features",
+      "Applications",
+      "Description",
+      "Recommended Operating Conditions",
+      "Optical Characteristics",
+      "Electrical Characteristics",
+      "Ordering information"
+    ],
+    "suggestions": "Clarify whether LOS deassert thresholds are dBm vs dB; add explicit modulation/FEC if applicable; EEPROM ID bytes for host/media interface codes are not tabulated in this excerpt."
+  }
+}

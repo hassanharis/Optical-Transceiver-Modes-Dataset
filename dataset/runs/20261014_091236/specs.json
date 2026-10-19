@@ -1,0 +1,120 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-MM8525E-S3C"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFF-8472",
+    "SFF-8402",
+    "SFF-8432",
+    "SFF-8431"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "SFP28"
+  ],
+  "standards_code": [
+    "25GBASE-SR",
+    "eCPRI",
+    "SFF-8472",
+    "SFF-8402",
+    "SFF-8432",
+    "SFF-8431"
+  ],
+  "bit_rate_gbps": [
+    10.0,
+    25.7813,
+    10.3,
+    25.78
+  ],
+  "reach_km": [
+    0.3,
+    0.07
+  ],
+  "tx_power_min_dbm": [
+    -8.4,
+    -7.0
+  ],
+  "tx_power_max_dbm": [
+    2.4,
+    -1.0
+  ],
+  "rx_sensitivity_dbm": [
+    -10.3,
+    -10.0,
+    -5.2
+  ],
+  "rx_overload_dbm": [
+    3.0,
+    0.5
+  ],
+  "extinction_ratio_db": [
+    2.0,
+    5.5
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -13.0
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    2.0,
+    5.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Reach: 300 m on OM4 MMF, 70 m on OM3 MMF. Supply current Icc max 300 mA (not stated in W). RMS spectral width Pm max 0.6 nm. Transmitter dispersion penalty (TDEC/TDP) max 4.3 dB (25.78G) and 3.9 dB (10.3G) listed but not structured as penalty points with paired conditions. Receiver sensitivity table lists Min/Max columns (-10.3 to 3 dBm at 25.78G; -10 to 0.5 dBm at 10.3G). Transmitter OFF output power max -30 dBm. Optical characteristics at TOP 0°C to 70°C, VCC 3.3 ± 5%.",
+  "provenance_datasheet_sections": [
+    "LS-MM8525E-S3C",
+    "SFP28 10G/25Gbps 850nm 300m DDMI",
+    "Product Features",
+    "Applications",
+    "Compliance",
+    "Absolute Maximum Ratings",
+    "Optical Characteristics (TOP = 0°C to 70°C, VCC = 3.3 ± 5% Volts)",
+    "Electrical Characteristics (TOP = 0°C to 70°C, VCC = 3.3 ± 5% Volts)",
+    "Digital Diagnostic Monitoring Information",
+    "Ordering information"
+  ],
+  "suggestions": "reach_km required converting stated 300 m and 70 m to km (0.3, 0.07). Consider schema fields for OMA, RMS spectral width, transmitter OFF power, and supply current. Clarify whether receiver table Max column is overload vs sensitivity upper bound."
+}

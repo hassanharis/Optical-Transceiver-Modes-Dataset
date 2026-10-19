@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-ZR",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "10GBASE-ZW",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    }
+  ]
+}

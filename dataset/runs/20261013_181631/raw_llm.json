@@ -1,0 +1,129 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "AOP13LI8-XXX",
+    "AOP13LI8-001",
+    "AOP13LI8-005",
+    "AOP13LI8-010",
+    "AOP13LI8-030",
+    "AOP13LI8-050",
+    "AOP13LI8-100"
+  ],
+  "form_factor": [
+    "OSFP"
+  ],
+  "standards_claimed": [
+    "OSFP MSA rev5.x",
+    "OIF-CMIS rev5.x",
+    "IEEE 802.3dj-2024"
+  ],
+  "emitter_type": [
+    "Silicon photonics modulator"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    8
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": null,
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    10,
+    11
+  ],
+  "host_interface_name": [
+    "OSFP MSA",
+    "60-pin edge connector"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "IEEE 802.3dj-2024",
+    "OSFP MSA",
+    "OIF-CMIS",
+    "1.6T Ethernet"
+  ],
+  "baud_rate_gbaud": [
+    106.25
+  ],
+  "bit_rate_gbps": [
+    212.5,
+    1600
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.001,
+    0.005,
+    0.01,
+    0.03,
+    0.05,
+    0.1
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Linear-drive (LPO) module; LPO module does not have a CDR. Forward error correction (FEC) is required to be implemented by the host. Power dissipation stated as < 11 W (Typical 10W) for single-ended; Maximum Power Consumption per End 11 W. Case operating temperature 0°C to 70°C without air flow. Optical transmission distance maximum 100 m per Recommended Operating Conditions; standard cable lengths 1, 5, 10, 30, 50, 100 meters on SMF. Maximum aggregate data rate 1.6 Tb/s; maximum data rate per lane 212.5 Gb/s. Each channel data rate 106.25 GBd @ PAM4 (optical). Power supply 3.3 V (3.135–3.465 V); ICC 3333 mA typical when Vcc is 3.3 V single-ended.",
+  "provenance_datasheet_sections": [
+    "PRODUCT FEATURES",
+    "REFERENCE STANDARD",
+    "APPLICATIONS",
+    "PRODUCT SPECIFICATION",
+    "I. Absolute Maximum Ratings",
+    "II. Recommended Operating Conditions",
+    "III. General Product Characteristics",
+    "IV. Pin Assignment",
+    "V. Host - Transceiver Interface Block Diagram",
+    "VI. Mechanical Specifications",
+    "VII. Regulatory Compliance"
+  ],
+  "suggestions": "Datasheet lacks optical link budget (Tx/Rx power, sensitivity, OSNR), wavelength, and host electrical interface IDs (e.g. CMIS application codes). reach_km converted from stated meter lengths for schema units; document prints distances in meters only."
+}

@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-tsf087-bxxc-so-sfp-1g-bidi-40km-3155-sc-r6.1.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 5855,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 18
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

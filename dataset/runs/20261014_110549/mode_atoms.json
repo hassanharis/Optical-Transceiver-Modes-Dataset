@@ -1,0 +1,111 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "wavelength_band": [
+      "grey",
+      "CWDM"
+    ],
+    "standards_code": [
+      "40GBASE-LR4",
+      "40GbE"
+    ],
+    "bit_rate_gbps": [
+      41.25,
+      10.3125
+    ],
+    "tx_power_max_dbm": [
+      8.3,
+      2.3
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-CFP-40GBASE-LR4-20"
+    ],
+    "form_factor": [
+      "CFP"
+    ],
+    "standards_claimed": [
+      "40GBASE-LR4",
+      "40GBASE-LR",
+      "CFP MSA's",
+      "40GbE"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 75.0,
+    "power_consumption_w": [
+      8.0
+    ],
+    "host_interface_name": [
+      "40GBASE-LR4"
+    ],
+    "media_interface_name": [
+      "40GBASE-LR4"
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -13.7
+    ],
+    "rx_overload_dbm": [
+      2.3
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -25.0
+    ],
+    "los_deassert_dbm": [
+      -11.5
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Technology listed as Grey CFP; module uses four CWDM channels/lanes at 10 Gbps. Power budget 0–10.7 dB stated. Power consumption worst case < 8 W. Receiver min input power and overload specified at BER 1×10⁻¹², PRBS 2³¹-1 @ 10.31 Gbps per lane. Transmitter per-lane minimum output printed as -3.0Bm (footnote 3: average power). Storage temperature -40°C to +85°C (not normal operating range). Optical performance stated to exceed 40GBASE-LR standard for up to 20 km.",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

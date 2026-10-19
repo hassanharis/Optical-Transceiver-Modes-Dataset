@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smith</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smith</div>
+  <div class="subtitle"></div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smith</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">MMF, SMF, COPPER_CAT5, Copper, SMF_ONU, SMF_OLT</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Catalog document covering many part numbers and form factors; optical parameters vary per row. Temperature options stated as commercial (0°C to 70°C), extended (-10°C to 85°C), or industrial (-40°C to 85°C) without per-SKU assignment. Data rates include OC-n (155, 622 Mb/s), 1.25 G, 2.5 G, ~10 G (9.9-11.3, 10.3125, 10.313), 40 G (39.8-44.8, 41.25), 100 G (103.1-111.8). Wavelength columns include single nm, BIDI pairs (e.g. 1310/1490), and ranges (1270-1610, 1470-1610, 1295-1310, 1270-1330). Distances include m and km (100 m, 220/500 m, 220 m, 300 m, 2 km, etc.). Copper SFP-T models use Cat 5 with no TX/RX dBm values. GPON models list asymmetric rates 1.25/2.5 and 2.5/1.25. CXP-SR10 lists rate 12.7-126 (as printed). Link Budget column values not mapped to schema fields. Return rate 0.010% and failure rate 0.0029% are quality metrics, not transceiver specs.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">OPTICAL TRANSCEIVER SPECIFICATIONS FOR THE SMART DATA CENTER., QUALITY OPTICS YOU CAN TRUST, Smith&#x27;s quality system provides our clients with:, WARRANTY SAFE, Smith transceivers support the following:, DATA-CENTER CERTIFIED, FOR BEST PRACTICES AND EXPERT CONFIGURATION, CALL +1 855.223.4298</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">For catalog PDFs, schema could support array of per-model records keyed by model/part number, or min/max envelopes per parameter with model list references. Include fields for link budget dB and copper/Ethernet rates (10/100, 1000). Clarify whether bit_rate_gbps should include Mb/s OC rates as 0.155/0.622 or separate field. BIDI wavelengths may need structured tx_nm/rx_nm pairs rather than scalar lists.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Form Factor</th><th>Reach (km)</th><th>Bit Rate (Gbps)</th><th>Wavelength Min</th><th>Wavelength Max</th><th>wavelength_center_nm</th><th>TX Power Min (dBm)</th><th>TX Power Max (dBm)</th><th>RX Sensitivity (dBm)</th><th>RX Overload (dBm)</th></tr>
+      <tr><td><strong>SFP-T100 copper 10/100</strong></td><td>SFP-T100</td><td>SFP</td><td>0.1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>SFP-TM copper 10/100/1000</strong></td><td>SFP-TM</td><td>SFP</td><td>0.1</td><td>1.25</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>SFP-T copper 1G</strong></td><td>SFP-T</td><td>SFP</td><td>0.1</td><td>1.25</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>SFP-OC3-SRD MM 2km</strong></td><td>SFP-OC3-SRD</td><td>SFP</td><td>2.0</td><td>0.155</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>-20.0</td><td>-14.0</td><td>-31.0</td><td>-5.0</td></tr>
+      <tr><td><strong>SFP-OC3-SR SM 2km</strong></td><td>SFP-OC3-SR</td><td>SFP</td><td>2.0</td><td>0.155</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>-15.0</td><td>-8.0</td><td>-23.0</td><td>-8.0</td></tr>
+      <tr><td><strong>SFP-OC3-IR1 20km</strong></td><td>SFP-OC3-IR1</td><td>SFP</td><td>20.0</td><td>0.155</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>-8.0</td><td>-14.0</td><td>-28.0</td><td>-8.0</td></tr>
+      <tr><td><strong>SFP-OC3-LR1 40km</strong></td><td>SFP-OC3-LR1</td><td>SFP</td><td>40.0</td><td>0.155</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>0.0</td><td>-5.0</td><td>-34.0</td><td>-10.0</td></tr>
+      <tr><td><strong>SFP-OC3-LR2 80km</strong></td><td>SFP-OC3-LR2</td><td>SFP</td><td>80.0</td><td>0.155</td><td>1550.0</td><td>1550.0</td><td>1550.0</td><td>0.0</td><td>-5.0</td><td>-34.0</td><td>-10.0</td></tr>
+      <tr><td><strong>SFP-OC3B34-15 BiDi</strong></td><td>SFP-OC3B34-15</td><td>SFP</td><td>15.0</td><td>0.155</td><td>1310.0</td><td>1490.0</td><td></td><td>-15.0</td><td>-8.0</td><td>-24.0</td><td>-8.0</td></tr>
+      <tr><td><strong>SFP-OC3B43-15 BiDi</strong></td><td>SFP-OC3B43-15</td><td>SFP</td><td>15.0</td><td>0.155</td><td>1490.0</td><td>1310.0</td><td></td><td>-15.0</td><td>-8.0</td><td>-24.0</td><td>-8.0</td></tr>
+      <tr><td><strong>SFP-OC3B34-40 BiDi</strong></td><td>SFP-OC3B34-40</td><td>SFP</td><td>40.0</td><td>0.155</td><td>1310.0</td><td>1490.0</td><td></td><td>3.0</td><td>-2.0</td><td>-24.0</td><td>-10.0</td></tr>
+      <tr><td><strong>SFP-OC3B43-40 BiDi</strong></td><td>SFP-OC3B43-40</td><td>SFP</td><td>40.0</td><td>0.155</td><td>1490.0</td><td>1310.0</td><td></td><td>3.0</td><td>-2.0</td><td>-24.0</td><td>-10.0</td></tr>
+      <tr><td><strong>SFP-OC3B35-15 BiDi</strong></td><td>SFP-OC3B35-15</td><td>SFP</td><td>15.0</td><td>0.155</td><td>1310.0</td><td>1550.0</td><td></td><td>-15.0</td><td>-8.0</td><td>-24.0</td><td>-8.0</td></tr>
+      <tr><td><strong>SFP-OC3B53-15 BiDi</strong></td><td>SFP-OC3B53-15</td><td>SFP</td><td>15.0</td><td>0.155</td><td>1550.0</td><td>1310.0</td><td></td><td>-15.0</td><td>-8.0</td><td>-24.0</td><td>-8.0</td></tr>
+      <tr><td><strong>SFP-OC3B35-40 BiDi</strong></td><td>SFP-OC3B35-40</td><td>SFP</td><td>40.0</td><td>0.155</td><td>1310.0</td><td>1550.0</td><td></td><td>3.0</td><td>-2.0</td><td>-24.0</td><td>-10.0</td></tr>
+      <tr><td><strong>SFP-OC3B53-40 BiDi</strong></td><td>SFP-OC3B53-40</td><td>SFP</td><td>40.0</td><td>0.155</td><td>1550.0</td><td>1310.0</td><td></td><td>3.0</td><td>-2.0</td><td>-24.0</td><td>-10.0</td></tr>
+      <tr><td><strong>SFP-OC3B45-15 BiDi</strong></td><td>SFP-OC3B45-15</td><td>SFP</td><td>15.0</td><td>0.155</td><td>1490.0</td><td>1550.0</td><td></td><td>-15.0</td><td>-8.0</td><td>-24.0</td><td>-8.0</td></tr>
+      <tr><td><strong>SFP-OC3B54-15 BiDi</strong></td><td>SFP-OC3B54-15</td><td>SFP</td><td>15.0</td><td>0.155</td><td>1550.0</td><td>1490.0</td><td></td><td>-15.0</td><td>-8.0</td><td>-24.0</td><td>-8.0</td></tr>
+      <tr><td><strong>SFP-OC3B45-40 BiDi</strong></td><td>SFP-OC3B45-40</td><td>SFP</td><td>40.0</td><td>0.155</td><td>1490.0</td><td>1550.0</td><td></td><td>3.0</td><td>-2.0</td><td>-24.0</td><td>-10.0</td></tr>
+      <tr><td><strong>SFP-OC3B54-40 BiDi</strong></td><td>SFP-OC3B54-40</td><td>SFP</td><td>40.0</td><td>0.155</td><td>1550.0</td><td>1490.0</td><td></td><td>3.0</td><td>-2.0</td><td>-24.0</td><td>-10.0</td></tr>
+      <tr><td><strong>SFP-OC3B45-80 BiDi</strong></td><td>SFP-OC3B45-80</td><td>SFP</td><td>80.0</td><td>0.155</td><td>1490.0</td><td>1550.0</td><td></td><td>0.0</td><td>5.0</td><td>-28.0</td><td>-3.0</td></tr>
+      <tr><td><strong>SFP-OC3B54-80 BiDi</strong></td><td>SFP-OC3B54-80</td><td>SFP</td><td>80.0</td><td>0.155</td><td>1550.0</td><td>1490.0</td><td></td><td>0.0</td><td>5.0</td><td>-28.0</td><td>-3.0</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">SFP-T100</span> <span class="badge">SFP-TM</span> <span class="badge">SFP-T</span> <span class="badge">SFP-OC3-SRD</span> <span class="badge">SFP-OC3-SR</span> <span class="badge">SFP-OC3-IR1</span> <span class="badge">SFP-OC3-LR1</span> <span class="badge">SFP-OC3-LR2</span> <span class="badge">SFP-OC3B34-15</span> <span class="badge">SFP-OC3B43-15</span> <span class="badge">SFP-OC3B34-40</span> <span class="badge">SFP-OC3B43-40</span> <span class="badge">SFP-OC3B35-15</span> <span class="badge">SFP-OC3B53-15</span> <span class="badge">SFP-OC3B35-40</span> <span class="badge">SFP-OC3B53-40</span> <span class="badge">SFP-OC3B45-15</span> <span class="badge">SFP-OC3B54-15</span> <span class="badge">SFP-OC3B45-40</span> <span class="badge">SFP-OC3B54-40</span> <span class="badge">SFP-OC3B45-80</span> <span class="badge">SFP-OC3B54-80</span> <span class="badge">SFP-OC12-SRD</span> <span class="badge">SFP-OC12-SR</span> <span class="badge">SFP-OC12-IR1</span> <span class="badge">SFP-OC12-LR1</span> <span class="badge">SFP-OC12-LR2</span> <span class="badge">SFP-OC12B34-15</span> <span class="badge">SFP-OC12B43-15</span> <span class="badge">SFP-OC12B34-40</span> <span class="badge">SFP-OC12B43-40</span> <span class="badge">SFP-OC12B35-15</span> <span class="badge">SFP-OC12B53-15</span> <span class="badge">SFP-OC12B35-40</span> <span class="badge">SFP-OC12B53-40</span> <span class="badge">SFP-OC12B45-15</span> <span class="badge">SFP-OC12B54-15</span> <span class="badge">SFP-OC12B45-40</span> <span class="badge">SFP-OC12B54-40</span> <span class="badge">SFP-OC12B45-80</span> <span class="badge">SFP-OC12B54-80</span> <span class="badge">SFP-OC48-SR</span> <span class="badge">SFP-OC48-IR1</span> <span class="badge">SFP-OC48-LR1</span> <span class="badge">SFP-OC48-LR2</span> <span class="badge">SFP-OC48B34-15</span> <span class="badge">SFP-OC48B43-15</span> <span class="badge">SFP-OC48B34-40</span> <span class="badge">SFP-OC48B43-40</span> <span class="badge">SFP-OC48B35-15</span> <span class="badge">SFP-OC48B53-15</span> <span class="badge">SFP-OC48B35-40</span> <span class="badge">SFP-OC48B53-40</span> <span class="badge">SFP-OC48B45-15</span> <span class="badge">SFP-OC48B54-15</span> <span class="badge">SFP-OC48B45-40</span> <span class="badge">SFP-OC48B54-40</span> <span class="badge">SFP-OC48B45-80</span> <span class="badge">SFP-OC48B54-80</span> <span class="badge">SFP-OC48B53-15</span> <span class="badge">SFP-OC48B35-40</span> <span class="badge">SFP-OC48B53-40</span> <span class="badge">SFP-SX</span> <span class="badge">SFP-LX</span> <span class="badge">SFP-EX</span> <span class="badge">SFP-ZX</span> <span class="badge">SFP-ZX-120</span> <span class="badge">SFP-ZX-160</span> <span class="badge">SFP-BX34-10</span> <span class="badge">SFP-BX43-10</span> <span class="badge">SFP-BX34-40</span> <span class="badge">SFP-BX43-40</span> <span class="badge">SFP-BX35-10</span> <span class="badge">SFP-BX53-10</span> <span class="badge">SFP-BX35-40</span> <span class="badge">SFP-BX53-40</span> <span class="badge">SFP-BX45-10</span> <span class="badge">SFP-BX54-10</span> <span class="badge">SFP-BX45-40</span> <span class="badge">SFP-BX54-40</span> <span class="badge">SFP-BX45-80</span> <span class="badge">SFP-BX54-80</span> <span class="badge">SFP-BX17-80</span> <span class="badge">SFP-BX71-80</span> <span class="badge">SFP-BX17-120</span> <span class="badge">SFP-BX71-120</span> <span class="badge">GPON-B34-20</span> <span class="badge">GPON-B43-20</span> <span class="badge">GPON-C43-20</span> <span class="badge">CWDM-SFP-xx-40</span> <span class="badge">CWDM-SFP-xx-80</span> <span class="badge">CWDM-SFP-xx-120</span> <span class="badge">DWDM-SFP-xx-40</span> <span class="badge">DWDM-SFP-xx-80</span> <span class="badge">DWDM-SFP-xx-120</span> <span class="badge">CSFP-BXU-10</span> <span class="badge">CSFP-BXD-10</span> <span class="badge">CSFP-BXU35-10</span> <span class="badge">CSFP-BXD53-10</span> <span class="badge">CSFP-BXU-20</span> <span class="badge">CSFP-BXD-20</span> <span class="badge">CSFP-BXU35-20</span> <span class="badge">CSFP-BXD53-20</span> <span class="badge">CSFP-BXU-40</span> <span class="badge">CSFP-BXD-40</span> <span class="badge">XENPAK-SR</span> <span class="badge">XENPAK-LR</span> <span class="badge">XENPAK-ER</span> <span class="badge">XENPAK-ZR</span> <span class="badge">CWDM-XENPAK-xx-40</span> <span class="badge">CWDM-XENPAK-xx-80</span> <span class="badge">DWDM-XENPAK-xx-40</span> <span class="badge">DWDM-XENPAK-xx-80</span> <span class="badge">X2-SR</span> <span class="badge">X2-LR</span> <span class="badge">X2-ER</span> <span class="badge">X2-ZR</span> <span class="badge">CWDM-X2-xx-40</span> <span class="badge">CWDM-X2-xx-80</span> <span class="badge">DWDM-X2-xx-40</span> <span class="badge">DWDM-X2-xx-80</span> <span class="badge">XFP-SR</span> <span class="badge">XFP-LR-OC192</span> <span class="badge">XFP-ER-OC192</span> <span class="badge">XFP-ZR-OC192</span> <span class="badge">XFP-BXU-10</span> <span class="badge">XFP-BXD-10</span> <span class="badge">XFP-BXU-20</span> <span class="badge">XFP-BXD-20</span> <span class="badge">XFP-BXU-40</span> <span class="badge">XFP-BXD-40</span> <span class="badge">CWDM-XFP-xx-10</span> <span class="badge">CWDM-XFP-xx-40</span> <span class="badge">CWDM-XFP-xx-80</span> <span class="badge">DWDM50-XFP-xx-40</span> <span class="badge">DWDM50-XFP-xx-80</span> <span class="badge">DWDM-XFP-xx-40</span> <span class="badge">DWDM-XFP-xx-80</span> <span class="badge">XFP-TUNE-80</span> <span class="badge">SFP10G-SR</span> <span class="badge">SFP10G-LRM</span> <span class="badge">SFP10G-LR</span> <span class="badge">SFP10G-LR20</span> <span class="badge">SFP10G-LR40</span> <span class="badge">SFP10G-LR70</span> <span class="badge">SFP10G-ER</span> <span class="badge">SFP10G-ZR</span> <span class="badge">SFP10G-BXU-10</span> <span class="badge">SFP10G-BXD-10</span> <span class="badge">SFP10G-BXU-20</span> <span class="badge">SFP10G-BXD-20</span> <span class="badge">SFP10G-BXU-40</span> <span class="badge">SFP10G-BXD-40</span> <span class="badge">SFP10G-BXU-60</span> <span class="badge">SFP10G-BXD-60</span> <span class="badge">CWDM-SFPP-xx-10</span> <span class="badge">CWDM-SFPP-xx-40</span> <span class="badge">CWDM-SFPP-xx-80</span> <span class="badge">SFPP-TUNE-80</span> <span class="badge">DWDM50-SFPP-xx-40</span> <span class="badge">DWDM50-SFPP-xx-80</span> <span class="badge">DWDM-SFPP-xx-40</span> <span class="badge">DWDM-SFPP-xx-80</span> <span class="badge">QSFP-SR4</span> <span class="badge">QSFP-CSR4</span> <span class="badge">QSFP-IR4</span> <span class="badge">QSFP-LR4</span> <span class="badge">QSFP-PLRM</span> <span class="badge">QSFP28-SR4</span> <span class="badge">QSFP28-IR4</span> <span class="badge">QSFP28-LR4</span> <span class="badge">CFP-40G-SR4</span> <span class="badge">CFP-40G-CSR4</span> <span class="badge">CFP-40G-LR4</span> <span class="badge">CFP-40G-ER4</span> <span class="badge">CFP-100G-SR10</span> <span class="badge">CFP-100G-SR4</span> <span class="badge">CFP-100G-CSR4</span> <span class="badge">CFP-100G-LR4</span> <span class="badge">CFP-100G-LR4-20</span> <span class="badge">CFP-100G-ER4</span> <span class="badge">CFP-100G-DWDM</span> <span class="badge">CFP2-100G-LR4</span> <span class="badge">CFP4-100G-SR4</span> <span class="badge">CFP4-100G-LR4</span> <span class="badge">CXP-SR10</span></td></tr>
+      <tr><td>form_factor</td><td><span class="badge">SFP</span> <span class="badge">CSFP</span> <span class="badge">XENPAK</span> <span class="badge">X2</span> <span class="badge">XFP</span> <span class="badge">SFP+</span> <span class="badge">QSFP+</span> <span class="badge">QSFP28</span> <span class="badge">CFP</span> <span class="badge">CFP2</span> <span class="badge">CFP4</span> <span class="badge">CXP</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">850.0</span> <span class="badge">1270.0</span> <span class="badge">1295.0</span> <span class="badge">1310.0</span> <span class="badge">1470.0</span> <span class="badge">1490.0</span> <span class="badge">1510.0</span> <span class="badge">1550.0</span> <span class="badge">1570.0</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">850.0</span> <span class="badge">1310.0</span> <span class="badge">1330.0</span> <span class="badge">1490.0</span> <span class="badge">1550.0</span> <span class="badge">1570.0</span> <span class="badge">1610.0</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">850.0</span> <span class="badge">1310.0</span> <span class="badge">1550.0</span></td></tr>
+      <tr><td>wavelength_band</td><td><span class="badge">C-band</span> <span class="badge">CWDM</span> <span class="badge">DWDM</span></td></tr>
+      <tr><td>channel_spacing_ghz</td><td><span class="badge">50.0</span> <span class="badge">100.0</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">0.155</span> <span class="badge">0.622</span> <span class="badge">1.25</span> <span class="badge">2.5</span> <span class="badge">9.9</span> <span class="badge">10.3125</span> <span class="badge">10.313</span> <span class="badge">11.3</span> <span class="badge">39.8</span> <span class="badge">41.25</span> <span class="badge">44.8</span> <span class="badge">103.1</span> <span class="badge">111.8</span> <span class="badge">126.0</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">0.1</span> <span class="badge">0.22</span> <span class="badge">0.3</span> <span class="badge">0.5</span> <span class="badge">2.0</span> <span class="badge">10.0</span> <span class="badge">15.0</span> <span class="badge">20.0</span> <span class="badge">40.0</span> <span class="badge">70.0</span> <span class="badge">80.0</span> <span class="badge">100.0</span> <span class="badge">120.0</span> <span class="badge">160.0</span></td></tr>
+      <tr><td>tx_power_min_dbm</td><td><span class="badge">-20.0</span> <span class="badge">-15.0</span> <span class="badge">-10.0</span> <span class="badge">-9.0</span> <span class="badge">-8.2</span> <span class="badge">-8.0</span> <span class="badge">-7.6</span> <span class="badge">-7.5</span> <span class="badge">-7.3</span> <span class="badge">-7.0</span> <span class="badge">-6.5</span> <span class="badge">-5.0</span> <span class="badge">-4.8</span> <span class="badge">-4.7</span> <span class="badge">-4.3</span> <span class="badge">-4.0</span> <span class="badge">-3.0</span> <span class="badge">-2.7</span> <span class="badge">-2.5</span> <span class="badge">-2.0</span> <span class="badge">-1.0</span> <span class="badge">0.0</span> <span class="badge">0.5</span> <span class="badge">1.0</span> <span class="badge">1.5</span> <span class="badge">2.0</span> <span class="badge">3.0</span></td></tr>
+      <tr><td>tx_power_max_dbm</td><td><span class="badge">-14.0</span> <span class="badge">-8.0</span> <span class="badge">-5.0</span> <span class="badge">-3.0</span> <span class="badge">-2.0</span> <span class="badge">-1.0</span> <span class="badge">0.0</span> <span class="badge">0.5</span> <span class="badge">1.0</span> <span class="badge">2.3</span> <span class="badge">2.4</span> <span class="badge">2.5</span> <span class="badge">2.9</span> <span class="badge">3.0</span> <span class="badge">3.5</span> <span class="badge">4.0</span> <span class="badge">4.5</span> <span class="badge">5.0</span> <span class="badge">6.0</span> <span class="badge">7.0</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-37.0</span> <span class="badge">-35.0</span> <span class="badge">-33.0</span> <span class="badge">-32.0</span> <span class="badge">-31.0</span> <span class="badge">-28.0</span> <span class="badge">-27.0</span> <span class="badge">-26.0</span> <span class="badge">-25.0</span> <span class="badge">-24.0</span> <span class="badge">-23.0</span> <span class="badge">-21.3</span> <span class="badge">-20.9</span> <span class="badge">-20.0</span> <span class="badge">-19.0</span> <span class="badge">-18.0</span> <span class="badge">-17.0</span> <span class="badge">-15.8</span> <span class="badge">-15.0</span> <span class="badge">-14.4</span> <span class="badge">-14.1</span> <span class="badge">-14.0</span> <span class="badge">-13.7</span> <span class="badge">-12.6</span> <span class="badge">-12.0</span> <span class="badge">-11.5</span> <span class="badge">-11.4</span> <span class="badge">-11.1</span> <span class="badge">-11.0</span> <span class="badge">-10.6</span> <span class="badge">-10.3</span> <span class="badge">-10.0</span> <span class="badge">-9.9</span> <span class="badge">-9.5</span> <span class="badge">-6.9</span> <span class="badge">-6.8</span></td></tr>
+      <tr><td>rx_overload_dbm</td><td><span class="badge">-12.0</span> <span class="badge">-10.0</span> <span class="badge">-9.0</span> <span class="badge">-8.0</span> <span class="badge">-7.0</span> <span class="badge">-6.0</span> <span class="badge">-5.4</span> <span class="badge">-5.0</span> <span class="badge">-3.0</span> <span class="badge">-1.0</span> <span class="badge">0.0</span> <span class="badge">0.5</span> <span class="badge">1.0</span> <span class="badge">1.5</span> <span class="badge">2.3</span> <span class="badge">2.5</span> <span class="badge">3.4</span> <span class="badge">3.8</span> <span class="badge">4.0</span> <span class="badge">4.5</span> <span class="badge">5.0</span></td></tr>
+      <tr><td>number_of_lanes</td><td><span class="badge">4</span> <span class="badge">10</span> <span class="badge">12</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 11:04
+</footer>
+
+</div>
+</body>
+</html>

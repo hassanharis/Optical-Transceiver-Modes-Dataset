@@ -1,0 +1,101 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-100BASE-L200D",
+      "SO-SFP-100Base-L200D"
+    ],
+    "wavelength_min_nm": [
+      1480.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1580.0,
+      1600.0
+    ],
+    "standards_code": [
+      "FE",
+      "STM1",
+      "OC3",
+      "100BASE"
+    ],
+    "bit_rate_gbps": [
+      0.1,
+      0.155
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_center_nm": [
+      1550.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      1
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      200.0
+    ],
+    "tx_power_min_dbm": [
+      2.0
+    ],
+    "tx_power_max_dbm": [
+      7.0
+    ],
+    "rx_sensitivity_dbm": [
+      -45.0
+    ],
+    "rx_overload_dbm": [
+      -10.0
+    ],
+    "cd_tolerance_ps_nm": [
+      4000.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -50.0
+    ],
+    "los_deassert_dbm": [
+      -46.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Bit rate support stated as 100 to 155Mbps. Transmitter output power min listed as +2.0dB (footnote 1: average power; max is +7.0dBm). Receiver minimum input power -45dBm and overload -10dBm per footnote 1 (average power); footnote 2: @ 155Mbps, BER 1x10-12, PRBS 231-1. Power budget 17 – 47dB. Dispersion penalty max 1dB (no paired penalized optical value and operating condition for penalty objects). Storage temperature -40°C to +85°C (not normal operating range). Transmission media SM (2x LC). Technology: Grey SFP. DDM Yes per SFF-8472.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-100BASE-L200D",
+      "SFP, 100 – 155Mbps, 1550nm, SM, DDM, 47dB, 200km",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether transmitter min output power +2.0dB is a typo for +2.0dBm. Consider a dedicated field for power budget (dB) and dispersion penalty max (dB) without full penalty triples."
+  }
+}

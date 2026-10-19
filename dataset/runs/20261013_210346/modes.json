@@ -1,0 +1,180 @@
+{
+  "modes": [
+    {
+      "label": "LxL-ST11xx 2x FC FC-PI 150m",
+      "model": "LxL-ST11xx",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -10.0,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "LxL-ST11xx 1x FC FC-PH-2 300m",
+      "model": "LxL-ST11xx",
+      "host_interface_name": "1x Fiber Channel",
+      "standards_code": "FC-PH-2",
+      "baud_rate_gbaud": 1.0625,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -10.0,
+      "rx_sensitivity_dbm": -17.0,
+      "number_of_lanes": 1
+    },
+    {
+      "label": "LxL-ST11xx 2x FC FC-PI 300m",
+      "model": "LxL-ST11xx",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -10.0,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "LxL-ST11xx 1x FC FC-PH-2 500m",
+      "model": "LxL-ST11xx",
+      "host_interface_name": "1x Fiber Channel",
+      "standards_code": "FC-PH-2",
+      "baud_rate_gbaud": 1.0625,
+      "reach_km": 0.5,
+      "tx_power_min_dbm": -10.0,
+      "rx_sensitivity_dbm": -17.0,
+      "number_of_lanes": 1
+    },
+    {
+      "label": "LxL2-ST11xx 2x FC FC-PI 150m",
+      "model": "LxL2-ST11xx",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -8.0,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "LxL2-ST11xx 1x FC FC-PH-2 300m",
+      "model": "LxL2-ST11xx",
+      "host_interface_name": "1x Fiber Channel",
+      "standards_code": "FC-PH-2",
+      "baud_rate_gbaud": 1.0625,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -8.0,
+      "rx_sensitivity_dbm": -17.0,
+      "number_of_lanes": 1
+    },
+    {
+      "label": "LxL2-ST11xx 2x FC FC-PI 300m",
+      "model": "LxL2-ST11xx",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -8.0,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "LxL2-ST11xx 1x FC FC-PH-2 500m",
+      "model": "LxL2-ST11xx",
+      "host_interface_name": "1x Fiber Channel",
+      "standards_code": "FC-PH-2",
+      "baud_rate_gbaud": 1.0625,
+      "reach_km": 0.5,
+      "tx_power_min_dbm": -8.0,
+      "rx_sensitivity_dbm": -17.0,
+      "number_of_lanes": 1
+    },
+    {
+      "label": "LxL3-ST11xx 2x FC FC-PI 150m",
+      "model": "LxL3-ST11xx",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -7.0,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "LxL3-ST11xx 1x FC FC-PH-2 300m",
+      "model": "LxL3-ST11xx",
+      "host_interface_name": "1x Fiber Channel",
+      "standards_code": "FC-PH-2",
+      "baud_rate_gbaud": 1.0625,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -7.0,
+      "rx_sensitivity_dbm": -17.0,
+      "number_of_lanes": 1
+    },
+    {
+      "label": "LxL3-ST11xx 2x FC FC-PI 300m",
+      "model": "LxL3-ST11xx",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -7.0,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "LxL3-ST11xx 1x FC FC-PH-2 500m",
+      "model": "LxL3-ST11xx",
+      "host_interface_name": "1x Fiber Channel",
+      "standards_code": "FC-PH-2",
+      "baud_rate_gbaud": 1.0625,
+      "reach_km": 0.5,
+      "tx_power_min_dbm": -7.0,
+      "rx_sensitivity_dbm": -17.0,
+      "number_of_lanes": 1
+    },
+    {
+      "label": "LxL5-ST11xx 2x FC FC-PI 150m",
+      "model": "LxL5-ST11xx",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -5.0,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "LxL5-ST11xx 1x FC FC-PH-2 300m",
+      "model": "LxL5-ST11xx",
+      "host_interface_name": "1x Fiber Channel",
+      "standards_code": "FC-PH-2",
+      "baud_rate_gbaud": 1.0625,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -5.0,
+      "rx_sensitivity_dbm": -17.0,
+      "number_of_lanes": 1
+    },
+    {
+      "label": "LxL5-ST11xx 2x FC FC-PI 300m",
+      "model": "LxL5-ST11xx",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -5.0,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "LxL5-ST11xx 1x FC FC-PH-2 500m",
+      "model": "LxL5-ST11xx",
+      "host_interface_name": "1x Fiber Channel",
+      "standards_code": "FC-PH-2",
+      "baud_rate_gbaud": 1.0625,
+      "reach_km": 0.5,
+      "tx_power_min_dbm": -5.0,
+      "rx_sensitivity_dbm": -17.0,
+      "number_of_lanes": 1
+    }
+  ]
+}

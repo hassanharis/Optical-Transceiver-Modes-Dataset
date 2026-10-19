@@ -1,0 +1,86 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-10GE-ER",
+    "SO-SFP-10GE-ER-I"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ae ER/EW",
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1530.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1565.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "SFP+"
+  ],
+  "standards_code": [
+    "10GBASE-ER",
+    "10GBASE-EW",
+    "IEEE 802.3ae ER/EW"
+  ],
+  "bit_rate_gbps": [
+    0.6,
+    11.3,
+    10.3
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -4.7
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -15.8
+  ],
+  "rx_overload_dbm": [
+    -1.0
+  ],
+  "cd_tolerance_ps_nm": [
+    800.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -16.5
+  ],
+  "notes": "Family datasheet for SO-SFP-10GE-ER and SO-SFP-10GE-ER-I. Operating temperature: -0°C to +70°C (-ER); -40°C to +85°C (-ER-I). Storage temperature -40°C to +85°C. Power budget 5 – 11.1dB. Dispersion penalty max 2dB. Footnote 1) Average power on transmitter output power and receiver minimum input power and overload. Footnote 2) Minimum input power @ 10.3Gbps, BER 1x10-12, PRBS 231-1. Transmit wavelength 1530nm – 1565nm; receiver wavelength range 1260nm – 1600nm. Power consumption stated as < 1.5W. Output power min printed as -4.7dB with footnote 1). Technology listed as Grey SFP+.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-10GE-ER & -ER-I SFP+, 10G Multirate, 1550nm, SM, DDM, 11.1dB, 40km",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

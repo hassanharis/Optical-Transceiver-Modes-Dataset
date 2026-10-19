@@ -1,0 +1,79 @@
+{
+  "multi_valued": {
+    "power_consumption_w": [
+      1.05,
+      1.2
+    ],
+    "standards_code": [
+      "IEEE 802.3",
+      "IEEE 802.3ab",
+      "1000BASE-T",
+      "1000Base-T",
+      "SGMII"
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      1000.0,
+      10.0,
+      1000.0
+    ],
+    "modulation_format": [
+      "PAM",
+      "PAM5"
+    ],
+    "reach_km": [
+      0.1,
+      100.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LP-SFP-TM8I"
+    ],
+    "form_factor": [
+      "SFF"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "IEEE 802.3",
+      "IEEE 802.3ab",
+      "Gigabit Ethernet",
+      "1000BASE-T",
+      "1000Base-T",
+      "10/100/1000Mbps"
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "host_interface_name": [
+      "SGMII"
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "penalties": [],
+    "notes": "Copper (RJ-45) SFP transceiver over Category 5 UTP; not an optical module. LP-SFP-TM8I ordering row specifies industrial case temperature -40 to +85°C and Marvel 88E1111 PHY with SGMII. Datasheet also documents commercial 0 to +70°C for other order codes. Symbol rate stated as 250 Mbps on each of four pairs (5-level PAM per IEEE 802.3). Table 5 data rate min/max printed as 10 and 1,000 Mb/sec. Cable reach 100 m (Category 5 UTP, BER <10^-12); ordering tables also state Transmission Distance 0.1 Km. Power consumption and surge current exceed SFP MSA limits per caution note. Line frequency (Table 3) typ 125 MHz. bit_rate_gbps mixes values as printed in Mb/sec and Gb/s without unit conversion.",
+    "provenance_datasheet_sections": [
+      "LP-SFP-TM8I Copper SFP RJ45 10/100/1000Mbps 100m Transceiver",
+      "Features",
+      "Description",
+      "Electrical Power Interface",
+      "High-Speed Electrical Interface",
+      "High-speed electrical interface, host-SFP",
+      "General Specifications",
+      "Table 5. General specifications",
+      "Environmental Specifications",
+      "Table 6. Environmental specifications",
+      "Mechanical Specifications",
+      "Ordering information"
+    ],
+    "suggestions": "Add form factors SFP and connector RJ-45 for copper modules. Add cable media types (Cat5 UTP). Clarify whether bit_rate_gbps should accept Mb/s literals or require normalized Gbps. number_of_lanes=4 inferred from four twisted pairs, not labeled as lanes in the datasheet."
+  }
+}

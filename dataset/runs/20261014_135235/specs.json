@@ -1,0 +1,99 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-10GE-LRM"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ae LRM",
+    "10GBASE-LRM",
+    "SFP 8431",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1355.0,
+    1565.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "SFP+",
+    "10GBASE-LRM"
+  ],
+  "media_interface_name": [
+    "10GBASE-LRM"
+  ],
+  "standards_code": [
+    "10GBASE-LRM",
+    "IEEE 802.3ae LRM"
+  ],
+  "bit_rate_gbps": [
+    0.614,
+    0.6144,
+    0.768,
+    1.2288,
+    1.536,
+    2.4576,
+    3.072,
+    4.9152,
+    6.144,
+    6.144,
+    8.11008,
+    9.8304,
+    10.1376,
+    10.3,
+    11.3
+  ],
+  "reach_km": [
+    0.22
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    0.5
+  ],
+  "rx_sensitivity_dbm": [
+    -10.0
+  ],
+  "rx_overload_dbm": [
+    1.5
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -25.0
+  ],
+  "los_deassert_dbm": [
+    -11.0
+  ],
+  "penalties": [],
+  "notes": "Power budget 0–3.5 dB. Power consumption stated as < 1 W (no exact numeric). Storage temperature -40°C to +85°C. 10GBASE-LRM 220 m requires host Electronic Dispersion Compensation (EDC); 220 m over 50/125 MMF with modal bandwidth 2000 MHz·km. No minimum distance (no minimum attenuation). Rx min input power and overload measured at 10.3 Gbps using PRBS31 @ BER 1×10⁻¹². Tx/Rx power values are average power. DDM per SFF-8472. Connector count: 2x LC.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-10GE-LRM",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether post_fec_ber_target should be populated from sensitivity test BER footnote only. Power budget (3.5 dB) has no dedicated schema field."
+}

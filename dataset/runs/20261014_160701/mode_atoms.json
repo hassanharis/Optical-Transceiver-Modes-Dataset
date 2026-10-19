@@ -1,0 +1,43 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP28-PCUxM",
+      "SO-SFP28-PCU0.5M",
+      "SO-SFP28-PCU1M",
+      "SO-SFP28-PCU2M",
+      "SO-SFP28-PCU3M",
+      "SO-SFP28-PCU5M"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP28"
+    ],
+    "standards_claimed": [
+      "SFF-8402",
+      "SFF-8432",
+      "SFP28 MSA",
+      "IEEE 802.3by"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "standards_code": [
+      "IEEE 802.3by"
+    ],
+    "bit_rate_gbps": [
+      25.0
+    ],
+    "penalties": [],
+    "notes": "Twinax copper Direct Attach Cable (DAC), not an optical transceiver. Cable lengths 0.5 to 5 m (1.6 to 16.4 ft) per variant; AWG30 for 0.5m\u20133m parts, AWG26 for 5m. Overview calls the product an active DAC; title, features, and part descriptions state passive. Minimum bend radius AWG30: 23 mm; AWG26: 28 mm. RoSH compliant stated. Vendor inferred from smartoptics.com footer only; no explicit manufacturer name in body.",
+    "provenance_datasheet_sections": [
+      "SO-SFP28-PCUxM",
+      "OVERVIEW",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "INFORMATION",
+      "MECHANICAL DRAWING"
+    ],
+    "suggestions": "Consider schema fields for cable_length_m, cable_awg, dac_type (active/passive), and minimum_bend_radius_mm for DAC/copper products. Clarify whether vendor should be null when only a website URL identifies the brand."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp-16gfc-er-dxxxx.pdf",
+  "page_count": 3,
+  "table_count": 4,
+  "markdown_chars": 8399,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 22
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

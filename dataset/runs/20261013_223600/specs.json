@@ -1,0 +1,127 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTCD4543E3PxM",
+    "FTCD4543E3PCM-4A"
+  ],
+  "form_factor": [
+    "QSFP-DD",
+    "QSFP-DD_type-2"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "IEEE P802.3bs",
+    "Common Management Interface Specification Rev. 4.0",
+    "CMIS 4.0",
+    "CMIS 5.0"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable",
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "MPO12 APC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    8.0
+  ],
+  "host_interface_name": [
+    "8x50G PAM4 retimed electrical interface",
+    "400GAUI-8"
+  ],
+  "media_interface_name": [
+    "4x100G-LR"
+  ],
+  "frame": [
+    "4x100Gb/s",
+    "8x50G PAM4"
+  ],
+  "standards_code": [
+    "4x100G-LR",
+    "IEEE P802.3bs",
+    "400G"
+  ],
+  "baud_rate_gbaud": [
+    53.125,
+    26.5625
+  ],
+  "bit_rate_gbps": [
+    425.0,
+    100.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -1.9
+  ],
+  "tx_power_max_dbm": [
+    4.8
+  ],
+  "rx_sensitivity_dbm": [
+    -6.1,
+    -4.1
+  ],
+  "rx_overload_dbm": [
+    4.8,
+    5.8
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "transmitter_reflectance_db": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    15.6
+  ],
+  "number_of_lanes": [
+    4,
+    8
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "penalties": [],
+  "notes": "Case temperature: c-temp 0°C to +70°C (FTCD4543E3PxM per Section VI); limited temp 20°C to +60°C per product features. Average launch power min -1.9 dBm and average receive power min -8.2 dBm are informative per IV notes. Receiver sensitivity (OMAouter) max -6.1 dBm for TECQ<1.4 dB; for 1.4 dB ≤ TECQ ≤ 3.4 dB sensitivity is -7.5 + TECQ dBm. Stressed receiver sensitivity -4.1 dBm (OMAouter) measured with SECQ 3.4 dB conformance test at TP3 per IEEE 124.8.9. Electrical signaling rate per lane 26.5625±100 ppm Gbd; optical per lane 53.125±100 ppm GBd. Bit Error Ratio 2.4E-4 as defined by IEEE P802.3bs. Maximum distance SMF per G.652 Lmax1 10,000 m.",
+  "provenance_datasheet_sections": [
+    "Product Specification 4x100G-LR QSFP-DD Optical Transceiver Module FTCD4543E3PxM",
+    "9B PRODUCT FEATURES",
+    "10B APPLICATIONS",
+    "PRODUCT SELECTION",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (EOL, TOP = 0 to +70 °C, VCC = 3.135 to 3.465 Volts)",
+    "IV. Optical Characteristics (EOL, TOP = 0 to +70 °C, VCC = 3.135 to 3.465 Volts)",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "X. Mechanical Specifications"
+  ],
+  "suggestions": "Datasheet does not state emitter/photodetector types, FEC algorithm name, or CMIS host/media interface ID hex values; add if available in EEPROM map AN-2189. TECQ-dependent rx sensitivity rows could be modeled as penalties if schema allows TECQ as a condition parameter."
+}

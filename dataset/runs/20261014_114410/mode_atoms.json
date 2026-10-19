@@ -1,0 +1,133 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-QSFP-DD-4C-FR4",
+      "SO-QSFP-DD-4C-FR4-4"
+    ],
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "host_interface_name": [
+      "400GAUI-8",
+      "100GAUI-2"
+    ],
+    "media_interface_name": [
+      "400GBASE-FR4",
+      "100GBASE-FR1"
+    ],
+    "frame": [
+      "1x 400GAUI-8 (8x 50G)",
+      "4x 100GAUI-2 (2x 50G)",
+      "8x 53.125G"
+    ],
+    "standards_code": [
+      "400GBASE-FR4",
+      "400GBASE-R",
+      "100GBASE-FR1",
+      "4 x 100GBASE-R",
+      "Clause 151",
+      "Clause 140",
+      "IEEE802.3bj"
+    ],
+    "bit_rate_gbps": [
+      425.0,
+      400.0
+    ],
+    "fec_type": [
+      "RS_GENERIC",
+      "RS_528_514"
+    ],
+    "number_of_lanes": [
+      8,
+      4
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "QSFP-DD MSA",
+      "CMIS3.0",
+      "CMIS4.0"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      10.0
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -3.3
+    ],
+    "tx_power_max_dbm": [
+      3.5
+    ],
+    "rx_sensitivity_dbm": [
+      -7.3
+    ],
+    "rx_overload_dbm": [
+      3.5
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "los_assert_dbm": [
+      -15.0
+    ],
+    "los_deassert_dbm": [
+      -9.5
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Power consumption stated as < 10W (worst case). Optical parameters specified at BER 2.4x10-4; host FEC per IEEE802.3bj RS(528,514) required. Tx/Rx power per lane is average power (footnote 3). Rx min input and overload specified at BER 2.4x10-4 (footnote 4). Power budget 0 – 4.0 dB. Storage temperature -40°C to +85°C. Two variants: CMIS3.0 (SO-QSFP-DD-4C-FR4) and CMIS4.0 (SO-QSFP-DD-4C-FR4-4). CMIS application codes 1 (400GBASE-R) and 2 (4 x 100GBASE-R). Aggregated line rate 425 Gbps for 400GbE (footnote 1).",
+    "provenance_datasheet_sections": [
+      "SO-QSFP-DD-4C-FR4 / -4",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "APPLICATION CODE LIST",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Datasheet does not state host/media interface IDs in hex or decimal, emitter/photodetector types, OSNR, or dispersion tolerance. Power budget 4.0 dB max could map to a dedicated field if added. Clarify whether BER 2.4x10-4 is pre- or post-FEC for rx sensitivity."
+  }
+}

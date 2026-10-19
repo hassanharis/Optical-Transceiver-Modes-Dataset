@@ -1,0 +1,104 @@
+{
+  "modes": [
+    {
+      "label": "100GBASE-SR10 (OM3, 10.3 Gb/s per lane)",
+      "host_interface_name": "CPPI",
+      "media_interface_name": "100GBASE-SR10",
+      "standards_code": "100GBASE-SR10",
+      "bit_rate_gbps": 10.3,
+      "reach_km": 0.1,
+      "pre_fec_ber_threshold": 1e-12,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "100GBASE-SR10 (OM4, 10.3 Gb/s per lane)",
+      "host_interface_name": "CPPI",
+      "media_interface_name": "100GBASE-SR10",
+      "standards_code": "100GBASE-SR10",
+      "bit_rate_gbps": 10.3,
+      "reach_km": 0.15,
+      "pre_fec_ber_threshold": 1e-12,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "12x10GBASE-SR (10.3 Gb/s per lane)",
+      "host_interface_name": "CPPI",
+      "media_interface_name": "Ethernet-compliant optical interface",
+      "standards_code": "12x10GBASE-SR",
+      "bit_rate_gbps": 10.3,
+      "reach_km": 0.1,
+      "pre_fec_ber_threshold": 1e-12,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "Multirate CXP 11.1 Gb/s per lane",
+      "host_interface_name": "84-pin edge connector",
+      "media_interface_name": "Ethernet-compliant optical interface",
+      "standards_code": "CXP",
+      "bit_rate_gbps": 11.1,
+      "reach_km": 0.1,
+      "pre_fec_ber_threshold": 1e-06,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "Multirate CXP 11.2 Gb/s per lane",
+      "host_interface_name": "84-pin edge connector",
+      "media_interface_name": "Ethernet-compliant optical interface",
+      "standards_code": "CXP",
+      "bit_rate_gbps": 11.2,
+      "reach_km": 0.1,
+      "pre_fec_ber_threshold": 1e-06,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "Multirate CXP 11.3 Gb/s per lane",
+      "host_interface_name": "84-pin edge connector",
+      "media_interface_name": "Ethernet-compliant optical interface",
+      "standards_code": "CXP",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.1,
+      "pre_fec_ber_threshold": 1e-08,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "OTU2e (11.1 Gb/s per lane)",
+      "host_interface_name": "CPPI",
+      "media_interface_name": "Ethernet-compliant optical interface",
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 11.1,
+      "reach_km": 0.1,
+      "pre_fec_ber_threshold": 1e-06,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "OTU4 (max lane rate)",
+      "host_interface_name": "CPPI",
+      "media_interface_name": "Ethernet-compliant optical interface",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 11.318,
+      "reach_km": 0.1,
+      "pre_fec_ber_threshold": 1e-08,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "100GBASE-SR10 aggregate (135.816 Gb/s)",
+      "host_interface_name": "CXP electrical interface",
+      "media_interface_name": "100GBASE-SR10",
+      "standards_code": "100GBASE-SR10",
+      "bit_rate_gbps": 135.816,
+      "reach_km": 0.1,
+      "pre_fec_ber_threshold": 1e-12,
+      "los_assert_dbm": -15.5
+    },
+    {
+      "label": "InfiniBand SDR (1 Gb/s per lane)",
+      "host_interface_name": "CPPI",
+      "media_interface_name": "Ethernet-compliant optical interface",
+      "standards_code": "CPPI",
+      "bit_rate_gbps": 1.0,
+      "reach_km": 0.1,
+      "pre_fec_ber_threshold": 1e-12,
+      "los_assert_dbm": -15.5
+    }
+  ]
+}

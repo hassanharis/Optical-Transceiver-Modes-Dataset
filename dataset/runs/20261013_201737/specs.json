@@ -1,0 +1,131 @@
+{
+  "vendor": "Avago Technologies",
+  "model": [
+    "AFBR-79Q4Z",
+    "AFBR-79Q5Z",
+    "AFBR-79QEKZ"
+  ],
+  "form_factor": [
+    "QSFP"
+  ],
+  "standards_claimed": [
+    "QSFP Multi-Source Agreement",
+    "QSFP MSA"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable",
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "MPO",
+    "MTP"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM2",
+    "MMF_OM3",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5,
+    1.3
+  ],
+  "host_interface_name": [
+    "QSFP"
+  ],
+  "standards_code": [
+    "InfiniBand QDR",
+    "InfiniBand DDR",
+    "InfiniBand SDR",
+    "10GbE",
+    "PCI-Express",
+    "8b/10b"
+  ],
+  "baud_rate_gbaud": [
+    2.5,
+    10.0
+  ],
+  "bit_rate_gbps": [
+    2.5,
+    5.0,
+    10.0,
+    40.0
+  ],
+  "reach_km": [
+    0.035,
+    0.1
+  ],
+  "tx_power_max_dbm": [
+    1.0
+  ],
+  "rx_sensitivity_dbm": [
+    -9.8
+  ],
+  "rx_overload_dbm": [
+    1.0
+  ],
+  "extinction_ratio_db": [
+    3.0
+  ],
+  "los_assert_dbm": [
+    -26.0
+  ],
+  "los_deassert_dbm": [
+    -10.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "total_jitter_ps": [
+    30.0,
+    70.0
+  ],
+  "penalties": [],
+  "notes": "Reach 35 m (OM2, 500 MHz·km) and 100 m (OM3, 2000 MHz·km) per Recommended Operating Conditions; Features states up to 100 m at 10 G/channel on OM3. Link budget footnote allocates 3.5 dB/km attenuation, 1.5 dB connector loss, 0.3 dB modal noise penalty—not module insertion loss. Several limits marked TBD or Informative (e.g. Input Optical Power Sensitivity OMA -9.8 dBm max, Output OMA -3 dBm min). Nominal wavelength 850 nm in Description; center wavelength 840–860 nm in optical tables. AFBR-79Q5Z is 5G Infiniband variant. Case temperature typ 40°C in spec tables.",
+  "provenance_datasheet_sections": [
+    "AFBR-79Q4xZ 10G QSFP Short Wavelength Transceiver Pluggable, Parallel-Fiber-Optics Modules",
+    "Description",
+    "Part Number Ordering Options",
+    "Features",
+    "Applications",
+    "Transmitter",
+    "Receiver",
+    "Recommended Operating Conditions",
+    "Transceiver Electrical Characteristics",
+    "Transmitter Section Electrical Characteristics",
+    "Receiver Section Electrical Characteristics",
+    "Transmitter Optical Characteristics",
+    "Receiver Optical Characteristics",
+    "Absolute Maximum Ratings",
+    "Link Model and Reference Channel",
+    "Package Outline"
+  ],
+  "suggestions": "Distinguish reach by fiber type (OM2 vs OM3) in schema. Include optional fields for OMA vs average power and disabled/squelched output levels. LOS de-assert min listed as TBD in table—only max -10 dBm captured."
+}

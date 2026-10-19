@@ -1,0 +1,44 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-16GFC-ER-C47 CWDM 1470nm",
+      "model": "SO-SFP-16GFC-ER-C47",
+      "wavelength_center_nm": 1470.0,
+      "host_interface_name": "16G FC",
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "SO-SFP-16GFC-ER-C49 CWDM 1490nm",
+      "model": "SO-SFP-16GFC-ER-C49",
+      "wavelength_center_nm": 1490.0,
+      "host_interface_name": "16G FC",
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "SO-SFP-16GFC-ER-C51 CWDM 1510nm",
+      "model": "SO-SFP-16GFC-ER-C51",
+      "wavelength_center_nm": 1510.0,
+      "host_interface_name": "16G FC",
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "SO-SFP-16GFC-ER-C53 CWDM 1530nm",
+      "model": "SO-SFP-16GFC-ER-C53",
+      "wavelength_center_nm": 1530.0,
+      "host_interface_name": "16G FC",
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "SO-SFP-16GFC-ER-C55 CWDM 1550nm",
+      "model": "SO-SFP-16GFC-ER-C55",
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "16G FC",
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 14.025
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "modes": [
+    {
+      "label": "QTWDM-0220AD Gigabit Ethernet 1.25G",
+      "model": "QTWDM-0220AD",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "1000BASE-BX-U",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QTWDM-0220AD Fiber Channel 1.063G",
+      "model": "QTWDM-0220AD",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "Fiber Channel",
+      "standards_code": "SONET OC-24-LR-1",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "QT-WDM-0220AD Gigabit Ethernet 1.25G",
+      "model": "QT-WDM-0220AD",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "1000BASE-BX-U",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0220AD Fiber Channel 1.063G",
+      "model": "QT-WDM-0220AD",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "Fiber Channel",
+      "standards_code": "SONET OC-24-LR-1",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "QT-WDM-0220AID Gigabit Ethernet 1.25G",
+      "model": "QT-WDM-0220AID",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "1000BASE-BX-U",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0220AID Fiber Channel 1.063G",
+      "model": "QT-WDM-0220AID",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "Fiber Channel",
+      "standards_code": "SONET OC-24-LR-1",
+      "bit_rate_gbps": 1.063
+    }
+  ]
+}

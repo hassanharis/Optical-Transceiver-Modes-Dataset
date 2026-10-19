@@ -1,0 +1,120 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-TOSFP-4CC-ZR"
+  ],
+  "form_factor": [
+    "OSFP"
+  ],
+  "standards_claimed": [
+    "OIF 400ZR",
+    "OIF400ZR",
+    "CMIS4.0",
+    "IEEE 802.3bs",
+    "IEEE P802.3bs"
+  ],
+  "wavelength_band": [
+    "C-band",
+    "ITU C-Band"
+  ],
+  "frequency_min_thz": [
+    191.275
+  ],
+  "frequency_max_thz": [
+    196.125
+  ],
+  "channel_spacing_ghz": [
+    6.25,
+    75.0,
+    100.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    20.0
+  ],
+  "host_interface_name": [
+    "400GAUI-8"
+  ],
+  "media_interface_name": [
+    "400GBASE-ZR"
+  ],
+  "frame": [
+    "400GAUI-8"
+  ],
+  "standards_code": [
+    "OIF 400ZR",
+    "OIF-ZR",
+    "400GBASE-ZR",
+    "400G-ZR",
+    "Application Code 0x01",
+    "Application Code 0x02"
+  ],
+  "baud_rate_gbaud": [
+    60.0
+  ],
+  "bit_rate_gbps": [
+    400.0,
+    100.0
+  ],
+  "modulation_format": [
+    "QAM_16",
+    "PAM4"
+  ],
+  "reach_km": [
+    120.0
+  ],
+  "tx_power_min_dbm": [
+    -10.0
+  ],
+  "tx_power_max_dbm": [
+    -6.0
+  ],
+  "rx_sensitivity_dbm": [
+    -20.0,
+    -12.0
+  ],
+  "rx_osnr_db": [
+    26.0
+  ],
+  "rx_osnr_tolerance_db_max": [
+    26.0
+  ],
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "cd_tolerance_ps_nm": [
+    2400.0
+  ],
+  "pmd_tolerance_ps": [
+    10.0
+  ],
+  "fec_type": [
+    "CFEC"
+  ],
+  "pre_fec_ber_threshold": [
+    0.0125
+  ],
+  "los_assert_dbm": [
+    -28.0
+  ],
+  "number_of_lanes": [
+    8,
+    4
+  ],
+  "penalties": [],
+  "notes": "Receiver minimum input power -20.0 dBm: receiver sensitivity at unamplified configurations (footnote 1). -12.0 dBm (footnote 2): signal power of the channel at the OSNR performance value. Input sensitivity -12.0 dBm (footnote 3): input power needed to achieve post FEC BER. OSNR tolerance max 26 dB/0.1 nm at CFEC threshold (footnote 4). Optical path OSNR penalty tolerance max 0.5 dB: OSNR tolerance penalty over OSNR tolerance due to reflections and dispersion (footnote 5). PMD tolerance min 10 ps with <0.5 dB penalty to OSNR sensitivity (footnote 6). Rx_LOS assert -28.0 dBm set to comply with 400G modes; can be changed on individual modules (footnote 7). Power consumption stated as < 20 W (Class 8). Nominal/transmit wavelengths 191.275–196.125 THz in 6.25 GHz steps; overview also states ITU C-Band 100 GHz grid (75 GHz grid optional). TECHNICAL DATA lists MSA compliance QSFP-DD MSA for an OSFP module. Storage temperature -40°C to +85°C. Latency 8µs. Ordering/title: OSFP OIF 400G-ZR Ethernet Coh Tunable Flexgrid 120km LC D9128-D9612.",
+  "provenance_datasheet_sections": [
+    "SO-TOSFP-4CC-ZR",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "No table cells use @ notation with paired penalized values; footnotes 5–6 describe penalties without a single penalized numeric OSNR/sensitivity at that penalty, so penalties array is empty per rules."
+}

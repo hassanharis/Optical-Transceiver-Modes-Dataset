@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this software and dataset when using them in research."
+type: software
+title: "OTSE: Optical Transceiver Specification Extractor"
+authors:
+  - family-names: Hassan
+    given-names: Haris
+version: 0.1.0
+license: MIT

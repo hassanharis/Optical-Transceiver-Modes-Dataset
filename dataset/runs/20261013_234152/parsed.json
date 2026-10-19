@@ -1,0 +1,68 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\lo-dm311t-dr8c.pdf",
+  "page_count": 10,
+  "table_count": 12,
+  "markdown_chars": 12951,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 24
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 24
+    },
+    {
+      "page": 4,
+      "label": "Table 14-4",
+      "rows": 13
+    },
+    {
+      "page": 4,
+      "label": "Table 14-4",
+      "rows": 5
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 18
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 43
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 9,
+      "label": null,
+      "rows": 2
+    }
+  ]
+}

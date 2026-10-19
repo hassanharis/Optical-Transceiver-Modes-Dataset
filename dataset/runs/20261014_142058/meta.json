@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T14:20:58.906528+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-16gfc-er-dxxxx.pdf",
+  "page_count": 3,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 7.199,
+    "extract_atoms": 48.308,
+    "store_run": 0.008,
+    "synthesize_modes": 198.478,
+    "store_modes": 0.003,
+    "total": 253.996
+  }
+}

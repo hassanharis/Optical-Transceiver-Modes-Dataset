@@ -1,0 +1,95 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1260.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1360.0,
+      1600.0
+    ],
+    "host_interface_name": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "standards_code": [
+      "100Base-LXD",
+      "FE",
+      "STM1/OC3",
+      "STM-1/OC-3"
+    ],
+    "bit_rate_gbps": [
+      100.0,
+      155.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-100BASE-LXD"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      15.0
+    ],
+    "tx_power_min_dbm": [
+      -15.0
+    ],
+    "tx_power_max_dbm": [
+      -8.0
+    ],
+    "rx_sensitivity_dbm": [
+      -28.0
+    ],
+    "rx_overload_dbm": [
+      -8.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -42.0
+    ],
+    "los_deassert_dbm": [
+      -29.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Bit rate support is stated as 100 to 155Mbps (not Gbps). Power budget 0 – 13dB. Power consumption < 1.0W. Operating temperature printed as -0°C to +70°C. Transmitter min output printed as -15.0dB with footnote 1) Average power; max -8.0dBm. Rx minimum input power -28dBm at 155Mbps, BER 1x10-12, PRBS 231-1. Transmission media SM (2x LC). Technology Grey SFP. Typical reach 15km w/o dispersion compensation and optical amplification per definitions. Storage temperature -40°C to +85°C (not operating). DDM Yes per SFF-8472.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-100BASE-LXD",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider a separate bit_rate_mbps field or unit metadata; clarify whether -15.0dB in transmitter table is a typo for dBm. Map power budget 0–13dB to a dedicated schema field if needed."
+  }
+}

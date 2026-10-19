@@ -1,0 +1,95 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-QSFP28-50GE-BX40D-2930",
+      "SO-QSFP28-50GE-BX40D-3029"
+    ],
+    "wavelength_min_nm": [
+      1292.21,
+      1306.29
+    ],
+    "wavelength_max_nm": [
+      1296.59,
+      1310.19
+    ],
+    "wavelength_center_nm": [
+      1294.4,
+      1308.24
+    ],
+    "standards_code": [
+      "IEEE802.3cd",
+      "50GbE"
+    ],
+    "bit_rate_gbps": [
+      52.125,
+      50.0,
+      53.125
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "SFF-8472",
+      "IEEE802.3cd"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      4.5
+    ],
+    "host_interface_name": [
+      "50GbE"
+    ],
+    "frame": [
+      "2x26.5625Gbps"
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      0.4
+    ],
+    "tx_power_max_dbm": [
+      6.3
+    ],
+    "rx_sensitivity_dbm": [
+      -17.6
+    ],
+    "rx_overload_dbm": [
+      -3.4
+    ],
+    "pre_fec_ber_threshold": [
+      2.4e-05
+    ],
+    "los_assert_dbm": [
+      -21.0
+    ],
+    "los_deassert_dbm": [
+      -18.0
+    ],
+    "number_of_lanes": [
+      2
+    ],
+    "penalties": [],
+    "notes": "BiDi pair: SO-QSFP28-50GE-BX40D-2930 Tx 1294.40nm/Rx 1308.24nm; SO-QSFP28-50GE-BX40D-3029 Tx 1308.24nm/Rx 1294.40nm. Single-fiber; two modules required. Power budget 10–18dB (table). Tx/Rx levels are average power per lane (footnote 3). Receiver min input and overload at 50GbE (53.125 Gbps) and BER 2.4E-5 (footnote 4). FEC implemented in host per 50G Ethernet standards. Storage temperature -40°C to +85°C. Power consumption stated as < 4.5W.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP28-50GE-BX40D-2930/3029",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

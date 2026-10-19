@@ -1,0 +1,121 @@
+{
+  "multi_valued": {
+    "model": [
+      "LG-SC432G-20CC1",
+      "LG-SC432G-20IC1"
+    ],
+    "wavelength_min_nm": [
+      1480.0,
+      1290.0
+    ],
+    "wavelength_max_nm": [
+      1500.0,
+      1330.0
+    ],
+    "wavelength_center_nm": [
+      1490.0,
+      1310.0
+    ],
+    "standards_code": [
+      "GPON",
+      "G.984.2",
+      "B+",
+      "C+",
+      "C++",
+      "D"
+    ],
+    "bit_rate_gbps": [
+      2.488,
+      1.244,
+      2.5,
+      1.25
+    ],
+    "tx_power_min_dbm": [
+      1.5,
+      3.0,
+      4.5,
+      6.0
+    ],
+    "tx_power_max_dbm": [
+      5.0,
+      7.0,
+      10.0
+    ],
+    "rx_sensitivity_dbm": [
+      -28.0,
+      -30.0,
+      -32.0,
+      -33.0,
+      -35.0
+    ],
+    "rx_overload_dbm": [
+      -8.0,
+      -12.0,
+      -15.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "ITU-T G.984.2 GPON OLT B+/C+/C++/D"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "APD"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "SC",
+      "SC/UPC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      20.0
+    ],
+    "extinction_ratio_db": [
+      8.2
+    ],
+    "los_assert_dbm": [
+      -33.0
+    ],
+    "los_deassert_dbm": [
+      -45.0
+    ],
+    "optical_extinction_ratio_db": [
+      8.2
+    ],
+    "optical_return_loss_tolerance_db": [
+      -15.0
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      6.0
+    ],
+    "penalties": [],
+    "notes": "Operating case temperature also offered as Industrial -40 to +85°C (LG-SC432G-20IC1). Mean launched power and sensitivity/overload rows are class-specific (B+, C+, C++, D). Sensitivity conditions include PRBS223-1@1.244G, ER=10, BER<10-10 or BER<10-4. Tx bit rate 2.488 Gbps and Rx 1.244 Gbps in Recommended Operating Conditions; title also states 2.5Gbps TX / 1.25Gbps RX. Power supply max current 500 mA at 3.3 V; power in Watts not stated. Transmitter and dispersion penalty max 1 dB listed without paired penalized parameter value per penalty-point rules.",
+    "provenance_datasheet_sections": [
+      "LG-SC432G-20CC1",
+      "Product Features",
+      "Applications",
+      "Recommended Operating Conditions",
+      "Optical Characteristics",
+      "Electrical Characteristics",
+      "Timing Characteristics",
+      "Ordering information"
+    ]
+  }
+}

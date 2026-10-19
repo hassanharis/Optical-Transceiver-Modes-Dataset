@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "64GFC PAM4",
+      "host_interface_name": "64GFC",
+      "standards_code": "FC-PI-7",
+      "baud_rate_gbaud": 28.9,
+      "modulation_format": "PAM4",
+      "tx_power_min_dbm": -7.5,
+      "tx_power_max_dbm": 4.0,
+      "rx_sensitivity_dbm": -7.0,
+      "rx_overload_dbm": 4.0,
+      "los_assert_dbm": -17.0
+    },
+    {
+      "label": "32GFC NRZ",
+      "host_interface_name": "32GFC",
+      "standards_code": "FC-PI-6",
+      "baud_rate_gbaud": 28.05,
+      "modulation_format": "NRZ",
+      "tx_power_min_dbm": -6.2,
+      "tx_power_max_dbm": 2.0,
+      "rx_sensitivity_dbm": -10.2,
+      "rx_overload_dbm": 4.0,
+      "los_assert_dbm": -17.0
+    },
+    {
+      "label": "16GFC NRZ",
+      "host_interface_name": "16GFC",
+      "standards_code": "FC-PI-5",
+      "baud_rate_gbaud": 14.025,
+      "modulation_format": "NRZ",
+      "tx_power_min_dbm": -7.8,
+      "tx_power_max_dbm": 0.0,
+      "rx_sensitivity_dbm": -10.5,
+      "rx_overload_dbm": 4.0,
+      "los_assert_dbm": -17.0
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:26:22.620803+00:00",
+  "source_file": "C:\\Haris\\datasheets\\DS_AFCT_57G5MZ_2018_07_17.pdf",
+  "page_count": 19,
+  "table_count": 21,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 34.095,
+    "extract_atoms": 19.413,
+    "store_run": 0.008,
+    "synthesize_modes": 99.56,
+    "store_modes": 0.007,
+    "total": 153.082
+  }
+}

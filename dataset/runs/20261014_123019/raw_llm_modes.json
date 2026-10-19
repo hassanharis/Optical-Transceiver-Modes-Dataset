@@ -1,0 +1,48 @@
+{
+  "modes": [
+    {
+      "label": "200G-FR4 CWDM 1271 nm lane",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "wavelength_center_nm": 1271.0,
+      "wavelength_band": "CWDM",
+      "power_consumption_w": 5.5,
+      "standards_code": "200GBASE-FR4",
+      "bit_rate_gbps": 212.5,
+      "tx_power_max_dbm": 4.7
+    },
+    {
+      "label": "200G-FR4 CWDM 1291 nm lane",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "wavelength_center_nm": 1291.0,
+      "wavelength_band": "CWDM",
+      "power_consumption_w": 5.5,
+      "standards_code": "200GBASE-FR4",
+      "bit_rate_gbps": 212.5,
+      "tx_power_max_dbm": 4.7
+    },
+    {
+      "label": "200G-FR4 CWDM 1311 nm lane",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "wavelength_band": "CWDM",
+      "power_consumption_w": 5.5,
+      "standards_code": "200GBASE-FR4",
+      "bit_rate_gbps": 212.5,
+      "tx_power_max_dbm": 4.7
+    },
+    {
+      "label": "200G-FR4 CWDM 1331 nm lane",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1331.0,
+      "wavelength_band": "CWDM",
+      "power_consumption_w": 5.5,
+      "standards_code": "200GBASE-FR4",
+      "bit_rate_gbps": 212.5,
+      "tx_power_max_dbm": 4.7
+    }
+  ]
+}

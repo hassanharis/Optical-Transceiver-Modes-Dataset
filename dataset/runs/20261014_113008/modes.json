@@ -1,0 +1,74 @@
+{
+  "modes": [
+    {
+      "label": "PCUxM QSFP+ 40G host",
+      "model": "SO-QSFP-4SFP-PCUxM",
+      "form_factor": "QSFP+",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "PCUxM SFP+ 10G breakout",
+      "model": "SO-QSFP-4SFP-PCUxM",
+      "form_factor": "SFP+",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "PCU1M 1m QSFP+ 40G host",
+      "model": "SO-QSFP-4SFP-PCU1M",
+      "form_factor": "QSFP+",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "PCU1M 1m SFP+ 10G breakout",
+      "model": "SO-QSFP-4SFP-PCU1M",
+      "form_factor": "SFP+",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "PCU2M 2m QSFP+ 40G host",
+      "model": "SO-QSFP-4SFP-PCU2M",
+      "form_factor": "QSFP+",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "PCU2M 2m SFP+ 10G breakout",
+      "model": "SO-QSFP-4SFP-PCU2M",
+      "form_factor": "SFP+",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "PCU3M 3m QSFP+ 40G host",
+      "model": "SO-QSFP-4SFP-PCU3M",
+      "form_factor": "QSFP+",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "PCU3M 3m SFP+ 10G breakout",
+      "model": "SO-QSFP-4SFP-PCU3M",
+      "form_factor": "SFP+",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "PCU5M 5m QSFP+ 40G host",
+      "model": "SO-QSFP-4SFP-PCU5M",
+      "form_factor": "QSFP+",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "PCU5M 5m SFP+ 10G breakout",
+      "model": "SO-QSFP-4SFP-PCU5M",
+      "form_factor": "SFP+",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 10.0
+    }
+  ]
+}

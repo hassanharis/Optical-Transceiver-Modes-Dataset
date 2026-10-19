@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Both `standards_code` values appear in the transmitter eye-diagram note as one requirement; ITU-T G.957 is also stated globally under **Standard**. The output schema assigns one `standards_code` string per mode, so each pool value gets its own mode with a label tied to where it is evidenced.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"Module ITU-T G.957 compliance\",\n      \"standards_code\": \"ITU-T G.957\"\n    },\n    {\n      \"label\": \"Transmitter eye diagram (G.957 STM-1/OC-3)\",\n      \"standards_code\": \"STM-1/OC-3\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

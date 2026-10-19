@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"16G FC\",\n      \"wavelength_min_nm\": 1540.0,\n      \"wavelength_max_nm\": 1560.0,\n      \"standards_code\": \"16G FC\",\n      \"bit_rate_gbps\": 14.025,\n      \"rx_sensitivity_dbm\": -13.0\n    },\n    {\n      \"label\": \"8G FC\",\n      \"wavelength_min_nm\": 1540.0,\n      \"wavelength_max_nm\": 1560.0,\n      \"standards_code\": \"8G FC\",\n      \"bit_rate_gbps\": 8.5,\n      \"rx_sensitivity_dbm\": -14.0\n    },\n    {\n      \"label\": \"4G FC\",\n      \"wavelength_min_nm\": 1540.0,\n      \"wavelength_max_nm\": 1560.0,\n      \"standards_code\": \"4G FC\",\n      \"bit_rate_gbps\": 4.25,\n      \"rx_sensitivity_dbm\": -14.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T19:42:53.324832+00:00",
+  "source_file": "C:\\Haris\\datasheets\\AFBR-57H5MZ-DS102.pdf",
+  "page_count": 29,
+  "table_count": 35,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 39.148,
+    "extract_atoms": 35.851,
+    "store_run": 0.012,
+    "synthesize_modes": 57.72,
+    "store_modes": 0.006,
+    "total": 132.737
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "multi_valued": {
+    "model": [
+      "LxP-LT12xx",
+      "LT12xx"
+    ],
+    "standards_code": [
+      "InfiniBand 1X-LX",
+      "1X-LX"
+    ],
+    "bit_rate_gbps": [
+      2.5,
+      1.25
+    ]
+  },
+  "general": {
+    "vendor": "Cinch Connectivity Solutions",
+    "form_factor": [
+      "Low Rider RJ"
+    ],
+    "standards_claimed": [
+      "InfiniBand",
+      "InfiniBand 1X-LX",
+      "EN-60825",
+      "IEC-825",
+      "CDRH Class 1"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "O-band"
+    ],
+    "mounting_type": [
+      "solder",
+      "screw"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "host_interface_name": [
+      "InfiniBand 1X-LX"
+    ],
+    "modulation_format": [
+      "NRZ"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -10.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -18.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      12.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "total_jitter_ps": [
+      85.0
+    ],
+    "penalties": [],
+    "notes": "Supply voltage 3.3 V nominal; VCCTX 3.135 V to 3.465 V. Title states Infiniband 2.5 Gbps; transmitter and receiver BER specs cite 1.25 Gbps, PRBS, NRZ, InfiniBand 1X-LX. Receiver Optical Sensitivity PI MIN -18 dBm, MAX -1.5 dBm (table does not label MAX as overload). Transmitter OMA 186 µW typical; receiver OMA 24 µW MIN. Ordering: H/M = -40 to 85°C with or without conformal coating.",
+    "provenance_datasheet_sections": [
+      "LxP-LT12xx Low Profile Optical Transceiver",
+      "Applications",
+      "Features",
+      "Ordering Information",
+      "Transmitters: VCCTX = 3.135V to 3.465V, TA = Operating Temperature Range",
+      "Receivers: VCCTX = 3.135V to 3.465V, TA = Operating Temperature Range"
+    ],
+    "suggestions": "Clarify whether 2.5 Gbps or 1.25 Gbps is the rated data rate; whether receiver PI MAX -1.5 dBm is overload or sensitivity bound; add photodetector type if present in full product data sheet."
+  }
+}

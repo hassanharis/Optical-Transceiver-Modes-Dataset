@@ -1,0 +1,637 @@
+{
+  "multi_valued": {
+    "channel_spacing_ghz": [
+      6.25,
+      75.0,
+      87.5,
+      100.0,
+      112.5,
+      125.0,
+      150.0
+    ],
+    "power_consumption_w": [
+      23.5,
+      25.0,
+      26.0,
+      26.5,
+      27.5,
+      28.0,
+      28.5,
+      29.5,
+      30.0
+    ],
+    "host_interface_name": [
+      "800GAUI-8-S/L",
+      "400GAUI-4-x",
+      "200GAUI-2-x",
+      "100GAUI-1-x",
+      "400GAUI-8",
+      "200GAUI-4",
+      "100GAUI-2",
+      "FOIC1.1-RS",
+      "FOIC1.2-MFI",
+      "800GAUI-8 S C2M (Annex 120G)",
+      "800GAUI-8 L C2M (Annex 120G)",
+      "400GAUI-4-SC2M (Annex 120G)",
+      "400GAUI-4-LC2M (Annex 120G)",
+      "200GAUI-2-SC2M (Annex 120G)",
+      "200GAUI-2-LC2M (Annex 120G)",
+      "100GAUI-1-SC2M (Annex 120G)",
+      "100GAUI-1-LC2M (Annex 120G)",
+      "400GAUI-8 C2M (Annex 120E)",
+      "200GAUI-4 C2M (Annex 120E)",
+      "100GAUI-2 C2M (Annex 135G)",
+      "FOIC1.1-MFI (ITU-T G.709.5/Y.1331 G.Sup58)",
+      "FOIC1.2-MFI (ITU-T G.709.5/Y.1331 G.Sup58)"
+    ],
+    "host_interface_id_hex": [
+      "0x51",
+      "0x52",
+      "0x4F",
+      "0x50",
+      "0x4D",
+      "0x4E",
+      "0x4B",
+      "0x4C",
+      "0x11",
+      "0x0F",
+      "0x0D",
+      "0xC5",
+      "0x3C"
+    ],
+    "host_interface_id": [
+      81,
+      82,
+      79,
+      80,
+      77,
+      78,
+      75,
+      76,
+      17,
+      15,
+      13,
+      197,
+      60
+    ],
+    "media_interface_name": [
+      "ZR800-16QAM-OS-A",
+      "FlexO-6e-MPCS118-OS-OR",
+      "FlexO-6e-MPCS118-OS-E2)",
+      "FlexO-4e-QPSK-OS-OR",
+      "OpenZR400-16QAM-OS-HB",
+      "FlexO-8e-MPCS131-OS-OR",
+      "FlexO-8e-MPCS131-OS-E2)",
+      "FlexO-8-MPCS131-OS-E2)",
+      "FlexO-6e-MPCS131-OS-E2)",
+      "FlexO-6-MPCS131-OS-E2)",
+      "FlexO-4e-MPCS131-OS2)",
+      "FlexO-4e-MPCS066-OS2)",
+      "FlexO-4e-MPCS075-OS2)",
+      "FlexO-4e-MPCS087-OS2)",
+      "FlexO-4e-MPCS098-OS2)",
+      "FlexO-4e-MPCS108-OS2)",
+      "FlexO-4-MPCS132-OS2)",
+      "FlexO-4-MPCS079-OS2)",
+      "FlexO-4-MPCS069-OS2)",
+      "FlexO-4-MPCS087-OS2)",
+      "FlexO-4-MPCS098-OS2)",
+      "FlexO-4-MPCS111-OS2)",
+      "800ZR Power class A",
+      "OpenROADM FlexO-6e-DPO",
+      "OpenROADM FlexO-6e-DPO, Enhanced",
+      "OpenROADM FlexO-4e-DO",
+      "OpenZR+ ZR400-OFEC-16QAMHB",
+      "OpenROADM FlexO-8e-DPO",
+      "OpenROADM FlexO-8e-DPO, Enhanced",
+      "OpenROADM FlexO-8e-DPO, Enhanced (OTN)",
+      "600G-PCS-131Gbd",
+      "600G PCS-131 GBd (OTN)",
+      "400G PCS-131Gbd",
+      "400G PCS-66Gbd",
+      "400G PCS-75Gbd",
+      "400G PCS-87Gbd",
+      "400G PCS-98Gbd",
+      "400G PCS-108Gbd",
+      "400G PCS-132Gbd (OTN)",
+      "400G PCS-79Gbd (OTN)"
+    ],
+    "media_interface_id_hex": [
+      "0x6C",
+      "0x6A",
+      "0xF2",
+      "0x64",
+      "0x36",
+      "0x68",
+      "0xF7",
+      "0xF8",
+      "0xF5",
+      "0xF6",
+      "0xEC",
+      "0xC0",
+      "0xC2",
+      "0xC9",
+      "0xD8",
+      "0xE5",
+      "0xED",
+      "0xC4",
+      "0xC1",
+      "0xCA",
+      "0xD9",
+      "0xE9"
+    ],
+    "media_interface_id": [
+      108,
+      106,
+      242,
+      100,
+      54,
+      104,
+      247,
+      248,
+      245,
+      246,
+      236,
+      192,
+      194,
+      201,
+      216,
+      229,
+      237,
+      196,
+      193,
+      202,
+      217,
+      233
+    ],
+    "frame": [
+      "OIF 800ZR",
+      "FlexO-6(e)",
+      "FlexO-4(e)",
+      "400ZR+",
+      "FlexO-8(e)",
+      "FlexO-8",
+      "FlexO-6",
+      "FlexO-4"
+    ],
+    "standards_code": [
+      "800ZR",
+      "FlexO-6e",
+      "FlexO-4e",
+      "400ZR+",
+      "FlexO-8e",
+      "FlexO-8",
+      "FlexO-6",
+      "FlexO-4",
+      "OpenROADM",
+      "OpenZR+",
+      "ZR400-OFEC-16QAMHB"
+    ],
+    "baud_rate_gbaud": [
+      118.2,
+      118.7,
+      118.5,
+      60.1,
+      131.3,
+      131.4,
+      131.2,
+      131.0,
+      65.7,
+      75.0,
+      87.4,
+      97.9,
+      108.5,
+      131.7,
+      78.9,
+      69.1,
+      87.3,
+      98.6,
+      111.3
+    ],
+    "bit_rate_gbps": [
+      400.0,
+      600.0,
+      800.0
+    ],
+    "modulation_format": [
+      "QAM_16-DP",
+      "PCS_118",
+      "PCS_131",
+      "PCS_66",
+      "PCS_75",
+      "PCS_87",
+      "PCS_98",
+      "PCS_108",
+      "PCS_132",
+      "PCS_79",
+      "PCS_69",
+      "PCS_111"
+    ],
+    "rx_sensitivity_dbm": [
+      -18.5,
+      -23.5,
+      -27.0,
+      -22.5,
+      -20.5,
+      -20.0,
+      -24.0,
+      -26.5,
+      -24.5,
+      -24.0,
+      -26.0,
+      -25.0,
+      -25.5
+    ],
+    "rx_osnr_db": [
+      26.4,
+      22.8,
+      21.6,
+      17.9,
+      23.1,
+      25.0,
+      24.7,
+      26.4,
+      21.3,
+      22.0,
+      18.0,
+      21.2,
+      20.6,
+      19.5,
+      19.2,
+      18.7,
+      18.5,
+      20.5,
+      21.5,
+      20.1,
+      19.7,
+      19.1,
+      27.4,
+      23.8,
+      22.6,
+      18.9,
+      24.1,
+      26.0,
+      25.7,
+      27.4,
+      22.3,
+      23.0,
+      19.0,
+      22.2,
+      21.6,
+      20.5,
+      20.2,
+      19.7,
+      19.5,
+      21.5,
+      22.5,
+      21.1,
+      20.7,
+      20.1
+    ],
+    "cd_tolerance_ps_nm": [
+      3000.0,
+      58000.0,
+      29000.0,
+      23000.0,
+      175000.0,
+      24000.0,
+      47000.0,
+      75000.0,
+      150000.0,
+      66000.0,
+      125000.0,
+      94000.0,
+      84000.0,
+      57000.0,
+      56000.0,
+      72000.0
+    ],
+    "penalties": [
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 27.4,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -13.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0x6C"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 23.8,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -14.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0x6A"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 22.6,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -14.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xF2"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 18.9,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -18.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0x64"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 24.1,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -18.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0x36"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 26.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -13.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0x68"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 25.7,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -13.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xF7"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 27.4,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -18.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xF8"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 22.3,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -14.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xF5"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 23.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -19.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xF6"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 19.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -18.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xEC"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 22.2,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -18.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xC0"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 21.6,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -18.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xC2"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 20.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -18.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xC9"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 20.2,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -18.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xD8"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 19.7,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -18.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xE5"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 19.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -20.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xED"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 21.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -20.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xC4"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 22.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -20.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xC1"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 21.1,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -20.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xCA"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 20.7,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -20.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xD9"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 20.1,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -20.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code=0xE9"
+      }
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TD8010-TUNC-SO"
+    ],
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "OpenROADM",
+      "OIF 800ZR",
+      "CMIS5.3",
+      "OSFP800 MSA",
+      "SFF-8024"
+    ],
+    "frequency_min_thz": [
+      191.25
+    ],
+    "frequency_max_thz": [
+      196.1
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 15.0,
+    "temp_max_c": 75.0,
+    "tx_power_min_dbm": [
+      1.0
+    ],
+    "tx_in_band_osnr_db": [
+      37.0
+    ],
+    "tx_out_of_band_osnr_db": [
+      36.0
+    ],
+    "rx_overload_dbm": [
+      1.0
+    ],
+    "fec_type": [
+      "OFEC"
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "notes": "Operating temperature +15°C to +75°C; module may turn up from cold start at ambient as low as -5°C and reach specifications after self-heating. Storage temperature -40°C to +85°C. Rx sensitivity values are at OSNR > 36dB. Rx @ OSNR column specified as [Min OSNR Value @ Min Rx power for the OSNR value]. Minimum Tx power 1dBm without attenuation; Tx power can be attenuated 10dB from maximum available; default Tx is maximum if not provisioned. Absolute max Rx signal input power +1dBm; Rx total input power +15dBm. Default CDC range vs maximum CDC search range both listed per media code; increasing CD search range increases power consumption. Worst-case power at default CD range, worst-case client mapping, FEC threshold. Technology DWDM QSFP-DD800 type 2a; coherent dual polarity. DDM reports OSNR, eSNR, PDL, dispersion, DGD.",
+    "provenance_datasheet_sections": [
+      "TD8010-TUNC-SO",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "GENERIC",
+      "OPTICAL SPECIFICATION – NTWK/MEDIA CODES",
+      "ELECTICAL CHARACTERISTICS",
+      "APPLICATION SELECT TABLE - NORMALIZED APPLICATION DESCRIPTORS",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Link rx_osnr_db and rx_sensitivity_dbm entries to media_interface_id_hex per row. Separate default CDC from maximum CDC search range in schema. Clarify whether OSFP800 MSA in GENERIC is intentional for QSFP-DD800 product."
+  }
+}

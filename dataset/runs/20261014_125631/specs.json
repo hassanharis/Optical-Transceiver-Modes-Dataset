@@ -1,0 +1,97 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1000BASE-MMXD",
+    "SO-SFP-1000BASE-MMXD-I",
+    "SO-SFP-1000Base-MMXD",
+    "SO-SFP-1000Base-MMXD-I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1360.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF 50/125µm",
+    "MMF_OM1",
+    "MMF_OM3"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "standards_code": [
+    "1000BASE",
+    "FE",
+    "GbE",
+    "1G FC",
+    "STM4/OC12",
+    "STM1/OC3"
+  ],
+  "bit_rate_gbps": [
+    0.125,
+    1.25
+  ],
+  "reach_km": [
+    1.0,
+    0.55
+  ],
+  "tx_power_min_dbm": [
+    -9.0
+  ],
+  "tx_power_max_dbm": [
+    -3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -21.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -22.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Power budget 0 – 12 dB stated in technical summary. Transmitter output power min/max and receiver minimum input power and overload are average power (footnote 1). Receiver minimum input power -21.0 dBm and overload -3.0 dBm at 1.25 Gbps, BER ≤ 1×10⁻¹², PRBS 2⁷-1, back-to-back (footnote 2). Operating temperature: 0°C to +70°C (C-temp); SO-SFP-1000Base-MMXD-I and duplicate line list -40°C to +85°C (I-temp). Power consumption stated as < 1.0 W. Typical reach: 1 km @ 50/125 μm and OM3, 550 m @ 62.5/125 μm. Receiver wavelength range printed as 1260 – 1600m (likely nm). DDM per SFF-8472. Safety/regulatory: TUV/UL/FDA, RoHS.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1000BASE-MMXD & MMXD-I",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether receiver wavelength maximum is 1600 nm (unit typo as m). Split temp_min_c/temp_max_c per orderable SKU (C-temp vs I-temp) if schema allows variant-specific records. Power budget (0–12 dB) has no dedicated schema field."
+}

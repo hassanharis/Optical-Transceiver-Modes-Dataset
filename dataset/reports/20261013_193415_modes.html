@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics</div>
+  <div class="subtitle">SFP+ &middot; [41] channels</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">SFP+</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">SFF-8431, SFF-8472, SFF-8432</div></div>
+      <div class="spec-item"><div class="label">Frequency Min Thz</div><div class="value">192.0</div></div>
+      <div class="spec-item"><div class="label">Frequency Max Thz</div><div class="value">196.0</div></div>
+      <div class="spec-item"><div class="label">Channel Spacing (GHz)</div><div class="value">100.0</div></div>
+      <div class="spec-item"><div class="label">Channel Total</div><div class="value">41</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">1.7</div></div>
+      <div class="spec-item"><div class="label">Reach (km)</div><div class="value">80.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">-1.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">3.0</div></div>
+      <div class="spec-item"><div class="label">RX Sensitivity (dBm)</div><div class="value">-24.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">-7.0</div></div>
+      <div class="spec-item"><div class="label">Los Assert Dbm</div><div class="value">-31.0</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-24.0</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Header: 23dB power budget. TECHNICAL DATA power budget 10–23dB. Rx min input -24.0dBm and overload -7dBm at 8.5Gbps (8G FC) BER &lt; 10-12 using PRBS 27-1 (footnote 1). Tx output min/max are average power (footnote 2). Dispersion tolerance -500 to 1600ps/nm (8G FC); dispersion penalty 3dB without stated penalized optical metric. Storage temperature -40°C to +85°C. Power consumption &lt; 1.7W. DDM per SFF-8472. 41 channels D200–D600 on 100GHz ITU-T G.694.1 grid; CWDM mapping D250–D410 (1550nm), D500–D600 (1530nm). Brocade layer-1 tested. RoHS-6/6.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">8G-ZR-Dxxx-BR1, OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION, GENERAL DEFINITIONS</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Ordering table: 8G-ZR-D400-BR1 and 8G-ZR-D410-BR1 both list 194.10 THz / 1544.53 nm; reconcile with 41-channel D200–D600 claim. Consider schema field for optical power budget (10–23dB). Rx sensitivity condition BER 10-12 is not labeled pre/post FEC.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Wavelength Min</th><th>Wavelength Max</th><th>wavelength_center_nm</th><th>Wavelength Band</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>CD Tolerance (ps/nm)</th></tr>
+      <tr><td><strong>DWDM 100GHz D200 1561.42nm 8G FC</strong></td><td>8G-ZR-D200-BR1</td><td>1480.0</td><td>1580.0</td><td>1561.42</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D210 1560.61nm 8G FC</strong></td><td>8G-ZR-D210-BR1</td><td>1480.0</td><td>1580.0</td><td>1560.61</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D220 1559.79nm 8G FC</strong></td><td>8G-ZR-D220-BR1</td><td>1480.0</td><td>1580.0</td><td>1559.79</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D230 1558.98nm 8G FC</strong></td><td>8G-ZR-D230-BR1</td><td>1480.0</td><td>1580.0</td><td>1558.98</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D240 1558.17nm 8G FC</strong></td><td>8G-ZR-D240-BR1</td><td>1480.0</td><td>1580.0</td><td>1558.17</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D250 1557.36nm 8G FC</strong></td><td>8G-ZR-D250-BR1</td><td>1480.0</td><td>1580.0</td><td>1557.36</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D260 1556.55nm 8G FC</strong></td><td>8G-ZR-D260-BR1</td><td>1480.0</td><td>1580.0</td><td>1556.55</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D270 1555.75nm 8G FC</strong></td><td>8G-ZR-D270-BR1</td><td>1480.0</td><td>1580.0</td><td>1555.75</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D280 1554.94nm 8G FC</strong></td><td>8G-ZR-D280-BR1</td><td>1480.0</td><td>1580.0</td><td>1554.94</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D290 1554.13nm 8G FC</strong></td><td>8G-ZR-D290-BR1</td><td>1480.0</td><td>1580.0</td><td>1554.13</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D300 1553.33nm 8G FC</strong></td><td>8G-ZR-D300-BR1</td><td>1480.0</td><td>1580.0</td><td>1553.33</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D310 1552.52nm 8G FC</strong></td><td>8G-ZR-D310-BR1</td><td>1480.0</td><td>1580.0</td><td>1552.52</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D320 1551.72nm 8G FC</strong></td><td>8G-ZR-D320-BR1</td><td>1480.0</td><td>1580.0</td><td>1551.72</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D330 1550.92nm 8G FC</strong></td><td>8G-ZR-D330-BR1</td><td>1480.0</td><td>1580.0</td><td>1550.92</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D340 1550.12nm 8G FC</strong></td><td>8G-ZR-D340-BR1</td><td>1480.0</td><td>1580.0</td><td>1550.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D350 1549.32nm 8G FC</strong></td><td>8G-ZR-D350-BR1</td><td>1480.0</td><td>1580.0</td><td>1549.32</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D360 1548.51nm 8G FC</strong></td><td>8G-ZR-D360-BR1</td><td>1480.0</td><td>1580.0</td><td>1548.51</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D370 1547.72nm 8G FC</strong></td><td>8G-ZR-D370-BR1</td><td>1480.0</td><td>1580.0</td><td>1547.72</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D380 1546.92nm 8G FC</strong></td><td>8G-ZR-D380-BR1</td><td>1480.0</td><td>1580.0</td><td>1546.92</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D390 1546.12nm 8G FC</strong></td><td>8G-ZR-D390-BR1</td><td>1480.0</td><td>1580.0</td><td>1546.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D400 1544.53nm 8G FC</strong></td><td>8G-ZR-D400-BR1</td><td>1480.0</td><td>1580.0</td><td>1544.53</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D410 1544.53nm 8G FC</strong></td><td>8G-ZR-D410-BR1</td><td>1480.0</td><td>1580.0</td><td>1544.53</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D420 1543.73nm 8G FC</strong></td><td>8G-ZR-D420-BR1</td><td>1480.0</td><td>1580.0</td><td>1543.73</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D430 1542.94nm 8G FC</strong></td><td>8G-ZR-D430-BR1</td><td>1480.0</td><td>1580.0</td><td>1542.94</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D440 1542.14nm 8G FC</strong></td><td>8G-ZR-D440-BR1</td><td>1480.0</td><td>1580.0</td><td>1542.14</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D450 1541.35nm 8G FC</strong></td><td>8G-ZR-D450-BR1</td><td>1480.0</td><td>1580.0</td><td>1541.35</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D460 1540.56nm 8G FC</strong></td><td>8G-ZR-D460-BR1</td><td>1480.0</td><td>1580.0</td><td>1540.56</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D470 1539.77nm 8G FC</strong></td><td>8G-ZR-D470-BR1</td><td>1480.0</td><td>1580.0</td><td>1539.77</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D480 1538.98nm 8G FC</strong></td><td>8G-ZR-D480-BR1</td><td>1480.0</td><td>1580.0</td><td>1538.98</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D490 1538.19nm 8G FC</strong></td><td>8G-ZR-D490-BR1</td><td>1480.0</td><td>1580.0</td><td>1538.19</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D500 1537.4nm 8G FC</strong></td><td>8G-ZR-D500-BR1</td><td>1480.0</td><td>1580.0</td><td>1537.4</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D510 1536.61nm 8G FC</strong></td><td>8G-ZR-D510-BR1</td><td>1480.0</td><td>1580.0</td><td>1536.61</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D520 1535.82nm 8G FC</strong></td><td>8G-ZR-D520-BR1</td><td>1480.0</td><td>1580.0</td><td>1535.82</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D530 1535.04nm 8G FC</strong></td><td>8G-ZR-D530-BR1</td><td>1480.0</td><td>1580.0</td><td>1535.04</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D540 1534.25nm 8G FC</strong></td><td>8G-ZR-D540-BR1</td><td>1480.0</td><td>1580.0</td><td>1534.25</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D550 1533.47nm 8G FC</strong></td><td>8G-ZR-D550-BR1</td><td>1480.0</td><td>1580.0</td><td>1533.47</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D560 1532.68nm 8G FC</strong></td><td>8G-ZR-D560-BR1</td><td>1480.0</td><td>1580.0</td><td>1532.68</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D570 1531.9nm 8G FC</strong></td><td>8G-ZR-D570-BR1</td><td>1480.0</td><td>1580.0</td><td>1531.9</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D580 1531.12nm 8G FC</strong></td><td>8G-ZR-D580-BR1</td><td>1480.0</td><td>1580.0</td><td>1531.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D590 1530.33nm 8G FC</strong></td><td>8G-ZR-D590-BR1</td><td>1480.0</td><td>1580.0</td><td>1530.33</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+      <tr><td><strong>DWDM 100GHz D600 1529.55nm 8G FC</strong></td><td>8G-ZR-D600-BR1</td><td>1480.0</td><td>1580.0</td><td>1529.55</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>1600.0</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">8G-ZR-Dxxx-BR1</span> <span class="badge">8G-ZR-D200-BR1</span> <span class="badge">8G-ZR-D210-BR1</span> <span class="badge">8G-ZR-D220-BR1</span> <span class="badge">8G-ZR-D230-BR1</span> <span class="badge">8G-ZR-D240-BR1</span> <span class="badge">8G-ZR-D250-BR1</span> <span class="badge">8G-ZR-D260-BR1</span> <span class="badge">8G-ZR-D270-BR1</span> <span class="badge">8G-ZR-D280-BR1</span> <span class="badge">8G-ZR-D290-BR1</span> <span class="badge">8G-ZR-D300-BR1</span> <span class="badge">8G-ZR-D310-BR1</span> <span class="badge">8G-ZR-D320-BR1</span> <span class="badge">8G-ZR-D330-BR1</span> <span class="badge">8G-ZR-D340-BR1</span> <span class="badge">8G-ZR-D350-BR1</span> <span class="badge">8G-ZR-D360-BR1</span> <span class="badge">8G-ZR-D370-BR1</span> <span class="badge">8G-ZR-D380-BR1</span> <span class="badge">8G-ZR-D390-BR1</span> <span class="badge">8G-ZR-D400-BR1</span> <span class="badge">8G-ZR-D410-BR1</span> <span class="badge">8G-ZR-D420-BR1</span> <span class="badge">8G-ZR-D430-BR1</span> <span class="badge">8G-ZR-D440-BR1</span> <span class="badge">8G-ZR-D450-BR1</span> <span class="badge">8G-ZR-D460-BR1</span> <span class="badge">8G-ZR-D470-BR1</span> <span class="badge">8G-ZR-D480-BR1</span> <span class="badge">8G-ZR-D490-BR1</span> <span class="badge">8G-ZR-D500-BR1</span> <span class="badge">8G-ZR-D510-BR1</span> <span class="badge">8G-ZR-D520-BR1</span> <span class="badge">8G-ZR-D530-BR1</span> <span class="badge">8G-ZR-D540-BR1</span> <span class="badge">8G-ZR-D550-BR1</span> <span class="badge">8G-ZR-D560-BR1</span> <span class="badge">8G-ZR-D570-BR1</span> <span class="badge">8G-ZR-D580-BR1</span> <span class="badge">8G-ZR-D590-BR1</span> <span class="badge">8G-ZR-D600-BR1</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">1480.0</span> <span class="badge">1529.55</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">1561.42</span> <span class="badge">1580.0</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">1561.42</span> <span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span></td></tr>
+      <tr><td>wavelength_band</td><td><span class="badge">DWDM</span> <span class="badge">CWDM</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">FC-PI-4 800-SM-LC-L</span> <span class="badge">ITU-T G.694.1</span> <span class="badge">ITU-T G.694.2</span> <span class="badge">ITU-T G.959</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">2.125</span> <span class="badge">8.5</span></td></tr>
+      <tr><td>cd_tolerance_ps_nm</td><td><span class="badge">-500.0</span> <span class="badge">1600.0</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 19:34
+</footer>
+
+</div>
+</body>
+</html>

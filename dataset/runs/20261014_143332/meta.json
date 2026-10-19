@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T14:33:32.315126+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-622m-l120d.pdf",
+  "page_count": 2,
+  "table_count": 2,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 1.504,
+    "extract_atoms": 23.43,
+    "store_run": 0.003,
+    "synthesize_modes": 36.94,
+    "store_modes": 0.005,
+    "total": 61.882
+  }
+}

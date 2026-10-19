@@ -1,0 +1,100 @@
+{
+  "multi_valued": {
+    "model": [
+      "DQD003-xxxC-SO",
+      "DQD003-0M5C-SO",
+      "DQD003-001C-SO",
+      "DQD003-1M5C-SO",
+      "DQD003-002C-SO",
+      "DQD003-2M5C-SO"
+    ],
+    "host_interface_name": [
+      "400GAUI-8",
+      "4x100GAUI-2",
+      "100GAUI-2",
+      "100GBASE-CR4",
+      "50GBASE-CR",
+      "25GBASE-CR CA-25G-L",
+      "IB HDR",
+      "IB EDR"
+    ],
+    "frame": [
+      "8x 26.5625GBd",
+      "1x 400GAUI-8 (8x 50G)",
+      "2x 100GBASE-CR4 (4x25G)",
+      "8x 50GBASE-CR (1x50G)",
+      "25GBASE-CR (1x25G)",
+      "4x 100GAUI-2 (2x 50G)"
+    ],
+    "standards_code": [
+      "400GBASE-R",
+      "100GBASE-R",
+      "50GBASE-R",
+      "25GBASE-R",
+      "IB HDR",
+      "IB EDR",
+      "RS-FEC"
+    ],
+    "baud_rate_gbaud": [
+      26.5625,
+      25.0
+    ],
+    "bit_rate_gbps": [
+      400.0,
+      200.0
+    ],
+    "reach_km": [
+      0.0005,
+      0.001,
+      0.0015,
+      0.002,
+      0.0025
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "QSFPDD MSA",
+      "CMIS 4.0",
+      "400GBASE-R",
+      "100GBASE-R",
+      "50GBASE-R",
+      "25GBASE-R",
+      "IEEE 802.3 Clause 136",
+      "IEEE 802.3 Clause 92",
+      "IEEE 802.3 Clause 126",
+      "IEEE 802.3 Clause 110",
+      "IB HDR",
+      "IB EDR"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "modulation_format": [
+      "PAM4"
+    ],
+    "fec_type": [
+      "RS_GENERIC"
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "penalties": [],
+    "notes": "Passive QSFP-DD to QSFP-DD Direct Attach Cable (Twinax); not an optical transceiver. Body text calls it 'active Direct Attach Cable' while title and ordering list specify passive DAC. Cable lengths 0.5–2.5 m (1.6–8.2 ft); AWG30 (0.5–1.5 m) and AWG26 (2–2.5 m). Storage temperature -40°C to +85°C. FEC is provided by the host per footnote on APPLICATION CODE LIST.",
+    "provenance_datasheet_sections": [
+      "QSFP-DD 400G DAC PASSIVE, CMIS 4.0",
+      "DQD003-xxxC-SO",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "ORDERING INFORMATION",
+      "APPLICATION CODE LIST",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "reach_km derived from stated cable lengths in meters (0.5, 1, 1.5, 2, 2.5 m). Consider a cable_length_m field for DAC products. mounting_type 'Pluggable' inferred from QSFP-DD pluggable form; not verbatim in source."
+  }
+}

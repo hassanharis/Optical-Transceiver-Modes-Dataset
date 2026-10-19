@@ -1,0 +1,146 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "OP13PI8-005D",
+    "2x800G-DR4"
+  ],
+  "form_factor": [
+    "OSFP"
+  ],
+  "standards_claimed": [
+    "OSFP MSA rev5.0",
+    "OIF-CMIS rev5.1",
+    "IEEE 802.3dj-2024"
+  ],
+  "emitter_type": [
+    "LASER_DFB",
+    "Silicon photonics modulator"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1310
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot_electrical"
+  ],
+  "connector_type": [
+    "MPO-12"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    30
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "IEEE 802.3dj-2024",
+    "800G-DR4",
+    "2x800G-DR4",
+    "1.6T Ethernet",
+    "DR4"
+  ],
+  "baud_rate_gbaud": [
+    106.25
+  ],
+  "bit_rate_gbps": [
+    212.5
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.5
+  ],
+  "tx_power_min_dbm": [
+    -2.8
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -3.4,
+    -0.9
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4.0,
+    4.2
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": [
+    4
+  ],
+  "receiver_reflectance_db": [
+    -26
+  ],
+  "transmitter_reflectance_db": [
+    -26
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    21.4
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": [
+    30
+  ],
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Amphenol optics branding via amphenol-cs.com/optics.html. Host must implement FEC for reliable operation; FEC type not specified. Receiver sensitivity note 2: PRBS31Q, BER@2.4*10-4. RXsens also stated as -4.3+TECQ dBm for 0.9dB≤TECQ≤SECQ (formula, not a fixed numeric). Transmit OMA min conditional on TECQ/TDECQ. Power dissipation stated as <30W; ICC max 9090 mA at Vcc 3.3V. Link power budget allocation for penalties (max TDECQ) TBD. Optical receiver damage threshold 5.0 dBm per lane (absolute max and receiver table). Transmission distance and operating distance 500 m.",
+  "provenance_datasheet_sections": [
+    "1.6T 2xDR4 OSFP (Retimer)",
+    "OP13PI8-005D",
+    "PRODUCT FEATURES",
+    "REFERENCE STANDARD",
+    "APPLICATIONS",
+    "I. Absolute Maximum Ratings",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "IV. Link Power Budget"
+  ],
+  "suggestions": "Clarify vendor vs Amphenol branding. Add explicit host/media interface MSA codes if available. Specify FEC type when host FEC is required. reach_km: source gives 500 m; stored as 0.5 km for schema unit."
+}

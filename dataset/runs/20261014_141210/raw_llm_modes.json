@@ -1,0 +1,67 @@
+{
+  "modes": [
+    {
+      "label": "CWDM 1470nm STM-1/OC3 FE 270km",
+      "model": "SO-SFP-155M-L270D-C47",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 155.5
+    },
+    {
+      "label": "CWDM 1490nm STM-1/OC3 FE 270km",
+      "model": "SO-SFP-155M-L270D-C49",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 155.5
+    },
+    {
+      "label": "CWDM 1510nm STM-1/OC3 FE 270km",
+      "model": "SO-SFP-155M-L270D-C51",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 155.5
+    },
+    {
+      "label": "CWDM 1530nm STM-1/OC3 FE 270km",
+      "model": "SO-SFP-155M-L270D-C53",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 155.5
+    },
+    {
+      "label": "CWDM 1550nm STM-1/OC3 FE 270km",
+      "model": "SO-SFP-155M-L270D-C55",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 155.5
+    },
+    {
+      "label": "CWDM 1570nm STM-1/OC3 FE 270km",
+      "model": "SO-SFP-155M-L270D-C57",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 155.5
+    },
+    {
+      "label": "CWDM 1590nm STM-1/OC3 FE 270km",
+      "model": "SO-SFP-155M-L270D-C59",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 155.5
+    }
+  ]
+}

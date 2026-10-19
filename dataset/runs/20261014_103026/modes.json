@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "400G QSFP112 DR4 Ethernet",
+      "host_interface_name": "QSFP112",
+      "media_interface_name": "DR4",
+      "standards_code": "DR4",
+      "bit_rate_gbps": 400.0
+    },
+    {
+      "label": "106.25G per-lane CEI / 100G-DR-LPO",
+      "host_interface_name": "CEI-112G-LINEAR-PAM4",
+      "media_interface_name": "100G-DR-LPO",
+      "standards_code": "100G-DR-LPO",
+      "bit_rate_gbps": 106.25
+    }
+  ]
+}

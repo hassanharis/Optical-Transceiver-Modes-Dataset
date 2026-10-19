@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:56:00.718637+00:00",
+  "source_file": "C:\\Haris\\datasheets\\xgxp-1396-10da.pdf",
+  "page_count": 7,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 14.352,
+    "extract_atoms": 17.669,
+    "store_run": 0.004,
+    "synthesize_modes": 42.535,
+    "store_modes": 0.002,
+    "total": 74.561
+  }
+}

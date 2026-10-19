@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T18:16:31.577863+00:00",
+  "source_file": "C:\\Haris\\datasheets\\1.6t-osfp-lpo-aop13li8-xxx.pdf",
+  "page_count": 8,
+  "table_count": 10,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 9.442,
+    "extract_atoms": 22.413,
+    "store_run": 0.006,
+    "synthesize_modes": 22.217,
+    "store_modes": 0.004,
+    "total": 54.082
+  }
+}

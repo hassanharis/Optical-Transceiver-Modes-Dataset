@@ -1,0 +1,133 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "QXP29B4-10D",
+    "100Gb/s QSFP28 LR4"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ba",
+    "SFF-8636",
+    "QSFP28 MSA"
+  ],
+  "emitter_type": [
+    "LASER_DFB",
+    "LASER_DML"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1294.53,
+    1299.02,
+    1303.54,
+    1308.09
+  ],
+  "wavelength_max_nm": [
+    1296.59,
+    1301.09,
+    1305.63,
+    1310.19
+  ],
+  "wavelength_center_nm": [
+    1296.0,
+    1300.0,
+    1305.0,
+    1309.0,
+    1295.56,
+    1300.05,
+    1304.58,
+    1309.14
+  ],
+  "wavelength_band": [
+    "LAN-WDM"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    4.5
+  ],
+  "host_interface_name": [
+    "QSFP28"
+  ],
+  "standards_code": [
+    "100GBASE-LR4",
+    "IEEE 802.3ba"
+  ],
+  "bit_rate_gbps": [
+    103.125,
+    25.78125
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -4.3,
+    -1.3
+  ],
+  "tx_power_max_dbm": [
+    4.5,
+    10.5
+  ],
+  "rx_sensitivity_dbm": [
+    -8.6
+  ],
+  "rx_overload_dbm": [
+    4.5
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    4.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    4.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "penalties": [],
+  "notes": "Receiver Sensitivity (OMA) per Lane: measured with PRBS 2^31-1 test pattern @25.78Gb/s, BER<10^-12 (Note 2). Signaling Speed per Lane: 25.78125 ± 100 ppm Gbps. Hit ratio 5x10^-5 (Note 1, transmitter eye mask). Average launch Power off per lane Poff max -30 dBm. RIN max -130 dB/Hz. Storage Temperature Ts -40 to 85 ºC (Absolute Maximum Ratings, not normal operating). Power Supply Current ICC max 1360 mA at recommended VCC. Coupled fiber: 9/125um SMF. General Description center wavelengths 1296 nm, 1300nm, 1305nm and 1309 nm for four DFB lasers.",
+  "provenance_datasheet_sections": [
+    "100Gb/s QSFP28 LR4 Transceiver",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "STANDARD",
+    "General Description",
+    "Ⅰ Absolute Maximum Ratings",
+    "Ⅱ Recommended Operating Conditions",
+    "Ⅲ Optical Characteristics",
+    "Notes:",
+    "IV. Electrical Characteristics",
+    "VI. Digital Diagnostic Functions"
+  ]
+}

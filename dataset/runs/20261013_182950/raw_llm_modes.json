@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "QT-SFP-0301D 50/125\u00b5m MMF 500m",
+      "model": "QT-SFP-0301D",
+      "wavelength_min_nm": 830.0,
+      "reach_km": 0.5
+    },
+    {
+      "label": "QT-SFP-0301D 62.5/125\u00b5m MMF 300m",
+      "model": "QT-SFP-0301D",
+      "wavelength_min_nm": 830.0,
+      "reach_km": 0.3
+    },
+    {
+      "label": "QT-SFP-0301D 850nm 550m MMF",
+      "model": "QT-SFP-0301D",
+      "wavelength_min_nm": 830.0,
+      "reach_km": 0.55
+    },
+    {
+      "label": "QT-SFP-0301ID 50/125\u00b5m MMF 500m",
+      "model": "QT-SFP-0301ID",
+      "wavelength_min_nm": 830.0,
+      "reach_km": 0.5
+    },
+    {
+      "label": "QT-SFP-0301ID 62.5/125\u00b5m MMF 300m",
+      "model": "QT-SFP-0301ID",
+      "wavelength_min_nm": 830.0,
+      "reach_km": 0.3
+    },
+    {
+      "label": "QT-SFP-0301ID 850nm 550m MMF",
+      "model": "QT-SFP-0301ID",
+      "wavelength_min_nm": 830.0,
+      "reach_km": 0.55
+    }
+  ]
+}

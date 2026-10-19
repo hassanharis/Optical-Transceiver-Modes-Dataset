@@ -1,0 +1,25 @@
+{
+  "modes": [
+    {
+      "label": "25GBASE-LR transmitter (Section 3)",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": "25GBASE-LR",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "Receiver wavelength range (Section 3)",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1610.0,
+      "standards_code": "SFF-8472",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SFF-8431 / up to 28 Gbps (product features)",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 28.0
+    }
+  ]
+}

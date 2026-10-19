@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SONET OC-192 / SDH STM-64\",\n      \"standards_code\": \"OC-192\",\n      \"bit_rate_gbps\": 9.953\n    },\n    {\n      \"label\": \"SONET OC-192 / SDH STM-64\",\n      \"standards_code\": \"STM-64\",\n      \"bit_rate_gbps\": 9.953\n    },\n    {\n      \"label\": \"OC-192 over FEC\",\n      \"standards_code\": \"OC-192\",\n      \"bit_rate_gbps\": 10.709\n    },\n    {\n      \"label\": \"10GE over G.709\",\n      \"standards_code\": \"G.709\",\n      \"bit_rate_gbps\": 11.09\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

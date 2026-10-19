@@ -1,0 +1,108 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TSD002-S31C-SO"
+  ],
+  "form_factor": [
+    "SFP-DD"
+  ],
+  "standards_claimed": [
+    "SFP-DD MSA",
+    "SFP-DD MIS",
+    "100G-FR - 100G Lambda MSA",
+    "QSFP28 MSA"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1311.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "channel_total": [
+    1
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": [
+    "100GAUI-2"
+  ],
+  "media_interface_name": [
+    "100G-FR"
+  ],
+  "frame": [
+    "100GAUI-2"
+  ],
+  "standards_code": [
+    "100G-FR",
+    "100G Lambda MSA",
+    "IEEE802.3bj"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    103.12
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -2.4
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -6.4,
+    -4.5
+  ],
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "fec_type": [
+    "KP4",
+    "RS_GENERIC"
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "los_assert_dbm": [
+    -15.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "number_of_lanes": [
+    1,
+    2
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "notes": "Power budget 0 – 4.3dB (w/o optical path penalties). Power consumption stated as < 3.5W worst case. Aggregated line rate 103.12Gbps for 100GbE; line baud rate 53.125Gbd. Footnote 3): average launch power min is informative; transmitter below min cannot be compliant. Receiver minimum input power (average -6.4dBm, OMA -4.5dBm) and overload +4.0dBm specified at BER 2.4x10-4 (footnote 4). FEC required on host per IEEE802.3bj RS(544,514); optical parameters provide BER 2.4 x 10-4. Tx OMA min -0.2dBm, max +4.2dBm. Storage temperature -40°C to +85°C. DDM via I2C per QSFP28 MSA wording. Transmission media listed as SM (2x LC).",
+  "provenance_datasheet_sections": [
+    "**SFP-DD 100G-FR**",
+    "TSD002-S31C-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

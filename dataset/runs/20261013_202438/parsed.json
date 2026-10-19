@@ -1,0 +1,48 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\Cloudtron-SFP-1G-13-80K-D.pdf",
+  "page_count": 8,
+  "table_count": 8,
+  "markdown_chars": 10112,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 21
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 9
+    }
+  ]
+}

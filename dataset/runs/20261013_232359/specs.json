@@ -1,0 +1,87 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "L9-FC315501-60CTC"
+  ],
+  "form_factor": [
+    "1x9"
+  ],
+  "standards_claimed": [
+    "ITU-T G.957"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1270.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1350.0,
+    1610.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "WDM"
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "FC"
+  ],
+  "temp_min_c": -10.0,
+  "temp_max_c": 70.0,
+  "standards_code": [
+    "G.957",
+    "STM-1",
+    "OC-3"
+  ],
+  "bit_rate_gbps": [
+    155.0,
+    155.52
+  ],
+  "reach_km": [
+    60.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -34.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Module title states Tx1310/Rx1550 bi-directional; ordering row lists Tx 1310nm FP only. Operating data rate is given as 155Mb/s and 155.52 Mbps (not Gbps). Launch power, sensitivity, and max input power notes reference 60km. Recommended operating temperature TC 0 to 70°C and TI -40 to 85°C also appear; ordering row for L9-FC315501-60CTC lists working temperature -10~70℃. Supply current Icc max 250 mA at 3.3 V; power in watts not stated. Signal detect range -45 to -35 dBm; LOS assert/deassert thresholds not named separately. Transmitter optical rise/fall time max 2.0 ns (20%-80%). Output spectrum width Δλ max 4 nm (FP-LD). Eye diagram per ITU-T G.957 STM-1/OC-3.",
+  "provenance_datasheet_sections": [
+    "L9-FC315501-60CTC",
+    "Features",
+    "Applications",
+    "Standard",
+    "Ordering Information",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Transmitter Optical ,Electrical characteristics",
+    "Receiver Optical Electrical Characteristics"
+  ],
+  "suggestions": "Clarify whether bit_rate_gbps should store Mbps values verbatim (155, 155.52) or remain null when only Mbps is printed. Add package keyword 1x9 to form_factor enum if commonly used. Map Signal Detect Range (-45 to -35 dBm) to los_assert_dbm/los_deassert_dbm if policy allows inference from range endpoints."
+}

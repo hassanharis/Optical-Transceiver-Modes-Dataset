@@ -1,0 +1,236 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TOC005-TUNC-SO"
+  ],
+  "form_factor": [
+    "OSFP800"
+  ],
+  "standards_claimed": [
+    "OIF 800ZR MSA",
+    "OpenROADM MSA",
+    "OSFP800 MSA",
+    "CMIS5.3",
+    "800ZR",
+    "OpenZR+",
+    "OpenROADM",
+    "SFF-8024"
+  ],
+  "wavelength_band": [
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    191.25
+  ],
+  "frequency_max_thz": [
+    196.1
+  ],
+  "channel_spacing_ghz": [
+    6.25,
+    75.0,
+    150.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 15.0,
+  "temp_max_c": 75.0,
+  "power_consumption_w": [
+    28.0,
+    25.0,
+    22.5
+  ],
+  "host_interface_name": [
+    "800GAUI-8",
+    "400GAUI-4",
+    "200GAUI-2",
+    "100GAUI-1",
+    "400GAUI-8",
+    "200GAUI-4",
+    "100GAUI-2"
+  ],
+  "media_interface_name": [
+    "800ZR",
+    "FlexO-6(e)",
+    "OpenZR400"
+  ],
+  "media_interface_id_hex": [
+    "0x6E",
+    "0x6A",
+    "0xF2",
+    "0x64",
+    "0x36"
+  ],
+  "media_interface_id": [
+    110,
+    106,
+    242,
+    100,
+    54
+  ],
+  "frame": [
+    "800ZR",
+    "FlexO-6(e)",
+    "FlexO-4(e)",
+    "OpenZR400",
+    "1x 800GAUI-8",
+    "2x 400GAUI-4",
+    "4x 200GAUI-2",
+    "8x 100GAUI-1",
+    "1x 400GAUI-8",
+    "2x 200GAUI-4",
+    "4x 100GAUI-2"
+  ],
+  "standards_code": [
+    "800ZR Power class A",
+    "FLEXO-6e-DPO-16QAM",
+    "FOIC6e-DPO",
+    "600G-PCS-118",
+    "FLEXO-4e-DO-QPSK",
+    "FOIC4e.4-DO",
+    "ZR400-OFEC-16QAM-HB",
+    "OIF 800ZR",
+    "OpenROADM 600G 118Gbd",
+    "600G PCS-118Gbd",
+    "OpenROADM 400G QPSK",
+    "OpenZR+ 400G 16QAM-HB"
+  ],
+  "baud_rate_gbaud": [
+    118.2,
+    118.7,
+    118.5,
+    60.1
+  ],
+  "bit_rate_gbps": [
+    800.0,
+    600.0,
+    400.0
+  ],
+  "modulation_format": [
+    "QAM_16-DP",
+    "PCS_118",
+    "QPSK-DP"
+  ],
+  "tx_power_min_dbm": [
+    -2.0
+  ],
+  "tx_in_band_osnr_db": [
+    37.0
+  ],
+  "tx_out_of_band_osnr_db": [
+    36.0
+  ],
+  "rx_sensitivity_dbm": [
+    -18.5,
+    -23.5,
+    -27.0,
+    -22.5
+  ],
+  "rx_osnr_db": [
+    26.4,
+    22.8,
+    21.6,
+    17.9,
+    27.4,
+    23.6,
+    22.5,
+    18.7,
+    23.8
+  ],
+  "rx_overload_dbm": [
+    1.0,
+    15.0
+  ],
+  "cd_tolerance_ps_nm": [
+    3000.0,
+    29000.0,
+    58000.0,
+    23000.0,
+    175000.0
+  ],
+  "fec_type": [
+    "OFEC"
+  ],
+  "number_of_lanes": [
+    8,
+    4,
+    2,
+    1
+  ],
+  "penalties": [
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 27.4,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -16.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0x6E 800G 800ZR"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 23.6,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -19.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0x6A 600G FlexO-6(e)"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 22.5,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -19.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xF2 600G FlexO-6(e)"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 18.7,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -22.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0x64 400G FlexO-4(e)"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 23.8,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -18.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0x36 400G OpenZR400"
+    }
+  ],
+  "notes": "Operating temperature footnote: module turns up from cold start at ambient as low as -5C and reaches specifications after self-heating to min temperature. Storage temperature -40OC to +85OC. Tx Power min -2dBm is minimum without attenuation; provisional Tx power range 10dB; defaults to maximum available if not provisioned by host. Rx sens @ OSNR > 36dB. Rx @ OSNR and Rx OSNR @~1dB penalty columns specified as [Min OSNR Value @ Min Rx power for the OSNR value]. Maximum CDC search range footnote: increasing search range increases power consumption. Absolute max conditions: Rx signal input power +1dBm; Rx total input power +15dBm. Receiver turn-up max 30ms warm start, max 125s cold start. Power consumption EOL see electrical section; varies with host interface and chromatic dispersion compensation range. Technology DWDM OSFP800 type 2a. Nominal wavelengths tunable on 6.25GHz Grid.",
+  "provenance_datasheet_sections": [
+    "TOC005-TUNC-SO",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "GENERIC",
+    "OPTICAL SPECIFICATION – NTWK/MEDIA CODES",
+    "ELECTICAL CHARACTERISTICS",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

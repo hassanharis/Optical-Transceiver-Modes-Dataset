@@ -1,0 +1,326 @@
+{
+  "modes": [
+    {
+      "label": "ZR 400G 16-QAM",
+      "model": "QDD-400G-ZR-S",
+      "channel_spacing_ghz": 75.0,
+      "host_interface_name": [
+        "400GE",
+        "4x 100GE"
+      ],
+      "frame": [
+        "400GE",
+        "4x100GE"
+      ],
+      "standards_code": [
+        "400ZR",
+        "400G-ZR"
+      ],
+      "baud_rate_gbaud": 60.0,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16",
+      "tx_power_max_dbm": [
+        -8.5,
+        -10.0
+      ],
+      "tx_in_band_osnr_db": 34.0,
+      "tx_out_of_band_osnr_db": 30.0,
+      "rx_sensitivity_dbm": [
+        -12.0,
+        -15.0,
+        -20.0
+      ],
+      "rx_osnr_db": 26.0,
+      "cd_tolerance_ps_nm": 2400.0,
+      "pmd_tolerance_ps": 33.0,
+      "fec_type": "CFEC"
+    },
+    {
+      "label": "ZR+ 400G 16-QAM unshaped",
+      "model": "QDD-400G-ZRP-S",
+      "channel_spacing_ghz": 75.0,
+      "host_interface_name": "400GbE",
+      "frame": "400GE",
+      "standards_code": [
+        "OpenZR+",
+        "400G-ZR+"
+      ],
+      "baud_rate_gbaud": 60.0,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16",
+      "tx_power_max_dbm": [
+        -8.0,
+        -10.0
+      ],
+      "tx_in_band_osnr_db": 42.0,
+      "tx_out_of_band_osnr_db": 42.0,
+      "rx_sensitivity_dbm": [
+        -12.0,
+        -16.0,
+        -20.0
+      ],
+      "rx_osnr_db": 23.7,
+      "cd_tolerance_ps_nm": [
+        13000.0,
+        52000.0
+      ],
+      "pmd_tolerance_ps": 60.0,
+      "fec_type": "OFEC"
+    },
+    {
+      "label": "ZR+ 400G 16-QAM shaped",
+      "model": "QDD-400G-ZRP-S",
+      "channel_spacing_ghz": 75.0,
+      "host_interface_name": "400GbE",
+      "frame": "400GE",
+      "standards_code": [
+        "OpenZR+",
+        "400G-ZR+"
+      ],
+      "baud_rate_gbaud": 60.0,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16",
+      "tx_power_max_dbm": [
+        -11.0,
+        -13.0
+      ],
+      "tx_in_band_osnr_db": 42.0,
+      "tx_out_of_band_osnr_db": 42.0,
+      "rx_sensitivity_dbm": [
+        -12.0,
+        -16.0,
+        -21.0
+      ],
+      "rx_osnr_db": 23.1,
+      "cd_tolerance_ps_nm": [
+        13000.0,
+        52000.0
+      ],
+      "pmd_tolerance_ps": 60.0,
+      "fec_type": "OFEC"
+    },
+    {
+      "label": "ZR+ 300G 8-QAM unshaped",
+      "model": "QDD-400G-ZRP-S",
+      "channel_spacing_ghz": 75.0,
+      "host_interface_name": "300GbE",
+      "frame": "3x100GE",
+      "standards_code": [
+        "OpenZR+",
+        "400G-ZR+"
+      ],
+      "baud_rate_gbaud": 60.0,
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_8",
+      "tx_power_max_dbm": [
+        -8.6,
+        -10.2
+      ],
+      "tx_in_band_osnr_db": 42.0,
+      "tx_out_of_band_osnr_db": 42.0,
+      "rx_sensitivity_dbm": [
+        -15.0,
+        -19.0,
+        -22.0
+      ],
+      "rx_osnr_db": 20.8,
+      "cd_tolerance_ps_nm": [
+        26000.0,
+        100000.0
+      ],
+      "pmd_tolerance_ps": 60.0,
+      "fec_type": "OFEC"
+    },
+    {
+      "label": "ZR+ 300G 8-QAM shaped",
+      "model": "QDD-400G-ZRP-S",
+      "channel_spacing_ghz": 75.0,
+      "host_interface_name": "300GbE",
+      "frame": "3x100GE",
+      "standards_code": [
+        "OpenZR+",
+        "400G-ZR+"
+      ],
+      "baud_rate_gbaud": 60.0,
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_8",
+      "tx_power_max_dbm": [
+        -10.4,
+        -11.9
+      ],
+      "tx_in_band_osnr_db": 42.0,
+      "tx_out_of_band_osnr_db": 42.0,
+      "rx_sensitivity_dbm": [
+        -15.0,
+        -19.0,
+        -23.0
+      ],
+      "rx_osnr_db": 19.5,
+      "cd_tolerance_ps_nm": [
+        26000.0,
+        100000.0
+      ],
+      "pmd_tolerance_ps": 60.0,
+      "fec_type": "OFEC"
+    },
+    {
+      "label": "ZR+ 200G QPSK unshaped",
+      "model": "QDD-400G-ZRP-S",
+      "channel_spacing_ghz": 75.0,
+      "host_interface_name": "200GbE",
+      "frame": "2x100GE",
+      "standards_code": [
+        "OpenZR+",
+        "400G-ZR+"
+      ],
+      "baud_rate_gbaud": 60.0,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QPSK",
+      "tx_power_max_dbm": [
+        -6.2,
+        -7.7
+      ],
+      "tx_in_band_osnr_db": 42.0,
+      "tx_out_of_band_osnr_db": 42.0,
+      "rx_sensitivity_dbm": [
+        -18.0,
+        -22.0,
+        -28.0
+      ],
+      "rx_osnr_db": 15.3,
+      "cd_tolerance_ps_nm": [
+        50000.0,
+        100000.0
+      ],
+      "pmd_tolerance_ps": 60.0,
+      "fec_type": "OFEC"
+    },
+    {
+      "label": "ZR+ 200G QPSK shaped",
+      "model": "QDD-400G-ZRP-S",
+      "channel_spacing_ghz": 75.0,
+      "host_interface_name": "200GbE",
+      "frame": "2x100GE",
+      "standards_code": [
+        "OpenZR+",
+        "400G-ZR+"
+      ],
+      "baud_rate_gbaud": 60.0,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QPSK",
+      "tx_power_max_dbm": [
+        -9.0,
+        -10.5
+      ],
+      "tx_in_band_osnr_db": 42.0,
+      "tx_out_of_band_osnr_db": 42.0,
+      "rx_sensitivity_dbm": [
+        -18.0,
+        -22.0,
+        -28.0
+      ],
+      "rx_osnr_db": 15.0,
+      "cd_tolerance_ps_nm": [
+        50000.0,
+        100000.0
+      ],
+      "pmd_tolerance_ps": 60.0,
+      "fec_type": "OFEC"
+    },
+    {
+      "label": "ZR+ 200G 8-QAM shaped",
+      "model": "QDD-400G-ZRP-S",
+      "channel_spacing_ghz": 50.0,
+      "host_interface_name": "200GbE",
+      "frame": "2x100GE",
+      "standards_code": [
+        "OpenZR+",
+        "400G-ZR+"
+      ],
+      "baud_rate_gbaud": 40.0,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QAM_8",
+      "tx_power_max_dbm": [
+        -9.0,
+        -11.0
+      ],
+      "tx_in_band_osnr_db": 42.0,
+      "tx_out_of_band_osnr_db": 42.0,
+      "rx_sensitivity_dbm": [
+        -16.0,
+        -20.0,
+        -28.0
+      ],
+      "rx_osnr_db": 17.4,
+      "cd_tolerance_ps_nm": [
+        26000.0,
+        100000.0
+      ],
+      "pmd_tolerance_ps": 60.0,
+      "fec_type": "OFEC"
+    },
+    {
+      "label": "ZR+ 200G 16-QAM shaped",
+      "model": "QDD-400G-ZRP-S",
+      "channel_spacing_ghz": 50.0,
+      "host_interface_name": "200GbE",
+      "frame": "2x100GE",
+      "standards_code": [
+        "OpenZR+",
+        "400G-ZR+"
+      ],
+      "baud_rate_gbaud": 30.0,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QAM_16",
+      "tx_power_max_dbm": [
+        -8.0,
+        -10.0
+      ],
+      "tx_in_band_osnr_db": 42.0,
+      "tx_out_of_band_osnr_db": 42.0,
+      "rx_sensitivity_dbm": [
+        -15.0,
+        -20.0,
+        -24.0
+      ],
+      "rx_osnr_db": 19.3,
+      "cd_tolerance_ps_nm": [
+        21000.0,
+        85000.0
+      ],
+      "pmd_tolerance_ps": 60.0,
+      "fec_type": "OFEC"
+    },
+    {
+      "label": "ZR+ 100G QPSK unshaped",
+      "model": "QDD-400G-ZRP-S",
+      "channel_spacing_ghz": 37.5,
+      "host_interface_name": "100GbE",
+      "standards_code": [
+        "OpenZR+",
+        "400G-ZR+"
+      ],
+      "baud_rate_gbaud": 30.0,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QPSK",
+      "tx_power_max_dbm": [
+        -5.9,
+        -7.5
+      ],
+      "tx_in_band_osnr_db": 42.0,
+      "tx_out_of_band_osnr_db": 42.0,
+      "rx_sensitivity_dbm": [
+        -20.0,
+        -25.0,
+        -28.0
+      ],
+      "rx_osnr_db": 11.8,
+      "cd_tolerance_ps_nm": [
+        80000.0,
+        160000.0
+      ],
+      "pmd_tolerance_ps": 80.0,
+      "fec_type": "OFEC"
+    }
+  ]
+}

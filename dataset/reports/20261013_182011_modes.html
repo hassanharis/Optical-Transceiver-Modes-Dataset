@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics</div>
+  <div class="subtitle">SFP+ &middot; [41] channels</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">SFP+</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">ITU-T G.694.1, SFF-8431, SFF-8432, SFF-8472</div></div>
+      <div class="spec-item"><div class="label">Wavelength Min</div><div class="value">1529.55</div></div>
+      <div class="spec-item"><div class="label">Wavelength Max</div><div class="value">1561.42</div></div>
+      <div class="spec-item"><div class="label">Frequency Min Thz</div><div class="value">192.0</div></div>
+      <div class="spec-item"><div class="label">Frequency Max Thz</div><div class="value">196.0</div></div>
+      <div class="spec-item"><div class="label">Channel Spacing (GHz)</div><div class="value">100.0</div></div>
+      <div class="spec-item"><div class="label">Channel Total</div><div class="value">41</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">2.0</div></div>
+      <div class="spec-item"><div class="label">Reach (km)</div><div class="value">40.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">4.0</div></div>
+      <div class="spec-item"><div class="label">RX Sensitivity (dBm)</div><div class="value">-14.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">CD Tolerance (ps/nm)</div><div class="value">800.0</div></div>
+      <div class="spec-item"><div class="label">Pre Fec Ber Threshold</div><div class="value">1e-06</div></div>
+      <div class="spec-item"><div class="label">Los Assert Dbm</div><div class="value">-26.0</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-16.0</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Title line: Secure Optics DWDM, D200-D600, 14dB. Power budget 4 – 14.0 dB. Dispersion tolerance 800 ps/nm and dispersion penalty 3.5 dB at 14.025 Gbps (16G FC) per footnote 1). Receiver minimum input power, overload, and TX output power are average power per footnote 3). Receiver specs per footnote 2) at BER &lt; 1E-6 using PRBS 231-1. Receiver wavelength range 1260 - 1565 nm. Nominal/transmit wavelengths stated as 192.00 - 196.00 THz. Storage temperature -40°C to +85°C. Brocade approved with Gen7 authentication protocol. RoHS-6/6 compliant.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">16G-ER-DxxS-BR2, OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Dispersion penalty 3.5 dB is stated without a paired penalized optical parameter value; schema penalties could allow penalty_db-only rows with bit_rate_gbps condition. Add fields for power_budget_db, receiver_wavelength_range_nm, storage_temperature, and protocol names (Fiber Channel).</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>wavelength_center_nm</th><th>Wavelength Band</th><th>Standards code</th><th>Bit Rate (Gbps)</th></tr>
+      <tr><td><strong>D20S 1561.42nm 16G FC</strong></td><td>16G-ER-D20S--BR2</td><td>1561.42</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D20S 1561.42nm 8G FC</strong></td><td>16G-ER-D20S--BR2</td><td>1561.42</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D20S 1561.42nm 4G FC</strong></td><td>16G-ER-D20S--BR2</td><td>1561.42</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D21S 1560.61nm 16G FC</strong></td><td>16G-ER-D21S--BR2</td><td>1560.61</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D21S 1560.61nm 8G FC</strong></td><td>16G-ER-D21S--BR2</td><td>1560.61</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D21S 1560.61nm 4G FC</strong></td><td>16G-ER-D21S--BR2</td><td>1560.61</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D22S 1559.79nm 16G FC</strong></td><td>16G-ER-D22S--BR2</td><td>1559.79</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D22S 1559.79nm 8G FC</strong></td><td>16G-ER-D22S--BR2</td><td>1559.79</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D22S 1559.79nm 4G FC</strong></td><td>16G-ER-D22S--BR2</td><td>1559.79</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D23S 1558.98nm 16G FC</strong></td><td>16G-ER-D23S--BR2</td><td>1558.98</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D23S 1558.98nm 8G FC</strong></td><td>16G-ER-D23S--BR2</td><td>1558.98</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D23S 1558.98nm 4G FC</strong></td><td>16G-ER-D23S--BR2</td><td>1558.98</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D24S 1558.17nm 16G FC</strong></td><td>16G-ER-D24S--BR2</td><td>1558.17</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D24S 1558.17nm 8G FC</strong></td><td>16G-ER-D24S--BR2</td><td>1558.17</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D24S 1558.17nm 4G FC</strong></td><td>16G-ER-D24S--BR2</td><td>1558.17</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D25S 1557.36nm 16G FC</strong></td><td>16G-ER-D25S--BR2</td><td>1557.36</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D25S 1557.36nm 8G FC</strong></td><td>16G-ER-D25S--BR2</td><td>1557.36</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D25S 1557.36nm 4G FC</strong></td><td>16G-ER-D25S--BR2</td><td>1557.36</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D26S 1556.55nm 16G FC</strong></td><td>16G-ER-D26S--BR2</td><td>1556.55</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D26S 1556.55nm 8G FC</strong></td><td>16G-ER-D26S--BR2</td><td>1556.55</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D26S 1556.55nm 4G FC</strong></td><td>16G-ER-D26S--BR2</td><td>1556.55</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D27S 1555.75nm 16G FC</strong></td><td>16G-ER-D27S--BR2</td><td>1555.75</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D27S 1555.75nm 8G FC</strong></td><td>16G-ER-D27S--BR2</td><td>1555.75</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D27S 1555.75nm 4G FC</strong></td><td>16G-ER-D27S--BR2</td><td>1555.75</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D28S 1554.94nm 16G FC</strong></td><td>16G-ER-D28S--BR2</td><td>1554.94</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D28S 1554.94nm 8G FC</strong></td><td>16G-ER-D28S--BR2</td><td>1554.94</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D28S 1554.94nm 4G FC</strong></td><td>16G-ER-D28S--BR2</td><td>1554.94</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D29S 1554.13nm 16G FC</strong></td><td>16G-ER-D29S--BR2</td><td>1554.13</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D29S 1554.13nm 8G FC</strong></td><td>16G-ER-D29S--BR2</td><td>1554.13</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D29S 1554.13nm 4G FC</strong></td><td>16G-ER-D29S--BR2</td><td>1554.13</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D30S 1553.33nm 16G FC</strong></td><td>16G-ER-D30S--BR2</td><td>1553.33</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D30S 1553.33nm 8G FC</strong></td><td>16G-ER-D30S--BR2</td><td>1553.33</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D30S 1553.33nm 4G FC</strong></td><td>16G-ER-D30S--BR2</td><td>1553.33</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D31S 1552.52nm 16G FC</strong></td><td>16G-ER-D31S--BR2</td><td>1552.52</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D31S 1552.52nm 8G FC</strong></td><td>16G-ER-D31S--BR2</td><td>1552.52</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D31S 1552.52nm 4G FC</strong></td><td>16G-ER-D31S--BR2</td><td>1552.52</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D32S 1551.72nm 16G FC</strong></td><td>16G-ER-D32S--BR2</td><td>1551.72</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D32S 1551.72nm 8G FC</strong></td><td>16G-ER-D32S--BR2</td><td>1551.72</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D32S 1551.72nm 4G FC</strong></td><td>16G-ER-D32S--BR2</td><td>1551.72</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D33S 1550.92nm 16G FC</strong></td><td>16G-ER-D33S--BR2</td><td>1550.92</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D33S 1550.92nm 8G FC</strong></td><td>16G-ER-D33S--BR2</td><td>1550.92</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D33S 1550.92nm 4G FC</strong></td><td>16G-ER-D33S--BR2</td><td>1550.92</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D34S 1550.12nm 16G FC</strong></td><td>16G-ER-D34S--BR2</td><td>1550.12</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D34S 1550.12nm 8G FC</strong></td><td>16G-ER-D34S--BR2</td><td>1550.12</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D34S 1550.12nm 4G FC</strong></td><td>16G-ER-D34S--BR2</td><td>1550.12</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D35S 1549.32nm 16G FC</strong></td><td>16G-ER-D35S--BR2</td><td>1549.32</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D35S 1549.32nm 8G FC</strong></td><td>16G-ER-D35S--BR2</td><td>1549.32</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D35S 1549.32nm 4G FC</strong></td><td>16G-ER-D35S--BR2</td><td>1549.32</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D36S 1548.51nm 16G FC</strong></td><td>16G-ER-D36S--BR2</td><td>1548.51</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D36S 1548.51nm 8G FC</strong></td><td>16G-ER-D36S--BR2</td><td>1548.51</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D36S 1548.51nm 4G FC</strong></td><td>16G-ER-D36S--BR2</td><td>1548.51</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D37S 1547.72nm 16G FC</strong></td><td>16G-ER-D37S--BR2</td><td>1547.72</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D37S 1547.72nm 8G FC</strong></td><td>16G-ER-D37S--BR2</td><td>1547.72</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D37S 1547.72nm 4G FC</strong></td><td>16G-ER-D37S--BR2</td><td>1547.72</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D38S 1546.92nm 16G FC</strong></td><td>16G-ER-D38S--BR2</td><td>1546.92</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D38S 1546.92nm 8G FC</strong></td><td>16G-ER-D38S--BR2</td><td>1546.92</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D38S 1546.92nm 4G FC</strong></td><td>16G-ER-D38S--BR2</td><td>1546.92</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D39S 1546.12nm 16G FC</strong></td><td>16G-ER-D39S--BR2</td><td>1546.12</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D39S 1546.12nm 8G FC</strong></td><td>16G-ER-D39S--BR2</td><td>1546.12</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D39S 1546.12nm 4G FC</strong></td><td>16G-ER-D39S--BR2</td><td>1546.12</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D40S 1545.32nm 16G FC</strong></td><td>16G-ER-D40S--BR2</td><td>1545.32</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D40S 1545.32nm 8G FC</strong></td><td>16G-ER-D40S--BR2</td><td>1545.32</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D40S 1545.32nm 4G FC</strong></td><td>16G-ER-D40S--BR2</td><td>1545.32</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D41S 1544.53nm 16G FC</strong></td><td>16G-ER-D41S--BR2</td><td>1544.53</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D41S 1544.53nm 8G FC</strong></td><td>16G-ER-D41S--BR2</td><td>1544.53</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D41S 1544.53nm 4G FC</strong></td><td>16G-ER-D41S--BR2</td><td>1544.53</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D42S 1543.73nm 16G FC</strong></td><td>16G-ER-D42S--BR2</td><td>1543.73</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D42S 1543.73nm 8G FC</strong></td><td>16G-ER-D42S--BR2</td><td>1543.73</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D42S 1543.73nm 4G FC</strong></td><td>16G-ER-D42S--BR2</td><td>1543.73</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D43S 1542.94nm 16G FC</strong></td><td>16G-ER-D43S--BR2</td><td>1542.94</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D43S 1542.94nm 8G FC</strong></td><td>16G-ER-D43S--BR2</td><td>1542.94</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D43S 1542.94nm 4G FC</strong></td><td>16G-ER-D43S--BR2</td><td>1542.94</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D44S 1542.14nm 16G FC</strong></td><td>16G-ER-D44S--BR2</td><td>1542.14</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D44S 1542.14nm 8G FC</strong></td><td>16G-ER-D44S--BR2</td><td>1542.14</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D44S 1542.14nm 4G FC</strong></td><td>16G-ER-D44S--BR2</td><td>1542.14</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D45S 1541.35nm 16G FC</strong></td><td>16G-ER-D45S--BR2</td><td>1541.35</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D45S 1541.35nm 8G FC</strong></td><td>16G-ER-D45S--BR2</td><td>1541.35</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D45S 1541.35nm 4G FC</strong></td><td>16G-ER-D45S--BR2</td><td>1541.35</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D46S 1540.56nm 16G FC</strong></td><td>16G-ER-D46S--BR2</td><td>1540.56</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D46S 1540.56nm 8G FC</strong></td><td>16G-ER-D46S--BR2</td><td>1540.56</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D46S 1540.56nm 4G FC</strong></td><td>16G-ER-D46S--BR2</td><td>1540.56</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D47S 1539.77nm 16G FC</strong></td><td>16G-ER-D47S--BR2</td><td>1539.77</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D47S 1539.77nm 8G FC</strong></td><td>16G-ER-D47S--BR2</td><td>1539.77</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D47S 1539.77nm 4G FC</strong></td><td>16G-ER-D47S--BR2</td><td>1539.77</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D48S 1538.98nm 16G FC</strong></td><td>16G-ER-D48S--BR2</td><td>1538.98</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D48S 1538.98nm 8G FC</strong></td><td>16G-ER-D48S--BR2</td><td>1538.98</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D48S 1538.98nm 4G FC</strong></td><td>16G-ER-D48S--BR2</td><td>1538.98</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D49S 1538.19nm 16G FC</strong></td><td>16G-ER-D49S--BR2</td><td>1538.19</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D49S 1538.19nm 8G FC</strong></td><td>16G-ER-D49S--BR2</td><td>1538.19</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D49S 1538.19nm 4G FC</strong></td><td>16G-ER-D49S--BR2</td><td>1538.19</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D50S 1537.4nm 16G FC</strong></td><td>16G-ER-D50S--BR2</td><td>1537.4</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D50S 1537.4nm 8G FC</strong></td><td>16G-ER-D50S--BR2</td><td>1537.4</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D50S 1537.4nm 4G FC</strong></td><td>16G-ER-D50S--BR2</td><td>1537.4</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D51S 1536.61nm 16G FC</strong></td><td>16G-ER-D51S--BR2</td><td>1536.61</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D51S 1536.61nm 8G FC</strong></td><td>16G-ER-D51S--BR2</td><td>1536.61</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D51S 1536.61nm 4G FC</strong></td><td>16G-ER-D51S--BR2</td><td>1536.61</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D52S 1535.82nm 16G FC</strong></td><td>16G-ER-D52S--BR2</td><td>1535.82</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D52S 1535.82nm 8G FC</strong></td><td>16G-ER-D52S--BR2</td><td>1535.82</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D52S 1535.82nm 4G FC</strong></td><td>16G-ER-D52S--BR2</td><td>1535.82</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D53S 1535.04nm 16G FC</strong></td><td>16G-ER-D53S--BR2</td><td>1535.04</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D53S 1535.04nm 8G FC</strong></td><td>16G-ER-D53S--BR2</td><td>1535.04</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D53S 1535.04nm 4G FC</strong></td><td>16G-ER-D53S--BR2</td><td>1535.04</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D54S 1534.25nm 16G FC</strong></td><td>16G-ER-D54S--BR2</td><td>1534.25</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D54S 1534.25nm 8G FC</strong></td><td>16G-ER-D54S--BR2</td><td>1534.25</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D54S 1534.25nm 4G FC</strong></td><td>16G-ER-D54S--BR2</td><td>1534.25</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D55S 1533.47nm 16G FC</strong></td><td>16G-ER-D55S--BR2</td><td>1533.47</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D55S 1533.47nm 8G FC</strong></td><td>16G-ER-D55S--BR2</td><td>1533.47</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D55S 1533.47nm 4G FC</strong></td><td>16G-ER-D55S--BR2</td><td>1533.47</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D56S 1532.68nm 16G FC</strong></td><td>16G-ER-D56S--BR2</td><td>1532.68</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D56S 1532.68nm 8G FC</strong></td><td>16G-ER-D56S--BR2</td><td>1532.68</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D56S 1532.68nm 4G FC</strong></td><td>16G-ER-D56S--BR2</td><td>1532.68</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D57S 1531.9nm 16G FC</strong></td><td>16G-ER-D57S--BR2</td><td>1531.9</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D57S 1531.9nm 8G FC</strong></td><td>16G-ER-D57S--BR2</td><td>1531.9</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D57S 1531.9nm 4G FC</strong></td><td>16G-ER-D57S--BR2</td><td>1531.9</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D58S 1531.12nm 16G FC</strong></td><td>16G-ER-D58S--BR2</td><td>1531.12</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D58S 1531.12nm 8G FC</strong></td><td>16G-ER-D58S--BR2</td><td>1531.12</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D58S 1531.12nm 4G FC</strong></td><td>16G-ER-D58S--BR2</td><td>1531.12</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D59S 1530.33nm 16G FC</strong></td><td>16G-ER-D59S--BR2</td><td>1530.33</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D59S 1530.33nm 8G FC</strong></td><td>16G-ER-D59S--BR2</td><td>1530.33</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D59S 1530.33nm 4G FC</strong></td><td>16G-ER-D59S--BR2</td><td>1530.33</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+      <tr><td><strong>D60S 1529.55nm 16G FC</strong></td><td>16G-ER-D60S--BR2</td><td>1529.55</td><td>DWDM</td><td>16G FC</td><td>14.025</td></tr>
+      <tr><td><strong>D60S 1529.55nm 8G FC</strong></td><td>16G-ER-D60S--BR2</td><td>1529.55</td><td>DWDM</td><td>8G FC</td><td>8.5</td></tr>
+      <tr><td><strong>D60S 1529.55nm 4G FC</strong></td><td>16G-ER-D60S--BR2</td><td>1529.55</td><td>DWDM</td><td>4G FC</td><td>4.25</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">16G-ER-D20S--BR2</span> <span class="badge">16G-ER-D21S--BR2</span> <span class="badge">16G-ER-D22S--BR2</span> <span class="badge">16G-ER-D23S--BR2</span> <span class="badge">16G-ER-D24S--BR2</span> <span class="badge">16G-ER-D25S--BR2</span> <span class="badge">16G-ER-D26S--BR2</span> <span class="badge">16G-ER-D27S--BR2</span> <span class="badge">16G-ER-D28S--BR2</span> <span class="badge">16G-ER-D29S--BR2</span> <span class="badge">16G-ER-D30S--BR2</span> <span class="badge">16G-ER-D31S--BR2</span> <span class="badge">16G-ER-D32S--BR2</span> <span class="badge">16G-ER-D33S--BR2</span> <span class="badge">16G-ER-D34S--BR2</span> <span class="badge">16G-ER-D35S--BR2</span> <span class="badge">16G-ER-D36S--BR2</span> <span class="badge">16G-ER-D37S--BR2</span> <span class="badge">16G-ER-D38S--BR2</span> <span class="badge">16G-ER-D39S--BR2</span> <span class="badge">16G-ER-D40S--BR2</span> <span class="badge">16G-ER-D41S--BR2</span> <span class="badge">16G-ER-D42S--BR2</span> <span class="badge">16G-ER-D43S--BR2</span> <span class="badge">16G-ER-D44S--BR2</span> <span class="badge">16G-ER-D45S--BR2</span> <span class="badge">16G-ER-D46S--BR2</span> <span class="badge">16G-ER-D47S--BR2</span> <span class="badge">16G-ER-D48S--BR2</span> <span class="badge">16G-ER-D49S--BR2</span> <span class="badge">16G-ER-D50S--BR2</span> <span class="badge">16G-ER-D51S--BR2</span> <span class="badge">16G-ER-D52S--BR2</span> <span class="badge">16G-ER-D53S--BR2</span> <span class="badge">16G-ER-D54S--BR2</span> <span class="badge">16G-ER-D55S--BR2</span> <span class="badge">16G-ER-D56S--BR2</span> <span class="badge">16G-ER-D57S--BR2</span> <span class="badge">16G-ER-D58S--BR2</span> <span class="badge">16G-ER-D59S--BR2</span> <span class="badge">16G-ER-D60S--BR2</span> <span class="badge">16G-ER-DxxS-BR2</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">1561.42</span> <span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1545.32</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span></td></tr>
+      <tr><td>wavelength_band</td><td><span class="badge">DWDM</span> <span class="badge">C-band</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">ITU-T G.694.1</span> <span class="badge">16G FC</span> <span class="badge">8G FC</span> <span class="badge">4G FC</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">14.025</span> <span class="badge">8.5</span> <span class="badge">4.25</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 18:20
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "modes": [
+    {
+      "label": "1000BASE-L40D 1.25G C-temp",
+      "model": "SO-SFP-1000BASE-L40D",
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "1000BASE-L40D",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1G FC 1.0625G C-temp",
+      "model": "SO-SFP-1000BASE-L40D",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "1000BASE-L40D 1.25G I-temp",
+      "model": "SO-SFP-1000BASE-L40D-I",
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "1000BASE-L40D",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1G FC 1.0625G I-temp",
+      "model": "SO-SFP-1000BASE-L40D-I",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    }
+  ]
+}

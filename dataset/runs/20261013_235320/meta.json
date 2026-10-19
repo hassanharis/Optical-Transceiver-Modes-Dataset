@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:53:20.757218+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lp-sfp-tmrc.pdf",
+  "page_count": 8,
+  "table_count": 11,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 11.103,
+    "extract_atoms": 22.206,
+    "store_run": 0.008,
+    "synthesize_modes": 27.38,
+    "store_modes": 0.008,
+    "total": 60.704
+  }
+}

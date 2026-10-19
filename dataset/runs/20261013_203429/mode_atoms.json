@@ -1,0 +1,59 @@
+{
+  "multi_valued": {
+    "form_factor": [
+      "QSFP+",
+      "QSFP28"
+    ],
+    "host_interface_name": [
+      "QSFP28",
+      "SFP28",
+      "SFP+",
+      "SFP"
+    ],
+    "media_interface_name": [
+      "SFP28",
+      "SFP+",
+      "SFP"
+    ],
+    "standards_code": [
+      "SFF-8665",
+      "SFF-8402",
+      "SFF-8472"
+    ],
+    "bit_rate_gbps": [
+      10.0,
+      25.0,
+      28.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "CVR-QSFP28-SFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA SFF-8665 (QSFP+ 4X 10 Gb/s Pluggable Transceiver)",
+      "SFP28 MSA SFF-8402 (SFP+ 1X 28 Gb/s Pluggable Transceiver Solution)",
+      "SFF-8472 (Management Interface for SFP+)"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      0.1
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "notes": "Adapter/converter (not a transceiver): RF channel of SFP28 receptacle connected to lane 1 of QSFP28; three remaining QSFP28 RF channels not connected. Vendor agnostic; direct path to SFP unit memory. Power stated as <0.1 W. Storage temperature -40 °C to +85 °C. Applications reference Nx100GbE switch/NIC QSFP28 to SFP28 cabling. Bit rates 10 Gb/s and 28 Gb/s appear in cited MSA compliance lines; ordering text states 25G channel from SFP28 to lane 1 on QSFP28.",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Clarify whether vendor should be inferred from smartoptics.com footer only. Consider schema values for adapter/cable products vs optical transceivers. Distinguish module payload rate (25G) from standard citation rates (10G, 28G)."
+  }
+}

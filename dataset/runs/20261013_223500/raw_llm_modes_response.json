@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"4x100G-LR 425G (8x50G host)\",\n      \"model\": \"FTCD4543E2PXM\",\n      \"form_factor\": \"QSFP-DD_type-2\",\n      \"power_consumption_w\": 12.0,\n      \"host_interface_name\": \"8x50G PAM4 retimed electrical interface\",\n      \"media_interface_name\": \"4x100G-LR\",\n      \"frame\": \"4x100Gb/s PAM4 serial lanes\",\n      \"standards_code\": \"IEEE 802.3cu\",\n      \"baud_rate_gbaud\": 53.125,\n      \"bit_rate_gbps\": 425.0,\n      \"rx_sensitivity_dbm\": -6.1,\n      \"number_of_lanes\": 4\n    },\n    {\n      \"label\": \"100GbE breakout 100GBASE-LR1\",\n      \"model\": \"FTCD4543E2PXM\",\n      \"form_factor\": \"QSFP-DD_type-2\",\n      \"power_consumption_w\": 10.0,\n      \"host_interface_name\": \"400GAUI-8\",\n      \"media_interface_name\": \"100GBASE-LR1\",\n      \"frame\": \"8x50G PAM4\",\n      \"standards_code\": \"100GBASE-LR1\",\n      \"baud_rate_gbaud\": 26.5625,\n      \"bit_rate_gbps\": 100.0,\n      \"rx_sensitivity_dbm\": -4.1,\n      \"number_of_lanes\": 8\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

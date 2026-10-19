@@ -1,0 +1,74 @@
+{
+  "modes": [
+    {
+      "label": "Fiber Channel 2.125G \u2014 commercial temp",
+      "model": "LS-MM858G-S3C",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "Fiber Channel 2.125G \u2014 industrial temp",
+      "model": "LS-MM858G-S3I",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "Fiber Channel 4.25G \u2014 commercial temp",
+      "model": "LS-MM858G-S3C",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "Fiber Channel 4.25G \u2014 industrial temp",
+      "model": "LS-MM858G-S3I",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "Fiber Channel 8.5G \u2014 commercial temp",
+      "model": "LS-MM858G-S3C",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "Fiber Channel 8.5G \u2014 industrial temp",
+      "model": "LS-MM858G-S3I",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "RoC min data rate \u2014 commercial temp",
+      "model": "LS-MM858G-S3C",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "RoC min data rate \u2014 industrial temp",
+      "model": "LS-MM858G-S3I",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "RoC typical data rate \u2014 commercial temp",
+      "model": "LS-MM858G-S3C",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "RoC typical data rate \u2014 industrial temp",
+      "model": "LS-MM858G-S3I",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "RoC max data rate \u2014 commercial temp",
+      "model": "LS-MM858G-S3C",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "RoC max data rate \u2014 industrial temp",
+      "model": "LS-MM858G-S3I",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "Rx sensitivity test @10312Mbps \u2014 commercial temp",
+      "model": "LS-MM858G-S3C",
+      "bit_rate_gbps": 10.312
+    },
+    {
+      "label": "Rx sensitivity test @10312Mbps \u2014 industrial temp",
+      "model": "LS-MM858G-S3I",
+      "bit_rate_gbps": 10.312
+    }
+  ]
+}

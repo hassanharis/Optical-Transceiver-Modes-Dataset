@@ -1,0 +1,44 @@
+{
+  "modes": [
+    {
+      "label": "10/100/1000BASE-T SGMII host (TM family)",
+      "power_consumption_w": 1.05,
+      "standards_code": "SGMII",
+      "bit_rate_gbps": 1.25,
+      "modulation_format": "PAM",
+      "reach_km": 100.0
+    },
+    {
+      "label": "1000BASE-T only SERDES host (MS family)",
+      "power_consumption_w": 1.2,
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1000.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "IEEE 802.3 compatible min rate (Table 5)",
+      "power_consumption_w": 1.05,
+      "standards_code": "IEEE 802.3",
+      "bit_rate_gbps": 10.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    },
+    {
+      "label": "Gigabit Ethernet IEEE 802.3ab (description)",
+      "power_consumption_w": 1.2,
+      "standards_code": "IEEE 802.3ab",
+      "bit_rate_gbps": 1000.0,
+      "modulation_format": "PAM",
+      "reach_km": 100.0
+    },
+    {
+      "label": "1000Base-T copper link (description)",
+      "power_consumption_w": 1.05,
+      "standards_code": "1000Base-T",
+      "bit_rate_gbps": 1000.0,
+      "modulation_format": "PAM5",
+      "reach_km": 0.1
+    }
+  ]
+}

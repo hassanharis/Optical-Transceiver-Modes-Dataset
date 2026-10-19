@@ -1,0 +1,101 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP-LR4-20"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "QSFP+ MSA",
+    "SFF-8436"
+  ],
+  "wavelength_min_nm": [
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5
+  ],
+  "wavelength_center_nm": [
+    1271.0,
+    1291.0,
+    1311.0,
+    1331.0
+  ],
+  "wavelength_band": [
+    "grey",
+    "CWDM",
+    "1300nm"
+  ],
+  "channel_total": [
+    4
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": [
+    "40GBASE-LR4"
+  ],
+  "standards_code": [
+    "40GBASE-LR4",
+    "40GbE"
+  ],
+  "bit_rate_gbps": [
+    41.25,
+    10.3125
+  ],
+  "reach_km": [
+    20.0
+  ],
+  "tx_power_min_dbm": [
+    -3.5
+  ],
+  "tx_power_max_dbm": [
+    2.3
+  ],
+  "rx_sensitivity_dbm": [
+    -13.7
+  ],
+  "rx_overload_dbm": [
+    2.3
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -24.0
+  ],
+  "los_deassert_dbm": [
+    -15.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "41.25Gbps is aggregated line rate (footnote 1); 10.3125Gbps is per lane (footnote 2). Tx/Rx min/max power and receiver min input/overload are average power (footnote 3). Receiver min input power and overload at 10.3125Gbps, BER less than 10^-12, with 231-1 PRBS (footnote 4). Power budget 0–10.2dB. Power consumption < 3.5W. Storage temperature -40°C to +85°C. Transmission media stated as SM (2x LC). DDM: Yes. Title line lists 10.2dB (power budget) and LC connector.",
+  "provenance_datasheet_sections": [
+    "SO-QSFP-LR4-20",
+    "QSFP+, 40G Ethernet LR4, SM, 1271/1291/1311/1331nm, 20km, 10.2dB, LC",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

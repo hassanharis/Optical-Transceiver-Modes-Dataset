@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "LR4 LAN-WDM lane \u03bb0",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5
+    },
+    {
+      "label": "LR4 LAN-WDM lane \u03bb1",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5
+    },
+    {
+      "label": "LR4 LAN-WDM lane \u03bb2",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5
+    },
+    {
+      "label": "LR4 LAN-WDM lane \u03bb3",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5
+    }
+  ]
+}

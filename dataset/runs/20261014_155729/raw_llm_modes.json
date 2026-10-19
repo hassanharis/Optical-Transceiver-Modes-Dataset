@@ -1,0 +1,112 @@
+{
+  "modes": [
+    {
+      "label": "2733/3327-I solution \u2014 1270 nm unit, 25GE",
+      "model": "SO-SFP28-BX20D-2733/3327-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "2733/3327-I solution \u2014 1270 nm unit, CPRI opt 10",
+      "model": "SO-SFP28-BX20D-2733/3327-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "CPRI opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "2733/3327-I solution \u2014 1330 nm unit, 25GE",
+      "model": "SO-SFP28-BX20D-2733/3327-I",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "2733/3327-I solution \u2014 1330 nm unit, CPRI opt 10",
+      "model": "SO-SFP28-BX20D-2733/3327-I",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "CPRI opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "SO-SFP28-BX20D-2733-I, 25GE",
+      "model": "SO-SFP28-BX20D-2733-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX20D-2733-I, CPRI opt 10",
+      "model": "SO-SFP28-BX20D-2733-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "CPRI opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "SO-SFP28-BX20D-2733, 25GE",
+      "model": "SO-SFP28-BX20D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX20D-2733, CPRI opt 10",
+      "model": "SO-SFP28-BX20D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "CPRI opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "SO-SFP28-BX20D-3327-I, 25GE",
+      "model": "SO-SFP28-BX20D-3327-I",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX20D-3327-I, CPRI opt 10",
+      "model": "SO-SFP28-BX20D-3327-I",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "CPRI opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "SO-SFP28-BX20D-3327, 25GE",
+      "model": "SO-SFP28-BX20D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX20D-3327, CPRI opt 10",
+      "model": "SO-SFP28-BX20D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "CPRI opt 10",
+      "bit_rate_gbps": 24.33
+    }
+  ]
+}

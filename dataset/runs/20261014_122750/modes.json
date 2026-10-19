@@ -1,0 +1,54 @@
+{
+  "modes": [
+    {
+      "label": "SWDM4 lane 850 nm",
+      "wavelength_min_nm": 844.0,
+      "wavelength_max_nm": 858.0,
+      "wavelength_center_nm": 850.0,
+      "standards_code": "100GBASE-SWDM4",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 0.075,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SWDM4 lane 880 nm",
+      "wavelength_min_nm": 874.0,
+      "wavelength_max_nm": 888.0,
+      "wavelength_center_nm": 880.0,
+      "standards_code": "SWDM4",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 0.1,
+      "fec_type": "RS_GENERIC"
+    },
+    {
+      "label": "SWDM4 lane 910 nm",
+      "wavelength_min_nm": 904.0,
+      "wavelength_max_nm": 918.0,
+      "wavelength_center_nm": 910.0,
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 0.15,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "SWDM4 lane 940 nm",
+      "wavelength_min_nm": 934.0,
+      "wavelength_max_nm": 948.0,
+      "wavelength_center_nm": 940.0,
+      "standards_code": "100GBASE-SWDM4",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 0.15,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "100GbE SWDM4 aggregate line rate",
+      "wavelength_min_nm": 844.0,
+      "wavelength_max_nm": 948.0,
+      "wavelength_center_nm": 850.0,
+      "standards_code": "100GBASE-SWDM4",
+      "bit_rate_gbps": 103.12,
+      "reach_km": 0.15,
+      "fec_type": "RS_528_514"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-L160DH-C27",
+      "SO-SFP-L160DH-C29",
+      "SO-SFP-L160DH-C31",
+      "SO-SFP-L160DH-C33",
+      "SO-SFP-L160DH-C35",
+      "SO-SFP-L160DH-C37",
+      "SO-SFP-L160DH-C39",
+      "SO-SFP-L160DH-C41",
+      "SO-SFP-L160DH-C43",
+      "SO-SFP-L160DH-C45",
+      "SO-SFP-L160DH-C47",
+      "SO-SFP-L160DH-C49",
+      "SO-SFP-L160DH-C51",
+      "SO-SFP-L160DH-C53",
+      "SO-SFP-L160DH-C55",
+      "SO-SFP-L160DH-C57",
+      "SO-SFP-L160DH-C59",
+      "SO-SFP-L160DH-C61",
+      "SO-SFP-L160DH-C27-E",
+      "SO-SFP-L160DH-C29-E",
+      "SO-SFP-L160DH-C31-E",
+      "SO-SFP-L160DH-C33-E",
+      "SO-SFP-L160DH-C35-E",
+      "SO-SFP-L160DH-C37-E",
+      "SO-SFP-L160DH-C39-E",
+      "SO-SFP-L160DH-C41-E",
+      "SO-SFP-L160DH-C43-E",
+      "SO-SFP-L160DH-C45-E",
+      "SO-SFP-L160DH-C47-E",
+      "SO-SFP-L160DH-C49-E",
+      "SO-SFP-L160DH-C51-E",
+      "SO-SFP-L160DH-C53-E",
+      "SO-SFP-L160DH-C55-E",
+      "SO-SFP-L160DH-C57-E",
+      "SO-SFP-L160DH-C59-E",
+      "SO-SFP-L160DH-C61-E",
+      "SO-SFP-L160DH-Cxx",
+      "SO-SFP-L160DH-Cxx-E"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1270.0,
+      1271.0
+    ],
+    "wavelength_max_nm": [
+      1610.0,
+      1611.0,
+      1620.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1290.0,
+      1310.0,
+      1330.0,
+      1350.0,
+      1370.0,
+      1390.0,
+      1410.0,
+      1430.0,
+      1450.0,
+      1470.0,
+      1490.0,
+      1510.0,
+      1530.0,
+      1550.0,
+      1570.0,
+      1590.0,
+      1610.0
+    ],
+    "standards_code": [
+      "G.694.2",
+      "GbE",
+      "1G FC"
+    ],
+    "bit_rate_gbps": [
+      1.0625,
+      1.25
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "channel_total": [
+      18
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [],
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "modulation_format": [],
+    "reach_km": [
+      160.0
+    ],
+    "tx_power_min_dbm": [
+      4.0
+    ],
+    "tx_power_max_dbm": [
+      7.0
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_sensitivity_dbm": [
+      -37.0
+    ],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [
+      -10.0
+    ],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [
+      -50.0
+    ],
+    "los_deassert_dbm": [
+      -38.0
+    ],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Product family SO-SFP-L160DH-Cxx & -Cxx-E. Transmit wavelength 1271 to 1611nm per G.694.2; overview states 1270nm to 1610nm (18ch). Power budget 17–41dB stated in TECHNICAL DATA column header. Dispersion penalty Max 1dB in header without paired penalized metric and operating condition. Power consumption stated as < 1W (not a numeric watt value). Extended operating temperature -20°C to +85°C for -E variants; overview also mentions -20°C to 85°C extended range. Storage temperature -40°C to +85°C. Transmitter output power and receiver min/overload are average power; receiver sensitivity @ 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back. TECHNICAL DATA table lists operating temperature as -0°C to +70°C (likely 0°C). DDM Yes.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-L160DH-Cxx & -Cxx-E",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether temp_min_c should represent only C-temp or also expose -E range as separate fields. Power budget 17–41dB could map to a dedicated schema field. Dispersion penalty Max 1dB lacks full penalty triple for penalties array."
+  }
+}

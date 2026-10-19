@@ -1,0 +1,110 @@
+{
+  "vendor": "Eaton",
+  "model": [
+    "N286-01G-SX-A"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "MSA",
+    "1000Base-SX"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    830.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "Hot-swappable",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM2"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "1000Base-SX",
+    "SFP"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "1000Base-SX"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "1000Base-SX",
+    "MSA"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1.25
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.55
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": null,
+  "notes": "Functionally equivalent to Arista SFP-1G-SX; brand compatibility Arista. Transmission distance stated as 550 m (1804 ft.). Wavelength row lists 830nm; 850nm; 860nm. Storage temperature -40° to 85°C; operating humidity 5% to 95% RH non-condensing. DDM supported. Network compatibility 1 Gbps (Gigabit). Reach in overview is 550 m; title also cites 550 m (1804 ft.).",
+  "provenance_datasheet_sections": [
+    "Arista-Compatible SFP-1G-SX SFP Transceiver - 1000Base-SX, LC Duplex MMF, 1.25 Gbps, 850 nm, 550 m (1804 ft.)",
+    "MODEL NUMBER: N286-01G-SX-A",
+    "Highlights",
+    "Features",
+    "SFP Transceiver for Connecting to Your Arista Network Switch or Server",
+    "Functionally Equivalent to Arista SFP-1G-SX Transceiver Module",
+    "Hot-Swappable for Installation Without Network Interruption",
+    "Supports Digital Diagnostic Monitoring (DDM) for Real-Time Status Monitoring",
+    "Specifications",
+    "OVERVIEW"
+  ],
+  "suggestions": "reach_km: source gives 550 m; converted to 0.55 km for km field—if schema requires exact printed unit, consider allowing reach_m. Vendor inferred from Eaton copyright and Mouser Eaton listing, not a dedicated Manufacturer row in OVERVIEW."
+}

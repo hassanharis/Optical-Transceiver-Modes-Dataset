@@ -1,0 +1,63 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1000Base-TX",
+    "SO-SFP-1000Base-TX-I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "1000BASE-T IEEE 802.3",
+    "100BASE-T IEEE 802.3",
+    "10BASE-T IEEE 802.3",
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "RJ45"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    1.2
+  ],
+  "host_interface_name": [
+    "SGMII",
+    "SERDES"
+  ],
+  "media_interface_name": [
+    "1000BASE-T",
+    "100BASE-T",
+    "10BASE-T"
+  ],
+  "standards_code": [
+    "1000BASE-T",
+    "100BASE-T",
+    "10BASE-T",
+    "IEEE 802.3"
+  ],
+  "bit_rate_gbps": [
+    1.0,
+    0.1,
+    0.01,
+    1.25
+  ],
+  "reach_km": [
+    0.1
+  ],
+  "penalties": [],
+  "notes": "Copper Grey SFP; transmission media Electrical (1x RJ45). Typical reach 100m using CAT5e cable or better (footnote 1). Operating temperature 0°C to +70°C for SO-SFP-1000Base-TX (-TX); -40°C to +85°C for SO-SFP-1000Base-TX-I (-TX-I). temp_min_c/temp_max_c span both orderable variants. Power consumption stated as < 1.2W. Storage temperature -40°C to +85°C. Rx LOS: No. Sync on line side: Preferred slave. Auto-negotiation: Yes, SGMII auto-neg. SGMII physical layer 1.25Gb/s, 8B10B encoded. 2-wire serial interface per SFF-8472. RoHS-6/6 compliant. 10/100/1000 BASE-T requires SGMII with no clocks in host; 1000BASE-T when host uses SERDES depends on module PHY configuration.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1000BASE-TX & -TX-I",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "RECOMMENDED SW CONFIGURATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider schema fields for copper/Ethernet modules: cable category (CAT5e), reach in meters, storage temperature range, Rx LOS presence, and host PHY modes (SGMII vs SERDES) without optical parameters."
+}

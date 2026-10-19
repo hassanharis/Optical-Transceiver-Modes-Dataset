@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T09:49:43.592594+00:00",
+  "source_file": "C:\\Haris\\datasheets\\n28601gsxa-3389417.pdf",
+  "page_count": 4,
+  "table_count": 2,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.224,
+    "extract_atoms": 27.042,
+    "store_run": 0.006,
+    "synthesize_modes": 18.473,
+    "store_modes": 0.003,
+    "total": 49.746
+  }
+}

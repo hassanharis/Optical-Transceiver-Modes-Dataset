@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "40GBASE-SR4 OM4 150m",
+      "host_interface_name": "40GBASE-SR4",
+      "bit_rate_gbps": 41.25,
+      "reach_km": 0.15
+    },
+    {
+      "label": "40GBASE-SR4 OM3 100m",
+      "host_interface_name": "40GBASE-SR4",
+      "bit_rate_gbps": 41.25,
+      "reach_km": 0.1
+    },
+    {
+      "label": "40GbE OM4 150m",
+      "host_interface_name": "40GbE",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.15
+    },
+    {
+      "label": "40GbE OM3 100m",
+      "host_interface_name": "40GbE",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.1
+    },
+    {
+      "label": "4x10GbE-LAN OM4 150m",
+      "host_interface_name": "10GbE-LAN",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.15
+    },
+    {
+      "label": "4x10GbE-LAN OM3 100m",
+      "host_interface_name": "10GbE-LAN",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.1
+    }
+  ]
+}

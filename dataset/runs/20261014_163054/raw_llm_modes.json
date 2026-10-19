@@ -1,0 +1,76 @@
+{
+  "modes": [
+    {
+      "label": "SO-XFP-ER-C47 CWDM 1470nm",
+      "model": "SO-XFP-ER-C47",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-ER-C49 CWDM 1490nm",
+      "model": "SO-XFP-ER-C49",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-ER-C51 CWDM 1510nm",
+      "model": "SO-XFP-ER-C51",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-ER-C53 CWDM 1530nm",
+      "model": "SO-XFP-ER-C53",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-ER-C55 CWDM 1550nm",
+      "model": "SO-XFP-ER-C55",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-ER-C57 CWDM 1570nm",
+      "model": "SO-XFP-ER-C57",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-ER-C59 CWDM 1590nm",
+      "model": "SO-XFP-ER-C59",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-ER-C61 CWDM 1610nm",
+      "model": "SO-XFP-ER-C61",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 9.95
+    }
+  ]
+}

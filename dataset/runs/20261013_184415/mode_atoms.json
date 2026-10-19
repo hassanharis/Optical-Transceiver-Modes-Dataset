@@ -1,0 +1,107 @@
+{
+  "multi_valued": {
+    "model": [
+      "QT-WDM-0220AD",
+      "QTWDM-0220AD",
+      "QT-WDM-0220AID"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1530.0
+    ],
+    "wavelength_max_nm": [
+      1360.0,
+      1570.0
+    ],
+    "wavelength_center_nm": [
+      1310.0,
+      1550.0
+    ],
+    "host_interface_name": [
+      "Gigabit Ethernet",
+      "Fiber Channel",
+      "1000BASE-BX-U"
+    ],
+    "standards_code": [
+      "1000BASE-BX-U",
+      "SONET OC-24-LR-1"
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      1.063
+    ]
+  },
+  "general": {
+    "vendor": "QSFPTek",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_band": [
+      "WDM"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -12.0
+    ],
+    "tx_power_max_dbm": [
+      -6.0
+    ],
+    "rx_sensitivity_dbm": [
+      -21.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -23.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "los_hysteresis_db": [
+      1.0,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "P/N QT-WDM-0220AD: operating case temperature 0 to +70°C per ordering table. Alternate SKU QT-WDM-0220AID: -40°C to +85°C (Industrial) per FEATURES and ordering. Dual data-rate 1.25 Gbps (Gigabit Ethernet) and 1.063 Gbps (Fiber Channel). Receiver sensitivity and overload per Note 3: PRBS 2^7-1 @ 1250 Mbps, BER ≤ 1×10^-12. Transmitter average output power Note 1: launched into SMF. Supply Vcc 3.13–3.47 V (typ 3.3 V); Icc max 300 mA (not converted to W in datasheet). Transmitter centre wavelength table: min 1260, typical 1310, max 1360 nm; spectral width (RMS) max 4 nm. Receiver centre wavelength min 1530, max 1570 nm.",
+    "provenance_datasheet_sections": [
+      "BIDI SFP 1310nm-TX/1550nm-RX 20KM SMF Transceiver",
+      "P/N: QT- WDM-0220AD",
+      "FEATURES",
+      "APPLICATIONS",
+      "2. Recommended Operating Conditions",
+      "3. Optical and Electrical Characteristics",
+      "Notes:",
+      "7. Ordering information"
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-LR @ 9.95 Gbps",
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "10GBASE-LR @ 11.1 Gbps",
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "10GBASE-LW @ 9.95 Gbps",
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "10GBASE-LW @ 11.1 Gbps",
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "OC-192 LR-1 @ 9.95 Gbps",
+      "standards_code": "OC-192 LR-1",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "OC-192 LR-1 @ 11.1 Gbps",
+      "standards_code": "OC-192 LR-1",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "STM I-64.1 @ 9.95 Gbps",
+      "standards_code": "STM I-64.1",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "STM I-64.1 @ 11.1 Gbps",
+      "standards_code": "STM I-64.1",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "10GFC 1200-SM-LL-L @ 9.95 Gbps",
+      "standards_code": "10GFC 1200-SM-LL-L",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "10GFC 1200-SM-LL-L @ 11.1 Gbps",
+      "standards_code": "10GFC 1200-SM-LL-L",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "10GbE-LAN @ 9.95 Gbps",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "10GbE-LAN @ 11.1 Gbps",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "10GbE-WAN @ 9.95 Gbps",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "10GbE-WAN @ 11.1 Gbps",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "OTU2 @ 9.95 Gbps",
+      "standards_code": "OTU2",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "OTU2 @ 11.1 Gbps",
+      "standards_code": "OTU2",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "OTU2e @ 9.95 Gbps",
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "OTU2e @ 11.1 Gbps",
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "STM-64/OC192 @ 9.95 Gbps",
+      "standards_code": "STM-64/OC192",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "STM-64/OC192 @ 11.1 Gbps",
+      "standards_code": "STM-64/OC192",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "10G FC @ 9.95 Gbps",
+      "standards_code": "10G FC",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "10G FC @ 11.1 Gbps",
+      "standards_code": "10G FC",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "CPRI Opt, 8 @ 9.95 Gbps",
+      "standards_code": "CPRI Opt, 8",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "CPRI Opt, 8 @ 11.1 Gbps",
+      "standards_code": "CPRI Opt, 8",
+      "bit_rate_gbps": 11.1
+    }
+  ]
+}

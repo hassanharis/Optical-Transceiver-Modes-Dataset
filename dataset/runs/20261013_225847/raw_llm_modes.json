@@ -1,0 +1,76 @@
+{
+  "modes": [
+    {
+      "label": "FTLF1323S2xTR SFF OC-3/STM-1",
+      "model": "FTLF1323S2xTR",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 1261.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "SONET OC-3"
+    },
+    {
+      "label": "OC-3 SR-1 / STM I-1",
+      "model": "FTLF1323F2xTR",
+      "form_factor": "2x5 SFF",
+      "wavelength_min_nm": 1261.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "OC-3 SR-1"
+    },
+    {
+      "label": "OC-3 SR-1 / STM I-1 (alt designation)",
+      "model": "FTLF1323F2xTR",
+      "form_factor": "2x5 SFF",
+      "wavelength_min_nm": 1261.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "STM I-1"
+    },
+    {
+      "label": "OC-3 IR-1 / STM S-1.1",
+      "model": "FTLF1323F2xTR",
+      "form_factor": "2x5 SFF",
+      "wavelength_min_nm": 1261.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "OC-3 IR-1"
+    },
+    {
+      "label": "OC-3 IR-1 / STM S-1.1 (alt designation)",
+      "model": "FTLF1323F2xTR",
+      "form_factor": "2x5 SFF",
+      "wavelength_min_nm": 1261.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "STM S-1.1"
+    },
+    {
+      "label": "FTLF1323F2XTR 2x5 SFF",
+      "model": "FTLF1323F2XTR",
+      "form_factor": "2x5 SFF",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "SDH STM-1"
+    },
+    {
+      "label": "FTLF1323F2GTR 2-pin",
+      "model": "FTLF1323F2GTR",
+      "form_factor": "2x5 SFF",
+      "wavelength_min_nm": 1261.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "SONET OC-3"
+    },
+    {
+      "label": "FTLF1323F2MTR 6-pin",
+      "model": "FTLF1323F2MTR",
+      "form_factor": "2x5 SFF",
+      "wavelength_min_nm": 1261.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "SDH STM-1"
+    },
+    {
+      "label": "FTLF1323F2HTR 6-pin long EMI",
+      "model": "FTLF1323F2HTR",
+      "form_factor": "2x5 SFF",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "OC-3 SR-1"
+    }
+  ]
+}

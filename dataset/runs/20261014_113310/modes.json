@@ -1,0 +1,56 @@
+{
+  "modes": [
+    {
+      "label": "CMIS Application Code 1 \u2014 2\u00d7100GBASE-R / 100GBASE-LR4 (Dual CS)",
+      "model": "SO-QSFP-DD-2C-10-4",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "channel_total": 8,
+      "host_interface_name": "2x CAUI-4 (4x 25G)",
+      "media_interface_name": "100GBASE-LR4",
+      "frame": "2x 100GBASE-R",
+      "standards_code": "CMIS Application Code 1",
+      "bit_rate_gbps": 200.0
+    },
+    {
+      "label": "CMIS Application Code 1 \u2014 2\u00d7100GBASE-R / 100GBASE-LR4 (Dual CS)",
+      "model": "SO-QSFP-DD-2C-10",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "channel_total": 8,
+      "host_interface_name": "2x CAUI-4 (4x 25G)",
+      "media_interface_name": "100GBASE-LR4",
+      "frame": "2x 100GBASE-R",
+      "standards_code": "100GBASE-LR4 (Clause 88)",
+      "bit_rate_gbps": 103.12
+    },
+    {
+      "label": "LR4 transmit lane \u2014 1304.58 nm",
+      "model": "SO-QSFP-DD-2C-10-4",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "channel_total": 4,
+      "host_interface_name": "SFF-8679",
+      "media_interface_name": "100GBASE-LR4",
+      "frame": "8x 25.78G NRZ",
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "LR4 transmit lane \u2014 1309.14 nm",
+      "model": "SO-QSFP-DD-2C-10-4",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "channel_total": 4,
+      "host_interface_name": "CAUI-4",
+      "media_interface_name": "2x 100GBASE-R",
+      "frame": "2x 100GbE",
+      "standards_code": "100GBASE-LR4 (Clause 88)",
+      "bit_rate_gbps": 25.78
+    }
+  ]
+}

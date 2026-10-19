@@ -1,0 +1,166 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-QSFP28-Dxx",
+      "SO-QSFP28-D20",
+      "SO-QSFP28-D21",
+      "SO-QSFP28-D22",
+      "SO-QSFP28-D23",
+      "SO-QSFP28-D24",
+      "SO-QSFP28-D25",
+      "SO-QSFP28-D26",
+      "SO-QSFP28-D27",
+      "SO-QSFP28-D28",
+      "SO-QSFP28-D29",
+      "SO-QSFP28-D30",
+      "SO-QSFP28-D31",
+      "SO-QSFP28-D32",
+      "SO-QSFP28-D33",
+      "SO-QSFP28-D34",
+      "SO-QSFP28-D35",
+      "SO-QSFP28-D36",
+      "SO-QSFP28-D37",
+      "SO-QSFP28-D38",
+      "SO-QSFP28-D39",
+      "SO-QSFP28-D40",
+      "SO-QSFP28-D41",
+      "SO-QSFP28-D42",
+      "SO-QSFP28-D43",
+      "SO-QSFP28-D44",
+      "SO-QSFP28-D45",
+      "SO-QSFP28-D46",
+      "SO-QSFP28-D47",
+      "SO-QSFP28-D48",
+      "SO-QSFP28-D49",
+      "SO-QSFP28-D50",
+      "SO-QSFP28-D51",
+      "SO-QSFP28-D52",
+      "SO-QSFP28-D53",
+      "SO-QSFP28-D54",
+      "SO-QSFP28-D55",
+      "SO-QSFP28-D56",
+      "SO-QSFP28-D57",
+      "SO-QSFP28-D58",
+      "SO-QSFP28-D59"
+    ],
+    "host_interface_name": [
+      "CAUI-4",
+      "QSFP28"
+    ],
+    "standards_code": [
+      "100GBASE",
+      "100GbE",
+      "G.694.1",
+      "ITU-T G.694.1"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      100.0,
+      25.0,
+      56.0,
+      56.25
+    ],
+    "modulation_format": [
+      "PAM4",
+      "NRZ"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "SFF-8665",
+      "SFF-8636",
+      "SFF-8661",
+      "SFF-8679",
+      "QSFP28 MSA",
+      "ITU-T G.694.1",
+      "G.694.1",
+      "IEEE P802.3bm Annex 83E",
+      "CAUI-4"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_min_nm": [
+      1529.55
+    ],
+    "wavelength_max_nm": [
+      1560.61
+    ],
+    "wavelength_band": [
+      "DWDM"
+    ],
+    "frequency_min_thz": [
+      192.0
+    ],
+    "frequency_max_thz": [
+      195.9
+    ],
+    "channel_spacing_ghz": [
+      100.0
+    ],
+    "channel_total": [
+      40
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -20.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      5.0
+    ],
+    "frame": [
+      "4x 25 Gbps NRZ"
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      -11.0
+    ],
+    "tx_power_max_dbm": [
+      -8.0
+    ],
+    "rx_sensitivity_dbm": [
+      -2.0
+    ],
+    "rx_overload_dbm": [
+      6.0
+    ],
+    "cd_tolerance_ps_nm": [
+      100.0
+    ],
+    "fec_type": [],
+    "los_assert_dbm": [
+      -10.0
+    ],
+    "los_deassert_dbm": [
+      -3.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      1.0
+    ],
+    "penalties": [],
+    "notes": "Typical reach 80 km requires a DWDM line system with amplification and dispersion management (footnote 1). Protocol support 100GbE is aggregated line rate (footnote 2). Dispersion tolerance ±100 ps/nm is residual dispersion after dispersion compensation (DCM) (footnote 3). Transmitter/receiver power specs are average power per lane (footnote 5). Each transceiver uses two wavelengths within the ITU-T grid, located +25 GHz and -25 GHz from the center channel (footnote 6); per 56.25 Gbps lane (footnote 4). Power consumption stated as < 5 W. Storage temperature -40°C to +85°C. DDM: Yes. Title references D9200-D9590 (40ch).",
+    "provenance_datasheet_sections": [
+      "SO-QSFP28-Dxx",
+      "QSFP28, 100GBASE, PAM4, DWDM, 100GHz, DDM, D9200-D9590 (40ch)",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

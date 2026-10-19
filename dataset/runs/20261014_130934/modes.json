@@ -1,0 +1,32 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-100Base-FXD 100M FE",
+      "model": "SO-SFP-100Base-FXD",
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "SO-SFP-100Base-FXD 155M STM-1/OC-3",
+      "model": "SO-SFP-100Base-FXD",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "SO-SFP-100Base-FXD-I 100M FE",
+      "model": "SO-SFP-100Base-FXD-I",
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "100Base-FXD",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "SO-SFP-100Base-FXD-I 155M STM-1/OC-3",
+      "model": "SO-SFP-100Base-FXD-I",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "STM-1/OC-3",
+      "bit_rate_gbps": 155.0
+    }
+  ]
+}

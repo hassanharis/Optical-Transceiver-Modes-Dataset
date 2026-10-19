@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Grouping by datasheet table rows and Section V notes: 8.5 Gb/s (8GFC, FC-PI-4, BER 10\u207b\u00b9\u00b2), 14.025 Gb/s (16GFC, BER 10\u207b\u00b9\u00b2), 28.05 Gb/s (32GFC/FEC, BER 10\u207b\u2076 per note 6).\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"8GFC\",\n      \"standards_code\": \"8GFC\",\n      \"bit_rate_gbps\": 8.5,\n      \"tx_power_min_dbm\": -8.2,\n      \"rx_sensitivity_dbm\": -11.2,\n      \"post_fec_ber_target\": 1e-12\n    },\n    {\n      \"label\": \"16GFC\",\n      \"standards_code\": \"16GFC\",\n      \"bit_rate_gbps\": 14.025,\n      \"tx_power_min_dbm\": -7.8,\n      \"rx_sensitivity_dbm\": -10.5,\n      \"post_fec_ber_target\": 1e-12\n    },\n    {\n      \"label\": \"32GFC FEC\",\n      \"standards_code\": \"32GFC\",\n      \"bit_rate_gbps\": 28.05,\n      \"tx_power_min_dbm\": -6.7,\n      \"rx_sensitivity_dbm\": -10.2,\n      \"post_fec_ber_target\": 1e-06\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

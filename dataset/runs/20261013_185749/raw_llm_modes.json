@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "SFP28-BIDI-LR-27 (1270nm-TX / 1330nm-RX)",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "25GBASE-LR"
+    },
+    {
+      "label": "SFP28-BIDI-LR-33 (1330nm-TX / 1270nm-RX)",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "25GBASE-LR"
+    }
+  ]
+}

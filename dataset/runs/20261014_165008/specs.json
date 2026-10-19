@@ -1,0 +1,117 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TQ2034-BXXY-SO",
+    "TQ2034-BXXy-SO",
+    "TQ2034-BWXC-SO",
+    "TQ2034-BXWC-SO",
+    "TQ2034-BWXE-SO",
+    "TQ2034-BXWE-SO"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "SFF-8636"
+  ],
+  "wavelength_min_nm": [
+    1274.0
+  ],
+  "wavelength_max_nm": [
+    1309.0
+  ],
+  "wavelength_center_nm": [
+    1274.0,
+    1278.0,
+    1282.0,
+    1287.0,
+    1296.0,
+    1300.0,
+    1305.0,
+    1309.0
+  ],
+  "wavelength_band": [
+    "LAN-WDM"
+  ],
+  "channel_total": [
+    4
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": -20.0,
+  "temp_max_c": 85.0,
+  "host_interface_name": [
+    "QSFP28"
+  ],
+  "standards_code": [
+    "IEEE802.3bj",
+    "RS(528,514)",
+    "100GE",
+    "4LAN-WDM",
+    "4WL"
+  ],
+  "bit_rate_gbps": [
+    100.0
+  ],
+  "reach_km": [
+    70.0
+  ],
+  "tx_power_min_dbm": [
+    1.0
+  ],
+  "tx_power_max_dbm": [
+    7.0
+  ],
+  "rx_sensitivity_dbm": [
+    -24.0,
+    -26.0
+  ],
+  "rx_overload_dbm": [
+    -5.0
+  ],
+  "fec_type": [
+    "RS_528_514",
+    "RS_GENERIC"
+  ],
+  "pre_fec_ber_threshold": [
+    5e-05
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    8.0
+  ],
+  "los_assert_dbm": [
+    -40.0
+  ],
+  "los_deassert_dbm": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    8.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    5.0
+  ],
+  "penalties": [],
+  "notes": "TQ2034-BXXy-SO is one half of a BiDi pair; TQ2034-BWXC-SO uses Tx wavelengths 1274/1278/1282/1287 nm and TQ2034-BXWy-SO uses 1296/1300/1305/1309 nm on a single fiber. Receiver wavelength rows list 1296/1300/1305/1309 nm for both footnotes 1) and 2) as printed. Output power per lane Min +1.0 dBm Max +7.0 dBm footnote 5); OMA output Min +3.0 dBm Max +8.8 dBm. Receiver sensitivity OMA -24 dBm and minimum input power -26.0 dBm footnote 6); overload -5.0 dBm footnote 6). Title line includes 27dB (not mapped to rx_osnr_db in technical table). FEC shall be as defined in IEEE802.3bj; optical parameters yield BER 5 x 10-5 without stating that FEC is active for that figure. Two temperature options offered; only E-temp -20°C to 85°C is numerically specified for this product text. Ordering -E suffix denotes extended temperature variants. Footnotes 1) 2) 5) 6) bodies not included in excerpt.",
+  "provenance_datasheet_sections": [
+    "QSFP28 100GE BiDi 70km QSFP28, BiDi, 100G Eth, 4LAN-WDM, SM, 70km, 27dB, LC",
+    "TQ2034-BXXY-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Distinguish tx_power vs OMA min/max in schema. Add power_budget_db for title 27dB. Separate rx_sensitivity_oma_dbm vs rx_sensitivity_average_dbm. Include footnote text when present for provenance."
+}

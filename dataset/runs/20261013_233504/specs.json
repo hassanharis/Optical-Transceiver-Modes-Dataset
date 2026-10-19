@@ -1,0 +1,83 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "L9-SD312M-20TTC5"
+  ],
+  "form_factor": [
+    "1x9"
+  ],
+  "standards_claimed": [
+    "Multi-sourced 1x9 protocol",
+    "Class 1 Laser International Safety Standard IEC 825"
+  ],
+  "emitter_type": [
+    "LASER_FP",
+    "LASER_VCSEL"
+  ],
+  "wavelength_min_nm": [
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1360.0,
+    1620.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "connector_type": [
+    "SC",
+    "ST",
+    "FC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "standards_code": [
+    "1x9"
+  ],
+  "reach_km": [
+    20.0
+  ],
+  "tx_power_min_dbm": [
+    -8.0
+  ],
+  "tx_power_max_dbm": [
+    -3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -18.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "extinction_ratio_db": [
+    10.0
+  ],
+  "los_assert_dbm": [
+    -18.0
+  ],
+  "los_deassert_dbm": [
+    -30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Datasheet is for L9-SD312M-20TTC5 (SM, 1310 FP, 20 km, 5 V, 0 to +70°C per Order Information). Supply 3.3 V or 5.0 V supported; optical tables at VCC 3.3 or 5±0.2 V. Data rate stated as DC–2 Mbps, 500K–2000 Kbps, not in Gbps. Optical power and sensitivity per Note1–2: launched into 9/125 μm SMF at 2 Mbps. Industrial SKU L9-SD312M-20TTI5 is -40°C to +85°C; not this order code. Series features mention up to 2 km on 62.5/125 μm MMF and up to 40 km SMF for other types. Output spectral width (RMS) max 4.0 nm. Supply current Icc max 160 mA (not power in W).",
+  "provenance_datasheet_sections": [
+    "L9-SD312M-20TTC5",
+    "1×9 2Mbps 1310nm 20km SC Transceiver Module",
+    "Product Features",
+    "Application",
+    "Product Description",
+    "Absolute Maximum Ratings",
+    "Optical Parameters",
+    "Table 3-- L9-SD312M-20TTC5 Transceiver Optical Characteristics",
+    "Table 4--- Transceiver Electrical Characteristics",
+    "Order Information"
+  ],
+  "suggestions": "Consider bit_rate_kbps or bit_rate_mbps for sub-Gbps modules. form_factor enum could include 1x9. emitter_type for this SKU is explicitly FP in Order Information; series text also lists VCSEL/FP."
+}

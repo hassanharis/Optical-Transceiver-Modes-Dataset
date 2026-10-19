@@ -1,0 +1,67 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "XP-T96-02-2"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "IEEE Std 802.3",
+    "10Gigabit Ethernet",
+    "10GBASE-T",
+    "5GBASE-T",
+    "2.5GBASE-T",
+    "1000BASE-T"
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "RJ-45"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.6
+  ],
+  "host_interface_name": [
+    "10GBase-R"
+  ],
+  "media_interface_name": [
+    "10Gbase-T",
+    "5Gbase-T",
+    "2.5Gbase-T",
+    "1000base-T",
+    "100base-Tx"
+  ],
+  "standards_code": [
+    "10GBASE-T",
+    "5GBASE-T",
+    "2.5GBASE-T",
+    "1000BASE-T",
+    "100base-Tx",
+    "10GBase-R"
+  ],
+  "bit_rate_gbps": [
+    1.0,
+    10.0
+  ],
+  "penalties": [],
+  "notes": "Copper (10GBASE-T) module over twisted pair, not optical. Cable reach stated in meters only: 10Gbase-T CAT6A 30m; 5Gbase-T, 2.5Gbase-T, 1000base-T, 100base-Tx CAT5E 100m (rev 2.0 updated 2.5G/5G reach to 100m). General data rate 1–10 Gb/sec IEEE 802.3; line port supports 10G/5G/2.5G/1000BASE-T; host port 10GBase-R. Power consumption and surge current exceed SFP MSA limits (max 3.6 W, supply current typ 900 mA max 1100 mA). Case operating temperature 0°C to +70°C; storage -40°C to +85°C. LOS: high = no link, low = linked; RX_LOS used for link indication on 10GBASE-T. Line electrical: 5-level encoding per IEEE 802.3, fL 125 MHz typ.",
+  "provenance_datasheet_sections": [
+    "XP-T96-02-2 10GBASE-T Copper SFP+ Transceiver",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "PRODUCT DESCRIPTION",
+    "Cable Length",
+    "II. +3.3V Volt Electrical Power Interface",
+    "IV. High-Speed Electrical Interface",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "Appendix A. Document Revision"
+  ],
+  "suggestions": "Add reach_m or copper_cable_length_m for BASE-T modules; host/line port application names map cleanly to host_interface_name and media_interface_name for copper SFP+."
+}

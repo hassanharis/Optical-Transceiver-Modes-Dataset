@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T19:21:10.385428+00:00",
+  "source_file": "C:\\Haris\\datasheets\\32g-ir-dxxs-br.pdf",
+  "page_count": 3,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.959,
+    "extract_atoms": 19.973,
+    "store_run": 0.008,
+    "synthesize_modes": 187.51,
+    "store_modes": 0.011,
+    "total": 212.461
+  }
+}

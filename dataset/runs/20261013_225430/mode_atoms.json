@@ -1,0 +1,138 @@
+{
+  "multi_valued": {
+    "power_consumption_w": [
+      2.5,
+      3.5
+    ],
+    "host_interface_name": [
+      "CAUI-4",
+      "4x25G electrical interface"
+    ],
+    "bit_rate_gbps": [
+      103.1,
+      25.78125
+    ],
+    "reach_km": [
+      0.07,
+      0.1
+    ],
+    "tx_power_min_dbm": [
+      -8.4,
+      -6.4
+    ],
+    "tx_power_max_dbm": [
+      2.4,
+      3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -5.2,
+      -10.3
+    ],
+    "rx_overload_dbm": [
+      2.4,
+      3.4
+    ]
+  },
+  "general": {
+    "vendor": "Finisar",
+    "model": [
+      "FTLC9555REPM3"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "IEEE 802.3bm",
+      "100GBASE-SR4",
+      "CAUI-4",
+      "SFF-8665",
+      "SFF-8679",
+      "SFF-8636"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "wavelength_min_nm": [
+      840.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "MPO",
+      "MPO12"
+    ],
+    "fiber_type": [
+      "MMF_OM3",
+      "MMF_OM4",
+      "MMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 85.0,
+    "media_interface_name": [
+      "100GBASE-SR4"
+    ],
+    "frame": [
+      "4x25Gb/s"
+    ],
+    "standards_code": [
+      "100GBASE-SR4"
+    ],
+    "baud_rate_gbaud": [
+      25.78125
+    ],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "extinction_ratio_db": [
+      2.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -13.0
+    ],
+    "receiver_reflectance_db": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      2.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      12.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      2.0
+    ],
+    "penalties": [],
+    "notes": "Aggregate bit rate 103.1 Gb/s (all wavelengths combined). Maximum distance 70 m on OM3 and 100 m on OM4 requires FEC on the host per 100GBASE-SR4. Module total power 2.5 W max when CDRs locked or squelch active; incorrect frequencies may raise dissipation to 3.5 W. Average Receive Power per Lane minimum -10.3 dBm is informative only. Stressed Receiver Sensitivity (OMA) -5.2 dBm applies under stated stressed eye conditions (SEC 4.3 dB, J2/J4 jitter, aggressor OMA 3 dBm). Optical Extinction Ratio table unit shown as dBm; value min 2 dB. RMS Spectral Width max 0.6 nm. TDEC per lane max 4.3 dBm. Copyright 2023 Coherent Corp.",
+    "provenance_datasheet_sections": [
+      "FTLC9555REPM3",
+      "100m Parallel MMF 100G QSFP28 Optical Transceiver",
+      "FEATURES",
+      "APPLICATIONS",
+      "Product Selection",
+      "II. Absolute Maximum Ratings",
+      "III. Electrical Characteristics  (EOL, TOP = 0 to 85 °C, VCC = 3.135 to 3.465 Volts)",
+      "IV. Optical Characteristics (EOL, TOP = 0 to 85 °C, VCC = 3.315 to 3.465 Volts)",
+      "V. General Specifications",
+      "VI. Environmental Specifications",
+      "XI. Mechanical Specifications",
+      "X. References"
+    ],
+    "suggestions": "Photodetector technology (e.g. PIN) is not named. Modulation format and FEC type (host-required) are not specified. reach_km stored as km equivalents of 70 m and 100 m. Consider separate fields for OMA vs average power min/max on TX/RX."
+  }
+}

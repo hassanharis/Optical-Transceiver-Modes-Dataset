@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"10GBase-SR MMF 850nm (average power RX)\",\n      \"model\": \"160-9116-900-C\",\n      \"standards_code\": \"10GBase-SR\",\n      \"bit_rate_gbps\": 10.31,\n      \"rx_sensitivity_dbm\": -9.9\n    },\n    {\n      \"label\": \"10GBase-SR MMF 850nm (OMA RX, IEEE 802.3ae)\",\n      \"model\": \"160-9116-900-C\",\n      \"standards_code\": \"IEEE 802.3ae\",\n      \"bit_rate_gbps\": 10.31,\n      \"rx_sensitivity_dbm\": -11.1\n    },\n    {\n      \"label\": \"10GBase-SR MMF 850nm (average power RX)\",\n      \"model\": \"160-9116-900\",\n      \"standards_code\": \"10GBase-SR\",\n      \"bit_rate_gbps\": 10.31,\n      \"rx_sensitivity_dbm\": -9.9\n    },\n    {\n      \"label\": \"10GBase-SR MMF 850nm (OMA RX, IEEE 802.3ae)\",\n      \"model\": \"160-9116-900\",\n      \"standards_code\": \"IEEE 802.3ae\",\n      \"bit_rate_gbps\": 10.31,\n      \"rx_sensitivity_dbm\": -11.1\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

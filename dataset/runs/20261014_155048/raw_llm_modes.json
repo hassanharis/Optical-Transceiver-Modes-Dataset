@@ -1,0 +1,34 @@
+{
+  "modes": [
+    {
+      "label": "STM-1/OC-3 155Mbps",
+      "wavelength_min_nm": 1500.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 0.155
+    },
+    {
+      "label": "STM-16/OC-48 2488Mbps",
+      "wavelength_min_nm": 1500.0,
+      "standards_code": "STM16/OC48",
+      "bit_rate_gbps": 2.488
+    },
+    {
+      "label": "STM-16/OC-48 Rx sensitivity @ 2488Mbps",
+      "wavelength_min_nm": 1260.0,
+      "standards_code": "STM16/OC48",
+      "bit_rate_gbps": 2.488
+    },
+    {
+      "label": "OTU1 2.67Gbps",
+      "wavelength_min_nm": 1500.0,
+      "standards_code": "OTU1",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "Multirate maximum 2.7Gbps",
+      "wavelength_min_nm": 1500.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 2.7
+    }
+  ]
+}

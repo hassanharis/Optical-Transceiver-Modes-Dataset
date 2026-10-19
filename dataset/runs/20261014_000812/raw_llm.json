@@ -1,0 +1,163 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQD-CW800-2FR4C"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3cu-2021",
+    "IEEE P802.3ck D3.0",
+    "QSFP-DD800 MSA HW Rev 6.01",
+    "CMIS Rev 5.0"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5
+  ],
+  "wavelength_center_nm": [
+    1271,
+    1291,
+    1311,
+    1331
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    8
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC",
+    "LC/UPC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    17,
+    2.5
+  ],
+  "host_interface_name": [
+    "2x400GAUI-4",
+    "400GAUI-4"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [
+    "400GBASE-FR4",
+    "2x400GBASE-FR4",
+    "800GBASE-2FR4"
+  ],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [
+    "2x400GAUI-4",
+    "8x 100G"
+  ],
+  "standards_code": [
+    "800GBASE-2FR4",
+    "400GBASE-FR4",
+    "100G FR"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    800
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    2
+  ],
+  "tx_power_min_dbm": [
+    -3.2
+  ],
+  "tx_power_max_dbm": [
+    4.4,
+    10.4
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -4.6,
+    -2.6
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    4.4,
+    5.4
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": [],
+  "los_deassert_dbm": [],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [
+    -26
+  ],
+  "transmitter_reflectance_db": [
+    -26
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    17.1
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": [
+    30
+  ],
+  "los_hysteresis_db": [],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Receiver Sensitivity (OMAouter) SOMA: -4.6 dBm for TECQ<1.4 dB; –6 + TECQ dBm for 1.4dB<=TECQ<=3.4dB. Stressed Receiver Sensitivity SRS -2.6 dBm measured with conformance test signal at TP3 for BER = 2.4x10-4. Operating distance table gives Min 2 m, Max 2000 m (2 km). OMAouter launch/receive limits and TDECQ/TECQ-dependent TOMA formulas apply per lane. Module can operate at 1/2 speed with each electrical lane at 50G PAM-4 instead of 100G PAM-4. Average launch power each lane min -3.2 dBm noted as informative per Note 1.",
+  "provenance_datasheet_sections": [
+    "LQD-CW800-2FR4C",
+    "Product Features",
+    "Applications",
+    "Descriptions",
+    "Recommended Operating Conditions",
+    "Optical Characteristics",
+    "Transmitter Optical Specifications",
+    "Receiver Optical Specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Datasheet does not state emitter/photodetector types, FEC type, LOS thresholds, OSNR, CD/PDL/PMD tolerance, or MSA host/media interface IDs. Receiver sensitivity TECQ-dependent formula could be modeled as penalties if penalty_db and conditions are defined in a future revision."
+}

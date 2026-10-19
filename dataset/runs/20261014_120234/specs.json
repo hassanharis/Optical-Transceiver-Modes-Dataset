@@ -1,0 +1,141 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP28-100G-FR"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "100GBASE-FR",
+    "QSFP28 MSA",
+    "SFF-8636",
+    "OIF CEI-28G-VSR"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1311.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    1
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    4.0
+  ],
+  "host_interface_name": [
+    "OIF CEI-28G-VSR",
+    "QSFP28"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [
+    "100GBASE-FR"
+  ],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [
+    "4x 25.78Gbps"
+  ],
+  "standards_code": [
+    "100GBASE-FR",
+    "100GbE"
+  ],
+  "baud_rate_gbaud": [
+    50.0,
+    53.125
+  ],
+  "bit_rate_gbps": [
+    103.12
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -2.4
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -6.4
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    4.5
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [
+    "KP4"
+  ],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [
+    0.00024,
+    2.4e-05
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -15.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [
+    1,
+    4
+  ],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Power consumption stated as < 4W. Transmitter/receiver power levels are average power (footnote 3). Receiver minimum input power and overload specified at BER 2.4x10-5 (footnote 4); overview states optical parameters provide BER 2.4 x 10-4 and FEC yields BER better than 1 x 10-12; host system shall not have FEC activated. Overview cites 50Gbaud; technical data line baud rate 53.125Gbd (footnote 2). Power budget 0 – 4.0dB. Transmission media SM (2x LC). Storage temperature -40°C to +85°C is not normal operating range.",
+  "provenance_datasheet_sections": [
+    "SO-QSFP28-100G-FR",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether pre-FEC BER for receiver specs is 2.4e-5 only or also 2.4e-4 from overview. Schema could include power_budget_db and aggregated vs line rate labels."
+}

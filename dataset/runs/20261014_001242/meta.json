@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T00:12:42.823321+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lqd-lw400-er8c.pdf",
+  "page_count": 10,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 9.63,
+    "extract_atoms": 28.916,
+    "store_run": 0.006,
+    "synthesize_modes": 61.361,
+    "store_modes": 0.006,
+    "total": 99.92
+  }
+}

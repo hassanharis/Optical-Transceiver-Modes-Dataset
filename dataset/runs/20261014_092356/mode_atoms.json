@@ -1,0 +1,112 @@
+{
+  "multi_valued": {
+    "model": [
+      "LS-SC5210-20IN1",
+      "LG-SC5210-20CN1",
+      "LG-SC5210-20IN1"
+    ],
+    "wavelength_min_nm": [
+      1575.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1580.0,
+      1280.0
+    ],
+    "wavelength_center_nm": [
+      1577.0,
+      1270.0
+    ],
+    "standards_code": [
+      "XGSPON",
+      "N1",
+      "ITU-T G.987.2"
+    ],
+    "bit_rate_gbps": [
+      9953.28,
+      2488.32
+    ],
+    "rx_sensitivity_dbm": [
+      -26.0,
+      -27.5
+    ],
+    "rx_overload_dbm": [
+      -5.0,
+      -7.0
+    ],
+    "post_fec_ber_target": [
+      0.001,
+      0.0001
+    ],
+    "los_deassert_dbm": [
+      -27.0,
+      -28.5
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF 8472",
+      "ITU-T G.9807.1",
+      "RoHS",
+      "WEEE"
+    ],
+    "emitter_type": [
+      "LASER_EML"
+    ],
+    "photodetector_type": [
+      "APD-TIA"
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "SC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      2.0
+    ],
+    "tx_power_max_dbm": [
+      5.0
+    ],
+    "extinction_ratio_db": [
+      8.2
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      6.0
+    ],
+    "penalties": [],
+    "notes": "XGSPON OLT Class N1; 9.953Gbps downstream and 9.953Gbps/2.488Gbps upstream on single fiber bi-directional link. Operating case temperature Standard 0 to +70°C; Industrial -40 to +85°C (LS-SC5210-20IN1 / LG-SC5210-20IN1 industrial). Rx sensitivity -26 dBm @ 9.95328 Gbps PRBS 2^31-1 BER=10^-3; -27.5 @ 2.48832 Gbps PRBS 2^23-1 BER=10^-4. Transmitter dispersion penalty max 1 dB note 2: Transmit on 20km SMF. Pout @ TX-Disable Asserted max -39 dBm. Spectral Width (@-20dB) max 1 nm. LOS Optical Dessert (deassert) -27 dBm (9.953G) and -28.5 (2.488G). Data rates listed as 9953.28 and 2488.32 Mbps in tables.",
+    "provenance_datasheet_sections": [
+      "LS-SC5210-20IN1",
+      "Product Features",
+      "Applications",
+      "Description",
+      "Recommended Operating Conditions",
+      "Optical Characteristics",
+      "Electrical Characteristics",
+      "Ordering information"
+    ],
+    "suggestions": "bit_rate_gbps values are printed as Mbps (9953.28, 2488.32); schema unit is Gbps—confirm whether to store as printed Mbps-equivalent numbers or divide by 1000. post_fec_ber_target derived from BER conditions in optical notes (10^-3, 10^-4) tied to sensitivity rows, not labeled as post-FEC."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T00:11:02.165925+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lqd-dm31800xdr8c.pdf",
+  "page_count": 10,
+  "table_count": 10,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 11.509,
+    "extract_atoms": 22.242,
+    "store_run": 0.016,
+    "synthesize_modes": 61.999,
+    "store_modes": 0.002,
+    "total": 95.769
+  }
+}

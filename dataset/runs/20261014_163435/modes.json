@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "SO-XFP-ER commercial temperature",
+      "model": "SO-XFP-ER",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "SO-XFP-ER-I industrial temperature",
+      "model": "SO-XFP-ER-I",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 10.3
+    }
+  ]
+}

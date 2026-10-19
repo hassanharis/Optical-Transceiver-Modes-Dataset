@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T15:02:27.845747+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-ge-fe-fx.pdf",
+  "page_count": 2,
+  "table_count": 2,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.335,
+    "extract_atoms": 27.284,
+    "store_run": 0.006,
+    "synthesize_modes": 25.606,
+    "store_modes": 0.003,
+    "total": 57.235
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "FNK-ER12x SM 1550 nm GE/1x FC",
+      "model": "FNK-ER12x",
+      "form_factor": "Front Load Pluggable",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1625.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "IEEE-802.3z"
+    },
+    {
+      "label": "FNK-ER12 SM 1550 nm GE/1x FC",
+      "model": "FNK-ER12",
+      "form_factor": "Front Load Pluggable",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1625.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "IEEE-802.3z"
+    }
+  ]
+}

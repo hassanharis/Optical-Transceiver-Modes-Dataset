@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "TS5001-M85C-SO SFP56 50GBASE-SR",
+      "form_factor": "SFP56",
+      "host_interface_name": "50GBASE-SR",
+      "bit_rate_gbps": 53.125,
+      "reach_km": 0.07,
+      "rx_sensitivity_dbm": -6.5
+    },
+    {
+      "label": "TS5001-M85C-SO SFP56 50GBASE-SR OM4",
+      "form_factor": "SFP56",
+      "host_interface_name": "50GBASE-SR",
+      "bit_rate_gbps": 53.125,
+      "reach_km": 0.1,
+      "rx_sensitivity_dbm": -6.5
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SO-QSFP28-100G-DR\",\n      \"host_interface_name\": \"CEI-28G-VSR\",\n      \"standards_code\": \"100GBASE-DR\",\n      \"baud_rate_gbaud\": 53.125,\n      \"bit_rate_gbps\": 103.12\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,139 @@
+{
+  "modes": [
+    {
+      "label": "FG-3600E 100GE QSFP28",
+      "model": "FG-3600E",
+      "form_factor": "QSFP28",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "100 GE QSFP28",
+      "media_interface_name": "100 GE QSFP28",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "FG-3600E 40GE QSFP+",
+      "model": "FG-3600E",
+      "form_factor": "QSFP+",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "40 GE QSFP+",
+      "media_interface_name": "40 GE QSFP+",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "FG-3600E 25GE SFP28",
+      "model": "FG-3600E",
+      "form_factor": "SFP28",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "25 GE SFP28",
+      "media_interface_name": "25 GE SFP28",
+      "bit_rate_gbps": 25.0
+    },
+    {
+      "label": "FG-3600E 10GE SFP+",
+      "model": "FG-3600E",
+      "form_factor": "SFP+",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "10 GE SFP+",
+      "media_interface_name": "10 GE SFP+",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "FG-3600E 1GE SFP",
+      "model": "FG-3600E",
+      "form_factor": "SFP",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "GE SFP",
+      "media_interface_name": "GE SFP",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "FG-3600E-DC 100GE QSFP28",
+      "model": "FG-3600E-DC",
+      "form_factor": "QSFP28",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "100 GE QSFP28",
+      "media_interface_name": "100 GE QSFP28",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "FG-3600E-DC 40GE QSFP+",
+      "model": "FG-3600E-DC",
+      "form_factor": "QSFP+",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "40 GE QSFP+",
+      "media_interface_name": "40 GE QSFP+",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "FG-3600E-DC 25GE SFP28",
+      "model": "FG-3600E-DC",
+      "form_factor": "SFP28",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "25 GE SFP28",
+      "media_interface_name": "25 GE SFP28",
+      "bit_rate_gbps": 25.0
+    },
+    {
+      "label": "FG-3600E-DC 10GE SFP+",
+      "model": "FG-3600E-DC",
+      "form_factor": "SFP+",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "10 GE SFP+",
+      "media_interface_name": "10 GE SFP+",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "FG-3600E-DC 1GE SFP",
+      "model": "FG-3600E-DC",
+      "form_factor": "SFP",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "GE SFP",
+      "media_interface_name": "GE SFP",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "FG-3601E 100GE QSFP28",
+      "model": "FG-3601E",
+      "form_factor": "QSFP28",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "100 GE QSFP28",
+      "media_interface_name": "100 GE QSFP28",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "FG-3601E 40GE QSFP+",
+      "model": "FG-3601E",
+      "form_factor": "QSFP+",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "40 GE QSFP+",
+      "media_interface_name": "40 GE QSFP+",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "FG-3601E 25GE SFP28",
+      "model": "FG-3601E",
+      "form_factor": "SFP28",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "25 GE SFP28",
+      "media_interface_name": "25 GE SFP28",
+      "bit_rate_gbps": 25.0
+    },
+    {
+      "label": "FG-3601E 10GE SFP+",
+      "model": "FG-3601E",
+      "form_factor": "SFP+",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "10 GE SFP+",
+      "media_interface_name": "10 GE SFP+",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "FG-3601E 1GE SFP",
+      "model": "FG-3601E",
+      "form_factor": "SFP",
+      "power_consumption_w": 672.0,
+      "host_interface_name": "GE SFP",
+      "media_interface_name": "GE SFP",
+      "bit_rate_gbps": 1.0
+    }
+  ]
+}

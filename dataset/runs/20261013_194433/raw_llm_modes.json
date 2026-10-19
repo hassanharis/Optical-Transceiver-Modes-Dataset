@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "1.25GbE 2-km OM1",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1380.0,
+      "power_consumption_w": 0.382,
+      "host_interface_name": "1.25-Gigabit Ethernet",
+      "media_interface_name": "2-km OM1",
+      "standards_code": "IEEE 802.3z"
+    },
+    {
+      "label": "1.25GbE 2-km OM4",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1380.0,
+      "power_consumption_w": 0.382,
+      "host_interface_name": "1.25-Gigabit Ethernet",
+      "media_interface_name": "2-km OM4",
+      "standards_code": "IEEE 802.3z"
+    }
+  ]
+}

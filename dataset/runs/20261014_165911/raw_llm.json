@@ -1,0 +1,140 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "XP-13B1-10D-5"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF 8472",
+    "SFP+ MSA",
+    "RoHS"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1295.0
+  ],
+  "wavelength_max_nm": [
+    1325.0
+  ],
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.3,
+    1.5
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "FC-PI-41",
+    "3200-SM-LC-L"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    8.5,
+    14.025,
+    28.05
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -8.4,
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.5,
+    2.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -13.8,
+    -12.0,
+    -11.4
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    2.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [
+    "FEC"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12,
+    1e-06
+  ],
+  "extinction_ratio_db": [
+    3.5,
+    4.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -17.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3.5,
+    4.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0,
+    26.0
+  ],
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Bit Error Rate table lists 10^-12 and 10^-6 with note 2 PRBS for 8GFC/16GFC and note 3 FEC for 32GFC; receiver sensitivity for 32GFC with FEC is at 10^-6 BER not 10^-12. Unstressed Receiver OMA Sensitivity values are per rate (8.5/14.025/28.05 Gb/s). Average Output Power and OMA/ER/TDP/RIN/ORL vary by data rate. Note 2 optical: 3200-SM-LC-L OMA in dBm shall also exceed -5.0 TDP. Storage temperature -40 to 85 C (absolute max). Supply current max 360 mA (operating conditions) and 400 mA (electrical characteristics). Spectral Width (RMS) max 1 nm.",
+  "provenance_datasheet_sections": [
+    "XP-13B1-10D-5",
+    "32G FC 1310nm Single-mode SFP28 Transceiver",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "STANDARD",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "IV. Electrical Characteristics"
+  ],
+  "suggestions": "Clarify whether SFP28 should be a dedicated form_factor enum value alongside SFF. Transmitter Dispersion Penalty maxima (3.2/4.4/2.7 dB) could map to penalties if paired with explicit dispersion conditions in a future schema."
+}

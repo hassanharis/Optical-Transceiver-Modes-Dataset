@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "The excerpt documents a single product (OP13PI8-005D, 1.6T 2xDR4 OSFP) with one set of operating and link-budget tables and no separate application rows, amplified/unamplified sections, or receiver sensitivity/overload table. `2x800G-DR4` in the model pool matches the product title, not a second part number. Rx atoms are not tied to distinct rows in the supplied text, so one mode is used; link budget 6.5 dB is consistent with the -3.4 dBm / 4.0 dBm pair relative to the stated launch power range.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"OP13PI8-005D 1.6T 2x800G-DR4\",\n      \"model\": \"OP13PI8-005D\",\n      \"standards_code\": \"IEEE 802.3dj-2024\",\n      \"rx_sensitivity_dbm\": -3.4,\n      \"rx_overload_dbm\": 4.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

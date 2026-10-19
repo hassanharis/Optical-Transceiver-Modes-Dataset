@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:51:04.834778+00:00",
+  "source_file": "C:\\Haris\\datasheets\\tq5001-m85c-so-qsfp56-sr4-r6.0.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.061,
+    "extract_atoms": 25.427,
+    "store_run": 0.007,
+    "synthesize_modes": 29.889,
+    "store_modes": 0.003,
+    "total": 60.386
+  }
+}

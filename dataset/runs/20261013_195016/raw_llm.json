@@ -1,0 +1,165 @@
+{
+  "vendor": "Avago Technologies",
+  "model": [
+    "AFBR-710ISMZ"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ae",
+    "10GBASE-SR",
+    "10GBASE-SW",
+    "SFF-8431",
+    "SFF-8472",
+    "SFF-8432",
+    "INF-8074"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable",
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF_OM1",
+    "MMF_OM2",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    0.6,
+    1.0
+  ],
+  "host_interface_name": [
+    "10GBASE-SR",
+    "10GBASE-SW",
+    "10G Base-SR"
+  ],
+  "host_interface_id_hex": [
+    "10"
+  ],
+  "host_interface_id": [
+    16
+  ],
+  "media_interface_name": [
+    "10GBASE-SR",
+    "10GBASE-SW"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "64B/66B"
+  ],
+  "standards_code": [
+    "10GBASE-SR",
+    "10GBASE-SW",
+    "IEEE 802.3ae Clause 52"
+  ],
+  "baud_rate_gbaud": [
+    9.8,
+    10.313,
+    10.3125
+  ],
+  "bit_rate_gbps": [
+    10.3125
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.033,
+    0.082,
+    0.3,
+    0.4
+  ],
+  "tx_power_min_dbm": [
+    -4.3
+  ],
+  "tx_power_max_dbm": [
+    -1.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -11.1,
+    -7.5
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -1.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    3.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -12.0
+  ],
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Title and features specify industrial case temperature -40 °C to 85 °C; Table 3 Case Operating Temperature -40 to 85 °C; Table 4 Recommended Operating Conditions for electrical/optical specs lists Case Operating Temperature 0 to 85 °C. Typical power dissipation 600 mW; Table 5 Power Dissipation typical 600 mW, maximum 1000 mW. Tx specs use OMA; Laser mean output power maximum -1.0 dBm; Laser off power maximum -30 dBm. Transmitter and dispersion penalty (TDP) maximum 3.9 dB. Stressed sensitivity (OMA) maximum -7.5 dBm with vertical eye closure penalty 3.5 dB and stressed eye jitter 0.3 UIp-p as test conditions per note 6. Reach: 300 m with 50 µm OM3 MM fiber, 400 m with 50 µm OM4 MM fiber at 10.3125 GBd; EEPROM lists 300 m OM3, 33 m OM1, 82 m OM2. Table 9 gives minimum OMA vs center wavelength and RMS spectral width trade-offs (e.g. -4.3 to -2.8 dBm). Absolute maximum ratings: optical receiver input average power maximum 0 dBm.",
+  "provenance_datasheet_sections": [
+    "Description, continued",
+    "Transmitter Section",
+    "Receiver Section",
+    "Table 3. Absolute Maximum Ratings",
+    "Table 4. Recommended Operating Conditions",
+    "Table 5. Low Speed Signal Electrical Characteristics",
+    "Table 6. High Speed Signal Electrical Characteristics",
+    "Table 8. Optical Specifications",
+    "Table 9. Minimum Optical Modulation Amplitude",
+    "Table 13. EEPROM Serial ID Memory Contents – Conventional SFP Memory (Address A0h)"
+  ],
+  "suggestions": "Consider list types for temp_min_c/temp_max_c when both absolute and recommended ranges are stated. Include UI-based jitter fields or allow rx_output_total_jitter_ui. Map Laser OMA minimum from Table 9 as additional tx_power_min_dbm entries when full table extraction is desired."
+}

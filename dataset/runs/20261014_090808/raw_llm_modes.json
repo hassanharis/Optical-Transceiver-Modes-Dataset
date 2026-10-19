@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "LS-MM8510-S3C 10GBASE-SR",
+      "model": "LS-MM8510-S3C",
+      "wavelength_min_nm": 840.0,
+      "wavelength_max_nm": 860.0,
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "LS-MM8510-S3C 10GBASE-SW",
+      "model": "LS-MM8510-S3C",
+      "wavelength_min_nm": 830.0,
+      "wavelength_max_nm": 870.0,
+      "standards_code": "10GBASE-SW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "LS-MM8510-S3I 10GBASE-SR",
+      "model": "LS-MM8510-S3I",
+      "wavelength_min_nm": 840.0,
+      "wavelength_max_nm": 860.0,
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "LS-MM8510-S3I 10GBASE-SW",
+      "model": "LS-MM8510-S3I",
+      "wavelength_min_nm": 830.0,
+      "wavelength_max_nm": 870.0,
+      "standards_code": "10GBASE-SW",
+      "bit_rate_gbps": 9.953
+    }
+  ]
+}

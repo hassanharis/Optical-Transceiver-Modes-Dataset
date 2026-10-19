@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics</div>
+  <div class="subtitle">XFP &middot; [44] channels</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">XFP</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">INF-8077i, XFP-MSA, ITU-T G.694.1</div></div>
+      <div class="spec-item"><div class="label">Frequency Min Thz</div><div class="value">191.8</div></div>
+      <div class="spec-item"><div class="label">Frequency Max Thz</div><div class="value">196.1</div></div>
+      <div class="spec-item"><div class="label">Channel Spacing (GHz)</div><div class="value">100.0</div></div>
+      <div class="spec-item"><div class="label">Channel Total</div><div class="value">44</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">2.0</div></div>
+      <div class="spec-item"><div class="label">Reach (km)</div><div class="value">80.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">4.0</div></div>
+      <div class="spec-item"><div class="label">RX Sensitivity (dBm)</div><div class="value">-23.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">-10.0</div></div>
+      <div class="spec-item"><div class="label">CD Tolerance (ps/nm)</div><div class="value">1600.0</div></div>
+      <div class="spec-item"><div class="label">Pdl Db</div><div class="value">2.0</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-12</div></div>
+      <div class="spec-item"><div class="label">Los Assert Dbm</div><div class="value">-38.0</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-26.0</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">0.5</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Transmitter output power min/max and receiver min/overload are average power (footnote 1). Receiver minimum input power and overload measured at 10.7Gbps, BER 1x10-12, PRBS 231-1 (footnote 2). Storage temperature -40°C to +85°C stated separately from operating 0°C to +70°C. Power budget between transmitter and receiver stated as 14–23dB without optical path penalties. Product title includes 24dB (not defined as a labeled parameter in TECHNICAL DATA). 10GBASE-ZR/ZW is defined only at 1550nm; bridgeable distance up to 80km for other DWDM wavelengths per industry standard reference. RoHS-6/6 compliant.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">SO-XFP-ZR-Dxxxx, XFP, 10G Multirate, DWDM, 100GHz, DDM, 24dB, 80km, D9180-D9610 (44ch), OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION, GENERAL DEFINITIONS</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Clarify whether headline 24dB is OSNR, margin, or link budget. Explicit rx_osnr and emitter/detector types would improve schema fill. Host/media MSA interface IDs not in this datasheet.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Wavelength Min</th><th>Wavelength Max</th><th>Wavelength Band</th><th>Standards code</th><th>Bit Rate (Gbps)</th></tr>
+      <tr><td><strong>SO-XFP-ZR-Dxxxx series</strong></td><td>SO-XFP-ZR-Dxxxx</td><td>1520.0</td><td>1600.0</td><td>DWDM</td><td>10GBASE-ZR</td><td>9.95</td></tr>
+      <tr><td><strong>OTU2 @ 10.7G</strong></td><td>SO-XFP-ZR-Dxxxx</td><td>1520.0</td><td>1600.0</td><td>DWDM</td><td>OTU2</td><td>10.7</td></tr>
+      <tr><td><strong>OTU2e @ 11.1G</strong></td><td>SO-XFP-ZR-Dxxxx</td><td>1520.0</td><td>1600.0</td><td>DWDM</td><td>OTU2e</td><td>11.1</td></tr>
+      <tr><td><strong>DWDM ch D9180</strong></td><td>SO-XFP-ZR-D9180</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9190</strong></td><td>SO-XFP-ZR-D9190</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9200</strong></td><td>SO-XFP-ZR-D9200</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9210</strong></td><td>SO-XFP-ZR-D9210</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9220</strong></td><td>SO-XFP-ZR-D9220</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9230</strong></td><td>SO-XFP-ZR-D9230</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9240</strong></td><td>SO-XFP-ZR-D9240</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9250</strong></td><td>SO-XFP-ZR-D9250</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9260</strong></td><td>SO-XFP-ZR-D9260</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9270</strong></td><td>SO-XFP-ZR-D9270</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9280</strong></td><td>SO-XFP-ZR-D9280</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9290</strong></td><td>SO-XFP-ZR-D9290</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9300</strong></td><td>SO-XFP-ZR-D9300</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9310</strong></td><td>SO-XFP-ZR-D9310</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9320</strong></td><td>SO-XFP-ZR-D9320</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9330</strong></td><td>SO-XFP-ZR-D9330</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9340</strong></td><td>SO-XFP-ZR-D9340</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9350</strong></td><td>SO-XFP-ZR-D9350</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9360</strong></td><td>SO-XFP-ZR-D9360</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9370</strong></td><td>SO-XFP-ZR-D9370</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9380</strong></td><td>SO-XFP-ZR-D9380</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9390</strong></td><td>SO-XFP-ZR-D9390</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9400</strong></td><td>SO-XFP-ZR-D9400</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9410</strong></td><td>SO-XFP-ZR-D9410</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9420</strong></td><td>SO-XFP-ZR-D9420</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9430</strong></td><td>SO-XFP-ZR-D9430</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9440</strong></td><td>SO-XFP-ZR-D9440</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9450</strong></td><td>SO-XFP-ZR-D9450</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9460</strong></td><td>SO-XFP-ZR-D9460</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9470</strong></td><td>SO-XFP-ZR-D9470</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9480</strong></td><td>SO-XFP-ZR-D9480</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9490</strong></td><td>SO-XFP-ZR-D9490</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9500</strong></td><td>SO-XFP-ZR-D9500</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9510</strong></td><td>SO-XFP-ZR-D9510</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9520</strong></td><td>SO-XFP-ZR-D9520</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9530</strong></td><td>SO-XFP-ZR-D9530</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9540</strong></td><td>SO-XFP-ZR-D9540</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9550</strong></td><td>SO-XFP-ZR-D9550</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9560</strong></td><td>SO-XFP-ZR-D9560</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9570</strong></td><td>SO-XFP-ZR-D9570</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9580</strong></td><td>SO-XFP-ZR-D9580</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9590</strong></td><td>SO-XFP-ZR-D9590</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9600</strong></td><td>SO-XFP-ZR-D9600</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+      <tr><td><strong>DWDM ch D9610</strong></td><td>SO-XFP-ZR-D9610</td><td>1528.77</td><td>1563.05</td><td>DWDM</td><td>G.694.1</td><td>10.7</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">SO-XFP-ZR-Dxxxx</span> <span class="badge">SO-XFP-ZR-D9180</span> <span class="badge">SO-XFP-ZR-D9190</span> <span class="badge">SO-XFP-ZR-D9200</span> <span class="badge">SO-XFP-ZR-D9210</span> <span class="badge">SO-XFP-ZR-D9220</span> <span class="badge">SO-XFP-ZR-D9230</span> <span class="badge">SO-XFP-ZR-D9240</span> <span class="badge">SO-XFP-ZR-D9250</span> <span class="badge">SO-XFP-ZR-D9260</span> <span class="badge">SO-XFP-ZR-D9270</span> <span class="badge">SO-XFP-ZR-D9280</span> <span class="badge">SO-XFP-ZR-D9290</span> <span class="badge">SO-XFP-ZR-D9300</span> <span class="badge">SO-XFP-ZR-D9310</span> <span class="badge">SO-XFP-ZR-D9320</span> <span class="badge">SO-XFP-ZR-D9330</span> <span class="badge">SO-XFP-ZR-D9340</span> <span class="badge">SO-XFP-ZR-D9350</span> <span class="badge">SO-XFP-ZR-D9360</span> <span class="badge">SO-XFP-ZR-D9370</span> <span class="badge">SO-XFP-ZR-D9380</span> <span class="badge">SO-XFP-ZR-D9390</span> <span class="badge">SO-XFP-ZR-D9400</span> <span class="badge">SO-XFP-ZR-D9410</span> <span class="badge">SO-XFP-ZR-D9420</span> <span class="badge">SO-XFP-ZR-D9430</span> <span class="badge">SO-XFP-ZR-D9440</span> <span class="badge">SO-XFP-ZR-D9450</span> <span class="badge">SO-XFP-ZR-D9460</span> <span class="badge">SO-XFP-ZR-D9470</span> <span class="badge">SO-XFP-ZR-D9480</span> <span class="badge">SO-XFP-ZR-D9490</span> <span class="badge">SO-XFP-ZR-D9500</span> <span class="badge">SO-XFP-ZR-D9510</span> <span class="badge">SO-XFP-ZR-D9520</span> <span class="badge">SO-XFP-ZR-D9530</span> <span class="badge">SO-XFP-ZR-D9540</span> <span class="badge">SO-XFP-ZR-D9550</span> <span class="badge">SO-XFP-ZR-D9560</span> <span class="badge">SO-XFP-ZR-D9570</span> <span class="badge">SO-XFP-ZR-D9580</span> <span class="badge">SO-XFP-ZR-D9590</span> <span class="badge">SO-XFP-ZR-D9600</span> <span class="badge">SO-XFP-ZR-D9610</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">1520.0</span> <span class="badge">1528.77</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">1563.05</span> <span class="badge">1600.0</span></td></tr>
+      <tr><td>wavelength_band</td><td><span class="badge">C-band</span> <span class="badge">DWDM</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">10GBASE-ZR</span> <span class="badge">10GBASE-ZW</span> <span class="badge">1200-SM-LL-L</span> <span class="badge">P1L1-2D2</span> <span class="badge">G.959.1</span> <span class="badge">10GbE-LAN</span> <span class="badge">10GbE-WAN</span> <span class="badge">OTU2</span> <span class="badge">OTU2e</span> <span class="badge">STM-64</span> <span class="badge">OC192</span> <span class="badge">10G FC</span> <span class="badge">CPRI Opt, 8</span> <span class="badge">G.694.1</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">9.95</span> <span class="badge">11.1</span> <span class="badge">11.3</span> <span class="badge">10.7</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 16:43
+</footer>
+
+</div>
+</body>
+</html>

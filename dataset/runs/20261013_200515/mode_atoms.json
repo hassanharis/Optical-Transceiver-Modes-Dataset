@@ -1,0 +1,139 @@
+{
+  "multi_valued": {
+    "model": [
+      "HFBR-5961LZ",
+      "HFBR-5961ALZ",
+      "HFBR-5961GZ",
+      "HFBR-5961AGZ",
+      "HFBR-5961xxZ"
+    ],
+    "wavelength_center_nm": [
+      1308.0,
+      1300.0
+    ],
+    "power_consumption_w": [
+      0.4,
+      0.64,
+      0.225,
+      0.44
+    ],
+    "standards_code": [
+      "SONET OC-3",
+      "SDH STM-1",
+      "Fast Ethernet",
+      "100Base-FX",
+      "FDDI",
+      "ATM",
+      "MIL-STD-883C",
+      "IEC 61000-4-2",
+      "EN60825-1",
+      "CCITT G.957",
+      "G.958"
+    ],
+    "baud_rate_gbaud": [
+      0.025,
+      0.15552,
+      0.125
+    ],
+    "tx_power_min_dbm": [
+      -22.5,
+      -19.0,
+      -23.5,
+      -20.0
+    ],
+    "rx_sensitivity_dbm": [
+      -30.0,
+      -31.0,
+      -31.8
+    ],
+    "post_fec_ber_target": [
+      1e-10,
+      2.5e-10
+    ],
+    "los_assert_dbm": [
+      -31.0,
+      -33.0
+    ],
+    "los_deassert_dbm": [
+      -45.0,
+      -38.0
+    ]
+  },
+  "general": {
+    "vendor": "Avago Technologies",
+    "form_factor": [
+      "SFF"
+    ],
+    "standards_claimed": [
+      "ATM Forum",
+      "UNI SONET OC-3 multimode fiber physical layer specification",
+      "FDDI PMD standard",
+      "IEEE802.3u 100Base-FX",
+      "ISO 9001"
+    ],
+    "emitter_type": [
+      "LED",
+      "LED_INGAASP"
+    ],
+    "photodetector_type": [
+      "PIN",
+      "PIN_InGaAs"
+    ],
+    "wavelength_min_nm": [
+      1270.0
+    ],
+    "wavelength_max_nm": [
+      1380.0
+    ],
+    "mounting_type": [
+      "solder_post",
+      "solder_wave",
+      "hand solder"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF_OM1",
+      "MMF 50/125µm",
+      "MMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "modulation_format": [
+      "NRZI"
+    ],
+    "tx_power_max_dbm": [
+      -14.0
+    ],
+    "rx_overload_dbm": [
+      -14.0
+    ],
+    "optical_extinction_ratio_db": [
+      -47.0,
+      -27.0
+    ],
+    "los_hysteresis_db": [
+      1.5
+    ],
+    "penalties": [],
+    "notes": "Case operating temperature: HFBR-5961LZ/GZ 0 °C to +70 °C; HFBR-5961ALZ/AGZ -40 °C to +85 °C. HFBR-5961GZ/AGZ have no EMI shield. Supply VCC 2.97–3.63 V (3.3 V nominal). Transmitter power dissipation typical 0.4 W max 0.64 W; receiver typical 0.225 W max 0.44 W. Optical extinction ratio also specified as 0.02–0.2 %dB (Note 9). Output optical power measured at 1 m of noted fiber with cladding modes removed; BOL/EOL aging <1 dB per datasheet vs 1.5 dB industry for 1300 nm LEDs. Rx min input power OC-3 BER ≤1×10⁻¹⁰; FE BER ≤2.5×10⁻¹⁰. Signal Detect assert uses PA = PD+1.5 dB relative to deassert threshold PD. Spectral width FWHM table shows values 63 nm and 147 nm (table formatting ambiguous). Jitter specifications are in ns p-p, not ps.",
+    "provenance_datasheet_sections": [
+      "HFBR-5961LZ/ALZ/GZ/AGZ",
+      "Description",
+      "Transmitter Section",
+      "Features",
+      "Receiver Section",
+      "Applications",
+      "Package",
+      "Recommended Operating Conditions",
+      "Transmitter Electrical Characteristics",
+      "Receiver Electrical Characteristics",
+      "Transmitter Optical Characteristics",
+      "Receiver Optical and Electrical Characteristics",
+      "Notes:",
+      "Ordering Information"
+    ],
+    "suggestions": "Add fields for legacy PECL/LVPECL host electrical interface and separate per-SKU temp_min_c/temp_max_c when one datasheet covers multiple orderable parts. Consider ns vs ps for jitter fields."
+  }
+}

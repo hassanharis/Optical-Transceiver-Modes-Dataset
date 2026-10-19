@@ -1,0 +1,379 @@
+{
+  "modes": [
+    {
+      "label": "Appl 1: 400G 4×100G OpenROADM 5.0 DP-16QAM",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 24.6,
+      "host_interface_name": "4x 100GAUI-2",
+      "media_interface_name": "OpenROADM 5.0",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenROADM 5.0",
+      "baud_rate_gbaud": 63.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -20.0,
+      "rx_osnr_db": 23.5,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 12000.0,
+      "fec_type": "OFEC",
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 25.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=1"
+        }
+      ]
+    },
+    {
+      "label": "Appl 2: 300G 3×100G OpenROADM 5.0 DP-8QAM",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 24.1,
+      "host_interface_name": "3x 100GAUI-2",
+      "media_interface_name": "OpenROADM 5.0",
+      "frame": "3x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenROADM 5.0",
+      "baud_rate_gbaud": 63.1,
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_8-DP",
+      "rx_sensitivity_dbm": -23.0,
+      "rx_osnr_db": 20.5,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 48000.0,
+      "fec_type": "OFEC",
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 21.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -20.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=2"
+        }
+      ]
+    },
+    {
+      "label": "Appl 3: 200G 2×100G OpenROADM 5.0 DP-QPSK",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 22.6,
+      "host_interface_name": "2x 100GAUI-2",
+      "media_interface_name": "OpenROADM 5.0",
+      "frame": "2x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenROADM 5.0",
+      "baud_rate_gbaud": 63.1,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QPSK-DP",
+      "rx_sensitivity_dbm": -28.0,
+      "rx_osnr_db": 14.8,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 48000.0,
+      "fec_type": "OFEC",
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 15.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -28.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=3"
+        }
+      ]
+    },
+    {
+      "label": "Appl 4: 200G 2×100G OpenROADM 5.0 DP-16QAM 31.6G",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 22.6,
+      "host_interface_name": "2x 100GAUI-2",
+      "media_interface_name": "OpenROADM 5.0",
+      "frame": "2x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenROADM 5.0",
+      "baud_rate_gbaud": 31.6,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -23.0,
+      "rx_osnr_db": 20.5,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 30000.0,
+      "fec_type": "OFEC",
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 21.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -18.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=4"
+        }
+      ]
+    },
+    {
+      "label": "Appl 5: 100G 100GAUI-2 OpenROADM 5.0 DP-QPSK",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 19.6,
+      "host_interface_name": "100GAUI-2",
+      "media_interface_name": "OpenROADM 5.0",
+      "frame": "100GAUI-2 (2x 50G)",
+      "standards_code": "OpenROADM 5.0",
+      "baud_rate_gbaud": 31.6,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QPSK-DP",
+      "rx_sensitivity_dbm": -32.0,
+      "rx_osnr_db": 11.8,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 77000.0,
+      "fec_type": "OFEC",
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 12.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode 5"
+        }
+      ]
+    },
+    {
+      "label": "Appl 6: 400G 400GAUI-8 OpenROADM 5.0 DP-16QAM",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 24.6,
+      "host_interface_name": "1x 400GAUI-8",
+      "media_interface_name": "OpenROADM 5.0",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OpenROADM 5.0",
+      "baud_rate_gbaud": 63.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -20.0,
+      "rx_osnr_db": 23.5,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 12000.0,
+      "fec_type": "OFEC",
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 25.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=6"
+        }
+      ]
+    },
+    {
+      "label": "Appl 7: 200G 200GAUI-4 OpenROADM 5.0 DP-QPSK",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 22.6,
+      "host_interface_name": "200GAUI-4",
+      "media_interface_name": "OpenROADM 5.0",
+      "frame": "200GAUI-4 (2x 200G)",
+      "standards_code": "OpenROADM 5.0",
+      "baud_rate_gbaud": 63.1,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QPSK-DP",
+      "rx_sensitivity_dbm": -28.0,
+      "rx_osnr_db": 14.8,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 48000.0,
+      "fec_type": "OFEC",
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 15.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -28.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=7"
+        }
+      ]
+    },
+    {
+      "label": "Appl 8: 200G 200GAUI-4 OpenROADM 5.0 DP-16QAM 31.6G",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 22.6,
+      "host_interface_name": "200GAUI-4",
+      "media_interface_name": "OpenROADM 5.0",
+      "frame": "200GAUI-4 (2x 200G)",
+      "standards_code": "OpenROADM 5.0",
+      "baud_rate_gbaud": 31.6,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -23.0,
+      "rx_osnr_db": 20.5,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 30000.0,
+      "fec_type": "OFEC",
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 21.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -18.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=8"
+        }
+      ]
+    },
+    {
+      "label": "Appl 9: 100G CAUI-4 w/o FEC OpenROADM 5.0 DP-QPSK",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 19.6,
+      "host_interface_name": "CAUI-4 w/o FEC",
+      "media_interface_name": "OpenROADM 5.0",
+      "frame": "CAUI-4 w/o FEC (4x 25G)",
+      "standards_code": "OpenROADM 5.0",
+      "baud_rate_gbaud": 31.6,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QPSK-DP",
+      "rx_sensitivity_dbm": -32.0,
+      "rx_osnr_db": 11.8,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 77000.0,
+      "fec_type": "OFEC"
+    },
+    {
+      "label": "Appl 10: 100G CAUI-4 with FEC OpenROADM 5.0 DP-QPSK",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 19.6,
+      "host_interface_name": "CAUI-4 with FEC",
+      "media_interface_name": "OpenROADM 5.0",
+      "frame": "CAUI-4 with FEC (4x 25G)",
+      "standards_code": "OpenROADM 5.0",
+      "baud_rate_gbaud": 31.6,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QPSK-DP",
+      "rx_sensitivity_dbm": -32.0,
+      "rx_osnr_db": 11.8,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 77000.0,
+      "fec_type": "OFEC"
+    },
+    {
+      "label": "Appl 11: 100G CAUI-4 w/o FEC OpenROADM 2.0 DP-DQPSK",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 19.6,
+      "host_interface_name": "CAUI-4 w/o FEC",
+      "media_interface_name": "OpenROADM 2.0",
+      "frame": "CAUI-4 w/o FEC (4x 25G)",
+      "standards_code": "OpenROADM 2.0",
+      "baud_rate_gbaud": 31.6,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "DQPSK-DP",
+      "rx_sensitivity_dbm": -30.0,
+      "rx_osnr_db": 14.5,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 80000.0,
+      "fec_type": "SCFEC",
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 15.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -24.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=11"
+        }
+      ]
+    },
+    {
+      "label": "Appl 12: 100G CAUI-4 with FEC OpenROADM 2.0 DP-DQPSK",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 19.6,
+      "host_interface_name": "CAUI-4 with FEC",
+      "media_interface_name": "OpenROADM 2.0",
+      "frame": "CAUI-4 with FEC (4x 25G)",
+      "standards_code": "OpenROADM 2.0",
+      "baud_rate_gbaud": 31.6,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "DQPSK-DP",
+      "rx_sensitivity_dbm": -30.0,
+      "rx_osnr_db": 14.5,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 80000.0,
+      "fec_type": "SCFEC",
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 15.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -24.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=12"
+        }
+      ]
+    },
+    {
+      "label": "Appl 13: 100G OTU4 OTL4.4 OpenROADM 2.0 DP-DQPSK",
+      "model": "TQD017-TUNC-SO",
+      "power_consumption_w": 19.6,
+      "host_interface_name": "OTL4.4",
+      "media_interface_name": "OpenROADM 2.0",
+      "frame": "OTL4.4 (4x 28G)",
+      "standards_code": "OpenROADM 2.0",
+      "baud_rate_gbaud": 31.6,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "DQPSK-DP",
+      "rx_sensitivity_dbm": -30.0,
+      "rx_osnr_db": 14.5,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 80000.0,
+      "fec_type": "SCFEC",
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 15.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -24.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=13"
+        }
+      ]
+    }
+  ]
+}

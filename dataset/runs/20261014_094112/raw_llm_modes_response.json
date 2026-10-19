@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Two part numbers in the ordering table differ only by temperature grade; optical and rate specs are shared. Bit-rate and wavelength pairs from the pool that belong to one operating range (min/typ/max data rate; Tx vs Rx wavelength rows) are not separate selectable modes.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"LS-SM316G-02C 6.144G 1310nm 0 to +70\u00b0C\",\n      \"model\": \"LS-SM316G-02C\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1350.0,\n      \"bit_rate_gbps\": 6.144\n    },\n    {\n      \"label\": \"LS-SM316G-02I 6.144G 1310nm -40 to +85\u00b0C\",\n      \"model\": \"LS-SM316G-02I\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1350.0,\n      \"bit_rate_gbps\": 6.144\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

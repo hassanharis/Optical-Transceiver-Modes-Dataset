@@ -1,0 +1,114 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "XP-T96-02-2"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "IEEE Std 802.3",
+    "10Gigabit Ethernet",
+    "10GBASE-T",
+    "5GBASE-T",
+    "2.5GBASE-T",
+    "1000BASE-T"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "RJ-45"
+  ],
+  "fiber_type": null,
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    3.6
+  ],
+  "host_interface_name": [
+    "10GBase-R"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "10Gbase-T",
+    "5Gbase-T",
+    "2.5Gbase-T",
+    "1000base-T",
+    "100base-Tx"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "10GBASE-T",
+    "5GBASE-T",
+    "2.5GBASE-T",
+    "1000BASE-T",
+    "100base-Tx",
+    "10GBase-R"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1,
+    10
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": null,
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Copper (10GBASE-T) module over twisted pair, not optical. Cable reach stated in meters only: 10Gbase-T CAT6A 30m; 5Gbase-T, 2.5Gbase-T, 1000base-T, 100base-Tx CAT5E 100m (rev 2.0 updated 2.5G/5G reach to 100m). General data rate 1–10 Gb/sec IEEE 802.3; line port supports 10G/5G/2.5G/1000BASE-T; host port 10GBase-R. Power consumption and surge current exceed SFP MSA limits (max 3.6 W, supply current typ 900 mA max 1100 mA). Case operating temperature 0°C to +70°C; storage -40°C to +85°C. LOS: high = no link, low = linked; RX_LOS used for link indication on 10GBASE-T. Line electrical: 5-level encoding per IEEE 802.3, fL 125 MHz typ.",
+  "provenance_datasheet_sections": [
+    "XP-T96-02-2 10GBASE-T Copper SFP+ Transceiver",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "PRODUCT DESCRIPTION",
+    "Cable Length",
+    "II. +3.3V Volt Electrical Power Interface",
+    "IV. High-Speed Electrical Interface",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "Appendix A. Document Revision"
+  ],
+  "suggestions": "Add reach_m or copper_cable_length_m for BASE-T modules; host/line port application names map cleanly to host_interface_name and media_interface_name for copper SFP+."
+}

@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "32G FC (Rate Select high)",
+      "standards_code": "32G FC",
+      "bit_rate_gbps": 28.05,
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -1.4,
+      "tx_power_max_dbm": 2.0,
+      "rx_sensitivity_dbm": -8.4,
+      "post_fec_ber_target": 1e-06
+    },
+    {
+      "label": "25GbE (Rate Select high)",
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 0.07,
+      "tx_power_min_dbm": -8.4,
+      "tx_power_max_dbm": 2.4,
+      "rx_sensitivity_dbm": -10.3,
+      "post_fec_ber_target": 5e-05
+    }
+  ]
+}

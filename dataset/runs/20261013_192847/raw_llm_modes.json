@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "FR4 CWDM \u03bb0",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "standards_code": "FR4"
+    },
+    {
+      "label": "FR4 CWDM \u03bb1",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "standards_code": "FR4"
+    },
+    {
+      "label": "FR4 CWDM \u03bb2",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "standards_code": "FR4"
+    },
+    {
+      "label": "FR4 CWDM \u03bb3",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "FR4"
+    }
+  ]
+}

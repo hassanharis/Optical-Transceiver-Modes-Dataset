@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-MR25-BX20D-34 1310nm Tx / 1490nm Rx",
+      "model": "SO-SFP-MR25-BX20D-34",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "SO-SFP-MR25-BX20D-43 1490nm Tx / 1310nm Rx",
+      "model": "SO-SFP-MR25-BX20D-43",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    }
+  ]
+}

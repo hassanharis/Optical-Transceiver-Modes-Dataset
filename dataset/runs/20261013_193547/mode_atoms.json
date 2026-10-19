@@ -1,0 +1,109 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "10GBase",
+      "ER"
+    ],
+    "standards_code": [
+      "10GBASE-ER",
+      "10GBASE-EW",
+      "ER"
+    ],
+    "bit_rate_gbps": [
+      4.25,
+      9.95,
+      9.953,
+      10.3,
+      10.3125
+    ],
+    "reach_km": [
+      40.0,
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -3.0,
+      -3.0
+    ],
+    "tx_power_max_dbm": [
+      3.0,
+      3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -14.1,
+      -14.1
+    ],
+    "rx_overload_dbm": [
+      0.5,
+      -1.0,
+      0.0
+    ]
+  },
+  "general": {
+    "vendor": "FluxLight",
+    "model": [
+      "1442440F1"
+    ],
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8413",
+      "IEE802.3ae"
+    ],
+    "emitter_type": [
+      "LASER_EML"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      1530.0
+    ],
+    "wavelength_max_nm": [
+      1565.0
+    ],
+    "wavelength_center_nm": [
+      1550.0
+    ],
+    "connector_type": [
+      "Dual-LC",
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.5
+    ],
+    "extinction_ratio_db": [
+      6.0
+    ],
+    "los_assert_dbm": [
+      -16.0
+    ],
+    "los_deassert_dbm": [
+      -25.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      -16.0
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "penalties": [],
+    "notes": "Product titled AdTran Compatible 1442440F1. Quick Spec lists Reach 40km and Power Budget 11.10 dB; Optical Characteristics table lists 9µm Core Diameter SMF reach 10 Km. Operating case temperature also offered as Industrial -40 to +85 C (Features, Absolute Maximum Ratings, Recommend Operation Environment). Data rate selectable ≤4.25Gbps or 9.95Gbps to 10.3Gbps. Quick Spec RX Power Min/Max -14.10 to -1.00 dBm. Maximum Input Power (RX) PMAX -1.0 to 0 dBm. Average Power of OFF Transmitter max -30 dBm. Output Spectral Width (-20dB) △λ max 1 nm. DDM: Yes.",
+    "provenance_datasheet_sections": [
+      "AdTran Compatible 1442440F1 Quick Spec:",
+      "AdTran Compatible 1442440F1 Features",
+      "AdTran Compatible 1442440F1 Applications",
+      "= Electrical Characteristics (Condition: Ta TOP)",
+      "= Optical Characteristics (Condition: Ta TOP)",
+      "Absolute Maximum Ratings (TC=25℃)",
+      "Recommend Operation Environment"
+    ],
+    "suggestions": "Clarify whether vendor should be FluxLight (footer) vs compatibility target AdTran. Reach 10 km vs 40 km conflict may need a dedicated field or reach qualifier. Consider mapping Power Budget 11.10 dB and supply current 300 mA max if useful."
+  }
+}

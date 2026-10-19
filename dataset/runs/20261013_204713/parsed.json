@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-8g-zr-dxxx-r5.1.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 7252,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 14
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

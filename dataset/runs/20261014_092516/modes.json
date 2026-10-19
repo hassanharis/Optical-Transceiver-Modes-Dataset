@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "LS-SM3101-20I Fast Ethernet 125Mbps",
+      "model": "LS-SM3101-20I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "Fast Ethernet",
+      "bit_rate_gbps": 125.0
+    },
+    {
+      "label": "LS-SM3101-20C SONET OC-3 155Mbps",
+      "model": "LS-SM3101-20C",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "standards_code": "SONET OC-3",
+      "bit_rate_gbps": 155.0
+    }
+  ]
+}

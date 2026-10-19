@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:59:11.989427+00:00",
+  "source_file": "C:\\Haris\\datasheets\\xp-13b1-10d-5_32g_lw.pdf",
+  "page_count": 7,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 16.242,
+    "extract_atoms": 20.213,
+    "store_run": 0.009,
+    "synthesize_modes": 33.085,
+    "store_modes": 0.002,
+    "total": 69.552
+  }
+}

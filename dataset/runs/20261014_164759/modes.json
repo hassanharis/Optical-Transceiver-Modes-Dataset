@@ -1,0 +1,26 @@
+{
+  "modes": [
+    {
+      "label": "\u03bb1 850nm BiDi (T1/R1)",
+      "wavelength_min_nm": 844.0,
+      "wavelength_max_nm": 863.0,
+      "wavelength_center_nm": 850.0,
+      "host_interface_name": "100GBASE",
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -6.2,
+      "tx_power_max_dbm": 4.0,
+      "rx_sensitivity_dbm": -8.2
+    },
+    {
+      "label": "\u03bb2 908nm BiDi (T2/R2)",
+      "wavelength_min_nm": 900.0,
+      "wavelength_max_nm": 918.0,
+      "wavelength_center_nm": 908.0,
+      "host_interface_name": "100GBASE",
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -6.2,
+      "tx_power_max_dbm": 4.0,
+      "rx_sensitivity_dbm": -8.2
+    }
+  ]
+}

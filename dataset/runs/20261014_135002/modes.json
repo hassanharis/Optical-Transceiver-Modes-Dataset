@@ -1,0 +1,211 @@
+{
+  "modes": [
+    {
+      "label": "CWDM 1270 nm LR70",
+      "model": "SO-SFP-10GE-LR70-C27",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CWDM 1290 nm LR70",
+      "model": "SO-SFP-10GE-LR70-C29",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1290,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CWDM 1310 nm LR70",
+      "model": "SO-SFP-10GE-LR70-C31",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1310,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CWDM 1330 nm LR70",
+      "model": "SO-SFP-10GE-LR70-C33",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1330,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CWDM 1350 nm LR70",
+      "model": "SO-SFP-10GE-LR70-C35",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1350,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CWDM 1370 nm LR70",
+      "model": "SO-SFP-10GE-LR70-C37",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1370,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CWDM 1390 nm LR70",
+      "model": "SO-SFP-10GE-LR70-C39",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1390,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CWDM 1410 nm LR70",
+      "model": "SO-SFP-10GE-LR70-C41",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1410,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CWDM 1430 nm LR70",
+      "model": "SO-SFP-10GE-LR70-C43",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1430,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CWDM 1450 nm LR70",
+      "model": "SO-SFP-10GE-LR70-C45",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1450,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CPRI Opt 1",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "CPRI Opt 1",
+      "bit_rate_gbps": 0.6144
+    },
+    {
+      "label": "CPRI Opt 2",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "CPRI Opt 2",
+      "bit_rate_gbps": 1.2288
+    },
+    {
+      "label": "CPRI Opt 3",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "CPRI Opt 3",
+      "bit_rate_gbps": 2.4576
+    },
+    {
+      "label": "CPRI Opt 4",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "CPRI Opt 4",
+      "bit_rate_gbps": 3.072
+    },
+    {
+      "label": "CPRI Opt 5",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "CPRI Opt 5",
+      "bit_rate_gbps": 4.9152
+    },
+    {
+      "label": "CPRI Opt 6",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "CPRI Opt 6",
+      "bit_rate_gbps": 6.144
+    },
+    {
+      "label": "CPRI Opt 7A",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "CPRI Opt 7A",
+      "bit_rate_gbps": 8.11008
+    },
+    {
+      "label": "CPRI Opt 7",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "CPRI Opt 7",
+      "bit_rate_gbps": 9.8304
+    },
+    {
+      "label": "CPRI Opt 8",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "CPRI Opt 8",
+      "bit_rate_gbps": 10.1376
+    },
+    {
+      "label": "OBSAI 0.768 Gbps",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "OBSAI",
+      "bit_rate_gbps": 0.768
+    },
+    {
+      "label": "OBSAI 1.536 Gbps",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "OBSAI",
+      "bit_rate_gbps": 1.536
+    },
+    {
+      "label": "OBSAI 3.072 Gbps",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "OBSAI",
+      "bit_rate_gbps": 3.072
+    },
+    {
+      "label": "OBSAI 6.144 Gbps",
+      "model": "SO-SFP-10GE-LR70-Cxx",
+      "wavelength_min_nm": 1271,
+      "wavelength_max_nm": 1451,
+      "wavelength_center_nm": 1270,
+      "standards_code": "OBSAI",
+      "bit_rate_gbps": 6.144
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1260.0,
+      1500.0
+    ],
+    "standards_code": [
+      "GbE",
+      "STM1/OC3",
+      "STM4/OC12",
+      "STM16/OC48",
+      "OTU1",
+      "1G FC",
+      "2G FC",
+      "CPRI Opt 1",
+      "CPRI Opt 2",
+      "CPRI Opt 3",
+      "OBSAI 1x",
+      "OBSAI 2x"
+    ],
+    "bit_rate_gbps": [
+      0.155,
+      2.67,
+      2.7,
+      2.488
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-MR80D"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_max_nm": [
+      1600.0
+    ],
+    "wavelength_center_nm": [
+      1550.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      1
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      -2.0
+    ],
+    "tx_power_max_dbm": [
+      3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -28.0
+    ],
+    "rx_overload_dbm": [
+      -9.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -42.0
+    ],
+    "los_deassert_dbm": [
+      -29.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Transmitter output power listed as Min: -2.0dB and Max: +3.0dBm with footnote 1) Average power. Receiver minimum input power -28dBm per footnote 2) @ 2488Mbps, BER 1x10-12, PRBS 223-1. Operating temperature printed as -0°C to +70°C. Storage temperature -40°C to +85°C is separate from operating range. Power consumption stated as < 1.0W. Power budget 12 – 26dB. Dispersion penalty Max 1dB stated without a paired penalized optical parameter value and operating condition per penalty schema. Title and ordering cite 155Mbps-2.7Gbps; technical table cites 155Mbps to 2.67Gbps.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-MR80D",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

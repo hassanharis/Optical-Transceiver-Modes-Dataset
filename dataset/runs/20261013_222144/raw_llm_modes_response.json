@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "This datasheet describes a single product (TSD002-S31C-SO) with one configuration: 1× optical lane, 100GAUI-2 electrical, FEC RS(544,514) per IEEE 802.3bj. The duplicate pool values are alternate metrics (average vs OMA sensitivity) or synonymous labels (Reed Solomon vs RS(544,514)), not separate selectable modes. No penalties were supplied to assign.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100G-FR SFP-DD (TSD002-S31C-SO)\",\n      \"standards_code\": \"100G-FR\",\n      \"rx_sensitivity_dbm\": -6.4,\n      \"fec_type\": \"KP4\",\n      \"number_of_lanes\": 1\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

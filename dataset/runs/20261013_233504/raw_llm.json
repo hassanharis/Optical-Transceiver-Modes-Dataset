@@ -1,0 +1,121 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "L9-SD312M-20TTC5"
+  ],
+  "form_factor": [
+    "1x9"
+  ],
+  "standards_claimed": [
+    "Multi-sourced 1x9 protocol",
+    "Class 1 Laser International Safety Standard IEC 825"
+  ],
+  "emitter_type": [
+    "LASER_FP",
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1260
+  ],
+  "wavelength_max_nm": [
+    1360,
+    1620
+  ],
+  "wavelength_center_nm": [
+    1310
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "SC",
+    "ST",
+    "FC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": null,
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "1x9"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": null,
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    20
+  ],
+  "tx_power_min_dbm": [
+    -8
+  ],
+  "tx_power_max_dbm": [
+    -3
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -18
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -3
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    10
+  ],
+  "los_assert_dbm": [
+    -18
+  ],
+  "los_deassert_dbm": [
+    -30
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Datasheet is for L9-SD312M-20TTC5 (SM, 1310 FP, 20 km, 5 V, 0 to +70°C per Order Information). Supply 3.3 V or 5.0 V supported; optical tables at VCC 3.3 or 5±0.2 V. Data rate stated as DC–2 Mbps, 500K–2000 Kbps, not in Gbps. Optical power and sensitivity per Note1–2: launched into 9/125 μm SMF at 2 Mbps. Industrial SKU L9-SD312M-20TTI5 is -40°C to +85°C; not this order code. Series features mention up to 2 km on 62.5/125 μm MMF and up to 40 km SMF for other types. Output spectral width (RMS) max 4.0 nm. Supply current Icc max 160 mA (not power in W).",
+  "provenance_datasheet_sections": [
+    "L9-SD312M-20TTC5",
+    "1×9 2Mbps 1310nm 20km SC Transceiver Module",
+    "Product Features",
+    "Application",
+    "Product Description",
+    "Absolute Maximum Ratings",
+    "Optical Parameters",
+    "Table 3-- L9-SD312M-20TTC5 Transceiver Optical Characteristics",
+    "Table 4--- Transceiver Electrical Characteristics",
+    "Order Information"
+  ],
+  "suggestions": "Consider bit_rate_kbps or bit_rate_mbps for sub-Gbps modules. form_factor enum could include 1x9. emitter_type for this SKU is explicitly FP in Order Information; series text also lists VCSEL/FP."
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T12:21:49.157704+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-qsfp28-lr4-20l-r5.5.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.145,
+    "extract_atoms": 33.331,
+    "store_run": 0.008,
+    "synthesize_modes": 25.057,
+    "store_modes": 0.002,
+    "total": 63.543
+  }
+}

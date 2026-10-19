@@ -1,0 +1,99 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-MM858G-S3I",
+    "LS-MM858G-S3C"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP+ MSA",
+    "SFF-8472",
+    "SFP Multi-Source Agreement"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "bit_rate_gbps": [
+    1.0,
+    2.125,
+    4.25,
+    8.5,
+    10.3,
+    10.7,
+    10.312
+  ],
+  "reach_km": [
+    0.3
+  ],
+  "tx_power_min_dbm": [
+    -6.0
+  ],
+  "tx_power_max_dbm": [
+    -0.5
+  ],
+  "rx_sensitivity_dbm": [
+    -10.5
+  ],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.0
+  ],
+  "los_assert_dbm": [
+    -22.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Datasheet title and ordering describe 300 m reach on OM3-MMF. Operating case temperature depends on variant: Standard 0 to +70°C (LS-MM858G-S3C), Extended -20 to +85°C, Industrial -40 to +85°C (LS-MM858G-S3I). Supply current Icc max 260 mA at 3.135–3.465 V (3.30 V typical); power in watts not stated. Receiver sensitivity and overload measured with PRBS 2^31-1 @ 10312 Mbps, BER ≤ 1×10^-12. Optical power launched into MMF (tx power note). Data Rate row lists unit as bps with Min 1.0, Typical 10.3, Max 10.7. SMSR row has no numeric limits (dashes only). Spectral width (RMS) Δλ max 0.45 nm not mapped in schema.",
+  "provenance_datasheet_sections": [
+    "LS-MM858G-S3I 8Gbps SFP+ Transceiver, Multi Mode, 300m Reach",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Diagnostics",
+    "Ordering information"
+  ],
+  "suggestions": "Consider adding spectral_width_rms_nm and supply_current_ma_max; clarify whether bit_rate row unit bps is a typo for Gbps."
+}

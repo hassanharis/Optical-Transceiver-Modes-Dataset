@@ -1,0 +1,133 @@
+{
+  "multi_valued": {
+    "power_consumption_w": [
+      9.0,
+      10.0,
+      1.5
+    ],
+    "media_interface_name": [
+      "4x100GBASE-LR1",
+      "400G-PLR4",
+      "LR4"
+    ],
+    "frame": [
+      "400GAUI-8",
+      "4x100GBASE-LR1"
+    ],
+    "standards_code": [
+      "400G-PLR4",
+      "LR4",
+      "400GAUI-8",
+      "4x100GBASE-LR1",
+      "IEEE802.3bs",
+      "IEEE802.3cu"
+    ],
+    "rx_sensitivity_dbm": [
+      -6.1,
+      -4.1
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LQD-M31400-LR4C"
+    ],
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "QSFP-DD MSA HW Rev 5.0 Type 2 Housing",
+      "QSFP-DD CMIS Rev 5.0",
+      "IEEE802.3bs",
+      "IEEE802.3cu",
+      "EU Directive 2011/65/EU (RoHS Compliant)"
+    ],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1311.0
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "MPO",
+      "MPO-12",
+      "MTP/MPO",
+      "MPO-12/APC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "400GAUI-8"
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "bit_rate_gbps": [
+      400.0
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -1.9
+    ],
+    "tx_power_max_dbm": [
+      4.8
+    ],
+    "rx_overload_dbm": [
+      4.8
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      15.6
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "penalties": [],
+    "notes": "Average launch power each lane min (-1.9 dBm) and average receive power min are informative per Notes 1–2. Stressed receiver sensitivity (-4.1 dBm OMAouter) and receiver sensitivity (-6.1 dBm OMAouter) measured with conformance test signal at TP3 for BER = 2.4x10^-4 (Note 3). OMAouter/TDECQ/TECQ conditional rows give formulas (e.g. -0.3+TDECQ, -7.5+TECQ) rather than single fixed thresholds. Operating distance table: 2 m min to 10000 m max. Max power dissipation 10 W vs product feature maximum power consumption 9 W.",
+    "provenance_datasheet_sections": [
+      "LQD-M31400-LR4C",
+      "400G-PLR4 QSFPDD 1310nm 10km MTP/MPO Transceiver for SMF",
+      "Product Features",
+      "Applications",
+      "Description",
+      "Recommended Operating Conditions",
+      "Electrical Characteristics High Speed Signal",
+      "Notes:",
+      "Ordering information"
+    ]
+  }
+}

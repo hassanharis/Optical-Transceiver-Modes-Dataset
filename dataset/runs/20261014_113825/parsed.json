@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-qsfp-dd-4c-dr4-4-m-r5.6.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 5927,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 21
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

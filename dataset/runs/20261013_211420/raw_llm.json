@@ -1,0 +1,123 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "DQD004-xxxC-SO",
+    "DQD004-0M5C-SO",
+    "DQD004-001C-SO",
+    "DQD004-1M5C-SO",
+    "DQD004-002C-SO",
+    "DQD004-2M5C-SO",
+    "DQD004-003C-SO",
+    "DQD004-005C-SO"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "CMIS 4.0",
+    "400GAUI-8",
+    "4x100GAUI-2",
+    "CMIS4.0"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": null,
+  "fiber_type": null,
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    4.5
+  ],
+  "host_interface_name": [
+    "400GAUI-8",
+    "4x100GAUI-2",
+    "100GAUI-2"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "400GAUI-8",
+    "100GAUI-2"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "1x 400GAUI-8 (8x 50G)",
+    "4x 100GAUI-2 (2x 50G)",
+    "8x 50G"
+  ],
+  "standards_code": [
+    "400GBASE-R",
+    "100GBASE-R",
+    "CMIS Application Code 1",
+    "CMIS Application Code 2",
+    "DAC"
+  ],
+  "baud_rate_gbaud": [
+    25
+  ],
+  "bit_rate_gbps": [
+    400
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": null,
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [
+    "RS_GENERIC"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-15
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Active Direct Attach Cable (AEC) / DAC using Twinax copper; not an optical transceiver. Cable lengths 0.5 m to 5 m (ordering table: 0.5 m, 1 m, 1.5 m, 2 m, 2.5 m, 3 m, 5 m). Power stated as <4.5 W per side. Storage temperature -40 °C to +85 °C (not normal operating range). RS-FEC is provided by the host per APPLICATION CODE LIST footnote. BER < 10^-15 is post FEC.",
+  "provenance_datasheet_sections": [
+    "DQD004-xxxC-SO",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION",
+    "APPLICATION CODE LIST",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider schema fields for cable length (m), AWG wire gauge, and AEC/DAC product class; mounting_type 'Pluggable' inferred from QSFP-DD DAC attachment style."
+}

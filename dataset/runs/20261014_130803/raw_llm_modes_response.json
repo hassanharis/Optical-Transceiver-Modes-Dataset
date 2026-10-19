@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "There is a single SKU with two ordering-code spellings, one technical table (transmit max 1360 nm and receiver range max 1600 nm), and protocol support **FE** and **STM1/OC3** on the same row. Modes below assign each pool value where the datasheet ties it (model variants, tx vs rx wavelength rows, product vs protocol standards).\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SO-SFP-100BASE-EXD 100Base-EXD (TX)\",\n      \"model\": \"SO-SFP-100BASE-EXD\",\n      \"wavelength_max_nm\": 1360.0,\n      \"standards_code\": \"100Base-EXD\"\n    },\n    {\n      \"label\": \"SO-SFP-100Base-EXD 100Base-EXD (RX)\",\n      \"model\": \"SO-SFP-100Base-EXD\",\n      \"wavelength_max_nm\": 1600.0,\n      \"standards_code\": \"100Base-EXD\"\n    },\n    {\n      \"label\": \"FE\",\n      \"model\": \"SO-SFP-100BASE-EXD\",\n      \"wavelength_max_nm\": 1600.0,\n      \"standards_code\": \"FE\"\n    },\n    {\n      \"label\": \"STM1/OC3\",\n      \"model\": \"SO-SFP-100BASE-EXD\",\n      \"wavelength_max_nm\": 1600.0,\n      \"standards_code\": \"STM1/OC3\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

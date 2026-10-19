@@ -1,0 +1,165 @@
+{
+  "multi_valued": {
+    "form_factor": [
+      "SFP+",
+      "SFP"
+    ],
+    "host_interface_name": [
+      "1600-SN-M6-S",
+      "800-SN-M6-S",
+      "400-SN-M6-I",
+      "1600-SN-M5-S",
+      "800-SN-M5-S",
+      "400-SN-M5-I",
+      "1600-SN-M5E-I",
+      "800-SN-M5E-I",
+      "400-SN-M5E-I",
+      "1600-SN-M5F-I",
+      "800-SN-M5F-I",
+      "400-SN-M5F-I"
+    ],
+    "media_interface_name": [
+      "1600-SN-M6-S",
+      "800-SN-M6-S",
+      "400-SN-M6-I",
+      "1600-SN-M5-S",
+      "800-SN-M5-S",
+      "400-SN-M5-I",
+      "1600-SN-M5E-I",
+      "800-SN-M5E-I",
+      "400-SN-M5E-I",
+      "1600-SN-M5F-I",
+      "800-SN-M5F-I",
+      "400-SN-M5F-I"
+    ],
+    "standards_code": [
+      "FC-PI-5",
+      "16GFC",
+      "8GFC",
+      "4GFC",
+      "1600-SN-M6-S",
+      "800-SN-M6-S",
+      "400-SN-M6-I",
+      "1600-SN-M5-S",
+      "800-SN-M5-S",
+      "400-SN-M5-I",
+      "1600-SN-M5E-I",
+      "800-SN-M5E-I",
+      "400-SN-M5E-I",
+      "1600-SN-M5F-I",
+      "800-SN-M5F-I",
+      "400-SN-M5F-I"
+    ],
+    "bit_rate_gbps": [
+      4.25,
+      8.5,
+      14.025
+    ],
+    "modulation_format": [
+      "LINECODE_64B66B",
+      "LINECODE_8B10B"
+    ],
+    "reach_km": [
+      0.015,
+      0.025,
+      0.035,
+      0.05,
+      0.07,
+      0.1,
+      0.15,
+      0.38
+    ]
+  },
+  "general": {
+    "vendor": "Avago Technologies",
+    "model": [
+      "AFBR-57F5MZ"
+    ],
+    "standards_claimed": [
+      "SFP",
+      "SFP+",
+      "SFF-8074i",
+      "SFF-8432",
+      "SFF-8472",
+      "ANSI Fibre Channel FC-PI-5",
+      "IEC60825-1",
+      "CDRH",
+      "ANSI TIA/EIA604-10 (FOCIS 10A)",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      840.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "channel_total": [
+      1
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM1",
+      "MMF_OM2",
+      "MMF_OM3",
+      "MMF 50/125µm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "tx_power_min_dbm": [
+      -7.8
+    ],
+    "rx_overload_dbm": [
+      0.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -14.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      12.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Recommended case temperature 0 °C to 70 °C (Table 5). Nominal serial line rate for 16GFC is 14.025 Gb/s; Tx/Rx CDR engaged only when Rate Select is high (16GFC), bypassed for 8.5 Gb/s and 4.25 Gb/s. Transmitter and receiver may operate at different data rates during FC speed negotiation. Average optical output power maximum is the lesser of Class 1 safety limits or received power maximum (Table 8 Note 1). Receiver sensitivity and stressed sensitivity are specified as input OMA in µW (89/76/61 µW unstressed; 170/151/148/138/126 µW stressed per Table 9), not as average power in dBm. Link reach values are stated per fiber type and data rate in EEPROM Table 12 notes (meters). Module supply current maximum 300 mA (Table 6); power level 1 operation 1 W max (Table 17). Supply voltage 3.135 V to 3.465 V recommended (Table 5).",
+    "provenance_datasheet_sections": [
+      "AFBR-57F5MZ",
+      "Description",
+      "Features",
+      "Transmitter Section",
+      "Receiver Section",
+      "Table 5. Recommended Operating Conditions",
+      "Table 6. Transceiver Electrical Characteristics",
+      "Table 7. Transmitter and Receiver Electrical Characteristics",
+      "Table 8. Transmitter Optical Characteristics",
+      "Table 9. Receiver Optical and Electrical Characteristics",
+      "Table 12. EEPROM Serial ID Memory Contents – Address A0h",
+      "Table 17. EEPROM Serial ID Memory Contents – Soft Commands (Address A2h, Byte 118)"
+    ],
+    "suggestions": "Consider schema fields for sensitivity specified as OMA (µW) and for jitter specified in UI at a given bit rate. FC application codes are duplicated under host and media; a single application_code list may suffice for SFP FC modules."
+  }
+}

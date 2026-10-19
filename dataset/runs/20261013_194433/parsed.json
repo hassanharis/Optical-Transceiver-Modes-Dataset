@@ -1,0 +1,63 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\AFBR-57L1APZ-DS102.pdf",
+  "page_count": 14,
+  "table_count": 11,
+  "markdown_chars": 21173,
+  "tables": [
+    {
+      "page": 2,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 21
+    },
+    {
+      "page": 8,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 8,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 8,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 9,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 9,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 10,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 10,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 11,
+      "label": null,
+      "rows": 29
+    },
+    {
+      "page": 12,
+      "label": null,
+      "rows": 27
+    }
+  ]
+}

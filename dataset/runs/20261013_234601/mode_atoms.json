@@ -1,0 +1,111 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "IEEE 802.3az",
+      "10GBASE-T",
+      "5000GBASE-T",
+      "2500GBASE-T",
+      "100BASE-T",
+      "10BASE-T"
+    ],
+    "bit_rate_gbps": [
+      10.3,
+      10.0,
+      5.0,
+      2.5,
+      1.25,
+      0.1,
+      0.01
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LP-RJ45TG-3YC"
+    ],
+    "form_factor": [],
+    "standards_claimed": [
+      "IEEE 802.3az",
+      "10G Ethernet",
+      "10GBASE-T",
+      "SFP+ MSA"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_min_nm": [],
+    "wavelength_max_nm": [],
+    "wavelength_center_nm": [],
+    "wavelength_band": [],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [],
+    "fiber_type": [],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "host_interface_name": [
+      "SFP+"
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [
+      "10GBASE-T"
+    ],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "modulation_format": [],
+    "reach_km": [],
+    "tx_power_min_dbm": [],
+    "tx_power_max_dbm": [],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_sensitivity_dbm": [],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [],
+    "post_fec_ber_target": [],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [],
+    "los_deassert_dbm": [],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Copper 10GBase-T SFP+ module (RJ-45), not an optical transceiver. Cable reach stated as 30 m over Category 6a/7 UTP with BER <10^-12 (General Specifications). Supply current max 750 mA; input voltage 3.13–3.47 V (typ 3.3 V). Storage temperature -40 to 85 °C ambient. TX FAULT pin not supported. EEPROM at address A0h via 2-wire serial bus.",
+    "provenance_datasheet_sections": [
+      "LP-RJ45TG-3YC",
+      "10GBase-T Copper SFP+ Transceiver",
+      "Product Features",
+      "Applications",
+      "Description",
+      "Pin Descriptions",
+      "+3.3V Volt Electrical Power Interface",
+      "General Specifications",
+      "Environmental Specifications",
+      "Mechanical Specifications",
+      "Ordering information"
+    ],
+    "suggestions": "Consider schema fields for copper Ethernet (cable type Cat5e/6a/7, reach in meters, supply current mA) and map SFP+ as form_factor."
+  }
+}

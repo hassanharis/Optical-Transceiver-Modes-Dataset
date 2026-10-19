@@ -1,0 +1,163 @@
+{
+  "modes": [
+    {
+      "label": "OIF 800ZR 800G (0x6E)",
+      "form_factor": "QSFP-DD800_type-2A",
+      "channel_spacing_ghz": 150.0,
+      "power_consumption_w": 28.0,
+      "host_interface_name": "800GAUI-8",
+      "media_interface_name": "800ZR",
+      "media_interface_id_hex": "0x6E",
+      "media_interface_id": 110,
+      "frame": "1x 800GAUI-8",
+      "standards_code": "800ZR Power class A",
+      "baud_rate_gbaud": 118.2,
+      "bit_rate_gbps": 800.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -18.5,
+      "rx_osnr_db": 27.4,
+      "cd_tolerance_ps_nm": 3000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 27.4,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -13.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0x6E 800G 800ZR"
+        }
+      ]
+    },
+    {
+      "label": "OpenROADM 600G FlexO-6(e) 118.7GBd (0x6A)",
+      "form_factor": "QSFP-DD800_type-2A",
+      "channel_spacing_ghz": 150.0,
+      "power_consumption_w": 28.0,
+      "host_interface_name": "200GAUI-2",
+      "media_interface_name": "FlexO-6(e)",
+      "media_interface_id_hex": "0x6A",
+      "media_interface_id": 106,
+      "frame": "4x 200GAUI-2",
+      "standards_code": "FLEXO-6e-DPO-16QAM",
+      "baud_rate_gbaud": 118.7,
+      "bit_rate_gbps": 600.0,
+      "modulation_format": "PCS_118",
+      "rx_sensitivity_dbm": -23.5,
+      "rx_osnr_db": 23.8,
+      "cd_tolerance_ps_nm": 29000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 23.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0x6A 600G FlexO-6(e)"
+        }
+      ]
+    },
+    {
+      "label": "600G PCS-118 FlexO-6(e) (0xF2)",
+      "form_factor": "QSFP-DD800_type-2A",
+      "channel_spacing_ghz": 150.0,
+      "power_consumption_w": 28.0,
+      "host_interface_name": "200GAUI-2",
+      "media_interface_name": "FlexO-6(e)",
+      "media_interface_id_hex": "0xF2",
+      "media_interface_id": 242,
+      "frame": "4x 200GAUI-2",
+      "standards_code": "600G-PCS-118",
+      "baud_rate_gbaud": 118.5,
+      "bit_rate_gbps": 600.0,
+      "modulation_format": "PCS_118",
+      "rx_sensitivity_dbm": -23.5,
+      "rx_osnr_db": 22.6,
+      "cd_tolerance_ps_nm": 29000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 22.6,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xF2 600G FlexO-6(e)"
+        }
+      ]
+    },
+    {
+      "label": "OpenROADM 400G DP-QPSK FlexO-4(e) (0x64)",
+      "form_factor": "QSFP-DD800_type-2A",
+      "channel_spacing_ghz": 150.0,
+      "power_consumption_w": 25.0,
+      "host_interface_name": "200GAUI-4",
+      "media_interface_id_hex": "0x64",
+      "media_interface_id": 100,
+      "frame": "2x 200GAUI-4",
+      "standards_code": "FLEXO-4e-DO-QPSK",
+      "baud_rate_gbaud": 118.2,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QPSK-DP",
+      "rx_sensitivity_dbm": -27.0,
+      "rx_osnr_db": 18.9,
+      "cd_tolerance_ps_nm": 58000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 18.9,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -18.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0x64 400G FlexO-4(e)"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ 400G 16QAM-HB (0x36)",
+      "form_factor": "QSFP-DD800_type-2A",
+      "channel_spacing_ghz": 75.0,
+      "power_consumption_w": 22.5,
+      "host_interface_name": "200GAUI-4",
+      "media_interface_name": "OpenZR400",
+      "media_interface_id_hex": "0x36",
+      "media_interface_id": 54,
+      "frame": "2x 200GAUI-4",
+      "standards_code": "ZR400-OFEC-16QAM-HB",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -22.5,
+      "rx_osnr_db": 24.1,
+      "cd_tolerance_ps_nm": 23000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.1,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -18.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0x36 400G OpenZR400"
+        }
+      ]
+    }
+  ]
+}

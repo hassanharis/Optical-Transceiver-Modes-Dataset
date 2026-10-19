@@ -1,0 +1,44 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-SR",
+      "power_consumption_w": 0.6,
+      "host_interface_name": "10GBASE-SR",
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "IEEE 802.3ae Clause 52",
+      "baud_rate_gbaud": 10.313,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -11.1
+    },
+    {
+      "label": "10GBASE-SW",
+      "power_consumption_w": 1.0,
+      "host_interface_name": "10GBASE-SW",
+      "media_interface_name": "10GBASE-SW",
+      "standards_code": "10GBASE-SW",
+      "baud_rate_gbaud": 10.3125,
+      "reach_km": 0.4,
+      "rx_sensitivity_dbm": -7.5
+    },
+    {
+      "label": "10G Base-SR",
+      "power_consumption_w": 0.6,
+      "host_interface_name": "10G Base-SR",
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "10GBASE-SR",
+      "baud_rate_gbaud": 9.8,
+      "reach_km": 0.082,
+      "rx_sensitivity_dbm": -11.1
+    },
+    {
+      "label": "10GBASE-SR short reach",
+      "power_consumption_w": 1.0,
+      "host_interface_name": "10GBASE-SR",
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "10GBASE-SR",
+      "baud_rate_gbaud": 10.3125,
+      "reach_km": 0.033,
+      "rx_sensitivity_dbm": -7.5
+    }
+  ]
+}

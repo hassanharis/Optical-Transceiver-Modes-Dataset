@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "2930 Tx 1294.40nm / Rx 1308.24nm BiDi 50GbE",
+      "model": "SO-QSFP28-50GE-BX40D-2930",
+      "wavelength_min_nm": 1292.21,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1294.4,
+      "standards_code": "IEEE802.3cd",
+      "bit_rate_gbps": 52.125
+    },
+    {
+      "label": "3029 Tx 1308.24nm / Rx 1294.40nm BiDi 50GbE",
+      "model": "SO-QSFP28-50GE-BX40D-3029",
+      "wavelength_min_nm": 1306.29,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1308.24,
+      "standards_code": "IEEE802.3cd",
+      "bit_rate_gbps": 52.125
+    }
+  ]
+}

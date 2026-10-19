@@ -1,0 +1,204 @@
+{
+  "modes": [
+    {
+      "label": "Cxx 32G FC",
+      "model": "SO-SFP28-32GFC-LR10-Cxx",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "32G FC",
+      "bit_rate_gbps": 28.05
+    },
+    {
+      "label": "Cxx 25GE",
+      "model": "SO-SFP28-32GFC-LR10-Cxx",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "Cxx 10GbE-WAN",
+      "model": "SO-SFP28-32GFC-LR10-Cxx",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "Cxx 10GbE-LAN",
+      "model": "SO-SFP28-32GFC-LR10-Cxx",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 10.31
+    },
+    {
+      "label": "C27 32G FC",
+      "model": "SO-SFP28-32GFC-LR10-C27",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "32G FC",
+      "bit_rate_gbps": 28.05
+    },
+    {
+      "label": "C27 25GE",
+      "model": "SO-SFP28-32GFC-LR10-C27",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "C27 10GbE-WAN",
+      "model": "SO-SFP28-32GFC-LR10-C27",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "C27 10GbE-LAN",
+      "model": "SO-SFP28-32GFC-LR10-C27",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 10.31
+    },
+    {
+      "label": "C29 32G FC",
+      "model": "SO-SFP28-32GFC-LR10-C29",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "32G FC",
+      "bit_rate_gbps": 28.05
+    },
+    {
+      "label": "C29 25GE",
+      "model": "SO-SFP28-32GFC-LR10-C29",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "C29 10GbE-WAN",
+      "model": "SO-SFP28-32GFC-LR10-C29",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "C29 10GbE-LAN",
+      "model": "SO-SFP28-32GFC-LR10-C29",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 10.31
+    },
+    {
+      "label": "C31 32G FC",
+      "model": "SO-SFP28-32GFC-LR10-C31",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "32G FC",
+      "bit_rate_gbps": 28.05
+    },
+    {
+      "label": "C31 25GE",
+      "model": "SO-SFP28-32GFC-LR10-C31",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "C31 10GbE-WAN",
+      "model": "SO-SFP28-32GFC-LR10-C31",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "C31 10GbE-LAN",
+      "model": "SO-SFP28-32GFC-LR10-C31",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 10.31
+    },
+    {
+      "label": "C33 32G FC",
+      "model": "SO-SFP28-32GFC-LR10-C33",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "32G FC",
+      "bit_rate_gbps": 28.05
+    },
+    {
+      "label": "C33 25GE",
+      "model": "SO-SFP28-32GFC-LR10-C33",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "C33 10GbE-WAN",
+      "model": "SO-SFP28-32GFC-LR10-C33",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "C33 10GbE-LAN",
+      "model": "SO-SFP28-32GFC-LR10-C33",
+      "wavelength_min_nm": 1271.0,
+      "wavelength_max_nm": 1331.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 10.31
+    }
+  ]
+}

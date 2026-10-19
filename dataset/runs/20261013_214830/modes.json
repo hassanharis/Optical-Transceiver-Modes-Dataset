@@ -1,0 +1,148 @@
+{
+  "modes": [
+    {
+      "label": "TQ2028-TUNX-SO — 80 km unamplified",
+      "model": "TQ2028-TUNX-SO",
+      "channel_spacing_ghz": 50.0,
+      "power_consumption_w": 5.5,
+      "standards_code": "100GBASE-ZR",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 80.0,
+      "rx_sensitivity_dbm": -30.0,
+      "cd_tolerance_ps_nm": 2400.0
+    },
+    {
+      "label": "TQ2028-TUNX-SO — 120 km amplified",
+      "model": "TQ2028-TUNX-SO",
+      "channel_spacing_ghz": 50.0,
+      "power_consumption_w": 5.5,
+      "standards_code": "100GBASE-ZR",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 120.0,
+      "rx_sensitivity_dbm": -18.0,
+      "cd_tolerance_ps_nm": 2400.0
+    },
+    {
+      "label": "TQ2028-TUNX-SO — 300 km extended",
+      "model": "TQ2028-TUNX-SO",
+      "channel_spacing_ghz": 50.0,
+      "power_consumption_w": 6.0,
+      "standards_code": "100GBASE-ZR",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 300.0,
+      "rx_sensitivity_dbm": -22.0,
+      "cd_tolerance_ps_nm": 6000.0
+    },
+    {
+      "label": "TQ2028-TUNC-SO — 80 km unamplified",
+      "model": "TQ2028-TUNC-SO",
+      "channel_spacing_ghz": 50.0,
+      "power_consumption_w": 5.5,
+      "standards_code": "100GBASE-ZR",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 80.0,
+      "rx_sensitivity_dbm": -30.0,
+      "cd_tolerance_ps_nm": 2400.0
+    },
+    {
+      "label": "TQ2028-TUNC-SO — 120 km amplified",
+      "model": "TQ2028-TUNC-SO",
+      "channel_spacing_ghz": 50.0,
+      "power_consumption_w": 5.5,
+      "standards_code": "100GBASE-ZR",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 120.0,
+      "rx_sensitivity_dbm": -18.0,
+      "cd_tolerance_ps_nm": 2400.0
+    },
+    {
+      "label": "TQ2028-TUNC-SO — 300 km extended",
+      "model": "TQ2028-TUNC-SO",
+      "channel_spacing_ghz": 50.0,
+      "power_consumption_w": 6.0,
+      "standards_code": "100GBASE-ZR",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 300.0,
+      "rx_sensitivity_dbm": -22.0,
+      "cd_tolerance_ps_nm": 6000.0
+    },
+    {
+      "label": "TQ2028-TUNI-SO — 80 km unamplified",
+      "model": "TQ2028-TUNI-SO",
+      "channel_spacing_ghz": 50.0,
+      "power_consumption_w": 5.5,
+      "standards_code": "100GBASE-ZR",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 80.0,
+      "rx_sensitivity_dbm": -30.0,
+      "cd_tolerance_ps_nm": 2400.0
+    },
+    {
+      "label": "TQ2028-TUNI-SO — 120 km amplified",
+      "model": "TQ2028-TUNI-SO",
+      "channel_spacing_ghz": 50.0,
+      "power_consumption_w": 5.5,
+      "standards_code": "100GBASE-ZR",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 120.0,
+      "rx_sensitivity_dbm": -18.0,
+      "cd_tolerance_ps_nm": 2400.0
+    },
+    {
+      "label": "TQ2028-TUNI-SO — 300 km extended",
+      "model": "TQ2028-TUNI-SO",
+      "channel_spacing_ghz": 50.0,
+      "power_consumption_w": 6.0,
+      "standards_code": "100GBASE-ZR",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 300.0,
+      "rx_sensitivity_dbm": -22.0,
+      "cd_tolerance_ps_nm": 6000.0
+    },
+    {
+      "label": "TQ2028-TUNX-SO — 80 km unamplified (100 GHz grid)",
+      "model": "TQ2028-TUNX-SO",
+      "channel_spacing_ghz": 100.0,
+      "power_consumption_w": 5.5,
+      "standards_code": "SC-FEC",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "DQPSK",
+      "reach_km": 80.0,
+      "rx_sensitivity_dbm": -30.0,
+      "cd_tolerance_ps_nm": 2400.0
+    },
+    {
+      "label": "TQ2028-TUNC-SO — 80 km unamplified (100 GHz grid)",
+      "model": "TQ2028-TUNC-SO",
+      "channel_spacing_ghz": 100.0,
+      "power_consumption_w": 5.5,
+      "standards_code": "SC-FEC",
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "DQPSK",
+      "reach_km": 80.0,
+      "rx_sensitivity_dbm": -30.0,
+      "cd_tolerance_ps_nm": 2400.0
+    },
+    {
+      "label": "TQ2028-TUNI-SO — 80 km unamplified (100 GHz grid)",
+      "model": "TQ2028-TUNI-SO",
+      "channel_spacing_ghz": 100.0,
+      "power_consumption_w": 5.5,
+      "standards_code": "SC-FEC",
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "DQPSK",
+      "reach_km": 80.0,
+      "rx_sensitivity_dbm": -30.0,
+      "cd_tolerance_ps_nm": 2400.0
+    }
+  ]
+}

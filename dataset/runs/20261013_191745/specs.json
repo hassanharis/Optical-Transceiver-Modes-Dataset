@@ -1,0 +1,119 @@
+{
+  "vendor": "QSFPTek",
+  "model": [
+    "QT-SFP+-ZR"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8413",
+    "IEE802.3ae",
+    "SFF-8083"
+  ],
+  "emitter_type": [
+    "LASER_EML"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1530.0
+  ],
+  "wavelength_max_nm": [
+    1565.0
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -5.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5,
+    1.8
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "10GBASE-ZR",
+    "10GBASE-ER",
+    "10GBASE-EW",
+    "10G Fiber Channel"
+  ],
+  "bit_rate_gbps": [
+    4.25,
+    9.95,
+    10.0,
+    10.3,
+    10.3125
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -24.0
+  ],
+  "rx_overload_dbm": [
+    -7.0
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    8.2
+  ],
+  "los_assert_dbm": [
+    -34.0
+  ],
+  "los_deassert_dbm": [
+    -25.0
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    21.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Product features list operating case temperature -5°C to 70°C; absolute maximum rating table lists Case Operating Temperature TA 0 to 70°C. Transmitter note 1: trade-offs between spectral width, center wavelength and minimum OMA. Transmitter note 2: average optical power measurement states optical power is launched into MMF. Transmitter note 3 and receiver note 4: PRBS 2^31-1 @10.3125Gbps; sensitivity at BER≤10^-12. Optical Power OMA minimum -2.1 dBm; Laser Off Power max -30 dBm; spectral width max 0.3 nm; Transmitter Dispersion Penalty (TDP) max 3.0 dB; RIN max -128 dB/Hz. Data rate selectable ≤4.25 Gbps or 9.95 Gbps to 10.3 Gbps. LOS row labels Los Dessert for deassert. Storage temperature -40 to +85°C is absolute maximum, not normal operating.",
+  "provenance_datasheet_sections": [
+    "10GBASE-ZR SFP+ 1550nm 80km Transceiver",
+    "P/N: QT-SFP+-ZR",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "1. Absolute maximum rating",
+    "2. Optical characteristics",
+    "Notes :",
+    "3. Electrical characteristics",
+    "4. Pin definition",
+    "5. Mechanical Specifications",
+    "6. Ordering information"
+  ],
+  "suggestions": "Consider mapping Transmitter Dispersion Penalty (TDP) max to a dedicated field or penalty object if condition text is added in future datasheets. Clarify whether vendor legal name appears only via qsfptek.com branding."
+}

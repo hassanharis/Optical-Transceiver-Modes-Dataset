@@ -1,0 +1,92 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP28-50GE-BX10D-2733",
+    "SO-QSFP28-50GE-BX10D-3327"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "SFF-8472",
+    "50GbE IEEE802.3cd"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260.0,
+    1320.0
+  ],
+  "wavelength_max_nm": [
+    1280.0,
+    1340.0
+  ],
+  "wavelength_center_nm": [
+    1270.0,
+    1330.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    4.5
+  ],
+  "host_interface_name": [
+    "50GbE"
+  ],
+  "media_interface_name": [],
+  "frame": [
+    "2x26.5625Gbps"
+  ],
+  "standards_code": [
+    "IEEE802.3cd",
+    "50GbE"
+  ],
+  "bit_rate_gbps": [
+    52.125,
+    50.0,
+    53.125
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -4.5
+  ],
+  "tx_power_max_dbm": [
+    4.2
+  ],
+  "rx_sensitivity_dbm": [
+    -10.8
+  ],
+  "rx_overload_dbm": [
+    4.2
+  ],
+  "fec_type": [],
+  "pre_fec_ber_threshold": [
+    2.4e-05
+  ],
+  "number_of_lanes": [
+    2
+  ],
+  "penalties": [],
+  "notes": "Product is a BiDi pair: SO-QSFP28-50GE-BX10D-2733 (Tx 1270nm / Rx 1330nm) and SO-QSFP28-50GE-BX10D-3327 (Tx 1330nm / Rx 1270nm). Power budget 0 – 6.3dB. Optical parameters specified for BER 2.4E-5 at 50GbE (53.125 Gbps); FEC is required in host equipment. Transmitter/receiver levels are average power, per lane. Storage temperature -40°C to +85°C. Table header lists SM (1x LC).",
+  "provenance_datasheet_sections": [
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether 6.3dB is optical power budget only; add explicit host electrical interface MSA names/IDs if applicable; separate operating vs storage temperature in schema if needed."
+}

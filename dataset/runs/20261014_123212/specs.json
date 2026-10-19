@@ -1,0 +1,75 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFPDD-AOCxxM-4",
+    "SO-QSFPDD-AOCxxM",
+    "SO-QSFPDD-AOC01M-4",
+    "SO-QSFPDD-AOC03M-4",
+    "SO-QSFPDD-AOC05M-4",
+    "SO-QSFPDD-AOC07M-4",
+    "SO-QSFPDD-AOC10M-4",
+    "SO-QSFPDD-AOC15M-4",
+    "SO-QSFPDD-AOC20M-4",
+    "SO-QSFPDD-AOC30M-4"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "CMIS 4.0",
+    "Common Management Interface Specification (CMIS 4.0)"
+  ],
+  "channel_total": [
+    8
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "fiber_type": [
+    "MMF_OM4",
+    "MMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "400GAUI-8"
+  ],
+  "media_interface_name": [
+    "400G Ethernet-SR8",
+    "Ethernet-SR8"
+  ],
+  "frame": [
+    "8x 26.5625GBd"
+  ],
+  "standards_code": [
+    "SR8",
+    "400G Ethernet-SR8",
+    "CMIS4.0"
+  ],
+  "baud_rate_gbaud": [
+    25.0,
+    26.5625
+  ],
+  "bit_rate_gbps": [
+    400.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "penalties": [],
+  "notes": "Vendor identified from smartoptics.com footer only; manufacturer name not spelled out in body. Cable reach stated as 1 to 30 meters (3.3 to 98.4 ft), not in km. Power consumption given as '<10W' without an exact numeric value. Storage temperature -40°C to +85°C stated separately from operating 0°C to +70°C. Overview states eight data lanes at 25Gbd; PRODUCT FEATURES states 8x 26.5625GBd (PAM4) for 400GAUI-8. Active Optical Cable (AOC) with two QSFP-DD transceivers; no optical power, sensitivity, OSNR, or penalty tables in document.",
+  "provenance_datasheet_sections": [
+    "SO-QSFPDD-AOCxxM-4",
+    "OVERVIEW",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION",
+    "Parameter",
+    "Value"
+  ],
+  "suggestions": "Add schema fields for cable_length_m (ordering variants 1–30 m) and product_type (AOC). Clarify whether reach_km should accept meter-only specs via notes or a companion field. Distinguish storage vs operating temperature if both are commonly present on AOC datasheets."
+}

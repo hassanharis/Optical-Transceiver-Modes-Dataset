@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100G BiDi Tx 1271nm / Rx 1331nm\",\n      \"model\": \"TQ2020-BADC-SO\",\n      \"wavelength_min_nm\": 1264.5,\n      \"wavelength_max_nm\": 1277.5,\n      \"wavelength_center_nm\": 1271.0,\n      \"standards_code\": \"100G-LR\",\n      \"baud_rate_gbaud\": 52.125,\n      \"bit_rate_gbps\": 106.25,\n      \"rx_sensitivity_dbm\": -6.1,\n      \"extinction_ratio_db\": 3.5\n    },\n    {\n      \"label\": \"100G BiDi Tx 1331nm / Rx 1271nm\",\n      \"model\": \"TQ2020-BDAC-SO\",\n      \"wavelength_min_nm\": 1324.5,\n      \"wavelength_max_nm\": 1337.5,\n      \"wavelength_center_nm\": 1331.0,\n      \"standards_code\": \"100G-LR\",\n      \"baud_rate_gbaud\": 52.125,\n      \"bit_rate_gbps\": 106.25,\n      \"rx_sensitivity_dbm\": -6.1,\n      \"extinction_ratio_db\": 3.5\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

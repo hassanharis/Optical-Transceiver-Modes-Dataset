@@ -1,0 +1,104 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QDD-4C-CUx-4",
+    "SO-QDD-4C-0CU5-4",
+    "SO-QDD-4C-CU1-4",
+    "SO-QDD-4C-1CU5-4",
+    "SO-QDD-4C-CU2-4",
+    "SO-QDD-4C-2CU5-4",
+    "SO-QDD-4C-CU3-4",
+    "SO-QDD-4C-CU5-4"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "Common Management Interface Specification (CMIS 4.0)"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": null,
+  "fiber_type": null,
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    4
+  ],
+  "host_interface_name": [
+    "400GAUI-8"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "400GAUI-8"
+  ],
+  "standards_code": [
+    "CMIS4",
+    "400GAUI-8",
+    "400G Ethernet"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    400
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": null,
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-15
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Active Electrical Cable (AEC) / Direct Attach Cable (DAC) with coax interconnect between two QSFP-DD modules; not an optical transceiver. Cable length 0.5 to 5 meters (1.6 to 16.4 ft) stated in meters, not km. Power: <4W per side. Storage temperature -40°C to +85°C. Low latency stated as 15nm per end + 4.5nm/m (units as printed). AWG32 (most lengths) and AWG30 (5m SKU). I2C management interface. BER < 10^-15 (post FEC); FEC type not named.",
+  "provenance_datasheet_sections": [
+    "SO-QDD-4C-CUx-4",
+    "OVERVIEW",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Consider schema fields for cable_length_m, product_class (AEC/DAC), wire_gauge (AWG), management_bus (I2C), storage_temp_c, and latency; power_consumption_w may need qualifier 'per side' and '<' bound."
+}

@@ -1,0 +1,48 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\Optech OPHW-S10-13-CQ.pdf",
+  "page_count": 14,
+  "table_count": 8,
+  "markdown_chars": 19861,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 22
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 20
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 23
+    },
+    {
+      "page": 9,
+      "label": null,
+      "rows": 39
+    },
+    {
+      "page": 10,
+      "label": null,
+      "rows": 25
+    },
+    {
+      "page": 13,
+      "label": null,
+      "rows": 2
+    }
+  ]
+}

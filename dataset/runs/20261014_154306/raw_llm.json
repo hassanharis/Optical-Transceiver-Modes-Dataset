@@ -1,0 +1,171 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-MR50D-Cxx",
+    "SO-SFP-MR50D-C27",
+    "SO-SFP-MR50D-C29",
+    "SO-SFP-MR50D-C31",
+    "SO-SFP-MR50D-C33",
+    "SO-SFP-MR50D-C35",
+    "SO-SFP-MR50D-C37",
+    "SO-SFP-MR50D-C39",
+    "SO-SFP-MR50D-C41",
+    "SO-SFP-MR50D-C43",
+    "SO-SFP-MR50D-C45",
+    "SO-SFP-MR50D-C47",
+    "SO-SFP-MR50D-C49",
+    "SO-SFP-MR50D-C51",
+    "SO-SFP-MR50D-C53",
+    "SO-SFP-MR50D-C55",
+    "SO-SFP-MR50D-C57",
+    "SO-SFP-MR50D-C59",
+    "SO-SFP-MR50D-C61"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "G.694.2"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1270,
+    1271,
+    1260
+  ],
+  "wavelength_max_nm": [
+    1610,
+    1611,
+    1600
+  ],
+  "wavelength_center_nm": [
+    1270,
+    1290,
+    1310,
+    1330,
+    1350,
+    1370,
+    1390,
+    1410,
+    1430,
+    1450,
+    1470,
+    1490,
+    1510,
+    1530,
+    1550,
+    1570,
+    1590,
+    1610
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    18
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "SFP MSA"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "FE",
+    "GbE",
+    "STM1/OC3",
+    "STM4/OC12",
+    "STM16/OC48",
+    "OTU1",
+    "1G FC",
+    "2G FC",
+    "CPRI Opt 1",
+    "CPRI Opt 2",
+    "CPRI Opt 3",
+    "OBSAI 1x",
+    "OBSAI 2x",
+    "G.694.2"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    2.67,
+    2.7
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    50
+  ],
+  "tx_power_min_dbm": [
+    -3.0
+  ],
+  "tx_power_max_dbm": [
+    2.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -20
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -3
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -35
+  ],
+  "los_deassert_dbm": [
+    -21
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Overview states 100Mbps–2.67Gbps and ~50 km at 2.5Gbps; ordering codes state 100Mbps–2.7Gbps. Power budget 5–17dB and optical path penalty 1dB stated in TECHNICAL DATA summary cell. Power consumption given as < 1W (not a numeric watt value). Storage temperature -40°C to +85°C. Typical reach 50km depends on actual optical path attenuation (footnote 1). Receiver minimum input power and overload measured at 2.5 Gbps using PRBS31 @ BER 1x10-12 (footnote 2). Transmitter output power is average power (footnote 3). Higher attenuation in lower CWDM band and water peak must be considered per OVERVIEW. DDM: Yes.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-MR50D-Cxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Add power_budget_db and optical_path_penalty_db fields; allow bit_rate_mbps for 100Mbps lower bound; clarify whether post_fec_ber_target applies when FEC is not listed."
+}

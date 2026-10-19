@@ -1,0 +1,105 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "L9-SC315501-20PPC",
+    "L9-SC553101-20PPC",
+    "L9-SC315501-20PPI",
+    "L9-SC553101-20PPI"
+  ],
+  "form_factor": [],
+  "standards_claimed": [
+    "ITU-T G.957",
+    "ROHS"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1270.0,
+    1510.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1350.0,
+    1590.0,
+    1610.0
+  ],
+  "wavelength_center_nm": [
+    1310.0,
+    1550.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [
+    "1×9 package"
+  ],
+  "connector_type": [
+    "SC"
+  ],
+  "fiber_type": [],
+  "temp_min_c": -10.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "(LV)PECL"
+  ],
+  "media_interface_name": [],
+  "frame": [],
+  "standards_code": [
+    "ITU-T G.957",
+    "STM-1",
+    "OC-3",
+    "SONET"
+  ],
+  "bit_rate_gbps": [
+    155.52
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    20.0
+  ],
+  "tx_power_min_dbm": [
+    -15.0
+  ],
+  "tx_power_max_dbm": [
+    -8.0
+  ],
+  "rx_sensitivity_dbm": [
+    -32.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "fec_type": [],
+  "extinction_ratio_db": [
+    8.2
+  ],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -38.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Datasheet title part L9-SC553101-20PPC: 1550 nm FP, -10~70℃, 20 km, Simplex SC, Rx S <-32 dBm, Tx P -15~-8 dBm. Ordering also lists L9-SC315501 variants (1310 nm) and -20PPI (-40~85℃). Recommended operating data rate 155.52 Mbps; features state up to 155 Mbps. Launch power, sensitivity, and max input power notes reference 20 km. Absolute maximum operating temperature TC 0~70℃; recommended TC 0~70℃, TI -40~85℃. Storage -40~85℃. Supply Vcc 3.14~3.47 V (typ 3.3 V); Icc max 250 mA. Output spectrum width Δλ max 4 nm (FP-LD). Optical rise/fall time max 2.0 ns (20%-80%). Eye diagram per ITU-T G.957 STM-1/OC-3. Signal detect (SD) low when no light.",
+  "provenance_datasheet_sections": [
+    "L9-SC553101-20PPC",
+    "1×9 155Mbps Bi-Directional Transceiver",
+    "Features",
+    "Applications",
+    "Standard",
+    "Ordering Information",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Transmitter Optical ,Electrical characteristics",
+    "Receiver Optical Electrical Characteristics",
+    "Pin Connections",
+    "Dimensions: Simplex SC receptacle optical interface",
+    "Regulatory Compliance"
+  ],
+  "suggestions": "Add legacy form factors (e.g. 1×9) to form_factor enum. Clarify whether bit_rate_gbps should store Mbps literals (155.52) or SI Gbps (0.15552). Map Signal Detect Range explicitly to LOS assert/deassert semantics if vendor convention is fixed."
+}

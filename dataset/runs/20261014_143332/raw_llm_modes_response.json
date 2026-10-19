@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"STM4/OC12 @ 622 Mbps\",\n      \"wavelength_min_nm\": 1520.0,\n      \"wavelength_max_nm\": 1580.0,\n      \"host_interface_name\": \"STM4/OC12\",\n      \"standards_code\": \"STM4/OC12\",\n      \"bit_rate_gbps\": 622.0,\n      \"rx_sensitivity_dbm\": -32.0\n    },\n    {\n      \"label\": \"STM1/OC3\",\n      \"wavelength_min_nm\": 1520.0,\n      \"wavelength_max_nm\": 1580.0,\n      \"host_interface_name\": \"STM1/OC3\",\n      \"standards_code\": \"STM1/OC3\",\n      \"bit_rate_gbps\": 622.0,\n      \"rx_sensitivity_dbm\": -33.0\n    },\n    {\n      \"label\": \"100M Fast Ethernet\",\n      \"wavelength_min_nm\": 1520.0,\n      \"wavelength_max_nm\": 1580.0,\n      \"host_interface_name\": \"FE\",\n      \"standards_code\": \"100M Ethernet\",\n      \"bit_rate_gbps\": 125.0,\n      \"rx_sensitivity_dbm\": -34.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

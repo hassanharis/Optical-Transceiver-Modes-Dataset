@@ -1,0 +1,14 @@
+{
+  "modes": [
+    {
+      "label": "QT-SFP-0340D Standard (0 to +70\u00b0C)",
+      "model": "QT-SFP-0340D",
+      "wavelength_max_nm": 1360.0
+    },
+    {
+      "label": "QT-SFP-0340ID Extended (-40 to +85\u00b0C)",
+      "model": "QT-SFP-0340ID",
+      "wavelength_max_nm": 1360.0
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LX-SM3110-10C",
+    "LX-SM3110-10I"
+  ],
+  "form_factor": [
+    "XFP"
+  ],
+  "standards_claimed": [
+    "XFP MSA",
+    "10G Small Form-Factor Pluggable (XFP) Multi-Source Agreement (MSA)"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1270,
+    1260
+  ],
+  "wavelength_max_nm": [
+    1350,
+    1600
+  ],
+  "wavelength_center_nm": [
+    1310
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC",
+    "duplex LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "SONET OC-192",
+    "SDH STM-64",
+    "10GBASE-LR/LW",
+    "10GBASE-LW",
+    "1200-SM-LL-L",
+    "10G Fibre Channel",
+    "G.709",
+    "10GE",
+    "OC192 over FEC"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    8.0,
+    9.953,
+    10.709,
+    11.09,
+    11.1
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    10
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    0.5
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -14.5
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": [
+    -26
+  ],
+  "los_deassert_dbm": [
+    -15.5
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": [
+    30
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Receiver sensitivity and overload per Note 3: PRBS 2^31-1 @9953Mbps, BER ≤1×10^-12. Optical power launched into SMF (Note 1). Product Features also states temperature range -40 to +85°C (ordering: LX-SM3110-10I). LX-SM3110-10C ordering: 0ºC ~ +70ºC. Power dissipation <1.5W; Icc max 500 mA at 3.3V supply. No reference clock required.",
+  "provenance_datasheet_sections": [
+    "LX-SM3110-10C",
+    "10Gbps XFP Transceiver, Single Mode, 10km Reach",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Ordering information"
+  ],
+  "suggestions": null
+}

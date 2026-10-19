@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp-10ge-lr70-cxx-r5.2.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 6288,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 29
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

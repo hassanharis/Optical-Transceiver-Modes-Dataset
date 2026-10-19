@@ -1,0 +1,132 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP-LR4-PSM"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "QSFP+ MSA",
+    "SFF-8436"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1355.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "MPO",
+    "MPO/APC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": [
+    "40GBASE-LR4",
+    "QSFP+"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [
+    "4x 10.3125Gbps"
+  ],
+  "standards_code": [
+    "40GBASE-LR4",
+    "40GbE",
+    "10GbE-LAN",
+    "Infiniband QDR",
+    "Infiniband DDR",
+    "Infiniband SDR"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    41.25,
+    10.3125
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -6.0
+  ],
+  "tx_power_max_dbm": [
+    1.5
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -12.6
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    2.3
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -15.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Aggregated line rate 41.25 Gbps (footnote 1); per lane 10.3125 Gbps (footnote 2). Transmitter output power and receiver input/overload are average power (footnote 3). Receiver min input and overload at BER less than 10-12 (footnote 4). Minimum input power table cell: -12.6Bm. Power budget 0 – 6.6 dB. Power consumption < 3.5 W. Storage temperature -40°C to +85°C. PRBS a 231-1. MPO/MTP 8-degree APC required. DDM Yes.",
+  "provenance_datasheet_sections": [
+    "SO-QSFP-LR4-PSM",
+    "QSFP+, 40G Ethernet LR4, SM, 1310nm, 10km, 6.6dB, MPO (APC)",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Add power_budget_db and storage_temp_min_c/max_c fields; confirm -12.6Bm unit intent."
+}

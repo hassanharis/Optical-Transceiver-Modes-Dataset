@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "Fast Ethernet 100Base-LXD 100Mbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "host_interface_name": "SFF-8431",
+      "standards_code": "100Base-LXD",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "STM-1/OC-3 155Mbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "STM-1/OC-3",
+      "bit_rate_gbps": 155.0
+    }
+  ]
+}

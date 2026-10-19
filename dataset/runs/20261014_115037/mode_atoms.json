@@ -1,0 +1,154 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-QSFP-D20",
+      "SO-QSFP-D21",
+      "SO-QSFP-D22",
+      "SO-QSFP-D23",
+      "SO-QSFP-D24",
+      "SO-QSFP-D25",
+      "SO-QSFP-D26",
+      "SO-QSFP-D27",
+      "SO-QSFP-D28",
+      "SO-QSFP-D29",
+      "SO-QSFP-D30",
+      "SO-QSFP-D31",
+      "SO-QSFP-D32",
+      "SO-QSFP-D33",
+      "SO-QSFP-D34",
+      "SO-QSFP-D35",
+      "SO-QSFP-D36",
+      "SO-QSFP-D37",
+      "SO-QSFP-D38",
+      "SO-QSFP-D39",
+      "SO-QSFP-D40",
+      "SO-QSFP-D41",
+      "SO-QSFP-D42",
+      "SO-QSFP-D43",
+      "SO-QSFP-D44",
+      "SO-QSFP-D45",
+      "SO-QSFP-D46",
+      "SO-QSFP-D47",
+      "SO-QSFP-D48",
+      "SO-QSFP-D49",
+      "SO-QSFP-D50",
+      "SO-QSFP-D51",
+      "SO-QSFP-D52",
+      "SO-QSFP-D53",
+      "SO-QSFP-D54",
+      "SO-QSFP-D55",
+      "SO-QSFP-D56",
+      "SO-QSFP-D57",
+      "SO-QSFP-D58",
+      "SO-QSFP-D59"
+    ],
+    "host_interface_name": [
+      "QSFP MSA",
+      "40GbE"
+    ],
+    "standards_code": [
+      "40GBASE",
+      "40GbE",
+      "G.694.1"
+    ],
+    "bit_rate_gbps": [
+      41.25,
+      40.0
+    ],
+    "modulation_format": [
+      "PAM4",
+      "NRZ"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8665",
+      "SFF-8636",
+      "SFF-8661",
+      "SFF-8679",
+      "ITU-T G.694.1"
+    ],
+    "wavelength_min_nm": [
+      1529.55
+    ],
+    "wavelength_max_nm": [
+      1560.61
+    ],
+    "wavelength_band": [
+      "DWDM"
+    ],
+    "frequency_min_thz": [
+      192.0
+    ],
+    "frequency_max_thz": [
+      195.9
+    ],
+    "channel_spacing_ghz": [
+      100.0
+    ],
+    "channel_total": [
+      40
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -20.0,
+    "temp_max_c": 70.0,
+    "media_interface_name": [
+      "DWDM"
+    ],
+    "baud_rate_gbaud": [
+      20.0
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      -11.0
+    ],
+    "tx_power_max_dbm": [
+      -8.0
+    ],
+    "rx_sensitivity_dbm": [
+      -2.0
+    ],
+    "rx_overload_dbm": [
+      6.0
+    ],
+    "cd_tolerance_ps_nm": [
+      100.0
+    ],
+    "los_assert_dbm": [
+      -10.0
+    ],
+    "los_deassert_dbm": [
+      -3.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      1.0
+    ],
+    "penalties": [],
+    "notes": "Typical reach 80 km requires a DWDM line system with amplification and dispersion management (footnote 1). Dispersion tolerance ±100 ps/nm is residual dispersion after dispersion compensation (DCM) (footnote 2). Transmitter output power and receiver min/overload are average power per lane (footnote 3). Each transceiver uses two wavelengths within the grid with a 25 GHz offset from the ITU-T center channel (footnote 6). Power consumption stated as < 5 W. Storage temperature -40°C to +85°C. Electrical host signal: four parallel 10 Gbps NRZ streams on 38-pin connector per QSFP MSA (SFF-8679). Sections on QSFP28 PAM4 and DCP-M describe companion/related products, not SO-QSFP-Dxx module electrical specs.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP-Dxx",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether minimum input power -2.0 dBm is sensitivity at a stated BER; no BER or OSNR thresholds are given for SO-QSFP-Dxx. FEC type and overhead not specified despite 'integrated, high-gain FEC'. Consider extracting nominal wavelength as THz range separately if nm center per channel is derived rather than printed."
+  }
+}

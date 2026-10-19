@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:56:55.777018+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lq-cw200-fr4c.pdf",
+  "page_count": 8,
+  "table_count": 10,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 8.716,
+    "extract_atoms": 28.855,
+    "store_run": 0.006,
+    "synthesize_modes": 81.773,
+    "store_modes": 0.004,
+    "total": 119.355
+  }
+}

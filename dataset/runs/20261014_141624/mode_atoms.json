@@ -1,0 +1,89 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1480.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1580.0,
+      1600.0
+    ],
+    "standards_code": [
+      "100Base-ZXD",
+      "FE",
+      "STM1/OC3",
+      "STM-1/OC3",
+      "100M Ethernet"
+    ],
+    "bit_rate_gbps": [
+      100.0,
+      155.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-155M-L80D"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_center_nm": [
+      1550.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      -5.0
+    ],
+    "tx_power_max_dbm": [
+      0.0
+    ],
+    "rx_sensitivity_dbm": [
+      -34.0
+    ],
+    "rx_overload_dbm": [
+      -10.0
+    ],
+    "pre_fec_ber_threshold": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -35.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Bit rates stated as 100 to 155 Mbps (not Gbps). Power budget 10 – 29 dB (title and TECHNICAL DATA). Transmitter output power minimum printed as -5.0dB (footnote 1: average power); maximum 0.0 dBm. Receiver minimum input power -34 dBm at 155 Mbps, BER 1×10⁻¹², PRBS 2³¹-1 (footnotes 1–2). Storage temperature -40°C to +85°C. Power consumption < 1.0 W.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-155M-L80D",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

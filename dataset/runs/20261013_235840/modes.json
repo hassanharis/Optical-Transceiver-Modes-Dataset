@@ -1,0 +1,39 @@
+{
+  "modes": [
+    {
+      "label": "100G QSFP28 passive DAC 0.5 m",
+      "model": "LQ-DAC11100-0M5N",
+      "standards_code": "SFF-8665",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.0005
+    },
+    {
+      "label": "100G QSFP28 passive DAC 1 m",
+      "model": "LQ-DAC11100-1MN",
+      "standards_code": "SFF-8665",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.001
+    },
+    {
+      "label": "100G QSFP28 passive DAC 2 m",
+      "model": "LQ-DAC11100-2MN",
+      "standards_code": "SFF-8665",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.002
+    },
+    {
+      "label": "100G QSFP28 passive DAC 3 m",
+      "model": "LQ-DAC11100-3MN",
+      "standards_code": "SFF-8665",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.003
+    },
+    {
+      "label": "100G QSFP28 passive DAC 5 m",
+      "model": "LQ-DAC11100-5MN",
+      "standards_code": "SFF-8665",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.005
+    }
+  ]
+}

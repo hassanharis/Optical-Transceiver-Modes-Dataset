@@ -1,0 +1,102 @@
+{
+  "modes": [
+    {
+      "label": "800GBASE-2FR4 CWDM L0/L4",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "wavelength_center_nm": 1271.0,
+      "power_consumption_w": 17.0,
+      "host_interface_name": "2x400GAUI-4",
+      "media_interface_name": "800GBASE-2FR4",
+      "frame": "2x400GAUI-4",
+      "standards_code": "800GBASE-2FR4",
+      "tx_power_max_dbm": 4.4,
+      "rx_sensitivity_dbm": -4.6,
+      "rx_overload_dbm": 4.4
+    },
+    {
+      "label": "800GBASE-2FR4 CWDM L1/L5",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "wavelength_center_nm": 1291.0,
+      "power_consumption_w": 17.0,
+      "host_interface_name": "2x400GAUI-4",
+      "media_interface_name": "800GBASE-2FR4",
+      "frame": "2x400GAUI-4",
+      "standards_code": "800GBASE-2FR4",
+      "tx_power_max_dbm": 4.4,
+      "rx_sensitivity_dbm": -4.6,
+      "rx_overload_dbm": 4.4
+    },
+    {
+      "label": "800GBASE-2FR4 CWDM L2/L6",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "power_consumption_w": 17.0,
+      "host_interface_name": "2x400GAUI-4",
+      "media_interface_name": "800GBASE-2FR4",
+      "frame": "2x400GAUI-4",
+      "standards_code": "800GBASE-2FR4",
+      "tx_power_max_dbm": 4.4,
+      "rx_sensitivity_dbm": -4.6,
+      "rx_overload_dbm": 4.4
+    },
+    {
+      "label": "800GBASE-2FR4 CWDM L3/L7",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "wavelength_center_nm": 1331.0,
+      "power_consumption_w": 17.0,
+      "host_interface_name": "2x400GAUI-4",
+      "media_interface_name": "800GBASE-2FR4",
+      "frame": "2x400GAUI-4",
+      "standards_code": "800GBASE-2FR4",
+      "tx_power_max_dbm": 4.4,
+      "rx_sensitivity_dbm": -4.6,
+      "rx_overload_dbm": 4.4
+    },
+    {
+      "label": "IEEE 802.3cu 2x400GBASE-FR4",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "power_consumption_w": 17.0,
+      "host_interface_name": "2x400GAUI-4",
+      "media_interface_name": "2x400GBASE-FR4",
+      "frame": "2x400GAUI-4",
+      "standards_code": "400GBASE-FR4",
+      "tx_power_max_dbm": 10.4,
+      "rx_sensitivity_dbm": -4.6,
+      "rx_overload_dbm": 4.4
+    },
+    {
+      "label": "8x100G FR breakout",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "power_consumption_w": 17.0,
+      "host_interface_name": "400GAUI-4",
+      "media_interface_name": "400GBASE-FR4",
+      "frame": "8x 100G",
+      "standards_code": "100G FR",
+      "tx_power_max_dbm": 4.4,
+      "rx_sensitivity_dbm": -2.6,
+      "rx_overload_dbm": 5.4
+    },
+    {
+      "label": "Low power mode (CMIS)",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "power_consumption_w": 2.5,
+      "host_interface_name": "2x400GAUI-4",
+      "media_interface_name": "800GBASE-2FR4",
+      "frame": "2x400GAUI-4",
+      "standards_code": "800GBASE-2FR4",
+      "tx_power_max_dbm": 4.4,
+      "rx_sensitivity_dbm": -4.6,
+      "rx_overload_dbm": 4.4
+    }
+  ]
+}

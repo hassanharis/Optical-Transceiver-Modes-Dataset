@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp-mr80d-cxx.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 6489,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 20
+    },
+    {
+      "page": 0,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 19
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

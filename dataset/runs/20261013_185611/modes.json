@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "BIDI SFP 1.25G 1490nm-TX/1550nm-RX 80km 0\u00b0C to +70\u00b0C",
+      "model": "QT- WDM-0280AD",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BIDI SFP 1.25G 1490nm-TX/1550nm-RX 80km -40\u00b0C to +85\u00b0C",
+      "model": "QT- WDM-0280AID",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

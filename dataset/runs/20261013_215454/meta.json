@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:54:54.026879+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tq2032-tunx-so-qsfp28-100g-coherent-dwdm-0dbm-sff-r6.7.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.948,
+    "extract_atoms": 27.173,
+    "store_run": 0.007,
+    "synthesize_modes": 68.176,
+    "store_modes": 0.004,
+    "total": 99.308
+  }
+}

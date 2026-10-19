@@ -1,0 +1,48 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\sfpwire-10gbs-sfp-plus-aoc-fcbg110sd1cxx-wx-ds.pdf",
+  "page_count": 9,
+  "table_count": 8,
+  "markdown_chars": 10195,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 21
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 14
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 14
+    }
+  ]
+}

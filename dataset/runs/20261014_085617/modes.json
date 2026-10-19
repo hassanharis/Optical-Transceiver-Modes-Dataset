@@ -1,0 +1,634 @@
+{
+  "modes": [
+    {
+      "label": "ITU Ch 61 10GBASE-ZR",
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 61 10GBASE-ZW",
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 60 10GBASE-ZR",
+      "wavelength_center_nm": 1529.55,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 60 10GBASE-ZW",
+      "wavelength_center_nm": 1529.55,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 59 10GBASE-ZR",
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 59 10GBASE-ZW",
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 58 10GBASE-ZR",
+      "wavelength_center_nm": 1531.12,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 58 10GBASE-ZW",
+      "wavelength_center_nm": 1531.12,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 57 10GBASE-ZR",
+      "wavelength_center_nm": 1531.89,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 57 10GBASE-ZW",
+      "wavelength_center_nm": 1531.89,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 56 10GBASE-ZR",
+      "wavelength_center_nm": 1532.68,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 56 10GBASE-ZW",
+      "wavelength_center_nm": 1532.68,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 55 10GBASE-ZR",
+      "wavelength_center_nm": 1533.46,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 55 10GBASE-ZW",
+      "wavelength_center_nm": 1533.46,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 54 10GBASE-ZR",
+      "wavelength_center_nm": 1534.25,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 54 10GBASE-ZW",
+      "wavelength_center_nm": 1534.25,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 53 10GBASE-ZR",
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 53 10GBASE-ZW",
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 52 10GBASE-ZR",
+      "wavelength_center_nm": 1535.82,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 52 10GBASE-ZW",
+      "wavelength_center_nm": 1535.82,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 51 10GBASE-ZR",
+      "wavelength_center_nm": 1536.61,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 51 10GBASE-ZW",
+      "wavelength_center_nm": 1536.61,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 50 10GBASE-ZR",
+      "wavelength_center_nm": 1537.4,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 50 10GBASE-ZW",
+      "wavelength_center_nm": 1537.4,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 49 10GBASE-ZR",
+      "wavelength_center_nm": 1538.19,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 49 10GBASE-ZW",
+      "wavelength_center_nm": 1538.19,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 48 10GBASE-ZR",
+      "wavelength_center_nm": 1538.97,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 48 10GBASE-ZW",
+      "wavelength_center_nm": 1538.97,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 47 10GBASE-ZR",
+      "wavelength_center_nm": 1539.76,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 47 10GBASE-ZW",
+      "wavelength_center_nm": 1539.76,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 46 10GBASE-ZR",
+      "wavelength_center_nm": 1540.55,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 46 10GBASE-ZW",
+      "wavelength_center_nm": 1540.55,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 45 10GBASE-ZR",
+      "wavelength_center_nm": 1541.34,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 45 10GBASE-ZW",
+      "wavelength_center_nm": 1541.34,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 44 10GBASE-ZR",
+      "wavelength_center_nm": 1542.14,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 44 10GBASE-ZW",
+      "wavelength_center_nm": 1542.14,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 43 10GBASE-ZR",
+      "wavelength_center_nm": 1542.93,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 43 10GBASE-ZW",
+      "wavelength_center_nm": 1542.93,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 42 10GBASE-ZR",
+      "wavelength_center_nm": 1543.73,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 42 10GBASE-ZW",
+      "wavelength_center_nm": 1543.73,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 41 10GBASE-ZR",
+      "wavelength_center_nm": 1544.52,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 41 10GBASE-ZW",
+      "wavelength_center_nm": 1544.52,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 40 10GBASE-ZR",
+      "wavelength_center_nm": 1545.32,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 40 10GBASE-ZW",
+      "wavelength_center_nm": 1545.32,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 39 10GBASE-ZR",
+      "wavelength_center_nm": 1546.12,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 39 10GBASE-ZW",
+      "wavelength_center_nm": 1546.12,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 38 10GBASE-ZR",
+      "wavelength_center_nm": 1546.92,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 38 10GBASE-ZW",
+      "wavelength_center_nm": 1546.92,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 37 10GBASE-ZR",
+      "wavelength_center_nm": 1547.71,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 37 10GBASE-ZW",
+      "wavelength_center_nm": 1547.71,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 36 10GBASE-ZR",
+      "wavelength_center_nm": 1548.51,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 36 10GBASE-ZW",
+      "wavelength_center_nm": 1548.51,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 35 10GBASE-ZR",
+      "wavelength_center_nm": 1549.32,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 35 10GBASE-ZW",
+      "wavelength_center_nm": 1549.32,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 34 10GBASE-ZR",
+      "wavelength_center_nm": 1550.11,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 34 10GBASE-ZW",
+      "wavelength_center_nm": 1550.11,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 33 10GBASE-ZR",
+      "wavelength_center_nm": 1550.92,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 33 10GBASE-ZW",
+      "wavelength_center_nm": 1550.92,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 32 10GBASE-ZR",
+      "wavelength_center_nm": 1551.72,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 32 10GBASE-ZW",
+      "wavelength_center_nm": 1551.72,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 31 10GBASE-ZR",
+      "wavelength_center_nm": 1552.52,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 31 10GBASE-ZW",
+      "wavelength_center_nm": 1552.52,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 30 10GBASE-ZR",
+      "wavelength_center_nm": 1553.32,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 30 10GBASE-ZW",
+      "wavelength_center_nm": 1553.32,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 29 10GBASE-ZR",
+      "wavelength_center_nm": 1554.13,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 29 10GBASE-ZW",
+      "wavelength_center_nm": 1554.13,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 28 10GBASE-ZR",
+      "wavelength_center_nm": 1554.94,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 28 10GBASE-ZW",
+      "wavelength_center_nm": 1554.94,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 27 10GBASE-ZR",
+      "wavelength_center_nm": 1555.74,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 27 10GBASE-ZW",
+      "wavelength_center_nm": 1555.74,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 26 10GBASE-ZR",
+      "wavelength_center_nm": 1556.55,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 26 10GBASE-ZW",
+      "wavelength_center_nm": 1556.55,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 25 10GBASE-ZR",
+      "wavelength_center_nm": 1557.36,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 25 10GBASE-ZW",
+      "wavelength_center_nm": 1557.36,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 24 10GBASE-ZR",
+      "wavelength_center_nm": 1558.17,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 24 10GBASE-ZW",
+      "wavelength_center_nm": 1558.17,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 23 10GBASE-ZR",
+      "wavelength_center_nm": 1558.98,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 23 10GBASE-ZW",
+      "wavelength_center_nm": 1558.98,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 22 10GBASE-ZR",
+      "wavelength_center_nm": 1559.79,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 22 10GBASE-ZW",
+      "wavelength_center_nm": 1559.79,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 21 10GBASE-ZR",
+      "wavelength_center_nm": 1560.6,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 21 10GBASE-ZW",
+      "wavelength_center_nm": 1560.6,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 20 10GBASE-ZR",
+      "wavelength_center_nm": 1561.41,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 20 10GBASE-ZW",
+      "wavelength_center_nm": 1561.41,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 19 10GBASE-ZR",
+      "wavelength_center_nm": 1562.23,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 19 10GBASE-ZW",
+      "wavelength_center_nm": 1562.23,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 18 10GBASE-ZR",
+      "wavelength_center_nm": 1563.04,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 18 10GBASE-ZW",
+      "wavelength_center_nm": 1563.04,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "ITU Ch 17 10GBASE-ZR",
+      "wavelength_center_nm": 1563.86,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU Ch 17 10GBASE-ZW",
+      "wavelength_center_nm": 1563.86,
+      "wavelength_band": "C-band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    }
+  ]
+}

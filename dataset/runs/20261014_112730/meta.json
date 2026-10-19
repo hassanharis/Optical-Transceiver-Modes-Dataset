@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T11:27:30.282495+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-qsfp-40g-dxxxx.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.621,
+    "extract_atoms": 45.825,
+    "store_run": 0.01,
+    "synthesize_modes": 69.793,
+    "store_modes": 0.003,
+    "total": 121.253
+  }
+}

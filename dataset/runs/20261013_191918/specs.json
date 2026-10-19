@@ -1,0 +1,99 @@
+{
+  "model": [
+    "QT-SFP-0320D",
+    "QT-SFP-0320ID"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "SONET OC-24-LR-1",
+    "RoHS"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1360.0,
+    1580.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "1000BASE-LX",
+    "Gigabit Ethernet",
+    "Fiber Channel"
+  ],
+  "standards_code": [
+    "1000BASE-LX",
+    "SONET OC-24-LR-1"
+  ],
+  "bit_rate_gbps": [
+    1.25,
+    1.063
+  ],
+  "reach_km": [
+    20.0
+  ],
+  "tx_power_min_dbm": [
+    -9.0
+  ],
+  "tx_power_max_dbm": [
+    -3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -22.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "los_hysteresis_db": [
+    1.0,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Dual data-rate 1.25 Gbps (Gigabit Ethernet) and 1.063 Gbps (Fiber Channel). Operating case temperature: Standard SKU QT-SFP-0320D 0 to +70°C; Industrial SKU QT-SFP-0320ID -40 to +85°C (Recommended Operating Conditions). Receiver sensitivity and overload measured with PRBS 2^7-1 @ 1250 Mbps, BER ≤ 1×10^-12 (Note 3). Optical power launched into SMF (Note 1). Supply Icc max 300 mA at 3.13–3.47 V (not stated in W). Transmitter centre wavelength λc 1260/1310/1360 nm; receiver centre wavelength λc 1260–1580 nm. Spectral width (RMS) Δλ max 4 nm.",
+  "provenance_datasheet_sections": [
+    "1000BASE-LX SFP 1310nm 20KM DDM SMF Transceiver",
+    "P/N: QT-SFP-0320D",
+    "FEATURES",
+    "APPLICATIONS",
+    "1. Absolute Maximum Ratings",
+    "2. Recommended Operating Conditions",
+    "3. Optical and Electrical Characteristics",
+    "Notes:",
+    "7.Ordering information"
+  ]
+}

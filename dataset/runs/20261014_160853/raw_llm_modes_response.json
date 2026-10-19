@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"25GBASE-SR @ 25.78 Gbps\",\n      \"standards_code\": \"25GBASE-SR\",\n      \"bit_rate_gbps\": 25.78\n    },\n    {\n      \"label\": \"25GbE / CPRI high rate (RS High, CDR engaged)\",\n      \"standards_code\": \"25GbE\",\n      \"bit_rate_gbps\": 25.78\n    },\n    {\n      \"label\": \"25GbE / CPRI high rate (RS High, CDR engaged)\",\n      \"standards_code\": \"25GbE\",\n      \"bit_rate_gbps\": 24.33\n    },\n    {\n      \"label\": \"10GbE-LW/LR low rate (RS Low, CDR bypassed)\",\n      \"bit_rate_gbps\": 9.95\n    },\n    {\n      \"label\": \"10GbE-LW/LR low rate (RS Low, CDR bypassed)\",\n      \"bit_rate_gbps\": 10.31\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

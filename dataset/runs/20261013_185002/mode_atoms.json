@@ -1,0 +1,102 @@
+{
+  "multi_valued": {
+    "model": [
+      "QT-WDM-02120BD",
+      "QT-WDM-02120BID"
+    ],
+    "wavelength_min_nm": [
+      1530.0,
+      1470.0
+    ],
+    "wavelength_max_nm": [
+      1570.0,
+      1510.0
+    ],
+    "wavelength_center_nm": [
+      1550.0,
+      1490.0
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      1.063
+    ]
+  },
+  "general": {
+    "vendor": "QSFPTek",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "APD"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      120.0
+    ],
+    "tx_power_min_dbm": [
+      0.0
+    ],
+    "tx_power_max_dbm": [
+      5.0
+    ],
+    "rx_sensitivity_dbm": [
+      -30.0
+    ],
+    "rx_overload_dbm": [
+      -9.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -37.0
+    ],
+    "los_deassert_dbm": [
+      -33.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      1.0,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "Dual data-rate 1.25 Gbps / 1.063 Gbps. Recommended operating data rate 1250 Mbps. Supply Icc max 300 mA at 3.13–3.47 V (3.3 V typ). Extended operating case temperature variant QT-WDM-02120BID: -40°C to +85°C (Industrial); QT-WDM-02120BD ordering: 0°C to +70°C. Receiver sensitivity, overload, and related items per Note 3: PRBS 2^7-1 @ 1250 Mbps, BER ≤1×10^-12. Transmitter average output power Note 1: launched into SMF. Digital Diagnostic Monitoring: Internal or External Calibration. RoHS compatible.",
+    "provenance_datasheet_sections": [
+      "BIDI SFP 1550nm-TX/1490nm-RX 120KM SMF Transceiver",
+      "P/N: QT- WDM-02120BD",
+      "FEATURES",
+      "APPLICATIONS",
+      "1. Absolute Maximum Ratings",
+      "2. Recommended Operating Conditions",
+      "3. Optical and Electrical Characteristics",
+      "Notes:",
+      "4. Timing and Electrical",
+      "7. Ordering information"
+    ]
+  }
+}

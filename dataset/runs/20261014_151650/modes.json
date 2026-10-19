@@ -1,0 +1,337 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-L210D-Cxx CWDM family 1270-1610nm",
+      "model": "SO-SFP-L210D-Cxx",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C27 1270nm GbE",
+      "model": "SO-SFP-L210D-C27",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C27 1270nm 1G FC",
+      "model": "SO-SFP-L210D-C27",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C29 1290nm GbE",
+      "model": "SO-SFP-L210D-C29",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1290.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C29 1290nm 1G FC",
+      "model": "SO-SFP-L210D-C29",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1290.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C31 1310nm GbE",
+      "model": "SO-SFP-L210D-C31",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C31 1310nm 1G FC",
+      "model": "SO-SFP-L210D-C31",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C33 1330nm GbE",
+      "model": "SO-SFP-L210D-C33",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C33 1330nm 1G FC",
+      "model": "SO-SFP-L210D-C33",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C35 1350nm GbE",
+      "model": "SO-SFP-L210D-C35",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1350.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C35 1350nm 1G FC",
+      "model": "SO-SFP-L210D-C35",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1350.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C37 1370nm GbE",
+      "model": "SO-SFP-L210D-C37",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1370.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C37 1370nm 1G FC",
+      "model": "SO-SFP-L210D-C37",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1370.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C39 1390nm GbE",
+      "model": "SO-SFP-L210D-C39",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1390.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C39 1390nm 1G FC",
+      "model": "SO-SFP-L210D-C39",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1390.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C41 1410nm GbE",
+      "model": "SO-SFP-L210D-C41",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1410.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C41 1410nm 1G FC",
+      "model": "SO-SFP-L210D-C41",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1410.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C43 1430nm GbE",
+      "model": "SO-SFP-L210D-C43",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1430.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C43 1430nm 1G FC",
+      "model": "SO-SFP-L210D-C43",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1430.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C45 1450nm GbE",
+      "model": "SO-SFP-L210D-C45",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1450.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C45 1450nm 1G FC",
+      "model": "SO-SFP-L210D-C45",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1450.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C47 1470nm GbE",
+      "model": "SO-SFP-L210D-C47",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C47 1470nm 1G FC",
+      "model": "SO-SFP-L210D-C47",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C49 1490nm GbE",
+      "model": "SO-SFP-L210D-C49",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C49 1490nm 1G FC",
+      "model": "SO-SFP-L210D-C49",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C51 1510nm GbE",
+      "model": "SO-SFP-L210D-C51",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C51 1510nm 1G FC",
+      "model": "SO-SFP-L210D-C51",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C53 1530nm GbE",
+      "model": "SO-SFP-L210D-C53",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C53 1530nm 1G FC",
+      "model": "SO-SFP-L210D-C53",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C55 1550nm GbE",
+      "model": "SO-SFP-L210D-C55",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C55 1550nm 1G FC",
+      "model": "SO-SFP-L210D-C55",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C57 1570nm GbE",
+      "model": "SO-SFP-L210D-C57",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C57 1570nm 1G FC",
+      "model": "SO-SFP-L210D-C57",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C59 1590nm GbE",
+      "model": "SO-SFP-L210D-C59",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C59 1590nm 1G FC",
+      "model": "SO-SFP-L210D-C59",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-L210D-C61 1610nm GbE",
+      "model": "SO-SFP-L210D-C61",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-L210D-C61 1610nm 1G FC",
+      "model": "SO-SFP-L210D-C61",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1635.0,
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    }
+  ]
+}

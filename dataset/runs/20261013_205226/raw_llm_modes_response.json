@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"Gigabit Ethernet / 1x FC receiver (1.25 Gbps)\",\n      \"model\": \"FNK-LT12x\",\n      \"form_factor\": \"Low Rider RJ\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1355.0,\n      \"standards_code\": \"IEEE-802.3z\",\n      \"bit_rate_gbps\": 1.25\n    },\n    {\n      \"label\": \"Transmitter / Fast Ethernet test (125 Mbps)\",\n      \"model\": \"FNK-LT12x\",\n      \"form_factor\": \"Low Rider RJ\",\n      \"wavelength_min_nm\": 1285.0,\n      \"wavelength_max_nm\": 1343.0,\n      \"standards_code\": \"IEEE-802.3z\",\n      \"bit_rate_gbps\": 0.125\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

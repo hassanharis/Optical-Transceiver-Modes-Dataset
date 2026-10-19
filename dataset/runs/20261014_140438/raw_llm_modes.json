@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-10GE-ZR | 10GBASE-ZR",
+      "model": "SO-SFP-10GE-ZR",
+      "wavelength_min_nm": 1528.0,
+      "host_interface_name": "10GBASE-ZR",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "SO-SFP-10GE-ZR | 10GBASE-ZW",
+      "model": "SO-SFP-10GE-ZR",
+      "wavelength_min_nm": 1528.0,
+      "host_interface_name": "10GBASE-ZW",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "SO-SFP-10GE-ZR-I | 10GBASE-ZR",
+      "model": "SO-SFP-10GE-ZR-I",
+      "wavelength_min_nm": 1528.0,
+      "host_interface_name": "10GBASE-ZR",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "SO-SFP-10GE-ZR-I | 10GBASE-ZW",
+      "model": "SO-SFP-10GE-ZR-I",
+      "wavelength_min_nm": 1528.0,
+      "host_interface_name": "10GBASE-ZW",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 11.3
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "modes": [
+    {
+      "label": "QT-WDM20-1314D 1000BASE-BX-U 1.25G",
+      "model": "QT-WDM20-1314D",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "1000BASE-BX-U",
+      "standards_code": "1000BASE-BX-U",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM20-1314ID 1000BASE-BX-U 1.25G",
+      "model": "QT-WDM20-1314ID",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "1000BASE-BX-U",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM20-1314D OC-24-LR-1 1.063G",
+      "model": "QT-WDM20-1314D",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "host_interface_name": "Fiber Channel",
+      "standards_code": "OC-24-LR-1",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "QT-WDM20-1314ID OC-24-LR-1 1.063G",
+      "model": "QT-WDM20-1314ID",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "host_interface_name": "Fiber Channel",
+      "standards_code": "OC-24-LR-1",
+      "bit_rate_gbps": 1.063
+    }
+  ]
+}

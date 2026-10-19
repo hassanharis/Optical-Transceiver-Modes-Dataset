@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Evidence points to a single operating configuration: TS5003-S31C-SO, 50GBASE-LR, one 1311 nm channel at 53.125 Gbps (50GE), with receiver OMA sensitivity \u22128.4 dBm and average minimum input \u221210.8 dBm under the same \u201c53.125 Gbps (50GE) and BER 2.4E-4\u201d condition\u2014not separate modes. Alternate pool values are naming variants (1310 vs 1311 in ordering, 50GbE vs 50G Ethernet, 50.0 vs 53.125 Ethernet vs line rate).\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"50GBASE-LR @ 53.125 Gbps\",\n      \"wavelength_center_nm\": 1311.0,\n      \"host_interface_name\": \"50GbE\",\n      \"bit_rate_gbps\": 53.125,\n      \"rx_sensitivity_dbm\": -8.4\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

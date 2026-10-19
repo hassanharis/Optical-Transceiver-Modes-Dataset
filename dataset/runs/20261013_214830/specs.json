@@ -1,0 +1,109 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TQ2028-TUNX-SO",
+    "TQ2028-TUNC-SO",
+    "TQ2028-TUNI-SO"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "SFF-8665",
+    "SFF-8661",
+    "SFF-8679",
+    "SFF-8636",
+    "100GBASE-ZR",
+    "CAUI-4",
+    "IEEE P802.3bm Annex 83E",
+    "ITU-T G.694.1"
+  ],
+  "frequency_min_thz": [
+    191.35
+  ],
+  "frequency_max_thz": [
+    196.1
+  ],
+  "channel_spacing_ghz": [
+    50.0,
+    100.0
+  ],
+  "channel_total": [
+    96
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    5.5,
+    6.0
+  ],
+  "host_interface_name": [
+    "CAUI-4"
+  ],
+  "media_interface_name": [
+    "100GBASE-ZR"
+  ],
+  "standards_code": [
+    "100GBASE-ZR",
+    "SC-FEC"
+  ],
+  "bit_rate_gbps": [
+    103.12,
+    100.0
+  ],
+  "modulation_format": [
+    "QPSK-DP",
+    "DQPSK",
+    "NRZ"
+  ],
+  "reach_km": [
+    80.0,
+    120.0,
+    300.0
+  ],
+  "tx_power_min_dbm": [
+    -8.0
+  ],
+  "tx_power_max_dbm": [
+    -4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -30.0,
+    -18.0,
+    -22.0
+  ],
+  "rx_osnr_tolerance_db_max": [
+    16.5
+  ],
+  "rx_overload_dbm": [
+    3.0
+  ],
+  "cd_tolerance_ps_nm": [
+    2400.0,
+    6000.0
+  ],
+  "fec_type": [
+    "SCFEC"
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "penalties": [],
+  "notes": "Typical reach 80 km unamplified (footnote 1: limited by power budget); 120 km amplified (footnote 2: limited by dispersion compensation); 300 km extended mode (footnote 3: set through host in Low Power mode; increases power consumption by 0.2 W). Power budget 0–22 dB. Operating temperature 0°C to +70°C for TQ2028-TUNC-SO; -40°C to +85°C for TQ2028-TUNI-SO. Storage temperature -40°C to +85°C. Tx/Rx power values are average power (footnote 4). Receiver sensitivity -30.0 dBm at unamplified configurations with OSNR >35 dB/0.1 nm (footnote 5). OSNR tolerance 16.5 dB/0.1 nm per footnote 6 (100G DQPSK SC-FEC). -22 dBm minimum input power is extended range with <1 dB OSNR penalty relative to Rx OSNR tolerance limit (footnote 7). Rx power monitor range: signal power -21 dBm to +3 dBm; total power -21 dBm to +6 dBm. Media FEC SC-FEC latency 24 µs. CMIS variant: TQ2025TUNx-SO.",
+  "provenance_datasheet_sections": [
+    "QSFP28 100G COHERENT DWDM SFF-8636",
+    "TQ2028-TUNX-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

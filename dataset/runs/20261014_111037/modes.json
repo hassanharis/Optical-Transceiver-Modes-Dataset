@@ -1,0 +1,82 @@
+{
+  "modes": [
+    {
+      "label": "100GBASE-ER4",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "wavelength_band": "grey",
+      "media_interface_name": "100GBASE-ER4",
+      "standards_code": "100GBASE-ER4",
+      "bit_rate_gbps": 103.12,
+      "tx_power_min_dbm": -2.9,
+      "tx_power_max_dbm": 2.9,
+      "rx_sensitivity_dbm": -20.9
+    },
+    {
+      "label": "OTU4 4L1-9C1F",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "wavelength_band": "1310nm",
+      "media_interface_name": "OTU4 4L1-9C1F",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 111.81,
+      "tx_power_min_dbm": -2.7,
+      "tx_power_max_dbm": 2.9,
+      "rx_sensitivity_dbm": -20.7
+    },
+    {
+      "label": "Lane 2 \u2014 100GBASE-ER4 per lane",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "wavelength_band": "grey",
+      "media_interface_name": "100GBASE-ER4",
+      "standards_code": "100GBASE-ER4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -2.9,
+      "tx_power_max_dbm": 2.9,
+      "rx_sensitivity_dbm": -20.9
+    },
+    {
+      "label": "Lane 3 \u2014 100GBASE-ER4 per lane",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "wavelength_band": "grey",
+      "media_interface_name": "100GBASE-ER4",
+      "standards_code": "100GBASE-ER4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -2.9,
+      "tx_power_max_dbm": 2.9,
+      "rx_sensitivity_dbm": -20.9
+    },
+    {
+      "label": "Lane 4 \u2014 100GBASE-ER4 per lane",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "wavelength_band": "grey",
+      "media_interface_name": "100GBASE-ER4",
+      "standards_code": "100GBASE-ER4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -2.9,
+      "tx_power_max_dbm": 2.9,
+      "rx_sensitivity_dbm": -20.9
+    },
+    {
+      "label": "OTU4 4L1-9C1F per lane",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "wavelength_band": "1310nm",
+      "media_interface_name": "OTU4 4L1-9C1F",
+      "standards_code": "4L1-9C1F",
+      "bit_rate_gbps": 27.95,
+      "tx_power_min_dbm": -2.7,
+      "tx_power_max_dbm": 2.9,
+      "rx_sensitivity_dbm": -20.7
+    }
+  ]
+}

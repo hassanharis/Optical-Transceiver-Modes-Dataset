@@ -1,0 +1,103 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-SM5506-80C",
+    "LS-SM5506-80I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": [
+    "LASER_DFB",
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1530.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1570.0,
+    1610.0
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "standards_code": [
+    "SONET OC-12"
+  ],
+  "bit_rate_gbps": [
+    622.0
+  ],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    -3.0
+  ],
+  "tx_power_max_dbm": [
+    3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -28.0
+  ],
+  "rx_overload_dbm": [
+    -8.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -39.0
+  ],
+  "los_deassert_dbm": [
+    -29.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Product Features specify 1550nm DFB laser; Description section states FP laser transmitter. Receiver sensitivity and overload per Note 3: PRBS 2^23-1 @622Mbps, BER ≤1×10^-12. Optical power launched into SMF (Note 1). Operating case temperature variants: Standard 0 to +70°C (LS-SM5506-80C ordering), Extended -20 to +85°C, Industrial -40 to +85°C (LS-SM5506-80I). Supply Icc max 300 mA at 3.135–3.465 V (not stated as power in W). Storage temperature -40 to +85°C.",
+  "provenance_datasheet_sections": [
+    "LS-SM5506-80C",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Timing and Electrical",
+    "Diagnostics",
+    "Ordering information"
+  ],
+  "suggestions": "Clarify whether form_factor should include SFP when enum examples omit it. Consider schema field for supply current (mA) or single-wavelength grey/C-band labeling for fixed 1550 nm parts."
+}

@@ -1,0 +1,132 @@
+{
+  "modes": [
+    {
+      "label": "L9-SC31551G-20PPC",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "G.957",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC55311G-20PPC",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "G.957",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC31551G-20PPI",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "G.957",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC55311G-20PPI",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "G.957",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC31551G-20PPC5",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "host_interface_name": "PECL",
+      "standards_code": "G.957",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC55311G-20PPC5",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "host_interface_name": "PECL",
+      "standards_code": "G.957",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC31551G-20PPI5",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "host_interface_name": "PECL",
+      "standards_code": "G.957",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC55311G-20PPI5",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "host_interface_name": "PECL",
+      "standards_code": "G.957",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC31551G-20PTC",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "STM-1/OC-3",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC55311G-20PTC",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "STM-1/OC-3",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC31551G-20PTI",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "STM-1/OC-3",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC55311G-20PTI",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "STM-1/OC-3",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC31551G-20PTC5",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "host_interface_name": "PECL",
+      "standards_code": "STM-1/OC-3",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC55311G-20PTC5",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "host_interface_name": "PECL",
+      "standards_code": "STM-1/OC-3",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC31551G-20PTI5",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "host_interface_name": "PECL",
+      "standards_code": "STM-1/OC-3",
+      "reach_km": 20.0
+    },
+    {
+      "label": "L9-SC55311G-20PTI5",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "host_interface_name": "PECL",
+      "standards_code": "STM-1/OC-3",
+      "reach_km": 20.0
+    }
+  ]
+}

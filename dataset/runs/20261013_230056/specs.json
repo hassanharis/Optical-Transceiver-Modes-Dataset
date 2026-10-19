@@ -1,0 +1,102 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLF1429P3BCE",
+    "FTLF1429P3BNV"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "FC-PI-5 Rev. 6.101",
+    "SFF-8472 Rev 11.03",
+    "SFF-8432",
+    "SFF-8431 Rev. 3.04",
+    "RoHS Directive 2011/65/EU",
+    "SFP MSA"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "wavelength_min_nm": [
+    1295.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1325.0,
+    1370.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC",
+    "Duplex LC"
+  ],
+  "fiber_type": [
+    "SMF 9/125μm",
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "standards_code": [
+    "FC-PI-5",
+    "16GFC",
+    "Fibre Channel"
+  ],
+  "bit_rate_gbps": [
+    4.25,
+    8.5,
+    14.025
+  ],
+  "reach_km": [
+    25.0
+  ],
+  "tx_power_min_dbm": [
+    -2.0
+  ],
+  "tx_power_max_dbm": [
+    6.0
+  ],
+  "rx_overload_dbm": [
+    3.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -19.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Unstressed receiver OMA sensitivity stated in mW only: 0.039 mW at 14.025 and 8.5 Gb/s; 0.029 mW at 4.25 Gb/s (PRBS patterns per footnotes). Transmitter and Dispersion Penalty (TDP) max 4.4 dB at 14.025 Gb/s and 3.2 dB at 8.5 Gb/s; not structured as penalty points with paired penalized OSNR/sensitivity values. 25 km link length based on 15 dB link budget. Optical Modulation Amplitude (OMA) transmitter min 1260 µW(dBm) per FC equivalent ER spec. Spectral Width (RMS) max 1 nm at 28.05 Gb/s notation in table. Supply current typ 200 mA max 300 mA; module power consumption never exceeds 1 W with established link. Case operating temperature 0 to 70 °C; storage -40 to 85 °C.",
+  "provenance_datasheet_sections": [
+    "FTLF1429P3BCE",
+    "16GFC RoHS Compliant Long-Wavelength SFP+ Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "Product Selection",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (TOP= 0 to 70 °C , VCC = 3.00 to 3.60 Volts )",
+    "IV. Optical Characteristics (TOP = 0 to 70°C, VCC = 3.15 to 3.45 Volts)",
+    "V. General Specifications",
+    "VII. Environmental Specifications",
+    "X. Mechanical Specifications"
+  ],
+  "suggestions": "Add optional fields for unstressed receiver OMA sensitivity in mW and transmitter TDP in dB by bit rate. Clarify whether RxMAX +3.0 dBm min column represents overload threshold per FC-PI-5 semantics."
+}

@@ -1,0 +1,103 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-100Base-FXD",
+      "SO-SFP-100Base-FXD-I"
+    ],
+    "wavelength_max_nm": [
+      1360.0,
+      1600.0
+    ],
+    "standards_code": [
+      "100Base-FXD",
+      "FE",
+      "STM-1/OC-3",
+      "STM1/OC3",
+      "100Base-FXD"
+    ],
+    "bit_rate_gbps": [
+      100.0,
+      155.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_min_nm": [
+      1260.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF 50/125µm",
+      "MMF_OM1"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "frame": [],
+    "modulation_format": [],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -19.0
+    ],
+    "tx_power_max_dbm": [
+      -14.0
+    ],
+    "rx_sensitivity_dbm": [
+      -31.0
+    ],
+    "rx_overload_dbm": [
+      -12.0
+    ],
+    "fec_type": [],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -32.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Title/subtitle: 100Base-FXD, 12dB power budget, DDM. Typical reach 2km@50/125 µm, 62.5/125µm. Power budget 0 – 12dB. No minimum distance (no minimum attenuation). Operating temperature also -40°C to +85°C for SO-SFP-100Base-FXD-I (-FXD-I). Storage temperature -40°C to +85°C. Transmitter output power footnote 1): Average power (min printed as -19.0dB). Receiver minimum input power footnote 2): @ 155Mbps, BER 1x10-12, PRBS 231-1. Power consumption stated as < 1.0W. Bit rates stated in Mbps (100 to 155Mbps). Technology: Grey SFP.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-100BASE-FXD & FXD-I",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider separate fields or list entries for extended operating temperature per orderable SKU (C-temp vs I-temp). bit_rate field may need Mbps unit when values are below 1 Gbps. Power budget 0–12dB has no dedicated schema field."
+  }
+}

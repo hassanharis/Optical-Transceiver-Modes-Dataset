@@ -1,0 +1,156 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "800G-DR4",
+      "2xDR4",
+      "IEEE 802.3dj"
+    ],
+    "bit_rate_gbps": [
+      212.5,
+      1600.0
+    ],
+    "tx_power_min_dbm": [
+      -2.8,
+      -0.3,
+      -1.2
+    ],
+    "tx_power_max_dbm": [
+      4.0,
+      4.2
+    ],
+    "rx_sensitivity_dbm": [
+      -3.4,
+      -0.9
+    ],
+    "rx_overload_dbm": [
+      4.0,
+      4.2,
+      5.0
+    ]
+  },
+  "general": {
+    "vendor": "XGIGA",
+    "model": [
+      "OP13PI8-005D"
+    ],
+    "form_factor": [
+      "OSFP"
+    ],
+    "standards_claimed": [
+      "OSFP MSA rev5.0",
+      "OIF-CMIS rev5.1",
+      "IEEE 802.3dj-2024"
+    ],
+    "emitter_type": [
+      "LASER_DFB",
+      "Silicon photonics modulator"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "channel_total": [],
+    "mounting_type": [
+      "pluggable",
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "MPO"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      30.0
+    ],
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [
+      "DR4"
+    ],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [
+      106.25
+    ],
+    "roll_off_percent": [],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      0.5
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "post_fec_ber_target": [],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "los_assert_dbm": [],
+    "los_deassert_dbm": [],
+    "channel_insertion_loss_db": [
+      4.0
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      21.4
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Power dissipation stated as < 30 W; ICC max 9090 mA at Vcc 3.3 V. Transmit OMA per lane (min) is -0.3 dBm when max(TECQ,TDECQ)<0.9 dB and -1.2+max(TECQ,TDECQ) dBm for 0.9 dB≤max(TECQ,TDECQ)≤3.4 dB. Receiver sensitivity (OMA) is -3.4 dBm for TECQ<0.9 dB and -4.3+TECQ dBm for 0.9 dB≤TECQ≤SECQ (note text says SECQ). Receiver sensitivity note 2: PRBS31Q, BER 2.4×10⁻⁴. Wavelength assignment note 3: suitable for all channels. Stressed receiver sensitivity (OMAouter) -0.9 dBm per note 3. Link power budget allocation for penalties (for maximum TDECQ) is TBD. Forward error correction required to be implemented by the host. DUAL MPO-12 connectors. Signaling speed ± 50 ppm. Draft 1.0.",
+    "provenance_datasheet_sections": [
+      "1.6T 2xDR4 OSFP (Retimer)",
+      "OP13PI8-005D",
+      "PRODUCT FEATURES",
+      "REFERENCE STANDARD",
+      "APPLICATIONS",
+      "I. Absolute Maximum Ratings",
+      "II. Recommended Operating Conditions",
+      "III. Optical Characteristics",
+      "Notes:",
+      "IV. Link Power Budget"
+    ],
+    "suggestions": "Clarify whether vendor brand is Amphenol (optics URL) vs XGIGA footer. Map host electrical interface IDs from OSFP MSA / IEEE 802.3dj if added in later revisions. Penalty and OSNR rows not present; TECQ/TDECQ-conditioned sensitivities could be modeled as penalties if SECQ and conditions are defined."
+  }
+}

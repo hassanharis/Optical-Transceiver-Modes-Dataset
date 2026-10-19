@@ -1,0 +1,89 @@
+{
+  "multi_valued": {
+    "wavelength_max_nm": [
+      1360.0,
+      1600.0
+    ],
+    "standards_code": [
+      "100Base-EXD",
+      "STM1/OC3",
+      "FE",
+      "STM-1/OC3"
+    ],
+    "bit_rate_gbps": [
+      100.0,
+      155.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-155M-L40D"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_min_nm": [
+      1260.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      -5.0
+    ],
+    "tx_power_max_dbm": [
+      0.0
+    ],
+    "rx_sensitivity_dbm": [
+      -34.0
+    ],
+    "rx_overload_dbm": [
+      -10.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -35.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Title/overview: 29dB power budget; technical table power budget 10 – 29dB. Bit rate stated as 100 to 155Mbps. Transmitter output power footnote 1) average power; min printed as -5.0dB, max as 0.0dBm. Receiver minimum input power -34dBm at 155Mbps, BER 1x10-12, PRBS 231-1 (footnote 2). Power consumption stated as < 1.0W. Operating temperature printed as -0°C to +70°C. Storage temperature -40°C to +85°C not mapped to operating temp fields. Technology Grey SFP (non-WDM). DDM Yes per SFF-8472.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-155M-L40D",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether bit_rate_gbps should accept Mbps-scale values (100, 155) or require conversion. Tx min unit inconsistency (dB vs dBm) may need human review."
+  }
+}

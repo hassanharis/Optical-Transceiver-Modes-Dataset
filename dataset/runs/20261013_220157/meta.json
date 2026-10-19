@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:01:57.783259+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tqd015-s31c-so-qsfpdd-400g-lr4-mpo-c4-r6.5.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.01,
+    "extract_atoms": 23.345,
+    "store_run": 0.011,
+    "synthesize_modes": 21.017,
+    "store_modes": 0.003,
+    "total": 48.386
+  }
+}

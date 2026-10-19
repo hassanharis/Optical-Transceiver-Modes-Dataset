@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"40GBASE-LR4 40GbE (41.25 Gbps)\",\n      \"host_interface_name\": \"40GBASE-LR4\",\n      \"standards_code\": \"40GbE\",\n      \"bit_rate_gbps\": 41.25\n    },\n    {\n      \"label\": \"4x10GbE-LAN (10.3125 Gbps per lane)\",\n      \"host_interface_name\": \"QSFP+\",\n      \"standards_code\": \"10GbE-LAN\",\n      \"bit_rate_gbps\": 10.3125\n    },\n    {\n      \"label\": \"Infiniband QDR (10.3125 Gbps per lane)\",\n      \"host_interface_name\": \"QSFP+\",\n      \"standards_code\": \"Infiniband QDR\",\n      \"bit_rate_gbps\": 10.3125\n    },\n    {\n      \"label\": \"Infiniband DDR (10.3125 Gbps per lane)\",\n      \"host_interface_name\": \"QSFP+\",\n      \"standards_code\": \"Infiniband DDR\",\n      \"bit_rate_gbps\": 10.3125\n    },\n    {\n      \"label\": \"Infiniband SDR (10.3125 Gbps per lane)\",\n      \"host_interface_name\": \"QSFP+\",\n      \"standards_code\": \"Infiniband SDR\",\n      \"bit_rate_gbps\": 10.3125\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

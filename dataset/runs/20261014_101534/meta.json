@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:15:34.666792+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Optech OPHW-S10-13-CQ.pdf",
+  "page_count": 14,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 20.1,
+    "extract_atoms": 28.167,
+    "store_run": 0.006,
+    "synthesize_modes": 44.648,
+    "store_modes": 0.002,
+    "total": 92.923
+  }
+}

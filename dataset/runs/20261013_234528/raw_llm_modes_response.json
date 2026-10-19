@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"2.5GBASE-T over Cat 6A/7\",\n      \"power_consumption_w\": 2.5,\n      \"media_interface_name\": \"2.5GBASE-T\",\n      \"standards_code\": \"IEEE 802.3bz\",\n      \"bit_rate_gbps\": 2.5\n    },\n    {\n      \"label\": \"1000BASE-T over Cat 5e\",\n      \"power_consumption_w\": 1.2,\n      \"media_interface_name\": \"1000BASE-T\",\n      \"standards_code\": \"1000BASE-T\",\n      \"bit_rate_gbps\": 1.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

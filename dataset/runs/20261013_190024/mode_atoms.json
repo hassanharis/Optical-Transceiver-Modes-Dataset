@@ -1,0 +1,104 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1260.0,
+      1530.0
+    ],
+    "wavelength_max_nm": [
+      1360.0,
+      1570.0
+    ],
+    "host_interface_name": [
+      "Gigabit Ethernet",
+      "Fiber Channel",
+      "1000BASE-BX-U"
+    ],
+    "standards_code": [
+      "1000BASE-BX-U",
+      "SONET OC-24-LR-1"
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      1.063
+    ]
+  },
+  "general": {
+    "model": [
+      "QT-WDM-0220ASD"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472",
+      "SONET OC-24-LR-1",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [],
+    "connector_type": [
+      "SC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -12.0
+    ],
+    "tx_power_max_dbm": [
+      -6.0
+    ],
+    "rx_sensitivity_dbm": [
+      -21.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -23.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "los_hysteresis_db": [
+      1.0,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "Dual data-rate 1.25 Gbps (Gigabit Ethernet) and 1.063 Gbps (Fiber Channel). Operating case temperature also offered as Industrial -40 to +85°C in FEATURES; Recommended Operating Conditions table lists Standard 0 to +70°C only. Transmitter average output power note 1: launched into SMF. Receiver sensitivity and overload note 3: PRBS 2^7-1 @ 1250 Mbps, BER ≤1×10^-12. Power supply Icc max 300 mA at 3.13–3.47 V (3.3 V typical); power in watts not stated. Ordering information lists QT-WDM-0203ASD / QT-WDM-0203ASID (LC, different P/N) not QT-WDM-0220ASD. Header/picture text: 1000BASE-BX-U.",
+    "provenance_datasheet_sections": [
+      "BIDI SFP 1310nm-TX/1550nm-RX 20KM SMF Transceiver",
+      "P/N: QT- WDM-0220ASD",
+      "FEATURES",
+      "APPLICATIONS",
+      "2. Recommended Operating Conditions",
+      "3. Optical and Electrical Characteristics",
+      "Notes:",
+      "7. Ordering information"
+    ],
+    "suggestions": "Clarify whether vendor name appears only via qsfptek.com branding. Add spectral width (Δλ RMS max 4 nm) if useful. Distinguish TX vs RX wavelength_center_nm when RX typical center is absent."
+  }
+}

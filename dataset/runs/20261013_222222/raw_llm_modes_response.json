@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "One ordering number (TSD003-S31C-SO) and one technical-data block tie the parameters together; 50 Gbaud / one optical lane and 53.125 Gbd / 100GAUI-2 are different layers of the same configuration, not separate selectable modes.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100G-LR SFP-DD (TSD003-S31C-SO)\",\n      \"standards_code\": \"100G-LR\",\n      \"baud_rate_gbaud\": 53.125,\n      \"bit_rate_gbps\": 103.12,\n      \"fec_type\": \"RS_544_514\",\n      \"number_of_lanes\": 2\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

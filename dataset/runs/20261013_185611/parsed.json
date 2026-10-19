@@ -1,0 +1,38 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\2021-09-11694458.pdf",
+  "page_count": 5,
+  "table_count": 6,
+  "markdown_chars": 6921,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 24
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 21
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 3
+    }
+  ]
+}

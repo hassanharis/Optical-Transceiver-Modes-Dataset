@@ -1,0 +1,94 @@
+{
+  "vendor": null,
+  "model": [
+    "DQ5002-001C-SO",
+    "DQ5002-1M5C-SO",
+    "DQ5002-002C-SO",
+    "DQ5002-003C-SO",
+    "DQ5002-xxxC-SO"
+  ],
+  "form_factor": [
+    "QSFP56"
+  ],
+  "standards_claimed": [
+    "QSFP56 MSA",
+    "IEEE 802.3"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": null,
+  "fiber_type": null,
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "200GAUI-2"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "200GAUI-2"
+  ],
+  "standards_code": [
+    "200GAUI-2"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    200,
+    100
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": null,
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": null,
+  "notes": "Passive Twinax Direct Attach Cable (DAC), not an optical transceiver. Cable lengths 1 m, 1.5 m, 2 m, and 3 m (3.3 to 9.8 ft / up to 16.4 ft in overview). AWG30 (1 m, 1.5 m) and AWG26 (2 m, 3 m). Supports 200 Gigabit Ethernet and 200G HDR InfiniBand. RoSH compliant. Minimum bend radius AWG30: 23 mm; AWG26: 28 mm. smartoptics.com referenced for more information; manufacturer name not stated in body text.",
+  "provenance_datasheet_sections": [
+    "DQ5002-XXXC-SO",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION",
+    "MECHANICAL DRAWING"
+  ],
+  "suggestions": "Add fields for cable_length_m, awg, passive_vs_active, and min_bend_radius_mm for DAC/copper products; reach_km is not applicable when only meter-scale cable lengths are given."
+}

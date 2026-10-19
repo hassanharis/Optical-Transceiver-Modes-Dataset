@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;SO-TSFP-10G-ZR-DWDM-I&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">so-tsfp-10g-zr-dwdm-i.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">3</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 16:18</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.1 
+
+## **SO-TSFP-10G-ZR-DWDM-I** 
+
+SFP+, 10G Multirate, DWDM, 50GHz Tunable, 23dB, 80km, D9135-D9610 (96ch), I-temp 
+
+## OVERVIEW 
+
+The SO-TSFP-10G-ZR-DWDM-I is a high performance DWDM transceiver that is tunable to 96 channels in the 50GHz C-band grid as specified in ITU-T 694.1. The distance performance is in accordance with the industry ZR/ZW-standard, providing a bridgeable distance of up to 80km (without dispersion compensation) for 10GbE-LAN (10GBASE-ZR) and 10GbE-WAN (10GBASE-ZW) services. 
+
+The transceiver is temperature hardened and supports the Industrial temperature range (I-temp): -40°C to 85°C (-40°F to 185°F). The mechanical characteristics are compliant with the SFP+ specification (SFF-8431 and SFF8432). Wavelength and frequency tuning modes are supported in accordance with SFF-8690. 
+
+The transceiver supports data rates from 1.2 to 11.3 Gbps, covering a series of Ethernet, OTN, SDH/SONET and other protocols. 
+
+The transceiver supports data rates from 1.2 to 11.3 Gbps, covering a series of Ethernet, OTN, SDH/SONET and other protocols. This transceiver provides digital diagnostic functions via a 2-wire serial interface as defined by the SFF-8472 specification. The transceiver module is compliant to RoHS-6/6. 
+
+## TECHNICAL DATA 
+
+|**Parameter**|**Value**||**Parameter**|**Value**|
+|---|---|---|---|---|
+|Technology|DWDM SFP+ Tunable||**Transmitter data:**||
+|Transmission media|SM (2x LC)||Output power|Min: -1.0dBm1)|
+|Typical reach|80km|||Max: +3.0dBm1)|
+|Nominal wavelength|191.35 - 196.10THz||Transmit wavelength|191.35 - 196.10THz|
+|Bit rate support|1.2Gbps to 11.3Gbps|||50GHz steps (96ch)|
+|Interface standards|10GBASE-ZR, 10GBASE-ZW||Tuning speed|Min 10s ch to ch|
+|Protocol support|GbE, 10GbE-LAN, 10GbE-WAN||**Receiver data:**||
+||OTU1, OTU2, OTU2e||Minimum input power|-24.0dBm1) 2)|
+||STM-16/OC48, STM-64/OC192|||-23.0dBm1) 3)|
+||2G, 4G, 8G, 10G FC|||-21.0dBm1) 4)|
+||CPRI Opt, 2, 3, 4, 5, 6, 7, 7A, 8||Overload (max power)|-7.0dBm1)|
+||OBS
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "SO-TSFP-10G-ZR-DWDM-I"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP+"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8690",
+    "SFF-8472",
+    "ITU-T <span class="num">694.1</span>"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_max_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1550</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "C-band"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">191.0</span>,
+    <span class="num">191.35</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.1</span>,
+    <span class="num">197.0</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">50</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">96</span>
+  ],
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-40</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">2.3</span>
+  ],
+  <span class="key">"host_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "10GBASE-ZR",
+    "10GBASE-ZW",
+    "G.694.1"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">1.2</span>,
+    <span class="num">10.3</span>,
+    <span class="num">11.3</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">80</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-1.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">3.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-24.0</span>,
+    <span class="num">-23.0</span>,
+    <span class="num">-21.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: [
+    <span class="num">35</span>
+  ],
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-7.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">-300</span>,
+    <span class="num">1400</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-27</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-25</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>,
+    <span class="num">4.0</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Transmit/nominal wavelength <span class="num">191.35</span>–196.10 THz; receiver wavelength range <span class="num">191.00</span>–197.00 THz; <span class="num">50</span> GHz steps (96 ch) D9135–D9610. Power budget <span class="num">10</span>–23 dB. Dispersion penalty max <span class="num">3</span> dB. Output power, receiver sensitivity, and overload are average power (footnote <span class="num">1</span>). Rx sensitivity footnotes: <span class="num">2</span>) back-to-back @ <span class="num">10.3</span> Gbps, BER <span class="num">1</span>×10⁻¹², OSNR &gt;35 dB → <span class="num">-24.0</span> dBm; <span class="num">3</span>) +1100 ps/nm @ <span class="num">10.3</span> Gbps, BER <span class="num">1</span>×10⁻¹², OSNR &gt;35 dB → <span class="num">-23.0</span> dBm; <span class="num">4</span>) <span class="num">-300</span> to +1400 ps/nm @ <span class="num">10.3</span> Gbps, BER <span class="num">1</span>×10⁻¹², OSNR &gt;35 dB → <span class="num">-21.0</span> dBm. Tuning speed min <span class="num">10</span> s channel-to-channel. Power consumption &lt;2.3 W worst case. <span class="num">10</span>GBASE-ZR/ZW referenced for bridgeable distance; standard defined only at <span class="num">1550</span> nm for other DWDM wavelengths."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "SO-TSFP-10G-ZR-DWDM-I",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Clarify whether rx_osnr_db should capture only receiver OSNR requirements vs. test conditions (OSNR &gt;35 dB). Dispersion penalty max <span class="num">3</span> dB lacks paired penalized metric for penalties[] schema. Host/media MSA interface IDs not in this datasheet."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>frequency_min_thz</td><td><span class="badge">191.0</span> <span class="badge">191.35</span></td></tr>
+<tr><td>frequency_max_thz</td><td><span class="badge">196.1</span> <span class="badge">197.0</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">10GBASE-ZR</span> <span class="badge">10GBASE-ZW</span> <span class="badge">G.694.1</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">1.2</span> <span class="badge">10.3</span> <span class="badge">11.3</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-24.0</span> <span class="badge">-23.0</span> <span class="badge">-21.0</span></td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td><span class="badge">-300.0</span> <span class="badge">1400.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>model</td><td>SO-TSFP-10G-ZR-DWDM-I</td></tr>
+<tr><td>form_factor</td><td>SFP+</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8431, SFF-8432, SFF-8690, SFF-8472, ITU-T 694.1</td></tr>
+<tr><td>wavelength_center_nm</td><td>1550.0</td></tr>
+<tr><td>wavelength_band</td><td>C-band</td></tr>
+<tr><td>channel_spacing_ghz</td><td>50.0</td></tr>
+<tr><td>channel_total</td><td>96</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>power_consumption_w</td><td>2.3</td></tr>
+<tr><td>reach_km</td><td>80.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-1.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>3.0</td></tr>
+<tr><td>rx_osnr_db</td><td>35.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-7.0</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>los_assert_dbm</td><td>-27.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-25.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5, 4.0</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Transmit/nominal wavelength 191.35–196.10 THz; receiver wavelength range 191.00–197.00 THz; 50 GHz steps (96 ch) D9135–D9610. Power budget 10–23 dB. Dispersion penalty max 3 dB. Output power, receiver sensitivity, and overload are average power (footnote 1). Rx sensitivity footnotes: 2) back-to-back @ 10.3 Gbps, BER 1×10⁻¹², OSNR &gt;35 dB → -24.0 dBm; 3) +1100 ps/nm @ 10.3 Gbps, BER 1×10⁻¹², OSNR &gt;35 dB → -23.0 dBm; 4) -300 to +1400 ps/nm @ 10.3 Gbps, BER 1×10⁻¹², OSNR &gt;35 dB → -21.0 dBm. Tuning speed min 10 s channel-to-channel. Power consumption &lt;2.3 W worst case. 10GBASE-ZR/ZW referenced for bridgeable distance; standard defined only at 1550 nm for other DWDM wavelengths.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>SO-TSFP-10G-ZR-DWDM-I, OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+<tr><td>suggestions</td><td>Clarify whether rx_osnr_db should capture only receiver OSNR requirements vs. test conditions (OSNR &gt;35 dB). Dispersion penalty max 3 dB lacks paired penalized metric for penalties[] schema. Host/media MSA interface IDs not in this datasheet.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>frequency_min_thz</th><th>frequency_max_thz</th><th>standards_code</th><th>bit_rate_gbps</th><th>rx_sensitivity_dbm</th><th>cd_tolerance_ps_nm</th></tr><tr><td><strong>10GBASE-ZR/ZW back-to-back @ 10.3 Gbps (footnote 2)</strong></td><td>191.35</td><td>196.1</td><td>10GBASE-ZR</td><td>10.3</td><td>-24.0</td><td>-300.0</td></tr><tr><td><strong>10GBASE-ZR/ZW +1100 ps/nm @ 10.3 Gbps (footnote 3)</strong></td><td>191.35</td><td>196.1</td><td>10GBASE-ZW</td><td>10.3</td><td>-23.0</td><td>1400.0</td></tr><tr><td><strong>10GBASE-ZR/ZW -300 to +1400 ps/nm @ 10.3 Gbps (footnote 4)</strong></td><td>191.35</td><td>196.1</td><td>10GBASE-ZR</td><td>10.3</td><td>-21.0</td><td>1400.0</td></tr><tr><td><strong>G.694.1 DWDM nominal TX (50 GHz C-band)</strong></td><td>191.35</td><td>196.1</td><td>G.694.1</td><td>1.2</td><td>-21.0</td><td>-300.0</td></tr><tr><td><strong>Receiver wavelength range (technical data)</strong></td><td>191.0</td><td>197.0</td><td>G.694.1</td><td>11.3</td><td>-21.0</td><td>-300.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 16:18
+</footer>
+
+</div>
+</body>
+</html>

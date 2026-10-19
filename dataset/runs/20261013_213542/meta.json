@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:35:42.926626+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-toc006-tunc-so-osfp800-800g-openroadm-pcs-r6.0.pdf",
+  "page_count": 4,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 6.872,
+    "extract_atoms": 34.12,
+    "store_run": 0.009,
+    "synthesize_modes": 47.907,
+    "store_modes": 0.005,
+    "total": 88.914
+  }
+}

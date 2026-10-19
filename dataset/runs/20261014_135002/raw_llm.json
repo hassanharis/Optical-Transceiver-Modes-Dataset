@@ -1,0 +1,177 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-10GE-LR70-Cxx",
+    "SO-SFP-10GE-LR70-C27",
+    "SO-SFP-10GE-LR70-C29",
+    "SO-SFP-10GE-LR70-C31",
+    "SO-SFP-10GE-LR70-C33",
+    "SO-SFP-10GE-LR70-C35",
+    "SO-SFP-10GE-LR70-C37",
+    "SO-SFP-10GE-LR70-C39",
+    "SO-SFP-10GE-LR70-C41",
+    "SO-SFP-10GE-LR70-C43",
+    "SO-SFP-10GE-LR70-C45"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8472",
+    "G.694.2"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260.0,
+    1270.0,
+    1271.0
+  ],
+  "wavelength_max_nm": [
+    1450.0,
+    1451.0,
+    1620.0
+  ],
+  "wavelength_center_nm": [
+    1270.0,
+    1290.0,
+    1310.0,
+    1330.0,
+    1350.0,
+    1370.0,
+    1390.0,
+    1410.0,
+    1430.0,
+    1450.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    10
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -5.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "G.694.2",
+    "10GbE-WAN",
+    "10GbE-LAN",
+    "GbE",
+    "STM-64",
+    "OC192",
+    "STM-16",
+    "OC48",
+    "STM-4",
+    "OC12",
+    "OTU2e",
+    "OTU2",
+    "OTU1",
+    "10G FC",
+    "8G FC",
+    "4G FC",
+    "1G FC",
+    "CPRI Opt 1",
+    "CPRI Opt 2",
+    "CPRI Opt 3",
+    "CPRI Opt 4",
+    "CPRI Opt 5",
+    "CPRI Opt 6",
+    "CPRI Opt 7",
+    "CPRI Opt 7A",
+    "CPRI Opt 8",
+    "OBSAI"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    0.614,
+    0.6144,
+    0.768,
+    1.2288,
+    1.536,
+    2.4576,
+    3.072,
+    3.072,
+    4.9152,
+    6.144,
+    6.144,
+    8.11008,
+    9.8304,
+    10.1376,
+    11.3
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    70.0
+  ],
+  "tx_power_min_dbm": [
+    2.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -21.0
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -6.0
+  ],
+  "cd_tolerance_ps_nm": [
+    2000.0
+  ],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [],
+  "los_deassert_dbm": [],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Power budget 11.0–23.0 dB and reach up to 70 km depend on fiber type, channel, and bit rate (footnote 1). Rx min input power and overload measured at 10.3 Gbps using PRBS31 @ BER 1x10-12 (footnote 2). Tx/Rx power values are average power (footnote 3). Higher intrinsic fiber attenuation noted in 1271–1451 nm area. Storage temperature -40°C to +85°C stated separately from operating -5°C to +70°C. Power consumption stated as < 1.5 W. Dispersion penalty max 3 dB stated without paired penalized optical value and operating condition for penalty schema.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-10GE-LR70-Cxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Add SFP+ to form_factor enum. Clarify whether 1271–1451 nm or per-ordering center wavelengths apply per SKU. Separate storage vs operating temperature fields if both are commonly reported."
+}

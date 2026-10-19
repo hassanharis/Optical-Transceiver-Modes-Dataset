@@ -1,0 +1,31 @@
+{
+  "modes": [
+    {
+      "label": "4XFC 4.25 GBaud",
+      "host_interface_name": "4XFC",
+      "standards_code": "4XFC",
+      "baud_rate_gbaud": 4.25,
+      "rx_sensitivity_dbm": -15.0,
+      "los_assert_dbm": -18.0,
+      "los_deassert_dbm": -15.0
+    },
+    {
+      "label": "2XFC 2.125 GBaud",
+      "host_interface_name": "2XFC",
+      "standards_code": "2XFC",
+      "baud_rate_gbaud": 2.125,
+      "rx_sensitivity_dbm": -18.0,
+      "los_assert_dbm": -18.0,
+      "los_deassert_dbm": -29.0
+    },
+    {
+      "label": "1XFC 1.0625 GBaud",
+      "host_interface_name": "1XFC",
+      "standards_code": "1XFC",
+      "baud_rate_gbaud": 1.0625,
+      "rx_sensitivity_dbm": -20.0,
+      "los_assert_dbm": -20.0,
+      "los_deassert_dbm": -29.0
+    }
+  ]
+}

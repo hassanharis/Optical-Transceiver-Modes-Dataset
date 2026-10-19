@@ -1,0 +1,45 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+
+# Tooling caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local configuration and secrets
+.env
+.env.local
+
+# Streamlit local settings
+.streamlit/secrets.toml
+
+# Editor / OS noise
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+*.swp
+
+# --- Project artifacts ---------------------------------------------------- #
+# Local extraction outputs can contain parsed vendor text. Keep new runs and
+# reports private. Existing dataset artifacts need a separate release audit.
+
+
+# Source datasheets are third-party copyrighted material — keep them local.
+workspace/
+*.pdf
+

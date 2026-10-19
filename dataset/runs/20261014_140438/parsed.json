@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp-10ge-zr.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 5240,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 23
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

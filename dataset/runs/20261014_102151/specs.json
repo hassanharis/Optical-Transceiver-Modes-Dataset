@@ -1,0 +1,91 @@
+{
+  "vendor": "ProLabs",
+  "model": [
+    "SFP-1G-BX-U-20-DE-C"
+  ],
+  "form_factor": [
+    "SFF"
+  ],
+  "standards_claimed": [
+    "INF-8074",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1480.0
+  ],
+  "wavelength_max_nm": [
+    1360.0,
+    1500.0
+  ],
+  "wavelength_center_nm": [
+    1310.0,
+    1490.0
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [
+    "1000Base-BX"
+  ],
+  "standards_code": [
+    "1000Base-BX",
+    "IEEE 802.3ah"
+  ],
+  "bit_rate_gbps": [
+    1.25
+  ],
+  "reach_km": [
+    20.0
+  ],
+  "tx_power_min_dbm": [
+    -9.0
+  ],
+  "tx_power_max_dbm": [
+    -3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -19.5
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "channel_insertion_loss_db": [
+    0.6
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "penalties": [],
+  "notes": "Bidirectional BX unit: 1310 nm Tx / 1490 nm Rx; must be paired with complementing wavelength. Receiver sensitivity: average power, back-to-back, @1.25 Gbps, BER 1E-12, PRBS 2^31-1 (Note 3). Optical power coupled into single-mode fibre (Note 1). Per IEEE 802.3ah (Note 2). Exceeding receiver overload can damage module (Note 4). Dell compatible / TAA compliant; DOM per SFF-8472. Title states 1000Base-BX throughput; Absolute Maximum Ratings lists Maximum Bitrate Bmax 1.25 Gbps.",
+  "provenance_datasheet_sections": [
+    "SFP-1G-BX-U-20-DE-C",
+    "Features:",
+    "Applications:",
+    "Product Description",
+    "Absolute Maximum Ratings",
+    "Electrical Characteristics (TOP=25°C, Vcc=3.3Volts)",
+    "Optical Characteristics",
+    "Notes:",
+    "Mechanical Specifications",
+    "EEPROM Information"
+  ]
+}

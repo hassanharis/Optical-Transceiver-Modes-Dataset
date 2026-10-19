@@ -1,0 +1,48 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\Cisco CFP2-DCO.pdf",
+  "page_count": 8,
+  "table_count": 8,
+  "markdown_chars": 10858,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 3
+    }
+  ]
+}

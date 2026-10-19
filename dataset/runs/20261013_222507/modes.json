@@ -1,0 +1,34 @@
+{
+  "modes": [
+    {
+      "label": "SGMII 10BASE-T",
+      "host_interface_name": "SGMII",
+      "standards_code": "10BASE-T",
+      "bit_rate_gbps": 0.01
+    },
+    {
+      "label": "SGMII 100BASE-T",
+      "host_interface_name": "SGMII",
+      "standards_code": "100BASE-T",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "SGMII 1000BASE-T",
+      "host_interface_name": "SGMII",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "SGMII 10/100/1000BASE-T auto-negotiation",
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000BASE-T",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "SERDES 1000BASE-T",
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    }
+  ]
+}

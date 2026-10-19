@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"62.5/125 \u03bcm NA 0.275 MMF\",\n      \"wavelength_center_nm\": 1308.0,\n      \"power_consumption_w\": 0.15,\n      \"media_interface_name\": \"100BASE-FX\",\n      \"standards_code\": \"100BASE-FX\",\n      \"tx_power_min_dbm\": -20.0,\n      \"tx_power_max_dbm\": -14.0\n    },\n    {\n      \"label\": \"50/125 \u03bcm NA 0.20 MMF\",\n      \"wavelength_center_nm\": 1308.0,\n      \"power_consumption_w\": 0.15,\n      \"media_interface_name\": \"100BASE-FX\",\n      \"standards_code\": \"100BASE-FX\",\n      \"tx_power_min_dbm\": -24.0,\n      \"tx_power_max_dbm\": -17.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

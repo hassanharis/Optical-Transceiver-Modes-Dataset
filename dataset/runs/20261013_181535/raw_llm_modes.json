@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "\u03bb0 CWDM lane (2xFR4)",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "standards_code": "IEEE 802.3dj-2024"
+    },
+    {
+      "label": "\u03bb1 CWDM lane (2xFR4)",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "standards_code": "IEEE 802.3dj-2024"
+    },
+    {
+      "label": "\u03bb2 CWDM lane (2xFR4)",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "standards_code": "IEEE 802.3dj-2024"
+    },
+    {
+      "label": "\u03bb3 CWDM lane (2xFR4)",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "IEEE 802.3dj-2024"
+    }
+  ]
+}

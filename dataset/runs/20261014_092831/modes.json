@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "LS-SM3110-10C 10GBASE-LR",
+      "model": "LS-SM3110-10C",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "LS-SM3110-10C 10GBASE-LW",
+      "model": "LS-SM3110-10C",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "LS-SM3110-10I 10GBASE-LR",
+      "model": "LS-SM3110-10I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "LS-SM3110-10I 10GBASE-LW",
+      "model": "LS-SM3110-10I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 9.953
+    }
+  ]
+}

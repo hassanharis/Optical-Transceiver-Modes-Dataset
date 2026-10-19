@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-xfp-er-dxxxx.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 6736,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 21
+    },
+    {
+      "page": 0,
+      "label": null,
+      "rows": 14
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 23
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

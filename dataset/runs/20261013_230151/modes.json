@@ -1,0 +1,49 @@
+{
+  "modes": [
+    {
+      "label": "16GFC 14.025 Gb/s (high bandwidth)",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "media_interface_name": "Fibre Channel",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "tx_power_max_dbm": 2.0
+    },
+    {
+      "label": "8x Fibre Channel 8.5 Gb/s (low bandwidth)",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "media_interface_name": "Fibre Channel",
+      "standards_code": "8x Fibre Channel",
+      "bit_rate_gbps": 8.5,
+      "tx_power_max_dbm": -1.0
+    },
+    {
+      "label": "4x Fibre Channel 4.25 Gb/s (low bandwidth)",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "media_interface_name": "Fibre Channel",
+      "standards_code": "4x Fibre Channel",
+      "bit_rate_gbps": 4.25,
+      "tx_power_max_dbm": -1.0
+    },
+    {
+      "label": "10GBASE-LR",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "media_interface_name": "10GBASE-LR",
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 14.025,
+      "tx_power_max_dbm": 2.0
+    },
+    {
+      "label": "10GBASE-LW",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "media_interface_name": "10GBASE-LW",
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 14.025,
+      "tx_power_max_dbm": 2.0
+    }
+  ]
+}

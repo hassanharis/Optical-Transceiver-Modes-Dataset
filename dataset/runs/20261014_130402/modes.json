@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-1000Base-ZXD GbE 1.25G",
+      "model": "SO-SFP-1000Base-ZXD",
+      "wavelength_min_nm": 1500.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-1000Base-ZXD 1G FC",
+      "model": "SO-SFP-1000Base-ZXD",
+      "wavelength_min_nm": 1500.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "SO-SFP-1000Base-ZXD-I GbE 1.25G",
+      "model": "SO-SFP-1000Base-ZXD-I",
+      "wavelength_min_nm": 1500.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "SO-SFP-1000Base-ZXD-I 1G FC",
+      "model": "SO-SFP-1000Base-ZXD-I",
+      "wavelength_min_nm": 1500.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "1G FC",
+      "bit_rate_gbps": 1.0625
+    }
+  ]
+}

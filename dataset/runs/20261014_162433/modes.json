@@ -1,0 +1,64 @@
+{
+  "modes": [
+    {
+      "label": "SO-XFP-10GE-BX20D-2733 1270nm Tx",
+      "model": "SO-XFP-10GE-BX20D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "media_interface_name": "10GBASE-LR",
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-10GE-BX20D-2733 1270nm Tx",
+      "model": "SO-XFP-10GE-BX20D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "media_interface_name": "10GBASE-LW",
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "SO-XFP-10GE-BX20D-2733 1270nm Tx",
+      "model": "SO-XFP-10GE-BX20D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "media_interface_name": "10GBASE-LR",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "SO-XFP-10GE-BX20D-3327 1330nm Tx",
+      "model": "SO-XFP-10GE-BX20D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "media_interface_name": "10GBASE-LR",
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-10GE-BX20D-3327 1330nm Tx",
+      "model": "SO-XFP-10GE-BX20D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "media_interface_name": "10GBASE-LW",
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "SO-XFP-10GE-BX20D-3327 1330nm Tx",
+      "model": "SO-XFP-10GE-BX20D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "media_interface_name": "10GBASE-LR",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 11.3
+    }
+  ]
+}

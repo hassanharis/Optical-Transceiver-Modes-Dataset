@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — FS</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">FS</div>
+  <div class="subtitle">QSFP28 &middot; C-band</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">FS</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">QSFP28</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">IEEE 100G Ethernet (CAUI-4), ITU-T 100G OTN (OTL4.4), IEEE Std. 802.3-2022 100GBASE-ZR, ITU-T G.709.2, CMIS, SFF-8636, SFF-8665, SFF-8679, SFF-8661, SFF-8662, SFF-8663, SFF-8672, SFF-8683, QSFP-DD MSA, OIF Coherent CMIS, OIF-C-CMIS, SFF-8024</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">C-band</div></div>
+      <div class="spec-item"><div class="label">Frequency Max Thz</div><div class="value">196.1</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable_hot, pluggable</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Bit Rate (Gbps)</div><div class="value">100.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Tx In Band Osnr Db</div><div class="value">39.0</div></div>
+      <div class="spec-item"><div class="label">Tx Out Of Band Osnr Db</div><div class="value">30.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">3.0</div></div>
+      <div class="spec-item"><div class="label">Receiver Reflectance Db</div><div class="value">-20.0</div></div>
+      <div class="spec-item"><div class="label">Number Of Lanes</div><div class="value">4</div></div>
+      <div class="spec-item"><div class="label">Side Mode Suppression Ratio Db</div><div class="value">40.0</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Reach 120 km dispersion limited, optionally extendable to 300 km. Case short-term operating temperature -5°C to 75°C for &lt;96 h. Tx output power stated as &gt;0 dBm in Features; table gives Min 0 dBm. CD tolerance table units are ns/nm (Default max 2.4 at OSNR penalty &lt;0.5 dB; Extended max 6.0 at OSNR penalty &lt;1.0 dB). Rx signal input power (amplified) -18 to 1 dBm; extended range -22 to 3 dBm with &lt;1 dB OSNR penalty relative to Rx OSNR tolerance. Rx OSNR tolerance back-to-back PRx,sig &gt; -18 dBm: 16.5 dB/12.5GHz (100G DQPSK SC), 21.5 dB/12.5GHz (100G DQPSK RS). CFO: up to 1 dB penalty for worst case |CFO| = 3.6 GHz. Power dissipation increases by approximately 0.2 W if extended CD compensation is enabled. High-TX variants QSFP-ZRHF include TOF. OSNR and SMSR referenced per 12.5 GHz bandwidth where noted.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">Applications, Features, Description, Product Specifications, I. Environmental Specifications, II. Interface Modes, III. Electrical Characteristics, IV. Optical Characteristics, Transmitter, Receiver, V. Digital Management and Diagnostics Functions, VI. References, Order Information</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Datasheet gives channel frequency in THz only; add nm ranges in source or map per grid. PDL table lists OSNR penalty magnitudes vs PDL without explicit penalized OSNR thresholds—penalty objects need clearer @ notation. Host/line interface IDs are decimal in tables; hex IDs not printed. Explicit emitter and photodetector types not stated for coherent DCO module.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>frequency_min_thz</th><th>Channel Spacing (GHz)</th><th>Power (W)</th><th>Host Interface</th><th>host_interface_id</th><th>Media Interface</th><th>media_interface_id</th><th>frame</th><th>Standards code</th><th>Baud Rate (GBaud)</th><th>modulation_format</th><th>Reach (km)</th><th>RX Sensitivity (dBm)</th><th>RX OSNR (dB)</th><th>CD Tolerance (ps/nm)</th><th>pdl_db</th><th>pmd_tolerance_ps</th><th>fec_type</th></tr>
+      <tr><td><strong>QSFP-ZRH-100G CAUI-4 no FEC → 100GBASE-ZR (amplified)</strong></td><td>QSFP-ZRH-100G</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G CAUI-4 no FEC → 100GBASE-ZR (unamplified)</strong></td><td>QSFP-ZRH-100G</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G CAUI-4 RS FEC → 100GBASE-ZR (amplified)</strong></td><td>QSFP-ZRH-100G</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G CAUI-4 RS FEC → 100GBASE-ZR (unamplified)</strong></td><td>QSFP-ZRH-100G</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G CAUI-4 no FEC → 100GBASE-ZR (amplified)</strong></td><td>QSFP-ZRHF-100G</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G CAUI-4 no FEC → 100GBASE-ZR (unamplified)</strong></td><td>QSFP-ZRHF-100G</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G CAUI-4 RS FEC → 100GBASE-ZR (amplified)</strong></td><td>QSFP-ZRHF-100G</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G CAUI-4 RS FEC → 100GBASE-ZR (unamplified)</strong></td><td>QSFP-ZRHF-100G</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 no FEC → 100GBASE-ZR (amplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 no FEC → 100GBASE-ZR (unamplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 RS FEC → 100GBASE-ZR (amplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 RS FEC → 100GBASE-ZR (unamplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S OTL4.4 → OTU4 Long Reach (amplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>OTL4.4 (ITU-T G.709/ Y.1331 G.Sup58)</td><td>57</td><td>OTU4 Long Reach</td><td>192</td><td>OTL4.4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S OTL4.4 → OTU4 Long Reach (unamplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>OTL4.4 (ITU-T G.709/ Y.1331 G.Sup58)</td><td>57</td><td>OTU4 Long Reach</td><td>192</td><td>OTL4.4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S OTL4.4 → OTU4 Short Reach (amplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>OTL4.4 (ITU-T G.709/ Y.1331 G.Sup58)</td><td>57</td><td>OTU4 Short Reach</td><td>193</td><td>OTL4.4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S OTL4.4 → OTU4 Short Reach (unamplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>OTL4.4 (ITU-T G.709/ Y.1331 G.Sup58)</td><td>57</td><td>OTU4 Short Reach</td><td>193</td><td>OTL4.4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 no FEC → OTU4 Long Reach (amplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>OTU4 Long Reach</td><td>192</td><td>CAUI-4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 no FEC → OTU4 Long Reach (unamplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>OTU4 Long Reach</td><td>192</td><td>CAUI-4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 RS FEC → OTU4 Long Reach (amplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>OTU4 Long Reach</td><td>192</td><td>CAUI-4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 RS FEC → OTU4 Long Reach (unamplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>OTU4 Long Reach</td><td>192</td><td>CAUI-4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 no FEC → OTU4 Short Reach (amplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>OTU4 Short Reach</td><td>193</td><td>CAUI-4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 no FEC → OTU4 Short Reach (unamplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>OTU4 Short Reach</td><td>193</td><td>CAUI-4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 RS FEC → OTU4 Short Reach (amplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>OTU4 Short Reach</td><td>193</td><td>CAUI-4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+      <tr><td><strong>QSFP-ZRH-100G-S CAUI-4 RS FEC → OTU4 Short Reach (unamplified)</strong></td><td>QSFP-ZRH-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>OTU4 Short Reach</td><td>193</td><td>CAUI-4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 no FEC → 100GBASE-ZR (amplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 no FEC → 100GBASE-ZR (unamplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 RS FEC → 100GBASE-ZR (amplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 RS FEC → 100GBASE-ZR (unamplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>100GBASE-ZR (Clause 154)</td><td>68</td><td>CAUI-4</td><td>100GBASE-ZR (Clause 154)</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S OTL4.4 → OTU4 Long Reach (amplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>OTL4.4 (ITU-T G.709/ Y.1331 G.Sup58)</td><td>57</td><td>OTU4 Long Reach</td><td>192</td><td>OTL4.4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S OTL4.4 → OTU4 Long Reach (unamplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>OTL4.4 (ITU-T G.709/ Y.1331 G.Sup58)</td><td>57</td><td>OTU4 Long Reach</td><td>192</td><td>OTL4.4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S OTL4.4 → OTU4 Short Reach (amplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>OTL4.4 (ITU-T G.709/ Y.1331 G.Sup58)</td><td>57</td><td>OTU4 Short Reach</td><td>193</td><td>OTL4.4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S OTL4.4 → OTU4 Short Reach (unamplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>OTL4.4 (ITU-T G.709/ Y.1331 G.Sup58)</td><td>57</td><td>OTU4 Short Reach</td><td>193</td><td>OTL4.4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 no FEC → OTU4 Long Reach (amplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>OTU4 Long Reach</td><td>192</td><td>CAUI-4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 no FEC → OTU4 Long Reach (unamplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>OTU4 Long Reach</td><td>192</td><td>CAUI-4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 RS FEC → OTU4 Long Reach (amplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>OTU4 Long Reach</td><td>192</td><td>CAUI-4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 RS FEC → OTU4 Long Reach (unamplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>OTU4 Long Reach</td><td>192</td><td>CAUI-4</td><td>OTU4 Long Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-30.0</td><td>16.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>SCFEC</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 no FEC → OTU4 Short Reach (amplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>OTU4 Short Reach</td><td>193</td><td>CAUI-4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 no FEC → OTU4 Short Reach (unamplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M without FEC</td><td>65</td><td>OTU4 Short Reach</td><td>193</td><td>CAUI-4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 RS FEC → OTU4 Short Reach (amplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>OTU4 Short Reach</td><td>193</td><td>CAUI-4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+      <tr><td><strong>QSFP-ZRHF-100G-S CAUI-4 RS FEC → OTU4 Short Reach (unamplified)</strong></td><td>QSFP-ZRHF-100G-S</td><td>191.4</td><td>100.0</td><td>6.0</td><td>CAUI-4 C2M with RS(528,514) FEC</td><td>66</td><td>OTU4 Short Reach</td><td>193</td><td>CAUI-4</td><td>OTU4 Short Reach</td><td>27.9525</td><td>DQPSK-DP</td><td>120.0</td><td>-24.0</td><td>21.5</td><td>2.4</td><td>2.0</td><td>10.0</td><td>RS_255_239</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">QSFP-ZRH-100G</span> <span class="badge">QSFP-ZRH-100G-S</span> <span class="badge">QSFP-ZRHF-100G</span> <span class="badge">QSFP-ZRHF-100G-S</span></td></tr>
+      <tr><td>frequency_min_thz</td><td><span class="badge">191.35</span> <span class="badge">191.4</span></td></tr>
+      <tr><td>channel_spacing_ghz</td><td><span class="badge">50.0</span> <span class="badge">100.0</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">1.5</span> <span class="badge">5.5</span> <span class="badge">6.0</span> <span class="badge">6.2</span> <span class="badge">5.7</span> <span class="badge">6.5</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">CAUI-4 C2M without FEC</span> <span class="badge">CAUI-4 C2M with RS(528,514) FEC</span> <span class="badge">OTL4.4 (ITU-T G.709/ Y.1331 G.Sup58)</span></td></tr>
+      <tr><td>host_interface_id</td><td><span class="badge">65</span> <span class="badge">66</span> <span class="badge">57</span></td></tr>
+      <tr><td>media_interface_name</td><td><span class="badge">100GBASE-ZR (Clause 154)</span> <span class="badge">OTU4 Long Reach</span> <span class="badge">OTU4 Short Reach</span></td></tr>
+      <tr><td>media_interface_id</td><td><span class="badge">68</span> <span class="badge">192</span> <span class="badge">193</span></td></tr>
+      <tr><td>frame</td><td><span class="badge">CAUI-4</span> <span class="badge">OTL4.4</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">100GBASE-ZR</span> <span class="badge">OTU4</span> <span class="badge">OTU4 Long Reach</span> <span class="badge">OTU4 Short Reach</span> <span class="badge">100GBASE-ZR (Clause 154)</span></td></tr>
+      <tr><td>baud_rate_gbaud</td><td><span class="badge">25.78125</span> <span class="badge">27.9525</span> <span class="badge">27.95</span></td></tr>
+      <tr><td>modulation_format</td><td><span class="badge">NRZ</span> <span class="badge">DQPSK-DP</span> <span class="badge">DQPSK</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">120.0</span> <span class="badge">300.0</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-30.0</span> <span class="badge">-24.0</span></td></tr>
+      <tr><td>rx_osnr_db</td><td><span class="badge">16.5</span> <span class="badge">21.5</span></td></tr>
+      <tr><td>cd_tolerance_ps_nm</td><td><span class="badge">2.4</span> <span class="badge">6.0</span></td></tr>
+      <tr><td>pdl_db</td><td><span class="badge">1.0</span> <span class="badge">2.0</span> <span class="badge">4.0</span></td></tr>
+      <tr><td>pmd_tolerance_ps</td><td><span class="badge">10.0</span> <span class="badge">30.0</span></td></tr>
+      <tr><td>fec_type</td><td><span class="badge">NONE</span> <span class="badge">RS_528_514</span> <span class="badge">RS_255_239</span> <span class="badge">SCFEC</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 08:43
+</footer>
+
+</div>
+</body>
+</html>

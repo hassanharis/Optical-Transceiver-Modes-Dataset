@@ -1,0 +1,274 @@
+{
+  "modes": [
+    {
+      "label": "C31 1310nm FE",
+      "model": "SO-SFP-622M-L120D-C31",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -34.0
+    },
+    {
+      "label": "C31 1310nm STM1/OC3",
+      "model": "SO-SFP-622M-L120D-C31",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -33.0
+    },
+    {
+      "label": "C31 1310nm STM4/OC12",
+      "model": "SO-SFP-622M-L120D-C31",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "STM4/OC12",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -32.0
+    },
+    {
+      "label": "C47 1470nm FE",
+      "model": "SO-SFP-622M-L120D-C47",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -34.0
+    },
+    {
+      "label": "C47 1470nm STM1/OC3",
+      "model": "SO-SFP-622M-L120D-C47",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -33.0
+    },
+    {
+      "label": "C47 1470nm STM4/OC12 G.694.2",
+      "model": "SO-SFP-622M-L120D-C47",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -32.0
+    },
+    {
+      "label": "C49 1490nm FE",
+      "model": "SO-SFP-622M-L120D-C49",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -34.0
+    },
+    {
+      "label": "C49 1490nm STM1/OC3",
+      "model": "SO-SFP-622M-L120D-C49",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -33.0
+    },
+    {
+      "label": "C49 1490nm STM4/OC12 G.694.2",
+      "model": "SO-SFP-622M-L120D-C49",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -32.0
+    },
+    {
+      "label": "C51 1510nm FE",
+      "model": "SO-SFP-622M-L120D-C51",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -34.0
+    },
+    {
+      "label": "C51 1510nm STM1/OC3",
+      "model": "SO-SFP-622M-L120D-C51",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -33.0
+    },
+    {
+      "label": "C51 1510nm STM4/OC12 G.694.2",
+      "model": "SO-SFP-622M-L120D-C51",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -32.0
+    },
+    {
+      "label": "C53 1530nm FE",
+      "model": "SO-SFP-622M-L120D-C53",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -34.0
+    },
+    {
+      "label": "C53 1530nm STM1/OC3",
+      "model": "SO-SFP-622M-L120D-C53",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -33.0
+    },
+    {
+      "label": "C53 1530nm STM4/OC12 G.694.2",
+      "model": "SO-SFP-622M-L120D-C53",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -32.0
+    },
+    {
+      "label": "C55 1550nm FE",
+      "model": "SO-SFP-622M-L120D-C55",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -34.0
+    },
+    {
+      "label": "C55 1550nm STM1/OC3",
+      "model": "SO-SFP-622M-L120D-C55",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -33.0
+    },
+    {
+      "label": "C55 1550nm STM4/OC12 G.694.2",
+      "model": "SO-SFP-622M-L120D-C55",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -32.0
+    },
+    {
+      "label": "C57 1570nm FE",
+      "model": "SO-SFP-622M-L120D-C57",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -34.0
+    },
+    {
+      "label": "C57 1570nm STM1/OC3",
+      "model": "SO-SFP-622M-L120D-C57",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -33.0
+    },
+    {
+      "label": "C57 1570nm STM4/OC12 G.694.2",
+      "model": "SO-SFP-622M-L120D-C57",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -32.0
+    },
+    {
+      "label": "C59 1590nm FE",
+      "model": "SO-SFP-622M-L120D-C59",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -34.0
+    },
+    {
+      "label": "C59 1590nm STM1/OC3",
+      "model": "SO-SFP-622M-L120D-C59",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -33.0
+    },
+    {
+      "label": "C59 1590nm STM4/OC12 G.694.2",
+      "model": "SO-SFP-622M-L120D-C59",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -32.0
+    },
+    {
+      "label": "C61 1610nm FE",
+      "model": "SO-SFP-622M-L120D-C61",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -34.0
+    },
+    {
+      "label": "C61 1610nm STM1/OC3",
+      "model": "SO-SFP-622M-L120D-C61",
+      "wavelength_min_nm": 1100.0,
+      "wavelength_max_nm": 1650.0,
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -33.0
+    },
+    {
+      "label": "C61 1610nm STM4/OC12 G.694.2",
+      "model": "SO-SFP-622M-L120D-C61",
+      "wavelength_min_nm": 1471.0,
+      "wavelength_max_nm": 1611.0,
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "G.694.2",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -32.0
+    }
+  ]
+}

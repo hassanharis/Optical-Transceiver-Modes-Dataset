@@ -1,0 +1,91 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "ITU-T G.957",
+      "STM-1",
+      "OC-3"
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "L9-SC31551G-20PPC"
+    ],
+    "form_factor": [
+      "1x9"
+    ],
+    "standards_claimed": [
+      "ITU-T G.957",
+      "IEC 825"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      1270.0
+    ],
+    "wavelength_max_nm": [
+      1350.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "connector_type": [
+      "SC"
+    ],
+    "fiber_type": [
+      "MMF_OM1",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "LVPECL"
+    ],
+    "bit_rate_gbps": [
+      1.25
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -8.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -23.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "extinction_ratio_db": [
+      8.2
+    ],
+    "optical_extinction_ratio_db": [
+      8.2
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Bi-directional (simplex SC) 1×9 module; order row: 1310nm FP Tx, PIN Rx, 3.3V, LVPECL TX/RX and LVPECL SD. Launch power, sensitivity, and maximum input power rows are annotated 20km. Central wavelength 1270–1350 nm (1310 FP); output spectrum width Δλ max 4 nm (FP-LD). Data rate in recommended operating conditions: Symbol B, 1250 Mbps typ, 1500 Mbps max (Min column shows 10 Mbps). Supply current Icc max 260 mA (recommended) and transmitter Icc max 250 mA. Signal detect range −38 to −23 dBm; SD low when no light. Features also mention up to 0.55 km on 62.5/125 μm MMF and up to 60 km on 9/125 μm SMF (family/features, not tied to 20 km order reach). Optical rise/fall time max 2.0 ns (20%–80%). Transmitter differential input voltage 550–1750 mV; Rin typ 100 Ω.",
+    "provenance_datasheet_sections": [
+      "L9-SC31551G-20PPC",
+      "Features",
+      "Applications",
+      "Standard",
+      "Order Information",
+      "Absolute Maximum Ratings",
+      "Recommended Operating Conditions",
+      "Transmitter Optical ,Electrical characteristics",
+      "Receiver Optical Electrical Characteristics",
+      "Pin Connections"
+    ],
+    "suggestions": "Add optional fields for supply voltage (V), supply current (mA), optical rise/fall time (ns), signal-detect range (dBm), and output spectrum width (nm). Clarify mapping of Signal Detect Range to LOS assert/deassert. Distinguish family-level reach (MMF/SMF in Features) from per-PN reach in Order Information."
+  }
+}

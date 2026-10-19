@@ -1,0 +1,77 @@
+{
+  "vendor": "QSFPTek",
+  "model": [
+    "QT-SFP-M"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "IEEE 802.3-2002",
+    "IEEE 802.3ab",
+    "Gigabit Ethernet",
+    "1000 BASE-T"
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "RJ-45"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.05,
+    1.2
+  ],
+  "host_interface_name": [
+    "SERDES",
+    "SGMII"
+  ],
+  "media_interface_name": [
+    "1000BASE-T"
+  ],
+  "standards_code": [
+    "1000BASE-T",
+    "IEEE 802.3",
+    "10/100/1000Mbps"
+  ],
+  "baud_rate_gbaud": [
+    0.25
+  ],
+  "bit_rate_gbps": [
+    1.25,
+    1.0,
+    0.01
+  ],
+  "modulation_format": [
+    "PAM",
+    "PAM5"
+  ],
+  "reach_km": [
+    0.1
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "penalties": [],
+  "notes": "Copper twisted-pair module (Category 5 UTP, max cable length 100 m, BER <10^-12); not an optical transceiver. Document heading says 100BASE-T while body describes 1000BASE-T / 1 Gbps. Features cite 1.25 Gb/s bi-directional; General Specifications data rate 10–1,000 Mb/s. Section 2 title is +3.3V but text states input voltage range +5V +/- 5% and Vcc table 3.13–3.47 V; 3.3 V max not allowed for continuous operation per caution. Power consumption and surge current exceed SFP MSA limits (Is max 375 mA, 1.2 W max; Isurge max 30 mA). LOS indicates received signal below worst-case receiver sensitivity per the standard in use (copper PHY). Ordering table lists related parts QT-SFP-T and QT-SFP-10G-T but this sheet is P/N QT-SFP-M.",
+  "provenance_datasheet_sections": [
+    "100BASE-T SFP Copper RJ-45 100m Transceiver",
+    "P/N: QT- SFP-M",
+    "Features",
+    "Applications",
+    "Description",
+    "2. +3.3V Volt Electrical Power Interface",
+    "4. High-Speed Electrical Interface",
+    "5. High-speed electrical interface, host-SFP",
+    "6. General Specifications",
+    "7. Environmental Specifications",
+    "8. References",
+    "9. Mechanical Specifications",
+    "10. Ordering information"
+  ],
+  "suggestions": "Add schema fields for copper media (cable category, max cable length_m, electrical line rate_MHz) and BER targets; clarify whether reach_km should remain null when only meters are printed."
+}

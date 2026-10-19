@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:10:11.274839+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Optcore OPT622-31203XXR.pdf",
+  "page_count": 6,
+  "table_count": 6,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 7.44,
+    "extract_atoms": 26.995,
+    "store_run": 0.006,
+    "synthesize_modes": 22.452,
+    "store_modes": 0.004,
+    "total": 56.897
+  }
+}

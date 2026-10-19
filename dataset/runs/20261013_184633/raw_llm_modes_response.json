@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"Low-rate register (25.78 Gbps, Rx optical band)\",\n      \"form_factor\": \"SFP28\",\n      \"wavelength_min_nm\": 770.0,\n      \"host_interface_name\": \"SFP28\",\n      \"bit_rate_gbps\": 25.78\n    },\n    {\n      \"label\": \"High-rate register (up to 28 Gbps, Tx 850 nm)\",\n      \"form_factor\": \"SFP+\",\n      \"wavelength_min_nm\": 840.0,\n      \"host_interface_name\": \"SFP+ MSA\",\n      \"bit_rate_gbps\": 28.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

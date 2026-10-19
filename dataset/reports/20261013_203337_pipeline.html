@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — [&#x27;CVR-QSFP28-SFP28-D&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">cvr-qsfp28-sfp28-d.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">1</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">1</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 20:33</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.0 
+
+## **CVR-QSFP28-SFP28-D** 
+
+QSFP28 to SFP28 converter, with DDMI support 
+
+## OVERVIEW 
+
+The CVR-QSFP28-SFP28 is an adapter that provides the option to connect an SP28/SFP+/SFP transceiver or cable to a QSFP28 port of a Nx100GbE switch or Network Interface Card (NIC). The RF (high speed data) channel of the SFP28 receptacle is connected to lane 1 of the QSFP28 connector. The three remaining RF channels on the QSFP+ connector are not connected. The adapter has a QSFP+ form factor with a receptacle for a SFP+ transceiver, an Active Optical Cable (AOC) or a Direct Attach Cable (DAC) connector. 
+
+CVR-QSFP28-SFP28 enables I2C read of the SFP28 registers through the QSFP28 management specification SFF-8636. 
+
+## PRODUCT FEATURES 
+
+- QSFP28 MSA SFF-8665 (QSFP+ 4X 10 Gb/s Pluggable Transceiver) compliant 
+
+- SFP28 MSA SFF-8402 (SFP+ 1X 28 Gb/s Pluggable Transceiver Solution) 
+
+- SFF-8636 (Management Interface for QSFP28) 
+
+- Fully RoHS compliant for environmental protection 
+
+- Operating temperature 0[o] C to +70[o] C (32°F to 158°F) 
+
+- Storage temperature -40[o] C to +85[o] C (-40°F to 185°F) 
+
+- Low power consumption (&lt;0.3W) 
+
+## APPLICATIONS 
+
+- Data Center cabling infrastructure e.g. connect a switch QSFP28 port to a NIC SFP port or connect a NIC QSFP28 port to a switch SFP28 port 
+
+## ORDERING INFORMATION 
+
+|**Ordering number**|**Description**|
+|---|---|
+|CVR-QSFP28-SFP28-D|The 10G channel from SFP28 is connected to lane 1 on QSFP28 connector, with DDMI support|
+
+
+
+
+
+Subject to change without notice. For more information visit smartoptics.com. 
+
+</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="null">null</span>,
+  <span class="key">"model"</span>: [
+    "CVR-QSFP28-SFP28-D"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "QSFP28",
+    "QSFP+",
+    "SFP28"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "QSFP28 MSA SFF-8665",
+    "SFP28 MSA SFF-8402",
+    "SFF-8636"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_max_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_center_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_band"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "pluggable"
+  ],
+  <span class="key">"connector_type"</span>: <span class="null">null</span>,
+  <span class="key">"fiber_type"</span>: <span class="null">null</span>,
+  <span class="key">"temp_min_c"</span>: <span class="num">0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">0.3</span>
+  ],
+  <span class="key">"host_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "SFF-8665",
+    "SFF-8402",
+    "SFF-8636"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">10</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: <span class="null">null</span>,
+  <span class="key">"tx_power_min_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"tx_power_max_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: <span class="null">null</span>,
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"los_deassert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">1</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: <span class="null">null</span>,
+  <span class="key">"notes"</span>: <span class="str">"Adapter/converter (QSFP28 host to SFP28/SFP+/SFP receptacle); RF channel of SFP28 connected to lane <span class="num">1</span> of QSFP28 only; three remaining QSFP28 RF channels not connected. Operating temperature <span class="num">0</span>°C to +70°C; storage <span class="num">-40</span>°C to +85°C. Power stated as &lt;0.3W. I2C read of SFP28 registers via QSFP28 management SFF-8636. Ordering: <span class="num">10</span>G channel from SFP28 to lane <span class="num">1</span> on QSFP28 with DDMI support. Brand website smartoptics.com referenced but manufacturer name not explicitly stated in body text."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "CVR-QSFP28-SFP28-D",
+    "OVERVIEW",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"This product is a mechanical/electrical adapter rather than an optical transceiver; many optical and FEC fields are appropriately <span class="null">null</span>. Consider a separate schema or product_type field for converters/cables vs modules."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>form_factor</td><td><span class="badge">QSFP28</span> <span class="badge">QSFP+</span> <span class="badge">SFP28</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">SFF-8665</span> <span class="badge">SFF-8402</span> <span class="badge">SFF-8636</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>model</td><td>CVR-QSFP28-SFP28-D</td></tr>
+<tr><td>standards_claimed</td><td>QSFP28 MSA SFF-8665, SFP28 MSA SFF-8402, SFF-8636</td></tr>
+<tr><td>mounting_type</td><td>pluggable</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>0.3</td></tr>
+<tr><td>bit_rate_gbps</td><td>10.0</td></tr>
+<tr><td>number_of_lanes</td><td>1</td></tr>
+<tr><td>notes</td><td>Adapter/converter (QSFP28 host to SFP28/SFP+/SFP receptacle); RF channel of SFP28 connected to lane 1 of QSFP28 only; three remaining QSFP28 RF channels not connected. Operating temperature 0°C to +70°C; storage -40°C to +85°C. Power stated as &lt;0.3W. I2C read of SFP28 registers via QSFP28 management SFF-8636. Ordering: 10G channel from SFP28 to lane 1 on QSFP28 with DDMI support. Brand website smartoptics.com referenced but manufacturer name not explicitly stated in body text.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>CVR-QSFP28-SFP28-D, OVERVIEW, PRODUCT FEATURES, APPLICATIONS, ORDERING INFORMATION</td></tr>
+<tr><td>suggestions</td><td>This product is a mechanical/electrical adapter rather than an optical transceiver; many optical and FEC fields are appropriately null. Consider a separate schema or product_type field for converters/cables vs modules.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>form_factor</th><th>standards_code</th></tr><tr><td><strong>QSFP28 host MSA</strong></td><td>QSFP28</td><td>SFF-8665</td></tr><tr><td><strong>QSFP+ pluggable form factor</strong></td><td>QSFP+</td><td>SFF-8665</td></tr><tr><td><strong>SFP28 media receptacle</strong></td><td>SFP28</td><td>SFF-8402</td></tr><tr><td><strong>QSFP28 I2C management (DDMI)</strong></td><td>QSFP28</td><td>SFF-8636</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 20:33
+</footer>
+
+</div>
+</body>
+</html>

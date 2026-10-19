@@ -1,0 +1,122 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-100BASE-ZXD"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1260,
+    1480
+  ],
+  "wavelength_max_nm": [
+    1580,
+    1600
+  ],
+  "wavelength_center_nm": [
+    1550
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "100Base-ZXD",
+    "FE",
+    "STM1/OC3",
+    "STM-1/OC-3"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    0.1,
+    0.155
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    80
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -34
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -10
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -45
+  ],
+  "los_deassert_dbm": [
+    -35
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Power budget 10–29 dB (technical summary). Power consumption stated as < 1.0 W. Storage temperature -40°C to +85°C (not operating). Transmitter/receiver output and input powers are average power (footnote 1). Minimum input power -34 dBm at 155 Mbps, BER 1×10⁻¹², PRBS 2³¹-1 (footnote 2). Bit rates given as 100–155 Mbps in datasheet.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-100BASE-ZXD",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": null
+}

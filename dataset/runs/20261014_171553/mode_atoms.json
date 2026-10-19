@@ -1,0 +1,218 @@
+{
+  "multi_valued": {
+    "power_consumption_w": [
+      22.0,
+      22.5,
+      23.0,
+      23.5
+    ],
+    "host_interface_name": [
+      "400GAUI-8",
+      "100GAUI-2",
+      "CAUI-4"
+    ],
+    "media_interface_name": [
+      "400ZR",
+      "400ZR+",
+      "300ZR+",
+      "200ZR+",
+      "100ZR+"
+    ],
+    "media_interface_id_hex": [
+      "3Eh",
+      "3Fh",
+      "46h",
+      "47h",
+      "48h",
+      "49h"
+    ],
+    "frame": [
+      "1 x 400GAUI-8",
+      "4 x 100GAUI-2",
+      "3 x 100GAUI-2",
+      "2 x 100GAUI-2",
+      "1 x 100GAUI-2",
+      "2 x CAUI-4",
+      "1 x CAUI-4"
+    ],
+    "standards_code": [
+      "OIF 400ZR app code 0x001",
+      "OpenZR+ MSA",
+      "Open ZR+ MSA",
+      "Open ZR+ Extension",
+      "ZR400-CFEC-16QAM",
+      "ZR400-OFEC-16QAM",
+      "ZR300-OFEC-8QAM",
+      "ZR200-OFEC-QPSK",
+      "ZR100-OFEC-QPSK"
+    ],
+    "baud_rate_gbaud": [
+      26.5625,
+      25.78125,
+      59.84375,
+      60.138546798,
+      30.069273399
+    ],
+    "bit_rate_gbps": [
+      400.0,
+      300.0,
+      200.0,
+      100.0
+    ],
+    "modulation_format": [
+      "PAM4",
+      "NRZ",
+      "QAM_16",
+      "QAM_8",
+      "QPSK"
+    ],
+    "reach_km": [
+      40.0,
+      120.0,
+      450.0,
+      600.0,
+      1000.0,
+      2000.0
+    ],
+    "tx_power_max_dbm": [
+      1.0,
+      4.0
+    ],
+    "rx_osnr_db": [
+      26.0,
+      24.0,
+      21.0,
+      16.0,
+      12.5
+    ],
+    "rx_osnr_tolerance_db_max": [
+      26.0,
+      24.0,
+      21.0,
+      16.0,
+      12.5
+    ],
+    "cd_tolerance_ps_nm": [
+      -2400.0,
+      2400.0,
+      -26000.0,
+      26000.0,
+      -50000.0,
+      50000.0,
+      -80000.0,
+      80000.0,
+      20000.0,
+      40000.0,
+      100000.0
+    ],
+    "pdl_db": [
+      3.0,
+      3.5
+    ],
+    "pmd_tolerance_ps": [
+      33.0,
+      66.0,
+      83.0,
+      100.0
+    ],
+    "fec_type": [
+      "CFEC",
+      "OFEC"
+    ],
+    "pre_fec_ber_threshold": [
+      0.017,
+      0.02
+    ],
+    "los_assert_dbm": [
+      -26.0,
+      -24.0,
+      -23.0,
+      -22.0,
+      -21.0,
+      -20.0,
+      -19.0,
+      -18.0,
+      -16.0
+    ]
+  },
+  "general": {
+    "vendor": "ProLabs",
+    "model": [
+      "QDD400GBDCOZRP4DBM-J-ST01-C"
+    ],
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "OpenZR+ MSA",
+      "QSFP-DD MSA",
+      "OIF-400ZR-02.0",
+      "IEEE Std 802.3-2018 Annex 120E",
+      "CEI-56G-VSR-PAM4",
+      "SFF-8024"
+    ],
+    "wavelength_band": [
+      "C-band"
+    ],
+    "frequency_min_thz": [
+      191.3
+    ],
+    "frequency_max_thz": [
+      196.1
+    ],
+    "channel_spacing_ghz": [
+      6.25
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "tx_power_min_dbm": [
+      -10.0
+    ],
+    "tx_in_band_osnr_db": [
+      38.0
+    ],
+    "rx_sensitivity_dbm": [
+      -20.0
+    ],
+    "rx_overload_dbm": [
+      0.0
+    ],
+    "transmitter_reflectance_db": [
+      -20.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      20.0
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "los_hysteresis_db": [
+      1.0,
+      1.5,
+      2.5
+    ],
+    "notes": "The +4dBm maximum TX power is stated at 193.7THz; +1dBm is stated at C band. The -10dBm to +1dBm output range is qualified as amplified operation at C-band. RX sensitivity -20dBm is stated for 400ZR with in-band OSNR ≥34dB. Input-power ranges are conditioned on OSNR thresholds for each mode. Chromatic-dispersion tolerance is stated with ≤0.5dB OSNR-sensitivity penalty when SOP change is ≤1 rad/ms. Peak PDL values 3.0dB and 3.5dB are associated with ≤1.3dB and ≤1.8dB additional OSNR penalty, respectively, under the same SOP condition. DGD tolerance is associated with OSNR penalty <0.5dB. These were not emitted as penalty objects because no penalized OSNR or sensitivity value was stated.",
+    "provenance_datasheet_sections": [
+      "QDD400GBDCOZRP4DBM-J-ST01-C",
+      "Features:",
+      "Applications:",
+      "Product Description",
+      "Applications Supported",
+      "Recommended Operating Conditions",
+      "High-Speed Electrical Characteristics 400GAUI-8 C2M and 100GAUI-2 C2M",
+      "High-Speed Electrical Characteristics CAUI-4 C2M",
+      "Optical Characteristics",
+      "Notes:"
+    ],
+    "suggestions": "Add mode-conditioned structures so optical power, reach, OSNR, dispersion, baud rate, modulation, FEC, and media IDs can be associated with their corresponding 100G/200G/300G/400G operating modes."
+  }
+}

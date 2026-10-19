@@ -1,0 +1,121 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTCE8627E1PCA"
+  ],
+  "form_factor": [
+    "OSFP"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3db",
+    "IEEE 802.3ck",
+    "OSFP MSA",
+    "CMIS 4.0",
+    "CMIS 5.X"
+  ],
+  "wavelength_min_nm": [
+    844.0,
+    842.0
+  ],
+  "wavelength_max_nm": [
+    870.0,
+    948.0
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF_OM5",
+    "MMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    16.0
+  ],
+  "host_interface_name": [
+    "8x100G PAM4",
+    "IEEE 802.3ck"
+  ],
+  "media_interface_name": [
+    "2x400GBASE-VR4",
+    "2x400G-VR4"
+  ],
+  "frame": [
+    "8x100G",
+    "8 x 100GbE"
+  ],
+  "standards_code": [
+    "2x400GBASE-VR4",
+    "2x400G-VR4",
+    "IEEE 802.3db",
+    "IEEE 802.3ck",
+    "InfiniBand NDR"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    425.0,
+    800.0,
+    400.0,
+    100.0,
+    106.25
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "tx_power_min_dbm": [
+    -4.6
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -4.4,
+    -1.8
+  ],
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    2.5
+  ],
+  "receiver_reflectance_db": [
+    -15.0
+  ],
+  "optical_extinction_ratio_db": [
+    2.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    18.0
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "notes": "Maximum supported distances are 30 m (OM3 MMF) and 50 m (OM4/OM5 MMF) in Section V; Applications text also states links up to 100 m of multi-mode fiber. Power dissipation stated as <16 W in features; electrical table lists module total power max 16 W. Outer OMA min and receiver sensitivity (OMAouter) depend on TECQ/TDECQ per IV. Average receive power each lane (min) -6.3 dBm is not the principal indicator of signal strength per note 3. Signaling rate 53.125 ± 100 ppm GBd. OSFP Type 2 with closed top heat sink; dual MPO-12 APC receptacles.",
+  "provenance_datasheet_sections": [
+    "Product Specification",
+    "800G (2x400 VR4) OSFP Finisar Transceiver",
+    "FTCE8627E1PCA",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "PRODUCT SELECTION",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (EOL, TOP = 0 to +70 C, VCC = 3.135 to 3.465 Volts)",
+    "IV. Optical Characteristics (EOL, TOP = 0 to +70 C, VCC = 3.135 to 3.465 Volts)",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "IX. Memory Contents",
+    "X. Mechanical Specifications"
+  ]
+}

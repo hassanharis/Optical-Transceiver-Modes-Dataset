@@ -1,0 +1,109 @@
+{
+  "multi_valued": {
+    "model": [
+      "LS-SM3110-10C",
+      "LS-SM3110-10I"
+    ],
+    "wavelength_min_nm": [
+      1270.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1350.0,
+      1600.0
+    ],
+    "standards_code": [
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "SFP+ MSA",
+      "SFF-8472"
+    ],
+    "bit_rate_gbps": [
+      1.0,
+      9.953,
+      10.3,
+      10.3125,
+      10.7
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFP+ MSA",
+      "SFF-8472"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -6.5
+    ],
+    "tx_power_max_dbm": [
+      -0.5
+    ],
+    "rx_sensitivity_dbm": [
+      -14.4
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -15.5
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "LS-SM3110-10C ordering: 0°C~+70°C with DDM; LS-SM3110-10I: -40°C~+85°C. Operating case temperature also lists Extended -20 to +85°C and Industrial -40 to +85°C. Receiver sensitivity and overload measured with PRBS 2^31-1 @ 10312 Mbps, BER ≤ 1×10^-12 (Note 3). Average output power launched into SMF (Note 1). Supply current Icc max 350 mA at 3.135–3.465 V; power in watts not stated. Diagnostic TX power range -6.5 to -0.5 dBm; RX power -20 to -1 dBm.",
+    "provenance_datasheet_sections": [
+      "LS-SM3110-10C",
+      "Product Features",
+      "Applications",
+      "Description",
+      "Recommended Operating Conditions",
+      "Optical and Electrical Characteristics",
+      "Notes:",
+      "Diagnostics",
+      "Ordering information"
+    ]
+  }
+}

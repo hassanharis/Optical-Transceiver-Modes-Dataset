@@ -1,0 +1,144 @@
+{
+  "multi_valued": {
+    "model": [
+      "DD8001-xxxC-SO",
+      "DD8001-001C-SO",
+      "DD8001-1M5C-SO",
+      "DD8001-002C-SO",
+      "DD8001-2M5C-SO",
+      "DD8001-003C-SO"
+    ],
+    "form_factor": [
+      "QSFP-DD800",
+      "QSFP-DD"
+    ],
+    "host_interface_name": [
+      "800GAUI-8",
+      "400GAUI-4",
+      "200GAUI-2",
+      "100GAUI-2",
+      "100GAUI-1",
+      "50GAUI-1",
+      "8x 100GAUI-2 C2M",
+      "2x 400GAUI-4 C2M",
+      "8x 50GAUI-1 C2M",
+      "8x 100GAUI-1-S C2M",
+      "1x 800GAUI-8 L C2M",
+      "4x 200GAUI-2-S C2M",
+      "2x 400GAUI-4-S C2M",
+      "2x 200GAUI-4 C2M"
+    ],
+    "host_interface_id_hex": [
+      "0x4B",
+      "0x11",
+      "0x0A",
+      "0x52",
+      "0x4D",
+      "0x4F",
+      "0x0F"
+    ],
+    "host_interface_id": [
+      75,
+      17,
+      10,
+      82,
+      77,
+      79,
+      15
+    ],
+    "media_interface_name": [
+      "Active Cable assembly with BER < 1.0e-6",
+      "Active Cable assembly with BER < 2.6e-4",
+      "Active Cable assembly with BER < 5e-5"
+    ],
+    "media_interface_id_hex": [
+      "0x04",
+      "0x03",
+      "0x02"
+    ],
+    "media_interface_id": [
+      4,
+      3,
+      2
+    ],
+    "frame": [
+      "8x 100GAUI-2",
+      "2x 400GAUI-4",
+      "8x 50GAUI-1",
+      "8x 100GAUI-1-S",
+      "1x 800GAUI-8 L",
+      "4x 200GAUI-2-S",
+      "2x 400GAUI-4-S",
+      "2x 200GAUI-4"
+    ],
+    "standards_code": [
+      "4 x 100GBASE-R",
+      "1 x 400GBASE-R",
+      "8x 50GBASE-R",
+      "8 x 100GBASE-R",
+      "1x 800GBASE-R",
+      "4x 200GBASE-R",
+      "2 x 400GBASE-R",
+      "200GBASE-R"
+    ],
+    "bit_rate_gbps": [
+      800.0,
+      400.0,
+      200.0,
+      100.0,
+      50.0
+    ],
+    "pre_fec_ber_threshold": [
+      1e-08,
+      1e-06,
+      0.00026,
+      5e-05
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "standards_claimed": [
+      "QSFP-DD800 MSA",
+      "CMIS 5.2",
+      "CMIS5.2"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      10.0
+    ],
+    "baud_rate_gbaud": [
+      50.0
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      0.003
+    ],
+    "fec_type": [
+      "RS_GENERIC"
+    ],
+    "post_fec_ber_target": [
+      1e-15
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "penalties": [],
+    "notes": "Product is an Active Electrical Cable (AEC) with Twinax copper media, not an optical transceiver. Power consumption stated as <10.0W per side (worst case bound used as 10.0 W). Cable length 1 to 3 m (3.3 to 9.8 ft); reach_km uses maximum 3 m as 0.003 km. Storage temperature -40°C to +85°C is not normal operating range. PRODUCT FEATURES pre-FEC BER < 10^-8; APPLICATION CODE LIST lists per-application media BER thresholds paired with RS-FEC. Host Electrical ID 0x4B appears for applications 1 and 4 with different Media IDs.",
+    "provenance_datasheet_sections": [
+      "QSFP-DD800 800G AEC, CMIS 5.2",
+      "DD8001-xxxC-SO",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "ORDERING INFORMATION",
+      "APPLICATION CODE LIST",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider schema fields for cable_type (AEC/DAC), cable_length_m, and electrical-only products where optical and connector_type enums do not apply. Distinguish product-level pre-FEC BER (10^-8) from per-application-code media BER limits in tables."
+  }
+}

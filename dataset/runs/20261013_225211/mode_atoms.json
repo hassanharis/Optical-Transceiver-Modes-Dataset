@@ -1,0 +1,144 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "wavelength_band": [
+      "CWDM",
+      "eCWDM4",
+      "CWDM4"
+    ],
+    "power_consumption_w": [
+      4.5,
+      5.0
+    ],
+    "host_interface_name": [
+      "CAUI4",
+      "CAUI-4"
+    ],
+    "standards_code": [
+      "4WDM-10",
+      "CWDM4",
+      "4WDM MSA",
+      "100G 4WDM-10 MSA"
+    ],
+    "bit_rate_gbps": [
+      103.1,
+      25.78125
+    ],
+    "tx_power_min_dbm": [
+      -5.0,
+      -4.0
+    ],
+    "tx_power_max_dbm": [
+      2.5,
+      -2.0
+    ],
+    "rx_sensitivity_dbm": [
+      -11.3,
+      -8.9
+    ],
+    "fec_type": [
+      "KR4",
+      "RS_GENERIC"
+    ],
+    "los_assert_dbm": [
+      -24.0,
+      -14.0
+    ]
+  },
+  "general": {
+    "vendor": "Finisar",
+    "model": [
+      "FTLC1155RGPLD"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "CWDM4 MSA",
+      "4WDM MSA",
+      "IEEE P802.3bm CAUI4",
+      "SFF-8665",
+      "SFF-8679",
+      "SFF-8636",
+      "RoHS-6 Directive 2011/65/EU"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF_G652"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "frame": [
+      "4x25G"
+    ],
+    "baud_rate_gbaud": [
+      25.78125
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "rx_overload_dbm": [
+      2.5
+    ],
+    "post_fec_ber_target": [
+      5e-05
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "los_deassert_dbm": [
+      -12.8
+    ],
+    "transmitter_reflectance_db": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      1.5
+    ],
+    "penalties": [],
+    "notes": "Maximum link length 10 km on SMF with KR4 FEC; option to bypass RS-FEC is not supported. Loss budget may include up to 1 dB MPI loss penalty with worst case transmitter and worst case connector MPI. Transmitter and Dispersion Penalty (TDP) per lane max 3 dB does not include MPI penalty. Transmit OMA per Lane @TDP max (TxOMA2) min -2 dBm. Launch Power (OMA-TDP) min -5 dBm. Unstressed receiver sensitivity (OMA) at 5x10^-5 BER; stressed receiver sensitivity per 4WDM MSA conformance test signal at TP3 for 5x10^-5 BER. Power ≤4.5 W when stabilized (both Tx and Rx CDR locked); may be ≤5 W during locking acquisition. Signaling 25.78125 ±100 ppm per lane. Receiver damage threshold per lane 3.5 dBm. Maximum informative link loss budget 6.5 dB (SMF per G.652).",
+    "provenance_datasheet_sections": [
+      "FTLC1155RGPLD",
+      "10km 100G eCWDM4 QSFP28 Optical Transceiver Module 4WDM-10",
+      "FEATURES",
+      "APPLICATIONS",
+      "Product Selection",
+      "II. Absolute Maximum Ratings",
+      "III. Electrical Characteristics  (EOL, TOP = -40 to 85 °C, VCC = 3.135 to 3.465 Volts)",
+      "IV. Optical Characteristics (EOL, TOP = -40 to 85 °C, VCC = 3.315 to 3.465 Volts)",
+      "V. General Specifications",
+      "VI. Environmental Specifications"
+    ]
+  }
+}

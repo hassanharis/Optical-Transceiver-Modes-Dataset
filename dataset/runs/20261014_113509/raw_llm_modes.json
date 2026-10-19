@@ -1,0 +1,84 @@
+{
+  "modes": [
+    {
+      "label": "2x100GBASE-R 10km CMIS3 Dual CS",
+      "model": "SO-QSFP-DD-2C-10",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "host_interface_name": "2x CAUI-4",
+      "standards_code": "CMIS3.0",
+      "bit_rate_gbps": 200.0
+    },
+    {
+      "label": "2x100GBASE-R 10km CMIS4 Dual CS",
+      "model": "SO-QSFP-DD-2C-10-4",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "host_interface_name": "2x CAUI-4",
+      "standards_code": "CMIS4.0",
+      "bit_rate_gbps": 200.0
+    },
+    {
+      "label": "2x100GBASE-R 10km CMIS3 Dual CS LR4 \u03bb1304.58nm",
+      "model": "SO-QSFP-DD-2C-10",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "host_interface_name": "2x CAUI-4",
+      "standards_code": "CMIS3.0",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "2x100GBASE-R 10km CMIS3 Dual CS LR4 \u03bb1309.14nm",
+      "model": "SO-QSFP-DD-2C-10",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "host_interface_name": "2x CAUI-4",
+      "standards_code": "CMIS3.0",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "2x100GBASE-R 10km CMIS4 Dual CS LR4 \u03bb1295.56nm",
+      "model": "SO-QSFP-DD-2C-10-4",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "host_interface_name": "2x CAUI-4",
+      "standards_code": "CMIS4.0",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "2x100GBASE-R 10km CMIS4 Dual CS LR4 \u03bb1304.58nm",
+      "model": "SO-QSFP-DD-2C-10-4",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "host_interface_name": "2x CAUI-4",
+      "standards_code": "CMIS4.0",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "2x100GBASE-R 10km CMIS4 Dual CS LR4 \u03bb1309.14nm",
+      "model": "SO-QSFP-DD-2C-10-4",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "host_interface_name": "2x CAUI-4",
+      "standards_code": "CMIS4.0",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "2x100GBASE-R 10km CMIS3 Dual CS LR4 \u03bb1300.05nm",
+      "model": "SO-QSFP-DD-2C-10",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "host_interface_name": "2x CAUI-4",
+      "standards_code": "CMIS3.0",
+      "bit_rate_gbps": 25.78
+    }
+  ]
+}

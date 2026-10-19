@@ -1,0 +1,100 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-1000Base-BX10D-34",
+      "SO-SFP-1000Base-BX10D-43",
+      "SO-SFP-1000Base-BX10D-34-I",
+      "SO-SFP-1000Base-BX10D-43-I"
+    ],
+    "wavelength_min_nm": [
+      1270.0,
+      1480.0,
+      1260.0,
+      1450.0
+    ],
+    "wavelength_max_nm": [
+      1350.0,
+      1500.0,
+      1360.0,
+      1530.0
+    ],
+    "wavelength_center_nm": [
+      1310.0,
+      1490.0
+    ],
+    "host_interface_name": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "standards_code": [
+      "1000BASE-BX10D",
+      "FE",
+      "GbE",
+      "1G FC"
+    ],
+    "bit_rate_gbps": [
+      0.1,
+      1.25
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -9.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -22.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -23.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Pair product: SO-SFP-1000Base-BX10D-34 (Tx/Rx 1310nm/1490nm, footnotes 1) and SO-SFP-1000Base-BX10D-43 (Tx/Rx 1490nm/1310nm, footnote 2). Wavelength rows are model-specific per footnotes 1) and 2). Industrial operating temperature -40°C to +85°C (-I ordering codes); storage temperature -40°C to +85°C. Power budget 0 – 13dB. Transmitter output power, receiver minimum input power, and overload are average power (footnote 3). Receiver minimum input power and overload measured @ 1.25Gbps, BER ≤ 1x10-12, PRBS 27-1, back-to-back (footnote 4). Power consumption stated as < 1.0W. Bit rate support stated as 100Mbps to 1.25Gbps.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-1000BASE-BX10D-34 & -43",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider schema fields for power_budget_db, storage_temp_min_c/storage_temp_max_c, and BiDi nominal Tx/Rx wavelength pairs per SKU. temp_min_c/temp_max_c could be list pairs when C-temp and I-temp variants exist."
+  }
+}

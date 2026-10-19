@@ -1,0 +1,124 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "XPBL-495596-80D",
+    "XPBL-554996-80D",
+    "XPBL-495596-80DA",
+    "XPBL-554996-80DA",
+    "XPBL-XXYY96-80D",
+    "XPBL-XXYY96-80DA"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP+ MSA",
+    "SFF-8472",
+    "SFF-8431",
+    "RoHS",
+    "IEEE 802.3ae"
+  ],
+  "emitter_type": [
+    "LASER_EML"
+  ],
+  "photodetector_type": [
+    "APD"
+  ],
+  "wavelength_min_nm": [
+    1480.0,
+    1540.0
+  ],
+  "wavelength_max_nm": [
+    1500.0,
+    1560.0
+  ],
+  "wavelength_center_nm": [
+    1490.0,
+    1550.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    1.5,
+    1.8
+  ],
+  "host_interface_name": [
+    "SFP+"
+  ],
+  "standards_code": [
+    "10GBASE-BX",
+    "OTU2",
+    "OTU2e",
+    "SFF-8472",
+    "SFF-8431"
+  ],
+  "bit_rate_gbps": [
+    10.3125,
+    11.3
+  ],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    0.0,
+    -1.0
+  ],
+  "tx_power_max_dbm": [
+    4.0,
+    3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -23.0
+  ],
+  "rx_overload_dbm": [
+    -6.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    7.5
+  ],
+  "los_assert_dbm": [
+    -38.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "optical_extinction_ratio_db": [
+    7.5
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    6.0
+  ],
+  "penalties": [],
+  "notes": "Family name XPBL-XXYY96-80D(A). XPBL-495596: 1490 nm TX / 1550 nm RX; XPBL-554996: 1550 nm TX / 1490 nm RX. Case operating temperature Commercial -10 to 70 °C (Tcase); Industrial -40 to 85 °C (Tcase). Power dissipation 1.5 W (Commercial, XPBL-XXYY96-80D) and 1.8 W (Industrial, XPBL-XXYY96-80DA). Center wavelength range λC: λ−7.5 to λ+7.5 nm (λ = room-temperature wavelength). Spectrum bandwidth (−20 dB) max 0.3 nm. Average launched power (laser off) max −30 dBm. Transmitter/receiver optical specs measured with RPBS 2^31−1 @ 10.3125 Gbps; receiver sensitivity and overload per Note (4) at BER ≤ 10^−12. Tx average power 0 to 4 dBm (XPBL-495596-80D(A)); −1 to 3 dBm (XPBL-554996-80D(A)). Supply ICC max 450 mA Commercial / 550 mA Industrial.",
+  "provenance_datasheet_sections": [
+    "XPBL-XXYY96-80D(A) 10Gb/s BIDI SFP+ 80km Transceiver",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "STANDARD",
+    "PRODUCT DESCRIPTION",
+    "Ordering information",
+    "Ⅱ Recommended Operating Conditions",
+    "Ⅲ Optical Characteristics",
+    "IV. Electrical Interface Characteristics",
+    "VI. Digital Diagnostic Functions"
+  ],
+  "suggestions": "Add explicit modulation format if NRZ is intended; clarify channel_total=1 for BIDI single-wavelength pair; split temp_min_c/temp_max_c per Commercial vs Industrial SKUs if schema allows lists."
+}

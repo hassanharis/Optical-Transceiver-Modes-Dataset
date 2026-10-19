@@ -1,0 +1,11 @@
+{
+  "modes": [
+    {
+      "label": "50GBASE-LR @ 53.125 Gbps",
+      "wavelength_center_nm": 1311.0,
+      "host_interface_name": "50GbE",
+      "bit_rate_gbps": 53.125,
+      "rx_sensitivity_dbm": -8.4
+    }
+  ]
+}

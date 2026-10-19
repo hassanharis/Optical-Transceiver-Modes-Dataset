@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T09:45:30.452593+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ls-sm5510c-80i.pdf",
+  "page_count": 8,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.487,
+    "extract_atoms": 24.388,
+    "store_run": 0.009,
+    "synthesize_modes": 29.448,
+    "store_modes": 0.003,
+    "total": 64.335
+  }
+}

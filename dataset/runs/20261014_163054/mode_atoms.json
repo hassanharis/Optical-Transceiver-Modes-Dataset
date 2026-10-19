@@ -1,0 +1,122 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-XFP-ER-C47",
+      "SO-XFP-ER-C49",
+      "SO-XFP-ER-C51",
+      "SO-XFP-ER-C53",
+      "SO-XFP-ER-C55",
+      "SO-XFP-ER-C57",
+      "SO-XFP-ER-C59",
+      "SO-XFP-ER-C61",
+      "SO-XFP-ER-Cxx"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1470.0,
+      1471.0
+    ],
+    "wavelength_max_nm": [
+      1610.0,
+      1611.0,
+      1620.0
+    ],
+    "wavelength_center_nm": [
+      1470.0,
+      1490.0,
+      1510.0,
+      1530.0,
+      1550.0,
+      1570.0,
+      1590.0,
+      1610.0
+    ],
+    "standards_code": [
+      "10GBASE-ER",
+      "10GBASE-EW",
+      "10GbE-LAN",
+      "10GbE-WAN",
+      "OTU2",
+      "OTU2e",
+      "STM-64",
+      "OC192",
+      "10G FC",
+      "CPRI Opt"
+    ],
+    "bit_rate_gbps": [
+      9.95,
+      10.3,
+      11.1
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "XFP"
+    ],
+    "standards_claimed": [
+      "IEEE 802.3ae",
+      "G.694.2",
+      "INF-8077i",
+      "XFP-MSA"
+    ],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      8
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      3.5
+    ],
+    "reach_km": [
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      -0.9
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_sensitivity_dbm": [
+      -15.0
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "cd_tolerance_ps_nm": [
+      800.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -29.0
+    ],
+    "los_deassert_dbm": [
+      -17.0
+    ],
+    "los_hysteresis_db": [
+      1.0
+    ],
+    "penalties": [],
+    "notes": "Transmitter output power and receiver levels are average power (footnote 1). Minimum receiver input power -15.0 dBm at 10.3 Gbps, BER 1x10-12, PRBS 2^31-1 (footnote 2). Product headline power budget 0–14.1 dB; dispersion penalty max 2.5 dB stated without paired penalized value and operating condition for penalty objects. Storage temperature -40°C to +85°C. IEEE 802.3ae 10GBASE-ER/EW is defined only at 1550 nm; standard cited for bridgeable distance on other CWDM wavelengths. Transmit min output listed as -0.9dB in table; max as +4.0dBm.",
+    "provenance_datasheet_sections": [
+      "SO-XFP-ER-Cxx",
+      "XFP, 10G Multirate, CWDM, DDM, 14dB, 40km, 1470nm-1610nm (8ch)",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether transmitter min output -0.9 is dBm; table uses dB for min and dBm for max. Consider schema field for power budget (0–14.1 dB) and dispersion penalty max (2.5 dB) when not expressible as structured penalties."
+  }
+}

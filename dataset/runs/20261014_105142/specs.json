@@ -1,0 +1,304 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TQD017-TUNC-SO",
+    "SO-TQD017-TUNC-SO"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "OpenROADM MSA",
+    "OpenROADM 2.0",
+    "OpenROADM 5.0",
+    "OpenZR+ MSA",
+    "QSFP-DD MSA",
+    "CMIS5.0"
+  ],
+  "wavelength_band": [
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    191.3
+  ],
+  "frequency_max_thz": [
+    196.1
+  ],
+  "channel_spacing_ghz": [
+    100.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 15.0,
+  "temp_max_c": 75.0,
+  "power_consumption_w": [
+    24.7,
+    24.1,
+    22.6,
+    19.6
+  ],
+  "host_interface_name": [
+    "4x 100GAUI-2 (2x 50G)",
+    "3x 100GAUI-2 (2x 50G)",
+    "2x 100GAUI-2 (2x 50G)",
+    "100GAUI-2 (2x 50G)",
+    "1x 400GAUI-8 (8x 50G)",
+    "200GAUI-4 (2x 200G)",
+    "CAUI-4 w/o FEC (4x 25G)",
+    "CAUI-4 with FEC (4x 25G)",
+    "OTL4.4 (4x 28G)",
+    "4x 100GAUI-2",
+    "3x 100GAUI-2",
+    "2x 100GAUI-2",
+    "1x 400GAUI-8",
+    "1x 200GAUI-4",
+    "CAUI-4 w/o FEC",
+    "CAUI-4 with FEC",
+    "OTU4"
+  ],
+  "media_interface_name": [
+    "OpenROADM 5.0",
+    "OpenROADM 2.0"
+  ],
+  "frame": [
+    "4x 100GAUI-2 (2x 50G)",
+    "3x 100GAUI-2 (2x 50G)",
+    "2x 100GAUI-2 (2x 50G)",
+    "100GAUI-2 (2x 50G)",
+    "1x 400GAUI-8 (8x 50G)",
+    "200GAUI-4 (2x 200G)",
+    "CAUI-4 w/o FEC (4x 25G)",
+    "CAUI-4 with FEC (4x 25G)",
+    "OTL4.4 (4x 28G)"
+  ],
+  "standards_code": [
+    "OpenROADM 5.0",
+    "OpenROADM 2.0",
+    "OpenZR+",
+    "100GBASE-R",
+    "400GBASE-R",
+    "200GBASE-R",
+    "OTU4"
+  ],
+  "baud_rate_gbaud": [
+    63.1,
+    31.6
+  ],
+  "bit_rate_gbps": [
+    400.0,
+    300.0,
+    200.0,
+    100.0
+  ],
+  "modulation_format": [
+    "QAM_16-DP",
+    "QAM_8-DP",
+    "QPSK-DP",
+    "DQPSK-DP"
+  ],
+  "tx_power_min_dbm": [
+    0.0,
+    1.0
+  ],
+  "tx_in_band_osnr_db": [
+    38.0
+  ],
+  "tx_out_of_band_osnr_db": [
+    42.0
+  ],
+  "rx_sensitivity_dbm": [
+    -20.0,
+    -23.0,
+    -28.0,
+    -32.0,
+    -30.0
+  ],
+  "rx_osnr_db": [
+    23.5,
+    20.5,
+    14.8,
+    11.8,
+    14.5,
+    25.0,
+    21.5,
+    15.8,
+    12.8,
+    15.5
+  ],
+  "rx_overload_dbm": [
+    13.0,
+    15.0
+  ],
+  "cd_tolerance_ps_nm": [
+    12000.0,
+    48000.0,
+    96000.0,
+    30000.0,
+    77000.0,
+    154000.0,
+    80000.0,
+    115000.0
+  ],
+  "fec_type": [
+    "OFEC",
+    "SCFEC",
+    "CFEC"
+  ],
+  "los_assert_dbm": [
+    -28.0
+  ],
+  "number_of_lanes": [
+    4,
+    3,
+    2,
+    1,
+    8
+  ],
+  "penalties": [
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 25.0,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -16.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=1"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 21.5,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -20.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=2"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 15.8,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -28.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=3"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 21.5,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -18.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=4"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 25.0,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -16.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=6"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 15.8,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -28.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=7"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 21.5,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -18.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=8"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 15.5,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -24.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=11"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 15.5,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -24.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=12"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 15.5,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -24.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=13"
+    },
+    {
+      "target_parameter": "rx_osnr_db",
+      "penalty_db": 1.0,
+      "penalized_value": 12.8,
+      "conditions": [
+        {
+          "parameter": "rx_power_dbm",
+          "value": -25.0
+        }
+      ],
+      "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode 5"
+    }
+  ],
+  "notes": "QSFP-DD type 2a. Wavelengths given as 191.3–196.1 THz (tunable), 100 GHz spacing; no nm values printed. Operating +15°C to +75°C; footnote 1: turn-up from cold at ambient as low as -5°C until self-heating to min operating temperature. Storage -40°C to +85°C. GENERIC Tx Power Min 0 dBm; optical table Tx Power1) 1 dBm minimum without attenuation; up to 10 dB attenuation from maximum; unprovisioned TX defaults to maximum within 10 dB range. Rx sens @ OSNR >36 dB. Rx LOS assert -28.0 dBm4) for 400G modes; per-module configurable. Absolute max: Rx signal +13 dBm, Rx total +15 dBm. Power consumption EOL: 24.7 W @400G, 24.1 W @300G, 22.6 W @200G, 19.6 W @100G. Encryption AES-256. Increasing maximum CDC search range increases power consumption.",
+  "provenance_datasheet_sections": [
+    "OVERVIEW – TQD017-TUNC-SO",
+    "TECHNICAL DATA",
+    "GENERIC",
+    "OPTICAL SPECIFICATION - APPLICATION CODES",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

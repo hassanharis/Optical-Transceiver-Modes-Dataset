@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "LS-SM311G-40C 1.25G commercial",
+      "model": "LS-SM311G-40C",
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "SFF-8472",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-SM311G-40I 1.25G industrial",
+      "model": "LS-SM311G-40I",
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "SFF-8472",
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

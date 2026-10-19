@@ -1,0 +1,44 @@
+{
+  "modes": [
+    {
+      "label": "40GBASE-SR4 OM3 300m",
+      "host_interface_name": "QSFP+ MSA",
+      "media_interface_name": "40GBASE-SR4",
+      "standards_code": "40GBASE-SR4",
+      "baud_rate_gbaud": 10.3125,
+      "bit_rate_gbps": 42.0,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -11.1
+    },
+    {
+      "label": "40GBASE-SR4 OM4 400m",
+      "host_interface_name": "XLPPI",
+      "media_interface_name": "40GBASE-SR4",
+      "standards_code": "40G Ethernet",
+      "baud_rate_gbaud": 10.5,
+      "bit_rate_gbps": 42.0,
+      "reach_km": 0.4,
+      "rx_sensitivity_dbm": -7.5
+    },
+    {
+      "label": "10GBASE-SR breakout OM3 300m",
+      "host_interface_name": "QSFP+ MSA",
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "10GBASE-SR",
+      "baud_rate_gbaud": 10.3125,
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -11.1
+    },
+    {
+      "label": "10GBASE-SR breakout OM4 400m",
+      "host_interface_name": "I2C",
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "10GBASE-SR Ethernet",
+      "baud_rate_gbaud": 10.5,
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.4,
+      "rx_sensitivity_dbm": -7.5
+    }
+  ]
+}

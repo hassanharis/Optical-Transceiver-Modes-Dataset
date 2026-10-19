@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Fortinet</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Fortinet</div>
+  <div class="subtitle">CWDM</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Fortinet</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">802.3u, 802.3ab, 802.3z, 802.3ah, 802.3ae, 802.3an, 802.3aq, 802.3by, 802.3cc, 802.3ba, 802.3bm, 802.3bs, 802.3cd, 802.3cu, IEEE802.3bs</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">CWDM</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC, Duplex LC, Simplex LC, Single LC, RJ-45, MPO, MPO-12, MPO-16 APC, 24 fiber MPO</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">MMF, SMF, Copper, MMF_OM3, MMF_OM4, MMF_OM5, COPPER_CAT6A, COPPER_TWINAX_PASSIVE, COPPER_TWINAX_ACTIVE</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Document is a multi-SKU Fortinet transceiver and cable catalog, not a single module. Operating temperature ranges stated per product include -40°C to 85°C, -20°C to 85°C, -5°C to 85°C, -5°C to 70°C, 0°C to 70°C, 0°C to 85°C, 10°C to 70°C, and -40°–85°C. Transmission range entries use m and km as printed (e.g. 100 m, 2 km, 10 km). Power dissipation entries use mW and W as printed (e.g. &lt; 500 mW, &lt; 1.1 W). Wavelength entries include single values and ranges; BiDi modules list separate TX/RX wavelengths. No optical power, OSNR, sensitivity, FEC, or penalty table data are provided.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">Fortinet Transceivers, Highlights, Wide Range for Maximum Flexibility, Available in, Key Features and Benefits, Various Interface Options, Quick Reference Matrix, Specifications, Ordering Information</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Split extraction per SKU (one JSON per FN-TRAN-* / FG-TRAN-* row) because temp_min_c/temp_max_c and reach are per-module. Add schema support for temp and reach as lists or nested objects keyed by model. Map Protocol Standard to host_interface_name only when aligned with MSA; otherwise use standards_code. Include cable-only SKUs in a separate product_type field.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Form Factor</th><th>Wavelength Min</th><th>Wavelength Max</th><th>wavelength_center_nm</th><th>Power (W)</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>Reach (km)</th><th>Channel Total</th><th>number_of_lanes</th><th>frame</th></tr>
+      <tr><td><strong>100M FX 2km MMF SFP</strong></td><td>FN-TRAN-FX</td><td>SFP</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>0.5</td><td>100Base-FX</td><td>0.1</td><td>2.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>100M FX SGMII 2km MMF SFP</strong></td><td>FN-TRAN-SFX</td><td>SFP</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>0.7</td><td>100Base-FX</td><td>0.1</td><td>2.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>100M Fast Ethernet RJ45 SFP</strong></td><td>FN-TRAN-FE</td><td>SFP</td><td></td><td></td><td></td><td>1.1</td><td>100Base-T</td><td>0.1</td><td>0.1</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>1G copper RJ45 100m SFP</strong></td><td>FN-TRAN-GC</td><td>SFP</td><td>850.0</td><td>850.0</td><td>850.0</td><td>1.0</td><td>1000Base-T</td><td>1.25</td><td>0.1</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>1G SX 500m MMF SFP</strong></td><td>FN-TRAN-SX</td><td>SFP</td><td>850.0</td><td>850.0</td><td>850.0</td><td>1.2</td><td>1000Base-SX</td><td>1.25</td><td>0.5</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>1G SX 500m MMF SFP extended temp</strong></td><td>FN-TRAN-SXI</td><td>SFP</td><td>850.0</td><td>850.0</td><td>850.0</td><td>1.05</td><td>1000Base-SX</td><td>1.25</td><td>0.5</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>1G SX 500m MMF SFP FR</strong></td><td>FR-TRAN-SX</td><td>SFP</td><td>850.0</td><td>850.0</td><td>850.0</td><td>0.8</td><td>1000Base-SX</td><td>1.25</td><td>0.5</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>1G LX 10km SMF SFP</strong></td><td>FN-TRAN-LX</td><td>SFP</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>1.05</td><td>1000Base-LX</td><td>1.25</td><td>10.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>1G EX 40km SMF SFP</strong></td><td>FN-TRAN-EX</td><td>SFP</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>1.0</td><td>1000Base-LX</td><td>1.25</td><td>40.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>1G ZX 90km SMF SFP</strong></td><td>FR-TRAN-ZX</td><td>SFP</td><td>1550.0</td><td>1550.0</td><td>1550.0</td><td>0.83</td><td>1000Base-LX</td><td>1.25</td><td>90.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>1G BiDi 10km TX1490 SFP</strong></td><td>FN-TRAN-SFP-1BD10</td><td>SFP</td><td>1490.0</td><td>1490.0</td><td>1490.0</td><td>1.0</td><td>1000BASE-BX10</td><td>1.25</td><td>10.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>1G BiDi 10km TX1310 SFP</strong></td><td>FN-TRAN-SFP-1BU10</td><td>SFP</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>1.0</td><td>1000BASE-BX10</td><td>1.25</td><td>10.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>1G BiDi 40km TX1490 SFP</strong></td><td>FN-TRAN-SFP-1BD40</td><td>SFP</td><td>1490.0</td><td>1490.0</td><td>1490.0</td><td>1.0</td><td>1000BASE-BX10</td><td>1.25</td><td>40.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>1G BiDi 40km TX1310 SFP</strong></td><td>FN-TRAN-SFP-1BU40</td><td>SFP</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>1.0</td><td>1000BASE-BX10</td><td>1.25</td><td>40.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>2.5G SX 300m MMF SFP</strong></td><td>FN-TRAN-SFP2-SX</td><td>SFP</td><td>850.0</td><td>850.0</td><td>850.0</td><td>1.0</td><td>2500BASE-X</td><td>2.5</td><td>0.3</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>2.5G LX 25km SMF SFP</strong></td><td>FN-TRAN-SFP2-LX</td><td>SFP</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>1.0</td><td>2500BASE-X</td><td>2.5</td><td>25.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G copper RJ45 30m SFP+</strong></td><td>FN-TRAN-SFP+GC</td><td>SFP+</td><td></td><td></td><td></td><td>2.5</td><td>10GBASE-T</td><td>10.0</td><td>0.03</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G copper RJ45 80m SFP+</strong></td><td>FN-TRAN-SFP+GC-T80</td><td>SFP+</td><td></td><td></td><td></td><td>1.88</td><td>10GBase-T</td><td>10.0</td><td>0.08</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G SR 550m OM4 SFP+</strong></td><td>FN-TRAN-SFP+SR</td><td>SFP+</td><td>850.0</td><td>850.0</td><td>850.0</td><td>0.6</td><td>10GBase-SR</td><td>10.0</td><td>0.55</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G SR 400m OM4 SFP+</strong></td><td>FN-TRAN-SFP+SRI</td><td>SFP+</td><td>850.0</td><td>850.0</td><td>850.0</td><td>1.0</td><td>10GBase-SR</td><td>11.1</td><td>0.4</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G LR 10km SMF SFP+</strong></td><td>FN-TRAN-SFP+LR</td><td>SFP+</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>0.85</td><td>10GBase-LR</td><td>10.0</td><td>10.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G LR 10km SMF SFP+ industrial</strong></td><td>FN-TRAN-SFP+LRI</td><td>SFP+</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>1.0</td><td>10GBase-LR</td><td>10.3</td><td>10.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G ER 40km SMF SFP+</strong></td><td>FN-TRAN-SFP+ER</td><td>SFP+</td><td>1550.0</td><td>1550.0</td><td>1550.0</td><td>1.5</td><td>10GBASE-ER</td><td>11.3</td><td>40.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G ER 40km SMF SFP+ extended temp</strong></td><td>FN-TRAN-SFP+ERI</td><td>SFP+</td><td>1550.0</td><td>1550.0</td><td>1550.0</td><td>1.8</td><td>10GBase-ER</td><td>10.3</td><td>40.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G LRM 220m MMF SFP+</strong></td><td>FN-TRAN-SFP+LRM</td><td>SFP+</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>1.0</td><td>10GBase-LRM</td><td>11.3</td><td>0.22</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G ZR 80km SMF SFP+</strong></td><td>FN-TRAN-SFP+ZR</td><td>SFP+</td><td>1550.0</td><td>1550.0</td><td>1550.0</td><td>1.5</td><td>10G-Base-ZR</td><td>11.3</td><td>80.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G BiDi 30km TX1271 SFP+</strong></td><td>FN-TRAN-SFP+BD27</td><td>SFP+</td><td>1271.0</td><td>1271.0</td><td>1271.0</td><td>1.0</td><td>10G-Base-LR/LW</td><td>11.3</td><td>30.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G BiDi 30km TX1331 SFP+</strong></td><td>FN-TRAN-SFP+BD33</td><td>SFP+</td><td>1331.0</td><td>1331.0</td><td>1331.0</td><td>1.0</td><td>10G-Base-LR/LW</td><td>11.3</td><td>30.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>25G SR 100m MMF SFP28</strong></td><td>FN-TRAN-SFP28-SR</td><td>SFP28</td><td>850.0</td><td>850.0</td><td>850.0</td><td>1.2</td><td>25GBase-SR</td><td>25.78</td><td>0.1</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>25G LR 10km SMF SFP28</strong></td><td>FN-TRAN-SFP28-LR</td><td>SFP28</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>1.5</td><td>25GBase-LR</td><td>25.78</td><td>10.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>40G SR4 150m MMF QSFP+</strong></td><td>FN-TRAN-QSFP+SR</td><td>QSFP+</td><td>750.0</td><td>900.0</td><td>850.0</td><td>1.5</td><td>40GBase-SR4</td><td>41.2</td><td>0.15</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>40G LR4 10km SMF QSFP+</strong></td><td>FN-TRAN-QSFP+LR</td><td>QSFP+</td><td>1264.5</td><td>1337.5</td><td></td><td>3.5</td><td>40GBase-LR4</td><td>41.2</td><td>10.0</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>40G LR4 10km SMF QSFP+ industrial</strong></td><td>FN-TRAN-QSFP+LRI</td><td>QSFP+</td><td>1264.5</td><td>1337.5</td><td></td><td>3.5</td><td>40GBase-LR4</td><td>41.2</td><td>10.0</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>40G ER4 40km SMF QSFP+</strong></td><td>FN-TRAN-QSFP+ER</td><td>QSFP+</td><td>1264.5</td><td>1337.5</td><td></td><td>3.5</td><td>40G-Base-ER4</td><td>41.3</td><td>40.0</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>40G SR BiDi 150m MMF QSFP+</strong></td><td>FG-TRAN-QSFP+SR-BIDI</td><td>QSFP+</td><td>850.0</td><td>900.0</td><td>850.0</td><td>3.5</td><td>40GBase-SR-BiDi</td><td>41.2</td><td>0.15</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>40G SR BiDi 150m MMF QSFP+</strong></td><td>FN-TRAN-QSFP+BIDI</td><td>QSFP+</td><td>850.0</td><td>900.0</td><td>850.0</td><td>3.5</td><td>40GBase-SR-BiDi</td><td>41.2</td><td>0.15</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>100G SR10 100m MMF CFP2</strong></td><td>FG-TRAN-CFP2-SR10</td><td>CFP2</td><td>850.0</td><td>850.0</td><td>850.0</td><td>8.0</td><td>100GBase-SR10</td><td>103.12</td><td>0.1</td><td>10</td><td>10</td><td>10x 10 GE</td></tr>
+      <tr><td><strong>100G LR4 10km SMF CFP2</strong></td><td>FG-TRAN-CFP2-LR4</td><td>CFP2</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>3.5</td><td>100GBase-LR4</td><td>103.1</td><td>10.0</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>100G SR4 100m MMF QSFP28</strong></td><td>FN-TRAN-QSFP28-SR</td><td>QSFP28</td><td>850.0</td><td>850.0</td><td>850.0</td><td>3.5</td><td>100GBase-SR4</td><td>103.1</td><td>0.1</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>100G LR4 10km SMF QSFP28</strong></td><td>FN-TRAN-QSFP28-LR</td><td>QSFP28</td><td>1294.53</td><td>1310.19</td><td></td><td>4.5</td><td>100GBase-LR4</td><td>103.1</td><td>10.0</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>100G FR 2km SMF QSFP28</strong></td><td>FN-TRAN-QSFP28-FR</td><td>QSFP28</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>4.5</td><td>100GBase-FR</td><td>103.1</td><td>2.0</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>100G ER 20km SMF QSFP28</strong></td><td>FN-TRAN-QSFP28-ER</td><td>QSFP28</td><td>1294.53</td><td>1310.19</td><td></td><td>3.5</td><td>100G-Base-LR4</td><td>103.1</td><td>20.0</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>100G DR 500m SMF QSFP28</strong></td><td>FN-TRAN-QSFP28-DR</td><td>QSFP28</td><td>1304.5</td><td>1317.5</td><td>1311.0</td><td>4.5</td><td>100G-Base-DR</td><td>103.1</td><td>0.5</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>100G CWDM4 2km SMF QSFP28</strong></td><td>FN-TRAN-QSFP28-CWDM4</td><td>QSFP28</td><td>1264.5</td><td>1337.5</td><td></td><td>3.5</td><td>100GBase-CWDM4</td><td>103.1</td><td>2.0</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>100G SR BiDi 100m MMF QSFP28</strong></td><td>FN-TRAN-QSFP28-BIDI</td><td>QSFP28</td><td>850.0</td><td>900.0</td><td>850.0</td><td>3.5</td><td>100GBase-SR-BiDi</td><td>103.1</td><td>0.1</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>100G SR1.2 BiDi 100m MMF QSFP28</strong></td><td>FN-TRAN-QSFP28-BIDI-I</td><td>QSFP28</td><td>850.0</td><td>900.0</td><td>850.0</td><td>4.0</td><td>100G-Base-SR1.2</td><td>106.25</td><td>0.1</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>50G SR 100m MMF SFP56</strong></td><td>FN-TRAN-SFP56-SR</td><td>SFP56</td><td>850.0</td><td>850.0</td><td>850.0</td><td>1.5</td><td>50G-Base-SR</td><td>53.125</td><td>0.1</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>200G SR4 100m MMF QSFP56</strong></td><td>FN-TRAN-QSFP56-SR4</td><td>QSFP56</td><td>850.0</td><td>850.0</td><td>850.0</td><td>4.5</td><td>200G-Base-SR4</td><td>212.5</td><td>0.1</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>200G FR4 2km SMF QSFP56</strong></td><td>FN-TRAN-QSFP56-FR4</td><td>QSFP56</td><td>1264.5</td><td>1337.5</td><td></td><td>6.0</td><td>200G-Base-FR4</td><td>212.5</td><td>2.0</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>400G SR8 100m MMF QSFP-DD</strong></td><td>FN-TRAN-QSFPDD-SR8</td><td>QSFP-DD</td><td>850.0</td><td>850.0</td><td>850.0</td><td>9.0</td><td>400G-Base-SR8</td><td>425.0</td><td>0.1</td><td>8</td><td>8</td><td></td></tr>
+      <tr><td><strong>400G LR4 10km SMF QSFP-DD</strong></td><td>FN-TRAN-QSFPDD-LR4</td><td>QSFP-DD</td><td>1271.0</td><td>1331.0</td><td>1271.0</td><td>10.5</td><td>400G-Base-LR4</td><td>425.0</td><td>10.0</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>400G FR4 2km SMF QSFP-DD</strong></td><td>FN-TRAN-QSFPDD-FR4</td><td>QSFP-DD</td><td>1271.0</td><td>1331.0</td><td>1291.0</td><td>12.0</td><td>400G-Base-FR4</td><td>425.0</td><td>2.0</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>400G DR4 500m SMF QSFP-DD</strong></td><td>FN-TRAN-QSFPDD-DR4</td><td>QSFP-DD</td><td>1310.0</td><td>1310.0</td><td>1310.0</td><td>12.0</td><td>400G-Base-DR4</td><td>425.0</td><td>0.5</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>400G DR4+ 2km SMF QSFP-DD</strong></td><td>FN-TRAN-QSFPDD-DR4+</td><td>QSFP-DD</td><td>1311.0</td><td>1311.0</td><td>1311.0</td><td>14.0</td><td>400G-Base-DR4</td><td>425.0</td><td>2.0</td><td>4</td><td>4</td><td></td></tr>
+      <tr><td><strong>10G CR DAC 1m SFP+</strong></td><td>FN-CABLE-SFP+1</td><td>SFP+</td><td></td><td></td><td></td><td>0.1</td><td>10GBase-CR</td><td>10.0</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G CR DAC 3m SFP+</strong></td><td>FN-CABLE-SFP+3</td><td>SFP+</td><td></td><td></td><td></td><td>0.1</td><td>10GBase-CR</td><td>10.0</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G CR DAC 5m SFP+</strong></td><td>FN-CABLE-SFP+5</td><td>SFP+</td><td></td><td></td><td></td><td>0.1</td><td>10GBase-CR</td><td>10.0</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>10G active DAC 10m SFP+</strong></td><td>SP-CABLE-ADASFP+</td><td>SFP+</td><td></td><td></td><td></td><td>0.5</td><td>10GBase-CR</td><td>10.0</td><td>0.01</td><td></td><td></td><td></td></tr>
+      <tr><td><strong>25G CR DAC 1m SFP28</strong></td><td>FN-CABLE-SFP28-1</td><td>SFP28</td><td></td><td></td><td></td><td>0.1</td><td>25GBase-CR</td><td>25.0</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>25G CR DAC 3m SFP28</strong></td><td>FN-CABLE-SFP28-3</td><td>SFP28</td><td></td><td></td><td></td><td>0.1</td><td>25GBase-CR</td><td>25.0</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>25G CR DAC 5m SFP28</strong></td><td>FN-CABLE-SFP28-5</td><td>SFP28</td><td></td><td></td><td></td><td>0.1</td><td>25GBase-CR</td><td>25.0</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>40G CR4 DAC 1m QSFP+</strong></td><td>FN-CABLE-QSFP+1</td><td>QSFP+</td><td></td><td></td><td></td><td>0.1</td><td>40GBase-CR4</td><td>40.0</td><td></td><td></td><td>4</td><td></td></tr>
+      <tr><td><strong>40G CR4 DAC 3m QSFP+</strong></td><td>FN-CABLE-QSFP+3</td><td>QSFP+</td><td></td><td></td><td></td><td>0.1</td><td>40GBase-CR4</td><td>40.0</td><td></td><td></td><td>4</td><td></td></tr>
+      <tr><td><strong>40G CR4 DAC 5m QSFP+</strong></td><td>FN-CABLE-QSFP+5</td><td>QSFP+</td><td></td><td></td><td></td><td>0.1</td><td>40GBase-CR4</td><td>40.0</td><td></td><td></td><td>4</td><td></td></tr>
+      <tr><td><strong>40G CR4 DAC 7m QSFP+</strong></td><td>FN-CABLE-QSFP+7</td><td>QSFP+</td><td></td><td></td><td></td><td>0.1</td><td>40GBase-CR4</td><td>40.0</td><td></td><td></td><td>4</td><td></td></tr>
+      <tr><td><strong>50G CR DAC 1m SFP56</strong></td><td>FN-CABLE-SFP56-DAC-L1</td><td>SFP56</td><td></td><td></td><td></td><td>0.1</td><td>50GBase-CR</td><td>50.0</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>50G CR DAC 2.5m SFP56</strong></td><td>FN-CABLE-SFP56-DAC-LB5</td><td>SFP56</td><td></td><td></td><td></td><td>0.1</td><td>50GBase-CR</td><td>50.0</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>200G CR4 DAC 1m QSFP56</strong></td><td>FN-CABLE-QSFP56-DAC-L1</td><td>QSFP56</td><td></td><td></td><td></td><td>0.1</td><td>200G-BASE-CR4</td><td>200.0</td><td></td><td></td><td>4</td><td></td></tr>
+      <tr><td><strong>200G CR4 DAC 2.5m QSFP56</strong></td><td>FN-CABLE-QSFP56-DAC-LB5</td><td>QSFP56</td><td></td><td></td><td></td><td>0.1</td><td>200G-BASE-CR4</td><td>200.0</td><td></td><td></td><td>4</td><td></td></tr>
+      <tr><td><strong>100G CR4 DAC 1m QSFP28</strong></td><td>FN-CABLE-QSFP28-1</td><td>QSFP28</td><td></td><td></td><td></td><td>0.1</td><td>100GBase-CR4</td><td>100.0</td><td></td><td></td><td>4</td><td></td></tr>
+      <tr><td><strong>100G CR4 DAC 2m QSFP28</strong></td><td>FN-CABLE-QSFP28-2</td><td>QSFP28</td><td></td><td></td><td></td><td>0.1</td><td>100GBase-CR4</td><td>100.0</td><td></td><td></td><td>4</td><td></td></tr>
+      <tr><td><strong>100G CR4 DAC 3m QSFP28</strong></td><td>FN-CABLE-QSFP28-3</td><td>QSFP28</td><td></td><td></td><td></td><td>0.1</td><td>100GBase-CR4</td><td>100.0</td><td></td><td></td><td>4</td><td></td></tr>
+      <tr><td><strong>100G CR4 DAC 5m QSFP28</strong></td><td>FN-CABLE-QSFP28-5</td><td>QSFP28</td><td></td><td></td><td></td><td>0.1</td><td>100GBase-CR4</td><td>100.0</td><td></td><td></td><td>4</td><td></td></tr>
+      <tr><td><strong>400G CR8 DAC 1m QSFP-DD</strong></td><td>FN-CABLE-QSFPDD-DAC-01</td><td>QSFP-DD</td><td></td><td></td><td></td><td>0.1</td><td>400GBase-CR8</td><td>425.0</td><td></td><td></td><td>8</td><td></td></tr>
+      <tr><td><strong>400G CR8 DAC 2.5m QSFP-DD</strong></td><td>FN-CABLE-QSFPDD-DAC-B5</td><td>QSFP-DD</td><td></td><td></td><td></td><td>0.1</td><td>400GBase-CR8</td><td>425.0</td><td></td><td></td><td>8</td><td></td></tr>
+      <tr><td><strong>400G AOC 3m QSFP-DD</strong></td><td>FN-CABLE-QSFPDD-AOC-03</td><td>QSFP-DD</td><td>850.0</td><td>850.0</td><td>850.0</td><td>8.0</td><td>400G Ethernet</td><td>425.0</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><strong>100G to 4x25G breakout DAC 1m</strong></td><td>FN-CABLE-QSFP28-4SFP28-1</td><td>QSFP28</td><td></td><td></td><td></td><td>0.1</td><td>25GBase-CR</td><td>100.0</td><td></td><td></td><td>4</td><td>4x 25 Gbps</td></tr>
+      <tr><td><strong>100G to 4x25G breakout DAC 3m</strong></td><td>FN-CABLE-QSFP28-4SFP28-3</td><td>QSFP28</td><td></td><td></td><td></td><td>0.1</td><td>25GBase-CR</td><td>100.0</td><td></td><td></td><td>4</td><td>4x 25 Gbps</td></tr>
+      <tr><td><strong>100G to 4x25G breakout DAC 5m</strong></td><td>FN-CABLE-QSFP28-4SFP28-5</td><td>QSFP28</td><td></td><td></td><td></td><td>0.1</td><td>25GBase-CR</td><td>100.0</td><td></td><td></td><td>4</td><td>4x 25 Gbps</td></tr>
+      <tr><td><strong>400G to 2x200G breakout DAC 1m</strong></td><td>FN-CABLE-QSFPDD-2QSFP56-L1</td><td>QSFP-DD</td><td></td><td></td><td></td><td>0.1</td><td>400G/200G Ethernet</td><td>400.0</td><td></td><td></td><td></td><td>2x 200 Gbps</td></tr>
+      <tr><td><strong>400G to 2x200G breakout DAC 2.5m</strong></td><td>FN-CABLE-QSFPDD-2QSFP56-LB5</td><td>QSFP-DD</td><td></td><td></td><td></td><td>0.1</td><td>400G/200G Ethernet</td><td>400.0</td><td></td><td></td><td></td><td>2x 200 Gbps</td></tr>
+      <tr><td><strong>400G to 8x50G breakout DAC 1m</strong></td><td>FN-CABLE-QSFPDD-8SFP56-L1</td><td>QSFP-DD</td><td></td><td></td><td></td><td>0.1</td><td>400G/50G Ethernet</td><td>400.0</td><td></td><td></td><td></td><td>8x 50 Gbps</td></tr>
+      <tr><td><strong>400G to 8x50G breakout DAC 2.5m</strong></td><td>FN-CABLE-QSFPDD-8SFP56-LB5</td><td>QSFP-DD</td><td></td><td></td><td></td><td>0.1</td><td>400G/50G Ethernet</td><td>400.0</td><td></td><td></td><td></td><td>8x 50 Gbps</td></tr>
+      <tr><td><strong>40G QSFP+ to 4x10G OM3 breakout 1m</strong></td><td>FG-TRAN-QSFP-4xSFP</td><td>QSFP+</td><td>850.0</td><td>850.0</td><td>850.0</td><td></td><td>40GBase-SR4</td><td>40.0</td><td></td><td></td><td>4</td><td>4x 10 GE</td></tr>
+      <tr><td><strong>40G QSFP+ to 4x10G OM3 breakout 5m</strong></td><td>FG-TRAN-QSFP-4SFP-5</td><td>QSFP+</td><td>850.0</td><td>850.0</td><td>850.0</td><td></td><td>40GBase-SR4</td><td>40.0</td><td></td><td></td><td>4</td><td>4x 10 GE</td></tr>
+      <tr><td><strong>100G CFP2 SR10 to 10x10G OM3 1m</strong></td><td>FG-CABLE-SR10-SFP+</td><td>CFP2</td><td>850.0</td><td>850.0</td><td>850.0</td><td></td><td>100GBase-SR10</td><td>100.0</td><td></td><td>10</td><td>10</td><td>10x 10 GE</td></tr>
+      <tr><td><strong>100G CFP2 SR10 to 10x10G OM3 5m</strong></td><td>FG-CABLE-SR10-SFP+5</td><td>CFP2</td><td>850.0</td><td>850.0</td><td>850.0</td><td></td><td>100GBase-SR10</td><td>100.0</td><td></td><td>10</td><td>10</td><td>10x 10 GE</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">FN-TRAN-FX</span> <span class="badge">FN-TRAN-SFX</span> <span class="badge">FN-TRAN-FE</span> <span class="badge">FN-TRAN-GC</span> <span class="badge">FN-TRAN-SX</span> <span class="badge">FN-TRAN-SXI</span> <span class="badge">FR-TRAN-SX</span> <span class="badge">FN-TRAN-LX</span> <span class="badge">FN-TRAN-EX</span> <span class="badge">FR-TRAN-ZX</span> <span class="badge">FN-TRAN-SFP-1BD10</span> <span class="badge">FN-TRAN-SFP-1BU10</span> <span class="badge">FN-TRAN-SFP-1BD40</span> <span class="badge">FN-TRAN-SFP-1BU40</span> <span class="badge">FN-TRAN-SFP2-SX</span> <span class="badge">FN-TRAN-SFP2-LX</span> <span class="badge">FN-TRAN-SFP+GC</span> <span class="badge">FN-TRAN-SFP+GC-T80</span> <span class="badge">FN-TRAN-SFP+SR</span> <span class="badge">FN-TRAN-SFP+SRI</span> <span class="badge">FN-TRAN-SFP+LR</span> <span class="badge">FN-TRAN-SFP+LRI</span> <span class="badge">FN-TRAN-SFP+ER</span> <span class="badge">FN-TRAN-SFP+ERI</span> <span class="badge">FN-TRAN-SFP+LRM</span> <span class="badge">FN-TRAN-SFP+ZR</span> <span class="badge">FN-TRAN-SFP+BD27</span> <span class="badge">FN-TRAN-SFP+BD33</span> <span class="badge">FN-TRAN-SFP28-SR</span> <span class="badge">FN-TRAN-SFP28-LR</span> <span class="badge">FN-TRAN-QSFP+SR</span> <span class="badge">FN-TRAN-QSFP+LR</span> <span class="badge">FN-TRAN-QSFP+LRI</span> <span class="badge">FN-TRAN-QSFP+ER</span> <span class="badge">FG-TRAN-QSFP+SR-BIDI</span> <span class="badge">FN-TRAN-QSFP+BIDI</span> <span class="badge">FG-TRAN-CFP2-SR10</span> <span class="badge">FG-TRAN-CFP2-LR4</span> <span class="badge">FN-TRAN-QSFP28-SR</span> <span class="badge">FN-TRAN-QSFP28-LR</span> <span class="badge">FN-TRAN-QSFP28-FR</span> <span class="badge">FN-TRAN-QSFP28-ER</span> <span class="badge">FN-TRAN-QSFP28-DR</span> <span class="badge">FN-TRAN-QSFP28-CWDM4</span> <span class="badge">FN-TRAN-QSFP28-BIDI</span> <span class="badge">FN-TRAN-QSFP28-BIDI-I</span> <span class="badge">FN-TRAN-SFP56-SR</span> <span class="badge">FN-TRAN-QSFP56-SR4</span> <span class="badge">FN-TRAN-QSFP56-FR4</span> <span class="badge">FN-TRAN-QSFPDD-SR8</span> <span class="badge">FN-TRAN-QSFPDD-LR4</span> <span class="badge">FN-TRAN-QSFPDD-FR4</span> <span class="badge">FN-TRAN-QSFPDD-DR4</span> <span class="badge">FN-TRAN-QSFPDD-DR4+</span> <span class="badge">FN-CABLE-SFP+1</span> <span class="badge">FN-CABLE-SFP+3</span> <span class="badge">FN-CABLE-SFP+5</span> <span class="badge">SP-CABLE-ADASFP+</span> <span class="badge">FN-CABLE-SFP28-1</span> <span class="badge">FN-CABLE-SFP28-3</span> <span class="badge">FN-CABLE-SFP28-5</span> <span class="badge">FN-CABLE-QSFP+1</span> <span class="badge">FN-CABLE-QSFP+3</span> <span class="badge">FN-CABLE-QSFP+5</span> <span class="badge">FN-CABLE-QSFP+7</span> <span class="badge">FN-CABLE-SFP56-DAC-L1</span> <span class="badge">FN-CABLE-SFP56-DAC-LB5</span> <span class="badge">FN-CABLE-QSFP56-DAC-L1</span> <span class="badge">FN-CABLE-QSFP56-DAC-LB5</span> <span class="badge">FN-CABLE-QSFP28-1</span> <span class="badge">FN-CABLE-QSFP28-2</span> <span class="badge">FN-CABLE-QSFP28-3</span> <span class="badge">FN-CABLE-QSFP28-5</span> <span class="badge">FN-CABLE-QSFPDD-DAC-01</span> <span class="badge">FN-CABLE-QSFPDD-DAC-B5</span> <span class="badge">FN-CABLE-QSFPDD-AOC-03</span> <span class="badge">FN-CABLE-QSFP28-4SFP28-1</span> <span class="badge">FN-CABLE-QSFP28-4SFP28-3</span> <span class="badge">FN-CABLE-QSFP28-4SFP28-5</span> <span class="badge">FN-CABLE-QSFPDD-2QSFP56-L1</span> <span class="badge">FN-CABLE-QSFPDD-2QSFP56-LB5</span> <span class="badge">FN-CABLE-QSFPDD-8SFP56-L1</span> <span class="badge">FN-CABLE-QSFPDD-8SFP56-LB5</span> <span class="badge">FG-TRAN-QSFP-4xSFP</span> <span class="badge">FG-TRAN-QSFP-4SFP-5</span> <span class="badge">FG-CABLE-SR10-SFP+</span> <span class="badge">FG-CABLE-SR10-SFP+5</span></td></tr>
+      <tr><td>form_factor</td><td><span class="badge">SFP</span> <span class="badge">SFP+</span> <span class="badge">SFP28</span> <span class="badge">SFP56</span> <span class="badge">QSFP+</span> <span class="badge">QSFP28</span> <span class="badge">QSFP56</span> <span class="badge">QSFP-DD</span> <span class="badge">CFP2</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">750.0</span> <span class="badge">850.0</span> <span class="badge">1264.5</span> <span class="badge">1271.0</span> <span class="badge">1284.5</span> <span class="badge">1294.53</span> <span class="badge">1299.02</span> <span class="badge">1303.54</span> <span class="badge">1304.5</span> <span class="badge">1308.09</span> <span class="badge">1310.0</span> <span class="badge">1324.5</span> <span class="badge">1490.0</span> <span class="badge">1550.0</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">900.0</span> <span class="badge">850.0</span> <span class="badge">1277.5</span> <span class="badge">1331.0</span> <span class="badge">1297.5</span> <span class="badge">1296.59</span> <span class="badge">1301.09</span> <span class="badge">1305.63</span> <span class="badge">1317.5</span> <span class="badge">1310.19</span> <span class="badge">1310.0</span> <span class="badge">1337.5</span> <span class="badge">1490.0</span> <span class="badge">1550.0</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">850.0</span> <span class="badge">1310.0</span> <span class="badge">1550.0</span> <span class="badge">1271.0</span> <span class="badge">1331.0</span> <span class="badge">1490.0</span> <span class="badge">1271.0</span> <span class="badge">1291.0</span> <span class="badge">1311.0</span> <span class="badge">1331.0</span></td></tr>
+      <tr><td>channel_total</td><td><span class="badge">4</span> <span class="badge">8</span> <span class="badge">10</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">0.1</span> <span class="badge">0.5</span> <span class="badge">0.6</span> <span class="badge">0.7</span> <span class="badge">0.8</span> <span class="badge">0.83</span> <span class="badge">0.85</span> <span class="badge">1.0</span> <span class="badge">1.05</span> <span class="badge">1.1</span> <span class="badge">1.2</span> <span class="badge">1.5</span> <span class="badge">1.88</span> <span class="badge">2.5</span> <span class="badge">3.5</span> <span class="badge">4.0</span> <span class="badge">4.5</span> <span class="badge">6.0</span> <span class="badge">8.0</span> <span class="badge">9.0</span> <span class="badge">10.5</span> <span class="badge">12.0</span> <span class="badge">14.0</span></td></tr>
+      <tr><td>frame</td><td><span class="badge">4x 25 Gbps</span> <span class="badge">8x 50 Gbps</span> <span class="badge">2x 200 Gbps</span> <span class="badge">10x 10 GE</span> <span class="badge">4x 10 GE</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">100Base-FX</span> <span class="badge">100Base-T</span> <span class="badge">1000Base-T</span> <span class="badge">1000Base-SX</span> <span class="badge">1000Base-LX</span> <span class="badge">1000BASE-BX10</span> <span class="badge">2500BASE-X</span> <span class="badge">10GBASE-T</span> <span class="badge">10GBase-T</span> <span class="badge">10GBase-SR</span> <span class="badge">10GBase-LR</span> <span class="badge">10GBASE-ER</span> <span class="badge">10GBase-LRM</span> <span class="badge">10G-Base-ZR</span> <span class="badge">10G-Base-LR/LW</span> <span class="badge">10GBase-CR</span> <span class="badge">25GBase-SR</span> <span class="badge">25GBase-LR</span> <span class="badge">25GBase-CR</span> <span class="badge">40GBase-SR4</span> <span class="badge">40GBase-LR4</span> <span class="badge">40G-Base-ER4</span> <span class="badge">40GBase-SR-BiDi</span> <span class="badge">40GBase-CR4</span> <span class="badge">50G-Base-SR</span> <span class="badge">50GBase-CR</span> <span class="badge">100GBase-SR10</span> <span class="badge">100GBase-LR4</span> <span class="badge">100GBase-SR4</span> <span class="badge">100GBase-FR</span> <span class="badge">100G-Base-LR4</span> <span class="badge">100G-Base-DR</span> <span class="badge">100GBase-CWDM4</span> <span class="badge">100GBase-SR-BiDi</span> <span class="badge">100G-Base-SR1.2</span> <span class="badge">100GBase-CR4</span> <span class="badge">200G-Base-SR4</span> <span class="badge">200G-Base-FR4</span> <span class="badge">200G-BASE-CR4</span> <span class="badge">400G-Base-SR8</span> <span class="badge">400G-Base-LR4</span> <span class="badge">400G-Base-FR4</span> <span class="badge">400G-Base-DR4</span> <span class="badge">400GBase-CR8</span> <span class="badge">400G Ethernet</span> <span class="badge">400G/200G Ethernet</span> <span class="badge">400G/50G Ethernet</span> <span class="badge">SGMII</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">0.1</span> <span class="badge">1.0</span> <span class="badge">1.06</span> <span class="badge">1.25</span> <span class="badge">2.5</span> <span class="badge">10.0</span> <span class="badge">10.3</span> <span class="badge">11.1</span> <span class="badge">11.3</span> <span class="badge">25.0</span> <span class="badge">25.78</span> <span class="badge">40.0</span> <span class="badge">41.2</span> <span class="badge">41.3</span> <span class="badge">50.0</span> <span class="badge">53.125</span> <span class="badge">100.0</span> <span class="badge">103.1</span> <span class="badge">103.12</span> <span class="badge">106.25</span> <span class="badge">200.0</span> <span class="badge">212.5</span> <span class="badge">400.0</span> <span class="badge">425.0</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">0.01</span> <span class="badge">0.03</span> <span class="badge">0.08</span> <span class="badge">0.1</span> <span class="badge">0.15</span> <span class="badge">0.22</span> <span class="badge">0.3</span> <span class="badge">0.4</span> <span class="badge">0.5</span> <span class="badge">2.0</span> <span class="badge">10.0</span> <span class="badge">20.0</span> <span class="badge">25.0</span> <span class="badge">30.0</span> <span class="badge">40.0</span> <span class="badge">80.0</span> <span class="badge">90.0</span></td></tr>
+      <tr><td>number_of_lanes</td><td><span class="badge">4</span> <span class="badge">8</span> <span class="badge">10</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 22:31
+</footer>
+
+</div>
+</body>
+</html>

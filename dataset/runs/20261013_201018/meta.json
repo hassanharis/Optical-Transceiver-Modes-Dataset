@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:10:18.231748+00:00",
+  "source_file": "C:\\Haris\\datasheets\\av02-2810en-ds-hfbr-57e0xxz-20jan2011.pdf",
+  "page_count": 15,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 20.499,
+    "extract_atoms": 34.255,
+    "store_run": 0.014,
+    "synthesize_modes": 40.151,
+    "store_modes": 0.003,
+    "total": 94.923
+  }
+}

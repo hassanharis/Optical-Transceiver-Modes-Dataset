@@ -1,0 +1,328 @@
+{
+  "modes": [
+    {
+      "label": "1270nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1270.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1290nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1290.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1310nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1330nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1330.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1350nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1350.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1370nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1370.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1390nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1390.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1410nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1410.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1430nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1430.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1450nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1450.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1470nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1470.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1490nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1510nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1510.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1530nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1530.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1550nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1570nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1570.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1590nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1590.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1610nm CWDM A2x",
+      "model": "LS-CWxx1G-A2x",
+      "wavelength_center_nm": 1610.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1270nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1270.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1290nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1290.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1310nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1330nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1330.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1350nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1350.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1370nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1370.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1390nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1390.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1410nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1410.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1430nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1430.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1450nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1450.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1470nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1470.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1490nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1510nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1510.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1530nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1530.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1550nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1570nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1570.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1590nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1590.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1610nm CWDM A2C commercial",
+      "model": "LS-CWxx1G-A2C",
+      "wavelength_center_nm": 1610.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1270nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1270.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1290nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1290.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1310nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1330nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1330.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1350nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1350.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1370nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1370.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1390nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1390.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1410nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1410.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1430nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1430.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1450nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1450.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1470nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1470.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1490nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1510nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1510.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1530nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1530.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1550nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1570nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1570.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1590nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1590.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1610nm CWDM A2I industrial",
+      "model": "LS-CWxx1G-A2I",
+      "wavelength_center_nm": 1610.0,
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-10GE-ZR-Cxx",
+      "SO-SFP-10GE-ZR-Cxx-E",
+      "SO-SFP-10GE-ZR-C47",
+      "SO-SFP-10GE-ZR-C49",
+      "SO-SFP-10GE-ZR-C51",
+      "SO-SFP-10GE-ZR-C53",
+      "SO-SFP-10GE-ZR-C55",
+      "SO-SFP-10GE-ZR-C57",
+      "SO-SFP-10GE-ZR-C59",
+      "SO-SFP-10GE-ZR-C61",
+      "SO-SFP-10GE-ZR-C47-E",
+      "SO-SFP-10GE-ZR-C49-E",
+      "SO-SFP-10GE-ZR-C51-E",
+      "SO-SFP-10GE-ZR-C53-E",
+      "SO-SFP-10GE-ZR-C55-E",
+      "SO-SFP-10GE-ZR-C57-E",
+      "SO-SFP-10GE-ZR-C59-E",
+      "SO-SFP-10GE-ZR-C61-E"
+    ],
+    "wavelength_min_nm": [
+      1470.0,
+      1471.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1610.0,
+      1611.0,
+      1620.0
+    ],
+    "wavelength_center_nm": [
+      1470.0,
+      1490.0,
+      1510.0,
+      1530.0,
+      1550.0,
+      1570.0,
+      1590.0,
+      1610.0
+    ],
+    "power_consumption_w": [
+      1.5,
+      1.8
+    ],
+    "standards_code": [
+      "10GBASE-ZR",
+      "10GBASE-ZW",
+      "G.694.2",
+      "GbE",
+      "10GbE-LAN",
+      "10GbE-WAN",
+      "OTU1",
+      "OTU2",
+      "OTU2e",
+      "STM-64/OC192",
+      "STM-16/OC48",
+      "STM-4/OC12",
+      "1G FC",
+      "2G FC",
+      "4G FC",
+      "8G FC",
+      "10G FC",
+      "CPRI Opt, 1",
+      "CPRI Opt, 2",
+      "CPRI Opt, 3",
+      "CPRI Opt, 4",
+      "CPRI Opt, 5",
+      "CPRI Opt, 6",
+      "CPRI Opt, 7",
+      "CPRI Opt, 7A",
+      "CPRI Opt, 8",
+      "OBSAI 1x",
+      "OBSAI 2x",
+      "OBSAI 4x",
+      "OBSAI 8x"
+    ],
+    "bit_rate_gbps": [
+      0.6,
+      10.3,
+      11.3
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      8
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      0.0
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_sensitivity_dbm": [
+      -23.0
+    ],
+    "rx_overload_dbm": [
+      -8.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -37.0
+    ],
+    "los_deassert_dbm": [
+      -24.0
+    ],
+    "penalties": [],
+    "notes": "Power consumption: < 1.5W (SO-SFP-10GE-ZR-Cxx); < 1.8W (SO-SFP-10GE-ZR-Cxx-E). Extended operating temperature -20°C to +75°C for -Cxx-E variants. Storage temperature -40°C to +85°C stated in TECHNICAL DATA table. Power budget 12 – 23dB. Dispersion penalty Max 3.5dB. Transmitter output power and receiver min/overload are average power (footnote 3). Receiver minimum input power -23.0dBm and overload -8.0dBm measured @ 10.3Gbps, BER 1x10-12, PRBS 231-1, back-to-back (footnote 4). Bit rate support 0.6Gbps to 11.3Gbps. Transmit wavelength 1471 to 1611nm (G.694.2); headline 1470 – 1610nm (8ch). 10GBASE-ZR/ZW defined only at 1550 nm; standard referenced for bridgeable distance at other CWDM wavelengths.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-10GE-ZR-Cxx, -Cxx-E SFP+, 10G Multirate, CWDM, DDM, 23dB, 80km, 1470nm-1610nm (8ch)",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Add schema fields for power budget (dB) and dispersion penalty max (dB). Consider list types for temp_min_c/temp_max_c when C-temp and E-temp variants are on one datasheet."
+  }
+}

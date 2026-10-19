@@ -1,0 +1,131 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-XFP-ER",
+    "SO-XFP-ER-I"
+  ],
+  "form_factor": [
+    "XFP"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ae",
+    "INF-8077i",
+    "XFP-MSA"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1530.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1565.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "10GBASE-ER",
+    "10GBASE-EW",
+    "OTU2",
+    "OTU2e",
+    "STM-64",
+    "OC192",
+    "8G FC",
+    "10G FC",
+    "CPRI Opt",
+    "CPRI 7",
+    "CPRI 8"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    8.5,
+    10.3,
+    11.1
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -16.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "cd_tolerance_ps_nm": [
+    800.0
+  ],
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -18.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    1.0
+  ],
+  "total_jitter_ps": null,
+  "penalties": null,
+  "notes": "Technology: Grey XFP. Nominal wavelength stated as 1x 1550nm; transmit wavelength 1530nm–1565nm; receiver wavelength range 1260nm–1600nm. Power budget 4–16dB. Dispersion penalty max 2dB (no paired penalized value/condition for penalty objects). Footnote 1): average power for transmitter output power, minimum input power, and overload. Footnote 2): minimum input power at 10.3Gbps, BER 1x10-12, PRBS 231-1. Operating temperature SO-XFP-ER: -0°C to +70°C; SO-XFP-ER-I: -40°C to +85°C (temp_min_c/temp_max_c reflect -ER standard range). Storage temperature -40°C to +85°C. Power consumption < 3.5W worst case. Protocol support includes 10GbE-LAN, 10GbE-WAN. DDM yes.",
+  "provenance_datasheet_sections": [
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Consider temp_min_c/temp_max_c as per-SKU lists when ordering codes imply distinct operating ranges (-ER vs -ER-I). Map dispersion penalty max 2dB with cd_tolerance_ps_nm 800 if a structured dispersion penalty field is desired."
+}

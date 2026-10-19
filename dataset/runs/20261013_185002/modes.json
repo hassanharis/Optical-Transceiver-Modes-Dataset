@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "QT-WDM-02120BD Standard 0 to +70C",
+      "model": "QT-WDM-02120BD",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-02120BID Industrial -40 to +85C",
+      "model": "QT-WDM-02120BID",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

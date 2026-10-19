@@ -1,0 +1,108 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\AFBR-52H5PZ-DS100.pdf",
+  "page_count": 17,
+  "table_count": 20,
+  "markdown_chars": 36114,
+  "tables": [
+    {
+      "page": 3,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 39
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 9
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 8,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 8,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 9,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 9,
+      "label": null,
+      "rows": 14
+    },
+    {
+      "page": 10,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 10,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 10,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 10,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 11,
+      "label": null,
+      "rows": 19
+    },
+    {
+      "page": 12,
+      "label": null,
+      "rows": 17
+    },
+    {
+      "page": 13,
+      "label": null,
+      "rows": 9
+    },
+    {
+      "page": 13,
+      "label": null,
+      "rows": 6
+    }
+  ]
+}

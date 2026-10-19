@@ -1,0 +1,129 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1000BASE-BX-MMD-35",
+    "SO-SFP-1000BASE-BX-MMD-53",
+    "SO-SFP-1000Base-BX-MMD-35",
+    "SO-SFP-1000Base-BX-MMD-53",
+    "SO-SFP-1000Base-BX-MMD-35-I",
+    "SO-SFP-1000Base-BX-MMD-53-I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF 8472"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1260,
+    1500
+  ],
+  "wavelength_max_nm": [
+    1360,
+    1580
+  ],
+  "wavelength_center_nm": [
+    1310,
+    1550
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM1",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "1000BASE-BX",
+    "GbE",
+    "1G FC",
+    "CPRI Opt 2"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1.0625,
+    1.25,
+    1.2288
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.5,
+    1
+  ],
+  "tx_power_min_dbm": [
+    -9.5
+  ],
+  "tx_power_max_dbm": [
+    -3.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -21,
+    -22
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -3
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -35
+  ],
+  "los_deassert_dbm": [
+    -23
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Pair solution: SO-SFP-1000BASE-BX-MMD-35 (TX 1310nm / RX 1550nm) and SO-SFP-1000BASE-BX-MMD-53 (TX 1550nm / RX 1310nm). Footnote 1)/2) map wavelength rows to -35 vs -53. Footnote 3) average power. Rx minimum input power -21dBm @ GbE, PRBS 27-1, BER <1E-12 (footnote 4); -22dBm @ FE, PRBS 27-1, BER <1E-12 (footnote 5). Power budget 0–11.5 dB (footnote 4) / 0–12.5 dB (footnote 5). Operating temperature also offered as I-temp: -40°C to +85°C (ordering -35-I / -53-I). Storage temperature -40°C to +85°C. Typical reach 500m@62.5/125um (500MHz*km); 1000m@50/125um (800MHz*km). Power consumption stated as < 1 W.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1000BASE-BX-MMD-35 & -53",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Add list fields for temp_min_c/temp_max_c when C-temp and I-temp variants are separate orderables. Consider a paired-module or tx_rx_wavelength_nm structure for BiDi products."
+}

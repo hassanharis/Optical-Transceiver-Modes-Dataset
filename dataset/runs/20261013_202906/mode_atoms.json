@@ -1,0 +1,55 @@
+{
+  "multi_valued": {
+    "frame": [
+      "10x 10G",
+      "4x 25G"
+    ],
+    "standards_code": [
+      "100G Ethernet",
+      "IEEE802.3bj"
+    ],
+    "fec_type": [
+      "RS_GENERIC",
+      "RS_528_514"
+    ],
+    "number_of_lanes": [
+      10,
+      4
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "CVR-CFP-QSFP28-FEC"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "CFP-MSA",
+      "QSFP28 MSA"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      5.5
+    ],
+    "host_interface_name": [
+      "CFP"
+    ],
+    "media_interface_name": [
+      "QSFP28"
+    ],
+    "bit_rate_gbps": [
+      100.0
+    ],
+    "penalties": [],
+    "notes": "Product is a CFP-to-QSFP28 electrical converter with integrated RS FEC, not an optical transceiver; optical parameters are not specified. Power consumption stated as < 5.5W. Storage temperature -40°C to +85°C. DDM via MDIO 2-Wire Interface. FEC required for certain QSFP28 versions such as SR4 and CWDM4.",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Consider schema fields for converter/host form factor (e.g. CFP) and storage temperature range."
+  }
+}

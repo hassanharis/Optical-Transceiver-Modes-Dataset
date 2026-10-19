@@ -1,0 +1,155 @@
+{
+  "multi_valued": {
+    "model": [
+      "TRS7091FNCDP000-x",
+      "TRS7091FNC"
+    ],
+    "wavelength_min_nm": [
+      1525.0,
+      1528.0
+    ],
+    "wavelength_max_nm": [
+      1566.0,
+      1575.0
+    ],
+    "wavelength_band": [
+      "C-band",
+      "DWDM"
+    ],
+    "standards_code": [
+      "GR-253",
+      "ITU-T G.691",
+      "SONET/SDH",
+      "10GE"
+    ],
+    "bit_rate_gbps": [
+      9.95,
+      11.3,
+      9.953,
+      10.709
+    ],
+    "rx_osnr_db": [
+      15.0,
+      17.0,
+      35.0
+    ],
+    "cd_tolerance_ps_nm": [
+      -700.0,
+      0.0,
+      700.0
+    ],
+    "post_fec_ber_target": [
+      0.0001,
+      1e-12
+    ]
+  },
+  "general": {
+    "vendor": "Lumentum",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8690",
+      "SFF-8472",
+      "INF-8074i",
+      "IEEE802.3ae CL 52"
+    ],
+    "emitter_type": [
+      "LASER_ILMZ"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_center_nm": [
+      1550.0
+    ],
+    "frequency_min_thz": [
+      191.3
+    ],
+    "frequency_max_thz": [
+      196.05
+    ],
+    "channel_spacing_ghz": [
+      50.0
+    ],
+    "channel_total": [
+      96
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.0
+    ],
+    "host_interface_name": [
+      "SFI"
+    ],
+    "modulation_format": [
+      "NRZ"
+    ],
+    "tx_power_min_dbm": [
+      -2.0
+    ],
+    "tx_power_max_dbm": [
+      3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -14.0
+    ],
+    "rx_overload_dbm": [
+      0.0
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -27.0
+    ],
+    "los_deassert_dbm": [
+      -20.0
+    ],
+    "receiver_reflectance_db": [
+      -27.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "side_mode_suppression_ratio_db": [
+      35.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "C-band window 1528–1566 nm in product description; receiver input wavelength 1525–1575 nm (Table 11). Tx power and frequency accuracy marked EOL. Rx sensitivity at 10.709 Gbps, 1E-12 BER, OSNR>35 dB. System OSNR (Table 12) at 1E-04 BER, 10.709 Gbps, -3 to -14 dBm, -0.25 nm filter BW, Rx DTV optimized. Max power <2.0 W at 70°C; Note 2 <2.1 W at Tc<5°C. Ordering: multiprotocol with or without FEC; no FEC type specified. Shuttered output power max -35 dBm. Optical power stability ΔPo -1.0 to +1.0 dB (all channels, SOL). Frequency accuracy -2.5 to +2.5 GHz EOL. Absolute max receiver input +5 dBm (Table 8), distinct from overload 0 dBm operating (Table 11).",
+    "provenance_datasheet_sections": [
+      "Zero Chirp Tunable SFP+ 10G Serial Optical Transceiver TRS7091FNCDP000-x",
+      "Key Features",
+      "Compliance",
+      "PERFORMANCE SPECIFICATIONS",
+      "Table 8: Absolute Maximum Ratings",
+      "Operating Environment",
+      "Electrical Performance",
+      "Optical Interface Characteristics",
+      "Table 11 Optical Characteristics",
+      "System Performance",
+      "Table 12 System Performance",
+      "Jitter Characteristics",
+      "Table 13  Transmitter Jitter Characteristics (Note 1)",
+      "Optical Connector",
+      "Ordering Information"
+    ],
+    "suggestions": "Table 12 OSNR vs dispersion rows could be modeled as condition-tagged rx_osnr_db entries; no explicit dB-penalty columns for penalties array. Jitter limits are in mUIpp not ps."
+  }
+}

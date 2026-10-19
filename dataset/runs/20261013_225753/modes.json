@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "1.25 Gb/s Gigabit Ethernet (1000Base-LX)",
+      "host_interface_name": "1000Base-LX",
+      "standards_code": "IEEE 802.3",
+      "bit_rate_gbps": 1.25,
+      "rx_sensitivity_dbm": -19.0
+    },
+    {
+      "label": "1.06 Gb/s 1x Fibre Channel",
+      "host_interface_name": "1x Fibre Channel",
+      "standards_code": "FC-PI-4 Rev. 8.00",
+      "bit_rate_gbps": 1.062,
+      "rx_sensitivity_dbm": -21.0
+    }
+  ]
+}

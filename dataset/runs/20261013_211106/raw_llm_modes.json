@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "DQ5001-0M5C-SO 0.5m AWG30 passive DAC",
+      "model": "DQ5001-0M5C-SO",
+      "standards_code": "200GAUI-2",
+      "reach_km": 0.0005
+    },
+    {
+      "label": "DQ5001-001C-SO 1m AWG30 passive DAC",
+      "model": "DQ5001-001C-SO",
+      "standards_code": "200GAUI-2"
+    },
+    {
+      "label": "DQ5001-1M5C-SO 1.5m AWG30 passive DAC",
+      "model": "DQ5001-1M5C-SO",
+      "standards_code": "200GAUI-2"
+    },
+    {
+      "label": "DQ5001-002C-SO 2m AWG26 passive DAC",
+      "model": "DQ5001-002C-SO",
+      "standards_code": "200GAUI-2"
+    },
+    {
+      "label": "DQ5001-003C-SO 3m AWG26 passive DAC",
+      "model": "DQ5001-003C-SO",
+      "standards_code": "200GAUI-2",
+      "reach_km": 0.003
+    },
+    {
+      "label": "DQ5001-xxxC-SO family passive DAC",
+      "model": "DQ5001-xxxC-SO",
+      "standards_code": "200GAUI-2"
+    }
+  ]
+}

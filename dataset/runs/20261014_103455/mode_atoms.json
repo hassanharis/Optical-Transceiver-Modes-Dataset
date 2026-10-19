@@ -1,0 +1,122 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1294.53,
+      1299.02,
+      1303.54,
+      1308.09
+    ],
+    "wavelength_max_nm": [
+      1296.59,
+      1301.09,
+      1305.63,
+      1310.19
+    ],
+    "wavelength_center_nm": [
+      1295.56,
+      1296.0,
+      1300.0,
+      1300.05,
+      1304.58,
+      1305.0,
+      1309.0,
+      1309.14
+    ],
+    "bit_rate_gbps": [
+      103.125,
+      25.78125
+    ],
+    "tx_power_max_dbm": [
+      4.5,
+      10.5
+    ]
+  },
+  "general": {
+    "vendor": "XGIGA",
+    "model": [
+      "QXP29B4-10DA-3"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "100GBASE-LR4",
+      "IEEE 802.3ba",
+      "SFF-8636",
+      "QSFP28 MSA"
+    ],
+    "emitter_type": [
+      "LASER_DFB",
+      "LASER_DML"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_band": [
+      "LAN WDM"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "power_consumption_w": [
+      5.0
+    ],
+    "standards_code": [
+      "100GBASE-LR4"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -4.3
+    ],
+    "rx_sensitivity_dbm": [
+      -8.6
+    ],
+    "rx_overload_dbm": [
+      4.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      4.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -12.0
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      4.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "penalties": [],
+    "notes": "Line rate 103.125 Gbps; per-lane data/signaling 25.78125 Gbps (±100 ppm). Receiver sensitivity (OMA) per lane and average input power per channel per Optical Characteristics Note 2: PRBS 2^31-1 @25.78Gb/s, BER<10^-12. Power dissipation stated as <5.0W. Total output power POUT max 10.5 dBm; transmit OMA per lane -1.3 to 4.5 dBm. Hit ratio 5x10^-5 per transmitter note 1.",
+    "provenance_datasheet_sections": [
+      "QXP29B4-10DA-3, 100Gb/s QSFP28 LR4 Transceiver, PRODUCT FEATURES, APPLICATIONS, STANDARD, General Description, Ⅰ Absolute Maximum Ratings, Ⅱ Recommended Operating Conditions, Ⅲ Optical Characteristics, Notes, IV. Electrical Characteristics, VI. Digital Diagnostic Functions, Appendix A. Document Revision"
+    ]
+  }
+}

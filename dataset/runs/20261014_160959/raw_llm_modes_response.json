@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"CFP-DCO 100GbE DWDM 6.25 GHz\",\n      \"form_factor\": \"CFP-DCO\",\n      \"channel_spacing_ghz\": 6.25,\n      \"standards_code\": \"100GbE\"\n    },\n    {\n      \"label\": \"CFP-DCO 100GbE DWDM 50 GHz\",\n      \"form_factor\": \"CFP-DCO\",\n      \"channel_spacing_ghz\": 50.0,\n      \"standards_code\": \"100GbE\"\n    },\n    {\n      \"label\": \"CFP 100GbE DWDM 12.5 GHz\",\n      \"form_factor\": \"CFP\",\n      \"channel_spacing_ghz\": 12.5,\n      \"standards_code\": \"100GbE\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

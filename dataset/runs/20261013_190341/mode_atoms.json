@@ -1,0 +1,106 @@
+{
+  "multi_valued": {
+    "model": [
+      "QT- WDM-0203BSD",
+      "QT-WDM-0203BSD",
+      "QT-WDM-0203BSID"
+    ],
+    "wavelength_min_nm": [
+      1510.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1570.0,
+      1360.0
+    ],
+    "wavelength_center_nm": [
+      1550.0,
+      1310.0
+    ],
+    "host_interface_name": [
+      "Gigabit Ethernet",
+      "Fiber Channel"
+    ],
+    "standards_code": [
+      "1000BASE-BX-U",
+      "OC-24-LR-1"
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      1.063
+    ]
+  },
+  "general": {
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472",
+      "SONET OC-24-LR-1",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "connector_type": [
+      "SC",
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "media_interface_name": [
+      "1000BASE-BX-U"
+    ],
+    "reach_km": [
+      3.0
+    ],
+    "tx_power_min_dbm": [
+      -12.0
+    ],
+    "tx_power_max_dbm": [
+      -6.0
+    ],
+    "rx_sensitivity_dbm": [
+      -21.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -23.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "los_hysteresis_db": [
+      1.0,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "Cover P/N QT- WDM-0203BSD; ordering lists QT-WDM-0203BSD (0°C to +70°C) and QT-WDM-0203BSID (-40°C to +85°C). FEATURES cite simplex SC receptacle; ordering table lists LC connector. Receiver Sensitivity and Receiver Overload per Note 3: PRBS 2^7-1 @1250Mbps, BER ≤1×10^-12. Average output power Note 1: launched into SMF. Operating case temperature FEATURES: Standard 0 to +70°C, Industrial -40 to +85°C.",
+    "provenance_datasheet_sections": [
+      "BIDI SFP 1550nm-TX/1310nm-RX 3KM SMF Transceiver",
+      "P/N: QT- WDM-0203BSD",
+      "FEATURES",
+      "APPLICATIONS",
+      "1. Absolute Maximum Ratings",
+      "2. Recommended Operating Conditions",
+      "3. Optical and Electrical Characteristics",
+      "Notes:",
+      "7. Ordering information"
+    ]
+  }
+}

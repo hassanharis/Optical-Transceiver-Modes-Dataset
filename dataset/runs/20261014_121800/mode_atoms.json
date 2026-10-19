@@ -1,0 +1,110 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1294.53,
+      1299.02,
+      1303.54,
+      1308.09
+    ],
+    "wavelength_max_nm": [
+      1296.59,
+      1301.09,
+      1305.63,
+      1310.19
+    ],
+    "wavelength_center_nm": [
+      1295.56,
+      1300.05,
+      1304.58,
+      1309.14
+    ],
+    "wavelength_band": [
+      "grey",
+      "LAN-WDM"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      25.78
+    ],
+    "reach_km": [
+      40.0,
+      30.0
+    ],
+    "tx_power_max_dbm": [
+      12.5,
+      6.5
+    ],
+    "fec_type": [
+      "RS_528_514"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-QSFP28-ER4"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "100G 4WDM-40",
+      "IEEE802.3bj"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      5.0
+    ],
+    "media_interface_name": [
+      "100G 4WDM-40"
+    ],
+    "standards_code": [
+      "100G 4WDM-40"
+    ],
+    "tx_power_min_dbm": [
+      -0.3
+    ],
+    "rx_sensitivity_dbm": [
+      -18.3
+    ],
+    "rx_overload_dbm": [
+      -3.5
+    ],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -25.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Technology listed as Grey QSFP28. Power consumption stated as < 5W. Power budget 10 – 18 dB. Optical path penalty 2dB. Without FEC, distance performance reduced to 30km and power budget to about 16dB. Storage temperature -40°C to +85°C. Footnote 1) aggregated line rate 100GbE; 2) per lane; 3) average power; 4) receiver min/overload specified at BER 5x10-5. Post-FEC BER wording: better than 1 x 10-12. Ordering description references 1310nm. DDM Yes.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP28-ER4",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

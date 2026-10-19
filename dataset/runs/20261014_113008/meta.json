@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T11:30:08.537038+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-qsfp-4sfp-pcuxm.pdf",
+  "page_count": 2,
+  "table_count": 0,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 1.907,
+    "extract_atoms": 22.151,
+    "store_run": 0.007,
+    "synthesize_modes": 101.353,
+    "store_modes": 0.003,
+    "total": 125.42
+  }
+}

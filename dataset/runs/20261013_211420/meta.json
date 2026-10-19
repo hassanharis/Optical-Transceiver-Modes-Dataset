@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:14:20.397303+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-dqd004-xxxc-so-qsfpdd-400g-dac-active-c4-r6.0-1.pdf",
+  "page_count": 3,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.394,
+    "extract_atoms": 20.285,
+    "store_run": 0.005,
+    "synthesize_modes": 27.149,
+    "store_modes": 0.006,
+    "total": 50.84
+  }
+}

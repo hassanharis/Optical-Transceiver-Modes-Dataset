@@ -1,0 +1,79 @@
+{
+  "modes": [
+    {
+      "label": "400G CFEC DP-16QAM",
+      "host_interface_name": "QSFP-DD",
+      "frame": "GAUI-8",
+      "standards_code": "400G-CFEC",
+      "baud_rate_gbaud": 60.138547,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "tx_power_max_dbm": -10.0,
+      "rx_sensitivity_dbm": -21.0,
+      "cd_tolerance_ps_nm": 2400.0,
+      "pmd_tolerance_ps": 16.0,
+      "fec_type": "CFEC",
+      "los_assert_dbm": -21.0
+    },
+    {
+      "label": "400G OFEC DP-16QAM",
+      "host_interface_name": "QSFP-DD",
+      "frame": "GAUI-8",
+      "standards_code": "400G-OFEC",
+      "baud_rate_gbaud": 60.138547,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "tx_power_max_dbm": -10.0,
+      "rx_sensitivity_dbm": -23.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "pmd_tolerance_ps": 22.0,
+      "fec_type": "OFEC",
+      "los_assert_dbm": -23.0
+    },
+    {
+      "label": "300G OFEC DP-8QAM",
+      "host_interface_name": "QSFP-DD",
+      "frame": "GAUI-8",
+      "standards_code": "300G-OFEC",
+      "baud_rate_gbaud": 60.138547,
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_8-DP",
+      "tx_power_max_dbm": -10.0,
+      "rx_sensitivity_dbm": -26.0,
+      "cd_tolerance_ps_nm": 40000.0,
+      "pmd_tolerance_ps": 33.0,
+      "fec_type": "OFEC",
+      "los_assert_dbm": -26.0
+    },
+    {
+      "label": "200G OFEC DP-QPSK",
+      "host_interface_name": "QSFP-DD",
+      "frame": "GAUI-8",
+      "standards_code": "200G-OFEC",
+      "baud_rate_gbaud": 60.138547,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QPSK-DP",
+      "tx_power_max_dbm": -9.0,
+      "rx_sensitivity_dbm": -31.0,
+      "cd_tolerance_ps_nm": 50000.0,
+      "pmd_tolerance_ps": 33.0,
+      "fec_type": "OFEC",
+      "los_assert_dbm": -31.0
+    },
+    {
+      "label": "100G OFEC DP-QPSK",
+      "host_interface_name": "QSFP-DD",
+      "frame": "GAUI-8",
+      "standards_code": "100G-OFEC",
+      "baud_rate_gbaud": 30.069274,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QPSK-DP",
+      "tx_power_max_dbm": -8.0,
+      "rx_sensitivity_dbm": -31.0,
+      "cd_tolerance_ps_nm": 100000.0,
+      "pmd_tolerance_ps": 33.0,
+      "fec_type": "OFEC",
+      "los_assert_dbm": -33.0
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "BX60D-34 1310nm TX C-temp",
+      "model": "SO-SFP-1000BASE-BX60D-34",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX60D-34 1310nm TX C-temp",
+      "model": "SO-SFP-1000Base-BX60D-34",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX60D-43 1490nm TX C-temp",
+      "model": "SO-SFP-1000BASE-BX60D-43",
+      "wavelength_min_nm": 1450.0,
+      "wavelength_max_nm": 1530.0,
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX60D-43 1490nm TX C-temp",
+      "model": "SO-SFP-1000Base-BX60D-43",
+      "wavelength_min_nm": 1450.0,
+      "wavelength_max_nm": 1530.0,
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX60D-34 1310nm TX I-temp",
+      "model": "SO-SFP-1000Base-BX60D-34-I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX60D-43 1490nm TX I-temp",
+      "model": "SO-SFP-1000Base-BX60D-43-I",
+      "wavelength_min_nm": 1450.0,
+      "wavelength_max_nm": 1530.0,
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

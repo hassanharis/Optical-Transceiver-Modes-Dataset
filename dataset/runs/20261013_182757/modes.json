@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-SR",
+      "wavelength_min_nm": 840.0,
+      "wavelength_max_nm": 860.0,
+      "wavelength_center_nm": 850.0,
+      "power_consumption_w": 0.6,
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.3125,
+      "rx_sensitivity_dbm": -11.1
+    },
+    {
+      "label": "10GBASE-SW",
+      "wavelength_min_nm": 840.0,
+      "wavelength_max_nm": 860.0,
+      "wavelength_center_nm": 850.0,
+      "power_consumption_w": 0.8,
+      "standards_code": "10GBASE-SW",
+      "bit_rate_gbps": 9.953,
+      "rx_sensitivity_dbm": -7.5
+    }
+  ]
+}

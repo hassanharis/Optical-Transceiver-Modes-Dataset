@@ -1,0 +1,48 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-10GE-BX10D-2733 (1270nm Tx / 1330nm Rx)",
+      "model": "SO-SFP-10GE-BX10D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "10GBASE-LR",
+      "media_interface_name": "10GBASE-LR",
+      "standards_code": "IEEE 802.3ae",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "SO-SFP-10GE-BX10D-3327 (1330nm Tx / 1270nm Rx)",
+      "model": "SO-SFP-10GE-BX10D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "10GBASE-LR",
+      "media_interface_name": "10GBASE-LR",
+      "standards_code": "IEEE 802.3ae",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "SO-SFP-10GE-BX10D-2733-I (1270nm Tx / 1330nm Rx, I-temp)",
+      "model": "SO-SFP-10GE-BX10D-2733-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": "10GBASE-LR",
+      "media_interface_name": "10GBASE-LR",
+      "standards_code": "IEEE 802.3ae",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "SO-SFP-10GE-BX10D-3327-I (1330nm Tx / 1270nm Rx, I-temp)",
+      "model": "SO-SFP-10GE-BX10D-3327-I",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": "10GBASE-LR",
+      "media_interface_name": "10GBASE-LR",
+      "standards_code": "IEEE 802.3ae",
+      "bit_rate_gbps": 11.3
+    }
+  ]
+}

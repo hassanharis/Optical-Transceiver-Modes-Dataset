@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "Transmitter optical (1310nm FP)",
+      "wavelength_max_nm": 1360.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "Receiver optical (PIN, PRBS @ 1250Mbps)",
+      "wavelength_max_nm": 1610.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "1.063Gbps Fiber Channel application",
+      "wavelength_max_nm": 1360.0,
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "Minimum data rate (recommended operating)",
+      "wavelength_max_nm": 1360.0,
+      "bit_rate_gbps": 0.1
+    }
+  ]
+}

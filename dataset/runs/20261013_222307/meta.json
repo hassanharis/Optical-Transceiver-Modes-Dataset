@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:23:07.291441+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tsf086-bxxc-so-sfp-1g-bidi-20km-3155-sc-r6.0.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.416,
+    "extract_atoms": 23.384,
+    "store_run": 0.01,
+    "synthesize_modes": 34.079,
+    "store_modes": 0.004,
+    "total": 60.893
+  }
+}

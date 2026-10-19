@@ -1,0 +1,112 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-DAC11100-xMN",
+    "LQ-DAC11100-0M5N",
+    "LQ-DAC11100-1MN",
+    "LQ-DAC11100-2MN",
+    "LQ-DAC11100-3MN",
+    "LQ-DAC11100-5MN"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "SFF-8665",
+    "SFF8436"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": null,
+  "connector_type": null,
+  "fiber_type": null,
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    0.02
+  ],
+  "host_interface_name": [
+    "QSFP28"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "SFF-8665",
+    "SFF8436"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    25,
+    25.78,
+    40,
+    100
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.0005,
+    0.001,
+    0.002,
+    0.003,
+    0.005
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": [
+    8,
+    22.48
+  ],
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Passive QSFP28-to-QSFP28 copper DAC; no optical TX/RX parameters apply. Features state copper link length up to 3 m (passive limiting) while ordering includes 5 m variants. Table.2 Data Rate lists Min 40 Gbps only (Typ/Max blank). Table.3 insertion loss SDD21 at 12.8906 GHz. Supply +3.3 V; I2C EEPROM interface stated but not in schema.",
+  "provenance_datasheet_sections": [
+    "LQ-DAC11100-xMN",
+    "Features",
+    "Applications",
+    "General Description",
+    "Recommended Operating Conditions Table.2 Recommended Operating Conditions",
+    "Product Characteristics Table.3 Product Characteristics",
+    "Mechanical Specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Consider schema fields for passive copper: cable length (m), differential impedance (Ω), COM (dB), supply voltage (V), and electrical insertion loss vs frequency."
+}

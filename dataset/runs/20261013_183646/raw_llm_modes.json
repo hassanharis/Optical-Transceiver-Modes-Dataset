@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-LR @ 10.3125 Gbps (10 km)",
+      "power_consumption_w": 1.2,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.3125,
+      "rx_sensitivity_dbm": -14.4
+    },
+    {
+      "label": "10GBASE-LW @ 9.953 Gbps",
+      "power_consumption_w": 1.2,
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 9.953,
+      "rx_sensitivity_dbm": -14.4
+    }
+  ]
+}

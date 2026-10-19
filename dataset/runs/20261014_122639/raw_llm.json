@@ -1,0 +1,133 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP28-SR4"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "100GBASE-SR4",
+    "IEEE 802.3bm",
+    "IEEE802.3bj",
+    "QSFP28 MSA"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": [
+    "100GBASE-SR4",
+    "100GbE"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "100GBASE-SR4",
+    "IEEE 802.3bm"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    103.12,
+    25.78,
+    100
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.07,
+    0.1
+  ],
+  "tx_power_min_dbm": [
+    -6.0
+  ],
+  "tx_power_max_dbm": [
+    2.4
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -10.3
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    2.4
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [
+    "RS_528_514"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    5e-05
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -20
+  ],
+  "los_deassert_dbm": [
+    -12
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Title and ordering line state power budget 4.3dB and 100m@OM4. TECHNICAL DATA column header lists 70m @ OM3, 100m @ OM4, power budget 0 – 4.3dB. Storage temperature -40°C to +85°C (not normal operating). FEC required in host per IEEE802.3bj RS(528,514); optical parameters at BER 5x10^-5; FEC yields BER better than 1x10^-12. Footnote 3): average power. Footnote 4): receiver min/overload specified at BER 5x10^-5, PRBS 2^31-1. Transmitter max output printed as +2.4Bm (dBm implied). DDM Yes.",
+  "provenance_datasheet_sections": [
+    "SO-QSFP28-SR4",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Clarify whether reach_km should store literal meters (70, 100) when datasheet only states m. Distinguish power budget 4.3dB from channel_insertion_loss_db if both appear in marketing vs table."
+}

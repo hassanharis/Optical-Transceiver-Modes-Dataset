@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:08:45.836895+00:00",
+  "source_file": "C:\\Haris\\datasheets\\AV02-2508EN_DS_AFBR-57F5PZ_2015-10-15.pdf",
+  "page_count": 22,
+  "table_count": 20,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 34.863,
+    "extract_atoms": 31.649,
+    "store_run": 0.016,
+    "synthesize_modes": 37.583,
+    "store_modes": 0.004,
+    "total": 104.115
+  }
+}

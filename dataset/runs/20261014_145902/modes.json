@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "1G FC (FC-PI-4 100-SM-LC-L)",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "media_interface_name": "FC-PI-4 100-SM-LC-L",
+      "standards_code": "FC-PI-4 100-SM-LC-L",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "2G FC (FC-PI-4 200-SM-LC-L)",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "media_interface_name": "FC-PI-4 200-SM-LC-L",
+      "standards_code": "FC-PI-4 200-SM-LC-L",
+      "bit_rate_gbps": 2.0
+    },
+    {
+      "label": "4G FC (FC-PI-4 400-SM-LC-L)",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "media_interface_name": "FC-PI-4 400-SM-LC-L",
+      "standards_code": "FC-PI-4 400-SM-LC-L",
+      "bit_rate_gbps": 4.0
+    },
+    {
+      "label": "8G FC (FC-PI-4 800-SM-LC-L)",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "media_interface_name": "FC-PI-4 800-SM-LC-L",
+      "standards_code": "FC-PI-4 800-SM-LC-L",
+      "bit_rate_gbps": 8.5
+    }
+  ]
+}

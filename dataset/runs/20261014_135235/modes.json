@@ -1,0 +1,109 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-LRM",
+      "wavelength_max_nm": 1355.0,
+      "host_interface_name": "10GBASE-LRM",
+      "standards_code": "10GBASE-LRM",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "IEEE 802.3ae LRM",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CPRI Opt 1",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 0.6144
+    },
+    {
+      "label": "614 Mbps (range min)",
+      "wavelength_max_nm": 1355.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 0.614
+    },
+    {
+      "label": "OBSAI 0.768 Gbps",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 0.768
+    },
+    {
+      "label": "CPRI Opt 2",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 1.2288
+    },
+    {
+      "label": "OBSAI 1.536 Gbps",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 1.536
+    },
+    {
+      "label": "CPRI Opt 3",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 2.4576
+    },
+    {
+      "label": "OBSAI 3.072 Gbps",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 3.072
+    },
+    {
+      "label": "CPRI Opt 5",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 4.9152
+    },
+    {
+      "label": "CPRI Opt 6",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 6.144
+    },
+    {
+      "label": "OBSAI 6.144 Gbps",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 6.144
+    },
+    {
+      "label": "CPRI Opt 7A",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 8.11008
+    },
+    {
+      "label": "CPRI Opt 7",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 9.8304
+    },
+    {
+      "label": "CPRI Opt 8",
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3ae LRM",
+      "bit_rate_gbps": 10.1376
+    }
+  ]
+}

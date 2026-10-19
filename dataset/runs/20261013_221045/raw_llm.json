@@ -1,0 +1,158 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TQD024-M85C-SO"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3cd",
+    "400GBASE-SR8",
+    "QSFP-DD MSA",
+    "CMIS4.0"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    8
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    8
+  ],
+  "host_interface_name": [
+    "400GAUI-8",
+    "50GAUI-1",
+    "100GAUI-2"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [
+    "400GBASE-SR8",
+    "50GBASE-SR",
+    "100GBASE-SR2"
+  ],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [
+    "1x 400GAUI-8 (8x 50G)",
+    "8x 50GAUI-1 (1x 50G)",
+    "4x 100GAUI-2 (4x 100G)"
+  ],
+  "standards_code": [
+    "400GBASE-SR8",
+    "50GBASE-SR",
+    "100GBASE-SR2",
+    "CMIS4.0",
+    "400GBASE-R",
+    "50GBASE-R",
+    "100GBASE-R"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    425,
+    400
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.07,
+    0.1
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -6.5
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [
+    "RS_GENERIC",
+    "RS_528_514",
+    "PFEC"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    3
+  ],
+  "los_assert_dbm": [
+    -30
+  ],
+  "los_deassert_dbm": [
+    -9
+  ],
+  "channel_insertion_loss_db": [
+    2.0
+  ],
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Power consumption stated as < 8W (worst case). Typical reach: 70m @ OM3, 100m @ OM4. Power budget 0 – 2.0dB. Output power OMA outer per lane Min -4.5dBm Max +3.0dBm (separate from average output power per lane). Minimum input power per lane -8.5dBm footnote 3: average receive power min is informative, not principal indicator of signal strength. Receiver sensitivity OMA per lane -6.5dBm specified at BER 2.4x10-4 (footnote 4). FEC required by host per IEEE802.3bj Reed Solomon RS(528,514). Optical BER 2.4 x 10-4. Storage temperature -40°C to +85°C. Transmission media MM (MPO-16 APC). Technology Grey QSFP-DD. Aggregated line rate 400GbE (footnote 1). DDM Yes.",
+  "provenance_datasheet_sections": [
+    "QSFP-DD 400GBASE-SR8 MPO, CMIS4.0",
+    "TQD024-M85C-SO",
+    "TECHNICAL DATA",
+    "APPLICATION CODE LIST",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether channel_insertion_loss_db should map from power budget 0–2.0dB. Consider separate fields for OMA vs average TX/RX power. power_consumption_w is upper bound (< 8W) not a guaranteed typical."
+}

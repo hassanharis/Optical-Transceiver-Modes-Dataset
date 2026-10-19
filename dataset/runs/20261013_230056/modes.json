@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "FTLF1429P3BCE 4.25 Gb/s FC",
+      "model": "FTLF1429P3BCE",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "standards_code": "Fibre Channel",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "FTLF1429P3BCE 8.5 Gb/s FC",
+      "model": "FTLF1429P3BCE",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "standards_code": "Fibre Channel",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "FTLF1429P3BCE 14.025 Gb/s 16GFC",
+      "model": "FTLF1429P3BCE",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "FTLF1429P3BNV 4.25 Gb/s FC",
+      "model": "FTLF1429P3BNV",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1370.0,
+      "standards_code": "Fibre Channel",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "FTLF1429P3BNV 8.5 Gb/s FC",
+      "model": "FTLF1429P3BNV",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1370.0,
+      "standards_code": "FC-PI-5",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "FTLF1429P3BNV 14.025 Gb/s 16GFC",
+      "model": "FTLF1429P3BNV",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1370.0,
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025
+    }
+  ]
+}

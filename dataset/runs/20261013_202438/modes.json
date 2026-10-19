@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "SFP-1G-13-80K-D Commercial 1550nm TX",
+      "model": "SFP-1G-13-80K-D",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0
+    },
+    {
+      "label": "SFP-1G-13-80K-DI Industrial 1310nm ordering",
+      "model": "SFP-1G-13-80K-DI",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1310.0
+    }
+  ]
+}

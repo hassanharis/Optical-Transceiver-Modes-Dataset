@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:12:29.359334+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-tosfp-4cc-zrp-r5.0.pdf",
+  "page_count": 4,
+  "table_count": 5,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 9.535,
+    "extract_atoms": 44.025,
+    "store_run": 0.011,
+    "synthesize_modes": 84.868,
+    "store_modes": 0.007,
+    "total": 138.445
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "modes": [
+    {
+      "label": "25GBASE-SR 25.78G RS FEC (single rate)",
+      "model": "FTLF8538P5BCL",
+      "host_interface_name": "25GBASE-SR",
+      "standards_code": "IEEE802.3by",
+      "bit_rate_gbps": 25.78,
+      "fec_type": "RS_GENERIC",
+      "pre_fec_ber_threshold": 5e-05
+    },
+    {
+      "label": "25GBASE-SR 25.78G Firecode FEC (single rate)",
+      "model": "FTLF8538P5BCL",
+      "host_interface_name": "25GBASE-SR",
+      "standards_code": "IEEE802.3by",
+      "bit_rate_gbps": 25.78,
+      "fec_type": "FIRECODE",
+      "pre_fec_ber_threshold": 5e-08
+    },
+    {
+      "label": "25GBASE-SR 25.78G FEC free (single rate)",
+      "model": "FTLF8538P5BCL",
+      "host_interface_name": "25GBASE-SR",
+      "standards_code": "25GBASE-SR",
+      "bit_rate_gbps": 25.78,
+      "fec_type": "NONE",
+      "pre_fec_ber_threshold": 5e-12
+    },
+    {
+      "label": "25GBASE-SR 25.78G RS FEC (dual rate)",
+      "model": "FTLF8538P5BCV",
+      "host_interface_name": "25GE SR",
+      "standards_code": "25GE SR",
+      "bit_rate_gbps": 25.78,
+      "fec_type": "RS_GENERIC",
+      "pre_fec_ber_threshold": 5e-05
+    },
+    {
+      "label": "25GBASE-SR 25.78G Firecode FEC (dual rate)",
+      "model": "FTLF8538P5BCV",
+      "host_interface_name": "25GE SR",
+      "standards_code": "IEEE802.3by",
+      "bit_rate_gbps": 25.78,
+      "fec_type": "FIRECODE",
+      "pre_fec_ber_threshold": 5e-08
+    },
+    {
+      "label": "25GBASE-SR 25.78G FEC free (dual rate)",
+      "model": "FTLF8538P5BCV",
+      "host_interface_name": "25GBASE-SR",
+      "standards_code": "25GBASE-SR",
+      "bit_rate_gbps": 25.78,
+      "fec_type": "NONE",
+      "pre_fec_ber_threshold": 5e-12
+    },
+    {
+      "label": "10GbE 10.3G FEC free (dual rate)",
+      "model": "FTLF8538P5BCV",
+      "host_interface_name": "10GbE",
+      "standards_code": "IEEE802.3by",
+      "bit_rate_gbps": 10.3,
+      "fec_type": "NONE",
+      "pre_fec_ber_threshold": 1e-12
+    }
+  ]
+}

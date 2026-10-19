@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:43:23.114268+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tq2020-bxxc-so-qsfp28-100g-bidi-10km.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.08,
+    "extract_atoms": 26.765,
+    "store_run": 0.014,
+    "synthesize_modes": 22.739,
+    "store_modes": 0.004,
+    "total": 53.602
+  }
+}

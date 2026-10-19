@@ -1,0 +1,571 @@
+{
+  "modes": [
+    {
+      "label": "DWDM 50GHz 80ch family",
+      "model": "SO-SFP-L80D-50G-Dxxxx",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.00 THz",
+      "model": "SO-SFP-L80D-50G-D9200",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.05 THz",
+      "model": "SO-SFP-L80D-50G-D9205",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.10 THz",
+      "model": "SO-SFP-L80D-50G-D9210",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.15 THz",
+      "model": "SO-SFP-L80D-50G-D9215",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.20 THz",
+      "model": "SO-SFP-L80D-50G-D9220",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.25 THz",
+      "model": "SO-SFP-L80D-50G-D9225",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.30 THz",
+      "model": "SO-SFP-L80D-50G-D9230",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.35 THz",
+      "model": "SO-SFP-L80D-50G-D9235",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.40 THz",
+      "model": "SO-SFP-L80D-50G-D9240",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.45 THz",
+      "model": "SO-SFP-L80D-50G-D9245",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.50 THz",
+      "model": "SO-SFP-L80D-50G-D9250",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.55 THz",
+      "model": "SO-SFP-L80D-50G-D9255",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.60 THz",
+      "model": "SO-SFP-L80D-50G-D9260",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.65 THz",
+      "model": "SO-SFP-L80D-50G-D9265",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.70 THz",
+      "model": "SO-SFP-L80D-50G-D9270",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.75 THz",
+      "model": "SO-SFP-L80D-50G-D9275",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.80 THz",
+      "model": "SO-SFP-L80D-50G-D9280",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.85 THz",
+      "model": "SO-SFP-L80D-50G-D9285",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.90 THz",
+      "model": "SO-SFP-L80D-50G-D9290",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 192.95 THz",
+      "model": "SO-SFP-L80D-50G-D9295",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.00 THz",
+      "model": "SO-SFP-L80D-50G-D9300",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.05 THz",
+      "model": "SO-SFP-L80D-50G-D9305",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.10 THz",
+      "model": "SO-SFP-L80D-50G-D9310",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.15 THz",
+      "model": "SO-SFP-L80D-50G-D9315",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.20 THz",
+      "model": "SO-SFP-L80D-50G-D9320",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.25 THz",
+      "model": "SO-SFP-L80D-50G-D9325",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.30 THz",
+      "model": "SO-SFP-L80D-50G-D9330",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.35 THz",
+      "model": "SO-SFP-L80D-50G-D9335",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.40 THz",
+      "model": "SO-SFP-L80D-50G-D9340",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.45 THz",
+      "model": "SO-SFP-L80D-50G-D9345",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.50 THz",
+      "model": "SO-SFP-L80D-50G-D9350",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.55 THz",
+      "model": "SO-SFP-L80D-50G-D9355",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.60 THz",
+      "model": "SO-SFP-L80D-50G-D9360",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.65 THz",
+      "model": "SO-SFP-L80D-50G-D9365",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.70 THz",
+      "model": "SO-SFP-L80D-50G-D9370",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.75 THz",
+      "model": "SO-SFP-L80D-50G-D9375",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.80 THz",
+      "model": "SO-SFP-L80D-50G-D9380",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.85 THz",
+      "model": "SO-SFP-L80D-50G-D9385",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.90 THz",
+      "model": "SO-SFP-L80D-50G-D9390",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 193.95 THz",
+      "model": "SO-SFP-L80D-50G-D9395",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.00 THz",
+      "model": "SO-SFP-L80D-50G-D9400",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.05 THz",
+      "model": "SO-SFP-L80D-50G-D9405",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.10 THz",
+      "model": "SO-SFP-L80D-50G-D9410",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.15 THz",
+      "model": "SO-SFP-L80D-50G-D9415",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.20 THz",
+      "model": "SO-SFP-L80D-50G-D9420",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.25 THz",
+      "model": "SO-SFP-L80D-50G-D9425",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.30 THz",
+      "model": "SO-SFP-L80D-50G-D9430",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.35 THz",
+      "model": "SO-SFP-L80D-50G-D9435",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.40 THz",
+      "model": "SO-SFP-L80D-50G-D9440",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.45 THz",
+      "model": "SO-SFP-L80D-50G-D9445",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.50 THz",
+      "model": "SO-SFP-L80D-50G-D9450",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.55 THz",
+      "model": "SO-SFP-L80D-50G-D9455",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.60 THz",
+      "model": "SO-SFP-L80D-50G-D9460",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.65 THz",
+      "model": "SO-SFP-L80D-50G-D9465",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.70 THz",
+      "model": "SO-SFP-L80D-50G-D9470",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.75 THz",
+      "model": "SO-SFP-L80D-50G-D9475",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.80 THz",
+      "model": "SO-SFP-L80D-50G-D9480",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.85 THz",
+      "model": "SO-SFP-L80D-50G-D9485",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.90 THz",
+      "model": "SO-SFP-L80D-50G-D9490",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 194.95 THz",
+      "model": "SO-SFP-L80D-50G-D9495",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.00 THz",
+      "model": "SO-SFP-L80D-50G-D9500",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.05 THz",
+      "model": "SO-SFP-L80D-50G-D9505",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.10 THz",
+      "model": "SO-SFP-L80D-50G-D9510",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.15 THz",
+      "model": "SO-SFP-L80D-50G-D9515",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.20 THz",
+      "model": "SO-SFP-L80D-50G-D9520",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.25 THz",
+      "model": "SO-SFP-L80D-50G-D9525",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.30 THz",
+      "model": "SO-SFP-L80D-50G-D9530",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.35 THz",
+      "model": "SO-SFP-L80D-50G-D9535",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.40 THz",
+      "model": "SO-SFP-L80D-50G-D9540",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.45 THz",
+      "model": "SO-SFP-L80D-50G-D9545",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.50 THz",
+      "model": "SO-SFP-L80D-50G-D9550",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.55 THz",
+      "model": "SO-SFP-L80D-50G-D9555",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.60 THz",
+      "model": "SO-SFP-L80D-50G-D9560",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.65 THz",
+      "model": "SO-SFP-L80D-50G-D9565",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.70 THz",
+      "model": "SO-SFP-L80D-50G-D9570",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.75 THz",
+      "model": "SO-SFP-L80D-50G-D9575",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.80 THz",
+      "model": "SO-SFP-L80D-50G-D9580",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.85 THz",
+      "model": "SO-SFP-L80D-50G-D9585",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.90 THz",
+      "model": "SO-SFP-L80D-50G-D9590",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DWDM 195.95 THz",
+      "model": "SO-SFP-L80D-50G-D9595",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "DQD004-xxxC-SO",
+    "DQD004-0M5C-SO",
+    "DQD004-001C-SO",
+    "DQD004-1M5C-SO",
+    "DQD004-002C-SO",
+    "DQD004-2M5C-SO",
+    "DQD004-003C-SO",
+    "DQD004-005C-SO"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "CMIS 4.0",
+    "400GAUI-8",
+    "4x100GAUI-2",
+    "CMIS4.0"
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    4.5
+  ],
+  "host_interface_name": [
+    "400GAUI-8",
+    "4x100GAUI-2",
+    "100GAUI-2"
+  ],
+  "media_interface_name": [
+    "400GAUI-8",
+    "100GAUI-2"
+  ],
+  "frame": [
+    "1x 400GAUI-8 (8x 50G)",
+    "4x 100GAUI-2 (2x 50G)",
+    "8x 50G"
+  ],
+  "standards_code": [
+    "400GBASE-R",
+    "100GBASE-R",
+    "CMIS Application Code 1",
+    "CMIS Application Code 2",
+    "DAC"
+  ],
+  "baud_rate_gbaud": [
+    25.0
+  ],
+  "bit_rate_gbps": [
+    400.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "fec_type": [
+    "RS_GENERIC"
+  ],
+  "post_fec_ber_target": [
+    1e-15
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "penalties": [],
+  "notes": "Active Direct Attach Cable (AEC) / DAC using Twinax copper; not an optical transceiver. Cable lengths 0.5 m to 5 m (ordering table: 0.5 m, 1 m, 1.5 m, 2 m, 2.5 m, 3 m, 5 m). Power stated as <4.5 W per side. Storage temperature -40 °C to +85 °C (not normal operating range). RS-FEC is provided by the host per APPLICATION CODE LIST footnote. BER < 10^-15 is post FEC.",
+  "provenance_datasheet_sections": [
+    "DQD004-xxxC-SO",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION",
+    "APPLICATION CODE LIST",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider schema fields for cable length (m), AWG wire gauge, and AEC/DAC product class; mounting_type 'Pluggable' inferred from QSFP-DD DAC attachment style."
+}

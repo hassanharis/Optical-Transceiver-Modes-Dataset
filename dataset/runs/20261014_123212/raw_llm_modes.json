@@ -1,0 +1,74 @@
+{
+  "modes": [
+    {
+      "label": "400G-SR8 AOC family (-4)",
+      "model": "SO-QSFPDD-AOCxxM-4",
+      "media_interface_name": "400G Ethernet-SR8",
+      "standards_code": "SR8",
+      "baud_rate_gbaud": 26.5625
+    },
+    {
+      "label": "400G-SR8 AOC family",
+      "model": "SO-QSFPDD-AOCxxM",
+      "media_interface_name": "400G Ethernet-SR8",
+      "standards_code": "SR8",
+      "baud_rate_gbaud": 26.5625
+    },
+    {
+      "label": "400G-SR8 AOC 1m",
+      "model": "SO-QSFPDD-AOC01M-4",
+      "media_interface_name": "400G Ethernet-SR8",
+      "standards_code": "SR8",
+      "baud_rate_gbaud": 26.5625
+    },
+    {
+      "label": "400G-SR8 AOC 3m",
+      "model": "SO-QSFPDD-AOC03M-4",
+      "media_interface_name": "400G Ethernet-SR8",
+      "standards_code": "SR8",
+      "baud_rate_gbaud": 26.5625
+    },
+    {
+      "label": "400G-SR8 AOC 5m",
+      "model": "SO-QSFPDD-AOC05M-4",
+      "media_interface_name": "400G Ethernet-SR8",
+      "standards_code": "SR8",
+      "baud_rate_gbaud": 26.5625
+    },
+    {
+      "label": "400G-SR8 AOC 7m",
+      "model": "SO-QSFPDD-AOC07M-4",
+      "media_interface_name": "400G Ethernet-SR8",
+      "standards_code": "SR8",
+      "baud_rate_gbaud": 26.5625
+    },
+    {
+      "label": "400G-SR8 AOC 10m",
+      "model": "SO-QSFPDD-AOC10M-4",
+      "media_interface_name": "400G Ethernet-SR8",
+      "standards_code": "SR8",
+      "baud_rate_gbaud": 26.5625
+    },
+    {
+      "label": "400G-SR8 AOC 15m",
+      "model": "SO-QSFPDD-AOC15M-4",
+      "media_interface_name": "400G Ethernet-SR8",
+      "standards_code": "SR8",
+      "baud_rate_gbaud": 26.5625
+    },
+    {
+      "label": "400G-SR8 AOC 20m",
+      "model": "SO-QSFPDD-AOC20M-4",
+      "media_interface_name": "400G Ethernet-SR8",
+      "standards_code": "SR8",
+      "baud_rate_gbaud": 26.5625
+    },
+    {
+      "label": "400G-SR8 AOC 30m",
+      "model": "SO-QSFPDD-AOC30M-4",
+      "media_interface_name": "400G Ethernet-SR8",
+      "standards_code": "SR8",
+      "baud_rate_gbaud": 26.5625
+    }
+  ]
+}

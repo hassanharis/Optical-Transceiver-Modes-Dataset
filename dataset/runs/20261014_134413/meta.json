@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T13:44:13.546667+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-10ge-lr20.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.443,
+    "extract_atoms": 33.89,
+    "store_run": 0.008,
+    "synthesize_modes": 88.093,
+    "store_modes": 0.002,
+    "total": 126.437
+  }
+}

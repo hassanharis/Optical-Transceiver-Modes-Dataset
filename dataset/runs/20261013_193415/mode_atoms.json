@@ -1,0 +1,181 @@
+{
+  "multi_valued": {
+    "model": [
+      "8G-ZR-Dxxx-BR1",
+      "8G-ZR-D200-BR1",
+      "8G-ZR-D210-BR1",
+      "8G-ZR-D220-BR1",
+      "8G-ZR-D230-BR1",
+      "8G-ZR-D240-BR1",
+      "8G-ZR-D250-BR1",
+      "8G-ZR-D260-BR1",
+      "8G-ZR-D270-BR1",
+      "8G-ZR-D280-BR1",
+      "8G-ZR-D290-BR1",
+      "8G-ZR-D300-BR1",
+      "8G-ZR-D310-BR1",
+      "8G-ZR-D320-BR1",
+      "8G-ZR-D330-BR1",
+      "8G-ZR-D340-BR1",
+      "8G-ZR-D350-BR1",
+      "8G-ZR-D360-BR1",
+      "8G-ZR-D370-BR1",
+      "8G-ZR-D380-BR1",
+      "8G-ZR-D390-BR1",
+      "8G-ZR-D400-BR1",
+      "8G-ZR-D410-BR1",
+      "8G-ZR-D420-BR1",
+      "8G-ZR-D430-BR1",
+      "8G-ZR-D440-BR1",
+      "8G-ZR-D450-BR1",
+      "8G-ZR-D460-BR1",
+      "8G-ZR-D470-BR1",
+      "8G-ZR-D480-BR1",
+      "8G-ZR-D490-BR1",
+      "8G-ZR-D500-BR1",
+      "8G-ZR-D510-BR1",
+      "8G-ZR-D520-BR1",
+      "8G-ZR-D530-BR1",
+      "8G-ZR-D540-BR1",
+      "8G-ZR-D550-BR1",
+      "8G-ZR-D560-BR1",
+      "8G-ZR-D570-BR1",
+      "8G-ZR-D580-BR1",
+      "8G-ZR-D590-BR1",
+      "8G-ZR-D600-BR1"
+    ],
+    "wavelength_min_nm": [
+      1480.0,
+      1529.55
+    ],
+    "wavelength_max_nm": [
+      1561.42,
+      1580.0
+    ],
+    "wavelength_center_nm": [
+      1561.42,
+      1560.61,
+      1559.79,
+      1558.98,
+      1558.17,
+      1557.36,
+      1556.55,
+      1555.75,
+      1554.94,
+      1554.13,
+      1553.33,
+      1552.52,
+      1551.72,
+      1550.92,
+      1550.12,
+      1549.32,
+      1548.51,
+      1547.72,
+      1546.92,
+      1546.12,
+      1544.53,
+      1543.73,
+      1542.94,
+      1542.14,
+      1541.35,
+      1540.56,
+      1539.77,
+      1538.98,
+      1538.19,
+      1537.4,
+      1536.61,
+      1535.82,
+      1535.04,
+      1534.25,
+      1533.47,
+      1532.68,
+      1531.9,
+      1531.12,
+      1530.33,
+      1529.55
+    ],
+    "wavelength_band": [
+      "DWDM",
+      "CWDM"
+    ],
+    "standards_code": [
+      "FC-PI-4 800-SM-LC-L",
+      "ITU-T G.694.1",
+      "ITU-T G.694.2",
+      "ITU-T G.959"
+    ],
+    "bit_rate_gbps": [
+      2.125,
+      8.5
+    ],
+    "cd_tolerance_ps_nm": [
+      -500.0,
+      1600.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8472",
+      "SFF-8432"
+    ],
+    "frequency_min_thz": [
+      192.0
+    ],
+    "frequency_max_thz": [
+      196.0
+    ],
+    "channel_spacing_ghz": [
+      100.0
+    ],
+    "channel_total": [
+      41
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.7
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      -1.0
+    ],
+    "tx_power_max_dbm": [
+      3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -24.0
+    ],
+    "rx_overload_dbm": [
+      -7.0
+    ],
+    "los_assert_dbm": [
+      -31.0
+    ],
+    "los_deassert_dbm": [
+      -24.0
+    ],
+    "penalties": [],
+    "notes": "Header: 23dB power budget. TECHNICAL DATA power budget 10–23dB. Rx min input -24.0dBm and overload -7dBm at 8.5Gbps (8G FC) BER < 10-12 using PRBS 27-1 (footnote 1). Tx output min/max are average power (footnote 2). Dispersion tolerance -500 to 1600ps/nm (8G FC); dispersion penalty 3dB without stated penalized optical metric. Storage temperature -40°C to +85°C. Power consumption < 1.7W. DDM per SFF-8472. 41 channels D200–D600 on 100GHz ITU-T G.694.1 grid; CWDM mapping D250–D410 (1550nm), D500–D600 (1530nm). Brocade layer-1 tested. RoHS-6/6.",
+    "provenance_datasheet_sections": [
+      "8G-ZR-Dxxx-BR1",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Ordering table: 8G-ZR-D400-BR1 and 8G-ZR-D410-BR1 both list 194.10 THz / 1544.53 nm; reconcile with 41-channel D200–D600 claim. Consider schema field for optical power budget (10–23dB). Rx sensitivity condition BER 10-12 is not labeled pre/post FEC."
+  }
+}

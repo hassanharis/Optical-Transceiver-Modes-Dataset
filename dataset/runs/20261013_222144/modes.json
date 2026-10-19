@@ -1,0 +1,11 @@
+{
+  "modes": [
+    {
+      "label": "100G-FR SFP-DD (TSD002-S31C-SO)",
+      "standards_code": "100G-FR",
+      "rx_sensitivity_dbm": -6.4,
+      "fec_type": "KP4",
+      "number_of_lanes": 1
+    }
+  ]
+}

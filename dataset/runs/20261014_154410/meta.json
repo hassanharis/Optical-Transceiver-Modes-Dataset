@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T15:44:10.874819+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-mr80d-cxx.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.183,
+    "extract_atoms": 20.263,
+    "store_run": 0.003,
+    "synthesize_modes": 156.57,
+    "store_modes": 0.004,
+    "total": 182.024
+  }
+}

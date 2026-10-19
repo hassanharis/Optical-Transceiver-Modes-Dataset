@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:48:48.827726+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-8g-zr.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.334,
+    "extract_atoms": 19.565,
+    "store_run": 0.007,
+    "synthesize_modes": 117.82,
+    "store_modes": 0.003,
+    "total": 140.729
+  }
+}

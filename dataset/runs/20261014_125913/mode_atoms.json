@@ -1,0 +1,129 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-1000Base-SXD",
+      "SO-SFP-1000Base-SXD-I"
+    ],
+    "wavelength_min_nm": [
+      760.0,
+      830.0
+    ],
+    "standards_code": [
+      "1000BASE-SX",
+      "GbE",
+      "1G FC"
+    ],
+    "bit_rate_gbps": [
+      1.0625,
+      1.25
+    ],
+    "reach_km": [
+      550.0,
+      300.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM3",
+      "MMF_OM1"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "modulation_format": [],
+    "tx_power_min_dbm": [
+      -9.5
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_sensitivity_dbm": [
+      -17.0
+    ],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -18.0
+    ],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [
+      1
+    ],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [
+      1.0
+    ],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Title/subtitle: SFP, 1.0625/1.25Gbps, 850nm, MM, DDM, 7.5dB, 550m, C-temp & I-temp. Typical reach printed as 550m@50/125μm OM3 and 300m@62.5/125μm OM1 (reach_km stores numeric 550 and 300 as printed before unit m). Power budget 0 – 7.5dB. Second operating temperature row: -40°C to +85°C (-I) for SO-SFP-1000Base-SXD-I; temp_min_c/temp_max_c reflect 0°C to +70°C row only. Transmitter output power min/max and receiver min input power, overload: footnote 1) Average power. Footnote 2) Receiver min/overload @ 1.25Gbps, BER ≤ 1x10-12, PRBS 27-1, back-to-back. Storage temperature -40°C to +85°C. DDM Yes.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-1000BASE-SXD & SXD-I",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider separate temp_min_c/temp_max_c per ordering variant (C-temp vs I-temp), or reach field in meters when datasheets quote m."
+  }
+}

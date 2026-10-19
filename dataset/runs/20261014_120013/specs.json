@@ -1,0 +1,105 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP-SR4"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "40GBASE-SR4",
+    "QSFP+ MSA",
+    "SFF-8436"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "40GBASE-SR4",
+    "40GbE",
+    "10GbE-LAN"
+  ],
+  "media_interface_name": [],
+  "frame": [
+    "4x 10GbE-LAN"
+  ],
+  "standards_code": [
+    "40GBASE-SR4"
+  ],
+  "bit_rate_gbps": [
+    40.0,
+    41.25,
+    10.3125
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    0.15,
+    0.1
+  ],
+  "tx_power_min_dbm": [
+    -7.6
+  ],
+  "tx_power_max_dbm": [
+    2.4
+  ],
+  "rx_sensitivity_dbm": [
+    -9.5
+  ],
+  "rx_overload_dbm": [
+    2.4
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -7.5
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Power consumption listed as < 1.5W. Power budget 0 – 1.9dB. Typical reach 150 m (OM4), 100 m (OM3). Storage temperature -40°C to +85°C (separate from operating 0°C to +70°C). Aggregated line rate 41.25Gbps; per-lane 10.3125Gbps. TX/RX power values are average power. RX min input and overload at BER less than 10-12. Test pattern a 231-1 PRBS. MPO8/MPO12 ribbon; MTP is a brand of MPO connector.",
+  "provenance_datasheet_sections": [
+    "SO-QSFP-SR4",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Datasheet lists reach in meters; reach_km uses 0.15 and 0.1 for 150 m and 100 m. Consider capturing storage temp range and power budget as dedicated fields."
+}

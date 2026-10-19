@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "The datasheet describes a single product (TSD001-S31C-SO) with one 100GBASE-DR application. The listed multi-values are different measures for the same configuration (aggregated vs line rate, average vs OMA sensitivity, one FEC type with two wordings, one optical lane vs two electrical 100GAUI-2 lanes)—not separate selectable operating modes. One mode is supported by the ordering table and technical data.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100GBASE-DR 100GbE (TSD001-S31C-SO)\",\n      \"standards_code\": \"100GBASE-DR\",\n      \"baud_rate_gbaud\": 50.0,\n      \"bit_rate_gbps\": 103.12,\n      \"rx_sensitivity_dbm\": -5.9,\n      \"fec_type\": \"RS_544_514\",\n      \"number_of_lanes\": 1\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

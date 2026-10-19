@@ -1,0 +1,147 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-10GE-LR20",
+    "SO-SFP-10GE-LR20-I"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "IEEE 802.3ae"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260.0,
+    1270.0
+  ],
+  "wavelength_max_nm": [
+    1355.0,
+    1565.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": null,
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "10GBASE-LR",
+    "10GBASE-LW",
+    "GbE",
+    "10GbE-LAN",
+    "10GbE-WAN",
+    "OTU1",
+    "OTU2",
+    "OTU2e",
+    "STM-64/OC192",
+    "STM-16/OC48",
+    "STM-4/OC12",
+    "1G FC",
+    "2G FC",
+    "4G FC",
+    "8G FC",
+    "10G FC",
+    "CPRI Opt",
+    "CPRI 1",
+    "CPRI 2",
+    "CPRI 3",
+    "CPRI 4",
+    "CPRI 5",
+    "CPRI 6",
+    "CPRI 7",
+    "CPRI 7A",
+    "CPRI 8",
+    "OBSAI 1x",
+    "OBSAI 2x",
+    "OBSAI 4x",
+    "OBSAI 8x"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    0.6,
+    10.3,
+    11.3
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    20.0
+  ],
+  "tx_power_min_dbm": [
+    -3.0
+  ],
+  "tx_power_max_dbm": [
+    1.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -14.4
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -28.0
+  ],
+  "los_deassert_dbm": [
+    -16.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Two orderable variants: SO-SFP-10GE-LR20 operating temperature -0°C to +70°C; SO-SFP-10GE-LR20-I (I-temp) -40°C to +85°C. Table also lists -40°C to +85°C as storage for both. Power consumption stated as < 1W (no exact numeric). Power budget 0.5 – 11.4dB; dispersion penalty max 2dB (no paired penalized parameter/condition for penalty objects). Tx/Rx power values are average power (footnote 1). Rx minimum input -14.4dBm at 10.3Gbps, BER 1x10-12, PRBS 231-1, back-to-back (footnotes 1–2). Overview cites IEEE 802.3ae LR/LW 10km with bridgeable distance up to 20km for 10GBASE-LR/LW. Transmission media: SM (2x LC). Bit rate support 0.6Gbps to 11.3Gbps.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-10GE-LR20 & -LR20-I SFP+, 10G Multirate, 1310nm, SM, DDM, 11.4dB, 20km, LC",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Datasheet table merges two SKUs in one column; consider splitting temp_min_c/temp_max_c per model in schema. Power budget 0.5–11.4dB may warrant a dedicated link_budget_db field. Dispersion penalty 'Max 2dB' lacks CD value and penalized metric for structured penalties."
+}

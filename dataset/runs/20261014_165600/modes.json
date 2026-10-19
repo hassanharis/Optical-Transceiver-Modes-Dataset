@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "XGXP-1396-10D Commercial 10GBASE-LR/LW",
+      "model": "XGXP-1396-10D",
+      "host_interface_name": "10GBASE-LR",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "XGXP-1396-10DA Industrial 10GBASE-LR/LW",
+      "model": "XGXP-1396-10DA",
+      "host_interface_name": "10GBASE-LR",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125
+    }
+  ]
+}

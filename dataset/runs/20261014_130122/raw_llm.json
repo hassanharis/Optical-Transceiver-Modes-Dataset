@@ -1,0 +1,100 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1000Base-TR",
+    "SO-SFP-1000Base-TR-I"
+  ],
+  "form_factor": [
+    "SFF"
+  ],
+  "standards_claimed": [
+    "1000BASE-T IEEE 802.3",
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "RJ45"
+  ],
+  "fiber_type": null,
+  "temp_min_c": null,
+  "temp_max_c": null,
+  "power_consumption_w": [
+    1.2
+  ],
+  "host_interface_name": [
+    "SFP"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "1000BASE-T"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "1000BASE-T",
+    "IEEE 802.3"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1.0
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.1
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    1
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Grey SFP (copper), electrical 1x RJ45. Typical reach 100m (footnote 1: using CAT5e cable or better). Operating temperature 0\u00b0C to +70\u00b0C (-TR) and -40\u00b0C to +85\u00b0C (-TR-I); two orderable variants. Power consumption < 1.2W. Transmission media: copper/LAN cable (1000 Mbps Ethernet). Technology: Sync on line side; preferred master (footnote 2: master mode uses local clock to transmit to other side). Auto-negotiation: No. Rx LOS: Yes. Storage temperature row in TECHNICAL DATA table has no values. Safety/regulatory: TUV/UL/FDA (contact Smartoptics for latest certification information), RoHS compliance.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1000BASE-TR & -TR-I",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Add SFP to form_factor enum. Consider list or per-model fields for temp_min_c/temp_max_c when multiple SKUs share one datasheet. reach_km stores 0.1 from explicit 100m; document unit handling. connector_type enum is optical-focused; RJ45 is explicit for this product."
+}

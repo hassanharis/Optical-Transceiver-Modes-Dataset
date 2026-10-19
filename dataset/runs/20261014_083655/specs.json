@@ -1,0 +1,144 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "DS-32G-IR-Dxxxx",
+    "DS-32G-IR-D6142",
+    "DS-32G-IR-D6061",
+    "DS-32G-IR-D5979",
+    "DS-32G-IR-D5898",
+    "DS-32G-IR-D5817",
+    "DS-32G-IR-D5736",
+    "DS-32G-IR-D5655",
+    "DS-32G-IR-D5575",
+    "DS-32G-IR-D5494",
+    "DS-32G-IR-D5413",
+    "DS-32G-IR-D5333",
+    "DS-32G-IR-D5252",
+    "DS-32G-IR-D5172",
+    "DS-32G-IR-D5092",
+    "DS-32G-IR-D5012",
+    "DS-32G-IR-D4932",
+    "DS-32G-IR-D4851",
+    "DS-32G-IR-D4772",
+    "DS-32G-IR-D4692",
+    "DS-32G-IR-D4612",
+    "DS-32G-IR-D4532",
+    "DS-32G-IR-D4453",
+    "DS-32G-IR-D4373",
+    "DS-32G-IR-D4294",
+    "DS-32G-IR-D4214",
+    "DS-32G-IR-D4135",
+    "DS-32G-IR-D4056",
+    "DS-32G-IR-D3977",
+    "DS-32G-IR-D3898",
+    "DS-32G-IR-D3819",
+    "DS-32G-IR-D3740",
+    "DS-32G-IR-D3661",
+    "DS-32G-IR-D3582",
+    "DS-32G-IR-D3504",
+    "DS-32G-IR-D3425",
+    "DS-32G-IR-D3347",
+    "DS-32G-IR-D3268",
+    "DS-32G-IR-D3190",
+    "DS-32G-IR-D3112",
+    "DS-32G-IR-D3033",
+    "DS-32G-IR-D2955"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "ITU-T G.694.1",
+    "SFP28 MSA",
+    "SFF-8402",
+    "SFF-8472",
+    "RoHS-6/6"
+  ],
+  "wavelength_min_nm": [
+    1529.55
+  ],
+  "wavelength_max_nm": [
+    1561.42
+  ],
+  "wavelength_band": [
+    "C-band",
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    192.0
+  ],
+  "frequency_max_thz": [
+    196.0
+  ],
+  "channel_spacing_ghz": [
+    100.0
+  ],
+  "channel_total": [
+    41
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    2.0
+  ],
+  "host_interface_name": [
+    "SFP28 MSA",
+    "SFF-8402"
+  ],
+  "standards_code": [
+    "32GFC",
+    "16GFC",
+    "8GFC",
+    "G.694.1"
+  ],
+  "bit_rate_gbps": [
+    28.05,
+    25.78,
+    14.025,
+    8.5
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -3.0
+  ],
+  "tx_power_max_dbm": [
+    2.0
+  ],
+  "rx_sensitivity_dbm": [
+    -10.0
+  ],
+  "rx_overload_dbm": [
+    2.0
+  ],
+  "cd_tolerance_ps_nm": [
+    -170.0,
+    170.0
+  ],
+  "fec_type": [
+    "RS_GENERIC"
+  ],
+  "pre_fec_ber_threshold": [
+    1e-06
+  ],
+  "post_fec_ber_target": [
+    1e-06
+  ],
+  "penalties": [],
+  "notes": "Title line states 7dB power budget. Receiver minimum input power and overload are specified at 28.05 Gbps (32G FC) and BER < 10-6 using PRBS 231-1; transmitter output power is average power (footnote 2). Optical BER performance is specified at BER 1E-6 with Reed Solomon RS-FEC encoding/decoding. Bridgeable distance up to 10km without dispersion compensation for 32G FC. Receiver wavelength range 1480-1580nm. Storage temperature -40°C to +85°C. Rate select: RS0/RS1 High/1 gives 28.05Gbps Tx/Rx; Low/0 gives 14.025/8.5Gbps. Power budget row in technical table: 0 – 7.0dB.",
+  "provenance_datasheet_sections": [
+    "DS-32G-IR-Dxxxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "RATE SELECT OPERATION",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

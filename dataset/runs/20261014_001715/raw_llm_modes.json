@@ -1,0 +1,74 @@
+{
+  "modes": [
+    {
+      "label": "800GBASE-SR8 normal power OM4/OM5 50m",
+      "power_consumption_w": 16.0,
+      "host_interface_name": "8x100GAUI-1 C2M Electrical Interface",
+      "media_interface_name": "8x100GBASE-SR1 Optical Interface",
+      "standards_code": "800GBASE-SR8",
+      "bit_rate_gbps": 800.0,
+      "reach_km": 0.05,
+      "rx_sensitivity_dbm": -4.6
+    },
+    {
+      "label": "800GBASE-SR8 low power mode",
+      "power_consumption_w": 2.0,
+      "host_interface_name": "8x100GAUI-1 C2M Electrical Interface",
+      "media_interface_name": "8x100GBASE-SR1 Optical Interface",
+      "standards_code": "800GBASE-SR8",
+      "bit_rate_gbps": 800.0,
+      "reach_km": 0.05,
+      "rx_sensitivity_dbm": -4.6
+    },
+    {
+      "label": "800GBASE-SR8 OM3 30m",
+      "power_consumption_w": 16.0,
+      "host_interface_name": "8x100GAUI-1 C2M Electrical Interface",
+      "media_interface_name": "8x100GBASE-SR1 Optical Interface",
+      "standards_code": "SR8",
+      "bit_rate_gbps": 800.0,
+      "reach_km": 0.03,
+      "rx_sensitivity_dbm": -6.4
+    },
+    {
+      "label": "Per-lane 100G IEEE 802.3 host/optical",
+      "power_consumption_w": 16.0,
+      "host_interface_name": "100GAUI-1",
+      "media_interface_name": "100GBASE-SR1",
+      "standards_code": "100GBASE-SR1",
+      "bit_rate_gbps": 850.0,
+      "reach_km": 0.05,
+      "rx_sensitivity_dbm": -6.4
+    },
+    {
+      "label": "Per-lane electrical 100GAUI-1",
+      "power_consumption_w": 16.0,
+      "host_interface_name": "100GAUI-1",
+      "media_interface_name": "100GBASE-SR1",
+      "standards_code": "100GAUI-1",
+      "bit_rate_gbps": 850.0,
+      "reach_km": 0.05,
+      "rx_sensitivity_dbm": -4.6
+    },
+    {
+      "label": "Stressed receiver sensitivity (SRS)",
+      "power_consumption_w": 16.0,
+      "host_interface_name": "8x100GAUI-1 C2M Electrical Interface",
+      "media_interface_name": "8x100GBASE-SR1 Optical Interface",
+      "standards_code": "IEEE 802.3-2022",
+      "bit_rate_gbps": 850.0,
+      "reach_km": 0.05,
+      "rx_sensitivity_dbm": -2.0
+    },
+    {
+      "label": "Host electrical IEEE 802.3ck",
+      "power_consumption_w": 16.0,
+      "host_interface_name": "8x100GAUI-1 C2M Electrical Interface",
+      "media_interface_name": "8x100GBASE-SR1 Optical Interface",
+      "standards_code": "IEEE 802.3ck-2022",
+      "bit_rate_gbps": 800.0,
+      "reach_km": 0.05,
+      "rx_sensitivity_dbm": -4.6
+    }
+  ]
+}

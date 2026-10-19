@@ -1,0 +1,124 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP28-100G-FRx",
+    "SO-QSFP28-100G-FRA",
+    "SO-QSFP28-100G-FRB",
+    "SO-QSFP28-100G-FRC",
+    "SO-QSFP28-100G-FRD"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "SFF-8636"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5,
+    1355.0
+  ],
+  "wavelength_center_nm": [
+    1271.0,
+    1291.0,
+    1311.0,
+    1331.0
+  ],
+  "wavelength_band": [
+    "CWDM",
+    "grey"
+  ],
+  "channel_total": [
+    1
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    4.5
+  ],
+  "host_interface_name": [
+    "OIF CEI-28G-VSR"
+  ],
+  "media_interface_name": [
+    "100GBASE-FR"
+  ],
+  "frame": [
+    "4x 25.78Gbps"
+  ],
+  "standards_code": [
+    "100GBASE-FR",
+    "100GbE"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    103.12
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -2.4
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -6.4
+  ],
+  "rx_overload_dbm": [
+    4.5
+  ],
+  "fec_type": [
+    "KP4"
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -15.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "number_of_lanes": [
+    1,
+    4
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Technology listed as Grey QSFP28; product also described as CWDM. Power budget 0 – 4.0 dB (w/o optical path penalties). Power consumption stated as < 4.5 W worst case. Receiver minimum input power and overload specified at BER 2.4x10-4; footnote 8) average power. Transmitter output power min/max footnote 8) average power. Module includes KP4 FEC; host system shall not have FEC activated. Optical parameters BER 2.4 x 10-4; FEC yields BER better than 1 x 10-12. Storage temperature -40°C to +85°C (not normal operating range). Ordering descriptions state 4.0 dB power budget and single lambda per variant (1271 nm, 1291 nm, 1311 nm, 1331 nm).",
+  "provenance_datasheet_sections": [
+    "SO-QSFP28-100G-FRx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

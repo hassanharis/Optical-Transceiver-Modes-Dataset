@@ -1,0 +1,98 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP28-BX40D-2731",
+      "SO-SFP28-BX40D-3127",
+      "SO-SFP28-BX40D-2731-I",
+      "SO-SFP28-BX40D-3127-I"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1300.0
+    ],
+    "wavelength_max_nm": [
+      1280.0,
+      1320.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1310.0
+    ],
+    "standards_code": [
+      "25GE",
+      "CPRI opt 10"
+    ],
+    "bit_rate_gbps": [
+      25.78,
+      24.33
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP28"
+    ],
+    "standards_claimed": [
+      "SFP 8402",
+      "SFF-8472"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "power_consumption_w": [
+      1.8
+    ],
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "modulation_format": [],
+    "reach_km": [
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      -1.0
+    ],
+    "tx_power_max_dbm": [
+      6.0
+    ],
+    "rx_sensitivity_dbm": [
+      -19.0
+    ],
+    "rx_overload_dbm": [
+      -4.0
+    ],
+    "fec_type": [],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -23.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "BiDi pair: SO-SFP28-BX40D-2731 (1270 nm Tx / 1310 nm Rx) and SO-SFP28-BX40D-3127 (1310 nm Tx / 1270 nm Rx). Power budget 10–18 dB stated in summary column. Dispersion penalty Max 2.7 dB listed without separate ps/nm tolerance. Tx/Rx powers and receiver levels are average power (footnote 3). Minimum input power and overload specified at 25GE and BER (footnote 4); overview states BER 5×10⁻⁵ for 25G Ethernet with FEC implemented in host equipment. Operating and storage temperature both -40°C to +85°C (I-temp). DDM per SFF-8472.",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Clarify whether footnote 4 BER is 5×10⁻⁵ only or also applies to CPRI opt 10; add explicit lane count and modulation if applicable; dispersion penalty 2.7 dB could be mapped if schema adds max dispersion penalty without full penalty object."
+  }
+}

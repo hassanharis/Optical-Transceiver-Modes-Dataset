@@ -1,0 +1,12 @@
+{
+  "modes": [
+    {
+      "label": "QSFP28 100GBASE-FR 100GbE",
+      "host_interface_name": "OIF CEI-28G-VSR",
+      "standards_code": "100GBASE-FR",
+      "baud_rate_gbaud": 53.125,
+      "pre_fec_ber_threshold": 2.4e-05,
+      "number_of_lanes": 4
+    }
+  ]
+}

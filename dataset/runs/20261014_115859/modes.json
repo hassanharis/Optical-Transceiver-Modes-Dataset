@@ -1,0 +1,148 @@
+{
+  "modes": [
+    {
+      "label": "Lane 1 CWDM SM 2 km",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "wavelength_center_nm": 1271.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 2.0,
+      "tx_power_min_dbm": -7.0,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -11.5
+    },
+    {
+      "label": "Lane 2 CWDM SM 2 km",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "wavelength_center_nm": 1291.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 2.0,
+      "tx_power_min_dbm": -7.0,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -11.5
+    },
+    {
+      "label": "Lane 3 CWDM SM 2 km",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 2.0,
+      "tx_power_min_dbm": -7.0,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -11.5
+    },
+    {
+      "label": "Lane 4 CWDM SM 2 km",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "wavelength_center_nm": 1331.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 2.0,
+      "tx_power_min_dbm": -7.0,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -11.5
+    },
+    {
+      "label": "Lane 1 CWDM MM OM3 150 m",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "wavelength_center_nm": 1271.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 3.5,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "Lane 2 CWDM MM OM3 150 m",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "wavelength_center_nm": 1291.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 3.5,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "Lane 3 CWDM MM OM3 150 m",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 3.5,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "Lane 4 CWDM MM OM3 150 m",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "wavelength_center_nm": 1331.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 3.5,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "Lane 1 CWDM MM OM4 300 m",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "wavelength_center_nm": 1271.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 3.5,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "Lane 2 CWDM MM OM4 300 m",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "wavelength_center_nm": 1291.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 3.5,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "Lane 3 CWDM MM OM4 300 m",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 3.5,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "Lane 4 CWDM MM OM4 300 m",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "wavelength_center_nm": 1331.0,
+      "wavelength_band": "1300nm band",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 3.5,
+      "rx_sensitivity_dbm": -10.5
+    }
+  ]
+}

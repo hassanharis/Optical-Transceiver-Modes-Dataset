@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Lumentum [&#x27;TRS70xxFxCPA000-x&#x27;, &#x27;TRS70XX&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">sfp-plus-dwdm10g-ds-oc-ae.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">12</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">13</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 10:36</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">
+
+Tunable SFP+ 10G DWDM Serial Optical Transceiver with up to 80 km Reach TRS70xxFxCPA000-x 
+
+www.lumentum.com 
+
+Data Sheet 
+
+Tunable SFP+ 10G DWDM Serial Optical Transceiver with up to 80 km Reach 
+
+The Lumentum Tunable SFP+ module is a high performance tunable pluggable transceiver for use in the C-band window covering 1528 nm to 1566 nm. The module supports data rates from 9.95 Gbps to 11.3 Gbps and is provided in an SFP+, MSA-compliant package. 
+
+The optical transmitter utilizes the Lumentum tunable ILMZ chip to provide a high performance, low cost 10 Gbps transceiver. Channel tuning is supported on the  ITU-T 50 GHz grid  across full C band with ±2.5 GHz stability. Wavelength and frequency tuning modes are supported in accordance with SFF-8690. 
+
+The receive path comprises an APD receiver with limiting amplifier. 
+
+Mechanical dimensions, connecters and footprint conform to SFP+ MSA. The module size is 56.5 mm L x 13.9 mm W x 11.85 mm H with 20-pin electrical connector. 
+
+## Key Features 
+
+- 1550 nm ITU-T C-band 50 GHz spacing tunable DWDM SFP+ transceiver 
+
+- Data rate 9.95-1.3 Gbps 
+
+- Supports 80 km link distances 
+
+- Negative/zero chirp transmitter with ILMZ (integrated laser Mach Zehnder) TOSA 
+
+- APD receiver with limiting amplifier 
+
+- Positive power supply lines: 3.3 V 
+
+- Operating case temperature range: up to industrial temperature 
+
+- Compact size (56.5 mm L x 13.9 mm W x 11.85 mm H) 
+
+## Compliance 
+
+- SFF-8431 – Enhanced 8.5 and 10 Gigabit Small Form Factor Pluggable Module (SFP+) 
+
+- SFF-8432 - Improved Pluggable Form factor 
+
+- SFF-8690 - Tunable SFP+ Memory Map for ITU Frequencies 
+
+- SFF-8472 - Diagnostic Monitoring Interface for Optical Xcvrs 
+
+- INF-8074i - SFP (Small Form Factor) Transceiver 
+
+- IEEE802.3ae CL 52 - IEEE 802.3 Standard (10Gigabit Ethernet Clause) 
+
+- MIL-STD-883, Method 3015.4 
+
+- IEC61000-4-2:Edition1 (Air Discharge) 
+
+- Class 1 Laser Safety 
+
+This document may contain technologies regulated by law [ECCN: 5E001.c.1, 5E001.c.
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Lumentum"</span>,
+  <span class="key">"model"</span>: [
+    "TRS70xxFxCPA000-x",
+    "TRS70XX"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP+"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8690",
+    "SFF-8472",
+    "INF-8074i",
+    "IEEE802.3ae CL <span class="num">52</span>",
+    "MIL-STD-883, Method <span class="num">3015.4</span>",
+    "IEC61000-4-2:Edition1 (Air Discharge)",
+    "GR-253",
+    "ITU-T G.691"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_ILMZ"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "APD"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1525.0</span>,
+    <span class="num">1528.0</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1566.0</span>,
+    <span class="num">1575.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1550.0</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "C-band",
+    "DWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">191.35</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.1</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">50.0</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">96</span>
+  ],
+  <span class="key">"mounting_type"</span>: [
+    "pluggable"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: <span class="null">null</span>,
+  <span class="key">"temp_min_c"</span>: <span class="num">-40.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85.0</span>,
+  <span class="key">"power_consumption_w"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_name"</span>: [
+    "SFI"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "SONET/SDH",
+    "10GE"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">9.95</span>,
+    <span class="num">10.709</span>,
+    <span class="num">11.3</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [
+    "NRZ"
+  ],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">80.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-1.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">3.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-24.0</span>,
+    <span class="num">-21.0</span>,
+    <span class="num">0.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: [
+    <span class="num">35.0</span>
+  ],
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-7.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">-300.0</span>,
+    <span class="num">1400.0</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">9.0</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-27.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-25.0</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: [
+    <span class="num">-27.0</span>
+  ],
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">9.0</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [
+    <span class="num">35.0</span>
+  ],
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>,
+    <span class="num">4.0</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Key Features lists data rate <span class="num">9.95</span>-1.3 Gbps (likely typo for <span class="num">11.3</span> Gbps). Operating case temperature has C-temp (0 to +70°C), E-temp (-5 to +85°C), and I-temp (-40 to +85°C); temp_min_c/temp_max_c reflect I-temp ordering option. Minimum receiver sensitivity (-24 dBm) specified at <span class="num">10.709</span> Gbps, <span class="num">1</span>E-12 BER, OSNR&gt;35 dB back-to-back. Alternate Prmin row (-300~+1400 ps/nm) gives <span class="num">0</span> to <span class="num">-21</span> dBm without separate BER/OSNR. Shuttered output power max <span class="num">-35</span> dBm. Frequency accuracy ±2.5 GHz EOL. Optical power stability ΔPo <span class="num">-1.0</span> to +1.0 dB all channels SOL. Absolute maximum optical receiver input +5 dBm average."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "Key Features",
+    "Compliance",
+    "Functional Description",
+    "PERFORMANCE SPECIFICATIONS",
+    "6 Absolute Maximum Ratings",
+    "Table <span class="num">8</span>: Absolute Maximum Ratings",
+    "7 Operating Environment",
+    "Table <span class="num">9</span>: Operating Environment",
+    "8 Optical Interface Characteristics Table <span class="num">10</span>  Optical Characteristics",
+    "10 Mechanical",
+    "11 Optical Connector",
+    "Ordering Information"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Add optional temp grade field (C/E/I) or list-type operating temperature. Clarify whether <span class="num">10.709</span> Gbps is a distinct rate or test condition only. Explicit SMF fiber type is implied by <span class="num">80</span> km DWDM but not stated."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">TRS70xxFxCPA000-x</span> <span class="badge">TRS70XX</span></td></tr>
+<tr><td>wavelength_min_nm</td><td><span class="badge">1525.0</span> <span class="badge">1528.0</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1566.0</span> <span class="badge">1575.0</span></td></tr>
+<tr><td>wavelength_band</td><td><span class="badge">C-band</span> <span class="badge">DWDM</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">SONET/SDH</span> <span class="badge">10GE</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">9.95</span> <span class="badge">10.709</span> <span class="badge">11.3</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-24.0</span> <span class="badge">-21.0</span> <span class="badge">0.0</span></td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td><span class="badge">-300.0</span> <span class="badge">1400.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Lumentum</td></tr>
+<tr><td>form_factor</td><td>SFP+</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8431, SFF-8432, SFF-8690, SFF-8472, INF-8074i, IEEE802.3ae CL 52, MIL-STD-883, Method 3015.4, IEC61000-4-2:Edition1 (Air Discharge), GR-253, ITU-T G.691</td></tr>
+<tr><td>emitter_type</td><td>LASER_ILMZ</td></tr>
+<tr><td>photodetector_type</td><td>APD</td></tr>
+<tr><td>wavelength_center_nm</td><td>1550.0</td></tr>
+<tr><td>frequency_min_thz</td><td>191.35</td></tr>
+<tr><td>frequency_max_thz</td><td>196.1</td></tr>
+<tr><td>channel_spacing_ghz</td><td>50.0</td></tr>
+<tr><td>channel_total</td><td>96</td></tr>
+<tr><td>mounting_type</td><td>pluggable</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>host_interface_name</td><td>SFI</td></tr>
+<tr><td>modulation_format</td><td>NRZ</td></tr>
+<tr><td>reach_km</td><td>80.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-1.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>3.0</td></tr>
+<tr><td>rx_osnr_db</td><td>35.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-7.0</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>extinction_ratio_db</td><td>9.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-27.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-25.0</td></tr>
+<tr><td>receiver_reflectance_db</td><td>-27.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>9.0</td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td>35.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5, 4.0</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Key Features lists data rate 9.95-1.3 Gbps (likely typo for 11.3 Gbps). Operating case temperature has C-temp (0 to +70°C), E-temp (-5 to +85°C), and I-temp (-40 to +85°C); temp_min_c/temp_max_c reflect I-temp ordering option. Minimum receiver sensitivity (-24 dBm) specified at 10.709 Gbps, 1E-12 BER, OSNR&gt;35 dB back-to-back. Alternate Prmin row (-300~+1400 ps/nm) gives 0 to -21 dBm without separate BER/OSNR. Shuttered output power max -35 dBm. Frequency accuracy ±2.5 GHz EOL. Optical power stability ΔPo -1.0 to +1.0 dB all channels SOL. Absolute maximum optical receiver input +5 dBm average.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>Key Features, Compliance, Functional Description, PERFORMANCE SPECIFICATIONS, 6 Absolute Maximum Ratings, Table 8: Absolute Maximum Ratings, 7 Operating Environment, Table 9: Operating Environment, 8 Optical Interface Characteristics Table 10  Optical Characteristics, 10 Mechanical, 11 Optical Connector, Ordering Information</td></tr>
+<tr><td>suggestions</td><td>Add optional temp grade field (C/E/I) or list-type operating temperature. Clarify whether 10.709 Gbps is a distinct rate or test condition only. Explicit SMF fiber type is implied by 80 km DWDM but not stated.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_band</th><th>standards_code</th><th>bit_rate_gbps</th><th>rx_sensitivity_dbm</th><th>cd_tolerance_ps_nm</th></tr><tr><td><strong>TRS70XX 10GE back-to-back</strong></td><td>TRS70XX</td><td>1525.0</td><td>1575.0</td><td>DWDM</td><td>10GE</td><td>10.709</td><td>-24.0</td><td></td></tr><tr><td><strong>TRS70XX CD -300 to +1400 ps/nm</strong></td><td>TRS70XX</td><td>1525.0</td><td>1575.0</td><td>DWDM</td><td>10GE</td><td>10.709</td><td>-21.0</td><td>-300.0</td></tr><tr><td><strong>TRS70XX CD -300 to +1400 ps/nm (upper bound)</strong></td><td>TRS70XX</td><td>1525.0</td><td>1575.0</td><td>DWDM</td><td>10GE</td><td>10.709</td><td>-21.0</td><td>1400.0</td></tr><tr><td><strong>TRS70XX SONET/SDH</strong></td><td>TRS70XX</td><td>1525.0</td><td>1575.0</td><td>C-band</td><td>SONET/SDH</td><td>9.95</td><td></td><td></td></tr><tr><td><strong>TRS70XX max NRZ data rate</strong></td><td>TRS70XX</td><td>1525.0</td><td>1575.0</td><td>C-band</td><td>10GE</td><td>11.3</td><td></td><td></td></tr><tr><td><strong>TRS70xxFxCPA000-x 10GE back-to-back</strong></td><td>TRS70xxFxCPA000-x</td><td>1525.0</td><td>1575.0</td><td>DWDM</td><td>10GE</td><td>10.709</td><td>-24.0</td><td></td></tr><tr><td><strong>TRS70xxFxCPA000-x CD -300 to +1400 ps/nm</strong></td><td>TRS70xxFxCPA000-x</td><td>1525.0</td><td>1575.0</td><td>DWDM</td><td>10GE</td><td>10.709</td><td>-21.0</td><td>-300.0</td></tr><tr><td><strong>TRS70xxFxCPA000-x CD -300 to +1400 ps/nm (upper bound)</strong></td><td>TRS70xxFxCPA000-x</td><td>1525.0</td><td>1575.0</td><td>DWDM</td><td>10GE</td><td>10.709</td><td>-21.0</td><td>1400.0</td></tr><tr><td><strong>TRS70xxFxCPA000-x SONET/SDH</strong></td><td>TRS70xxFxCPA000-x</td><td>1525.0</td><td>1575.0</td><td>C-band</td><td>SONET/SDH</td><td>9.95</td><td></td><td></td></tr><tr><td><strong>TRS70xxFxCPA000-x max NRZ data rate</strong></td><td>TRS70xxFxCPA000-x</td><td>1525.0</td><td>1575.0</td><td>C-band</td><td>10GE</td><td>11.3</td><td></td><td></td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 10:36
+</footer>
+
+</div>
+</body>
+</html>

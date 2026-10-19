@@ -1,0 +1,114 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1294.53,
+      1299.02,
+      1303.54,
+      1308.09
+    ],
+    "wavelength_max_nm": [
+      1296.59,
+      1301.09,
+      1305.63,
+      1310.19
+    ],
+    "wavelength_center_nm": [
+      1295.56,
+      1300.05,
+      1304.58,
+      1309.14
+    ],
+    "wavelength_band": [
+      "grey",
+      "LAN-WDM"
+    ],
+    "host_interface_name": [
+      "100GBASE-LR4",
+      "100GbE"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      25.78,
+      100.0
+    ],
+    "tx_power_min_dbm": [
+      -4.3,
+      -1.3
+    ],
+    "tx_power_max_dbm": [
+      10.5,
+      4.5,
+      4.5
+    ],
+    "rx_sensitivity_dbm": [
+      -8.6,
+      -10.6
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TQ2011-SL4I-SO"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "100GBASE-LR4",
+      "QSFP28 MSA",
+      "SFF-8636"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "power_consumption_w": [
+      5.0
+    ],
+    "standards_code": [
+      "100GBASE-LR4"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "rx_overload_dbm": [
+      4.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -25.0
+    ],
+    "los_deassert_dbm": [
+      -12.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Aggregated line rate 103.12 Gbps for 100GbE; 25.78 Gbps per lane. Transmitter output power footnote 3): average power. Receiver sensitivity -8.6 dBm OMA and minimum input power -10.6 dBm per lane footnote 4): specified at BER 1x10-12. Overload +4.5 dBm per lane footnote 3) 4). Power budget 0–7.3 dB; optical path penalty 2.2 dB stated without paired penalized parameter and condition for penalty schema. Power consumption listed as < 5.0 W. Header lists 1310 nm; lanes use LAN-WDM wavelengths around 1295–1310 nm.",
+    "provenance_datasheet_sections": [
+      "QSFP28 100G-LR4 SINGLE RATE, I-TEMP",
+      "TQ2011-SL4I-SO",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Distinguish OMA vs average power fields in schema; map optical path penalty 2.2 dB when only budget reduction is given; optional lane-indexed wavelength/power objects for LR4."
+  }
+}

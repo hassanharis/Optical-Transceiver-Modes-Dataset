@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:55:26.462281+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftlc9555sepm-transceiver-ds.pdf",
+  "page_count": 9,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 12.455,
+    "extract_atoms": 17.746,
+    "store_run": 0.02,
+    "synthesize_modes": 28.047,
+    "store_modes": 0.003,
+    "total": 58.272
+  }
+}

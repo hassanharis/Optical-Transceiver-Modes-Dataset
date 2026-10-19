@@ -1,0 +1,26 @@
+{
+  "modes": [
+    {
+      "label": "BiDi 100GbE Tx 1304nm / Rx 1309nm (TQ2024-BWVC-SO)",
+      "model": "TQ2024-BWVC-SO",
+      "wavelength_min_nm": 1304.06,
+      "wavelength_max_nm": 1305.1,
+      "wavelength_center_nm": 1304.0,
+      "standards_code": "100G ER1-40",
+      "baud_rate_gbaud": 50.0,
+      "bit_rate_gbps": 106.25,
+      "fec_type": "KP4"
+    },
+    {
+      "label": "BiDi 100GbE Tx 1309nm / Rx 1304nm (TQ2024-BVWC-SO)",
+      "model": "TQ2024-BVWC-SO",
+      "wavelength_min_nm": 1308.61,
+      "wavelength_max_nm": 1309.66,
+      "wavelength_center_nm": 1309.0,
+      "standards_code": "100G ER1-40",
+      "baud_rate_gbaud": 50.0,
+      "bit_rate_gbps": 106.25,
+      "fec_type": "KP4"
+    }
+  ]
+}

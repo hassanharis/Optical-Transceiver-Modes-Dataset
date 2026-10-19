@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "100M Fast Ethernet",
+      "model": "SO-SFP-100BASE-L200D",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "STM-1 / OC-3 155M",
+      "model": "SO-SFP-100BASE-L200D",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "standards_code": "STM1",
+      "bit_rate_gbps": 0.155
+    },
+    {
+      "label": "100M Fast Ethernet",
+      "model": "SO-SFP-100Base-L200D",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "standards_code": "100BASE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "STM-1 / OC-3 155M",
+      "model": "SO-SFP-100Base-L200D",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "standards_code": "OC3",
+      "bit_rate_gbps": 0.155
+    }
+  ]
+}

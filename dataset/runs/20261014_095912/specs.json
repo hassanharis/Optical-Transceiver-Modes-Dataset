@@ -1,0 +1,232 @@
+{
+  "vendor": "Nokia",
+  "model": [
+    "3HE16564AA",
+    "3HE16565AA",
+    "3HE18360AA",
+    "3HE18358AA"
+  ],
+  "form_factor": [
+    "QSFP56-DD",
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "400GBase-ZR",
+    "400GBase-ZR+",
+    "400ZR",
+    "oif-400g-zr"
+  ],
+  "wavelength_min_nm": [
+    1528.77
+  ],
+  "wavelength_max_nm": [
+    1563.86
+  ],
+  "wavelength_band": [
+    "C-band",
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    191.275,
+    191.3,
+    191.7
+  ],
+  "frequency_max_thz": [
+    196.1,
+    196.125
+  ],
+  "channel_spacing_ghz": [
+    6.25,
+    12.5,
+    25.0,
+    50.0,
+    75.0,
+    100.0
+  ],
+  "channel_total": [
+    48,
+    64
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 75.0,
+  "power_consumption_w": [
+    24.5
+  ],
+  "standards_code": [
+    "oif-400g-zr",
+    "open-zrp-ofec1",
+    "open-zrp-ofec2",
+    "c1-400g",
+    "c3-100g",
+    "c2-100g",
+    "c1-100g",
+    "c4-100g",
+    "c2-100g-aui2",
+    "c1-100g-aui2",
+    "metro",
+    "long haul",
+    "Long Haul",
+    "Long haul",
+    "access"
+  ],
+  "baud_rate_gbaud": [
+    59.844,
+    60.139,
+    60.13,
+    60.14,
+    30.069,
+    30.07,
+    27.95
+  ],
+  "bit_rate_gbps": [
+    400.0,
+    300.0,
+    200.0,
+    100.0
+  ],
+  "roll_off_percent": [
+    0.2
+  ],
+  "modulation_format": [
+    "QAM_16",
+    "QAM_8",
+    "QPSK",
+    "DQPSK"
+  ],
+  "reach_km": [
+    40.0,
+    120.0,
+    600.0,
+    750.0
+  ],
+  "tx_power_min_dbm": [
+    -10.0,
+    -9.0,
+    -6.0
+  ],
+  "tx_power_max_dbm": [
+    -6.0,
+    0.5,
+    1.0
+  ],
+  "tx_in_band_osnr_db": [
+    34.0,
+    38.0
+  ],
+  "tx_out_of_band_osnr_db": [
+    23.0,
+    38.0
+  ],
+  "rx_sensitivity_dbm": [
+    -20.0,
+    -18.0,
+    -15.0,
+    -12.0
+  ],
+  "rx_osnr_db": [
+    11.5,
+    12.0,
+    14.8,
+    15.0,
+    20.0,
+    20.3,
+    23.0,
+    23.5,
+    24.0,
+    26.0
+  ],
+  "rx_overload_dbm": [
+    0.0,
+    13.0
+  ],
+  "cd_tolerance_ps_nm": [
+    2400.0,
+    13000.0,
+    20000.0,
+    26000.0,
+    40000.0,
+    50000.0,
+    77000.0,
+    80000.0,
+    100000.0,
+    270000.0
+  ],
+  "pdl_db": [
+    2.0,
+    3.5,
+    4.0,
+    6.0
+  ],
+  "pmd_tolerance_ps": [
+    10.0,
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    40.0
+  ],
+  "fec_type": [
+    "CFEC",
+    "OFEC",
+    "SCFEC"
+  ],
+  "pre_fec_ber_threshold": [
+    0.02,
+    0.02
+  ],
+  "post_fec_ber_target": [
+    1e-15
+  ],
+  "penalties": [
+    {
+      "target_parameter": "dispersion_penalty_db",
+      "penalty_db": 0.5,
+      "penalized_value": 26.0,
+      "conditions": [
+        {
+          "parameter": "chromatic_dispersion_ps_nm",
+          "value": 2400.0
+        }
+      ],
+      "source": "400G ZR Technical specifications | CD penalty (referenced to OSNR) | CD tolerance 2,400 ps/nm | Receiver OSNR sensitivity 26 dB"
+    },
+    {
+      "target_parameter": "dispersion_penalty_db",
+      "penalty_db": 0.5,
+      "penalized_value": 26.0,
+      "conditions": [
+        {
+          "parameter": "pmd_ps",
+          "value": 10.0
+        }
+      ],
+      "source": "400G ZR Technical specifications | PMD penalty (referenced to OSNR) | PMD tolerance 10 ps"
+    },
+    {
+      "target_parameter": "dispersion_penalty_db",
+      "penalty_db": 1.8,
+      "penalized_value": 26.0,
+      "conditions": [
+        {
+          "parameter": "pdl_db",
+          "value": 2.0
+        }
+      ],
+      "source": "400G ZR Technical specifications | PDL penalty (referenced to OSNR) | PDL tolerance 2.0 dB"
+    }
+  ],
+  "notes": "Datasheet covers four orderable parts (3HE16564AA ZR -10dBm, 3HE16565AA ZR+ -10dBm, 3HE18360AA ZR+ 0dBm 0/70C, 3HE18358AA ZR+ 0dBm w/ToF 0/75C). Operating environment lists 0-75°C; part descriptions include 0/70C and 0/75C. Center frequency stated as ITU 196.1 to 191.7 THz; grid min/max also given as 191.300000/196.100000 THZ and 191.275000/196.125000 THZ. Adjustable/default optical power for ZR/ZR+ -10dBm: \"-10 dBm to -6 dBm\". Optical power out of TX port during tuning: -20 dBm. ZR overload on RX port: 0 dbm; ZR+ 0dBm tables list Maximum Receiver Signal Power 0 dBm and Maximum Receiver Total Power 13 dBm. CD tolerance on 3HE16565AA 400G open-zrp-ofec2 row includes qualifier \"Low PMD, Low Pwr Consumption, CD = 13000ps/nm\". Roll-off parameter β = 0.2 (raised-cosine), not necessarily percent. Reach values 40 km, 120 km, 600 km, 750 km from narrative application text, not single-module spec table rows. European decimal commas appear in source (e.g. 0,01 dB; 2,400 ps/nm).",
+  "provenance_datasheet_sections": [
+    "400G modules and applications",
+    "Operating environment",
+    "400G ZR Technical specifications",
+    "Table 2. Nokia part number: 3HE16564AA - QSFP56-DD - 400GE ZR 0/70C -10dBm",
+    "400G ZR+ -10dBm Technical specifications",
+    "400G ZR+ 0dBm Technical specifications",
+    "400G ZR+ 0dBm with integrated tunable optical filter Technical specifications"
+  ],
+  "suggestions": "Split extraction per part number and per speed/mode column when values differ. Map β roll-off separately from roll_off_percent. Add schema fields for tuning accuracy (+/- 1.8 GHz), spectral width (GHz), SOP tolerance (krad/s), inter-channel crosstalk, and TX power during tuning. Clarify penalty objects when only penalty dB and max tolerance are stated without an explicit penalized OSNR or sensitivity value."
+}

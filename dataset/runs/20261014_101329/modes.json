@@ -1,0 +1,88 @@
+{
+  "modes": [
+    {
+      "label": "OPCS-S40-13-CB 40GBASE-ER4",
+      "model": "OPCS-S40-13-CB",
+      "form_factor": "QSFP+",
+      "wavelength_min_nm": "1264.5",
+      "wavelength_max_nm": "1337.5",
+      "wavelength_center_nm": "1271.0",
+      "standards_code": "40GBASE-ER4",
+      "bit_rate_gbps": "40.0",
+      "tx_power_max_dbm": "4.5",
+      "rx_sensitivity_dbm": "-19.0"
+    },
+    {
+      "label": "OPCS-S40-13-CB Lane L0",
+      "model": "OPCS-S40-13-CB",
+      "form_factor": "QSFP+",
+      "wavelength_min_nm": "1264.5",
+      "wavelength_max_nm": "1277.5",
+      "wavelength_center_nm": "1271.0",
+      "standards_code": "IEEE802.3ba",
+      "bit_rate_gbps": "10.3125",
+      "tx_power_max_dbm": "4.5",
+      "rx_sensitivity_dbm": "-19.0"
+    },
+    {
+      "label": "OPCS-S40-13-CB Lane L1",
+      "model": "OPCS-S40-13-CB",
+      "form_factor": "QSFP+",
+      "wavelength_min_nm": "1284.5",
+      "wavelength_max_nm": "1297.5",
+      "wavelength_center_nm": "1291.0",
+      "standards_code": "IEEE802.3ba",
+      "bit_rate_gbps": "10.3125",
+      "tx_power_max_dbm": "4.5",
+      "rx_sensitivity_dbm": "-19.0"
+    },
+    {
+      "label": "OPCS-S40-13-CB Lane L2",
+      "model": "OPCS-S40-13-CB",
+      "form_factor": "QSFP+",
+      "wavelength_min_nm": "1304.5",
+      "wavelength_max_nm": "1317.5",
+      "wavelength_center_nm": "1311.0",
+      "standards_code": "IEEE802.3ba",
+      "bit_rate_gbps": "10.3125",
+      "tx_power_max_dbm": "4.5",
+      "rx_sensitivity_dbm": "-19.0"
+    },
+    {
+      "label": "OPCS-S40-13-CB Lane L3",
+      "model": "OPCS-S40-13-CB",
+      "form_factor": "QSFP+",
+      "wavelength_min_nm": "1324.5",
+      "wavelength_max_nm": "1337.5",
+      "wavelength_center_nm": "1331.0",
+      "standards_code": "IEEE802.3ba",
+      "bit_rate_gbps": "10.3125",
+      "tx_power_max_dbm": "4.5",
+      "rx_sensitivity_dbm": "-19.0"
+    },
+    {
+      "label": "OPCS-S40-13-CB per-lane max (QDR/DDR)",
+      "model": "OPCS-S40-13-CB",
+      "form_factor": "QSFP+",
+      "wavelength_min_nm": "1264.5",
+      "wavelength_max_nm": "1277.5",
+      "wavelength_center_nm": "1271.0",
+      "standards_code": "IEEE802.3ba",
+      "bit_rate_gbps": "11.2",
+      "tx_power_max_dbm": "4.5",
+      "rx_sensitivity_dbm": "-16.8"
+    },
+    {
+      "label": "QSFP-40G-ER4 40GBASE-ER4",
+      "model": "QSFP-40G-ER4",
+      "form_factor": "QSFP",
+      "wavelength_min_nm": "1264.5",
+      "wavelength_max_nm": "1337.5",
+      "wavelength_center_nm": "1271.0",
+      "standards_code": "40GBASE-ER4",
+      "bit_rate_gbps": "40.0",
+      "tx_power_max_dbm": "10.5",
+      "rx_sensitivity_dbm": "-19.0"
+    }
+  ]
+}

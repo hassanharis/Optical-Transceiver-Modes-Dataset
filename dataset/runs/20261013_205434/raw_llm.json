@@ -1,0 +1,112 @@
+{
+  "vendor": "Stratos",
+  "model": [
+    "H2-TR4-Sxxx",
+    "H2-TR4-SKT-R3",
+    "H2-TR4-CLP-R3",
+    "H2-TR4-S001",
+    "H2-TR4-S002",
+    "H2-TR4-PULL",
+    "H2-TR4-PIN",
+    "H2-TR4-EVAL"
+  ],
+  "form_factor": [],
+  "standards_claimed": [],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [],
+  "wavelength_max_nm": [],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "BGA socket surface mount"
+  ],
+  "connector_type": [
+    "MT",
+    "ST",
+    "SC"
+  ],
+  "fiber_type": [
+    "MMF"
+  ],
+  "temp_min_c": null,
+  "temp_max_c": null,
+  "power_consumption_w": [
+    1.6
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "Fiber Channel"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    2.125,
+    2.5
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    0.7
+  ],
+  "tx_power_min_dbm": [],
+  "tx_power_max_dbm": [],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [],
+  "los_deassert_dbm": [],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Supply voltage 3.3V stated; max power 1.6W at 3.3V. Industrial temp range and vibration tolerant design stated without numeric temperature limits. Link distance stated as Up to 700M. Applications include 1x/2x Fiber Channel Links and other data communications up to 2.5 Gbps per port. Integrated 1x12 MT connector; alternate termini ST, SC, or MIL-T-29504 per ordering. Data interface: 100 Ω differential pair, 50 Ω per line, CML compliant. SPI up to 2MHz; not required for operation. Datasheet excerpt directs reader to contact RSM or factory for complete datasheet.",
+  "provenance_datasheet_sections": [
+    "Stratos H2-TR4-Sxxx",
+    "Hybrid Technology Quad Optical Transceiver",
+    "Four Ports, 2.125 Gbps, 3.3V, 850nm VCSEL, Multimode, Up to 700M Link Distance",
+    "Key Features & Benefits",
+    "Applications",
+    "Product Overview",
+    "Ordering Options",
+    "H2-TR4-Sxxx Hybrid Transceiver Label",
+    "IMPORTANT NOTICE"
+  ],
+  "suggestions": "Full electrical and optical parameter tables appear absent from this excerpt; numeric temp range, TX/RX power, sensitivity, and BER specs likely on omitted pages."
+}

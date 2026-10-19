@@ -1,0 +1,138 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "standards_code": [
+      "40GBASE-LR4 Lite",
+      "40GBASE-LR4",
+      "XLPPI",
+      "IEEE 802.3ba"
+    ],
+    "bit_rate_gbps": [
+      41.2,
+      10.3,
+      10.313
+    ],
+    "tx_power_max_dbm": [
+      2.3,
+      8.3
+    ],
+    "rx_sensitivity_dbm": [
+      -10.5,
+      -8.5
+    ]
+  },
+  "general": {
+    "vendor": "Finisar",
+    "model": [
+      "FTL4C1QL2C"
+    ],
+    "form_factor": [
+      "QSFP+"
+    ],
+    "standards_claimed": [
+      "QSFP+ MSA",
+      "IEEE 802.3ba",
+      "SFF-8636",
+      "RoHS Directive 2011/65/EU"
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF-28"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "host_interface_name": [
+      "XLPPI"
+    ],
+    "media_interface_name": [
+      "40GBASE-LR4"
+    ],
+    "baud_rate_gbaud": [
+      10.3125
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -10.0
+    ],
+    "rx_overload_dbm": [
+      3.4
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "los_assert_dbm": [
+      -28.0
+    ],
+    "los_deassert_dbm": [
+      -15.0
+    ],
+    "transmitter_reflectance_db": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      20.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Aggregate bit rate 41.2 Gb/s; per-lane data rate 10.3 Gb/s (table also lists Bit Rate per Lane BR max 10.313 Mb/sec per ref. 1). Rx sensitivity (OMA) -10.5 dBm and Stressed Receiver Sensitivity (OMA) -8.5 dBm at BER 10^-12. Total Average Launch Power max 8.3 dBm; per-lane Average Launch Power (TXPx) -10.0 to 2.3 dBm; Transmit OMA per lane -6.0 to 3.5 dBm. Transmitter and Dispersion Penalty (TDP) max 2.3 dB; vertical eye closure penalty per lane 1.9 dB. Product is 40GBASE-LR4 Lite (non-standard Lite optical interface per part code). Environmental section references FTL4E1Q for operating temperature; mechanical section references FTL4E1QE1C for QSFP+ MSA compliance.",
+    "provenance_datasheet_sections": [
+      "FTL4C1QL2C",
+      "40GBASE-LR4 Lite QSFP+ Optical Transceiver Module",
+      "FEATURES",
+      "APPLICATIONS",
+      "Product Selection",
+      "II. General Product Characteristics",
+      "III. Absolute Maximum Ratings",
+      "IV. Electrical Characteristics  (TOP = 0 to 70°C, VCC = 3.1 to 3.47 Volts)",
+      "V. Optical Characteristics (TOP = 0 to 70°C, VCC = 3.1 to 3.47 Volts)",
+      "VI. Memory Map and Control Registers",
+      "VII. Environmental Specifications"
+    ],
+    "suggestions": "Clarify whether Bit Rate per Lane unit Mb/sec is a datasheet typo for Gb/s. Explicit emitter (laser) and photodetector types are not stated beyond 4 lasers and 4 photodetectors. No OSNR or chromatic dispersion tolerance figures for this Lite LR4 module."
+  }
+}

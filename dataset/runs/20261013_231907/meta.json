@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:19:07.266828+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftlx687xmnc-transceiver-ds.pdf",
+  "page_count": 14,
+  "table_count": 11,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 14.48,
+    "extract_atoms": 28.383,
+    "store_run": 0.009,
+    "synthesize_modes": 42.374,
+    "store_modes": 0.006,
+    "total": 85.252
+  }
+}

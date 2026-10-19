@@ -1,0 +1,133 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "AQD003-XXXC-SO",
+    "AQD003-001C-SO",
+    "AQD003-002C-SO",
+    "AQD003-003C-SO",
+    "AQD003-005C-SO",
+    "AQD003-007C-SO",
+    "AQD003-010C-SO",
+    "AQD003-015C-SO",
+    "AQD003-030C-SO"
+  ],
+  "form_factor": [
+    "QSFP-DD",
+    "QSFP56"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "SFF-8665",
+    "CMIS4.0",
+    "SFF-8636",
+    "IEEE802.3bj"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": null,
+  "fiber_type": [
+    "MMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    10.0,
+    3.0
+  ],
+  "host_interface_name": [
+    "100GAUI-2"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "8x 26.5625GBd (PAM4) to 2x 26.5625GBd (PAM4)"
+  ],
+  "standards_code": [
+    "IEEE802.3bj",
+    "RS(544,528)",
+    "100GbE",
+    "400G Ethernet"
+  ],
+  "baud_rate_gbaud": [
+    26.5625
+  ],
+  "bit_rate_gbps": [
+    400.0,
+    100.0
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.001,
+    0.002,
+    0.003,
+    0.005,
+    0.007,
+    0.01,
+    0.015,
+    0.03
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [
+    "RS_528_514"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4,
+    8
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Active Optical Cable (AOC) break-out; direct-attach assembly with QSFP-DD and integrated QSFP56 connectors (not discrete transceivers). QSFP-DD: four asynchronous 100GAUI-2 streams aggregate 400G; each QSFP56: 100GAUI-2. FEC required in host per IEEE802.3bj; without FEC BER less than 2.4 x10[-4]; with FEC BER better than 1 x10[-12]. Power: QSFP-DD <10W, QSFP56 <3W. Storage temperature -20°C to +85°C. Cable lengths 1 to 30 meters (ordering table). Breakout point distances in mechanical table (e.g. 20cm for 1m total length). RoSH compliant.",
+  "provenance_datasheet_sections": [
+    "QSFP-DD-4XQSFP56 400G AOC",
+    "AQD003-XXXC-SO",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION",
+    "MECHANICAL DRAWING"
+  ],
+  "suggestions": "Vendor inferred from smartoptics.com footer only; no explicit manufacturer name in body. reach_km converted from stated meter lengths. Optical wavelength and detailed optical link budgets not specified for this MM AOC."
+}

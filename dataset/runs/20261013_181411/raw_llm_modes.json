@@ -1,0 +1,54 @@
+{
+  "modes": [
+    {
+      "label": "λ0 CWDM lane",
+      "form_factor": "OSFP_RHS",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "standards_code": "IEEE 802.3dj-2024",
+      "tx_power_max_dbm": 4.9,
+      "rx_overload_dbm": 4.9,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "λ1 CWDM lane",
+      "form_factor": "OSFP_RHS",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "standards_code": "IEEE 802.3dj-2024",
+      "tx_power_max_dbm": 4.9,
+      "rx_overload_dbm": 4.9,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "λ2 CWDM lane",
+      "form_factor": "OSFP_RHS",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "standards_code": "IEEE 802.3dj-2024",
+      "tx_power_max_dbm": 4.9,
+      "rx_overload_dbm": 4.9,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "λ3 CWDM lane",
+      "form_factor": "OSFP_RHS",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "IEEE 802.3dj-2024",
+      "tx_power_max_dbm": 4.9,
+      "rx_overload_dbm": 4.9,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "Transmit OMA per lane (max)",
+      "form_factor": "OSFP_RHS",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "2xFR4",
+      "tx_power_max_dbm": 4.8,
+      "rx_overload_dbm": 4.8,
+      "number_of_lanes": 8
+    }
+  ]
+}

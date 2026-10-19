@@ -1,0 +1,27 @@
+# OTSE runtime dependencies.
+# Pinned exactly: extraction results depend on the versions used, so a run is
+# only reproducible against a known environment. Verified on Python 3.11.9.
+#
+#   pip install -r requirements.txt
+#
+# Note: inference itself runs in an external llama-server process and is not a
+# Python dependency. See README for how to start it.
+
+# UI
+streamlit==1.58.0
+
+# LLM client (points at the local OpenAI-compatible llama-server endpoint)
+openai==2.37.0
+
+# Schema definition and validation
+pydantic==2.13.4
+
+# PDF parsing. pymupdf4llm tracks pymupdf's version; keep the two in step.
+pymupdf==1.27.2.3
+pymupdf4llm==1.27.2.3
+
+# llama-server health and model-list probing
+requests==2.34.2
+
+# Corpus analysis UIs
+pandas>=2.2,<3

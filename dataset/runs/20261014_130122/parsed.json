@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp-1000base-tr.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 4762,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 0,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

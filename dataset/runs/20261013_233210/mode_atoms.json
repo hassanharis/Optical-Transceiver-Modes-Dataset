@@ -1,0 +1,96 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1510.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1590.0,
+      1610.0
+    ],
+    "standards_code": [
+      "G.957",
+      "STM-1/OC-3"
+    ],
+    "reach_km": [
+      0.55,
+      20.0,
+      60.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "L9-SC55311G-20PPC"
+    ],
+    "form_factor": [
+      "1x9"
+    ],
+    "standards_claimed": [
+      "ITU-T G.957"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_center_nm": [
+      1550.0
+    ],
+    "wavelength_band": [],
+    "connector_type": [
+      "SC",
+      "ST",
+      "FC"
+    ],
+    "fiber_type": [
+      "MMF_OM1",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "LVPECL"
+    ],
+    "bit_rate_gbps": [
+      1.25
+    ],
+    "tx_power_min_dbm": [
+      -8.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -23.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "extinction_ratio_db": [
+      8.2
+    ],
+    "optical_extinction_ratio_db": [
+      8.2
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "L9-SC55311G-20PPC order row: 1550nm DFB Tx, PIN Rx, 0~70°C (Standard), 20 km, Simplex SC, 3.3 V, LVPECL TX/RX. Features also state up to 0.55 km on 62.5/125 μm MMF and up to 60 km on 9/125 μm SMF (product family). Launch optical power and receiver sensitivity/max input power rows are noted for 20 km. Operating case temperature Note 1: Standard 0 to +70°C; Note 2: Industrial -40°C to +85°C applies to other order codes (e.g. *PPI). Central wavelength table lists 1270–1350 nm (1310 FP) and 1510–1590 nm (1550 DFB); this SKU uses 1550 DFB. Receiver operating wavelength range 1260–1610 nm. Signal detect range -38 to -23 dBm. Data rate in recommended operating conditions: 10–1500 Mbps, typ 1250 Mbps. Supply current Icc max 260 mA (recommended) / Tx Icc max 250 mA; power in watts not stated.",
+    "provenance_datasheet_sections": [
+      "L9-SC55311G-20PPC",
+      "Features",
+      "Applications",
+      "Standard",
+      "Order Information",
+      "Absolute Maximum Ratings",
+      "Recommended Operating Conditions",
+      "Note 1.Standard level 2.Industrial level",
+      "Transmitter Optical ,Electrical characteristics",
+      "Receiver Optical Electrical Characteristics"
+    ],
+    "suggestions": "Clarify whether reach_km for this PN is only 20 km or also family maxima (60 km SMF). Map 1x9 pack to a canonical form_factor enum if required. Distinguish signal-detect thresholds from LOS assert/deassert if those MSA fields are needed."
+  }
+}

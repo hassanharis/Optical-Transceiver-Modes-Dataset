@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "BIDI-SFP+-ER-27 10GBASE-ER",
+      "model": "BIDI-SFP+-ER-27",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "BIDI-SFP+-ER-27 10GBASE-EW",
+      "model": "BIDI-SFP+-ER-27",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "10GBASE-EW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "BIDI-SFP+-ER-33 10GBASE-ER",
+      "model": "BIDI-SFP+-ER-33",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "BIDI-SFP+-ER-33 10GBASE-EW",
+      "model": "BIDI-SFP+-ER-33",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "10GBASE-EW",
+      "bit_rate_gbps": 9.953
+    }
+  ]
+}

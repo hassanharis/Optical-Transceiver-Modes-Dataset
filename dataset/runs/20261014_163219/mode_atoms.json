@@ -1,0 +1,204 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-XFP-ER-Dxxxx",
+      "SO-XFP-ER-D9190",
+      "SO-XFP-ER-D9200",
+      "SO-XFP-ER-D9210",
+      "SO-XFP-ER-D9220",
+      "SO-XFP-ER-D9230",
+      "SO-XFP-ER-D9240",
+      "SO-XFP-ER-D9250",
+      "SO-XFP-ER-D9260",
+      "SO-XFP-ER-D9270",
+      "SO-XFP-ER-D9280",
+      "SO-XFP-ER-D9290",
+      "SO-XFP-ER-D9300",
+      "SO-XFP-ER-D9310",
+      "SO-XFP-ER-D9320",
+      "SO-XFP-ER-D9330",
+      "SO-XFP-ER-D9340",
+      "SO-XFP-ER-D9350",
+      "SO-XFP-ER-D9360",
+      "SO-XFP-ER-D9370",
+      "SO-XFP-ER-D9380",
+      "SO-XFP-ER-D9390",
+      "SO-XFP-ER-D9400",
+      "SO-XFP-ER-D9410",
+      "SO-XFP-ER-D9420",
+      "SO-XFP-ER-D9430",
+      "SO-XFP-ER-D9440",
+      "SO-XFP-ER-D9450",
+      "SO-XFP-ER-D9460",
+      "SO-XFP-ER-D9470",
+      "SO-XFP-ER-D9480",
+      "SO-XFP-ER-D9490",
+      "SO-XFP-ER-D9500",
+      "SO-XFP-ER-D9510",
+      "SO-XFP-ER-D9520",
+      "SO-XFP-ER-D9530",
+      "SO-XFP-ER-D9540",
+      "SO-XFP-ER-D9550",
+      "SO-XFP-ER-D9560",
+      "SO-XFP-ER-D9570",
+      "SO-XFP-ER-D9580",
+      "SO-XFP-ER-D9590",
+      "SO-XFP-ER-D9600"
+    ],
+    "wavelength_center_nm": [
+      1562.23,
+      1561.42,
+      1560.61,
+      1559.79,
+      1558.98,
+      1558.17,
+      1557.36,
+      1556.55,
+      1555.75,
+      1554.94,
+      1554.13,
+      1553.33,
+      1552.52,
+      1551.72,
+      1550.92,
+      1550.12,
+      1549.32,
+      1548.51,
+      1547.72,
+      1546.92,
+      1546.12,
+      1545.32,
+      1544.53,
+      1543.73,
+      1542.94,
+      1542.14,
+      1541.35,
+      1540.56,
+      1539.77,
+      1538.98,
+      1538.19,
+      1537.4,
+      1536.61,
+      1535.82,
+      1535.04,
+      1534.25,
+      1533.47,
+      1532.68,
+      1531.9,
+      1531.12,
+      1530.33,
+      1529.55
+    ],
+    "host_interface_name": [
+      "INF-8077i",
+      "XFP-MSA"
+    ],
+    "standards_code": [
+      "10GBASE-ER",
+      "10GBASE-EW",
+      "1200-SM-LL-L",
+      "OC-192 IR-2",
+      "OC-192 IR-3",
+      "STM S-64.2b",
+      "STM S-64.3b",
+      "10GbE-LAN",
+      "10GbE-WAN",
+      "OTU2",
+      "OTU2e",
+      "STM-64/OC192",
+      "10G FC",
+      "CPRI Opt, 8"
+    ],
+    "bit_rate_gbps": [
+      9.95,
+      11.1,
+      10.7
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "XFP"
+    ],
+    "standards_claimed": [
+      "INF-8077i",
+      "XFP-MSA",
+      "IEEE 802.3ae",
+      "ITU-T G.694.1"
+    ],
+    "wavelength_min_nm": [
+      1529.55
+    ],
+    "wavelength_max_nm": [
+      1562.23
+    ],
+    "wavelength_band": [
+      "DWDM"
+    ],
+    "frequency_min_thz": [
+      191.9
+    ],
+    "frequency_max_thz": [
+      196.0
+    ],
+    "channel_spacing_ghz": [
+      100.0
+    ],
+    "channel_total": [
+      42
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.0
+    ],
+    "reach_km": [
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      -1.0
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_sensitivity_dbm": [
+      -15.0
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "cd_tolerance_ps_nm": [
+      800.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -29.0
+    ],
+    "los_deassert_dbm": [
+      -17.0
+    ],
+    "los_hysteresis_db": [
+      1.0
+    ],
+    "penalties": [],
+    "notes": "Transmitter output power min listed as -1.0dB (footnote 1: Average power). Receiver minimum input power and overload measured at 10.7Gbps, BER 1x10-12, PRBS 231-1 (footnote 2). Power budget stated as 0 – 14dB. Dispersion penalty Max 2dB (no penalized value and operating condition triple stated for penalties schema). Receiver wavelength range 1270nm – 1600nm. Storage temperature -40°C to +85°C (not operating). Power consumption < 2W. IEEE 802.3ae 10GBASE-ER/EW defined only at 1550nm; standard referenced for bridgeable distance on other DWDM wavelengths. RoHS-6/6 compliant.",
+    "provenance_datasheet_sections": [
+      "SO-XFP-ER-Dxxxx",
+      "XFP, 10G Multirate, DWDM, 100GHz, DDM, 14dB, 40km, D9180-D9610 (42ch)",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "Safety/regulatory compliance:",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether transmitter output power minimum unit is dBm (printed as dB on min only). Map power budget 0–14dB to a dedicated schema field if distinct from channel insertion loss."
+  }
+}

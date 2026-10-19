@@ -1,0 +1,314 @@
+{
+  "modes": [
+    {
+      "label": "FTLF8519F2XNL | FC 1.0625 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2XNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.03",
+      "bit_rate_gbps": 1.0625,
+      "reach_km": 0.5,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2XNL | FC 1.0625 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2XNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.03",
+      "bit_rate_gbps": 1.0625,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2XNL | 1000BASE-SX 1.25 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2XNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "1000BASE-SX",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.5,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2XNL | 1000BASE-SX 1.25 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2XNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "1000BASE-SX",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2XNL | Stressed RX 1.25 Gb/s (FC-PI-2 conformance)",
+      "model": "FTLF8519F2XNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 770.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.5,
+      "rx_sensitivity_dbm": -13.5
+    },
+    {
+      "label": "FTLF8519F2XNL | FC 2.125 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2XNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -18.0
+    },
+    {
+      "label": "FTLF8519F2XNL | FC 2.125 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2XNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -18.0
+    },
+    {
+      "label": "FTLF8519F2xNL | FC 1.0625 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2xNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.03",
+      "bit_rate_gbps": 1.062,
+      "reach_km": 0.5,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2xNL | FC 1.0625 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2xNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.03",
+      "bit_rate_gbps": 1.062,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2xNL | 1000BASE-SX 1.25 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2xNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "IEEE 802.3",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.5,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2xNL | 1000BASE-SX 1.25 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2xNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "IEEE 802.3",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2xNL | Stressed RX 1.25 Gb/s (FC-PI-2 conformance)",
+      "model": "FTLF8519F2xNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 770.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -13.5
+    },
+    {
+      "label": "FTLF8519F2xNL | FC 2.125 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2xNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -18.0
+    },
+    {
+      "label": "FTLF8519F2xNL | FC 2.125 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2xNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -18.0
+    },
+    {
+      "label": "FTLF8519F2GNL | FC 1.063/2.125 Gb/s dual-rate 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2GNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.03",
+      "bit_rate_gbps": 1.063,
+      "reach_km": 0.5,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2GNL | FC 1.063/2.125 Gb/s dual-rate 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2GNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.03",
+      "bit_rate_gbps": 1.063,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2GNL | 1000Base-SX 1.25 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2GNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "1000Base-SX",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.5,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2GNL | FC 2.125 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2GNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -18.0
+    },
+    {
+      "label": "FTLF8519F2GNL | FC 2.125 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2GNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -18.0
+    },
+    {
+      "label": "FTLF8519F2KNL | FC 1.0625 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2KNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.03",
+      "bit_rate_gbps": 1.0625,
+      "reach_km": 0.5,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2KNL | FC 1.0625 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2KNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.03",
+      "bit_rate_gbps": 1.0625,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2KNL | 1000BASE-SX 1.25 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2KNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "1000BASE-SX",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.5,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2KNL | 1000BASE-SX 1.25 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2KNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "1000BASE-SX",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2KNL | FC 2.125 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2KNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -18.0
+    },
+    {
+      "label": "FTLF8519F2KNL | FC 2.125 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2KNL",
+      "form_factor": "SFF",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -18.0
+    },
+    {
+      "label": "FTLF8519F2HNL | FC 1.0625 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2HNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.03",
+      "bit_rate_gbps": 1.0625,
+      "reach_km": 0.5,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2HNL | FC 1.0625 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2HNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.03",
+      "bit_rate_gbps": 1.0625,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2HNL | 1000BASE-SX 1.25 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2HNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "IEEE 802.3",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.5,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2HNL | 1000BASE-SX 1.25 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2HNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "IEEE 802.3",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -20.0
+    },
+    {
+      "label": "FTLF8519F2HNL | FC 2.125 Gb/s 50/125 \u00b5m MMF",
+      "model": "FTLF8519F2HNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -18.0
+    },
+    {
+      "label": "FTLF8519F2HNL | FC 2.125 Gb/s 62.5/125 \u00b5m MMF",
+      "model": "FTLF8519F2HNL",
+      "form_factor": "2x5",
+      "wavelength_min_nm": 830.0,
+      "standards_code": "FC-PI-2 10.0",
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -18.0
+    }
+  ]
+}

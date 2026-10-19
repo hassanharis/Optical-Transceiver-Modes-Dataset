@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — LINK-PP [&#x27;LQ-M85200-SR4C&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">lq-m85200-sr4c.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">14</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">8</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 00:04</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LQ-M85200-SR4C Rev1.0- Sep.2022 
+
+
+## **LQ-M85200-SR4C** 
+
+## 200GBASE-SR4 QSFP56, Optical Transceiver Module, 100mReach 
+
+## **Features** 
+
+- Hot-pluggable QSFP56 form factor 
+
+- Built-in 200G PAM4 DSP 
+
+- Supports 212.5Gb/saggregate bit rates 
+
+- Supports 103.125Gb/s aggregate bit rates if required 
+
+- Low power dissipation &lt;5W 
+
+- RoHS-6 compliant (lead-free) 
+
+- Commercial case temperature rangeof 0°C to 70°C 
+
+- Single 3.3V power supply 
+
+
+- Maximum link length of 70m on OM3 MMF and 100m on OM4 &amp; OM5 MMF 
+
+- Uncooled 4 channels 850nm VCSEL array 
+
+- 4 channels PIN photo detector array 
+
+- 200GAUI-4 electrical interface 
+
+- Single MPO12 receptacle 
+
+- CMIS V4.0 compliant 
+
+- Built-in digital diagnostic functionality 
+
+## **Applications** 
+
+- IEEE 802.3cd 200GBASE-SR4 Ethernet(PAM4) 
+
+## **Description** 
+
+LINK-PP LQ-M85200-SR4C 200GE QSFP56 Optical Transceiver modules are designed for use in 200 Gigabit Ethernet links over OM3/OM4/OM5 multi-mode fiber. They are compliant with the QSFP MSA and with IEEE 802.3cd 200GBASE-SR4 specification. Digital diagnostics functions are available via the I2C interface as specified by CMIS V4.0. The transceiver is RoHS 2.0 compliant and lead-free per Directive2011/65/EU. 
+
+www.link-pp.com **www.l-p.com** 
+
+Copyright © 2016 LINK-PP AlI Rights Reserved 
+
+Page 1 of 14 
+
+LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LQ-M85200-SR4C Rev1.0- Sep.2022 
+
+
+
+Figure 1. Module Block Diagram 
+
+## **Absolute Maximum Ratings** 
+
+|**Parameter**|**Symbol**|**Min**|**Max**|**Unit**|
+|---|---|---|---|---|
+|SupplyVoltage|Vcc|-0.3|3.6|V|
+|Input Voltage|Vin|-0.3|Vcc+0.3|V|
+|Storage Temperature|Ts|-40|85|ºC|
+|Case Operating&lt;br&gt;Temperature|Tc|0|70|ºC|
+|Humidity (non-condensing)|Rh|5|95|%|
+
+
+
+## **Recommended Operating Conditions** 
+
+|**Parameter**|**Symbol**|**Min**|**Typical**|**Max**|**Unit**|
+|---|---|---|---|---|---|
+|SupplyVoltage|Vcc|3.13|3.3|3.47|V|
+|Operating Case&lt;br&gt;Temperature|Tc|0||70|ºC|
+|Baud Rate per Lane (
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"LINK-PP"</span>,
+  <span class="key">"model"</span>: [
+    "LQ-M85200-SR4C"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "QSFP56"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "QSFP MSA",
+    "IEEE <span class="num">802.3</span>cd",
+    "CMIS V4.0",
+    "200GBASE-SR4"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_VCSEL"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "PIN"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">840</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">860</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">850</span>
+  ],
+  <span class="key">"wavelength_band"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"mounting_type"</span>: [
+    "pluggable_hot"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "MPO"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF_OM5"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">4.1</span>,
+    <span class="num">4.5</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "200GAUI-4"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: [
+    "200GAUI-4"
+  ],
+  <span class="key">"standards_code"</span>: [
+    "200GBASE-SR4",
+    "IEEE <span class="num">802.3</span>cd",
+    "CMIS V4.0"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [
+    <span class="num">26.5625</span>
+  ],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">212.5</span>,
+    <span class="num">103.125</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [
+    "PAM4"
+  ],
+  <span class="key">"reach_km"</span>: <span class="null">null</span>,
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-6.5</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-7</span>,
+    <span class="num">-3</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: [
+    <span class="num">0.00024</span>
+  ],
+  <span class="key">"post_fec_ber_target"</span>: <span class="null">null</span>,
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">3</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-10</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-8.5</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: [
+    <span class="num">-12</span>
+  ],
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">3</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [
+    <span class="num">12</span>
+  ],
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Features state low power dissipation &lt;5W and aggregate bit rates <span class="num">212.5</span> Gb/s and <span class="num">103.125</span> Gb/s if required. Maximum link length stated as <span class="num">70</span> m on OM3 MMF and <span class="num">100</span> m on OM4 and OM5 MMF (title: <span class="num">100</span>mReach); not given in km. Receiver Sensitivity (OMAouter) <span class="num">-7</span> dBm per Note3 measured with conformance test signal at TP3 for BER = <span class="num">2.4</span>E-4 Pre-FEC. Stressed Receiver Sensitivity (OMAouter) <span class="num">-3</span> dBm. Electrical BER Note2 max <span class="num">2.4</span>E-4 compliant with <span class="num">200</span>GBASE-SR4 electrical specification in IEEE <span class="num">802.3</span>cd. Optical connector described as single MPO12 receptacle and male MPO connector. RMS spectral width max <span class="num">0.6</span> nm. Damage threshold (receiver) max <span class="num">4</span> dBm. LPMode section references QSFP28 modules in error; product is QSFP56."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "LQ-M85200-SR4C",
+    "200GBASE-SR4 QSFP56, Optical Transceiver Module, <span class="num">100</span>mReach",
+    "Features",
+    "Applications",
+    "Description",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Note:",
+    "Optical Characteristics",
+    "Note3. Measured with conformance test signal at TP3 for BER = <span class="num">2.4</span>E-4 Pre-FEC",
+    "Optical Interface Lanes and Assignment",
+    "DIAGNOSTIC MONITORING INTERFACE",
+    "References",
+    "Ordering information"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Add reach_m or accept meter values for SR modules; map QSFP56 to form_factor enum; optional fields for OMAouter launch/receive limits and TDECQ."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>power_consumption_w</td><td><span class="badge">4.1</span> <span class="badge">4.5</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">200GBASE-SR4</span> <span class="badge">IEEE 802.3cd</span> <span class="badge">CMIS V4.0</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">212.5</span> <span class="badge">103.125</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-7.0</span> <span class="badge">-3.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>LINK-PP</td></tr>
+<tr><td>model</td><td>LQ-M85200-SR4C</td></tr>
+<tr><td>form_factor</td><td>QSFP56</td></tr>
+<tr><td>standards_claimed</td><td>QSFP MSA, IEEE 802.3cd, CMIS V4.0, 200GBASE-SR4</td></tr>
+<tr><td>emitter_type</td><td>LASER_VCSEL</td></tr>
+<tr><td>photodetector_type</td><td>PIN</td></tr>
+<tr><td>wavelength_min_nm</td><td>840.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>860.0</td></tr>
+<tr><td>wavelength_center_nm</td><td>850.0</td></tr>
+<tr><td>channel_total</td><td>4</td></tr>
+<tr><td>mounting_type</td><td>pluggable_hot</td></tr>
+<tr><td>connector_type</td><td>MPO</td></tr>
+<tr><td>fiber_type</td><td>MMF, MMF_OM3, MMF_OM4, MMF_OM5</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>host_interface_name</td><td>200GAUI-4</td></tr>
+<tr><td>frame</td><td>200GAUI-4</td></tr>
+<tr><td>baud_rate_gbaud</td><td>26.5625</td></tr>
+<tr><td>modulation_format</td><td>PAM4</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-6.5</td></tr>
+<tr><td>tx_power_max_dbm</td><td>4.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>4.0</td></tr>
+<tr><td>pre_fec_ber_threshold</td><td>0.00024</td></tr>
+<tr><td>extinction_ratio_db</td><td>3.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-10.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-8.5</td></tr>
+<tr><td>receiver_reflectance_db</td><td>-12.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>3.0</td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td>12.0</td></tr>
+<tr><td>number_of_lanes</td><td>4</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Features state low power dissipation &lt;5W and aggregate bit rates 212.5 Gb/s and 103.125 Gb/s if required. Maximum link length stated as 70 m on OM3 MMF and 100 m on OM4 and OM5 MMF (title: 100mReach); not given in km. Receiver Sensitivity (OMAouter) -7 dBm per Note3 measured with conformance test signal at TP3 for BER = 2.4E-4 Pre-FEC. Stressed Receiver Sensitivity (OMAouter) -3 dBm. Electrical BER Note2 max 2.4E-4 compliant with 200GBASE-SR4 electrical specification in IEEE 802.3cd. Optical connector described as single MPO12 receptacle and male MPO connector. RMS spectral width max 0.6 nm. Damage threshold (receiver) max 4 dBm. LPMode section references QSFP28 modules in error; product is QSFP56.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>LQ-M85200-SR4C, 200GBASE-SR4 QSFP56, Optical Transceiver Module, 100mReach, Features, Applications, Description, Absolute Maximum Ratings, Recommended Operating Conditions, Note:, Optical Characteristics, Note3. Measured with conformance test signal at TP3 for BER = 2.4E-4 Pre-FEC, Optical Interface Lanes and Assignment, DIAGNOSTIC MONITORING INTERFACE, References, Ordering information</td></tr>
+<tr><td>suggestions</td><td>Add reach_m or accept meter values for SR modules; map QSFP56 to form_factor enum; optional fields for OMAouter launch/receive limits and TDECQ.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>power_consumption_w</th><th>standards_code</th><th>bit_rate_gbps</th><th>rx_sensitivity_dbm</th></tr><tr><td><strong>200GBASE-SR4 (212.5 Gb/s aggregate)</strong></td><td>4.1</td><td>200GBASE-SR4</td><td>212.5</td><td>-7.0</td></tr><tr><td><strong>103.125 Gb/s aggregate (if required)</strong></td><td>4.5</td><td>IEEE 802.3cd</td><td>103.125</td><td>-3.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 00:04
+</footer>
+
+</div>
+</body>
+</html>

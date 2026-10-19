@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "800GBASE-XDR8 800G",
+      "power_consumption_w": 18.0,
+      "host_interface_name": "8x100GAUI-1 C2M",
+      "media_interface_name": "800GBASE-XDR8",
+      "standards_code": "IEEE 802.3ck",
+      "bit_rate_gbps": 800.0,
+      "rx_sensitivity_dbm": -4.5
+    },
+    {
+      "label": "2x 400G XDR4 breakout",
+      "power_consumption_w": 18.0,
+      "host_interface_name": "8x100GAUI-1",
+      "media_interface_name": "800GBASE-XDR8",
+      "standards_code": "XDR4",
+      "bit_rate_gbps": 400.0,
+      "rx_sensitivity_dbm": -2.5
+    },
+    {
+      "label": "8x 100G FR breakout",
+      "power_consumption_w": 18.0,
+      "host_interface_name": "100GAUI-1",
+      "media_interface_name": "8x100GBASE-FR1",
+      "standards_code": "IEEE 802.3cu",
+      "bit_rate_gbps": 100.0,
+      "rx_sensitivity_dbm": -4.5
+    },
+    {
+      "label": "100GBASE-FR1 per lane",
+      "power_consumption_w": 2.5,
+      "host_interface_name": "8x100GAUI-1 C2M",
+      "media_interface_name": "100GBASE-FR1",
+      "standards_code": "100GBASE-FR1",
+      "bit_rate_gbps": 100.0,
+      "rx_sensitivity_dbm": -2.5
+    }
+  ]
+}

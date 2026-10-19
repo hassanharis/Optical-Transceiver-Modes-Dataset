@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"OIF 400ZR Amplified (Application Code 0x01)\",\n      \"wavelength_band\": \"ITU C-Band\",\n      \"channel_spacing_ghz\": 100.0,\n      \"frame\": \"400GAUI-8\",\n      \"standards_code\": \"Application Code 0x01\",\n      \"bit_rate_gbps\": 400.0,\n      \"modulation_format\": \"QAM_16\",\n      \"rx_sensitivity_dbm\": -12.0,\n      \"number_of_lanes\": 8\n    },\n    {\n      \"label\": \"OIF 400ZR Unamplified (Application Code 0x02)\",\n      \"wavelength_band\": \"ITU C-Band\",\n      \"channel_spacing_ghz\": 100.0,\n      \"frame\": \"400GAUI-8\",\n      \"standards_code\": \"Application Code 0x02\",\n      \"bit_rate_gbps\": 400.0,\n      \"modulation_format\": \"QAM_16\",\n      \"rx_sensitivity_dbm\": -20.0,\n      \"number_of_lanes\": 8\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

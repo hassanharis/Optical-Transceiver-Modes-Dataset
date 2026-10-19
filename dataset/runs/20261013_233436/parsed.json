@@ -1,0 +1,43 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\l9-sd312m-02ttc.pdf",
+  "page_count": 6,
+  "table_count": 7,
+  "markdown_chars": 6118,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 16
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 7
+    }
+  ]
+}

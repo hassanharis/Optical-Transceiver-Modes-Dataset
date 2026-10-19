@@ -1,0 +1,104 @@
+{
+  "modes": [
+    {
+      "label": "TRS70XX 10GE back-to-back",
+      "model": "TRS70XX",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GE",
+      "bit_rate_gbps": 10.709,
+      "rx_sensitivity_dbm": -24.0
+    },
+    {
+      "label": "TRS70XX CD -300 to +1400 ps/nm",
+      "model": "TRS70XX",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GE",
+      "bit_rate_gbps": 10.709,
+      "rx_sensitivity_dbm": -21.0,
+      "cd_tolerance_ps_nm": -300.0
+    },
+    {
+      "label": "TRS70XX CD -300 to +1400 ps/nm (upper bound)",
+      "model": "TRS70XX",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GE",
+      "bit_rate_gbps": 10.709,
+      "rx_sensitivity_dbm": -21.0,
+      "cd_tolerance_ps_nm": 1400.0
+    },
+    {
+      "label": "TRS70XX SONET/SDH",
+      "model": "TRS70XX",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "C-band",
+      "standards_code": "SONET/SDH",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "TRS70XX max NRZ data rate",
+      "model": "TRS70XX",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "C-band",
+      "standards_code": "10GE",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "TRS70xxFxCPA000-x 10GE back-to-back",
+      "model": "TRS70xxFxCPA000-x",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GE",
+      "bit_rate_gbps": 10.709,
+      "rx_sensitivity_dbm": -24.0
+    },
+    {
+      "label": "TRS70xxFxCPA000-x CD -300 to +1400 ps/nm",
+      "model": "TRS70xxFxCPA000-x",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GE",
+      "bit_rate_gbps": 10.709,
+      "rx_sensitivity_dbm": -21.0,
+      "cd_tolerance_ps_nm": -300.0
+    },
+    {
+      "label": "TRS70xxFxCPA000-x CD -300 to +1400 ps/nm (upper bound)",
+      "model": "TRS70xxFxCPA000-x",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GE",
+      "bit_rate_gbps": 10.709,
+      "rx_sensitivity_dbm": -21.0,
+      "cd_tolerance_ps_nm": 1400.0
+    },
+    {
+      "label": "TRS70xxFxCPA000-x SONET/SDH",
+      "model": "TRS70xxFxCPA000-x",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "C-band",
+      "standards_code": "SONET/SDH",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "TRS70xxFxCPA000-x max NRZ data rate",
+      "model": "TRS70xxFxCPA000-x",
+      "wavelength_min_nm": 1525.0,
+      "wavelength_max_nm": 1575.0,
+      "wavelength_band": "C-band",
+      "standards_code": "10GE",
+      "bit_rate_gbps": 11.3
+    }
+  ]
+}

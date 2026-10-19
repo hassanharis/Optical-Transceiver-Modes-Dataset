@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T19:52:41.263665+00:00",
+  "source_file": "C:\\Haris\\datasheets\\AFBR-735SMZ-DS100.pdf",
+  "page_count": 22,
+  "table_count": 28,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 29.446,
+    "extract_atoms": 35.309,
+    "store_run": 0.009,
+    "synthesize_modes": 33.967,
+    "store_modes": 0.004,
+    "total": 98.735
+  }
+}

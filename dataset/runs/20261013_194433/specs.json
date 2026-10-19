@@ -1,0 +1,130 @@
+{
+  "vendor": "Broadcom",
+  "model": [
+    "AFBR-57L1APZ"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3z Gigabit Ethernet",
+    "SFF-8472",
+    "SFP MSA",
+    "SFF-8074i"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1270.0
+  ],
+  "wavelength_max_nm": [
+    1355.0,
+    1380.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [
+    "pluggable",
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF_OM1",
+    "MMF_OM4",
+    "MMF"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    0.208,
+    0.382,
+    0.28,
+    0.402
+  ],
+  "host_interface_name": [
+    "LVPECL",
+    "1.25-Gigabit Ethernet"
+  ],
+  "media_interface_name": [
+    "Longwave Laser Intermediate Distance",
+    "2-km OM1",
+    "2-km OM4"
+  ],
+  "standards_code": [
+    "IEEE 802.3z",
+    "SFF-8472",
+    "SFF-8074i",
+    "8b/10b"
+  ],
+  "baud_rate_gbaud": [
+    1.25
+  ],
+  "bit_rate_gbps": [
+    1.25
+  ],
+  "modulation_format": [
+    "LINECODE_8B10B"
+  ],
+  "reach_km": [
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -9.0
+  ],
+  "tx_power_max_dbm": [
+    -1.0
+  ],
+  "rx_sensitivity_dbm": [
+    -19.0
+  ],
+  "rx_overload_dbm": [
+    -1.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -19.0
+  ],
+  "los_deassert_dbm": [
+    -35.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "total_jitter_ps": [
+    227.0
+  ],
+  "penalties": [],
+  "notes": "Optical input power (receiver) min –19 dBm applies with BER better than or equal to 1×10^-12 over OM1 and OM4 2-km fiber links. Output optical power is average; peak can be estimated by adding 3 dB. Transmitter central wavelength max deviation –40°C to 85°C. Case temperature TC –40°C to +85°C at module topside. Signaling rate labeled 1.25 Gbaud for 1.25-Gigabit Ethernet. EEPROM lists 1250 Mb/s and 100 MB/s identifiers. Module requires 3.3 V DC supply (3.1–3.5 V operating). Dimensions under construction per datasheet.",
+  "provenance_datasheet_sections": [
+    "Description",
+    "Features",
+    "Transmitter",
+    "Receiver",
+    "Module Package",
+    "Recommended Operating Conditions",
+    "Transmitter Electrical Characteristics",
+    "Receiver Electrical Characteristics",
+    "Transmitter Optical Characteristics",
+    "Receiver Optical Characteristics",
+    "Module Diagnostics",
+    "A0 Memory Map"
+  ],
+  "suggestions": "Clarify whether rx_sensitivity_dbm should use optical input power minimum (–19 dBm) vs signal-detect assert (–19.0 dBm max); values align here. Combined module power in W is not given—only per-section PDISS in mW."
+}

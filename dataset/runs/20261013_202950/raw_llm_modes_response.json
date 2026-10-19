@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"CFP host 10\u00d710G (100G Ethernet)\",\n      \"form_factor\": \"CFP\",\n      \"frame\": \"10x 10G\",\n      \"standards_code\": \"100G Ethernet\",\n      \"number_of_lanes\": 10\n    },\n    {\n      \"label\": \"CFP host 10\u00d710G (OTU4)\",\n      \"form_factor\": \"CFP\",\n      \"frame\": \"10x 10G\",\n      \"standards_code\": \"OTU4\",\n      \"number_of_lanes\": 10\n    },\n    {\n      \"label\": \"QSFP28 media 4\u00d725G (OTU4)\",\n      \"form_factor\": \"QSFP28\",\n      \"frame\": \"4x 25G\",\n      \"standards_code\": \"OTU4\",\n      \"number_of_lanes\": 4\n    },\n    {\n      \"label\": \"QSFP28 media 4\u00d725G (100GbE ER4)\",\n      \"form_factor\": \"QSFP28\",\n      \"frame\": \"4x 25G\",\n      \"standards_code\": \"100GbE ER4\",\n      \"number_of_lanes\": 4\n    },\n    {\n      \"label\": \"QSFP28 media 4\u00d725G (100GbE LR4)\",\n      \"form_factor\": \"QSFP28\",\n      \"frame\": \"4x 25G\",\n      \"standards_code\": \"100GbE LR4\",\n      \"number_of_lanes\": 4\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

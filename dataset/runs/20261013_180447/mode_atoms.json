@@ -1,0 +1,91 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1260.0,
+      1480.0
+    ],
+    "wavelength_max_nm": [
+      1580.0,
+      1600.0
+    ],
+    "standards_code": [
+      "FE",
+      "STM1",
+      "OC3"
+    ],
+    "bit_rate_gbps": [
+      100.0,
+      155.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-155M-L160D"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_center_nm": [
+      1550.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      160.0
+    ],
+    "tx_power_min_dbm": [
+      2.0
+    ],
+    "tx_power_max_dbm": [
+      7.0
+    ],
+    "rx_sensitivity_dbm": [
+      -35.0
+    ],
+    "rx_overload_dbm": [
+      -10.0
+    ],
+    "cd_tolerance_ps_nm": [
+      3200.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -36.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Bit rate support stated as 100 to 155Mbps. Transmitter output power min printed as +2.0dB (footnote 1: average power); max +7.0dBm. Receiver minimum input power -35dBm at 155Mbps, BER 1x10-12, PRBS 231-1 (footnote 2). Power budget 17–37dB. Dispersion penalty max 1dB stated without a paired penalized parameter value and operating condition. Power consumption < 1.0W. Storage temperature -40°C to +85°C. Technology labeled Grey SFP. Transmission media SM (2x LC).",
+    "provenance_datasheet_sections": [
+      "SO-SFP-155M-L160D",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "bit_rate_gbps holds Mbps values (100, 155) as printed; consider a dedicated Mbps field or documented conversion. Clarify whether transmitter min power is +2.0dBm. Dispersion penalty Max 1dB could map to penalties if linked to CD tolerance and BER conditions."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:16:53.421993+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftlx3871dccxx-transceiver-ds.pdf",
+  "page_count": 14,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 14.647,
+    "extract_atoms": 25.643,
+    "store_run": 0.007,
+    "synthesize_modes": 90.936,
+    "store_modes": 0.003,
+    "total": 131.236
+  }
+}

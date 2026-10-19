@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"2x400G VR4\",\n      \"wavelength_min_nm\": 844.0,\n      \"wavelength_max_nm\": 870.0,\n      \"host_interface_name\": \"8x100G PAM4\",\n      \"media_interface_name\": \"2x400GBASE-VR4\",\n      \"frame\": \"8x100G\",\n      \"standards_code\": \"IEEE 802.3db\",\n      \"bit_rate_gbps\": 800.0,\n      \"rx_sensitivity_dbm\": -4.4\n    },\n    {\n      \"label\": \"8x100GbE breakout\",\n      \"wavelength_min_nm\": 842.0,\n      \"wavelength_max_nm\": 948.0,\n      \"host_interface_name\": \"IEEE 802.3ck\",\n      \"media_interface_name\": \"2x400G-VR4\",\n      \"frame\": \"8 x 100GbE\",\n      \"standards_code\": \"IEEE 802.3ck\",\n      \"bit_rate_gbps\": 106.25,\n      \"rx_sensitivity_dbm\": -1.8\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"25GE CDR engaged\",\n      \"form_factor\": \"SFP28\",\n      \"wavelength_min_nm\": 1295.0,\n      \"standards_code\": \"25GE\",\n      \"bit_rate_gbps\": 25.78\n    },\n    {\n      \"label\": \"CPRI option 10 CDR engaged\",\n      \"form_factor\": \"SFP28\",\n      \"wavelength_min_nm\": 1295.0,\n      \"standards_code\": \"CPRI opt 10\",\n      \"bit_rate_gbps\": 24.33024\n    },\n    {\n      \"label\": \"24.33 Gbps CDR engaged\",\n      \"form_factor\": \"SFP28\",\n      \"wavelength_min_nm\": 1295.0,\n      \"standards_code\": \"25GE\",\n      \"bit_rate_gbps\": 24.33\n    },\n    {\n      \"label\": \"10GE WAN CDR bypassed\",\n      \"form_factor\": \"SFP+\",\n      \"wavelength_min_nm\": 1260.0,\n      \"standards_code\": \"10GE WAN/LAN\",\n      \"bit_rate_gbps\": 9.953\n    },\n    {\n      \"label\": \"10GE LAN CDR bypassed\",\n      \"form_factor\": \"SFP+\",\n      \"wavelength_min_nm\": 1260.0,\n      \"standards_code\": \"10GE WAN/LAN\",\n      \"bit_rate_gbps\": 10.312\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

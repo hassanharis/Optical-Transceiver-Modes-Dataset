@@ -1,0 +1,84 @@
+{
+  "modes": [
+    {
+      "label": "C49 1491nm 100M Ethernet",
+      "model": "SO-SFP-155M-O-C49-E",
+      "wavelength_min_nm": 1484.5,
+      "wavelength_max_nm": 1497.5,
+      "wavelength_center_nm": 1491.0,
+      "host_interface_name": "100M Ethernet",
+      "standards_code": "STM1",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "C49 1491nm STM1/OC3",
+      "model": "SO-SFP-155M-O-C49-E",
+      "wavelength_min_nm": 1484.5,
+      "wavelength_max_nm": 1497.5,
+      "wavelength_center_nm": 1491.0,
+      "host_interface_name": "STM1/OC3",
+      "standards_code": "STM1",
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "C51 1511nm 100M Ethernet",
+      "model": "SO-SFP-155M-O-C51-E",
+      "wavelength_min_nm": 1504.5,
+      "wavelength_max_nm": 1517.5,
+      "wavelength_center_nm": 1511.0,
+      "host_interface_name": "100M Ethernet",
+      "standards_code": "STM1",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "C51 1511nm STM1/OC3",
+      "model": "SO-SFP-155M-O-C51-E",
+      "wavelength_min_nm": 1504.5,
+      "wavelength_max_nm": 1517.5,
+      "wavelength_center_nm": 1511.0,
+      "host_interface_name": "STM1/OC3",
+      "standards_code": "STM1",
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "C61 1611nm 100M Ethernet",
+      "model": "SO-SFP-155M-O-C61-E",
+      "wavelength_min_nm": 1604.5,
+      "wavelength_max_nm": 1617.5,
+      "wavelength_center_nm": 1611.0,
+      "host_interface_name": "100M Ethernet",
+      "standards_code": "STM1",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "C61 1611nm STM1/OC3",
+      "model": "SO-SFP-155M-O-C61-E",
+      "wavelength_min_nm": 1604.5,
+      "wavelength_max_nm": 1617.5,
+      "wavelength_center_nm": 1611.0,
+      "host_interface_name": "STM1/OC3",
+      "standards_code": "STM1",
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "C62 1625nm 100M Ethernet",
+      "model": "SO-SFP-155M-O-C62-E",
+      "wavelength_min_nm": 1618.5,
+      "wavelength_max_nm": 1631.5,
+      "wavelength_center_nm": 1625.0,
+      "host_interface_name": "100M Ethernet",
+      "standards_code": "STM1",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "C62 1625nm STM1/OC3",
+      "model": "SO-SFP-155M-O-C62-E",
+      "wavelength_min_nm": 1618.5,
+      "wavelength_max_nm": 1631.5,
+      "wavelength_center_nm": 1625.0,
+      "host_interface_name": "STM1/OC3",
+      "standards_code": "STM1",
+      "bit_rate_gbps": 155.0
+    }
+  ]
+}

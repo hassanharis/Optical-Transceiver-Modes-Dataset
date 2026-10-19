@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"10Gbase-T line (CAT6A, host 10GBase-R)\",\n      \"media_interface_name\": \"10Gbase-T\",\n      \"standards_code\": \"10GBASE-T\",\n      \"bit_rate_gbps\": 10.0\n    },\n    {\n      \"label\": \"5Gbase-T line (CAT5E, host 10GBase-R)\",\n      \"media_interface_name\": \"5Gbase-T\",\n      \"standards_code\": \"5GBASE-T\",\n      \"bit_rate_gbps\": 10.0\n    },\n    {\n      \"label\": \"2.5Gbase-T line (CAT5E, host 10GBase-R)\",\n      \"media_interface_name\": \"2.5Gbase-T\",\n      \"standards_code\": \"2.5GBASE-T\",\n      \"bit_rate_gbps\": 10.0\n    },\n    {\n      \"label\": \"1000base-T line (CAT5E, host 10GBase-R)\",\n      \"media_interface_name\": \"1000base-T\",\n      \"standards_code\": \"1000BASE-T\",\n      \"bit_rate_gbps\": 1.0\n    },\n    {\n      \"label\": \"100base-Tx line (CAT5E, host 10GBase-R)\",\n      \"media_interface_name\": \"100base-Tx\",\n      \"standards_code\": \"100base-Tx\",\n      \"bit_rate_gbps\": 1.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

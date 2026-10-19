@@ -1,0 +1,69 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-DAC14100-xMN",
+    "LQ-DAC14100-0M5N",
+    "LQ-DAC14100-1MN",
+    "LQ-DAC14100-2MN",
+    "LQ-DAC14100-3MN",
+    "LQ-DAC14100-5MN"
+  ],
+  "form_factor": [
+    "QSFP28",
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3bj",
+    "100GEBASE-CR4",
+    "P802.3by",
+    "SFP28 MSA",
+    "QSFP28 MSA",
+    "SFF-8402",
+    "SFF-8432",
+    "SFF-8665",
+    "IEEE 802.3ba",
+    "IBTA"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    0.02
+  ],
+  "standards_code": [
+    "100GEBASE-CR4",
+    "P802.3by",
+    "100GBASE-CR4",
+    "802.3ba",
+    "InfiniBand QDR"
+  ],
+  "bit_rate_gbps": [
+    100.0,
+    25.78,
+    25.0
+  ],
+  "channel_insertion_loss_db": [
+    22.48
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "penalties": [],
+  "notes": "Passive QSFP28 to 4x SFP28 direct attach copper cable (DAC); no optical emitter or photodetector. Power supply +3.3V stated in Features. Copper link length up to 5m; mechanical lengths 1, 2, 3, 5 m with AWG 30 (1–3 m) and AWG 24 (5 m). Insertion loss 22.48 dB at 12.8906 GHz. Channel Operating Margin (COM) min 3 dB. Datasheet header references LQ-DAC11100-xMN on some pages while product title is LQ-DAC14100-xMN.",
+  "provenance_datasheet_sections": [
+    "LQ-DAC14100-xMN",
+    "Features",
+    "Applications",
+    "General Description",
+    "Recommended Operating Conditions",
+    "Table.3 Product Characteristics",
+    "Mechanical Specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Add schema fields for passive copper DAC: cable length variants (m), AWG, differential impedance (Ω), channel operating margin (dB), and electrical insertion/return loss vs frequency; reach_km could accept meters or a paired value+unit."
+}

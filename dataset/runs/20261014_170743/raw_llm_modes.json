@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "XPBL-495596-80D 1490nm TX Commercial",
+      "model": "XPBL-495596-80D",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1500.0,
+      "wavelength_center_nm": 1490.0,
+      "power_consumption_w": 1.5,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_min_dbm": 0.0,
+      "tx_power_max_dbm": 4.0
+    },
+    {
+      "label": "XPBL-554996-80D 1550nm TX Commercial",
+      "model": "XPBL-554996-80D",
+      "wavelength_min_nm": 1540.0,
+      "wavelength_max_nm": 1560.0,
+      "wavelength_center_nm": 1550.0,
+      "power_consumption_w": 1.5,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_min_dbm": -1.0,
+      "tx_power_max_dbm": 3.0
+    },
+    {
+      "label": "XPBL-495596-80DA 1490nm TX Industrial",
+      "model": "XPBL-495596-80DA",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1500.0,
+      "wavelength_center_nm": 1490.0,
+      "power_consumption_w": 1.8,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_min_dbm": 0.0,
+      "tx_power_max_dbm": 4.0
+    },
+    {
+      "label": "XPBL-554996-80DA 1550nm TX Industrial",
+      "model": "XPBL-554996-80DA",
+      "wavelength_min_nm": 1540.0,
+      "wavelength_max_nm": 1560.0,
+      "wavelength_center_nm": 1550.0,
+      "power_consumption_w": 1.8,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 10.3125,
+      "tx_power_min_dbm": -1.0,
+      "tx_power_max_dbm": 3.0
+    }
+  ]
+}

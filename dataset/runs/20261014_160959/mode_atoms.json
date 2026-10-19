@@ -1,0 +1,98 @@
+{
+  "multi_valued": {
+    "form_factor": [
+      "CFP-DCO",
+      "CFP"
+    ],
+    "channel_spacing_ghz": [
+      6.25,
+      12.5,
+      50.0
+    ],
+    "standards_code": [
+      "100GbE",
+      "100G Ethernet",
+      "OTU4"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-CFP-LPC-DWDM"
+    ],
+    "standards_claimed": [
+      "CAUI-10 100G Ethernet signaling",
+      "CFP MSA Hardware Specification 1.0",
+      "CFP MSA Management Interface Specification 2.4"
+    ],
+    "wavelength_band": [
+      "DWDM"
+    ],
+    "frequency_min_thz": [
+      191.25
+    ],
+    "frequency_max_thz": [
+      196.1
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -5.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      20.0
+    ],
+    "host_interface_name": [
+      "CAUI-10"
+    ],
+    "bit_rate_gbps": [
+      103.125
+    ],
+    "modulation_format": [
+      "QPSK-DP"
+    ],
+    "reach_km": [
+      2400.0
+    ],
+    "tx_power_min_dbm": [
+      -5.0
+    ],
+    "tx_power_max_dbm": [
+      -1.0
+    ],
+    "tx_in_band_osnr_db": [
+      40.0
+    ],
+    "rx_sensitivity_dbm": [
+      -30.0
+    ],
+    "rx_osnr_db": [
+      14.0
+    ],
+    "rx_overload_dbm": [
+      0.0
+    ],
+    "cd_tolerance_ps_nm": [
+      40000.0
+    ],
+    "fec_type": [
+      "SDFEC"
+    ],
+    "post_fec_ber_target": [
+      1e-15
+    ],
+    "penalties": [],
+    "notes": "Power budget 0–25dB. Optimum receiver input power range 0 to -18dBm (footnote 2). Minimum input power -30dBm applies with post-FEC BER < 10^-15 when OSNR > 35dB and SD-FEC enabled (footnote 3). CD tolerance 40 000 ps/nm with less than 0.3dB OSNR penalty at SD-FEC (footnote 4). Transmit wavelength 191.25 - 196.10 THz @ 12.5/50GHz steps. Tuning speed < 60s from any to any wavelength (footnote 1). Power consumption stated as < 20W. Technology line: DWDM 12.5/50GHz CFP. Storage temperature -40°C to +85°C (not operating). OSNR values given per 0.1nm.",
+    "provenance_datasheet_sections": [
+      "SO-CFP-LPC-DWDM",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether 6.25 GHz spacing is distinct from 12.5 GHz in channel_spacing_ghz when both appear in different sections. Penalty footnote 4 lacks a tabular penalized OSNR value for structured penalty objects. Consider mapping power budget 25dB to schema if added."
+  }
+}

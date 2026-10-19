@@ -1,0 +1,97 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TS5001-M85C-SO"
+  ],
+  "form_factor": [
+    "SFP56",
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "IEEE 50GBASE-SR",
+    "50G Ethernet",
+    "MSA",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "channel_total": [
+    1
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "50GBASE-SR",
+    "50GbE"
+  ],
+  "standards_code": [
+    "50GBASE-SR"
+  ],
+  "bit_rate_gbps": [
+    53.125,
+    50.0
+  ],
+  "reach_km": [
+    0.07,
+    0.1
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -6.5,
+    -8.4
+  ],
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "los_assert_dbm": [
+    -17.0
+  ],
+  "los_deassert_dbm": [
+    -11.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Power budget 0–2.0 dB (optical, w/o path penalties). Power consumption stated as < 1.5 W. Typical reach: 70 m @ OM3, 100 m @ OM4. Transmitter OMA output power Min -4.5 dBm, Max +3.0 dBm; receiver sensitivity OMA -6.5 dBm at 53.125 Gbps (50GE) and BER 2.4E-4. Footnote 1): average receive power (min) is informative; below min cannot be compliant. Footnote 2): at 53.125 Gbps (50GE) and BER 2.4E-4. FEC required to be implemented by the host. Storage temperature -40°C to +85°C. Transmit max output printed as +4.0Bm (dBm implied).",
+  "provenance_datasheet_sections": [
+    "SFP56 50G-SR",
+    "TS5001-M85C-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider reach_m alongside reach_km when datasheets quote meters only. OMA min/max TX and RX OMA sensitivity are standard for 50GBASE-SR but not in schema as separate fields."
+}

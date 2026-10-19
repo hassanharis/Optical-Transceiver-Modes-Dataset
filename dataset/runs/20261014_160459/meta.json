@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:04:59.751992+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp28-lr.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.992,
+    "extract_atoms": 23.948,
+    "store_run": 0.008,
+    "synthesize_modes": 33.79,
+    "store_modes": 0.004,
+    "total": 62.741
+  }
+}

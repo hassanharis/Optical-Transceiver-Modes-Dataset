@@ -1,0 +1,76 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LP-SFP-MSRC"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "IEEE 802.3",
+    "IEEE 802.3-2002",
+    "IEEE 802.3ab",
+    "Gigabit Ethernet",
+    "1000BASE-T"
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "RJ-45"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.05,
+    1.2
+  ],
+  "host_interface_name": [
+    "SERDES",
+    "SGMII"
+  ],
+  "standards_code": [
+    "1000BASE-T",
+    "IEEE 802.3",
+    "1000 Mb/s"
+  ],
+  "baud_rate_gbaud": [
+    0.25
+  ],
+  "bit_rate_gbps": [
+    0.01,
+    1.0,
+    1.25
+  ],
+  "modulation_format": [
+    "PAM"
+  ],
+  "reach_km": [
+    0.1
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "penalties": [],
+  "notes": "Copper (1000BASE-T) SFP transceiver over Category 5 UTP, not an optical module. LP-SFP-MSRC is 1000 Mbps only with SERDES host interface, 0~70°C commercial case (ordering row). Features cite 1.05 W typical dissipation; Table 1 notes 1.2 W max power over full voltage and temperature range and states power consumption and surge current are higher than SFP MSA limits. Electrical power section states LP-SFP-xxxx input voltage +5 V +/- 5% and that 3.3 V max is not allowed for continuous operation, while Table 1 is titled +3.3 V electrical power interface (Vcc 3.13–3.47 V). Symbol rate 250 Mbps on each of four cable pairs with 5-level PAM per IEEE 802.3. Line frequency 125 MHz (Table 3). Reach 100 m Category 5 UTP at BER < 10^-12 (Table 5); ordering variants also state Transmission Distance 0.1 Km. Industrial temperature -40 to +85°C applies to other orderable SKUs (e.g. MSRI), not LP-SFP-MSRC.",
+  "provenance_datasheet_sections": [
+    "LP-SFP-MSRC",
+    "Copper SFP Transceiver",
+    "Features",
+    "Applications",
+    "Description",
+    "Electrical Power Interface",
+    "Table 1. +3.3V Volt electrical power interface",
+    "High-Speed Electrical Interface",
+    "Table 3. High-speed electrical interface, transmission line-SFP",
+    "Table 4. High-speed electrical interface, host-SFP",
+    "General Specifications",
+    "Table 5. General specifications",
+    "Environmental Specifications",
+    "Table 6. Environmental specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Consider schema fields for copper PHY modules: cable media (e.g. Category 5 UTP), max cable length in m, host electrical interfaces (SERDES, SGMII), and supply current (mA) separate from optical parameters that remain null for copper SFPs."
+}

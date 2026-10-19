@@ -1,0 +1,98 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1000BASE-BX60D-34",
+    "SO-SFP-1000BASE-BX60D-43",
+    "SO-SFP-1000Base-BX60D-34",
+    "SO-SFP-1000Base-BX60D-43",
+    "SO-SFP-1000Base-BX60D-34-I",
+    "SO-SFP-1000Base-BX60D-43-I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260.0,
+    1270.0,
+    1440.0,
+    1450.0
+  ],
+  "wavelength_max_nm": [
+    1350.0,
+    1360.0,
+    1530.0,
+    1540.0
+  ],
+  "wavelength_center_nm": [
+    1310.0,
+    1490.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "frame": [],
+  "standards_code": [
+    "1000BASE-BX60D"
+  ],
+  "bit_rate_gbps": [
+    0.1,
+    1.25
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    60.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -27.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "fec_type": [],
+  "los_assert_dbm": [
+    -42.0
+  ],
+  "los_deassert_dbm": [
+    -28.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Document covers a BiDi transceiver pair: SO-SFP-1000Base-BX60D-34 (TX/RX 1310/1490 nm) and SO-SFP-1000Base-BX60D-43 (TX/RX 1490/1310 nm). Nominal wavelength Tx/Rx: 1310nm/1490nm and 1490nm/1310nm. Operating temperature options: 0°C to +70°C (C-temp) or -40°C to +85°C (I-temp, ordering -I). Storage temperature -40°C to +85°C. Power budget 8 – 27dB. Protocol support includes FE, GbE, and 1G FC. Transmitter output power min/max and receiver min input power, overload are average power (footnote 3). Receiver minimum input power -27.0 dBm and overload -3.0 dBm at 1.25Gbps, BER ≤ 1x10-12, PRBS 27-1, back-to-back (footnote 4). Wavelength ranges footnote 1) SO-SFP-1000Base-BX60D-34; footnote 2) SO-SFP-1000Base-BX60D-43. Power consumption stated as < 1.0W.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1000BASE-BX60D-34 & -43",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": ""
+}

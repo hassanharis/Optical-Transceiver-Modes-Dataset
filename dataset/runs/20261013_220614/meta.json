@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:06:14.773656+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tqd019-s31c-so-qsfpdd-400g-lr4-sn-c3-r6.1.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.308,
+    "extract_atoms": 22.064,
+    "store_run": 0.01,
+    "synthesize_modes": 25.923,
+    "store_modes": 0.003,
+    "total": 52.307
+  }
+}

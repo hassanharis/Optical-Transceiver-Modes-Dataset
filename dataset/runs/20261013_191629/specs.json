@@ -1,0 +1,121 @@
+{
+  "model": [
+    "BIDI-SFP+-ZR+-55",
+    "BIDI-SFP+-ZR-55",
+    "BIDI-SFP+-ZR-49"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "FC_PI_4 REV 7.0",
+    "SFP+ MSA",
+    "INF-8074i"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "APD"
+  ],
+  "wavelength_min_nm": [
+    1470.0,
+    1530.0
+  ],
+  "wavelength_max_nm": [
+    1510.0,
+    1570.0
+  ],
+  "wavelength_center_nm": [
+    1490.0,
+    1550.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "SFP+ MSA"
+  ],
+  "standards_code": [
+    "10GBASE-BX",
+    "1000 Base-LX",
+    "8XFC",
+    "4XFC",
+    "2XFC",
+    "1xFC"
+  ],
+  "bit_rate_gbps": [
+    10.7,
+    10.3125,
+    9.953,
+    8.5,
+    4.25,
+    2.125,
+    1.0625
+  ],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -24.0
+  ],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "post_fec_ber_target": [
+    0.01
+  ],
+  "extinction_ratio_db": [
+    7.5
+  ],
+  "los_assert_dbm": [
+    -38.0
+  ],
+  "los_deassert_dbm": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    7.5
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    8.0
+  ],
+  "penalties": [],
+  "notes": "Power dissipation stated as <1.5W. Recommended operating data rate 10.3125 Gbps; applications also list 10.7 Gbps, 9.953 Gb/s, and FC rates. Transmission distance 80 km per Note (1) measured with SMF. Transmitter average launched power (laser off) max -30 dBm; OMA min -3 dBm (Note 1 optical power launched into SMF). Extinction ratio and eye mask per Note (2) RPBS 2^31-1 @10.3125Gbs. Receiver sensitivity Note (1) RPBS 2^31-1 @10.3125Gbs BER<=10^-2. Ambient operating temperature without air flow. Coupled fiber ITU-T G.652. Ordering lists 1550nm and 1490nm TX variants (BIDI-SFP+-ZR-55 vs -49). VccR/VccT 3.3V ±5%; max supply current 300 mA cited in pin description vs ICC 300–450 mA in tables.",
+  "provenance_datasheet_sections": [
+    "SFP+ 10GBASE-BX 1550nm-TX/1490nm-RX 80km Transceiver",
+    "P/N: BIDI-SFP+-ZR+-55",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "1. Absolute Maximum Ratings",
+    "2. Recommended Operating Conditions",
+    "3. Specification of Transmitter",
+    "4. Specification of Receiver",
+    "5. Electrical Interface Characteristics",
+    "8. Ordering information"
+  ],
+  "suggestions": "Vendor name is not labeled (only qsfptek.com). Host/media MSA interface IDs and FEC are absent. Consider mapping 'Receiver Sensitivityin average' and dual-wavelength bidi TX/RX ranges explicitly in schema notes."
+}

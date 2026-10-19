@@ -1,0 +1,106 @@
+{
+  "vendor": "Nokia",
+  "model": [
+    "CHM1R"
+  ],
+  "form_factor": [
+    "CFP2-DCO",
+    "QSFP-DD",
+    "QSFP56",
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "OIF 400G ZR",
+    "OpenZR+",
+    "OpenROADM",
+    "XR",
+    "OpenConfig"
+  ],
+  "wavelength_band": [
+    "extended C-band",
+    "C-band"
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "CS"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 45.0,
+  "power_consumption_w": [
+    148.0
+  ],
+  "host_interface_name": [
+    "QSFP-DD",
+    "QSFP28",
+    "QSFP56",
+    "CFP2-DCO"
+  ],
+  "media_interface_name": [
+    "CFP2-DCO"
+  ],
+  "standards_code": [
+    "400G ZR+",
+    "400G OpenZR+",
+    "400G OpenROADM",
+    "400G XR",
+    "OpenZR+",
+    "OpenROADM",
+    "XR"
+  ],
+  "baud_rate_gbaud": [
+    28.0,
+    63.0
+  ],
+  "bit_rate_gbps": [
+    100.0,
+    200.0,
+    300.0,
+    400.0
+  ],
+  "modulation_format": [
+    "QPSK-DP",
+    "QAM_8-DP",
+    "QAM_16-DP",
+    "QAM_8",
+    "QAM_16",
+    "PM-QPSK"
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "pmd_tolerance_ps": [
+    50.0
+  ],
+  "fec_type": [
+    "CFEC",
+    "OFEC",
+    "XR FEC"
+  ],
+  "fec_overhead_percent": [
+    15.0,
+    7.0
+  ],
+  "number_of_lanes": [
+    2,
+    4
+  ],
+  "penalties": [],
+  "notes": "Document describes CHM1R sled (muxponder), not a single pluggable optic. Line optics part numbers ZXS-C2DWDMFA-40, ZXS-C2DWDMF2-40, XRCFCD400PAE5INZ are supported CFP2-DCO pluggables. Chromatic dispersion tolerance stated as >300 ns/nm at 100 Gb/s PM-QPSK (not ps/nm). SOP rotation tolerance >3 Mrad/s at 100 Gb/s PM-QPSK. Transport/storage -40 C to 70 C; humidity 5% to 90% non-condensing. 0 dBm output power refers to CFP2-DCO line interfaces. Baud 28-63 Gbaud tuneable. Two line CFP2-DCO interfaces; four QSFP-DD cages (2 x QSFP28/56/DD + 2 x QSFP28/56 per Client Interfaces bullet layout). 50-ms line protection. System-level 64 x 400 Gb/s in extended C-band not assigned as module channel_total.",
+  "provenance_datasheet_sections": [
+    "Technical Specifications",
+    "**Application**",
+    "**Physical Interface**",
+    "**Line Interfaces**",
+    "**Client Interfaces**",
+    "**Other Features**",
+    "**Environmental**",
+    "1830 GX G30 Series CHM1R",
+    "Pay as You Grow and Power as You Grow"
+  ],
+  "suggestions": "Add fields for transport/storage temperature, humidity, SOP rotation tolerance (Mrad/s), line protection time (ms), and chromatic dispersion with explicit unit (ns/nm vs ps/nm). Distinguish sled/module specs from supported pluggable SKU lists."
+}

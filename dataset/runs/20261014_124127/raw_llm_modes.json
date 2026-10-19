@@ -1,0 +1,112 @@
+{
+  "modes": [
+    {
+      "label": "BX20D-35 1310nm TX GbE",
+      "model": "SO-SFP-1000BASE-BX20D-35",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-35 1310nm TX 1G FC",
+      "model": "SO-SFP-1000BASE-BX20D-35",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "1G FC",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "BX20D-53 1550nm TX GbE",
+      "model": "SO-SFP-1000BASE-BX20D-53",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-53 1550nm TX 1G FC",
+      "model": "SO-SFP-1000BASE-BX20D-53",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "1G FC",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "BX20D-35 1310nm TX GbE",
+      "model": "SO-SFP-1000Base-BX20D-35",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-35 1310nm TX 1G FC",
+      "model": "SO-SFP-1000Base-BX20D-35",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "1G FC",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "BX20D-53 1550nm TX GbE",
+      "model": "SO-SFP-1000Base-BX20D-53",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-53 1550nm TX 1G FC",
+      "model": "SO-SFP-1000Base-BX20D-53",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "1G FC",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "BX20D-35-I 1310nm TX GbE I-temp",
+      "model": "SO-SFP-1000Base-BX20D-35-I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-35-I 1310nm TX 1G FC I-temp",
+      "model": "SO-SFP-1000Base-BX20D-35-I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "1G FC",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "BX20D-53-I 1550nm TX GbE I-temp",
+      "model": "SO-SFP-1000Base-BX20D-53-I",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-53-I 1550nm TX 1G FC I-temp",
+      "model": "SO-SFP-1000Base-BX20D-53-I",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "1G FC",
+      "bit_rate_gbps": 1.063
+    }
+  ]
+}

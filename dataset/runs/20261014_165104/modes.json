@@ -1,0 +1,41 @@
+{
+  "modes": [
+    {
+      "label": "200GBASE-SR4 (200GBASE-R host, 200GAUI-4)",
+      "host_interface_name": "200GAUI-4 (4x 50G)",
+      "host_interface_id_hex": "0x0F",
+      "host_interface_id": 15,
+      "media_interface_name": "200GBASE-SR4",
+      "media_interface_id_hex": "0x0E",
+      "media_interface_id": 14,
+      "frame": "200GAUI-4 (4x 50G)",
+      "standards_code": "200GBASE-SR4",
+      "bit_rate_gbps": 200.0,
+      "fec_type": "RS_GENERIC"
+    },
+    {
+      "label": "50GBASE-SR (4×50GBASE-R host, 4×50GAUI-1)",
+      "host_interface_name": "4x 50GAUI-1 (4x 50G)",
+      "host_interface_id_hex": "0x0A",
+      "host_interface_id": 10,
+      "media_interface_name": "50GBASE-SR",
+      "media_interface_id_hex": "0x07",
+      "media_interface_id": 7,
+      "frame": "4x 50GAUI-1 (4x 50G)",
+      "standards_code": "4 x 50GBASE-R",
+      "bit_rate_gbps": 200.0,
+      "fec_type": "RS_GENERIC"
+    },
+    {
+      "label": "InfiniBand HDR (IB HRR host)",
+      "host_interface_name": "IB HRR",
+      "host_interface_id_hex": "0x31",
+      "host_interface_id": 49,
+      "media_interface_name": "200GBASE-SR4",
+      "media_interface_id_hex": "0x0E",
+      "media_interface_id": 14,
+      "standards_code": "InfiniBand HDR",
+      "bit_rate_gbps": 212.5
+    }
+  ]
+}

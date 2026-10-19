@@ -1,0 +1,84 @@
+{
+  "multi_valued": {
+    "model": [
+      "LP-RJ451GE-RCI",
+      "LP-RJ451GE-RCIxx",
+      "LP-RJ451G-RCC",
+      "LP-RJ451G-RCI",
+      "LP-RJ451GE-RCC",
+      "LP-RJ451GE-RCIYY",
+      "LP-RJ451GE-RCIYN",
+      "LP-RJ451GE-RCINY",
+      "LP-RJ451GE-RCINN",
+      "LP-RJ451G-RCIYY",
+      "LP-RJ451G-RCCYY",
+      "LP-RJ451GE-RCCYY"
+    ],
+    "host_interface_name": [
+      "SGMII",
+      "SERDES"
+    ],
+    "standards_code": [
+      "1000BASE-T",
+      "1000 BASE-T",
+      "10/100/1000Mbps",
+      "IEEE 802.3-2002",
+      "IEEE 802.3ab"
+    ],
+    "bit_rate_gbps": [
+      0.01,
+      1.0,
+      1.25
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "IEEE 802.3",
+      "IEEE 802.3ab",
+      "Gigabit Ethernet",
+      "1000BASE-T"
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "power_consumption_w": [
+      1.2
+    ],
+    "baud_rate_gbaud": [
+      0.25
+    ],
+    "modulation_format": [
+      "PAM"
+    ],
+    "reach_km": [
+      0.1
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "penalties": [],
+    "notes": "Copper SFP RJ45 transceiver over Category 5 UTP; not an optical module. Commercial case temperature 0 to +70°C (RCC variants); industrial -40 to +85°C (RCI variants). Cable length 100 m at BER <10^-12. Symbol rate 250 Mbps on each of four pairs with 5-level PAM per IEEE 802.3. Line frequency 125 MHz. Power consumption and surge current stated higher than SFP MSA. RJ-45 connector assembly; schema connector_type lists optical types only.",
+    "provenance_datasheet_sections": [
+      "LP-RJ451GE-RCI Copper SFP RJ45 10/100/1000Mbps 100m Transceiver",
+      "Features",
+      "Applications",
+      "Description",
+      "Electrical Power Interface",
+      "High-Speed Electrical Interface",
+      "High-speed electrical interface, host-SFP",
+      "General Specifications",
+      "Environmental Specifications",
+      "Mechanical Specifications",
+      "Ordering information"
+    ],
+    "suggestions": "Consider schema fields for copper media (RJ45, UTP Cat5) and electrical line rate in MHz. post_fec_ber_target could capture BER <10^-12 from cable length note if extended to non-FEC BER targets."
+  }
+}

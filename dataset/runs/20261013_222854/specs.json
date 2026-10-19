@@ -1,0 +1,113 @@
+{
+  "vendor": "Fiberworks AS",
+  "model": [
+    "QDD-400G-DCO-0ZRP"
+  ],
+  "form_factor": [
+    "QSFP-DD",
+    "QSFP-DD_type-2A"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "CMIS 5.0",
+    "OIF OpenZRplus"
+  ],
+  "wavelength_band": [
+    "C-band",
+    "DWDM",
+    "Flex-grid"
+  ],
+  "frequency_min_thz": [
+    191.3
+  ],
+  "frequency_max_thz": [
+    196.1
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    22.0
+  ],
+  "standards_code": [
+    "Open ZR+",
+    "OpenZRplus",
+    "100GBASE-ZR",
+    "200GBASE-ZR",
+    "300GBASE-ZR",
+    "400GBASE-ZR",
+    "100/200/300/400GBASE Ethernet"
+  ],
+  "baud_rate_gbaud": [
+    60.14,
+    30.07
+  ],
+  "bit_rate_gbps": [
+    100.0,
+    200.0,
+    300.0,
+    400.0
+  ],
+  "modulation_format": [
+    "QAM_16-DP",
+    "QAM_8-DP",
+    "QPSK-DP"
+  ],
+  "reach_km": [
+    80.0,
+    120.0,
+    500.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "tx_in_band_osnr_db": [
+    34.0
+  ],
+  "rx_sensitivity_dbm": [
+    -24.0,
+    -26.0,
+    -28.0,
+    -32.0
+  ],
+  "rx_osnr_db": [
+    24.0,
+    21.0,
+    16.0,
+    12.5
+  ],
+  "rx_overload_dbm": [
+    10.0
+  ],
+  "cd_tolerance_ps_nm": [
+    12000.0,
+    20000.0,
+    30000.0,
+    50000.0
+  ],
+  "fec_type": [
+    "OFEC"
+  ],
+  "penalties": [],
+  "notes": "Optical output power and many receiver/transmitter metrics are specified per ZR400/ZR300/ZR200/ZR100 profile. Power dissipation stated as < 22 W. Reach 80–120 km without EDFA/DCM; up to 500 km with EDFA. Duplex LC UPC interface. Center wavelength accuracy +/- 0.02 nm (nominal center wavelength not given). Transmitter OSNR (Inband) stated as > 34 dB/0.1nm. OSNR penalty tolerance 0.5 dB listed without paired penalized OSNR value and Rx power condition. Power budget 23 dB in ordering description. Output power stability +/- 0.5 dB; output power accuracy +/- 2 dB. Transceiver start up time < 120 s; channel tuning speed < 60 s. Storage temperature -40 to +85 °C (not normal operating range).",
+  "provenance_datasheet_sections": [
+    "QSFP-DD 400G DCO 0dBm ZR+ 400G Ethernet DCO Transceiver",
+    "DESCRIPTION",
+    "APPLICATIONS",
+    "FEATURES",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Map ZR profile-specific rows to structured objects (e.g. profile + rx_sensitivity_dbm + rx_osnr_db + cd_tolerance_ps_nm). Clarify whether Duplex LC UPC should include UPC as connector qualifier. OSNR penalty tolerance 0.5 dB may need a penalty sub-schema field when no @condition table is present."
+}

@@ -1,0 +1,167 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      770.0,
+      840.0
+    ],
+    "power_consumption_w": [
+      0.6,
+      1.0
+    ],
+    "media_interface_name": [
+      "10GBASE-SR",
+      "1000BASE-SX"
+    ],
+    "standards_code": [
+      "10GBASE-SR",
+      "10GBASE-SW",
+      "1000BASE-SX",
+      "IEEE 802.3ae"
+    ],
+    "baud_rate_gbaud": [
+      9.8,
+      10.313,
+      1.25
+    ],
+    "bit_rate_gbps": [
+      10.3125,
+      1.25
+    ],
+    "reach_km": [
+      0.033,
+      0.082,
+      0.3
+    ],
+    "tx_power_min_dbm": [
+      -9.5,
+      -4.3
+    ],
+    "tx_power_max_dbm": [
+      -1.0,
+      -1.0
+    ],
+    "rx_sensitivity_dbm": [
+      -11.1,
+      -21.0,
+      -17.0,
+      -12.5,
+      -13.5,
+      -7.5
+    ],
+    "rx_overload_dbm": [
+      -1.0,
+      0.0
+    ],
+    "extinction_ratio_db": [
+      3.0,
+      9.0,
+      12.0
+    ],
+    "los_deassert_dbm": [
+      -12.0,
+      -17.0
+    ]
+  },
+  "general": {
+    "vendor": "Avago Technologies",
+    "model": [
+      "AFBR-710DMZ"
+    ],
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "IEEE 802.3ae 10GBASE-SR",
+      "IEEE 802.3ae 10GBASE-SW",
+      "IEEE 802.3 Gigabit Ethernet 1000BASE-SX",
+      "SFF-8431",
+      "SFF-8472",
+      "SFF-8432",
+      "INF-8074",
+      "ANSI TIA/EIA 604-10 (FOCIS 10A)"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "wavelength_band": [],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF 50/125µm",
+      "MMF_OM1",
+      "MMF_OM3",
+      "MMF_OM2"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "SFP+"
+    ],
+    "media_interface_id_hex": [
+      "10"
+    ],
+    "media_interface_id": [
+      16
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "receiver_reflectance_db": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.0,
+      9.0,
+      12.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      12.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      3.0
+    ],
+    "total_jitter_ps": [
+      227.0,
+      266.0
+    ],
+    "penalties": [],
+    "notes": "Case operating temperature 0–70°C (Table 4); absolute max case -40 to 85°C. Signal rate 9.8–10.313 GBd for 10GBASE-SR (Table 4). Typical power dissipation 600 mW, max 1000 mW (Table 5). Reach from EEPROM A0h: 33 m OM1, 82 m OM2, 300 m OM3. Rate select: RS0/RS1 or A2h for 1.25 Gbps vs 10 Gbps TX/RX. Laser off power max -30 dBm. Stressed sensitivity (OMA) max -7.5 dBm; vertical eye closure penalty 3.5 dB and stressed eye jitter 0.3 UI p-p are test conditions for stressed sensitivity (Table 9a notes). TDP max 3.9 dB (Table 8a). 1.25 GBd stressed receiver sensitivity -12.5 dBm (62.5/125 µm), -13.5 dBm (50/125 µm).",
+    "provenance_datasheet_sections": [
+      "AFBR-710DMZ 10Gb/1Gb Ethernet, 850nm SFP+ Transceiver",
+      "Description",
+      "Features",
+      "Specifications",
+      "Transmitter Section",
+      "Receiver Section",
+      "Table 3. Absolute Maximum Ratings",
+      "Table 4. Recommended Operating Conditions",
+      "Table 5. Low Speed Signal Electrical Characteristics",
+      "Table 6. High Speed Signal Electrical Characteristics",
+      "Table 8a. 10GBd Optical Specifications - Transmitter",
+      "Table 8b. 1.25GBd Optical Characteristics - Transmitter",
+      "Table 9a. 10GBd Optical Specifications - Receiver",
+      "Table 9b. 1.25GBd Optical Characteristics - Receiver",
+      "Table 10. 10 GBd Minimum Optical Modulation Amplitude",
+      "Table 14. EEPROM Serial ID Memory Contents – Conventional SFP Memory (Address A0h)"
+    ],
+    "suggestions": "Clarify whether reach_km should list only EEPROM link budgets or also narrative OM3 300 m from related products. Host interface ID 0x10 is media/application code per SFF-8472 byte 3, not a separate host electrical ID."
+  }
+}

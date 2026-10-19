@@ -1,0 +1,46 @@
+{
+  "modes": [
+    {
+      "label": "1310nm FP Bi-Di",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "1310nm FP Bi-Di",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "STM-1"
+    },
+    {
+      "label": "1310nm FP Bi-Di",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "OC-3"
+    },
+    {
+      "label": "1550nm DFB Bi-Di",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "1550nm DFB Bi-Di",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "STM-1"
+    },
+    {
+      "label": "1550nm DFB Bi-Di",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "OC-3"
+    }
+  ]
+}

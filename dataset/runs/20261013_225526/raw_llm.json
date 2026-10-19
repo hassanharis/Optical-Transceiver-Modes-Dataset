@@ -1,0 +1,176 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLC9555SEPM"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "128GFC2",
+    "IEEE 802.3bm 100GBASE-SR4",
+    "CAUI-4",
+    "SFF-8665",
+    "SFF-8679",
+    "SFF-8636"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    840,
+    860
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "Pull tab release"
+  ],
+  "connector_type": [
+    "MPO12",
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    2.5
+  ],
+  "host_interface_name": [
+    "CAUI-4"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "100GBASE-SR4"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "4x25G"
+  ],
+  "standards_code": [
+    "100GBASE-SR4",
+    "OTU4",
+    "128G Fibre Channel",
+    "128GFC"
+  ],
+  "baud_rate_gbaud": [
+    25.78125,
+    25.78,
+    28.05,
+    27.95
+  ],
+  "bit_rate_gbps": [
+    103.1,
+    112.2,
+    111.8,
+    25.78125,
+    27.95,
+    28.05
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.07,
+    0.1
+  ],
+  "tx_power_min_dbm": [
+    -9,
+    -8.4
+  ],
+  "tx_power_max_dbm": [
+    2.4
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -5.2,
+    -4.7,
+    -10.3,
+    -10.9
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    2.4,
+    3.4,
+    5.5
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    1e-06
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    2,
+    3
+  ],
+  "los_assert_dbm": [
+    -30
+  ],
+  "los_deassert_dbm": [
+    -13,
+    -12
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -12
+  ],
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    2,
+    3
+  ],
+  "optical_return_loss_tolerance_db": [
+    12
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5,
+    2
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Aggregate bit rate 103.1–112.2 Gb/s; product selection S codes max 111.8 Gb/s. Power note: max 2.5 W normal; up to 3.5 W if CDRs hunt wrong frequencies. Reach 70 m OM3 / 100 m OM4 requires FEC on host for max distance. RXPx minimum values noted informative only. Optical ER table units show dBm but parameter is extinction ratio in dB. Stressed receiver sensitivity is OMA per lane. OTU4 BER 10^-12 after FEC; pre-FEC 10^-6 per G.sup39. Storage -40 to 85 °C; temporary excursion -5 to +75 °C case.",
+  "provenance_datasheet_sections": [
+    "FTLC9555SEPM",
+    "FEATURES",
+    "Product Selection",
+    "III. Electrical Characteristics",
+    "IV. Optical Characteristics",
+    "100GBASE-SR4 Ethernet Operation",
+    "OTU4 and 128 G Fibre Channel Operation",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "II. Absolute Maximum Ratings"
+  ],
+  "suggestions": "Clarify whether rx_sensitivity_dbm should prefer SRS (OMA) vs RXPx (average power). photodetector_type not stated. wavelength_band for 850 nm VCSEL not labeled in doc."
+}

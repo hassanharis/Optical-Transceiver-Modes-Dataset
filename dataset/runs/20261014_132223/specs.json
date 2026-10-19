@@ -1,0 +1,65 @@
+{
+  "model": [
+    "SO-SFP-10GE-AOC1M",
+    "SO-SFP-10GE-AOC2M",
+    "SO-SFP-10GE-AOC3M",
+    "SO-SFP-10GE-AOC4M",
+    "SO-SFP-10GE-AOC5M",
+    "SO-SFP-10GE-AOC6M",
+    "SO-SFP-10GE-AOC7M",
+    "SO-SFP-10GE-AOC8M",
+    "SO-SFP-10GE-AOC9M",
+    "SO-SFP-10GE-AOC10M",
+    "SO-SFP-10GE-AOC15M",
+    "SO-SFP-10GE-AOC20M",
+    "SO-SFP-10GE-AOC30M",
+    "SO-SFP-10GE-AOC50M",
+    "SO-SFP-10GE-AOC70M",
+    "SO-SFP-10GE-AOC100M"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFP+ MSA"
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "fiber_type": [
+    "MMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "SFP+"
+  ],
+  "standards_code": [
+    "4G Fiber Channel",
+    "8G Fiber Channel",
+    "10G Gigabit Ethernet",
+    "InfiniBand QDR",
+    "InfiniBand SDR",
+    "InfiniBand DDR"
+  ],
+  "bit_rate_gbps": [
+    4.0,
+    8.0,
+    10.0
+  ],
+  "reach_km": [
+    0.1
+  ],
+  "notes": "Active Optical Cable (AOC) direct-attach assembly with SFP+ connectors and integrated cable; not discrete optical transceivers plus patch cables. Lengths 1m to 100m per ordering codes. Storage temperature -40°C to +85°C. Bend radius minimum 30mm. RoSH 6 compliant. Multirate 4Gbps to 10Gbps stated in ordering descriptions. Reach stated as up to 100m interconnects and 1 to 100 meters.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-10GE-AOCxM",
+    "OVERVIEW",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION",
+    "MECHANICAL DRAWING"
+  ],
+  "suggestions": "Datasheet lacks optical/electrical spec tables (wavelength, power, sensitivity). Per-SKU reach in meters (1–100) could map to reach_km as 0.001–0.1 if schema should list all orderable lengths. Vendor not named in body; only smartoptics.com in footer."
+}

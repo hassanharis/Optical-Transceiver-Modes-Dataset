@@ -1,0 +1,78 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "SFI Limiting",
+      "SFF-8431"
+    ],
+    "standards_code": [
+      "SFF-8431",
+      "SFF-8432"
+    ],
+    "bit_rate_gbps": [
+      10.3125,
+      10.3
+    ],
+    "reach_km": [
+      0.005,
+      0.01,
+      0.015,
+      0.02,
+      0.03,
+      0.07,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.35,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      7.0,
+      10.0,
+      15.0,
+      20.0,
+      30.0
+    ]
+  },
+  "general": {
+    "vendor": "Finisar",
+    "model": [
+      "FCBG110SD1Cxx-WX"
+    ],
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432"
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "post_fec_ber_target": [
+      1e-15
+    ],
+    "penalties": [],
+    "notes": "Active Optical Cable (SFPwire); optical parameters (wavelength, TX/RX power, OSNR) not specified. Bit rate stated as 10.3125 Gb/s (PRODUCT FEATURES) and BR Typ 10.3 Gb/s (IV. General Specifications). BER 10^-15 tested with 2^31-1 PRBS. Supply current Icc max 250 mA at Vcc 3.14–3.46 V; power in watts not given. Cable reach is length in meters per PRODUCT SELECTION (0.5 m–30 m); features also state lengths up to 20 m. SFI limiting; no host electrical TX pre-emphasis or RX linear equalization required. Class 1 laser product.",
+    "provenance_datasheet_sections": [
+      "Product Specification 10Gb/s SFPwire[®] SFP+ Active Optical Cable FCBG110SD1Cxx-WX",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "PRODUCT SELECTION",
+      "16B FCBG110SD1Cxx-WX",
+      "II. Absolute Maximum Ratings",
+      "III. Electrical Characteristics (each cable end, TOP = 0 to 70 ° C, VCC = 3.14 to 3.46 Volts)",
+      "IV.  General Specifications",
+      "V. Environmental Specifications",
+      "VII.  Mechanical Specifications"
+    ],
+    "suggestions": "reach_km may be better as a separate cable_length_m list since the datasheet only gives meters. Add schema field for supply current (Icc max 250 mA) or max power derived only if conversion is allowed."
+  }
+}

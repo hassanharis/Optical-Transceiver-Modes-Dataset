@@ -1,0 +1,84 @@
+{
+  "modes": [
+    {
+      "label": "CWDM 1470nm 80km (SO-XFP-ZR-C47)",
+      "model": "SO-XFP-ZR-C47",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1470.0,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 80.0
+    },
+    {
+      "label": "CWDM 1490nm 80km (SO-XFP-ZR-C49)",
+      "model": "SO-XFP-ZR-C49",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 80.0
+    },
+    {
+      "label": "CWDM 1510nm 80km (SO-XFP-ZR-C51)",
+      "model": "SO-XFP-ZR-C51",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 80.0
+    },
+    {
+      "label": "CWDM 1530nm 80km (SO-XFP-ZR-C53)",
+      "model": "SO-XFP-ZR-C53",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1530.0,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 80.0
+    },
+    {
+      "label": "CWDM 1550nm 70km (SO-XFP-ZR-C55)",
+      "model": "SO-XFP-ZR-C55",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 70.0
+    },
+    {
+      "label": "CWDM 1570nm 70km (SO-XFP-ZR-C57)",
+      "model": "SO-XFP-ZR-C57",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 70.0
+    },
+    {
+      "label": "CWDM 1590nm 70km (SO-XFP-ZR-C59)",
+      "model": "SO-XFP-ZR-C59",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1590.0,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 70.0
+    },
+    {
+      "label": "CWDM 1610nm 70km (SO-XFP-ZR-C61)",
+      "model": "SO-XFP-ZR-C61",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1610.0,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 70.0
+    }
+  ]
+}

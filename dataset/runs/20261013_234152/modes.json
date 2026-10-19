@@ -1,0 +1,15 @@
+{
+  "modes": [
+    {
+      "label": "LO-DM311T-DR8C 1.6TBASE-DR8 8x200G",
+      "form_factor": "OSFP FlatTop",
+      "power_consumption_w": 30.0,
+      "host_interface_name": "1.6TAUI-8 C2M",
+      "frame": "8x200G Ethernet",
+      "standards_code": "1.6TBASE-DR8",
+      "bit_rate_gbps": 1600.0,
+      "modulation_format": "PAM4",
+      "rx_sensitivity_dbm": -3.4
+    }
+  ]
+}

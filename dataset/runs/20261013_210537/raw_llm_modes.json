@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "LxP-ST11xx standard, 62.5/125 \u00b5m 125 m",
+      "model": "LxP-ST11xx",
+      "reach_km": 0.125,
+      "tx_power_min_dbm": -10.0
+    },
+    {
+      "label": "LxP-ST11xx standard, 50/125 \u00b5m 150 m",
+      "model": "LxP-ST11xx",
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -10.0
+    },
+    {
+      "label": "LxP2-ST11xx +2 dB margin, 62.5/125 \u00b5m 125 m",
+      "model": "LxP2-ST11xx",
+      "reach_km": 0.125,
+      "tx_power_min_dbm": -8.0
+    },
+    {
+      "label": "LxP2-ST11xx +2 dB margin, 50/125 \u00b5m 150 m",
+      "model": "LxP2-ST11xx",
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -8.0
+    },
+    {
+      "label": "LxP3-ST11xx +3 dB margin, 62.5/125 \u00b5m 125 m",
+      "model": "LxP3-ST11xx",
+      "reach_km": 0.125,
+      "tx_power_min_dbm": -7.0
+    },
+    {
+      "label": "LxP3-ST11xx +3 dB margin, 50/125 \u00b5m 150 m",
+      "model": "LxP3-ST11xx",
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -7.0
+    },
+    {
+      "label": "LxP5-ST11xx +5 dB margin, 62.5/125 \u00b5m 125 m",
+      "model": "LxP5-ST11xx",
+      "reach_km": 0.125,
+      "tx_power_min_dbm": -5.0
+    },
+    {
+      "label": "LxP5-ST11xx +5 dB margin, 50/125 \u00b5m 150 m",
+      "model": "LxP5-ST11xx",
+      "reach_km": 0.15,
+      "tx_power_min_dbm": -5.0
+    }
+  ]
+}

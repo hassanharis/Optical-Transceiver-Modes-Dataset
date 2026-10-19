@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SO-XFP-ER commercial temperature\",\n      \"model\": \"SO-XFP-ER\",\n      \"wavelength_min_nm\": 1530.0,\n      \"wavelength_max_nm\": 1565.0,\n      \"standards_code\": \"10GBASE-ER\",\n      \"bit_rate_gbps\": 10.3\n    },\n    {\n      \"label\": \"SO-XFP-ER-I industrial temperature\",\n      \"model\": \"SO-XFP-ER-I\",\n      \"wavelength_min_nm\": 1530.0,\n      \"wavelength_max_nm\": 1565.0,\n      \"standards_code\": \"10GBASE-ER\",\n      \"bit_rate_gbps\": 10.3\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

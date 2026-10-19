@@ -1,0 +1,89 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "ITU-T G.957",
+      "STM-1/OC-3"
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "L9-SC55311G-20PPI5"
+    ],
+    "form_factor": [
+      "1x9"
+    ],
+    "standards_claimed": [
+      "ITU-T G.957"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      1510.0
+    ],
+    "wavelength_max_nm": [
+      1590.0
+    ],
+    "wavelength_center_nm": [
+      1550.0
+    ],
+    "connector_type": [
+      "SC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "SMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "host_interface_name": [
+      "PECL"
+    ],
+    "bit_rate_gbps": [
+      1.25
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -8.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -23.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "extinction_ratio_db": [
+      8.2
+    ],
+    "optical_extinction_ratio_db": [
+      8.2
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Module L9-SC55311G-20PPI5: 1x9 Bi-Di, 5V supply, Industrial operating case temperature -40°C to +85°C (Note 2), Simplex SC, 20 km reach per Order Information. Launch power, sensitivity, and max input power rows note 20 km. Central wavelength 1510–1550–1590 nm (1550 DFB). Output spectrum width Δλ max 1 nm (DFB-LD). Receiver operating wavelength 1260–1610 nm. Signal detect range -38 to -23 dBm. Data rate in Recommended Operating Conditions: 10–1250–1500 Mbps. Features also state up to 0.55 Km on 62.5/125 μm MMF and up to 60 Km on 9/125 μm SMF for the product family; SC/ST/FC single optical interface listed in Features. Class 1 laser IEC 825 compliant.",
+    "provenance_datasheet_sections": [
+      "L9-SC55311G-20PPI5",
+      "Features",
+      "Applications",
+      "Standard",
+      "Order Information",
+      "Absolute Maximum Ratings",
+      "Recommended Operating Conditions",
+      "Note 1.Standard level 2.Industrial level",
+      "Transmitter Optical ,Electrical characteristics",
+      "Receiver Optical Electrical Characteristics"
+    ],
+    "suggestions": "Consider schema values for legacy 1x9 Bi-Di form factor and Mbps-rate fields; map Signal Detect Range endpoints to los_assert_dbm/los_deassert_dbm when polarity is defined."
+  }
+}

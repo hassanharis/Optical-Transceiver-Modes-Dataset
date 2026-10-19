@@ -1,0 +1,60 @@
+{
+  "modes": [
+    {
+      "label": "LS-MM851G-S5C Gigabit Ethernet 50/125\u00b5m MMF",
+      "model": "LS-MM851G-S5C",
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.55
+    },
+    {
+      "label": "LS-MM851G-S5C Gigabit Ethernet 62.5/125\u00b5m MMF",
+      "model": "LS-MM851G-S5C",
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.3
+    },
+    {
+      "label": "LS-MM851G-S5C 1.063Gbps Fiber Channel 50/125\u00b5m MMF",
+      "model": "LS-MM851G-S5C",
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063,
+      "reach_km": 0.55
+    },
+    {
+      "label": "LS-MM851G-S5C 1.063Gbps Fiber Channel 62.5/125\u00b5m MMF",
+      "model": "LS-MM851G-S5C",
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063,
+      "reach_km": 0.3
+    },
+    {
+      "label": "LS-MM851G-S5I Gigabit Ethernet 50/125\u00b5m MMF",
+      "model": "LS-MM851G-S5I",
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.55
+    },
+    {
+      "label": "LS-MM851G-S5I Gigabit Ethernet 62.5/125\u00b5m MMF",
+      "model": "LS-MM851G-S5I",
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.3
+    },
+    {
+      "label": "LS-MM851G-S5I 1.063Gbps Fiber Channel 50/125\u00b5m MMF",
+      "model": "LS-MM851G-S5I",
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063,
+      "reach_km": 0.55
+    },
+    {
+      "label": "LS-MM851G-S5I 1.063Gbps Fiber Channel 62.5/125\u00b5m MMF",
+      "model": "LS-MM851G-S5I",
+      "standards_code": "1.063Gbps Fiber Channel",
+      "bit_rate_gbps": 1.063,
+      "reach_km": 0.3
+    }
+  ]
+}

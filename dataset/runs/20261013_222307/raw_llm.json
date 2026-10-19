@@ -1,0 +1,128 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TSF086-BxxC-SO",
+    "TSF086-BCOC-SO",
+    "TSF086-BOCC-SO"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1260,
+    1270,
+    1520,
+    1530
+  ],
+  "wavelength_max_nm": [
+    1350,
+    1360,
+    1570,
+    1580
+  ],
+  "wavelength_center_nm": [
+    1310,
+    1550
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "SC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "GbE",
+    "1G FC",
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1.0625,
+    1.25
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    20
+  ],
+  "tx_power_min_dbm": [
+    -8.0
+  ],
+  "tx_power_max_dbm": [
+    -3.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -22.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -35
+  ],
+  "los_deassert_dbm": [
+    -23
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "BiDi pair: TSF086-BCOC-SO (Tx/Rx 1310/1550 nm) and TSF086-BOCC-SO (Tx/Rx 1550/1310 nm) on single fiber. Nominal wavelength Tx/Rx 1310nm/1550nm & 1550nm/1310nm. Transmit wavelength ranges [1) BCOC, 2) BOCC]; receiver wavelength ranges [1) BCOC, 2) BOCC]. Footnote 3): average power for transmitter output and receiver min/overload. Footnote 4): receiver min input power and overload @ 1.25Gbps, BER ≤ 1x10-12, PRBS 27-1, back-to-back. Power budget 0 – 14dB. Power consumption stated as < 1.0W. Storage temperature -40°C to +85°C (separate from operating 0°C to +70°C). DDM per SFF-8472.",
+  "provenance_datasheet_sections": [
+    "SFP 1G BiDi 20km, SC",
+    "TSF086-BxxC-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": null
+}

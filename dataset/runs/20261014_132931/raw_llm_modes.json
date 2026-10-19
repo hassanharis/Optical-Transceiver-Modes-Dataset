@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-10GE-BX80D-4955 Tx 1490nm / Rx 1550nm",
+      "model": "SO-SFP-10GE-BX80D-4955",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1500.0,
+      "wavelength_center_nm": 1490.0,
+      "host_interface_name": "SFF-8431",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.8
+    },
+    {
+      "label": "SO-SFP-10GE-BX80D-5549 Tx 1550nm / Rx 1490nm",
+      "model": "SO-SFP-10GE-BX80D-5549",
+      "wavelength_min_nm": 1540.0,
+      "wavelength_max_nm": 1560.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "SFF-8431",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.8
+    }
+  ]
+}

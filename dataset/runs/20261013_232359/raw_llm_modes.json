@@ -1,0 +1,32 @@
+{
+  "modes": [
+    {
+      "label": "L9-FC315501-60CTC 1310nm FP 60km Commercial",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "G.957",
+      "bit_rate_gbps": 155.52
+    },
+    {
+      "label": "L9-FC553101-60CTC 1550nm DFB 60km Commercial",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "standards_code": "G.957",
+      "bit_rate_gbps": 155.52
+    },
+    {
+      "label": "L9-FC315501-60CTI 1310nm FP 60km Industrial",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "G.957",
+      "bit_rate_gbps": 155.52
+    },
+    {
+      "label": "L9-FC553101-60CTI 1550nm DFB 60km Industrial",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "standards_code": "G.957",
+      "bit_rate_gbps": 155.52
+    }
+  ]
+}

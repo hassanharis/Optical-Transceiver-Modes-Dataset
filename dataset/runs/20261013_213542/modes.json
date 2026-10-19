@@ -1,0 +1,276 @@
+{
+  "modes": [
+    {
+      "label": "800G PCS-131Gbd (0xF7)",
+      "channel_spacing_ghz": 150.0,
+      "power_consumption_w": 30.0,
+      "host_interface_name": [
+        "400GAUI-4",
+        "200GAUI-2"
+      ],
+      "media_interface_name": "FlexO-8e-MPCS131-NOS-E",
+      "media_interface_id_hex": "0xF7",
+      "media_interface_id": 247,
+      "frame": "FlexO-8(e)",
+      "standards_code": "FlexO-8e-MPCS131-NOS-E",
+      "baud_rate_gbaud": 131.3,
+      "bit_rate_gbps": 800.0,
+      "modulation_format": "PCS_131",
+      "rx_sensitivity_dbm": -20.5,
+      "rx_osnr_db": 24.7,
+      "cd_tolerance_ps_nm": 24000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 25.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -17.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xF7"
+        }
+      ]
+    },
+    {
+      "label": "OpenROADM 800G 131Gbd (0x68)",
+      "channel_spacing_ghz": 150.0,
+      "power_consumption_w": 30.0,
+      "host_interface_name": [
+        "400GAUI-4",
+        "200GAUI-2"
+      ],
+      "media_interface_name": "FLEXO-8e-DPO-16QAM",
+      "media_interface_id_hex": "0x68",
+      "media_interface_id": 104,
+      "frame": "FlexO-8(e)",
+      "standards_code": "OpenROADM",
+      "baud_rate_gbaud": 131.3,
+      "bit_rate_gbps": 800.0,
+      "modulation_format": "PCS_131",
+      "rx_sensitivity_dbm": -20.5,
+      "rx_osnr_db": 25.4,
+      "cd_tolerance_ps_nm": 24000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 26.2,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -17.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0x68"
+        }
+      ]
+    },
+    {
+      "label": "600G-PCS-131Gbd (0xF5)",
+      "channel_spacing_ghz": 150.0,
+      "power_consumption_w": 29.0,
+      "host_interface_name": [
+        "200GAUI-2",
+        "100GAUI-1"
+      ],
+      "media_interface_name": "FlexO-6e-MPCS131-NOS-E",
+      "media_interface_id_hex": "0xF5",
+      "media_interface_id": 245,
+      "frame": "FlexO-6(e)",
+      "standards_code": "FlexO-6e-MPCS131-NOS-E",
+      "baud_rate_gbaud": 131.2,
+      "bit_rate_gbps": 600.0,
+      "modulation_format": "PCS_131",
+      "rx_sensitivity_dbm": -24.0,
+      "rx_osnr_db": 21.3,
+      "cd_tolerance_ps_nm": 24000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 22.2,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -20.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xF5"
+        }
+      ]
+    },
+    {
+      "label": "400G PCS-131Gbd (0xEC)",
+      "channel_spacing_ghz": 150.0,
+      "power_consumption_w": 28.5,
+      "host_interface_name": [
+        "200GAUI-2",
+        "400GAUI-4"
+      ],
+      "media_interface_name": "FlexO-4e-MPCS131-NOS",
+      "media_interface_id_hex": "0xEC",
+      "media_interface_id": 236,
+      "frame": "FlexO-4(e)",
+      "standards_code": "FlexO-4e-MPCS131-NOS",
+      "baud_rate_gbaud": 131.3,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "PCS_131",
+      "rx_sensitivity_dbm": -27.0,
+      "rx_osnr_db": 18.0,
+      "cd_tolerance_ps_nm": 24000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 18.9,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -22.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xEC"
+        }
+      ]
+    },
+    {
+      "label": "400G PCS-66Gbd (0xC0)",
+      "channel_spacing_ghz": 75.0,
+      "power_consumption_w": 25.0,
+      "host_interface_name": [
+        "200GAUI-2",
+        "400GAUI-4"
+      ],
+      "media_interface_name": "FlexO-4e-MPCS066-OS",
+      "media_interface_id_hex": "0xC0",
+      "media_interface_id": 192,
+      "frame": "FlexO-4(e)",
+      "standards_code": "FlexO-4e-MPCS066-OS",
+      "baud_rate_gbaud": 65.7,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "PCS_66",
+      "rx_sensitivity_dbm": -24.5,
+      "rx_osnr_db": 21.2,
+      "cd_tolerance_ps_nm": 75000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 22.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -20.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xC0"
+        }
+      ]
+    },
+    {
+      "label": "400G PCS-75Gbd (0xC2)",
+      "channel_spacing_ghz": 87.5,
+      "power_consumption_w": 25.5,
+      "host_interface_name": [
+        "200GAUI-2",
+        "400GAUI-4"
+      ],
+      "media_interface_name": "FlexO-4e-MPCS075-OS",
+      "media_interface_id_hex": "0xC2",
+      "media_interface_id": 194,
+      "frame": "FlexO-4(e)",
+      "standards_code": "FlexO-4e-MPCS075-OS",
+      "baud_rate_gbaud": 75.0,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "PCS_75",
+      "rx_sensitivity_dbm": -24.0,
+      "rx_osnr_db": 20.6,
+      "cd_tolerance_ps_nm": 66000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 21.4,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -20.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xC2"
+        }
+      ]
+    },
+    {
+      "label": "400G PCS-87Gbd (0xC9)",
+      "channel_spacing_ghz": 100.0,
+      "power_consumption_w": 26.5,
+      "host_interface_name": [
+        "200GAUI-2",
+        "400GAUI-4"
+      ],
+      "media_interface_name": "FlexO-4e-MPCS087-OS",
+      "media_interface_id_hex": "0xC9",
+      "media_interface_id": 201,
+      "frame": "FlexO-4(e)",
+      "standards_code": "FlexO-4e-MPCS087-OS",
+      "baud_rate_gbaud": 87.4,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "PCS_87",
+      "rx_sensitivity_dbm": -26.0,
+      "rx_osnr_db": 19.5,
+      "cd_tolerance_ps_nm": 47000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 20.3,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -21.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xC9"
+        }
+      ]
+    },
+    {
+      "label": "400G PCS-108Gbd (0xE5)",
+      "channel_spacing_ghz": 125.0,
+      "power_consumption_w": 27.0,
+      "host_interface_name": [
+        "200GAUI-2",
+        "400GAUI-4"
+      ],
+      "media_interface_name": "FlexO-4e-MPCS108-OS",
+      "media_interface_id_hex": "0xE5",
+      "media_interface_id": 229,
+      "frame": "FlexO-4(e)",
+      "standards_code": "FlexO-4e-MPCS108-OS",
+      "baud_rate_gbaud": 108.5,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "PCS_108",
+      "rx_sensitivity_dbm": -26.5,
+      "rx_osnr_db": 18.7,
+      "cd_tolerance_ps_nm": 29000.0,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 19.6,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -22.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION – NTWK/MEDIA CODES | 0xE5"
+        }
+      ]
+    }
+  ]
+}

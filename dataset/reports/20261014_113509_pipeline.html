@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;SO-QSFP-DD-2C-10&#x27;, &#x27;SO-QSFP-DD-2C-10-4&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">so-qsfp-dd-2c-10-r5.1.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">4</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 11:35</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.1 
+
+## **SO-QSFP-DD-2C-10 / -4** 
+
+QSFP-DD 2x 100G Ethernet, 1295.56nm/1300.05nm/1304.58nm/1309.14nm, 10km, 7.3dB, Dual CS 
+
+## OVERVIEW 
+
+The SO-QSFP-DD-2C-10 is a QSFP-DD form-factor transceiver for 2x 100Gbps Ethernet applications. It is intended for use in data center interconnect between switches, routers, storage equipment etc. for optical distances up to 10km over a SingleMode (SM) fiber cable. 
+
+The transceiver has a dual CS connector interface which means that there are two singlemode fiber pairs connected to the transceiver, each transporting a 100Gbps signal. The SO-QSFP-DD-2C-10 is thus intended for 200G to 2x 100G breakout configurations using two 100G QSFP-28 transceivers on the 100G Ethernet side. The SO-QSFP28-LR4-10L has matching optical performance and is a recommended option for this. 
+
+The electrical interface consists of eight 25.78G NRZ signals (SFF-8679) that are converted to eight channels/lanes (four per fiberpair) to transport the Ethernet signal. 
+
+Digital diagnostics functions are available via an I[2] C interface, as specified by the QSFP-DD MSA.The transceiver is provided in two versions, compliant with Common Management Interface Specification CMIS3.0 and CMIS4.0. 
+
+## TECHNICAL DATA 
+
+|**Parameter**|**Value**||**Parameter**|**Value**|
+|---|---|---|---|---|
+|Technology|Grey QSFP-DD||**Transmitter data:**||
+|Transmission media|SM (Dual CS)||Output power, per lane|Min: -0.7dBm3)|
+|Typical reach|10km|||Max: +4.5dBm3)|
+|Nominal wavelengths|1295.56nm||Transmit wavelengths|1294.53 - 1296.59nm|
+||1300.05nm|||1299.02 - 1301.09nm|
+||1304.58nm|||1303.54 - 1305.63nm|
+||1309.14nm|||1308.09 - 1310.19nm|
+|Interface standards|100GBASE-LR4||**Receiver data:**||
+|Bit rate support|2x 103.12Gbps1)||Minimum input power, per lane|-8.0dBm3) 4)|
+||25.78Gbps2)||Overload (max power), per lane|+4.5dBm3) 4)|
+|Protocol support|2x 100GbE||Wavelength range|1294.53 - 1296.59nm|
+|Power budget|0 – 7.3dB|||1299.02 - 1301.09nm|
+|Power consumption|&lt; 8W|||13
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "SO-QSFP-DD-2C-10",
+    "SO-QSFP-DD-2C-10-4"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "QSFP-DD"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "QSFP-DD MSA",
+    "100GBASE-LR4",
+    "SFF-8679",
+    "CMIS3.0",
+    "CMIS4.0"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1294.53</span>,
+    <span class="num">1299.02</span>,
+    <span class="num">1303.54</span>,
+    <span class="num">1308.09</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1296.59</span>,
+    <span class="num">1301.09</span>,
+    <span class="num">1305.63</span>,
+    <span class="num">1310.19</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1295.56</span>,
+    <span class="num">1300.05</span>,
+    <span class="num">1304.58</span>,
+    <span class="num">1309.14</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "grey"
+  ],
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "CS"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">8</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "2x CAUI-4",
+    "CAUI-4"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: [
+    "100GBASE-LR4"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: [
+    "2x CAUI-4 (4x <span class="num">25</span>G)"
+  ],
+  <span class="key">"standards_code"</span>: [
+    "100GBASE-LR4",
+    "Clause <span class="num">88</span>",
+    "2x100GBASE-R",
+    "CMIS3.0",
+    "CMIS4.0"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">103.12</span>,
+    <span class="num">25.78</span>,
+    <span class="num">200</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [
+    "NRZ"
+  ],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">10</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-0.7</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">4.5</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-8.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">4.5</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: [
+    "NONE"
+  ],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"los_deassert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">8</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Power consumption stated as &lt; <span class="num">8</span>W (worst case). Transmitter/receiver power specs are average power, per lane (footnote <span class="num">3</span>). Receiver min input and overload specified at BER <span class="num">1</span>x10-12 (footnote <span class="num">4</span>). Power budget <span class="num">0</span> – <span class="num">7.3</span>dB w/o optical path penalties. Aggregated line rate <span class="num">2</span>x <span class="num">103.12</span>Gbps for <span class="num">200</span>GbE; line rate per lane <span class="num">25.78</span>Gbps (footnotes <span class="num">1</span>–2). Dual CS: two SM fiber pairs, <span class="num">2</span>x100G breakout. Ordering variants SO-QSFP-DD-2C-10 (CMIS3) and SO-QSFP-DD-2C-10-4 (CMIS4). Storage temperature <span class="num">-40</span>°C to +85°C is not normal operating range."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "SO-QSFP-DD-2C-10 / <span class="num">-4</span>",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "APPLICATION CODE LIST",
+    "ORDERING INFORMATION"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Explicit vendor name does not appear in module title block; inferred from smartoptics.com and ordering context. Consider mapping power budget <span class="num">7.3</span>dB to a dedicated link-budget field. CMIS application code integer <span class="num">1</span> is not in schema."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">SO-QSFP-DD-2C-10</span> <span class="badge">SO-QSFP-DD-2C-10-4</span></td></tr>
+<tr><td>wavelength_min_nm</td><td><span class="badge">1294.53</span> <span class="badge">1299.02</span> <span class="badge">1303.54</span> <span class="badge">1308.09</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1296.59</span> <span class="badge">1301.09</span> <span class="badge">1305.63</span> <span class="badge">1310.19</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1295.56</span> <span class="badge">1300.05</span> <span class="badge">1304.58</span> <span class="badge">1309.14</span></td></tr>
+<tr><td>host_interface_name</td><td><span class="badge">2x CAUI-4</span> <span class="badge">CAUI-4</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">100GBASE-LR4</span> <span class="badge">Clause 88</span> <span class="badge">2x100GBASE-R</span> <span class="badge">CMIS3.0</span> <span class="badge">CMIS4.0</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">103.12</span> <span class="badge">25.78</span> <span class="badge">200.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>QSFP-DD</td></tr>
+<tr><td>standards_claimed</td><td>QSFP-DD MSA, 100GBASE-LR4, SFF-8679, CMIS3.0, CMIS4.0</td></tr>
+<tr><td>wavelength_band</td><td>grey</td></tr>
+<tr><td>channel_total</td><td>4</td></tr>
+<tr><td>connector_type</td><td>CS</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>8.0</td></tr>
+<tr><td>media_interface_name</td><td>100GBASE-LR4</td></tr>
+<tr><td>frame</td><td>2x CAUI-4 (4x 25G)</td></tr>
+<tr><td>modulation_format</td><td>NRZ</td></tr>
+<tr><td>reach_km</td><td>10.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-0.7</td></tr>
+<tr><td>tx_power_max_dbm</td><td>4.5</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-8.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>4.5</td></tr>
+<tr><td>fec_type</td><td>NONE</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>number_of_lanes</td><td>8</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Power consumption stated as &lt; 8W (worst case). Transmitter/receiver power specs are average power, per lane (footnote 3). Receiver min input and overload specified at BER 1x10-12 (footnote 4). Power budget 0 – 7.3dB w/o optical path penalties. Aggregated line rate 2x 103.12Gbps for 200GbE; line rate per lane 25.78Gbps (footnotes 1–2). Dual CS: two SM fiber pairs, 2x100G breakout. Ordering variants SO-QSFP-DD-2C-10 (CMIS3) and SO-QSFP-DD-2C-10-4 (CMIS4). Storage temperature -40°C to +85°C is not normal operating range.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>SO-QSFP-DD-2C-10 / -4, OVERVIEW, TECHNICAL DATA, APPLICATION CODE LIST, ORDERING INFORMATION</td></tr>
+<tr><td>suggestions</td><td>Explicit vendor name does not appear in module title block; inferred from smartoptics.com and ordering context. Consider mapping power budget 7.3dB to a dedicated link-budget field. CMIS application code integer 1 is not in schema.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_center_nm</th><th>host_interface_name</th><th>standards_code</th><th>bit_rate_gbps</th></tr><tr><td><strong>2x100GBASE-R 10km CMIS3 Dual CS</strong></td><td>SO-QSFP-DD-2C-10</td><td>1294.53</td><td>1296.59</td><td>1295.56</td><td>2x CAUI-4</td><td>CMIS3.0</td><td>200.0</td></tr><tr><td><strong>2x100GBASE-R 10km CMIS4 Dual CS</strong></td><td>SO-QSFP-DD-2C-10-4</td><td>1299.02</td><td>1301.09</td><td>1300.05</td><td>2x CAUI-4</td><td>CMIS4.0</td><td>200.0</td></tr><tr><td><strong>2x100GBASE-R 10km CMIS3 Dual CS LR4 λ1304.58nm</strong></td><td>SO-QSFP-DD-2C-10</td><td>1303.54</td><td>1305.63</td><td>1304.58</td><td>2x CAUI-4</td><td>CMIS3.0</td><td>25.78</td></tr><tr><td><strong>2x100GBASE-R 10km CMIS3 Dual CS LR4 λ1309.14nm</strong></td><td>SO-QSFP-DD-2C-10</td><td>1308.09</td><td>1310.19</td><td>1309.14</td><td>2x CAUI-4</td><td>CMIS3.0</td><td>25.78</td></tr><tr><td><strong>2x100GBASE-R 10km CMIS4 Dual CS LR4 λ1295.56nm</strong></td><td>SO-QSFP-DD-2C-10-4</td><td>1294.53</td><td>1296.59</td><td>1295.56</td><td>2x CAUI-4</td><td>CMIS4.0</td><td>25.78</td></tr><tr><td><strong>2x100GBASE-R 10km CMIS4 Dual CS LR4 λ1304.58nm</strong></td><td>SO-QSFP-DD-2C-10-4</td><td>1303.54</td><td>1305.63</td><td>1304.58</td><td>2x CAUI-4</td><td>CMIS4.0</td><td>25.78</td></tr><tr><td><strong>2x100GBASE-R 10km CMIS4 Dual CS LR4 λ1309.14nm</strong></td><td>SO-QSFP-DD-2C-10-4</td><td>1308.09</td><td>1310.19</td><td>1309.14</td><td>2x CAUI-4</td><td>CMIS4.0</td><td>25.78</td></tr><tr><td><strong>2x100GBASE-R 10km CMIS3 Dual CS LR4 λ1300.05nm</strong></td><td>SO-QSFP-DD-2C-10</td><td>1299.02</td><td>1301.09</td><td>1300.05</td><td>2x CAUI-4</td><td>CMIS3.0</td><td>25.78</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 11:35
+</footer>
+
+</div>
+</body>
+</html>

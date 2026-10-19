@@ -1,0 +1,106 @@
+{
+  "multi_valued": {
+    "model": [
+      "LP-SFP-MSRI",
+      "LP-SFP-TMRC",
+      "LP-SFP-MSRC",
+      "LP-SFP-TM8C",
+      "LP-SFP-MS8C",
+      "LP-SFP-TMRI",
+      "LP-SFP-TM8I",
+      "LP-SFP-MS8I",
+      "LP-SFP-TM8CNN",
+      "LP-SFP-TM8INN",
+      "LP-SFP-MS8CNY",
+      "LP-SFP-MS8INY",
+      "LP-SFP-MS8CNN",
+      "LP-SFP-MS8INN",
+      "LP-SFP-TM8CNY",
+      "LP-SFP-TM8INY",
+      "LP-SFP-TM8CYN",
+      "LP-SFP-MS8CYY",
+      "LP-SFP-MS8IYY",
+      "LP-SFP-MS8CYN",
+      "LP-SFP-TM8CYY",
+      "LP-SFP-TM8IYY"
+    ],
+    "power_consumption_w": [
+      1.05,
+      1.2
+    ],
+    "host_interface_name": [
+      "SERDES",
+      "SGMII",
+      "1000BASE-T"
+    ],
+    "standards_code": [
+      "1000BASE-T",
+      "1000 BASE-T",
+      "IEEE 802.3",
+      "10/100/1000Mbps"
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      1.0,
+      0.01
+    ],
+    "modulation_format": [
+      "PAM",
+      "PAM5"
+    ],
+    "reach_km": [
+      0.1,
+      100.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "IEEE 802.3",
+      "IEEE 802.3-2002",
+      "IEEE 802.3ab",
+      "Gigabit Ethernet",
+      "1000BASE-T",
+      "1000 BASE-T"
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "RJ-45"
+    ],
+    "fiber_type": [
+      "COPPER_CAT5"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "penalties": [],
+    "notes": "Copper (electrical) SFP over Cat 5 UTP; not an optical transceiver. Datasheet title LP-SFP-MSRI: 1000 Mbps only, SERDES interface, -40~85°C (Industrial). Features also list Commercial 0 to +70°C for other variants. Electrical input: document states LP-SFP-xxxx input voltage +5V +/- 5%; Table 1 specifies +3.3V supply (Vcc 3.13–3.47 V). Caution: power consumption and surge current higher than SFP MSA. Reach stated as 100 m (Table 5, Description) and 0.1 Km (ordering); BER <10^-12 at 100 m Cat 5. Symbol rate 250 Mbps on each of four pairs. Line frequency 125 MHz (Table 3). LOS pin reflects link/receiver status per standard, not optical power in dBm.",
+    "provenance_datasheet_sections": [
+      "LP-SFP-MSRI",
+      "Copper SFP Transceiver",
+      "Features",
+      "Applications",
+      "Description",
+      "Electrical Power Interface",
+      "High-Speed Electrical Interface",
+      "High-speed electrical interface, host-SFP",
+      "General Specifications",
+      "Table 5. General specifications",
+      "Environmental Specifications",
+      "Table 6. Environmental specifications",
+      "Ordering information"
+    ],
+    "suggestions": "Add copper/RJ-45 form factors (SFP, RJ-45) to enums. reach_km: table uses 100 m while ordering uses 0.1 Km—same distance, different units. Consider host electrical params (125 MHz line rate, 250 Mbps per pair) in schema. post_fec_ber_target sourced from cable BER note, not FEC block."
+  }
+}

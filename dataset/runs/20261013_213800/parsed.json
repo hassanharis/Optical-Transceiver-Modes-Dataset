@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-tos002-s31c-so-osfp-400g-dr4-cmis4-r6.2.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 6004,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 21
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

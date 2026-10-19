@@ -1,0 +1,129 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "400GAUI-4 C2M",
+      "2x400GAUI-4"
+    ],
+    "media_interface_name": [
+      "800GBASE-DR8",
+      "400GBASE-DR4",
+      "2x400GBASE-DR4"
+    ],
+    "standards_code": [
+      "800GBASE-DR8",
+      "400GBASE-DR4",
+      "DR8",
+      "DR4"
+    ],
+    "bit_rate_gbps": [
+      800.0,
+      400.0
+    ],
+    "rx_sensitivity_dbm": [
+      -3.9,
+      -1.9
+    ],
+    "rx_overload_dbm": [
+      4.0,
+      5.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LO-DM31800-DR8C"
+    ],
+    "form_factor": [
+      "OSFP"
+    ],
+    "standards_claimed": [
+      "IEEE 802.3cu-2021",
+      "IEEE P802.3ck D2.2",
+      "OSFP MSA HW Rev 4.1 Type 2",
+      "CMIS Rev 5.0"
+    ],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1311.0
+    ],
+    "channel_total": [
+      8
+    ],
+    "connector_type": [
+      "MPO-12",
+      "MTP/MPO-12",
+      "MPO-12/APC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      16.0
+    ],
+    "frame": [
+      "2x400GAUI-4"
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      0.5
+    ],
+    "tx_power_min_dbm": [
+      -2.9
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      21.4
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "penalties": [],
+    "notes": "Operating distance stated as 2–500 m (Recommended Operating Conditions). Reach in title/ordering is 500 m. Average launch power min (-2.9 dBm) per lane note 1 is informative. Receiver sensitivity (OMAouter) max is Max(–3.9, SECQ – 5.3) dBm (informative, note 3) for SECQ up to 3.4 dB. Stressed receiver sensitivity -1.9 dBm (OMAouter) per note 4 at BER = 2.4x10^-4 with conformance test signal at TP3; stressed test SECQ 3.4 dB, aggressor OMAouter 4.2 dBm. Transmitter reflectance defined looking into transmitter (note 2). TDECQ max 3.4 dB per lane. Title wavelength 1310 nm; optical table λ 1304.5–1317.5 nm typ 1311 nm.",
+    "provenance_datasheet_sections": [
+      "LO-DM31800-DR8C",
+      "800GBASE-DR8 OSFP 1310nm 500m Dual MPO-12/APC IHS / Closed top with heat sink Transceiver",
+      "Features",
+      "Applications",
+      "Description",
+      "Recommended Operating Conditions",
+      "Optical Characteristic",
+      "Notes:",
+      "Electrical Characteristics",
+      "Digital Diagnostics",
+      "Ordering information"
+    ],
+    "suggestions": "Distinguish AOPL vs OMAouter (TOMA/OMAR/SOMA/SRS) in schema. reach_km: source uses meters (500 m)—clarify if 0.5 or 500 is preferred. pre_fec_ber_threshold from conformance test note may not be a module FEC threshold."
+  }
+}

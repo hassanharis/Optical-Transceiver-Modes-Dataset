@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:00:45.848783+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Arpers FN-TRAN-GC-COM Copper Small Form Pluggable.pdf",
+  "page_count": 6,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 7.337,
+    "extract_atoms": 20.919,
+    "store_run": 0.009,
+    "synthesize_modes": 24.354,
+    "store_modes": 0.004,
+    "total": 52.623
+  }
+}

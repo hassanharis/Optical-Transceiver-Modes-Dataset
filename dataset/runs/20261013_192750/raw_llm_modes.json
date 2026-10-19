@@ -1,0 +1,10 @@
+{
+  "modes": [
+    {
+      "label": "800G OSFP DR4",
+      "standards_code": "DR4",
+      "rx_overload_dbm": 4.0,
+      "number_of_lanes": 4
+    }
+  ]
+}

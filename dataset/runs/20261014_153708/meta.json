@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T15:37:08.536494+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-mr25-bx20d-34-43.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.641,
+    "extract_atoms": 34.403,
+    "store_run": 0.004,
+    "synthesize_modes": 68.389,
+    "store_modes": 0.006,
+    "total": 107.444
+  }
+}

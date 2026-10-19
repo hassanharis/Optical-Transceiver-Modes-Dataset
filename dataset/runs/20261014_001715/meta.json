@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T00:17:15.058251+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lqd-m85800-sr8c.pdf",
+  "page_count": 10,
+  "table_count": 10,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.837,
+    "extract_atoms": 22.892,
+    "store_run": 0.009,
+    "synthesize_modes": 25.71,
+    "store_modes": 0.004,
+    "total": 59.451
+  }
+}

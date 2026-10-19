@@ -1,0 +1,153 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "400GAUI-8",
+      "200GAUI-4",
+      "100GAUI-2",
+      "400GBASE-R",
+      "200GBASE-R",
+      "100GBASE-R"
+    ],
+    "media_interface_name": [
+      "OpenZR+ MSA",
+      "OIF 400ZR"
+    ],
+    "frame": [
+      "1x 400GAUI-8 (8x 50G)",
+      "2x 200GAUI-4 (4x 50G)",
+      "4x 100GAUI-2 (2x 50G)"
+    ],
+    "standards_code": [
+      "OpenZR+",
+      "OpenZR+ MSA, extended",
+      "OIF 400ZR",
+      "0x02",
+      "400ZR"
+    ],
+    "baud_rate_gbaud": [
+      60.1,
+      59.8
+    ],
+    "rx_sensitivity_dbm": [
+      -22.0,
+      -20.0
+    ],
+    "rx_overload_dbm": [
+      13.0,
+      15.0
+    ],
+    "fec_type": [
+      "OFEC",
+      "CFEC"
+    ],
+    "number_of_lanes": [
+      8,
+      4,
+      2
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TQD027-S55C-SO"
+    ],
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "OIF 400ZR",
+      "OpenZR+",
+      "OpenZR+ MSA",
+      "QSFP-DD MSA",
+      "CMIS 5.0"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_min_nm": [],
+    "wavelength_max_nm": [],
+    "wavelength_center_nm": [],
+    "wavelength_band": [],
+    "frequency_min_thz": [
+      193.7
+    ],
+    "frequency_max_thz": [
+      193.7
+    ],
+    "channel_spacing_ghz": [],
+    "channel_total": [
+      1
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 15.0,
+    "temp_max_c": 75.0,
+    "power_consumption_w": [
+      20.0
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "bit_rate_gbps": [
+      400.0
+    ],
+    "roll_off_percent": [],
+    "modulation_format": [
+      "QAM_16-DP"
+    ],
+    "reach_km": [
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      -9.0
+    ],
+    "tx_power_max_dbm": [
+      -4.0
+    ],
+    "tx_in_band_osnr_db": [
+      34.0
+    ],
+    "tx_out_of_band_osnr_db": [
+      30.0
+    ],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "cd_tolerance_ps_nm": [
+      2400.0
+    ],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [],
+    "post_fec_ber_target": [],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [
+      -28.0
+    ],
+    "los_deassert_dbm": [],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Module is fixed to 193.7 THz. Nominal wavelength is stated as 193.7 THz only (no nm values printed). Operating temperature +15°C to +75°C; footnote: cold start from ambient as low as -5°C with specifications after self-heating to minimum operating temperature. Storage temperature -40°C to +85°C. If TX power is not provisioned by host, module defaults to maximum available power anywhere in the stated 10 dB TX range. CMIS application codes 1, 3, and 4 are not interoperable with OpenZR+ MSA (enhanced media-side optical performance). Rx sensitivity per application mode: -22 dBm (modes 1, 3, 4), -20 dBm (mode 2). CDC range stated as 2 400 ps/nm for all listed application modes. Absolute maximum conditions: Rx signal input power +13 dBm; Rx total input power +15 dBm. Generic definitions state receiver minimum input power is normally at BER 1E-12 but BER is not specified in the application optical table. Ordering latency: 400G CFEC 8 us; 400G OFEC 5 us.",
+    "provenance_datasheet_sections": [
+      "TQD027-S55C-SO",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "GENERIC",
+      "OPTICAL SPECIFICATION - APPLICATION CODES",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Datasheet does not state emitter/photodetector types, Rx OSNR thresholds, LOS deassert, or penalty columns with @ notation; wavelength values in nm are not printed despite fixed 193.7 THz."
+  }
+}

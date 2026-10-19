@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T19:29:50.890501+00:00",
+  "source_file": "C:\\Haris\\datasheets\\800g_lpo_osfp_op13ld8-02d_prod_spec.pdf",
+  "page_count": 9,
+  "table_count": 10,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.776,
+    "extract_atoms": 27.842,
+    "store_run": 0.01,
+    "synthesize_modes": 62.401,
+    "store_modes": 0.003,
+    "total": 101.032
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "modes": [
+    {
+      "label": "LAN-WDM lane 1, 40 km with FEC",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 6.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "LAN-WDM lane 2, 40 km with FEC",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 6.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "LAN-WDM lane 3, 40 km with FEC",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 6.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "LAN-WDM lane 4, 40 km with FEC",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 6.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "LAN-WDM lane 1, 30 km without FEC",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 30.0,
+      "tx_power_max_dbm": 6.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "LAN-WDM lane 2, 30 km without FEC",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 30.0,
+      "tx_power_max_dbm": 6.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "LAN-WDM lane 3, 30 km without FEC",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 30.0,
+      "tx_power_max_dbm": 6.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "LAN-WDM lane 4, 30 km without FEC",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 30.0,
+      "tx_power_max_dbm": 6.5,
+      "fec_type": "RS_528_514"
+    }
+  ]
+}

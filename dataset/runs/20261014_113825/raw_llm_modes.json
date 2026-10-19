@@ -1,0 +1,26 @@
+{
+  "modes": [
+    {
+      "label": "400GBASE-DR4 / 400GAUI-8 (CMIS App Code 1)",
+      "host_interface_name": "400GAUI-8",
+      "host_interface_id": 1,
+      "media_interface_name": "400GBASE-DR4",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 425.0,
+      "fec_type": "RS_GENERIC",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "4x100GBASE-DR breakout / 100GAUI-2 (CMIS App Code 2)",
+      "host_interface_name": "100GAUI-2",
+      "host_interface_id": 2,
+      "media_interface_name": "100GBASE-DR",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "100GBASE-DR (Clause 140)",
+      "bit_rate_gbps": 425.0,
+      "fec_type": "RS_GENERIC",
+      "number_of_lanes": 4
+    }
+  ]
+}

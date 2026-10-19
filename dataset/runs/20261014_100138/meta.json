@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:01:38.067489+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Nokia_CHM1R_The_Industry's_Most_Flexible_400G_Muxponder_datasheet_Data_Sheet_EN.pdf",
+  "page_count": 6,
+  "table_count": 0,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 8.796,
+    "extract_atoms": 26.347,
+    "store_run": 0.011,
+    "synthesize_modes": 70.045,
+    "store_modes": 0.003,
+    "total": 105.202
+  }
+}

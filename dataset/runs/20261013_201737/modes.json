@@ -1,0 +1,67 @@
+{
+  "modes": [
+    {
+      "label": "InfiniBand QDR 10G per channel (AFBR-79Q4Z)",
+      "model": "AFBR-79Q4Z",
+      "power_consumption_w": 1.5,
+      "standards_code": "InfiniBand QDR",
+      "baud_rate_gbaud": 10.0,
+      "bit_rate_gbps": 10.0,
+      "reach_km": 0.1
+    },
+    {
+      "label": "InfiniBand QDR 10G per channel over OM2 MMF (AFBR-79Q4Z)",
+      "model": "AFBR-79Q4Z",
+      "power_consumption_w": 1.5,
+      "standards_code": "InfiniBand QDR",
+      "baud_rate_gbaud": 10.0,
+      "bit_rate_gbps": 10.0,
+      "reach_km": 0.035
+    },
+    {
+      "label": "InfiniBand DDR 5G per channel (AFBR-79Q5Z)",
+      "model": "AFBR-79Q5Z",
+      "power_consumption_w": 1.3,
+      "standards_code": "InfiniBand DDR",
+      "baud_rate_gbaud": 2.5,
+      "bit_rate_gbps": 5.0,
+      "reach_km": 0.1
+    },
+    {
+      "label": "InfiniBand DDR 5G per channel over OM2 MMF (AFBR-79Q5Z)",
+      "model": "AFBR-79Q5Z",
+      "power_consumption_w": 1.3,
+      "standards_code": "InfiniBand DDR",
+      "baud_rate_gbaud": 2.5,
+      "bit_rate_gbps": 5.0,
+      "reach_km": 0.035
+    },
+    {
+      "label": "InfiniBand SDR 2.5G per channel (backward compatible)",
+      "model": "AFBR-79Q4Z",
+      "power_consumption_w": 1.3,
+      "standards_code": "InfiniBand SDR",
+      "baud_rate_gbaud": 2.5,
+      "bit_rate_gbps": 2.5,
+      "reach_km": 0.1
+    },
+    {
+      "label": "InfiniBand SDR 2.5G per channel over OM2 MMF (backward compatible)",
+      "model": "AFBR-79Q4Z",
+      "power_consumption_w": 1.3,
+      "standards_code": "InfiniBand SDR",
+      "baud_rate_gbaud": 2.5,
+      "bit_rate_gbps": 2.5,
+      "reach_km": 0.035
+    },
+    {
+      "label": "Evaluation test board (AFBR-79QEKZ)",
+      "model": "AFBR-79QEKZ",
+      "power_consumption_w": 1.5,
+      "standards_code": "10GbE",
+      "baud_rate_gbaud": 10.0,
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.1
+    }
+  ]
+}

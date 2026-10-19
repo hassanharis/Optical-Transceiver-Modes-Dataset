@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:58:40.862879+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lq-dac11100-xmn.pdf",
+  "page_count": 6,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 6.521,
+    "extract_atoms": 16.722,
+    "store_run": 0.012,
+    "synthesize_modes": 13.239,
+    "store_modes": 0.004,
+    "total": 36.499
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Analyzing the datasheet: one product (OP13LD8-005D-3), one application (800G Ethernet). 106.25 Gb/s is per-channel; 800 Gbps is aggregate. Power 7.5 W (typ) and 8.5 W (max) are the same module. Standards are joint compliance, not separate modes.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"800G LPO OSFP DR8\",\n      \"power_consumption_w\": 7.5,\n      \"standards_code\": \"DR8\",\n      \"bit_rate_gbps\": 800.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

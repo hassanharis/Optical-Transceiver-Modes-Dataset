@@ -1,0 +1,116 @@
+{
+  "modes": [
+    {
+      "label": "SO-XFP-SR 10GBASE-SR 10GbE-LAN OM3",
+      "model": "SO-XFP-SR",
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SO-XFP-SR 10GBASE-SR 10GbE-LAN OM2",
+      "model": "SO-XFP-SR",
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.082
+    },
+    {
+      "label": "SO-XFP-SR 10GBASE-SW 10GbE-WAN OM3",
+      "model": "SO-XFP-SR",
+      "media_interface_name": "10GBASE-SW",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SO-XFP-SR 10GBASE-SW 10GbE-WAN OM2",
+      "model": "SO-XFP-SR",
+      "media_interface_name": "10GBASE-SW",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.082
+    },
+    {
+      "label": "SO-XFP-SR 1200-M5-SN-I 10G FC OM3",
+      "model": "SO-XFP-SR",
+      "media_interface_name": "1200-M5-SN-I",
+      "standards_code": "10G FC",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SO-XFP-SR 1200-M5E-SN-I 10G FC OM3",
+      "model": "SO-XFP-SR",
+      "media_interface_name": "1200-M5E-SN-I",
+      "standards_code": "10G FC",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SO-XFP-SR 1200-M6-SN-I 10G FC OM3",
+      "model": "SO-XFP-SR",
+      "media_interface_name": "1200-M6-SN-I",
+      "standards_code": "10G FC",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SO-XFP-SR-E 10GBASE-SR 10GbE-LAN OM3",
+      "model": "SO-XFP-SR-E",
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SO-XFP-SR-E 10GBASE-SR 10GbE-LAN OM2",
+      "model": "SO-XFP-SR-E",
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.082
+    },
+    {
+      "label": "SO-XFP-SR-E 10GBASE-SW 10GbE-WAN OM3",
+      "model": "SO-XFP-SR-E",
+      "media_interface_name": "10GBASE-SW",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SO-XFP-SR-E 10GBASE-SW 10GbE-WAN OM2",
+      "model": "SO-XFP-SR-E",
+      "media_interface_name": "10GBASE-SW",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.082
+    },
+    {
+      "label": "SO-XFP-SR-E 1200-M5-SN-I 10G FC OM3",
+      "model": "SO-XFP-SR-E",
+      "media_interface_name": "1200-M5-SN-I",
+      "standards_code": "10G FC",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SO-XFP-SR-E 1200-M5E-SN-I 10G FC OM3",
+      "model": "SO-XFP-SR-E",
+      "media_interface_name": "1200-M5E-SN-I",
+      "standards_code": "10G FC",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SO-XFP-SR-E 1200-M6-SN-I 10G FC OM3",
+      "model": "SO-XFP-SR-E",
+      "media_interface_name": "1200-M6-SN-I",
+      "standards_code": "10G FC",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 0.3
+    }
+  ]
+}

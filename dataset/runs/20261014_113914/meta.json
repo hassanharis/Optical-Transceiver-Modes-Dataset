@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T11:39:14.828862+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-qsfp-dd-4c-dr4-m-r5.5.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.854,
+    "extract_atoms": 31.04,
+    "store_run": 0.006,
+    "synthesize_modes": 33.62,
+    "store_modes": 0.003,
+    "total": 69.522
+  }
+}

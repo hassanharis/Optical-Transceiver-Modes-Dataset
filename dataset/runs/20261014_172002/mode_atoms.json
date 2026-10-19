@@ -1,0 +1,388 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "CAUI4",
+      "CAUI4 KR4 FEC",
+      "100GAUI-2 KP4 FEC",
+      "OTL4.4"
+    ],
+    "media_interface_name": [
+      "OpenZR+",
+      "FlexO-1",
+      "OTU4"
+    ],
+    "standards_code": [
+      "OpenZR+",
+      "OpenROADM",
+      "FlexO-1",
+      "OTU4"
+    ],
+    "baud_rate_gbaud": [
+      30.1,
+      31.6,
+      28.0
+    ],
+    "modulation_format": [
+      "QPSK-DP",
+      "DQPSK-DP"
+    ],
+    "reach_km": [
+      450.0,
+      130.0
+    ],
+    "rx_sensitivity_dbm": [
+      -32.0,
+      -30.0
+    ],
+    "rx_overload_dbm": [
+      13.0,
+      15.0
+    ],
+    "fec_type": [
+      "OFEC",
+      "SCFEC"
+    ],
+    "pre_fec_ber_threshold": [
+      0.02,
+      0.0045
+    ],
+    "penalties": [
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=1"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=1"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=2"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=2"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=3"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=3"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=4"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=4"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=5"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=5"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=6"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=6"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=7"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=7"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=8"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=8"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=9"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=9"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=10"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=10"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=11"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=11"
+      }
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TQD011-TUNC-SO"
+    ],
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "QSFP-DD MSA",
+      "OpenZR+ MSA",
+      "OpenROADM MSA",
+      "CMIS 5.0",
+      "OpenROADM 3.0/4.0",
+      "OpenROADM 2.0",
+      "100GBASE-R",
+      "SyncE"
+    ],
+    "wavelength_band": [
+      "C-band"
+    ],
+    "frequency_min_thz": [
+      191.275
+    ],
+    "frequency_max_thz": [
+      196.125
+    ],
+    "channel_spacing_ghz": [
+      6.25
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 75.0,
+    "power_consumption_w": [
+      17.0
+    ],
+    "bit_rate_gbps": [
+      100.0
+    ],
+    "tx_power_min_dbm": [
+      -5.0
+    ],
+    "tx_power_max_dbm": [
+      0.0
+    ],
+    "tx_in_band_osnr_db": [
+      34.0
+    ],
+    "tx_out_of_band_osnr_db": [
+      30.0
+    ],
+    "rx_osnr_db": [
+      15.5
+    ],
+    "cd_tolerance_ps_nm": [
+      8600.0
+    ],
+    "notes": "Module is a QSFP-DD type 2a DWDM coherent tunable transceiver (100G Ethernet/OTN/OpenROADM), CMIS 5.0, AES-256 encryption via I2C (supported for application codes 4-7 only). Reach: 130km unamplified, 450km dispersion limited (amplified links). Tx power: maximum available Tx power lies somewhere in the range -5.0 to 0dBm; can be provisioned up to 10dB below the maximum (Transmit VOA dynamic range 0 - 10dB); defaults to the maximum if not provisioned by host. Tx wavelengths 191.275 - 196.125THz in minimum 6.25GHz steps. Rx sensitivity -32dBm (application codes 1-7, oFEC) and -30dBm (application codes 8-11, SC-FEC), specified at OSNR > 36dB. Rx OSNR 15.5dB specified at -20dBm Rx power (identical for all application codes). Rx overload: signal power 13dBm, total power 15dBm, specified to be within the pre-FEC BER range of the selected application code; Rx damage threshold 16dBm. CDC limit 8600ps/nm (8 600 ps/nm, CDC range @0.5dB OSNR penalty). oFEC: NCG 11.6dB at pre-FEC BER 2.0x10^-2 (OpenZR+ 100G option, OpenROADM 3.0/4.0). SC-FEC: NCG 9.4dB at pre-FEC BER 4.5x10^-3 (OpenROADM 2.0, OTU4 media format). Baud rates: 30.1Gbd (OpenZR+, codes 1-3), 31.6Gbd (FlexO-1, codes 4-7), 28.0Gbd (OTU4, codes 8-11). Modulation DP-QPSK for oFEC codes, DP-DQPSK for SC-FEC codes. Latency: oFEC 11us (13.5us with encryption), SC-FEC 20us (22.5us with encryption). Wavelength switch time max 86s channel to channel. Tx In-Band OSNR min 34dB/0.1nm; Tx Out-Of-Band OSNR min 30dB/0.1nm. Operating temperature 0°C to +75°C; storage temperature -40°C to +85°C. Power consumption 17.0W (Class 8). Features: DDM, SyncE. Regulatory: TUV/UL/FDA, RoHS. Wavelength in nm not stated (only THz frequency range). Media format names (OpenZR+, FlexO-1, OTU4) are listed under 'Media Format' column.",
+    "provenance_datasheet_sections": [
+      "QSFP-DD 100GE DP-QPSK 450KM ETH/OTN",
+      "OVERVIEW",
+      "GENERIC",
+      "OPTICAL SPECIFICATION - APPLICATION CODES",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Add fields for encryption support, wavelength switch time, latency, net coding gain (NCG), storage temperature, Tx VOA dynamic range, and Rx damage threshold. Add a per-application-code structure so that host format, media format, FEC, modulation, baud rate and Rx sensitivity can be tied together instead of being flattened into lists. Allow CDC range to be paired with a penalty for dispersion penalty points."
+  }
+}

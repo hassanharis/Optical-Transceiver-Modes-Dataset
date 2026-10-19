@@ -1,0 +1,844 @@
+{
+  "modes": [
+    {
+      "label": "D919 191.90THz 1562.23nm C-temp",
+      "model": "SO-SFP-L120D-D919",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1562.23,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D919 191.90THz 1562.23nm E-temp",
+      "model": "SO-SFP-L120D-D919-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1562.23,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D920 192.00THz 1561.42nm C-temp",
+      "model": "SO-SFP-L120D-D920",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1561.42,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D920 192.00THz 1561.42nm E-temp",
+      "model": "SO-SFP-L120D-D920-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1561.42,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D921 192.10THz 1560.61nm C-temp",
+      "model": "SO-SFP-L120D-D921",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1560.61,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D921 192.10THz 1560.61nm E-temp",
+      "model": "SO-SFP-L120D-D921-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1560.61,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D922 192.20THz 1559.79nm C-temp",
+      "model": "SO-SFP-L120D-D922",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1559.79,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D922 192.20THz 1559.79nm E-temp",
+      "model": "SO-SFP-L120D-D922-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1559.79,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D923 192.30THz 1558.98nm C-temp",
+      "model": "SO-SFP-L120D-D923",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1558.98,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D923 192.30THz 1558.98nm E-temp",
+      "model": "SO-SFP-L120D-D923-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1558.98,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D924 192.40THz 1558.17nm C-temp",
+      "model": "SO-SFP-L120D-D924",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1558.17,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D924 192.40THz 1558.17nm E-temp",
+      "model": "SO-SFP-L120D-D924-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1558.17,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D925 192.50THz 1557.36nm C-temp",
+      "model": "SO-SFP-L120D-D925",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1557.36,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D925 192.50THz 1557.36nm E-temp",
+      "model": "SO-SFP-L120D-D925-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1557.36,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D926 192.60THz 1556.55nm C-temp",
+      "model": "SO-SFP-L120D-D926",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1556.55,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D926 192.60THz 1556.55nm E-temp",
+      "model": "SO-SFP-L120D-D926-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1556.55,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D927 192.70THz 1555.75nm C-temp",
+      "model": "SO-SFP-L120D-D927",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1555.75,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D927 192.70THz 1555.75nm E-temp",
+      "model": "SO-SFP-L120D-D927-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1555.75,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D928 192.80THz 1554.94nm C-temp",
+      "model": "SO-SFP-L120D-D928",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1554.94,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D928 192.80THz 1554.94nm E-temp",
+      "model": "SO-SFP-L120D-D928-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1554.94,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D929 192.90THz 1554.13nm C-temp",
+      "model": "SO-SFP-L120D-D929",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1554.13,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D929 192.90THz 1554.13nm E-temp",
+      "model": "SO-SFP-L120D-D929-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1554.13,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D930 193.00THz 1553.33nm C-temp",
+      "model": "SO-SFP-L120D-D930",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1553.33,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D930 193.00THz 1553.33nm E-temp",
+      "model": "SO-SFP-L120D-D930-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1553.33,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D931 193.10THz 1552.52nm C-temp",
+      "model": "SO-SFP-L120D-D931",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1552.52,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D931 193.10THz 1552.52nm E-temp",
+      "model": "SO-SFP-L120D-D931-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1552.52,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D932 193.20THz 1551.72nm C-temp",
+      "model": "SO-SFP-L120D-D932",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1551.72,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D932 193.20THz 1551.72nm E-temp",
+      "model": "SO-SFP-L120D-D932-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1551.72,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D933 193.30THz 1550.92nm C-temp",
+      "model": "SO-SFP-L120D-D933",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1550.92,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D933 193.30THz 1550.92nm E-temp",
+      "model": "SO-SFP-L120D-D933-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1550.92,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D934 193.40THz 1550.12nm C-temp",
+      "model": "SO-SFP-L120D-D934",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1550.12,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D934 193.40THz 1550.12nm E-temp",
+      "model": "SO-SFP-L120D-D934-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1550.12,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D935 193.50THz 1549.32nm C-temp",
+      "model": "SO-SFP-L120D-D935",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1549.32,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D935 193.50THz 1549.32nm E-temp",
+      "model": "SO-SFP-L120D-D935-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1549.32,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D936 193.60THz 1548.51nm C-temp",
+      "model": "SO-SFP-L120D-D936",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1548.51,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D936 193.60THz 1548.51nm E-temp",
+      "model": "SO-SFP-L120D-D936-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1548.51,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D937 193.70THz 1547.72nm C-temp",
+      "model": "SO-SFP-L120D-D937",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1547.72,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D937 193.70THz 1547.72nm E-temp",
+      "model": "SO-SFP-L120D-D937-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1547.72,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D938 193.80THz 1546.92nm C-temp",
+      "model": "SO-SFP-L120D-D938",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1546.92,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D938 193.80THz 1546.92nm E-temp",
+      "model": "SO-SFP-L120D-D938-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1546.92,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D939 193.90THz 1546.12nm C-temp",
+      "model": "SO-SFP-L120D-D939",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1546.12,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D939 193.90THz 1546.12nm E-temp",
+      "model": "SO-SFP-L120D-D939-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1546.12,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D940 194.00THz 1545.32nm C-temp",
+      "model": "SO-SFP-L120D-D940",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1545.32,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D940 194.00THz 1545.32nm E-temp",
+      "model": "SO-SFP-L120D-D940-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1545.32,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D941 194.10THz 1544.53nm C-temp",
+      "model": "SO-SFP-L120D-D941",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1544.53,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D941 194.10THz 1544.53nm E-temp",
+      "model": "SO-SFP-L120D-D941-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1544.53,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D942 194.20THz 1543.73nm C-temp",
+      "model": "SO-SFP-L120D-D942",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1543.73,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D942 194.20THz 1543.73nm E-temp",
+      "model": "SO-SFP-L120D-D942-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1543.73,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D943 194.30THz 1542.94nm C-temp",
+      "model": "SO-SFP-L120D-D943",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1542.94,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D943 194.30THz 1542.94nm E-temp",
+      "model": "SO-SFP-L120D-D943-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1542.94,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D944 194.40THz 1542.14nm C-temp",
+      "model": "SO-SFP-L120D-D944",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1542.14,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D944 194.40THz 1542.14nm E-temp",
+      "model": "SO-SFP-L120D-D944-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1542.14,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D945 194.50THz 1541.35nm C-temp",
+      "model": "SO-SFP-L120D-D945",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1541.35,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D945 194.50THz 1541.35nm E-temp",
+      "model": "SO-SFP-L120D-D945-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1541.35,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D946 194.60THz 1540.56nm C-temp",
+      "model": "SO-SFP-L120D-D946",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1540.56,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D946 194.60THz 1540.56nm E-temp",
+      "model": "SO-SFP-L120D-D946-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1540.56,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D947 194.70THz 1539.77nm C-temp",
+      "model": "SO-SFP-L120D-D947",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1539.77,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D947 194.70THz 1539.77nm E-temp",
+      "model": "SO-SFP-L120D-D947-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1539.77,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D948 194.80THz 1538.98nm C-temp",
+      "model": "SO-SFP-L120D-D948",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1538.98,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D948 194.80THz 1538.98nm E-temp",
+      "model": "SO-SFP-L120D-D948-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1538.98,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D949 194.90THz 1538.19nm C-temp",
+      "model": "SO-SFP-L120D-D949",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1538.19,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D949 194.90THz 1538.19nm E-temp",
+      "model": "SO-SFP-L120D-D949-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1538.19,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D950 195.00THz 1537.40nm C-temp",
+      "model": "SO-SFP-L120D-D950",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1537.4,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D950 195.00THz 1537.40nm E-temp",
+      "model": "SO-SFP-L120D-D950-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1537.4,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D951 195.10THz 1536.61nm C-temp",
+      "model": "SO-SFP-L120D-D951",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1536.61,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D951 195.10THz 1536.61nm E-temp",
+      "model": "SO-SFP-L120D-D951-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1536.61,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D952 195.20THz 1535.82nm C-temp",
+      "model": "SO-SFP-L120D-D952",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1535.82,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D952 195.20THz 1535.82nm E-temp",
+      "model": "SO-SFP-L120D-D952-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1535.82,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D953 195.30THz 1535.04nm C-temp",
+      "model": "SO-SFP-L120D-D953",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1535.04,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D953 195.30THz 1535.04nm E-temp",
+      "model": "SO-SFP-L120D-D953-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1535.04,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D954 195.40THz 1534.25nm C-temp",
+      "model": "SO-SFP-L120D-D954",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1534.25,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D954 195.40THz 1534.25nm E-temp",
+      "model": "SO-SFP-L120D-D954-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1534.25,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D955 195.50THz 1533.47nm C-temp",
+      "model": "SO-SFP-L120D-D955",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1533.47,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D955 195.50THz 1533.47nm E-temp",
+      "model": "SO-SFP-L120D-D955-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1533.47,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D956 195.60THz 1532.68nm C-temp",
+      "model": "SO-SFP-L120D-D956",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1532.68,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D956 195.60THz 1532.68nm E-temp",
+      "model": "SO-SFP-L120D-D956-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1532.68,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D957 195.70THz 1531.90nm C-temp",
+      "model": "SO-SFP-L120D-D957",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1531.9,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D957 195.70THz 1531.90nm E-temp",
+      "model": "SO-SFP-L120D-D957-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1531.9,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D958 195.80THz 1531.12nm C-temp",
+      "model": "SO-SFP-L120D-D958",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1531.12,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D958 195.80THz 1531.12nm E-temp",
+      "model": "SO-SFP-L120D-D958-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1531.12,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D959 195.90THz 1530.33nm C-temp",
+      "model": "SO-SFP-L120D-D959",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1530.33,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D959 195.90THz 1530.33nm E-temp",
+      "model": "SO-SFP-L120D-D959-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1530.33,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D960 196.00THz 1529.55nm C-temp",
+      "model": "SO-SFP-L120D-D960",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1529.55,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "D960 196.00THz 1529.55nm E-temp",
+      "model": "SO-SFP-L120D-D960-E",
+      "wavelength_min_nm": 1528.0,
+      "wavelength_max_nm": 1566.0,
+      "wavelength_center_nm": 1529.55,
+      "frequency_max_thz": 196.0,
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

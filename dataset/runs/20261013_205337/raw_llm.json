@@ -1,0 +1,166 @@
+{
+  "vendor": "Cinch Connectivity Solutions",
+  "model": [
+    "FNK-ST11x",
+    "FNK-ST11H",
+    "FNK-ST11"
+  ],
+  "form_factor": [
+    "Low Rider RJ",
+    "Front Panel Plug RJ"
+  ],
+  "standards_claimed": [
+    "IEEE Gigabit Ethernet",
+    "IEEE 802.3z",
+    "ANSI 1x Fiber Channel",
+    "ANSI X3.297",
+    "FC-PH-2",
+    "SFF-8472 Rev. 9.3",
+    "SFP Multi-Source Agreement (MSA)",
+    "EN-60825",
+    "IEC-825",
+    "CDRH Class 1"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    830.0,
+    770.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    1
+  ],
+  "mounting_type": [
+    "Front load pluggable",
+    "screw_post",
+    "solder_post"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF_OM1",
+    "MMF 50/125µm",
+    "MMF"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "LVPECL",
+    "CML",
+    "LVTTL"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "IEEE-802.3z",
+    "FC-PH-2",
+    "SFF-8472"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1.25,
+    0.125
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "NRZ"
+  ],
+  "reach_km": [
+    0.22,
+    0.275,
+    0.3,
+    0.5,
+    0.55,
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -9.5
+  ],
+  "tx_power_max_dbm": [
+    -4.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -21.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    10.0
+  ],
+  "los_assert_dbm": [
+    -21.0
+  ],
+  "los_deassert_dbm": [
+    -31.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    10.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    1.5,
+    2.25,
+    3.5
+  ],
+  "total_jitter_ps": [
+    80.0,
+    153.0
+  ],
+  "penalties": [],
+  "notes": "Features & Benefits bullet lists '3.3 V, 1310 nm, FP, Singlemode' while product text and ordering (ST11 = MM 850nm) describe 850 nm VCSEL multimode. Transmitter footnote: BER = 10^-10 @ 125 Mbps; receiver footnote: BER = 10^-10 @ 1.25 Gbps. Link Distances table gives reach in meters by fiber bandwidth-length product; Features states 'up to 10 km'. Receiver Optical Sensitivity Max 0.0 dBm. ORL 12 dB (receiver table). CPR 9 dB; RIN -117 dB/Hz. Tx ICC 120–160 mA, Rx ICC 70–120 mA; electrical power in W not stated.",
+  "provenance_datasheet_sections": [
+    "FNK-ST11x",
+    "Features & Benefits",
+    "Ordering Information",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Transmitter",
+    "Receiver",
+    "Link Distances",
+    "DIGITAL DIAGNOSTICS MONITORING INTERFACE – BASE ADDRESS A2h",
+    "Alarm and Warning Thresholds",
+    "Timing Parameters"
+  ],
+  "suggestions": "Confirm whether transmitter footnote 125 Mbps is a typo for 1.25 Gbps. Reconcile Features 10 km vs multimode link table. BER 10^-10 is a test condition, not labeled as post-FEC."
+}

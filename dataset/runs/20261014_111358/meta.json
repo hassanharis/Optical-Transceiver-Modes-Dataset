@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T11:13:58.327815+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-cfp2-qsfp28-xm.pdf",
+  "page_count": 1,
+  "table_count": 1,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 1.623,
+    "extract_atoms": 33.153,
+    "store_run": 0.003,
+    "synthesize_modes": 56.877,
+    "store_modes": 0.003,
+    "total": 91.66
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "100BASE-FX / FE @ 100 Mbps",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "STM-1 / OC-3 @ 155 Mbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "STM-1",
+      "bit_rate_gbps": 0.155
+    }
+  ]
+}

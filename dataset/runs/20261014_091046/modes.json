@@ -1,0 +1,46 @@
+{
+  "modes": [
+    {
+      "label": "LS-MM851G-S5C (standard temp, 550 m)",
+      "standards_code": "SFP MSA",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.55
+    },
+    {
+      "label": "LS-MM851G-S5I (industrial temp, 550 m)",
+      "standards_code": "SFP MSA",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.55
+    },
+    {
+      "label": "1.25 Gbps over 62.5/125 \u00b5m MMF (300 m)",
+      "standards_code": "SFP MSA",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.3
+    },
+    {
+      "label": "1.25 Gbps MMF (500 m, description)",
+      "standards_code": "SFP MSA",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.5
+    },
+    {
+      "label": "1.063 Gbps Fiber Channel over 50/125 \u00b5m MMF (550 m)",
+      "standards_code": "SFP MSA",
+      "bit_rate_gbps": 1.063,
+      "reach_km": 0.55
+    },
+    {
+      "label": "1.063 Gbps Fiber Channel over 62.5/125 \u00b5m MMF (300 m)",
+      "standards_code": "SFP MSA",
+      "bit_rate_gbps": 1.063,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SFF-8472 DDM (1.25 Gbps, 550 m ordering)",
+      "standards_code": "SFF-8472",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 0.55
+    }
+  ]
+}

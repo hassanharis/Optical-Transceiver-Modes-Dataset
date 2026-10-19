@@ -1,0 +1,92 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-CSFP-1000BASE-BX10D-43-O2",
+      "SO-CSFP-1000Base-BX10D-43-O2",
+      "SO-CSFP-1000Base-BX10D-43-O2-I"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1490.0
+    ],
+    "wavelength_max_nm": [
+      1360.0,
+      1500.0
+    ],
+    "wavelength_center_nm": [
+      1310.0,
+      1490.0
+    ],
+    "standards_code": [
+      "1000BASE-BX10D",
+      "FE",
+      "GbE",
+      "1G FC",
+      "STM1/OC3",
+      "STM4/OC12"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "CSFP"
+    ],
+    "standards_claimed": [
+      "CSFP MSA Opt 2",
+      "SFF-8472"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "host_interface_name": [
+      "CSFP MSA Opt 2"
+    ],
+    "bit_rate_gbps": [
+      1.25
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -9.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -19.5
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "pre_fec_ber_threshold": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -20.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Product title and ordering list 11 dB power budget; TECHNICAL DATA header states power budget 0–10.5 dB and dispersion penalty Max 1 dB without further numeric dispersion penalty detail. Bit rate support explicitly includes 100 Mbps to 1.25 Gbps (100 Mbps not entered in bit_rate_gbps to avoid unit conversion). Industrial variant SO-CSFP-1000Base-BX10D-43-O2-I: operating temperature -40°C to +85°C (-I). Transmitter output power, receiver minimum input power, and overload are average power (footnote 1). Receiver minimum input power and overload measured at 1.25 Gbps, BER ≤ 1×10⁻¹², PRBS 2⁷-1, back-to-back (footnote 2). Two LC connectors on SM single-fiber BiDi; each port Tx 1490 nm / Rx 1310 nm; far end requires BiDi SFP Tx 1310 nm / Rx 1490 nm. Power consumption < 1.0 W per BiDi function. DDM per SFF-8472.",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider separate temp_min_c/temp_max_c per ordering suffix (C-temp vs I-temp) or allow list of ranges. Add power_budget_db to schema for values like 0–10.5 dB and 11 dB in product naming. Allow bit_rate_mbps alongside bit_rate_gbps for multirate modules."
+  }
+}

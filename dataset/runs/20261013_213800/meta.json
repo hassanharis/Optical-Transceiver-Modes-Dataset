@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:38:00.798780+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tos002-s31c-so-osfp-400g-dr4-cmis4-r6.2.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.881,
+    "extract_atoms": 26.652,
+    "store_run": 0.009,
+    "synthesize_modes": 10.134,
+    "store_modes": 0.004,
+    "total": 40.68
+  }
+}

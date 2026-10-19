@@ -1,0 +1,133 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "25GBASE-SR",
+      "25GbE"
+    ],
+    "bit_rate_gbps": [
+      25.78,
+      24.33,
+      9.95,
+      10.31
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP28-SR3"
+    ],
+    "form_factor": [
+      "SFP28"
+    ],
+    "standards_claimed": [
+      "IEEE -SR",
+      "25GBASE-SR",
+      "SFP28 SFF-8402",
+      "25G Ethernet",
+      "25GbE"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_min_nm": [
+      840.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "channel_total": [
+      1
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM3",
+      "MMF_OM4"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "host_interface_name": [
+      "SFP28"
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [
+      "25GBASE-SR"
+    ],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "modulation_format": [],
+    "reach_km": [],
+    "tx_power_min_dbm": [
+      -8.4
+    ],
+    "tx_power_max_dbm": [
+      2.4
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_sensitivity_dbm": [
+      -10.3
+    ],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [
+      3.0
+    ],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "post_fec_ber_target": [],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -13.0
+    ],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [
+      1
+    ],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Typical reach stated as 300m (OM4) and 200m (OM3), not in km. Power budget 0 – 1.9dB. Power consumption < 1.0W. Storage temperature -40°C to +85°C. Optical parameters at BER less than 5x10-5; FEC required on host per 25GbE specification. Transmitter/receiver power values are average power (footnote 1). Rx sensitivity and overload at BER less than 5x10-5 (footnote 2). Supports CPRI options 10/25GbE at 24.33/25.78 Gbps and 10GbE-LW/LR at 9.95/10.31 Gbps per rate select table. Document also references SFP+ form-factor naming while product is SFP28.",
+    "provenance_datasheet_sections": [
+      "SO-SFP28-SR3",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Datasheet lists reach in meters only; schema field reach_km left empty per no unit conversion rule. Consider a reach_m field or paired reach with unit. Power budget (0–1.9dB) has no dedicated schema field."
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "multi_valued": {
+    "model": [
+      "FTLX3871DCCXX",
+      "FTLX3871DCCxx",
+      "FTLX3871DCC17",
+      "FTLX3871DCC18",
+      "FTLX3871DCC19",
+      "FTLX3871DCC20",
+      "FTLX3871DCC21",
+      "FTLX3871DCC22",
+      "FTLX3871DCC23",
+      "FTLX3871DCC24",
+      "FTLX3871DCC25",
+      "FTLX3871DCC26",
+      "FTLX3871DCC27",
+      "FTLX3871DCC28",
+      "FTLX3871DCC29",
+      "FTLX3871DCC30",
+      "FTLX3871DCC31",
+      "FTLX3871DCC32",
+      "FTLX3871DCC33",
+      "FTLX3871DCC34",
+      "FTLX3871DCC35",
+      "FTLX3871DCC36",
+      "FTLX3871DCC37",
+      "FTLX3871DCC38",
+      "FTLX3871DCC39",
+      "FTLX3871DCC40",
+      "FTLX3871DCC41",
+      "FTLX3871DCC42",
+      "FTLX3871DCC43",
+      "FTLX3871DCC44",
+      "FTLX3871DCC45",
+      "FTLX3871DCC46",
+      "FTLX3871DCC47",
+      "FTLX3871DCC48",
+      "FTLX3871DCC49",
+      "FTLX3871DCC50",
+      "FTLX3871DCC51",
+      "FTLX3871DCC52",
+      "FTLX3871DCC53",
+      "FTLX3871DCC54",
+      "FTLX3871DCC55",
+      "FTLX3871DCC56",
+      "FTLX3871DCC57",
+      "FTLX3871DCC58",
+      "FTLX3871DCC59",
+      "FTLX3871DCC60",
+      "FTLX3871DCC61"
+    ],
+    "wavelength_center_nm": [
+      1563.86,
+      1563.05,
+      1562.23,
+      1561.42,
+      1560.61,
+      1559.79,
+      1558.98,
+      1558.17,
+      1557.36,
+      1556.55,
+      1555.75,
+      1554.94,
+      1554.13,
+      1553.33,
+      1552.52,
+      1551.72,
+      1550.92,
+      1550.12,
+      1549.32,
+      1548.51,
+      1547.72,
+      1546.92,
+      1546.12,
+      1545.32,
+      1544.53,
+      1543.73,
+      1542.94,
+      1542.14,
+      1541.35,
+      1540.56,
+      1539.77,
+      1538.98,
+      1538.19,
+      1537.4,
+      1536.61,
+      1535.82,
+      1535.04,
+      1534.25,
+      1533.47,
+      1532.68,
+      1531.9,
+      1531.12,
+      1530.33,
+      1529.55,
+      1528.77
+    ],
+    "power_consumption_w": [
+      1.6,
+      1.7
+    ],
+    "standards_code": [
+      "DS100S1-2Dz(C)",
+      "10G Ethernet ZR",
+      "ITU-T G.698.1 DS100S1-2Dz(C)"
+    ],
+    "bit_rate_gbps": [
+      8.5,
+      9.95,
+      10.7,
+      11.1,
+      11.3,
+      11.3168
+    ],
+    "rx_sensitivity_dbm": [
+      -24.0,
+      -27.0,
+      -21.0
+    ],
+    "cd_tolerance_ps_nm": [
+      1450.0,
+      1300.0,
+      1100.0
+    ],
+    "post_fec_ber_target": [
+      1e-12,
+      0.0001
+    ],
+    "los_assert_dbm": [
+      -37.0,
+      -30.0
+    ]
+  },
+  "general": {
+    "vendor": "Finisar",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "G.698.1 DS100S1-2Dz(C)",
+      "10G Ethernet ZR",
+      "10G Fibre Channel",
+      "SFF-8472",
+      "SFP MSA",
+      "RoHS Directive 2011/65/EU"
+    ],
+    "emitter_type": [
+      "LASER_EML"
+    ],
+    "wavelength_min_nm": [
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1600.0
+    ],
+    "wavelength_band": [
+      "DWDM"
+    ],
+    "frequency_min_thz": [
+      191.7
+    ],
+    "frequency_max_thz": [
+      196.1
+    ],
+    "channel_spacing_ghz": [
+      100.0
+    ],
+    "channel_total": [
+      45
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF_G652",
+      "SMF"
+    ],
+    "temp_min_c": -5.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      -1.0
+    ],
+    "tx_power_max_dbm": [
+      3.0
+    ],
+    "rx_overload_dbm": [
+      -7.0
+    ],
+    "extinction_ratio_db": [
+      8.2
+    ],
+    "los_deassert_dbm": [
+      -28.0
+    ],
+    "receiver_reflectance_db": [
+      -27.0
+    ],
+    "optical_extinction_ratio_db": [
+      8.2
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Transmitter optical wavelength λC per ITU-T 694.1 (Table 1 per channel). Center wavelength at end of life λc_EOL: λc±100pm. Cooled 1550nm EML laser (feature); receiver is limiting electrical interface. Sensitivity measured with worst ER=8.2dB; 2^31-1 PRBS. Max chromatic dispersion tolerance over 80km G.652 SMF: 1450 ps/nm (80km sens. 8.5, 9.95-10.7 Gb/s, BER<10^-12); 1300 ps/nm (80km 11.1 Gb/s, BER<10^-4); 1100 ps/nm (80km 11.3 Gb/s, BER<10^-4). Supports 8.5 and 9.95 to 11.3 Gb/s (features); bit rate table max 11.3168 Gb/s. Typical power consumption at 70°C case, beginning of life, 3.3V. Power Level II; typical consumption may exceed 1.5W SFF-8431 limit. Receiver optical damage threshold RxDamage 5 dBm (absolute max). Average launch power when Tx OFF POFF max -30 dBm. Duplex LC connector.",
+    "provenance_datasheet_sections": [
+      "FTLX3871DCCXX",
+      "10Gb/s DWDM 80km Multi-Rate SFP+ Transceiver",
+      "FEATURES",
+      "APPLICATIONS",
+      "Product Selection",
+      "FTLX3871DCCxx",
+      "Product Channel Selection",
+      "III. Electrical Characteristics (TOP = -5 to 70 °C )",
+      "IV. Optical Characteristics (TOP = -5 to 70 °C, VCC = 3.14 to 3.46 Volts))",
+      "V. General Specifications",
+      "VI. Environmental Specifications",
+      "X. SFF-8431 Power-up Sequence"
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-CWxx1G-A2x",
+    "LS-CWxx1G-A2C",
+    "LS-CWxx1G-A2I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": [
+    "LASER_DFB_CWDM",
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "APD"
+  ],
+  "wavelength_min_nm": [
+    1270.0
+  ],
+  "wavelength_max_nm": [
+    1610.0
+  ],
+  "wavelength_center_nm": [
+    1270.0,
+    1290.0,
+    1310.0,
+    1330.0,
+    1350.0,
+    1370.0,
+    1390.0,
+    1410.0,
+    1430.0,
+    1450.0,
+    1470.0,
+    1490.0,
+    1510.0,
+    1530.0,
+    1550.0,
+    1570.0,
+    1590.0,
+    1610.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC",
+    "duplex LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "host_interface_name": [
+    "SFP"
+  ],
+  "bit_rate_gbps": [
+    0.1,
+    1.063,
+    1.25
+  ],
+  "reach_km": [
+    120.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -32.0
+  ],
+  "rx_overload_dbm": [
+    -9.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -40.0
+  ],
+  "los_deassert_dbm": [
+    -33.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Operating case temperature grades: Standard 0 to +70°C (LS-CWxx1G-A2C); Extended -20 to +85°C; Industrial -40 to +85°C (LS-CWxx1G-A2I). temp_min_c/temp_max_c reflect the industrial grade span; adjust per orderable part. Transmitter centre wavelength per channel is λc with λc-6.5 to λc+6.5 nm (λc from ordering wavelength code table). Receiver centre wavelength range 1270 to 1610 nm. Supply current Icc max 300 mA at 3.135–3.465 V (power in W not stated). Receiver sensitivity and overload measured with PRBS 2^7-1 @ 1250 Mbps, BER ≤ 1×10^-12. Optical average output power launched into SMF. Spectral width (-20 dB) Δλ max 1 nm.",
+  "provenance_datasheet_sections": [
+    "LS-CWxx1G-A2x",
+    "1.25Gbps SFP CWDM Transceiver, Single Mode, 120km Reach",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Diagnostics",
+    "Ordering information"
+  ],
+  "suggestions": "Add optional product-grade fields for temp_min_c/temp_max_c per A2C vs A2I. Map ordering λC codes to explicit tx wavelength_min/max per channel if symbolic λc±6.5 should be expanded."
+}

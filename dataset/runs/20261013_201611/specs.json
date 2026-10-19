@@ -1,0 +1,107 @@
+{
+  "vendor": "Broadcom",
+  "model": [
+    "AFBR-5972EZ"
+  ],
+  "form_factor": [],
+  "standards_claimed": [],
+  "emitter_type": [
+    "LED"
+  ],
+  "photodetector_type": [
+    "photodiode"
+  ],
+  "wavelength_min_nm": [
+    635.0
+  ],
+  "wavelength_max_nm": [
+    675.0
+  ],
+  "wavelength_center_nm": [
+    650.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [
+    "solder"
+  ],
+  "connector_type": [],
+  "fiber_type": [
+    "POF"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    0.15,
+    0.2
+  ],
+  "host_interface_name": [
+    "LVDS"
+  ],
+  "media_interface_name": [
+    "Versatile-Link"
+  ],
+  "frame": [],
+  "standards_code": [
+    "Fast Ethernet"
+  ],
+  "baud_rate_gbaud": [
+    0.01,
+    0.125,
+    0.25
+  ],
+  "bit_rate_gbps": [
+    0.1
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    0.05,
+    0.07
+  ],
+  "tx_power_min_dbm": [
+    -10.0
+  ],
+  "tx_power_max_dbm": [
+    -3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -26.0,
+    -22.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    2.5e-10
+  ],
+  "extinction_ratio_db": [
+    10.0
+  ],
+  "los_assert_dbm": [
+    -31.0
+  ],
+  "los_deassert_dbm": [
+    -32.5
+  ],
+  "optical_extinction_ratio_db": [
+    10.0
+  ],
+  "los_hysteresis_db": [
+    2.0
+  ],
+  "penalties": [],
+  "notes": "Link lengths stated as 50 m POF (NA 0.5) and 70 m POF (NA 0.3). Power Dissipation in source is 150 mW typ / 200 mW max (Transceiver Electrical Characteristics). Supply voltage 3.3 V (2.97–3.63 V). Assert (PA) and Deassert (PD) input power levels note d states levels are also described as dB below unstressed receiver sensitivity for POF while table uses dBm. Rx sensitivity CSEN125 at 125 Mbaud; CSEN250 at 250 Mbaud; BER < 2.5 × 10^-10. Average launched power and many TX/RX specs at 1-mm POF NA=0.5, PRBS 2^7-1, 250 Mbaud where noted. Signaling: 4B/5B at 125 Mbaud (Fast Ethernet); general 10–250 Mbaud (8B/10B max per note d). No MSA pluggable form factor or LC/SC/MPO connector codes claimed.",
+  "provenance_datasheet_sections": [
+    "Description",
+    "Features",
+    "Transmitter",
+    "Receiver",
+    "Recommended Operating Conditions",
+    "Transceiver Electrical Characteristics",
+    "Transmitter Optical Characteristics",
+    "Receiver Electrical Characteristics",
+    "Receiver Optical Characteristics",
+    "Transceiver Diagnostics Timing Characteristics"
+  ],
+  "suggestions": "Consider schema fields for POF NA, link length in meters, RSSI responsivity (A/W), and jitter in ns; Versatile-Link as connector family."
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T12:05:26.158150+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-qsfp28-100g-lrx.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.014,
+    "extract_atoms": 34.046,
+    "store_run": 0.006,
+    "synthesize_modes": 31.621,
+    "store_modes": 0.003,
+    "total": 70.69
+  }
+}

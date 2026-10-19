@@ -1,0 +1,53 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "10GBASE-T",
+      "SFP+"
+    ],
+    "standards_code": [
+      "10GBASE-T",
+      "IEEE 802.3az",
+      "IEEE 802.3ae"
+    ],
+    "bit_rate_gbps": [
+      10.125,
+      10.0
+    ]
+  },
+  "general": {
+    "vendor": "QSFPTek",
+    "model": [
+      "QT-SFP-10G-T"
+    ],
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "IEEE 802.3az",
+      "IEEE 802.3ae",
+      "SFF-8472"
+    ],
+    "connector_type": [
+      "RJ-45"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "penalties": [],
+    "notes": "Copper 10GBASE-T over Cat 6a/7 cable; maximum link length stated as 30 m (not km). Power 2.5 W max specified at 30 m reach. Ordering table also lists QT-SFP-M and QT-SFP-T as separate part numbers. I2C serial ID and PHY registers; auto-negotiation with 10GBase-T-NC PHYs.",
+    "provenance_datasheet_sections": [
+      "10GBASE-T SFP+ Copper RJ-45 30m Transceiver",
+      "P/N: QT- SFP-10G-T",
+      "FEATURES",
+      "DESCRIPTION",
+      "General Specification",
+      "Note:",
+      "4. Ordering information"
+    ],
+    "suggestions": "Schema form_factor enum may include SFP+; connector_type may include RJ-45 for copper modules; reach field could accept meters when only m is printed."
+  }
+}

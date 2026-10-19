@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:15:13.983696+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-ts2010-m85i-so-sfp28-25g-sr-i-6.0.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.977,
+    "extract_atoms": 31.478,
+    "store_run": 0.008,
+    "synthesize_modes": 58.806,
+    "store_modes": 0.004,
+    "total": 94.273
+  }
+}

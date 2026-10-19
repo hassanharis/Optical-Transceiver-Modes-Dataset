@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-ZR selectable \u22644.25 Gbps",
+      "power_consumption_w": 1.5,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "10GBASE-ZR 9.95 Gbps",
+      "power_consumption_w": 1.5,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "10GBASE-ZR 10 Gbps",
+      "power_consumption_w": 1.5,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "10GBASE-ZR 10.3 Gbps",
+      "power_consumption_w": 1.5,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "10GBASE-ZR @ 10.3125 Gbps (specified test rate)",
+      "power_consumption_w": 1.8,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "10GBASE-ER application",
+      "power_consumption_w": 1.5,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "10GBASE-EW application",
+      "power_consumption_w": 1.5,
+      "standards_code": "10GBASE-EW",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "10G Fiber Channel application",
+      "power_consumption_w": 1.5,
+      "standards_code": "10G Fiber Channel",
+      "bit_rate_gbps": 10.0
+    }
+  ]
+}

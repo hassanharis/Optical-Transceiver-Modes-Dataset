@@ -1,0 +1,31 @@
+{
+  "modes": [
+    {
+      "label": "1.6T 2xDR4 OSFP (average launch)",
+      "standards_code": "2xDR4",
+      "bit_rate_gbps": 1600.0,
+      "tx_power_min_dbm": -2.8,
+      "tx_power_max_dbm": 4.0,
+      "rx_sensitivity_dbm": -3.4,
+      "rx_overload_dbm": 5.0
+    },
+    {
+      "label": "Transmit OMA (max(TDECQ,TECQ) < 0.9 dB)",
+      "standards_code": "IEEE 802.3dj",
+      "bit_rate_gbps": 212.5,
+      "tx_power_min_dbm": -0.3,
+      "tx_power_max_dbm": 4.2,
+      "rx_sensitivity_dbm": -0.9,
+      "rx_overload_dbm": 4.2
+    },
+    {
+      "label": "Transmit OMA (0.9 dB \u2264 max(TDECQ,TECQ) \u2264 3.4 dB)",
+      "standards_code": "800G-DR4",
+      "bit_rate_gbps": 212.5,
+      "tx_power_min_dbm": -1.2,
+      "tx_power_max_dbm": 4.2,
+      "rx_sensitivity_dbm": -0.9,
+      "rx_overload_dbm": 4.0
+    }
+  ]
+}

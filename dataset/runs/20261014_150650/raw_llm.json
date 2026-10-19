@@ -1,0 +1,267 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-L120D-Dxxx",
+    "SO-SFP-L120D-Dxxx-E",
+    "SO-SFP-L120D-D919",
+    "SO-SFP-L120D-D919-E",
+    "SO-SFP-L120D-D920",
+    "SO-SFP-L120D-D920-E",
+    "SO-SFP-L120D-D921",
+    "SO-SFP-L120D-D921-E",
+    "SO-SFP-L120D-D922",
+    "SO-SFP-L120D-D922-E",
+    "SO-SFP-L120D-D923",
+    "SO-SFP-L120D-D923-E",
+    "SO-SFP-L120D-D924",
+    "SO-SFP-L120D-D924-E",
+    "SO-SFP-L120D-D925",
+    "SO-SFP-L120D-D925-E",
+    "SO-SFP-L120D-D926",
+    "SO-SFP-L120D-D926-E",
+    "SO-SFP-L120D-D927",
+    "SO-SFP-L120D-D927-E",
+    "SO-SFP-L120D-D928",
+    "SO-SFP-L120D-D928-E",
+    "SO-SFP-L120D-D929",
+    "SO-SFP-L120D-D929-E",
+    "SO-SFP-L120D-D930",
+    "SO-SFP-L120D-D930-E",
+    "SO-SFP-L120D-D931",
+    "SO-SFP-L120D-D931-E",
+    "SO-SFP-L120D-D932",
+    "SO-SFP-L120D-D932-E",
+    "SO-SFP-L120D-D933",
+    "SO-SFP-L120D-D933-E",
+    "SO-SFP-L120D-D934",
+    "SO-SFP-L120D-D934-E",
+    "SO-SFP-L120D-D935",
+    "SO-SFP-L120D-D935-E",
+    "SO-SFP-L120D-D936",
+    "SO-SFP-L120D-D936-E",
+    "SO-SFP-L120D-D937",
+    "SO-SFP-L120D-D937-E",
+    "SO-SFP-L120D-D938",
+    "SO-SFP-L120D-D938-E",
+    "SO-SFP-L120D-D939",
+    "SO-SFP-L120D-D939-E",
+    "SO-SFP-L120D-D940",
+    "SO-SFP-L120D-D940-E",
+    "SO-SFP-L120D-D941",
+    "SO-SFP-L120D-D941-E",
+    "SO-SFP-L120D-D942",
+    "SO-SFP-L120D-D942-E",
+    "SO-SFP-L120D-D943",
+    "SO-SFP-L120D-D943-E",
+    "SO-SFP-L120D-D944",
+    "SO-SFP-L120D-D944-E",
+    "SO-SFP-L120D-D945",
+    "SO-SFP-L120D-D945-E",
+    "SO-SFP-L120D-D946",
+    "SO-SFP-L120D-D946-E",
+    "SO-SFP-L120D-D947",
+    "SO-SFP-L120D-D947-E",
+    "SO-SFP-L120D-D948",
+    "SO-SFP-L120D-D948-E",
+    "SO-SFP-L120D-D949",
+    "SO-SFP-L120D-D949-E",
+    "SO-SFP-L120D-D950",
+    "SO-SFP-L120D-D950-E",
+    "SO-SFP-L120D-D951",
+    "SO-SFP-L120D-D951-E",
+    "SO-SFP-L120D-D952",
+    "SO-SFP-L120D-D952-E",
+    "SO-SFP-L120D-D953",
+    "SO-SFP-L120D-D953-E",
+    "SO-SFP-L120D-D954",
+    "SO-SFP-L120D-D954-E",
+    "SO-SFP-L120D-D955",
+    "SO-SFP-L120D-D955-E",
+    "SO-SFP-L120D-D956",
+    "SO-SFP-L120D-D956-E",
+    "SO-SFP-L120D-D957",
+    "SO-SFP-L120D-D957-E",
+    "SO-SFP-L120D-D958",
+    "SO-SFP-L120D-D958-E",
+    "SO-SFP-L120D-D959",
+    "SO-SFP-L120D-D959-E",
+    "SO-SFP-L120D-D960",
+    "SO-SFP-L120D-D960-E"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "ITU-T G.694.1",
+    "RoHS-6/6"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1528.0,
+    1529.55
+  ],
+  "wavelength_max_nm": [
+    1562.23,
+    1566.0
+  ],
+  "wavelength_center_nm": [
+    1562.23,
+    1561.42,
+    1560.61,
+    1559.79,
+    1558.98,
+    1557.36,
+    1556.55,
+    1555.75,
+    1554.94,
+    1554.13,
+    1553.33,
+    1552.52,
+    1551.72,
+    1550.92,
+    1550.12,
+    1549.32,
+    1548.51,
+    1547.72,
+    1546.92,
+    1546.12,
+    1545.32,
+    1544.53,
+    1543.73,
+    1542.94,
+    1542.14,
+    1541.35,
+    1540.56,
+    1539.77,
+    1538.98,
+    1538.19,
+    1537.4,
+    1536.61,
+    1535.82,
+    1535.04,
+    1534.25,
+    1533.47,
+    1532.68,
+    1531.9,
+    1531.12,
+    1530.33,
+    1529.55
+  ],
+  "wavelength_band": [
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    191.9
+  ],
+  "frequency_max_thz": [
+    196.0,
+    196.0
+  ],
+  "channel_spacing_ghz": [
+    100.0
+  ],
+  "channel_total": [
+    42
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "G.694.1",
+    "FE",
+    "GbE",
+    "STM4/OC12",
+    "STM1/OC3",
+    "1G FC",
+    "CPRI Opt, 1, 2",
+    "OBSAI 1x",
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    0.1,
+    1.25
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    120.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -32.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -10.0
+  ],
+  "cd_tolerance_ps_nm": [
+    2400.0
+  ],
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -33.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Title states 32dB power budget; table lists power budget 15 – 32dB. Nominal wavelength printed as 191.90 - 196.0THz (42ch); transmit wavelength 191.90 - 196.00THz. Extended operating temperature -20°C to +75°C (-E) per OVERVIEW and TECHNICAL DATA. Storage temperature -40°C to +85°C. Power consumption stated as < 1.5W. Transmitter output power and receiver minimum input power, overload are average power (footnote 1). Receiver minimum input power, overload footnote 2: @ 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back. LOS Assert Min -45dBm; LOS De-assert Max -33dBm; LOS Hysteresis Min 0.5dB. Dispersion tolerance Typical 2400ps/nm. DDM Yes. Reach described as bridgeable/up to 120km and Typical reach 120km.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-L120D-Dxxx & Dxxx-E",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": null
+}

@@ -1,0 +1,58 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\lp-rj45tge-3yc.pdf",
+  "page_count": 6,
+  "table_count": 10,
+  "markdown_chars": 10393,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 14
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 2
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:06:26.170043+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-ccs-strat-lxsx-st11xx-series.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 2.697,
+    "extract_atoms": 29.116,
+    "store_run": 0.007,
+    "synthesize_modes": 42.961,
+    "store_modes": 0.003,
+    "total": 74.785
+  }
+}

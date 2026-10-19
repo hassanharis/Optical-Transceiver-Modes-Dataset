@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"LS-MM8510-S3C 10GBASE-SR\",\n      \"model\": \"LS-MM8510-S3C\",\n      \"standards_code\": \"10GBASE-SR\",\n      \"bit_rate_gbps\": 10.3125\n    },\n    {\n      \"label\": \"LS-MM8510-S3C 10GBASE-SW\",\n      \"model\": \"LS-MM8510-S3C\",\n      \"standards_code\": \"10GBASE-SW\",\n      \"bit_rate_gbps\": 9.953\n    },\n    {\n      \"label\": \"LS-MM8510-S3I 10GBASE-SR\",\n      \"model\": \"LS-MM8510-S3I\",\n      \"standards_code\": \"10GBASE-SR\",\n      \"bit_rate_gbps\": 10.3125\n    },\n    {\n      \"label\": \"LS-MM8510-S3I 10GBASE-SW\",\n      \"model\": \"LS-MM8510-S3I\",\n      \"standards_code\": \"10GBASE-SW\",\n      \"bit_rate_gbps\": 9.953\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

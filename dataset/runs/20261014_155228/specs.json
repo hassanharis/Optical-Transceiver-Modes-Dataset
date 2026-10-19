@@ -1,0 +1,103 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP28-32GFC-LD"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFF-8402",
+    "SFF-8472",
+    "SFF-8472 Rev12.2"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1295.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1325.0,
+    1370.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.2
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "8G FC",
+    "16G FC",
+    "32G FC",
+    "25GE",
+    "OTU4"
+  ],
+  "bit_rate_gbps": [
+    8.5,
+    14.025,
+    28.05,
+    25.78,
+    27.95
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    2.0
+  ],
+  "rx_sensitivity_dbm": [
+    -14.4
+  ],
+  "rx_overload_dbm": [
+    2.0
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    1e-06
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -17.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Technology listed as Grey SFP28. Power budget 0–9.4 dB for 32G FC. Dispersion penalty max 2.7 dB (no paired penalized metric and operating condition for penalty objects). Tx output power and rx min/overload footnote 1): average power. Rx minimum input power footnote 2): @ BER 1×10^-6, back-to-back. Operating temperature printed as -0°C to +70°C. Storage temperature -40°C to +85°C. FEC required to be implemented by the host for 32G FC and 25G Ethernet. Rate_Select switches high rates 25.78G/27.95G/28.05G vs low rates 14.025G/8.5G per SFF-8472 Rev12.2. Rx minimum input power printed as -14.4Bm (treated as dBm).",
+  "provenance_datasheet_sections": [
+    "SO-SFP28-32GFC-LD",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "RATE_SELECT OPERATION",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether -0°C operating minimum is a typo for 0°C. Explicit emitter/photodetector types and modulation formats would improve schema coverage. If dispersion penalty 2.7 dB is tied to a specific CD value or power budget row, that would support a dispersion_penalty_db penalty object."
+}

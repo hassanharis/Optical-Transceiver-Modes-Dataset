@@ -1,0 +1,126 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLF8519F2XNL",
+    "FTLF8519F2xNL",
+    "FTLF8519F2GNL",
+    "FTLF8519F2KNL",
+    "FTLF8519F2HNL"
+  ],
+  "form_factor": [
+    "SFF",
+    "2x5"
+  ],
+  "standards_claimed": [
+    "Small Form Factor Multi-Sourcing Agreement (MSA)",
+    "IEEE Std 802.3",
+    "IEEE Std 802.32",
+    "FC-PI-2 10.03",
+    "FC-PI-2 10.0",
+    "1000Base-SX",
+    "Gigabit Ethernet",
+    "Fibre Channel"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "wavelength_min_nm": [
+    770.0,
+    830.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF 50/125µm",
+    "MMF_OM1"
+  ],
+  "temp_min_c": -10.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    0.75
+  ],
+  "standards_code": [
+    "1000Base-SX",
+    "1000BASE-SX",
+    "IEEE 802.3",
+    "FC-PI-2 10.0",
+    "FC-PI-2 10.03"
+  ],
+  "bit_rate_gbps": [
+    1.062,
+    1.0625,
+    1.063,
+    1.25,
+    2.125,
+    2.5
+  ],
+  "reach_km": [
+    0.15,
+    0.3,
+    0.5
+  ],
+  "tx_power_min_dbm": [
+    -9.0
+  ],
+  "tx_power_max_dbm": [
+    -3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -20.0,
+    -18.0,
+    -13.5
+  ],
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -20.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [
+    119.0,
+    123.0
+  ],
+  "penalties": [],
+  "notes": "Optical characteristics specified at TOP = 0 to 70°C; electrical characteristics at TOP = -10 to 85°C. Supply VCC 3.0 to 3.6 V; features cite single 3.3 V supply and low power <750 mW. Product selection variants FTLF8519F2GNL, FTLF8519F2MNL (implied G/M/K/H grounding/EMI shield options). General Specifications Data Rate table lists Max 10500 Gb/sec (likely typographical; Typ values 1.062, 1.25, 2.125 Gb/sec). Receiver sensitivity at 1.0625, 1.25, and 2.125 Gb/s; stressed receiver sensitivity also given in mW (0.055 at 1.0625 Gb/s, 0.096 at 2.125 Gb/s) and -13.5 dBm at 1.25 Gb/s per FC-PI-2 conformance. Extinction ratio 9 dB specified at 1.25 Gb/s. Reach depends on fiber type and data rate (500/300 m on 50/125 μm MMF; 300/150 m on 62.5/125 μm MMF). Copyright/footer identifies Coherent Corp. (2023).",
+  "provenance_datasheet_sections": [
+    "FTLF8519F2XNL",
+    "2.125 Gb/s RoHS Compliant Short Wavelength 2x5 SFF Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "Product Selection",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (TOP = -10 to 85 °C, VCC = 3.0 to 3.6 Volts)",
+    "Optical Characteristics (TOP = 0 to 70°C, VCC = 3.0 to 3.6 Volts)",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "VII. Regulatory Compliance",
+    "VIII. Mechanical Specifications"
+  ],
+  "suggestions": "Clarify whether vendor should be Finisar vs Coherent Corp. for legacy parts. Add schema fields for spectral width (nm), RIN (dB/Hz), OMA (μW), and electrical supply current (mA) if useful for SFF modules. Stressed sensitivity in mW may need a dedicated field or unit-tagged values."
+}

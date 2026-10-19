@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "SO-CFP-SR10 100GbE @ 100m OM3",
+      "model": "SO-CFP-SR10",
+      "bit_rate_gbps": 103.125,
+      "reach_km": 0.1
+    },
+    {
+      "label": "SO-CFP-SR10 100GbE @ 150m OM4",
+      "model": "SO-CFP-SR10",
+      "bit_rate_gbps": 103.125,
+      "reach_km": 0.15
+    },
+    {
+      "label": "SO-CFP-SR10 10GbE per lane @ 100m OM3",
+      "model": "SO-CFP-SR10",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.1
+    },
+    {
+      "label": "SO-CFP-SR10 10GbE per lane @ 150m OM4",
+      "model": "SO-CFP-SR10",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.15
+    },
+    {
+      "label": "TC0005-M85C-SO 100GbE @ 100m OM3",
+      "model": "TC0005-M85C-SO",
+      "bit_rate_gbps": 103.125,
+      "reach_km": 0.1
+    },
+    {
+      "label": "TC0005-M85C-SO 100GbE @ 150m OM4",
+      "model": "TC0005-M85C-SO",
+      "bit_rate_gbps": 103.125,
+      "reach_km": 0.15
+    },
+    {
+      "label": "TC0005-M85C-SO 10GbE per lane @ 100m OM3",
+      "model": "TC0005-M85C-SO",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.1
+    },
+    {
+      "label": "TC0005-M85C-SO 10GbE per lane @ 150m OM4",
+      "model": "TC0005-M85C-SO",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.15
+    }
+  ]
+}

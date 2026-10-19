@@ -1,0 +1,99 @@
+{
+  "multi_valued": {
+    "wavelength_max_nm": [
+      1360.0,
+      1600.0
+    ],
+    "standards_code": [
+      "GbE",
+      "STM1/OC3",
+      "STM4/OC12",
+      "STM16/OC48",
+      "OTU1",
+      "1G FC",
+      "2G FC",
+      "CPRI Opt 1",
+      "CPRI Opt 2",
+      "CPRI Opt 3",
+      "OBSAI 1x",
+      "OBSAI 2x"
+    ],
+    "bit_rate_gbps": [
+      2.67,
+      2.7
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-MR15D"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_min_nm": [
+      1260.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      15.0
+    ],
+    "tx_power_min_dbm": [
+      -5.0
+    ],
+    "tx_power_max_dbm": [
+      0.0
+    ],
+    "rx_sensitivity_dbm": [
+      -18.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "pre_fec_ber_threshold": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -19.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Title and ordering: 155Mbps–2.7Gbps; technical table bit rate 155Mbps to 2.67Gbps. Power budget in summary column: 3 – 13dB. Transmitter output power footnote 1): Average power; min printed as -5.0dB, max 0.0dBm. Receiver minimum input power footnote 2): @ 2488Mbps, BER 1x10-12, PRBS 223-1. Transmit wavelength 1260nm – 1360nm; receiver wavelength range 1260nm – 1600nm. Storage temperature -40°C to +85°C (separate from operating -0°C to +70°C). Power consumption stated as < 1.0W. Grey SFP for non-WDM applications per GENERAL DEFINITIONS.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-MR15D",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

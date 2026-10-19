@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Grouping uses the ordering table: two part numbers (02C = 0\u00b0C~+70\u00b0C, 02I = -40\u00b0C~+85\u00b0C), same 1310 nm / 6.144 Gbps / 2 km. TX centre wavelength 1270\u20131350 nm applies to both; RX 1260\u20131600 nm is passband on the same module, not a separate selectable mode. Bit rates 1.0, 6.144, and 6.25 Gbps are one min/typ/max row\u2014not four modes; 6.1 Gbps is narrative only.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"LS-SM316G-02C Standard 6.144G 1310nm 2km\",\n      \"model\": \"LS-SM316G-02C\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1350.0,\n      \"bit_rate_gbps\": 6.144\n    },\n    {\n      \"label\": \"LS-SM316G-02I Industrial 6.144G 1310nm 2km\",\n      \"model\": \"LS-SM316G-02I\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1350.0,\n      \"bit_rate_gbps\": 6.144\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Finisar [&#x27;FTLF8536W4BTV&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">ftlf8536w4btv-transceiver-ds.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">11</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">7</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 23:08</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">Optical Transceivers 
+
+## FTLF8536W4BTV 
+
+## **25.78Gb/s 10GE RoHS Compliant Short Wavelength SFP+ Transceiver** 
+
+FTLF8536W4BTV SFP+ transceivers are designed for use in 25Gb/s data rate over multimode fiber. They are compliant to IEEE802.3by, SFF-8472 Rev 12.2b and SFF-8402g, and compatible with SFF-8432a and applicable portions of SFF-8431 Rev. 4.1c. The transceiver is RoHS compliant and per Directive 2011/65/EUd . See Finisar Application Note AN-2038 for more details. 
+
+
+## FEATURES 
+
+## APPLICATIONS 
+
+- Up to 25.78 Gb/s bi-directional data links 
+
+- Hot-pluggable SFP+ footprint 
+
+- Built-in digital diagnostic functions 
+
+   - 25GE SR/eCPRI 
+
+   - CPRI option 10, 7 , 8 
+
+   - 100GE SR fan out to 4x25GE SR 
+
+- 850nm Oxide VCSEL laser transmitter 
+
+- Duplex LC connector 
+
+- RoHS compliant 
+
+- 100m over M5F MMF (50/125 um OM4) 
+
+- 70m over M5E MMF (50/125um OM3) 
+
+- 20m on MMF (50/125μm OM2) 
+
+- Metal enclosure, for lower EMI 
+
+- 1.2W maximum power consumption 
+
+- Single 3.3V power supply 
+
+- Operating temperature range: -40°C to 85°C 
+
+**FTLF8536W4BTV** 
+
+## **Product Selection** 
+
+## **FTLF8536W4BTV** 
+
+## **I. Pin Descriptions** 
+
+
+**----- Start of picture text -----**&lt;br&gt;
+VeeT 20&lt;br&gt;1 VeeT&lt;br&gt;TD- 19&lt;br&gt;2 TXFault&lt;br&gt;TD+ 18&lt;br&gt;3 TX Disable&lt;br&gt;VeeT 17&lt;br&gt;4 MOD-DEF(2)&lt;br&gt;VccT 16&lt;br&gt;5 MOD-DEF(1)&lt;br&gt;Towards Towards&lt;br&gt;VccR 15&lt;br&gt;Bezel 6 MOD-DEF(0) ASIC&lt;br&gt;VeeR 14&lt;br&gt;7 Rate Select&lt;br&gt;RD+ 13&lt;br&gt;8 LOS&lt;br&gt;RD- 12&lt;br&gt;9 VeeR&lt;br&gt;VeeR 11&lt;br&gt;1 VeeR&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+Diagram of Host Board Connector Block Pin Numbers and Names 
+
+2 
+
+**FTLF8536W4BTV** 
+
+
+**----- Start of picture text -----**&lt;br&gt;
+Pin Symbol Name/Description Notes&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+|Pin|Symbol|Name/Description|Notes|
+|---|---|---|---|
+|||||
+|1|VEET|Transmitter Ground (Common with Receiver Ground)|1|
+|2|TFAULT|Transmitter Fault.|2|
+|3|TDIS|Transmitter Disable. Laser output disabled on high or open.|3|
+|4|SDA|2-wire Serial Interface Data Line (MOD-DEF2)|4|
+|5|SCA|
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Finisar"</span>,
+  <span class="key">"model"</span>: [
+    "FTLF8536W4BTV"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP+"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "IEEE802.3by",
+    "SFF-8472 Rev <span class="num">12.2</span>b",
+    "SFF-8402g",
+    "SFF-8432a",
+    "SFF-8431 Rev. <span class="num">4.1</span>c",
+    "SFF MSA",
+    "INF-8074"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_VCSEL"
+  ],
+  <span class="key">"photodetector_type"</span>: [],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">840</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">860</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [],
+  <span class="key">"wavelength_band"</span>: [],
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "MMF",
+    "MMF_OM4",
+    "MMF_OM3",
+    "MMF_OM2",
+    "MMF <span class="num">50</span>/125µm"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-40</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">1.2</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "SFP+",
+    "SFP MSA"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: [],
+  <span class="key">"host_interface_id"</span>: [],
+  <span class="key">"media_interface_name"</span>: [],
+  <span class="key">"media_interface_id_hex"</span>: [],
+  <span class="key">"media_interface_id"</span>: [],
+  <span class="key">"frame"</span>: [],
+  <span class="key">"standards_code"</span>: [
+    "25GE SR",
+    "eCPRI",
+    "CPRI option <span class="num">10</span>",
+    "CPRI option <span class="num">7</span>",
+    "CPRI option <span class="num">8</span>",
+    "100GE SR fan out to <span class="num">4</span>x25GE SR",
+    "IEEE <span class="num">802.3</span>by"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">25.78</span>,
+    <span class="num">24.33</span>,
+    <span class="num">10.3</span>,
+    <span class="num">9.8</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [],
+  <span class="key">"reach_km"</span>: <span class="null">null</span>,
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-8.4</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">2.4</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: [],
+  <span class="key">"tx_out_of_band_osnr_db"</span>: [],
+  <span class="key">"rx_sensitivity_dbm"</span>: [],
+  <span class="key">"rx_osnr_db"</span>: [],
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: [],
+  <span class="key">"rx_overload_dbm"</span>: [],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [],
+  <span class="key">"pdl_db"</span>: [],
+  <span class="key">"pmd_tolerance_ps"</span>: [],
+  <span class="key">"fec_type"</span>: [],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: [
+    <span class="num">5</span>e-05
+  ],
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">2</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-30</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-13</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: [],
+  <span class="key">"receiver_reflectance_db"</span>: [],
+  <span class="key">"transmitter_reflectance_db"</span>: [],
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">2</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [
+    <span class="num">12</span>
+  ],
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [],
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: [],
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Maximum fiber reach is stated as <span class="num">100</span> m (OM4/M5F), <span class="num">70</span> m (OM3/M5E), and <span class="num">20</span> m (OM2), not in km. Stressed/unstressed receiver OMA sensitivity is tabulated in mW (-5.2, <span class="num">-7.5</span>, <span class="num">-10.1</span>), not dBm. RxMAX average receiver power at <span class="num">25.78</span> Gb/s is <span class="num">-10.3</span> to <span class="num">3</span> mW (informative). LOS De-Assert row lists unit dB; value <span class="num">-13</span> interpreted as dBm per LOS context. Optical Center Wavelength row incorrectly shows dBm; wavelength range <span class="num">840</span>–860 nm applies. Footer © <span class="num">2023</span> Coherent Corp.; body references Finisar Corporation. Transmitter Dispersion Penalty (TDP) max <span class="num">2.5</span> dB @ <span class="num">10.3</span> Gb/s and TDEC max <span class="num">4.3</span> dB @ <span class="num">25.7</span> Gb/s are not mapped to penalty objects (no paired penalized OSNR/sensitivity value). Supply current max <span class="num">290</span> mA; total dissipation may exceed <span class="num">1</span> W during link establishment below <span class="num">25</span>°C case temperature."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "FTLF8536W4BTV",
+    "25.78Gb/s <span class="num">10</span>GE RoHS Compliant Short Wavelength SFP+ Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (TA ,  VCC = <span class="num">3.15</span> to <span class="num">3.46</span> Volts)",
+    "IV. Optical Characteristics (TA , VCC = <span class="num">3.15</span> to <span class="num">3.46</span> Volts)",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "IX. Digital Diagnostic Specifications",
+    "X. Mechanical Specifications"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Add SFP+ to form_factor enum. Consider reach_m or allow reach with explicit source unit. Map TDP/TDEC rows if schema supports transmitter eye-closure penalties without a separate penalized link parameter."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>host_interface_name</td><td><span class="badge">SFP+</span> <span class="badge">SFP MSA</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">25GE SR</span> <span class="badge">eCPRI</span> <span class="badge">CPRI option 10</span> <span class="badge">CPRI option 7</span> <span class="badge">CPRI option 8</span> <span class="badge">100GE SR fan out to 4x25GE SR</span> <span class="badge">IEEE 802.3by</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">25.78</span> <span class="badge">24.33</span> <span class="badge">10.3</span> <span class="badge">9.8</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Finisar</td></tr>
+<tr><td>model</td><td>FTLF8536W4BTV</td></tr>
+<tr><td>form_factor</td><td>SFP+</td></tr>
+<tr><td>standards_claimed</td><td>IEEE802.3by, SFF-8472 Rev 12.2b, SFF-8402g, SFF-8432a, SFF-8431 Rev. 4.1c, SFF MSA, INF-8074</td></tr>
+<tr><td>emitter_type</td><td>LASER_VCSEL</td></tr>
+<tr><td>photodetector_type</td><td></td></tr>
+<tr><td>wavelength_min_nm</td><td>840.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>860.0</td></tr>
+<tr><td>wavelength_center_nm</td><td></td></tr>
+<tr><td>wavelength_band</td><td></td></tr>
+<tr><td>mounting_type</td><td>pluggable_hot, pluggable</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>MMF, MMF_OM4, MMF_OM3, MMF_OM2, MMF 50/125µm</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>power_consumption_w</td><td>1.2</td></tr>
+<tr><td>host_interface_id_hex</td><td></td></tr>
+<tr><td>host_interface_id</td><td></td></tr>
+<tr><td>media_interface_name</td><td></td></tr>
+<tr><td>media_interface_id_hex</td><td></td></tr>
+<tr><td>media_interface_id</td><td></td></tr>
+<tr><td>frame</td><td></td></tr>
+<tr><td>modulation_format</td><td></td></tr>
+<tr><td>tx_power_min_dbm</td><td>-8.4</td></tr>
+<tr><td>tx_power_max_dbm</td><td>2.4</td></tr>
+<tr><td>tx_in_band_osnr_db</td><td></td></tr>
+<tr><td>tx_out_of_band_osnr_db</td><td></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td></td></tr>
+<tr><td>rx_osnr_db</td><td></td></tr>
+<tr><td>rx_osnr_tolerance_db_max</td><td></td></tr>
+<tr><td>rx_overload_dbm</td><td></td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td></td></tr>
+<tr><td>pdl_db</td><td></td></tr>
+<tr><td>pmd_tolerance_ps</td><td></td></tr>
+<tr><td>fec_type</td><td></td></tr>
+<tr><td>pre_fec_ber_threshold</td><td>5e-05</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>extinction_ratio_db</td><td>2.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-30.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-13.0</td></tr>
+<tr><td>channel_insertion_loss_db</td><td></td></tr>
+<tr><td>receiver_reflectance_db</td><td></td></tr>
+<tr><td>transmitter_reflectance_db</td><td></td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>2.0</td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td>12.0</td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td></td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>total_jitter_ps</td><td></td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Maximum fiber reach is stated as 100 m (OM4/M5F), 70 m (OM3/M5E), and 20 m (OM2), not in km. Stressed/unstressed receiver OMA sensitivity is tabulated in mW (-5.2, -7.5, -10.1), not dBm. RxMAX average receiver power at 25.78 Gb/s is -10.3 to 3 mW (informative). LOS De-Assert row lists unit dB; value -13 interpreted as dBm per LOS context. Optical Center Wavelength row incorrectly shows dBm; wavelength range 840–860 nm applies. Footer © 2023 Coherent Corp.; body references Finisar Corporation. Transmitter Dispersion Penalty (TDP) max 2.5 dB @ 10.3 Gb/s and TDEC max 4.3 dB @ 25.7 Gb/s are not mapped to penalty objects (no paired penalized OSNR/sensitivity value). Supply current max 290 mA; total dissipation may exceed 1 W during link establishment below 25°C case temperature.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>FTLF8536W4BTV, 25.78Gb/s 10GE RoHS Compliant Short Wavelength SFP+ Transceiver, FEATURES, APPLICATIONS, II. Absolute Maximum Ratings, III. Electrical Characteristics (TA ,  VCC = 3.15 to 3.46 Volts), IV. Optical Characteristics (TA , VCC = 3.15 to 3.46 Volts), V. General Specifications, VI. Environmental Specifications, IX. Digital Diagnostic Specifications, X. Mechanical Specifications</td></tr>
+<tr><td>suggestions</td><td>Add SFP+ to form_factor enum. Consider reach_m or allow reach with explicit source unit. Map TDP/TDEC rows if schema supports transmitter eye-closure penalties without a separate penalized link parameter.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>host_interface_name</th><th>standards_code</th><th>bit_rate_gbps</th></tr><tr><td><strong>25GE SR</strong></td><td>SFP+</td><td>25GE SR</td><td>25.78</td></tr><tr><td><strong>eCPRI</strong></td><td>SFP+</td><td>eCPRI</td><td>25.78</td></tr><tr><td><strong>IEEE 802.3by 25G Ethernet</strong></td><td>SFP+</td><td>IEEE 802.3by</td><td>25.78</td></tr><tr><td><strong>100GE SR fan-out (4x25GE SR)</strong></td><td>SFP+</td><td>100GE SR fan out to 4x25GE SR</td><td>25.78</td></tr><tr><td><strong>10.3 Gb/s Ethernet</strong></td><td>SFP+</td><td>IEEE 802.3by</td><td>10.3</td></tr><tr><td><strong>24.33 Gb/s operation</strong></td><td>SFP+</td><td>25GE SR</td><td>24.33</td></tr><tr><td><strong>9.8 Gb/s operation</strong></td><td>SFP+</td><td>25GE SR</td><td>9.8</td></tr><tr><td><strong>CPRI option 10</strong></td><td>SFP+</td><td>CPRI option 10</td><td>24.33</td></tr><tr><td><strong>CPRI option 7</strong></td><td>SFP+</td><td>CPRI option 7</td><td>9.8</td></tr><tr><td><strong>CPRI option 8</strong></td><td>SFP+</td><td>CPRI option 8</td><td>10.3</td></tr><tr><td><strong>SFP MSA host</strong></td><td>SFP MSA</td><td>25GE SR</td><td>25.78</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 23:08
+</footer>
+
+</div>
+</body>
+</html>

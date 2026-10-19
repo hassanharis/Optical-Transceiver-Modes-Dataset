@@ -1,0 +1,104 @@
+{
+  "multi_valued": {
+    "model": [
+      "QT-WDM-0203ASD",
+      "QT-WDM-0203ASID"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1530.0
+    ],
+    "wavelength_max_nm": [
+      1360.0,
+      1570.0
+    ],
+    "wavelength_center_nm": [
+      1310.0,
+      1550.0
+    ],
+    "standards_code": [
+      "1000BASE-BX-U",
+      "OC-24-LR-1"
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      1.063
+    ]
+  },
+  "general": {
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472",
+      "SONET OC-24-LR-1",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "connector_type": [
+      "SC",
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "media_interface_name": [
+      "1000BASE-BX-U"
+    ],
+    "reach_km": [
+      3.0
+    ],
+    "tx_power_min_dbm": [
+      -12.0
+    ],
+    "tx_power_max_dbm": [
+      -6.0
+    ],
+    "rx_sensitivity_dbm": [
+      -21.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -23.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "los_hysteresis_db": [
+      1.0,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "P/N QT- WDM-0203ASD (spacing in source). Features state simplex SC receptacle; ordering table lists LC connector for both part numbers. Dual data-rate 1.25Gbps/1.063Gbps. Operating case temperature: Standard 0 to +70°C (QT-WDM-0203ASD), Industrial -40 to +85°C (QT-WDM-0203ASID); extracted temp_min_c/temp_max_c reflect standard-grade ordering line. Receiver sensitivity, receiver overload, and related RX metrics per Note 3: PRBS 2^7-1 @1250Mbps, BER ≤1×10^-12. Optical average output power Note 1: launched into SMF. Supply Icc max 300 mA at 3.3 V typ; power in watts not stated.",
+    "provenance_datasheet_sections": [
+      "BIDI SFP 1310nm-TX/1550nm-RX 3KM SMF Transceiver",
+      "P/N: QT- WDM-0203ASD",
+      "FEATURES",
+      "APPLICATIONS",
+      "2. Recommended Operating Conditions",
+      "3. Optical and Electrical Characteristics",
+      "Notes:",
+      "7. Ordering information"
+    ],
+    "suggestions": "Clarify vendor legal name on datasheet; reconcile SC vs LC connector across FEATURES vs ordering table. Add explicit modulation format and lane count if applicable."
+  }
+}

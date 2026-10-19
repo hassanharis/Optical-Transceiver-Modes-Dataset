@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-100Base-BX40D-35 (Tx 1310 nm / Rx 1550 nm)",
+      "model": "SO-SFP-100Base-BX40D-35",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "100BASE-BX40D",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "SO-SFP-100Base-BX40D-53 (Tx 1550 nm / Rx 1310 nm)",
+      "model": "SO-SFP-100Base-BX40D-53",
+      "wavelength_min_nm": 1500.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "100BASE-BX40D",
+      "bit_rate_gbps": 0.1
+    }
+  ]
+}

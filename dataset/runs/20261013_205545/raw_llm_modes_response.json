@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100G SR4 per-lane 25.78G\",\n      \"standards_code\": \"SR4\",\n      \"bit_rate_gbps\": 25.78125,\n      \"extinction_ratio_db\": 3.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

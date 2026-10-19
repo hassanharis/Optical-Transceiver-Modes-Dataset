@@ -1,0 +1,26 @@
+{
+  "modes": [
+    {
+      "label": "GPON",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "wavelength_center_nm": 1310.0,
+      "power_consumption_w": 2.1,
+      "host_interface_name": "SGMII",
+      "media_interface_name": "GPON",
+      "standards_code": "ITU-T G.984.2",
+      "bit_rate_gbps": 1.244
+    },
+    {
+      "label": "EPON",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1500.0,
+      "wavelength_center_nm": 1490.0,
+      "power_consumption_w": 2.5,
+      "host_interface_name": "1000BASE-X",
+      "media_interface_name": "EPON",
+      "standards_code": "IEEE 802.3AH",
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

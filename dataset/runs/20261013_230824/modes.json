@@ -1,0 +1,70 @@
+{
+  "modes": [
+    {
+      "label": "25GE SR",
+      "host_interface_name": "SFP+",
+      "standards_code": "25GE SR",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "eCPRI",
+      "host_interface_name": "SFP+",
+      "standards_code": "eCPRI",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "IEEE 802.3by 25G Ethernet",
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3by",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "100GE SR fan-out (4x25GE SR)",
+      "host_interface_name": "SFP+",
+      "standards_code": "100GE SR fan out to 4x25GE SR",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "10.3 Gb/s Ethernet",
+      "host_interface_name": "SFP+",
+      "standards_code": "IEEE 802.3by",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "24.33 Gb/s operation",
+      "host_interface_name": "SFP+",
+      "standards_code": "25GE SR",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "9.8 Gb/s operation",
+      "host_interface_name": "SFP+",
+      "standards_code": "25GE SR",
+      "bit_rate_gbps": 9.8
+    },
+    {
+      "label": "CPRI option 10",
+      "host_interface_name": "SFP+",
+      "standards_code": "CPRI option 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "CPRI option 7",
+      "host_interface_name": "SFP+",
+      "standards_code": "CPRI option 7",
+      "bit_rate_gbps": 9.8
+    },
+    {
+      "label": "CPRI option 8",
+      "host_interface_name": "SFP+",
+      "standards_code": "CPRI option 8",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "SFP MSA host",
+      "host_interface_name": "SFP MSA",
+      "standards_code": "25GE SR",
+      "bit_rate_gbps": 25.78
+    }
+  ]
+}

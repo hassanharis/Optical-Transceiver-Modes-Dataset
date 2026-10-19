@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "The ordering table defines two SKUs (commercial vs industrial). Wavelength and protocol values share one technical row; assign the transmit band (1540\u20131560 nm, center 1550) per the transmitter row. `SO-CSFP-1000BASE-BX10D-53-O2` is not a separate orderable line\u2014only the two `Base` / `-I` codes are used.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"CSFP BiDi 10km TX1550/RX1310 Commercial\",\n      \"model\": \"SO-CSFP-1000Base-BX10D-53-O2\",\n      \"wavelength_min_nm\": 1540.0,\n      \"wavelength_max_nm\": 1560.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"standards_code\": \"1000BASE-BX10D\"\n    },\n    {\n      \"label\": \"CSFP BiDi 10km TX1550/RX1310 Industrial (-I)\",\n      \"model\": \"SO-CSFP-1000Base-BX10D-53-O2-I\",\n      \"wavelength_min_nm\": 1540.0,\n      \"wavelength_max_nm\": 1560.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"standards_code\": \"1000BASE-BX10D\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

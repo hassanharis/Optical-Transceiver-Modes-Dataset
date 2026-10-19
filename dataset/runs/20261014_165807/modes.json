@@ -1,0 +1,102 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-SR Commercial OM3 300m",
+      "model": "XGXP-8596-02D",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.3
+    },
+    {
+      "label": "10GBASE-SR Industrial OM3 300m",
+      "model": "XGXP-8596-02DA",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.3
+    },
+    {
+      "label": "10GBASE-SR Commercial OM4 400m",
+      "model": "XGXP-8596-02D",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.4
+    },
+    {
+      "label": "10GBASE-SR Industrial OM4 400m",
+      "model": "XGXP-8596-02DA",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.4
+    },
+    {
+      "label": "CPRI 2.457 Gb/s Commercial",
+      "model": "XGXP-8596-02D",
+      "standards_code": "CPRI",
+      "bit_rate_gbps": 2.457,
+      "reach_km": 0.3
+    },
+    {
+      "label": "CPRI 2.457 Gb/s Industrial",
+      "model": "XGXP-8596-02DA",
+      "standards_code": "CPRI",
+      "bit_rate_gbps": 2.457,
+      "reach_km": 0.3
+    },
+    {
+      "label": "CPRI 3.072 Gb/s Commercial",
+      "model": "XGXP-8596-02D",
+      "standards_code": "CPRI",
+      "bit_rate_gbps": 3.072,
+      "reach_km": 0.3
+    },
+    {
+      "label": "CPRI 3.072 Gb/s Industrial",
+      "model": "XGXP-8596-02DA",
+      "standards_code": "CPRI",
+      "bit_rate_gbps": 3.072,
+      "reach_km": 0.3
+    },
+    {
+      "label": "CPRI 4.915 Gb/s Commercial",
+      "model": "XGXP-8596-02D",
+      "standards_code": "CPRI",
+      "bit_rate_gbps": 4.915,
+      "reach_km": 0.3
+    },
+    {
+      "label": "CPRI 4.915 Gb/s Industrial",
+      "model": "XGXP-8596-02DA",
+      "standards_code": "CPRI",
+      "bit_rate_gbps": 4.915,
+      "reach_km": 0.3
+    },
+    {
+      "label": "CPRI 6.144 Gb/s Commercial",
+      "model": "XGXP-8596-02D",
+      "standards_code": "CPRI",
+      "bit_rate_gbps": 6.144,
+      "reach_km": 0.3
+    },
+    {
+      "label": "CPRI 6.144 Gb/s Industrial",
+      "model": "XGXP-8596-02DA",
+      "standards_code": "CPRI",
+      "bit_rate_gbps": 6.144,
+      "reach_km": 0.3
+    },
+    {
+      "label": "CPRI 9.8304 Gb/s Commercial",
+      "model": "XGXP-8596-02D",
+      "standards_code": "CPRI",
+      "bit_rate_gbps": 9.8304,
+      "reach_km": 0.3
+    },
+    {
+      "label": "CPRI 9.8304 Gb/s Industrial",
+      "model": "XGXP-8596-02DA",
+      "standards_code": "CPRI",
+      "bit_rate_gbps": 9.8304,
+      "reach_km": 0.3
+    }
+  ]
+}

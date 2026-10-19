@@ -1,0 +1,88 @@
+{
+  "modes": [
+    {
+      "label": "10/100/1000M SGMII industrial",
+      "model": "LP-RJ451GE-RCI",
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "10/100/1000M SGMII industrial (series)",
+      "model": "LP-RJ451GE-RCIxx",
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "1000M SERDES commercial",
+      "model": "LP-RJ451G-RCC",
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "1000M SERDES industrial",
+      "model": "LP-RJ451G-RCI",
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "10/100/1000M SGMII commercial",
+      "model": "LP-RJ451GE-RCC",
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "10/100/1000M SGMII industrial Tx-dis Rx-LOS",
+      "model": "LP-RJ451GE-RCIYY",
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "10/100/1000M SGMII industrial Tx-dis no Rx-LOS",
+      "model": "LP-RJ451GE-RCIYN",
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "10/100/1000M SGMII industrial no Tx-dis Rx-LOS",
+      "model": "LP-RJ451GE-RCINY",
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "10/100/1000M SGMII industrial no Tx-dis no Rx-LOS",
+      "model": "LP-RJ451GE-RCINN",
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "1000M SERDES industrial Tx-dis Rx-LOS",
+      "model": "LP-RJ451G-RCIYY",
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "1000M SERDES commercial Tx-dis Rx-LOS",
+      "model": "LP-RJ451G-RCCYY",
+      "host_interface_name": "SERDES",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "10/100/1000M SGMII commercial Tx-dis Rx-LOS",
+      "model": "LP-RJ451GE-RCCYY",
+      "host_interface_name": "SGMII",
+      "standards_code": "10/100/1000Mbps",
+      "bit_rate_gbps": 1.0
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:31:09.953576+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-toc003-sc4c-so-osfp112-800g-2xfr4-r6.3.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.351,
+    "extract_atoms": 17.355,
+    "store_run": 0.007,
+    "synthesize_modes": 59.483,
+    "store_modes": 0.004,
+    "total": 81.2
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "Tri-Rate FC 4.25 Gb/s",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "Tri-Rate FC 8.5 Gb/s",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "Tri-Rate FC 14.025 Gb/s",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "bit_rate_gbps": 14.025
+    }
+  ]
+}

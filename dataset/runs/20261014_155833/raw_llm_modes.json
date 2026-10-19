@@ -1,0 +1,76 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP28-BX40D-2731 25GE Tx 1270nm",
+      "model": "SO-SFP28-BX40D-2731",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX40D-2731 CPRI opt 10 Tx 1270nm",
+      "model": "SO-SFP28-BX40D-2731",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "CPRI opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "SO-SFP28-BX40D-3127 25GE Tx 1310nm",
+      "model": "SO-SFP28-BX40D-3127",
+      "wavelength_min_nm": 1300.0,
+      "wavelength_max_nm": 1320.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX40D-3127 CPRI opt 10 Tx 1310nm",
+      "model": "SO-SFP28-BX40D-3127",
+      "wavelength_min_nm": 1300.0,
+      "wavelength_max_nm": 1320.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "CPRI opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "SO-SFP28-BX40D-2731-I 25GE Tx 1270nm",
+      "model": "SO-SFP28-BX40D-2731-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX40D-2731-I CPRI opt 10 Tx 1270nm",
+      "model": "SO-SFP28-BX40D-2731-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "CPRI opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "SO-SFP28-BX40D-3127-I 25GE Tx 1310nm",
+      "model": "SO-SFP28-BX40D-3127-I",
+      "wavelength_min_nm": 1300.0,
+      "wavelength_max_nm": 1320.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "SO-SFP28-BX40D-3127-I CPRI opt 10 Tx 1310nm",
+      "model": "SO-SFP28-BX40D-3127-I",
+      "wavelength_min_nm": 1300.0,
+      "wavelength_max_nm": 1320.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "CPRI opt 10",
+      "bit_rate_gbps": 24.33
+    }
+  ]
+}

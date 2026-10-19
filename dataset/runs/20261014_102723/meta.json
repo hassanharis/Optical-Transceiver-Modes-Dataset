@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:27:23.338524+00:00",
+  "source_file": "C:\\Haris\\datasheets\\qsfp-100g-zr4-so.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.917,
+    "extract_atoms": 24.797,
+    "store_run": 0.011,
+    "synthesize_modes": 28.891,
+    "store_modes": 0.004,
+    "total": 58.619
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1000Base-BX160D-5157",
+    "SO-SFP-1000Base-BX160D-5751",
+    "SO-SFP-1000Base-BX160D-5157-E",
+    "SO-SFP-1000Base-BX160D-5751-E"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1490.0,
+    1504.0,
+    1550.0,
+    1564.0
+  ],
+  "wavelength_max_nm": [
+    1517.0,
+    1530.0,
+    1577.0,
+    1590.0
+  ],
+  "wavelength_center_nm": [
+    1510.0,
+    1570.0
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": null,
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -20.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "1000BASE-BX",
+    "FE",
+    "GbE",
+    "1G FC"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    0.1,
+    1.25
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    160.0
+  ],
+  "tx_power_min_dbm": [
+    1.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -33.0
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -8.0
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -34.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "BiDi pair: SO-SFP-1000BASE-BX160D-5157 (Tx/Rx 1510nm/1570nm) and SO-SFP-1000BASE-BX160D-5751 (Tx/Rx 1570nm/1510nm). Operating temperature options: 0°C to +70°C (C-temp) or -20°C to +85°C (-E ordering suffix). Storage temperature -40°C to +85°C. Power budget 13–34 dB. Dispersion penalty max 1 dB. Tx/Rx wavelength ranges footnoted per variant (5157: Tx 1504–1517 nm, Rx 1550–1590 nm; 5751: Tx 1564–1577 nm, Rx 1490–1530 nm). Transmitter output power, receiver min input power, overload marked average power (footnote 3). Receiver min input power and overload measured @ 1.25 Gbps, BER ≤ 1×10⁻¹², PRBS 2⁷−1, back-to-back (footnote 4). Power consumption < 1.0 W worst case.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1000BASE-BX160D-5157 & -5751",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": ""
+}

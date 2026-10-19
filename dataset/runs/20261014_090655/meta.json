@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T09:06:55.863129+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ls-mm8510-s3c.pdf",
+  "page_count": 8,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 11.097,
+    "extract_atoms": 49.858,
+    "store_run": 0.006,
+    "synthesize_modes": 19.816,
+    "store_modes": 0.002,
+    "total": 80.778
+  }
+}

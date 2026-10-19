@@ -1,0 +1,33 @@
+{
+  "modes": [
+    {
+      "label": "10 Gigabit Ethernet (Cat 6a/7)",
+      "standards_code": "10GBASE-T",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "5000GBASE-T over Cat 5e",
+      "standards_code": "5000GBASE-T",
+      "bit_rate_gbps": 5.0
+    },
+    {
+      "label": "2500GBASE-T over Cat 5e",
+      "standards_code": "2500GBASE-T",
+      "bit_rate_gbps": 2.5
+    },
+    {
+      "label": "1.25 Gigabit Ethernet over Cat 5e",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "100M Ethernet over Cat 5e",
+      "standards_code": "100BASE-T",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "10M Ethernet over Cat 5e",
+      "standards_code": "10BASE-T",
+      "bit_rate_gbps": 0.01
+    }
+  ]
+}

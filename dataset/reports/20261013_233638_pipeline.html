@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — LINK-PP [&#x27;LG-SC432G-20CB1&#x27;, &#x27;LG-SC432G-20IB1&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">lg-sc432g-20cb1.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">6</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">7</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 23:36</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LG-SC432G-20CB1 Rev1.0- Sep.2016 
+
+
+## **LG-SC432G-20CB1** 
+
+GPON-OLT-SFP-B+ Transceiver, Single Mode, 20km Reach 2.5Gbps 1490nm TX / 1.25Gbps 1310nm RX ,SC 
+
+## **Product Features** 
+
+- Compliant with ITU-T G.984.2 GPON OLT B+/C+/C++/D application 
+
+- Single fiber bi-directional data links with symmetric 2.488Gbps Tx and 1.244Gbps Rx 
+
+- 1490nm continuous-mode transmitter with DFB LD 
+
+- 1310nm burst-mode receiver with APD-TIA 
+
+- 2-wire interface for integrated digital diagnostic monitoring 
+
+- Receiver RESET, Signal Detect, RSSI function indication (RESET, RX_SD, RSSI) 
+
+- SFP package with SC/UPC receptacle optical interface 
+
+- Single +3.3V power supply 
+
+- RoHS Compliance 
+
+- Operating case temperature: Standard: 0 to +70°C Industrial: -40 to +85°C 
+
+## **Applications** 
+
+- Gigabit-capable Passive Optical Networks (GPON) 
+
+
+Copyright © 2016 LINK-PP AlI Rights Reserved 
+
+Page 1 of 6 
+
+www.link-pp.com 
+
+LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LG-SC432G-20CB1 Rev1.0- Sep.2016 
+
+
+## **Recommended Operating Conditions** 
+
+|**Parameter**|**Symbol**|**Min**|**Typical**|**Max**|**Unit**|**Notes**|
+|---|---|---|---|---|---|---|
+|Operating Case Temperature|Tc|0||70|°C|Standard|
+|||-40||85||Industrial|
+|Storage Temperature|Ts|-40||85|°C||
+|Operating Relative Humidity|Ho|5||85|%||
+|Storage Relative Humidity|Hs|5||90|%||
+|Power Supply Voltage|Vcc|3.135|3.3|3.465|V||
+|Power Supply Current|I|||500|mA||
+|Bit Rate for Tx||2.488|||Gbps||
+|Bit Rate for Rx||1.244|||Gbps||
+
+
+
+## **Optical Characteristics** 
+
+|**Parameter**|**Min**|**Typical**|**Max**|**Unit**|**Notes**|
+|---|---|---|---|---|---|
+|**Transmitter**||||||
+|TX Central Wavelength|1480|1490|1500|nm||
+|Spectral Width(-20dB)|||1|nm||
+|Side Mode Suppression Ratio|30|||dB||
+|Mean Launched Power(B+)|1.5||5|dBm||
+|Mean Launched Power(C+)|3||7|dBm||
+|Mean Launched Power(C++)|4.5||10|dBm||
+|Mean Launched Power(D)|6||10|dBm||
+|Mean LaunchedPower (TX Off)|||-45|dBm||
+|Extinction Ratio|8.2|||d
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"LINK-PP"</span>,
+  <span class="key">"model"</span>: [
+    "LG-SC432G-20CB1",
+    "LG-SC432G-20IB1"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "ITU-T G.984.2"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_DFB"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "APD"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1480</span>,
+    <span class="num">1290</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1500</span>,
+    <span class="num">1330</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1490</span>,
+    <span class="num">1310</span>
+  ],
+  <span class="key">"wavelength_band"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "SC",
+    "SC/UPC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70</span>,
+  <span class="key">"power_consumption_w"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "GPON OLT B+",
+    "GPON OLT C+",
+    "GPON OLT C++",
+    "GPON OLT D",
+    "G.984.2"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">2.488</span>,
+    <span class="num">1.244</span>,
+    <span class="num">2.5</span>,
+    <span class="num">1.25</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">20</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">1.5</span>,
+    <span class="num">3</span>,
+    <span class="num">4.5</span>,
+    <span class="num">6</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">5</span>,
+    <span class="num">7</span>,
+    <span class="num">10</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-28</span>,
+    <span class="num">-30</span>,
+    <span class="num">-32</span>,
+    <span class="num">-33</span>,
+    <span class="num">-35</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-8</span>,
+    <span class="num">-12</span>,
+    <span class="num">-15</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-10,
+    <span class="num">0.0001</span>
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">8.2</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-33</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-45</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">8.2</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [
+    <span class="num">-15</span>
+  ],
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [
+    <span class="num">30</span>
+  ],
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>,
+    <span class="num">6</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Datasheet covers GPON OLT application classes B+, C+, C++, and D with class-specific mean launched power, sensitivity, and overload. LG-SC432G-20CB1 ordering specifies <span class="num">0</span>°C to +70°C; LG-SC432G-20IB1 specifies <span class="num">-40</span>°C to +85°C (Industrial operating case also listed under Recommended Operating Conditions). Tx bit rate <span class="num">2.488</span> Gbps and Rx <span class="num">1.244</span> Gbps in tables; title/ordering also state <span class="num">2.5</span> Gbps and <span class="num">1.25</span> Gbps. Sensitivity and overload conditions: PRBS223-1 @ <span class="num">1.244</span>G, ER=10, BER&lt;10^-10 or BER&lt;10^-4 as labeled per row. Transmitter and dispersion penalty max <span class="num">1</span> dB stated without a paired penalized parameter value at a defined condition. Mean launched power (TX Off) max <span class="num">-45</span> dBm. Spectral width (-20 dB) max <span class="num">1</span> nm. Receiver burst mode dynamic range <span class="num">15</span> dB. WDM filter isolation to <span class="num">1550</span> nm <span class="num">38</span> dB and to <span class="num">1650</span> nm <span class="num">35</span> dB. Power supply current max <span class="num">500</span> mA at <span class="num">3.3</span> V (power in W not stated)."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "LG-SC432G-20CB1",
+    "Product Features",
+    "Applications",
+    "Recommended Operating Conditions",
+    "Optical Characteristics",
+    "Electrical Characteristics",
+    "Timing Characteristics",
+    "Ordering information"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Consider schema fields for GPON OLT class (B+/C+/C++/D), burst-mode dynamic range, WDM filter isolation, spectral width (-20 dB), and TX-off launched power. Transmitter and dispersion penalty may need a rule when only max penalty dB is given without @ conditions."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">LG-SC432G-20CB1</span> <span class="badge">LG-SC432G-20IB1</span></td></tr>
+<tr><td>wavelength_min_nm</td><td><span class="badge">1480.0</span> <span class="badge">1290.0</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1500.0</span> <span class="badge">1330.0</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1490.0</span> <span class="badge">1310.0</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">GPON OLT B+</span> <span class="badge">GPON OLT C+</span> <span class="badge">GPON OLT C++</span> <span class="badge">GPON OLT D</span> <span class="badge">G.984.2</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">2.488</span> <span class="badge">1.244</span> <span class="badge">2.5</span> <span class="badge">1.25</span></td></tr>
+<tr><td>tx_power_min_dbm</td><td><span class="badge">1.5</span> <span class="badge">3.0</span> <span class="badge">4.5</span> <span class="badge">6.0</span></td></tr>
+<tr><td>tx_power_max_dbm</td><td><span class="badge">5.0</span> <span class="badge">7.0</span> <span class="badge">10.0</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-28.0</span> <span class="badge">-30.0</span> <span class="badge">-32.0</span> <span class="badge">-33.0</span> <span class="badge">-35.0</span></td></tr>
+<tr><td>rx_overload_dbm</td><td><span class="badge">-8.0</span> <span class="badge">-12.0</span> <span class="badge">-15.0</span></td></tr>
+<tr><td>post_fec_ber_target</td><td><span class="badge">1e-10</span> <span class="badge">0.0001</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>LINK-PP</td></tr>
+<tr><td>form_factor</td><td>SFP</td></tr>
+<tr><td>standards_claimed</td><td>ITU-T G.984.2</td></tr>
+<tr><td>emitter_type</td><td>LASER_DFB</td></tr>
+<tr><td>photodetector_type</td><td>APD</td></tr>
+<tr><td>connector_type</td><td>SC, SC/UPC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>reach_km</td><td>20.0</td></tr>
+<tr><td>extinction_ratio_db</td><td>8.2</td></tr>
+<tr><td>los_assert_dbm</td><td>-33.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-45.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>8.2</td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td>-15.0</td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td>30.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5, 6.0</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Datasheet covers GPON OLT application classes B+, C+, C++, and D with class-specific mean launched power, sensitivity, and overload. LG-SC432G-20CB1 ordering specifies 0°C to +70°C; LG-SC432G-20IB1 specifies -40°C to +85°C (Industrial operating case also listed under Recommended Operating Conditions). Tx bit rate 2.488 Gbps and Rx 1.244 Gbps in tables; title/ordering also state 2.5 Gbps and 1.25 Gbps. Sensitivity and overload conditions: PRBS223-1 @ 1.244G, ER=10, BER&lt;10^-10 or BER&lt;10^-4 as labeled per row. Transmitter and dispersion penalty max 1 dB stated without a paired penalized parameter value at a defined condition. Mean launched power (TX Off) max -45 dBm. Spectral width (-20 dB) max 1 nm. Receiver burst mode dynamic range 15 dB. WDM filter isolation to 1550 nm 38 dB and to 1650 nm 35 dB. Power supply current max 500 mA at 3.3 V (power in W not stated).</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>LG-SC432G-20CB1, Product Features, Applications, Recommended Operating Conditions, Optical Characteristics, Electrical Characteristics, Timing Characteristics, Ordering information</td></tr>
+<tr><td>suggestions</td><td>Consider schema fields for GPON OLT class (B+/C+/C++/D), burst-mode dynamic range, WDM filter isolation, spectral width (-20 dB), and TX-off launched power. Transmitter and dispersion penalty may need a rule when only max penalty dB is given without @ conditions.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_center_nm</th><th>standards_code</th><th>bit_rate_gbps</th><th>tx_power_min_dbm</th><th>tx_power_max_dbm</th><th>rx_sensitivity_dbm</th><th>rx_overload_dbm</th><th>post_fec_ber_target</th></tr><tr><td><strong>LG-SC432G-20CB1 GPON OLT B+</strong></td><td>LG-SC432G-20CB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT B+</td><td>2.488</td><td>1.5</td><td>5.0</td><td>-28.0</td><td>-8.0</td><td>1e-10</td></tr><tr><td><strong>LG-SC432G-20IB1 GPON OLT B+</strong></td><td>LG-SC432G-20IB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT B+</td><td>2.488</td><td>1.5</td><td>5.0</td><td>-28.0</td><td>-8.0</td><td>1e-10</td></tr><tr><td><strong>LG-SC432G-20CB1 GPON OLT C+ BER 1e-10</strong></td><td>LG-SC432G-20CB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT C+</td><td>2.488</td><td>3.0</td><td>7.0</td><td>-30.0</td><td>-12.0</td><td>1e-10</td></tr><tr><td><strong>LG-SC432G-20IB1 GPON OLT C+ BER 1e-10</strong></td><td>LG-SC432G-20IB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT C+</td><td>2.488</td><td>3.0</td><td>7.0</td><td>-30.0</td><td>-12.0</td><td>1e-10</td></tr><tr><td><strong>LG-SC432G-20CB1 GPON OLT C+ BER 1e-4</strong></td><td>LG-SC432G-20CB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT C+</td><td>1.244</td><td>3.0</td><td>7.0</td><td>-32.0</td><td>-12.0</td><td>0.0001</td></tr><tr><td><strong>LG-SC432G-20IB1 GPON OLT C+ BER 1e-4</strong></td><td>LG-SC432G-20IB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT C+</td><td>1.244</td><td>3.0</td><td>7.0</td><td>-32.0</td><td>-12.0</td><td>0.0001</td></tr><tr><td><strong>LG-SC432G-20CB1 GPON OLT C++</strong></td><td>LG-SC432G-20CB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT C++</td><td>2.488</td><td>4.5</td><td>10.0</td><td></td><td>-12.0</td><td>1e-10</td></tr><tr><td><strong>LG-SC432G-20IB1 GPON OLT C++</strong></td><td>LG-SC432G-20IB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT C++</td><td>2.488</td><td>4.5</td><td>10.0</td><td></td><td>-12.0</td><td>1e-10</td></tr><tr><td><strong>LG-SC432G-20CB1 GPON OLT D BER 1e-10</strong></td><td>LG-SC432G-20CB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT D</td><td>2.488</td><td>6.0</td><td>10.0</td><td>-33.0</td><td>-15.0</td><td>1e-10</td></tr><tr><td><strong>LG-SC432G-20IB1 GPON OLT D BER 1e-10</strong></td><td>LG-SC432G-20IB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT D</td><td>2.488</td><td>6.0</td><td>10.0</td><td>-33.0</td><td>-15.0</td><td>1e-10</td></tr><tr><td><strong>LG-SC432G-20CB1 GPON OLT D BER 1e-4</strong></td><td>LG-SC432G-20CB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT D</td><td>1.244</td><td>6.0</td><td>10.0</td><td>-35.0</td><td>-15.0</td><td>0.0001</td></tr><tr><td><strong>LG-SC432G-20IB1 GPON OLT D BER 1e-4</strong></td><td>LG-SC432G-20IB1</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>GPON OLT D</td><td>1.244</td><td>6.0</td><td>10.0</td><td>-35.0</td><td>-15.0</td><td>0.0001</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 23:36
+</footer>
+
+</div>
+</body>
+</html>

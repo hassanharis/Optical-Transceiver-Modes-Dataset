@@ -1,0 +1,100 @@
+{
+  "multi_valued": {
+    "wavelength_max_nm": [
+      1360.0,
+      1600.0
+    ],
+    "standards_code": [
+      "GbE",
+      "STM1/OC3",
+      "STM4/OC12",
+      "STM16/OC48",
+      "OTU1",
+      "1G FC",
+      "2G FC",
+      "CPRI Opt 1",
+      "CPRI Opt 2",
+      "CPRI Opt 3",
+      "OBSAI 1x",
+      "OBSAI 2x"
+    ],
+    "bit_rate_gbps": [
+      2.67,
+      2.7
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-MR2D"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_min_nm": [
+      1260.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      1
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -10.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -18.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-10
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -19.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Technology: Grey SFP. Transmission media stated as SM (2x LC). Power budget 0 – 8dB. Bit rate support 155Mbps to 2.67Gbps (title/ordering also 2.7Gbps). Transmitter output min listed as -10.0dB1) (max -3.0dBm1); footnote 1) Average power. Receiver minimum input power -18dBm per footnote 2) @ 2488Mbps, BER 1x10-10, PRBS 223-1. Power consumption < 1.0W. Operating temperature table shows -0°C to +70°C. Storage temperature -40°C to +85°C. DDM Yes. No minimum distance / no minimum attenuation stated in OVERVIEW.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-MR2D",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether transmitter minimum output -10.0dB is dBm; add bit_rate field or allow Mbps for 155Mbps and 2488Mbps without unit conversion."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T09:19:16.356414+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ls-sc2510-20cn2.pdf",
+  "page_count": 6,
+  "table_count": 6,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 8.227,
+    "extract_atoms": 33.018,
+    "store_run": 0.011,
+    "synthesize_modes": 37.774,
+    "store_modes": 0.002,
+    "total": 79.033
+  }
+}

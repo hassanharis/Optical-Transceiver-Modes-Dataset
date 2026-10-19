@@ -1,0 +1,129 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP-ESR4"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "IEEE Std 802.3ba",
+    "40GBASE-eSR4",
+    "SFF-8472",
+    "SFF-8636",
+    "QSFP+ MSA"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    830
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "MPO",
+    "MTP"
+  ],
+  "fiber_type": [
+    "SMF",
+    "MMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "40GbE",
+    "Infiniband QDR/DDR"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "40GBASE-eSR4"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "4x 10 Gbps"
+  ],
+  "standards_code": [
+    "40GBASE-eSR4",
+    "eSR4"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    41.25,
+    10.3125
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.3,
+    0.4
+  ],
+  "tx_power_min_dbm": [
+    -7.6
+  ],
+  "tx_power_max_dbm": [
+    2.4
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -9.5
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    2.4
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Transmitter output power min/max and receiver min input power and overload are footnote 3) Average power. Receiver min input power and overload footnote 4) Measured with PRBS 231-1 test pattern, 10.3125Gb/s, BER<10-12. Power budget 0 – 1.9 dB. Technical DATA table lists Transmission media as SM (1x MPO); OVERVIEW and ORDERING describe OM4 MultiMode (MM) and reach 300m/400m OM3/OM4. Bit rate footnote 1) Aggregated line rate; 2) Per channel. Module is SR4 compliant with extended reach up to 400m over OM4 MM per OVERVIEW.",
+  "provenance_datasheet_sections": [
+    "SO-QSFP-ESR4",
+    "QSFP+, 40G Ethernet eSR4, MM, 850nm, 400m, 1.9dB, MPO",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": null
+}

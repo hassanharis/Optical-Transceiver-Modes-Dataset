@@ -1,0 +1,148 @@
+{
+  "modes": [
+    {
+      "label": "LWDM-A 25GbE",
+      "model": "SO-SFP28-LWDM-A-E",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "LWDM-A CPRI Opt 10",
+      "model": "SO-SFP28-LWDM-A-E",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "standards_code": "CPRI Opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "LWDM-B 25GbE",
+      "model": "SO-SFP28-LWDM-B-E",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "LWDM-B CPRI Opt 10",
+      "model": "SO-SFP28-LWDM-B-E",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "standards_code": "CPRI Opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "LWDM-C 25GbE",
+      "model": "SO-SFP28-LWDM-C-E",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "LWDM-C CPRI Opt 10",
+      "model": "SO-SFP28-LWDM-C-E",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "standards_code": "CPRI Opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "LWDM-D 25GbE",
+      "model": "SO-SFP28-LWDM-D-E",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "LWDM-D CPRI Opt 10",
+      "model": "SO-SFP28-LWDM-D-E",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "standards_code": "CPRI Opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "LWDM-E 25GbE",
+      "model": "SO-SFP28-LWDM-E-E",
+      "wavelength_min_nm": 1276.86,
+      "wavelength_max_nm": 1278.92,
+      "wavelength_center_nm": 1277.89,
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "LWDM-E CPRI Opt 10",
+      "model": "SO-SFP28-LWDM-E-E",
+      "wavelength_min_nm": 1276.86,
+      "wavelength_max_nm": 1278.92,
+      "wavelength_center_nm": 1277.89,
+      "standards_code": "CPRI Opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "LWDM-F 25GbE",
+      "model": "SO-SFP28-LWDM-F-E",
+      "wavelength_min_nm": 1281.23,
+      "wavelength_max_nm": 1283.29,
+      "wavelength_center_nm": 1282.26,
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "LWDM-F CPRI Opt 10",
+      "model": "SO-SFP28-LWDM-F-E",
+      "wavelength_min_nm": 1281.23,
+      "wavelength_max_nm": 1283.29,
+      "wavelength_center_nm": 1282.26,
+      "standards_code": "CPRI Opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "LWDM-G 25GbE",
+      "model": "SO-SFP28-LWDM-G-E",
+      "wavelength_min_nm": 1285.65,
+      "wavelength_max_nm": 1287.69,
+      "wavelength_center_nm": 1286.66,
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "LWDM-G CPRI Opt 10",
+      "model": "SO-SFP28-LWDM-G-E",
+      "wavelength_min_nm": 1285.65,
+      "wavelength_max_nm": 1287.69,
+      "wavelength_center_nm": 1286.66,
+      "standards_code": "CPRI Opt 10",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "LWDM-H 25GbE",
+      "model": "SO-SFP28-LWDM-H-E",
+      "wavelength_min_nm": 1290.07,
+      "wavelength_max_nm": 1292.12,
+      "wavelength_center_nm": 1291.1,
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "LWDM-H CPRI Opt 10",
+      "model": "SO-SFP28-LWDM-H-E",
+      "wavelength_min_nm": 1290.07,
+      "wavelength_max_nm": 1292.12,
+      "wavelength_center_nm": 1291.1,
+      "standards_code": "CPRI Opt 10",
+      "bit_rate_gbps": 24.33
+    }
+  ]
+}

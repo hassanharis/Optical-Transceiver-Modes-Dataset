@@ -1,0 +1,168 @@
+{
+  "multi_valued": {
+    "model": [
+      "FTCD4315E1PCL",
+      "FTCD4315E1PCL-1Y"
+    ],
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "media_interface_name": [
+      "400G Ethernet",
+      "400GBASE-FR4"
+    ],
+    "frame": [
+      "8x50G PAM4 retimed 400GAUI-8",
+      "4x100Gb/s PAM4 serial lanes"
+    ],
+    "standards_code": [
+      "IEEE P802.3cu",
+      "400GBASE-FR4",
+      "OSFP",
+      "CMIS4.0"
+    ],
+    "baud_rate_gbaud": [
+      53.125,
+      26.5625
+    ],
+    "bit_rate_gbps": [
+      425.0,
+      400.0,
+      100.0
+    ],
+    "tx_power_max_dbm": [
+      4.4,
+      10.4
+    ],
+    "rx_sensitivity_dbm": [
+      -4.6,
+      -2.6
+    ],
+    "rx_overload_dbm": [
+      4.4,
+      5.4
+    ],
+    "number_of_lanes": [
+      4,
+      8
+    ]
+  },
+  "general": {
+    "vendor": "Finisar",
+    "form_factor": [
+      "OSFP"
+    ],
+    "standards_claimed": [
+      "OSFP MSA",
+      "IEEE P802.3cu",
+      "IEEE P802.3bs"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF_G652"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      12.0
+    ],
+    "host_interface_name": [
+      "400GAUI-8"
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "roll_off_percent": [],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -3.2
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "post_fec_ber_target": [],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "los_assert_dbm": [],
+    "los_deassert_dbm": [],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      17.1
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Maximum aggregate data rate 425 Gb/s. Bit error ratio max 2.4E-4 per IEEE P802.3cu. Reach Lmax1 0.002–2 km on SMF per G.652. Average launch power each lane min -3.2 dBm is informative; max 4.4 dBm per lane; total average launch power max 10.4 dBm. Receiver sensitivity (OMAouter) each lane max -4.6 dBm for SECQ < 1.4 dB; for 1.4 dB ≤ SECQ ≤ 3.4 dB sensitivity is -6 + SECQ dBm; -2.6 dBm measured with conformance test signal at TP3 per note 3. Stressed receiver test uses SECQ 3.4 dB and OMAouter of each aggressor lane 1.5 dBm. Power dissipation <12 W; module total power max 12 W across full temperature and voltage range. Supply 3.3 V (3.135–3.465 V). Case operating temperature C-temp 0 to +70 °C. Storage -40 to +85 °C. Receiver damage threshold per lane 5.4 dBm; average receive power each lane -7.2 to 4.4 dBm. Applications state 400G FR4 with FEC but FEC type not specified. Vendor branding Finisar; copyright Coherent Corp.",
+    "provenance_datasheet_sections": [
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "PRODUCT SELECTION",
+      "FTCD4315E1PCL",
+      "II. General Product Characteristics",
+      "III. Absolute Maximum Ratings",
+      "IV. Electrical Characteristics (EOL, TOP = 0 to +70 C, VCC = 3.135 to 3.465 Volts)",
+      "V. Optical Characteristics (EOL, TOP = 0 to +70 C, VCC = 3.135 to 3.465 Volts)",
+      "VI. Memory Map and Control Registers",
+      "VII. Environmental Specifications",
+      "IX. Mechanical Specifications",
+      "X. References"
+    ],
+    "suggestions": "Receiver sensitivity vs SECQ rows could map to penalties if SECQ were added as a condition parameter. Explicit wavelength band (e.g. LAN-WDM) not named in source despite four lane wavelengths."
+  }
+}

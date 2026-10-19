@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "LS-SM3106-40C Commercial Tx",
+      "model": "LS-SM3106-40C",
+      "wavelength_max_nm": 1360.0
+    },
+    {
+      "label": "LS-SM3106-40C Commercial Rx",
+      "model": "LS-SM3106-40C",
+      "wavelength_max_nm": 1610.0
+    },
+    {
+      "label": "LS-SM3106-40I Industrial Tx",
+      "model": "LS-SM3106-40I",
+      "wavelength_max_nm": 1360.0
+    },
+    {
+      "label": "LS-SM3106-40I Industrial Rx",
+      "model": "LS-SM3106-40I",
+      "wavelength_max_nm": 1610.0
+    }
+  ]
+}

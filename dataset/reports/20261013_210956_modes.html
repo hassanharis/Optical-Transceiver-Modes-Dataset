@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics</div>
+  <div class="subtitle"></div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">CMIS 5.2, OSFP800 MSA, 800GAUI-8, 400GAUI-4, 200GAUI-2, 100GAUI-2, 100GAUI-1, 50GAUI-1</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">10.0</div></div>
+      <div class="spec-item"><div class="label">Baud Rate (GBaud)</div><div class="value">50.0</div></div>
+      <div class="spec-item"><div class="label">Modulation Format</div><div class="value">PAM4</div></div>
+      <div class="spec-item"><div class="label">Fec Type</div><div class="value">RS_GENERIC</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-15</div></div>
+      <div class="spec-item"><div class="label">Number Of Lanes</div><div class="value">8</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Active Electrical Cable (AEC), Twinax copper with DSP at each end; not an optical transceiver. Cable length 1 to 3 m (3.3 to 9.8 ft). Storage temperature -40°C to +85°C. Power consumption stated as &lt;10.0 W per side. Product features cite BER &lt; 10^-8 pre-FEC and BER &lt; 10^-15 post-FEC; APPLICATION CODE LIST cites RS-FEC with BER&lt;2.6e-4 or BER&lt;1.0e-6 per application row. Aggregate bandwidth 800 Gbps; eight data lanes at 50 Gbd each direction.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">OSFP 800G AEC, CMIS 5.2, DOC001-xxxC-SO, PRODUCT FEATURES, APPLICATIONS, ORDERING INFORMATION, APPLICATION CODE LIST, GENERAL DEFINITIONS</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Consider schema fields for cable_length_m, product_type (AEC/DAC), and electrical-only modules where optical parameters are intentionally null.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Form Factor</th><th>Host Interface</th><th>Host Interface ID (hex)</th><th>host_interface_id</th><th>Media Interface</th><th>Media Interface ID (hex)</th><th>media_interface_id</th><th>frame</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>pre_fec_ber_threshold</th></tr>
+      <tr><td><strong>App 1 — 1×800GBASE-R / 800GAUI-8 (1m)</strong></td><td>DOC001-001C-SO</td><td>OSFP800</td><td>800GAUI-8-S C2M</td><td>0x51</td><td>81</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>1x 800GBASE-R</td><td>800GBASE-R</td><td>800.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 2 — 2×400GBASE-R / 400GAUI-4 (1m)</strong></td><td>DOC001-001C-SO</td><td>OSFP800</td><td>400GAUI-4-S C2M</td><td>0x4F</td><td>79</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>2 x 400GBASE-R</td><td>400GBASE-R</td><td>400.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 3 — 8×100GBASE-R / 100GAUI-1 (1m)</strong></td><td>DOC001-001C-SO</td><td>OSFP800</td><td>100GAUI-1-S C2M</td><td>0x4B</td><td>75</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>8 x 100GBASE-R</td><td>100GBASE-R</td><td>100.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 4 — 1×400GBASE-R / 400GAUI-8 (1m)</strong></td><td>DOC001-001C-SO</td><td>OSFP800</td><td>400GAUI-8 C2M</td><td>0x11</td><td>17</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>1x 400GBASE-R</td><td>400GBASE-R</td><td>400.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 5 — 4×200GBASE-R / 200GAUI-1 (1m)</strong></td><td>DOC001-001C-SO</td><td>OSFP800</td><td>200GAUI-1-S C2M</td><td>0x4D</td><td>77</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>4 x 200GBASE-R</td><td>200GBASE-R</td><td>200.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 6 — 2×200GBASE-R / 200GAUI-4 (1m)</strong></td><td>DOC001-001C-SO</td><td>OSFP800</td><td>200GAUI-4 C2M</td><td>0x0F</td><td>15</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>2x 200GBASE-R</td><td>200GBASE-R</td><td>200.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 7 — 2×100GBASE-R / 100GAUI-2 (1m)</strong></td><td>DOC001-001C-SO</td><td>OSFP800</td><td>100GAUI-2 C2M</td><td>0x0D</td><td>13</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>2x 100GBASE-R</td><td>100GBASE-R</td><td>100.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 8 — 8×50GBASE-R / 50GAUI-1 (1m)</strong></td><td>DOC001-001C-SO</td><td>OSFP800</td><td>50GAUI-1 C2M</td><td>0x4F</td><td>79</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x02</td><td>2</td><td>8 x 50GBASE-R</td><td>50GBASE-R</td><td>50.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 1 — 1×800GBASE-R / 800GAUI-8 (1.5m)</strong></td><td>DOC001-1M5C-SO</td><td>OSFP800</td><td>800GAUI-8-S C2M</td><td>0x51</td><td>81</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>1x 800GBASE-R</td><td>800GBASE-R</td><td>800.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 2 — 2×400GBASE-R / 400GAUI-4 (1.5m)</strong></td><td>DOC001-1M5C-SO</td><td>OSFP800</td><td>400GAUI-4-S C2M</td><td>0x4F</td><td>79</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>2 x 400GBASE-R</td><td>400GBASE-R</td><td>400.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 3 — 8×100GBASE-R / 100GAUI-1 (1.5m)</strong></td><td>DOC001-1M5C-SO</td><td>OSFP800</td><td>100GAUI-1-S C2M</td><td>0x4B</td><td>75</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>8 x 100GBASE-R</td><td>100GBASE-R</td><td>100.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 4 — 1×400GBASE-R / 400GAUI-8 (1.5m)</strong></td><td>DOC001-1M5C-SO</td><td>OSFP800</td><td>400GAUI-8 C2M</td><td>0x11</td><td>17</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>1x 400GBASE-R</td><td>400GBASE-R</td><td>400.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 5 — 4×200GBASE-R / 200GAUI-1 (1.5m)</strong></td><td>DOC001-1M5C-SO</td><td>OSFP800</td><td>200GAUI-1-S C2M</td><td>0x4D</td><td>77</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>4 x 200GBASE-R</td><td>200GBASE-R</td><td>200.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 6 — 2×200GBASE-R / 200GAUI-4 (1.5m)</strong></td><td>DOC001-1M5C-SO</td><td>OSFP800</td><td>200GAUI-4 C2M</td><td>0x0F</td><td>15</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>2x 200GBASE-R</td><td>200GBASE-R</td><td>200.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 7 — 2×100GBASE-R / 100GAUI-2 (1.5m)</strong></td><td>DOC001-1M5C-SO</td><td>OSFP800</td><td>100GAUI-2 C2M</td><td>0x0D</td><td>13</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>2x 100GBASE-R</td><td>100GBASE-R</td><td>100.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 8 — 8×50GBASE-R / 50GAUI-1 (1.5m)</strong></td><td>DOC001-1M5C-SO</td><td>OSFP800</td><td>50GAUI-1 C2M</td><td>0x4F</td><td>79</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x02</td><td>2</td><td>8 x 50GBASE-R</td><td>50GBASE-R</td><td>50.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 1 — 1×800GBASE-R / 800GAUI-8 (2m)</strong></td><td>DOC001-002C-SO</td><td>OSFP800</td><td>800GAUI-8-S C2M</td><td>0x51</td><td>81</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>1x 800GBASE-R</td><td>800GBASE-R</td><td>800.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 2 — 2×400GBASE-R / 400GAUI-4 (2m)</strong></td><td>DOC001-002C-SO</td><td>OSFP800</td><td>400GAUI-4-S C2M</td><td>0x4F</td><td>79</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>2 x 400GBASE-R</td><td>400GBASE-R</td><td>400.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 3 — 8×100GBASE-R / 100GAUI-1 (2m)</strong></td><td>DOC001-002C-SO</td><td>OSFP800</td><td>100GAUI-1-S C2M</td><td>0x4B</td><td>75</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>8 x 100GBASE-R</td><td>100GBASE-R</td><td>100.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 4 — 1×400GBASE-R / 400GAUI-8 (2m)</strong></td><td>DOC001-002C-SO</td><td>OSFP800</td><td>400GAUI-8 C2M</td><td>0x11</td><td>17</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>1x 400GBASE-R</td><td>400GBASE-R</td><td>400.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 5 — 4×200GBASE-R / 200GAUI-1 (2m)</strong></td><td>DOC001-002C-SO</td><td>OSFP800</td><td>200GAUI-1-S C2M</td><td>0x4D</td><td>77</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>4 x 200GBASE-R</td><td>200GBASE-R</td><td>200.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 6 — 2×200GBASE-R / 200GAUI-4 (2m)</strong></td><td>DOC001-002C-SO</td><td>OSFP800</td><td>200GAUI-4 C2M</td><td>0x0F</td><td>15</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>2x 200GBASE-R</td><td>200GBASE-R</td><td>200.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 7 — 2×100GBASE-R / 100GAUI-2 (2m)</strong></td><td>DOC001-002C-SO</td><td>OSFP800</td><td>100GAUI-2 C2M</td><td>0x0D</td><td>13</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>2x 100GBASE-R</td><td>100GBASE-R</td><td>100.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 8 — 8×50GBASE-R / 50GAUI-1 (2m)</strong></td><td>DOC001-002C-SO</td><td>OSFP800</td><td>50GAUI-1 C2M</td><td>0x4F</td><td>79</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x02</td><td>2</td><td>8 x 50GBASE-R</td><td>50GBASE-R</td><td>50.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 1 — 1×800GBASE-R / 800GAUI-8 (2.5m)</strong></td><td>DOC001-2M5C-SO</td><td>OSFP800</td><td>800GAUI-8-S C2M</td><td>0x51</td><td>81</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>1x 800GBASE-R</td><td>800GBASE-R</td><td>800.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 2 — 2×400GBASE-R / 400GAUI-4 (2.5m)</strong></td><td>DOC001-2M5C-SO</td><td>OSFP800</td><td>400GAUI-4-S C2M</td><td>0x4F</td><td>79</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>2 x 400GBASE-R</td><td>400GBASE-R</td><td>400.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 3 — 8×100GBASE-R / 100GAUI-1 (2.5m)</strong></td><td>DOC001-2M5C-SO</td><td>OSFP800</td><td>100GAUI-1-S C2M</td><td>0x4B</td><td>75</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>8 x 100GBASE-R</td><td>100GBASE-R</td><td>100.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 4 — 1×400GBASE-R / 400GAUI-8 (2.5m)</strong></td><td>DOC001-2M5C-SO</td><td>OSFP800</td><td>400GAUI-8 C2M</td><td>0x11</td><td>17</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>1x 400GBASE-R</td><td>400GBASE-R</td><td>400.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 5 — 4×200GBASE-R / 200GAUI-1 (2.5m)</strong></td><td>DOC001-2M5C-SO</td><td>OSFP800</td><td>200GAUI-1-S C2M</td><td>0x4D</td><td>77</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>4 x 200GBASE-R</td><td>200GBASE-R</td><td>200.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 6 — 2×200GBASE-R / 200GAUI-4 (2.5m)</strong></td><td>DOC001-2M5C-SO</td><td>OSFP800</td><td>200GAUI-4 C2M</td><td>0x0F</td><td>15</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>2x 200GBASE-R</td><td>200GBASE-R</td><td>200.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 7 — 2×100GBASE-R / 100GAUI-2 (2.5m)</strong></td><td>DOC001-2M5C-SO</td><td>OSFP800</td><td>100GAUI-2 C2M</td><td>0x0D</td><td>13</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>2x 100GBASE-R</td><td>100GBASE-R</td><td>100.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 8 — 8×50GBASE-R / 50GAUI-1 (2.5m)</strong></td><td>DOC001-2M5C-SO</td><td>OSFP800</td><td>50GAUI-1 C2M</td><td>0x4F</td><td>79</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x02</td><td>2</td><td>8 x 50GBASE-R</td><td>50GBASE-R</td><td>50.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 1 — 1×800GBASE-R / 800GAUI-8 (3m)</strong></td><td>DOC001-003C-SO</td><td>OSFP800</td><td>800GAUI-8-S C2M</td><td>0x51</td><td>81</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>1x 800GBASE-R</td><td>800GBASE-R</td><td>800.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 2 — 2×400GBASE-R / 400GAUI-4 (3m)</strong></td><td>DOC001-003C-SO</td><td>OSFP800</td><td>400GAUI-4-S C2M</td><td>0x4F</td><td>79</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>2 x 400GBASE-R</td><td>400GBASE-R</td><td>400.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 3 — 8×100GBASE-R / 100GAUI-1 (3m)</strong></td><td>DOC001-003C-SO</td><td>OSFP800</td><td>100GAUI-1-S C2M</td><td>0x4B</td><td>75</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>8 x 100GBASE-R</td><td>100GBASE-R</td><td>100.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 4 — 1×400GBASE-R / 400GAUI-8 (3m)</strong></td><td>DOC001-003C-SO</td><td>OSFP800</td><td>400GAUI-8 C2M</td><td>0x11</td><td>17</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>1x 400GBASE-R</td><td>400GBASE-R</td><td>400.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 5 — 4×200GBASE-R / 200GAUI-1 (3m)</strong></td><td>DOC001-003C-SO</td><td>OSFP800</td><td>200GAUI-1-S C2M</td><td>0x4D</td><td>77</td><td>Active Cable assembly with BER&lt;2.6e-4</td><td>0x03</td><td>3</td><td>4 x 200GBASE-R</td><td>200GBASE-R</td><td>200.0</td><td>0.00026</td></tr>
+      <tr><td><strong>App 6 — 2×200GBASE-R / 200GAUI-4 (3m)</strong></td><td>DOC001-003C-SO</td><td>OSFP800</td><td>200GAUI-4 C2M</td><td>0x0F</td><td>15</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>2x 200GBASE-R</td><td>200GBASE-R</td><td>200.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 7 — 2×100GBASE-R / 100GAUI-2 (3m)</strong></td><td>DOC001-003C-SO</td><td>OSFP800</td><td>100GAUI-2 C2M</td><td>0x0D</td><td>13</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x04</td><td>4</td><td>2x 100GBASE-R</td><td>100GBASE-R</td><td>100.0</td><td>1e-06</td></tr>
+      <tr><td><strong>App 8 — 8×50GBASE-R / 50GAUI-1 (3m)</strong></td><td>DOC001-003C-SO</td><td>OSFP800</td><td>50GAUI-1 C2M</td><td>0x4F</td><td>79</td><td>Active Cable assembly with BER&lt;1.0e-6</td><td>0x02</td><td>2</td><td>8 x 50GBASE-R</td><td>50GBASE-R</td><td>50.0</td><td>1e-06</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">DOC001-xxxC-SO</span> <span class="badge">DOC001-001C-SO</span> <span class="badge">DOC001-1M5C-SO</span> <span class="badge">DOC001-002C-SO</span> <span class="badge">DOC001-2M5C-SO</span> <span class="badge">DOC001-003C-SO</span></td></tr>
+      <tr><td>form_factor</td><td><span class="badge">OSFP</span> <span class="badge">OSFP800</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">800GAUI-8</span> <span class="badge">400GAUI-4</span> <span class="badge">200GAUI-2</span> <span class="badge">100GAUI-2</span> <span class="badge">100GAUI-1</span> <span class="badge">50GAUI-1</span> <span class="badge">800GAUI-8-S C2M</span> <span class="badge">400GAUI-4-S C2M</span> <span class="badge">100GAUI-1-S C2M</span> <span class="badge">400GAUI-8 C2M</span> <span class="badge">200GAUI-1-S C2M</span> <span class="badge">200GAUI-4 C2M</span> <span class="badge">100GAUI-2 C2M</span> <span class="badge">50GAUI-1 C2M</span></td></tr>
+      <tr><td>host_interface_id_hex</td><td><span class="badge">0x51</span> <span class="badge">0x4F</span> <span class="badge">0x4B</span> <span class="badge">0x11</span> <span class="badge">0x4D</span> <span class="badge">0x0F</span> <span class="badge">0x0D</span></td></tr>
+      <tr><td>host_interface_id</td><td><span class="badge">81</span> <span class="badge">79</span> <span class="badge">75</span> <span class="badge">17</span> <span class="badge">77</span> <span class="badge">15</span> <span class="badge">13</span></td></tr>
+      <tr><td>media_interface_name</td><td><span class="badge">Active Cable assembly with BER&lt;2.6e-4</span> <span class="badge">Active Cable assembly with BER&lt;1.0e-6</span></td></tr>
+      <tr><td>media_interface_id_hex</td><td><span class="badge">0x03</span> <span class="badge">0x04</span> <span class="badge">0x02</span></td></tr>
+      <tr><td>media_interface_id</td><td><span class="badge">3</span> <span class="badge">4</span> <span class="badge">2</span></td></tr>
+      <tr><td>frame</td><td><span class="badge">1x 800GBASE-R</span> <span class="badge">2 x 400GBASE-R</span> <span class="badge">8 x 100GBASE-R</span> <span class="badge">1x 400GBASE-R</span> <span class="badge">4 x 200GBASE-R</span> <span class="badge">2x 200GBASE-R</span> <span class="badge">2x 100GBASE-R</span> <span class="badge">8 x 50GBASE-R</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">800GBASE-R</span> <span class="badge">400GBASE-R</span> <span class="badge">100GBASE-R</span> <span class="badge">200GBASE-R</span> <span class="badge">50GBASE-R</span> <span class="badge">CMIS 5.2</span> <span class="badge">OSFP800</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">800.0</span> <span class="badge">400.0</span> <span class="badge">100.0</span> <span class="badge">200.0</span> <span class="badge">50.0</span></td></tr>
+      <tr><td>pre_fec_ber_threshold</td><td><span class="badge">1e-08</span> <span class="badge">0.00026</span> <span class="badge">1e-06</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 21:09
+</footer>
+
+</div>
+</body>
+</html>

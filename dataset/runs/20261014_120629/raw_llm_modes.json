@@ -1,0 +1,84 @@
+{
+  "modes": [
+    {
+      "label": "PCU1M QSFP28 100G host",
+      "model": "SO-QSFP28-4SFP28-PCU1M",
+      "form_factor": "QSFP28",
+      "host_interface_name": "SFF-8665",
+      "standards_code": "100GBase",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "PCU1M SFP28 25G breakout",
+      "model": "SO-QSFP28-4SFP28-PCU1M",
+      "form_factor": "SFP28",
+      "host_interface_name": "25GbE-SFP28",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 25.0
+    },
+    {
+      "label": "PCU2M QSFP28 100G host",
+      "model": "SO-QSFP28-4SFP28-PCU2M",
+      "form_factor": "QSFP28",
+      "host_interface_name": "SFF-8665",
+      "standards_code": "100GBase",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "PCU2M SFP28 25G breakout",
+      "model": "SO-QSFP28-4SFP28-PCU2M",
+      "form_factor": "SFP28",
+      "host_interface_name": "25GbE-SFP28",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 25.0
+    },
+    {
+      "label": "PCU3M QSFP28 100G host",
+      "model": "SO-QSFP28-4SFP28-PCU3M",
+      "form_factor": "QSFP28",
+      "host_interface_name": "SFF-8665",
+      "standards_code": "100GBase",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "PCU3M SFP28 25G breakout",
+      "model": "SO-QSFP28-4SFP28-PCU3M",
+      "form_factor": "SFP28",
+      "host_interface_name": "25GbE-SFP28",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 25.0
+    },
+    {
+      "label": "PCU5M QSFP28 100G host",
+      "model": "SO-QSFP28-4SFP28-PCU5M",
+      "form_factor": "QSFP28",
+      "host_interface_name": "SFF-8665",
+      "standards_code": "100GBase",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "PCU5M SFP28 25G breakout",
+      "model": "SO-QSFP28-4SFP28-PCU5M",
+      "form_factor": "SFP28",
+      "host_interface_name": "25GbE-SFP28",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 25.0
+    },
+    {
+      "label": "PCUxM QSFP28 100G host",
+      "model": "SO-QSFP28-4SFP28-PCUxM",
+      "form_factor": "QSFP28",
+      "host_interface_name": "QSFP28",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "PCUxM SFP28 25G breakout",
+      "model": "SO-QSFP28-4SFP28-PCUxM",
+      "form_factor": "SFP28",
+      "host_interface_name": "SFP28",
+      "standards_code": "EDR InfiniBand",
+      "bit_rate_gbps": 25.0
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T09:14:48.902791+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ls-mm8532e-s1c.pdf",
+  "page_count": 8,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.293,
+    "extract_atoms": 23.744,
+    "store_run": 0.01,
+    "synthesize_modes": 24.332,
+    "store_modes": 0.002,
+    "total": 58.382
+  }
+}

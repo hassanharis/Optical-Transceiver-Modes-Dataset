@@ -1,0 +1,136 @@
+{
+  "modes": [
+    {
+      "label": "16GFC OM3 M6-S",
+      "form_factor": "SFP+",
+      "host_interface_name": "1600-SN-M6-S",
+      "media_interface_name": "1600-SN-M6-S",
+      "standards_code": "1600-SN-M6-S",
+      "baud_rate_gbaud": 14.025,
+      "bit_rate_gbps": 14.025,
+      "modulation_format": "LINECODE_64B66B",
+      "reach_km": 0.1
+    },
+    {
+      "label": "8GFC OM3 M6-S",
+      "form_factor": "SFP+",
+      "host_interface_name": "800-SN-M6-S",
+      "media_interface_name": "800-SN-M6-S",
+      "standards_code": "800-SN-M6-S",
+      "baud_rate_gbaud": 8.5,
+      "bit_rate_gbps": 8.5,
+      "modulation_format": "LINECODE_8B10B",
+      "reach_km": 0.15
+    },
+    {
+      "label": "4GFC OM3 M6-I",
+      "form_factor": "SFP+",
+      "host_interface_name": "400-SN-M6-I",
+      "media_interface_name": "400-SN-M6-I",
+      "standards_code": "400-SN-M6-I",
+      "baud_rate_gbaud": 4.25,
+      "bit_rate_gbps": 4.25,
+      "modulation_format": "LINECODE_8B10B",
+      "reach_km": 0.38
+    },
+    {
+      "label": "16GFC OM2 M5-S",
+      "form_factor": "SFP+",
+      "host_interface_name": "1600-SN-M5-S",
+      "media_interface_name": "1600-SN-M5-S",
+      "standards_code": "1600-SN-M5-S",
+      "baud_rate_gbaud": 14.025,
+      "bit_rate_gbps": 14.025,
+      "modulation_format": "LINECODE_64B66B",
+      "reach_km": 0.07
+    },
+    {
+      "label": "8GFC OM2 M5-S",
+      "form_factor": "SFP+",
+      "host_interface_name": "800-SN-M5-S",
+      "media_interface_name": "800-SN-M5-S",
+      "standards_code": "800-SN-M5-S",
+      "baud_rate_gbaud": 8.5,
+      "bit_rate_gbps": 8.5,
+      "modulation_format": "LINECODE_8B10B",
+      "reach_km": 0.1
+    },
+    {
+      "label": "4GFC OM2 M5-I",
+      "form_factor": "SFP+",
+      "host_interface_name": "400-SN-M5-I",
+      "media_interface_name": "400-SN-M5-I",
+      "standards_code": "400-SN-M5-I",
+      "baud_rate_gbaud": 4.25,
+      "bit_rate_gbps": 4.25,
+      "modulation_format": "LINECODE_8B10B",
+      "reach_km": 0.15
+    },
+    {
+      "label": "16GFC OM1 M5E-I",
+      "form_factor": "SFP+",
+      "host_interface_name": "1600-SN-M5E-I",
+      "media_interface_name": "1600-SN-M5E-I",
+      "standards_code": "1600-SN-M5E-I",
+      "baud_rate_gbaud": 14.025,
+      "bit_rate_gbps": 14.025,
+      "modulation_format": "LINECODE_64B66B",
+      "reach_km": 0.05
+    },
+    {
+      "label": "8GFC OM1 M5E-I",
+      "form_factor": "SFP+",
+      "host_interface_name": "800-SN-M5E-I",
+      "media_interface_name": "800-SN-M5E-I",
+      "standards_code": "800-SN-M5E-I",
+      "baud_rate_gbaud": 8.5,
+      "bit_rate_gbps": 8.5,
+      "modulation_format": "LINECODE_8B10B",
+      "reach_km": 0.07
+    },
+    {
+      "label": "4GFC OM1 M5E-I",
+      "form_factor": "SFP+",
+      "host_interface_name": "400-SN-M5E-I",
+      "media_interface_name": "400-SN-M5E-I",
+      "standards_code": "400-SN-M5E-I",
+      "baud_rate_gbaud": 4.25,
+      "bit_rate_gbps": 4.25,
+      "modulation_format": "LINECODE_8B10B",
+      "reach_km": 0.1
+    },
+    {
+      "label": "16GFC OM1 M5F-I",
+      "form_factor": "SFP+",
+      "host_interface_name": "1600-SN-M5F-I",
+      "media_interface_name": "1600-SN-M5F-I",
+      "standards_code": "1600-SN-M5F-I",
+      "baud_rate_gbaud": 14.025,
+      "bit_rate_gbps": 14.025,
+      "modulation_format": "LINECODE_64B66B",
+      "reach_km": 0.035
+    },
+    {
+      "label": "8GFC OM1 M5F-I",
+      "form_factor": "SFP+",
+      "host_interface_name": "800-SN-M5F-I",
+      "media_interface_name": "800-SN-M5F-I",
+      "standards_code": "800-SN-M5F-I",
+      "baud_rate_gbaud": 8.5,
+      "bit_rate_gbps": 8.5,
+      "modulation_format": "LINECODE_8B10B",
+      "reach_km": 0.025
+    },
+    {
+      "label": "4GFC OM1 M5F-I",
+      "form_factor": "SFP+",
+      "host_interface_name": "400-SN-M5F-I",
+      "media_interface_name": "400-SN-M5F-I",
+      "standards_code": "400-SN-M5F-I",
+      "baud_rate_gbaud": 4.25,
+      "bit_rate_gbps": 4.25,
+      "modulation_format": "LINECODE_8B10B",
+      "reach_km": 0.015
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "multi_valued": {
+    "bit_rate_gbps": [
+      8.5,
+      14.25,
+      28.05
+    ],
+    "reach_km": [
+      0.07,
+      0.1
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LS-MM8532E-S1C"
+    ],
+    "form_factor": [
+      "SFP28"
+    ],
+    "standards_claimed": [
+      "SFP+ MSA",
+      "SFF-8472",
+      "SFF-8402",
+      "SFF-8432",
+      "SFF-8431"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      840.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM3",
+      "MMF_OM4"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "standards_code": [
+      "28.05 Gb/s Fibre Channel"
+    ],
+    "tx_power_min_dbm": [
+      -8.4
+    ],
+    "tx_power_max_dbm": [
+      2.4
+    ],
+    "rx_sensitivity_dbm": [
+      -10.3
+    ],
+    "extinction_ratio_db": [
+      2.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -13.0
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      2.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      12.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Reach stated as 70m on OM3 and 100m on OM4 MMF (converted to km for reach_km). Optical Modulation Amplitude (OMA) Tx -6.4 to 3 dBm; Receiver Stress Sensitivity OMA -5.2 dBm max. Transmitter Dispersion Penalty (TDEC) max 4.3 dB; Transmitter OFF Output Power max -30 dBm. RMS Spectral Width max 0.6 nm. Supply Current Icc max 300 mA at Vcc 3.135–3.465 V (3.3 V typ); power consumption in watts not stated. Storage temperature -40 to 85 °C per Absolute Maximum Ratings note 1 (fiber jacket limited). Receiver Reflectance table unit is dBm.",
+    "provenance_datasheet_sections": [
+      "LS-MM8532E-S1C",
+      "Product Features",
+      "Applications",
+      "Compliance",
+      "Description",
+      "Absolute Maximum Ratings",
+      "Optical Characteristics (TOP = 0°C to 70°C, VCC = 3.3 ± 5% Volts)",
+      "Electrical Characteristics (TOP = 0°C to 70°C, VCC = 3.3 ± 5% Volts)",
+      "Ordering Information"
+    ]
+  }
+}

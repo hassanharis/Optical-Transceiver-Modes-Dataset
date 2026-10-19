@@ -1,0 +1,114 @@
+{
+  "modes": [
+    {
+      "label": "CWDM lane 1 (1264.5\u20131277.5 nm)",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 11.2,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -11.5,
+      "rx_overload_dbm": 3.4
+    },
+    {
+      "label": "CWDM lane 2 (1284.5\u20131297.5 nm)",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 11.2,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -11.5,
+      "rx_overload_dbm": 3.4
+    },
+    {
+      "label": "CWDM lane 3 (1304.5\u20131317.5 nm)",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 11.2,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -11.5,
+      "rx_overload_dbm": 3.4
+    },
+    {
+      "label": "CWDM lane 4 (1324.5\u20131337.5 nm)",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "40GBASE-LR4",
+      "bit_rate_gbps": 11.2,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -11.5,
+      "rx_overload_dbm": 3.4
+    },
+    {
+      "label": "Aggregate TX/RX (4-lane total power)",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "IEEE 802.3ba",
+      "bit_rate_gbps": 44.6,
+      "tx_power_max_dbm": 8.3,
+      "rx_sensitivity_dbm": -9.6,
+      "rx_overload_dbm": 8.3
+    },
+    {
+      "label": "40GBASE-LR4 aggregate host rate",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "IEEE 802.3ba",
+      "bit_rate_gbps": 39.8,
+      "tx_power_max_dbm": 8.3,
+      "rx_sensitivity_dbm": -11.5,
+      "rx_overload_dbm": 8.3
+    },
+    {
+      "label": "OTU3 C4S1-2D1",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "standards_code": "OTU3 C4S1-2D1",
+      "bit_rate_gbps": 44.6,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -9.6,
+      "rx_overload_dbm": 3.4
+    },
+    {
+      "label": "OTU3e1",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "standards_code": "OTU3e1",
+      "bit_rate_gbps": 44.6,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -11.5,
+      "rx_overload_dbm": 8.3
+    },
+    {
+      "label": "OTU3e2",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "OTU3e2",
+      "bit_rate_gbps": 44.6,
+      "tx_power_max_dbm": 8.3,
+      "rx_sensitivity_dbm": -9.6,
+      "rx_overload_dbm": 8.3
+    },
+    {
+      "label": "QSFP+ MSA management",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "standards_code": "SFF-8436",
+      "bit_rate_gbps": 11.2,
+      "tx_power_max_dbm": 2.3,
+      "rx_sensitivity_dbm": -11.5,
+      "rx_overload_dbm": 8.3
+    },
+    {
+      "label": "QSFP+ MSA INF-8438i",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "standards_code": "INF-8438i",
+      "bit_rate_gbps": 39.8,
+      "tx_power_max_dbm": 8.3,
+      "rx_sensitivity_dbm": -9.6,
+      "rx_overload_dbm": 3.4
+    }
+  ]
+}

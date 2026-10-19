@@ -1,0 +1,112 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TSD003-S31C-SO"
+  ],
+  "form_factor": [
+    "SFP-DD"
+  ],
+  "standards_claimed": [
+    "SFP-DD MSA",
+    "SFP-DD MIS",
+    "100G-LR",
+    "100G Lambda MSA",
+    "IEEE802.3bj"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1311.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "channel_total": [
+    1
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": [
+    "100GAUI-2"
+  ],
+  "media_interface_name": [
+    "100G-LR"
+  ],
+  "frame": [
+    "100GAUI-2"
+  ],
+  "standards_code": [
+    "100G-LR",
+    "100G Lambda MSA",
+    "IEEE802.3bj",
+    "RS(544,514)"
+  ],
+  "baud_rate_gbaud": [
+    50.0,
+    53.125
+  ],
+  "bit_rate_gbps": [
+    103.12,
+    100.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -1.4
+  ],
+  "tx_power_max_dbm": [
+    4.5
+  ],
+  "rx_sensitivity_dbm": [
+    -7.7
+  ],
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "fec_type": [
+    "KP4",
+    "RS_544_514"
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "los_assert_dbm": [
+    -15.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "number_of_lanes": [
+    1,
+    2
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Power consumption stated as < 3.5W. Power budget 0 – 6.8dB. Receiver minimum input power (average -7.7dBm, OMA -6.1dBm) and overload (+4.0dBm) specified at BER 2.4x10-4 (footnote 4). FEC required by host per IEEE802.3bj; optical parameters BER 2.4 x 10-4. Footnote 3: average launch power min is informative. Narrative states single channel @ 50Gbaud; TECHNICAL DATA lists line baud rate 53.125Gbd. Tx OMA min 0.7dBm max +4.7dBm. Storage temperature -40°C to +85°C. DDM Yes.",
+  "provenance_datasheet_sections": [
+    "SFP-DD 100G-LR",
+    "TSD003-S31C-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

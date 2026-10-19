@@ -1,0 +1,137 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "XP-85B1-02D",
+    "XP-85B1-02DE"
+  ],
+  "form_factor": [
+    "SFP28",
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF 8472",
+    "SFF-8431",
+    "SFP+ MSA",
+    "RoHS"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    770,
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 85,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "SFP+"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "SFF-8431",
+    "SFF 8472"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    25.78,
+    28
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    10
+  ],
+  "tx_power_min_dbm": [
+    -8.4
+  ],
+  "tx_power_max_dbm": [
+    2.4
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    2.4
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    2.0
+  ],
+  "los_assert_dbm": [
+    -30
+  ],
+  "los_deassert_dbm": [
+    -12
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    2.0
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Product features state power dissipation < 1W (no exact W value). Case operating temperature: Commercial 0°C to +70°C; Extensional 0°C to +85°C (ordering and recommended operating). Link length stated as maximum 70 m on OM3 or 100 m on OM4; recommended operating lists transmission distance up to 100 m (OM4 or 70 m OM3); ordering table lists transmission distance 10 km. Optical receiver table row 'Average Receiver Power @25.78Gb/s' (RxMAX) is -10.3 to 3 dBm, not labeled as Rx sensitivity. Note 2: measured with PRBS 2^31-1 @25.78Gb/s, BER < 10^-5. Datasheet text spells emitter as 'VSCEL'.",
+  "provenance_datasheet_sections": [
+    "28Gb/s 850nm Multi-mode SFP28 Transceiver",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "STANDARD",
+    "Ordering information",
+    "I. Absolute Maximum Ratings",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "Notes:",
+    "IV. Electrical Characteristics",
+    "VI. Digital Diagnostic Functions",
+    "VIII. Outline Dimensions",
+    "IX. Regulatory Compliance",
+    "Appendix A. Document Revision"
+  ],
+  "suggestions": "Clarify whether ordering-table distance (10 km) is intentional vs link-length text (70 m/100 m). Consider mapping RxMAX row vs explicit Rx sensitivity if added in future revisions. Add schema field for supply current (Icc max 300 mA) if electrical limits are needed."
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Finisar</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Finisar</div>
+  <div class="subtitle">SFP28</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Finisar</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">SFP28</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">IEEE802.3by, SFF-8472 Rev 12.2, SFF-8402, SFF-8432, SFF-8431 Rev. 4.1, SFP MSA, SFF-8081</div></div>
+      <div class="spec-item"><div class="label">Emitter Type</div><div class="value">LASER_VCSEL</div></div>
+      <div class="spec-item"><div class="label">Wavelength Min</div><div class="value">840.0</div></div>
+      <div class="spec-item"><div class="label">Wavelength Max</div><div class="value">860.0</div></div>
+      <div class="spec-item"><div class="label">Wavelength Center Nm</div><div class="value">850.0</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable_hot, pluggable</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">MMF, MMF_OM3, MMF_OM4, MMF 50/125µm</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">85.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">1.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">-8.4</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">2.4</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">2.4</div></div>
+      <div class="spec-item"><div class="label">Pre Fec Ber Threshold</div><div class="value">5e-05</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-12</div></div>
+      <div class="spec-item"><div class="label">Extinction Ratio Db</div><div class="value">2.0</div></div>
+      <div class="spec-item"><div class="label">Los Assert Dbm</div><div class="value">-30.0</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-13.0</div></div>
+      <div class="spec-item"><div class="label">Optical Extinction Ratio Db</div><div class="value">2.0</div></div>
+      <div class="spec-item"><div class="label">Optical Return Loss Tolerance Db</div><div class="value">12.0</div></div>
+      <div class="spec-item"><div class="label">Number Of Lanes</div><div class="value">1</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">0.5</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Reach stated as 100 m on OM4/M5F MMF and 70 m on OM3/M5E MMF (converted to km in reach_km). C-temp SKUs: 0°C to 70°C; E-temp SKUs: 0°C to 85°C (temp_max_c uses highest stated operating maximum). Stressed receiver OMA sensitivity -5.2 dBm @ 25.78 Gb/s and -7.5 dBm @ 10.3 Gb/s (dual rate) at BER 5E-5; unstressed OMA sensitivity -11.1 dBm @ 10.3 Gb/s is informative. Average receive power min -10.3 dBm @ 25.78 Gb/s is informative. Total power dissipation may exceed 1 W when establishing link at case temperature below 25°C. Receiver damage threshold 3.4 dBm (tolerance without damage; correct operation not required). Transmitter dispersion penalty (TDP) max 3.9 dB @ 10.3 Gb/s; TDEC max 4.3 dB @ 25.7 Gb/s. Spectral width (RMS) max 0.60 nm. Launch power in OMA minus TDEC -7.3 dBm. Average launch power of OFF transmitter max -30 dBm.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">FEATURES, APPLICATIONS, Product Selection, III. Electrical Characteristics (TA, VCC = 3.15 to 3.46 Volts), IV. Optical Characteristics (TAVCC3 = 3.15 to 3.46 Volts), V. General Specifications, VII. Environmental Specifications, XII. Ordering Information</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Add SFP28/SFP+ to form_factor enum. Consider reach_m or allow reach with unit in notes to avoid m-to-km conversion. Include OMA and stressed/unstressed sensitivity as distinct schema fields if needed.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>Reach (km)</th><th>RX Sensitivity (dBm)</th></tr>
+      <tr><td><strong>25GbE SR OM4 100m</strong></td><td>FTLF8536P5BCL</td><td>25GBASE-SR</td><td>25.78</td><td>0.1</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM3 70m</strong></td><td>FTLF8536P5BCL</td><td>25GE SR</td><td>25.78</td><td>0.07</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM4 100m</strong></td><td>FTLF8536P5BNL</td><td>IEEE 802.3by</td><td>25.78</td><td>0.1</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM3 70m</strong></td><td>FTLF8536P5BNL</td><td>eCPRI</td><td>25.78</td><td>0.07</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM4 100m</strong></td><td>FTLF8536P5PCL</td><td>100G SR4 fan out to 4x25GE SR</td><td>25.78</td><td>0.1</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM3 70m</strong></td><td>FTLF8536P5PCL</td><td>25GBASE-SR</td><td>25.78</td><td>0.07</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM4 100m</strong></td><td>FTLF8536P5PNL</td><td>25GE SR</td><td>25.78</td><td>0.1</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM3 70m</strong></td><td>FTLF8536P5PNL</td><td>IEEE 802.3by</td><td>25.78</td><td>0.07</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM4 100m</strong></td><td>FTLF8536P5BCV</td><td>25GBASE-SR</td><td>25.78</td><td>0.1</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM3 70m</strong></td><td>FTLF8536P5BCV</td><td>25GE SR</td><td>25.78</td><td>0.07</td><td>-5.2</td></tr>
+      <tr><td><strong>10GbE SR Lite stressed OM4</strong></td><td>FTLF8536P5BCV</td><td>10GE SR Lite</td><td>10.3</td><td>0.1</td><td>-7.5</td></tr>
+      <tr><td><strong>10GbE SR Lite stressed OM3</strong></td><td>FTLF8536P5BCV</td><td>10GE SR Lite</td><td>10.3</td><td>0.07</td><td>-7.5</td></tr>
+      <tr><td><strong>10GbE SR Lite unstressed OM4</strong></td><td>FTLF8536P5BCV</td><td>10GE SR Lite</td><td>10.3</td><td>0.1</td><td>-11.1</td></tr>
+      <tr><td><strong>10GbE SR Lite unstressed OM3</strong></td><td>FTLF8536P5BCV</td><td>10GE SR Lite</td><td>10.3</td><td>0.07</td><td>-11.1</td></tr>
+      <tr><td><strong>25GbE SR OM4 100m</strong></td><td>FTLF8536P5BNV</td><td>IEEE 802.3by</td><td>25.78</td><td>0.1</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM3 70m</strong></td><td>FTLF8536P5BNV</td><td>eCPRI</td><td>25.78</td><td>0.07</td><td>-5.2</td></tr>
+      <tr><td><strong>10GbE SR Lite stressed OM4</strong></td><td>FTLF8536P5BNV</td><td>10GE SR Lite</td><td>10.3</td><td>0.1</td><td>-7.5</td></tr>
+      <tr><td><strong>10GbE SR Lite stressed OM3</strong></td><td>FTLF8536P5BNV</td><td>10GE SR Lite</td><td>10.3</td><td>0.07</td><td>-7.5</td></tr>
+      <tr><td><strong>10GbE SR Lite unstressed OM4</strong></td><td>FTLF8536P5BNV</td><td>10GE SR Lite</td><td>10.3</td><td>0.1</td><td>-11.1</td></tr>
+      <tr><td><strong>10GbE SR Lite unstressed OM3</strong></td><td>FTLF8536P5BNV</td><td>10GE SR Lite</td><td>10.3</td><td>0.07</td><td>-11.1</td></tr>
+      <tr><td><strong>25GbE SR OM4 100m</strong></td><td>FTLF8536P5PCV</td><td>100G SR4 fan out to 4x25GE SR</td><td>25.78</td><td>0.1</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM3 70m</strong></td><td>FTLF8536P5PCV</td><td>25GBASE-SR</td><td>25.78</td><td>0.07</td><td>-5.2</td></tr>
+      <tr><td><strong>10GbE SR Lite stressed OM4</strong></td><td>FTLF8536P5PCV</td><td>10GE SR Lite</td><td>10.3</td><td>0.1</td><td>-7.5</td></tr>
+      <tr><td><strong>10GbE SR Lite stressed OM3</strong></td><td>FTLF8536P5PCV</td><td>10GE SR Lite</td><td>10.3</td><td>0.07</td><td>-7.5</td></tr>
+      <tr><td><strong>10GbE SR Lite unstressed OM4</strong></td><td>FTLF8536P5PCV</td><td>10GE SR Lite</td><td>10.3</td><td>0.1</td><td>-11.1</td></tr>
+      <tr><td><strong>10GbE SR Lite unstressed OM3</strong></td><td>FTLF8536P5PCV</td><td>10GE SR Lite</td><td>10.3</td><td>0.07</td><td>-11.1</td></tr>
+      <tr><td><strong>25GbE SR OM4 100m</strong></td><td>FTLF8536P5PNV</td><td>25GE SR</td><td>25.78</td><td>0.1</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM3 70m</strong></td><td>FTLF8536P5PNV</td><td>IEEE 802.3by</td><td>25.78</td><td>0.07</td><td>-5.2</td></tr>
+      <tr><td><strong>10GbE SR Lite stressed OM4</strong></td><td>FTLF8536P5PNV</td><td>10GE SR Lite</td><td>10.3</td><td>0.1</td><td>-7.5</td></tr>
+      <tr><td><strong>10GbE SR Lite stressed OM3</strong></td><td>FTLF8536P5PNV</td><td>10GE SR Lite</td><td>10.3</td><td>0.07</td><td>-7.5</td></tr>
+      <tr><td><strong>10GbE SR Lite unstressed OM4</strong></td><td>FTLF8536P5PNV</td><td>10GE SR Lite</td><td>10.3</td><td>0.1</td><td>-11.1</td></tr>
+      <tr><td><strong>10GbE SR Lite unstressed OM3</strong></td><td>FTLF8536P5PNV</td><td>10GE SR Lite</td><td>10.3</td><td>0.07</td><td>-11.1</td></tr>
+      <tr><td><strong>25GbE SR OM4 100m</strong></td><td>FTLF8536P5XYZ</td><td>25GBASE-SR</td><td>25.78</td><td>0.1</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM3 70m</strong></td><td>FTLF8536P5XYZ</td><td>25GE SR</td><td>25.78</td><td>0.07</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM4 100m</strong></td><td>FTLF8536P5xyz</td><td>IEEE 802.3by</td><td>25.78</td><td>0.1</td><td>-5.2</td></tr>
+      <tr><td><strong>25GbE SR OM3 70m</strong></td><td>FTLF8536P5xyz</td><td>eCPRI</td><td>25.78</td><td>0.07</td><td>-5.2</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">FTLF8536P5XYZ</span> <span class="badge">FTLF8536P5xyz</span> <span class="badge">FTLF8536P5BCL</span> <span class="badge">FTLF8536P5BCV</span> <span class="badge">FTLF8536P5BNL</span> <span class="badge">FTLF8536P5BNV</span> <span class="badge">FTLF8536P5PCL</span> <span class="badge">FTLF8536P5PCV</span> <span class="badge">FTLF8536P5PNL</span> <span class="badge">FTLF8536P5PNV</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">25GBASE-SR</span> <span class="badge">25GE SR</span> <span class="badge">10GE SR Lite</span> <span class="badge">IEEE 802.3by</span> <span class="badge">eCPRI</span> <span class="badge">100G SR4 fan out to 4x25GE SR</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">25.78</span> <span class="badge">10.3</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">0.1</span> <span class="badge">0.07</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-5.2</span> <span class="badge">-7.5</span> <span class="badge">-11.1</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 23:07
+</footer>
+
+</div>
+</body>
+</html>

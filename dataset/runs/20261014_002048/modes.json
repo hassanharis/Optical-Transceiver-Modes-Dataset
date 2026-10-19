@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "LS-BL332710-10C 10GBASE-LR",
+      "model": "LS-BL332710-10C",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "LS-BL332710-10C 10GBASE-LW",
+      "model": "LS-BL332710-10C",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "LS-BL332710-10I 10GBASE-LR",
+      "model": "LS-BL332710-10I",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "LS-BL332710-10I 10GBASE-LW",
+      "model": "LS-BL332710-10I",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 9.953
+    }
+  ]
+}

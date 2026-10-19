@@ -1,0 +1,16 @@
+{
+  "modes": [
+    {
+      "label": "AOP13PI8-XXX-3 212.5G 2xDR4 IHS",
+      "model": "AOP13PI8-XXX-3",
+      "standards_code": "2xDR4",
+      "bit_rate_gbps": 212.5
+    },
+    {
+      "label": "AOP13PI8-XXX-3R 212.5G 2xDR4 RHS",
+      "model": "AOP13PI8-XXX-3R",
+      "standards_code": "2xDR4",
+      "bit_rate_gbps": 212.5
+    }
+  ]
+}

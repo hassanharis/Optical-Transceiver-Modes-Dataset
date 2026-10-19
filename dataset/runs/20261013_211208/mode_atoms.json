@@ -1,0 +1,47 @@
+{
+  "multi_valued": {
+    "model": [
+      "DQ5002-001C-SO",
+      "DQ5002-1M5C-SO",
+      "DQ5002-002C-SO",
+      "DQ5002-003C-SO",
+      "DQ5002-xxxC-SO"
+    ],
+    "bit_rate_gbps": [
+      200.0,
+      100.0
+    ]
+  },
+  "general": {
+    "form_factor": [
+      "QSFP56"
+    ],
+    "standards_claimed": [
+      "QSFP56 MSA",
+      "IEEE 802.3"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "200GAUI-2"
+    ],
+    "frame": [
+      "200GAUI-2"
+    ],
+    "standards_code": [
+      "200GAUI-2"
+    ],
+    "notes": "Passive Twinax Direct Attach Cable (DAC), not an optical transceiver. Cable lengths 1 m, 1.5 m, 2 m, and 3 m (3.3 to 9.8 ft / up to 16.4 ft in overview). AWG30 (1 m, 1.5 m) and AWG26 (2 m, 3 m). Supports 200 Gigabit Ethernet and 200G HDR InfiniBand. RoSH compliant. Minimum bend radius AWG30: 23 mm; AWG26: 28 mm. smartoptics.com referenced for more information; manufacturer name not stated in body text.",
+    "provenance_datasheet_sections": [
+      "DQ5002-XXXC-SO",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "ORDERING INFORMATION",
+      "MECHANICAL DRAWING"
+    ],
+    "suggestions": "Add fields for cable_length_m, awg, passive_vs_active, and min_bend_radius_mm for DAC/copper products; reach_km is not applicable when only meter-scale cable lengths are given."
+  }
+}

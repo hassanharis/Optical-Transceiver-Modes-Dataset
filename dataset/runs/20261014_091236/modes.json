@@ -1,0 +1,48 @@
+{
+  "modes": [
+    {
+      "label": "25GBASE-SR 25.78G OM4 300m",
+      "standards_code": "25GBASE-SR",
+      "bit_rate_gbps": 25.7813,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -8.4,
+      "tx_power_max_dbm": 2.4,
+      "rx_sensitivity_dbm": -10.3,
+      "rx_overload_dbm": 3.0,
+      "extinction_ratio_db": 2.0
+    },
+    {
+      "label": "25GBASE-SR 25.78G OM3 70m",
+      "standards_code": "25GBASE-SR",
+      "bit_rate_gbps": 25.7813,
+      "reach_km": 0.07,
+      "tx_power_min_dbm": -8.4,
+      "tx_power_max_dbm": 2.4,
+      "rx_sensitivity_dbm": -10.3,
+      "rx_overload_dbm": 3.0,
+      "extinction_ratio_db": 2.0
+    },
+    {
+      "label": "10.3G eCPRI OM4 300m",
+      "standards_code": "eCPRI",
+      "bit_rate_gbps": 10.3,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -7.0,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -10.0,
+      "rx_overload_dbm": 0.5,
+      "extinction_ratio_db": 5.5
+    },
+    {
+      "label": "10.3G eCPRI OM3 70m",
+      "standards_code": "eCPRI",
+      "bit_rate_gbps": 10.3,
+      "reach_km": 0.07,
+      "tx_power_min_dbm": -7.0,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -10.0,
+      "rx_overload_dbm": 0.5,
+      "extinction_ratio_db": 5.5
+    }
+  ]
+}

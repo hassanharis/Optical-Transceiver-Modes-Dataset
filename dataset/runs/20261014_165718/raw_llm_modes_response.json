@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"XGXP-1396-40D Commercial 40km\",\n      \"model\": \"XGXP-1396-40D\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1355.0,\n      \"standards_code\": \"10GBASE-ER\",\n      \"bit_rate_gbps\": 10.3125\n    },\n    {\n      \"label\": \"XGXP-1396-40DA Industrial 40km\",\n      \"model\": \"XGXP-1396-40DA\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1355.0,\n      \"standards_code\": \"10GBASE-ER\",\n      \"bit_rate_gbps\": 10.3125\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

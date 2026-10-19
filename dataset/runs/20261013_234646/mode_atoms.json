@@ -1,0 +1,91 @@
+{
+  "multi_valued": {
+    "form_factor": [
+      "Front Panel Plug RJ",
+      "SFF"
+    ],
+    "host_interface_name": [
+      "XFI",
+      "5GBASE-R",
+      "2500BASE-X",
+      "SGMII"
+    ],
+    "media_interface_name": [
+      "10GBASE-T",
+      "5GBASE-T",
+      "2.5GBASE-T",
+      "1000BASE-T"
+    ],
+    "standards_code": [
+      "10GBASE-T",
+      "5GBASE-T",
+      "2.5GBASE-T",
+      "1000BASE-T",
+      "IEEE 802.3az-2015",
+      "802.3a"
+    ],
+    "bit_rate_gbps": [
+      10.0,
+      5.0,
+      2.5,
+      1.25,
+      1.0,
+      0.1,
+      0.01
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LP-RJ45TGE-3YC"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "IEEE 802.3az",
+      "IEEE 802.3an",
+      "IEEE 802.3bz",
+      "SFP+ MSA",
+      "SFP MSA"
+    ],
+    "mounting_type": [
+      "Hot-swappable",
+      "pluggable"
+    ],
+    "connector_type": [
+      "RJ45"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "modulation_format": [
+      "PAM"
+    ],
+    "reach_km": [
+      0.03
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "penalties": [],
+    "notes": "Copper 10GBASE-T SFP+ electrical module over twisted pair (Cat 6A/7 UTP for up to 30 m at 10G; Cat 5e for 100/1000M). Table 5 reach condition: BER <10^-12. Clock tolerance +/-50 ppm. Default full-duplex preferred master mode. 16-level PAM on 10G link per Description. Supply current 500–750 mA at 3.3 V (Table 1). Line frequency 800 MHz (Table 3). I2C at A0h; PHY access at ACh.",
+    "provenance_datasheet_sections": [
+      "LP-RJ45TGE-3YC",
+      "10GBase-T Copper SFP+ RJ45 30m Transceiver",
+      "Product Features",
+      "Applications",
+      "Description",
+      "+3.3V Volt Electrical Power Interface",
+      "General Specifications",
+      "Table 5. General specifications",
+      "Environmental Specifications",
+      "Table 6. Environmental specifications",
+      "Serial Communication Protocol",
+      "Mechanical Specifications",
+      "Ordering information"
+    ],
+    "suggestions": "Schema is optical-centric; consider copper-specific fields (cable category, max reach per rate, electrical line rate MHz, BER). form_factor enum lacks SFP+; connector_type enum lacks RJ45. bit_rate_gbps from ordering uses mixed units (10M/100M vs G); clarify whether 0.01/0.1 Gbps is desired vs literal strings."
+  }
+}

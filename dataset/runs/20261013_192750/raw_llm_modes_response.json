@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "The datasheet describes a single SKU (OP13GI4-005D): one 800G OSFP DR4 module. Applications list 800G Ethernet, OSFP MSA, OIF-CMIS 5.1, and IEEE 802.3dj together\u2014not separate selectable modes. Optical specs use four lanes (\u03bb0\u2013\u03bb3); \u201cDR4\u201d matches four lanes. There is no mode table, no second model, and no separate amplified/unamplified rows. Values 4.0 and 4.2 in the excerpt are transmit power/OMA limits, not distinct receiver-overload modes; eight lanes are not supported as a separate configuration here.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"800G OSFP DR4\",\n      \"standards_code\": \"DR4\",\n      \"rx_overload_dbm\": 4.0,\n      \"number_of_lanes\": 4\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

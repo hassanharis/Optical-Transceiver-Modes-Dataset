@@ -1,0 +1,9 @@
+{
+  "modes": [
+    {
+      "label": "CFP2 to QSFP28 Converter",
+      "form_factor": "CFP2",
+      "standards_code": "100G Ethernet"
+    }
+  ]
+}

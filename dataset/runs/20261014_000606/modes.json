@@ -1,0 +1,16 @@
+{
+  "modes": [
+    {
+      "label": "40GBASE-SR4 OM3 100m",
+      "standards_code": "40GBASE-SR4",
+      "bit_rate_gbps": 41.25,
+      "reach_km": 0.1
+    },
+    {
+      "label": "40GBASE-SR4 OM4 300m",
+      "standards_code": "40GBASE-SR4",
+      "bit_rate_gbps": 41.25,
+      "reach_km": 0.3
+    }
+  ]
+}

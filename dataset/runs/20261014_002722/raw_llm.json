@@ -1,0 +1,155 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-CWxx1G-A2x",
+    "LS-CWxx1G-A2C",
+    "LS-CWxx1G-A2I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": [
+    "LASER_DFB_CWDM",
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "APD"
+  ],
+  "wavelength_min_nm": [
+    1270
+  ],
+  "wavelength_max_nm": [
+    1610
+  ],
+  "wavelength_center_nm": [
+    1270,
+    1290,
+    1310,
+    1330,
+    1350,
+    1370,
+    1390,
+    1410,
+    1430,
+    1450,
+    1470,
+    1490,
+    1510,
+    1530,
+    1550,
+    1570,
+    1590,
+    1610
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC",
+    "duplex LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -40,
+  "temp_max_c": 85,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "SFP"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": null,
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    0.1,
+    1.063,
+    1.25
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    120
+  ],
+  "tx_power_min_dbm": [
+    0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -32
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -9
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -40
+  ],
+  "los_deassert_dbm": [
+    -33
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": [
+    30
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Operating case temperature grades: Standard 0 to +70°C (LS-CWxx1G-A2C); Extended -20 to +85°C; Industrial -40 to +85°C (LS-CWxx1G-A2I). temp_min_c/temp_max_c reflect the industrial grade span; adjust per orderable part. Transmitter centre wavelength per channel is λc with λc-6.5 to λc+6.5 nm (λc from ordering wavelength code table). Receiver centre wavelength range 1270 to 1610 nm. Supply current Icc max 300 mA at 3.135–3.465 V (power in W not stated). Receiver sensitivity and overload measured with PRBS 2^7-1 @ 1250 Mbps, BER ≤ 1×10^-12. Optical average output power launched into SMF. Spectral width (-20 dB) Δλ max 1 nm.",
+  "provenance_datasheet_sections": [
+    "LS-CWxx1G-A2x",
+    "1.25Gbps SFP CWDM Transceiver, Single Mode, 120km Reach",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Diagnostics",
+    "Ordering information"
+  ],
+  "suggestions": "Add optional product-grade fields for temp_min_c/temp_max_c per A2C vs A2I. Map ordering λC codes to explicit tx wavelength_min/max per channel if symbolic λc±6.5 should be expanded."
+}

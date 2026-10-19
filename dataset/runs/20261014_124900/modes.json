@@ -1,0 +1,124 @@
+{
+  "modes": [
+    {
+      "label": "BX80D-5157 FE 100M",
+      "model": "SO-SFP-1000Base-BX80D-5157",
+      "form_factor": "BiDi SFP",
+      "wavelength_min_nm": 1504.0,
+      "wavelength_max_nm": 1517.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "BX80D-5157 GbE",
+      "model": "SO-SFP-1000Base-BX80D-5157",
+      "form_factor": "BiDi SFP",
+      "wavelength_min_nm": 1504.0,
+      "wavelength_max_nm": 1517.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX80D-5157 1G FC",
+      "model": "SO-SFP-1000Base-BX80D-5157",
+      "form_factor": "BiDi SFP",
+      "wavelength_min_nm": 1504.0,
+      "wavelength_max_nm": 1517.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX80D-5751 FE 100M",
+      "model": "SO-SFP-1000Base-BX80D-5751",
+      "form_factor": "BiDi SFP",
+      "wavelength_min_nm": 1564.0,
+      "wavelength_max_nm": 1577.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "BX80D-5751 GbE",
+      "model": "SO-SFP-1000Base-BX80D-5751",
+      "form_factor": "BiDi SFP",
+      "wavelength_min_nm": 1564.0,
+      "wavelength_max_nm": 1577.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX80D-5751 1G FC",
+      "model": "SO-SFP-1000Base-BX80D-5751",
+      "form_factor": "BiDi SFP",
+      "wavelength_min_nm": 1564.0,
+      "wavelength_max_nm": 1577.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX80D-5157-E FE 100M",
+      "model": "SO-SFP-1000Base-BX80D-5157-E",
+      "form_factor": "SFP",
+      "wavelength_min_nm": 1550.0,
+      "wavelength_max_nm": 1590.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "BX80D-5157-E GbE",
+      "model": "SO-SFP-1000Base-BX80D-5157-E",
+      "form_factor": "SFP",
+      "wavelength_min_nm": 1550.0,
+      "wavelength_max_nm": 1590.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX80D-5157-E 1G FC",
+      "model": "SO-SFP-1000Base-BX80D-5157-E",
+      "form_factor": "SFP",
+      "wavelength_min_nm": 1550.0,
+      "wavelength_max_nm": 1590.0,
+      "wavelength_center_nm": 1570.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX80D-5751-E FE 100M",
+      "model": "SO-SFP-1000Base-BX80D-5751-E",
+      "form_factor": "SFP",
+      "wavelength_min_nm": 1490.0,
+      "wavelength_max_nm": 1530.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "BX80D-5751-E GbE",
+      "model": "SO-SFP-1000Base-BX80D-5751-E",
+      "form_factor": "SFP",
+      "wavelength_min_nm": 1490.0,
+      "wavelength_max_nm": 1530.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX80D-5751-E 1G FC",
+      "model": "SO-SFP-1000Base-BX80D-5751-E",
+      "form_factor": "SFP",
+      "wavelength_min_nm": 1490.0,
+      "wavelength_max_nm": 1530.0,
+      "wavelength_center_nm": 1510.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

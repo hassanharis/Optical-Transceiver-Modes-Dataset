@@ -1,0 +1,116 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "wavelength_band": [
+      "grey",
+      "CWDM"
+    ],
+    "power_consumption_w": [
+      5.5,
+      4.5
+    ],
+    "standards_code": [
+      "200GBASE-FR4",
+      "200GbE",
+      "G.694.2"
+    ],
+    "bit_rate_gbps": [
+      212.5,
+      200.0
+    ],
+    "tx_power_max_dbm": [
+      10.7,
+      4.7
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-QSFP56-2C-2"
+    ],
+    "form_factor": [
+      "QSFP56"
+    ],
+    "standards_claimed": [
+      "QSFP56 MSA",
+      "SFF8636",
+      "CMIS4.0",
+      "IEEE 802.3bs"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "200GAUI-4"
+    ],
+    "media_interface_name": [
+      "200GBASE-FR4"
+    ],
+    "baud_rate_gbaud": [
+      26.5625
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      0.0
+    ],
+    "rx_sensitivity_dbm": [
+      -4.8
+    ],
+    "rx_overload_dbm": [
+      4.7
+    ],
+    "pre_fec_ber_threshold": [
+      0.0002
+    ],
+    "los_assert_dbm": [
+      17.0
+    ],
+    "los_deassert_dbm": [
+      -12.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Technology listed as Grey QSFP56; overview states ITU G.694.2 CWDM grid. Aggregated line rate 212.5 Gbps (footnote 1) for 200GbE. Receiver min input power and overload per lane specified at BER 2x10^-4 (footnote 3). Power budget 0–4.8 dB. Power consumption <5.5 W (typical <4.5 W). Storage temperature -40°C to +85°C (not operating). Fourth transmit wavelength range printed as 1324.5–1317.5 nm (max less than min as printed). LOS Assert Min 17 dBm and LOS De-Assert Max -12 dBm as printed. Host requires Forward Error Correction (FEC); FEC type not named. Transmission media SM (2x LC).",
+    "provenance_datasheet_sections": [
+      "SO-QSFP56-2C-2",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

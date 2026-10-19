@@ -1,0 +1,144 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-L50D-Cxx",
+    "SO-SFP-L50D-Cxx-E",
+    "SO-SFP-L50D-C27",
+    "SO-SFP-L50D-C27-E",
+    "SO-SFP-L50D-C29",
+    "SO-SFP-L50D-C29-E",
+    "SO-SFP-L50D-C31",
+    "SO-SFP-L50D-C31-E",
+    "SO-SFP-L50D-C33",
+    "SO-SFP-L50D-C33-E",
+    "SO-SFP-L50D-C35",
+    "SO-SFP-L50D-C35-E",
+    "SO-SFP-L50D-C37",
+    "SO-SFP-L50D-C37-E",
+    "SO-SFP-L50D-C39",
+    "SO-SFP-L50D-C39-E",
+    "SO-SFP-L50D-C41",
+    "SO-SFP-L50D-C41-E",
+    "SO-SFP-L50D-C43",
+    "SO-SFP-L50D-C43-E",
+    "SO-SFP-L50D-C45",
+    "SO-SFP-L50D-C45-E",
+    "SO-SFP-L50D-C47",
+    "SO-SFP-L50D-C47-E",
+    "SO-SFP-L50D-C49",
+    "SO-SFP-L50D-C49-E",
+    "SO-SFP-L50D-C51",
+    "SO-SFP-L50D-C51-E",
+    "SO-SFP-L50D-C53",
+    "SO-SFP-L50D-C53-E",
+    "SO-SFP-L50D-C55",
+    "SO-SFP-L50D-C55-E",
+    "SO-SFP-L50D-C57",
+    "SO-SFP-L50D-C57-E",
+    "SO-SFP-L50D-C59",
+    "SO-SFP-L50D-C59-E",
+    "SO-SFP-L50D-C61",
+    "SO-SFP-L50D-C61-E"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1270.0,
+    1271.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1610.0,
+    1611.0,
+    1620.0
+  ],
+  "wavelength_center_nm": [
+    1270.0,
+    1290.0,
+    1310.0,
+    1330.0,
+    1350.0,
+    1370.0,
+    1390.0,
+    1410.0,
+    1430.0,
+    1450.0,
+    1470.0,
+    1490.0,
+    1510.0,
+    1530.0,
+    1550.0,
+    1570.0,
+    1590.0,
+    1610.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "channel_total": [
+    18
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "standards_code": [
+    "G.694.2",
+    "GbE",
+    "1G FC"
+  ],
+  "bit_rate_gbps": [
+    1.0625,
+    1.25
+  ],
+  "reach_km": [
+    50.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -24.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -25.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Operating temperature also offered as extended range -20°C to +85°C (-E variants). Datasheet lists operating temperature as -0°C to +70°C for standard (likely 0°C). Storage temperature -40°C to +85°C. Power consumption stated as < 1W. Power budget 3 – 19dB. Dispersion penalty max 1dB (no paired penalized value and operating condition for penalties schema). Transmitter output power and receiver min/overload are average power; receiver specs at 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back. Transmission media stated as SM (2x LC). Title line includes 19dB in power-budget context with 50km reach. DDM per SFF-8472.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-L50D-Cxx & -Cxx-E",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether -0°C is a typo for 0°C. Consider schema fields for power_budget_db, dispersion_penalty_max_db, storage_temperature, and DDM yes/no. Emitter and detector types are not stated on this datasheet."
+}

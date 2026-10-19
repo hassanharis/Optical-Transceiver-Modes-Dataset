@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:37:40.391719+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lg-sc432g-20ib1.pdf",
+  "page_count": 6,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 6.176,
+    "extract_atoms": 22.13,
+    "store_run": 0.007,
+    "synthesize_modes": 39.691,
+    "store_modes": 0.006,
+    "total": 68.009
+  }
+}

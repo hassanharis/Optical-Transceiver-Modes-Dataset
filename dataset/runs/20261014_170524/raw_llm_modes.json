@@ -1,0 +1,34 @@
+{
+  "modes": [
+    {
+      "label": "10Gbase-T line (CAT6A, host 10GBase-R)",
+      "media_interface_name": "10Gbase-T",
+      "standards_code": "10GBASE-T",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "5Gbase-T line (CAT5E, host 10GBase-R)",
+      "media_interface_name": "5Gbase-T",
+      "standards_code": "5GBASE-T",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "2.5Gbase-T line (CAT5E, host 10GBase-R)",
+      "media_interface_name": "2.5Gbase-T",
+      "standards_code": "2.5GBASE-T",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "1000base-T line (CAT5E, host 10GBase-R)",
+      "media_interface_name": "1000base-T",
+      "standards_code": "1000BASE-T",
+      "bit_rate_gbps": 1.0
+    },
+    {
+      "label": "100base-Tx line (CAT5E, host 10GBase-R)",
+      "media_interface_name": "100base-Tx",
+      "standards_code": "100base-Tx",
+      "bit_rate_gbps": 1.0
+    }
+  ]
+}

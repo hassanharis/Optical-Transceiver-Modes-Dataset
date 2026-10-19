@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:51:24.554875+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-ccs-strat-FNK-ER12x-series.pdf",
+  "page_count": 13,
+  "table_count": 10,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 14.128,
+    "extract_atoms": 23.737,
+    "store_run": 0.011,
+    "synthesize_modes": 26.831,
+    "store_modes": 0.004,
+    "total": 64.71
+  }
+}

@@ -1,0 +1,1111 @@
+{
+  "modes": [
+    {
+      "label": "DS-32G-IR-D6142 32G FC",
+      "model": "DS-32G-IR-D6142",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D6142 16G FC",
+      "model": "DS-32G-IR-D6142",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D6142 8G FC",
+      "model": "DS-32G-IR-D6142",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D6061 32G FC",
+      "model": "DS-32G-IR-D6061",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D6061 16G FC",
+      "model": "DS-32G-IR-D6061",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D6061 8G FC",
+      "model": "DS-32G-IR-D6061",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5979 32G FC",
+      "model": "DS-32G-IR-D5979",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5979 16G FC",
+      "model": "DS-32G-IR-D5979",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5979 8G FC",
+      "model": "DS-32G-IR-D5979",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5898 32G FC",
+      "model": "DS-32G-IR-D5898",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5898 16G FC",
+      "model": "DS-32G-IR-D5898",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5898 8G FC",
+      "model": "DS-32G-IR-D5898",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5817 32G FC",
+      "model": "DS-32G-IR-D5817",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5817 16G FC",
+      "model": "DS-32G-IR-D5817",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5817 8G FC",
+      "model": "DS-32G-IR-D5817",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5736 32G FC",
+      "model": "DS-32G-IR-D5736",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5736 16G FC",
+      "model": "DS-32G-IR-D5736",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5736 8G FC",
+      "model": "DS-32G-IR-D5736",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5655 32G FC",
+      "model": "DS-32G-IR-D5655",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5655 16G FC",
+      "model": "DS-32G-IR-D5655",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5655 8G FC",
+      "model": "DS-32G-IR-D5655",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5575 32G FC",
+      "model": "DS-32G-IR-D5575",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5575 16G FC",
+      "model": "DS-32G-IR-D5575",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5575 8G FC",
+      "model": "DS-32G-IR-D5575",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5494 32G FC",
+      "model": "DS-32G-IR-D5494",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5494 16G FC",
+      "model": "DS-32G-IR-D5494",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5494 8G FC",
+      "model": "DS-32G-IR-D5494",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5413 32G FC",
+      "model": "DS-32G-IR-D5413",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5413 16G FC",
+      "model": "DS-32G-IR-D5413",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5413 8G FC",
+      "model": "DS-32G-IR-D5413",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5333 32G FC",
+      "model": "DS-32G-IR-D5333",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5333 16G FC",
+      "model": "DS-32G-IR-D5333",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5333 8G FC",
+      "model": "DS-32G-IR-D5333",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5252 32G FC",
+      "model": "DS-32G-IR-D5252",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5252 16G FC",
+      "model": "DS-32G-IR-D5252",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5252 8G FC",
+      "model": "DS-32G-IR-D5252",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5172 32G FC",
+      "model": "DS-32G-IR-D5172",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5172 16G FC",
+      "model": "DS-32G-IR-D5172",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5172 8G FC",
+      "model": "DS-32G-IR-D5172",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5092 32G FC",
+      "model": "DS-32G-IR-D5092",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5092 16G FC",
+      "model": "DS-32G-IR-D5092",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5092 8G FC",
+      "model": "DS-32G-IR-D5092",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5012 32G FC",
+      "model": "DS-32G-IR-D5012",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5012 16G FC",
+      "model": "DS-32G-IR-D5012",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D5012 8G FC",
+      "model": "DS-32G-IR-D5012",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4932 32G FC",
+      "model": "DS-32G-IR-D4932",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4932 16G FC",
+      "model": "DS-32G-IR-D4932",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4932 8G FC",
+      "model": "DS-32G-IR-D4932",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4851 32G FC",
+      "model": "DS-32G-IR-D4851",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4851 16G FC",
+      "model": "DS-32G-IR-D4851",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4851 8G FC",
+      "model": "DS-32G-IR-D4851",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4772 32G FC",
+      "model": "DS-32G-IR-D4772",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4772 16G FC",
+      "model": "DS-32G-IR-D4772",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4772 8G FC",
+      "model": "DS-32G-IR-D4772",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4692 32G FC",
+      "model": "DS-32G-IR-D4692",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4692 16G FC",
+      "model": "DS-32G-IR-D4692",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4692 8G FC",
+      "model": "DS-32G-IR-D4692",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4612 32G FC",
+      "model": "DS-32G-IR-D4612",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4612 16G FC",
+      "model": "DS-32G-IR-D4612",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4612 8G FC",
+      "model": "DS-32G-IR-D4612",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4532 32G FC",
+      "model": "DS-32G-IR-D4532",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4532 16G FC",
+      "model": "DS-32G-IR-D4532",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4532 8G FC",
+      "model": "DS-32G-IR-D4532",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4453 32G FC",
+      "model": "DS-32G-IR-D4453",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4453 16G FC",
+      "model": "DS-32G-IR-D4453",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4453 8G FC",
+      "model": "DS-32G-IR-D4453",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4373 32G FC",
+      "model": "DS-32G-IR-D4373",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4373 16G FC",
+      "model": "DS-32G-IR-D4373",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4373 8G FC",
+      "model": "DS-32G-IR-D4373",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4294 32G FC",
+      "model": "DS-32G-IR-D4294",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4294 16G FC",
+      "model": "DS-32G-IR-D4294",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4294 8G FC",
+      "model": "DS-32G-IR-D4294",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4214 32G FC",
+      "model": "DS-32G-IR-D4214",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4214 16G FC",
+      "model": "DS-32G-IR-D4214",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4214 8G FC",
+      "model": "DS-32G-IR-D4214",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4135 32G FC",
+      "model": "DS-32G-IR-D4135",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4135 16G FC",
+      "model": "DS-32G-IR-D4135",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4135 8G FC",
+      "model": "DS-32G-IR-D4135",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4056 32G FC",
+      "model": "DS-32G-IR-D4056",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4056 16G FC",
+      "model": "DS-32G-IR-D4056",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D4056 8G FC",
+      "model": "DS-32G-IR-D4056",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3977 32G FC",
+      "model": "DS-32G-IR-D3977",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3977 16G FC",
+      "model": "DS-32G-IR-D3977",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3977 8G FC",
+      "model": "DS-32G-IR-D3977",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3898 32G FC",
+      "model": "DS-32G-IR-D3898",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3898 16G FC",
+      "model": "DS-32G-IR-D3898",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3898 8G FC",
+      "model": "DS-32G-IR-D3898",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3819 32G FC",
+      "model": "DS-32G-IR-D3819",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3819 16G FC",
+      "model": "DS-32G-IR-D3819",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3819 8G FC",
+      "model": "DS-32G-IR-D3819",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3740 32G FC",
+      "model": "DS-32G-IR-D3740",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3740 16G FC",
+      "model": "DS-32G-IR-D3740",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3740 8G FC",
+      "model": "DS-32G-IR-D3740",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3661 32G FC",
+      "model": "DS-32G-IR-D3661",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3661 16G FC",
+      "model": "DS-32G-IR-D3661",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3661 8G FC",
+      "model": "DS-32G-IR-D3661",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3582 32G FC",
+      "model": "DS-32G-IR-D3582",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3582 16G FC",
+      "model": "DS-32G-IR-D3582",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3582 8G FC",
+      "model": "DS-32G-IR-D3582",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3504 32G FC",
+      "model": "DS-32G-IR-D3504",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3504 16G FC",
+      "model": "DS-32G-IR-D3504",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3504 8G FC",
+      "model": "DS-32G-IR-D3504",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3425 32G FC",
+      "model": "DS-32G-IR-D3425",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3425 16G FC",
+      "model": "DS-32G-IR-D3425",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3425 8G FC",
+      "model": "DS-32G-IR-D3425",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3347 32G FC",
+      "model": "DS-32G-IR-D3347",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3347 16G FC",
+      "model": "DS-32G-IR-D3347",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3347 8G FC",
+      "model": "DS-32G-IR-D3347",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3268 32G FC",
+      "model": "DS-32G-IR-D3268",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3268 16G FC",
+      "model": "DS-32G-IR-D3268",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3268 8G FC",
+      "model": "DS-32G-IR-D3268",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3190 32G FC",
+      "model": "DS-32G-IR-D3190",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3190 16G FC",
+      "model": "DS-32G-IR-D3190",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3190 8G FC",
+      "model": "DS-32G-IR-D3190",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3112 32G FC",
+      "model": "DS-32G-IR-D3112",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3112 16G FC",
+      "model": "DS-32G-IR-D3112",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3112 8G FC",
+      "model": "DS-32G-IR-D3112",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3033 32G FC",
+      "model": "DS-32G-IR-D3033",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3033 16G FC",
+      "model": "DS-32G-IR-D3033",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D3033 8G FC",
+      "model": "DS-32G-IR-D3033",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D2955 32G FC",
+      "model": "DS-32G-IR-D2955",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D2955 16G FC",
+      "model": "DS-32G-IR-D2955",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "cd_tolerance_ps_nm": 170.0
+    },
+    {
+      "label": "DS-32G-IR-D2955 8G FC",
+      "model": "DS-32G-IR-D2955",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "SFP28 MSA",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "cd_tolerance_ps_nm": 170.0
+    }
+  ]
+}

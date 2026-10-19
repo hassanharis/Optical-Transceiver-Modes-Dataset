@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"1 Mbps SMF 1310 nm Commercial (0\u201370\u00b0C)\",\n      \"model\": \"OSP1-3120NCR\",\n      \"wavelength_max_nm\": 1360.0,\n      \"host_interface_name\": \"PECL\",\n      \"standards_code\": \"SFP MSA\"\n    },\n    {\n      \"label\": \"1 Mbps SMF 1310 nm Industrial (\u221240\u201385\u00b0C)\",\n      \"model\": \"OSP1-3120NTR\",\n      \"wavelength_max_nm\": 1360.0,\n      \"host_interface_name\": \"PECL\",\n      \"standards_code\": \"SFP MSA\"\n    },\n    {\n      \"label\": \"1 Mbps SMF 1310 nm NxR family\",\n      \"model\": \"OSP1-3120NxR\",\n      \"wavelength_max_nm\": 1610.0,\n      \"host_interface_name\": \"SFP MSA\",\n      \"standards_code\": \"IEEE802.3 z\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

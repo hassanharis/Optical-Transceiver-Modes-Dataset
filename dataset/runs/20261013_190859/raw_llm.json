@@ -1,0 +1,150 @@
+{
+  "vendor": null,
+  "model": [
+    "BIDI-SFP+-LR-27",
+    "BIDI-SFP+-LR-33"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP+ MSA",
+    "FC_PI_4 REV 7.0",
+    "INF-8074i"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1320.0
+  ],
+  "wavelength_max_nm": [
+    1280.0,
+    1340.0
+  ],
+  "wavelength_center_nm": [
+    1270.0,
+    1330.0
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "SFP+"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "10GBASE-BX",
+    "1000 Base-LX",
+    "8XFC",
+    "4XFC",
+    "2XFC",
+    "1xFC"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    10.7,
+    10.3125,
+    9.953,
+    8.5,
+    4.25,
+    2.125,
+    1.0625,
+    10.0
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    10.0,
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -15.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    7.5
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -16.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    7.5
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    5.0
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Title and PRODUCT FEATURES state up to 10 km on SMF; Section 2 Recommended Operating Conditions lists Transmission Distance TD Max. 80 km Note(1) measured with SMF. PRODUCT FEATURES also lists Industrial operating case temperature -40 to 85 °C in addition to Commercial 0 to 70 °C; ordering row for BIDI-SFP+-LR-27 specifies 0℃~ +70℃. BIDI-SFP+-LR-33 is a separate orderable variant (1330 nm per ordering table). Receiver sensitivity and extinction ratio measured with RPBS 2^31-1 test pattern @10.3125Gbs; receiver note BER=<10^-12. Power dissipation stated as <1.5W.",
+  "provenance_datasheet_sections": [
+    "SFP+ 10GBASE-BX 1270nm-TX/1330nm-RX 10km Transceiver",
+    "P/N: BIDI-SFP+-LR-27",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "1. Absolute Maximum Ratings",
+    "2. Recommended Operating Conditions",
+    "3. Specification of Transmitter",
+    "4. Specification of Receiver",
+    "5. Electrical Interface Characteristic",
+    "8. Ordering information"
+  ],
+  "suggestions": "Vendor is only implied via qsfptek.com/sales email; add explicit manufacturer field on datasheet. Clarify 10 km vs 80 km reach. modulation_format and FEC are not stated for 10GBASE-BX variant."
+}

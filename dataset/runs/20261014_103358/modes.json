@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "100GBASE-LR4 (100G Ethernet)",
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 103.125
+    },
+    {
+      "label": "100GBASE-LR4 per-lane",
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78125
+    },
+    {
+      "label": "OTU4",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 111.81
+    },
+    {
+      "label": "OTU4 per-lane",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 27.9525
+    }
+  ]
+}

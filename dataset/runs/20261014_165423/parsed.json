@@ -1,0 +1,38 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\tqd033-tunc-so-qsfp-dd-400zrp-r6.1.pdf",
+  "page_count": 4,
+  "table_count": 6,
+  "markdown_chars": 12441,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 23
+    }
+  ]
+}

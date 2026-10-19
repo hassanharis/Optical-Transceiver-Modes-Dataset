@@ -1,0 +1,61 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-QSFP28-4SFP28-PCUxM",
+      "SO-QSFP28-4SFP28-PCU1M",
+      "SO-QSFP28-4SFP28-PCU2M",
+      "SO-QSFP28-4SFP28-PCU3M",
+      "SO-QSFP28-4SFP28-PCU5M"
+    ],
+    "form_factor": [
+      "QSFP28",
+      "SFP28"
+    ],
+    "host_interface_name": [
+      "QSFP28",
+      "SFP28",
+      "SFF-8665",
+      "SFF-8402",
+      "25GbE-SFP28"
+    ],
+    "standards_code": [
+      "100GBase",
+      "100GbE",
+      "1000GbE",
+      "EDR InfiniBand"
+    ],
+    "bit_rate_gbps": [
+      100.0,
+      25.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "standards_claimed": [
+      "SFF-8665",
+      "SFF-8402",
+      "SFF-8431",
+      "SFF-8432",
+      "IEEE 802.3bj",
+      "P802.3by"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "frame": [
+      "4x 25G"
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "notes": "Passive 100G to 4x25G Ethernet Direct Attach Cable (DAC) coax solution; not an optical transceiver. Cable lengths 1 to 5 m (3.3 to 16.4 ft). Break-out from QSFP28 side is direct for 2 m and below; for 3 m and above, break-out from QSFP28 is at 1 m. AWG30 for 1m/2m/3m variants per part table; AWG26 for 5m (PCU5M). Operating case temperature 0 to +70 C. Protocol agnostic support stated as 1000GbE and EDR InfiniBand.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP28-4SFP28-PCUxM",
+      "OVERVIEW",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "INFORMATION",
+      "MECHANICAL DRAWING"
+    ],
+    "suggestions": "Document is a passive electrical DAC; optical and FEC fields are appropriately absent. Consider mapping cable length (1–5 m) in a dedicated field if schema is extended for DAC/copper assemblies. Vendor name is only implied via smartoptics.com footer, not a formal manufacturer line on the cover."
+  }
+}

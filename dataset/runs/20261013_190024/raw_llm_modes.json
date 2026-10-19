@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "Gigabit Ethernet",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "1000BASE-BX-U",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "Fiber Channel",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "host_interface_name": "Fiber Channel",
+      "standards_code": "1000BASE-BX-U",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "SONET OC-24-LR-1",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "host_interface_name": "1000BASE-BX-U",
+      "standards_code": "SONET OC-24-LR-1",
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

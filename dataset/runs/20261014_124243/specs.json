@@ -1,0 +1,91 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1000Base-BX40D-34",
+    "SO-SFP-1000Base-BX40D-43",
+    "SO-SFP-1000Base-BX40D-34-I",
+    "SO-SFP-1000Base-BX40D-43-I"
+  ],
+  "form_factor": [
+    "SFP",
+    "BiDi SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1270.0,
+    1460.0,
+    1480.0
+  ],
+  "wavelength_max_nm": [
+    1350.0,
+    1360.0,
+    1500.0,
+    1520.0
+  ],
+  "wavelength_center_nm": [
+    1310.0,
+    1490.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "standards_code": [
+    "1000BASE-BX40D",
+    "FE",
+    "GbE",
+    "1G FC"
+  ],
+  "bit_rate_gbps": [
+    1.25
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -24.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -25.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Pair solution: SO-SFP-1000Base-BX40D-34 (Tx/Rx 1310nm/1490nm; transmit wavelength 1270–1350nm, receiver wavelength 1480–1500nm) and SO-SFP-1000Base-BX40D-43 (Tx/Rx 1490nm/1310nm; transmit 1460–1520nm, receiver 1260–1360nm). Bit rate support stated as 100Mbps to 1.25Gbps. Power budget 0–19dB. Industrial operating temperature -40°C to +85°C (-I variants). Storage temperature -40°C to +85°C. Transmitter output power min/max and receiver min input power, overload are average power3). Receiver sensitivity and overload measured @ 1.25Gbps, BER ≤ 1×10⁻¹², PRBS 27-1, back-to-back4). Power consumption < 1.0W.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1000BASE-BX40D-34 & -43",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider bit_rate field supporting Mbps literals (100Mbps) without Gbps conversion; add power_budget_db; allow dual temp_min_c/temp_max_c for C-temp vs I-temp variants."
+}

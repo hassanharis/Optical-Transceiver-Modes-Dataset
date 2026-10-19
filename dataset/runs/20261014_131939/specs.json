@@ -1,0 +1,85 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-100BASE-ZXD"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1480.0
+  ],
+  "wavelength_max_nm": [
+    1580.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "standards_code": [
+    "100Base-ZXD",
+    "FE",
+    "STM1/OC3",
+    "STM-1/OC-3"
+  ],
+  "bit_rate_gbps": [
+    0.1,
+    0.155
+  ],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -34.0
+  ],
+  "rx_overload_dbm": [
+    -10.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -35.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Power budget 10–29 dB (technical summary). Power consumption stated as < 1.0 W. Storage temperature -40°C to +85°C (not operating). Transmitter/receiver output and input powers are average power (footnote 1). Minimum input power -34 dBm at 155 Mbps, BER 1×10⁻¹², PRBS 2³¹-1 (footnote 2). Bit rates given as 100–155 Mbps in datasheet.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-100BASE-ZXD",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

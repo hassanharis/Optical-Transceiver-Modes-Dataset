@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\tq2016-ms2c-so-qsfp28-100g-sr-1p2-r6.6.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 5733,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 24
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

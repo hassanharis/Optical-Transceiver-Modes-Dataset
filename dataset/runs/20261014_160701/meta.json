@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:07:01.417573+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp28-pcuxm.pdf",
+  "page_count": 1,
+  "table_count": 0,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 0.829,
+    "extract_atoms": 17.976,
+    "store_run": 0.012,
+    "synthesize_modes": 11.203,
+    "store_modes": 0.002,
+    "total": 30.022
+  }
+}

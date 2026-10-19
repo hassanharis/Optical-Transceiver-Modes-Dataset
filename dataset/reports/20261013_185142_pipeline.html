@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — [&#x27;DWDM-SFP+-ZR-XX&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">2021-09-11492523.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">6</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">10</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 18:51</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">
+**----- Start of picture text -----**&lt;br&gt;
+DWDM SFP+ CH17~CH61 80km DDM LC SMF Transceiver www.qsfptek.com&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+## **DWDM SFP+ CH17~CH61 80km DDM LC SMF Transceiver** 
+
+## **P/N: DWDM-SFP+-ZR-XX** 
+
+## **PRODUCT FEATURES** 
+
+- Compliant with SFF-8413 and IEE802.3ae 
+
+- Suitable for use in 100GHz channel spacing DWDM systems 
+
+- Data rate selectable ≤4.25Gbps or 9.95Gbps to 10.3Gbps bit rates 
+
+- Cooled EML transmitter and PIN receiver 
+
+- link length up to 80km 
+
+- Low Power Dissipation 1.5W Maximum 
+
+- -5ºC to 70ºC Operating Case Temperature 
+
+- Single 3.3V power supply 
+
+- Diagnostic Performance Monitoring of module temperature, supply 
+
+- Voltages, laser bias current, transmit optical power, receive optical power 
+
+- RoHS compliant and lead free 
+
+## **APPLICATIONS** 
+
+- 10G Ethernet 
+
+- 10G Fiber Channel (with/without FEC) 
+
+sales@qsfptek.com 
+
+1/6 
+
+Rev1.0 
+
+
+**----- Start of picture text -----**&lt;br&gt;
+DWDM SFP+ CH17~CH61 80km DDM LC SMF Transceiver www.qsfptek.com&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+## **1. Absolute Maximum Ratings** 
+
+|**Parameter**|**Symbol**|**Min**|**Max**|**Unit**|
+|---|---|---|---|---|
+|SupplyVoltage|Vcc|-0.5|3.8|V|
+|Storage Temperature|Tst|-40|85|ºC|
+|Relative Humidity|Rh|0|85|%|
+
+
+
+## **2. Operating Conditions** 
+
+|**Operating Conditions**||||||
+|---|---|---|---|---|---|
+|**Parameter**|**Symbol**|**Min**|**Typical**|**Max**|**Unit**|
+|SupplyVoltage|Vcc|3.13|3.3|3.47|V|
+|Supplycurrent|Icc||420|610|mA|
+|OperatingCase temperature|Tca|-5|-|70|ºC|
+|Module Power Dissipation|Pm|-|1.4|2|W|
+
+
+
+## Notes: 
+
+[1] Supply current is shared between VCCTX and VCCRX. 
+
+[2] In-rush is defined as current level above steady state current requirements. 
+
+## **3. Transmitter Specification-Optical** 
+
+|**Parameter**|**Symbol**|**Min**|**Typical**|**Max**|**Unit**|
+|---|---|---|---|---|---|
+|Center Wavelength(SOL)△|c|c-25|c|c+25|pm|
+|Center Wavelength(EOL)▲|c|c-100|c|c+100|pm|
+|OpticalOMAPower|Pom|-1|||dBm
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="null">null</span>,
+  <span class="key">"model"</span>: [
+    "DWDM-SFP+-ZR-XX"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP+"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8413",
+    "IEE802.3ae"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_EML"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "PIN"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1260.0</span>,
+    <span class="num">1528.77</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1563.86</span>,
+    <span class="num">1620.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1563.86</span>,
+    <span class="num">1563.05</span>,
+    <span class="num">1562.23</span>,
+    <span class="num">1561.42</span>,
+    <span class="num">1560.61</span>,
+    <span class="num">1559.79</span>,
+    <span class="num">1558.98</span>,
+    <span class="num">1558.17</span>,
+    <span class="num">1557.36</span>,
+    <span class="num">1556.55</span>,
+    <span class="num">1555.75</span>,
+    <span class="num">1554.94</span>,
+    <span class="num">1554.13</span>,
+    <span class="num">1553.33</span>,
+    <span class="num">1552.52</span>,
+    <span class="num">1551.72</span>,
+    <span class="num">1550.92</span>,
+    <span class="num">1550.12</span>,
+    <span class="num">1549.32</span>,
+    <span class="num">1548.51</span>,
+    <span class="num">1547.72</span>,
+    <span class="num">1546.92</span>,
+    <span class="num">1546.12</span>,
+    <span class="num">1545.32</span>,
+    <span class="num">1544.53</span>,
+    <span class="num">1543.73</span>,
+    <span class="num">1542.94</span>,
+    <span class="num">1542.14</span>,
+    <span class="num">1541.35</span>,
+    <span class="num">1540.56</span>,
+    <span class="num">1539.77</span>,
+    <span class="num">1538.98</span>,
+    <span class="num">1538.19</span>,
+    <span class="num">1537.4</span>,
+    <span class="num">1536.61</span>,
+    <span class="num">1535.82</span>,
+    <span class="num">1535.04</span>,
+    <span class="num">1534.25</span>,
+    <span class="num">1533.47</span>,
+    <span class="num">1532.68</span>,
+    <span class="num">1531.9</span>,
+    <span class="num">1531.12</span>,
+    <span class="num">1530.33</span>,
+    <span class="num">1529.55</span>,
+    <span class="num">1528.77</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "C-band",
+    "DWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">191.7</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.1</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">45</span>
+  ],
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-5.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">1.5</span>,
+    <span class="num">1.4</span>,
+    <span class="num">2.0</span>
+  ],
+  <span class="key">"host_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "ITU Grid <span class="num">17</span>~61"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">4.25</span>,
+    <span class="num">9.95</span>,
+    <span class="num">10.3</span>,
+    <span class="num">10.3125</span>,
+    <span class="num">11.3</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">80.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-1.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-24.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-8.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">9.0</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-34.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-24.0</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">9.0</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [
+    <span class="num">21.0</span>
+  ],
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [
+    <span class="num">30.0</span>
+  ],
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Transmitter center wavelength specified as λc±25 pm (SOL) and λc±100 pm (EOL) relative to ITU channel λc, not fixed nm. Optical OMA power Pom min <span class="num">-1</span> dBm; disabled TX max <span class="num">-30</span> dBm. Receiver sensitivity at BER=10^-12 with conformance test signal; note recommends ≥0.4 dB margin for component-level measurements without CDR. Supply current Icc typ <span class="num">420</span> mA max <span class="num">610</span> mA shared VCCTX/VCCRX. Data rate via RS0: open/low ≤4.25 Gbps, high <span class="num">9.95</span>–10.3125 Gb/s. Electrical data rate Mra max <span class="num">10.3</span>–11.3 Gbps in TX/RX electrical tables. Module power Pm typ <span class="num">1.4</span> W max <span class="num">2</span> W; product features state <span class="num">1.5</span> W maximum."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "DWDM SFP+ CH17~CH61 <span class="num">80</span>km DDM LC SMF Transceiver",
+    "P/N: DWDM-SFP+-ZR-XX",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "1. Absolute Maximum Ratings",
+    "2. Operating Conditions",
+    "3. Transmitter Specification-Optical",
+    "4. Transmitter Specification-Electrical",
+    "5. Receiver Specification-Optical",
+    "6. Receiver Specification-Electrical",
+    "7. Pin Description",
+    "8. C-band λc Wavelength Guide",
+    "10. Ordering information"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Vendor not labeled on datasheet (only qsfptek.com contact). No explicit TX max optical power for enabled state. No OSNR, CD, PMD, or PDL specs. IEEE standard printed as IEE802.3ae."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>wavelength_min_nm</td><td><span class="badge">1260.0</span> <span class="badge">1528.77</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1563.86</span> <span class="badge">1620.0</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1563.86</span> <span class="badge">1563.05</span> <span class="badge">1562.23</span> <span class="badge">1561.42</span> <span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1545.32</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span> <span class="badge">1528.77</span></td></tr>
+<tr><td>wavelength_band</td><td><span class="badge">C-band</span> <span class="badge">DWDM</span></td></tr>
+<tr><td>power_consumption_w</td><td><span class="badge">1.5</span> <span class="badge">1.4</span> <span class="badge">2.0</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">4.25</span> <span class="badge">9.95</span> <span class="badge">10.3</span> <span class="badge">10.3125</span> <span class="badge">11.3</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>model</td><td>DWDM-SFP+-ZR-XX</td></tr>
+<tr><td>form_factor</td><td>SFP+</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8413, IEE802.3ae</td></tr>
+<tr><td>emitter_type</td><td>LASER_EML</td></tr>
+<tr><td>photodetector_type</td><td>PIN</td></tr>
+<tr><td>frequency_min_thz</td><td>191.7</td></tr>
+<tr><td>frequency_max_thz</td><td>196.1</td></tr>
+<tr><td>channel_spacing_ghz</td><td>100.0</td></tr>
+<tr><td>channel_total</td><td>45</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>-5.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>standards_code</td><td>ITU Grid 17~61</td></tr>
+<tr><td>reach_km</td><td>80.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-1.0</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-24.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-8.0</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>extinction_ratio_db</td><td>9.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-34.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-24.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>9.0</td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td>21.0</td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td>30.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Transmitter center wavelength specified as λc±25 pm (SOL) and λc±100 pm (EOL) relative to ITU channel λc, not fixed nm. Optical OMA power Pom min -1 dBm; disabled TX max -30 dBm. Receiver sensitivity at BER=10^-12 with conformance test signal; note recommends ≥0.4 dB margin for component-level measurements without CDR. Supply current Icc typ 420 mA max 610 mA shared VCCTX/VCCRX. Data rate via RS0: open/low ≤4.25 Gbps, high 9.95–10.3125 Gb/s. Electrical data rate Mra max 10.3–11.3 Gbps in TX/RX electrical tables. Module power Pm typ 1.4 W max 2 W; product features state 1.5 W maximum.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>DWDM SFP+ CH17~CH61 80km DDM LC SMF Transceiver, P/N: DWDM-SFP+-ZR-XX, PRODUCT FEATURES, APPLICATIONS, 1. Absolute Maximum Ratings, 2. Operating Conditions, 3. Transmitter Specification-Optical, 4. Transmitter Specification-Electrical, 5. Receiver Specification-Optical, 6. Receiver Specification-Electrical, 7. Pin Description, 8. C-band λc Wavelength Guide, 10. Ordering information</td></tr>
+<tr><td>suggestions</td><td>Vendor not labeled on datasheet (only qsfptek.com contact). No explicit TX max optical power for enabled state. No OSNR, CD, PMD, or PDL specs. IEEE standard printed as IEE802.3ae.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_center_nm</th><th>wavelength_band</th><th>power_consumption_w</th><th>bit_rate_gbps</th></tr><tr><td><strong>ITU CH17 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1563.86</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH17 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1563.86</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH18 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1563.05</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH18 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1563.05</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH19 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1562.23</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH19 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1562.23</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH20 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1561.42</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH20 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1561.42</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH21 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1560.61</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH21 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1560.61</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH22 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1559.79</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH22 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1559.79</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH23 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1558.98</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH23 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1558.98</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH24 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1558.17</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH24 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1558.17</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH25 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1557.36</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH25 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1557.36</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH26 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1556.55</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH26 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1556.55</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH27 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1555.75</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH27 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1555.75</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH28 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1554.94</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH28 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1554.94</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH29 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1554.13</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH29 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1554.13</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH30 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1553.33</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH30 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1553.33</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH31 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1552.52</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH31 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1552.52</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH32 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1551.72</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH32 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1551.72</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH33 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1550.92</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH33 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1550.92</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH34 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1550.12</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH34 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1550.12</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH35 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1549.32</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH35 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1549.32</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH36 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1548.51</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH36 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1548.51</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH37 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1547.72</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH37 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1547.72</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH38 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1546.92</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH38 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1546.92</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH39 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1546.12</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH39 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1546.12</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH40 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1545.32</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH40 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1545.32</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH41 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1544.53</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH41 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1544.53</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH42 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1543.73</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH42 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1543.73</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH43 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1542.94</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH43 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1542.94</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH44 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1542.14</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH44 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1542.14</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH45 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1541.35</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH45 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1541.35</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH46 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1540.56</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH46 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1540.56</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH47 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1539.77</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH47 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1539.77</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH48 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1538.98</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH48 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1538.98</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH49 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1538.19</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH49 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1538.19</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH50 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1537.4</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH50 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1537.4</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH51 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1536.61</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH51 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1536.61</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH52 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1535.82</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH52 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1535.82</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH53 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1535.04</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH53 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1535.04</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH54 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1534.25</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH54 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1534.25</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH55 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1533.47</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH55 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1533.47</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH56 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1532.68</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH56 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1532.68</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH57 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1531.9</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH57 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1531.9</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH58 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1531.12</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH58 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1531.12</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH59 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1530.33</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH59 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1530.33</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH60 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1529.55</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH60 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1529.55</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr><tr><td><strong>ITU CH61 RS0 ≤4.25Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1528.77</td><td>C-band</td><td>1.5</td><td>4.25</td></tr><tr><td><strong>ITU CH61 RS0 9.95–10.3125Gbps</strong></td><td>1260.0</td><td>1620.0</td><td>1528.77</td><td>C-band</td><td>1.5</td><td>10.3125</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 18:51
+</footer>
+
+</div>
+</body>
+</html>

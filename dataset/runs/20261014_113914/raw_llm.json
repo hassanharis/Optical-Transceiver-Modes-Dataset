@@ -1,0 +1,149 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP-DD-4C-DR4-M",
+    "SO-QSFP-DD-4C-DR4-4-M"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "IEEE802.3bj",
+    "CMIS3.0",
+    "CMIS4.0",
+    "400GBASE-DR4",
+    "100GBASE-DR"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1311
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "MPO12/APC",
+    "MPO"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    10
+  ],
+  "host_interface_name": [
+    "400GAUI-8",
+    "100GAUI-2"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "400GBASE-DR4",
+    "100GBASE-DR"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "400GAUI-8",
+    "8x 50G",
+    "4x 100GAUI-2",
+    "2x 50G"
+  ],
+  "standards_code": [
+    "400GBASE-DR4",
+    "DR4 (Clause 124)",
+    "100GBASE-DR (Clause 140)",
+    "400GBASE-R",
+    "4 x 100GBASE-R"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    425,
+    400
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.5
+  ],
+  "tx_power_min_dbm": [
+    -2.9
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -5.9
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [
+    "RS_528_514",
+    "RS_GENERIC"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -15
+  ],
+  "los_deassert_dbm": [
+    -10
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    8,
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": null,
+  "notes": "Aggregated line rate 425Gbps for 400GbE (footnote 1). Line baud rate 53.125Gbd per lane (footnote 2). Tx/Rx power values are average power per lane (footnote 3). Minimum input power and overload specified at BER 2.4x10^-4 (footnote 4). Power budget 0–3.0 dB stated without mapping to a schema field. Power consumption stated as < 10W worst case. Storage temperature -40°C to +85°C; operating 0°C to +70°C. FEC required in host per IEEE802.3bj. Two variants: CMIS3.0 (SO-QSFP-DD-4C-DR4-M) and CMIS4.0 (SO-QSFP-DD-4C-DR4-4-M). Reach stated as 500m typical over SM ribbon fiber.",
+  "provenance_datasheet_sections": [
+    "SO-QSFP-DD-4C-DR4-M / -DR4-4-M",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "APPLICATION CODE LIST",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Emitter and photodetector types are not specified. Host/media interface IDs in hex/decimal are not in this datasheet. Consider whether power_consumption should capture the literal '< 10W' bound versus a measured typical value."
+}

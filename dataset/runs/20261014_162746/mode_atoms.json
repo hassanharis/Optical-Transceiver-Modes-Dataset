@@ -1,0 +1,122 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-XFP-10GE-BX60D-2733",
+      "SO-XFP-10GE-BX60D-3327"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1320.0
+    ],
+    "wavelength_max_nm": [
+      1280.0,
+      1340.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1330.0
+    ],
+    "standards_code": [
+      "10GBASE-ER",
+      "10GBASE-EW",
+      "10GbE-LAN",
+      "10GbE-WAN",
+      "OTU2",
+      "OTU2e",
+      "STM-64",
+      "OC192"
+    ],
+    "bit_rate_gbps": [
+      9.95,
+      11.1,
+      11.3
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "XFP"
+    ],
+    "standards_claimed": [
+      "INF-8077i",
+      "XFP MSA"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [],
+    "channel_spacing_ghz": [],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [],
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "modulation_format": [],
+    "reach_km": [
+      60.0
+    ],
+    "tx_power_min_dbm": [
+      1.0
+    ],
+    "tx_power_max_dbm": [
+      5.0
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_sensitivity_dbm": [
+      -20.0
+    ],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [
+      -6.0
+    ],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [
+      -34.0
+    ],
+    "los_deassert_dbm": [
+      -22.0
+    ],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "BiDi pair: SO-XFP-10GE-BX60D-2733 Tx/Rx 1270/1330 nm (Tx 1260–1280 nm, Rx 1320–1340 nm); SO-XFP-10GE-BX60D-3327 Tx/Rx 1330/1270 nm (Tx 1320–1340 nm, Rx 1260–1280 nm). Power budget 11–21 dB. Electrical power stated as < 2 W (no exact W value). Storage temperature -40°C to +85°C. Transmitter/receiver min input/overload and output power are average power (footnote 3). Minimum input power and overload measured @ 10.3 Gbps, BER ≤ 1×10⁻¹², PRBS 2³¹-1, back-to-back (footnote 4). IEEE 802.3ae 10GBASE-ER/EW referenced for bridgeable distance; note states ER/EW defined only at 1550 nm.",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": ""
+  }
+}

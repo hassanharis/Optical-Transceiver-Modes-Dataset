@@ -1,0 +1,125 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-CW100-LR4C"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "100GBASE-CWDM4",
+    "100GBASE-LR4"
+  ],
+  "wavelength_min_nm": [
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5
+  ],
+  "wavelength_center_nm": [
+    1271.0,
+    1291.0,
+    1311.0,
+    1331.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "channel_total": [
+    4
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": [
+    "CAUI-4"
+  ],
+  "standards_code": [
+    "100GBASE-CWDM4",
+    "100GBASE-LR4"
+  ],
+  "bit_rate_gbps": [
+    103.125,
+    25.78125,
+    103.1
+  ],
+  "modulation_format": [
+    "NRZ"
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    2.5,
+    8.5
+  ],
+  "rx_sensitivity_dbm": [
+    -10.0
+  ],
+  "rx_overload_dbm": [
+    2.5
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "transmitter_reflectance_db": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    20.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Optical power launched into SMF (Note 1). Receiver sensitivity measured with PRBS 2^31-1 @ 25.78125 Gb/s, BER ≤ 1E-12 (Note 3). Optical eye mask and some electrical specs measured with PRBS 2^31-1 @ 25.78125, hit ratio ≤ 5E-5 (Note 2). Features cite line rate from 103.125 Gbps and up to 25.78 (NRZ) per channel; ordering lists 103.1G. Optical table header is 100GBASE-LR4 while applications list 100GBASE-CWDM4. Commercial power dissipation (0~70°C): < 3.5 W. Per-lane OMA launch power min -4 dBm, max 2.5 dBm. Average receive power per lane min -11.5 dBm, max 2.5 dBm. Damage threshold per lane 3.5 dBm. Laser off average output power max -30 dBm.",
+  "provenance_datasheet_sections": [
+    "LQ-CW100-LR4C",
+    "100G QSFP28 CWDM LR4 10KM Optical Transceiver",
+    "Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions and Power Supply Requirements",
+    "Electrical Characteristics",
+    "Optical Characteristics",
+    "Digital Diagnostic Functions",
+    "Ordering Information"
+  ]
+}

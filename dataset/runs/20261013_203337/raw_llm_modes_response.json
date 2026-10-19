@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"QSFP28 host MSA\",\n      \"form_factor\": \"QSFP28\",\n      \"standards_code\": \"SFF-8665\"\n    },\n    {\n      \"label\": \"QSFP+ pluggable form factor\",\n      \"form_factor\": \"QSFP+\",\n      \"standards_code\": \"SFF-8665\"\n    },\n    {\n      \"label\": \"SFP28 media receptacle\",\n      \"form_factor\": \"SFP28\",\n      \"standards_code\": \"SFF-8402\"\n    },\n    {\n      \"label\": \"QSFP28 I2C management (DDMI)\",\n      \"form_factor\": \"QSFP28\",\n      \"standards_code\": \"SFF-8636\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

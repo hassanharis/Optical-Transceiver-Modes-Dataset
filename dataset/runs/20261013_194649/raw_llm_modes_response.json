@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Evidence from the datasheet: the only multi-valued parameters that co-occur on the same table rows are the two **Transmitter Optical Characteristics** rows (fiber type with **Output Optical Power** minimum). **100BASE-FX** and **IEEE 802.3u** describe one interface (Features). **Power dissipation** values sit in separate Transmitter vs Receiver electrical tables (typ/max), not on the fiber rows, so they are not assigned to fiber modes.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"62.5/125 \u00b5m multimode (NA 0.275)\",\n      \"standards_code\": \"100BASE-FX\",\n      \"tx_power_min_dbm\": -20.0\n    },\n    {\n      \"label\": \"50/125 \u00b5m multimode (NA 0.20)\",\n      \"standards_code\": \"100BASE-FX\",\n      \"tx_power_min_dbm\": -23.5\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

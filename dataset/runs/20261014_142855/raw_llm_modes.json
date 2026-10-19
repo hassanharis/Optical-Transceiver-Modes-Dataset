@@ -1,0 +1,37 @@
+{
+  "modes": [
+    {
+      "label": "1000BASE-SX @ 1.25 Gbps",
+      "host_interface_name": "SFF-8431",
+      "media_interface_name": "1000BASE-SX",
+      "standards_code": "1000BASE-SX",
+      "bit_rate_gbps": 1.25,
+      "tx_power_min_dbm": -9.5,
+      "rx_sensitivity_dbm": -17.0,
+      "los_assert_dbm": -30.0,
+      "los_deassert_dbm": -18.0
+    },
+    {
+      "label": "10GBASE-SR @ 10.3 Gbps (10GbE-LAN)",
+      "host_interface_name": "SFF-8431",
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "IEEE 802.3ae",
+      "bit_rate_gbps": 10.3,
+      "tx_power_min_dbm": -6.0,
+      "rx_sensitivity_dbm": -11.1,
+      "los_assert_dbm": -25.0,
+      "los_deassert_dbm": -12.5
+    },
+    {
+      "label": "10GBASE-SW @ 9.953 Gbps (10GbE-WAN)",
+      "host_interface_name": "SFF-8431",
+      "media_interface_name": "10GBASE-SW",
+      "standards_code": "10GBASE-SW",
+      "bit_rate_gbps": 9.953,
+      "tx_power_min_dbm": -6.0,
+      "rx_sensitivity_dbm": -11.1,
+      "los_assert_dbm": -25.0,
+      "los_deassert_dbm": -12.5
+    }
+  ]
+}

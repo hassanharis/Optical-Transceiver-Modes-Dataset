@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"RS0 1G \u2014 1000BASE-LX\",\n      \"wavelength_max_nm\": 1355.0,\n      \"media_interface_name\": \"1000BASE-LX\",\n      \"standards_code\": \"1000BASE-LX\",\n      \"bit_rate_gbps\": 1.25,\n      \"tx_power_min_dbm\": -11.0,\n      \"tx_power_max_dbm\": -3.0,\n      \"rx_sensitivity_dbm\": -19.0,\n      \"rx_overload_dbm\": -3.0,\n      \"extinction_ratio_db\": 9.0\n    },\n    {\n      \"label\": \"RS0 10G \u2014 10GBASE-LR/LW\",\n      \"wavelength_max_nm\": 1355.0,\n      \"media_interface_name\": \"10GBASE-LR\",\n      \"standards_code\": \"10GBASE-LR\",\n      \"bit_rate_gbps\": 10.3,\n      \"tx_power_min_dbm\": -8.2,\n      \"tx_power_max_dbm\": 0.5,\n      \"rx_sensitivity_dbm\": -12.6,\n      \"rx_overload_dbm\": 0.5,\n      \"extinction_ratio_db\": 3.5\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"1000Base-BX transmitter 1310 nm\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1360.0,\n      \"wavelength_center_nm\": 1310.0,\n      \"standards_code\": \"1000Base-BX\"\n    },\n    {\n      \"label\": \"1000Base-BX receiver 1490 nm\",\n      \"wavelength_min_nm\": 1480.0,\n      \"wavelength_max_nm\": 1500.0,\n      \"wavelength_center_nm\": 1490.0,\n      \"standards_code\": \"IEEE 802.3ah\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

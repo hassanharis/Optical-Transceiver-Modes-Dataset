@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp-100base-bx20d-34-43.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 5664,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 17
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

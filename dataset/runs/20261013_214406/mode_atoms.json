@@ -1,0 +1,156 @@
+{
+  "multi_valued": {
+    "model": [
+      "TQ2021-BXXC-SO",
+      "TQ2021-BBCC-SO",
+      "TQ2021-BCBC-SO"
+    ],
+    "wavelength_min_nm": [
+      1284.5,
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1297.5,
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1291.0,
+      1311.0
+    ],
+    "media_interface_name": [
+      "100G-LR1-20",
+      "100G Lambda MSA"
+    ],
+    "standards_code": [
+      "100G-LR1-20",
+      "100G Lambda MSA",
+      "100GbE"
+    ],
+    "baud_rate_gbaud": [
+      50.0,
+      52.125
+    ],
+    "bit_rate_gbps": [
+      106.25,
+      100.0
+    ],
+    "rx_sensitivity_dbm": [
+      -7.6,
+      -8.0,
+      -10.0
+    ],
+    "fec_type": [
+      "KP4"
+    ],
+    "extinction_ratio_db": [
+      3.5,
+      5.3
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "SFF-8472",
+      "100G-LR1-20",
+      "100G Lambda MSA",
+      "OIF CEI-28G-VSR"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "channel_total": [
+      1
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF_G652"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      4.5
+    ],
+    "host_interface_name": [
+      "CEI-28G-VSR"
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [
+      "4x 25.78Gbps"
+    ],
+    "roll_off_percent": [],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -0.2
+    ],
+    "tx_power_max_dbm": [
+      6.6
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [
+      6.6
+    ],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -15.0
+    ],
+    "los_deassert_dbm": [
+      -12.0
+    ],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [
+      3.5,
+      5.3
+    ],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "TQ2021-BXXC-SO denotes a bi-directional pair: TQ2021-BBCC-SO (Tx 1291nm / Rx 1311nm) and TQ2021-BCBC-SO (Tx 1311nm / Rx 1291nm) on single-fiber SM. Host system shall not have FEC activated; module includes KP4 FEC. Optical parameters specified at pre-FEC BER 2.4x10^-4; FEC yields BER better than 1x10^-12. Power budget 0–10.4 dB. Output power OMA Min +2.8 dBm, Max +6.8 dBm. Footnote 5: average power per lane. Footnote 6: minimum average receive power is informative, not principal indicator of signal strength. Footnote 7: typical ER varies between components. Footnote 8: receiver sensitivity at BER 2.4x10^-4. Storage temperature -40°C to +85°C.",
+    "provenance_datasheet_sections": [
+      "QSFP28 100GE BiDi 20km",
+      "QSFP28, BiDi, 100G Ethernet, 1291nm/1311nm, SM, 20km, 10.4dB, LC",
+      "TQ2021-BXXC-SO",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": ""
+  }
+}

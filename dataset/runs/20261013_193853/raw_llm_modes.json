@@ -1,0 +1,44 @@
+{
+  "modes": [
+    {
+      "label": "32GFC 28.05 Gb/s",
+      "form_factor": "SFP28",
+      "host_interface_name": "3200-M5-SN-S",
+      "media_interface_name": "3200-M5-SN-S",
+      "frame": "64B/66B",
+      "standards_code": "32GFC",
+      "bit_rate_gbps": 28.05,
+      "modulation_format": "LINECODE_64B66B",
+      "reach_km": 0.02,
+      "tx_power_min_dbm": -6.2,
+      "rx_overload_dbm": 2.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "16GFC 14.025 Gb/s",
+      "form_factor": "SFP28",
+      "host_interface_name": "1600-M5-SN-S",
+      "media_interface_name": "1600-M5-SN-S",
+      "frame": "64B/66B",
+      "standards_code": "16GFC",
+      "bit_rate_gbps": 14.025,
+      "modulation_format": "LINECODE_64B66B",
+      "reach_km": 0.035,
+      "tx_power_min_dbm": -7.8,
+      "rx_overload_dbm": 0.0
+    },
+    {
+      "label": "8GFC 8.5 Gb/s",
+      "form_factor": "SFP28",
+      "host_interface_name": "800-M5-SN-S",
+      "media_interface_name": "800-M5-SN-S",
+      "frame": "8B/10B",
+      "standards_code": "8GFC",
+      "bit_rate_gbps": 8.5,
+      "modulation_format": "LINECODE_8B10B",
+      "reach_km": 0.05,
+      "tx_power_min_dbm": -8.2,
+      "rx_overload_dbm": 0.0
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "QSFP112",
+      "CEI-112G-LINEAR-PAM4"
+    ],
+    "media_interface_name": [
+      "100G-DR-LPO",
+      "DR4"
+    ],
+    "standards_code": [
+      "100G-DR-LPO",
+      "DR4",
+      "QSFP112"
+    ],
+    "bit_rate_gbps": [
+      106.25,
+      400.0
+    ]
+  },
+  "general": {
+    "vendor": "XGIGA",
+    "model": [
+      "QXP13LD4-005D"
+    ],
+    "form_factor": [
+      "QSFP112"
+    ],
+    "standards_claimed": [
+      "QSFP112 MSA",
+      "OIF-CMIS rev5.x",
+      "OIF-CEI-5.2",
+      "CEI-112G-LINEAR-PAM4",
+      "100G-DR-LPO",
+      "LPO MSA",
+      "IEEE802.3"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "MPO"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      4.5
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      0.5
+    ],
+    "tx_power_min_dbm": [
+      -2.9
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_sensitivity_dbm": [
+      -5.1
+    ],
+    "rx_overload_dbm": [
+      4.0
+    ],
+    "post_fec_ber_target": [
+      0.00024
+    ],
+    "extinction_ratio_db": [
+      2.5
+    ],
+    "channel_insertion_loss_db": [
+      3.0
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      2.5
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "penalties": [],
+    "notes": "Power dissipation stated as < 5 W (Typical 4.5W). Coupled fiber: 9/125um SMF. Signaling speed per lane: 53.125 ± 50 ppm (TX) and ± 100 ppm (RX). Launch power in OMA depends on max(TECQ,TDECQ): -1.8 dBm for max(TECQ,TDECQ)<1.4dB; -3.2+max(TECQ,TDECQ) dBm for 1.4dB≤max(TECQ,TDECQ)≤3.4dB. Receiver sensitivity (OMA): -6.5+TECQ dBm for 1.4dB<TECQ≤3.4dB per lane. TDECQ closure for PAM4 each lane max 3.4 dB. Optical receiver damage threshold Pdmg 5.0 dBm. FEC required to be implemented by the host; FEC type not specified. BER measured with PRBS31Q test pattern, BER@2.4*10^-4. Wavelength assignment suitable for all channels (note 3). Type 2A housing MPO-12 connector with 8° angled end-face. Integrated Silicon photonics modulator chip.",
+    "provenance_datasheet_sections": [
+      "400G QSFP112 DR4 Transceiver",
+      "QXP13LD4-005D",
+      "PRODUCT FEATURES",
+      "REFERENCE STANDARD",
+      "APPLICATIONS",
+      "PRODUCT SPECIFICATION",
+      "I. Absolute Maximum Ratings",
+      "II. Recommended Operating Conditions",
+      "III. Optical Characteristics",
+      "Notes:",
+      "IV. Link Power Budget"
+    ],
+    "suggestions": "Clarify vendor branding (Amphenol web presence vs XGIGA footer). Add schema fields for OMA launch/receive power, TDECQ/TECQ, and link power budget (6.7 dB typ) if commonly needed for DR/LPO modules."
+  }
+}

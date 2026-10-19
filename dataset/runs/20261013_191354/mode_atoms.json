@@ -1,0 +1,120 @@
+{
+  "multi_valued": {
+    "model": [
+      "BIDI-SFP+-ZR+-49",
+      "BIDI-SFP+-ZR-49",
+      "BIDI-SFP+-ZR-55"
+    ],
+    "wavelength_min_nm": [
+      1470.0,
+      1530.0
+    ],
+    "wavelength_max_nm": [
+      1510.0,
+      1570.0
+    ],
+    "wavelength_center_nm": [
+      1490.0,
+      1550.0
+    ],
+    "standards_code": [
+      "10GBASE-BX",
+      "FC_PI_4 REV 7.0",
+      "1000 Base-LX Ethernet",
+      "8XFC",
+      "4XFC",
+      "2XFC",
+      "1xFC"
+    ],
+    "bit_rate_gbps": [
+      10.7,
+      10.3125,
+      9.953,
+      8.5,
+      4.25,
+      2.125,
+      1.0625
+    ]
+  },
+  "general": {
+    "vendor": "QSFPTek",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "FC_PI_4 REV 7.0",
+      "SFP+ MSA",
+      "INF-8074i"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "APD"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF_G652"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.5
+    ],
+    "host_interface_name": [
+      "SFP+ MSA"
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      0.0
+    ],
+    "tx_power_max_dbm": [
+      5.0
+    ],
+    "rx_sensitivity_dbm": [
+      -24.0
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "extinction_ratio_db": [
+      7.5
+    ],
+    "los_assert_dbm": [
+      -38.0
+    ],
+    "los_deassert_dbm": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      7.5
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      8.0
+    ],
+    "penalties": [],
+    "notes": "Title P/N BIDI-SFP+-ZR+-49; ordering table lists BIDI-SFP+-ZR-49 (1490nm TX) and BIDI-SFP+-ZR-55 (1550nm TX). Power dissipation stated as <1.5W. Recommended operating data rate BR 10.3125 Gbps. Transmission distance 80 km Note(1): measured with SMF. Transmitter extinction ratio and eye mask Note(2): measured with RPBS 2^31-1 test pattern @10.3125Gbs. Receiver sensitivity and overload Note(1): measured with RPBS 2^31-1 test pattern @10.3125Gbs BER=<10^-2. Receiver table parameter labeled 'Receiver Sensitivityin average' with symbol PIN; product features state 1550nm APD receiver. Ambient operating temperature without air flow. Optical Modulation Amplitude OMA typ/min -3 dBm.",
+    "provenance_datasheet_sections": [
+      "SFP+ 10GBASE-BX 1490nm-TX/1550nm-RX 80km Transceiver",
+      "P/N: BIDI-SFP+-ZR+-49",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "1. Absolute Maximum Ratings",
+      "2. Recommended Operating Conditions",
+      "3. Specification of Transmitter",
+      "4. Specification of Receiver",
+      "5. Electrical Interface Characteristics",
+      "8. Ordering information"
+    ],
+    "suggestions": "Clarify whether vendor legal name appears on other pages; confirm photodetector type vs receiver table symbol PIN. Consider schema fields for OMA, laser-off output power, spectrum bandwidth (-20dB), and supply current ICC."
+  }
+}

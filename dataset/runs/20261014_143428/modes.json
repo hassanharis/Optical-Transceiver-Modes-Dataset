@@ -1,0 +1,44 @@
+{
+  "modes": [
+    {
+      "label": "100M FE",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "host_interface_name": "FE",
+      "media_interface_name": "STM4 S-4.1",
+      "standards_code": "STM4 S-4.1",
+      "bit_rate_gbps": 0.125,
+      "rx_sensitivity_dbm": -30.0
+    },
+    {
+      "label": "STM1/OC3",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "host_interface_name": "STM1/OC3",
+      "media_interface_name": "OC12 IR-1",
+      "standards_code": "OC12 IR-1",
+      "bit_rate_gbps": 0.125,
+      "rx_sensitivity_dbm": -29.0
+    },
+    {
+      "label": "STM4/OC12 (STM4 S-4.1)",
+      "wavelength_min_nm": 1274.0,
+      "wavelength_max_nm": 1356.0,
+      "host_interface_name": "STM4/OC12",
+      "media_interface_name": "STM4 S-4.1",
+      "standards_code": "STM4 S-4.1",
+      "bit_rate_gbps": 0.622,
+      "rx_sensitivity_dbm": -28.0
+    },
+    {
+      "label": "STM4/OC12 (OC12 IR-1)",
+      "wavelength_min_nm": 1274.0,
+      "wavelength_max_nm": 1356.0,
+      "host_interface_name": "STM4/OC12",
+      "media_interface_name": "OC12 IR-1",
+      "standards_code": "OC12 IR-1",
+      "bit_rate_gbps": 0.622,
+      "rx_sensitivity_dbm": -28.0
+    }
+  ]
+}

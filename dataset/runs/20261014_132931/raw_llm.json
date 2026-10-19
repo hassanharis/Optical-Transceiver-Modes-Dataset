@@ -1,0 +1,125 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-10GE-BX80D-4955",
+    "SO-SFP-10GE-BX80D-5549"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "10GBASE-ZR",
+    "10GBASE-ZW",
+    "IEEE 802.3ae"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1480.0,
+    1540.0
+  ],
+  "wavelength_max_nm": [
+    1500.0,
+    1560.0
+  ],
+  "wavelength_center_nm": [
+    1490.0,
+    1550.0
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    2.0
+  ],
+  "host_interface_name": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [],
+  "standards_code": [
+    "10GBASE-ZR",
+    "10GBASE-ZW"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    9.8,
+    11.3
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    -1.0
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -23.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -6.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -38.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Product is a BiDi pair: SO-SFP-10GE-BX80D-4955 (Tx 1480–1500 nm / Rx 1540–1560 nm, nominal 1490/1550 nm) and SO-SFP-10GE-BX80D-5549 (Tx 1540–1560 nm / Rx 1480–1500 nm, nominal 1550/1490 nm). Power budget 10–22 dB. Dispersion penalty max 3 dB (no paired penalized value or operating condition in table). Transmitter output power and receiver min/overload are average power. Receiver min input and overload measured @ 10.3 Gbps, BER ≤ 1×10⁻¹², PRBS 2³¹-1, back-to-back. Power consumption stated as < 2.0 W. Storage temperature -40°C to +85°C. Protocol support includes 10GbE-LAN, 10GbE-WAN, CPRI Opt, 7, 8. IEEE 802.3ae 10GBASE-ER/EW referenced for bridgeable distance at 1550 nm only.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-10GE-BX80D-4955/-5549",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether power_consumption_w should store 2.0 from '< 2.0W' or remain null when only an inequality is given. Consider mapping 'Dispersion penalty Max 3dB' to a penalty or tolerance field when no full penalty triple exists."
+}

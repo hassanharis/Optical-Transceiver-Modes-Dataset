@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100GBASE-SR4\",\n      \"standards_code\": \"100GBASE-SR4\"\n    },\n    {\n      \"label\": \"100GBASE-SR4\",\n      \"standards_code\": \"IEEE 802.3bm\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

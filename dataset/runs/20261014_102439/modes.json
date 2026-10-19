@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "100Base-FX on 62.5/125 \u00b5m MMF",
+      "wavelength_center_nm": 1308.0,
+      "power_consumption_w": 0.26,
+      "host_interface_name": "100Base-FX",
+      "standards_code": "IEEE802.3u",
+      "tx_power_min_dbm": -20.0,
+      "tx_power_max_dbm": -14.0
+    },
+    {
+      "label": "100Base-FX on 50/125 \u00b5m MMF",
+      "wavelength_center_nm": 1310.0,
+      "power_consumption_w": 0.145,
+      "host_interface_name": "Fast Ethernet",
+      "standards_code": "100Base-FX",
+      "tx_power_min_dbm": -24.0,
+      "tx_power_max_dbm": -17.0
+    }
+  ]
+}

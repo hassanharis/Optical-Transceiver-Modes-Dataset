@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:11:09.906977+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Optcore OSP1-3120NxR.pdf",
+  "page_count": 4,
+  "table_count": 6,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 6.725,
+    "extract_atoms": 29.382,
+    "store_run": 0.007,
+    "synthesize_modes": 84.232,
+    "store_modes": 0.002,
+    "total": 120.348
+  }
+}

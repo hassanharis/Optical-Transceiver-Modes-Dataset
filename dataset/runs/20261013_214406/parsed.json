@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-tq2021-bxxc-so-qsfp28-100g-bidi-20km.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 7051,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 22
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 23
+    }
+  ]
+}

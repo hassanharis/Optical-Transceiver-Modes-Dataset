@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "25GE LR (CDR engaged)",
+      "form_factor": "SFP28",
+      "wavelength_min_nm": 1295.0,
+      "host_interface_name": "25GE",
+      "standards_code": "25GE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "CPRI option 10 (CDR engaged)",
+      "form_factor": "SFP28",
+      "wavelength_min_nm": 1295.0,
+      "host_interface_name": "CPRI opt 10",
+      "standards_code": "25GE",
+      "bit_rate_gbps": 24.33024
+    },
+    {
+      "label": "10GE LAN (CDR bypassed)",
+      "form_factor": "SFP+",
+      "wavelength_min_nm": 1260.0,
+      "host_interface_name": "10GE LAN/WAN",
+      "standards_code": "10GE LAN",
+      "bit_rate_gbps": 10.312
+    },
+    {
+      "label": "10GE WAN (CDR bypassed)",
+      "form_factor": "SFP+",
+      "wavelength_min_nm": 1260.0,
+      "host_interface_name": "10GE LAN/WAN",
+      "standards_code": "10GE WAN",
+      "bit_rate_gbps": 9.953
+    }
+  ]
+}

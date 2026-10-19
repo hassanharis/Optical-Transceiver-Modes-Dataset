@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"QT-SFP-0340D Standard (0 to +70\u00b0C)\",\n      \"model\": \"QT-SFP-0340D\",\n      \"wavelength_max_nm\": 1360.0\n    },\n    {\n      \"label\": \"QT-SFP-0340ID Extended (-40 to +85\u00b0C)\",\n      \"model\": \"QT-SFP-0340ID\",\n      \"wavelength_max_nm\": 1360.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"TQ2021-BBCC-SO Tx 1291nm / Rx 1311nm\",\n      \"model\": \"TQ2021-BBCC-SO\",\n      \"wavelength_min_nm\": 1284.5,\n      \"wavelength_max_nm\": 1297.5,\n      \"wavelength_center_nm\": 1291.0,\n      \"media_interface_name\": \"100G-LR1-20\",\n      \"standards_code\": \"100GbE\",\n      \"baud_rate_gbaud\": 52.125,\n      \"bit_rate_gbps\": 106.25,\n      \"rx_sensitivity_dbm\": -7.6,\n      \"fec_type\": \"KP4\",\n      \"extinction_ratio_db\": 3.5\n    },\n    {\n      \"label\": \"TQ2021-BCBC-SO Tx 1311nm / Rx 1291nm\",\n      \"model\": \"TQ2021-BCBC-SO\",\n      \"wavelength_min_nm\": 1304.5,\n      \"wavelength_max_nm\": 1317.5,\n      \"wavelength_center_nm\": 1311.0,\n      \"media_interface_name\": \"100G-LR1-20\",\n      \"standards_code\": \"100GbE\",\n      \"baud_rate_gbaud\": 52.125,\n      \"bit_rate_gbps\": 106.25,\n      \"rx_sensitivity_dbm\": -7.6,\n      \"fec_type\": \"KP4\",\n      \"extinction_ratio_db\": 3.5\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

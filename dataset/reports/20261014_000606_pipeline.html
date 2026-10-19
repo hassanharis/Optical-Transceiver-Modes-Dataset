@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — LINK-PP [&#x27;LQ-M8540-SR4C&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">lq-m8540-sr4c.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">8</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">9</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 00:06</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LQ-M8540-SR4C Rev1.0- Sep.2020 
+
+
+## **LQ-M8540-SR4C** 
+
+## 40Gbps 850nm QSFP+ SR4 300m Transceiver 
+
+## **Product Features** 
+
+- 4 independent full-duplex channels 
+
+- High Channel Capacity: 40Gbps per module 
+
+- Up to 11.2Gbps Data rate per channel 
+
+- MTP/MPO optical connector 
+
+- High Reliability 850nm VCSEL technology 
+
+- Maximum link length of 100m links on OM3 multimode fiber or 300m links on OM4 multimode fiber 
+
+- Hot Pluggable 
+
+- Power dissipation﹤1.5W 
+
+- Real Time Digital Diagnostic Monitoring 
+
+- Operating case temperature: 0 to +70°C 
+
+## **Applications** 
+
+- 40 Ethernet links 
+
+- Infiniband QDR, DDR and SDR 
+
+- 40G Telecom connections 
+
+
+## **Standard** 
+
+- Compliant to IEEE 802.3ba 
+
+- Compliant with QSFP+ MSA 
+
+- Compliant to SFF-8436 
+
+**ww** www.link-pp.com w.l-p.comw.l-p.com 
+
+Copyright © 2020 LINK-PP AlI Rights Reserved 
+
+Page 1 of 8 
+
+LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LQ-M8540-SR4C Rev1.0- Sep.2020 
+
+
+## **Description** 
+
+LQ-M8540-SR4C are designed for use in 40 Gigabit per second links over multimode fiber. They are compliant with the QSFP+ MSA and IEEE 802.3ba 40GBASE-SR4.The optical transmitter portion of the transceiver incorporates a 4-channel VCSEL (Vertical Cavity Surface Emitting Laser) array, a 4-channel input buffer and laser driver, diagnostic monitors, control and bias blocks. For module control, the control interface incorporates a Two Wire Serial interface of clock and data signals. Diagnostic monitors for VCSEL bias, module temperature, received optical power and supply voltage are implemented and results are available through the TWS interface. Alarm and warning thresholds are established for the monitored attributes. Flags are set and interrupts generated when the attributes are outside the thresholds. Flags are also set and interrupts generated for loss of input signal (LOS) and transmitter fault conditions. All flags are latched and will remain set even if the condition initiatin
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"LINK-PP"</span>,
+  <span class="key">"model"</span>: [
+    "LQ-M8540-SR4C"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "QSFP+"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "IEEE <span class="num">802.3</span>ba",
+    "QSFP+ MSA",
+    "SFF-8436"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_VCSEL"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "PIN"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">840.0</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">860.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">850.0</span>
+  ],
+  <span class="key">"wavelength_band"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"mounting_type"</span>: [
+    "pluggable_hot"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "MTP/MPO"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">1.5</span>
+  ],
+  <span class="key">"host_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: [
+    "40GBASE-SR4"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "40GBASE-SR4",
+    "IEEE <span class="num">802.3</span>ba"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">40.0</span>,
+    <span class="num">41.25</span>,
+    <span class="num">10.3125</span>,
+    <span class="num">11.2</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">0.1</span>,
+    <span class="num">0.3</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-7.6</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">1.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-9.5</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">2.4</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: <span class="null">null</span>,
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">3.0</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-30.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-12.0</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: [
+    <span class="num">-12.0</span>
+  ],
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">3.0</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [
+    <span class="num">12.0</span>
+  ],
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Receiver sensitivity specified as OMA, each lane. Transmission distance: <span class="num">100</span> m on OM3, <span class="num">300</span> m on OM4. Power dissipation stated as &lt;1.5 W. Aggregate bit rate typical <span class="num">41.25</span> Gbps; data rate per lane typical <span class="num">10.3125</span> Gbps, max <span class="num">11.2</span> Gbps. Transmitter table lists Per Lane Bit Rate symbol Er with typical <span class="num">3</span> dB (extinction ratio). TDP (Transmitter and Dispersion Penalty) each lane max <span class="num">3.5</span> dB without paired penalty-point conditions. Average launch power off each lane max <span class="num">-30</span> dBm. Spectral width (-20 dB) max <span class="num">0.65</span> nm. Output eye diagram IEEE <span class="num">802.3</span>ba-2010 compliant."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "LQ-M8540-SR4C",
+    "40Gbps <span class="num">850</span>nm QSFP+ SR4 <span class="num">300</span>m Transceiver",
+    "Product Features",
+    "Applications",
+    "Standard",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical Characteristics",
+    "Ordering information"
+  ],
+  <span class="key">"suggestions"</span>: <span class="null">null</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>standards_code</td><td><span class="badge">40GBASE-SR4</span> <span class="badge">IEEE 802.3ba</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">40.0</span> <span class="badge">41.25</span> <span class="badge">10.3125</span> <span class="badge">11.2</span></td></tr>
+<tr><td>reach_km</td><td><span class="badge">0.1</span> <span class="badge">0.3</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>LINK-PP</td></tr>
+<tr><td>model</td><td>LQ-M8540-SR4C</td></tr>
+<tr><td>form_factor</td><td>QSFP+</td></tr>
+<tr><td>standards_claimed</td><td>IEEE 802.3ba, QSFP+ MSA, SFF-8436</td></tr>
+<tr><td>emitter_type</td><td>LASER_VCSEL</td></tr>
+<tr><td>photodetector_type</td><td>PIN</td></tr>
+<tr><td>wavelength_min_nm</td><td>840.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>860.0</td></tr>
+<tr><td>wavelength_center_nm</td><td>850.0</td></tr>
+<tr><td>channel_total</td><td>4</td></tr>
+<tr><td>mounting_type</td><td>pluggable_hot</td></tr>
+<tr><td>connector_type</td><td>MTP/MPO</td></tr>
+<tr><td>fiber_type</td><td>MMF_OM3, MMF_OM4, MMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>1.5</td></tr>
+<tr><td>media_interface_name</td><td>40GBASE-SR4</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-7.6</td></tr>
+<tr><td>tx_power_max_dbm</td><td>1.0</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-9.5</td></tr>
+<tr><td>rx_overload_dbm</td><td>2.4</td></tr>
+<tr><td>extinction_ratio_db</td><td>3.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-30.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-12.0</td></tr>
+<tr><td>receiver_reflectance_db</td><td>-12.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>3.0</td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td>12.0</td></tr>
+<tr><td>number_of_lanes</td><td>4</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Receiver sensitivity specified as OMA, each lane. Transmission distance: 100 m on OM3, 300 m on OM4. Power dissipation stated as &lt;1.5 W. Aggregate bit rate typical 41.25 Gbps; data rate per lane typical 10.3125 Gbps, max 11.2 Gbps. Transmitter table lists Per Lane Bit Rate symbol Er with typical 3 dB (extinction ratio). TDP (Transmitter and Dispersion Penalty) each lane max 3.5 dB without paired penalty-point conditions. Average launch power off each lane max -30 dBm. Spectral width (-20 dB) max 0.65 nm. Output eye diagram IEEE 802.3ba-2010 compliant.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>LQ-M8540-SR4C, 40Gbps 850nm QSFP+ SR4 300m Transceiver, Product Features, Applications, Standard, Description, Recommended Operating Conditions, Optical Characteristics, Ordering information</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>standards_code</th><th>bit_rate_gbps</th><th>reach_km</th></tr><tr><td><strong>40GBASE-SR4 OM3 100m</strong></td><td>40GBASE-SR4</td><td>41.25</td><td>0.1</td></tr><tr><td><strong>40GBASE-SR4 OM4 300m</strong></td><td>40GBASE-SR4</td><td>41.25</td><td>0.3</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 00:06
+</footer>
+
+</div>
+</body>
+</html>

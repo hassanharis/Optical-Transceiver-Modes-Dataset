@@ -1,0 +1,464 @@
+{
+  "modes": [
+    {
+      "label": "DWDM C20",
+      "model": "FTLX3671DTC20",
+      "wavelength_center_nm": 1561.42,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C21",
+      "model": "FTLX3671DTC21",
+      "wavelength_center_nm": 1560.61,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C22",
+      "model": "FTLX3671DTC22",
+      "wavelength_center_nm": 1559.79,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C23",
+      "model": "FTLX3671DTC23",
+      "wavelength_center_nm": 1558.98,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C24",
+      "model": "FTLX3671DTC24",
+      "wavelength_center_nm": 1558.17,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C25",
+      "model": "FTLX3671DTC25",
+      "wavelength_center_nm": 1557.36,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C26",
+      "model": "FTLX3671DTC26",
+      "wavelength_center_nm": 1556.55,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C27",
+      "model": "FTLX3671DTC27",
+      "wavelength_center_nm": 1555.75,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C28",
+      "model": "FTLX3671DTC28",
+      "wavelength_center_nm": 1554.94,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C29",
+      "model": "FTLX3671DTC29",
+      "wavelength_center_nm": 1554.13,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C30",
+      "model": "FTLX3671DTC30",
+      "wavelength_center_nm": 1553.33,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C31",
+      "model": "FTLX3671DTC31",
+      "wavelength_center_nm": 1552.52,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C32",
+      "model": "FTLX3671DTC32",
+      "wavelength_center_nm": 1551.72,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C33",
+      "model": "FTLX3671DTC33",
+      "wavelength_center_nm": 1550.92,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C34",
+      "model": "FTLX3671DTC34",
+      "wavelength_center_nm": 1550.12,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C35",
+      "model": "FTLX3671DTC35",
+      "wavelength_center_nm": 1549.32,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C36",
+      "model": "FTLX3671DTC36",
+      "wavelength_center_nm": 1548.51,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C37",
+      "model": "FTLX3671DTC37",
+      "wavelength_center_nm": 1547.72,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C38",
+      "model": "FTLX3671DTC38",
+      "wavelength_center_nm": 1546.92,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C39",
+      "model": "FTLX3671DTC39",
+      "wavelength_center_nm": 1546.12,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C40",
+      "model": "FTLX3671DTC40",
+      "wavelength_center_nm": 1545.32,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C41",
+      "model": "FTLX3671DTC41",
+      "wavelength_center_nm": 1544.53,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C42",
+      "model": "FTLX3671DTC42",
+      "wavelength_center_nm": 1543.73,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C43",
+      "model": "FTLX3671DTC43",
+      "wavelength_center_nm": 1542.94,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C44",
+      "model": "FTLX3671DTC44",
+      "wavelength_center_nm": 1542.14,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C45",
+      "model": "FTLX3671DTC45",
+      "wavelength_center_nm": 1541.35,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C46",
+      "model": "FTLX3671DTC46",
+      "wavelength_center_nm": 1540.56,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C47",
+      "model": "FTLX3671DTC47",
+      "wavelength_center_nm": 1539.77,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C48",
+      "model": "FTLX3671DTC48",
+      "wavelength_center_nm": 1538.98,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C49",
+      "model": "FTLX3671DTC49",
+      "wavelength_center_nm": 1538.19,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C50",
+      "model": "FTLX3671DTC50",
+      "wavelength_center_nm": 1537.4,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C51",
+      "model": "FTLX3671DTC51",
+      "wavelength_center_nm": 1536.61,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C52",
+      "model": "FTLX3671DTC52",
+      "wavelength_center_nm": 1535.82,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C53",
+      "model": "FTLX3671DTC53",
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C54",
+      "model": "FTLX3671DTC54",
+      "wavelength_center_nm": 1534.25,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C55",
+      "model": "FTLX3671DTC55",
+      "wavelength_center_nm": 1533.47,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C56",
+      "model": "FTLX3671DTC56",
+      "wavelength_center_nm": 1532.68,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C57",
+      "model": "FTLX3671DTC57",
+      "wavelength_center_nm": 1531.9,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C58",
+      "model": "FTLX3671DTC58",
+      "wavelength_center_nm": 1531.12,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C59",
+      "model": "FTLX3671DTC59",
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "DWDM C60",
+      "model": "FTLX3671DTC60",
+      "wavelength_center_nm": 1529.55,
+      "wavelength_band": "C-band",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "Rx 0ps/nm 11.1-11.3 Gb/s",
+      "model": "FTLX3671DTCxx",
+      "wavelength_center_nm": 1561.42,
+      "wavelength_band": "DWDM",
+      "standards_code": "SFF-8432",
+      "bit_rate_gbps": 11.3,
+      "rx_sensitivity_dbm": -15.0,
+      "rx_overload_dbm": 0.0
+    },
+    {
+      "label": "Rx 800ps/nm 1.2-10.7 Gb/s",
+      "model": "FTLX3671DTCxx",
+      "wavelength_center_nm": 1561.42,
+      "wavelength_band": "DWDM",
+      "standards_code": "SFF-8472",
+      "bit_rate_gbps": 1.2,
+      "rx_sensitivity_dbm": -15.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "Rx 800ps/nm 11.1-11.3 Gb/s",
+      "model": "FTLX3671DTCxx",
+      "wavelength_center_nm": 1561.42,
+      "wavelength_band": "DWDM",
+      "standards_code": "SFF-8472",
+      "bit_rate_gbps": 11.1,
+      "rx_sensitivity_dbm": -14.0,
+      "rx_overload_dbm": 0.0
+    },
+    {
+      "label": "Data rate 1.2288 Gb/s",
+      "model": "FTLX3671DTCxx",
+      "wavelength_center_nm": 1561.42,
+      "wavelength_band": "DWDM",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 1.2288,
+      "rx_sensitivity_dbm": -16.0,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "Data rate 11.3176 Gb/s",
+      "model": "FTLX3671DTCxx",
+      "wavelength_center_nm": 1561.42,
+      "wavelength_band": "DWDM",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 11.3176,
+      "rx_sensitivity_dbm": -15.0,
+      "rx_overload_dbm": 0.0
+    }
+  ]
+}

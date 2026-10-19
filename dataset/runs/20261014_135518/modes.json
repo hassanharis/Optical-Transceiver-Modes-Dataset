@@ -1,0 +1,8 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-10GE-T 10GBASE-T RJ45",
+      "standards_code": "10GBASE-T"
+    }
+  ]
+}

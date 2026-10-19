@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "QT-SFP-0310D Gigabit Ethernet 10 km",
+      "model": "QT-SFP-0310D",
+      "wavelength_max_nm": 1360.0,
+      "host_interface_name": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 10.0
+    },
+    {
+      "label": "QT-SFP-0310D Fiber Channel 10 km",
+      "model": "QT-SFP-0310D",
+      "wavelength_max_nm": 1360.0,
+      "host_interface_name": "Fiber Channel",
+      "bit_rate_gbps": 1.063,
+      "reach_km": 10.0
+    },
+    {
+      "label": "QT-SFP-0310ID Gigabit Ethernet 10 km",
+      "model": "QT-SFP-0310ID",
+      "wavelength_max_nm": 1360.0,
+      "host_interface_name": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25,
+      "reach_km": 10.0
+    },
+    {
+      "label": "QT-SFP-0310ID Fiber Channel 10 km",
+      "model": "QT-SFP-0310ID",
+      "wavelength_max_nm": 1360.0,
+      "host_interface_name": "Fiber Channel",
+      "bit_rate_gbps": 1.063,
+      "reach_km": 10.0
+    }
+  ]
+}

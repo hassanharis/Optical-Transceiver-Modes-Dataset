@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:21:51.027995+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Prolab SFP-1G-BX-U-20-DE-C.pdf",
+  "page_count": 6,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 8.033,
+    "extract_atoms": 29.725,
+    "store_run": 0.006,
+    "synthesize_modes": 21.107,
+    "store_modes": 0.002,
+    "total": 58.874
+  }
+}

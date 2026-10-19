@@ -1,0 +1,156 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "OP27PI8-02D-R"
+  ],
+  "form_factor": [
+    "OSFP",
+    "OSFP_RHS"
+  ],
+  "standards_claimed": [
+    "OSFP MSA rev5.0",
+    "OIF-CMIS rev5.1",
+    "IEEE 802.3dj-2024",
+    "ROHS"
+  ],
+  "emitter_type": [
+    "LASER_SILICON",
+    "Laser"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5
+  ],
+  "wavelength_center_nm": [],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable",
+    "pluggable_hot_electrical"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    30
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "2xFR4"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "2xFR4",
+    "IEEE 802.3dj-2024",
+    "IEEE 802.3dj"
+  ],
+  "baud_rate_gbaud": [
+    113.4375
+  ],
+  "bit_rate_gbps": [
+    226.875
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    2
+  ],
+  "tx_power_min_dbm": [
+    -1.8
+  ],
+  "tx_power_max_dbm": [
+    4.9,
+    4.8
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -3.7
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4.9,
+    4.8
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -26
+  ],
+  "transmitter_reflectance_db": [
+    -26
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4,
+    8
+  ],
+  "side_mode_suppression_ratio_db": [
+    30
+  ],
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Datasheet distributed via https://www.amphenol-cs.com/optics.html while footer identifies XGIGA Communication Technology Co.,ltd. Total Output Average Launch Power and several electrical parameters marked TBD. Transmit OMA per Lane (min) is 0.8 dBm for TDECQ<0.9 dB and -0.1+TDECQ dBm for 0.9 dB≤TDECQ≤3.4 dB. Receiver Sensitivity (OMA) per Lane is -4.6+TECQ dBm for 0.9 dB≤TECQ≤SECQ (formula; SECQ not numerically defined in excerpt). Receiver sensitivity measured with PRBS31Q, BER 2.4×10^-4 per Optical Characteristics Note 2. Host must implement FEC; FEC type not specified on module. Supply Current Icc listed as 9090 mA at Vcc 3.3 V as printed. Signaling speed tolerance ± 50 ppm. Case temperature 0–70 °C without air flow. Optical receiver damage threshold 5.9 dBm per lane (Absolute Maximum Ratings and Optical Characteristics). Average launch Power off per lane max -16 dBm. RIN17.1 OMA max -139 dB/Hz.",
+  "provenance_datasheet_sections": [
+    "1.6T 2xFR4 OSFP‐RHS (retimer)",
+    "OP27PI8-02D-R",
+    "PRODUCT FEATURES",
+    "REFERENCE STANDARD",
+    "APPLICATIONS",
+    "PRODUCT SPECIFICATION",
+    "I. Absolute Maximum Ratings",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "IV. Electrical Characteristics",
+    "V. Pin Assignment"
+  ],
+  "suggestions": "Clarify whether commercial brand is Amphenol or XGIGA. Add host/media interface IDs per OSFP MSA and IEEE 802.3dj. Replace TBD fields. Define SECQ for receiver sensitivity row. Distinguish OMA vs average power limits in schema if both are used."
+}

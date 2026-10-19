@@ -1,0 +1,31 @@
+{
+  "modes": [
+    {
+      "label": "STM4/OC12 @ 622 Mbps",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1580.0,
+      "host_interface_name": "STM4/OC12",
+      "standards_code": "STM4/OC12",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -32.0
+    },
+    {
+      "label": "STM1/OC3",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1580.0,
+      "host_interface_name": "STM1/OC3",
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 622.0,
+      "rx_sensitivity_dbm": -33.0
+    },
+    {
+      "label": "100M Fast Ethernet",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1580.0,
+      "host_interface_name": "FE",
+      "standards_code": "100M Ethernet",
+      "bit_rate_gbps": 125.0,
+      "rx_sensitivity_dbm": -34.0
+    }
+  ]
+}

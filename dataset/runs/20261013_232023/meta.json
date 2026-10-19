@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:20:23.750195+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftlx8574d3bcl-transceiver-ds.pdf",
+  "page_count": 13,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 11.976,
+    "extract_atoms": 22.052,
+    "store_run": 0.017,
+    "synthesize_modes": 41.806,
+    "store_modes": 0.005,
+    "total": 75.857
+  }
+}

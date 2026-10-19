@@ -1,0 +1,53 @@
+{
+  "modes": [
+    {
+      "label": "QSFP28 100GbE DAC 0.5m AWG30",
+      "model": "SO-QSFP28-PCU0.5M",
+      "host_interface_name": "QSFP28",
+      "standards_code": "IEEE 802.3bj",
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "QSFP28 100GbE DAC 1m AWG30",
+      "model": "SO-QSFP28-PCU1M",
+      "host_interface_name": "QSFP28",
+      "standards_code": "IEEE 802.3bj",
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "QSFP28 100GbE DAC 2m AWG30",
+      "model": "SO-QSFP28-PCU2M",
+      "host_interface_name": "QSFP28",
+      "standards_code": "IEEE 802.3bj",
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "QSFP28 100GbE DAC 3m AWG26",
+      "model": "SO-QSFP28-PCU3M",
+      "host_interface_name": "QSFP28",
+      "standards_code": "IEEE 802.3bj",
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "QSFP28 100GbE DAC 4m AWG26",
+      "model": "SO-QSFP28-PCU4M",
+      "host_interface_name": "QSFP28",
+      "standards_code": "IEEE 802.3bj",
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "QSFP28 100GbE DAC 5m AWG26",
+      "model": "SO-QSFP28-PCU5M",
+      "host_interface_name": "QSFP28",
+      "standards_code": "IEEE 802.3bj",
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "QSFP28 100GbE DAC family 0.5–5m",
+      "model": "SO-QSFP28-PCUxM",
+      "host_interface_name": "QSFP28",
+      "standards_code": "IEEE 802.3bj",
+      "fec_type": "RS_528_514"
+    }
+  ]
+}

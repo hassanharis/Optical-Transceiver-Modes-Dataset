@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "200GBASE-FR4 CWDM lane 1",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "host_interface_name": "200GAUI-4",
+      "standards_code": "200GBASE-FR4",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 4.7
+    },
+    {
+      "label": "200GBASE-FR4 CWDM lane 2",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "host_interface_name": "200GAUI-4",
+      "standards_code": "200GBASE-FR4",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 4.7
+    },
+    {
+      "label": "200GBASE-FR4 CWDM lane 3",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "host_interface_name": "200GAUI-4",
+      "standards_code": "200GBASE-FR4",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 4.7
+    },
+    {
+      "label": "200GBASE-FR4 CWDM lane 4",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "host_interface_name": "200GAUI-4",
+      "standards_code": "200GBASE-FR4",
+      "bit_rate_gbps": 53.125,
+      "tx_power_max_dbm": 4.7
+    }
+  ]
+}

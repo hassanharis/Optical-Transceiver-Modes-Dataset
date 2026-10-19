@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"200GBASE-SR4 (212.5 Gb/s aggregate)\",\n      \"power_consumption_w\": 4.1,\n      \"standards_code\": \"200GBASE-SR4\",\n      \"bit_rate_gbps\": 212.5,\n      \"rx_sensitivity_dbm\": -7.0\n    },\n    {\n      \"label\": \"103.125 Gb/s aggregate (if required)\",\n      \"power_consumption_w\": 4.5,\n      \"standards_code\": \"IEEE 802.3cd\",\n      \"bit_rate_gbps\": 103.125,\n      \"rx_sensitivity_dbm\": -3.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

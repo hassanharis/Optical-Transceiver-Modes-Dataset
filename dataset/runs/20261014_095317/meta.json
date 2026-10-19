@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T09:53:17.844353+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Nokia_1830_GX_CHM7_and_CHM7X_datasheet_Data_Sheet_EN.pdf",
+  "page_count": 4,
+  "table_count": 0,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 6.075,
+    "extract_atoms": 27.924,
+    "store_run": 0.005,
+    "synthesize_modes": 292.185,
+    "store_modes": 0.006,
+    "total": 326.196
+  }
+}

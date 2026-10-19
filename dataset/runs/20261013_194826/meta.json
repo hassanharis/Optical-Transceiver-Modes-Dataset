@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T19:48:26.770371+00:00",
+  "source_file": "C:\\Haris\\datasheets\\AFBR-710DMZ_Data_Sheet.pdf",
+  "page_count": 22,
+  "table_count": 21,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 32.777,
+    "extract_atoms": 25.269,
+    "store_run": 0.008,
+    "synthesize_modes": 43.878,
+    "store_modes": 0.003,
+    "total": 101.935
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-10GE-SR OM3 300m",
+      "model": "SO-SFP-10GE-SR",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SO-SFP-10GE-SR OM4 550m",
+      "model": "SO-SFP-10GE-SR",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.55
+    },
+    {
+      "label": "SO-SFP-10GE-SR-I OM3 300m",
+      "model": "SO-SFP-10GE-SR-I",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.3
+    },
+    {
+      "label": "SO-SFP-10GE-SR-I OM4 550m",
+      "model": "SO-SFP-10GE-SR-I",
+      "host_interface_name": "SFF-8431",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 11.3,
+      "reach_km": 0.55
+    }
+  ]
+}

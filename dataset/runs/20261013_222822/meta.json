@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:28:22.652303+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds_FXC_SFP_ZX_1G_CAN.pdf",
+  "page_count": 5,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.082,
+    "extract_atoms": 15.311,
+    "store_run": 0.006,
+    "synthesize_modes": 13.665,
+    "store_modes": 0.003,
+    "total": 34.067
+  }
+}

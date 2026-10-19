@@ -1,0 +1,49 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-CFP2-QSFP28-1M",
+    "SO-CFP2-QSFP28-2M",
+    "SO-CFP2-QSFP28-3M",
+    "SO-CFP2-QSFP28-1M-2",
+    "SO-CFP2-QSFP28-2M-2",
+    "SO-CFP2-QSFP28-3M-2",
+    "SO-CFP2-QSFP28-XM",
+    "SO-CFP2-QSFP28-XM-2"
+  ],
+  "form_factor": [
+    "CFP2",
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "CFP2 MSA",
+    "QSFP28 MSA"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.3
+  ],
+  "host_interface_name": [
+    "CFP2",
+    "QSFP28",
+    "MDIO",
+    "2-wire serial communication interface"
+  ],
+  "standards_code": [
+    "100GbE",
+    "OTN",
+    "OTU4"
+  ],
+  "bit_rate_gbps": [
+    103.0,
+    112.0
+  ],
+  "notes": "Active Direct Attach Cable (DAC) coax (not optical fiber). Cable lengths 1 m, 2 m, 3 m (3.3–9.8 ft); AWG30 for SO-CFP2-QSFP28-xM. SO-CFP2-QSFP28-xM: CDR in receive direction only; SO-CFP2-QSFP28-xM-2: CDR in transmit and receive. Requires FEC in host systems. Power stated as 1.3 W per connector.",
+  "provenance_datasheet_sections": [
+    "OVERVIEW",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Consider schema fields for cable_length_m, cable_awg, interface_type (coax DAC), and cdr_configuration (RX-only vs dual) for DAC/adaptor products without optical parameters."
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:18:48.073396+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Ciena 160-9116-900 compatible SFP+ transceiver.pdf",
+  "page_count": 6,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.97,
+    "extract_atoms": 20.164,
+    "store_run": 0.008,
+    "synthesize_modes": 38.524,
+    "store_modes": 0.004,
+    "total": 64.67
+  }
+}

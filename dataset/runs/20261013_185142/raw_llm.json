@@ -1,0 +1,194 @@
+{
+  "vendor": null,
+  "model": [
+    "DWDM-SFP+-ZR-XX"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8413",
+    "IEE802.3ae"
+  ],
+  "emitter_type": [
+    "LASER_EML"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1528.77
+  ],
+  "wavelength_max_nm": [
+    1563.86,
+    1620.0
+  ],
+  "wavelength_center_nm": [
+    1563.86,
+    1563.05,
+    1562.23,
+    1561.42,
+    1560.61,
+    1559.79,
+    1558.98,
+    1558.17,
+    1557.36,
+    1556.55,
+    1555.75,
+    1554.94,
+    1554.13,
+    1553.33,
+    1552.52,
+    1551.72,
+    1550.92,
+    1550.12,
+    1549.32,
+    1548.51,
+    1547.72,
+    1546.92,
+    1546.12,
+    1545.32,
+    1544.53,
+    1543.73,
+    1542.94,
+    1542.14,
+    1541.35,
+    1540.56,
+    1539.77,
+    1538.98,
+    1538.19,
+    1537.4,
+    1536.61,
+    1535.82,
+    1535.04,
+    1534.25,
+    1533.47,
+    1532.68,
+    1531.9,
+    1531.12,
+    1530.33,
+    1529.55,
+    1528.77
+  ],
+  "wavelength_band": [
+    "C-band",
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    191.7
+  ],
+  "frequency_max_thz": [
+    196.1
+  ],
+  "channel_spacing_ghz": [
+    100.0
+  ],
+  "channel_total": [
+    45
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -5.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5,
+    1.4,
+    2.0
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "ITU Grid 17~61"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    4.25,
+    9.95,
+    10.3,
+    10.3125,
+    11.3
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    -1.0
+  ],
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -24.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -8.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -34.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    21.0
+  ],
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Transmitter center wavelength specified as λc±25 pm (SOL) and λc±100 pm (EOL) relative to ITU channel λc, not fixed nm. Optical OMA power Pom min -1 dBm; disabled TX max -30 dBm. Receiver sensitivity at BER=10^-12 with conformance test signal; note recommends ≥0.4 dB margin for component-level measurements without CDR. Supply current Icc typ 420 mA max 610 mA shared VCCTX/VCCRX. Data rate via RS0: open/low ≤4.25 Gbps, high 9.95–10.3125 Gb/s. Electrical data rate Mra max 10.3–11.3 Gbps in TX/RX electrical tables. Module power Pm typ 1.4 W max 2 W; product features state 1.5 W maximum.",
+  "provenance_datasheet_sections": [
+    "DWDM SFP+ CH17~CH61 80km DDM LC SMF Transceiver",
+    "P/N: DWDM-SFP+-ZR-XX",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "1. Absolute Maximum Ratings",
+    "2. Operating Conditions",
+    "3. Transmitter Specification-Optical",
+    "4. Transmitter Specification-Electrical",
+    "5. Receiver Specification-Optical",
+    "6. Receiver Specification-Electrical",
+    "7. Pin Description",
+    "8. C-band λc Wavelength Guide",
+    "10. Ordering information"
+  ],
+  "suggestions": "Vendor not labeled on datasheet (only qsfptek.com contact). No explicit TX max optical power for enabled state. No OSNR, CD, PMD, or PDL specs. IEEE standard printed as IEE802.3ae."
+}

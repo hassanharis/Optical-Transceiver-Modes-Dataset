@@ -1,0 +1,98 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "OC-192 LR-1",
+      "STM I-64.1",
+      "10GFC 1200-SM-LL-L",
+      "10GbE-LAN",
+      "10GbE-WAN",
+      "OTU2",
+      "OTU2e",
+      "STM-64/OC192",
+      "10G FC",
+      "CPRI Opt, 8"
+    ],
+    "bit_rate_gbps": [
+      9.95,
+      11.1
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-XFP-LR20"
+    ],
+    "form_factor": [
+      "XFP"
+    ],
+    "standards_claimed": [
+      "IEEE 802.3ae LR/LW",
+      "INF-8077i",
+      "XFP-MSA",
+      "SDH/SONET",
+      "Fiberchannel"
+    ],
+    "wavelength_min_nm": [
+      1290.0
+    ],
+    "wavelength_max_nm": [
+      1330.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -3.0
+    ],
+    "tx_power_max_dbm": [
+      1.0
+    ],
+    "rx_sensitivity_dbm": [
+      -15.0
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -29.0
+    ],
+    "los_deassert_dbm": [
+      -17.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "los_hysteresis_db": [
+      1.0
+    ],
+    "notes": "Grey XFP, SM (2x LC), 20km, 1x 1310nm. Power budget between transmitter and receiver w/o optical path penalties: 0.5 – 12dB (title/ordering also cite 12dB). Transmitter/receiver power values are average power (footnote 1). Minimum input power -15.0 dBm measured @ 10.7 Gbps, BER 1x10-12, PRBS 2^31-1, back-to-back (footnote 2). Receiver wavelength range 1270 nm – 1600 nm. Storage temperature -40°C to +85°C. Operating temperature printed as -0°C to +70°C. Power consumption < 2.5 W worst case.",
+    "provenance_datasheet_sections": [
+      "SO-XFP-LR20 XFP, 10G Multirate, 1310nm, SM, DDM, 12dB, 20km",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

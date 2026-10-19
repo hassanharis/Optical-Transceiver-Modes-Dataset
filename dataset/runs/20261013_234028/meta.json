@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:40:28.064752+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lo-cw1t-2fr4c.pdf",
+  "page_count": 10,
+  "table_count": 13,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 11.916,
+    "extract_atoms": 19.508,
+    "store_run": 0.008,
+    "synthesize_modes": 47.834,
+    "store_modes": 0.004,
+    "total": 79.27
+  }
+}

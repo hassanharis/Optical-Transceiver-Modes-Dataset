@@ -1,0 +1,115 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-QSFP-DD-2C-10",
+      "SO-QSFP-DD-2C-10-4"
+    ],
+    "wavelength_min_nm": [
+      1294.53,
+      1299.02,
+      1303.54,
+      1308.09
+    ],
+    "wavelength_max_nm": [
+      1296.59,
+      1301.09,
+      1305.63,
+      1310.19
+    ],
+    "wavelength_center_nm": [
+      1295.56,
+      1300.05,
+      1304.58,
+      1309.14
+    ],
+    "host_interface_name": [
+      "2x CAUI-4",
+      "CAUI-4"
+    ],
+    "standards_code": [
+      "100GBASE-LR4",
+      "Clause 88",
+      "2x100GBASE-R",
+      "CMIS3.0",
+      "CMIS4.0"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      25.78,
+      200.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "QSFP-DD MSA",
+      "100GBASE-LR4",
+      "SFF-8679",
+      "CMIS3.0",
+      "CMIS4.0"
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "CS"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      8.0
+    ],
+    "media_interface_name": [
+      "100GBASE-LR4"
+    ],
+    "frame": [
+      "2x CAUI-4 (4x 25G)"
+    ],
+    "modulation_format": [
+      "NRZ"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -0.7
+    ],
+    "tx_power_max_dbm": [
+      4.5
+    ],
+    "rx_sensitivity_dbm": [
+      -8.0
+    ],
+    "rx_overload_dbm": [
+      4.5
+    ],
+    "fec_type": [
+      "NONE"
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "penalties": [],
+    "notes": "Power consumption stated as < 8W (worst case). Transmitter/receiver power specs are average power, per lane (footnote 3). Receiver min input and overload specified at BER 1x10-12 (footnote 4). Power budget 0 – 7.3dB w/o optical path penalties. Aggregated line rate 2x 103.12Gbps for 200GbE; line rate per lane 25.78Gbps (footnotes 1–2). Dual CS: two SM fiber pairs, 2x100G breakout. Ordering variants SO-QSFP-DD-2C-10 (CMIS3) and SO-QSFP-DD-2C-10-4 (CMIS4). Storage temperature -40°C to +85°C is not normal operating range.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP-DD-2C-10 / -4",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "APPLICATION CODE LIST",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Explicit vendor name does not appear in module title block; inferred from smartoptics.com and ordering context. Consider mapping power budget 7.3dB to a dedicated link-budget field. CMIS application code integer 1 is not in schema."
+  }
+}

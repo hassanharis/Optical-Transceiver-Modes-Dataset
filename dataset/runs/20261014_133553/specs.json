@@ -1,0 +1,214 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-10GE-ER-Dxxxx",
+    "SO-SFP-10GE-ER-Dxxxx-I",
+    "SO-SFP-10GE-ER-D9210",
+    "SO-SFP-10GE-ER-D9220",
+    "SO-SFP-10GE-ER-D9230",
+    "SO-SFP-10GE-ER-D9240",
+    "SO-SFP-10GE-ER-D9250",
+    "SO-SFP-10GE-ER-D9260",
+    "SO-SFP-10GE-ER-D9270",
+    "SO-SFP-10GE-ER-D9280",
+    "SO-SFP-10GE-ER-D9290",
+    "SO-SFP-10GE-ER-D9300",
+    "SO-SFP-10GE-ER-D9310",
+    "SO-SFP-10GE-ER-D9320",
+    "SO-SFP-10GE-ER-D9330",
+    "SO-SFP-10GE-ER-D9340",
+    "SO-SFP-10GE-ER-D9350",
+    "SO-SFP-10GE-ER-D9360",
+    "SO-SFP-10GE-ER-D9370",
+    "SO-SFP-10GE-ER-D9380",
+    "SO-SFP-10GE-ER-D9390",
+    "SO-SFP-10GE-ER-D9400",
+    "SO-SFP-10GE-ER-D9410",
+    "SO-SFP-10GE-ER-D9420",
+    "SO-SFP-10GE-ER-D9430",
+    "SO-SFP-10GE-ER-D9440",
+    "SO-SFP-10GE-ER-D9450",
+    "SO-SFP-10GE-ER-D9460",
+    "SO-SFP-10GE-ER-D9470",
+    "SO-SFP-10GE-ER-D9480",
+    "SO-SFP-10GE-ER-D9490",
+    "SO-SFP-10GE-ER-D9500",
+    "SO-SFP-10GE-ER-D9510",
+    "SO-SFP-10GE-ER-D9520",
+    "SO-SFP-10GE-ER-D9530",
+    "SO-SFP-10GE-ER-D9540",
+    "SO-SFP-10GE-ER-D9550",
+    "SO-SFP-10GE-ER-D9560",
+    "SO-SFP-10GE-ER-D9570",
+    "SO-SFP-10GE-ER-D9580",
+    "SO-SFP-10GE-ER-D9590",
+    "SO-SFP-10GE-ER-D9600"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "IEEE 802.3ae",
+    "ITU-T G.694.1"
+  ],
+  "wavelength_min_nm": [
+    1480.0,
+    1529.55
+  ],
+  "wavelength_max_nm": [
+    1562.23,
+    1580.0
+  ],
+  "wavelength_center_nm": [
+    1562.23,
+    1561.42,
+    1560.61,
+    1559.79,
+    1558.98,
+    1558.17,
+    1557.36,
+    1556.55,
+    1555.75,
+    1554.94,
+    1554.13,
+    1553.33,
+    1552.52,
+    1551.72,
+    1550.92,
+    1550.12,
+    1549.32,
+    1548.51,
+    1547.72,
+    1546.92,
+    1546.12,
+    1545.32,
+    1544.53,
+    1543.73,
+    1542.94,
+    1542.14,
+    1541.35,
+    1540.56,
+    1539.77,
+    1538.98,
+    1538.19,
+    1537.4,
+    1536.61,
+    1535.82,
+    1535.04,
+    1534.25,
+    1533.47,
+    1532.68,
+    1531.9,
+    1531.12,
+    1530.33,
+    1529.55
+  ],
+  "wavelength_band": [
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    191.9
+  ],
+  "frequency_max_thz": [
+    196.0
+  ],
+  "channel_spacing_ghz": [
+    100.0
+  ],
+  "channel_total": [
+    42
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "standards_code": [
+    "10GBASE-ER",
+    "10GBASE-EW",
+    "GbE",
+    "10GbE-LAN",
+    "10GbE-WAN",
+    "OTU1",
+    "OTU2",
+    "OTU2e",
+    "STM-64/OC192",
+    "STM-16/OC48",
+    "STM-4/OC12",
+    "1G FC",
+    "2G FC",
+    "4G FC",
+    "8G FC",
+    "10G FC",
+    "CPRI Opt 1",
+    "CPRI Opt 2",
+    "CPRI Opt 3",
+    "CPRI Opt 4",
+    "CPRI Opt 5",
+    "CPRI Opt 6",
+    "CPRI Opt 7",
+    "CPRI Opt 7A",
+    "CPRI Opt 8",
+    "OBSAI 1x",
+    "OBSAI 2x",
+    "OBSAI 4x",
+    "OBSAI 8x",
+    "G.694.1"
+  ],
+  "bit_rate_gbps": [
+    0.6,
+    11.3
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -1.0
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -15.0
+  ],
+  "rx_overload_dbm": [
+    -1.0
+  ],
+  "cd_tolerance_ps_nm": [
+    800.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -29.0
+  ],
+  "los_deassert_dbm": [
+    -17.0
+  ],
+  "penalties": [],
+  "notes": "Operating temperature -Dxxxx: 0°C to +70°C; -Dxxxx-I (industrial): -40°C to +85°C. Storage temperature -40°C to +85°C. Power consumption stated as < 1.5 W. Power budget 5 – 14 dB. Dispersion penalty max 2 dB (no paired penalized value and operating condition for penalty schema). Receiver minimum input power and overload measured @ 10.3 Gbps, BER 1×10⁻¹², PRBS 2³¹-1, back-to-back; average power per footnotes 1) and 2). Transmit wavelength 191.90 - 196.00 THz per G.694.1; receiver wavelength range 1480 nm – 1580 nm. IEEE 802.3ae 10GBASE-ER/EW defined only at 1550 nm; standard referenced for bridgeable distance on other DWDM wavelengths. Distance up to 40 km without dispersion compensation for 10GBASE-ER/EW.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-10GE-ER-Dxxxx & Dxxxx-I SFP+, 10G Multirate, DWDM 100GHz, DDM, 14dB, 40km, D919-D960 (42ch)",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "Safety/regulatory compliance:",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Ordering table in source repeats some part numbers (e.g. D9210/D9220); channel THz steps 191.90–196.00 could be added as frequency_center_thz if schema extended. Clarify whether 14 dB in title is OSNR or power budget (datasheet lists power budget 5–14 dB)."
+}

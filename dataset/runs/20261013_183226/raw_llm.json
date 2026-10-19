@@ -1,0 +1,140 @@
+{
+  "vendor": null,
+  "model": [
+    "QT-QSFP+-SR4"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ba",
+    "SFF-8436"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    0.7
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": null,
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": null,
+  "frame": [],
+  "standards_code": [
+    "40GBASE-SR4"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    40.0,
+    11.1,
+    10.3125,
+    10.325
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [],
+  "reach_km": [
+    0.15,
+    0.3,
+    0.4
+  ],
+  "tx_power_min_dbm": [
+    -7.0
+  ],
+  "tx_power_max_dbm": [
+    1.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -9.5
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    2.4
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -12.0
+  ],
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Title states 150m reach; PRODUCT FEATURES and Recommended Operating Conditions state 300 m on OM3 MMF and 400 m on OM4 MMF. Rx Sensitivity per lane and optical note: measured with PRBS 2^31-1 test pattern @10.325 Gb/s, BER<10^-12. Transmitter and Dispersion Penalty (TDP) each lane max 3.5 dB. Average launch Power off each lane (Poff) max -30 dBm. Spectral Width (RMS) sigma max 0.65 nm. Absolute Maximum Ratings damage threshold 3.4 dBm. Data Rate in Recommended Operating Conditions: 10.3125 Gbps each channel; note under Optical Characteristics uses 10.325 Gb/s. Features list up to 11.1 Gbps data rate per channel and 40 Gbps per module. Case operating temperature without airflow 0 to 70 °C.",
+  "provenance_datasheet_sections": [
+    "40GBASE-SR4 QSFP+ 850nm 150m DDM MMF Transceiver",
+    "P/N: QT-QSFP+-SR4",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "1. Absolute Maximum Ratings",
+    "2. Recommended Operating Conditions",
+    "2. Optical Characteristics",
+    "4. Electrical Characteristics",
+    "7. Ordering information"
+  ],
+  "suggestions": null
+}

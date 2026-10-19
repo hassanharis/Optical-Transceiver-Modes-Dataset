@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100M Fast Ethernet\",\n      \"model\": \"SO-SFP-100BASE-L200D\",\n      \"wavelength_min_nm\": 1480.0,\n      \"wavelength_max_nm\": 1580.0,\n      \"standards_code\": \"FE\",\n      \"bit_rate_gbps\": 0.1\n    },\n    {\n      \"label\": \"STM-1 / OC-3 155M\",\n      \"model\": \"SO-SFP-100BASE-L200D\",\n      \"wavelength_min_nm\": 1480.0,\n      \"wavelength_max_nm\": 1580.0,\n      \"standards_code\": \"STM1\",\n      \"bit_rate_gbps\": 0.155\n    },\n    {\n      \"label\": \"100M Fast Ethernet\",\n      \"model\": \"SO-SFP-100Base-L200D\",\n      \"wavelength_min_nm\": 1480.0,\n      \"wavelength_max_nm\": 1580.0,\n      \"standards_code\": \"100BASE\",\n      \"bit_rate_gbps\": 0.1\n    },\n    {\n      \"label\": \"STM-1 / OC-3 155M\",\n      \"model\": \"SO-SFP-100Base-L200D\",\n      \"wavelength_min_nm\": 1480.0,\n      \"wavelength_max_nm\": 1580.0,\n      \"standards_code\": \"OC3\",\n      \"bit_rate_gbps\": 0.155\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

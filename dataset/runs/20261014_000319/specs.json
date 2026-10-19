@@ -1,0 +1,151 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-LW100-LR4C"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "IEEE802.3ba 100GBASE-LR4",
+    "SFF-8679",
+    "802.3bm CAUI-4",
+    "SFF-8636",
+    "QSFP+ Multi-Source Agreement (MSA)"
+  ],
+  "emitter_type": [
+    "LASER_DFB",
+    "LASER_EML",
+    "LASER_DFB_EA"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1294.53,
+    1299.02,
+    1303.54,
+    1308.09
+  ],
+  "wavelength_max_nm": [
+    1296.59,
+    1301.09,
+    1305.63,
+    1310.19
+  ],
+  "wavelength_center_nm": [
+    1295.56,
+    1300.05,
+    1304.58,
+    1309.14
+  ],
+  "wavelength_band": [
+    "LAN-WDM"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    4.0
+  ],
+  "host_interface_name": [
+    "CAUI-4",
+    "SFF-8679"
+  ],
+  "media_interface_name": [
+    "100GBASE-LR4"
+  ],
+  "standards_code": [
+    "100GBASE-LR4",
+    "IEEE802.3ba",
+    "IEEE P802.3ba",
+    "IEEE802.3ba Clause 88"
+  ],
+  "bit_rate_gbps": [
+    103.1,
+    25.78125,
+    100.0
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -4.3
+  ],
+  "tx_power_max_dbm": [
+    4.5,
+    10.5
+  ],
+  "rx_sensitivity_dbm": [
+    -8.6,
+    -6.8
+  ],
+  "rx_overload_dbm": [
+    4.5,
+    10.5
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    4.0
+  ],
+  "los_assert_dbm": [
+    -18.0
+  ],
+  "los_deassert_dbm": [
+    -15.0
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "transmitter_reflectance_db": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    4.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    20.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Receiver Sensitivity (OMA) and Stressed Receiver Sensitivity (OMA) measured for BER = 1x10^-12 with conformance test signal at receiver input (Note 4). Stressed sensitivity test uses Vertical Eye Closure Penalty 1.8 dB, Stressed Eye J2 Jitter 0.3 UI, Stressed Eye J9 Jitter 0.47 UI (Note 5 — test conditions, not receiver characteristics). Damage Threshold each Lane 5.5 dBm (receiver tolerance without damage; operation not required at that level). Link Distance with G.652 min 0.002 km max 10 km. OMA min must exceed specified minimum even if TDP < 1 dB (Note 1). Duplex LC receptacles. Single 3.3 V power supply.",
+  "provenance_datasheet_sections": [
+    "LQ-LW100-LR4C",
+    "100G QSFP28 LR4 10KM Optical Transceiver",
+    "Features",
+    "Applications",
+    "Description",
+    "Functional Description",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions and Power Supply Requirements",
+    "Electrical Characteristics",
+    "Optical Characteristics",
+    "Digital Diagnostic Functions",
+    "QSFP28 Connector and Pinout Description",
+    "Mechanical Specifications"
+  ],
+  "suggestions": "Datasheet does not state modulation format explicitly (LR4 is typically NRZ per IEEE but not printed). No OSNR, FEC, chromatic dispersion, or PMD tolerance fields for this module. TDP 2.2 dB and Launch Power in OMA minus Transmitter and Dispersion Penalty -2.3 dBm are not structured as schema penalty objects (missing paired penalty magnitude, penalized parameter, and operating condition triples)."
+}

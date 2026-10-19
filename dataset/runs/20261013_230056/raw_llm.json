@@ -1,0 +1,137 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLF1429P3BCE",
+    "FTLF1429P3BNV"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "FC-PI-5 Rev. 6.101",
+    "SFF-8472 Rev 11.03",
+    "SFF-8432",
+    "SFF-8431 Rev. 3.04",
+    "RoHS Directive 2011/65/EU",
+    "SFP MSA"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1295,
+    1260
+  ],
+  "wavelength_max_nm": [
+    1325,
+    1370
+  ],
+  "wavelength_center_nm": [
+    1310
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC",
+    "Duplex LC"
+  ],
+  "fiber_type": [
+    "SMF 9/125μm",
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "FC-PI-5",
+    "16GFC",
+    "Fibre Channel"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    4.25,
+    8.5,
+    14.025
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    25
+  ],
+  "tx_power_min_dbm": [
+    -2.0
+  ],
+  "tx_power_max_dbm": [
+    6.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    3.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -30
+  ],
+  "los_deassert_dbm": [
+    -19
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": [
+    12
+  ],
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Unstressed receiver OMA sensitivity stated in mW only: 0.039 mW at 14.025 and 8.5 Gb/s; 0.029 mW at 4.25 Gb/s (PRBS patterns per footnotes). Transmitter and Dispersion Penalty (TDP) max 4.4 dB at 14.025 Gb/s and 3.2 dB at 8.5 Gb/s; not structured as penalty points with paired penalized OSNR/sensitivity values. 25 km link length based on 15 dB link budget. Optical Modulation Amplitude (OMA) transmitter min 1260 µW(dBm) per FC equivalent ER spec. Spectral Width (RMS) max 1 nm at 28.05 Gb/s notation in table. Supply current typ 200 mA max 300 mA; module power consumption never exceeds 1 W with established link. Case operating temperature 0 to 70 °C; storage -40 to 85 °C.",
+  "provenance_datasheet_sections": [
+    "FTLF1429P3BCE",
+    "16GFC RoHS Compliant Long-Wavelength SFP+ Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "Product Selection",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (TOP= 0 to 70 °C , VCC = 3.00 to 3.60 Volts )",
+    "IV. Optical Characteristics (TOP = 0 to 70°C, VCC = 3.15 to 3.45 Volts)",
+    "V. General Specifications",
+    "VII. Environmental Specifications",
+    "X. Mechanical Specifications"
+  ],
+  "suggestions": "Add optional fields for unstressed receiver OMA sensitivity in mW and transmitter TDP in dB by bit rate. Clarify whether RxMAX +3.0 dBm min column represents overload threshold per FC-PI-5 semantics."
+}

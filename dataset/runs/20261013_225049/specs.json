@@ -1,0 +1,157 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLC1155RGPL6"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "CWDM4 MSA",
+    "IEEE 802.3bm CAUI-4",
+    "SFF-8665",
+    "RoHS-6 Directive 2011/65/EU"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5
+  ],
+  "wavelength_center_nm": [],
+  "wavelength_band": [
+    "CWDM",
+    "CWDM4 Lite"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 15.0,
+  "temp_max_c": 60.0,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": [
+    "CAUI-4",
+    "4x25G retimed electrical interface"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [
+    "CWDM4"
+  ],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [
+    "4x25Gb/s"
+  ],
+  "standards_code": [
+    "CWDM4 Lite",
+    "KR4 FEC",
+    "RS-FEC (528,514) per Clause 91",
+    "Open Compute Project (OCP)"
+  ],
+  "baud_rate_gbaud": [
+    25.78125
+  ],
+  "bit_rate_gbps": [
+    103.1,
+    25.78
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    0.5
+  ],
+  "tx_power_min_dbm": [
+    -5.5,
+    -4.5
+  ],
+  "tx_power_max_dbm": [
+    2.5
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -9.5,
+    -6.8
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    2.5,
+    3.5
+  ],
+  "fec_type": [
+    "KR4",
+    "RS_GENERIC"
+  ],
+  "post_fec_ber_target": [
+    5e-05
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": [
+    -28.0,
+    -13.6
+  ],
+  "los_deassert_dbm": [
+    -10.6
+  ],
+  "channel_insertion_loss_db": [
+    3.5
+  ],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    1.5
+  ],
+  "penalties": [],
+  "notes": "Aggregate bit rate 103.1 Gb/s; per-lane signaling 25.78125 ± 100 ppm GBd. Loss budget 3.5 dB on up to 500 m SMF with KR4 FEC includes 2.5 dB optical coding gain from RS-FEC (528,514); up to 1 dB MPI loss penalty possible. Unstressed receiver sensitivity at 5x10^-5 BER; stressed sensitivity per CWDM4 MSA conformance test at TP3 for 5x10^-5 BER. TDP 3 dB per lane does not include MPI penalty. Transmit OMA per lane -4.5 to 2.5 dBm; Launch Power (OMA-TDP) min -5.5 dBm. LOS Assert LOSA min -28 max -13.6 dBm. Power consumption ≤ 3.5 W when stabilized; may exceed during locking. Case operating temperature 15°C to +60°C only.",
+  "provenance_datasheet_sections": [
+    "500m 100G CWDM4 Lite QSFP28 Optical Transceiver Module FTLC1155RGPL6",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "PRODUCT SELECTION",
+    "FTLC1155RGPL6",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (EOL, TOP = 15 to +60 °C, VCC = 3.135 to 3.465 Volts)",
+    "IV. Optical Characteristics (EOL, TOP = 15 to +60 °C, VCC = 3.135 to 3.465 Volts)",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "XI. Mechanical Specifications"
+  ],
+  "suggestions": "Datasheet does not name laser or photodetector technology. No explicit modulation format. channel_spacing_ghz not stated. No @-notation penalty rows for penalties array."
+}

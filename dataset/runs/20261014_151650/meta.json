@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T15:16:50.173696+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-l210d-cxx.pdf",
+  "page_count": 2,
+  "table_count": 2,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.829,
+    "extract_atoms": 30.4,
+    "store_run": 0.008,
+    "synthesize_modes": 68.899,
+    "store_modes": 0.002,
+    "total": 104.14
+  }
+}

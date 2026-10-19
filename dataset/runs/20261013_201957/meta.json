@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:19:57.278844+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Cisco CFP2-DCO.pdf",
+  "page_count": 8,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 7.355,
+    "extract_atoms": 23.249,
+    "store_run": 0.006,
+    "synthesize_modes": 58.042,
+    "store_modes": 0.006,
+    "total": 88.657
+  }
+}

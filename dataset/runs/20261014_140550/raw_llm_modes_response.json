@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100M Ethernet\",\n      \"wavelength_center_nm\": 1510.0,\n      \"standards_code\": \"100M Ethernet\",\n      \"bit_rate_gbps\": 0.1\n    },\n    {\n      \"label\": \"STM-1 / OC3\",\n      \"wavelength_center_nm\": 1510.0,\n      \"standards_code\": \"STM-1\",\n      \"bit_rate_gbps\": 0.155\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

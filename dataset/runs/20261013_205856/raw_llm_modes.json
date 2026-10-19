@@ -1,0 +1,164 @@
+{
+  "modes": [
+    {
+      "label": "LxK-LT12xx GigE 1310 nm",
+      "model": "LxK-LT12xx",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LNK-LT12H GigE 1310 nm",
+      "model": "LNK-LT12H",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LNK-LT12M GigE 1310 nm",
+      "model": "LNK-LT12M",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LNK-LT12HB GigE 1310 nm",
+      "model": "LNK-LT12HB",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LNK-LT12MB GigE 1310 nm",
+      "model": "LNK-LT12MB",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LTK-LT12H GigE 1310 nm",
+      "model": "LTK-LT12H",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "CML",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LTK-LT12M GigE 1310 nm",
+      "model": "LTK-LT12M",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "CML",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LTK-LT12HB GigE 1310 nm",
+      "model": "LTK-LT12HB",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "CML",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LTK-LT12MB GigE 1310 nm",
+      "model": "LTK-LT12MB",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "CML",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LNK-LT12H-R6 GigE 1310 nm",
+      "model": "LNK-LT12H-R6",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LNK-LT12M-R6 GigE 1310 nm",
+      "model": "LNK-LT12M-R6",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LNK-LT12HB-R6 GigE 1310 nm",
+      "model": "LNK-LT12HB-R6",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LNK-LT12MB-R6 GigE 1310 nm",
+      "model": "LNK-LT12MB-R6",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LTK-LT12H-R6 GigE 1310 nm",
+      "model": "LTK-LT12H-R6",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "CML",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LTK-LT12M-R6 GigE 1310 nm",
+      "model": "LTK-LT12M-R6",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "CML",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LTK-LT12HB-R6 GigE 1310 nm",
+      "model": "LTK-LT12HB-R6",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "CML",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "LTK-LT12MB-R6 GigE 1310 nm",
+      "model": "LTK-LT12MB-R6",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "CML",
+      "standards_code": "IEEE 802.3"
+    },
+    {
+      "label": "Gigabit Ethernet 10 km",
+      "model": "LxK-LT12xx",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "Gigabit Ethernet"
+    },
+    {
+      "label": "Fibre Channel 10 km",
+      "model": "LxK-LT12xx",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "Fibre Channel"
+    },
+    {
+      "label": "Fibre Channel ANSI X3.297",
+      "model": "LxK-LT12xx",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "host_interface_name": "CML",
+      "standards_code": "ANSI X3.297"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "BX20D-35 1310/1550 nm BiDi",
+      "model": "SO-SFP-GE-FE-BX20D-35",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "100BASE-FX"
+    },
+    {
+      "label": "BX20D-53 1550/1310 nm BiDi",
+      "model": "SO-SFP-GE-FE-BX20D-53",
+      "wavelength_min_nm": 1500.0,
+      "wavelength_max_nm": 1600.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "100BASE-FX"
+    }
+  ]
+}

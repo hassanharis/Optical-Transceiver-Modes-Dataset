@@ -1,0 +1,117 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "OP13GI4-005D"
+  ],
+  "form_factor": [
+    "OSFP"
+  ],
+  "standards_claimed": [
+    "OSFP MSA",
+    "OIF-CMIS 5.1",
+    "IEEE 802.3dj",
+    "ROHS"
+  ],
+  "emitter_type": [
+    "LASER_DFB",
+    "Silicon photonics modulator"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1311.0
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    16.0
+  ],
+  "standards_code": [
+    "800G Ethernet",
+    "IEEE 802.3dj",
+    "OSFP MSA",
+    "OIF-CMIS 5.1",
+    "DR4"
+  ],
+  "baud_rate_gbaud": [
+    106.25
+  ],
+  "bit_rate_gbps": [
+    800.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.5
+  ],
+  "tx_power_min_dbm": [
+    -2.8
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -3.4
+  ],
+  "rx_overload_dbm": [
+    4.0,
+    4.2
+  ],
+  "post_fec_ber_target": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "transmitter_reflectance_db": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "number_of_lanes": [
+    4,
+    8
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "penalties": [],
+  "notes": "Reach stated as 500 m (0.5 km). Case operating temperature 0°C to 70°C without air flow; storage temperature -40°C to 85°C. Power dissipation < 16 W; total power max 16 W at Vcc 3.3 V. Supply current Icc 4848 mA per table when Vcc is 3.3 V. Forward error correction (FEC) required to be implemented by the host. Receiver sensitivity note 2: measured with PRBS31Q test pattern, BER@2.4*10-4. Receiver sensitivity (OMA) for 0.9dB≤TECQ≤SECQ given as -4.3+TECQ dB; SECQ (stressed eye closure for PAM4) 3.4 dB. Transmit OMA per lane (min) depends on max(TDEC,TDECQ) relative to 0.9 dB and 3.4 dB; TDECQ for PAM4 each lane 3.4 dB. Signaling speed 106.25 ± 50 ppm GBd per lane. Wavelength assignment λ0–λ3 share 1304.5–1317.5 nm range, typ 1311 nm. Optical receiver damage threshold input per lane 5.0 dBm (absolute max); receiver damage threshold per lane 5 dBm. Average launch power off per lane Poff -15 dBm. RINxxOMA (max) -139 dB/Hz.",
+  "provenance_datasheet_sections": [
+    "800G OSFP DR4 Transceiver",
+    "OP13GI4-005D",
+    "PRODUCT FEATURES",
+    "REFERENCE STANDARD",
+    "APPLICATIONS",
+    "I. Absolute Maximum Ratings",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "IV. Electrical Characteristics"
+  ]
+}

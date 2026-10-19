@@ -1,0 +1,85 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1500.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1580.0,
+      1600.0
+    ],
+    "standards_code": [
+      "1000Base",
+      "Ciena"
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      1.0
+    ]
+  },
+  "general": {
+    "vendor": "L-com",
+    "model": [
+      "FXC-SFP-ZX-1G-CAN"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "Ciena SFP Specification",
+      "Small Form-factor Pluggable (SFP) Transceiver MultiSource Agreement (MSA)"
+    ],
+    "wavelength_center_nm": [
+      1550.0
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.04
+    ],
+    "frame": [
+      "1000Base"
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      0.0
+    ],
+    "tx_power_max_dbm": [
+      5.0
+    ],
+    "rx_sensitivity_dbm": [
+      -24.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "penalties": [],
+    "notes": "Operating temperature 0 to +70 deg C; storage -40 to +85 deg C. Power supply Vcc 3.15 to 3.45 V (typical 3.3 V). Icc max 300 mA. TX spectral width 1 nm. Connector mode Duplex. DDM (digital diagnostics) supported. Mfg platform compatibility Ciena. Title/marketing: 1550nm ZX SMF 80km 1000Base DDM.",
+    "provenance_datasheet_sections": [
+      "Features",
+      "Applications",
+      "Description",
+      "Configuration",
+      "Electrical Specifications",
+      "Environmental Specifications",
+      "Small Form-factor Pluggable (SFP) Transceiver MultiSource Agreement (MSA)"
+    ]
+  }
+}

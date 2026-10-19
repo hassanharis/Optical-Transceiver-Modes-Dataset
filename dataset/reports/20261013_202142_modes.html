@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Cisco</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Cisco</div>
+  <div class="subtitle">C-band &middot; [96] channels</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Cisco</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">ITU-T G.664, ITU-T G.709, ITU-T G.8021, ITU-T G.7710, GR-253-CORE, ITU-T G.691, ITU-T G.975, G.709, ANSI T1.315-2001</div></div>
+      <div class="spec-item"><div class="label">Wavelength Min</div><div class="value">1528.77</div></div>
+      <div class="spec-item"><div class="label">Wavelength Max</div><div class="value">1567.13</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">C-band</div></div>
+      <div class="spec-item"><div class="label">Channel Total</div><div class="value">96</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC, MPO</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF, MMF, MMF_OM4, SMF_LEAF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">40.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Pmd Tolerance Ps</div><div class="value">100.0</div></div>
+      <div class="spec-item"><div class="label">Fec Type</div><div class="value">SDFEC</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-15</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Document is a line card (NCS 2000 400 Gbps XPonder), not a single pluggable transceiver; trunk optics are ACO CFP2 WDM (refer to CFP2 WDM Datasheet for physical parameters). Table 4 Input Power column labeled Sensitivity* is 0 to -14dBm; footnote states receiver sensitivity can be extended down to -20dBm allocating additional OSNR margins. B2B OSNR is specified with 0.1 nm RWB. Table 3 lists OSNR Penalty &lt;0.5dB vs polarization change rate (300 krad/s for 100G QPSK; 100 krad/s for 150G 8QAM and 200G 16QAM) without tabulated penalized OSNR values. CP-QPSK chromatic dispersion tolerance +/– 70,000 ps/nm; CP-16QAM +/– 25,000 ps/nm (8-QAM CD tolerance not tabulated in Table 3). reach_km values 2, 10, 100 are from Table 7 ordering descriptions for separate QSFP client pluggables, not trunk DWDM reach. Short-term operating temperature -5°C to 55°C per Table 6 footnote. Storage temperature -40°C to 70°C.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">Product overview, Product description, Advanced modulation scheme, Trunk CFP2 WDM pluggables, Client ports, Software configurable FEC option, Table 3. DWDM specifications, Table 4. DWDM receive-side optical performances, Table 6. Card specifications, Table 7. Ordering information, Environmental, Optical</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Clarify schema applicability to line cards vs pluggable modules. Add polarization_change_rate_krad_s for Table 3 OSNR penalty rows. Separate trunk DWDM reach from client pluggable reach_km. Include signed CD tolerance as separate min/max or preserve +/- notation.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Form Factor</th><th>Channel Spacing (GHz)</th><th>Power (W)</th><th>Host Interface</th><th>Media Interface</th><th>frame</th><th>Standards code</th><th>Baud Rate (GBaud)</th><th>Bit Rate (Gbps)</th><th>modulation_format</th><th>Reach (km)</th><th>RX Sensitivity (dBm)</th><th>RX OSNR (dB)</th><th>CD Tolerance (ps/nm)</th><th>fec_overhead_percent</th><th>pre_fec_ber_threshold</th></tr>
+      <tr><td><strong>Trunk 100G CP-QPSK unamplified (50 GHz)</strong></td><td>NCS2K-400G-XP=</td><td>CFP2</td><td>50.0</td><td>330.0</td><td>OTU4</td><td>ACO CFP2 WDM</td><td>4x 100G</td><td>SD-FEC</td><td>31.3793</td><td>100.0</td><td>QPSK-CP</td><td>100.0</td><td>-20.0</td><td>11.3</td><td>70000.0</td><td>25.0</td><td>0.03</td></tr>
+      <tr><td><strong>Trunk 100G CP-QPSK amplified (50 GHz)</strong></td><td>NCS2K-400G-XP=</td><td>CFP2</td><td>50.0</td><td>330.0</td><td>OTU4</td><td>ACO CFP2 WDM</td><td>4x 100G</td><td>OTUk</td><td>31.3793</td><td>100.0</td><td>QPSK</td><td>100.0</td><td>-20.0</td><td>11.8</td><td>70000.0</td><td>25.0</td><td>0.03</td></tr>
+      <tr><td><strong>Trunk 150G CP-8QAM unamplified (50 GHz)</strong></td><td>NCS2K-400GXP-L-K9=</td><td>CFP2</td><td>50.0</td><td>385.0</td><td>OTU4</td><td>CFP2 WDM</td><td>4x 100G</td><td>ODUk</td><td>34.166</td><td>150.0</td><td>QAM_8-CP</td><td>10.0</td><td>-14.0</td><td>16.1</td><td>25000.0</td><td>25.0</td><td>0.03</td></tr>
+      <tr><td><strong>Trunk 150G CP-8QAM amplified (50 GHz)</strong></td><td>NCS2K-400GXP-L-K9=</td><td>CFP2</td><td>50.0</td><td>385.0</td><td>OTU4</td><td>CFP2 WDM</td><td>4x 100G</td><td>ODU-4</td><td>34.166</td><td>150.0</td><td>QAM_8</td><td>10.0</td><td>-14.0</td><td>16.6</td><td>25000.0</td><td>25.0</td><td>0.03</td></tr>
+      <tr><td><strong>Trunk 200G CP-16QAM unamplified (50 GHz)</strong></td><td>Cisco NCS 2000 400 Gbps XPonder line card</td><td>CFP2</td><td>50.0</td><td>385.0</td><td>OTU-4</td><td>DWDM</td><td>8x 40GE+8x10GE</td><td>OTU4</td><td>34.166</td><td>200.0</td><td>QAM_16-CP</td><td>2.0</td><td>-14.0</td><td>19.6</td><td>25000.0</td><td>15.0</td><td>0.04</td></tr>
+      <tr><td><strong>Trunk 200G CP-16QAM amplified (50 GHz)</strong></td><td>Cisco NCS 2000 400 Gbps XPonder line card</td><td>CFP2</td><td>50.0</td><td>385.0</td><td>OTU-4</td><td>DWDM</td><td>8x 40GE+8x10GE</td><td>ODU-2</td><td>34.166</td><td>200.0</td><td>QAM_16</td><td>2.0</td><td>-14.0</td><td>20.3</td><td>25000.0</td><td>15.0</td><td>0.04</td></tr>
+      <tr><td><strong>Trunk gridless tuning (100 MHz granularity)</strong></td><td>Cisco NCS 2000 400 Gbps XPonder Card</td><td>CFP2</td><td>0.1</td><td>330.0</td><td>100GE</td><td>ACO CFP2 WDM</td><td>4x 100G</td><td>SD-FEC</td><td>31.3793</td><td>100.0</td><td>QPSK-CP</td><td>100.0</td><td>-20.0</td><td>11.3</td><td>70000.0</td><td>15.0</td><td>0.04</td></tr>
+      <tr><td><strong>Client 4x10G QSFP+</strong></td><td>Cisco NCS 2000 400 Gbps XPonder Card</td><td>QSFP+</td><td>50.0</td><td>330.0</td><td>10GE LAN-PHY</td><td>DWDM</td><td>4x 10 Gbps</td><td>OTU2</td><td>31.3793</td><td>10.0</td><td>QPSK</td><td>2.0</td><td>-14.0</td><td>11.3</td><td>25000.0</td><td>15.0</td><td>0.04</td></tr>
+      <tr><td><strong>Client 4x10G QSFP+ OC192</strong></td><td>Cisco NCS 2000 400 Gbps XPonder Card</td><td>QSFP+</td><td>50.0</td><td>330.0</td><td>OC192</td><td>DWDM</td><td>4x 10 Gbps</td><td>OTU2e</td><td>31.3793</td><td>10.0</td><td>QPSK</td><td>2.0</td><td>-14.0</td><td>11.3</td><td>25000.0</td><td>15.0</td><td>0.04</td></tr>
+      <tr><td><strong>Client 4x10G QSFP+ STM-64</strong></td><td>Cisco NCS 2000 400 Gbps XPonder Card</td><td>QSFP+</td><td>50.0</td><td>330.0</td><td>STM-64</td><td>DWDM</td><td>4x 10 Gbps</td><td>OTUk</td><td>31.3793</td><td>10.0</td><td>QPSK</td><td>2.0</td><td>-14.0</td><td>11.3</td><td>25000.0</td><td>15.0</td><td>0.04</td></tr>
+      <tr><td><strong>Client 4x10G QSFP+ 8G FC</strong></td><td>Cisco NCS 2000 400 Gbps XPonder Card</td><td>QSFP+</td><td>50.0</td><td>330.0</td><td>8G FC</td><td>DWDM</td><td>4x 10 Gbps</td><td>ODUk</td><td>31.3793</td><td>10.0</td><td>QPSK</td><td>2.0</td><td>-14.0</td><td>11.3</td><td>25000.0</td><td>15.0</td><td>0.04</td></tr>
+      <tr><td><strong>Client 4x10G QSFP+ 10G FC</strong></td><td>Cisco NCS 2000 400 Gbps XPonder Card</td><td>QSFP+</td><td>50.0</td><td>330.0</td><td>10G FC</td><td>DWDM</td><td>4x 10 Gbps</td><td>ODU-2</td><td>31.3793</td><td>10.0</td><td>QPSK</td><td>2.0</td><td>-14.0</td><td>11.3</td><td>25000.0</td><td>15.0</td><td>0.04</td></tr>
+      <tr><td><strong>Client 4x10G QSFP+ 16G FC</strong></td><td>Cisco NCS 2000 400 Gbps XPonder Card</td><td>QSFP+</td><td>50.0</td><td>330.0</td><td>16G FC</td><td>DWDM</td><td>4x 10 Gbps</td><td>OTU4</td><td>31.3793</td><td>10.0</td><td>QPSK</td><td>2.0</td><td>-14.0</td><td>11.3</td><td>25000.0</td><td>15.0</td><td>0.04</td></tr>
+      <tr><td><strong>Client 40GE QSFP+</strong></td><td>Cisco NCS 2000 400 Gbps XPonder Card</td><td>QSFP+</td><td>50.0</td><td>330.0</td><td>40GE</td><td>DWDM</td><td>40x 10G</td><td>OTU-3</td><td>34.166</td><td>40.0</td><td>QAM_8</td><td>10.0</td><td>-14.0</td><td>16.1</td><td>25000.0</td><td>25.0</td><td>0.03</td></tr>
+      <tr><td><strong>Client 100GE QSFP28</strong></td><td>Cisco NCS 2000 400 Gbps XPonder Card</td><td>QSFP28</td><td>50.0</td><td>385.0</td><td>100GE</td><td>CFP2 WDM</td><td>4x 100G</td><td>OTU4</td><td>34.166</td><td>100.0</td><td>QAM_16</td><td>100.0</td><td>-20.0</td><td>19.6</td><td>70000.0</td><td>25.0</td><td>0.03</td></tr>
+      <tr><td><strong>Client OTU4 QSFP28</strong></td><td>Cisco NCS 2000 400 Gbps XPonder Card</td><td>QSFP28</td><td>50.0</td><td>385.0</td><td>OTU4</td><td>ACO CFP2 WDM</td><td>4x 100G</td><td>ODU-4</td><td>34.166</td><td>100.0</td><td>QPSK-CP</td><td>100.0</td><td>-20.0</td><td>11.8</td><td>70000.0</td><td>25.0</td><td>0.03</td></tr>
+      <tr><td><strong>Line card 400G super-channel</strong></td><td>Cisco NCS 2000 400 Gbps XPonder line card</td><td>CFP2</td><td>50.0</td><td>385.0</td><td>QSFP28</td><td>DWDM</td><td>8x 40GE+8x10GE</td><td>OTU4</td><td>34.166</td><td>400.0</td><td>QAM_16-CP</td><td>2.0</td><td>-14.0</td><td>20.3</td><td>25000.0</td><td>25.0</td><td>0.03</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">NCS2K-400G-XP=</span> <span class="badge">NCS2K-400GXP-L-K9=</span> <span class="badge">Cisco NCS 2000 400 Gbps XPonder line card</span> <span class="badge">Cisco NCS 2000 400 Gbps XPonder Card</span></td></tr>
+      <tr><td>form_factor</td><td><span class="badge">CFP2</span> <span class="badge">QSFP+</span> <span class="badge">QSFP28</span></td></tr>
+      <tr><td>channel_spacing_ghz</td><td><span class="badge">50.0</span> <span class="badge">0.1</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">330.0</span> <span class="badge">385.0</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">QSFP+</span> <span class="badge">QSFP28</span> <span class="badge">10GE LAN-PHY</span> <span class="badge">OC192</span> <span class="badge">STM-64</span> <span class="badge">OTU2</span> <span class="badge">OTU2e</span> <span class="badge">8G FC</span> <span class="badge">10G FC</span> <span class="badge">16G FC</span> <span class="badge">40GE</span> <span class="badge">OTU-3</span> <span class="badge">100GE</span> <span class="badge">OTU4</span> <span class="badge">OTU-4</span></td></tr>
+      <tr><td>media_interface_name</td><td><span class="badge">CFP2 WDM</span> <span class="badge">ACO CFP2 WDM</span> <span class="badge">DWDM</span></td></tr>
+      <tr><td>frame</td><td><span class="badge">4x 10 Gbps</span> <span class="badge">8x 40GE+8x10GE</span> <span class="badge">4x 100G</span> <span class="badge">40x 10G</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">OTU4</span> <span class="badge">ODU-2</span> <span class="badge">ODU-4</span> <span class="badge">SD-FEC</span> <span class="badge">OTUk</span> <span class="badge">ODUk</span></td></tr>
+      <tr><td>baud_rate_gbaud</td><td><span class="badge">31.3793</span> <span class="badge">34.166</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">10.0</span> <span class="badge">40.0</span> <span class="badge">100.0</span> <span class="badge">150.0</span> <span class="badge">200.0</span> <span class="badge">400.0</span></td></tr>
+      <tr><td>modulation_format</td><td><span class="badge">QPSK</span> <span class="badge">QAM_8</span> <span class="badge">QAM_16</span> <span class="badge">QPSK-CP</span> <span class="badge">QAM_8-CP</span> <span class="badge">QAM_16-CP</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">2.0</span> <span class="badge">10.0</span> <span class="badge">100.0</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-14.0</span> <span class="badge">-20.0</span></td></tr>
+      <tr><td>rx_osnr_db</td><td><span class="badge">11.3</span> <span class="badge">11.8</span> <span class="badge">16.1</span> <span class="badge">16.6</span> <span class="badge">19.6</span> <span class="badge">20.3</span></td></tr>
+      <tr><td>cd_tolerance_ps_nm</td><td><span class="badge">70000.0</span> <span class="badge">25000.0</span></td></tr>
+      <tr><td>fec_overhead_percent</td><td><span class="badge">15.0</span> <span class="badge">25.0</span></td></tr>
+      <tr><td>pre_fec_ber_threshold</td><td><span class="badge">0.04</span> <span class="badge">0.03</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 20:21
+</footer>
+
+</div>
+</body>
+</html>

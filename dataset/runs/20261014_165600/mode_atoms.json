@@ -1,0 +1,109 @@
+{
+  "multi_valued": {
+    "model": [
+      "XGXP-1396-10D",
+      "XGXP-1396-10DA"
+    ],
+    "host_interface_name": [
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "10G Ethernet"
+    ],
+    "standards_code": [
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "SFF-8431",
+      "SFF 8472"
+    ],
+    "bit_rate_gbps": [
+      11.1,
+      10.3125
+    ]
+  },
+  "general": {
+    "vendor": "XGIGA",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF 8472",
+      "SFP+ MSA",
+      "IEEE 802.3ae",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1355.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.2
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -6.0
+    ],
+    "tx_power_max_dbm": [
+      -0.5
+    ],
+    "rx_sensitivity_dbm": [
+      -14.4
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -17.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      1.0
+    ],
+    "penalties": [],
+    "notes": "Case operating temperature: Commercial 0°C to +70°C (XGXP-1396-10D); Industrial -40°C to +85°C (XGXP-1396-10DA). Rx sensitivity measured with PRBS 2^31-1 test pattern @10.3125Gb/s, BER<10^-12. Receiver wavelength range λC 1270–1610 nm. Supply current Icc max 360 mA. Transmitter output power note references Class 1 laser safety. Product features state power dissipation < 1.2 W.",
+    "provenance_datasheet_sections": [
+      "10Gb/s 1310nm SFP+ 10km Transceiver",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "STANDARD",
+      "Ordering information",
+      "Ⅱ Recommended Operating Conditions",
+      "Ⅲ Optical Characteristics",
+      "Notes:",
+      "Ⅳ Electrical Characteristics",
+      "VI. Digital Diagnostic Functions",
+      "VIII. Outline Dimensions"
+    ]
+  }
+}

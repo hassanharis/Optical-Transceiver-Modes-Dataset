@@ -1,0 +1,14 @@
+{
+  "modes": [
+    {
+      "label": "62.5/125 \u00b5m multimode (NA 0.275)",
+      "standards_code": "100BASE-FX",
+      "tx_power_min_dbm": -20.0
+    },
+    {
+      "label": "50/125 \u00b5m multimode (NA 0.20)",
+      "standards_code": "100BASE-FX",
+      "tx_power_min_dbm": -23.5
+    }
+  ]
+}

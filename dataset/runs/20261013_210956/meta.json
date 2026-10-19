@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:09:56.998563+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-doc001-xxxc-so-osfp-800g-aec-c5.2-r6.2.pdf",
+  "page_count": 3,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.909,
+    "extract_atoms": 35.445,
+    "store_run": 0.007,
+    "synthesize_modes": 53.903,
+    "store_modes": 0.005,
+    "total": 93.269
+  }
+}

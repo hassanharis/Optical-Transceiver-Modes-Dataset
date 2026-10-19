@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100GBASE-PSM4 100GbE 2km\",\n      \"standards_code\": \"100GBASE-PSM4\",\n      \"bit_rate_gbps\": 103.12,\n      \"reach_km\": 2.0,\n      \"tx_power_max_dbm\": 8.0,\n      \"rx_sensitivity_dbm\": -7.8,\n      \"fec_type\": \"RS_528_514\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

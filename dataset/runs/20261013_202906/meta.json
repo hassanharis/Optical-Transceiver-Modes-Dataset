@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:29:06.946092+00:00",
+  "source_file": "C:\\Haris\\datasheets\\cvr-cfp-qsfp28-fec.pdf",
+  "page_count": 1,
+  "table_count": 2,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 0.967,
+    "extract_atoms": 16.205,
+    "store_run": 0.005,
+    "synthesize_modes": 17.281,
+    "store_modes": 0.006,
+    "total": 34.463
+  }
+}

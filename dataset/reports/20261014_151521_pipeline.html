@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;SO-SFP-L160DH-C27&#x27;, &#x27;SO-SFP-L160DH-C29&#x27;, &#x27;SO-SFP-L160DH-C31&#x27;, &#x27;SO-SFP-L160DH-C33&#x27;, &#x27;SO-SFP-L160DH-C35&#x27;, &#x27;SO-SFP-L160DH-C37&#x27;, &#x27;SO-SFP-L160DH-C39&#x27;, &#x27;SO-SFP-L160DH-C41&#x27;, &#x27;SO-SFP-L160DH-C43&#x27;, &#x27;SO-SFP-L160DH-C45&#x27;, &#x27;SO-SFP-L160DH-C47&#x27;, &#x27;SO-SFP-L160DH-C49&#x27;, &#x27;SO-SFP-L160DH-C51&#x27;, &#x27;SO-SFP-L160DH-C53&#x27;, &#x27;SO-SFP-L160DH-C55&#x27;, &#x27;SO-SFP-L160DH-C57&#x27;, &#x27;SO-SFP-L160DH-C59&#x27;, &#x27;SO-SFP-L160DH-C61&#x27;, &#x27;SO-SFP-L160DH-C27-E&#x27;, &#x27;SO-SFP-L160DH-C29-E&#x27;, &#x27;SO-SFP-L160DH-C31-E&#x27;, &#x27;SO-SFP-L160DH-C33-E&#x27;, &#x27;SO-SFP-L160DH-C35-E&#x27;, &#x27;SO-SFP-L160DH-C37-E&#x27;, &#x27;SO-SFP-L160DH-C39-E&#x27;, &#x27;SO-SFP-L160DH-C41-E&#x27;, &#x27;SO-SFP-L160DH-C43-E&#x27;, &#x27;SO-SFP-L160DH-C45-E&#x27;, &#x27;SO-SFP-L160DH-C47-E&#x27;, &#x27;SO-SFP-L160DH-C49-E&#x27;, &#x27;SO-SFP-L160DH-C51-E&#x27;, &#x27;SO-SFP-L160DH-C53-E&#x27;, &#x27;SO-SFP-L160DH-C55-E&#x27;, &#x27;SO-SFP-L160DH-C57-E&#x27;, &#x27;SO-SFP-L160DH-C59-E&#x27;, &#x27;SO-SFP-L160DH-C61-E&#x27;, &#x27;SO-SFP-L160DH-Cxx&#x27;, &#x27;SO-SFP-L160DH-Cxx-E&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">so-sfp-l160dh-cxx.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">3</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 15:15</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.0 
+
+## **SO-SFP-L160DH-Cxx &amp; -Cxx-E** 
+
+SFP, 1.0625/1.25Gbps, CWDM, DDM, 41dB, 160km, 1270 – 1610nm (18ch) 
+
+## OVERVIEW 
+
+The SO-SFP-L160DH-Cxx is a high power CWDM transceiver for Gigabit Ethernet (GbE) and 1G Fiber channel (1G FC). The optical performance provides a bridgeable distance of up to 160km. 
+
+The transceiver is available in 18 CWDM wavelength versions, spanning from 1270nm to 1610nm in accordance with the G.694.2 standard. This transceiver provides digital diagnostic functions via a 2-wire serial interface as defined by the SFF-8472 specification. 
+
+The transceiver is available in two temperature range options, one being an extended range: -20°C to 85°C (-4°F to 185°F). 
+
+## TECHNICAL DATA 
+
+|**Parameter**|**Value**&lt;br&gt;CWDM SFP&lt;br&gt;SM (2x LC)&lt;br&gt;160km&lt;br&gt;1270 – 1610nm (18ch)&lt;br&gt;1.0625/1.25Gbps&lt;br&gt;GbE&lt;br&gt;1G FC&lt;br&gt;17 – 41dB&lt;br&gt;Max 1dB&lt;br&gt;&lt; 1W&lt;br&gt;-0°C to +70°C&lt;br&gt;-20°C to +85°C (-E)&lt;br&gt;-40°C to +85°C|**Parameter**|**Value**|
+|---|---|---|---|
+|Technology||**Transmitter data:**||
+|Transmission media||Output power|Min: +4.0dBm1)|
+|Typical reach|||Max: +7.0dBm1)|
+|Nominal wavelength||Transmit wavelength|1271 to 1611nm (G.694.2)|
+|Bit rate support||**Receiver data:**||
+|Protocol support||Minimum input power|-37.0dBm1) 2)|
+|||Overload (max power)|-10.0dBm1) 2)|
+|Power budget||Wavelength range|1260nm – 1620nm|
+|Dispersion penalty||LOS Assert|Min -50dBm|
+|Power consumption||LOS De-assert|Max -38dBm|
+|Operating temperature||LOS Hysteresis|Min 0.5dB|
+|||DDM|Yes|
+|Storage temperature||MSA compliance|SFF-8431, -8432, -8472|
+
+
+
+1) Average power 2) @ 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back. 
+
+**Safety/regulatory compliance:** TUV/UL/FDA (contact Smartoptics for latest certification information) RoHS compliance 
+
+
+Subject to change without notice. For more information visit smartoptics.com. 
+
+DATASHEET 
+
+5.0 
+
+## ORDERING INFORMATION 
+
+|**Ordering code**&lt;br&gt;**Description**|**Ordering code**&lt;br&gt;**Description**|
+|---|---|
+|SO-SFP-L160DH-C27&lt;br&gt;SFP 1GE
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "SO-SFP-L160DH-C27",
+    "SO-SFP-L160DH-C29",
+    "SO-SFP-L160DH-C31",
+    "SO-SFP-L160DH-C33",
+    "SO-SFP-L160DH-C35",
+    "SO-SFP-L160DH-C37",
+    "SO-SFP-L160DH-C39",
+    "SO-SFP-L160DH-C41",
+    "SO-SFP-L160DH-C43",
+    "SO-SFP-L160DH-C45",
+    "SO-SFP-L160DH-C47",
+    "SO-SFP-L160DH-C49",
+    "SO-SFP-L160DH-C51",
+    "SO-SFP-L160DH-C53",
+    "SO-SFP-L160DH-C55",
+    "SO-SFP-L160DH-C57",
+    "SO-SFP-L160DH-C59",
+    "SO-SFP-L160DH-C61",
+    "SO-SFP-L160DH-C27-E",
+    "SO-SFP-L160DH-C29-E",
+    "SO-SFP-L160DH-C31-E",
+    "SO-SFP-L160DH-C33-E",
+    "SO-SFP-L160DH-C35-E",
+    "SO-SFP-L160DH-C37-E",
+    "SO-SFP-L160DH-C39-E",
+    "SO-SFP-L160DH-C41-E",
+    "SO-SFP-L160DH-C43-E",
+    "SO-SFP-L160DH-C45-E",
+    "SO-SFP-L160DH-C47-E",
+    "SO-SFP-L160DH-C49-E",
+    "SO-SFP-L160DH-C51-E",
+    "SO-SFP-L160DH-C53-E",
+    "SO-SFP-L160DH-C55-E",
+    "SO-SFP-L160DH-C57-E",
+    "SO-SFP-L160DH-C59-E",
+    "SO-SFP-L160DH-C61-E",
+    "SO-SFP-L160DH-Cxx",
+    "SO-SFP-L160DH-Cxx-E"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  <span class="key">"emitter_type"</span>: [],
+  <span class="key">"photodetector_type"</span>: [],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1260.0</span>,
+    <span class="num">1270.0</span>,
+    <span class="num">1271.0</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1610.0</span>,
+    <span class="num">1611.0</span>,
+    <span class="num">1620.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1270.0</span>,
+    <span class="num">1290.0</span>,
+    <span class="num">1310.0</span>,
+    <span class="num">1330.0</span>,
+    <span class="num">1350.0</span>,
+    <span class="num">1370.0</span>,
+    <span class="num">1390.0</span>,
+    <span class="num">1410.0</span>,
+    <span class="num">1430.0</span>,
+    <span class="num">1450.0</span>,
+    <span class="num">1470.0</span>,
+    <span class="num">1490.0</span>,
+    <span class="num">1510.0</span>,
+    <span class="num">1530.0</span>,
+    <span class="num">1550.0</span>,
+    <span class="num">1570.0</span>,
+    <span class="num">1590.0</span>,
+    <span class="num">1610.0</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "CWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [],
+  <span class="key">"frequency_max_thz"</span>: [],
+  <span class="key">"channel_spacing_ghz"</span>: [],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">18</span>
+  ],
+  <span class="key">"mounting_type"</span>: [],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70.0</span>,
+  <span class="key">"power_consumption_w"</span>: [],
+  <span class="key">"host_interface_name"</span>: [],
+  <span class="key">"host_interface_id_hex"</span>: [],
+  <span class="key">"host_interface_id"</span>: [],
+  <span class="key">"media_interface_name"</span>: [],
+  <span class="key">"media_interface_id_hex"</span>: [],
+  <span class="key">"media_interface_id"</span>: [],
+  <span class="key">"frame"</span>: [],
+  <span class="key">"standards_code"</span>: [
+    "G.694.2",
+    "GbE",
+    "1G FC"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">1.0625</span>,
+    <span class="num">1.25</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: [],
+  <span class="key">"modulation_format"</span>: [],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">160.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">4.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">7.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: [],
+  <span class="key">"tx_out_of_band_osnr_db"</span>: [],
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-37.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: [],
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: [],
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-10.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [],
+  <span class="key">"pdl_db"</span>: [],
+  <span class="key">"pmd_tolerance_ps"</span>: [],
+  <span class="key">"fec_type"</span>: [],
+  <span class="key">"fec_overhead_percent"</span>: [],
+  <span class="key">"pre_fec_ber_threshold"</span>: [],
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-50.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-38.0</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: [],
+  <span class="key">"receiver_reflectance_db"</span>: [],
+  <span class="key">"transmitter_reflectance_db"</span>: [],
+  <span class="key">"optical_extinction_ratio_db"</span>: [],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [],
+  <span class="key">"number_of_lanes"</span>: [],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [],
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: [],
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Product family SO-SFP-L160DH-Cxx &amp; -Cxx-E. Transmit wavelength <span class="num">1271</span> to <span class="num">1611</span>nm per G.694.2; overview states <span class="num">1270</span>nm to <span class="num">1610</span>nm (18ch). Power budget <span class="num">17</span>–41dB stated in TECHNICAL DATA column header. Dispersion penalty Max <span class="num">1</span>dB in header without paired penalized metric and operating condition. Power consumption stated as &lt; <span class="num">1</span>W (not a numeric watt value). Extended operating temperature <span class="num">-20</span>°C to +85°C for -E variants; overview also mentions <span class="num">-20</span>°C to <span class="num">85</span>°C extended range. Storage temperature <span class="num">-40</span>°C to +85°C. Transmitter output power and receiver min/overload are average power; receiver sensitivity @ <span class="num">1.25</span>Gbps, BER <span class="num">1</span>x10-12, PRBS <span class="num">27</span>-1, back-to-back. TECHNICAL DATA table lists operating temperature as <span class="num">-0</span>°C to +70°C (likely <span class="num">0</span>°C). DDM Yes."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "SO-SFP-L160DH-Cxx &amp; -Cxx-E",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Clarify whether temp_min_c should represent only C-temp or also expose -E range as separate fields. Power budget <span class="num">17</span>–41dB could map to a dedicated schema field. Dispersion penalty Max <span class="num">1</span>dB lacks full penalty triple for penalties array."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">SO-SFP-L160DH-C27</span> <span class="badge">SO-SFP-L160DH-C29</span> <span class="badge">SO-SFP-L160DH-C31</span> <span class="badge">SO-SFP-L160DH-C33</span> <span class="badge">SO-SFP-L160DH-C35</span> <span class="badge">SO-SFP-L160DH-C37</span> <span class="badge">SO-SFP-L160DH-C39</span> <span class="badge">SO-SFP-L160DH-C41</span> <span class="badge">SO-SFP-L160DH-C43</span> <span class="badge">SO-SFP-L160DH-C45</span> <span class="badge">SO-SFP-L160DH-C47</span> <span class="badge">SO-SFP-L160DH-C49</span> <span class="badge">SO-SFP-L160DH-C51</span> <span class="badge">SO-SFP-L160DH-C53</span> <span class="badge">SO-SFP-L160DH-C55</span> <span class="badge">SO-SFP-L160DH-C57</span> <span class="badge">SO-SFP-L160DH-C59</span> <span class="badge">SO-SFP-L160DH-C61</span> <span class="badge">SO-SFP-L160DH-C27-E</span> <span class="badge">SO-SFP-L160DH-C29-E</span> <span class="badge">SO-SFP-L160DH-C31-E</span> <span class="badge">SO-SFP-L160DH-C33-E</span> <span class="badge">SO-SFP-L160DH-C35-E</span> <span class="badge">SO-SFP-L160DH-C37-E</span> <span class="badge">SO-SFP-L160DH-C39-E</span> <span class="badge">SO-SFP-L160DH-C41-E</span> <span class="badge">SO-SFP-L160DH-C43-E</span> <span class="badge">SO-SFP-L160DH-C45-E</span> <span class="badge">SO-SFP-L160DH-C47-E</span> <span class="badge">SO-SFP-L160DH-C49-E</span> <span class="badge">SO-SFP-L160DH-C51-E</span> <span class="badge">SO-SFP-L160DH-C53-E</span> <span class="badge">SO-SFP-L160DH-C55-E</span> <span class="badge">SO-SFP-L160DH-C57-E</span> <span class="badge">SO-SFP-L160DH-C59-E</span> <span class="badge">SO-SFP-L160DH-C61-E</span> <span class="badge">SO-SFP-L160DH-Cxx</span> <span class="badge">SO-SFP-L160DH-Cxx-E</span></td></tr>
+<tr><td>wavelength_min_nm</td><td><span class="badge">1260.0</span> <span class="badge">1270.0</span> <span class="badge">1271.0</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1610.0</span> <span class="badge">1611.0</span> <span class="badge">1620.0</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1270.0</span> <span class="badge">1290.0</span> <span class="badge">1310.0</span> <span class="badge">1330.0</span> <span class="badge">1350.0</span> <span class="badge">1370.0</span> <span class="badge">1390.0</span> <span class="badge">1410.0</span> <span class="badge">1430.0</span> <span class="badge">1450.0</span> <span class="badge">1470.0</span> <span class="badge">1490.0</span> <span class="badge">1510.0</span> <span class="badge">1530.0</span> <span class="badge">1550.0</span> <span class="badge">1570.0</span> <span class="badge">1590.0</span> <span class="badge">1610.0</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">G.694.2</span> <span class="badge">GbE</span> <span class="badge">1G FC</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">1.0625</span> <span class="badge">1.25</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>SFP</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8431, SFF-8432, SFF-8472</td></tr>
+<tr><td>emitter_type</td><td></td></tr>
+<tr><td>photodetector_type</td><td></td></tr>
+<tr><td>wavelength_band</td><td>CWDM</td></tr>
+<tr><td>frequency_min_thz</td><td></td></tr>
+<tr><td>frequency_max_thz</td><td></td></tr>
+<tr><td>channel_spacing_ghz</td><td></td></tr>
+<tr><td>channel_total</td><td>18</td></tr>
+<tr><td>mounting_type</td><td></td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td></td></tr>
+<tr><td>host_interface_name</td><td></td></tr>
+<tr><td>host_interface_id_hex</td><td></td></tr>
+<tr><td>host_interface_id</td><td></td></tr>
+<tr><td>media_interface_name</td><td></td></tr>
+<tr><td>media_interface_id_hex</td><td></td></tr>
+<tr><td>media_interface_id</td><td></td></tr>
+<tr><td>frame</td><td></td></tr>
+<tr><td>baud_rate_gbaud</td><td></td></tr>
+<tr><td>roll_off_percent</td><td></td></tr>
+<tr><td>modulation_format</td><td></td></tr>
+<tr><td>reach_km</td><td>160.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>4.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>7.0</td></tr>
+<tr><td>tx_in_band_osnr_db</td><td></td></tr>
+<tr><td>tx_out_of_band_osnr_db</td><td></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-37.0</td></tr>
+<tr><td>rx_osnr_db</td><td></td></tr>
+<tr><td>rx_osnr_tolerance_db_max</td><td></td></tr>
+<tr><td>rx_overload_dbm</td><td>-10.0</td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td></td></tr>
+<tr><td>pdl_db</td><td></td></tr>
+<tr><td>pmd_tolerance_ps</td><td></td></tr>
+<tr><td>fec_type</td><td></td></tr>
+<tr><td>fec_overhead_percent</td><td></td></tr>
+<tr><td>pre_fec_ber_threshold</td><td></td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>extinction_ratio_db</td><td></td></tr>
+<tr><td>los_assert_dbm</td><td>-50.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-38.0</td></tr>
+<tr><td>channel_insertion_loss_db</td><td></td></tr>
+<tr><td>receiver_reflectance_db</td><td></td></tr>
+<tr><td>transmitter_reflectance_db</td><td></td></tr>
+<tr><td>optical_extinction_ratio_db</td><td></td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td></td></tr>
+<tr><td>number_of_lanes</td><td></td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td></td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>total_jitter_ps</td><td></td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Product family SO-SFP-L160DH-Cxx &amp; -Cxx-E. Transmit wavelength 1271 to 1611nm per G.694.2; overview states 1270nm to 1610nm (18ch). Power budget 17–41dB stated in TECHNICAL DATA column header. Dispersion penalty Max 1dB in header without paired penalized metric and operating condition. Power consumption stated as &lt; 1W (not a numeric watt value). Extended operating temperature -20°C to +85°C for -E variants; overview also mentions -20°C to 85°C extended range. Storage temperature -40°C to +85°C. Transmitter output power and receiver min/overload are average power; receiver sensitivity @ 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back. TECHNICAL DATA table lists operating temperature as -0°C to +70°C (likely 0°C). DDM Yes.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>SO-SFP-L160DH-Cxx &amp; -Cxx-E, OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+<tr><td>suggestions</td><td>Clarify whether temp_min_c should represent only C-temp or also expose -E range as separate fields. Power budget 17–41dB could map to a dedicated schema field. Dispersion penalty Max 1dB lacks full penalty triple for penalties array.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_center_nm</th><th>standards_code</th><th>bit_rate_gbps</th></tr><tr><td><strong>CWDM 1270nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C27</td><td>1260.0</td><td>1620.0</td><td>1270.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1290nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C29</td><td>1260.0</td><td>1620.0</td><td>1290.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1310nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C31</td><td>1260.0</td><td>1620.0</td><td>1310.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1330nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C33</td><td>1260.0</td><td>1620.0</td><td>1330.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1350nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C35</td><td>1260.0</td><td>1620.0</td><td>1350.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1370nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C37</td><td>1260.0</td><td>1620.0</td><td>1370.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1390nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C39</td><td>1260.0</td><td>1620.0</td><td>1390.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1410nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C41</td><td>1260.0</td><td>1620.0</td><td>1410.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1430nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C43</td><td>1260.0</td><td>1620.0</td><td>1430.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1450nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C45</td><td>1260.0</td><td>1620.0</td><td>1450.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1470nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C47</td><td>1260.0</td><td>1620.0</td><td>1470.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1490nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C49</td><td>1260.0</td><td>1620.0</td><td>1490.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1510nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C51</td><td>1260.0</td><td>1620.0</td><td>1510.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1530nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C53</td><td>1260.0</td><td>1620.0</td><td>1530.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1550nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C55</td><td>1260.0</td><td>1620.0</td><td>1550.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1570nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C57</td><td>1260.0</td><td>1620.0</td><td>1570.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1590nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C59</td><td>1260.0</td><td>1620.0</td><td>1590.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1610nm 160km standard temp</strong></td><td>SO-SFP-L160DH-C61</td><td>1260.0</td><td>1620.0</td><td>1610.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1270nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C27-E</td><td>1260.0</td><td>1620.0</td><td>1270.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1290nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C29-E</td><td>1260.0</td><td>1620.0</td><td>1290.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1310nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C31-E</td><td>1260.0</td><td>1620.0</td><td>1310.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1330nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C33-E</td><td>1260.0</td><td>1620.0</td><td>1330.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1350nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C35-E</td><td>1260.0</td><td>1620.0</td><td>1350.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1370nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C37-E</td><td>1260.0</td><td>1620.0</td><td>1370.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1390nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C39-E</td><td>1260.0</td><td>1620.0</td><td>1390.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1410nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C41-E</td><td>1260.0</td><td>1620.0</td><td>1410.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1430nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C43-E</td><td>1260.0</td><td>1620.0</td><td>1430.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1450nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C45-E</td><td>1260.0</td><td>1620.0</td><td>1450.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1470nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C47-E</td><td>1260.0</td><td>1620.0</td><td>1470.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1490nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C49-E</td><td>1260.0</td><td>1620.0</td><td>1490.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1510nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C51-E</td><td>1260.0</td><td>1620.0</td><td>1510.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1530nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C53-E</td><td>1260.0</td><td>1620.0</td><td>1530.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1550nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C55-E</td><td>1260.0</td><td>1620.0</td><td>1550.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1570nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C57-E</td><td>1260.0</td><td>1620.0</td><td>1570.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1590nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C59-E</td><td>1260.0</td><td>1620.0</td><td>1590.0</td><td>G.694.2</td><td>1.25</td></tr><tr><td><strong>CWDM 1610nm 160km extended temp</strong></td><td>SO-SFP-L160DH-C61-E</td><td>1260.0</td><td>1620.0</td><td>1610.0</td><td>G.694.2</td><td>1.25</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 15:15
+</footer>
+
+</div>
+</body>
+</html>

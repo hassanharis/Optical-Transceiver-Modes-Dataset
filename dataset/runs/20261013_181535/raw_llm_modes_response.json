@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Wavelength min/max pair by table row (\u03bb0\u2013\u03bb3). Applications list one product (1.6T Ethernet, IEEE 802.3dj-2024, 2xFR4)\u2014not per lane. Four lane modes with shared application standard.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"\u03bb0 CWDM lane (2xFR4)\",\n      \"wavelength_min_nm\": 1264.5,\n      \"wavelength_max_nm\": 1277.5,\n      \"standards_code\": \"IEEE 802.3dj-2024\"\n    },\n    {\n      \"label\": \"\u03bb1 CWDM lane (2xFR4)\",\n      \"wavelength_min_nm\": 1284.5,\n      \"wavelength_max_nm\": 1297.5,\n      \"standards_code\": \"IEEE 802.3dj-2024\"\n    },\n    {\n      \"label\": \"\u03bb2 CWDM lane (2xFR4)\",\n      \"wavelength_min_nm\": 1304.5,\n      \"wavelength_max_nm\": 1317.5,\n      \"standards_code\": \"IEEE 802.3dj-2024\"\n    },\n    {\n      \"label\": \"\u03bb3 CWDM lane (2xFR4)\",\n      \"wavelength_min_nm\": 1324.5,\n      \"wavelength_max_nm\": 1337.5,\n      \"standards_code\": \"IEEE 802.3dj-2024\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

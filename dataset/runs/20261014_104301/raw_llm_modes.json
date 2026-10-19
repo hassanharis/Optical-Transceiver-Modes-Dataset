@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "64GFC PAM4",
+      "standards_code": "64GFC",
+      "baud_rate_gbaud": 28.9,
+      "bit_rate_gbps": 64.0,
+      "modulation_format": "PAM4",
+      "tx_power_min_dbm": -7.5,
+      "tx_power_max_dbm": 4.0,
+      "rx_sensitivity_dbm": -7.0,
+      "rx_overload_dbm": 4.0,
+      "los_assert_dbm": -17.0
+    },
+    {
+      "label": "32GFC NRZ",
+      "standards_code": "32GFC",
+      "baud_rate_gbaud": 28.05,
+      "bit_rate_gbps": 32.0,
+      "modulation_format": "NRZ",
+      "tx_power_min_dbm": -6.2,
+      "tx_power_max_dbm": 2.0,
+      "rx_sensitivity_dbm": -10.2,
+      "rx_overload_dbm": 2.0,
+      "los_assert_dbm": -17.0
+    },
+    {
+      "label": "16GFC NRZ",
+      "standards_code": "16GFC",
+      "baud_rate_gbaud": 14.025,
+      "bit_rate_gbps": 16.0,
+      "modulation_format": "NRZ",
+      "tx_power_min_dbm": -7.8,
+      "tx_power_max_dbm": 0.0,
+      "rx_sensitivity_dbm": -10.5,
+      "rx_overload_dbm": 0.0,
+      "los_assert_dbm": -17.0
+    }
+  ]
+}

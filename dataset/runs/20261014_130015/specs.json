@@ -1,0 +1,51 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1000Base-T",
+    "SO-SFP-1000Base-T-I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "1000BASE-T",
+    "IEEE 802.3",
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "RJ45"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    1.2
+  ],
+  "host_interface_name": [
+    "SFP MSA"
+  ],
+  "media_interface_name": [
+    "1000BASE-T"
+  ],
+  "standards_code": [
+    "1000BASE-T",
+    "IEEE 802.3"
+  ],
+  "bit_rate_gbps": [
+    1.0
+  ],
+  "reach_km": [
+    0.1
+  ],
+  "notes": "Copper (Grey SFP) module; transmission media Electrical (1x RJ45). Typical reach 100m using CAT5e cable or better (footnote 1). Operating temperature 0°C to +70°C for SO-SFP-1000Base-T (-T); -40°C to +85°C for SO-SFP-1000Base-T-I (-T-I). Power consumption stated as < 1.2W. Storage temperature -40°C to +85°C. Sync on line side preferred slave (footnote 2). Auto-negotiation towards host. Rx LOS: No. Safety/regulatory: TUV/UL/FDA; RoHS compliance.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1000BASE-T & -T-I",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Schema could add copper-specific fields (cable category CAT5/CAT5e, reach in meters) and support multiple operating-temperature SKUs without merging min/max across variants."
+}

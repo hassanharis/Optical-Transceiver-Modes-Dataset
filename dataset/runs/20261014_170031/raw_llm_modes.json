@@ -1,0 +1,46 @@
+{
+  "modes": [
+    {
+      "label": "XP-13B1-10D 25.78G Commercial",
+      "model": "XP-13B1-10D",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "XP-13B1-10DA 25.78G Industrial",
+      "model": "XP-13B1-10DA",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "XP-13B1-10D-4 10G Commercial",
+      "model": "XP-13B1-10D-4",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "XP-13B1-10D-4 25.78G Commercial",
+      "model": "XP-13B1-10D-4",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "XP-13B1-10DA-4 10G Industrial",
+      "model": "XP-13B1-10DA-4",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "XP-13B1-10DA-4 25.78G Industrial",
+      "model": "XP-13B1-10DA-4",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 25.78
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-155M-L15D"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260
+  ],
+  "wavelength_max_nm": [
+    1360,
+    1600
+  ],
+  "wavelength_center_nm": [
+    1310
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    1
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "100Base-LXD",
+    "FE",
+    "STM1/OC3",
+    "STM-1",
+    "OC-3",
+    "100M Ethernet"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    100,
+    155
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    15
+  ],
+  "tx_power_min_dbm": [
+    -15.0
+  ],
+  "tx_power_max_dbm": [
+    -8.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -28
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -8
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -42
+  ],
+  "los_deassert_dbm": [
+    -29
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Bit rates stated as 100 to 155Mbps. Power budget 0 – 13dB. Transmitter output min row prints -15.0dB; footnote 1) average power (max row uses dBm). Receiver minimum input -28dBm at 155Mbps, BER 1x10-12, PRBS 231-1. No minimum distance (no minimum attenuation). Storage temperature -40°C to +85°C. DDM per SFF-8472. Technology Grey SFP.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-155M-L15D",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": ""
+}

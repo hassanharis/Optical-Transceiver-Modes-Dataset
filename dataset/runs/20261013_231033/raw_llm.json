@@ -1,0 +1,153 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLX1475D3BCV"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "IEEE 802.3ae",
+    "SFF-8472"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1355.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -5.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "SFP+"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "1000BASE-LX",
+    "10GBASE-LR",
+    "10GBASE-LW"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "1000BASE-LX",
+    "10GBASE-LR",
+    "10GBASE-LW",
+    "10G Fibre Channel 1200-SM-LL-L4"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1.25,
+    9.95,
+    10.3,
+    10.5
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -11.0,
+    -8.2,
+    -5.2
+  ],
+  "tx_power_max_dbm": [
+    -3.0,
+    0.5
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -19.0,
+    -14.4,
+    -12.6,
+    -10.3
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -3.0,
+    0.5
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    9.0,
+    3.5
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -17.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -12.0
+  ],
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    9.0,
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Power dissipation stated as < 1W (no exact W value). Rate selectable via RS0: LOW 1.25 Gb/s (1000BASE-LX), HIGH 9.95–10.3 Gb/s typ (10GBASE-LR/LW); features also cite 9.95 to 10.5 Gb/s. Limiting receiver (not EDC). Rx sensitivity -19 dBm (1G, BER<10^-12); -12.6 dBm OMA @ 10.3 Gb/s; stressed -14.4 dBm (1G) and -10.3 dBm OMA @ 10.3 Gb/s. Transmitter and Dispersion Penalty (TDP) max 3.2 dB (10G) without paired penalty-point conditions. Section V table labels LOS Assert as LOSD (-17 dBm) and LOS Hysteresis row uses LOSA (-30 dBm); Section IV uses LOS De-Assert LOSD -17 dBm and LOS Assert LOSA -30 dBm. Optical Return Loss Rrx min 12 dB (1G receiver table); Receiver Reflectance -12 dB (10G). POFF avg launch when off max -30 dBm. Duplex LC connector.",
+  "provenance_datasheet_sections": [
+    "FEATURES",
+    "APPLICATIONS",
+    "FTLX1475D3BCV",
+    "III. Electrical Characteristics (TOP = -5 to 70ºC,  VCC = 3.14 to 3.46 Volts)",
+    "IV.  Optical Characteristics for RS0 = Low (1G Operation)",
+    "V.  Optical Characteristics for RS0 = Low (10G Operation) (TOP = -5 to 70ºC,  VCC = 3.14 to 3.46 Volts)",
+    "VI. General Specifications",
+    "VII. Environmental Specifications",
+    "X. Digital Diagnostic Specifications",
+    "XI. Mechanical Specifications"
+  ],
+  "suggestions": "Clarify whether 10G tx_power_min should include OMA -5.2 dBm separately from average launch -8.2 dBm. Section V LOS row symbol/name mismatch vs Section IV; extractor used IV semantics for assert/deassert. Receiver Return Loss (12 dB min) vs Receiver Reflectance (-12 dB) are distinct parameters—both captured where stated."
+}

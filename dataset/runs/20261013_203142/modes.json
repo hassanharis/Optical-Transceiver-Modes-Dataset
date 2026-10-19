@@ -1,0 +1,13 @@
+{
+  "modes": [
+    {
+      "label": "CVR-QSFP-SFP+",
+      "standards_code": [
+        "SFF-8436",
+        "SFF-8418",
+        "SFF-8419",
+        "SFF-8636"
+      ]
+    }
+  ]
+}

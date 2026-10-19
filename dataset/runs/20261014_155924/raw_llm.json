@@ -1,0 +1,126 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP28-ER-I",
+    "SO-SFP28-ER"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFF-8402",
+    "25GBASE-ER"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1295.0
+  ],
+  "wavelength_max_nm": [
+    1325.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    1
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    1.8
+  ],
+  "host_interface_name": [
+    "25GE",
+    "CPRI opt 10"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "25GBASE-ER",
+    "SFF-8402",
+    "CPRI Option 10",
+    "25G Ethernet"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    24.33,
+    25.78
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -3.0
+  ],
+  "tx_power_max_dbm": [
+    6.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -21.0,
+    -19.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -4.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    5e-05
+  ],
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -23.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Overview describes SFP+ form-factor wording while product naming is SFP28. Power budget stated as 10–19 dB in TECHNICAL DATA and 18 dB in ORDERING INFORMATION; title lists 19 dB. Dispersion penalty 2.7 dB is stated without a paired chromatic-dispersion value and operating point, so not modeled as a penalty object. Transmitter output power min/max and receiver minimum input power and overload are at BER 5E-5 per footnotes 1) and 2) at 25.78 Gbps (25GE). Separate OMA limits: TX OMA 0–6 dBm; RX minimum OMA -19.0 dBm. FEC required on host equipment per overview and note; optical parameters defined at pre-FEC BER 5×10^-5. Storage temperature -40°C to +85°C same as operating. Power consumption listed as < 1.8 W.",
+  "provenance_datasheet_sections": [
+    "SO-SFP28-ER-I",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether rx_sensitivity_dbm should distinguish average power (-21.0 dBm) vs OMA (-19.0 dBm) via schema subfields or qualifiers. Consider fields for power_budget_db and dispersion_penalty_db when only magnitude is given without full penalty triple."
+}

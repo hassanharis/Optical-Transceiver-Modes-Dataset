@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:50:35.777952+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lp-sfp-tm8c.pdf",
+  "page_count": 8,
+  "table_count": 13,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 11.382,
+    "extract_atoms": 18.998,
+    "store_run": 0.008,
+    "synthesize_modes": 38.101,
+    "store_modes": 0.004,
+    "total": 68.493
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1530.23,
+      1534.94,
+      1539.67,
+      1544.43
+    ],
+    "wavelength_max_nm": [
+      1530.43,
+      1535.14,
+      1539.87,
+      1544.63
+    ],
+    "wavelength_center_nm": [
+      1530.33,
+      1535.04,
+      1539.77,
+      1544.53
+    ],
+    "wavelength_band": [
+      "C-band",
+      "DWDM"
+    ],
+    "power_consumption_w": [
+      2.5,
+      3.5,
+      5.0
+    ],
+    "standards_code": [
+      "40GBASE-EZR4",
+      "40GBASE-LR4",
+      "IEEE P802.3ba"
+    ],
+    "bit_rate_gbps": [
+      10.3125,
+      11.2,
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      1.0,
+      0.3
+    ],
+    "tx_power_max_dbm": [
+      5.0,
+      10.0
+    ],
+    "extinction_ratio_db": [
+      5.5,
+      6.5
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LQ-DW40-A04C"
+    ],
+    "form_factor": [
+      "QSFP+"
+    ],
+    "standards_claimed": [
+      "IEEE802.3ba",
+      "40GBASE-EZR4",
+      "QSFP MSA",
+      "QDR/DDR Infiniband",
+      "40G Ethernet"
+    ],
+    "emitter_type": [
+      "LASER_EML"
+    ],
+    "photodetector_type": [
+      "APD"
+    ],
+    "channel_spacing_ghz": [
+      100.0
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      100.0
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -25.0
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      5.5,
+      6.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      20.0,
+      12.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Aggregate bandwidth stated as >40Gbps in Features; per-channel data rate 10.3125–11.2 Gbps (Electrical Characteristics). EEPROM base ID text references 40GBASE-LR4 and SMF link length code 28=80 km while title/ordering state 100 km. Optical Parameters list two Optical Return Loss Tolerance rows (20 dB and 12 dB max); receiver note references 12 dB reflection. Transmitter Dispersion Penalty (TDP) each lane max 2.6 dB stated without paired penalty magnitude and operating condition per penalty schema. Average launch power OFF per lane max -30 dBm; Poff. Relative Intensity Noise Rin max -128 dB/Hz (note 1). Receive average power per lane -25 to -6 dBm; OMA per lane max -4 dBm. Damage threshold THd -3 dBm (note 1: 12 dB reflection). Supply voltage ranges differ slightly: Recommended Operating Environment VCC +3.13 to +3.47 V; Optical Parameters VCC 3.0 to 3.6 V.",
+    "provenance_datasheet_sections": [
+      "LQ-DW40-A04C",
+      "40Gb/s 100km QSFP+ Transceiver ,Duplex LC Connector, Single mode",
+      "Features",
+      "Applications",
+      "Description:",
+      "Recommended Operating Environment",
+      "Electrical Characteristics (TOP = 0 to 70 °C, VCC = 3.13 to 3.47 Volts)",
+      "Optical Parameters(TOP = 0 to 70 ° C, VCC = 3.0 to 3.6 Volts)",
+      "EEPROM Serial ID Memory Contents (A0h)",
+      "Ordering information"
+    ],
+    "suggestions": "Clarify whether tx_power fields should distinguish average launch power vs Tx OMA per lane. EEPROM SMF length (80 km) vs marketed 100 km could be a dedicated reach qualifier field."
+  }
+}

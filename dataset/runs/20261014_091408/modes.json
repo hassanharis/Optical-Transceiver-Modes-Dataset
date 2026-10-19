@@ -1,0 +1,12 @@
+{
+  "modes": [
+    {
+      "label": "850nm 2.5G MM 300m, 0\u00b0C to +70\u00b0C (Commercial)",
+      "model": "LS-MM852G-S3C"
+    },
+    {
+      "label": "850nm 2.5G MM 300m, -40\u00b0C to +85\u00b0C (Industrial)",
+      "model": "LS-MM852G-S3I"
+    }
+  ]
+}

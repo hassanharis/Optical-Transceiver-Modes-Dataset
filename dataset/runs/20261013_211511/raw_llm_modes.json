@@ -1,0 +1,49 @@
+{
+  "modes": [
+    {
+      "label": "DS5001-xxxC-SO SFP56 DAC 56G (0.5\u20133 m family)",
+      "model": "DS5001-xxxC-SO",
+      "form_factor": "SFP56",
+      "host_interface_name": "SFP56",
+      "standards_code": "SFF-8472",
+      "bit_rate_gbps": 56.0,
+      "reach_km": 0.0005
+    },
+    {
+      "label": "DS5001-05MC-SO SFP56 DAC 50G 0.5 m AWG30",
+      "model": "DS5001-05MC-SO",
+      "form_factor": "SFP56",
+      "host_interface_name": "SFP56",
+      "standards_code": "IEEE 802.3cd",
+      "bit_rate_gbps": 50.0,
+      "reach_km": 0.0005
+    },
+    {
+      "label": "DS5001-001C-SO SFP28 DAC 50G 1 m AWG30",
+      "model": "DS5001-001C-SO",
+      "form_factor": "SFP28",
+      "host_interface_name": "GAUI-1",
+      "standards_code": "IEEE 802.3cd",
+      "bit_rate_gbps": 50.0,
+      "reach_km": 0.0005
+    },
+    {
+      "label": "DS5001-002C-SO SFP28 DAC 50G 2 m AWG26",
+      "model": "DS5001-002C-SO",
+      "form_factor": "SFP28",
+      "host_interface_name": "GAUI-1",
+      "standards_code": "IEEE 802.3cd",
+      "bit_rate_gbps": 50.0,
+      "reach_km": 0.003
+    },
+    {
+      "label": "DS5001-003C-SO SFP28 DAC 50G 3 m AWG26",
+      "model": "DS5001-003C-SO",
+      "form_factor": "SFP28",
+      "host_interface_name": "GAUI-1",
+      "standards_code": "IEEE 802.3cd",
+      "bit_rate_gbps": 50.0,
+      "reach_km": 0.003
+    }
+  ]
+}

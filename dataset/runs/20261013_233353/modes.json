@@ -1,0 +1,12 @@
+{
+  "modes": [
+    {
+      "label": "Module ITU-T G.957 compliance",
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "Transmitter eye diagram (G.957 STM-1/OC-3)",
+      "standards_code": "STM-1/OC-3"
+    }
+  ]
+}

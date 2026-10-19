@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\Ciena 160-9116-900 compatible SFP+ transceiver.pdf",
+  "page_count": 6,
+  "table_count": 4,
+  "markdown_chars": 7502,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 21
+    }
+  ]
+}

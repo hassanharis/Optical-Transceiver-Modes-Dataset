@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-tq2037-s31c-so-qsfp28-100g-psm4-10km-r6.0.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 5832,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 18
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

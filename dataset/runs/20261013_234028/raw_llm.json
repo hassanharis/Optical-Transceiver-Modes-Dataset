@@ -1,0 +1,181 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LO-CW1T-2FR4C"
+  ],
+  "form_factor": [
+    "OSFP",
+    "OSFP1600",
+    "OSFP FlatTop",
+    "OSFP_RHS"
+  ],
+  "standards_claimed": [
+    "IEEE802.3dj D1p3",
+    "OSFP MSA Specification Rev 5.1",
+    "CMIS Rev 5.3"
+  ],
+  "emitter_type": [
+    "LASER_EML"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5
+  ],
+  "wavelength_center_nm": [
+    1271,
+    1291,
+    1311,
+    1331
+  ],
+  "wavelength_band": [
+    "CWDM",
+    "CWDM4",
+    "1310nm"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    8
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC",
+    "LC/UPC",
+    "LC/PC",
+    "Duplex LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    30,
+    2
+  ],
+  "host_interface_name": [
+    "800GAUI-4",
+    "2x800GAUI-4 C2M"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "800GBASE-FR4",
+    "2x800GBASE-FR4",
+    "FR4"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "8x200G Ethernet",
+    "2x800GAUI-4"
+  ],
+  "standards_code": [
+    "800GBASE-FR4",
+    "800GAUI-4",
+    "FR4",
+    "IEEE802.3dj D1p3",
+    "2x FR4"
+  ],
+  "baud_rate_gbaud": [
+    113.4375,
+    106.25
+  ],
+  "bit_rate_gbps": [
+    200,
+    800,
+    1600
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    2
+  ],
+  "tx_power_min_dbm": [
+    -2.2
+  ],
+  "tx_power_max_dbm": [
+    4.9,
+    10.9
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -3.7,
+    -1.2
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4.9,
+    5.9
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    6.4e-05
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -26
+  ],
+  "transmitter_reflectance_db": [
+    -26
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    17.1
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": [
+    30
+  ],
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Title and ordering: 2 km reach; Recommended Operating Conditions lists Operating Distance min 2 m, max 2000 m. Receiver Sensitivity (OMAouter) min is -3.7 dBm for TECQ < 0.9 dB; for 0.9 dB ≤ TECQ ≤ SECQ min is – 4.6 + TECQ dBm. Stressed Receiver Sensitivity (OMAouter) is -1.2 dBm with SECQ 3.4 dB and OMAouter of each aggressor lane 0.8 dBm. Sensitivity measured at BER = 6.4x10-5 per Note 1. Signaling rate optical 113.4375±50 ppm GBd per lane; electrical module TP1/TP4 106.25±50 ppm GBd. Maximum Power Dissipation 30 W; Low Power Mode max 2 W. Average launch power each lane min (-2.2 dBm) noted as informative per Note 2. Transmitter reflectance defined looking into the transmitter per Note 3. Connector stated as LC/UPC in title and LC/PC in Features.",
+  "provenance_datasheet_sections": [
+    "LO-CW1T-2FR4C",
+    "1.6T 2x FR4 OSFP FlatTop1310nm 2km Dual Duplex LC/UPC DOM Transceiver",
+    "Features",
+    "Applications",
+    "Description",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Optical Characteristics",
+    "Electrical Characteristics",
+    "Digital Diagnostic Specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Schema could add OMAouter, TDECQ/TECQ/SECQ, and total vs per-lane launch power fields common in IEEE 802.3dj FR4 modules."
+}

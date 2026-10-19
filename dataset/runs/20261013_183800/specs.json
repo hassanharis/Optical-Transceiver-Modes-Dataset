@@ -1,0 +1,96 @@
+{
+  "model": [
+    "QT- WDM-0203BD",
+    "QT-WDM-0203BD",
+    "QT-WDM-0203BID"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "1000BASE-BX-U",
+    "SONET OC-24-LR-1",
+    "RoHS"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1510.0
+  ],
+  "wavelength_max_nm": [
+    1360.0,
+    1570.0
+  ],
+  "wavelength_center_nm": [
+    1310.0,
+    1550.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "standards_code": [
+    "1000BASE-BX-U",
+    "SONET OC-24-LR-1"
+  ],
+  "bit_rate_gbps": [
+    1.25,
+    1.063
+  ],
+  "reach_km": [
+    3.0
+  ],
+  "tx_power_min_dbm": [
+    -12.0
+  ],
+  "tx_power_max_dbm": [
+    -6.0
+  ],
+  "rx_sensitivity_dbm": [
+    -21.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -23.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "los_hysteresis_db": [
+    1.0,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Dual data-rate 1.25 Gbps (Gigabit Ethernet) and 1.063 Gbps (Fiber Channel). Operating case temperature: Standard 0 to +70°C (QT-WDM-0203BD); Industrial -40 to +85°C (QT-WDM-0203BID). +3.3 V single power supply; Icc max 300 mA. Transmitter centre wavelength λc 1510–1570 nm (typ 1550 nm); receiver centre wavelength λc 1260–1360 nm (typ 1310 nm). Average output power into SMF (note 1). Receiver sensitivity and overload measured with PRBS 2^7-1 @ 1250 Mbps, BER ≤ 1×10^-12 (note 3). Spectral width (RMS) ∆λ max 4 nm. Optical rise/fall time (20%~80%) tr/tf max 0.26 ns.",
+  "provenance_datasheet_sections": [
+    "BIDI SFP 1550nm-TX/1310nm-RX 3KM SMF Transceiver",
+    "P/N: QT- WDM-0203BD",
+    "FEATURES",
+    "APPLICATIONS",
+    "1. Absolute Maximum Ratings",
+    "2. Recommended Operating Conditions",
+    "3. Optical and Electrical Characteristics",
+    "Notes:",
+    "7. Ordering information"
+  ],
+  "suggestions": "Vendor is only implied via qsfptek.com/sales email, not a labeled manufacturer field. Consider capturing supply current (Icc max 300 mA) or dual temperature SKUs as separate schema fields. Industrial temp range applies only to QT-WDM-0203BID per ordering table."
+}

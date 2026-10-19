@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T18:48:43.163901+00:00",
+  "source_file": "C:\\Haris\\datasheets\\2021-09-11406314.pdf",
+  "page_count": 5,
+  "table_count": 6,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 6.752,
+    "extract_atoms": 25.817,
+    "store_run": 0.006,
+    "synthesize_modes": 51.186,
+    "store_modes": 0.004,
+    "total": 83.765
+  }
+}

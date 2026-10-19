@@ -1,0 +1,117 @@
+{
+  "multi_valued": {
+    "model": [
+      "8G-ZR-Cxx-BR1",
+      "8G-ZR-C47-BR1",
+      "8G-ZR-C49-BR1",
+      "8G-ZR-C51-BR1",
+      "8G-ZR-C53-BR1",
+      "8G-ZR-C55-BR1",
+      "8G-ZR-C57-BR1",
+      "8G-ZR-C59-BR1",
+      "8G-ZR-C61-BR1"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1470.0,
+      1471.0
+    ],
+    "wavelength_max_nm": [
+      1561.0,
+      1610.0,
+      1611.0,
+      1620.0
+    ],
+    "wavelength_center_nm": [
+      1470.0,
+      1490.0,
+      1510.0,
+      1530.0,
+      1550.0,
+      1570.0,
+      1590.0,
+      1610.0
+    ],
+    "host_interface_name": [
+      "2G FC",
+      "4G FC",
+      "8G FC"
+    ],
+    "standards_code": [
+      "G.694.2",
+      "2G FC",
+      "4G FC",
+      "8G FC",
+      "FICON"
+    ],
+    "bit_rate_gbps": [
+      2.125,
+      8.5
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472",
+      "ITU-T G.694.2"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      8
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.6
+    ],
+    "reach_km": [
+      70.0
+    ],
+    "tx_power_min_dbm": [
+      -0.5
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_sensitivity_dbm": [
+      -23.5
+    ],
+    "rx_overload_dbm": [
+      -7.0
+    ],
+    "cd_tolerance_ps_nm": [
+      1400.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -23.5
+    ],
+    "penalties": [],
+    "notes": "Power budget 11–23 dB (w/o optical path penalties). Optical path penalty max 3 dB. Nominal wavelengths 1471–1611 nm (8 ch); transmit wavelength stated as 1471 to 1561 nm (G.694.2). Receiver min input power and overload at 8.5 Gbps (8G FC) using PRBS7; average power; @ BER 1×10⁻¹². Layer-1 tested and approved by Brocade. RoHS-6/6 compliant. Storage temperature -40°C to +85°C. DDM per SFF-8472.",
+    "provenance_datasheet_sections": [
+      "8G-ZR-Cxx-BR1",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "model": [
+    "CWDM-SFP28-LR-XX"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFP+ MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1270.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1610.0,
+    1620.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "standards_code": [
+    "25GBASE-LR"
+  ],
+  "bit_rate_gbps": [
+    25.78
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -4.0
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -13.3
+  ],
+  "rx_overload_dbm": [
+    2.0
+  ],
+  "post_fec_ber_target": [
+    5e-05
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -15.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Centre transmitter wavelength λc is per-channel (λc-6.5 to λc+6.5 nm); XX in ordering denotes CWDM channel. Product title range 1270–1610 nm; ordering table 1270~1610 nm. Receiver sensitivity and overload per Note 3: PRBS 2^31-1 @ 25.78Gbps, BER ≤5×10^-5. Optical power launched into SMF (Note 1). Features list SFP+ footprint; title uses SFP28. Icc max 400 mA at 3.3 V supply; power in watts not stated. Datasheet branding via www.qsfptek.com only; no explicit manufacturer name.",
+  "provenance_datasheet_sections": [
+    "25G CWDM SFP28 1270-1610nm 10km DDM SMF Transceiver",
+    "P/N: CWDM-SFP28-LR-XX",
+    "Product Features",
+    "Applications",
+    "2. Recommended Operating Conditions",
+    "3. Optical and Electrical Characteristics",
+    "Notes:",
+    "5. Diagnostics",
+    "8. Ordering Information"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "modes": [
+    {
+      "label": "Gigabit Ethernet 550m (IEEE 802.3z)",
+      "model": "LxK-ST11xx",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "Fibre Channel 500m",
+      "model": "LxK-ST11xx",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "Fibre Channel",
+      "reach_km": 0.5
+    },
+    {
+      "label": "Gigabit Ethernet 850m (Table A)",
+      "model": "LxK-ST11xx",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "Gigabit Ethernet",
+      "reach_km": 0.85
+    },
+    {
+      "label": "LNK-ST11H Gigabit Ethernet",
+      "model": "LNK-ST11H",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LNK-ST11M Gigabit Ethernet",
+      "model": "LNK-ST11M",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LNK-ST11HB Gigabit Ethernet",
+      "model": "LNK-ST11HB",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LNK-ST11MB Gigabit Ethernet",
+      "model": "LNK-ST11MB",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LTK-ST11H Gigabit Ethernet",
+      "model": "LTK-ST11H",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LTK-ST11M Gigabit Ethernet",
+      "model": "LTK-ST11M",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LTK-ST11HB Gigabit Ethernet",
+      "model": "LTK-ST11HB",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LTK-ST11MB Gigabit Ethernet",
+      "model": "LTK-ST11MB",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LNK-ST11H-R6 Gigabit Ethernet",
+      "model": "LNK-ST11H-R6",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LNK-ST11M-R6 Gigabit Ethernet",
+      "model": "LNK-ST11M-R6",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LNK-ST11HB-R6 Gigabit Ethernet",
+      "model": "LNK-ST11HB-R6",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LNK-ST11MB-R6 Gigabit Ethernet",
+      "model": "LNK-ST11MB-R6",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LTK-ST11H-R6 Gigabit Ethernet",
+      "model": "LTK-ST11H-R6",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LTK-ST11M-R6 Gigabit Ethernet",
+      "model": "LTK-ST11M-R6",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LTK-ST11HB-R6 Gigabit Ethernet",
+      "model": "LTK-ST11HB-R6",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    },
+    {
+      "label": "LTK-ST11MB-R6 Gigabit Ethernet",
+      "model": "LTK-ST11MB-R6",
+      "wavelength_min_nm": 830.0,
+      "host_interface_name": "LVPECL",
+      "standards_code": "IEEE 802.3z",
+      "reach_km": 0.55
+    }
+  ]
+}

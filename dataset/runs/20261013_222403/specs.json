@@ -1,0 +1,85 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TSF087-BxxC-SO",
+    "TSF087-BCOC-SO",
+    "TSF087-BOCC-SO"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1290.0,
+    1480.0
+  ],
+  "wavelength_max_nm": [
+    1330.0,
+    1580.0
+  ],
+  "wavelength_center_nm": [
+    1310.0,
+    1550.0
+  ],
+  "connector_type": [
+    "SC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "standards_code": [
+    "GbE",
+    "1G FC"
+  ],
+  "bit_rate_gbps": [
+    1.0625,
+    1.25
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -3.0,
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    2.0,
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -23.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Solution is a pair: TSF087-BCOC-SO (TX 1290–1330 nm / RX 1480–1580 nm) and TSF087-BOCC-SO (TX 1480–1580 nm / RX 1290–1330 nm). Table lists TSF007-BOCC-SO (likely typo for TSF087-BOCC-SO). Footnote 1) applies to TSF087-BCOC-SO; 2) to TSF087-BOCC-SO. Footnote 3) average power for TX levels. Footnote 4) receiver minimum input power at 1.25 Gbps, BER ≤ 1×10⁻¹², PRBS 2⁷−1, back-to-back. Header power budget 5–20 dB¹)/3–18 dB²); ordering lists 18 dB for both variants. Power consumption stated as < 1.0 W. Storage temperature −40°C to +85°C. Power budget differs by direction; fiber attenuation ~0.4 dB/km at 1310 nm and ~0.25 dB/km at 1550 nm per POWER BUDGET INFORMATION.",
+  "provenance_datasheet_sections": [
+    "SFP 1G BiDi 40km",
+    "SFP BiDi, 1.0625/1.25Gbps, 1310/1550nm, SM, DDM, 20dB/18dB, 40km, SC",
+    "TSF087-BxxC-SO",
+    "TECHNICAL DATA",
+    "POWER BUDGET INFORMATION",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Add power_budget_db min/max per variant; distinguish TX/RX wavelength specs per orderable SKU; capture storage temp range; note whether < 1.0 W should be stored as upper bound only."
+}

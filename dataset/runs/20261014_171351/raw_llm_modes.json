@@ -1,0 +1,814 @@
+{
+  "modes": [
+    {
+      "label": "Ch17 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1563.86,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch17 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1563.86,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch18 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1563.04,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch18 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1563.04,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch19 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1562.23,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch19 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1562.23,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch20 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1561.41,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch20 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1561.41,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch21 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1560.6,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch21 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1560.6,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch22 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1559.79,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch22 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1559.79,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch23 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1558.98,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch23 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1558.98,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch24 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1558.17,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch24 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1558.17,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch25 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1557.36,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch25 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1557.36,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch26 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1556.55,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch26 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1556.55,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch27 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1555.74,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch27 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1555.74,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch28 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1554.94,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch28 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1554.94,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch29 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1554.13,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch29 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1554.13,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch30 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1553.32,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch30 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1553.32,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch31 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1552.52,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch31 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1552.52,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch32 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1551.72,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch32 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1551.72,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch33 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1550.92,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch33 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1550.92,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch34 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1550.11,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch34 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1550.11,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch35 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1549.32,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch35 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1549.32,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch36 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1548.51,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch36 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1548.51,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch37 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1547.71,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch37 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1547.71,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch38 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1546.92,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch38 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1546.92,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch39 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1546.12,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch39 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1546.12,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch40 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1545.32,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch40 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1545.32,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch41 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1544.52,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch41 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1544.52,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch42 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1543.73,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch42 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1543.73,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch43 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1542.93,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch43 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1542.93,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch44 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1542.14,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch44 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1542.14,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch45 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1541.34,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch45 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1541.34,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch46 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1540.55,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch46 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1540.55,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch47 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1539.76,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch47 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1539.76,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch48 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1538.97,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch48 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1538.97,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch49 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1538.19,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch49 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1538.19,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch50 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1537.4,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch50 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1537.4,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch51 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1536.61,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch51 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1536.61,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch52 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1535.82,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch52 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1535.82,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch53 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch53 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch54 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1534.25,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch54 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1534.25,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch55 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1533.46,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch55 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1533.46,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch56 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1532.68,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch56 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1532.68,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch57 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1531.89,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch57 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1531.89,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch58 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1531.12,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch58 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1531.12,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch59 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch59 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch60 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1529.55,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch60 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1529.55,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Ch61 10GBASE-ZR",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Ch61 10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"CFP host 10x10G\",\n      \"frame\": \"10x 10G\",\n      \"standards_code\": \"100G Ethernet\",\n      \"fec_type\": \"RS_528_514\",\n      \"number_of_lanes\": 10\n    },\n    {\n      \"label\": \"QSFP28 media 4x25G FEC\",\n      \"frame\": \"4x 25G\",\n      \"standards_code\": \"IEEE802.3bj\",\n      \"fec_type\": \"RS_GENERIC\",\n      \"number_of_lanes\": 4\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

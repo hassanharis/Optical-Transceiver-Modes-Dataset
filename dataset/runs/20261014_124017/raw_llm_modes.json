@@ -1,0 +1,112 @@
+{
+  "modes": [
+    {
+      "label": "BX20D-34 FE 100M",
+      "model": "SO-SFP-1000Base-BX20D-34",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "BX20D-34 GbE",
+      "model": "SO-SFP-1000Base-BX20D-34",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-34 1G FC",
+      "model": "SO-SFP-1000Base-BX20D-34",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-43 FE 100M",
+      "model": "SO-SFP-1000Base-BX20D-43",
+      "wavelength_min_nm": 1460.0,
+      "wavelength_max_nm": 1520.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "BX20D-43 GbE",
+      "model": "SO-SFP-1000Base-BX20D-43",
+      "wavelength_min_nm": 1460.0,
+      "wavelength_max_nm": 1520.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-43 1G FC",
+      "model": "SO-SFP-1000Base-BX20D-43",
+      "wavelength_min_nm": 1460.0,
+      "wavelength_max_nm": 1520.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-34-I FE 100M",
+      "model": "SO-SFP-1000Base-BX20D-34-I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "BX20D-34-I GbE",
+      "model": "SO-SFP-1000Base-BX20D-34-I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-34-I 1G FC",
+      "model": "SO-SFP-1000Base-BX20D-34-I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-43-I FE 100M",
+      "model": "SO-SFP-1000Base-BX20D-43-I",
+      "wavelength_min_nm": 1460.0,
+      "wavelength_max_nm": 1520.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 0.1
+    },
+    {
+      "label": "BX20D-43-I GbE",
+      "model": "SO-SFP-1000Base-BX20D-43-I",
+      "wavelength_min_nm": 1460.0,
+      "wavelength_max_nm": 1520.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "BX20D-43-I 1G FC",
+      "model": "SO-SFP-1000Base-BX20D-43-I",
+      "wavelength_min_nm": 1460.0,
+      "wavelength_max_nm": 1520.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "25GbE",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "25GbE",
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 25.78,
+      "cd_tolerance_ps_nm": 232.0
+    },
+    {
+      "label": "CPRI option 10",
+      "wavelength_band": "DWDM",
+      "host_interface_name": "CPRI opt 10",
+      "standards_code": "CPRI option 10",
+      "bit_rate_gbps": 24.33024,
+      "cd_tolerance_ps_nm": 232.0
+    }
+  ]
+}

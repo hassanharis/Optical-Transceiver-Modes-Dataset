@@ -1,0 +1,159 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-10GE-BX60D-2733",
+      "SO-SFP-10GE-BX60D-3327",
+      "SO-SFP-10GE-BX60D-2733-I",
+      "SO-SFP-10GE-BX60D-3327-I"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1320.0
+    ],
+    "wavelength_max_nm": [
+      1280.0,
+      1340.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1330.0
+    ],
+    "host_interface_name": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "standards_code": [
+      "10GBASE-ER",
+      "10GBASE-EW",
+      "GbE",
+      "10GbE-LAN",
+      "10GbE-WAN",
+      "OTU1",
+      "OTU2",
+      "OTU2e",
+      "STM-64/OC192",
+      "STM-16/OC48",
+      "STM-4/OC12",
+      "1G FC",
+      "2G FC",
+      "4G FC",
+      "8G FC",
+      "10G FC",
+      "CPRI Opt",
+      "CPRI 1",
+      "CPRI 2",
+      "CPRI 3",
+      "CPRI 4",
+      "CPRI 5",
+      "CPRI 6",
+      "CPRI 7",
+      "CPRI 7A",
+      "CPRI 8",
+      "OBSAI 1x",
+      "OBSAI 2x",
+      "OBSAI 4x",
+      "OBSAI 8x"
+    ],
+    "bit_rate_gbps": [
+      0.6,
+      11.3,
+      10.3
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472",
+      "IEEE 802.3ae"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.5
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "modulation_format": [],
+    "reach_km": [
+      60.0
+    ],
+    "tx_power_min_dbm": [
+      1.0
+    ],
+    "tx_power_max_dbm": [
+      6.0
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_sensitivity_dbm": [
+      -20.0
+    ],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [
+      -6.0
+    ],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [
+      1e-12
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -21.0
+    ],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Product pair SO-SFP-10GE-BX60D-2733 (Tx/Rx 1270/1330 nm) and SO-SFP-10GE-BX60D-3327 (Tx/Rx 1330/1270 nm). Footnote 1): transmit 1260–1280 nm and receive 1320–1340 nm for -2733. Footnote 2): transmit 1320–1340 nm and receive 1260–1280 nm for -3327. Tx output power and Rx min/overload are average power (footnote 3). Rx minimum input power and overload measured at 10.3 Gbps, BER ≤ 1×10⁻¹², PRBS 2³¹-1, back-to-back (footnote 4). Power budget 12–21 dB stated without optical path penalties. Power consumption < 1.5 W worst case. Industrial ordering variants (-I): operating temperature -40°C to +85°C. IEEE 802.3ae 10GBASE-ER/EW is defined only at 1550 nm; standard cited for bridgeable distance only. DDM per SFF-8472.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-10GE-BX60D-2733/-3327",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": ""
+  }
+}

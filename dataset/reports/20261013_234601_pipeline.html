@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — LINK-PP [&#x27;LP-RJ45TG-3YC&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">lp-rj45tg-3yc.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">4</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">6</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 23:46</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LP-RJ45TG-3YC Rev1.0- Sep.2020 
+
+
+## **LP-RJ45TG-3YC** 
+
+## 10GBase-T Copper SFP+ Transceiver 
+
+## **Product Features** 
+
+- Up to 10Gb/s bi-directional data links 
+
+- Hot-pluggable SFP+ footprint 
+
+- Fully metallic enclosure for low EMI 
+
+- Low power dissipation 
+
+- Compact RJ-45 connector assembly 
+
+- Access to physical layer IC via 2-wire serial bus 
+
+- Supports Links up to 30m using Cat 6a/7 Cable 
+
+- RoHS Compliant 
+
+- Operating case temperature: 0℃ to 70℃ 
+
+## **Applications** 
+
+- 10 Gigabit Ethernet over Cat 6a/7 cable 
+
+- 5000GBASE-T over Cat 5e cable 
+
+- 2500GBASE-T over Cat 5e cable 
+
+- 1.25 Gigabit Ethernet over Cat 5e cable 
+
+- 100M Ethernet over Cat 5e cable 
+
+- 10M Ethernet over Cat 5e cable 
+
+
+## **Description** 
+
+LP-RJ45TG-3YC Copper Small Form Pluggable (SFP) transceivers are high performance, cost effective module compliant with the 10G Ethernet and 10GBASE-T standards as specified in IEEE 802.3az, which supporting 10Gbps data- rate up to 30 meters reach over unshielded twisted-pair category 6a/7 cables. The module provides standard serial ID information compliant with SFP+ MSA, which can be accessed with address of A0h via the 2wire serial EEPROM protocol. 
+
+www.link-pp.com **ww** w.l-p.com **w.l-p.com** 
+
+Copyright © 2020 LINK-PP AlI Rights Reserved 
+
+Page 1 of 4 
+
+LINK-PP INT’L TECHNOLOGY CO., LIMITED 
+
+LP-RJ45TG-3YC Rev1.0- Sep.2020 
+
+
+## **Pin Descriptions** 
+
+
+|**Pin**|**Signal Name**|**Description**|**Plug Seq.**|**Notes**|
+|---|---|---|---|---|
+|1|VEET|Transmitter Ground|1||
+|2|TX FAULT|Transmitter Fault Indication|3|Not supported|
+|3|TX DISABLE|Transmitter Disable|3||
+|4|SDA|SDA Serial Data Signal|3||
+|5|SCL|SCL Serial Clock Signal|3||
+|6|MOD_ABS|Module Absent. Grounded within the&lt;br&gt;module|3||
+|7|RS0|Not Connected|3||
+|8|LOS|Loss of Signal|3||
+|9|RS1|Not Connected|3||
+|10|VEER|Receiver ground|1||
+|11|VEER|Receiver ground|1||
+|12|RD-|Inv. Received Data Out|3||
+|13|RD+|Received Data Out|3||
+|14|VEER|Re
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"LINK-PP"</span>,
+  <span class="key">"model"</span>: [
+    "LP-RJ45TG-3YC"
+  ],
+  <span class="key">"form_factor"</span>: [],
+  <span class="key">"standards_claimed"</span>: [
+    "IEEE <span class="num">802.3</span>az",
+    "10G Ethernet",
+    "10GBASE-T",
+    "SFP+ MSA"
+  ],
+  <span class="key">"emitter_type"</span>: [],
+  <span class="key">"photodetector_type"</span>: [],
+  <span class="key">"wavelength_min_nm"</span>: [],
+  <span class="key">"wavelength_max_nm"</span>: [],
+  <span class="key">"wavelength_center_nm"</span>: [],
+  <span class="key">"wavelength_band"</span>: [],
+  <span class="key">"frequency_min_thz"</span>: [],
+  <span class="key">"frequency_max_thz"</span>: [],
+  <span class="key">"channel_spacing_ghz"</span>: [],
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "pluggable_hot"
+  ],
+  <span class="key">"connector_type"</span>: [],
+  <span class="key">"fiber_type"</span>: [],
+  <span class="key">"temp_min_c"</span>: <span class="num">0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">2.5</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "SFP+"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: [],
+  <span class="key">"host_interface_id"</span>: [],
+  <span class="key">"media_interface_name"</span>: [
+    "10GBASE-T"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: [],
+  <span class="key">"media_interface_id"</span>: [],
+  <span class="key">"frame"</span>: [],
+  <span class="key">"standards_code"</span>: [
+    "IEEE <span class="num">802.3</span>az",
+    "10GBASE-T",
+    "5000GBASE-T",
+    "2500GBASE-T",
+    "100BASE-T",
+    "10BASE-T"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">10.3</span>,
+    <span class="num">10</span>,
+    <span class="num">5</span>,
+    <span class="num">2.5</span>,
+    <span class="num">1.25</span>,
+    <span class="num">0.1</span>,
+    <span class="num">0.01</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: [],
+  <span class="key">"modulation_format"</span>: [],
+  <span class="key">"reach_km"</span>: [],
+  <span class="key">"tx_power_min_dbm"</span>: [],
+  <span class="key">"tx_power_max_dbm"</span>: [],
+  <span class="key">"tx_in_band_osnr_db"</span>: [],
+  <span class="key">"tx_out_of_band_osnr_db"</span>: [],
+  <span class="key">"rx_sensitivity_dbm"</span>: [],
+  <span class="key">"rx_osnr_db"</span>: [],
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: [],
+  <span class="key">"rx_overload_dbm"</span>: [],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [],
+  <span class="key">"pdl_db"</span>: [],
+  <span class="key">"pmd_tolerance_ps"</span>: [],
+  <span class="key">"fec_type"</span>: [],
+  <span class="key">"fec_overhead_percent"</span>: [],
+  <span class="key">"pre_fec_ber_threshold"</span>: [],
+  <span class="key">"post_fec_ber_target"</span>: [],
+  <span class="key">"extinction_ratio_db"</span>: [],
+  <span class="key">"los_assert_dbm"</span>: [],
+  <span class="key">"los_deassert_dbm"</span>: [],
+  <span class="key">"channel_insertion_loss_db"</span>: [],
+  <span class="key">"receiver_reflectance_db"</span>: [],
+  <span class="key">"transmitter_reflectance_db"</span>: [],
+  <span class="key">"optical_extinction_ratio_db"</span>: [],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [],
+  <span class="key">"number_of_lanes"</span>: [],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [],
+  <span class="key">"los_hysteresis_db"</span>: [],
+  <span class="key">"total_jitter_ps"</span>: [],
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Copper <span class="num">10</span>GBase-T SFP+ module (RJ-45), not an optical transceiver. Cable reach stated as <span class="num">30</span> m over Category <span class="num">6</span>a/7 UTP with BER &lt;10^-12 (General Specifications). Supply current max <span class="num">750</span> mA; input voltage <span class="num">3.13</span>–3.47 V (typ <span class="num">3.3</span> V). Storage temperature <span class="num">-40</span> to <span class="num">85</span> °C ambient. TX FAULT pin not supported. EEPROM at address A0h via <span class="num">2</span>-wire serial bus."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "LP-RJ45TG-3YC",
+    "10GBase-T Copper SFP+ Transceiver",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Pin Descriptions",
+    "+3.3V Volt Electrical Power Interface",
+    "General Specifications",
+    "Environmental Specifications",
+    "Mechanical Specifications",
+    "Ordering information"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Consider schema fields for copper Ethernet (cable type Cat5e/6a/7, reach in meters, supply current mA) and map SFP+ as form_factor."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>standards_code</td><td><span class="badge">IEEE 802.3az</span> <span class="badge">10GBASE-T</span> <span class="badge">5000GBASE-T</span> <span class="badge">2500GBASE-T</span> <span class="badge">100BASE-T</span> <span class="badge">10BASE-T</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">10.3</span> <span class="badge">10.0</span> <span class="badge">5.0</span> <span class="badge">2.5</span> <span class="badge">1.25</span> <span class="badge">0.1</span> <span class="badge">0.01</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>LINK-PP</td></tr>
+<tr><td>model</td><td>LP-RJ45TG-3YC</td></tr>
+<tr><td>form_factor</td><td></td></tr>
+<tr><td>standards_claimed</td><td>IEEE 802.3az, 10G Ethernet, 10GBASE-T, SFP+ MSA</td></tr>
+<tr><td>emitter_type</td><td></td></tr>
+<tr><td>photodetector_type</td><td></td></tr>
+<tr><td>wavelength_min_nm</td><td></td></tr>
+<tr><td>wavelength_max_nm</td><td></td></tr>
+<tr><td>wavelength_center_nm</td><td></td></tr>
+<tr><td>wavelength_band</td><td></td></tr>
+<tr><td>frequency_min_thz</td><td></td></tr>
+<tr><td>frequency_max_thz</td><td></td></tr>
+<tr><td>channel_spacing_ghz</td><td></td></tr>
+<tr><td>mounting_type</td><td>pluggable_hot</td></tr>
+<tr><td>connector_type</td><td></td></tr>
+<tr><td>fiber_type</td><td></td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>2.5</td></tr>
+<tr><td>host_interface_name</td><td>SFP+</td></tr>
+<tr><td>host_interface_id_hex</td><td></td></tr>
+<tr><td>host_interface_id</td><td></td></tr>
+<tr><td>media_interface_name</td><td>10GBASE-T</td></tr>
+<tr><td>media_interface_id_hex</td><td></td></tr>
+<tr><td>media_interface_id</td><td></td></tr>
+<tr><td>frame</td><td></td></tr>
+<tr><td>baud_rate_gbaud</td><td></td></tr>
+<tr><td>roll_off_percent</td><td></td></tr>
+<tr><td>modulation_format</td><td></td></tr>
+<tr><td>reach_km</td><td></td></tr>
+<tr><td>tx_power_min_dbm</td><td></td></tr>
+<tr><td>tx_power_max_dbm</td><td></td></tr>
+<tr><td>tx_in_band_osnr_db</td><td></td></tr>
+<tr><td>tx_out_of_band_osnr_db</td><td></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td></td></tr>
+<tr><td>rx_osnr_db</td><td></td></tr>
+<tr><td>rx_osnr_tolerance_db_max</td><td></td></tr>
+<tr><td>rx_overload_dbm</td><td></td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td></td></tr>
+<tr><td>pdl_db</td><td></td></tr>
+<tr><td>pmd_tolerance_ps</td><td></td></tr>
+<tr><td>fec_type</td><td></td></tr>
+<tr><td>fec_overhead_percent</td><td></td></tr>
+<tr><td>pre_fec_ber_threshold</td><td></td></tr>
+<tr><td>post_fec_ber_target</td><td></td></tr>
+<tr><td>extinction_ratio_db</td><td></td></tr>
+<tr><td>los_assert_dbm</td><td></td></tr>
+<tr><td>los_deassert_dbm</td><td></td></tr>
+<tr><td>channel_insertion_loss_db</td><td></td></tr>
+<tr><td>receiver_reflectance_db</td><td></td></tr>
+<tr><td>transmitter_reflectance_db</td><td></td></tr>
+<tr><td>optical_extinction_ratio_db</td><td></td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td></td></tr>
+<tr><td>number_of_lanes</td><td></td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td></td></tr>
+<tr><td>los_hysteresis_db</td><td></td></tr>
+<tr><td>total_jitter_ps</td><td></td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Copper 10GBase-T SFP+ module (RJ-45), not an optical transceiver. Cable reach stated as 30 m over Category 6a/7 UTP with BER &lt;10^-12 (General Specifications). Supply current max 750 mA; input voltage 3.13–3.47 V (typ 3.3 V). Storage temperature -40 to 85 °C ambient. TX FAULT pin not supported. EEPROM at address A0h via 2-wire serial bus.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>LP-RJ45TG-3YC, 10GBase-T Copper SFP+ Transceiver, Product Features, Applications, Description, Pin Descriptions, +3.3V Volt Electrical Power Interface, General Specifications, Environmental Specifications, Mechanical Specifications, Ordering information</td></tr>
+<tr><td>suggestions</td><td>Consider schema fields for copper Ethernet (cable type Cat5e/6a/7, reach in meters, supply current mA) and map SFP+ as form_factor.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>standards_code</th><th>bit_rate_gbps</th></tr><tr><td><strong>10 Gigabit Ethernet (Cat 6a/7)</strong></td><td>10GBASE-T</td><td>10.3</td></tr><tr><td><strong>5000GBASE-T over Cat 5e</strong></td><td>5000GBASE-T</td><td>5.0</td></tr><tr><td><strong>2500GBASE-T over Cat 5e</strong></td><td>2500GBASE-T</td><td>2.5</td></tr><tr><td><strong>1.25 Gigabit Ethernet over Cat 5e</strong></td><td></td><td>1.25</td></tr><tr><td><strong>100M Ethernet over Cat 5e</strong></td><td>100BASE-T</td><td>0.1</td></tr><tr><td><strong>10M Ethernet over Cat 5e</strong></td><td>10BASE-T</td><td>0.01</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 23:46
+</footer>
+
+</div>
+</body>
+</html>

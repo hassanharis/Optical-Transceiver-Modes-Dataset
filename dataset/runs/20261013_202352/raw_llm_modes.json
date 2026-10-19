@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "QDD-8X100G-FR 8x100GBASE-FR1",
+      "model": "QDD-8X100G-FR",
+      "wavelength_min_nm": 1310.0,
+      "wavelength_max_nm": 1310.0,
+      "wavelength_center_nm": 1310.0,
+      "channel_total": 8,
+      "host_interface_name": "100GAUI-1",
+      "frame": "8x100GE",
+      "standards_code": "100GBASE-FR1",
+      "bit_rate_gbps": 100.0,
+      "tx_power_min_dbm": -3.1,
+      "tx_power_max_dbm": 4.0,
+      "rx_overload_dbm": 4.0,
+      "number_of_lanes": 8
+    },
+    {
+      "label": "QDD-2X400G-FR4 2x400GBASE-FR4",
+      "model": "QDD-2X400G-FR4",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1330.0,
+      "wavelength_center_nm": 1310.0,
+      "channel_total": 4,
+      "host_interface_name": "400GAUI-4 Annex 120G",
+      "frame": "2x400G",
+      "standards_code": "400GBASE-FR4",
+      "bit_rate_gbps": 425.0,
+      "tx_power_min_dbm": -3.2,
+      "tx_power_max_dbm": 3.5,
+      "rx_overload_dbm": 3.5,
+      "number_of_lanes": 4
+    }
+  ]
+}

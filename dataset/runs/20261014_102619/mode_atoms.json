@@ -1,0 +1,122 @@
+{
+  "multi_valued": {
+    "wavelength_center_nm": [
+      1308.0,
+      1310.0
+    ],
+    "power_consumption_w": [
+      0.15,
+      0.26,
+      0.105,
+      0.145
+    ],
+    "media_interface_name": [
+      "100BASE-FX",
+      "100Base-FX"
+    ],
+    "standards_code": [
+      "100BASE-FX",
+      "IEEE802.3u",
+      "FDDI",
+      "4B/5B"
+    ],
+    "tx_power_min_dbm": [
+      -20.0,
+      -24.0
+    ],
+    "tx_power_max_dbm": [
+      -14.0,
+      -17.0
+    ]
+  },
+  "general": {
+    "vendor": "Broadcom",
+    "model": [
+      "AFBR-57E6APZ-HT"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8074i",
+      "SFF-8472",
+      "IEEE802.3u",
+      "100BASE-FX"
+    ],
+    "emitter_type": [
+      "LED",
+      "LED_INGAASP"
+    ],
+    "photodetector_type": [
+      "PIN",
+      "PIN_InGaAs"
+    ],
+    "wavelength_min_nm": [
+      1270.0
+    ],
+    "wavelength_max_nm": [
+      1380.0
+    ],
+    "mounting_type": [
+      "pluggable",
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF 50/125µm",
+      "MMF_OM1",
+      "MMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 95.0,
+    "baud_rate_gbaud": [
+      0.125
+    ],
+    "bit_rate_gbps": [
+      0.1
+    ],
+    "modulation_format": [
+      "LINECODE_4B5B"
+    ],
+    "rx_sensitivity_dbm": [
+      -31.0
+    ],
+    "rx_overload_dbm": [
+      -12.0
+    ],
+    "extinction_ratio_db": [
+      10.0
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -32.0
+    ],
+    "optical_extinction_ratio_db": [
+      10.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      1.6
+    ],
+    "penalties": [],
+    "notes": "Transmitter central wavelength λC min 1270 nm, typ 1308 nm, max 1380 nm (Table 7); LED described as 1310-nm in text and EEPROM (0x051E). Output power ranges are average and fiber-specific: 62.5/125 μm NA=0.275 (−20.0 to −14.0 dBm), 50/125 μm NA=0.20 (−24.0 to −17.0 dBm). Receiver optical input power −31.0 to −12.0 dBm at BER ≤ 1×10−10 with transmitter operating (Table 8). Power dissipation listed separately for transmitter (typ 150 mW, max 260 mW) and receiver (typ 105 mW, max 145 mW). Signalling rate 125 MBd for Fast Ethernet; 4B/5B encoding per EEPROM; Ethernet auto-negotiation pulses not supported.",
+    "provenance_datasheet_sections": [
+      "Description",
+      "Features",
+      "Transmitter",
+      "Receiver",
+      "Module Package",
+      "Recommended Operating Conditions",
+      "Table 5 Transmitter Electrical Characteristics",
+      "Table 6 Receiver Electrical Characteristics",
+      "Table 7 Transmitter Optical Characteristics",
+      "Table 8 Receiver Optical and Electrical Characteristics",
+      "Table 11 EEPROM Serial ID Memory Contents – Address A0h",
+      "Table 15 Settings of Alarm and Warning Thresholds"
+    ]
+  }
+}

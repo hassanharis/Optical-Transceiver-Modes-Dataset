@@ -1,0 +1,120 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-CW100-FR4C"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ba",
+    "100G CLR4",
+    "SFF-8436",
+    "QSFP28 MSA",
+    "RoHS"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "photodiode"
+  ],
+  "wavelength_min_nm": [
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5
+  ],
+  "wavelength_center_nm": [
+    1271.0,
+    1291.0,
+    1311.0,
+    1331.0
+  ],
+  "wavelength_band": [
+    "CWDM",
+    "1310 band"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": [
+    "QSFP28"
+  ],
+  "standards_code": [
+    "IEEE 802.3ba",
+    "100G CLR4",
+    "SFF-8436"
+  ],
+  "bit_rate_gbps": [
+    25.78125,
+    100.0
+  ],
+  "reach_km": [
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    2.5,
+    8.5
+  ],
+  "rx_sensitivity_dbm": [
+    -10.0
+  ],
+  "rx_overload_dbm": [
+    2.5
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "penalties": [],
+  "notes": "Rx sensitivity per lane measured with PRBS 2^31-1 test pattern at 25.78Gb/s, BER<10^-12. Case operating temperature 0°C to 70°C without airflow. Power dissipation stated as < 3.5 W. Total output power max 8.5 dBm; average launch power per lane -6.5 to 2.5 dBm. Transmitter and Dispersion Penalty (TDP) per lane max 3.3 dB stated without paired penalty-point conditions. Average launch power off per lane max -30 dBm.",
+  "provenance_datasheet_sections": [
+    "LQ-CW100-FR4C 100G QSFP28 CWDM4 2KM Transceiver",
+    "Features",
+    "Applications",
+    "Standard",
+    "General Description",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Electrical Specifications",
+    "Optical Characteristics"
+  ],
+  "suggestions": "Clarify whether 100 Gbps aggregate should be listed separately from 25.78125 Gbps per channel. TDP 3.3 dB could map to penalties if schema accepts max penalty without penalized_value. Photodetector could be normalized to PIN if vendor equates discrete photodiode with PIN."
+}

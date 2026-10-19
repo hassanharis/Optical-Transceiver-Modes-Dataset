@@ -1,0 +1,76 @@
+{
+  "modes": [
+    {
+      "label": "BiDi 1310nm TX 40km C-temp",
+      "model": "SO-SFP-1000BASE-BX40D-35",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "1000BASE-BX40D",
+      "bit_rate_gbps": 1.25,
+      "tx_power_min_dbm": -3.0,
+      "tx_power_max_dbm": 2.0
+    },
+    {
+      "label": "BiDi 1550nm TX 40km C-temp",
+      "model": "SO-SFP-1000BASE-BX40D-53",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "1000BASE-BX40D",
+      "bit_rate_gbps": 1.25,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 0.0
+    },
+    {
+      "label": "BiDi 1310nm TX 40km C-temp",
+      "model": "SO-SFP-1000Base-BX40D-35",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "1000BASE-BX40D",
+      "bit_rate_gbps": 1.25,
+      "tx_power_min_dbm": -3.0,
+      "tx_power_max_dbm": 2.0
+    },
+    {
+      "label": "BiDi 1550nm TX 40km C-temp",
+      "model": "SO-SFP-1000Base-BX40D-53",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "1000BASE-BX40D",
+      "bit_rate_gbps": 1.25,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 0.0
+    },
+    {
+      "label": "BiDi 1310nm TX 40km I-temp",
+      "model": "SO-SFP-1000Base-BX40D-35-I",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "1000BASE-BX40D",
+      "bit_rate_gbps": 1.25,
+      "tx_power_min_dbm": -3.0,
+      "tx_power_max_dbm": 2.0
+    },
+    {
+      "label": "BiDi 1550nm TX 40km I-temp",
+      "model": "SO-SFP-1000Base-BX40D-53-I",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "SFF-8472",
+      "standards_code": "1000BASE-BX40D",
+      "bit_rate_gbps": 1.25,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 0.0
+    }
+  ]
+}

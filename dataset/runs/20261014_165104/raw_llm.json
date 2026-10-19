@@ -1,0 +1,165 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TQ5001-M85C-SO"
+  ],
+  "form_factor": [
+    "QSFP56"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3bm",
+    "IEEE 802.3bs",
+    "QSFP56 MSA",
+    "CMIS4.0"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "MPO-12",
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    5.0
+  ],
+  "host_interface_name": [
+    "200GAUI-4",
+    "200GAUI-4 (4x 50G)",
+    "4x 50GAUI-1",
+    "4x 50GAUI-1 (4x 50G)",
+    "IB HRR"
+  ],
+  "host_interface_id_hex": [
+    "0x0F",
+    "0x0A",
+    "0x31"
+  ],
+  "host_interface_id": [
+    15,
+    10,
+    49
+  ],
+  "media_interface_name": [
+    "200GBASE-SR4",
+    "50GBASE-SR"
+  ],
+  "media_interface_id_hex": [
+    "0x0E",
+    "0x07"
+  ],
+  "media_interface_id": [
+    14,
+    7
+  ],
+  "frame": [
+    "200GAUI-4 (4x 50G)",
+    "4x 50GAUI-1 (4x 50G)"
+  ],
+  "standards_code": [
+    "200GBASE-SR4",
+    "200GBAS-SR4",
+    "200GBASE-R",
+    "50GBASE-SR",
+    "4 x 50GBASE-R",
+    "InfiniBand HDR",
+    "IB HDR",
+    "200GbE"
+  ],
+  "baud_rate_gbaud": [
+    26.5625
+  ],
+  "bit_rate_gbps": [
+    200.0,
+    212.5
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.1
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -8.4
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [
+    "RS_GENERIC",
+    "FEC"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    0.0002
+  ],
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    17.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Optical performance stated in accordance with 100GBASE-SR IEEE 802.3bm for up to 100m over OM4-grade MM ribbon fiber. Power budget 0–1.9 dB in technical data header. Receiver minimum input power, overload, and related specs footnote 3: specified at BER 2x10-4. Storage temperature -40°C to +85°C. Ordering table describes TQ5001-M85C-SO as QSFP28, 100G Eth SR4 while main product text is QSFP56 200GBASE-SR4. Application 3 (IB HDR) lists FEC as “-”. LOS Assert printed as Min 17dBm without a minus sign.",
+  "provenance_datasheet_sections": [
+    "QSFP56 200G SR4",
+    "TQ5001-M85C-SO",
+    "TECHNICAL DATA",
+    "APPLICATION CODE LIST",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether LOS Assert is 17 dBm or -17 dBm as printed. Align ordering description with QSFP56/200G naming. Consider mapping explicit 100m reach as a separate field if km conversion is disallowed."
+}

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Grouping follows the ordering table (one mode per part number). Wavelength 1270\u20131350 nm is assigned only to Tx 1310 nm FP rows (transmitter table, note \u201c1310FP\u201d). Rx 1260\u20131610 nm is module-wide, not per part row, so it is not assigned to individual modes. Tx 1550 nm DFB uses 1510\u20131590 nm in the datasheet, which are not in the pool. `ITU-T G.957` applies to all variants.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"L9-SC315501-60CTC Tx1310 FP Commercial\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1350.0,\n      \"standards_code\": \"ITU-T G.957\"\n    },\n    {\n      \"label\": \"L9-SC553101-60CTC Tx1550 DFB Commercial\",\n      \"standards_code\": \"ITU-T G.957\"\n    },\n    {\n      \"label\": \"L9-SC315501-60CTI Tx1310 FP Industrial\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1350.0,\n      \"standards_code\": \"ITU-T G.957\"\n    },\n    {\n      \"label\": \"L9-SC553101-60CTI Tx1550 DFB Industrial\",\n      \"standards_code\": \"ITU-T G.957\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

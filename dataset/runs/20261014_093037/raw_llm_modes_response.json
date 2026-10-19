@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"Tri-Rate FC 4.25 Gb/s\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1350.0,\n      \"bit_rate_gbps\": 4.25\n    },\n    {\n      \"label\": \"Tri-Rate FC 8.5 Gb/s\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1350.0,\n      \"bit_rate_gbps\": 8.5\n    },\n    {\n      \"label\": \"Tri-Rate FC 14.025 Gb/s\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1350.0,\n      \"bit_rate_gbps\": 14.025\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

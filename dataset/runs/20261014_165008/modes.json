@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "BiDi 100G 4LAN-WDM 70km (family)",
+      "model": "TQ2034-BXXY-SO",
+      "wavelength_center_nm": 1274.0,
+      "standards_code": "4LAN-WDM",
+      "rx_sensitivity_dbm": -24.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "BiDi 100G upper-wavelength unit (family)",
+      "model": "TQ2034-BXXy-SO",
+      "wavelength_center_nm": 1296.0,
+      "standards_code": "4LAN-WDM",
+      "rx_sensitivity_dbm": -24.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "BiDi 100G 4WL Tx lower band 70km",
+      "model": "TQ2034-BWXC-SO",
+      "wavelength_center_nm": 1282.0,
+      "standards_code": "4LAN-WDM",
+      "rx_sensitivity_dbm": -24.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "BiDi 100G 4WL Tx upper band 70km",
+      "model": "TQ2034-BXWC-SO",
+      "wavelength_center_nm": 1305.0,
+      "standards_code": "4LAN-WDM",
+      "rx_sensitivity_dbm": -24.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "BiDi 100G 4WL Tx lower band 70km E-temp",
+      "model": "TQ2034-BWXE-SO",
+      "wavelength_center_nm": 1282.0,
+      "standards_code": "4LAN-WDM",
+      "rx_sensitivity_dbm": -24.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "BiDi 100G 4WL Tx upper band 70km E-temp",
+      "model": "TQ2034-BXWE-SO",
+      "wavelength_center_nm": 1305.0,
+      "standards_code": "4LAN-WDM",
+      "rx_sensitivity_dbm": -24.0,
+      "fec_type": "RS_528_514"
+    }
+  ]
+}

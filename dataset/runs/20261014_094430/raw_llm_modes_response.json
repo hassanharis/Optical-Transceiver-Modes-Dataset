@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "From the datasheet, **LS-SM5506-80C** and **LS-SM5506-80I** differ only in case temperature (ordering table); both are **1550 nm** products with the same optical table. Transmitter centre wavelength is **1530\u20131570 nm**; receiver centre wavelength **1260\u20131610 nm** is acceptance on the same module, not a second selectable mode. Per your rules, one mode per model; assign the **transmitter** band (1530 / 1570) to each model\u2014not the RX pair with 80I.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"LS-SM5506-80C Standard temp\",\n      \"model\": \"LS-SM5506-80C\",\n      \"wavelength_min_nm\": 1530.0,\n      \"wavelength_max_nm\": 1570.0\n    },\n    {\n      \"label\": \"LS-SM5506-80I Industrial temp\",\n      \"model\": \"LS-SM5506-80I\",\n      \"wavelength_min_nm\": 1530.0,\n      \"wavelength_max_nm\": 1570.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

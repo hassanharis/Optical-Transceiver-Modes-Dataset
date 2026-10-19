@@ -1,0 +1,114 @@
+{
+  "vendor": "Cinch Connectivity Solutions",
+  "model": [
+    "LxLx-ST11xx",
+    "LxL-ST11xx",
+    "LxL2-ST11xx",
+    "LxL3-ST11xx",
+    "LxL5-ST11xx",
+    "Roughrider",
+    "RR"
+  ],
+  "form_factor": [
+    "Low Rider RJ"
+  ],
+  "standards_claimed": [
+    "ANSI Fiber Channel FC-PI / PH2",
+    "FC-PI-2",
+    "ANSI X3.297 FC-PI",
+    "ANSI X3.297 FC-PH-2",
+    "EN-60825",
+    "IEC-825",
+    "CDRH Class 1"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "mounting_type": [
+    "solder_post",
+    "screw_post",
+    "solder",
+    "screw",
+    "mount_surface"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF 50/125µm",
+    "MMF_OM1"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "host_interface_name": [
+    "1x Fiber Channel",
+    "2x Fiber Channel",
+    "Fiber Channel"
+  ],
+  "standards_code": [
+    "FC-PI",
+    "FC-PH-2",
+    "FC-PI-2",
+    "FC-PH",
+    "ANSI X3.297"
+  ],
+  "baud_rate_gbaud": [
+    2.125,
+    1.0625
+  ],
+  "modulation_format": [
+    "NRZ"
+  ],
+  "reach_km": [
+    0.15,
+    0.3,
+    0.5
+  ],
+  "tx_power_min_dbm": [
+    -10.0,
+    -8.0,
+    -7.0,
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    -1.5
+  ],
+  "rx_sensitivity_dbm": [
+    -15.0,
+    -17.0
+  ],
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "number_of_lanes": [
+    1,
+    2
+  ],
+  "total_jitter_ps": [
+    85.0
+  ],
+  "penalties": [],
+  "notes": "Supply VCCTX/VCCRX 3.135V to 3.465V. Optical sensitivity and jitter assume extinction ratio 9 dB. Rx sensitivity: -15.0 dBm at 2.125 GigaBaud BER=10^-12 PRBS 2^7-1 NRZ FC-PI-2; -17.0 dBm at 1.0625 GigaBaud BER=10^-12 PRBS 2^7-1 NRZ FC-PH. Tx output power rows are variant-specific (standard, +2dB, +3dB, +5dB margin). Link distances in datasheet are 150M, 300M, 500M by fiber type and 1x vs 2x FC application. Max module height 0.386 inches. Rx optical sensitivity MAX column is 0 dBm.",
+  "provenance_datasheet_sections": [
+    "LxLx-ST11xx Low Profile Optical Transceiver",
+    "Applications",
+    "Features",
+    "Ordering Information",
+    "Transmitters: VCCTX = 3.135V to 3.465V, TA = Operating Temperature Range",
+    "Link Distances"
+  ],
+  "suggestions": "Datasheet lists reach in meters (M); reach_km uses km equivalents. Stressed receiver sensitivity is given in µW OMA only, not mapped to rx_sensitivity_dbm. Form factor 'Low Profile' is descriptive; only 'Low Rider' matches schema enum."
+}

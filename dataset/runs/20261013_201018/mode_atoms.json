@@ -1,0 +1,151 @@
+{
+  "multi_valued": {
+    "model": [
+      "HFBR-57E0LZ",
+      "HFBR-57E0ALZ",
+      "HFBR-57E0PZ",
+      "HFBR-57E0APZ",
+      "HFBR-57E0"
+    ],
+    "wavelength_center_nm": [
+      1300.0,
+      1308.0
+    ],
+    "power_consumption_w": [
+      0.55,
+      0.8,
+      0.35,
+      0.55
+    ],
+    "frame": [
+      "OC-3",
+      "SONET OC-3",
+      "SDH STM-1",
+      "Fast Ethernet",
+      "100Base-FX"
+    ],
+    "standards_code": [
+      "OC-3",
+      "STM-1",
+      "SONET OC-3",
+      "FDDI",
+      "100Base-FX",
+      "IEEE802.3u",
+      "ATM"
+    ],
+    "baud_rate_gbaud": [
+      0.025,
+      0.125,
+      0.15552
+    ],
+    "bit_rate_gbps": [
+      0.1,
+      0.15552
+    ],
+    "tx_power_min_dbm": [
+      -19.0,
+      -20.0,
+      -22.5,
+      -23.5
+    ],
+    "rx_sensitivity_dbm": [
+      -30.0,
+      -31.0,
+      -31.8,
+      -33.0
+    ],
+    "post_fec_ber_target": [
+      1e-10,
+      2.5e-10
+    ],
+    "los_deassert_dbm": [
+      -31.0,
+      -33.0
+    ]
+  },
+  "general": {
+    "vendor": "Avago Technologies",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "ATM Forum UNI SONET OC-3 multimode fiber physical layer specification",
+      "FDDI PMD Standard",
+      "IEEE802.3u 100Base-FX",
+      "Small Form Pluggable (SFP) industry standard",
+      "MSA"
+    ],
+    "emitter_type": [
+      "LED",
+      "LED_INGAASP"
+    ],
+    "photodetector_type": [
+      "PIN",
+      "PIN_InGaAs"
+    ],
+    "wavelength_min_nm": [
+      1270.0
+    ],
+    "wavelength_max_nm": [
+      1380.0
+    ],
+    "wavelength_band": [],
+    "mounting_type": [
+      "pluggable",
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF_OM1",
+      "MMF 50/125µm",
+      "MMF"
+    ],
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "modulation_format": [
+      "NRZI"
+    ],
+    "tx_power_max_dbm": [
+      -14.0
+    ],
+    "rx_overload_dbm": [
+      -14.0
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "los_hysteresis_db": [
+      1.5
+    ],
+    "penalties": [],
+    "notes": "Operating case temperature is 0 °C to +70 °C for HFBR-57E0LZ/PZ and -40 °C to +85 °C for HFBR-57E0ALZ/APZ. Tx output power rows distinguish 62.5/125 μm (NA=0.275) vs 50/125 μm (NA=0.20) fiber and BOL vs EOL; EOL values appear only in the EOL row (-20 dBm avg for 62.5/125, -23.5 for 50/125). Rx sensitivity uses PIN MIN(W) vs PIN MIN(C) and OC-3 vs FE; LOS deassert OC-3 lists -31 dBm with 1.5 dB margin to -33 dBm in table layout. Supply voltage 2.97–3.63 V; max supply current 230 mA at SFP connector per pin description note 5. Nominal wavelength 1300 nm; center wavelength table typical 1308 nm. LED aging <1 dB vs industry 1.5 dB convention.",
+    "provenance_datasheet_sections": [
+      "HFBR-57E0LZ/ALZ/PZ/APZ",
+      "Description",
+      "Transmitter Section",
+      "Receiver Section",
+      "Features",
+      "Applications",
+      "Loss of Signal",
+      "Module Package",
+      "Recommended Operating Conditions",
+      "Transmitter Electrical Characteristics",
+      "Receiver Electrical Characteristics",
+      "Transmitter Optical Characteristics",
+      "Receiver Optical and Electrical Characteristics",
+      "Ordering Information",
+      "1300 nm LED (Operating Case Temperature 0 to +70 °C)",
+      "1300 nm LED (Operating Case Temperature -40 °C to +85 °C)"
+    ],
+    "suggestions": "Schema temp_min_c/temp_max_c are single floats but this family has two explicit SKU temperature ranges; consider list[float] or per-SKU objects. Include storage temperature (-40 to +100 °C) only if absolute ratings are in scope."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "modes": [
+    {
+      "label": "C49-E 1490nm 100M Ethernet",
+      "model": "SO-SFP-1G-O-C49-E",
+      "wavelength_min_nm": 1484.5,
+      "wavelength_max_nm": 1497.5,
+      "wavelength_center_nm": 1490.0,
+      "host_interface_name": "100M Ethernet",
+      "bit_rate_gbps": 0.125
+    },
+    {
+      "label": "C49-E 1490nm 1G Ethernet",
+      "model": "SO-SFP-1G-O-C49-E",
+      "wavelength_min_nm": 1484.5,
+      "wavelength_max_nm": 1497.5,
+      "wavelength_center_nm": 1490.0,
+      "host_interface_name": "1G Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "C51-E 1510nm 100M Ethernet",
+      "model": "SO-SFP-1G-O-C51-E",
+      "wavelength_min_nm": 1504.5,
+      "wavelength_max_nm": 1517.5,
+      "wavelength_center_nm": 1510.0,
+      "host_interface_name": "100M Ethernet",
+      "bit_rate_gbps": 0.125
+    },
+    {
+      "label": "C51-E 1510nm 1G Ethernet",
+      "model": "SO-SFP-1G-O-C51-E",
+      "wavelength_min_nm": 1504.5,
+      "wavelength_max_nm": 1517.5,
+      "wavelength_center_nm": 1510.0,
+      "host_interface_name": "1G Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "C61-E 1610nm 100M Ethernet",
+      "model": "SO-SFP-1G-O-C61-E",
+      "wavelength_min_nm": 1604.5,
+      "wavelength_max_nm": 1617.5,
+      "wavelength_center_nm": 1610.0,
+      "host_interface_name": "100M Ethernet",
+      "bit_rate_gbps": 0.125
+    },
+    {
+      "label": "C61-E 1610nm 1G Ethernet",
+      "model": "SO-SFP-1G-O-C61-E",
+      "wavelength_min_nm": 1604.5,
+      "wavelength_max_nm": 1617.5,
+      "wavelength_center_nm": 1610.0,
+      "host_interface_name": "1G Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "C62-E 1625nm 100M Ethernet",
+      "model": "SO-SFP-1G-O-C62-E",
+      "wavelength_min_nm": 1618.5,
+      "wavelength_max_nm": 1631.5,
+      "wavelength_center_nm": 1625.0,
+      "host_interface_name": "100M Ethernet",
+      "bit_rate_gbps": 0.125
+    },
+    {
+      "label": "C62-E 1625nm 1G Ethernet",
+      "model": "SO-SFP-1G-O-C62-E",
+      "wavelength_min_nm": 1618.5,
+      "wavelength_max_nm": 1631.5,
+      "wavelength_center_nm": 1625.0,
+      "host_interface_name": "1G Ethernet",
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

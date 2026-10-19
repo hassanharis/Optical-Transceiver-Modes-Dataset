@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;SO-QSFP28-Dxx-A&#x27;, &#x27;SO-QSFP28-D21-A&#x27;, &#x27;SO-QSFP28-D22-A&#x27;, &#x27;SO-QSFP28-D23-A&#x27;, &#x27;SO-QSFP28-D24-A&#x27;, &#x27;SO-QSFP28-D25-A&#x27;, &#x27;SO-QSFP28-D26-A&#x27;, &#x27;SO-QSFP28-D27-A&#x27;, &#x27;SO-QSFP28-D28-A&#x27;, &#x27;SO-QSFP28-D29-A&#x27;, &#x27;SO-QSFP28-D30-A&#x27;, &#x27;SO-QSFP28-D31-A&#x27;, &#x27;SO-QSFP28-D32-A&#x27;, &#x27;SO-QSFP28-D33-A&#x27;, &#x27;SO-QSFP28-D34-A&#x27;, &#x27;SO-QSFP28-D35-A&#x27;, &#x27;SO-QSFP28-D36-A&#x27;, &#x27;SO-QSFP28-D37-A&#x27;, &#x27;SO-QSFP28-D38-A&#x27;, &#x27;SO-QSFP28-D39-A&#x27;, &#x27;SO-QSFP28-D40-A&#x27;, &#x27;SO-QSFP28-D41-A&#x27;, &#x27;SO-QSFP28-D42-A&#x27;, &#x27;SO-QSFP28-D43-A&#x27;, &#x27;SO-QSFP28-D44-A&#x27;, &#x27;SO-QSFP28-D45-A&#x27;, &#x27;SO-QSFP28-D46-A&#x27;, &#x27;SO-QSFP28-D47-A&#x27;, &#x27;SO-QSFP28-D48-A&#x27;, &#x27;SO-QSFP28-D49-A&#x27;, &#x27;SO-QSFP28-D50-A&#x27;, &#x27;SO-QSFP28-D51-A&#x27;, &#x27;SO-QSFP28-D52-A&#x27;, &#x27;SO-QSFP28-D53-A&#x27;, &#x27;SO-QSFP28-D54-A&#x27;, &#x27;SO-QSFP28-D55-A&#x27;, &#x27;SO-QSFP28-D56-A&#x27;, &#x27;SO-QSFP28-D57-A&#x27;, &#x27;SO-QSFP28-D58-A&#x27;, &#x27;SO-QSFP28-D59-A&#x27;, &#x27;SO-QSFP28-D60-A&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">so-qsfp28-dxx-a-r5.2.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">3</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 12:14</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.1 
+
+## **SO-QSFP28-Dxx-A** 
+
+QSFP28 100G Ethernet DWDM PAM4 100GHz D9210-D9600 
+
+## OVERVIEW 
+
+The SO-QSFP28-Dxx-A is a QSFP28 form-factor DWDM transceiver for 100Gbps Ethernet applications. It is intended for use in interconnect applications between data centers between switches, routers, storage equipment etc. 
+
+The transceiver is provided in 40 channel versions at the 100GHz DWDM grid as specified in the ITU-T 694.1 standard. The line signal is PAM4-modulated which means that the transmission links will need optical amplifiers and dispersion compensation. The receiver optical specification is consequently only specifying optimum input receiver power range and damage threshold. 
+
+The module includes FEC coding Forward Error Correction (KP4 FEC) to ensure reliable system operation. The host system shall thus not have FEC activated. The optical parameters will provide a bit error ratio (BER) of 2.4 x 10[-4] . FEC will render in the required BER of better than 1 x 10[-12] . 
+
+Digital diagnostics functions are available via the I[2] C interface as specified by the QSFP MSA specification SFF 8636. The electrical signals are transmitted and received from the host via a standard 38 pin connector described in the QSFP28 MSA (SFF8679). The electrical interface is compliant to CAUI-4 (IEEE P802.3bm Annex 83E), splitting the 100Gbps signal in to four parallel 25 Gbps NRZ streams. 
+
+## TECHNICAL DATA 
+
+|**Parameter**&lt;br&gt;**Value**&lt;br&gt;Technology&lt;br&gt;DWDM QSFP28&lt;br&gt;Transmission media&lt;br&gt;SM (2x LC)&lt;br&gt;Typical reach&lt;br&gt;80km with EDFA and DCM&lt;br&gt;Nominal wavelengths&lt;br&gt;192.10 – 196.00 THz (40ch)&lt;br&gt;Interface standards&lt;br&gt;100GBASE&lt;br&gt;Bit rate support&lt;br&gt;53.125Gbaud (PAM4) / 103.12Gbps&lt;br&gt;Protocol support&lt;br&gt;100GbE&lt;br&gt;Dispersion tolerance&lt;br&gt;+/-40ps/nm&lt;br&gt;Power consumption&lt;br&gt;&lt; 5.5W&lt;br&gt;Operating temperature&lt;br&gt;0°C to +70°C&lt;br&gt;Storage temperature&lt;br&gt;-40°C to +85°C&lt;br&gt;1)Average power&lt;br&gt;2)pre FEC BER &lt; 2.4x10-4&lt;br&gt;**Safety/regulatory compliance:**&lt;br&gt;TUV/UL/FDA (contact Sma
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "SO-QSFP28-Dxx-A",
+    "SO-QSFP28-D21-A",
+    "SO-QSFP28-D22-A",
+    "SO-QSFP28-D23-A",
+    "SO-QSFP28-D24-A",
+    "SO-QSFP28-D25-A",
+    "SO-QSFP28-D26-A",
+    "SO-QSFP28-D27-A",
+    "SO-QSFP28-D28-A",
+    "SO-QSFP28-D29-A",
+    "SO-QSFP28-D30-A",
+    "SO-QSFP28-D31-A",
+    "SO-QSFP28-D32-A",
+    "SO-QSFP28-D33-A",
+    "SO-QSFP28-D34-A",
+    "SO-QSFP28-D35-A",
+    "SO-QSFP28-D36-A",
+    "SO-QSFP28-D37-A",
+    "SO-QSFP28-D38-A",
+    "SO-QSFP28-D39-A",
+    "SO-QSFP28-D40-A",
+    "SO-QSFP28-D41-A",
+    "SO-QSFP28-D42-A",
+    "SO-QSFP28-D43-A",
+    "SO-QSFP28-D44-A",
+    "SO-QSFP28-D45-A",
+    "SO-QSFP28-D46-A",
+    "SO-QSFP28-D47-A",
+    "SO-QSFP28-D48-A",
+    "SO-QSFP28-D49-A",
+    "SO-QSFP28-D50-A",
+    "SO-QSFP28-D51-A",
+    "SO-QSFP28-D52-A",
+    "SO-QSFP28-D53-A",
+    "SO-QSFP28-D54-A",
+    "SO-QSFP28-D55-A",
+    "SO-QSFP28-D56-A",
+    "SO-QSFP28-D57-A",
+    "SO-QSFP28-D58-A",
+    "SO-QSFP28-D59-A",
+    "SO-QSFP28-D60-A"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "QSFP28"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "QSFP28 MSA",
+    "SFF-8636",
+    "SFF-8679",
+    "ITU-T G.694.1",
+    "CAUI-4",
+    "IEEE P802.3bm Annex <span class="num">83</span>E",
+    "100GBASE",
+    "100GbE"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1528.0</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1566.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1560.61</span>,
+    <span class="num">1559.79</span>,
+    <span class="num">1558.98</span>,
+    <span class="num">1558.17</span>,
+    <span class="num">1557.36</span>,
+    <span class="num">1556.55</span>,
+    <span class="num">1555.75</span>,
+    <span class="num">1554.94</span>,
+    <span class="num">1554.13</span>,
+    <span class="num">1553.33</span>,
+    <span class="num">1552.52</span>,
+    <span class="num">1551.72</span>,
+    <span class="num">1550.92</span>,
+    <span class="num">1550.12</span>,
+    <span class="num">1549.32</span>,
+    <span class="num">1548.51</span>,
+    <span class="num">1547.72</span>,
+    <span class="num">1546.92</span>,
+    <span class="num">1546.12</span>,
+    <span class="num">1545.32</span>,
+    <span class="num">1544.53</span>,
+    <span class="num">1543.73</span>,
+    <span class="num">1542.94</span>,
+    <span class="num">1542.14</span>,
+    <span class="num">1541.35</span>,
+    <span class="num">1540.56</span>,
+    <span class="num">1539.77</span>,
+    <span class="num">1538.98</span>,
+    <span class="num">1538.19</span>,
+    <span class="num">1537.4</span>,
+    <span class="num">1536.61</span>,
+    <span class="num">1535.82</span>,
+    <span class="num">1535.04</span>,
+    <span class="num">1534.25</span>,
+    <span class="num">1533.47</span>,
+    <span class="num">1532.68</span>,
+    <span class="num">1531.9</span>,
+    <span class="num">1531.12</span>,
+    <span class="num">1530.33</span>,
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "DWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">192.1</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.0</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">40</span>
+  ],
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">5.5</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "CAUI-4"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: [
+    "100GBASE",
+    "100GbE"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: [
+    "4x <span class="num">25</span> Gbps NRZ"
+  ],
+  <span class="key">"standards_code"</span>: [
+    "G.694.1",
+    "100GBASE",
+    "100GbE"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [
+    <span class="num">53.125</span>
+  ],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">103.12</span>,
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [
+    "PAM4",
+    "NRZ"
+  ],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">80.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-7.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">4.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-9.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: [
+    <span class="num">33.5</span>
+  ],
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">5.5</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">40.0</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: [
+    "KP4"
+  ],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: [
+    <span class="num">0.00024</span>
+  ],
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-15.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-12.0</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Power consumption stated as &lt; <span class="num">5.5</span>W. Footnote <span class="num">1</span>): Average power. Footnote <span class="num">2</span>): pre FEC BER &lt; <span class="num">2.4</span>x10-4. Optical parameters provide BER <span class="num">2.4</span> x <span class="num">10</span>^-4; host system shall not have FEC activated; KP4 FEC in module yields post-FEC BER better than <span class="num">1</span> x <span class="num">10</span>^-12. Typical reach <span class="num">80</span>km requires EDFA and DCM. Input power @ OSNR <span class="num">33.5</span>dB: <span class="num">-3.0</span> to +4.5dBm. Input power unamplified: <span class="num">-9</span>dBm to +4.5dBm. Damage threshold (max power) +5.5dBm. Transmit wavelengths <span class="num">192.10</span> – <span class="num">196.00</span> THz (40ch), <span class="num">100</span>GHz grid (G.694.1). Storage temperature <span class="num">-40</span>°C to +85°C not mapped to operating temp fields."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "SO-QSFP28-Dxx-A",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="null">null</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">SO-QSFP28-Dxx-A</span> <span class="badge">SO-QSFP28-D21-A</span> <span class="badge">SO-QSFP28-D22-A</span> <span class="badge">SO-QSFP28-D23-A</span> <span class="badge">SO-QSFP28-D24-A</span> <span class="badge">SO-QSFP28-D25-A</span> <span class="badge">SO-QSFP28-D26-A</span> <span class="badge">SO-QSFP28-D27-A</span> <span class="badge">SO-QSFP28-D28-A</span> <span class="badge">SO-QSFP28-D29-A</span> <span class="badge">SO-QSFP28-D30-A</span> <span class="badge">SO-QSFP28-D31-A</span> <span class="badge">SO-QSFP28-D32-A</span> <span class="badge">SO-QSFP28-D33-A</span> <span class="badge">SO-QSFP28-D34-A</span> <span class="badge">SO-QSFP28-D35-A</span> <span class="badge">SO-QSFP28-D36-A</span> <span class="badge">SO-QSFP28-D37-A</span> <span class="badge">SO-QSFP28-D38-A</span> <span class="badge">SO-QSFP28-D39-A</span> <span class="badge">SO-QSFP28-D40-A</span> <span class="badge">SO-QSFP28-D41-A</span> <span class="badge">SO-QSFP28-D42-A</span> <span class="badge">SO-QSFP28-D43-A</span> <span class="badge">SO-QSFP28-D44-A</span> <span class="badge">SO-QSFP28-D45-A</span> <span class="badge">SO-QSFP28-D46-A</span> <span class="badge">SO-QSFP28-D47-A</span> <span class="badge">SO-QSFP28-D48-A</span> <span class="badge">SO-QSFP28-D49-A</span> <span class="badge">SO-QSFP28-D50-A</span> <span class="badge">SO-QSFP28-D51-A</span> <span class="badge">SO-QSFP28-D52-A</span> <span class="badge">SO-QSFP28-D53-A</span> <span class="badge">SO-QSFP28-D54-A</span> <span class="badge">SO-QSFP28-D55-A</span> <span class="badge">SO-QSFP28-D56-A</span> <span class="badge">SO-QSFP28-D57-A</span> <span class="badge">SO-QSFP28-D58-A</span> <span class="badge">SO-QSFP28-D59-A</span> <span class="badge">SO-QSFP28-D60-A</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1545.32</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span></td></tr>
+<tr><td>media_interface_name</td><td><span class="badge">100GBASE</span> <span class="badge">100GbE</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">G.694.1</span> <span class="badge">100GBASE</span> <span class="badge">100GbE</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">103.12</span> <span class="badge">100.0</span></td></tr>
+<tr><td>modulation_format</td><td><span class="badge">PAM4</span> <span class="badge">NRZ</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>QSFP28</td></tr>
+<tr><td>standards_claimed</td><td>QSFP28 MSA, SFF-8636, SFF-8679, ITU-T G.694.1, CAUI-4, IEEE P802.3bm Annex 83E, 100GBASE, 100GbE</td></tr>
+<tr><td>wavelength_min_nm</td><td>1528.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>1566.0</td></tr>
+<tr><td>wavelength_band</td><td>DWDM</td></tr>
+<tr><td>frequency_min_thz</td><td>192.1</td></tr>
+<tr><td>frequency_max_thz</td><td>196.0</td></tr>
+<tr><td>channel_spacing_ghz</td><td>100.0</td></tr>
+<tr><td>channel_total</td><td>40</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>5.5</td></tr>
+<tr><td>host_interface_name</td><td>CAUI-4</td></tr>
+<tr><td>frame</td><td>4x 25 Gbps NRZ</td></tr>
+<tr><td>baud_rate_gbaud</td><td>53.125</td></tr>
+<tr><td>reach_km</td><td>80.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-7.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>4.0</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-9.0</td></tr>
+<tr><td>rx_osnr_db</td><td>33.5</td></tr>
+<tr><td>rx_overload_dbm</td><td>5.5</td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td>40.0</td></tr>
+<tr><td>fec_type</td><td>KP4</td></tr>
+<tr><td>pre_fec_ber_threshold</td><td>0.00024</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>los_assert_dbm</td><td>-15.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-12.0</td></tr>
+<tr><td>number_of_lanes</td><td>4</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Power consumption stated as &lt; 5.5W. Footnote 1): Average power. Footnote 2): pre FEC BER &lt; 2.4x10-4. Optical parameters provide BER 2.4 x 10^-4; host system shall not have FEC activated; KP4 FEC in module yields post-FEC BER better than 1 x 10^-12. Typical reach 80km requires EDFA and DCM. Input power @ OSNR 33.5dB: -3.0 to +4.5dBm. Input power unamplified: -9dBm to +4.5dBm. Damage threshold (max power) +5.5dBm. Transmit wavelengths 192.10 – 196.00 THz (40ch), 100GHz grid (G.694.1). Storage temperature -40°C to +85°C not mapped to operating temp fields.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>SO-QSFP28-Dxx-A, OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_center_nm</th><th>media_interface_name</th><th>standards_code</th><th>bit_rate_gbps</th><th>modulation_format</th></tr><tr><td><strong>DWDM 192.10 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D21-A</td><td>1560.61</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 192.20 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D22-A</td><td>1559.79</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 192.30 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D23-A</td><td>1558.98</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 192.40 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D24-A</td><td>1558.17</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 192.50 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D25-A</td><td>1557.36</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 192.60 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D26-A</td><td>1556.55</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 192.70 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D27-A</td><td>1555.75</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 192.80 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D28-A</td><td>1554.94</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 192.90 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D29-A</td><td>1554.13</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 193.00 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D30-A</td><td>1553.33</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 193.10 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D31-A</td><td>1552.52</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 193.20 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D32-A</td><td>1551.72</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 193.30 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D33-A</td><td>1550.92</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 193.40 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D34-A</td><td>1550.12</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 193.50 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D35-A</td><td>1549.32</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 193.60 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D36-A</td><td>1548.51</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 193.70 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D37-A</td><td>1547.72</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 193.80 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D38-A</td><td>1546.92</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 193.90 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D39-A</td><td>1546.12</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 194.00 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D40-A</td><td>1545.32</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 194.10 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D41-A</td><td>1544.53</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 194.20 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D42-A</td><td>1543.73</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 194.30 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D43-A</td><td>1542.94</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 194.40 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D44-A</td><td>1542.14</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 194.50 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D45-A</td><td>1541.35</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 194.60 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D46-A</td><td>1540.56</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 194.70 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D47-A</td><td>1539.77</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 194.80 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D48-A</td><td>1538.98</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 194.90 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D49-A</td><td>1538.19</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 195.00 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D50-A</td><td>1537.4</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 195.10 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D51-A</td><td>1536.61</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 195.20 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D52-A</td><td>1535.82</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 195.30 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D53-A</td><td>1535.04</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 195.40 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D54-A</td><td>1534.25</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 195.50 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D55-A</td><td>1533.47</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 195.60 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D56-A</td><td>1532.68</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 195.70 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D57-A</td><td>1531.9</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 195.80 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D58-A</td><td>1531.12</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 195.90 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D59-A</td><td>1530.33</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr><tr><td><strong>DWDM 196.00 THz 100GbE PAM4</strong></td><td>SO-QSFP28-D60-A</td><td>1529.55</td><td>100GBASE</td><td>G.694.1</td><td>103.12</td><td>PAM4</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 12:14
+</footer>
+
+</div>
+</body>
+</html>

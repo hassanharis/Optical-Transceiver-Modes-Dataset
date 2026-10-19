@@ -1,0 +1,131 @@
+{
+  "multi_valued": {
+    "model": [
+      "FNK-LT12x",
+      "FNK-LT12"
+    ],
+    "form_factor": [
+      "Low Rider RJ",
+      "Front Panel Plug RJ"
+    ],
+    "wavelength_min_nm": [
+      1285.0,
+      1270.0
+    ],
+    "wavelength_max_nm": [
+      1343.0,
+      1355.0
+    ],
+    "standards_code": [
+      "IEEE-802.3z",
+      "ANSI X3.297",
+      "FC-PH-2",
+      "SFF-8472"
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      0.125
+    ]
+  },
+  "general": {
+    "vendor": "Cinch Connectivity Solutions",
+    "standards_claimed": [
+      "IEEE Gigabit Ethernet",
+      "ANSI 1x Fiber Channel",
+      "IEEE-802.3z",
+      "ANSI X3.297",
+      "FC-PH-2",
+      "SFP MSA",
+      "SFF-8472 Rev. 9.3",
+      "EN-60825",
+      "IEC-825",
+      "CDRH Class 1"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "O-band"
+    ],
+    "mounting_type": [
+      "pluggable",
+      "Front load pluggable",
+      "screw",
+      "solder"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "modulation_format": [
+      "NRZ"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -9.5
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -20.0
+    ],
+    "rx_overload_dbm": [
+      0.0
+    ],
+    "post_fec_ber_target": [
+      1e-10
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -20.0
+    ],
+    "los_deassert_dbm": [
+      -30.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      12.0
+    ],
+    "los_hysteresis_db": [
+      1.5,
+      2.25,
+      3.5
+    ],
+    "total_jitter_ps": [
+      153.0
+    ],
+    "penalties": [],
+    "notes": "Transmitter optical output power and BER footnote: BER = 10^-10 @ 125 Mbps, PRBS 2^7-1, NRZ, IEEE-802.3z and ANSI X3.297 / FC-PH-2. Receiver optical sensitivity footnote: BER = 10^-10 @ 1.25 Gbps, PRBS 2^7-1, NRZ, same standards. Rx data squelched (JAM) when LOS asserted. Features list duplex LC receptacle wording; product description is singlemode with duplex LC. Ordering code FNK-LT12: F=Front Load Low Rider, LT12=SM 1310 nm; optional conformal coat (M), no GND tabs (N), Fast Ethernet variant (K). Supply currents stated (Tx ICC 120–160 mA, Rx ICC 70–120 mA at 3.3 V) but power in watts not given. DDMI alarm thresholds duplicate some TX/RX power limits (e.g. TX low alarm -9.5 dBm, RX low alarm -21 dBm).",
+    "provenance_datasheet_sections": [
+      "FNK-LT12x",
+      "Features & Benefits",
+      "Ordering Information",
+      "Absolute Maximum Ratings",
+      "Recommended Operating Conditions",
+      "Transmitter",
+      "FNK-LT12x Technical Specifications",
+      "Receiver",
+      "DIGITAL DIAGNOSTICS MONITORING INTERFACE – BASE ADDRESS A2h",
+      "Alarm and Warning Thresholds"
+    ],
+    "suggestions": "Clarify whether post_fec_ber_target should capture non-FEC BER=10^-10 test conditions. Add schema field for RMS spectral width (4 nm) and rise/fall time if useful for legacy GE modules."
+  }
+}

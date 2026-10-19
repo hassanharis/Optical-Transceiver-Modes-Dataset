@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "LS-BL553101-10C Transmit 1550 nm",
+      "model": "LS-BL553101-10C",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "LS-BL553101-10C Receive 1310 nm",
+      "model": "LS-BL553101-10C",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "LS-BL553101-10I Transmit 1550 nm",
+      "model": "LS-BL553101-10I",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "LS-BL553101-10I Receive 1310 nm",
+      "model": "LS-BL553101-10I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 155.0
+    }
+  ]
+}

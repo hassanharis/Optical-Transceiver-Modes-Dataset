@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Cisco</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Cisco</div>
+  <div class="subtitle"></div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Cisco</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">QSFP-DD Multi-Source Agreement (MSA), OSFP MSA, OIF 800ZR, OpenZR+, OpenROADM</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-5.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">75.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">1.0</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Transmit power stated as &gt;+1 dBm for C-band only; L-band transmit power not numerically specified. Reach: unamplified up to 75 km (800ZR) and 80 km (800G ZR+); amplified up to 120 km (800ZR) and over 1000 km (800G ZR+). Actual reach depends on fiber/connector loss and/or amplified line-system design. FOIC mode in 800G ZR+ only on transponders. Power consumption given as QSFP-DD type 2B compliant and OSFP power class 8 without wattage. Media interface is duplex LC. High transmit power and OSNR claimed qualitatively without numeric OSNR values.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">Product overview, Features and benefits, Table 1. Features and benefits, Product specifications, Table 2. Cisco QSFP-DD and OSFP 800G ZR/ZR+ product specifications, Ordering information, Table 3. Cisco QSFP-DD and OSFP 800G ZR/ZR+ ordering information</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Datasheet lacks receiver OSNR/sensitivity, FEC, baud rate, and explicit power consumption in watts; penalty tables and host/media interface IDs are not provided.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Form Factor</th><th>Wavelength Min</th><th>Wavelength Max</th><th>Wavelength Band</th><th>frame</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>modulation_format</th><th>Reach (km)</th></tr>
+      <tr><td><strong>DP08QSDD-ZRA-A1 | 800ZR 800G 16QAM unamplified</strong></td><td>DP08QSDD-ZRA-A1</td><td>QSFP-DD</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OIF 800ZR</td><td>800.0</td><td>QAM_16</td><td>75.0</td></tr>
+      <tr><td><strong>DP08QSDD-ZRA-A1 | 800ZR 800G 16QAM amplified</strong></td><td>DP08QSDD-ZRA-A1</td><td>QSFP-DD</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OIF 800ZR</td><td>800.0</td><td>QAM_16</td><td>120.0</td></tr>
+      <tr><td><strong>DP08QSDD-ZRA-A1 | 800ZR 400G OpenZR+ unamplified</strong></td><td>DP08QSDD-ZRA-A1</td><td>QSFP-DD</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>75.0</td></tr>
+      <tr><td><strong>DP08QSDD-ZRA-A1 | 800ZR 400G OpenZR+ amplified</strong></td><td>DP08QSDD-ZRA-A1</td><td>QSFP-DD</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>120.0</td></tr>
+      <tr><td><strong>DP08SFP8-ZRA-A1 | 800ZR 800G 16QAM unamplified</strong></td><td>DP08SFP8-ZRA-A1</td><td>OSFP</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OIF 800ZR</td><td>800.0</td><td>QAM_16</td><td>75.0</td></tr>
+      <tr><td><strong>DP08SFP8-ZRA-A1 | 800ZR 800G 16QAM amplified</strong></td><td>DP08SFP8-ZRA-A1</td><td>OSFP</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OIF 800ZR</td><td>800.0</td><td>QAM_16</td><td>120.0</td></tr>
+      <tr><td><strong>DP08SFP8-ZRA-A1 | 800ZR 400G OpenZR+ unamplified</strong></td><td>DP08SFP8-ZRA-A1</td><td>OSFP</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>75.0</td></tr>
+      <tr><td><strong>DP08SFP8-ZRA-A1 | 800ZR 400G OpenZR+ amplified</strong></td><td>DP08SFP8-ZRA-A1</td><td>OSFP</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>120.0</td></tr>
+      <tr><td><strong>DP08QSDD-ZRB-A1 | 800G ZR+ 800G PCS unamplified</strong></td><td>DP08QSDD-ZRB-A1</td><td>QSFP-DD</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>800.0</td><td>QAM_16</td><td>80.0</td></tr>
+      <tr><td><strong>DP08QSDD-ZRB-A1 | 800G ZR+ 800G PCS amplified</strong></td><td>DP08QSDD-ZRB-A1</td><td>QSFP-DD</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>800.0</td><td>QAM_16</td><td>1000.0</td></tr>
+      <tr><td><strong>DP08QSDD-ZRB-A1 | 800G ZR+ 600G PCS unamplified</strong></td><td>DP08QSDD-ZRB-A1</td><td>QSFP-DD</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>600.0</td><td>QAM_16</td><td>80.0</td></tr>
+      <tr><td><strong>DP08QSDD-ZRB-A1 | 800G ZR+ 600G PCS amplified</strong></td><td>DP08QSDD-ZRB-A1</td><td>QSFP-DD</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>600.0</td><td>QAM_16</td><td>1000.0</td></tr>
+      <tr><td><strong>DP08QSDD-ZRB-A1 | 800G ZR+ 400G QPSK unamplified</strong></td><td>DP08QSDD-ZRB-A1</td><td>QSFP-DD</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>80.0</td></tr>
+      <tr><td><strong>DP08QSDD-ZRB-A1 | 800G ZR+ 400G QPSK amplified</strong></td><td>DP08QSDD-ZRB-A1</td><td>QSFP-DD</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>1000.0</td></tr>
+      <tr><td><strong>DP08QSDD-LRB-A1 | 800G ZR+ 800G PCS unamplified</strong></td><td>DP08QSDD-LRB-A1</td><td>QSFP-DD</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>800.0</td><td>QAM_16</td><td>80.0</td></tr>
+      <tr><td><strong>DP08QSDD-LRB-A1 | 800G ZR+ 800G PCS amplified</strong></td><td>DP08QSDD-LRB-A1</td><td>QSFP-DD</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>800.0</td><td>QAM_16</td><td>1000.0</td></tr>
+      <tr><td><strong>DP08QSDD-LRB-A1 | 800G ZR+ 600G PCS unamplified</strong></td><td>DP08QSDD-LRB-A1</td><td>QSFP-DD</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>600.0</td><td>QAM_16</td><td>80.0</td></tr>
+      <tr><td><strong>DP08QSDD-LRB-A1 | 800G ZR+ 600G PCS amplified</strong></td><td>DP08QSDD-LRB-A1</td><td>QSFP-DD</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>600.0</td><td>QAM_16</td><td>1000.0</td></tr>
+      <tr><td><strong>DP08QSDD-LRB-A1 | 800G ZR+ 400G QPSK unamplified</strong></td><td>DP08QSDD-LRB-A1</td><td>QSFP-DD</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>80.0</td></tr>
+      <tr><td><strong>DP08QSDD-LRB-A1 | 800G ZR+ 400G QPSK amplified</strong></td><td>DP08QSDD-LRB-A1</td><td>QSFP-DD</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>1000.0</td></tr>
+      <tr><td><strong>DP08SFP8-ZRB-A1 | 800G ZR+ 800G PCS unamplified</strong></td><td>DP08SFP8-ZRB-A1</td><td>OSFP</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>800.0</td><td>QAM_16</td><td>80.0</td></tr>
+      <tr><td><strong>DP08SFP8-ZRB-A1 | 800G ZR+ 800G PCS amplified</strong></td><td>DP08SFP8-ZRB-A1</td><td>OSFP</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>800.0</td><td>QAM_16</td><td>1000.0</td></tr>
+      <tr><td><strong>DP08SFP8-ZRB-A1 | 800G ZR+ 600G PCS unamplified</strong></td><td>DP08SFP8-ZRB-A1</td><td>OSFP</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>600.0</td><td>QAM_16</td><td>80.0</td></tr>
+      <tr><td><strong>DP08SFP8-ZRB-A1 | 800G ZR+ 600G PCS amplified</strong></td><td>DP08SFP8-ZRB-A1</td><td>OSFP</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>600.0</td><td>QAM_16</td><td>1000.0</td></tr>
+      <tr><td><strong>DP08SFP8-ZRB-A1 | 800G ZR+ 400G QPSK unamplified</strong></td><td>DP08SFP8-ZRB-A1</td><td>OSFP</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>80.0</td></tr>
+      <tr><td><strong>DP08SFP8-ZRB-A1 | 800G ZR+ 400G QPSK amplified</strong></td><td>DP08SFP8-ZRB-A1</td><td>OSFP</td><td>1528.58</td><td>1567.34</td><td>C-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>1000.0</td></tr>
+      <tr><td><strong>DP08SFP8-LRB-A1 | 800G ZR+ 800G PCS unamplified</strong></td><td>DP08SFP8-LRB-A1</td><td>OSFP</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>800.0</td><td>QAM_16</td><td>80.0</td></tr>
+      <tr><td><strong>DP08SFP8-LRB-A1 | 800G ZR+ 800G PCS amplified</strong></td><td>DP08SFP8-LRB-A1</td><td>OSFP</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>800.0</td><td>QAM_16</td><td>1000.0</td></tr>
+      <tr><td><strong>DP08SFP8-LRB-A1 | 800G ZR+ 600G PCS unamplified</strong></td><td>DP08SFP8-LRB-A1</td><td>OSFP</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>600.0</td><td>QAM_16</td><td>80.0</td></tr>
+      <tr><td><strong>DP08SFP8-LRB-A1 | 800G ZR+ 600G PCS amplified</strong></td><td>DP08SFP8-LRB-A1</td><td>OSFP</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>800GE</td><td>OpenROADM interoperable PCS</td><td>600.0</td><td>QAM_16</td><td>1000.0</td></tr>
+      <tr><td><strong>DP08SFP8-LRB-A1 | 800G ZR+ 400G QPSK unamplified</strong></td><td>DP08SFP8-LRB-A1</td><td>OSFP</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>80.0</td></tr>
+      <tr><td><strong>DP08SFP8-LRB-A1 | 800G ZR+ 400G QPSK amplified</strong></td><td>DP08SFP8-LRB-A1</td><td>OSFP</td><td>1570.21</td><td>1610.49</td><td>L-band</td><td>400GE</td><td>OpenZR+</td><td>400.0</td><td>QPSK</td><td>1000.0</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">DP08QSDD-ZRB-A1</span> <span class="badge">DP08QSDD-LRB-A1</span> <span class="badge">DP08QSDD-ZRA-A1</span> <span class="badge">DP08SFP8-ZRB-A1</span> <span class="badge">DP08SFP8-LRB-A1</span> <span class="badge">DP08SFP8-ZRA-A1</span></td></tr>
+      <tr><td>form_factor</td><td><span class="badge">QSFP-DD</span> <span class="badge">OSFP</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">1528.58</span> <span class="badge">1570.21</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">1567.34</span> <span class="badge">1610.49</span></td></tr>
+      <tr><td>wavelength_band</td><td><span class="badge">C-band</span> <span class="badge">L-band</span> <span class="badge">DWDM</span></td></tr>
+      <tr><td>frame</td><td><span class="badge">100GE</span> <span class="badge">200GE</span> <span class="badge">400GE</span> <span class="badge">800GE</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">800ZR</span> <span class="badge">OIF 800ZR</span> <span class="badge">OpenZR+</span> <span class="badge">OpenROADM interoperable PCS</span> <span class="badge">800G ZR+</span> <span class="badge">OIF 800G 16QAM</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">400.0</span> <span class="badge">600.0</span> <span class="badge">800.0</span></td></tr>
+      <tr><td>modulation_format</td><td><span class="badge">QAM_16</span> <span class="badge">QPSK</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">75.0</span> <span class="badge">80.0</span> <span class="badge">120.0</span> <span class="badge">1000.0</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 10:28
+</footer>
+
+</div>
+</body>
+</html>

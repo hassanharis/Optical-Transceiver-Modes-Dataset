@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — XGIGA [&#x27;XP-85B1-02D-4&#x27;, &#x27;XP-85B1-02DE-4&#x27;, &#x27;XP-85B1-02DA-4&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">xp-85b1-02da-4.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">9</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">14</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 17:03</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">**REV:5.0** 
+
+
+## **10Gb/s &amp; 25Gb/s 850nm Multi-mode SFP28 Transceiver** 
+
+## **PRODUCT FEATURES** 
+
+- Supports 10.3125Gbps and 25.78G 
+
+- Maximum link length of 100m on OM4 at 25G 
+
+- Maximum link length of 400m on OM4 at 10G 
+
+- Power dissipation &lt; 1W 
+
+- VSCEL laser and PIN receiver 
+
+- Metal enclosure for lower EMI 
+
+- 2-wire interface with integrated Digital Diagnostic monitoring 
+
+- Hot-pluggable SFP+ footprint 
+
+- Compliant with SFF 8472 
+
+- Compliant with SFP+ MSA with LC connector 
+
+- Single 3.3V power supply 
+
+- Case operating temperature range: Commercial: 0°C to +70°C 
+
+Extended: 0°C to +85°C 
+
+Industrial: -40°C to +85°C 
+
+## **APPLICATIONS** 
+
+- 10G Ethernet 
+
+- 25G Ethernet 
+
+## **STANDARD** 
+
+- Compliant to SFF-8431 
+
+- Compliant to SFF-8472 
+
+- RoHS Compliant. 
+
+**www.xgiga.cn                                           Page 1** 
+
+**REV:5.0** 
+
+
+##  **Ordering information** 
+
+|**Product part**&lt;br&gt;**Number**|**Data Rate**&lt;br&gt;**(Gbps)**||**Wavelength**&lt;br&gt;**(nm)**|**Transmission**&lt;br&gt;**Distance(m)**|**Temperature Range**&lt;br&gt;（**Tcase**）（℃）|**Temperature Range**&lt;br&gt;（**Tcase**）（℃）|
+|---|---|---|---|---|---|---|
+|||**Media**|||||
+||||||||
+|XP-85B1-02D-4|10.3125G &amp;&lt;br&gt;25.78G|Multi mode&lt;br&gt;fiber|850|100|0~70|Commercial|
+|XP-85B1-02DE-4|10.3125G &amp;&lt;br&gt;25.78G|Multi mode&lt;br&gt;fiber|850|100|0~85|Extended|
+|XP-85B1-02DA-4|10.3125G &amp;&lt;br&gt;25.78G|Multi mode&lt;br&gt;fiber|850|100|-40~85|Industrial|
+
+
+
+## **I. Absolute Maximum Ratings** 
+
+|**Parameter**|**Symbol**|**Min.**|**Typ. **|**Max.**|**Unit**|**Note**|
+|---|---|---|---|---|---|---|
+|Storage Temperature|Ts|-40|-|85|ºC||
+|Relative Humidity|RH|5|-|95|%||
+|Power SupplyVoltage|VCC|-0.3|-|4|V||
+|Signal Input Voltage||Vcc-0.3|-|Vcc+0.3|V||
+
+
+
+## **II. Recommended Operating Conditions** 
+
+|**Parameter**|**Symbol**|**Min.**|**Typ. **|**Max.**|**Unit**|**Note**|
+|---|---|---|---|---|---|---|
+|Case Operating Temperature|Tcase|0|-|70|ºC|Commercial|
+|||0||85|ºC|Extended|
+|||-40||85|ºC|Industrial|
+|Power Supply Voltage|VCC|3.14|3.3|3
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"XGIGA"</span>,
+  <span class="key">"model"</span>: [
+    "XP-85B1-02D-4",
+    "XP-85B1-02DE-4",
+    "XP-85B1-02DA-4"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP28",
+    "SFP+"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8472",
+    "SFP+ MSA",
+    "SFF-8431"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_VCSEL"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "PIN"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">840.0</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">860.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">850.0</span>
+  ],
+  <span class="key">"wavelength_band"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "MMF",
+    "MMF_OM4"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-40.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">1.0</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "SFP+ MSA"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "SFF-8431",
+    "SFF-8472"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">10.3125</span>,
+    <span class="num">25.78</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">0.1</span>,
+    <span class="num">0.4</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-7.3</span>,
+    <span class="num">-8.4</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">-0.5</span>,
+    <span class="num">2.4</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-9.9</span>,
+    <span class="num">-10.3</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-1.0</span>,
+    <span class="num">2.4</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">5</span>e-05
+  ],
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-30.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-12.0</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">3.0</span>,
+    <span class="num">2.0</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Product features list VSCEL; VI section names VCSEL. Case Tcase: Commercial <span class="num">0</span>~70°C (XP-85B1-02D-4), Extended <span class="num">0</span>~85°C (XP-85B1-02DE-4), Industrial <span class="num">-40</span>~85°C (XP-85B1-02DA-4). Transmission distance <span class="num">100</span> m @25G OM4; <span class="num">400</span> m @10G OM4. Power dissipation &lt;1W (rev <span class="num">4.0</span> max <span class="num">1</span>W). <span class="num">10</span>G receiver RSENS <span class="num">-9.9</span> to <span class="num">-1.0</span> dBm per PRBS <span class="num">2</span>^31-1 @10.3125Gb/s; note text BER&lt;10 . (incomplete). <span class="num">25</span>G measured @25.78Gb/s BER&lt;5E-5. Damage threshold (Min) <span class="num">3.4</span> dBm. Digital diagnostic alarm threshold table on p.6 appears corrupted in source (e.g. <span class="num">54</span>dBm) and was not used."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "10Gb/s &amp; <span class="num">25</span>Gb/s <span class="num">850</span>nm Multi-mode SFP28 Transceiver",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "STANDARD",
+    "Ordering information",
+    "I. Absolute Maximum Ratings",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "1. Optical Characteristics for <span class="num">10</span>G Operation",
+    "2. Optical Characteristics for <span class="num">25</span>G Operation",
+    "IV. Electrical Characteristics",
+    "VI. Digital Diagnostic Functions",
+    "VIII. Outline Dimensions",
+    "Appendix A. Document Revision"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Add optional fields for supply current (Icc max mA), spectral width RMS (nm), RIN (dB/Hz), and receiver damage threshold (dBm). Clarify whether reach_km should accept meters-as-printed when datasheets only state m."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">XP-85B1-02D-4</span> <span class="badge">XP-85B1-02DE-4</span> <span class="badge">XP-85B1-02DA-4</span></td></tr>
+<tr><td>form_factor</td><td><span class="badge">SFP28</span> <span class="badge">SFP+</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">SFF-8431</span> <span class="badge">SFF-8472</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">10.3125</span> <span class="badge">25.78</span></td></tr>
+<tr><td>reach_km</td><td><span class="badge">0.1</span> <span class="badge">0.4</span></td></tr>
+<tr><td>tx_power_min_dbm</td><td><span class="badge">-7.3</span> <span class="badge">-8.4</span></td></tr>
+<tr><td>tx_power_max_dbm</td><td><span class="badge">-0.5</span> <span class="badge">2.4</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-9.9</span> <span class="badge">-10.3</span></td></tr>
+<tr><td>rx_overload_dbm</td><td><span class="badge">-1.0</span> <span class="badge">2.4</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>XGIGA</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8472, SFP+ MSA, SFF-8431</td></tr>
+<tr><td>emitter_type</td><td>LASER_VCSEL</td></tr>
+<tr><td>photodetector_type</td><td>PIN</td></tr>
+<tr><td>wavelength_min_nm</td><td>840.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>860.0</td></tr>
+<tr><td>wavelength_center_nm</td><td>850.0</td></tr>
+<tr><td>mounting_type</td><td>pluggable_hot, pluggable</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>MMF, MMF_OM4</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>power_consumption_w</td><td>1.0</td></tr>
+<tr><td>host_interface_name</td><td>SFP+ MSA</td></tr>
+<tr><td>post_fec_ber_target</td><td>5e-05</td></tr>
+<tr><td>los_assert_dbm</td><td>-30.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-12.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>3.0, 2.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Product features list VSCEL; VI section names VCSEL. Case Tcase: Commercial 0~70°C (XP-85B1-02D-4), Extended 0~85°C (XP-85B1-02DE-4), Industrial -40~85°C (XP-85B1-02DA-4). Transmission distance 100 m @25G OM4; 400 m @10G OM4. Power dissipation &lt;1W (rev 4.0 max 1W). 10G receiver RSENS -9.9 to -1.0 dBm per PRBS 2^31-1 @10.3125Gb/s; note text BER&lt;10 . (incomplete). 25G measured @25.78Gb/s BER&lt;5E-5. Damage threshold (Min) 3.4 dBm. Digital diagnostic alarm threshold table on p.6 appears corrupted in source (e.g. 54dBm) and was not used.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>10Gb/s &amp; 25Gb/s 850nm Multi-mode SFP28 Transceiver, PRODUCT FEATURES, APPLICATIONS, STANDARD, Ordering information, I. Absolute Maximum Ratings, II. Recommended Operating Conditions, III. Optical Characteristics, 1. Optical Characteristics for 10G Operation, 2. Optical Characteristics for 25G Operation, IV. Electrical Characteristics, VI. Digital Diagnostic Functions, VIII. Outline Dimensions, Appendix A. Document Revision</td></tr>
+<tr><td>suggestions</td><td>Add optional fields for supply current (Icc max mA), spectral width RMS (nm), RIN (dB/Hz), and receiver damage threshold (dBm). Clarify whether reach_km should accept meters-as-printed when datasheets only state m.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>form_factor</th><th>standards_code</th><th>bit_rate_gbps</th><th>reach_km</th><th>tx_power_min_dbm</th><th>tx_power_max_dbm</th><th>rx_sensitivity_dbm</th><th>rx_overload_dbm</th></tr><tr><td><strong>XP-85B1-02D-4 @ 10.3125 Gbps (Commercial)</strong></td><td>XP-85B1-02D-4</td><td>SFP28</td><td>SFF-8431</td><td>10.3125</td><td>0.4</td><td>-7.3</td><td>-0.5</td><td>-9.9</td><td>-1.0</td></tr><tr><td><strong>XP-85B1-02D-4 @ 25.78 Gbps (Commercial)</strong></td><td>XP-85B1-02D-4</td><td>SFP28</td><td>SFF-8431</td><td>25.78</td><td>0.1</td><td>-8.4</td><td>2.4</td><td>-10.3</td><td>2.4</td></tr><tr><td><strong>XP-85B1-02DE-4 @ 10.3125 Gbps (Extended)</strong></td><td>XP-85B1-02DE-4</td><td>SFP28</td><td>SFF-8431</td><td>10.3125</td><td>0.4</td><td>-7.3</td><td>-0.5</td><td>-9.9</td><td>-1.0</td></tr><tr><td><strong>XP-85B1-02DE-4 @ 25.78 Gbps (Extended)</strong></td><td>XP-85B1-02DE-4</td><td>SFP28</td><td>SFF-8431</td><td>25.78</td><td>0.1</td><td>-8.4</td><td>2.4</td><td>-10.3</td><td>2.4</td></tr><tr><td><strong>XP-85B1-02DA-4 @ 10.3125 Gbps (Industrial)</strong></td><td>XP-85B1-02DA-4</td><td>SFP28</td><td>SFF-8431</td><td>10.3125</td><td>0.4</td><td>-7.3</td><td>-0.5</td><td>-9.9</td><td>-1.0</td></tr><tr><td><strong>XP-85B1-02DA-4 @ 25.78 Gbps (Industrial)</strong></td><td>XP-85B1-02DA-4</td><td>SFP28</td><td>SFF-8431</td><td>25.78</td><td>0.1</td><td>-8.4</td><td>2.4</td><td>-10.3</td><td>2.4</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 17:03
+</footer>
+
+</div>
+</body>
+</html>

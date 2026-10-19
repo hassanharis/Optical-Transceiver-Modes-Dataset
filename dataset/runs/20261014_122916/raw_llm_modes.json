@@ -1,0 +1,44 @@
+{
+  "modes": [
+    {
+      "label": "ZR4 LAN-WDM lane 1295.56 nm",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "tx_power_max_dbm": 7.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "ZR4 LAN-WDM lane 1300.05 nm",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "tx_power_max_dbm": 7.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "ZR4 LAN-WDM lane 1304.58 nm",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "tx_power_max_dbm": 7.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "ZR4 LAN-WDM lane 1309.14 nm",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "wavelength_band": "LAN-WDM",
+      "bit_rate_gbps": 25.78,
+      "tx_power_max_dbm": 7.0,
+      "fec_type": "RS_528_514"
+    }
+  ]
+}

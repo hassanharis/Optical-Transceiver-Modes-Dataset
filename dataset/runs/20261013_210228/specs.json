@@ -1,0 +1,124 @@
+{
+  "vendor": "Stratos",
+  "model": [
+    "LxK-ST11xx",
+    "LNK-ST11H",
+    "LNK-ST11M",
+    "LNK-ST11HB",
+    "LNK-ST11MB",
+    "LTK-ST11H",
+    "LTK-ST11M",
+    "LTK-ST11HB",
+    "LTK-ST11MB",
+    "LNK-ST11H-R6",
+    "LNK-ST11M-R6",
+    "LNK-ST11HB-R6",
+    "LNK-ST11MB-R6",
+    "LTK-ST11H-R6",
+    "LTK-ST11M-R6",
+    "LTK-ST11HB-R6",
+    "LTK-ST11MB-R6"
+  ],
+  "form_factor": [
+    "Low Rider RJ"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3z",
+    "ANSI X3.297"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    770.0,
+    830.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [
+    "solder_post",
+    "screw_post"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "host_interface_name": [
+    "LVPECL",
+    "CML"
+  ],
+  "standards_code": [
+    "IEEE 802.3z",
+    "Gigabit Ethernet",
+    "Fibre Channel"
+  ],
+  "bit_rate_gbps": [
+    1.25
+  ],
+  "modulation_format": [
+    "NRZ"
+  ],
+  "reach_km": [
+    0.55,
+    0.5,
+    0.85
+  ],
+  "tx_power_min_dbm": [
+    -9.5
+  ],
+  "tx_power_max_dbm": [
+    -4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -21.0
+  ],
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -21.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "los_hysteresis_db": [
+    1.5,
+    2.25,
+    3.5
+  ],
+  "total_jitter_ps": [
+    80.0,
+    153.0
+  ],
+  "penalties": [],
+  "notes": "BER = 1E-12 @ 1.25 Gbps, PRBS7, NRZ for TX optical power and RX sensitivity. RX sensitivity note requires TX signal ER greater than 8 dB. Minimum TX optical power can be factory-set higher (e.g. -6 dBm). Link distance 550 m per IEEE 802.3z table; 500 m Fibre Channel ANSI X3.297; Table A lists 850 m typical for LxK-ST11xx with standard fiber and nominal connector losses. Supply voltage 3.135–3.465 V, Icc max 300 mA (general); TX Icc 55–75 mA, RX Icc 70–120 mA. Stratos (now Cinch Connectivity Solutions). Fiber pigtail option supports LC, SC, FC, ST and others.",
+  "provenance_datasheet_sections": [
+    "Features & Benefits",
+    "General Specification",
+    "Link Distances",
+    "LxK-ST11xx (1.25 Gbps, Gigabit Ethernet, 850 nm multimode)",
+    "Part Numbers with internal circuits that contain 63/37 tin-lead solder",
+    "Part Numbers with internal circuits that contain SAC305 lead-free alloy solder (RoHS compliant)",
+    "Table A — Multimode Base Part Selection Guide",
+    "Fiber Pigtail Option"
+  ]
+}

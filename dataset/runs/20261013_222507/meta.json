@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:25:07.654314+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tsf088-elec-so-sfp-1g-tx-rx-los-r6.1.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.128,
+    "extract_atoms": 20.222,
+    "store_run": 0.01,
+    "synthesize_modes": 21.407,
+    "store_modes": 0.007,
+    "total": 44.775
+  }
+}

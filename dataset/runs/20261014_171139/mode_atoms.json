@@ -1,0 +1,167 @@
+{
+  "multi_valued": {
+    "model": [
+      "QDD-400G-ZR-S",
+      "QDD-400G-ZRP-S"
+    ],
+    "channel_spacing_ghz": [
+      75.0,
+      50.0,
+      37.5
+    ],
+    "host_interface_name": [
+      "400GE",
+      "4x 100GE",
+      "100GbE",
+      "200GbE",
+      "300GbE",
+      "400GbE"
+    ],
+    "frame": [
+      "400GE",
+      "4x100GE",
+      "3x100GE",
+      "2x100GE"
+    ],
+    "standards_code": [
+      "400ZR",
+      "OpenZR+",
+      "OpenROADM",
+      "400G-ZR",
+      "400G-ZR+"
+    ],
+    "baud_rate_gbaud": [
+      60.0,
+      30.0,
+      40.0
+    ],
+    "bit_rate_gbps": [
+      100.0,
+      200.0,
+      300.0,
+      400.0
+    ],
+    "modulation_format": [
+      "QPSK",
+      "QAM_8",
+      "QAM_16"
+    ],
+    "tx_power_max_dbm": [
+      -8.5,
+      -10.0,
+      -8.0,
+      -10.0,
+      -11.0,
+      -13.0,
+      -8.6,
+      -10.2,
+      -10.4,
+      -11.9,
+      -6.2,
+      -7.7,
+      -9.0,
+      -10.5,
+      -11.0,
+      -5.9,
+      -7.5
+    ],
+    "tx_in_band_osnr_db": [
+      34.0,
+      42.0
+    ],
+    "tx_out_of_band_osnr_db": [
+      30.0,
+      42.0
+    ],
+    "rx_sensitivity_dbm": [
+      -12.0,
+      -15.0,
+      -20.0,
+      -16.0,
+      -21.0,
+      -19.0,
+      -22.0,
+      -23.0,
+      -18.0,
+      -28.0,
+      -24.0,
+      -25.0
+    ],
+    "rx_osnr_db": [
+      26.0,
+      23.7,
+      23.1,
+      20.8,
+      19.5,
+      15.3,
+      15.0,
+      17.4,
+      19.3,
+      11.8
+    ],
+    "cd_tolerance_ps_nm": [
+      2400.0,
+      13000.0,
+      52000.0,
+      26000.0,
+      100000.0,
+      50000.0,
+      21000.0,
+      85000.0,
+      80000.0,
+      160000.0
+    ],
+    "pmd_tolerance_ps": [
+      33.0,
+      60.0,
+      80.0
+    ],
+    "fec_type": [
+      "CFEC",
+      "OFEC"
+    ]
+  },
+  "general": {
+    "vendor": "Cisco",
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "OIF MSA",
+      "OpenZR+ MSA",
+      "OpenROADM"
+    ],
+    "wavelength_band": [
+      "C-band"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "temp_min_c": 15.0,
+    "temp_max_c": 75.0,
+    "reach_km": [
+      120.0
+    ],
+    "rx_overload_dbm": [
+      13.0
+    ],
+    "penalties": [],
+    "notes": "The transmitter power values include typical and worst-case values with and without TX shaping as printed under Max Transmit Power. Symbol rates printed as raw baud counts were not converted to GBaud; only explicitly stated approximate GBaud values were extracted. Extended RX sensitivity values are specified at a 1dB OSNR penalty, but no supported penalty object was created because an operating condition from the schema's condition enumeration was not stated. Multichannel OSNR penalties are stated for adjacent-channel spacing or crosstalk conditions, which are not available condition parameters in the penalty schema. The normal operating case temperature is 15 to +75°C. +80°C is a short-term operating case temperature, and -5°C is only the minimum ambient cold-start temperature.",
+    "provenance_datasheet_sections": [
+      "Data sheet Cisco public",
+      "Product overview",
+      "QDD ZR overview",
+      "QDD ZR Plus overview",
+      "Features and benefits",
+      "Flexible modulation",
+      "Specification",
+      "Transmitter specifications",
+      "Rx parameter specifications",
+      "Rx Optical Polarization specifications",
+      "Rx Multichannel Interaction specifications",
+      "Physical",
+      "Ordering information"
+    ],
+    "suggestions": "Add fields for exact symbol rate in baud, typical versus worst-case transmitter power, TX-shaping state, extended RX sensitivity at OSNR penalty, state-of-polarization change rate, multichannel crosstalk tolerance, adjacent-channel spacing conditions, short-term temperature limits, and per-model/per-modulation parameter association."
+  }
+}

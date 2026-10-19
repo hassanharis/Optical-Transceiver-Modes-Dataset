@@ -1,0 +1,113 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "wavelength_band": [
+      "CWDM",
+      "grey",
+      "1300nm band"
+    ],
+    "standards_code": [
+      "40GBASE-LR4",
+      "OTU3",
+      "40GbE"
+    ],
+    "bit_rate_gbps": [
+      41.25,
+      43.018,
+      10.3125,
+      10.7546
+    ],
+    "tx_power_max_dbm": [
+      8.3,
+      2.3
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-QSFP-LR4"
+    ],
+    "form_factor": [
+      "QSFP+"
+    ],
+    "standards_claimed": [
+      "QSFP+ MSA",
+      "SFF-8436",
+      "SFF-8472",
+      "40GBASE-LR4"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      3.5
+    ],
+    "media_interface_name": [
+      "40GBASE-LR4"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -7.0
+    ],
+    "rx_sensitivity_dbm": [
+      -13.7
+    ],
+    "rx_overload_dbm": [
+      2.3
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -24.0
+    ],
+    "los_deassert_dbm": [
+      -11.5
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Technology listed as Grey QSFP+; module uses four CWDM channels in the 1300 nm band. Power budget 0–6.7 dB stated. Power consumption < 3.5 W. Storage temperature -40°C to +85°C (not operating range). Footnote 3): average power applies to transmitter output power limits. Footnote 4): minimum input power, overload, and BER apply at 10.3125 Gbps, BER less than 10^-12, with 231-1 PRBS. Aggregated line rates (footnote 1) vs per-lane rates (footnote 2) as in bit_rate_gbps.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP-LR4",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

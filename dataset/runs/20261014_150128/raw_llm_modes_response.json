@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"BX20D-35 1310/1550 nm BiDi\",\n      \"model\": \"SO-SFP-GE-FE-BX20D-35\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1360.0,\n      \"wavelength_center_nm\": 1310.0,\n      \"standards_code\": \"100BASE-FX\"\n    },\n    {\n      \"label\": \"BX20D-53 1550/1310 nm BiDi\",\n      \"model\": \"SO-SFP-GE-FE-BX20D-53\",\n      \"wavelength_min_nm\": 1500.0,\n      \"wavelength_max_nm\": 1600.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"standards_code\": \"100BASE-FX\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

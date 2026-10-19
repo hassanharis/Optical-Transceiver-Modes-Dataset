@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T08:43:14.885493+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Juniper QSFP-100G-ZR-HP.pdf",
+  "page_count": 11,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 17.792,
+    "extract_atoms": 54.253,
+    "store_run": 0.005,
+    "synthesize_modes": 337.56,
+    "store_modes": 0.003,
+    "total": 409.613
+  }
+}

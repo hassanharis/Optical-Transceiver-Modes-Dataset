@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;SO-SFP-10GE-ER-Dxxxx&#x27;, &#x27;SO-SFP-10GE-ER-Dxxxx-I&#x27;, &#x27;SO-SFP-10GE-ER-D9210&#x27;, &#x27;SO-SFP-10GE-ER-D9220&#x27;, &#x27;SO-SFP-10GE-ER-D9230&#x27;, &#x27;SO-SFP-10GE-ER-D9240&#x27;, &#x27;SO-SFP-10GE-ER-D9250&#x27;, &#x27;SO-SFP-10GE-ER-D9260&#x27;, &#x27;SO-SFP-10GE-ER-D9270&#x27;, &#x27;SO-SFP-10GE-ER-D9280&#x27;, &#x27;SO-SFP-10GE-ER-D9290&#x27;, &#x27;SO-SFP-10GE-ER-D9300&#x27;, &#x27;SO-SFP-10GE-ER-D9310&#x27;, &#x27;SO-SFP-10GE-ER-D9320&#x27;, &#x27;SO-SFP-10GE-ER-D9330&#x27;, &#x27;SO-SFP-10GE-ER-D9340&#x27;, &#x27;SO-SFP-10GE-ER-D9350&#x27;, &#x27;SO-SFP-10GE-ER-D9360&#x27;, &#x27;SO-SFP-10GE-ER-D9370&#x27;, &#x27;SO-SFP-10GE-ER-D9380&#x27;, &#x27;SO-SFP-10GE-ER-D9390&#x27;, &#x27;SO-SFP-10GE-ER-D9400&#x27;, &#x27;SO-SFP-10GE-ER-D9410&#x27;, &#x27;SO-SFP-10GE-ER-D9420&#x27;, &#x27;SO-SFP-10GE-ER-D9430&#x27;, &#x27;SO-SFP-10GE-ER-D9440&#x27;, &#x27;SO-SFP-10GE-ER-D9450&#x27;, &#x27;SO-SFP-10GE-ER-D9460&#x27;, &#x27;SO-SFP-10GE-ER-D9470&#x27;, &#x27;SO-SFP-10GE-ER-D9480&#x27;, &#x27;SO-SFP-10GE-ER-D9490&#x27;, &#x27;SO-SFP-10GE-ER-D9500&#x27;, &#x27;SO-SFP-10GE-ER-D9510&#x27;, &#x27;SO-SFP-10GE-ER-D9520&#x27;, &#x27;SO-SFP-10GE-ER-D9530&#x27;, &#x27;SO-SFP-10GE-ER-D9540&#x27;, &#x27;SO-SFP-10GE-ER-D9550&#x27;, &#x27;SO-SFP-10GE-ER-D9560&#x27;, &#x27;SO-SFP-10GE-ER-D9570&#x27;, &#x27;SO-SFP-10GE-ER-D9580&#x27;, &#x27;SO-SFP-10GE-ER-D9590&#x27;, &#x27;SO-SFP-10GE-ER-D9600&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">so-sfp-10ge-er-dxxxx-r5.3.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">4</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 13:35</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.2 
+
+## **SO-SFP-10GE-ER-Dxxxx &amp; Dxxxx-I** SFP+, 10G Multirate, DWDM 100GHz, DDM, 14dB, 40km, D919-D960 (42ch) 
+
+## OVERVIEW 
+
+The SO-SFP-10GE-ER-Dxxxx is a versatile DWDM transceiver supporting a wide range of traffic formats ranging from 600 Mbps to 11.3 Gbps. The transceiver is provided in 42 channel versions at the 100GHz DWDM grid as specified in the ITU-T 694.1 standard. 
+
+The distance performance is in accordance with the IEEE 802.3ae ER/EW-standard, providing a bridgeable distance of up to 40km (without dispersion compensation) for 10GbE-LAN (10GBASE-ER) and 10GbE-WAN (10GBASE-EW) services. 
+
+This transceiver provides digital diagnostic functions via a 2-wire serial interface as defined by the SFF-8472 specification. The transceiver is available in two temperature range options, one being the Industrial temperature range (I-temp): -40°C to 85°C (-40°F to 185°F). 
+
+The transceiver module is compliant to RoHS-6/6. 
+
+## TECHNICAL DATA 
+
+|**Parameter**|**Value**|
+|---|---|
+|Technology|DWDM SFP+ 100GHz|
+|Transmission media|SM (2x LC)|
+|Typical reach|40km|
+|Nominal wavelength|191.90 - 196.00THz (42ch)|
+|Bit rate support|0.6Gbps to 11.3Gbps|
+|Interface standards|10GBASE-ER, 10GBASE-EW|
+|Protocol support|GbE, 10GbE-LAN, 10GbE-WAN|
+||OTU1, OTU2, OTU2e|
+||STM-64/OC192|
+||STM-16/OC48, STM-4/OC12|
+||1G, 2G, 4G, 8G, 10G FC|
+||CPRI Opt, 1, 2, 3, 4, 5, 6, 7, 7A, 8|
+||OBSAI 1x, 2x, 4x, 8x|
+|Power budget|5 – 14dB|
+|Dispersion penalty|Max 2dB|
+|Dispersion tolerance|+800ps/nm|
+|Power consumption&lt;br&gt;Operating temperature|&lt; 1.5W|
+||0°C to +70°C (-Dxxxx)|
+||-40°C to +85°C (-Dxxxx-I)|
+|Storage temperature|-40°C to +85°C|
+
+
+
+|**Parameter**|**Value**|
+|---|---|
+|**Transmitter data:**||
+|Output power|Min: -1.0dBm1)|
+||Max: +4.0dBm1)|
+|Transmit wavelength|191.90 - 196.00THz (G.694.1)|
+|**Receiver data:**||
+|Minimum input power|-15.0dBm1) 2)|
+|Overload (max power)|-1.0dBm1) 2)|
+|Wavelength range|1480nm – 1580nm|
+|LOS assert|Min -29dBm|
+|LOS de-assert|Max -17dBm|
+|DDM|Yes|
+
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "SO-SFP-10GE-ER-Dxxxx",
+    "SO-SFP-10GE-ER-Dxxxx-I",
+    "SO-SFP-10GE-ER-D9210",
+    "SO-SFP-10GE-ER-D9220",
+    "SO-SFP-10GE-ER-D9230",
+    "SO-SFP-10GE-ER-D9240",
+    "SO-SFP-10GE-ER-D9250",
+    "SO-SFP-10GE-ER-D9260",
+    "SO-SFP-10GE-ER-D9270",
+    "SO-SFP-10GE-ER-D9280",
+    "SO-SFP-10GE-ER-D9290",
+    "SO-SFP-10GE-ER-D9300",
+    "SO-SFP-10GE-ER-D9310",
+    "SO-SFP-10GE-ER-D9320",
+    "SO-SFP-10GE-ER-D9330",
+    "SO-SFP-10GE-ER-D9340",
+    "SO-SFP-10GE-ER-D9350",
+    "SO-SFP-10GE-ER-D9360",
+    "SO-SFP-10GE-ER-D9370",
+    "SO-SFP-10GE-ER-D9380",
+    "SO-SFP-10GE-ER-D9390",
+    "SO-SFP-10GE-ER-D9400",
+    "SO-SFP-10GE-ER-D9410",
+    "SO-SFP-10GE-ER-D9420",
+    "SO-SFP-10GE-ER-D9430",
+    "SO-SFP-10GE-ER-D9440",
+    "SO-SFP-10GE-ER-D9450",
+    "SO-SFP-10GE-ER-D9460",
+    "SO-SFP-10GE-ER-D9470",
+    "SO-SFP-10GE-ER-D9480",
+    "SO-SFP-10GE-ER-D9490",
+    "SO-SFP-10GE-ER-D9500",
+    "SO-SFP-10GE-ER-D9510",
+    "SO-SFP-10GE-ER-D9520",
+    "SO-SFP-10GE-ER-D9530",
+    "SO-SFP-10GE-ER-D9540",
+    "SO-SFP-10GE-ER-D9550",
+    "SO-SFP-10GE-ER-D9560",
+    "SO-SFP-10GE-ER-D9570",
+    "SO-SFP-10GE-ER-D9580",
+    "SO-SFP-10GE-ER-D9590",
+    "SO-SFP-10GE-ER-D9600"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP+"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "IEEE <span class="num">802.3</span>ae",
+    "ITU-T G.694.1"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1480.0</span>,
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1562.23</span>,
+    <span class="num">1580.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1562.23</span>,
+    <span class="num">1561.42</span>,
+    <span class="num">1560.61</span>,
+    <span class="num">1559.79</span>,
+    <span class="num">1558.98</span>,
+    <span class="num">1558.17</span>,
+    <span class="num">1557.36</span>,
+    <span class="num">1556.55</span>,
+    <span class="num">1555.75</span>,
+    <span class="num">1554.94</span>,
+    <span class="num">1554.13</span>,
+    <span class="num">1553.33</span>,
+    <span class="num">1552.52</span>,
+    <span class="num">1551.72</span>,
+    <span class="num">1550.92</span>,
+    <span class="num">1550.12</span>,
+    <span class="num">1549.32</span>,
+    <span class="num">1548.51</span>,
+    <span class="num">1547.72</span>,
+    <span class="num">1546.92</span>,
+    <span class="num">1546.12</span>,
+    <span class="num">1545.32</span>,
+    <span class="num">1544.53</span>,
+    <span class="num">1543.73</span>,
+    <span class="num">1542.94</span>,
+    <span class="num">1542.14</span>,
+    <span class="num">1541.35</span>,
+    <span class="num">1540.56</span>,
+    <span class="num">1539.77</span>,
+    <span class="num">1538.98</span>,
+    <span class="num">1538.19</span>,
+    <span class="num">1537.4</span>,
+    <span class="num">1536.61</span>,
+    <span class="num">1535.82</span>,
+    <span class="num">1535.04</span>,
+    <span class="num">1534.25</span>,
+    <span class="num">1533.47</span>,
+    <span class="num">1532.68</span>,
+    <span class="num">1531.9</span>,
+    <span class="num">1531.12</span>,
+    <span class="num">1530.33</span>,
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "DWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">191.9</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.0</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">42</span>
+  ],
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">1.5</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "10GBASE-ER",
+    "10GBASE-EW",
+    "GbE",
+    "10GbE-LAN",
+    "10GbE-WAN",
+    "OTU1",
+    "OTU2",
+    "OTU2e",
+    "STM-64/OC192",
+    "STM-16/OC48",
+    "STM-4/OC12",
+    "1G FC",
+    "2G FC",
+    "4G FC",
+    "8G FC",
+    "10G FC",
+    "CPRI Opt <span class="num">1</span>",
+    "CPRI Opt <span class="num">2</span>",
+    "CPRI Opt <span class="num">3</span>",
+    "CPRI Opt <span class="num">4</span>",
+    "CPRI Opt <span class="num">5</span>",
+    "CPRI Opt <span class="num">6</span>",
+    "CPRI Opt <span class="num">7</span>",
+    "CPRI Opt <span class="num">7</span>A",
+    "CPRI Opt <span class="num">8</span>",
+    "OBSAI <span class="num">1</span>x",
+    "OBSAI <span class="num">2</span>x",
+    "OBSAI <span class="num">4</span>x",
+    "OBSAI <span class="num">8</span>x",
+    "G.694.1"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">0.6</span>,
+    <span class="num">11.3</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">40.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-1.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">4.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-15.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-1.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">800.0</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-29.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-17.0</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Operating temperature -Dxxxx: <span class="num">0</span>°C to +70°C; -Dxxxx-I (industrial): <span class="num">-40</span>°C to +85°C. Storage temperature <span class="num">-40</span>°C to +85°C. Power consumption stated as &lt; <span class="num">1.5</span> W. Power budget <span class="num">5</span> – <span class="num">14</span> dB. Dispersion penalty max <span class="num">2</span> dB (no paired penalized value and operating condition for penalty schema). Receiver minimum input power and overload measured @ <span class="num">10.3</span> Gbps, BER <span class="num">1</span>×10⁻¹², PRBS <span class="num">2</span>³¹-1, back-to-back; average power per footnotes <span class="num">1</span>) and <span class="num">2</span>). Transmit wavelength <span class="num">191.90</span> - <span class="num">196.00</span> THz per G.694.1; receiver wavelength range <span class="num">1480</span> nm – <span class="num">1580</span> nm. IEEE <span class="num">802.3</span>ae <span class="num">10</span>GBASE-ER/EW defined only at <span class="num">1550</span> nm; standard referenced for bridgeable distance on other DWDM wavelengths. Distance up to <span class="num">40</span> km without dispersion compensation for <span class="num">10</span>GBASE-ER/EW."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "SO-SFP-10GE-ER-Dxxxx &amp; Dxxxx-I SFP+, <span class="num">10</span>G Multirate, DWDM <span class="num">100</span>GHz, DDM, <span class="num">14</span>dB, <span class="num">40</span>km, D919-D960 (42ch)",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "Safety/regulatory compliance:",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Ordering table in source repeats some part numbers (e.g. D9210/D9220); channel THz steps <span class="num">191.90</span>–196.00 could be added as frequency_center_thz if schema extended. Clarify whether <span class="num">14</span> dB in title is OSNR or power budget (datasheet lists power budget <span class="num">5</span>–14 dB)."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">SO-SFP-10GE-ER-Dxxxx</span> <span class="badge">SO-SFP-10GE-ER-Dxxxx-I</span> <span class="badge">SO-SFP-10GE-ER-D9210</span> <span class="badge">SO-SFP-10GE-ER-D9220</span> <span class="badge">SO-SFP-10GE-ER-D9230</span> <span class="badge">SO-SFP-10GE-ER-D9240</span> <span class="badge">SO-SFP-10GE-ER-D9250</span> <span class="badge">SO-SFP-10GE-ER-D9260</span> <span class="badge">SO-SFP-10GE-ER-D9270</span> <span class="badge">SO-SFP-10GE-ER-D9280</span> <span class="badge">SO-SFP-10GE-ER-D9290</span> <span class="badge">SO-SFP-10GE-ER-D9300</span> <span class="badge">SO-SFP-10GE-ER-D9310</span> <span class="badge">SO-SFP-10GE-ER-D9320</span> <span class="badge">SO-SFP-10GE-ER-D9330</span> <span class="badge">SO-SFP-10GE-ER-D9340</span> <span class="badge">SO-SFP-10GE-ER-D9350</span> <span class="badge">SO-SFP-10GE-ER-D9360</span> <span class="badge">SO-SFP-10GE-ER-D9370</span> <span class="badge">SO-SFP-10GE-ER-D9380</span> <span class="badge">SO-SFP-10GE-ER-D9390</span> <span class="badge">SO-SFP-10GE-ER-D9400</span> <span class="badge">SO-SFP-10GE-ER-D9410</span> <span class="badge">SO-SFP-10GE-ER-D9420</span> <span class="badge">SO-SFP-10GE-ER-D9430</span> <span class="badge">SO-SFP-10GE-ER-D9440</span> <span class="badge">SO-SFP-10GE-ER-D9450</span> <span class="badge">SO-SFP-10GE-ER-D9460</span> <span class="badge">SO-SFP-10GE-ER-D9470</span> <span class="badge">SO-SFP-10GE-ER-D9480</span> <span class="badge">SO-SFP-10GE-ER-D9490</span> <span class="badge">SO-SFP-10GE-ER-D9500</span> <span class="badge">SO-SFP-10GE-ER-D9510</span> <span class="badge">SO-SFP-10GE-ER-D9520</span> <span class="badge">SO-SFP-10GE-ER-D9530</span> <span class="badge">SO-SFP-10GE-ER-D9540</span> <span class="badge">SO-SFP-10GE-ER-D9550</span> <span class="badge">SO-SFP-10GE-ER-D9560</span> <span class="badge">SO-SFP-10GE-ER-D9570</span> <span class="badge">SO-SFP-10GE-ER-D9580</span> <span class="badge">SO-SFP-10GE-ER-D9590</span> <span class="badge">SO-SFP-10GE-ER-D9600</span></td></tr>
+<tr><td>wavelength_min_nm</td><td><span class="badge">1480.0</span> <span class="badge">1529.55</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1562.23</span> <span class="badge">1580.0</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1562.23</span> <span class="badge">1561.42</span> <span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1545.32</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span></td></tr>
+<tr><td>host_interface_name</td><td><span class="badge">SFF-8431</span> <span class="badge">SFF-8432</span> <span class="badge">SFF-8472</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">10GBASE-ER</span> <span class="badge">10GBASE-EW</span> <span class="badge">GbE</span> <span class="badge">10GbE-LAN</span> <span class="badge">10GbE-WAN</span> <span class="badge">OTU1</span> <span class="badge">OTU2</span> <span class="badge">OTU2e</span> <span class="badge">STM-64/OC192</span> <span class="badge">STM-16/OC48</span> <span class="badge">STM-4/OC12</span> <span class="badge">1G FC</span> <span class="badge">2G FC</span> <span class="badge">4G FC</span> <span class="badge">8G FC</span> <span class="badge">10G FC</span> <span class="badge">CPRI Opt 1</span> <span class="badge">CPRI Opt 2</span> <span class="badge">CPRI Opt 3</span> <span class="badge">CPRI Opt 4</span> <span class="badge">CPRI Opt 5</span> <span class="badge">CPRI Opt 6</span> <span class="badge">CPRI Opt 7</span> <span class="badge">CPRI Opt 7A</span> <span class="badge">CPRI Opt 8</span> <span class="badge">OBSAI 1x</span> <span class="badge">OBSAI 2x</span> <span class="badge">OBSAI 4x</span> <span class="badge">OBSAI 8x</span> <span class="badge">G.694.1</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">0.6</span> <span class="badge">11.3</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>SFP+</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8431, SFF-8432, SFF-8472, IEEE 802.3ae, ITU-T G.694.1</td></tr>
+<tr><td>wavelength_band</td><td>DWDM</td></tr>
+<tr><td>frequency_min_thz</td><td>191.9</td></tr>
+<tr><td>frequency_max_thz</td><td>196.0</td></tr>
+<tr><td>channel_spacing_ghz</td><td>100.0</td></tr>
+<tr><td>channel_total</td><td>42</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>1.5</td></tr>
+<tr><td>reach_km</td><td>40.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-1.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>4.0</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-15.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-1.0</td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td>800.0</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>los_assert_dbm</td><td>-29.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-17.0</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Operating temperature -Dxxxx: 0°C to +70°C; -Dxxxx-I (industrial): -40°C to +85°C. Storage temperature -40°C to +85°C. Power consumption stated as &lt; 1.5 W. Power budget 5 – 14 dB. Dispersion penalty max 2 dB (no paired penalized value and operating condition for penalty schema). Receiver minimum input power and overload measured @ 10.3 Gbps, BER 1×10⁻¹², PRBS 2³¹-1, back-to-back; average power per footnotes 1) and 2). Transmit wavelength 191.90 - 196.00 THz per G.694.1; receiver wavelength range 1480 nm – 1580 nm. IEEE 802.3ae 10GBASE-ER/EW defined only at 1550 nm; standard referenced for bridgeable distance on other DWDM wavelengths. Distance up to 40 km without dispersion compensation for 10GBASE-ER/EW.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>SO-SFP-10GE-ER-Dxxxx &amp; Dxxxx-I SFP+, 10G Multirate, DWDM 100GHz, DDM, 14dB, 40km, D919-D960 (42ch), OVERVIEW, TECHNICAL DATA, Safety/regulatory compliance:, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+<tr><td>suggestions</td><td>Ordering table in source repeats some part numbers (e.g. D9210/D9220); channel THz steps 191.90–196.00 could be added as frequency_center_thz if schema extended. Clarify whether 14 dB in title is OSNR or power budget (datasheet lists power budget 5–14 dB).</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_center_nm</th><th>host_interface_name</th><th>standards_code</th><th>bit_rate_gbps</th></tr><tr><td><strong>D9210 1562.23nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9210</td><td>1480.0</td><td>1580.0</td><td>1562.23</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9220 1561.42nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9220</td><td>1480.0</td><td>1580.0</td><td>1561.42</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9230 1560.61nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9230</td><td>1480.0</td><td>1580.0</td><td>1560.61</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9240 1559.79nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9240</td><td>1480.0</td><td>1580.0</td><td>1559.79</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9250 1558.98nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9250</td><td>1480.0</td><td>1580.0</td><td>1558.98</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9260 1558.17nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9260</td><td>1480.0</td><td>1580.0</td><td>1558.17</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9270 1557.36nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9270</td><td>1480.0</td><td>1580.0</td><td>1557.36</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9280 1556.55nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9280</td><td>1480.0</td><td>1580.0</td><td>1556.55</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9290 1555.75nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9290</td><td>1480.0</td><td>1580.0</td><td>1555.75</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9300 1554.94nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9300</td><td>1480.0</td><td>1580.0</td><td>1554.94</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9310 1554.13nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9310</td><td>1480.0</td><td>1580.0</td><td>1554.13</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9320 1553.33nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9320</td><td>1480.0</td><td>1580.0</td><td>1553.33</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9330 1552.52nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9330</td><td>1480.0</td><td>1580.0</td><td>1552.52</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9340 1551.72nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9340</td><td>1480.0</td><td>1580.0</td><td>1551.72</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9350 1550.92nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9350</td><td>1480.0</td><td>1580.0</td><td>1550.92</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9360 1550.12nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9360</td><td>1480.0</td><td>1580.0</td><td>1550.12</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9370 1549.32nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9370</td><td>1480.0</td><td>1580.0</td><td>1549.32</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9380 1548.51nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9380</td><td>1480.0</td><td>1580.0</td><td>1548.51</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9390 1547.72nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9390</td><td>1480.0</td><td>1580.0</td><td>1547.72</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9400 1545.32nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9400</td><td>1480.0</td><td>1580.0</td><td>1545.32</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9410 1544.53nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9410</td><td>1480.0</td><td>1580.0</td><td>1544.53</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9420 1543.73nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9420</td><td>1480.0</td><td>1580.0</td><td>1543.73</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9430 1542.94nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9430</td><td>1480.0</td><td>1580.0</td><td>1542.94</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9440 1542.14nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9440</td><td>1480.0</td><td>1580.0</td><td>1542.14</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9450 1541.35nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9450</td><td>1480.0</td><td>1580.0</td><td>1541.35</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9460 1540.56nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9460</td><td>1480.0</td><td>1580.0</td><td>1540.56</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9470 1539.77nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9470</td><td>1480.0</td><td>1580.0</td><td>1539.77</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9480 1538.98nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9480</td><td>1480.0</td><td>1580.0</td><td>1538.98</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9490 1538.19nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9490</td><td>1480.0</td><td>1580.0</td><td>1538.19</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9500 1537.4nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9500</td><td>1480.0</td><td>1580.0</td><td>1537.4</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9510 1536.61nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9510</td><td>1480.0</td><td>1580.0</td><td>1536.61</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9520 1535.82nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9520</td><td>1480.0</td><td>1580.0</td><td>1535.82</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9530 1535.04nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9530</td><td>1480.0</td><td>1580.0</td><td>1535.04</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9540 1534.25nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9540</td><td>1480.0</td><td>1580.0</td><td>1534.25</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9550 1533.47nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9550</td><td>1480.0</td><td>1580.0</td><td>1533.47</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9560 1532.68nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9560</td><td>1480.0</td><td>1580.0</td><td>1532.68</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9570 1531.9nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9570</td><td>1480.0</td><td>1580.0</td><td>1531.9</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9580 1531.12nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9580</td><td>1480.0</td><td>1580.0</td><td>1531.12</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9590 1530.33nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9590</td><td>1480.0</td><td>1580.0</td><td>1530.33</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr><tr><td><strong>D9600 1529.55nm DWDM</strong></td><td>SO-SFP-10GE-ER-D9600</td><td>1480.0</td><td>1580.0</td><td>1529.55</td><td>SFF-8431</td><td>10GBASE-ER</td><td>11.3</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 13:35
+</footer>
+
+</div>
+</body>
+</html>

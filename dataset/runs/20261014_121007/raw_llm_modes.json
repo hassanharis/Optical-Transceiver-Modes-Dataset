@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "2733 Tx1270/Rx1330 50GbE IEEE802.3cd 52.125G",
+      "model": "SO-QSFP28-50GE-BX10D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "IEEE802.3cd",
+      "bit_rate_gbps": 52.125
+    },
+    {
+      "label": "3327 Tx1330/Rx1270 50GbE IEEE802.3cd 52.125G",
+      "model": "SO-QSFP28-50GE-BX10D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "IEEE802.3cd",
+      "bit_rate_gbps": 52.125
+    },
+    {
+      "label": "2733 Tx1270/Rx1330 50GbE 53.125G",
+      "model": "SO-QSFP28-50GE-BX10D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "50GbE",
+      "bit_rate_gbps": 53.125
+    },
+    {
+      "label": "3327 Tx1330/Rx1270 50GbE 53.125G",
+      "model": "SO-QSFP28-50GE-BX10D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "standards_code": "50GbE",
+      "bit_rate_gbps": 53.125
+    }
+  ]
+}

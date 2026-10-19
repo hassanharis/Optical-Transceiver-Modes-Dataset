@@ -1,0 +1,37 @@
+{
+  "modes": [
+    {
+      "label": "PSFP10-1541SF 10G Ethernet",
+      "model": "PSFP10-1541SF",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "10G Base-ER",
+      "bit_rate_gbps": 10.3125,
+      "extinction_ratio_db": 3.0
+    },
+    {
+      "label": "PSFP10-1541SF 10G Fiber Channel",
+      "model": "PSFP10-1541SF",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "SFP+",
+      "standards_code": "10G Fiber Channel",
+      "bit_rate_gbps": 10.518,
+      "extinction_ratio_db": 3.0
+    },
+    {
+      "label": "PSFP10-xxxxxx EEPROM family ID",
+      "model": "PSFP10-xxxxxx",
+      "wavelength_min_nm": 1200.0,
+      "wavelength_max_nm": 1600.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "SFP",
+      "standards_code": "IEEE802.3Z",
+      "bit_rate_gbps": 1.25,
+      "extinction_ratio_db": 5.0
+    }
+  ]
+}

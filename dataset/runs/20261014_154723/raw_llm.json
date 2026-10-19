@@ -1,0 +1,207 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-MR80D-Dxxxx",
+    "SO-SFP-MR80D-D9210",
+    "SO-SFP-MR80D-D9220",
+    "SO-SFP-MR80D-D9230",
+    "SO-SFP-MR80D-D9240",
+    "SO-SFP-MR80D-D9250",
+    "SO-SFP-MR80D-D9260",
+    "SO-SFP-MR80D-D9270",
+    "SO-SFP-MR80D-D9280",
+    "SO-SFP-MR80D-D9290",
+    "SO-SFP-MR80D-D9300",
+    "SO-SFP-MR80D-D9310",
+    "SO-SFP-MR80D-D9320",
+    "SO-SFP-MR80D-D9330",
+    "SO-SFP-MR80D-D9340",
+    "SO-SFP-MR80D-D9350",
+    "SO-SFP-MR80D-D9360",
+    "SO-SFP-MR80D-D9370",
+    "SO-SFP-MR80D-D9380",
+    "SO-SFP-MR80D-D9390",
+    "SO-SFP-MR80D-D9400",
+    "SO-SFP-MR80D-D9410",
+    "SO-SFP-MR80D-D9420",
+    "SO-SFP-MR80D-D9430",
+    "SO-SFP-MR80D-D9440",
+    "SO-SFP-MR80D-D9450",
+    "SO-SFP-MR80D-D9460",
+    "SO-SFP-MR80D-D9470",
+    "SO-SFP-MR80D-D9480",
+    "SO-SFP-MR80D-D9490",
+    "SO-SFP-MR80D-D9500",
+    "SO-SFP-MR80D-D9510",
+    "SO-SFP-MR80D-D9520",
+    "SO-SFP-MR80D-D9530",
+    "SO-SFP-MR80D-D9540",
+    "SO-SFP-MR80D-D9550",
+    "SO-SFP-MR80D-D9560",
+    "SO-SFP-MR80D-D9570",
+    "SO-SFP-MR80D-D9580",
+    "SO-SFP-MR80D-D9590",
+    "SO-SFP-MR80D-D9600"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "ITU-T G.694.1",
+    "RoHS-6/6"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1528.0
+  ],
+  "wavelength_max_nm": [
+    1620.0
+  ],
+  "wavelength_center_nm": [
+    1560.61,
+    1559.79,
+    1558.98,
+    1558.17,
+    1557.36,
+    1556.55,
+    1555.75,
+    1554.94,
+    1554.13,
+    1553.33,
+    1552.52,
+    1551.72,
+    1550.92,
+    1550.12,
+    1549.32,
+    1548.51,
+    1547.72,
+    1546.92,
+    1546.12,
+    1545.32,
+    1544.53,
+    1543.73,
+    1542.94,
+    1542.14,
+    1541.35,
+    1540.56,
+    1539.77,
+    1538.98,
+    1538.19,
+    1537.4,
+    1536.61,
+    1535.82,
+    1535.04,
+    1534.25,
+    1533.47,
+    1532.68,
+    1531.9,
+    1531.12,
+    1530.33,
+    1529.55
+  ],
+  "wavelength_band": [
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    192.1
+  ],
+  "frequency_max_thz": [
+    196.0
+  ],
+  "channel_spacing_ghz": [
+    100.0
+  ],
+  "channel_total": [
+    40
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.4
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "G.694.1"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    0.1,
+    2.67
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -29.0
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -9.0
+  ],
+  "cd_tolerance_ps_nm": [
+    2080.0
+  ],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -42.0
+  ],
+  "los_deassert_dbm": [
+    -30.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Title cites 29dB power budget and D9210-D9600 (40ch). Power budget 14–29dB. Transmitter output power footnote 1): Average power. Receiver minimum input power and overload footnote 2): Measured at 2.5 Gbps using PRBS31 @ BER 1x10-12. Power consumption stated as < 1.4W. Storage temperature -40°C to +85°C (not normal operating). Ordering lists C-temp and E-temp part numbers; E-temp range defined in GENERAL DEFINITIONS as typically -20°C to +75°C. Typical reach 80km without dispersion compensation.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-MR80D-Dxxxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": ""
+}

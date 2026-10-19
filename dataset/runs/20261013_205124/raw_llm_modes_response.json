@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"FNK-ER12x SM 1550 nm GE/1x FC\",\n      \"model\": \"FNK-ER12x\",\n      \"form_factor\": \"Front Load Pluggable\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1625.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"standards_code\": \"IEEE-802.3z\"\n    },\n    {\n      \"label\": \"FNK-ER12 SM 1550 nm GE/1x FC\",\n      \"model\": \"FNK-ER12\",\n      \"form_factor\": \"Front Load Pluggable\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1625.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"standards_code\": \"IEEE-802.3z\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

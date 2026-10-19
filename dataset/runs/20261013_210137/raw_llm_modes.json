@@ -1,0 +1,19 @@
+{
+  "modes": [
+    {
+      "label": "Gigabit Ethernet (IEEE 802.3z)",
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "IEEE 802.3z"
+    },
+    {
+      "label": "1x Fiber Channel (ANSI X3.297)",
+      "host_interface_name": "1x Fiber Channel",
+      "standards_code": "ANSI X3.297"
+    },
+    {
+      "label": "1x Fiber Channel (FC-PH-2)",
+      "host_interface_name": "1x Fiber Channel",
+      "standards_code": "FC-PH-2"
+    }
+  ]
+}

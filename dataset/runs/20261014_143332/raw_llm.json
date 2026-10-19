@@ -1,0 +1,127 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-622M-L120D"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1520.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1580.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [
+    "FE",
+    "STM1/OC3",
+    "STM4/OC12"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "FE",
+    "STM1/OC3",
+    "STM4/OC12",
+    "100M Ethernet"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    125.0,
+    622.0
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    120.0
+  ],
+  "tx_power_min_dbm": [
+    2.0
+  ],
+  "tx_power_max_dbm": [
+    7.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -32.0,
+    -33.0,
+    -34.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -10.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -33.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Bit rate support stated as 125 to 622Mbps. Power budget 17 – 34dB @ STM4/OC12. Transmitter output power min printed as +2.0dB1) (footnote: Average power); max +7.0dBm. Receiver minimum input power at BER 1x10-12, PRBS 223-1: STM4/OC12 -32dBm, STM1/OC3 -33dBm, 100M FE -34Bm1) 2). Overload and LOS thresholds per footnote 1) Average power. Storage temperature -40°C to +85°C (not operating). Power consumption < 1.0W. DDM Yes. Transmission media SM (2x LC). Technology Grey SFP.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-622M-L120D",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Clarify whether bit_rate_gbps should store Mbps literals (125, 622) or converted Gbps. Map power budget 17–34dB to a dedicated field if added to schema. Rx sensitivity -34Bm is likely -34dBm typo in source."
+}

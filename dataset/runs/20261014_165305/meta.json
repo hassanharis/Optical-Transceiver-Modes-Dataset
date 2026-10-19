@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:53:05.654996+00:00",
+  "source_file": "C:\\Haris\\datasheets\\tqd032-tunc-so-qsfp-dd-400zr-r6.1.pdf",
+  "page_count": 3,
+  "table_count": 6,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 7.143,
+    "extract_atoms": 39.624,
+    "store_run": 0.006,
+    "synthesize_modes": 27.913,
+    "store_modes": 0.003,
+    "total": 74.69
+  }
+}

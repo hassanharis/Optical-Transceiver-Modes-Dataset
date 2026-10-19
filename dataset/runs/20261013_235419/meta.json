@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:54:19.462741+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lp-sfp-tmri.pdf",
+  "page_count": 8,
+  "table_count": 11,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 11.839,
+    "extract_atoms": 19.423,
+    "store_run": 0.006,
+    "synthesize_modes": 34.893,
+    "store_modes": 0.005,
+    "total": 66.166
+  }
+}

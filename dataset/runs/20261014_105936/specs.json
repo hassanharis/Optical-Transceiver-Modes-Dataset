@@ -1,0 +1,115 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TOS001-S31C-SO",
+    "TOS001-S31-SO"
+  ],
+  "form_factor": [
+    "OSFP112",
+    "OSFP_RHS",
+    "OSFP"
+  ],
+  "standards_claimed": [
+    "OSFP RHS MSA",
+    "CMIS5.0",
+    "400GBASE-DR4",
+    "IEEE802.3bj"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1311.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "channel_total": [
+    4
+  ],
+  "connector_type": [
+    "MPO12",
+    "MPO"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    9.0
+  ],
+  "host_interface_name": [
+    "400GAUI-4",
+    "100GAUI-1"
+  ],
+  "frame": [
+    "400GAUI-4",
+    "4x100GAUI-1"
+  ],
+  "standards_code": [
+    "400G-DR4",
+    "400GBASE-DR4",
+    "400GbE"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    425.0,
+    400.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    500.0
+  ],
+  "tx_power_min_dbm": [
+    -2.9,
+    -0.8
+  ],
+  "tx_power_max_dbm": [
+    4.0,
+    4.2
+  ],
+  "rx_sensitivity_dbm": [
+    -4.4,
+    -5.9
+  ],
+  "rx_overload_dbm": [
+    4.2,
+    4.0
+  ],
+  "fec_type": [
+    "RS_528_514"
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "los_assert_dbm": [
+    -15.0
+  ],
+  "los_deassert_dbm": [
+    -10.0
+  ],
+  "number_of_lanes": [
+    4,
+    8
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Power consumption stated as < 9W. Power budget 0 – 3.6 dB. Aggregated line rate 425 Gbps (footnote 1); line baud rate per lane 53.125 Gbd (footnote 2). Receiver OMA min -4.4 dBm and overload +4.2 dBm per lane (footnote 3). FEC on the module is bypassed; host shall implement FEC per IEEE802.3bj RS(528,514). Optical parameters BER 2.4 x 10^-4. Storage temperature -40°C to +85°C. Connector described as MPO12 APC. Applications include 400G NDR InfiniBand. Receiver table lists average input power per lane Min -5.9 dBm, Max +4.0 dBm.",
+  "provenance_datasheet_sections": [
+    "OSFP RHS 400G DR4, CMIS5.0",
+    "TOS001-S31C-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

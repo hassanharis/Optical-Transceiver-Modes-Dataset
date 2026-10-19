@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Evidence from the datasheet: **ordering** defines two SKUs (temperature grade only); **Recommended Operating Conditions** give one data-rate span (0.1\u20131.25 Gbps, typical 1.25); **Optical** gives TX \u03bb max 1360 nm and RX \u03bb max 1610 nm on the same module, not separate selectable modes. Per your rules, only the two part numbers are separate modes; bit rate **1.25** matches ordering; **1360** is the transmitter centre-wavelength maximum shared by both SKUs (RX **1610** is a different parameter on the same configuration, not a second mode).\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"LS-SM311G-20C Commercial 1.25G\",\n      \"model\": \"LS-SM311G-20C\",\n      \"wavelength_max_nm\": 1360.0,\n      \"bit_rate_gbps\": 1.25\n    },\n    {\n      \"label\": \"LS-SM311G-20I Industrial 1.25G\",\n      \"model\": \"LS-SM311G-20I\",\n      \"wavelength_max_nm\": 1360.0,\n      \"bit_rate_gbps\": 1.25\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

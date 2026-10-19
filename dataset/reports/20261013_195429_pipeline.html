@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Broadcom [&#x27;AFCT-57H5MZ&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">AFCT-57H5MZ-DS100.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">27</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">33</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 19:54</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">## **Data Sheet** 
+
+**AFCT-57H5MZ 64GFC for Single-Mode Optical Fiber Digital Diagnostic SFP, 1310-nm, 64G/32G/16G, 10 km** 
+
+
+## **Description** 
+
+The Broadcom[®] AFCT-57H5MZ optical transceiver supports high-speed serial links over singe-mode optical fiber at signaling rates up to 57.8 Gb/s PAM4 (the serial line rate of 64GFC). The product is compliant with Small Form Pluggable SFP+ industry agreements for mechanical and low-speed electrical specifications. High-speed electrical and optical specifications are compliant with ANSI Fibre Channel FC-PI-7. 
+
+The AFCT-57H5MZ is a multirate 1310-nm transceiver that ensures compliance with FC-PI-7 64GFC, 32GFC, and 16GFC specifications. Per the requirements of 64GFC, internal clock and data recovery circuits (CDRs) are present on both electrical input and electrical output of this transceiver. These CDRs lock at 57.8-Gb/s PAM4, 28.05-Gb/s NRZ, and 14.025-Gb/s NRZ (64GFC, 32GFC, and 16GFC) accomplished by using two Rate Select inputs and I[2] C to configure transmit and receive sides. 
+
+Digital diagnostic monitoring information (DMI) is present in the AFCT-57H5MZ per the requirements of SFF-8472, providing real-time monitoring information of transceiver laser, receiver, and environment conditions over an SFF-8431 I[2] C interface. 
+
+## **Features** 
+
+- Compliant to RoHS with 7c-I exemption 
+
+- Broadcom’s high-performance 1310-nm DFB Laser and PiN diode 
+
+- Class 1 eye safe per IEC60825-1 and CDRH 
+
+- Wide temperature range (0°C to 80°C) 
+
+- LC duplex connector optical interface conforming to ANSI TIA/EIA604-10 (FOCIS 10B) 
+
+- Diagnostic features per SFF-8472, rev 12.3 “Diagnostic Monitoring Interface for Optical Transceivers” 
+
+- Enhanced operational features including EWRAP, OWRAP, and adaptive electrical EQ/emphasis settings 
+
+- Integrated PRBS generator and bit error rate checker 
+
+- Real-time monitoring of the following: – Transmitter average optical power 
+
+   - Received average optical power 
+
+   - Laser bias current
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Broadcom"</span>,
+  <span class="key">"model"</span>: [
+    "AFCT-57H5MZ"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP+"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8472",
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8419",
+    "FC-PI-7",
+    "FC-PI-6",
+    "FC-PI-5",
+    "ANSI TIA/EIA604-10",
+    "IEC60825-1",
+    "RoHS",
+    "SFF-8024"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_DFB"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "PIN"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1304.5</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1317.5</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1310</span>
+  ],
+  <span class="key">"wavelength_band"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "pluggable"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF",
+    "SMF <span class="num">9</span>/125μm"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">80</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">2.0</span>,
+    <span class="num">2.1</span>
+  ],
+  <span class="key">"host_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: [
+    "64GFC",
+    "32GFC",
+    "16GFC"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "64GFC",
+    "32GFC",
+    "16GFC",
+    "FC-PI-7",
+    "FC-PI-6",
+    "FC-PI-5"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [
+    <span class="num">28.9</span>,
+    <span class="num">28.05</span>,
+    <span class="num">14.025</span>
+  ],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">57.8</span>,
+    <span class="num">28.05</span>,
+    <span class="num">14.025</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [
+    "PAM4",
+    "NRZ"
+  ],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">10</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-5.0</span>,
+    <span class="num">-4.5</span>,
+    <span class="num">-2.0</span>,
+    <span class="num">-1.5</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">4.2</span>,
+    <span class="num">4.0</span>,
+    <span class="num">3</span>,
+    <span class="num">2.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-12.0</span>,
+    <span class="num">-11.4</span>,
+    <span class="num">-8.9</span>,
+    <span class="num">-5.8</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">5.2</span>,
+    <span class="num">4.2</span>,
+    <span class="num">3</span>,
+    <span class="num">2.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: [
+    "KP4",
+    "RS_528_514"
+  ],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: [
+    <span class="num">0.000109</span>,
+    <span class="num">1</span>e-06,
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"post_fec_ber_target"</span>: <span class="null">null</span>,
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">3.5</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-30</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-10</span>,
+    <span class="num">-12.5</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: [
+    <span class="num">-26</span>
+  ],
+  <span class="key">"transmitter_reflectance_db"</span>: [
+    <span class="num">-26</span>
+  ],
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">3.5</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [
+    <span class="num">15.6</span>,
+    <span class="num">26</span>
+  ],
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">1</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [
+    <span class="num">30</span>
+  ],
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Multirate module: <span class="num">64</span>GFC (57.8 Gb/s PAM4, RS(544,<span class="num">514</span>) FEC, BER <span class="num">1.09</span>E-4), <span class="num">32</span>GFC (28.05 Gb/s NRZ, RS(528,<span class="num">514</span>) FEC, BER <span class="num">1</span>E-6), <span class="num">16</span>GFC (14.025 Gb/s NRZ, no FEC, BER <span class="num">1</span>E-12). TX/RX optical and sensitivity limits differ by mode; <span class="num">10</span> km reach on single-mode fiber per title and SFP ID. Power consumption <span class="num">2.0</span> W max at <span class="num">3.3</span> V ±5%; <span class="num">2.1</span> W max at <span class="num">3.3</span> V +0/–5% over <span class="num">70</span>°C. Transmitter Distortion Penalty (TDP) max <span class="num">2.7</span> dB at <span class="num">32</span>GFC and <span class="num">4.4</span> dB at <span class="num">16</span>GFC stated but not in penalty-point format."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "Data Sheet",
+    "Description",
+    "Features",
+    "Transmitter Section",
+    "Receiver Section",
+    "Table <span class="num">4</span>:  Recommended Operating Conditions",
+    "Table <span class="num">5</span>:  Transceiver Electrical Characteristics",
+    "Table <span class="num">6</span>:  High-Speed Electrical Module Input Characteristics",
+    "Table <span class="num">10</span>:  <span class="num">64</span>GFC Mode Optical Transmitter Characteristics",
+    "Table <span class="num">11</span>:  <span class="num">64</span>GFC Mode Optical Receiver Characteristics (per PC-PI-7)",
+    "Table <span class="num">12</span>:  <span class="num">32</span>GFC Mode Optical Transmitter Characteristics",
+    "Table <span class="num">13</span>:  <span class="num">32</span>GFC Mode Optical Receiver Characteristic",
+    "Table <span class="num">14</span>:  <span class="num">16</span>GFC Mode Optical Transmitter Characteristics",
+    "Table <span class="num">15</span>:  <span class="num">16</span>GFC Mode Optical Receiver Characteristics",
+    "Table <span class="num">20</span>:  EEPROM Serial ID Memory Contents – Base SFP Memory (Address A0h)"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">""</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>power_consumption_w</td><td><span class="badge">2.0</span> <span class="badge">2.1</span></td></tr>
+<tr><td>media_interface_name</td><td><span class="badge">64GFC</span> <span class="badge">32GFC</span> <span class="badge">16GFC</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">64GFC</span> <span class="badge">32GFC</span> <span class="badge">16GFC</span> <span class="badge">FC-PI-7</span> <span class="badge">FC-PI-6</span> <span class="badge">FC-PI-5</span></td></tr>
+<tr><td>baud_rate_gbaud</td><td><span class="badge">28.9</span> <span class="badge">28.05</span> <span class="badge">14.025</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">57.8</span> <span class="badge">28.05</span> <span class="badge">14.025</span></td></tr>
+<tr><td>modulation_format</td><td><span class="badge">PAM4</span> <span class="badge">NRZ</span></td></tr>
+<tr><td>tx_power_min_dbm</td><td><span class="badge">-5.0</span> <span class="badge">-4.5</span> <span class="badge">-2.0</span> <span class="badge">-1.5</span></td></tr>
+<tr><td>tx_power_max_dbm</td><td><span class="badge">4.2</span> <span class="badge">4.0</span> <span class="badge">3.0</span> <span class="badge">2.0</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-12.0</span> <span class="badge">-11.4</span> <span class="badge">-8.9</span> <span class="badge">-5.8</span></td></tr>
+<tr><td>rx_overload_dbm</td><td><span class="badge">5.2</span> <span class="badge">4.2</span> <span class="badge">3.0</span> <span class="badge">2.0</span></td></tr>
+<tr><td>fec_type</td><td><span class="badge">KP4</span> <span class="badge">RS_528_514</span></td></tr>
+<tr><td>pre_fec_ber_threshold</td><td><span class="badge">0.000109</span> <span class="badge">1e-06</span> <span class="badge">1e-12</span></td></tr>
+<tr><td>los_deassert_dbm</td><td><span class="badge">-10.0</span> <span class="badge">-12.5</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Broadcom</td></tr>
+<tr><td>model</td><td>AFCT-57H5MZ</td></tr>
+<tr><td>form_factor</td><td>SFP+</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8472, SFF-8431, SFF-8432, SFF-8419, FC-PI-7, FC-PI-6, FC-PI-5, ANSI TIA/EIA604-10, IEC60825-1, RoHS, SFF-8024</td></tr>
+<tr><td>emitter_type</td><td>LASER_DFB</td></tr>
+<tr><td>photodetector_type</td><td>PIN</td></tr>
+<tr><td>wavelength_min_nm</td><td>1304.5</td></tr>
+<tr><td>wavelength_max_nm</td><td>1317.5</td></tr>
+<tr><td>wavelength_center_nm</td><td>1310.0</td></tr>
+<tr><td>mounting_type</td><td>pluggable</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF, SMF 9/125μm</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>80.0</td></tr>
+<tr><td>reach_km</td><td>10.0</td></tr>
+<tr><td>extinction_ratio_db</td><td>3.5</td></tr>
+<tr><td>los_assert_dbm</td><td>-30.0</td></tr>
+<tr><td>receiver_reflectance_db</td><td>-26.0</td></tr>
+<tr><td>transmitter_reflectance_db</td><td>-26.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>3.5</td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td>15.6, 26.0</td></tr>
+<tr><td>number_of_lanes</td><td>1</td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td>30.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Multirate module: 64GFC (57.8 Gb/s PAM4, RS(544,514) FEC, BER 1.09E-4), 32GFC (28.05 Gb/s NRZ, RS(528,514) FEC, BER 1E-6), 16GFC (14.025 Gb/s NRZ, no FEC, BER 1E-12). TX/RX optical and sensitivity limits differ by mode; 10 km reach on single-mode fiber per title and SFP ID. Power consumption 2.0 W max at 3.3 V ±5%; 2.1 W max at 3.3 V +0/–5% over 70°C. Transmitter Distortion Penalty (TDP) max 2.7 dB at 32GFC and 4.4 dB at 16GFC stated but not in penalty-point format.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>Data Sheet, Description, Features, Transmitter Section, Receiver Section, Table 4:  Recommended Operating Conditions, Table 5:  Transceiver Electrical Characteristics, Table 6:  High-Speed Electrical Module Input Characteristics, Table 10:  64GFC Mode Optical Transmitter Characteristics, Table 11:  64GFC Mode Optical Receiver Characteristics (per PC-PI-7), Table 12:  32GFC Mode Optical Transmitter Characteristics, Table 13:  32GFC Mode Optical Receiver Characteristic, Table 14:  16GFC Mode Optical Transmitter Characteristics, Table 15:  16GFC Mode Optical Receiver Characteristics, Table 20:  EEPROM Serial ID Memory Contents – Base SFP Memory (Address A0h)</td></tr>
+<tr><td>suggestions</td><td></td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>power_consumption_w</th><th>media_interface_name</th><th>standards_code</th><th>baud_rate_gbaud</th><th>bit_rate_gbps</th><th>modulation_format</th><th>fec_type</th><th>pre_fec_ber_threshold</th></tr><tr><td><strong>64GFC PAM4</strong></td><td>2.0</td><td>64GFC</td><td>FC-PI-7</td><td>28.9</td><td>57.8</td><td>PAM4</td><td>KP4</td><td>0.000109</td></tr><tr><td><strong>32GFC NRZ</strong></td><td>2.0</td><td>32GFC</td><td>FC-PI-6</td><td>28.05</td><td>28.05</td><td>NRZ</td><td>RS_528_514</td><td>1e-06</td></tr><tr><td><strong>16GFC NRZ</strong></td><td>2.0</td><td>16GFC</td><td>FC-PI-5</td><td>14.025</td><td>14.025</td><td>NRZ</td><td></td><td>1e-12</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 19:54
+</footer>
+
+</div>
+</body>
+</html>

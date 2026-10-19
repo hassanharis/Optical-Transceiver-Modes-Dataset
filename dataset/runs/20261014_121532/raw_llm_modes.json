@@ -1,0 +1,332 @@
+{
+  "modes": [
+    {
+      "label": "100G DWDM QSFP28 @ 192.00 THz",
+      "model": "SO-QSFP28-D20",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 192.10 THz",
+      "model": "SO-QSFP28-D21",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 192.20 THz",
+      "model": "SO-QSFP28-D22",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 192.30 THz",
+      "model": "SO-QSFP28-D23",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 192.40 THz",
+      "model": "SO-QSFP28-D24",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 192.50 THz",
+      "model": "SO-QSFP28-D25",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 192.60 THz",
+      "model": "SO-QSFP28-D26",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 192.70 THz",
+      "model": "SO-QSFP28-D27",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 192.80 THz",
+      "model": "SO-QSFP28-D28",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 192.90 THz",
+      "model": "SO-QSFP28-D29",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 193.00 THz",
+      "model": "SO-QSFP28-D30",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 193.10 THz",
+      "model": "SO-QSFP28-D31",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 193.20 THz",
+      "model": "SO-QSFP28-D32",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 193.30 THz",
+      "model": "SO-QSFP28-D33",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 193.40 THz",
+      "model": "SO-QSFP28-D34",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 193.50 THz",
+      "model": "SO-QSFP28-D35",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 193.60 THz",
+      "model": "SO-QSFP28-D36",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 193.70 THz",
+      "model": "SO-QSFP28-D37",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 193.80 THz",
+      "model": "SO-QSFP28-D38",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 193.90 THz",
+      "model": "SO-QSFP28-D39",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 194.00 THz",
+      "model": "SO-QSFP28-D40",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 194.10 THz",
+      "model": "SO-QSFP28-D41",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 194.20 THz",
+      "model": "SO-QSFP28-D42",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 194.30 THz",
+      "model": "SO-QSFP28-D43",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 194.40 THz",
+      "model": "SO-QSFP28-D44",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 194.50 THz",
+      "model": "SO-QSFP28-D45",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 194.60 THz",
+      "model": "SO-QSFP28-D46",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 194.70 THz",
+      "model": "SO-QSFP28-D47",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 194.80 THz",
+      "model": "SO-QSFP28-D48",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 194.90 THz",
+      "model": "SO-QSFP28-D49",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 195.00 THz",
+      "model": "SO-QSFP28-D50",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 195.10 THz",
+      "model": "SO-QSFP28-D51",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 195.20 THz",
+      "model": "SO-QSFP28-D52",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 195.30 THz",
+      "model": "SO-QSFP28-D53",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 195.40 THz",
+      "model": "SO-QSFP28-D54",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 195.50 THz",
+      "model": "SO-QSFP28-D55",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 195.60 THz",
+      "model": "SO-QSFP28-D56",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 195.70 THz",
+      "model": "SO-QSFP28-D57",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 195.80 THz",
+      "model": "SO-QSFP28-D58",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 @ 195.90 THz",
+      "model": "SO-QSFP28-D59",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "100G DWDM QSFP28 family (40ch G.694.1)",
+      "model": "SO-QSFP28-Dxx",
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    }
+  ]
+}

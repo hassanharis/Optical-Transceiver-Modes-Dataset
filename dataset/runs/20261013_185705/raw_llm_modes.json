@@ -1,0 +1,14 @@
+{
+  "modes": [
+    {
+      "label": "CWDM product range 1270-1610 nm",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1610.0
+    },
+    {
+      "label": "Receiver centre wavelength 1260-1620 nm",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0
+    }
+  ]
+}

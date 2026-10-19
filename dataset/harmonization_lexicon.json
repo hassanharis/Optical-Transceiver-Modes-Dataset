@@ -1,0 +1,1388 @@
+{
+  "version": 1,
+  "description": "Canonical value replacements for OTSE run JSON (TransceiverSpecs / mode fields). Apply with python -m otse.scripts.apply_field_replacements.",
+  "run_artifacts": [
+    "specs.json",
+    "raw_llm.json",
+    "mode_atoms.json",
+    "modes.json",
+    "raw_llm_modes.json",
+    "raw_llm_modes_response.json"
+  ],
+  "rules": [
+    {
+      "field": "fec_type",
+      "to": "FEC",
+      "from": [
+        "Forward Error Correction",
+        "7% FEC"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "CFEC",
+      "from": [
+        "CFEC",
+        "C-FEC",
+        "cFEC"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "NONE",
+      "from": [
+        "No FEC",
+        "None",
+        "FEC Free"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "OFEC",
+      "from": [
+        "O-FEC",
+        "OFEC",
+        "oFEC"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "PFEC",
+      "from": [
+        "p-FEC",
+        "pFEC"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "SCFEC",
+      "from": [
+        "SCFEC",
+        "SC-FEC",
+        "Staircase",
+        "Staircase (SC)",
+        "Staircase FEC",
+        "Staircase-FEC"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "SDFEC",
+      "from": [
+        "SD-FEC",
+        "15% SD-FEC"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "FIRECODE",
+      "from": [
+        "Firecode FEC",
+        "Firecode"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "KP4",
+      "from": [
+        "KP4",
+        "KP4 FEC",
+        "RS(544,514)",
+        "RS(544",
+        "514)"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "KR4",
+      "from": [
+        "KR4",
+        "KR4 FEC"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "RS_GENERIC",
+      "from": [
+        "Reed Solomon",
+        "RS (Reed-Solomon)",
+        "RS FEC",
+        "RS-FEC"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "RS_544_514",
+      "from": [
+        "Reed Solomon RS(544,514)",
+        "RS(544,514)"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "RS_544_528",
+      "from": [
+        "Reed Solomon RS(544,528)",
+        "RS(544,528)"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "RS_255_239",
+      "from": [
+        "RS(255,239)",
+        "RS(255,239) FEC"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fec_type",
+      "to": "RS_528_514",
+      "from": [
+        "RS(528,514)",
+        "Reed Solomon RS(528,514)",
+        "Reed Solomon RS(544,528)",
+        "RS 528/514",
+        "RS(528, 514)",
+        "RS(544,528)",
+        "RS-FEC (528,514)"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "MMF",
+      "from": [
+        "MMF",
+        "MM",
+        "Multimode fiber",
+        "multimode fiber",
+        "Multimode Fiber",
+        "Multi mode fiber",
+        "multi mode fiber",
+        "Multi-mode Fiber",
+        "Multi-mode fiber",
+        "Multi Mode",
+        "Multi-mode",
+        "multi-mode",
+        "Multimode",
+        "multimode",
+        "MultiMode",
+        "2000MHz/km MMF"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "SMF",
+      "from": [
+        "Single-Mode",
+        "Single-mode",
+        "singlemode fiber",
+        "Single mode fibre",
+        "single-mode fiber",
+        "Single-Mode Fiber",
+        "Single-mode Fiber",
+        "single mode fibers",
+        "Single Mode Fiber (SMF)",
+        "SingleMode (SM)",
+        "single-mode optical fiber",
+        "SMF-MPO12/APC"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "form_factor",
+      "to": "1x9",
+      "from": [
+        "1x9",
+        "1X9",
+        "1x9 Bi-Di",
+        "1×9"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "MMF 50/125µm",
+      "from": [
+        "MMF 50/125µm",
+        "50/125-µm",
+        "50/125 µm OM4",
+        "50/125μm",
+        "50/125um",
+        "50/125µm",
+        "50µm",
+        "50µm MMF",
+        "50/125 µm",
+        "50/125 MMF",
+        "50-μm",
+        "50-µm optical media",
+        "50/125",
+        "50/125 (500MHz*Km)",
+        "MMF 50/125μm",
+        "Multimode 50-µm",
+        "50/125 µm MMF",
+        "50/125 μm MMF",
+        "50/125 µm multi-mode fiber",
+        "50/125 μm multi-mode fiber",
+        "50/125 μm multimode",
+        "50/125 µm multimode",
+        "50/125 μm multimode fiber",
+        "50/125-µm multimode fiber",
+        "50/125-μm multimode fiber",
+        "50/125um MMF",
+        "50/125µm MMF",
+        "50/125μm MMF"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "SMF 9/125μm",
+      "from": [
+        "9/125 SMF",
+        "9-µm single-mode fiber",
+        "9/125 µm Singlemode",
+        "9/125um SMF",
+        "9/125μm SMF",
+        "9/125µm SMF",
+        "9µm Core Diameter SMF",
+        "9µm SMF"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "MMF 62.5/125µm",
+      "from": [
+        "62.5/125",
+        "62.5/125 (200MHz*Km)",
+        "62.5/125 µm",
+        "62.5/125 µm MMF",
+        "62.5/125 µm multimode",
+        "62.5/125 μm multimode",
+        "62.5/125 μm multimode fiber",
+        "62.5/125-µm",
+        "62.5/125-μm multimode fiber",
+        "62.5/125-µm multimode fiber",
+        "62.5/125um",
+        "62.5/125μm",
+        "62.5/125µm",
+        "62.5/125µm MMF",
+        "62.5/125μm MMF",
+        "62.5µm"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "MMF_OM3",
+      "from": [
+        "MMF-OM3",
+        "50/125μm OM3",
+        "M5E MMF (50/125um OM3)",
+        "50/125 um OM3",
+        "50/125 µm OM3",
+        "OM3",
+        "OM3 MMF",
+        "OM3-MMF",
+        "Type A1a.2 50-µm Fiber",
+        "Type A1a.2",
+        "MMF-OM3",
+        "M5E MMF"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "MMF_OM2",
+      "from": [
+        "50/125 um OM2",
+        "50/125 µm OM2",
+        "OM2",
+        "MMF-OM2",
+        "M5F MMF"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "MMF_OM4",
+      "from": [
+        "50/125 um OM4",
+        "M5F MMF (50/125 um OM4)",
+        "OM4",
+        "OM4 MMF",
+        "MMF-OM4"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "MMF_OM5",
+      "from": [
+        "OM5",
+        "MMF-OM5"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "MMF_OM1",
+      "from": [
+        "62.5/125 µm OM1",
+        "62.5/125μm OM1",
+        "MMF 62.5/125 µm",
+        "OM1",
+        "MMF-OM1"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "SMF_G652",
+      "from": [
+        "G.652",
+        "ITU-T G.652"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "SMF_G655",
+      "from": [
+        "G.655"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "SMF_LEAF",
+      "from": [
+        "LEAF"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "COPPER_CAT5",
+      "from": [
+        "CAT5",
+        "twisted-pair category 5",
+        "COPPER_TWISTED_PAIR",
+        "UTP"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "COPPER_CAT6A",
+      "from": [
+        "Cat6A"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "fiber_type",
+      "to": "COPPER_TWINAX_ACTIVE",
+      "from": [
+        "Twinax Copper Active"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    {
+      "field": "emitter_type",
+      "to": "LASER_DFB",
+      "from": [
+        "DFB",
+        "DFB Laser",
+        "DFB LD",
+        "DFB-LD"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    }, 
+    {
+      "field": "emitter_type",
+      "to": "LASER_DFB_CWDM",
+      "from": [
+        "CWDM DFB",
+        "CWDM DFB laser"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "emitter_type",
+      "to": "LASER_EML",
+      "from": [
+        "EML",
+        "Cooled EML*"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "emitter_type",
+      "to": "LASER_DFB_EA",
+      "from": [
+        "EA-DFB"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "emitter_type",
+      "to": "LASER_DML",
+      "from": [
+        "DML"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "emitter_type",
+      "to": "LASER_FP",
+      "from": [
+        "FP",
+        "Fabry-Perot",
+        "FP Laser Diode"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "emitter_type",
+      "to": "LASER_VCSEL",
+      "from": [
+        "VCSEL",
+        "Vertical Cavity Surface Emitting Laser",
+        "VSCEL",
+        "Oxide VCSEL"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "emitter_type",
+      "to": "LASER_SILICON",
+      "from": [
+        "Si-photonics Laser"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "emitter_type",
+      "to": "LED_INGAASP",
+      "from": [
+        "InGaAsP LED",
+        "Surface Emitting InGaAsP LED"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "emitter_type",
+      "to": "LASER_ILMZ",
+      "from": [
+        "ILMZ"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "emitter_type",
+      "to": "LASER_ILMZ",
+      "from": [
+        "ILMZ"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+
+
+
+
+
+    
+    {
+      "field": "modulation_format",
+      "to": "QPSK",
+      "from": [
+        "QPSK",
+        "100G QPSK",
+        "200G QPSK"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "QPSK-CP",
+      "from": [
+        "CP-QPSK",
+        "cpQPSK"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "DQPSK",
+      "from": [
+        "dQPSK",
+        "DQPSK",
+        "100G dQPSK",
+        "DQPSK"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "DQPSK-DP",
+      "from": [
+        "dpDQPSK",
+        "DP-dQPSK",
+        "DP-dQPSK"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "QPSK-DP",
+      "from": [
+        "dpQPSK",
+        "DP-QPSK",
+        "DP dQPSK"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "QAM_8",
+      "from": [
+        "8-QAM",
+        "8QAM",
+        "300G 8QAM"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "QAM_8-DP",
+      "from": [
+        "8-QAM DP",
+        "8QAM DP",
+        "DP-8QAM"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "QAM_8-CP",
+      "from": [
+        "CP-8QAM",
+        "8QAM CP",
+        "CP-8QAM"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "QAM_16",
+      "from": [
+        "16-QAM", "16QAM", "400G 16QAM"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "QAM_16-DP",
+      "from": [
+        "DP-16QAM"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "QAM_16-CP",
+      "from": [
+        "CP-16QAM"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "QAM_32",
+      "from": [
+        "32-QAM",
+        "32QAM"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+
+    {
+      "field": "modulation_format",
+      "to": "QAM_64",
+      "from": [
+        "64-QAM",
+        "64QAM"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "QAM_4/3",
+      "from": [
+        "4/3-QAM",
+        "4/3QAM"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+
+    {
+      "field": "modulation_format",
+      "to": "PAM4",
+      "from": [
+        "PAM-4", "PAM4", "200G-PAM4"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+
+    {
+      "field": "modulation_format",
+      "to": "PAM4",
+      "from": [
+        "PAM-4", "PAM4", "200G-PAM4"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+
+    {
+      "field": "modulation_format",
+      "to": "PAM5",
+      "from": [
+        "5-level encoding", "5-level Pulse Amplitude Modulation", "5-level Pulse Amplitude Modulation (PAM)"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "PAM5",
+      "from": [
+        "5-level encoding", "5-level Pulse Amplitude Modulation", "5-level Pulse Amplitude Modulation (PAM)"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    {
+      "field": "modulation_format",
+      "to": "PCS_101",
+      "from": [
+        "PCS-101"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+
+    
+    {
+      "field": "modulation_format",
+      "to": "PCS_108",
+      "from": [
+        "PCS-108"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+
+
+
+    
+    {
+      "field": "modulation_format",
+      "to": "PCS_QAM_64",
+      "from": [
+        "PCS-64QAM", "PCS_64QAM"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+    	
+    {
+      "field": "modulation_format",
+      "to": "PCS_QAM_32",
+      "from": [
+        "PCS_32QAM", "PCS-32QAM"
+      ],
+      "case_insensitive": true,
+      "dedupe_lists": true
+    },
+
+{
+  "field": "modulation_format",
+  "to": "PCS_111",
+  "from": [
+    "PCS-111"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "PCS_118",
+  "from": [
+    "PCS-118"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "PCS_131",
+  "from": [
+    "PCS-131"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "PCS_132",
+  "from": [
+    "PCS-132"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "PCS_16QAM",
+  "from": [
+    "PCS-16QAM"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "PCS_66",
+  "from": [
+    "PCS-66"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "PCS_69",
+  "from": [
+    "PCS-69"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "PCS_75",
+  "from": [
+    "PCS-75"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "PCS_79",
+  "from": [
+    "PCS-79"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "PCS_87",
+  "from": [
+    "PCS-87"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "PCS_98",
+  "from": [
+    "PCS-98"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+
+
+
+{
+  "field": "modulation_format",
+  "to": "LINECODE_4B5B",
+  "from": [
+    "4B/5B"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "LINECODE_64B66B",
+  "from": [
+    "64b/66b",
+    "64B/66B"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "LINECODE_8B10B",
+  "from": [
+    "8B/10B",
+    "8b/10b"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "modulation_format",
+  "to": "NRZI_4B5B",
+  "from": [
+    "4B/5B NRZI",
+    "NRZI__4B5B"
+
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+
+{
+  "field": "modulation_format",
+  "to": "PCS_LC",
+  "from": [
+    "LC-PCS",
+    "long-codeword probabilistic constellation shaping"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+{
+  "field": "vendor",
+  "to": "Amphenol",
+  "from": [
+    "Amphenol ICC"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "vendor",
+  "to": "Avago Technologies",
+  "from": [
+    "Avago"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "vendor",
+  "to": "Cinch Connectivity Solutions",
+  "from": [
+    "Cinch"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "vendor",
+  "to": "FluxLight",
+  "from": [
+    "FluxLight, Inc."
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "vendor",
+  "to": "FS",
+  "from": [
+    "FS.COM"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "vendor",
+  "to": "LINK-PP",
+  "from": [
+    "LINK-PP INT'L TECHNOLOGY CO., LIMITED",
+    "LINK-PP INT’L TECHNOLOGY CO., LIMITED"
+
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "vendor",
+  "to": "Optcore Technology",
+  "from": [
+    "Optcore",
+    "Optcore Technology",
+    "Optech Technology Co., Ltd."
+
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "vendor",
+  "to": "QSFPTek",
+  "from": [
+    "QSFPTek",
+    "QSFPtek",
+    "QSFPTEK",
+    "qsfptek"
+
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "vendor",
+  "to": "Smartoptics",
+  "from": [
+    "smartoptics",
+    "Smartoptics"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "vendor",
+  "to": "Stratos",
+  "from": [
+    "Stratos",
+    "Stratos Optical Technologies"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "vendor",
+  "to": "XGIGA",
+  "from": [
+    "XGIGA",
+    "XGIGA Communication Technology Co.,ltd"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "photodetector_type",
+  "to": "PIN_InGaAs",
+  "from": [
+    "InGaAs PIN",
+    "InGaAs PIN photodiode"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "photodetector_type",
+  "to": "PIN",
+  "from": [
+    "PiN",
+    "PIN",
+    "PIN PD",
+    "PIN photodiode"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "photodetector_type",
+  "to": "PIN_GaAs",
+  "from": [
+    "GaAs PIN"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "photodetector_type",
+  "to": "photodiode",
+  "from": [
+    "photo diode",
+    "photodiode"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "mounting_type",
+  "to": "pluggable_hot",
+  "from": [
+    "Hot pluggable",
+    "Hot Pluggable",
+    "hot pluggable",
+    "Hot-plug",
+    "Hot-Plugga ble",
+    "Hot-pluggable",
+    "hot-pluggable",
+    "Hot-Pluggable",
+    "hotpluggable"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "mounting_type",
+  "to": "solder_post",
+  "from": [
+    "Solder post",
+    "Solder Post",
+    "solder posts",
+    "Solder Posts"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "mounting_type",
+  "to": "solder_wave",
+  "from": [
+    "wave solder"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+
+{
+  "field": "mounting_type",
+  "to": "screw_post",
+  "from": [
+    "Screw post",
+    "Screw Post",
+    "Screw Posts"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "mounting_type",
+  "to": "mount_surface",
+  "from": [
+    "Surface Mount",
+    "Surface mount"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "mounting_type",
+  "to": "mount_rack",
+  "from": [
+    "Rack Mount"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+}
+,
+
+{
+  "field": "mounting_type",
+  "to": "pluggable",
+  "from": [
+    "Pluggable",
+    "pluggable"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "mounting_type",
+  "to": "pluggable_hot_electrical",
+  "from": [
+    "Electrically hot-pluggable",
+    "electrically hot-pluggable"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+{
+  "field": "form_factor",
+  "to": "2x5",
+  "from": [
+    "2 x 5",
+    "2x5"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+}
+,
+
+{
+  "field": "form_factor",
+  "to": "OSFP_RHS",
+  "from": [
+    "OSFP RHS",
+    "OSFP-RHS"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+}
+,
+
+{
+  "field": "form_factor",
+  "to": "QSFP-DD_type-2A",
+  "from": [
+    "QSFP-DDType2A (w/external heat sink)",
+    "QSFP-DD type 2a"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+
+{
+  "field": "form_factor",
+  "to": "QSFP-DD_type-2",
+  "from": [
+    "QSFP-DD type 2"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "form_factor",
+  "to": "QSFP-DD800_type-2A",
+  "from": [
+    "QSFP-DD800 Type 2A",
+    "QSFP-DD800 type 2a"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "wavelength_band",
+  "to": "C-band_extended",
+  "from": [
+    "extended C-band",
+    "Extended C-band"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "wavelength_band",
+  "to": "C-band",
+  "from": [
+    "C-band",
+    "C-Band",
+    "C Band",
+    "ITU C-Band"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "wavelength_band",
+  "to": "L-band_extended",
+  "from": [
+    "Extended L-band",
+    "extended L-band"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "wavelength_band",
+  "to": "grey",
+  "from": [
+    "Grey",
+    "grey"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "wavelength_band",
+  "to": "L-band_super",
+  "from": [
+    "Super L",
+    "Super L-band"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "wavelength_band",
+  "to": "LAN_WDM",
+  "from": [
+    "LAN WDM",
+    "LAN-WDM",
+    "LANWDM",
+    "LWDM"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "wavelength_band",
+  "to": "C-band_super",
+  "from": [
+    "Super C",
+    "Super C-band"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "wavelength_band",
+  "to": "L-band",
+  "from": [
+    "L-band",
+    "Long-Wavelength"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+},
+
+{
+  "field": "wavelength_band",
+  "to": "CWDM4_extended",
+  "from": [
+    "eCWDM4"
+  ],
+  "case_insensitive": true,
+  "dedupe_lists": true
+}
+
+
+  ]}

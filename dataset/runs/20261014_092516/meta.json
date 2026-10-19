@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T09:25:16.647071+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ls-sm3101-20i.pdf",
+  "page_count": 8,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.63,
+    "extract_atoms": 30.579,
+    "store_run": 0.004,
+    "synthesize_modes": 57.346,
+    "store_modes": 0.002,
+    "total": 98.561
+  }
+}

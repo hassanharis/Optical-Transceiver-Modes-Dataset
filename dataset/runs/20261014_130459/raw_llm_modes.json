@@ -1,0 +1,48 @@
+{
+  "modes": [
+    {
+      "label": "BX20D-34 FE 100M BiDi",
+      "model": "SO-SFP-100Base-BX20D-34",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "FE",
+      "standards_code": "100BASE-BX",
+      "bit_rate_gbps": 100.0,
+      "rx_sensitivity_dbm": -29.0
+    },
+    {
+      "label": "BX20D-34 STM-1/OC-3 BiDi",
+      "model": "SO-SFP-100Base-BX20D-34",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "STM1/OC3",
+      "standards_code": "STM-1/OC3",
+      "bit_rate_gbps": 155.52,
+      "rx_sensitivity_dbm": -28.0
+    },
+    {
+      "label": "BX20D-43 FE 100M BiDi",
+      "model": "SO-SFP-100Base-BX20D-43",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1540.0,
+      "wavelength_center_nm": 1490.0,
+      "host_interface_name": "FE",
+      "standards_code": "100BASE-BX",
+      "bit_rate_gbps": 100.0,
+      "rx_sensitivity_dbm": -29.0
+    },
+    {
+      "label": "BX20D-43 STM-1/OC-3 BiDi",
+      "model": "SO-SFP-100Base-BX20D-43",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1540.0,
+      "wavelength_center_nm": 1490.0,
+      "host_interface_name": "STM1/OC3",
+      "standards_code": "STM-1/OC3",
+      "bit_rate_gbps": 155.52,
+      "rx_sensitivity_dbm": -28.0
+    }
+  ]
+}

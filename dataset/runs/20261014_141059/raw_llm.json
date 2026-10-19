@@ -1,0 +1,136 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-155M-L260D-Cxx",
+    "SO-SFP-155M-L260D-C47",
+    "SO-SFP-155M-L260D-C49",
+    "SO-SFP-155M-L260D-C51",
+    "SO-SFP-155M-L260D-C53",
+    "SO-SFP-155M-L260D-C55",
+    "SO-SFP-155M-L260D-C57",
+    "SO-SFP-155M-L260D-C59",
+    "SO-SFP-155M-L260D-C61"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260,
+    1470,
+    1471
+  ],
+  "wavelength_max_nm": [
+    1610,
+    1611,
+    1620
+  ],
+  "wavelength_center_nm": [
+    1470,
+    1490,
+    1510,
+    1530,
+    1550,
+    1570,
+    1590,
+    1610
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    8
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "FE",
+    "STM-1",
+    "OC3"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "G.694.2"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": null,
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    260
+  ],
+  "tx_power_min_dbm": [
+    1
+  ],
+  "tx_power_max_dbm": [
+    5
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -45
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -10
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-10
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -45
+  ],
+  "los_deassert_dbm": [
+    -55
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    1
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Typical reach 260 km depends on actual optical path attenuation (footnote 1). Receiver minimum input power and overload measured at 155 Mbps using PRBS23 @ BER 1x10-10 (footnote 2). Transmitter output power is average power (footnote 3). Power budget stated as 15 – 46 dB. Power consumption stated as < 1 W. Bit rates stated as 125 Mbps / 155 Mbps and 100/155 Mbps. Storage temperature -40°C to +85°C vs operating 0°C to +70°C. DDM Yes per SFF-8472. Safety/regulatory: TUV/UL/FDA, RoHS.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-155M-L260D-Cxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider a bit_rate_mbps field or allow literal rate strings; power_consumption as upper bound when given as '< 1 W'."
+}

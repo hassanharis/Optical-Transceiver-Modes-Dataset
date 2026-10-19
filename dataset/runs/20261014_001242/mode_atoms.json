@@ -1,0 +1,159 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1272.55,
+      1276.89,
+      1281.25,
+      1285.65,
+      1294.53,
+      1299.02,
+      1303.54,
+      1308.09
+    ],
+    "wavelength_max_nm": [
+      1274.54,
+      1278.89,
+      1283.27,
+      1287.68,
+      1296.59,
+      1301.09,
+      1305.63,
+      1310.19
+    ],
+    "wavelength_center_nm": [
+      1273.55,
+      1277.89,
+      1282.26,
+      1286.67,
+      1295.56,
+      1300.06,
+      1304.59,
+      1309.14
+    ],
+    "standards_code": [
+      "400GBASE-ER8",
+      "400GAUI-8",
+      "ER8"
+    ],
+    "bit_rate_gbps": [
+      400.0,
+      425.0,
+      53.125
+    ],
+    "tx_power_max_dbm": [
+      5.6,
+      14.6
+    ],
+    "rx_sensitivity_dbm": [
+      -16.1,
+      -14.1
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LQD-LW400-ER8C"
+    ],
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "IEEE std 802.3cnTM-2019",
+      "IEEE 802.3cd",
+      "QSFP-DD MSA HW Rev 5.1",
+      "QSFP-DD CMIS Rev 4.0",
+      "CMIS4.0",
+      "50G Lambda MSA"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "LWDM"
+    ],
+    "channel_total": [
+      8
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      14.0
+    ],
+    "host_interface_name": [
+      "400GAUI-8"
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [
+      "400GBASE-ER8"
+    ],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [
+      "400GAUI-8"
+    ],
+    "baud_rate_gbaud": [
+      26.5625
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      -0.6
+    ],
+    "rx_overload_dbm": [
+      -4.4
+    ],
+    "fec_type": [],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "extinction_ratio_db": [
+      6.0
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      6.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      15.6
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "penalties": [],
+    "notes": "Receiver Sensitivity (OMAouter) max is Max(–16.1, SECQ– 17.5) dBm per lane (informative; defined for transmitter SECQ 1.4 dB). Stressed Receiver Sensitivity (OMAouter) –14.1 dBm measured with conformance test signal at TP3 for BER = 2.4x10^-4. Link Distance in Operating Conditions table is 40000 M (40 km). Optical line rate stated as 425 Gb/s; electrical 8×53.125 Gb/s. Average launch power per lane min –0.6 dBm noted as informative. Memory map compatible with CMIS 5.1 while Product Features cite CMIS Rev 4.0.",
+    "provenance_datasheet_sections": [
+      "LQD-LW400-ER8C 400G QSFP-DD PAM4 LWDM ER8 40km LC SMF Transceiver",
+      "Product Features",
+      "Applications",
+      "Standards",
+      "Descriptions",
+      "Absolute Maximum Ratings",
+      "Operating Conditions",
+      "Optical Characteristics",
+      "Receiver Optical Specifications",
+      "Electrical Characteristics",
+      "Digital Diagnostic Monitoring Specifications",
+      "Ordering information"
+    ],
+    "suggestions": "Explicit FEC type name (e.g. RS-FEC per 802.3cn) is not listed; only pre-FEC BER 2.4×10^-4 appears. No OSNR or dispersion/PDL/PMD tolerance rows. Emitter and photodetector technologies not specified beyond Class 1/1M laser."
+  }
+}

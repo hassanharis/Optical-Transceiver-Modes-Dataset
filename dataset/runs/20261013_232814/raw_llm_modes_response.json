@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"Module standard compliance\",\n      \"standards_code\": \"ITU-T G.957\"\n    },\n    {\n      \"label\": \"Transmitter eye diagram (G.957 STM-1/OC-3)\",\n      \"standards_code\": \"STM-1\"\n    },\n    {\n      \"label\": \"Transmitter eye diagram (G.957 STM-1/OC-3)\",\n      \"standards_code\": \"OC-3\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

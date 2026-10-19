@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:43:02.547026+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftl4c1qm2c-transceiver-ds.pdf",
+  "page_count": 9,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.431,
+    "extract_atoms": 19.845,
+    "store_run": 0.008,
+    "synthesize_modes": 47.73,
+    "store_modes": 0.003,
+    "total": 78.017
+  }
+}

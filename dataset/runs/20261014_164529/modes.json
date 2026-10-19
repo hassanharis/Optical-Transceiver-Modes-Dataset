@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "SO-XFP-ZR",
+      "model": "SO-XFP-ZR",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-ZR-I",
+      "model": "SO-XFP-ZR-I",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"200G DAC AWG30 1m\",\n      \"model\": \"DQ5002-001C-SO\",\n      \"bit_rate_gbps\": 200.0\n    },\n    {\n      \"label\": \"200G DAC AWG30 1.5m\",\n      \"model\": \"DQ5002-1M5C-SO\",\n      \"bit_rate_gbps\": 200.0\n    },\n    {\n      \"label\": \"200G DAC AWG26 2m\",\n      \"model\": \"DQ5002-002C-SO\",\n      \"bit_rate_gbps\": 200.0\n    },\n    {\n      \"label\": \"200G DAC AWG26 3m\",\n      \"model\": \"DQ5002-003C-SO\",\n      \"bit_rate_gbps\": 200.0\n    },\n    {\n      \"label\": \"200G Ethernet / HDR (family)\",\n      \"model\": \"DQ5002-xxxC-SO\",\n      \"bit_rate_gbps\": 200.0\n    },\n    {\n      \"label\": \"2x100G breakout (family)\",\n      \"model\": \"DQ5002-xxxC-SO\",\n      \"bit_rate_gbps\": 100.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

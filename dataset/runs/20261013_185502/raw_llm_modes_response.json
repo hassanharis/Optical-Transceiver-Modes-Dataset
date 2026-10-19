@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SFP28-BIDI-LR-33 1330nm-TX/1270nm-RX\",\n      \"model\": \"SFP28-BIDI-LR-33\",\n      \"form_factor\": \"SFP28\",\n      \"wavelength_min_nm\": 1320.0,\n      \"wavelength_max_nm\": 1340.0,\n      \"wavelength_center_nm\": 1330.0,\n      \"host_interface_name\": \"25GBASE-LR\",\n      \"standards_code\": \"25GBASE-BX\"\n    },\n    {\n      \"label\": \"SFP28-BIDI-LR-27 1270nm-TX/1330nm-RX\",\n      \"model\": \"SFP28-BIDI-LR-27\",\n      \"form_factor\": \"SFP28\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1280.0,\n      \"wavelength_center_nm\": 1270.0,\n      \"host_interface_name\": \"25GBASE-LR\",\n      \"standards_code\": \"25GBASE-BX\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

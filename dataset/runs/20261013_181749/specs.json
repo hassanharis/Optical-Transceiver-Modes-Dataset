@@ -1,0 +1,136 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "OP13LI8-005D",
+    "OP13LI8-005D-2"
+  ],
+  "form_factor": [
+    "OSFP"
+  ],
+  "standards_claimed": [
+    "OSFP MSA rev5.0",
+    "OIF-CMIS rev5.2",
+    "IEEE 802.3dj-2024"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "mounting_type": [
+    "pluggable",
+    "pluggable_hot_electrical"
+  ],
+  "connector_type": [
+    "MPO-12",
+    "MPO-16"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    10.0,
+    11.0
+  ],
+  "host_interface_name": [
+    "OSFP"
+  ],
+  "media_interface_name": [
+    "2*DR4",
+    "DR8"
+  ],
+  "standards_code": [
+    "IEEE 802.3dj-2024",
+    "2×DR4",
+    "DR4",
+    "DR8",
+    "LPO"
+  ],
+  "baud_rate_gbaud": [
+    106.25
+  ],
+  "bit_rate_gbps": [
+    212.5
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.5
+  ],
+  "tx_power_min_dbm": [
+    -2.8
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -3.4,
+    -0.9
+  ],
+  "rx_overload_dbm": [
+    4.0,
+    4.2
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "channel_insertion_loss_db": [
+    3.0
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "transmitter_reflectance_db": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    21.4
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "total_jitter_ps": [
+    8.0
+  ],
+  "penalties": [],
+  "notes": "Primary module OP13LI8-005D: MPO-12 receptacle, 2*DR4 media. OP13LI8-005D-2: MPO-16, DR8. Reach stated as 500m throughout (0.5 km). Power: dissipation <11 W, typical 10W. Data rate 212.5 Gbps per optical channel with PAM4; signaling 106.25 GBd per lane optical. Host must implement FEC for reliable operation; LPO module has no CDR. Transmit OMA per lane min: -0.3 dBm for Max(TECQ, TDECQ)<0.9dB; -1.2+Max(TECQ, TDECQ) dBm for 0.9dB≤Max(TECQ, TDECQ)≤3.4dB. Receiver sensitivity (OMA): -3.4 dBm for TECQ<0.9 dB; -4.3+TECQ dBm for 0.9dB≤TECQ≤SECQ (BER@2.4e-4, PRBS31Q). TDECQ/TECQ/SECQ measured with FFE15 reference equalizer at SER@4.8e-4. Optical receiver damage threshold 5.0 dBm. Storage temperature -40 to 85°C (absolute max, not normal operating).",
+  "provenance_datasheet_sections": [
+    "1.6T OSFP LPO 2×DR4 Transceiver",
+    "OP13LI8-005D",
+    "PRODUCT FEATURES",
+    "REFERENCE STANDARD",
+    "APPLICATIONS",
+    "PRODUCT SPECIFICATION",
+    "I. Absolute Maximum Ratings",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "IV. Link Power Budget",
+    "V. Pin Assignment",
+    "VI. Host - Transceiver Interface Block Diagram",
+    "VII. Mechanical Specifications"
+  ],
+  "suggestions": "Datasheet lists transmission distance column as (km) but cells use 500m; clarify reach unit. No host/media interface ID hex values or explicit FEC type despite FEC being required on host. No OSNR or dispersion/PDL tolerance parameters for this LPO module."
+}

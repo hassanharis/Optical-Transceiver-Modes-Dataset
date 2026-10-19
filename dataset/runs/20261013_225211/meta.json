@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:52:11.014418+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftlc1155rgpld-transceiver-ds.pdf",
+  "page_count": 9,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.537,
+    "extract_atoms": 21.301,
+    "store_run": 0.008,
+    "synthesize_modes": 39.695,
+    "store_modes": 0.004,
+    "total": 71.545
+  }
+}

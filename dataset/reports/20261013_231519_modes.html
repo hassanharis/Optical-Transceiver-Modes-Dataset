@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Finisar</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Finisar</div>
+  <div class="subtitle">SFP+ &middot; [41] channels</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Finisar</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">SFP+</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">SFF-8431, SFF-8432, SFF-8472, SFP MSA</div></div>
+      <div class="spec-item"><div class="label">Emitter Type</div><div class="value">LASER_EML</div></div>
+      <div class="spec-item"><div class="label">Photodetector Type</div><div class="value">PIN</div></div>
+      <div class="spec-item"><div class="label">Wavelength Min</div><div class="value">1529.55</div></div>
+      <div class="spec-item"><div class="label">Wavelength Max</div><div class="value">1561.42</div></div>
+      <div class="spec-item"><div class="label">Frequency Min Thz</div><div class="value">192.0</div></div>
+      <div class="spec-item"><div class="label">Frequency Max Thz</div><div class="value">196.0</div></div>
+      <div class="spec-item"><div class="label">Channel Spacing (GHz)</div><div class="value">100.0</div></div>
+      <div class="spec-item"><div class="label">Channel Total</div><div class="value">41</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable_hot, pluggable</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF_G652, SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-40.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">85.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">1.6</div></div>
+      <div class="spec-item"><div class="label">Reach (km)</div><div class="value">40.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">1.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">4.0</div></div>
+      <div class="spec-item"><div class="label">CD Tolerance (ps/nm)</div><div class="value">800.0</div></div>
+      <div class="spec-item"><div class="label">Extinction Ratio Db</div><div class="value">8.2</div></div>
+      <div class="spec-item"><div class="label">Receiver Reflectance Db</div><div class="value">-27.0</div></div>
+      <div class="spec-item"><div class="label">Optical Extinction Ratio Db</div><div class="value">8.2</div></div>
+      <div class="spec-item"><div class="label">Side Mode Suppression Ratio Db</div><div class="value">30.0</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Center wavelength per ITU-T 694.1; EOL center wavelength λc±100pm. Optical wavelength row lists unit as dBm in table (likely typo); center wavelengths from Table 1. Sensitivity (0ps/nm): -16.0 dBm at 1.2–10.7 Gb/s BER&lt;10^-12; -15.0 dBm at 11.1–11.3 Gb/s BER&lt;10^-6. Sensitivity (800ps/nm): -15.0 dBm at 1.2–10.7 Gb/s; -14.0 dBm at 11.1–11.3 Gb/s. 800 ps/nm max chromatic dispersion tolerance over 40 km G.652 SMF. Receiver optical center wavelength range 1260–1600 nm. Average launch power when Tx OFF max -30 dBm. Power consumption 1.6 W at 85°C case, BOL, 3.3 V. Cooled 1550 nm EML laser (nominal; per-channel λC in ordering table). Regulatory section references FTLF8538P5BCz (likely template error). Duplex LC connector stated in features.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">FTLX3671DTCXX, Industrial Temperature DWDM 1.2G-11.3G, 40km SFP+ Transceiver, FEATURES, APPLICATIONS, Product Ordering Codes / Channel Selection, III. Electrical Characteristics (TOP = -40 to 85 °C), IV. Optical Characteristics (TOP = -40 to 85 °C, VCC = 3.14 to 3.46 Volts), V. General Specifications, VII. Environmental Specifications, X. Mechanical Specifications</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Clarify whether bit_rate list should include only Table V bounds (1.2288–11.3176) vs sensitivity row rates (1.2÷10.7). Explicit modulation format and lane count are absent. No OSNR or FEC parameters in this legacy SFP+ DWDM datasheet.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>wavelength_center_nm</th><th>Wavelength Band</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>RX Sensitivity (dBm)</th><th>RX Overload (dBm)</th></tr>
+      <tr><td><strong>DWDM C20</strong></td><td>FTLX3671DTC20</td><td>1561.42</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C21</strong></td><td>FTLX3671DTC21</td><td>1560.61</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C22</strong></td><td>FTLX3671DTC22</td><td>1559.79</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C23</strong></td><td>FTLX3671DTC23</td><td>1558.98</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C24</strong></td><td>FTLX3671DTC24</td><td>1558.17</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C25</strong></td><td>FTLX3671DTC25</td><td>1557.36</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C26</strong></td><td>FTLX3671DTC26</td><td>1556.55</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C27</strong></td><td>FTLX3671DTC27</td><td>1555.75</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C28</strong></td><td>FTLX3671DTC28</td><td>1554.94</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C29</strong></td><td>FTLX3671DTC29</td><td>1554.13</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C30</strong></td><td>FTLX3671DTC30</td><td>1553.33</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C31</strong></td><td>FTLX3671DTC31</td><td>1552.52</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C32</strong></td><td>FTLX3671DTC32</td><td>1551.72</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C33</strong></td><td>FTLX3671DTC33</td><td>1550.92</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C34</strong></td><td>FTLX3671DTC34</td><td>1550.12</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C35</strong></td><td>FTLX3671DTC35</td><td>1549.32</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C36</strong></td><td>FTLX3671DTC36</td><td>1548.51</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C37</strong></td><td>FTLX3671DTC37</td><td>1547.72</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C38</strong></td><td>FTLX3671DTC38</td><td>1546.92</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C39</strong></td><td>FTLX3671DTC39</td><td>1546.12</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C40</strong></td><td>FTLX3671DTC40</td><td>1545.32</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C41</strong></td><td>FTLX3671DTC41</td><td>1544.53</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C42</strong></td><td>FTLX3671DTC42</td><td>1543.73</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C43</strong></td><td>FTLX3671DTC43</td><td>1542.94</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C44</strong></td><td>FTLX3671DTC44</td><td>1542.14</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C45</strong></td><td>FTLX3671DTC45</td><td>1541.35</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C46</strong></td><td>FTLX3671DTC46</td><td>1540.56</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C47</strong></td><td>FTLX3671DTC47</td><td>1539.77</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C48</strong></td><td>FTLX3671DTC48</td><td>1538.98</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C49</strong></td><td>FTLX3671DTC49</td><td>1538.19</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C50</strong></td><td>FTLX3671DTC50</td><td>1537.4</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C51</strong></td><td>FTLX3671DTC51</td><td>1536.61</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C52</strong></td><td>FTLX3671DTC52</td><td>1535.82</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C53</strong></td><td>FTLX3671DTC53</td><td>1535.04</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C54</strong></td><td>FTLX3671DTC54</td><td>1534.25</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C55</strong></td><td>FTLX3671DTC55</td><td>1533.47</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C56</strong></td><td>FTLX3671DTC56</td><td>1532.68</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C57</strong></td><td>FTLX3671DTC57</td><td>1531.9</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C58</strong></td><td>FTLX3671DTC58</td><td>1531.12</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C59</strong></td><td>FTLX3671DTC59</td><td>1530.33</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>DWDM C60</strong></td><td>FTLX3671DTC60</td><td>1529.55</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>Rx 0ps/nm 11.1-11.3 Gb/s</strong></td><td>FTLX3671DTCxx</td><td>1561.42</td><td>DWDM</td><td>SFF-8432</td><td>11.3</td><td>-15.0</td><td>0.0</td></tr>
+      <tr><td><strong>Rx 800ps/nm 1.2-10.7 Gb/s</strong></td><td>FTLX3671DTCxx</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>1.2</td><td>-15.0</td><td>-1.0</td></tr>
+      <tr><td><strong>Rx 800ps/nm 11.1-11.3 Gb/s</strong></td><td>FTLX3671DTCxx</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>11.1</td><td>-14.0</td><td>0.0</td></tr>
+      <tr><td><strong>Data rate 1.2288 Gb/s</strong></td><td>FTLX3671DTCxx</td><td>1561.42</td><td>DWDM</td><td>SFF-8431</td><td>1.2288</td><td>-16.0</td><td>-1.0</td></tr>
+      <tr><td><strong>Data rate 11.3176 Gb/s</strong></td><td>FTLX3671DTCxx</td><td>1561.42</td><td>DWDM</td><td>SFF-8431</td><td>11.3176</td><td>-15.0</td><td>0.0</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">FTLX3671DTCxx</span> <span class="badge">FTLX3671DTC20</span> <span class="badge">FTLX3671DTC21</span> <span class="badge">FTLX3671DTC22</span> <span class="badge">FTLX3671DTC23</span> <span class="badge">FTLX3671DTC24</span> <span class="badge">FTLX3671DTC25</span> <span class="badge">FTLX3671DTC26</span> <span class="badge">FTLX3671DTC27</span> <span class="badge">FTLX3671DTC28</span> <span class="badge">FTLX3671DTC29</span> <span class="badge">FTLX3671DTC30</span> <span class="badge">FTLX3671DTC31</span> <span class="badge">FTLX3671DTC32</span> <span class="badge">FTLX3671DTC33</span> <span class="badge">FTLX3671DTC34</span> <span class="badge">FTLX3671DTC35</span> <span class="badge">FTLX3671DTC36</span> <span class="badge">FTLX3671DTC37</span> <span class="badge">FTLX3671DTC38</span> <span class="badge">FTLX3671DTC39</span> <span class="badge">FTLX3671DTC40</span> <span class="badge">FTLX3671DTC41</span> <span class="badge">FTLX3671DTC42</span> <span class="badge">FTLX3671DTC43</span> <span class="badge">FTLX3671DTC44</span> <span class="badge">FTLX3671DTC45</span> <span class="badge">FTLX3671DTC46</span> <span class="badge">FTLX3671DTC47</span> <span class="badge">FTLX3671DTC48</span> <span class="badge">FTLX3671DTC49</span> <span class="badge">FTLX3671DTC50</span> <span class="badge">FTLX3671DTC51</span> <span class="badge">FTLX3671DTC52</span> <span class="badge">FTLX3671DTC53</span> <span class="badge">FTLX3671DTC54</span> <span class="badge">FTLX3671DTC55</span> <span class="badge">FTLX3671DTC56</span> <span class="badge">FTLX3671DTC57</span> <span class="badge">FTLX3671DTC58</span> <span class="badge">FTLX3671DTC59</span> <span class="badge">FTLX3671DTC60</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">1561.42</span> <span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1545.32</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span></td></tr>
+      <tr><td>wavelength_band</td><td><span class="badge">C-band</span> <span class="badge">DWDM</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">SFF-8431</span> <span class="badge">SFF-8432</span> <span class="badge">SFF-8472</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">1.2</span> <span class="badge">1.2288</span> <span class="badge">10.7</span> <span class="badge">11.1</span> <span class="badge">11.3</span> <span class="badge">11.3176</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-16.0</span> <span class="badge">-15.0</span> <span class="badge">-14.0</span></td></tr>
+      <tr><td>rx_overload_dbm</td><td><span class="badge">-1.0</span> <span class="badge">0.0</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 23:15
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{
+  "modes": [
+    {
+      "label": "SONET OC-192 @ 9.953 Gbps (commercial)",
+      "model": "LX-SM3110-10C",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "SONET OC-192",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "SDH STM-64 @ 9.953 Gbps (commercial)",
+      "model": "LX-SM3110-10C",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "SDH STM-64",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "10GE over G.709 @ 11.09 Gbps (commercial)",
+      "model": "LX-SM3110-10C",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "10GE",
+      "bit_rate_gbps": 11.09
+    },
+    {
+      "label": "G.709 @ 11.09 Gbps (commercial)",
+      "model": "LX-SM3110-10C",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "G.709",
+      "bit_rate_gbps": 11.09
+    },
+    {
+      "label": "OC192 over FEC @ 10.709 Gbps (commercial)",
+      "model": "LX-SM3110-10C",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "OC192 over FEC",
+      "bit_rate_gbps": 10.709
+    },
+    {
+      "label": "SONET OC-192 @ 9.953 Gbps (industrial)",
+      "model": "LX-SM3110-10I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "SONET OC-192",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "SDH STM-64 @ 9.953 Gbps (industrial)",
+      "model": "LX-SM3110-10I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "SDH STM-64",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "10GE over G.709 @ 11.09 Gbps (industrial)",
+      "model": "LX-SM3110-10I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "10GE",
+      "bit_rate_gbps": 11.09
+    },
+    {
+      "label": "G.709 @ 11.09 Gbps (industrial)",
+      "model": "LX-SM3110-10I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "G.709",
+      "bit_rate_gbps": 11.09
+    },
+    {
+      "label": "OC192 over FEC @ 10.709 Gbps (industrial)",
+      "model": "LX-SM3110-10I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "OC192 over FEC",
+      "bit_rate_gbps": 10.709
+    }
+  ]
+}

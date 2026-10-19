@@ -1,0 +1,109 @@
+{
+  "modes": [
+    {
+      "label": "AOC 1m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC1M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.001
+    },
+    {
+      "label": "AOC 2m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC2M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.002
+    },
+    {
+      "label": "AOC 3m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC3M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.003
+    },
+    {
+      "label": "AOC 4m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC4M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.004
+    },
+    {
+      "label": "AOC 5m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC5M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.005
+    },
+    {
+      "label": "AOC 6m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC6M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.006
+    },
+    {
+      "label": "AOC 7m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC7M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.007
+    },
+    {
+      "label": "AOC 8m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC8M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.008
+    },
+    {
+      "label": "AOC 9m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC9M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.009
+    },
+    {
+      "label": "AOC 10m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC10M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.01
+    },
+    {
+      "label": "AOC 15m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC15M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.015
+    },
+    {
+      "label": "AOC 20m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC20M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.02
+    },
+    {
+      "label": "AOC 30m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC30M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.03
+    },
+    {
+      "label": "AOC 50m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC50M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.05
+    },
+    {
+      "label": "AOC 100m QSFP+ 40G to 4xSFP+ 10G",
+      "model": "SO-QSFP-4X10G-AOC100M",
+      "standards_code": "40G Ethernet",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.1
+    }
+  ]
+}

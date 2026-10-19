@@ -1,0 +1,111 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-DAC1140-xMNx",
+    "LQ-DAC1140-0M5N",
+    "LQ-DAC1140-1MN",
+    "LQ-DAC1140-2MN",
+    "LQ-DAC1140-3MN",
+    "LQ-DAC1140-0M5NI",
+    "LQ-DAC1140-1MNI",
+    "LQ-DAC1140-2MNI",
+    "LQ-DAC1140-3MNI"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8436",
+    "QSFP+ MSA",
+    "IEEE P802.3ba"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": null,
+  "fiber_type": null,
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    0.02
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "40GBASE-CR4",
+    "SFF-8436",
+    "QSFP+ MSA",
+    "IEEE P802.3ba"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1.0,
+    10.0,
+    40.0
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.003
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Passive QSFP+ to QSFP+ copper DAC (4-channel full-duplex); not an optical transceiver. Copper link length up to 3 m (passive limiting). Standard ordering variants: 0 to +70°C case; Industrial (-40 to +85°C) part numbers suffixed with I. Recommended operating case temperature typical 25°C. Power supply +3.3 V. Storage temperature -40 to 85°C. Mechanical cable lengths 0.5, 1, 2, 3 m (30 AWG). Product Characteristics list electrical cable metrics (differential impedance 100±10 ohm, IL, NEXT ≥26 dB @ 10 MHz to 5.0 GHz, intra-pair skew ≤100 ps / ≤400 ps) not mapped to optical schema fields. reach_km derived from stated 3 m maximum copper length.",
+  "provenance_datasheet_sections": [
+    "LQ-DAC1140-xMNx",
+    "RoHS Compliant 40Gb/s QSFP+ to QSFP+ Copper Cable",
+    "Features",
+    "Applications",
+    "General Description",
+    "Recommended Operating Conditions",
+    "Product Characteristics",
+    "Mechanical Specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Consider reach_m or cable_length_m for DAC products; optional fields for supply voltage (3.3 V), passive/active media type, and per-channel electrical data rate range."
+}

@@ -1,0 +1,150 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LG-SC432G-20CB1",
+    "LG-SC432G-20IB1"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "ITU-T G.984.2"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "APD"
+  ],
+  "wavelength_min_nm": [
+    1480,
+    1290
+  ],
+  "wavelength_max_nm": [
+    1500,
+    1330
+  ],
+  "wavelength_center_nm": [
+    1490,
+    1310
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "SC",
+    "SC/UPC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": null,
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "GPON OLT B+",
+    "GPON OLT C+",
+    "GPON OLT C++",
+    "GPON OLT D",
+    "G.984.2"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    2.488,
+    1.244,
+    2.5,
+    1.25
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    20
+  ],
+  "tx_power_min_dbm": [
+    1.5,
+    3,
+    4.5,
+    6
+  ],
+  "tx_power_max_dbm": [
+    5,
+    7,
+    10
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -28,
+    -30,
+    -32,
+    -33,
+    -35
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -8,
+    -12,
+    -15
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-10,
+    0.0001
+  ],
+  "extinction_ratio_db": [
+    8.2
+  ],
+  "los_assert_dbm": [
+    -33
+  ],
+  "los_deassert_dbm": [
+    -45
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    8.2
+  ],
+  "optical_return_loss_tolerance_db": [
+    -15
+  ],
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": [
+    30
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    6
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Datasheet covers GPON OLT application classes B+, C+, C++, and D with class-specific mean launched power, sensitivity, and overload. LG-SC432G-20CB1 ordering specifies 0°C to +70°C; LG-SC432G-20IB1 specifies -40°C to +85°C (Industrial operating case also listed under Recommended Operating Conditions). Tx bit rate 2.488 Gbps and Rx 1.244 Gbps in tables; title/ordering also state 2.5 Gbps and 1.25 Gbps. Sensitivity and overload conditions: PRBS223-1 @ 1.244G, ER=10, BER<10^-10 or BER<10^-4 as labeled per row. Transmitter and dispersion penalty max 1 dB stated without a paired penalized parameter value at a defined condition. Mean launched power (TX Off) max -45 dBm. Spectral width (-20 dB) max 1 nm. Receiver burst mode dynamic range 15 dB. WDM filter isolation to 1550 nm 38 dB and to 1650 nm 35 dB. Power supply current max 500 mA at 3.3 V (power in W not stated).",
+  "provenance_datasheet_sections": [
+    "LG-SC432G-20CB1",
+    "Product Features",
+    "Applications",
+    "Recommended Operating Conditions",
+    "Optical Characteristics",
+    "Electrical Characteristics",
+    "Timing Characteristics",
+    "Ordering information"
+  ],
+  "suggestions": "Consider schema fields for GPON OLT class (B+/C+/C++/D), burst-mode dynamic range, WDM filter isolation, spectral width (-20 dB), and TX-off launched power. Transmitter and dispersion penalty may need a rule when only max penalty dB is given without @ conditions."
+}

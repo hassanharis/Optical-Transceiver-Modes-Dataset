@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:20:27.739755+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-ts5003-s31c-so-sfp56-lr-r6.0.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.736,
+    "extract_atoms": 16.12,
+    "store_run": 0.007,
+    "synthesize_modes": 13.82,
+    "store_modes": 0.004,
+    "total": 33.687
+  }
+}

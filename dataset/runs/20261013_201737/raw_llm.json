@@ -1,0 +1,160 @@
+{
+  "vendor": "Avago Technologies",
+  "model": [
+    "AFBR-79Q4Z",
+    "AFBR-79Q5Z",
+    "AFBR-79QEKZ"
+  ],
+  "form_factor": [
+    "QSFP"
+  ],
+  "standards_claimed": [
+    "QSFP Multi-Source Agreement",
+    "QSFP MSA"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable",
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "MPO",
+    "MTP"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM2",
+    "MMF_OM3",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.5,
+    1.3
+  ],
+  "host_interface_name": [
+    "QSFP"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "InfiniBand QDR",
+    "InfiniBand DDR",
+    "InfiniBand SDR",
+    "10GbE",
+    "PCI-Express",
+    "8b/10b"
+  ],
+  "baud_rate_gbaud": [
+    2.5,
+    10.0
+  ],
+  "bit_rate_gbps": [
+    2.5,
+    5,
+    10,
+    40
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.035,
+    0.1
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": [
+    1.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -9.8
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    1.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    3
+  ],
+  "los_assert_dbm": [
+    -26
+  ],
+  "los_deassert_dbm": [
+    -10
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5,
+    4
+  ],
+  "total_jitter_ps": [
+    30,
+    70
+  ],
+  "penalties": [],
+  "notes": "Reach 35 m (OM2, 500 MHz·km) and 100 m (OM3, 2000 MHz·km) per Recommended Operating Conditions; Features states up to 100 m at 10 G/channel on OM3. Link budget footnote allocates 3.5 dB/km attenuation, 1.5 dB connector loss, 0.3 dB modal noise penalty—not module insertion loss. Several limits marked TBD or Informative (e.g. Input Optical Power Sensitivity OMA -9.8 dBm max, Output OMA -3 dBm min). Nominal wavelength 850 nm in Description; center wavelength 840–860 nm in optical tables. AFBR-79Q5Z is 5G Infiniband variant. Case temperature typ 40°C in spec tables.",
+  "provenance_datasheet_sections": [
+    "AFBR-79Q4xZ 10G QSFP Short Wavelength Transceiver Pluggable, Parallel-Fiber-Optics Modules",
+    "Description",
+    "Part Number Ordering Options",
+    "Features",
+    "Applications",
+    "Transmitter",
+    "Receiver",
+    "Recommended Operating Conditions",
+    "Transceiver Electrical Characteristics",
+    "Transmitter Section Electrical Characteristics",
+    "Receiver Section Electrical Characteristics",
+    "Transmitter Optical Characteristics",
+    "Receiver Optical Characteristics",
+    "Absolute Maximum Ratings",
+    "Link Model and Reference Channel",
+    "Package Outline"
+  ],
+  "suggestions": "Distinguish reach by fiber type (OM2 vs OM3) in schema. Include optional fields for OMA vs average power and disabled/squelched output levels. LOS de-assert min listed as TBD in table—only max -10 dBm captured."
+}

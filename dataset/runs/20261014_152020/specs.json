@@ -1,0 +1,184 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-L80D-50G-Dxxxx",
+    "SO-SFP-L80D-50G-D9200",
+    "SO-SFP-L80D-50G-D9205",
+    "SO-SFP-L80D-50G-D9210",
+    "SO-SFP-L80D-50G-D9215",
+    "SO-SFP-L80D-50G-D9220",
+    "SO-SFP-L80D-50G-D9225",
+    "SO-SFP-L80D-50G-D9230",
+    "SO-SFP-L80D-50G-D9235",
+    "SO-SFP-L80D-50G-D9240",
+    "SO-SFP-L80D-50G-D9245",
+    "SO-SFP-L80D-50G-D9250",
+    "SO-SFP-L80D-50G-D9255",
+    "SO-SFP-L80D-50G-D9260",
+    "SO-SFP-L80D-50G-D9265",
+    "SO-SFP-L80D-50G-D9270",
+    "SO-SFP-L80D-50G-D9275",
+    "SO-SFP-L80D-50G-D9280",
+    "SO-SFP-L80D-50G-D9285",
+    "SO-SFP-L80D-50G-D9290",
+    "SO-SFP-L80D-50G-D9295",
+    "SO-SFP-L80D-50G-D9300",
+    "SO-SFP-L80D-50G-D9305",
+    "SO-SFP-L80D-50G-D9310",
+    "SO-SFP-L80D-50G-D9315",
+    "SO-SFP-L80D-50G-D9320",
+    "SO-SFP-L80D-50G-D9325",
+    "SO-SFP-L80D-50G-D9330",
+    "SO-SFP-L80D-50G-D9335",
+    "SO-SFP-L80D-50G-D9340",
+    "SO-SFP-L80D-50G-D9345",
+    "SO-SFP-L80D-50G-D9350",
+    "SO-SFP-L80D-50G-D9355",
+    "SO-SFP-L80D-50G-D9360",
+    "SO-SFP-L80D-50G-D9365",
+    "SO-SFP-L80D-50G-D9370",
+    "SO-SFP-L80D-50G-D9375",
+    "SO-SFP-L80D-50G-D9380",
+    "SO-SFP-L80D-50G-D9385",
+    "SO-SFP-L80D-50G-D9390",
+    "SO-SFP-L80D-50G-D9395",
+    "SO-SFP-L80D-50G-D9400",
+    "SO-SFP-L80D-50G-D9405",
+    "SO-SFP-L80D-50G-D9410",
+    "SO-SFP-L80D-50G-D9415",
+    "SO-SFP-L80D-50G-D9420",
+    "SO-SFP-L80D-50G-D9425",
+    "SO-SFP-L80D-50G-D9430",
+    "SO-SFP-L80D-50G-D9435",
+    "SO-SFP-L80D-50G-D9440",
+    "SO-SFP-L80D-50G-D9445",
+    "SO-SFP-L80D-50G-D9450",
+    "SO-SFP-L80D-50G-D9455",
+    "SO-SFP-L80D-50G-D9460",
+    "SO-SFP-L80D-50G-D9465",
+    "SO-SFP-L80D-50G-D9470",
+    "SO-SFP-L80D-50G-D9475",
+    "SO-SFP-L80D-50G-D9480",
+    "SO-SFP-L80D-50G-D9485",
+    "SO-SFP-L80D-50G-D9490",
+    "SO-SFP-L80D-50G-D9495",
+    "SO-SFP-L80D-50G-D9500",
+    "SO-SFP-L80D-50G-D9505",
+    "SO-SFP-L80D-50G-D9510",
+    "SO-SFP-L80D-50G-D9515",
+    "SO-SFP-L80D-50G-D9520",
+    "SO-SFP-L80D-50G-D9525",
+    "SO-SFP-L80D-50G-D9530",
+    "SO-SFP-L80D-50G-D9535",
+    "SO-SFP-L80D-50G-D9540",
+    "SO-SFP-L80D-50G-D9545",
+    "SO-SFP-L80D-50G-D9550",
+    "SO-SFP-L80D-50G-D9555",
+    "SO-SFP-L80D-50G-D9560",
+    "SO-SFP-L80D-50G-D9565",
+    "SO-SFP-L80D-50G-D9570",
+    "SO-SFP-L80D-50G-D9575",
+    "SO-SFP-L80D-50G-D9580",
+    "SO-SFP-L80D-50G-D9585",
+    "SO-SFP-L80D-50G-D9590",
+    "SO-SFP-L80D-50G-D9595"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "ITU-T G.694.1"
+  ],
+  "wavelength_min_nm": [
+    1520.0
+  ],
+  "wavelength_max_nm": [
+    1566.0
+  ],
+  "wavelength_band": [
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    192.0
+  ],
+  "frequency_max_thz": [
+    195.95
+  ],
+  "channel_spacing_ghz": [
+    50.0
+  ],
+  "channel_total": [
+    80
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "standards_code": [
+    "G.694.1",
+    "FE",
+    "GbE",
+    "STM4/OC12",
+    "STM1/OC3",
+    "1G FC",
+    "CPRI Opt, 1, 2",
+    "OBSAI 1x"
+  ],
+  "bit_rate_gbps": [
+    0.1,
+    1.25
+  ],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -28.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -29.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Title lists D9200-D9595 (80ch). Power budget 8 – 28dB stated without mapping to a single schema field. Transmitter/receiver optical powers are average power (footnote 1). Minimum input power and overload measured @ 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back (footnote 2). Nominal transmit grid 192.00 - 195.95THz (80ch); per-channel λnm in ORDERING INFORMATION. Storage temperature -40°C to +85°C. RoHS-6/6 compliant.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-L80D-50G-Dxxxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "Safety/regulatory compliance:",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Add explicit schema field for optical power budget (min/max dB). Clarify whether form_factor should include SFP when enum lists SFF only. Ordering table provides 80 distinct channel λnm values that could populate wavelength_center_nm per SKU if model-specific extraction is desired."
+}

@@ -1,0 +1,115 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TSD001-S31C-SO"
+  ],
+  "form_factor": [
+    "SFP-DD"
+  ],
+  "standards_claimed": [
+    "100GBASE-DR",
+    "IEEE802.3bj",
+    "SFP-DD MSA",
+    "SFP-DD MIS",
+    "100GAUI-2"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1311.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "channel_total": [
+    1
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": [
+    "100GAUI-2"
+  ],
+  "media_interface_name": [
+    "100GBASE-DR"
+  ],
+  "frame": [
+    "2x 100GAUI-2"
+  ],
+  "standards_code": [
+    "100GBASE-DR",
+    "IEEE802.3bj"
+  ],
+  "baud_rate_gbaud": [
+    50.0,
+    53.125
+  ],
+  "bit_rate_gbps": [
+    103.12,
+    100.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    500.0
+  ],
+  "tx_power_min_dbm": [
+    -2.9
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -5.9,
+    -3.9
+  ],
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "fec_type": [
+    "KP4",
+    "RS_544_514"
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "los_assert_dbm": [
+    -15.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "number_of_lanes": [
+    1,
+    2
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Aggregated line rate 100GbE (103.12Gbps); line baud rate 53.125Gbd. Receiver min input power (average -5.9dBm, OMA -3.9dBm) and overload (+4.0dBm) specified at BER 2.4x10-4. FEC required on host per IEEE802.3bj RS(544,514). Power budget 0–3.1dB (no optical path penalties). Output power average min/max footnote: average launch power (min) is informative; below min cannot be compliant. Storage temperature -40°C to +85°C. Transmission media stated as SM (2x LC). DDM via I2C per QSFP28 MSA wording in narrative.",
+  "provenance_datasheet_sections": [
+    "SFP-DD 100G-DR",
+    "TSD001-S31C-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether number_of_lanes should be optical (1) vs electrical host lanes (2). Consider mapping power budget 0–3.1dB to a dedicated field. OMA tx/rx limits (-0.8/+4.2 dBm tx, -3.9 dBm rx OMA) are not in schema."
+}

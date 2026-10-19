@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100GBASE-SR4 OM3 70m\",\n      \"host_interface_name\": \"100GBASE-SR4\",\n      \"standards_code\": \"IEEE 802.3bm\",\n      \"bit_rate_gbps\": 103.12,\n      \"reach_km\": 0.07\n    },\n    {\n      \"label\": \"100GBASE-SR4 OM4 100m\",\n      \"host_interface_name\": \"100GBASE-SR4\",\n      \"standards_code\": \"IEEE 802.3bm\",\n      \"bit_rate_gbps\": 103.12,\n      \"reach_km\": 0.1\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

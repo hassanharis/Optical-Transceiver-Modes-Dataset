@@ -1,0 +1,140 @@
+{
+  "multi_valued": {
+    "frame": [
+      "8x53.125Gbps (PAM4)",
+      "4x100Gbps"
+    ],
+    "standards_code": [
+      "400GBase-PLR4",
+      "400GBase Ethernet",
+      "IEEE 802.3bs",
+      "PLR4"
+    ],
+    "baud_rate_gbaud": [
+      53.125,
+      26.5625
+    ],
+    "bit_rate_gbps": [
+      425.0,
+      400.0,
+      106.25,
+      53.125
+    ],
+    "rx_sensitivity_dbm": [
+      -6.1,
+      -4.1
+    ],
+    "rx_overload_dbm": [
+      4.8,
+      5.8
+    ]
+  },
+  "general": {
+    "vendor": "ProLabs",
+    "model": [
+      "OSFP-400GB-PLR4-C"
+    ],
+    "form_factor": [
+      "OSFP"
+    ],
+    "standards_claimed": [
+      "OSFP MSA",
+      "IEEE802.3bs",
+      "CMIS 4.0"
+    ],
+    "emitter_type": [
+      "LASER_EML"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1311.0
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "MPO-12",
+      "MPO"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      10.0
+    ],
+    "host_interface_name": [
+      "400GAUI-8"
+    ],
+    "media_interface_name": [
+      "400GBase-PLR4"
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -1.9
+    ],
+    "tx_power_max_dbm": [
+      4.8
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "los_assert_dbm": [
+      -15.0
+    ],
+    "los_deassert_dbm": [
+      -10.0
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      15.6
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "MSA compliant OSFP-IHS. Optical notes reference '400G LR8 operation' while product is PLR4. Receiver Sensitivity (OMA) SenOMA Max (-6.1, TECQ-7.5) dBm per note 4: @<4.6dBm for Tx with TDECQ<1.4dB; @<SECQ-6 for Tx with 3.4dB≥TDECQ≥1.4dB. Maximum link distance based on 1dB attenuation and 3dB total connection and splice loss; single connection loss not to exceed 0.5dB. Average launch power per lane minimum is informative. Host-generated FEC; transmitter must receive pre-coded FEC signals from host ASIC.",
+    "provenance_datasheet_sections": [
+      "OSFP-400GB-PLR4-C",
+      "Features:",
+      "Applications:",
+      "Product Description",
+      "Absolute Maximum Ratings",
+      "Electrical Characteristics",
+      "Optical Characteristics",
+      "Transceiver Block Diagram",
+      "Application Reference Diagram",
+      "Module Optical Interface (Looking into the Optical Port)"
+    ]
+  }
+}

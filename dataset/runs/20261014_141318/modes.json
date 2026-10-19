@@ -1,0 +1,12 @@
+{
+  "modes": [
+    {
+      "label": "100M Fast Ethernet",
+      "standards_code": "FE"
+    },
+    {
+      "label": "STM-1/OC-3",
+      "standards_code": "STM1/OC3"
+    }
+  ]
+}

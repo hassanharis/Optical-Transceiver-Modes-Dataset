@@ -1,0 +1,135 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-MM851G-S5I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    830
+  ],
+  "wavelength_max_nm": [
+    870
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF 50/125µm",
+    "MMF_OM1"
+  ],
+  "temp_min_c": -40,
+  "temp_max_c": 85,
+  "power_consumption_w": null,
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    0.1,
+    1.063,
+    1.25
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.3,
+    0.5,
+    0.55
+  ],
+  "tx_power_min_dbm": [
+    -9
+  ],
+  "tx_power_max_dbm": [
+    0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -18
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -1
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -38
+  ],
+  "los_deassert_dbm": [
+    -19
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5,
+    4
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Receiver sensitivity and overload measured with PRBS 2^7-1 @ 1250Mbps, BER ≤1×10^-12 (Note 3). Average output power launched into MMF (Note 1). Description states 500m MMF reach; Product Features and ordering specify 550m (50/125µm MMF) and 300m (62.5/125µm MMF). Operating case temperature for LS-MM851G-S5I ordering variant: -40°C~+85°C (Industrial). Supply current Icc max 300 mA at 3.135–3.465 V; power in Watts not stated. SMSR row shows '-' for Min/Typical/Max.",
+  "provenance_datasheet_sections": [
+    "LS-MM851G-S5I",
+    "1.25Gbps SFP Transceiver, Multi Mode, 550m Reach",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Diagnostics",
+    "Ordering information"
+  ],
+  "suggestions": "Clarify whether reach_km should retain literal meter values (550, 300) vs converted km. post_fec_ber_target filled from BER ≤1×10^-12 test condition for sensitivity; schema may intend a named FEC post-BER target only."
+}

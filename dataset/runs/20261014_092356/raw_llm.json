@@ -1,0 +1,141 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-SC5210-20IN1",
+    "LG-SC5210-20CN1",
+    "LG-SC5210-20IN1"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF 8472",
+    "ITU-T G.9807.1",
+    "RoHS",
+    "WEEE"
+  ],
+  "emitter_type": [
+    "LASER_EML"
+  ],
+  "photodetector_type": [
+    "APD-TIA"
+  ],
+  "wavelength_min_nm": [
+    1575,
+    1260
+  ],
+  "wavelength_max_nm": [
+    1580,
+    1280
+  ],
+  "wavelength_center_nm": [
+    1577,
+    1270
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "SC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -40,
+  "temp_max_c": 85,
+  "power_consumption_w": [
+    2.5
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "XGSPON",
+    "N1",
+    "ITU-T G.987.2"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    9953.28,
+    2488.32
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    20
+  ],
+  "tx_power_min_dbm": [
+    2
+  ],
+  "tx_power_max_dbm": [
+    5
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -26,
+    -27.5
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -5,
+    -7
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    0.001,
+    0.0001
+  ],
+  "extinction_ratio_db": [
+    8.2
+  ],
+  "los_assert_dbm": [
+    -45
+  ],
+  "los_deassert_dbm": [
+    -27,
+    -28.5
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5,
+    6
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "XGSPON OLT Class N1; 9.953Gbps downstream and 9.953Gbps/2.488Gbps upstream on single fiber bi-directional link. Operating case temperature Standard 0 to +70°C; Industrial -40 to +85°C (LS-SC5210-20IN1 / LG-SC5210-20IN1 industrial). Rx sensitivity -26 dBm @ 9.95328 Gbps PRBS 2^31-1 BER=10^-3; -27.5 @ 2.48832 Gbps PRBS 2^23-1 BER=10^-4. Transmitter dispersion penalty max 1 dB note 2: Transmit on 20km SMF. Pout @ TX-Disable Asserted max -39 dBm. Spectral Width (@-20dB) max 1 nm. LOS Optical Dessert (deassert) -27 dBm (9.953G) and -28.5 (2.488G). Data rates listed as 9953.28 and 2488.32 Mbps in tables.",
+  "provenance_datasheet_sections": [
+    "LS-SC5210-20IN1",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical Characteristics",
+    "Electrical Characteristics",
+    "Ordering information"
+  ],
+  "suggestions": "bit_rate_gbps values are printed as Mbps (9953.28, 2488.32); schema unit is Gbps—confirm whether to store as printed Mbps-equivalent numbers or divide by 1000. post_fec_ber_target derived from BER conditions in optical notes (10^-3, 10^-4) tied to sensitivity rows, not labeled as post-FEC."
+}

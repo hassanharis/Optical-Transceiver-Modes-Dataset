@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"\u03bb1 850nm BiDi (T1/R1)\",\n      \"wavelength_min_nm\": 844.0,\n      \"wavelength_max_nm\": 863.0,\n      \"wavelength_center_nm\": 850.0,\n      \"host_interface_name\": \"100GBASE\",\n      \"reach_km\": 0.1,\n      \"tx_power_min_dbm\": -6.2,\n      \"tx_power_max_dbm\": 4.0,\n      \"rx_sensitivity_dbm\": -8.2\n    },\n    {\n      \"label\": \"\u03bb2 908nm BiDi (T2/R2)\",\n      \"wavelength_min_nm\": 900.0,\n      \"wavelength_max_nm\": 918.0,\n      \"wavelength_center_nm\": 908.0,\n      \"host_interface_name\": \"100GBASE\",\n      \"reach_km\": 0.1,\n      \"tx_power_min_dbm\": -6.2,\n      \"tx_power_max_dbm\": 4.0,\n      \"rx_sensitivity_dbm\": -8.2\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

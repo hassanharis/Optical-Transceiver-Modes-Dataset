@@ -1,0 +1,96 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-10GE-BX80D-4955",
+    "SO-SFP-10GE-BX80D-5549"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "10GBASE-ZR",
+    "10GBASE-ZW",
+    "IEEE 802.3ae"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1480.0,
+    1540.0
+  ],
+  "wavelength_max_nm": [
+    1500.0,
+    1560.0
+  ],
+  "wavelength_center_nm": [
+    1490.0,
+    1550.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    2.0
+  ],
+  "host_interface_name": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "media_interface_name": [],
+  "frame": [],
+  "standards_code": [
+    "10GBASE-ZR",
+    "10GBASE-ZW"
+  ],
+  "bit_rate_gbps": [
+    9.8,
+    11.3
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    -1.0
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -23.0
+  ],
+  "rx_overload_dbm": [
+    -6.0
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -38.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "penalties": [],
+  "notes": "Product is a BiDi pair: SO-SFP-10GE-BX80D-4955 (Tx 1480–1500 nm / Rx 1540–1560 nm, nominal 1490/1550 nm) and SO-SFP-10GE-BX80D-5549 (Tx 1540–1560 nm / Rx 1480–1500 nm, nominal 1550/1490 nm). Power budget 10–22 dB. Dispersion penalty max 3 dB (no paired penalized value or operating condition in table). Transmitter output power and receiver min/overload are average power. Receiver min input and overload measured @ 10.3 Gbps, BER ≤ 1×10⁻¹², PRBS 2³¹-1, back-to-back. Power consumption stated as < 2.0 W. Storage temperature -40°C to +85°C. Protocol support includes 10GbE-LAN, 10GbE-WAN, CPRI Opt, 7, 8. IEEE 802.3ae 10GBASE-ER/EW referenced for bridgeable distance at 1550 nm only.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-10GE-BX80D-4955/-5549",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether power_consumption_w should store 2.0 from '< 2.0W' or remain null when only an inequality is given. Consider mapping 'Dispersion penalty Max 3dB' to a penalty or tolerance field when no full penalty triple exists."
+}

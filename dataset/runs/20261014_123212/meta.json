@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T12:32:12.514700+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-qsfpdd-aocxxm-r5.1.pdf",
+  "page_count": 2,
+  "table_count": 0,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 1.532,
+    "extract_atoms": 30.682,
+    "store_run": 0.004,
+    "synthesize_modes": 24.204,
+    "store_modes": 0.002,
+    "total": 56.425
+  }
+}

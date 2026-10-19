@@ -1,0 +1,136 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "400GAUI-8",
+      "100GAUI-2"
+    ],
+    "frame": [
+      "400GAUI-8",
+      "4x100GAUI-2"
+    ],
+    "standards_code": [
+      "400GBASE-LR4",
+      "400G-LR4",
+      "4x100G-LR",
+      "400GBASE-R",
+      "100GBASE-R",
+      "100GBASE-DR",
+      "100GBASE-FR1",
+      "100GBASE-LR1",
+      "400GBASE-DR4"
+    ],
+    "bit_rate_gbps": [
+      425.0,
+      400.0
+    ],
+    "tx_power_min_dbm": [
+      -1.4,
+      0.7
+    ],
+    "tx_power_max_dbm": [
+      4.5,
+      4.7
+    ],
+    "rx_sensitivity_dbm": [
+      -6.1,
+      -4.9,
+      -7.7
+    ],
+    "fec_type": [
+      "RS_GENERIC",
+      "RS_528_514"
+    ],
+    "number_of_lanes": [
+      4,
+      8
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TQD019-S31C-SO"
+    ],
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "QSFP-DD MSA",
+      "CMIS3.0",
+      "100G-LR1 MSA",
+      "IEEE802.3bj"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1311.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "SN"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      10.0
+    ],
+    "media_interface_name": [
+      "100G-LR1 MSA"
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "rx_overload_dbm": [
+      4.5
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "extinction_ratio_db": [
+      5.0
+    ],
+    "los_assert_dbm": [
+      -15.0
+    ],
+    "los_deassert_dbm": [
+      -10.0
+    ],
+    "optical_extinction_ratio_db": [
+      5.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Power consumption stated as < 10W. Power budget 0 – 6.8dB. Aggregated line rate 425Gbps for 400GbE; line baud rate 53.125Gbd. Receiver sensitivity and minimum input power specified at BER 2.4x10-4; FEC required in host per IEEE802.3bj RS(528,514). Footnote 3: average receive power min is informative. Output power and OMA given per lane. CMIS4.0 variant: TQD018-S31C-SO. Storage temperature -40°C to +85°C (not normal operating).",
+    "provenance_datasheet_sections": [
+      "QSFP-DD 400GBASE-LR4 SN, CMIS3.0",
+      "TQD019-S31C-SO",
+      "TECHNICAL DATA",
+      "APPLICATION CODE LIST",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Distinguish average TX power vs OMA min/max in schema fields. Include Senko SN in connector_type enum. Clarify whether channel_total is 4 optical lanes or 8 electrical lanes."
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "multi_valued": {
+    "power_consumption_w": [
+      23.1,
+      23.6,
+      22.3,
+      22.8,
+      21.3,
+      21.8,
+      18.2,
+      18.7
+    ],
+    "host_interface_name": [
+      "400GAUI-8",
+      "100GAUI-2",
+      "CAUI4"
+    ],
+    "frame": [
+      "1x 400GAUI-8 (8x 50G)",
+      "4x 100GAUI-2 (2x 50G)",
+      "3x 100GAUI-2 (2x 50G)",
+      "2x 100GAUI-2 (2x 50G)",
+      "2 x CAUI4 (4x 25G)",
+      "1x 100GAUI-2 (2x 50G)",
+      "1 x CAUI4 (4x 25G)"
+    ],
+    "standards_code": [
+      "OIF 400ZR app code 0x01",
+      "OIF 400ZR app code 0x02",
+      "OIF 400ZR extension",
+      "OpenZR+ MSA (small PMD)",
+      "OpenZR+ MSA",
+      "OpenZR+ MSA, Enhanced mode1"
+    ],
+    "bit_rate_gbps": [
+      400.0,
+      300.0,
+      200.0,
+      100.0
+    ],
+    "modulation_format": [
+      "QAM_16-DP",
+      "QAM_8-DP",
+      "QPSK-DP"
+    ],
+    "reach_km": [
+      80.0,
+      25.0,
+      120.0,
+      450.0,
+      600.0,
+      1000.0,
+      2000.0
+    ],
+    "tx_power_min_dbm": [
+      -10.0,
+      -13.0,
+      -12.0,
+      -10.5,
+      -6.0
+    ],
+    "tx_power_max_dbm": [
+      -6.0,
+      -9.0,
+      -8.0,
+      -6.5,
+      -2.0
+    ],
+    "rx_sensitivity_dbm": [
+      -20.0,
+      -21.0,
+      -22.0,
+      -23.0,
+      -29.0,
+      -32.0
+    ],
+    "rx_osnr_db": [
+      26.0,
+      26.5,
+      27.0,
+      23.9,
+      23.4,
+      20.3,
+      23.1,
+      19.5,
+      15.0,
+      11.8
+    ],
+    "rx_overload_dbm": [
+      13.0,
+      15.0
+    ],
+    "cd_tolerance_ps_nm": [
+      2400.0,
+      13000.0,
+      26000.0,
+      50000.0,
+      80000.0
+    ],
+    "fec_type": [
+      "CFEC",
+      "OFEC"
+    ],
+    "number_of_lanes": [
+      8,
+      4,
+      3,
+      2,
+      1
+    ],
+    "penalties": [
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 26.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -14.0
+          }
+        ],
+        "source": "OIF 400ZR | OSNR tolerance 400G"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 27.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -15.0
+          }
+        ],
+        "source": "OIF 400ZR | OSNR tolerance 400G"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 24.2,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -14.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=4"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 24.7,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -16.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=4"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 23.9,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -14.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=5"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 24.4,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -16.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=5"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 23.9,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -14.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=6"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 24.4,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -16.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=6"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 20.8,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -17.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=7"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 21.3,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -19.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=7"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 23.6,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -14.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=8"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 24.1,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -16.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=8"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 23.6,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -14.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=9"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 24.1,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -16.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=9"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 20.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -17.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=10"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 20.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -19.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=10"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 15.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -20.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=11"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -22.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=11"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 15.5,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -20.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=12"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 16.0,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -22.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=12"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 12.3,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=13"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 12.8,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=13"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 0.5,
+        "penalized_value": 12.3,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -23.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=14"
+      },
+      {
+        "target_parameter": "rx_osnr_db",
+        "penalty_db": 1.0,
+        "penalized_value": 12.8,
+        "conditions": [
+          {
+            "parameter": "rx_power_dbm",
+            "value": -25.0
+          }
+        ],
+        "source": "OpenZR+ | Appl mode=14"
+      }
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-TQSFPDD4CCZRP"
+    ],
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "OIF 400ZR",
+      "OpenZR+",
+      "QSFP-DD MSA",
+      "CMIS4.1"
+    ],
+    "wavelength_band": [
+      "DWDM"
+    ],
+    "frequency_min_thz": [
+      191.3
+    ],
+    "frequency_max_thz": [
+      196.1
+    ],
+    "channel_spacing_ghz": [
+      100.0
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 15.0,
+    "temp_max_c": 75.0,
+    "tx_in_band_osnr_db": [
+      42.0
+    ],
+    "tx_out_of_band_osnr_db": [
+      42.0
+    ],
+    "pre_fec_ber_threshold": [
+      0.0125
+    ],
+    "los_assert_dbm": [
+      -28.0
+    ],
+    "notes": "Operating temperature +15°C to +75°C; module may turn up from cold start at -5°C and reach specifications after self-heating to min temperature. Storage temperature -40°C to +85°C. Nominal wavelengths stated as 191.3–196.1 THz tunable with 100 GHz grid (no nm values printed). OIF 400ZR typical reach also listed as 10 dB for app code 0x02; power budget 0–10 dB for app code 0x02. OpenZR+ footnote: Rx @ OSNR specified as [Min OSNR Value @ Min Rx power for the OSNR value]. CDC range footnote: CD range with less than 0.5 dB OSNR penalty. Enhanced mode grants better optical performance but is not fully interoperable with OpenZR+. TX power footnote: module TX power defaults to maximum available within stated 4 dB range if not provisioned. OIF and OpenZR+ TX/Rx power values marked as average power. Absolute max conditions: Rx signal input power +13 dBm; Rx total input power +15 dBm. Latency: 400G CFEC 8 us; 400G OFEC 5 us; 300G OFEC 6 us; 200G OFEC 7 us; 100G OFEC 11 us.",
+    "provenance_datasheet_sections": [
+      "SO-TQSFPDD4CCZRP",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "GENERIC",
+      "OIF 400ZR",
+      "OpenZR+",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider linking penalty rows to CMIS application mode numbers and line rate for traceability. Distinguish CFEC vs oFEC latency and power rows in structured sub-objects if the schema is extended."
+  }
+}

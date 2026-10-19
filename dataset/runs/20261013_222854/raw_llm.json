@@ -1,0 +1,147 @@
+{
+  "vendor": "Fiberworks AS",
+  "model": [
+    "QDD-400G-DCO-0ZRP"
+  ],
+  "form_factor": [
+    "QSFP-DD",
+    "QSFP-DD_type-2A"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "CMIS 5.0",
+    "OIF OpenZRplus"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": [
+    "C-band",
+    "DWDM",
+    "Flex-grid"
+  ],
+  "frequency_min_thz": [
+    191.3
+  ],
+  "frequency_max_thz": [
+    196.1
+  ],
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    22
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "Open ZR+",
+    "OpenZRplus",
+    "100GBASE-ZR",
+    "200GBASE-ZR",
+    "300GBASE-ZR",
+    "400GBASE-ZR",
+    "100/200/300/400GBASE Ethernet"
+  ],
+  "baud_rate_gbaud": [
+    60.14,
+    30.07
+  ],
+  "bit_rate_gbps": [
+    100,
+    200,
+    300,
+    400
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "QAM_16-DP",
+    "QAM_8-DP",
+    "QPSK-DP"
+  ],
+  "reach_km": [
+    80,
+    120,
+    500
+  ],
+  "tx_power_min_dbm": [
+    -5
+  ],
+  "tx_power_max_dbm": [
+    5
+  ],
+  "tx_in_band_osnr_db": [
+    34
+  ],
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -24,
+    -26,
+    -28,
+    -32
+  ],
+  "rx_osnr_db": [
+    24,
+    21,
+    16,
+    12.5
+  ],
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    10
+  ],
+  "cd_tolerance_ps_nm": [
+    12000,
+    20000,
+    30000,
+    50000
+  ],
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [
+    "OFEC"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Optical output power and many receiver/transmitter metrics are specified per ZR400/ZR300/ZR200/ZR100 profile. Power dissipation stated as < 22 W. Reach 80–120 km without EDFA/DCM; up to 500 km with EDFA. Duplex LC UPC interface. Center wavelength accuracy +/- 0.02 nm (nominal center wavelength not given). Transmitter OSNR (Inband) stated as > 34 dB/0.1nm. OSNR penalty tolerance 0.5 dB listed without paired penalized OSNR value and Rx power condition. Power budget 23 dB in ordering description. Output power stability +/- 0.5 dB; output power accuracy +/- 2 dB. Transceiver start up time < 120 s; channel tuning speed < 60 s. Storage temperature -40 to +85 °C (not normal operating range).",
+  "provenance_datasheet_sections": [
+    "QSFP-DD 400G DCO 0dBm ZR+ 400G Ethernet DCO Transceiver",
+    "DESCRIPTION",
+    "APPLICATIONS",
+    "FEATURES",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Map ZR profile-specific rows to structured objects (e.g. profile + rx_sensitivity_dbm + rx_osnr_db + cd_tolerance_ps_nm). Clarify whether Duplex LC UPC should include UPC as connector qualifier. OSNR penalty tolerance 0.5 dB may need a penalty sub-schema field when no @condition table is present."
+}

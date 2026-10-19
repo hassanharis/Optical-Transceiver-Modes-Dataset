@@ -1,0 +1,16 @@
+{
+  "modes": [
+    {
+      "label": "LS-SM5506-80C Standard temp",
+      "model": "LS-SM5506-80C",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0
+    },
+    {
+      "label": "LS-SM5506-80I Industrial temp",
+      "model": "LS-SM5506-80I",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0
+    }
+  ]
+}

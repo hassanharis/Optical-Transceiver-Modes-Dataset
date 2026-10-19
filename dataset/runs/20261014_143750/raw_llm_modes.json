@@ -1,0 +1,244 @@
+{
+  "modes": [
+    {
+      "label": "1470nm STM4/OC12",
+      "model": "SO-SFP-622M-L160D-C47",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1470.0,
+      "channel_total": 8,
+      "standards_code": "STM4/OC12",
+      "rx_sensitivity_dbm": -37.0
+    },
+    {
+      "label": "1470nm STM1/OC3",
+      "model": "SO-SFP-622M-L160D-C47",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1470.0,
+      "channel_total": 8,
+      "standards_code": "STM1/OC3",
+      "rx_sensitivity_dbm": -38.0
+    },
+    {
+      "label": "1470nm FE",
+      "model": "SO-SFP-622M-L160D-C47",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1470.0,
+      "channel_total": 8,
+      "standards_code": "FE",
+      "rx_sensitivity_dbm": -39.0
+    },
+    {
+      "label": "1490nm STM4/OC12",
+      "model": "SO-SFP-622M-L160D-C49",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1490.0,
+      "channel_total": 8,
+      "standards_code": "STM4/OC12",
+      "rx_sensitivity_dbm": -37.0
+    },
+    {
+      "label": "1490nm STM1/OC3",
+      "model": "SO-SFP-622M-L160D-C49",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1490.0,
+      "channel_total": 8,
+      "standards_code": "STM1/OC3",
+      "rx_sensitivity_dbm": -38.0
+    },
+    {
+      "label": "1490nm FE",
+      "model": "SO-SFP-622M-L160D-C49",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1490.0,
+      "channel_total": 8,
+      "standards_code": "FE",
+      "rx_sensitivity_dbm": -39.0
+    },
+    {
+      "label": "1510nm STM4/OC12",
+      "model": "SO-SFP-622M-L160D-C51",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1510.0,
+      "channel_total": 8,
+      "standards_code": "STM4/OC12",
+      "rx_sensitivity_dbm": -37.0
+    },
+    {
+      "label": "1510nm STM1/OC3",
+      "model": "SO-SFP-622M-L160D-C51",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1510.0,
+      "channel_total": 8,
+      "standards_code": "STM1/OC3",
+      "rx_sensitivity_dbm": -38.0
+    },
+    {
+      "label": "1510nm FE",
+      "model": "SO-SFP-622M-L160D-C51",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1510.0,
+      "channel_total": 8,
+      "standards_code": "FE",
+      "rx_sensitivity_dbm": -39.0
+    },
+    {
+      "label": "1530nm STM4/OC12",
+      "model": "SO-SFP-622M-L160D-C53",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1530.0,
+      "channel_total": 8,
+      "standards_code": "STM4/OC12",
+      "rx_sensitivity_dbm": -37.0
+    },
+    {
+      "label": "1530nm STM1/OC3",
+      "model": "SO-SFP-622M-L160D-C53",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1530.0,
+      "channel_total": 8,
+      "standards_code": "STM1/OC3",
+      "rx_sensitivity_dbm": -38.0
+    },
+    {
+      "label": "1530nm FE",
+      "model": "SO-SFP-622M-L160D-C53",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1530.0,
+      "channel_total": 8,
+      "standards_code": "FE",
+      "rx_sensitivity_dbm": -39.0
+    },
+    {
+      "label": "1550nm STM4/OC12",
+      "model": "SO-SFP-622M-L160D-C55",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1550.0,
+      "channel_total": 8,
+      "standards_code": "STM4/OC12",
+      "rx_sensitivity_dbm": -37.0
+    },
+    {
+      "label": "1550nm STM1/OC3",
+      "model": "SO-SFP-622M-L160D-C55",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1550.0,
+      "channel_total": 8,
+      "standards_code": "STM1/OC3",
+      "rx_sensitivity_dbm": -38.0
+    },
+    {
+      "label": "1550nm FE",
+      "model": "SO-SFP-622M-L160D-C55",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1550.0,
+      "channel_total": 8,
+      "standards_code": "FE",
+      "rx_sensitivity_dbm": -39.0
+    },
+    {
+      "label": "1570nm STM4/OC12",
+      "model": "SO-SFP-622M-L160D-C57",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1570.0,
+      "channel_total": 8,
+      "standards_code": "STM4/OC12",
+      "rx_sensitivity_dbm": -37.0
+    },
+    {
+      "label": "1570nm STM1/OC3",
+      "model": "SO-SFP-622M-L160D-C57",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1570.0,
+      "channel_total": 8,
+      "standards_code": "STM1/OC3",
+      "rx_sensitivity_dbm": -38.0
+    },
+    {
+      "label": "1570nm FE",
+      "model": "SO-SFP-622M-L160D-C57",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1570.0,
+      "channel_total": 8,
+      "standards_code": "FE",
+      "rx_sensitivity_dbm": -39.0
+    },
+    {
+      "label": "1590nm STM4/OC12",
+      "model": "SO-SFP-622M-L160D-C59",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1590.0,
+      "channel_total": 8,
+      "standards_code": "STM4/OC12",
+      "rx_sensitivity_dbm": -37.0
+    },
+    {
+      "label": "1590nm STM1/OC3",
+      "model": "SO-SFP-622M-L160D-C59",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1590.0,
+      "channel_total": 8,
+      "standards_code": "STM1/OC3",
+      "rx_sensitivity_dbm": -38.0
+    },
+    {
+      "label": "1590nm FE",
+      "model": "SO-SFP-622M-L160D-C59",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1590.0,
+      "channel_total": 8,
+      "standards_code": "FE",
+      "rx_sensitivity_dbm": -39.0
+    },
+    {
+      "label": "1610nm STM4/OC12",
+      "model": "SO-SFP-622M-L160D-C61",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1610.0,
+      "channel_total": 8,
+      "standards_code": "STM4/OC12",
+      "rx_sensitivity_dbm": -37.0
+    },
+    {
+      "label": "1610nm STM1/OC3",
+      "model": "SO-SFP-622M-L160D-C61",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1610.0,
+      "channel_total": 8,
+      "standards_code": "STM1/OC3",
+      "rx_sensitivity_dbm": -38.0
+    },
+    {
+      "label": "1610nm FE",
+      "model": "SO-SFP-622M-L160D-C61",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1610.0,
+      "channel_total": 8,
+      "standards_code": "FE",
+      "rx_sensitivity_dbm": -39.0
+    }
+  ]
+}

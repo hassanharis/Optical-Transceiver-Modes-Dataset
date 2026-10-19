@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-16g-er-dxxx-r5.7.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 6762,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 23
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

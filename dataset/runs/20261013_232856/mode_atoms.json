@@ -1,0 +1,115 @@
+{
+  "multi_valued": {
+    "model": [
+      "L9-SC31551G-20PPC",
+      "L9-SC55311G-20PPC",
+      "L9-SC31551G-20PPI",
+      "L9-SC55311G-20PPI",
+      "L9-SC31551G-20PPC5",
+      "L9-SC55311G-20PPC5",
+      "L9-SC31551G-20PPI5",
+      "L9-SC55311G-20PPI5",
+      "L9-SC31551G-20PTC",
+      "L9-SC55311G-20PTC",
+      "L9-SC31551G-20PTI",
+      "L9-SC55311G-20PTI",
+      "L9-SC31551G-20PTC5",
+      "L9-SC55311G-20PTC5",
+      "L9-SC31551G-20PTI5",
+      "L9-SC55311G-20PTI5"
+    ],
+    "wavelength_min_nm": [
+      1270.0,
+      1260.0,
+      1510.0
+    ],
+    "wavelength_max_nm": [
+      1350.0,
+      1610.0,
+      1590.0
+    ],
+    "wavelength_center_nm": [
+      1310.0,
+      1550.0
+    ],
+    "host_interface_name": [
+      "LVPECL",
+      "PECL",
+      "TTL"
+    ],
+    "standards_code": [
+      "ITU-T G.957",
+      "STM-1/OC-3"
+    ],
+    "rx_sensitivity_dbm": [
+      -23.0,
+      -24.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "1x9"
+    ],
+    "standards_claimed": [
+      "ITU-T G.957",
+      "IEC 825"
+    ],
+    "emitter_type": [
+      "LASER_FP",
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_band": [],
+    "connector_type": [
+      "SC"
+    ],
+    "fiber_type": [
+      "SMF 9/125μm",
+      "SMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "bit_rate_gbps": [
+      1.25
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -10.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "extinction_ratio_db": [
+      8.2
+    ],
+    "optical_extinction_ratio_db": [
+      8.2
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Datasheet title part L9-SC31551G-20PPI (Industrial): Order Information row specifies 1310nm FP Tx, PIN Rx, -40~85°C, 20km, Simplex SC, 3.3V, LVPECL TX/RX. Optical/electrical tables are shared across order variants; central wavelength rows are noted 1310 FP vs 1550 DFB. Launch optical power, sensitivity, and maximum input power rows are noted 20km. Recommended operating data rate B is 10–1500 Mbps (typ 1250 Mbps). Operating case temperature table lists Standard 0 to +70°C (note 1) and Industrial -40 to +85°C (note 2); PPI suffix aligns with Industrial row in Order Information. Supply current Icc max 210 mA; no electrical power in watts stated. Signal Detect Range -38 to -23 dBm; SD PECL or TTL depending on order code.",
+    "provenance_datasheet_sections": [
+      "L9-SC31551G-20PPI",
+      "1×9 1.25Gbps SC Bi-Directional Transceiver",
+      "Features",
+      "Applications",
+      "Standard",
+      "Order Information",
+      "Absolute Maximum Ratings",
+      "Recommended Operating Conditions",
+      "Transmitter Optical ,Electrical characteristics",
+      "Receiver Optical Electrical Characteristics"
+    ],
+    "suggestions": "Add form-factor enum value for 1×9 / bi-directional SC modules. Consider mapping Signal Detect Range bounds to los_assert_dbm / los_deassert_dbm when polarity (low when no light) is documented."
+  }
+}

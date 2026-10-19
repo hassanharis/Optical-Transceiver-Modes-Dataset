@@ -1,0 +1,108 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "AOP13PI8-XXX-3(R)",
+    "AOP13PI8-XXX-3",
+    "AOP13PI8-XXX-3R"
+  ],
+  "form_factor": [
+    "OSFP"
+  ],
+  "standards_claimed": [
+    "OSFP MSA",
+    "OIF-CMIS",
+    "IEEE 802.3dj-2024",
+    "IEEE802.3dj"
+  ],
+  "emitter_type": [
+    "LASER_DFB",
+    "Silicon photonics modulator"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": [
+    1310
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot_electrical"
+  ],
+  "connector_type": null,
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    26
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "2xDR4"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "IEEE 802.3dj-2024",
+    "IEEE802.3dj",
+    "1.6T Ethernet",
+    "2xDR4"
+  ],
+  "baud_rate_gbaud": [
+    106.25
+  ],
+  "bit_rate_gbps": [
+    212.5,
+    1600
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": null,
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "1.6T OSFP DSP Active Optical Cable (integrated cable, not a pluggable transceiver module with separate optical connector). Forward error correction (FEC) is required to be implemented by the host. Case operating temperature 0°C to 70°C without air flow. Optical transmission distance 0.5–100 m (Recommended Operating Conditions); standard cable lengths 1, 5, 10, 30, 50, 100 meters (XXX in part number). Power dissipation 26 W max per cable end. Each channel data rate 106.25@PAM4 GBd. Housing variants IHS (AOP13PI8-XXX-3) and RHS (AOP13PI8-XXX-3R). Single 3.3 V power supply (3.135–3.465 V operating). Electrical interface: 60-pin edge connector per OSFP MSA.",
+  "provenance_datasheet_sections": [
+    "1.6T OSFP DSP Active Optical Cable, AOP13PI8-XXX-3(R), PRODUCT FEATURES, REFERENCE STANDARD, APPLICATIONS, PRODUCT SPECIFICATION, I. Absolute Maximum Ratings, II. Recommended Operating Conditions, III. General Product Characteristics, IV. Pin Assignment, Notes, V. Host - Transceiver Interface Block Diagram, VI. Mechanical Specifications, VII. Regulatory Compliance, Appendix A. Document Revision"
+  ],
+  "suggestions": "Add explicit reach in km or keep reach_m in schema; optical power and sensitivity specs absent for AOC. Clarify vendor branding (Amphenol CS web vs XGIGA footer). Host/media MSA application codes beyond 2xDR4 not tabulated."
+}

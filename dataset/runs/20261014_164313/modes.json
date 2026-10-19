@@ -1,0 +1,427 @@
+{
+  "modes": [
+    {
+      "label": "SO-XFP-ZR-Dxxxx series",
+      "model": "SO-XFP-ZR-Dxxxx",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1600.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "OTU2 @ 10.7G",
+      "model": "SO-XFP-ZR-Dxxxx",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1600.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "OTU2",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "OTU2e @ 11.1G",
+      "model": "SO-XFP-ZR-Dxxxx",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1600.0,
+      "wavelength_band": "DWDM",
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 11.1
+    },
+    {
+      "label": "DWDM ch D9180",
+      "model": "SO-XFP-ZR-D9180",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9190",
+      "model": "SO-XFP-ZR-D9190",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9200",
+      "model": "SO-XFP-ZR-D9200",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9210",
+      "model": "SO-XFP-ZR-D9210",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9220",
+      "model": "SO-XFP-ZR-D9220",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9230",
+      "model": "SO-XFP-ZR-D9230",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9240",
+      "model": "SO-XFP-ZR-D9240",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9250",
+      "model": "SO-XFP-ZR-D9250",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9260",
+      "model": "SO-XFP-ZR-D9260",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9270",
+      "model": "SO-XFP-ZR-D9270",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9280",
+      "model": "SO-XFP-ZR-D9280",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9290",
+      "model": "SO-XFP-ZR-D9290",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9300",
+      "model": "SO-XFP-ZR-D9300",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9310",
+      "model": "SO-XFP-ZR-D9310",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9320",
+      "model": "SO-XFP-ZR-D9320",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9330",
+      "model": "SO-XFP-ZR-D9330",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9340",
+      "model": "SO-XFP-ZR-D9340",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9350",
+      "model": "SO-XFP-ZR-D9350",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9360",
+      "model": "SO-XFP-ZR-D9360",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9370",
+      "model": "SO-XFP-ZR-D9370",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9380",
+      "model": "SO-XFP-ZR-D9380",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9390",
+      "model": "SO-XFP-ZR-D9390",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9400",
+      "model": "SO-XFP-ZR-D9400",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9410",
+      "model": "SO-XFP-ZR-D9410",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9420",
+      "model": "SO-XFP-ZR-D9420",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9430",
+      "model": "SO-XFP-ZR-D9430",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9440",
+      "model": "SO-XFP-ZR-D9440",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9450",
+      "model": "SO-XFP-ZR-D9450",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9460",
+      "model": "SO-XFP-ZR-D9460",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9470",
+      "model": "SO-XFP-ZR-D9470",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9480",
+      "model": "SO-XFP-ZR-D9480",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9490",
+      "model": "SO-XFP-ZR-D9490",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9500",
+      "model": "SO-XFP-ZR-D9500",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9510",
+      "model": "SO-XFP-ZR-D9510",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9520",
+      "model": "SO-XFP-ZR-D9520",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9530",
+      "model": "SO-XFP-ZR-D9530",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9540",
+      "model": "SO-XFP-ZR-D9540",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9550",
+      "model": "SO-XFP-ZR-D9550",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9560",
+      "model": "SO-XFP-ZR-D9560",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9570",
+      "model": "SO-XFP-ZR-D9570",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9580",
+      "model": "SO-XFP-ZR-D9580",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9590",
+      "model": "SO-XFP-ZR-D9590",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9600",
+      "model": "SO-XFP-ZR-D9600",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "DWDM ch D9610",
+      "model": "SO-XFP-ZR-D9610",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_band": "DWDM",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 10.7
+    }
+  ]
+}

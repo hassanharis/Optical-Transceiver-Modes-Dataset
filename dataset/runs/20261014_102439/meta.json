@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:24:39.511245+00:00",
+  "source_file": "C:\\Haris\\datasheets\\pub-005500_ds_afbr-57e6apzc_2017-03-30.pdf",
+  "page_count": 21,
+  "table_count": 17,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 34.419,
+    "extract_atoms": 29.653,
+    "store_run": 0.006,
+    "synthesize_modes": 42.453,
+    "store_modes": 0.002,
+    "total": 106.534
+  }
+}

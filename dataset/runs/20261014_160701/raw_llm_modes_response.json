@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SFP28 DAC family (0.5\u20135 m)\",\n      \"model\": \"SO-SFP28-PCUxM\"\n    },\n    {\n      \"label\": \"0.5 m AWG30 passive DAC\",\n      \"model\": \"SO-SFP28-PCU0.5M\"\n    },\n    {\n      \"label\": \"1 m AWG30 passive DAC\",\n      \"model\": \"SO-SFP28-PCU1M\"\n    },\n    {\n      \"label\": \"2 m AWG30 passive DAC\",\n      \"model\": \"SO-SFP28-PCU2M\"\n    },\n    {\n      \"label\": \"3 m AWG30 passive DAC\",\n      \"model\": \"SO-SFP28-PCU3M\"\n    },\n    {\n      \"label\": \"5 m AWG26 passive DAC\",\n      \"model\": \"SO-SFP28-PCU5M\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

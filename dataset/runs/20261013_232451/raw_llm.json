@@ -1,0 +1,131 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "L9-FC553101-60CTC"
+  ],
+  "form_factor": [
+    "1x9"
+  ],
+  "standards_claimed": [
+    "ITU-T G.957"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1510,
+    1260
+  ],
+  "wavelength_max_nm": [
+    1590,
+    1610
+  ],
+  "wavelength_center_nm": [
+    1550,
+    1310
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    1
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "FC"
+  ],
+  "fiber_type": null,
+  "temp_min_c": -10,
+  "temp_max_c": 70,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "CML"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "ITU-T G.957",
+    "STM-1",
+    "OC-3"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    155.52
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    60
+  ],
+  "tx_power_min_dbm": [
+    -5
+  ],
+  "tx_power_max_dbm": [
+    0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -34
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -3
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    9
+  ],
+  "los_assert_dbm": [
+    -45
+  ],
+  "los_deassert_dbm": [
+    -38
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    9
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    1
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Module is Tx1550/Rx1310 bi-directional on single fiber (title). Ordering row for L9-FC553101-60CTC lists working temperature -10~70℃; Features list Standard 0 to +70°C and Industrial -40°C to +85°C; Recommended Operating Conditions give TC 0–70°C and TI -40–85°C. Operating data rate stated as 155.52 Mbps (Recommended Operating Conditions) and up to 155Mbps (Features); ordering rate 155Mb/s. Launch power and sensitivity rows note 60km. Transmitter central wavelength table includes 1270–1310–1350 (note 1310FP) and 1510–1550–1590 (note 1550FP); ordering specifies 1550nm DFB for this part. Supply current Icc max 250 mA at 3.3 V (no power in W stated). Signal detect outputs (LV)TTL per pin description.",
+  "provenance_datasheet_sections": [
+    "L9-FC553101-60CTC",
+    "1×9 155Mbps Bi-Directional Transceiver Tx1550/Rx1310 FC 60km Reach",
+    "Features",
+    "Applications",
+    "Standard",
+    "Ordering Information",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Transmitter Optical ,Electrical characteristics",
+    "Receiver Optical Electrical Characteristics",
+    "Pin Connections"
+  ],
+  "suggestions": "Clarify whether bit_rate_gbps should store Mbps literals (155.52) or converted Gbps. Add 1×9 / bi-di form factors to enum if common. Map Signal Detect Range explicitly to LOS assert/deassert if that is vendor intent."
+}

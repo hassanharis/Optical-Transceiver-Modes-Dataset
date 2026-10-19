@@ -1,0 +1,165 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTL4E1QE1C"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "QSFP+ MSA",
+    "IEEE 802.3bm",
+    "40GBASE-ER42",
+    "40GBASE-ER4",
+    "SFF-8636",
+    "RoHS Directive 2011/65/EU",
+    "IEC 60825-1"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5
+  ],
+  "wavelength_center_nm": [],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF-28"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    3.5
+  ],
+  "host_interface_name": [
+    "XLPPI"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [
+    "40GBASE-ER4"
+  ],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "40GBASE-ER4",
+    "40GBASE-ER42",
+    "XLPPI",
+    "IEEE 802.3bm"
+  ],
+  "baud_rate_gbaud": [
+    10.3125
+  ],
+  "bit_rate_gbps": [
+    41.3,
+    41.25,
+    10.3125
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    40.0,
+    0.3
+  ],
+  "tx_power_min_dbm": [
+    -2.7
+  ],
+  "tx_power_max_dbm": [
+    4.5,
+    5.0,
+    10.5
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -19.0,
+    -16.8
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    3.8
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    5.5
+  ],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -19.0
+  ],
+  "channel_insertion_loss_db": [
+    18.5
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "transmitter_reflectance_db": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    5.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    20.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    1.0
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Intro cites 40GBASE-ER42; features and tables cite 40GBASE-ER4. Data Rate Specifications list link distance on SMF-28 as 0.002–300 meters while features and title state 40 km maximum on SMF. Receiver sensitivity -19 dBm and stressed -16.8 dBm are OMA per lane. RXPx range -21.2 to -4.5 dBm; max receive note references min 9 dB loss. Transmitter Dispersion Penalty (TDP) max 2.6 dB and vertical eye closure penalty max 2.2 dB per lane are stated without paired penalty-column @ conditions. Bit Rate per Lane table lists 10.3125 Mb/sec (likely Gb/s per other sections). © 2023 Coherent Corp.; product text references Finisar Corporation.",
+  "provenance_datasheet_sections": [
+    "FTL4E1QE1C",
+    "40GBASE QSFP+ Optical Transceiver Module – 40km",
+    "FEATURES",
+    "APPLICATIONS",
+    "II. General Product Characteristics",
+    "III. Absolute Maximum Ratings",
+    "IV. Electrical Characteristics  (TOP = 0 to 70°C, VCC = 3.1 to 3.47 Volts)",
+    "V. Optical Characteristics (TOP = 0 to 70°C, VCC = 3.1 to 3.47 Volts)",
+    "VI. Memory Map and Control Registers",
+    "VII. Environmental Specifications"
+  ],
+  "suggestions": "Clarify whether vendor field should be Finisar vs Coherent Corp. for post-rebrand datasheets. Add schema fields for OMA-specific tx/rx power, TDP, stressed receiver sensitivity (SRS), and link insertion loss budget when only budget dB is given."
+}

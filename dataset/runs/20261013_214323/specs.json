@@ -1,0 +1,120 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TQ2020-BXXC-SO",
+    "TQ2020-BADC-SO",
+    "TQ2020-BDAC-SO"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "100G-LR",
+    "100G Lambda MSA",
+    "QSFP28 MSA",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1264.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1337.5
+  ],
+  "wavelength_center_nm": [
+    1271.0,
+    1331.0
+  ],
+  "channel_total": [
+    1
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    4.5
+  ],
+  "host_interface_name": [
+    "OIF CEI-28G-VSR"
+  ],
+  "frame": [
+    "4x 25.78Gbps"
+  ],
+  "standards_code": [
+    "100G-LR",
+    "100G Lambda MSA"
+  ],
+  "baud_rate_gbaud": [
+    50.0,
+    52.125
+  ],
+  "bit_rate_gbps": [
+    106.25,
+    100.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -1.4
+  ],
+  "tx_power_max_dbm": [
+    4.5
+  ],
+  "rx_sensitivity_dbm": [
+    -6.1,
+    -6.5,
+    -7.7
+  ],
+  "rx_overload_dbm": [
+    4.5
+  ],
+  "fec_type": [
+    "KP4"
+  ],
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.5,
+    5.3
+  ],
+  "los_assert_dbm": [
+    -12.0
+  ],
+  "los_deassert_dbm": [
+    -10.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5,
+    5.3
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "penalties": [],
+  "notes": "TQ2020-BXXC-SO denotes the bi-directional pair solution; orderable variants are TQ2020-BADC-SO (Tx/Rx 1271/1331 nm) and TQ2020-BDAC-SO (Tx/Rx 1331/1271 nm). Single-fiber BiDi: two modules inject different wavelengths on one SM fiber. Module includes KP4 FEC; host system shall not have FEC activated. Optical parameters specified at BER 2.4x10^-4; FEC yields BER better than 1x10^-12. Aggregated line rate 106.25 Gbps for 100GbE with FEC (footnote 3). Line baud rate 52.125 Gbd (footnote 4); text also states 50 Gbaud per channel/lane. Transmitter output power and minimum receive power footnotes 5–6: average power per lane; min average receive power is informative. Footnote 7: typical values vary between components. Footnote 8: receiver sensitivity/specified at BER 2.4x10^-4. OMA transmitter min +0.7 dBm, max +4.7 dBm; receiver sensitivity OMA -6.1 dBm. Power budget 0–6.8 dB. Storage temperature -40°C to +85°C (not operating). DDM via I2C per QSFP28 MSA.",
+  "provenance_datasheet_sections": [
+    "QSFP28 100GE BiDi 10km",
+    "QSFP28, BiDi, 100G Ethernet, 1271nm/1331nm, SM, 10km, 6.8dB, LC",
+    "TQ2020-BXXC-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "Safety/regulatory compliance:",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider schema fields for optical modulation amplitude (OMA) on TX and RX separately from average power. Power budget 0–6.8 dB may map to a dedicated link-budget field."
+}

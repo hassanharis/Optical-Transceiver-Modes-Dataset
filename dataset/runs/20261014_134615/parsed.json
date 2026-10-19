@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp-10ge-lr40-cxx.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 6158,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 29
+    },
+    {
+      "page": 0,
+      "label": null,
+      "rows": 13
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

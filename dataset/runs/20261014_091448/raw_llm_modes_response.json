@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "The ordering row and product text tie all three bit rates to both OM3 (70 m) and OM4 (100 m) reach; rate select (RS0/RS1) distinguishes bit rate, fiber type distinguishes reach. Six modes cover every supported (rate, reach) pair without inventing pairings.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"8.5 Gb/s OM3 70 m\",\n      \"bit_rate_gbps\": 8.5,\n      \"reach_km\": 0.07\n    },\n    {\n      \"label\": \"8.5 Gb/s OM4 100 m\",\n      \"bit_rate_gbps\": 8.5,\n      \"reach_km\": 0.1\n    },\n    {\n      \"label\": \"14.25 Gb/s OM3 70 m\",\n      \"bit_rate_gbps\": 14.25,\n      \"reach_km\": 0.07\n    },\n    {\n      \"label\": \"14.25 Gb/s OM4 100 m\",\n      \"bit_rate_gbps\": 14.25,\n      \"reach_km\": 0.1\n    },\n    {\n      \"label\": \"28.05 Gb/s OM3 70 m\",\n      \"bit_rate_gbps\": 28.05,\n      \"reach_km\": 0.07\n    },\n    {\n      \"label\": \"28.05 Gb/s OM4 100 m\",\n      \"bit_rate_gbps\": 28.05,\n      \"reach_km\": 0.1\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

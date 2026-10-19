@@ -1,0 +1,162 @@
+{
+  "multi_valued": {
+    "form_factor": [
+      "OSFP",
+      "OSFP1600",
+      "OSFP FlatTop",
+      "OSFP_RHS"
+    ],
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "wavelength_center_nm": [
+      1271.0,
+      1291.0,
+      1311.0,
+      1331.0
+    ],
+    "wavelength_band": [
+      "CWDM",
+      "CWDM4",
+      "1310nm"
+    ],
+    "power_consumption_w": [
+      30.0,
+      2.0
+    ],
+    "host_interface_name": [
+      "800GAUI-4",
+      "2x800GAUI-4 C2M"
+    ],
+    "media_interface_name": [
+      "800GBASE-FR4",
+      "2x800GBASE-FR4",
+      "FR4"
+    ],
+    "frame": [
+      "8x200G Ethernet",
+      "2x800GAUI-4"
+    ],
+    "standards_code": [
+      "800GBASE-FR4",
+      "800GAUI-4",
+      "FR4",
+      "IEEE802.3dj D1p3",
+      "2x FR4"
+    ],
+    "baud_rate_gbaud": [
+      113.4375,
+      106.25
+    ],
+    "bit_rate_gbps": [
+      200.0,
+      800.0,
+      1600.0
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "tx_power_max_dbm": [
+      4.9,
+      10.9
+    ],
+    "rx_sensitivity_dbm": [
+      -3.7,
+      -1.2
+    ],
+    "rx_overload_dbm": [
+      4.9,
+      5.9
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LO-CW1T-2FR4C"
+    ],
+    "standards_claimed": [
+      "IEEE802.3dj D1p3",
+      "OSFP MSA Specification Rev 5.1",
+      "CMIS Rev 5.3"
+    ],
+    "emitter_type": [
+      "LASER_EML"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "channel_total": [
+      8
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC",
+      "LC/UPC",
+      "LC/PC",
+      "Duplex LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -2.2
+    ],
+    "post_fec_ber_target": [
+      6.4e-05
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      17.1
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "penalties": [],
+    "notes": "Title and ordering: 2 km reach; Recommended Operating Conditions lists Operating Distance min 2 m, max 2000 m. Receiver Sensitivity (OMAouter) min is -3.7 dBm for TECQ < 0.9 dB; for 0.9 dB ≤ TECQ ≤ SECQ min is – 4.6 + TECQ dBm. Stressed Receiver Sensitivity (OMAouter) is -1.2 dBm with SECQ 3.4 dB and OMAouter of each aggressor lane 0.8 dBm. Sensitivity measured at BER = 6.4x10-5 per Note 1. Signaling rate optical 113.4375±50 ppm GBd per lane; electrical module TP1/TP4 106.25±50 ppm GBd. Maximum Power Dissipation 30 W; Low Power Mode max 2 W. Average launch power each lane min (-2.2 dBm) noted as informative per Note 2. Transmitter reflectance defined looking into the transmitter per Note 3. Connector stated as LC/UPC in title and LC/PC in Features.",
+    "provenance_datasheet_sections": [
+      "LO-CW1T-2FR4C",
+      "1.6T 2x FR4 OSFP FlatTop1310nm 2km Dual Duplex LC/UPC DOM Transceiver",
+      "Features",
+      "Applications",
+      "Description",
+      "Absolute Maximum Ratings",
+      "Recommended Operating Conditions",
+      "Optical Characteristics",
+      "Electrical Characteristics",
+      "Digital Diagnostic Specifications",
+      "Ordering information"
+    ],
+    "suggestions": "Schema could add OMAouter, TDECQ/TECQ/SECQ, and total vs per-lane launch power fields common in IEEE 802.3dj FR4 modules."
+  }
+}

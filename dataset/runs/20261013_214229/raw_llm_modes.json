@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "TQ2015-M85I-SO 100GBASE-SR4 OM4 100m",
+      "model": "TQ2015-M85I-SO",
+      "host_interface_name": "100GBASE-SR4",
+      "standards_code": "IEEE 802.3bm",
+      "bit_rate_gbps": 103.12,
+      "reach_km": 0.1,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "TQ2015-M85I-SO 100GBASE-SR4 OM3 70m",
+      "model": "TQ2015-M85I-SO",
+      "host_interface_name": "100GBASE-SR4",
+      "standards_code": "IEEE 802.3bm",
+      "bit_rate_gbps": 103.12,
+      "reach_km": 0.07,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "TQ2015-M85C-SO 100GBASE-SR4 OM4 100m",
+      "model": "TQ2015-M85C-SO",
+      "host_interface_name": "100GBASE-SR4",
+      "standards_code": "IEEE 802.3bm",
+      "bit_rate_gbps": 103.12,
+      "reach_km": 0.1,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "TQ2015-M85C-SO 100GBASE-SR4 OM3 70m",
+      "model": "TQ2015-M85C-SO",
+      "host_interface_name": "100GBASE-SR4",
+      "standards_code": "IEEE 802.3bm",
+      "bit_rate_gbps": 103.12,
+      "reach_km": 0.07,
+      "fec_type": "RS_528_514"
+    }
+  ]
+}

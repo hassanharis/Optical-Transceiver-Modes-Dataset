@@ -1,0 +1,143 @@
+{
+  "vendor": "FluxLight, Inc.",
+  "model": [
+    "QSFP-100G-ER4L-A-FL",
+    "QSFP-100G-ER4L-A-EXT-FL",
+    "QSFP-100G-ER4L-A-IND-FL"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "Ethernet 100GBASE-ER4 Lite",
+    "OTN OTU4 4L1-9C1F Lite",
+    "IEEE 802.3ba",
+    "QSFP28 Multi-Source Agreement (MSA)"
+  ],
+  "emitter_type": [
+    "LAN WDM TOSA"
+  ],
+  "photodetector_type": [
+    "APD"
+  ],
+  "wavelength_min_nm": [
+    1294.53,
+    1299.02,
+    1303.54,
+    1308.09
+  ],
+  "wavelength_max_nm": [
+    1296.59,
+    1301.09,
+    1305.63,
+    1310.19
+  ],
+  "wavelength_center_nm": [
+    1295.56,
+    1300.05,
+    1304.58,
+    1309.14
+  ],
+  "wavelength_band": [
+    "LAN-WDM"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC",
+    "Dual-LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    4.2
+  ],
+  "media_interface_name": [
+    "ER4L-A-FL"
+  ],
+  "standards_code": [
+    "100GBASE-ER4 Lite",
+    "100GBASE-ER4",
+    "OTU4 4L1-9C1F Lite",
+    "ER4L-A-FL"
+  ],
+  "bit_rate_gbps": [
+    25.78125,
+    28.0,
+    100.0
+  ],
+  "reach_km": [
+    30.0,
+    32.0,
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -2.5,
+    0.5
+  ],
+  "tx_power_max_dbm": [
+    6.5,
+    12.5
+  ],
+  "rx_sensitivity_dbm": [
+    -15.0,
+    -18.5,
+    -14.0,
+    -18.0
+  ],
+  "rx_overload_dbm": [
+    -7.0
+  ],
+  "post_fec_ber_target": [
+    1e-12,
+    5e-05
+  ],
+  "extinction_ratio_db": [
+    4.5
+  ],
+  "los_assert_dbm": [
+    -26.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "transmitter_reflectance_db": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    4.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    20.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Reach: up to 30 km G.652 SMF without FEC; up to 40 km with FEC; product description cites up to 32 km for 100GBASE-ER4 lite. Link distance table: 0.002 to 40 km. Operating case temperature variants: Standard 0 to +70 C, Extended -5 to 85 C, Industrial -20 to +85 C (temp_min_c/temp_max_c reflect Commercial RECOMMENDED OPERATING CONDITIONS). Receiver sensitivity values are OMA per lane with stated BER conditions (100GE vs OTU4). Damage threshold transmitter -3 dBm each lane (ABSOLUTE MAXIMUM); receiver -6 dBm each lane (Optical). TDP each lane max 3.0 dB. Launch Power in OMA minus TDP each lane min -0.5 dBm. Stressed receiver test: VECP 2.5 dB, J2 0.33 UI, J9 0.48 UI per lane.",
+  "provenance_datasheet_sections": [
+    "Arista Compatible QSFP-100G-ER4L-A-FL Quick Spec:",
+    "Arista Compatible QSFP-100G-ER4L-A-FL Features",
+    "Arista Compatible QSFP-100G-ER4L-A-FL Applications",
+    "Product Description",
+    "ABSOLUTE MAXIMUM RATINGS",
+    "RECOMMENDED OPERATING CONDITIONS",
+    "Electrical Characteristics",
+    "Optical Characteristics",
+    "Digital Diagnostic Functions"
+  ]
+}

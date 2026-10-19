@@ -1,0 +1,94 @@
+{
+  "modes": [
+    {
+      "label": "32GFC M5-SN-S",
+      "host_interface_name": "3200-M5-SN-S",
+      "standards_code": "3200-M5-SN-S",
+      "bit_rate_gbps": 28.05,
+      "modulation_format": "LINECODE_64B66B",
+      "tx_power_min_dbm": -5.0,
+      "rx_overload_dbm": 2.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "16GFC M5-SN-S",
+      "host_interface_name": "1600-M5-SN-S",
+      "standards_code": "1600-M5-SN-S",
+      "bit_rate_gbps": 14.025,
+      "modulation_format": "LINECODE_64B66B",
+      "tx_power_min_dbm": -5.0,
+      "rx_overload_dbm": 2.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "8GFC M5-SN-S",
+      "host_interface_name": "800-M5-SN-S",
+      "standards_code": "800-M5-SN-S",
+      "bit_rate_gbps": 8.5,
+      "modulation_format": "LINECODE_8B10B",
+      "tx_power_min_dbm": -8.4,
+      "rx_overload_dbm": 0.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "32GFC M5E-SN-I",
+      "host_interface_name": "3200-M5E-SN-I",
+      "standards_code": "3200-M5E-SN-I",
+      "bit_rate_gbps": 28.05,
+      "modulation_format": "LINECODE_64B66B",
+      "tx_power_min_dbm": -5.0,
+      "rx_overload_dbm": 2.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "16GFC M5E-SN-I",
+      "host_interface_name": "1600-M5E-SN-I",
+      "standards_code": "1600-M5E-SN-I",
+      "bit_rate_gbps": 14.025,
+      "modulation_format": "LINECODE_64B66B",
+      "tx_power_min_dbm": -5.0,
+      "rx_overload_dbm": 2.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "8GFC M5E-SN-I",
+      "host_interface_name": "800-M5E-SN-I",
+      "standards_code": "800-M5E-SN-I",
+      "bit_rate_gbps": 8.5,
+      "modulation_format": "LINECODE_8B10B",
+      "tx_power_min_dbm": -8.4,
+      "rx_overload_dbm": 0.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "32GFC M5F-SN-I",
+      "host_interface_name": "3200-M5F-SN-I",
+      "standards_code": "3200-M5F-SN-I",
+      "bit_rate_gbps": 28.05,
+      "modulation_format": "LINECODE_64B66B",
+      "tx_power_min_dbm": -5.0,
+      "rx_overload_dbm": 2.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "16GFC M5F-SN-I",
+      "host_interface_name": "1600-M5F-SN-I",
+      "standards_code": "1600-M5F-SN-I",
+      "bit_rate_gbps": 14.025,
+      "modulation_format": "LINECODE_64B66B",
+      "tx_power_min_dbm": -5.0,
+      "rx_overload_dbm": 2.0,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "8GFC M5F-SN-I",
+      "host_interface_name": "800-M5F-SN-I",
+      "standards_code": "800-M5F-SN-I",
+      "bit_rate_gbps": 8.5,
+      "modulation_format": "LINECODE_8B10B",
+      "tx_power_min_dbm": -8.4,
+      "rx_overload_dbm": 0.5,
+      "fec_type": "RS_528_514"
+    }
+  ]
+}

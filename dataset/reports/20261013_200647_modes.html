@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Broadcom</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Broadcom</div>
+  <div class="subtitle"></div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Broadcom</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">ATM Forum, FDDI PMD, IEEE802.3u, 100Base-FX, SONET OC-3, SDH STM-1</div></div>
+      <div class="spec-item"><div class="label">Emitter Type</div><div class="value">LED_INGAASP, LED</div></div>
+      <div class="spec-item"><div class="label">Photodetector Type</div><div class="value">PIN_InGaAs, PIN</div></div>
+      <div class="spec-item"><div class="label">Wavelength Min</div><div class="value">1270.0</div></div>
+      <div class="spec-item"><div class="label">Wavelength Max</div><div class="value">1380.0</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">solder_post, solder_wave, hand solder</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">MMF_OM1, MMF 50/125µm, MMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-40.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">85.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">-14.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">-14.0</div></div>
+      <div class="spec-item"><div class="label">Pre Fec Ber Threshold</div><div class="value">2.5e-10</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">2.5e-10</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-45.0</div></div>
+      <div class="spec-item"><div class="label">Optical Extinction Ratio Db</div><div class="value">-47.0, -27.0</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">1.5</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">HFBR-5963LZ case temperature 0 °C to +70 °C; HFBR-5963ALZ –40 °C to +85 °C. Supply +3.3 V (2.97–3.63 V). Tx output power and extinction ratio differ for 62.5/125 µm (NA=0.275) vs 50/125 µm (NA=0.20) fiber; BOL vs EOL tx power rows apply. Rx input power limits split OC-3 vs FE and window-edge vs eye-center (Notes a–d). Signal Detect assert PA is PD+1.5 dB with table max –31–33 dBm avg. BER ≤2.5×10^–10 over dynamic range per Note b. Optical power measurements at 1 m fiber with cladding modes removed; 25 MBd (12.5 MHz square-wave) for several tx optical tests.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">Description, Features, Applications, Transmitter Section, Receiver Section, Package, Ordering Information, Recommended Operating Conditions, Transmitter Electrical Characteristics, Receiver Electrical Characteristics, Transmitter Optical Characteristics, Receiver Optical and Electrical Characteristics, Transceiver Optical Power Budget versus Link Length</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Add schema fields for supply voltage, signal detect assert/deassert times, and jitter components (SJ/DCD/DDJ/RJ) if useful for legacy MMF modules. Consider per-SKU temperature objects when temp_min_c/temp_max_c are single floats.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Form Factor</th><th>wavelength_center_nm</th><th>Power (W)</th><th>Standards code</th><th>Baud Rate (GBaud)</th><th>modulation_format</th><th>TX Power Min (dBm)</th><th>RX Sensitivity (dBm)</th><th>extinction_ratio_db</th><th>los_assert_dbm</th></tr>
+      <tr><td><strong>HFBR-5963LZ OC-3/STM-1 62.5/125 µm</strong></td><td>HFBR-5963LZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>SONET OC-3</td><td>155.52</td><td>NRZI</td><td>-19.0</td><td>-31.0</td><td>-47.0</td><td>-31.0</td></tr>
+      <tr><td><strong>HFBR-5963LZ OC-3/STM-1 50/125 µm</strong></td><td>HFBR-5963LZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>SDH STM-1</td><td>155.52</td><td>NRZI</td><td>-22.5</td><td>-31.0</td><td>-47.0</td><td>-31.0</td></tr>
+      <tr><td><strong>HFBR-5963LZ Fast Ethernet 62.5/125 µm</strong></td><td>HFBR-5963LZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>100Base-FX</td><td>125.0</td><td>NRZI</td><td>-19.0</td><td>-31.8</td><td>-27.0</td><td>-33.0</td></tr>
+      <tr><td><strong>HFBR-5963LZ Fast Ethernet 50/125 µm</strong></td><td>HFBR-5963LZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>Fast Ethernet</td><td>125.0</td><td>NRZI</td><td>-23.5</td><td>-31.8</td><td>-27.0</td><td>-33.0</td></tr>
+      <tr><td><strong>HFBR-5963LZ FDDI 62.5/125 µm</strong></td><td>HFBR-5963LZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>FDDI</td><td>125.0</td><td>NRZI_4B5B</td><td>-19.0</td><td>-31.8</td><td>-47.0</td><td>-33.0</td></tr>
+      <tr><td><strong>HFBR-5963LZ FDDI 50/125 µm</strong></td><td>HFBR-5963LZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>FDDI</td><td>125.0</td><td>NRZI_4B5B</td><td>-22.5</td><td>-31.8</td><td>-47.0</td><td>-33.0</td></tr>
+      <tr><td><strong>HFBR-5963ALZ OC-3/STM-1 62.5/125 µm</strong></td><td>HFBR-5963ALZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>SONET OC-3</td><td>155.52</td><td>NRZI</td><td>-19.0</td><td>-31.0</td><td>-47.0</td><td>-31.0</td></tr>
+      <tr><td><strong>HFBR-5963ALZ OC-3/STM-1 50/125 µm</strong></td><td>HFBR-5963ALZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>SDH STM-1</td><td>155.52</td><td>NRZI</td><td>-22.5</td><td>-31.0</td><td>-47.0</td><td>-31.0</td></tr>
+      <tr><td><strong>HFBR-5963ALZ Fast Ethernet 62.5/125 µm</strong></td><td>HFBR-5963ALZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>100Base-FX</td><td>125.0</td><td>NRZI</td><td>-19.0</td><td>-31.8</td><td>-27.0</td><td>-33.0</td></tr>
+      <tr><td><strong>HFBR-5963ALZ Fast Ethernet 50/125 µm</strong></td><td>HFBR-5963ALZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>Fast Ethernet</td><td>125.0</td><td>NRZI</td><td>-23.5</td><td>-31.8</td><td>-27.0</td><td>-33.0</td></tr>
+      <tr><td><strong>HFBR-5963ALZ FDDI 62.5/125 µm</strong></td><td>HFBR-5963ALZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>FDDI</td><td>125.0</td><td>NRZI_4B5B</td><td>-19.0</td><td>-31.8</td><td>-47.0</td><td>-33.0</td></tr>
+      <tr><td><strong>HFBR-5963ALZ FDDI 50/125 µm</strong></td><td>HFBR-5963ALZ</td><td>2 x 5 DIP</td><td>1308.0</td><td>0.64</td><td>FDDI</td><td>125.0</td><td>NRZI_4B5B</td><td>-22.5</td><td>-31.8</td><td>-47.0</td><td>-33.0</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">HFBR-5963LZ</span> <span class="badge">HFBR-5963ALZ</span> <span class="badge">HFBR-5963xxZ</span></td></tr>
+      <tr><td>form_factor</td><td><span class="badge">SFF</span> <span class="badge">2 x 5 DIP</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">1300.0</span> <span class="badge">1308.0</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">0.4</span> <span class="badge">0.64</span> <span class="badge">0.225</span> <span class="badge">0.44</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">OC-3</span> <span class="badge">STM-1</span> <span class="badge">Fast Ethernet</span> <span class="badge">FDDI</span> <span class="badge">100Base-FX</span> <span class="badge">SONET OC-3</span> <span class="badge">SDH STM-1</span></td></tr>
+      <tr><td>baud_rate_gbaud</td><td><span class="badge">25.0</span> <span class="badge">125.0</span> <span class="badge">155.52</span></td></tr>
+      <tr><td>modulation_format</td><td><span class="badge">NRZI</span> <span class="badge">NRZI_4B5B</span></td></tr>
+      <tr><td>tx_power_min_dbm</td><td><span class="badge">-19.0</span> <span class="badge">-20.0</span> <span class="badge">-22.5</span> <span class="badge">-23.5</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-30.0</span> <span class="badge">-31.0</span> <span class="badge">-31.8</span></td></tr>
+      <tr><td>extinction_ratio_db</td><td><span class="badge">-47.0</span> <span class="badge">-27.0</span></td></tr>
+      <tr><td>los_assert_dbm</td><td><span class="badge">-31.0</span> <span class="badge">-33.0</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 20:06
+</footer>
+
+</div>
+</body>
+</html>

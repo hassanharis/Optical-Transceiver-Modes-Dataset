@@ -1,0 +1,188 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "32G-IR-Dxxx-BR",
+    "32G-IR-D200-BR",
+    "32G-IR-D210-BR",
+    "32G-IR-D220-BR",
+    "32G-IR-D230-BR",
+    "32G-IR-D240-BR",
+    "32G-IR-D250-BR",
+    "32G-IR-D260-BR",
+    "32G-IR-D270-BR",
+    "32G-IR-D280-BR",
+    "32G-IR-D290-BR",
+    "32G-IR-D300-BR",
+    "32G-IR-D310-BR",
+    "32G-IR-D320-BR",
+    "32G-IR-D330-BR",
+    "32G-IR-D340-BR",
+    "32G-IR-D350-BR",
+    "32G-IR-D360-BR",
+    "32G-IR-D370-BR",
+    "32G-IR-D380-BR",
+    "32G-IR-D390-BR",
+    "32G-IR-D400-BR",
+    "32G-IR-D410-BR",
+    "32G-IR-D420-BR",
+    "32G-IR-D430-BR",
+    "32G-IR-D440-BR",
+    "32G-IR-D450-BR",
+    "32G-IR-D460-BR",
+    "32G-IR-D470-BR",
+    "32G-IR-D480-BR",
+    "32G-IR-D490-BR",
+    "32G-IR-D500-BR",
+    "32G-IR-D510-BR",
+    "32G-IR-D520-BR",
+    "32G-IR-D530-BR",
+    "32G-IR-D540-BR",
+    "32G-IR-D550-BR",
+    "32G-IR-D560-BR",
+    "32G-IR-D570-BR",
+    "32G-IR-D580-BR",
+    "32G-IR-D590-BR",
+    "32G-IR-D600-BR"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "ITU-T G.694.1",
+    "SFP28 MSA",
+    "SFF-8402",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1480.0,
+    1529.55
+  ],
+  "wavelength_max_nm": [
+    1561.42,
+    1580.0
+  ],
+  "wavelength_center_nm": [
+    1561.42,
+    1560.61,
+    1559.79,
+    1558.98,
+    1558.17,
+    1557.36,
+    1556.55,
+    1555.75,
+    1554.94,
+    1554.13,
+    1553.33,
+    1552.52,
+    1551.72,
+    1550.92,
+    1550.12,
+    1549.32,
+    1548.51,
+    1547.72,
+    1546.92,
+    1546.12,
+    1545.32,
+    1544.53,
+    1543.73,
+    1542.94,
+    1542.14,
+    1541.35,
+    1540.56,
+    1539.77,
+    1538.98,
+    1538.19,
+    1537.4,
+    1536.61,
+    1535.82,
+    1535.04,
+    1534.25,
+    1533.47,
+    1532.68,
+    1531.9,
+    1531.12,
+    1530.33,
+    1529.55
+  ],
+  "wavelength_band": [
+    "DWDM",
+    "C-band"
+  ],
+  "frequency_min_thz": [
+    192.0
+  ],
+  "frequency_max_thz": [
+    196.0
+  ],
+  "channel_spacing_ghz": [
+    100.0
+  ],
+  "channel_total": [
+    41
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    2.0
+  ],
+  "host_interface_name": [
+    "32GFC",
+    "16GFC",
+    "8GFC"
+  ],
+  "standards_code": [
+    "32GFC",
+    "16GFC",
+    "8GFC",
+    "ITU-T G.694.1"
+  ],
+  "bit_rate_gbps": [
+    28.05,
+    14.025,
+    8.5
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -3.0
+  ],
+  "tx_power_max_dbm": [
+    2.0
+  ],
+  "rx_sensitivity_dbm": [
+    -10.0
+  ],
+  "rx_overload_dbm": [
+    2.0
+  ],
+  "cd_tolerance_ps_nm": [
+    -170.0,
+    170.0
+  ],
+  "fec_type": [
+    "RS_GENERIC"
+  ],
+  "post_fec_ber_target": [
+    1e-06
+  ],
+  "penalties": [],
+  "notes": "Power budget 0–7.0 dB (TECHNICAL DATA). Rx minimum input power and overload specified at 28.05 Gbps (32G FC), BER < 10^-6, PRBS 231-1 (footnote 1); average power (footnote 2). Bridgeable distance up to 10 km without dispersion compensation for 32G FC. Inbuilt 3-mode CDR: high rate 32G FC, low rate 16G FC, bypass 8 GFC. Layer-1 tested and approved by Brocade. Storage temperature -40°C to +85°C. RoHS-6/6 compliant. Optical BER performance note: specified at BER 1E-6 with Reed Solomon RS-FEC. Rate select: RS0/RS1 High/1 → 28.05 Gbps Tx/Rx; Low/0 → 14.025/8.5 Gbps Tx/Rx per LOOPBACK/RATE SELECT table. TECHNICAL DATA header lists SM (2x LC), 100GHz (ITU-T G.694.1).",
+  "provenance_datasheet_sections": [
+    "32G-IR-Dxxx-BR",
+    "SFP28, 8/16/32G FC, DWDM 100GHz, DDM, 7dB, 10km, D200-D600 (41ch)",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "Safety/regulatory compliance:",
+    "RATE SELECT OPERATION",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether power budget 0–7.0 dB maps to a dedicated schema field. Emitter and photodetector types are not stated. Host/media interface IDs in hex/decimal are not provided."
+}

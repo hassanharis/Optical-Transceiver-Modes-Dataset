@@ -1,0 +1,63 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\lq-lw100-er4c.pdf",
+  "page_count": 10,
+  "table_count": 11,
+  "markdown_chars": 13697,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 13
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 9
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 20
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 33
+    },
+    {
+      "page": 8,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 9,
+      "label": null,
+      "rows": 3
+    }
+  ]
+}

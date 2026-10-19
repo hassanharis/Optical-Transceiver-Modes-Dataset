@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:35:04.801894+00:00",
+  "source_file": "C:\\Haris\\datasheets\\l9-sd312m-20ttc5.pdf",
+  "page_count": 6,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 6.066,
+    "extract_atoms": 21.954,
+    "store_run": 0.007,
+    "synthesize_modes": 5.9,
+    "store_modes": 0.003,
+    "total": 33.93
+  }
+}

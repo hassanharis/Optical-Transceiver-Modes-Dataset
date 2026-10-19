@@ -1,0 +1,145 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-XFP-LR-C27",
+      "SO-XFP-LR-C29",
+      "SO-XFP-LR-C31",
+      "SO-XFP-LR-C33",
+      "SO-XFP-LR-C35",
+      "SO-XFP-LR-C37",
+      "SO-XFP-LR-C39",
+      "SO-XFP-LR-C41",
+      "SO-XFP-LR-C43",
+      "SO-XFP-LR-C45",
+      "SO-XFP-LR-C47",
+      "SO-XFP-LR-C49",
+      "SO-XFP-LR-C51",
+      "SO-XFP-LR-C53",
+      "SO-XFP-LR-C55",
+      "SO-XFP-LR-C57",
+      "SO-XFP-LR-C59",
+      "SO-XFP-LR-C61"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1270.0,
+      1271.0
+    ],
+    "wavelength_max_nm": [
+      1610.0,
+      1611.0,
+      1620.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1290.0,
+      1310.0,
+      1330.0,
+      1350.0,
+      1370.0,
+      1390.0,
+      1410.0,
+      1430.0,
+      1450.0,
+      1470.0,
+      1490.0,
+      1510.0,
+      1530.0,
+      1550.0,
+      1570.0,
+      1590.0,
+      1610.0
+    ],
+    "host_interface_name": [
+      "INF-8077i",
+      "XFP-MSA"
+    ],
+    "standards_code": [
+      "IEEE 802.3ae",
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "10GBASE-ER",
+      "10GBASE-EW",
+      "10GbE-LAN",
+      "10GbE-WAN",
+      "OTU2",
+      "OTU2e",
+      "STM-64/OC192",
+      "10G FC",
+      "CPRI Opt 8",
+      "G.694.2"
+    ],
+    "bit_rate_gbps": [
+      9.95,
+      11.1
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "XFP"
+    ],
+    "standards_claimed": [
+      "INF-8077i",
+      "XFP-MSA"
+    ],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      18
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -5.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -5.0
+    ],
+    "tx_power_max_dbm": [
+      0.0
+    ],
+    "rx_sensitivity_dbm": [
+      -15.0
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "cd_tolerance_ps_nm": [
+      200.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -29.0
+    ],
+    "los_deassert_dbm": [
+      -17.0
+    ],
+    "los_hysteresis_db": [
+      1.0
+    ],
+    "penalties": [],
+    "notes": "Overview states 8 CWDM wavelength versions; title and nominal wavelength state 18ch. Transmit wavelength per G.694.2: 1271–1611nm. Receiver wavelength range: 1260nm–1620nm. Power budget 0–10dB. Dispersion penalty max 2dB stated without paired penalized parameter and operating condition for penalty schema. Rx minimum input power footnote: @ 10.3Gbps, BER 1x10-12, PRBS 231-1. Transmitter/receiver power values footnote: average power. IEEE 802.3ae 10GBASE-LR/LW defined only at 1310nm; bridgeable distance reference for other CWDM wavelengths. Storage temperature -40°C to +85°C. Power consumption stated as < 2.5W.",
+    "provenance_datasheet_sections": [
+      "SO-XFP-LR-Cxx",
+      "XFP, 10G Multirate, CWDM, DDM, 10dB, 10km, 1270nm-1610nm (18ch)",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify channel count (8 vs 18). Explicit emitter/photodetector types and channel spacing per G.694.2 would improve extraction. Dispersion penalty could be structured if penalized BER/power and CD condition are documented."
+  }
+}

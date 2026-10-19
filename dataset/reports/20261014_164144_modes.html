@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics</div>
+  <div class="subtitle">XFP &middot; CWDM &middot; [8] channels</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">XFP</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">INF-8077i, XFP-MSA, G.694.2</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">CWDM</div></div>
+      <div class="spec-item"><div class="label">Channel Total</div><div class="value">8</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-5.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">3.5</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">4.0</div></div>
+      <div class="spec-item"><div class="label">RX Sensitivity (dBm)</div><div class="value">-24.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">-10.0</div></div>
+      <div class="spec-item"><div class="label">CD Tolerance (ps/nm)</div><div class="value">1600.0</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-12</div></div>
+      <div class="spec-item"><div class="label">Los Assert Dbm</div><div class="value">-35.0</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-25.0</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">1.0</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Technology CWDM XFP. Transmission media SM (2x LC). Nominal wavelength 1470nm – 1610nm (8ch); overview also states 1270nm to 1610nm (8 CWDM versions). Transmit wavelength 1471 – 1611nm (G.694.2). Receiver wavelength range 1260nm – 1620nm. Typical reach 80km @ 1470~1550nm and 70km @ 1550~1610nm; ordering codes specify 80km (C47–C53) or 70km (C55–C61). Power budget 14 – 24dB. Dispersion penalty max 1dB. Transmitter output power footnote 1) Average power (min listed as 0.0dB, max +4.0dBm). Receiver minimum input power footnote 2) @ 10.3Gbps, BER 1x10-12, PRBS 231-1. DDM Yes. Storage temperature -40°C to +85°C. Note: 10GBASE-ZR/ZW is an industry standard defined only at 1550nm; referred from bridgeable distance perspective for other wavelengths within the CWDM band.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">SO-XFP-ZR-Cxx, XFP, 10G Multirate, CWDM, DDM, 24dB, 80km, 1470nm-1610nm (8ch), OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION, GENERAL DEFINITIONS</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Clarify whether transmitter min output 0.0dB is intended as dBm. Map power budget 14–24dB and title &#x27;24dB&#x27; if a dedicated field is needed. Dispersion penalty max 1dB lacks paired penalized metric and conditions for structured penalty objects.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Wavelength Min</th><th>Wavelength Max</th><th>wavelength_center_nm</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>Reach (km)</th></tr>
+      <tr><td><strong>CWDM 1470nm 80km (SO-XFP-ZR-C47)</strong></td><td>SO-XFP-ZR-C47</td><td>1260.0</td><td>1620.0</td><td>1470.0</td><td>10GBASE-ZR</td><td>9.95</td><td>80.0</td></tr>
+      <tr><td><strong>CWDM 1490nm 80km (SO-XFP-ZR-C49)</strong></td><td>SO-XFP-ZR-C49</td><td>1260.0</td><td>1620.0</td><td>1490.0</td><td>10GBASE-ZR</td><td>9.95</td><td>80.0</td></tr>
+      <tr><td><strong>CWDM 1510nm 80km (SO-XFP-ZR-C51)</strong></td><td>SO-XFP-ZR-C51</td><td>1260.0</td><td>1620.0</td><td>1510.0</td><td>10GBASE-ZR</td><td>9.95</td><td>80.0</td></tr>
+      <tr><td><strong>CWDM 1530nm 80km (SO-XFP-ZR-C53)</strong></td><td>SO-XFP-ZR-C53</td><td>1260.0</td><td>1620.0</td><td>1530.0</td><td>10GBASE-ZR</td><td>9.95</td><td>80.0</td></tr>
+      <tr><td><strong>CWDM 1550nm 70km (SO-XFP-ZR-C55)</strong></td><td>SO-XFP-ZR-C55</td><td>1260.0</td><td>1620.0</td><td>1550.0</td><td>10GBASE-ZR</td><td>9.95</td><td>70.0</td></tr>
+      <tr><td><strong>CWDM 1570nm 70km (SO-XFP-ZR-C57)</strong></td><td>SO-XFP-ZR-C57</td><td>1260.0</td><td>1620.0</td><td>1570.0</td><td>10GBASE-ZR</td><td>9.95</td><td>70.0</td></tr>
+      <tr><td><strong>CWDM 1590nm 70km (SO-XFP-ZR-C59)</strong></td><td>SO-XFP-ZR-C59</td><td>1260.0</td><td>1620.0</td><td>1590.0</td><td>10GBASE-ZR</td><td>9.95</td><td>70.0</td></tr>
+      <tr><td><strong>CWDM 1610nm 70km (SO-XFP-ZR-C61)</strong></td><td>SO-XFP-ZR-C61</td><td>1260.0</td><td>1620.0</td><td>1610.0</td><td>10GBASE-ZR</td><td>9.95</td><td>70.0</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">SO-XFP-ZR-Cxx</span> <span class="badge">SO-XFP-ZR-C47</span> <span class="badge">SO-XFP-ZR-C49</span> <span class="badge">SO-XFP-ZR-C51</span> <span class="badge">SO-XFP-ZR-C53</span> <span class="badge">SO-XFP-ZR-C55</span> <span class="badge">SO-XFP-ZR-C57</span> <span class="badge">SO-XFP-ZR-C59</span> <span class="badge">SO-XFP-ZR-C61</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">1270.0</span> <span class="badge">1260.0</span> <span class="badge">1470.0</span> <span class="badge">1471.0</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">1610.0</span> <span class="badge">1611.0</span> <span class="badge">1620.0</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">1470.0</span> <span class="badge">1490.0</span> <span class="badge">1510.0</span> <span class="badge">1530.0</span> <span class="badge">1550.0</span> <span class="badge">1570.0</span> <span class="badge">1590.0</span> <span class="badge">1610.0</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">10GBASE-ZR</span> <span class="badge">10GBASE-ZW</span> <span class="badge">OTU2</span> <span class="badge">OTU2e</span> <span class="badge">STM-64</span> <span class="badge">OC192</span> <span class="badge">10G FC</span> <span class="badge">CPRI Opt</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">9.95</span> <span class="badge">11.1</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">80.0</span> <span class="badge">70.0</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 16:41
+</footer>
+
+</div>
+</body>
+</html>

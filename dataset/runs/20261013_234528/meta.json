@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:45:28.695754+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lp-rj452g-ti.pdf",
+  "page_count": 6,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 7.257,
+    "extract_atoms": 23.528,
+    "store_run": 0.007,
+    "synthesize_modes": 12.914,
+    "store_modes": 0.005,
+    "total": 43.711
+  }
+}

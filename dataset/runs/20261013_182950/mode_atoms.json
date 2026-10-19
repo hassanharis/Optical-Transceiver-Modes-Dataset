@@ -1,0 +1,99 @@
+{
+  "multi_valued": {
+    "model": [
+      "QT-SFP-0301D",
+      "QT-SFP-0301ID"
+    ],
+    "wavelength_min_nm": [
+      830.0,
+      770.0
+    ],
+    "reach_km": [
+      0.5,
+      0.3,
+      0.55
+    ]
+  },
+  "general": {
+    "vendor": "QSFPTek",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF 50/125µm",
+      "MMF_OM1"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "standards_code": [
+      "1000BASE-SX"
+    ],
+    "bit_rate_gbps": [
+      1.25
+    ],
+    "tx_power_min_dbm": [
+      -9.5
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -18.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -20.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "los_hysteresis_db": [
+      1.0,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "Vendor identified from www.qsfptek.com and sales@qsfptek.com only; no explicit manufacturer name in body text. Title states 550m MMF reach; FEATURES and ordering list 500m (50/125µm MMF) and 300m (62.5/125µm MMF). QT-SFP-0301ID ordering variant: -40°C to +85°C operating case temperature vs QT-SFP-0301D 0°C to +70°C. Receiver sensitivity and overload per Note 3: PRBS 2^7-1 @1250Mbps, BER ≤1×10^-12. Transmitter average output power Note 1: launched into MMF. Supply +3.3V single power supply; power consumption in watts not stated. Absolute maximum storage temperature Ts -40 to +85°C is not normal operating temperature.",
+    "provenance_datasheet_sections": [
+      "1000BASE-SX SFP 850nm 550m DDM MMF Transceiver",
+      "P/N: QT-SFP-0301D",
+      "FEATURES",
+      "APPLICATIONS",
+      "1. Absolute Maximum Ratings",
+      "2. Optical and Electrical Characteristics",
+      "Notes:",
+      "6. Ordering information"
+    ],
+    "suggestions": "Clarify whether reach_km should remain in km when the datasheet only prints meters (500m, 300m, 550m). Consider a dedicated field for BER test pattern and rate tied to rx_sensitivity_dbm."
+  }
+}

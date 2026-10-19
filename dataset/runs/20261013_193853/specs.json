@@ -1,0 +1,162 @@
+{
+  "vendor": "Broadcom",
+  "model": [
+    "AFBR-57G5MZ"
+  ],
+  "form_factor": [
+    "SFP28",
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP",
+    "SFP28",
+    "SFF-8432",
+    "SFF-8419",
+    "SFF-8472",
+    "ANSI Fibre Channel FC-PI-6",
+    "FC-PI-6",
+    "IEC60825-1",
+    "CDRH",
+    "ANSI TIA/EIA604-10",
+    "FOCIS 10A",
+    "RoHS"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF 50/125µm",
+    "MMF_OM2",
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF_OM1"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [
+    "3200-M5-SN-S",
+    "1600-M5-SN-S",
+    "800-M5-SN-S",
+    "3200-M5E-SN-I",
+    "1600-M5E-SN-I",
+    "800-M5E-SN-I",
+    "3200-M5F-SN-I",
+    "1600-M5F-SN-I",
+    "800-M5F-SN-I"
+  ],
+  "media_interface_name": [
+    "3200-M5-SN-S",
+    "1600-M5-SN-S",
+    "800-M5-SN-S",
+    "3200-M5E-SN-I",
+    "1600-M5E-SN-I",
+    "800-M5E-SN-I",
+    "3200-M5F-SN-I",
+    "1600-M5F-SN-I",
+    "800-M5F-SN-I"
+  ],
+  "media_interface_id_hex": [
+    "04"
+  ],
+  "media_interface_id": [
+    4
+  ],
+  "frame": [
+    "64B/66B",
+    "8B/10B"
+  ],
+  "standards_code": [
+    "FC-PI-6",
+    "32GFC",
+    "16GFC",
+    "8GFC",
+    "RS(528,514)",
+    "RS(528, 514)"
+  ],
+  "bit_rate_gbps": [
+    28.05,
+    14.025,
+    8.5
+  ],
+  "modulation_format": [
+    "LINECODE_64B66B",
+    "LINECODE_8B10B"
+  ],
+  "reach_km": [
+    0.02,
+    0.025,
+    0.035,
+    0.05,
+    0.07,
+    0.1,
+    0.125,
+    0.15,
+    0.19
+  ],
+  "tx_power_min_dbm": [
+    -6.2,
+    -7.8,
+    -8.2
+  ],
+  "rx_overload_dbm": [
+    2.0,
+    0.0
+  ],
+  "fec_type": [
+    "RS_528_514"
+  ],
+  "pre_fec_ber_threshold": [
+    1e-06
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -9.1
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Recommended optical/electrical tables (Table 4–6) specified at TC = 0°C to 70°C, VccT/VccR = 3.3V ± 5%; Table 2 case operating temperature max is 85°C. Receiver sensitivity and stressed sensitivity are specified as Input Optical Modulation Amplitude (OMA) in µW (e.g. 95, 89, 76 µW unstressed; 263, 170, 151 µW stressed) rather than dBm. Tx average optical output power table lists minimum Pout only (-6.2, -7.8, -8.2 dBm); max Pout is defined as lesser of Class 1 safety limits or received power max per note. Link distances from EEPROM footnotes: OM4 100m at 32GFC (125m at 16GFC, 190m at 8GFC); OM3 70m at 32GFC (100m at 16GFC, 150m at 8GFC); OM2 20m at 32GFC (35m at 16GFC, 50m at 8GFC); OM1 25m at 8.5 Gb/s. Vertical Eye Closure Penalty (VECP) max 3.13 dB @ 28.05 Gb/s, 2.56 dB @ 14.025 Gb/s; TWDP max 4.3 dB @ 8.5 Gb/s. Stressed receiver ISI (vertical eye closure penalty) min 3.1 dB @ 28.05 Gb/s, 2.5 dB @ 14.025 Gb/s, 3.1 dB @ 8.5 Gb/s. 32GFC requires FEC RS(528,514); 16GFC and 8GFC not compatible with FEC per FC-PI-5.",
+  "provenance_datasheet_sections": [
+    "AFBR-57G5MZ",
+    "Description",
+    "Features",
+    "Transmitter Section",
+    "Receiver Section",
+    "Recommended Operating Conditions",
+    "Electrical and Optical Characteristics",
+    "Rate Select Control Inputs",
+    "Table 7  Rate Select Definitions[a]",
+    "Transceiver Characteristics",
+    "EEPROM Serial ID Memory Contents",
+    "Customer Manufacturing Processes"
+  ],
+  "suggestions": "Add fields for receiver sensitivity in µW OMA and modulated optical output power (Tx OMA) in µW, which are primary optical specs in FC-PI-6 SFP datasheets. Consider reach_m as many Fibre Channel modules specify distance in meters per fiber type and rate."
+}

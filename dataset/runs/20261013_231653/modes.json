@@ -1,0 +1,124 @@
+{
+  "modes": [
+    {
+      "label": "Ch17 1563.86nm 80km 8.5Gb/s",
+      "model": "FTLX3871DCC17",
+      "wavelength_center_nm": 1563.86,
+      "power_consumption_w": 1.6,
+      "standards_code": "ITU-T G.698.1 DS100S1-2Dz(C)",
+      "bit_rate_gbps": 8.5,
+      "rx_sensitivity_dbm": -21.0,
+      "cd_tolerance_ps_nm": 1450.0,
+      "post_fec_ber_target": 1e-12,
+      "los_assert_dbm": -37.0
+    },
+    {
+      "label": "Ch17 1563.86nm 80km 9.95Gb/s",
+      "model": "FTLX3871DCC17",
+      "wavelength_center_nm": 1563.86,
+      "power_consumption_w": 1.6,
+      "standards_code": "ITU-T G.698.1 DS100S1-2Dz(C)",
+      "bit_rate_gbps": 9.95,
+      "rx_sensitivity_dbm": -21.0,
+      "cd_tolerance_ps_nm": 1450.0,
+      "post_fec_ber_target": 1e-12,
+      "los_assert_dbm": -37.0
+    },
+    {
+      "label": "Ch17 1563.86nm 80km 10.7Gb/s",
+      "model": "FTLX3871DCC17",
+      "wavelength_center_nm": 1563.86,
+      "power_consumption_w": 1.6,
+      "standards_code": "ITU-T G.698.1 DS100S1-2Dz(C)",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -21.0,
+      "cd_tolerance_ps_nm": 1450.0,
+      "post_fec_ber_target": 1e-12,
+      "los_assert_dbm": -37.0
+    },
+    {
+      "label": "Ch17 1563.86nm 80km 11.1Gb/s",
+      "model": "FTLX3871DCC17",
+      "wavelength_center_nm": 1563.86,
+      "power_consumption_w": 1.6,
+      "standards_code": "10G Ethernet ZR",
+      "bit_rate_gbps": 11.1,
+      "rx_sensitivity_dbm": -24.0,
+      "cd_tolerance_ps_nm": 1300.0,
+      "post_fec_ber_target": 0.0001,
+      "los_assert_dbm": -37.0
+    },
+    {
+      "label": "Ch17 1563.86nm 80km 11.3Gb/s",
+      "model": "FTLX3871DCC17",
+      "wavelength_center_nm": 1563.86,
+      "power_consumption_w": 1.6,
+      "standards_code": "10G Ethernet ZR",
+      "bit_rate_gbps": 11.3,
+      "rx_sensitivity_dbm": -24.0,
+      "cd_tolerance_ps_nm": 1100.0,
+      "post_fec_ber_target": 0.0001,
+      "los_assert_dbm": -37.0
+    },
+    {
+      "label": "Ch18 1563.05nm 80km 8.5Gb/s",
+      "model": "FTLX3871DCC18",
+      "wavelength_center_nm": 1563.05,
+      "power_consumption_w": 1.6,
+      "standards_code": "ITU-T G.698.1 DS100S1-2Dz(C)",
+      "bit_rate_gbps": 8.5,
+      "rx_sensitivity_dbm": -21.0,
+      "cd_tolerance_ps_nm": 1450.0,
+      "post_fec_ber_target": 1e-12,
+      "los_assert_dbm": -37.0
+    },
+    {
+      "label": "Ch18 1563.05nm 80km 9.95Gb/s",
+      "model": "FTLX3871DCC18",
+      "wavelength_center_nm": 1563.05,
+      "power_consumption_w": 1.6,
+      "standards_code": "ITU-T G.698.1 DS100S1-2Dz(C)",
+      "bit_rate_gbps": 9.95,
+      "rx_sensitivity_dbm": -21.0,
+      "cd_tolerance_ps_nm": 1450.0,
+      "post_fec_ber_target": 1e-12,
+      "los_assert_dbm": -37.0
+    },
+    {
+      "label": "Ch18 1563.05nm 80km 10.7Gb/s",
+      "model": "FTLX3871DCC18",
+      "wavelength_center_nm": 1563.05,
+      "power_consumption_w": 1.6,
+      "standards_code": "ITU-T G.698.1 DS100S1-2Dz(C)",
+      "bit_rate_gbps": 10.7,
+      "rx_sensitivity_dbm": -21.0,
+      "cd_tolerance_ps_nm": 1450.0,
+      "post_fec_ber_target": 1e-12,
+      "los_assert_dbm": -37.0
+    },
+    {
+      "label": "Ch18 1563.05nm 80km 11.1Gb/s",
+      "model": "FTLX3871DCC18",
+      "wavelength_center_nm": 1563.05,
+      "power_consumption_w": 1.6,
+      "standards_code": "10G Ethernet ZR",
+      "bit_rate_gbps": 11.1,
+      "rx_sensitivity_dbm": -24.0,
+      "cd_tolerance_ps_nm": 1300.0,
+      "post_fec_ber_target": 0.0001,
+      "los_assert_dbm": -37.0
+    },
+    {
+      "label": "Ch18 1563.05nm 80km 11.3Gb/s",
+      "model": "FTLX3871DCC18",
+      "wavelength_center_nm": 1563.05,
+      "power_consumption_w": 1.6,
+      "standards_code": "10G Ethernet ZR",
+      "bit_rate_gbps": 11.3,
+      "rx_sensitivity_dbm": -24.0,
+      "cd_tolerance_ps_nm": 1100.0,
+      "post_fec_ber_target": 0.0001,
+      "los_assert_dbm": -37.0
+    }
+  ]
+}

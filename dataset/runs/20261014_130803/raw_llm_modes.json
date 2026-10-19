@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-100BASE-EXD 100Base-EXD (TX)",
+      "model": "SO-SFP-100BASE-EXD",
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "100Base-EXD"
+    },
+    {
+      "label": "SO-SFP-100Base-EXD 100Base-EXD (RX)",
+      "model": "SO-SFP-100Base-EXD",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "100Base-EXD"
+    },
+    {
+      "label": "FE",
+      "model": "SO-SFP-100BASE-EXD",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "FE"
+    },
+    {
+      "label": "STM1/OC3",
+      "model": "SO-SFP-100BASE-EXD",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "STM1/OC3"
+    }
+  ]
+}

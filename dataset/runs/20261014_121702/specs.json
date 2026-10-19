@@ -1,0 +1,156 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-QSFP28-ER4-OTU4"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "SFF-8636",
+    "100G 4WDM-40"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1294.53,
+    1299.02,
+    1303.54,
+    1308.09
+  ],
+  "wavelength_max_nm": [
+    1296.59,
+    1301.09,
+    1305.63,
+    1310.19
+  ],
+  "wavelength_center_nm": [
+    1295.56,
+    1300.05,
+    1304.58,
+    1309.14,
+    1296.0,
+    1300.0,
+    1305.0,
+    1309.0
+  ],
+  "wavelength_band": [
+    "grey",
+    "LAN-WDM"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    5.0
+  ],
+  "host_interface_name": [
+    "QSFP28 MSA",
+    "SFF-8636"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [
+    "100G 4WDM-40"
+  ],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "100G 4WDM-40",
+    "100GbE",
+    "OTU4",
+    "IEEE802.3bj"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    103.12,
+    111.81,
+    25.78,
+    27.95
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -0.3,
+    0.6
+  ],
+  "tx_power_max_dbm": [
+    12.5,
+    11.1,
+    6.5,
+    5.1
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -18.3,
+    -18.9
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -3.5,
+    -4.9
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [
+    "RS_528_514"
+  ],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [
+    5e-05,
+    1e-06
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -32.0
+  ],
+  "los_deassert_dbm": [
+    -22.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Subtitle lists 1296/1300/1305/1309 nm and 18 dB power budget. Power budget table: 10–18 dB (100GbE) and 10–19.5 dB (100GbE) as printed; optical path penalty 3 dB (100GbE) and 1.5 dB (OTU4) without paired penalized RX/OSNR values. TX/RX powers footnote 3): average power. Min input power -18.3 dBm footnote 4) at pre-FEC BER 5x10-5 (100GbE); -18.9 dBm footnote 5) at pre-FEC BER 1x10-6 (OTU4). Overload likewise 4)/5). FEC required in host per IEEE802.3bj; below optical parameters yield BER 5x10-5, FEC yields better than 1x10-12. Power consumption < 5 W. Storage temperature -40°C to +85°C. Transmission media SM (2x LC).",
+  "provenance_datasheet_sections": [
+    "SO-QSFP28-ER4-OTU4",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": ""
+}

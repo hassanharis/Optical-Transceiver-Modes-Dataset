@@ -1,0 +1,121 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-TQSFP-DD-4CC-ZR"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "OIF 400ZR",
+    "IEEE 802.3bs",
+    "400GBASE-ZR",
+    "CMIS4.0",
+    "QSFP-DD MSA",
+    "G.694.1"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_band": [
+    "C-band",
+    "ITU C-Band",
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    191.28
+  ],
+  "frequency_max_thz": [
+    196.12
+  ],
+  "channel_spacing_ghz": [
+    100.0,
+    75.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    20.0
+  ],
+  "host_interface_name": [
+    "400GAUI-8"
+  ],
+  "media_interface_name": [
+    "400GBASE-ZR"
+  ],
+  "frame": [
+    "400GAUI-8",
+    "4x 100GbE",
+    "8 lane 56G PAM-4"
+  ],
+  "standards_code": [
+    "400GBASE-ZR",
+    "OIF 400ZR",
+    "OIF-ZR",
+    "Application Code 0x01",
+    "Application Code 0x02"
+  ],
+  "baud_rate_gbaud": [
+    60.0
+  ],
+  "bit_rate_gbps": [
+    400.0,
+    100.0
+  ],
+  "modulation_format": [
+    "QAM_16",
+    "PAM4"
+  ],
+  "reach_km": [
+    120.0
+  ],
+  "tx_power_min_dbm": [
+    -10.0
+  ],
+  "tx_power_max_dbm": [
+    -6.0
+  ],
+  "rx_sensitivity_dbm": [
+    -20.0,
+    -12.0
+  ],
+  "rx_osnr_tolerance_db_max": [
+    26.0
+  ],
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "cd_tolerance_ps_nm": [
+    2400.0
+  ],
+  "pmd_tolerance_ps": [
+    10.0
+  ],
+  "fec_type": [
+    "CFEC"
+  ],
+  "pre_fec_ber_threshold": [
+    0.0125
+  ],
+  "los_assert_dbm": [
+    -28.0
+  ],
+  "number_of_lanes": [
+    8,
+    4
+  ],
+  "penalties": [],
+  "notes": "QSFP-DD type 2. Title line: D9128-D9612. Nominal wavelengths row includes '6.25GHz' adjacent to 191.28-196.12 THz (Tunable). Power consumption stated as '< 20 W (Class 8)'. Storage temperature -40°C to +85°C. Latency 8µs. Footnote 1: Receiver sensitivity at unamplified configurations (-20.0 dBm). Footnote 2: Signal power of the channel at the OSNR performance value (-12.0 dBm). Footnote 3: Input power needed to achieve post FEC BER (-12.0 dBm). Footnote 4: OSNR tolerance at CFEC threshold (26 dB/0.1nm). Footnote 5: Optical path OSNR penalty tolerance max 0.5 dB over OSNR tolerance due to reflections and dispersion. Footnote 6: PMD tolerance min 10 ps with <0.5 dB penalty to OSNR sensitivity. Footnote 7: Rx_LOS assert set for 400G modes; configurable per module. DDM Yes. 75 GHz grid optional.",
+  "provenance_datasheet_sections": [
+    "SO-TQSFP-DD-4CC-ZR",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

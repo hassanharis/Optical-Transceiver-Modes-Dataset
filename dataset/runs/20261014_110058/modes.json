@@ -1,0 +1,664 @@
+{
+  "modes": [
+    {
+      "label": "400G OIF 400ZR CFEC app 0x01",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 23.1,
+      "host_interface_name": "400GAUI-8",
+      "host_interface_id_hex": "0x01",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OIF 400ZR, app code 0x01",
+      "baud_rate_gbaud": 59.8,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -20.0,
+      "rx_osnr_db": 26.0,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 4000.0,
+      "fec_type": "CFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 26.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 27.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -15.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1"
+        }
+      ]
+    },
+    {
+      "label": "400G OIF 400ZR CFEC app 0x02",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 23.1,
+      "host_interface_name": "400GAUI-8",
+      "host_interface_id_hex": "0x02",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OIF 400ZR, app code 0x02",
+      "baud_rate_gbaud": 59.8,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -20.0,
+      "rx_osnr_db": 26.0,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 4000.0,
+      "fec_type": "CFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 26.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 27.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -15.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2"
+        }
+      ]
+    },
+    {
+      "label": "400G OpenZR+ oFEC 1x400GAUI-8",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 23.1,
+      "host_interface_name": "400GAUI-8",
+      "host_interface_id_hex": "0x01",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.4,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.9,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.4,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3"
+        }
+      ]
+    },
+    {
+      "label": "400G OpenZR+ oFEC 2x200GAUI-4",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 23.1,
+      "host_interface_name": "200GAUI-4",
+      "host_interface_id_hex": "0x01",
+      "frame": "2x 200GAUI-4 (2x 200G)",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.4,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 4,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.9,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=4"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.4,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=4"
+        }
+      ]
+    },
+    {
+      "label": "400G OpenZR+ oFEC 4x100GAUI-2",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 23.1,
+      "host_interface_name": "100GAUI-2",
+      "host_interface_id_hex": "0x01",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.4,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.9,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=5"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.4,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=5"
+        }
+      ]
+    },
+    {
+      "label": "400G OpenZR+ Enhanced oFEC 1x400GAUI-8",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 23.1,
+      "host_interface_name": "400GAUI-8",
+      "host_interface_id_hex": "0x01",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OpenZR+ MSA, Enhanced",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.1,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.6,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=6"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.1,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=6"
+        }
+      ]
+    },
+    {
+      "label": "400G OpenZR+ Enhanced oFEC 2x200GAUI-4",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 23.1,
+      "host_interface_name": "200GAUI-4",
+      "host_interface_id_hex": "0x01",
+      "frame": "2x 200GAUI-4 (2x 200G)",
+      "standards_code": "OpenZR+ MSA, Enhanced",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.1,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 4,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.6,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=7"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.1,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=7"
+        }
+      ]
+    },
+    {
+      "label": "400G OpenZR+ Enhanced oFEC 4x100GAUI-2",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 23.1,
+      "host_interface_name": "100GAUI-2",
+      "host_interface_id_hex": "0x01",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA, Enhanced",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.1,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.6,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=8"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.1,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=8"
+        }
+      ]
+    },
+    {
+      "label": "200G OpenZR+ oFEC DP-QPSK",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 21.9,
+      "host_interface_name": "100GAUI-2",
+      "host_interface_id_hex": "0x01",
+      "frame": "2x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QPSK-DP",
+      "rx_sensitivity_dbm": -29.0,
+      "rx_osnr_db": 14.8,
+      "rx_overload_dbm": 15.0,
+      "cd_tolerance_ps_nm": 50000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 15.3,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -20.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=9"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 15.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -22.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=9"
+        }
+      ]
+    },
+    {
+      "label": "100G OpenZR+ oFEC 1x100GAUI-2",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 18.0,
+      "host_interface_name": "100GAUI-2",
+      "host_interface_id_hex": "0x01",
+      "frame": "1x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 30.1,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QPSK-DP",
+      "rx_sensitivity_dbm": -32.0,
+      "rx_osnr_db": 11.5,
+      "rx_overload_dbm": 15.0,
+      "cd_tolerance_ps_nm": 80000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 12.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=10"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 12.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=10"
+        }
+      ]
+    },
+    {
+      "label": "300G OpenZR+ oFEC DP-8QAM",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 23.4,
+      "host_interface_name": "100GAUI-2",
+      "host_interface_id_hex": "0x01",
+      "frame": "3x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_8-DP",
+      "rx_sensitivity_dbm": -22.0,
+      "rx_osnr_db": 20.3,
+      "rx_overload_dbm": 15.0,
+      "cd_tolerance_ps_nm": 50000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 20.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -17.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=11"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 20.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -19.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=11"
+        }
+      ]
+    },
+    {
+      "label": "300G OpenZR+ Enhanced oFEC DP-8QAM",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 23.4,
+      "host_interface_name": "100GAUI-2",
+      "host_interface_id_hex": "0x01",
+      "frame": "3x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA, Enhanced",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_8-DP",
+      "rx_sensitivity_dbm": -23.0,
+      "rx_osnr_db": 19.5,
+      "rx_overload_dbm": 15.0,
+      "cd_tolerance_ps_nm": 50000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 20.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -17.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=12"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 21.3,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -19.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=12"
+        }
+      ]
+    },
+    {
+      "label": "400G OIF400ZR CFEC 4x100GAUI-2",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 23.1,
+      "host_interface_name": "100GAUI-2",
+      "host_interface_id_hex": "0x01",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "OIF400ZR app code 0x01",
+      "baud_rate_gbaud": 59.8,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -20.0,
+      "rx_osnr_db": 26.0,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 4000.0,
+      "fec_type": "CFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 26.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=13"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 27.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -15.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=13"
+        }
+      ]
+    },
+    {
+      "label": "200G OpenZR+ Enhanced oFEC DP-16QAM",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 21.9,
+      "host_interface_name": "100GAUI-2",
+      "host_interface_id_hex": "0x01",
+      "frame": "2x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA, Enhanced",
+      "baud_rate_gbaud": 30.1,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QAM_16-DP",
+      "rx_sensitivity_dbm": -24.0,
+      "rx_osnr_db": 19.3,
+      "rx_overload_dbm": 15.0,
+      "cd_tolerance_ps_nm": 21000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 19.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -18.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=14"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 20.3,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -20.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=14"
+        }
+      ]
+    },
+    {
+      "label": "100G OpenZR+ oFEC CAUI-4 w/o FEC",
+      "channel_spacing_ghz": 6.25,
+      "power_consumption_w": 18.0,
+      "host_interface_name": "CAUI-4 w/o FEC",
+      "host_interface_id_hex": "0x01",
+      "frame": "1x CAUI-4 w/o FEC",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 30.1,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QPSK-DP",
+      "rx_sensitivity_dbm": -32.0,
+      "rx_osnr_db": 11.5,
+      "rx_overload_dbm": 15.0,
+      "cd_tolerance_ps_nm": 80000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 12.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=15"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 12.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=15"
+        }
+      ]
+    }
+  ]
+}

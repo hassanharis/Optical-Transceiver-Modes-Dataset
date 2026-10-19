@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T09:51:45.798646+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Naddod qdd-400g-zr-datasheet-010345.pdf",
+  "page_count": 18,
+  "table_count": 20,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 32.63,
+    "extract_atoms": 71.049,
+    "store_run": 0.01,
+    "synthesize_modes": 57.981,
+    "store_modes": 0.007,
+    "total": 161.677
+  }
+}

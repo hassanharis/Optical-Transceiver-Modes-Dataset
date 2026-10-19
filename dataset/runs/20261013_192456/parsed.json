@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\32g-ir-dxxx-br.pdf",
+  "page_count": 3,
+  "table_count": 4,
+  "markdown_chars": 7587,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 16
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

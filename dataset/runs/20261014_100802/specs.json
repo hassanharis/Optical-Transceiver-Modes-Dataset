@@ -1,0 +1,119 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "OP13LD8-005D-3"
+  ],
+  "form_factor": [
+    "OSFP"
+  ],
+  "standards_claimed": [
+    "OSFP MSA rev5.x",
+    "OIF-CMIS rev5.x",
+    "OIF-CEI-5.2",
+    "100G-DR-LPO",
+    "IEEE802.3cu"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "channel_total": [
+    8
+  ],
+  "mounting_type": [
+    "pluggable_hot_electrical"
+  ],
+  "connector_type": [
+    "MPO-16/APC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    7.5,
+    8.5
+  ],
+  "host_interface_name": [
+    "CEI-112G-LINEAR-PAM4"
+  ],
+  "media_interface_name": [
+    "100G-DR-LPO"
+  ],
+  "standards_code": [
+    "100G-DR-LPO",
+    "LPO MSA",
+    "DR8",
+    "IEEE802.3cu"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    106.25,
+    800.0
+  ],
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.5
+  ],
+  "tx_power_min_dbm": [
+    -2.9
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -5.1
+  ],
+  "post_fec_ber_target": [
+    0.00024
+  ],
+  "extinction_ratio_db": [
+    2.5
+  ],
+  "channel_insertion_loss_db": [
+    4.0
+  ],
+  "receiver_reflectance_db": [
+    -26.0
+  ],
+  "transmitter_reflectance_db": [
+    -26.0
+  ],
+  "optical_extinction_ratio_db": [
+    2.5
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "penalties": [],
+  "notes": "Forward error correction (FEC) is required to be implemented by the host. LPO module does not have a CDR. Receiver sensitivity (OMA) -5.1 dBm at TECQ≤1.4 dB per lane; alternate row gives -6.5+TECQ dBm for 1.4 dB<TECQ≤3.4 dB per lane. Sensitivity measured with PRBS31Q test pattern, BER@2.4*10^-4. Wavelength assignment 1304.5–1317.5 nm suitable for all channels. Optical receiver damage threshold 5.0 dBm per lane. Power dissipation stated as <8.5 W (Typical 7.5 W). Link power budget typ. 7.8 dB for maximum TDECQ; allocation for penalties (for maximum TDECQ) 3.8 dB.",
+  "provenance_datasheet_sections": [
+    "800G LPO OSFP DR8 Transceiver",
+    "PRODUCT FEATURES",
+    "REFERENCE STANDARD",
+    "APPLICATIONS",
+    "I. Absolute Maximum Ratings",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "IV. Link Power Budget",
+    "VI. Host - Transceiver Interface Block Diagram"
+  ],
+  "suggestions": "Clarify whether vendor branding is Amphenol (URL) vs XGIGA (footer). RX sensitivity second row is TECQ-dependent formula, not a fixed scalar. Host/media MSA interface IDs in hex/decimal not provided on this sheet."
+}

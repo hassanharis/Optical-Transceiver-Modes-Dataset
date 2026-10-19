@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "25GBASE-SR 100m OM4",
+      "media_interface_name": "25GBASE-SR",
+      "standards_code": "25GBASE-SR",
+      "baud_rate_gbaud": 25.78125,
+      "bit_rate_gbps": 25.78125,
+      "reach_km": 0.1,
+      "tx_power_max_dbm": 2.4,
+      "rx_sensitivity_dbm": -5.2,
+      "extinction_ratio_db": 2.0
+    },
+    {
+      "label": "25GBASE-SR 70m OM3",
+      "media_interface_name": "25GBASE-SR",
+      "standards_code": "25GBASE-SR",
+      "baud_rate_gbaud": 25.78125,
+      "bit_rate_gbps": 25.78125,
+      "reach_km": 0.07,
+      "tx_power_max_dbm": 2.4,
+      "rx_sensitivity_dbm": -5.2,
+      "extinction_ratio_db": 2.0
+    },
+    {
+      "label": "10GBASE-SR (rate select low)",
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "10GBASE-SR",
+      "baud_rate_gbaud": 10.3125,
+      "bit_rate_gbps": 10.3125,
+      "tx_power_max_dbm": 0.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0
+    }
+  ]
+}

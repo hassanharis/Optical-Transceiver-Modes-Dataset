@@ -1,0 +1,99 @@
+{
+  "multi_valued": {
+    "model": [
+      "LS-BL553101-10C",
+      "LS-BL553101-10I"
+    ],
+    "wavelength_min_nm": [
+      1530.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1570.0,
+      1360.0
+    ],
+    "wavelength_center_nm": [
+      1550.0,
+      1310.0
+    ],
+    "bit_rate_gbps": [
+      125.0,
+      155.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -14.0
+    ],
+    "tx_power_max_dbm": [
+      -8.0
+    ],
+    "rx_sensitivity_dbm": [
+      -32.0
+    ],
+    "rx_overload_dbm": [
+      -8.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -33.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "1550nm TX / 1310nm RX bidirectional wavelengths. Optical power launched into SMF (Note 1). Receiver sensitivity and overload measured with PRBS 2^23-1 @ 155Mbps, BER ≤1×10^-12 (Note 3). Operating case temperature variants: Standard 0 to +70°C (LS-BL553101-10C), Extended -20 to +80°C, Industrial -40 to +85°C (LS-BL553101-10I). Supply current Icc max 300 mA at 3.135–3.465 V; power in Watts not stated. Spectral Width (RMS) Δλ max 3 nm on transmitter. SMSR not specified in table (dashes). Diagnostic RX power range -32 to -6 dBm; TX -14 to -8 dBm.",
+    "provenance_datasheet_sections": [
+      "LS-BL553101-10C",
+      "Product Features",
+      "Applications",
+      "Description",
+      "Recommended Operating Conditions",
+      "Optical and Electrical Characteristics",
+      "Notes:",
+      "Diagnostics",
+      "Ordering information"
+    ],
+    "suggestions": "Distinguish TX vs RX wavelength fields in schema for WDM/bidirectional SFPs. Map Icc (mA) and Vcc to optional supply_power_mw if W is not printed."
+  }
+}

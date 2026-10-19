@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:01:31.961108+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ATGBICS 1442120G1 AdTran Compatible SFP 1000Base-BX-D.pdf",
+  "page_count": 2,
+  "table_count": 1,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 1.759,
+    "extract_atoms": 19.928,
+    "store_run": 0.009,
+    "synthesize_modes": 21.685,
+    "store_modes": 0.002,
+    "total": 43.383
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "modes": [
+    {
+      "label": "622M STM-4 1310nm 20km (family)",
+      "model": "OPT622-31203XXR",
+      "form_factor": "1x9",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "SONET OC-12"
+    },
+    {
+      "label": "622M STM-4 SC commercial",
+      "model": "OPT622-31203SCR",
+      "form_factor": "1x9",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "STM-4"
+    },
+    {
+      "label": "622M STM-4 ST commercial",
+      "model": "OPT622-31203TCR",
+      "form_factor": "1x9",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "STM-4"
+    },
+    {
+      "label": "622M STM-4 FC commercial",
+      "model": "OPT622-31203FCR",
+      "form_factor": "1x9",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "STM-4"
+    },
+    {
+      "label": "622M STM-4 SC industrial",
+      "model": "OPT622-31203STR",
+      "form_factor": "1x9",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "STM-4"
+    },
+    {
+      "label": "622M STM-4 ST industrial",
+      "model": "OPT622-31203TTR",
+      "form_factor": "1x9",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "STM-4"
+    },
+    {
+      "label": "622M STM-4 FC industrial",
+      "model": "OPT622-31203FTR",
+      "form_factor": "1x9",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "STM-4"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"TQ2023-S31C-SO 100GbE 100G-ER1 40km\",\n      \"standards_code\": \"100G-ER1\",\n      \"bit_rate_gbps\": 103.12,\n      \"rx_sensitivity_dbm\": -13.8,\n      \"extinction_ratio_db\": 5.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

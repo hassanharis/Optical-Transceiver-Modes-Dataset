@@ -1,0 +1,161 @@
+{
+  "vendor": "Broadcom",
+  "model": [
+    "AFBR-57H5AMZ"
+  ],
+  "form_factor": [
+    "SFP56",
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8472",
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8419",
+    "SFF-8024",
+    "FC-PI-7",
+    "FC-PI-6",
+    "FC-PI-5",
+    "ANSI Fibre Channel",
+    "ANSI TIA/EIA604-10",
+    "FOCIS 10A",
+    "IEC60825-1",
+    "RoHS"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF 50/125µm",
+    "MMF_OM2",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    1.4,
+    2.0
+  ],
+  "standards_code": [
+    "64GFC",
+    "32GFC",
+    "16GFC",
+    "FC-PI-7",
+    "FC-PI-6",
+    "FC-PI-5"
+  ],
+  "baud_rate_gbaud": [
+    28.9,
+    28.05,
+    14.025
+  ],
+  "bit_rate_gbps": [
+    57.8,
+    28.05,
+    14.025
+  ],
+  "modulation_format": [
+    "PAM4",
+    "NRZ"
+  ],
+  "tx_power_min_dbm": [
+    -7.5,
+    -6.2,
+    -7.8,
+    -4.5,
+    -3.2,
+    -4.8
+  ],
+  "tx_power_max_dbm": [
+    4.0,
+    2.0,
+    3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -7.0,
+    -10.2,
+    -10.5,
+    -2.4,
+    -5.7,
+    -7.7
+  ],
+  "rx_overload_dbm": [
+    4.0,
+    5.0,
+    2.0,
+    0.0,
+    3.0
+  ],
+  "fec_type": [
+    "KP4",
+    "RS_528_514",
+    "RS_GENERIC"
+  ],
+  "pre_fec_ber_threshold": [
+    0.000109,
+    1e-06,
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -7.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [
+    34.0
+  ],
+  "penalties": [],
+  "notes": "Multirate 64GFC (PAM4, RS(544,514)), 32GFC (NRZ, RS(528,514)), 16GFC (NRZ, no FEC). Optical power limits differ by mode and parameter (average launch vs OMAouter). EEPROM Table 20 documents 100m reach on 50/125µm OM4 and 70m on OM3 at 64GFC (stated in meters, not km). LOS deassert is specified as max –7 dBm avg (64GFC). Receiver Return Loss min 12 dB (64GFC). Stressed receiver tests reference SECQ/TDECQ/VECP up to 5.5 dB (64GFC) or 3.13 dB (32GFC) or 2.56 dB (16GFC) but not in penalties schema format.",
+  "provenance_datasheet_sections": [
+    "Description",
+    "Features",
+    "Transmitter Section",
+    "Receiver Section",
+    "Table 4:  Recommended Operating Conditions",
+    "Table 5:  Transceiver Electrical Characteristics",
+    "Table 6:  High Speed Electrical Module Input Characteristics",
+    "Table 10:  64GFC Mode Optical Transmitter Characteristics",
+    "Table 11:  64GFC Mode Optical Receiver Characteristics (per PC-PI-7)",
+    "Table 12:  32GFC Mode Optical Transmitter Characteristics",
+    "Table 13:  32GFC Mode Optical Receiver Characteristic",
+    "Table 14:  16GFC Mode Optical Transmitter Characteristics",
+    "Table 15:  16GFC Mode Optical Receiver Characteristics",
+    "Table 20:  EEPROM Serial ID Memory Contents – Base SFP Memory (Address A0h)",
+    "Rate Select Control",
+    "64GFC Rate Select Control/Status Register"
+  ],
+  "suggestions": "Add reach_m or allow EEPROM SFF-8472 distance codes; map SFP+/SFP56 in form_factor enum; separate tx/rx lists by rate mode in schema."
+}

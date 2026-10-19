@@ -1,0 +1,133 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTL410QD3C"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "QSFP+ MSA",
+    "IEEE 802.3ba 40GBASE-SR4",
+    "IEEE 802.3ae 10GBASE-SR",
+    "SFF-8436",
+    "SFF-8636",
+    "RoHS Directive 2011/65/EU",
+    "IEC 60825-1"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.2
+  ],
+  "host_interface_name": [
+    "XLPPI",
+    "QSFP+ MSA",
+    "I2C"
+  ],
+  "media_interface_name": [
+    "40GBASE-SR4",
+    "10GBASE-SR"
+  ],
+  "standards_code": [
+    "40GBASE-SR4",
+    "10GBASE-SR",
+    "40G Ethernet",
+    "10GBASE-SR Ethernet"
+  ],
+  "baud_rate_gbaud": [
+    1.0,
+    10.3125,
+    10.5
+  ],
+  "bit_rate_gbps": [
+    42.0,
+    10.5,
+    1.062,
+    10.5
+  ],
+  "reach_km": [
+    0.3,
+    0.4
+  ],
+  "tx_power_min_dbm": [
+    -7.5
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -11.1,
+    -7.5
+  ],
+  "rx_overload_dbm": [
+    2.4
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "receiver_reflectance_db": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Bit Rate per Lane 1062–10500 Mb/sec; BER tested with PRBS 2^31-1. Link distance 300 m (OM3) and 400 m (OM4) per IEEE 802.3ba. Max launch power 0 dBm noted within guardband for 10GBASE-SR SFP+ overload. TDP per lane TDPSR4 max 3.5 dB (up to 100 m OM3 / 150 m OM4); TDPSR max 3.9 dB (up to 300 m OM3 / 400 m OM4). Stressed Receiver Sensitivity (OMA) DPx max 4.0 dB. Vertical eye closure penalty per lane max 3.5 dB. Damage threshold per lane 3.4 dBm (absolute max and receiver). Average launch power OFF transmitter per lane max -30 dBm. Multirate 1.06 Gb/s to 10.5 Gb/s per channel stated in features.",
+  "provenance_datasheet_sections": [
+    "FTL410QD3C",
+    "40BASE-SR4/10GBASE-SR 300m QSFP+ Gen3 Optical Transceiver Module",
+    "FEATURES",
+    "II. General Product Characteristics",
+    "III. Absolute Maximum Ratings",
+    "IV. Electrical Characteristics  (TOP = 0 to 70°C, VCC = 3.1 to 3.45 Volts)",
+    "V. Optical Characteristics (TOP = 0 to 70°C, VCC = 3.1 to 3.45 Volts)",
+    "VI. Memory Map and Control Registers",
+    "VII. Environmental Specifications",
+    "IX. Mechanical Specifications",
+    "X. References"
+  ],
+  "suggestions": "Clarify whether reach_km should store literal meter values (300, 400) when only meters appear in the source. photodetector_type and modulation_format are absent from this SR4 VCSEL MMF datasheet."
+}

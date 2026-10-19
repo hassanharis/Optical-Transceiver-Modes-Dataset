@@ -1,0 +1,60 @@
+{
+  "modes": [
+    {
+      "label": "LS-BL293025-60C Tx1295/Rx1309 60km Commercial",
+      "model": "LS-BL293025-60C",
+      "wavelength_min_nm": 1281.0,
+      "wavelength_max_nm": 1297.0,
+      "wavelength_center_nm": 1295.0,
+      "power_consumption_w": 1.6,
+      "host_interface_name": "CEI-28G-VSR",
+      "standards_code": "IEEE 802.3cc",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 60.0,
+      "tx_power_min_dbm": 1.0,
+      "rx_sensitivity_dbm": -21.0
+    },
+    {
+      "label": "LS-BL293025-60I Tx1295/Rx1309 60km Industrial",
+      "model": "LS-BL293025-60I",
+      "wavelength_min_nm": 1281.0,
+      "wavelength_max_nm": 1297.0,
+      "wavelength_center_nm": 1295.0,
+      "power_consumption_w": 1.8,
+      "host_interface_name": "CEI-28G-VSR",
+      "standards_code": "IEEE 802.3cc",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 60.0,
+      "tx_power_min_dbm": 1.0,
+      "rx_sensitivity_dbm": -21.0
+    },
+    {
+      "label": "LS-BL302925-60C Tx1309/Rx1295 60km Commercial",
+      "model": "LS-BL302925-60C",
+      "wavelength_min_nm": 1306.0,
+      "wavelength_max_nm": 1322.0,
+      "wavelength_center_nm": 1309.0,
+      "power_consumption_w": 1.6,
+      "host_interface_name": "CEI-28G-VSR",
+      "standards_code": "IEEE 802.3cc",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 60.0,
+      "tx_power_min_dbm": 1.0,
+      "rx_sensitivity_dbm": -21.0
+    },
+    {
+      "label": "LS-BL302925-60I Tx1309/Rx1295 60km Industrial",
+      "model": "LS-BL302925-60I",
+      "wavelength_min_nm": 1306.0,
+      "wavelength_max_nm": 1322.0,
+      "wavelength_center_nm": 1309.0,
+      "power_consumption_w": 1.8,
+      "host_interface_name": "CEI-28G-VSR",
+      "standards_code": "IEEE 802.3cc",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 60.0,
+      "tx_power_min_dbm": 1.0,
+      "rx_sensitivity_dbm": -21.0
+    }
+  ]
+}

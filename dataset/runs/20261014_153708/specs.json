@@ -1,0 +1,98 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-MR25-BX20D-34",
+    "SO-SFP-MR25-BX20D-43"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1270.0,
+    1470.0,
+    1440.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1350.0,
+    1510.0,
+    1540.0,
+    1360.0
+  ],
+  "wavelength_center_nm": [
+    1310.0,
+    1490.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "standards_code": [
+    "FE",
+    "GbE",
+    "STM1/OC3",
+    "STM4/OC12",
+    "STM16/OC48",
+    "OTU1",
+    "1G FC",
+    "2G FC",
+    "CPRI Opt 1",
+    "CPRI Opt 2",
+    "CPRI Opt 3",
+    "OBSAI 1x",
+    "OBSAI 2x"
+  ],
+  "bit_rate_gbps": [
+    0.1,
+    2.67
+  ],
+  "reach_km": [
+    20.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -18.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -19.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Product is a BiDi pair: SO-SFP-MR25-BX20D-34 (TX 1270–1350 nm / RX 1440–1540 nm per footnote 1) and SO-SFP-MR25-BX20D-43 (TX 1470–1510 nm / RX 1260–1360 nm per footnote 2). Overview states 1310 nm and 1490 nm respectively. Transmit output power and receiver min/overload are average power (footnote 3). Receiver minimum input power and overload apply at BER ≤ 1×10⁻¹², back-to-back (footnote 4). Summary column lists power budget 3–13 dB and dispersion penalty Max 1 dB without further numeric dispersion tolerance. Storage temperature -40°C to +85°C stated separately from operating 0°C to +70°C. Power consumption stated as < 1.0 W.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-MR25-BX20D-34 & -43",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether power budget 3–13 dB should map to a dedicated schema field; table lists dispersion penalty Max 1 dB without ps/nm CD tolerance."
+}

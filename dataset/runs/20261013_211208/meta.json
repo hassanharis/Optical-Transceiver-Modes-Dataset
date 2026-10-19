@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:12:08.765683+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-dq5002-xxxc-so-qsfp56-2xqsfp56-dac-passive-r6.0.pdf",
+  "page_count": 1,
+  "table_count": 0,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 0.631,
+    "extract_atoms": 23.802,
+    "store_run": 0.009,
+    "synthesize_modes": 20.826,
+    "store_modes": 0.003,
+    "total": 45.272
+  }
+}

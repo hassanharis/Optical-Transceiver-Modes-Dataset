@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — XGIGA</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">XGIGA</div>
+  <div class="subtitle">SFP+</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">XGIGA</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">SFP+</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">SFP+ MSA, SFF-8472, SFF-8431, RoHS, IEEE 802.3ae</div></div>
+      <div class="spec-item"><div class="label">Emitter Type</div><div class="value">LASER_EML</div></div>
+      <div class="spec-item"><div class="label">Photodetector Type</div><div class="value">APD</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable_hot</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF, SMF 9/125μm</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-40.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">85.0</div></div>
+      <div class="spec-item"><div class="label">Host Interface</div><div class="value">SFP+</div></div>
+      <div class="spec-item"><div class="label">Reach (km)</div><div class="value">80.0</div></div>
+      <div class="spec-item"><div class="label">RX Sensitivity (dBm)</div><div class="value">-23.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">-6.0</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-12</div></div>
+      <div class="spec-item"><div class="label">Extinction Ratio Db</div><div class="value">7.5</div></div>
+      <div class="spec-item"><div class="label">Los Assert Dbm</div><div class="value">-38.0</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-24.0</div></div>
+      <div class="spec-item"><div class="label">Optical Extinction Ratio Db</div><div class="value">7.5</div></div>
+      <div class="spec-item"><div class="label">Side Mode Suppression Ratio Db</div><div class="value">30.0</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">0.5, 6.0</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Family name XPBL-XXYY96-80D(A). XPBL-495596: 1490 nm TX / 1550 nm RX; XPBL-554996: 1550 nm TX / 1490 nm RX. Case operating temperature Commercial -10 to 70 °C (Tcase); Industrial -40 to 85 °C (Tcase). Power dissipation 1.5 W (Commercial, XPBL-XXYY96-80D) and 1.8 W (Industrial, XPBL-XXYY96-80DA). Center wavelength range λC: λ−7.5 to λ+7.5 nm (λ = room-temperature wavelength). Spectrum bandwidth (−20 dB) max 0.3 nm. Average launched power (laser off) max −30 dBm. Transmitter/receiver optical specs measured with RPBS 2^31−1 @ 10.3125 Gbps; receiver sensitivity and overload per Note (4) at BER ≤ 10^−12. Tx average power 0 to 4 dBm (XPBL-495596-80D(A)); −1 to 3 dBm (XPBL-554996-80D(A)). Supply ICC max 450 mA Commercial / 550 mA Industrial.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">XPBL-XXYY96-80D(A) 10Gb/s BIDI SFP+ 80km Transceiver, PRODUCT FEATURES, APPLICATIONS, STANDARD, PRODUCT DESCRIPTION, Ordering information, Ⅱ Recommended Operating Conditions, Ⅲ Optical Characteristics, IV. Electrical Interface Characteristics, VI. Digital Diagnostic Functions</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Add explicit modulation format if NRZ is intended; clarify channel_total=1 for BIDI single-wavelength pair; split temp_min_c/temp_max_c per Commercial vs Industrial SKUs if schema allows lists.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Wavelength Min</th><th>Wavelength Max</th><th>wavelength_center_nm</th><th>Power (W)</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>TX Power Min (dBm)</th><th>TX Power Max (dBm)</th></tr>
+      <tr><td><strong>XPBL-495596-80D 1490nm TX Commercial</strong></td><td>XPBL-495596-80D</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>1.5</td><td>10GBASE-BX</td><td>10.3125</td><td>0.0</td><td>4.0</td></tr>
+      <tr><td><strong>XPBL-554996-80D 1550nm TX Commercial</strong></td><td>XPBL-554996-80D</td><td>1540.0</td><td>1560.0</td><td>1550.0</td><td>1.5</td><td>10GBASE-BX</td><td>10.3125</td><td>-1.0</td><td>3.0</td></tr>
+      <tr><td><strong>XPBL-495596-80DA 1490nm TX Industrial</strong></td><td>XPBL-495596-80DA</td><td>1480.0</td><td>1500.0</td><td>1490.0</td><td>1.8</td><td>10GBASE-BX</td><td>10.3125</td><td>0.0</td><td>4.0</td></tr>
+      <tr><td><strong>XPBL-554996-80DA 1550nm TX Industrial</strong></td><td>XPBL-554996-80DA</td><td>1540.0</td><td>1560.0</td><td>1550.0</td><td>1.8</td><td>10GBASE-BX</td><td>10.3125</td><td>-1.0</td><td>3.0</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">XPBL-495596-80D</span> <span class="badge">XPBL-554996-80D</span> <span class="badge">XPBL-495596-80DA</span> <span class="badge">XPBL-554996-80DA</span> <span class="badge">XPBL-XXYY96-80D</span> <span class="badge">XPBL-XXYY96-80DA</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">1480.0</span> <span class="badge">1540.0</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">1500.0</span> <span class="badge">1560.0</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">1490.0</span> <span class="badge">1550.0</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">1.5</span> <span class="badge">1.8</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">10GBASE-BX</span> <span class="badge">OTU2</span> <span class="badge">OTU2e</span> <span class="badge">SFF-8472</span> <span class="badge">SFF-8431</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">10.3125</span> <span class="badge">11.3</span></td></tr>
+      <tr><td>tx_power_min_dbm</td><td><span class="badge">0.0</span> <span class="badge">-1.0</span></td></tr>
+      <tr><td>tx_power_max_dbm</td><td><span class="badge">4.0</span> <span class="badge">3.0</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 17:07
+</footer>
+
+</div>
+</body>
+</html>

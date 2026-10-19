@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T17:15:53.886422+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Prolabs QDD400GBDCOZRP4DBM-J-ST01-C.pdf",
+  "page_count": 16,
+  "table_count": 16,
+  "model_id": "cursor/gpt-5.6-sol",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 31.625,
+    "extract_atoms": 38.712,
+    "store_run": 0.007,
+    "synthesize_modes": 64.796,
+    "store_modes": 0.007,
+    "total": 135.146
+  }
+}

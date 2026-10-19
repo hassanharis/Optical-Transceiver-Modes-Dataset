@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:44:45.276055+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tq2023-s31c-so-qsfp28-100g-er1.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.002,
+    "extract_atoms": 16.176,
+    "store_run": 0.015,
+    "synthesize_modes": 32.571,
+    "store_modes": 0.004,
+    "total": 52.768
+  }
+}

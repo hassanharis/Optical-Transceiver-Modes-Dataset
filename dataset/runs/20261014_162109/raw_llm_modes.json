@@ -1,0 +1,26 @@
+{
+  "modes": [
+    {
+      "label": "Noise loaded link",
+      "wavelength_band": "DWDM",
+      "channel_spacing_ghz": 50.0,
+      "host_interface_name": "10GBASE-ER",
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 11.1,
+      "rx_osnr_db": 19.0,
+      "cd_tolerance_ps_nm": 1500.0,
+      "post_fec_ber_target": 0.0001
+    },
+    {
+      "label": "Unamplified link",
+      "wavelength_band": "DWDM",
+      "channel_spacing_ghz": 50.0,
+      "host_interface_name": "10GBASE-ER",
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 11.1,
+      "rx_osnr_db": 35.0,
+      "cd_tolerance_ps_nm": 1600.0,
+      "post_fec_ber_target": 1e-12
+    }
+  ]
+}

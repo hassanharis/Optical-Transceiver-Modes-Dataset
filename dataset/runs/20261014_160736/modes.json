@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "25GbE SR @ OM4 (CDR engaged)",
+      "host_interface_name": "25GbE",
+      "standards_code": "25GBASE-SR",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 0.1,
+      "post_fec_ber_target": 1e-05
+    },
+    {
+      "label": "25GbE SR @ OM3 (CDR engaged)",
+      "host_interface_name": "25GbE",
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 0.07,
+      "post_fec_ber_target": 5e-05
+    },
+    {
+      "label": "10GbE-WAN (CDR bypassed)",
+      "host_interface_name": "10GbE-WAN",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 9.953,
+      "reach_km": 0.1,
+      "post_fec_ber_target": 1e-05
+    },
+    {
+      "label": "10GbE-LAN (CDR bypassed)",
+      "host_interface_name": "10GbE-LAN",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 10.312,
+      "reach_km": 0.07,
+      "post_fec_ber_target": 5e-05
+    }
+  ]
+}

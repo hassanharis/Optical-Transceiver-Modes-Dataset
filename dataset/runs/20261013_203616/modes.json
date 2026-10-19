@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "DO-BL5324-20DC 1550T/1310R 1.25G Standard temp",
+      "model": "DO-BL5324-20DC",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "DO-BL5324-20DI 1550T/1310R 1.25G Industrial temp",
+      "model": "DO-BL5324-20DI",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

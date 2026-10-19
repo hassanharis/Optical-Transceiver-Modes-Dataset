@@ -1,0 +1,161 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1264.5,
+      1284.5,
+      1304.5,
+      1324.5
+    ],
+    "wavelength_max_nm": [
+      1277.5,
+      1297.5,
+      1317.5,
+      1337.5
+    ],
+    "host_interface_name": [
+      "CAUI-4",
+      "4x25G retimed electrical interface"
+    ],
+    "standards_code": [
+      "CWDM4",
+      "IEEE P802.3bm Annex 83E",
+      "RS-FEC (528,514) per Clause 91",
+      "KR4 FEC"
+    ],
+    "baud_rate_gbaud": [
+      25.78125,
+      24.33024,
+      10.3125
+    ],
+    "bit_rate_gbps": [
+      103.1,
+      25.78125,
+      24.33024,
+      10.3125
+    ],
+    "tx_power_min_dbm": [
+      -5.0,
+      -4.0,
+      -2.0
+    ],
+    "rx_sensitivity_dbm": [
+      -11.3,
+      -8.9
+    ],
+    "fec_type": [
+      "RS_GENERIC",
+      "KR4"
+    ],
+    "los_assert_dbm": [
+      -24.0,
+      -15.0
+    ]
+  },
+  "general": {
+    "vendor": "Finisar",
+    "model": [
+      "FTLC1155RGPL3"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "CWDM4 MSA",
+      "IEEE P802.3bm",
+      "SFF-8665",
+      "SFF-8679",
+      "SFF-8636",
+      "RoHS-6 Directive 2011/65/EU"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_center_nm": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF_G652"
+    ],
+    "temp_min_c": -20.0,
+    "temp_max_c": 85.0,
+    "power_consumption_w": [
+      4.5
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [
+      "CWDM4"
+    ],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [
+      "4x25Gb/s"
+    ],
+    "modulation_format": [],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_max_dbm": [
+      2.5
+    ],
+    "rx_overload_dbm": [
+      2.5
+    ],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "post_fec_ber_target": [
+      5e-12
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "los_deassert_dbm": [
+      -13.5
+    ],
+    "transmitter_reflectance_db": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      1.5
+    ],
+    "penalties": [],
+    "notes": "Optical characteristics (Section IV) specified at TOP = 0 to 70 °C; case operating temperature -20°C to +85°C (Section VI). Electrical characteristics at TOP = -20 to 85 °C. Loss budget 5 dB on SMF G.652 includes 2.5 dB optical coding gain from host RS-FEC (528,514); maximum informative link length 2 km; RS-FEC bypass not supported; loss budget may include up to 1 dB MPI loss penalty. TDP max 3 dB does not include MPI penalty. Unstressed receiver sensitivity at 5x10^-5 BER; stressed SRS measured with 4WDM MSA conformance test signal at TP3 for 5x10^-5 BER. Power consumption ≤ 4.5 W when stabilized (Tx and Rx CDR locked); may be ≤ 5 W during locking acquisition. Section V references FTLC9555F Fibre Channel (appears inconsistent with FTLC1155RGPL3 product). Transmit OMA per Lane @TDP max: -2 dBm at maximum TDP. Average launch power of OFF transmitter per lane max -30 dBm.",
+    "provenance_datasheet_sections": [
+      "FTLC1155RGPL3",
+      "2km 100G CWDM4 QSFP28 Optical Transceiver Module",
+      "FEATURES",
+      "APPLICATIONS",
+      "Product Selection",
+      "II. Absolute Maximum Ratings",
+      "III. Electrical Characteristics  (EOL, TOP = -20 to 85 °C, VCC = 3.135 to 3.465 Volts)",
+      "IV. Optical Characteristics (EOL, TOP = 0 to 70 °C, VCC = 3.135 to 3.465 Volts)",
+      "V. Data Rate and Reach Specifications",
+      "VI. Environmental Specifications",
+      "XI. Mechanical Specifications",
+      "X. References"
+    ],
+    "suggestions": "Add fields for OMA (optical modulation amplitude), TDP (transmitter and dispersion penalty), receive saturation Rmax, and damage threshold PRdmg. Clarify whether los_assert_dbm should use min/max columns as a range. Emitter and photodetector types are not specified beyond 'lasers' and 'photodetectors'."
+  }
+}

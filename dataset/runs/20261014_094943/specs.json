@@ -1,0 +1,66 @@
+{
+  "vendor": "Eaton",
+  "model": [
+    "N286-01G-SX-A"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "MSA",
+    "1000Base-SX"
+  ],
+  "wavelength_min_nm": [
+    830.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "mounting_type": [
+    "Hot-swappable",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM2"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "1000Base-SX",
+    "SFP"
+  ],
+  "media_interface_name": [
+    "1000Base-SX"
+  ],
+  "standards_code": [
+    "1000Base-SX",
+    "MSA"
+  ],
+  "bit_rate_gbps": [
+    1.25
+  ],
+  "reach_km": [
+    0.55
+  ],
+  "notes": "Functionally equivalent to Arista SFP-1G-SX; brand compatibility Arista. Transmission distance stated as 550 m (1804 ft.). Wavelength row lists 830nm; 850nm; 860nm. Storage temperature -40° to 85°C; operating humidity 5% to 95% RH non-condensing. DDM supported. Network compatibility 1 Gbps (Gigabit). Reach in overview is 550 m; title also cites 550 m (1804 ft.).",
+  "provenance_datasheet_sections": [
+    "Arista-Compatible SFP-1G-SX SFP Transceiver - 1000Base-SX, LC Duplex MMF, 1.25 Gbps, 850 nm, 550 m (1804 ft.)",
+    "MODEL NUMBER: N286-01G-SX-A",
+    "Highlights",
+    "Features",
+    "SFP Transceiver for Connecting to Your Arista Network Switch or Server",
+    "Functionally Equivalent to Arista SFP-1G-SX Transceiver Module",
+    "Hot-Swappable for Installation Without Network Interruption",
+    "Supports Digital Diagnostic Monitoring (DDM) for Real-Time Status Monitoring",
+    "Specifications",
+    "OVERVIEW"
+  ],
+  "suggestions": "reach_km: source gives 550 m; converted to 0.55 km for km field—if schema requires exact printed unit, consider allowing reach_m. Vendor inferred from Eaton copyright and Mouser Eaton listing, not a dedicated Manufacturer row in OVERVIEW."
+}

@@ -1,0 +1,154 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LG-SC341G-20IMB1"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8472",
+    "SFP MSA",
+    "SFF-8074i",
+    "ITU-T G.984.2",
+    "ITU-T G.988",
+    "IEEE 802.3AH",
+    "IEC-60825 Class 1",
+    "RoHS"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1290,
+    1480
+  ],
+  "wavelength_max_nm": [
+    1330,
+    1500
+  ],
+  "wavelength_center_nm": [
+    1310,
+    1490
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "SC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -40,
+  "temp_max_c": 85,
+  "power_consumption_w": [
+    2.1,
+    2.5
+  ],
+  "host_interface_name": [
+    "SGMII",
+    "1000BASE-X"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "GPON",
+    "EPON"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "ITU-T G.984.2",
+    "ITU-T G.988",
+    "IEEE 802.3AH",
+    "Class B+"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1.244,
+    2.488,
+    1.25
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    20
+  ],
+  "tx_power_min_dbm": [
+    0.5
+  ],
+  "tx_power_max_dbm": [
+    4
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -28
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -8
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    10
+  ],
+  "los_assert_dbm": [
+    -40
+  ],
+  "los_deassert_dbm": [
+    -29
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -12
+  ],
+  "transmitter_reflectance_db": [
+    -10
+  ],
+  "optical_extinction_ratio_db": [
+    10
+  ],
+  "optical_return_loss_tolerance_db": [
+    -15
+  ],
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": [
+    30
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    6
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "GPON MODE: TX 1.244 Gbit/s, RX 2.488 Gbit/s; EPON MODE: TX 1.25 / RX 1.25 Gbit/s. Operating case temperature commercial 0–70 °C; industrial -40–85 °C. Ordering: GPON ONU Class B+. SC/UPC interface. Transmitter burst-mode; receiver continuous-mode with TIA. Transmitter Dispersion Penalty (TDP) typ 1 dB at 20 km SMF stated without a separate penalized optical parameter value. WDM filter isolation 38 dB at 1550 nm and 35 dB at 1650 nm. Receiver damaged threshold min 3 dBm. Average off-state burst output power max -45 dBm.",
+  "provenance_datasheet_sections": [
+    "LG-SC341G-20IMB1",
+    "Features",
+    "Application",
+    "Description",
+    "Specification",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditioned",
+    "Optical Characteristics",
+    "Digital Diagnostic Monitoring Information",
+    "Ordering information"
+  ],
+  "suggestions": null
+}

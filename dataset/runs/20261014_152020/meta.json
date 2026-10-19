@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T15:20:20.327571+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-l80d-50g-dxxxx.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 6.01,
+    "extract_atoms": 35.329,
+    "store_run": 0.004,
+    "synthesize_modes": 285.354,
+    "store_modes": 0.005,
+    "total": 326.702
+  }
+}

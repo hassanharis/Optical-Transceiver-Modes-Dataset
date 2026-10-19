@@ -1,0 +1,143 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "400GAUI-4",
+      "4x100GAUI-1",
+      "400GAUI-4-L",
+      "200GAUI-2",
+      "100GAUI-1-L"
+    ],
+    "host_interface_id_hex": [
+      "0x50",
+      "0x4E",
+      "0x4C"
+    ],
+    "host_interface_id": [
+      80,
+      78,
+      76
+    ],
+    "media_interface_name": [
+      "400GBASE-DR4",
+      "100GBASE-DR"
+    ],
+    "media_interface_id_hex": [
+      "0x1C",
+      "0x00",
+      "0x0F"
+    ],
+    "media_interface_id": [
+      28,
+      0,
+      15
+    ],
+    "frame": [
+      "400GAUI-4",
+      "4x100GAUI-1",
+      "2x200GAUI-2",
+      "4x100GAUI-1-L"
+    ],
+    "standards_code": [
+      "400GBASE-DR4",
+      "CMIS5.2",
+      "100GBASE-DR",
+      "400GBASE-R",
+      "200GBASE-R",
+      "100GBASE-R"
+    ],
+    "bit_rate_gbps": [
+      425.0,
+      400.0,
+      100.0
+    ],
+    "rx_sensitivity_dbm": [
+      -4.4,
+      -5.9
+    ],
+    "fec_type": [
+      "RS_GENERIC",
+      "KP4"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TQC002-S31C-SO"
+    ],
+    "form_factor": [
+      "QSFP112"
+    ],
+    "standards_claimed": [
+      "QSFP112 MSA",
+      "CMIS5.2",
+      "400GBASE-DR4",
+      "IEEE802.3bj"
+    ],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1311.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "MPO12"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      9.0
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      500.0
+    ],
+    "tx_power_min_dbm": [
+      -2.9
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_overload_dbm": [
+      4.0
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "los_assert_dbm": [
+      -11.0
+    ],
+    "los_deassert_dbm": [
+      -9.5
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Power consumption: < 9W. Line rate 425Gbps (400GbE); 53.125Gbd per lane. Output power OMA per lane Min: -0.8dBm, Max: +4.2dBm (footnote 3 average power per lane for -2.9/+4.0 dBm). Minimum input power -5.9dBm and overload +4.0dBm per lane at BER 2.4x10-4. Power budget 0 – 3.6dB. LOS Assert Min: -11dBm; LOS De-assert Max: -9.5dBm. Receiver sensitivity OMA per lane -4.4dBm. Host implements FEC per IEEE802.3bj.",
+    "provenance_datasheet_sections": [
+      "QSFP112 400GBASE-DR4, CMIS5.2",
+      "TQC002-S31C-SO",
+      "TECHNICAL DATA",
+      "APPLICATION CODE LIST",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:08:54.502164+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-dd8001-xxxc-so-qsfp-dd800-800g-aec-c5.2-r6.0.pdf",
+  "page_count": 3,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.124,
+    "extract_atoms": 21.813,
+    "store_run": 0.009,
+    "synthesize_modes": 23.081,
+    "store_modes": 0.004,
+    "total": 49.03
+  }
+}

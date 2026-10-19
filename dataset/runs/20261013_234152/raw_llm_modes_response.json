@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "The datasheet describes a single part number (LO-DM311T-DR8C) with one host/optical configuration: 1.6T DR8, 8×200G Ethernet, 1.6TAUI-8 C2M, 200G-PAM4. Alternate pool values (2 W dissipation, 1.6TAUI-8 without C2M, 8×100GAUI-1, 800/200 Gbps, DR4/DR8, stressed Rx −0.9 dBm) are either power states, naming variants, or test conditions—not separate selectable modes. No penalties were supplied in the input.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"LO-DM311T-DR8C 1.6TBASE-DR8 8x200G\",\n      \"form_factor\": \"OSFP FlatTop\",\n      \"power_consumption_w\": 30.0,\n      \"host_interface_name\": \"1.6TAUI-8 C2M\",\n      \"frame\": \"8x200G Ethernet\",\n      \"standards_code\": \"1.6TBASE-DR8\",\n      \"bit_rate_gbps\": 1600.0,\n      \"modulation_format\": \"PAM4\",\n      \"rx_sensitivity_dbm\": -3.4\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

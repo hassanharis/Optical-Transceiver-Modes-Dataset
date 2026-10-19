@@ -1,0 +1,132 @@
+{
+  "multi_valued": {
+    "power_consumption_w": [
+      7.5,
+      8.5
+    ],
+    "media_interface_name": [
+      "100G-DR-LPO",
+      "DR4"
+    ],
+    "standards_code": [
+      "100G-DR-LPO",
+      "LPO MSA",
+      "IEEE802.3cu",
+      "2xDR4"
+    ],
+    "bit_rate_gbps": [
+      106.25,
+      800.0
+    ]
+  },
+  "general": {
+    "vendor": "XGIGA",
+    "model": [
+      "OP13LD8-005D"
+    ],
+    "form_factor": [
+      "OSFP"
+    ],
+    "standards_claimed": [
+      "OSFP MSA rev5.x",
+      "OIF-CMIS rev5.x",
+      "OIF-CEI-5.2",
+      "CEI-112G-LINEAR-PAM4",
+      "100G-DR-LPO",
+      "LPO MSA",
+      "IEEE802.3cu"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "channel_total": [
+      8
+    ],
+    "mounting_type": [
+      "pluggable_hot_electrical"
+    ],
+    "connector_type": [
+      "MPO-12",
+      "MPO-12/APC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "CEI-112G-LINEAR-PAM4"
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      0.5
+    ],
+    "tx_power_min_dbm": [
+      -2.9
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_sensitivity_dbm": [
+      -5.1
+    ],
+    "rx_overload_dbm": [
+      4.0
+    ],
+    "post_fec_ber_target": [
+      0.00024
+    ],
+    "extinction_ratio_db": [
+      2.5
+    ],
+    "channel_insertion_loss_db": [
+      3.0
+    ],
+    "receiver_reflectance_db": [
+      -26.0
+    ],
+    "transmitter_reflectance_db": [
+      -26.0
+    ],
+    "optical_extinction_ratio_db": [
+      2.5
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "penalties": [],
+    "notes": "Forward error correction (FEC) is required to be implemented by the host. LPO module does not have a CDR. Receiver sensitivity (OMA) is -5.1 dBm for TECQ≤1.4dB per lane; -6.5+TECQ dBm for 1.4dB<TECQ≤3.4dB per lane (Note 2: measured with PRBS31Q, BER@2.4*10^-4). Launch power in OMA each lane: -1.8 dBm for max(TECQ,TDECQ)<1.4dB; -3.2+max(TECQ,TDECQ) dBm for 1.4dB≤max(TECQ,TDECQ)≤3.4dB. Wavelength assignment 1304.5–1317.5 nm suitable for all channels (Note 3). Case operating temperature without air flow. Power dissipation stated as <8.5 W (Typical 7.5W). Link power budget typ 6.7 dB; allocation for penalties (for maximum TDECQ) 3.7 dB. Operating distance 500 m.",
+    "provenance_datasheet_sections": [
+      "800G LPO OSFP 2xDR4 Transceiver",
+      "PRODUCT FEATURES",
+      "REFERENCE STANDARD",
+      "APPLICATIONS",
+      "I. Absolute Maximum Ratings",
+      "II. Recommended Operating Conditions",
+      "III. Optical Characteristics",
+      "Notes:",
+      "IV. Link Power Budget",
+      "V. Host - Transceiver Interface Block Diagram",
+      "VI. Mechanical Specifications"
+    ],
+    "suggestions": "Explicit OSNR and chromatic dispersion tolerances not stated. Receiver sensitivity second row is parametric (-6.5+TECQ dBm) and could not be captured as a single float. Consider schema support for TECQ/TDECQ-conditioned parameters."
+  }
+}

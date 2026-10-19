@@ -1,0 +1,32 @@
+{
+  "modes": [
+    {
+      "label": "40GbE OM3 300m",
+      "host_interface_name": "40GbE",
+      "standards_code": "40GBASE-eSR4",
+      "bit_rate_gbps": 41.25,
+      "reach_km": 0.3
+    },
+    {
+      "label": "40GbE OM4 400m",
+      "host_interface_name": "40GbE",
+      "standards_code": "40GBASE-eSR4",
+      "bit_rate_gbps": 41.25,
+      "reach_km": 0.4
+    },
+    {
+      "label": "Infiniband QDR/DDR OM3 300m",
+      "host_interface_name": "Infiniband QDR/DDR",
+      "standards_code": "eSR4",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.3
+    },
+    {
+      "label": "Infiniband QDR/DDR OM4 400m",
+      "host_interface_name": "Infiniband QDR/DDR",
+      "standards_code": "eSR4",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.4
+    }
+  ]
+}

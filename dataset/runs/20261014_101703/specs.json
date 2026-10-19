@@ -1,0 +1,128 @@
+{
+  "vendor": "PeakOptical",
+  "model": [
+    "PSFP10-1541SF",
+    "PSFP10-xxxxxx"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP+ MSA",
+    "IEEE802.3Z",
+    "Bellcore TA-NWT-000983",
+    "SFF-8472",
+    "IEC60825"
+  ],
+  "emitter_type": [
+    "LASER_EML"
+  ],
+  "wavelength_min_nm": [
+    1530.0,
+    1200.0
+  ],
+  "wavelength_max_nm": [
+    1565.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1550.0,
+    1310.0
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC",
+    "Duplex LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "SFP",
+    "SFP+"
+  ],
+  "host_interface_id_hex": [
+    "03h"
+  ],
+  "host_interface_id": [
+    3
+  ],
+  "standards_code": [
+    "10G Base-ER",
+    "10G Base-EW",
+    "10G Fiber Channel",
+    "IEEE802.3-2005",
+    "IEEE802.3Z"
+  ],
+  "bit_rate_gbps": [
+    1.25,
+    10.0,
+    10.3125,
+    10.518,
+    11.1
+  ],
+  "modulation_format": [
+    "NRZ"
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -2.0
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -15.8
+  ],
+  "rx_overload_dbm": [
+    -1.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.0,
+    5.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -16.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.0,
+    5.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Transceiver supports 1.25Gb/s to 11.1Gb/s per DESCRIPTION. Rx sensitivity measured at 10.3125b/s with PRBS 231-1 NRZ; Note 3 under ER worst case at 10.3125 Gb/s for BER < 1x10-12. Separate row Rx Sensitivity@10Gb/s (OMA) lists -14.1 without unit in table cell. Dispersion penalty 1 dB listed without paired penalized metric or operating condition. Supply current max 300 mA at VCC +3.13 to +3.47 V (not power in W). DDM temperature monitor range -10 to +80°C differs from operating TOP 0 to +70°C. Storage temperature -40 to +85°C. Optical eye mask IEEE802.3-2005 Compliant.",
+  "provenance_datasheet_sections": [
+    "10Gb/s SFP+, Hot Pluggable Duplex LC, +3.3V, 1550nm Single Mode, 40 km, EML Optical Transceiver PSFP10-1541SF",
+    "DESCRIPTION:",
+    "FEATURES:",
+    "APPLICATIONS:",
+    "SPECIFICATIONS:",
+    "Electrical Characteristics: (Condition: Ta=TOP)",
+    "Optical Characteristics: (Condition: Ta=TOP)",
+    "Notes:",
+    "Absolute Maximum Ratings:",
+    "Recommended Operating Environment:",
+    "Serial ID Memory Contents:",
+    "Table 3 - DDM Specification"
+  ],
+  "suggestions": "Add SFP+ to form_factor enum. Consider separate field for rx_sensitivity_oma_dbm for OMA-based sensitivity rows. Dispersion penalty as scalar path/dispersion field when no full penalty tuple is given."
+}

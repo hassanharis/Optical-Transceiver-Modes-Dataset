@@ -1,0 +1,60 @@
+{
+  "modes": [
+    {
+      "label": "TOS001-S31C-SO 400GAUI-4 400G-DR4",
+      "model": "TOS001-S31C-SO",
+      "form_factor": "OSFP112",
+      "host_interface_name": "400GAUI-4",
+      "frame": "400GAUI-4",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 425.0,
+      "tx_power_min_dbm": -2.9,
+      "tx_power_max_dbm": 4.0,
+      "rx_sensitivity_dbm": -5.9,
+      "rx_overload_dbm": 4.0,
+      "number_of_lanes": 8
+    },
+    {
+      "label": "TOS001-S31C-SO 4x100GAUI-1 break-out",
+      "model": "TOS001-S31C-SO",
+      "form_factor": "OSFP112",
+      "host_interface_name": "100GAUI-1",
+      "frame": "4x100GAUI-1",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 425.0,
+      "tx_power_min_dbm": -2.9,
+      "tx_power_max_dbm": 4.0,
+      "rx_sensitivity_dbm": -5.9,
+      "rx_overload_dbm": 4.0,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "TOS001-S31-SO 400GAUI-4 400G-DR4",
+      "model": "TOS001-S31-SO",
+      "form_factor": "OSFP112",
+      "host_interface_name": "400GAUI-4",
+      "frame": "400GAUI-4",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 425.0,
+      "tx_power_min_dbm": -2.9,
+      "tx_power_max_dbm": 4.0,
+      "rx_sensitivity_dbm": -5.9,
+      "rx_overload_dbm": 4.0,
+      "number_of_lanes": 8
+    },
+    {
+      "label": "TOS001-S31-SO 4x100GAUI-1 break-out",
+      "model": "TOS001-S31-SO",
+      "form_factor": "OSFP112",
+      "host_interface_name": "100GAUI-1",
+      "frame": "4x100GAUI-1",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 425.0,
+      "tx_power_min_dbm": -2.9,
+      "tx_power_max_dbm": 4.0,
+      "rx_sensitivity_dbm": -5.9,
+      "rx_overload_dbm": 4.0,
+      "number_of_lanes": 4
+    }
+  ]
+}

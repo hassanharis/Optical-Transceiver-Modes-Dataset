@@ -1,0 +1,34 @@
+{
+  "modes": [
+    {
+      "label": "40GBASE-LR4 40GbE (41.25 Gbps)",
+      "host_interface_name": "40GBASE-LR4",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25
+    },
+    {
+      "label": "4x10GbE-LAN (10.3125 Gbps per lane)",
+      "host_interface_name": "QSFP+",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Infiniband QDR (10.3125 Gbps per lane)",
+      "host_interface_name": "QSFP+",
+      "standards_code": "Infiniband QDR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Infiniband DDR (10.3125 Gbps per lane)",
+      "host_interface_name": "QSFP+",
+      "standards_code": "Infiniband DDR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "Infiniband SDR (10.3125 Gbps per lane)",
+      "host_interface_name": "QSFP+",
+      "standards_code": "Infiniband SDR",
+      "bit_rate_gbps": 10.3125
+    }
+  ]
+}

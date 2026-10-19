@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"QT-WDM-0240BD 1.25G 1550nm-TX/1310nm-RX\",\n      \"model\": \"QT-WDM-0240BD\",\n      \"wavelength_min_nm\": 1480.0,\n      \"wavelength_max_nm\": 1580.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"bit_rate_gbps\": 1.25\n    },\n    {\n      \"label\": \"QT-WDM-0240BID 1.25G 1550nm-TX/1310nm-RX\",\n      \"model\": \"QT-WDM-0240BID\",\n      \"wavelength_min_nm\": 1480.0,\n      \"wavelength_max_nm\": 1580.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"bit_rate_gbps\": 1.25\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T14:59:02.253464+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-8gfc-l10d.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 1.329,
+    "extract_atoms": 34.962,
+    "store_run": 0.005,
+    "synthesize_modes": 31.035,
+    "store_modes": 0.002,
+    "total": 67.332
+  }
+}

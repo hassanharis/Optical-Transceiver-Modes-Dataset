@@ -1,0 +1,138 @@
+{
+  "vendor": null,
+  "model": [
+    "QT-SFP+-LR"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ae",
+    "SFF-8431",
+    "SFF-8083"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1260
+  ],
+  "wavelength_max_nm": [
+    1355
+  ],
+  "wavelength_center_nm": [
+    1310
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.2,
+    1.5
+  ],
+  "host_interface_name": [
+    "SFF-8431"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "10GBASE-LR",
+    "10GBASE-LW",
+    "IEEE 802.3ae"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    10.3125,
+    9.953
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    10
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    -0.5
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -14.4,
+    -13.4,
+    -12.6,
+    -11.6,
+    -10.3
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -12
+  ],
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "optical_return_loss_tolerance_db": [
+    12
+  ],
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": [
+    30
+  ],
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Operating case temperature also lists Industrial -40 to 85 °C as a product line option; ordering for QT-SFP+-LR specifies 0 °C ~ 70 °C. Receive sensitivity values include 10 km and 20 km footnote conditions (Notes3). Minimum launched power -6.5 dBm and extinction ratio Notes1/Notes2 reference trade-offs and MMF launch for optical power (Note 2). Transmitter and dispersion penalty 0 dB and BER ≤ 10^-12 per Notes4 @ 10.3125 Gbps PRBS 2^31-1. Absolute maximum RX input average power Pmax 0 dBm; receiver power damage max 1.5 dBm. Power consumption typical 1200 mW, max 1500 mW.",
+  "provenance_datasheet_sections": [
+    "10GBASE-LR SFP+ 1310nm 10km Transceiver",
+    "P/N: QT-SFP+-LR",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "1. Absolute maximum rating",
+    "2. Optical characteristics",
+    "Notes :",
+    "3. Electrical characteristics",
+    "6. Ordering information"
+  ],
+  "suggestions": null
+}

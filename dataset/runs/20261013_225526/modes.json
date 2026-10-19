@@ -1,0 +1,43 @@
+{
+  "modes": [
+    {
+      "label": "100GBASE-SR4",
+      "wavelength_center_nm": 840.0,
+      "standards_code": "100GBASE-SR4",
+      "baud_rate_gbaud": 25.78125,
+      "bit_rate_gbps": 103.1,
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -8.4,
+      "rx_sensitivity_dbm": -5.2,
+      "rx_overload_dbm": 2.4,
+      "extinction_ratio_db": 2.0,
+      "los_deassert_dbm": -12.0
+    },
+    {
+      "label": "OTU4",
+      "wavelength_center_nm": 840.0,
+      "standards_code": "OTU4",
+      "baud_rate_gbaud": 27.95,
+      "bit_rate_gbps": 111.8,
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -9.0,
+      "rx_sensitivity_dbm": -4.7,
+      "rx_overload_dbm": 2.4,
+      "extinction_ratio_db": 3.0,
+      "los_deassert_dbm": -13.0
+    },
+    {
+      "label": "128GFC",
+      "wavelength_center_nm": 840.0,
+      "standards_code": "128GFC",
+      "baud_rate_gbaud": 28.05,
+      "bit_rate_gbps": 112.2,
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -9.0,
+      "rx_sensitivity_dbm": -4.7,
+      "rx_overload_dbm": 2.4,
+      "extinction_ratio_db": 3.0,
+      "los_deassert_dbm": -13.0
+    }
+  ]
+}

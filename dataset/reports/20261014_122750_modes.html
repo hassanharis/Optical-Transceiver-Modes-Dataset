@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics [&#x27;SO-QSFP28-SWDM4&#x27;]</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics [&#x27;SO-QSFP28-SWDM4&#x27;]</div>
+  <div class="subtitle">QSFP28 &middot; grey &middot; [4] channels</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Model</div><div class="value">SO-QSFP28-SWDM4</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">QSFP28</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">QSFP28 MSA, 100GBASE-SWDM4, IEEE802.3bj, 100G-SWDM4 MSA</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">grey</div></div>
+      <div class="spec-item"><div class="label">Channel Total</div><div class="value">4</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">MMF, MMF_OM3, MMF_OM4, MMF_OM5</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">3.5</div></div>
+      <div class="spec-item"><div class="label">Media Interface</div><div class="value">100GBASE-SWDM4</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">-7.5</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">2.0</div></div>
+      <div class="spec-item"><div class="label">RX Sensitivity (dBm)</div><div class="value">-9.4</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">2.4</div></div>
+      <div class="spec-item"><div class="label">Pre Fec Ber Threshold</div><div class="value">5e-05</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-12</div></div>
+      <div class="spec-item"><div class="label">Los Assert Dbm</div><div class="value">-30.0</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-11.0</div></div>
+      <div class="spec-item"><div class="label">Number Of Lanes</div><div class="value">4</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">0.5</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Aggregated line rate 103.12 Gbps for 100GbE; per-lane rate 25.78 Gbps. Transmitter output power and receiver min/overload are average power per lane (footnote 3). Receiver min input and overload specified at BER 5x10-5 with PRBS 2^31-1 (footnote 4). Optical parameters yield BER 5x10-5; host FEC (IEEE802.3bj RS(528,514)) required for post-FEC BER better than 1x10-12. Power budget: 0–1.9 dB @ OM5, 1.8 dB @ OM4, 1.7 dB @ OM3; varies with fiber type. Typical reach: 75 m @ OM3, 100 m @ OM4, 150 m @ OM5. Transmission media stated as MM (2x LC). Storage temperature -40°C to +85°C (not operating). Transmitter max output printed as +2.0Bm.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">SO-QSFP28- SWDM4, OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Wavelength Min</th><th>Wavelength Max</th><th>wavelength_center_nm</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>Reach (km)</th><th>fec_type</th></tr>
+      <tr><td><strong>SWDM4 lane 850 nm</strong></td><td>844.0</td><td>858.0</td><td>850.0</td><td>100GBASE-SWDM4</td><td>25.78</td><td>0.075</td><td>RS_528_514</td></tr>
+      <tr><td><strong>SWDM4 lane 880 nm</strong></td><td>874.0</td><td>888.0</td><td>880.0</td><td>SWDM4</td><td>25.78</td><td>0.1</td><td>RS_GENERIC</td></tr>
+      <tr><td><strong>SWDM4 lane 910 nm</strong></td><td>904.0</td><td>918.0</td><td>910.0</td><td>100GbE</td><td>25.78</td><td>0.15</td><td>RS_528_514</td></tr>
+      <tr><td><strong>SWDM4 lane 940 nm</strong></td><td>934.0</td><td>948.0</td><td>940.0</td><td>100GBASE-SWDM4</td><td>25.78</td><td>0.15</td><td>RS_528_514</td></tr>
+      <tr><td><strong>100GbE SWDM4 aggregate line rate</strong></td><td>844.0</td><td>948.0</td><td>850.0</td><td>100GBASE-SWDM4</td><td>103.12</td><td>0.15</td><td>RS_528_514</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">844.0</span> <span class="badge">874.0</span> <span class="badge">904.0</span> <span class="badge">934.0</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">858.0</span> <span class="badge">888.0</span> <span class="badge">918.0</span> <span class="badge">948.0</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">850.0</span> <span class="badge">880.0</span> <span class="badge">910.0</span> <span class="badge">940.0</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">100GBASE-SWDM4</span> <span class="badge">SWDM4</span> <span class="badge">100GbE</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">103.12</span> <span class="badge">25.78</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">0.075</span> <span class="badge">0.1</span> <span class="badge">0.15</span></td></tr>
+      <tr><td>fec_type</td><td><span class="badge">RS_528_514</span> <span class="badge">RS_GENERIC</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 12:27
+</footer>
+
+</div>
+</body>
+</html>

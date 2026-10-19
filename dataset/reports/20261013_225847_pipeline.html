@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Finisar [&#x27;FTLF1323F2XTR&#x27;, &#x27;FTLF1323F2xTR&#x27;, &#x27;FTLF1323S2xTR&#x27;, &#x27;FTLF1323F2GTR&#x27;, &#x27;FTLF1323F2MTR&#x27;, &#x27;FTLF1323F2HTR&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">ftlf1323f2xtr-transceiver-ds.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">9</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">6</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 22:58</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">Optical Transceivers 
+
+## FTLF1323F2XTR 
+
+## **OC-3 SR-1/STM I-1 or OC-3 IR-1/STM S-1.1 2x5 SFF Transceiver** 
+
+FTLF1323S2xTR Small Form Factor (SFF) transceivers are compatible with the Small Form Factor Multi-Sourcing Agreement (MSA)[1] . They comply with SONET OC-3 SR-1/IR-1 (SDH STM I-1/S-1.1) standards[2] . The transceivers are RoHS compliant and lead-free per Directive 2002/95/EC[5] and Finisar Application Note AN-2038[6] 
+
+
+## FEATURES 
+
+## APPLICATIONS 
+
+- Up to OC-3/STM-1 bi-directional data links 
+
+- Standard 2x5 pin SFF footprint (MSA compliant) 
+
+   - SONET OC-3 SR-1 / SDH STM I-1 
+
+   - SONET OC-3 IR-1 / SDH STM S-1.1 
+
+- Analog diagnostics functions 
+
+- Uncooled 1310nm FP laser transmitter 
+
+- Duplex LC connector 
+
+- Very low jitter 
+
+- Metal enclosure, for lower EMI 
+
+- Single 3.3V power supply 
+
+- Low power dissipation &lt;700 mW typical 
+
+- Extended operating temperature range: -40°C to 85°C 
+
+**FTLF1323F2xTR** 
+
+## **Product Selection** 
+
+## **FTLF1323F2xTR** 
+
+E: 40GBASE-SR4 compliant optical interface 1: First generation product C: Commercial temperature rate 
+
+## **I. Pin Descriptions** 
+
+
+**----- Start of picture text -----**&lt;br&gt;
+Pin Symbol Name/Description Notes&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+|Pin|Symbol|Name/Description|Notes|
+|---|---|---|---|
+|||||
+|MS|MS|Mounting Studs are for mechanical attachment and are&lt;br&gt;connected to chassis ground. Chassis ground is inter-&lt;br&gt;nally isolated from circuit grounds. Connection to user’s&lt;br&gt;ground plane is recommended.|NA|
+|1|VEER|Receiver Ground (Common with Transmitter Ground)|NA|
+|2|VCCR|Receiver Power Supply|NA|
+|3|SD|Signal Detect. Logic 1 indicates normal operation.|LVTTL|
+|4|RD-|Receiver Inverted DATA out. AC Coupled|See Rx spec.|
+|5|RD+|Receiver Non-inverted DATA out. AC Coupled|See Rx spec.|
+|6|VCCT|Transmitter Power Supply|NA|
+|7|VEET|Transmitter Ground (Common with Receiver Ground)|NA|
+|8|TDIS|Transmitter Disable|LVTTL|
+|9|TD+|Transmitter Non-Inverted DATA in. AC Coupled.|See Tx spec
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Finisar"</span>,
+  <span class="key">"model"</span>: [
+    "FTLF1323F2XTR",
+    "FTLF1323F2xTR",
+    "FTLF1323S2xTR",
+    "FTLF1323F2GTR",
+    "FTLF1323F2MTR",
+    "FTLF1323F2HTR"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFF",
+    "2x5 SFF"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "Small Form Factor Multi-Sourcing Agreement (MSA)",
+    "SONET OC-3 SR-1",
+    "SDH STM I-1",
+    "SONET OC-3 IR-1",
+    "SDH STM S-1.1",
+    "Bellcore GR-253",
+    "ITU-T G.957",
+    "IEEE Std <span class="num">802.3</span> Clause <span class="num">38</span> PMD Type <span class="num">1000</span>BASE-LX",
+    "FC-PI <span class="num">13.0</span>"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_FP"
+  ],
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1260</span>,
+    <span class="num">1261</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1360</span>,
+    <span class="num">1600</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1310</span>
+  ],
+  <span class="key">"wavelength_band"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "2x5 pin SFF footprint",
+    "Mounting Studs"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC",
+    "Duplex LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF <span class="num">9</span>/125μm"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-40</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">0.7</span>
+  ],
+  <span class="key">"host_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "OC-3 SR-1",
+    "STM I-1",
+    "OC-3 IR-1",
+    "STM S-1.1",
+    "SONET OC-3",
+    "SDH STM-1"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: <span class="null">null</span>,
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">15</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-15</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">-8</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-28</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-10
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">8.2</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-34</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-45</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">8.2</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>,
+    <span class="num">5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Data rate stated as <span class="num">125</span>–156 Mb/sec (not Gbps). Rx Sensitivity rows list Min <span class="num">-28</span> dBm and Max <span class="num">-8</span> dBm; Min taken as sensitivity. Supply current Icc Typ <span class="num">190</span> mA, Max <span class="num">300</span> mA at Vcc <span class="num">3.0</span>–3.6 V; power also stated as &lt;700 mW typical. Product Selection line includes ordering code letters (E: <span class="num">40</span>GBASE-SR4, <span class="num">1</span>: First generation, C: Commercial temperature) for FTLF1323F2xTR variants. Link length <span class="num">15</span> km uses <span class="num">0.55</span> dB/km attenuation per GR-253 CORE (indicative). Rx sensitivity measured with PRBS <span class="num">2</span>^23-1, worst-case extinction ratio. BER tested with PRBS <span class="num">2</span>^31-1. Copyright/legal entity: Coherent Corp. (2023)."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "FTLF1323F2XTR",
+    "OC-3 SR-1/STM I-1 or OC-3 IR-1/STM S-1.1 <span class="num">2</span>x5 SFF Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "Product Selection",
+    "FTLF1323F2xTR",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (TOP = <span class="num">-40</span> to <span class="num">85</span> °C, VCC = <span class="num">3.0</span> to <span class="num">3.6</span> Volts)",
+    "Optical Characteristics (TOP = <span class="num">-40</span> to <span class="num">85</span>°C, VCC = <span class="num">3.0</span> to <span class="num">3.6</span> Volts)",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "VIII. Mechanical Specifications"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Add schema fields for data rate in Mb/s, spectral width (nm), RIN (dB/Hz), and jitter in UI for legacy SONET/SDH SFF modules."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">FTLF1323F2XTR</span> <span class="badge">FTLF1323F2xTR</span> <span class="badge">FTLF1323S2xTR</span> <span class="badge">FTLF1323F2GTR</span> <span class="badge">FTLF1323F2MTR</span> <span class="badge">FTLF1323F2HTR</span></td></tr>
+<tr><td>form_factor</td><td><span class="badge">SFF</span> <span class="badge">2x5 SFF</span></td></tr>
+<tr><td>wavelength_min_nm</td><td><span class="badge">1260.0</span> <span class="badge">1261.0</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1360.0</span> <span class="badge">1600.0</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">OC-3 SR-1</span> <span class="badge">STM I-1</span> <span class="badge">OC-3 IR-1</span> <span class="badge">STM S-1.1</span> <span class="badge">SONET OC-3</span> <span class="badge">SDH STM-1</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Finisar</td></tr>
+<tr><td>standards_claimed</td><td>Small Form Factor Multi-Sourcing Agreement (MSA), SONET OC-3 SR-1, SDH STM I-1, SONET OC-3 IR-1, SDH STM S-1.1, Bellcore GR-253, ITU-T G.957, IEEE Std 802.3 Clause 38 PMD Type 1000BASE-LX, FC-PI 13.0</td></tr>
+<tr><td>emitter_type</td><td>LASER_FP</td></tr>
+<tr><td>wavelength_center_nm</td><td>1310.0</td></tr>
+<tr><td>mounting_type</td><td>2x5 pin SFF footprint, Mounting Studs</td></tr>
+<tr><td>connector_type</td><td>LC, Duplex LC</td></tr>
+<tr><td>fiber_type</td><td>SMF 9/125μm</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>power_consumption_w</td><td>0.7</td></tr>
+<tr><td>reach_km</td><td>15.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-15.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>-8.0</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-28.0</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-10</td></tr>
+<tr><td>extinction_ratio_db</td><td>8.2</td></tr>
+<tr><td>los_assert_dbm</td><td>-34.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-45.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>8.2</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5, 5.0</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Data rate stated as 125–156 Mb/sec (not Gbps). Rx Sensitivity rows list Min -28 dBm and Max -8 dBm; Min taken as sensitivity. Supply current Icc Typ 190 mA, Max 300 mA at Vcc 3.0–3.6 V; power also stated as &lt;700 mW typical. Product Selection line includes ordering code letters (E: 40GBASE-SR4, 1: First generation, C: Commercial temperature) for FTLF1323F2xTR variants. Link length 15 km uses 0.55 dB/km attenuation per GR-253 CORE (indicative). Rx sensitivity measured with PRBS 2^23-1, worst-case extinction ratio. BER tested with PRBS 2^31-1. Copyright/legal entity: Coherent Corp. (2023).</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>FTLF1323F2XTR, OC-3 SR-1/STM I-1 or OC-3 IR-1/STM S-1.1 2x5 SFF Transceiver, FEATURES, APPLICATIONS, Product Selection, FTLF1323F2xTR, II. Absolute Maximum Ratings, III. Electrical Characteristics (TOP = -40 to 85 °C, VCC = 3.0 to 3.6 Volts), Optical Characteristics (TOP = -40 to 85°C, VCC = 3.0 to 3.6 Volts), V. General Specifications, VI. Environmental Specifications, VIII. Mechanical Specifications</td></tr>
+<tr><td>suggestions</td><td>Add schema fields for data rate in Mb/s, spectral width (nm), RIN (dB/Hz), and jitter in UI for legacy SONET/SDH SFF modules.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>form_factor</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>standards_code</th></tr><tr><td><strong>FTLF1323S2xTR SFF OC-3/STM-1</strong></td><td>FTLF1323S2xTR</td><td>SFF</td><td>1261.0</td><td>1360.0</td><td>SONET OC-3</td></tr><tr><td><strong>OC-3 SR-1 / STM I-1</strong></td><td>FTLF1323F2xTR</td><td>2x5 SFF</td><td>1261.0</td><td>1360.0</td><td>OC-3 SR-1</td></tr><tr><td><strong>OC-3 SR-1 / STM I-1 (alt designation)</strong></td><td>FTLF1323F2xTR</td><td>2x5 SFF</td><td>1261.0</td><td>1360.0</td><td>STM I-1</td></tr><tr><td><strong>OC-3 IR-1 / STM S-1.1</strong></td><td>FTLF1323F2xTR</td><td>2x5 SFF</td><td>1261.0</td><td>1360.0</td><td>OC-3 IR-1</td></tr><tr><td><strong>OC-3 IR-1 / STM S-1.1 (alt designation)</strong></td><td>FTLF1323F2xTR</td><td>2x5 SFF</td><td>1261.0</td><td>1360.0</td><td>STM S-1.1</td></tr><tr><td><strong>FTLF1323F2XTR 2x5 SFF</strong></td><td>FTLF1323F2XTR</td><td>2x5 SFF</td><td>1260.0</td><td>1600.0</td><td>SDH STM-1</td></tr><tr><td><strong>FTLF1323F2GTR 2-pin</strong></td><td>FTLF1323F2GTR</td><td>2x5 SFF</td><td>1261.0</td><td>1360.0</td><td>SONET OC-3</td></tr><tr><td><strong>FTLF1323F2MTR 6-pin</strong></td><td>FTLF1323F2MTR</td><td>2x5 SFF</td><td>1261.0</td><td>1360.0</td><td>SDH STM-1</td></tr><tr><td><strong>FTLF1323F2HTR 6-pin long EMI</strong></td><td>FTLF1323F2HTR</td><td>2x5 SFF</td><td>1260.0</td><td>1600.0</td><td>OC-3 SR-1</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 22:58
+</footer>
+
+</div>
+</body>
+</html>

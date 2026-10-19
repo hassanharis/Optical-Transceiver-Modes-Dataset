@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:06:00.758594+00:00",
+  "source_file": "C:\\Haris\\datasheets\\oi-100g-qsfp28-transceivers.pdf",
+  "page_count": 4,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 6.121,
+    "extract_atoms": 38.934,
+    "store_run": 0.005,
+    "synthesize_modes": 72.97,
+    "store_modes": 0.005,
+    "total": 118.035
+  }
+}

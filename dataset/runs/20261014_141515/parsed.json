@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp-155m-l80d-cxxx.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 6198,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 13
+    },
+    {
+      "page": 0,
+      "label": null,
+      "rows": 16
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

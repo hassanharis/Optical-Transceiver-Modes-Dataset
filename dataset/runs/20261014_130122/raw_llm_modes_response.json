@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SO-SFP-1000Base-TR commercial temp\",\n      \"model\": \"SO-SFP-1000Base-TR\",\n      \"standards_code\": \"1000BASE-T\"\n    },\n    {\n      \"label\": \"SO-SFP-1000Base-TR-I industrial temp\",\n      \"model\": \"SO-SFP-1000Base-TR-I\",\n      \"standards_code\": \"1000BASE-T\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

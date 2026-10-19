@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Broadcom [&#x27;AFBR-57E6APZC&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">pub-005500_ds_afbr-57e6apzc_2017-03-30.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">21</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">17</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 10:24</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">## **AFBR-57E6APZC** 
+
+Multimode Small Form Factor Pluggable Transceivers with LC Connector and Conformal Coating, DMI for FDDI and Fast Ethernet 
+
+## **Data Sheet** 
+
+
+
+## **Description** 
+
+The AFBR-57E6APZC Small Form Factor Pluggable LC transceiver provides the system designer a product to implement FDDI/Fast Ethernet networks with DMI physical layers. 
+
+As an enhancement to the conventional SFP interface defined in SFF-8074i, the AFBR-57E6APZC is compatible to SFF-8472 (digital diagnostic interface for optical transceivers). Using the 2-wire serial interface defined in the SFF-8472 MSA, the AFBR-57E6APZC provides real time information on temperature, LED bias current, LED average output power and receiver average input power. The interface also adds the ability to monitor the Receiver Loss of Signal (RX_LOS). The PCB has an overall conformal coating except in the contact pad area. 
+
+## **Features** 
+
+- RoHS compliant 
+
+- Lead free 
+
+- Industry standard Small Form Pluggable (SFP) package 
+
+- LC duplex connector optical interface 
+
+- Operates with 50/125-μm and 62.5/125-μm multimode fiber 
+
+- Compatible with 100Base-FX version of IEEE802.3u 
+
+- Single +3.3V power supply 
+
+- +3.3V TTL LOS output 
+
+- Squelched receiver outputs 
+
+- Manufactured in an ISO 9001 certified facility 
+
+- Operating temperature range: –40°C to +85°C 
+
+- Bail de-latch 
+
+- Hot plug capability 
+
+## **Transmitter** 
+
+The transmitter contains a 1310-nm InGaAsP LED. This LED is packaged in the optical subassembly of the transmitter. It is driven by an integrated circuit which converts differential PECL logic signals into an analog LED drive current. This current is monitored by the digital diagnostic interface. The transmitter light output power is inferred from this information. 
+
+The LED is switched off in case a static signal is present at the PECL inputs. 
+
+- Usage in harsh environment enabled by conformal coated PCB 
+
+- Harsh environment tested according to EIA-364-65B Class IIIA and ASTM B 1
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Broadcom"</span>,
+  <span class="key">"model"</span>: [
+    "AFBR-57E6APZC"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8074i",
+    "SFF-8472",
+    "IEEE <span class="num">802.3</span>u",
+    "100Base-FX"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LED_INGAASP",
+    "LED"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "PIN_InGaAs",
+    "PIN"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1270.0</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1380.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1308.0</span>,
+    <span class="num">1310.0</span>
+  ],
+  <span class="key">"wavelength_band"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "pluggable",
+    "pluggable_hot"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "MMF <span class="num">50</span>/125µm",
+    "MMF_OM1",
+    "MMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-40.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">0.26</span>,
+    <span class="num">0.145</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "100Base-FX",
+    "Fast Ethernet"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: [
+    "100Base-FX"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "100Base-FX",
+    "IEEE802.3u"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [
+    <span class="num">0.125</span>
+  ],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">0.1</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [
+    "LINECODE_4B5B"
+  ],
+  <span class="key">"reach_km"</span>: <span class="null">null</span>,
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-20.0</span>,
+    <span class="num">-24.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">-14.0</span>,
+    <span class="num">-17.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-31.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-12.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-10
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">10.0</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-45.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-32.0</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">10.0</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>,
+    <span class="num">1.6</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: [
+    <span class="num">690.0</span>,
+    <span class="num">2140.0</span>
+  ],
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Signalling rate is specified as <span class="num">125</span> MBd (Table <span class="num">4</span>). Power dissipation is given separately for transmitter (max <span class="num">260</span> mW) and receiver (max <span class="num">145</span> mW), not as a single module value. Tx output power limits differ for <span class="num">62.5</span>/125 μm NA=0.275 vs <span class="num">50</span>/125 μm NA=0.20 fiber (Table <span class="num">7</span>). Optical input power range −31.0 to −12.0 dBm (Table <span class="num">8</span>) is at BER ≤ <span class="num">1</span>×10−10 with <span class="num">125</span> MBd PRBS. LOS assert threshold is ≤ −45 dBm; deassert is ≤ −32.0 dBm max. EEPROM bytes <span class="num">60</span>–61 encode LED wavelength <span class="num">1310</span> nm (0x051E). Case temperature TC −40°C to +85°C at Tcase reference point."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "Description",
+    "Features",
+    "Transmitter",
+    "Receiver",
+    "Module Package",
+    "Recommended Operating Conditions",
+    "Transmitter Electrical Characteristics",
+    "Receiver Electrical Characteristics",
+    "Transmitter Optical Characteristics",
+    "Receiver Optical and Electrical Characteristics",
+    "EEPROM Serial ID Memory Contents – Address A0h",
+    "Settings of Alarm and Warning Thresholds"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Consider allowing SFP explicitly in form_factor enum. Include optional fields for signalling rate in MBd without unit conversion. Separate tx_power by fiber type (NA/fiber size) in schema."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>wavelength_center_nm</td><td><span class="badge">1308.0</span> <span class="badge">1310.0</span></td></tr>
+<tr><td>power_consumption_w</td><td><span class="badge">0.26</span> <span class="badge">0.145</span></td></tr>
+<tr><td>host_interface_name</td><td><span class="badge">100Base-FX</span> <span class="badge">Fast Ethernet</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">100Base-FX</span> <span class="badge">IEEE802.3u</span></td></tr>
+<tr><td>tx_power_min_dbm</td><td><span class="badge">-20.0</span> <span class="badge">-24.0</span></td></tr>
+<tr><td>tx_power_max_dbm</td><td><span class="badge">-14.0</span> <span class="badge">-17.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Broadcom</td></tr>
+<tr><td>model</td><td>AFBR-57E6APZC</td></tr>
+<tr><td>form_factor</td><td>SFP</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8074i, SFF-8472, IEEE 802.3u, 100Base-FX</td></tr>
+<tr><td>emitter_type</td><td>LED_INGAASP, LED</td></tr>
+<tr><td>photodetector_type</td><td>PIN_InGaAs, PIN</td></tr>
+<tr><td>wavelength_min_nm</td><td>1270.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>1380.0</td></tr>
+<tr><td>mounting_type</td><td>pluggable, pluggable_hot</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>MMF 50/125µm, MMF_OM1, MMF</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>media_interface_name</td><td>100Base-FX</td></tr>
+<tr><td>baud_rate_gbaud</td><td>0.125</td></tr>
+<tr><td>bit_rate_gbps</td><td>0.1</td></tr>
+<tr><td>modulation_format</td><td>LINECODE_4B5B</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-31.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-12.0</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-10</td></tr>
+<tr><td>extinction_ratio_db</td><td>10.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-45.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-32.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>10.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5, 1.6</td></tr>
+<tr><td>total_jitter_ps</td><td>690.0, 2140.0</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Signalling rate is specified as 125 MBd (Table 4). Power dissipation is given separately for transmitter (max 260 mW) and receiver (max 145 mW), not as a single module value. Tx output power limits differ for 62.5/125 μm NA=0.275 vs 50/125 μm NA=0.20 fiber (Table 7). Optical input power range −31.0 to −12.0 dBm (Table 8) is at BER ≤ 1×10−10 with 125 MBd PRBS. LOS assert threshold is ≤ −45 dBm; deassert is ≤ −32.0 dBm max. EEPROM bytes 60–61 encode LED wavelength 1310 nm (0x051E). Case temperature TC −40°C to +85°C at Tcase reference point.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>Description, Features, Transmitter, Receiver, Module Package, Recommended Operating Conditions, Transmitter Electrical Characteristics, Receiver Electrical Characteristics, Transmitter Optical Characteristics, Receiver Optical and Electrical Characteristics, EEPROM Serial ID Memory Contents – Address A0h, Settings of Alarm and Warning Thresholds</td></tr>
+<tr><td>suggestions</td><td>Consider allowing SFP explicitly in form_factor enum. Include optional fields for signalling rate in MBd without unit conversion. Separate tx_power by fiber type (NA/fiber size) in schema.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>wavelength_center_nm</th><th>power_consumption_w</th><th>host_interface_name</th><th>standards_code</th><th>tx_power_min_dbm</th><th>tx_power_max_dbm</th></tr><tr><td><strong>100Base-FX on 62.5/125 µm MMF</strong></td><td>1308.0</td><td>0.26</td><td>100Base-FX</td><td>IEEE802.3u</td><td>-20.0</td><td>-14.0</td></tr><tr><td><strong>100Base-FX on 50/125 µm MMF</strong></td><td>1310.0</td><td>0.145</td><td>Fast Ethernet</td><td>100Base-FX</td><td>-24.0</td><td>-17.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 10:24
+</footer>
+
+</div>
+</body>
+</html>

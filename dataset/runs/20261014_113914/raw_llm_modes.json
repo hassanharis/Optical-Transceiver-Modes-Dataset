@@ -1,0 +1,48 @@
+{
+  "modes": [
+    {
+      "label": "400GBASE-DR4 / 400GAUI-8 (CMIS 3.0)",
+      "model": "SO-QSFP-DD-4C-DR4-M",
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400GBASE-DR4",
+      "frame": "8x 50G",
+      "standards_code": "DR4 (Clause 124)",
+      "bit_rate_gbps": 400.0,
+      "fec_type": "RS_GENERIC",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "4x100GBASE-DR / 4x100GAUI-2 (CMIS 3.0)",
+      "model": "SO-QSFP-DD-4C-DR4-M",
+      "host_interface_name": "100GAUI-2",
+      "media_interface_name": "100GBASE-DR",
+      "frame": "4x 100GAUI-2",
+      "standards_code": "100GBASE-DR (Clause 140)",
+      "bit_rate_gbps": 400.0,
+      "fec_type": "RS_GENERIC",
+      "number_of_lanes": 4
+    },
+    {
+      "label": "400GBASE-DR4 / 400GAUI-8 (CMIS 4.0)",
+      "model": "SO-QSFP-DD-4C-DR4-4-M",
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400GBASE-DR4",
+      "frame": "8x 50G",
+      "standards_code": "DR4 (Clause 124)",
+      "bit_rate_gbps": 400.0,
+      "fec_type": "RS_GENERIC",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "4x100GBASE-DR / 4x100GAUI-2 (CMIS 4.0)",
+      "model": "SO-QSFP-DD-4C-DR4-4-M",
+      "host_interface_name": "100GAUI-2",
+      "media_interface_name": "100GBASE-DR",
+      "frame": "4x 100GAUI-2",
+      "standards_code": "100GBASE-DR (Clause 140)",
+      "bit_rate_gbps": 400.0,
+      "fec_type": "RS_GENERIC",
+      "number_of_lanes": 4
+    }
+  ]
+}

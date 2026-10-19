@@ -1,0 +1,89 @@
+{
+  "multi_valued": {
+    "model": [
+      "L9-SC315501-20PPC",
+      "L9-SC553101-20PPC",
+      "L9-SC315501-20PPI",
+      "L9-SC553101-20PPI"
+    ],
+    "wavelength_min_nm": [
+      1270.0,
+      1510.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1350.0,
+      1590.0,
+      1610.0
+    ],
+    "wavelength_center_nm": [
+      1310.0,
+      1550.0
+    ],
+    "standards_code": [
+      "G.957",
+      "STM-1",
+      "OC-3"
+    ],
+    "tx_power_max_dbm": [
+      -8.0,
+      -3.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "1x9"
+    ],
+    "standards_claimed": [
+      "ITU-T G.957"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "mounting_type": [
+      "1×9 package"
+    ],
+    "connector_type": [
+      "SC"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -15.0
+    ],
+    "rx_sensitivity_dbm": [
+      -32.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "extinction_ratio_db": [
+      8.2
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Operating data rate stated as 155Mbps (Features) and 155.52 Mbps (Recommended Operating Conditions); not given in Gbps. Ordering table Tx P(dBm) -15~-3 vs Transmitter Launch Optical Power Po -15 to -8 dBm (Note: 20km); both explicitly stated. PPI variants (…-20PPI) list Working Temp -40~85℃; PPC variants list -10~70℃. Absolute Maximum Ratings lists Operating Temperature TC 0~70℃ and TI -40~85℃. Recommended Operating Conditions lists TC 0~70℃ and TI -40~85℃. Receiver Signal Detect Range -45~-38 dBm; not labeled LOS assert/deassert. Supply current Icc max 250 mA; power in W not stated. Simplex SC optical interface stated in Features and Dimensions.",
+    "provenance_datasheet_sections": [
+      "L9-SC553101-20PPI",
+      "Features",
+      "Applications",
+      "Standard",
+      "Ordering Information",
+      "Absolute Maximum Ratings",
+      "Recommended Operating Conditions",
+      "Transmitter Optical ,Electrical characteristics",
+      "Receiver Optical Electrical Characteristics",
+      "Dimensions: Simplex SC receptacle optical interface"
+    ],
+    "suggestions": "Consider a bit_rate_mbps field or allow Mbps without conversion. form_factor enum could include 1x9. Signal Detect Range may map to LOS if vendor confirms assert vs deassert endpoints."
+  }
+}

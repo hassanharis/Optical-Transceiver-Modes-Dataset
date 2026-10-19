@@ -1,0 +1,116 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "100GBASE-PSM4",
+      "100GbE"
+    ],
+    "frame": [
+      "4x 25G",
+      "4x25GBASE-LR"
+    ],
+    "standards_code": [
+      "100GBASE-PSM4",
+      "IEEE802.3bj",
+      "RS(528,514)"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      25.78
+    ],
+    "tx_power_max_dbm": [
+      8.0,
+      2.0
+    ],
+    "fec_type": [
+      "RS_528_514",
+      "RS_GENERIC"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TQ2037-S31C-SO"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "100GBASE-PSM4",
+      "100GBASE PSM4",
+      "QSFP28 MSA",
+      "IEEE802.3bj"
+    ],
+    "wavelength_min_nm": [
+      1295.0
+    ],
+    "wavelength_max_nm": [
+      1325.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "MPO/APC",
+      "MPO",
+      "MTP"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      3.5
+    ],
+    "media_interface_name": [
+      "100GBASE-PSM4"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -4.0
+    ],
+    "rx_sensitivity_dbm": [
+      -12.6
+    ],
+    "rx_overload_dbm": [
+      2.0
+    ],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -24.0
+    ],
+    "los_deassert_dbm": [
+      -12.5
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Power budget 0–8.6 dB; path penalty 2.9 dB stated separately from power budget. Transmitter/receiver power values are average power (footnote 3). Minimum input power per lane -12.6 dBm and overload +2.0 dBm per lane specified at BER 5×10^-5 (footnote 4). FEC required by host per IEEE802.3bj RS(528,514); optical parameters yield BER 5×10^-5, FEC achieves better than 1×10^-12. Storage temperature -40°C to +85°C (not normal operating). 12-fiber ribbon SM cable; single 12 lane optical fiber MPO/MTP connector interface.",
+    "provenance_datasheet_sections": [
+      "QSFP28 100G-PSM4 10KM",
+      "QSFP28, 100GBASE-PSM4, 1310nm, SM, DDM, 8.6dB, 10km, MPO/APC",
+      "TQ2037-S31C-SO",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Datasheet does not state emitter/photodetector types, modulation format, or host/media interface IDs; path penalty 2.9 dB has no paired penalized optical parameter row for penalties[] schema."
+  }
+}

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;16G-ER-D200-BR1&#x27;, &#x27;16G-ER-D210-BR1&#x27;, &#x27;16G-ER-D220-BR1&#x27;, &#x27;16G-ER-D230-BR1&#x27;, &#x27;16G-ER-D240-BR1&#x27;, &#x27;16G-ER-D250-BR1&#x27;, &#x27;16G-ER-D260-BR1&#x27;, &#x27;16G-ER-D270-BR1&#x27;, &#x27;16G-ER-D280-BR1&#x27;, &#x27;16G-ER-D290-BR1&#x27;, &#x27;16G-ER-D300-BR1&#x27;, &#x27;16G-ER-D310-BR1&#x27;, &#x27;16G-ER-D320-BR1&#x27;, &#x27;16G-ER-D330-BR1&#x27;, &#x27;16G-ER-D340-BR1&#x27;, &#x27;16G-ER-D350-BR1&#x27;, &#x27;16G-ER-D360-BR1&#x27;, &#x27;16G-ER-D370-BR1&#x27;, &#x27;16G-ER-D380-BR1&#x27;, &#x27;16G-ER-D390-BR1&#x27;, &#x27;16G-ER-D400-BR1&#x27;, &#x27;16G-ER-D410-BR1&#x27;, &#x27;16G-ER-D420-BR1&#x27;, &#x27;16G-ER-D430-BR1&#x27;, &#x27;16G-ER-D440-BR1&#x27;, &#x27;16G-ER-D450-BR1&#x27;, &#x27;16G-ER-D460-BR1&#x27;, &#x27;16G-ER-D470-BR1&#x27;, &#x27;16G-ER-D480-BR1&#x27;, &#x27;16G-ER-D490-BR1&#x27;, &#x27;16G-ER-D500-BR1&#x27;, &#x27;16G-ER-D510-BR1&#x27;, &#x27;16G-ER-D520-BR1&#x27;, &#x27;16G-ER-D530-BR1&#x27;, &#x27;16G-ER-D540-BR1&#x27;, &#x27;16G-ER-D550-BR1&#x27;, &#x27;16G-ER-D560-BR1&#x27;, &#x27;16G-ER-D570-BR1&#x27;, &#x27;16G-ER-D580-BR1&#x27;, &#x27;16G-ER-D590-BR1&#x27;, &#x27;16G-ER-D600-BR1&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">16g-er-dxxx-br1-r5.2.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">3</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 08:28</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.2 
+
+## **16G-ER-Dxxx-BR1** 
+
+SFP+, 16/8/4 Gbps FC/FICON, DWDM 100GHz, DDM, 13dB, 40km, D200 - D600 (41ch) 
+
+
+## OVERVIEW 
+
+The 16G-ER-Dxxx-BR1 is a versatile DWDM transceiver in SFP+ form-factor supporting a wide range of Fiber Channel (FC) services (4G to 16G). The transceiver has been layer-1 tested and approved by Brocade. 
+
+The transceiver is provided in 41 channel versions at the 100GHz DWDM grid as specified in the ITU-T 694.1 standard. The transceiver can also be used in 1550/1530nm CWDM applications by selecting wavelength versions that match these. 
+
+The optical performance provides a bridgeable distance of up to 40km (without dispersion compensation) for 16G FC. This transceiver provides digital diagnostic functions via a 2-wire serial interface as defined by the SFF-8472 specification. 
+
+The transceiver module is compliant to RoHS-6/6. 
+
+## TECHNICAL DATA 
+
+|**Parameter**|**Value**||**Parameter**|**Value**|
+|---|---|---|---|---|
+|Technology|DWDM 100GHz SFP+||**Transmitter data:**||
+|Transmission media|SM (2x LC)||Output power|Min: 0.0dBm1)|
+|Typical reach|40km|||Max: +4.0dBm1)|
+|Nominal wavelengths|192.00 - 196.00THz (41ch)||Transmit wavelengths|192.00 - 196.00THz|
+|Bit rate support|14.025Gbps|||100GHz (ITU-T G.694.1)|
+||8.500Gbps||**Receiver data:**||
+||4.250Gbps||Minimum input power 16G FC|-13.0dBm1) 2)|
+|Protocol support|16G FC||8G FC|-14.0dBm1) 2)|
+||8G FC||4G FC|-14.0dBm1) 2)|
+||4G FC||Overload (max power)|-2.0dBm1) 2)|
+|Power budget|6 – 13dB @ 16G FC||Wavelength range|1480 - 1580nm|
+||6 – 14dB @ 8G/4G FC||DDM|Yes|
+|Dispersion tolerance|800ps/nm1)||MSA compliance|SFF-8431, -8432, -8472|
+|Dispersion penalty|Max 2dB||||
+|Power consumption|&lt; 2.2W||||
+|Operating temperature|0°C to +70°C||||
+|Storage temperature|-40°C to +85°C||||
+|1)Average power|||||
+|2)@ BER &lt; 1E-12 using PRBS 231-1|||||
+|**Safety/regulatory compliance:**|||||
+|TUV/UL/FDA (contact Smartoptics for latest certification information)|||||
+|RoHS compliance|||||
+
+
+
+For a 1550nm
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "16G-ER-D200-BR1",
+    "16G-ER-D210-BR1",
+    "16G-ER-D220-BR1",
+    "16G-ER-D230-BR1",
+    "16G-ER-D240-BR1",
+    "16G-ER-D250-BR1",
+    "16G-ER-D260-BR1",
+    "16G-ER-D270-BR1",
+    "16G-ER-D280-BR1",
+    "16G-ER-D290-BR1",
+    "16G-ER-D300-BR1",
+    "16G-ER-D310-BR1",
+    "16G-ER-D320-BR1",
+    "16G-ER-D330-BR1",
+    "16G-ER-D340-BR1",
+    "16G-ER-D350-BR1",
+    "16G-ER-D360-BR1",
+    "16G-ER-D370-BR1",
+    "16G-ER-D380-BR1",
+    "16G-ER-D390-BR1",
+    "16G-ER-D400-BR1",
+    "16G-ER-D410-BR1",
+    "16G-ER-D420-BR1",
+    "16G-ER-D430-BR1",
+    "16G-ER-D440-BR1",
+    "16G-ER-D450-BR1",
+    "16G-ER-D460-BR1",
+    "16G-ER-D470-BR1",
+    "16G-ER-D480-BR1",
+    "16G-ER-D490-BR1",
+    "16G-ER-D500-BR1",
+    "16G-ER-D510-BR1",
+    "16G-ER-D520-BR1",
+    "16G-ER-D530-BR1",
+    "16G-ER-D540-BR1",
+    "16G-ER-D550-BR1",
+    "16G-ER-D560-BR1",
+    "16G-ER-D570-BR1",
+    "16G-ER-D580-BR1",
+    "16G-ER-D590-BR1",
+    "16G-ER-D600-BR1"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP+"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "ITU-T G.694.1"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1480.0</span>,
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1561.42</span>,
+    <span class="num">1580.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1561.42</span>,
+    <span class="num">1560.61</span>,
+    <span class="num">1559.79</span>,
+    <span class="num">1558.98</span>,
+    <span class="num">1558.17</span>,
+    <span class="num">1557.36</span>,
+    <span class="num">1556.55</span>,
+    <span class="num">1555.75</span>,
+    <span class="num">1554.94</span>,
+    <span class="num">1554.13</span>,
+    <span class="num">1553.33</span>,
+    <span class="num">1552.52</span>,
+    <span class="num">1551.72</span>,
+    <span class="num">1550.92</span>,
+    <span class="num">1550.12</span>,
+    <span class="num">1549.32</span>,
+    <span class="num">1548.51</span>,
+    <span class="num">1547.72</span>,
+    <span class="num">1546.92</span>,
+    <span class="num">1546.12</span>,
+    <span class="num">1545.32</span>,
+    <span class="num">1544.53</span>,
+    <span class="num">1543.73</span>,
+    <span class="num">1542.94</span>,
+    <span class="num">1542.14</span>,
+    <span class="num">1541.35</span>,
+    <span class="num">1540.56</span>,
+    <span class="num">1539.77</span>,
+    <span class="num">1538.98</span>,
+    <span class="num">1538.19</span>,
+    <span class="num">1537.4</span>,
+    <span class="num">1536.61</span>,
+    <span class="num">1535.82</span>,
+    <span class="num">1535.04</span>,
+    <span class="num">1534.25</span>,
+    <span class="num">1533.47</span>,
+    <span class="num">1532.68</span>,
+    <span class="num">1531.9</span>,
+    <span class="num">1531.12</span>,
+    <span class="num">1530.33</span>,
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "DWDM",
+    "CWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">192.0</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.0</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">41</span>
+  ],
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">2.2</span>
+  ],
+  <span class="key">"host_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "ITU-T G.694.1",
+    "ITU-T G.694.2",
+    "ITU-T G.959"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">14.025</span>,
+    <span class="num">8.5</span>,
+    <span class="num">4.25</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">40.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">0.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">4.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-13.0</span>,
+    <span class="num">-14.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-2.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">800.0</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"los_deassert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Title/overview references D200–D600 (41ch) and <span class="num">13</span>dB power budget. Transmission media stated as SM (2x LC). Power budget <span class="num">6</span> – <span class="num">13</span>dB @ <span class="num">16</span>G FC and <span class="num">6</span> – <span class="num">14</span>dB @ <span class="num">8</span>G/4G FC. Dispersion penalty Max <span class="num">2</span>dB stated without a paired penalized parameter value and operating condition per penalty schema. Footnote <span class="num">1</span>): Average power applies to output power and receiver power specs. Footnote <span class="num">2</span>): @ BER &lt; <span class="num">1</span>E-12 using PRBS <span class="num">231</span>-1 for minimum input power and overload. Power consumption stated as &lt; <span class="num">2.2</span>W. Nominal/transmit wavelengths <span class="num">192.00</span> - <span class="num">196.00</span>THz (41ch); receiver wavelength range <span class="num">1480</span> - <span class="num">1580</span>nm. CWDM: D250–D410 for <span class="num">1550</span>nm; D500–D600 for <span class="num">1530</span>nm; G.694.2 <span class="num">1551</span>/1531nm ± <span class="num">7</span>nm. G.959 <span class="num">1500</span>nm–1565nm allows D200–D600 for <span class="num">1550</span>nm single-channel. Storage temperature <span class="num">-40</span>°C to +85°C. Brocade layer-1 tested and approved. RoHS-6/6 compliant."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "16G-ER-Dxxx-BR1",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Consider mapping power budget (6–13/14 dB) to a dedicated field. Dispersion penalty Max <span class="num">2</span>dB could populate penalties if source later ties it to chromatic dispersion and a penalized RX metric. Separate storage vs operating temperature fields would reduce ambiguity in notes."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">16G-ER-D200-BR1</span> <span class="badge">16G-ER-D210-BR1</span> <span class="badge">16G-ER-D220-BR1</span> <span class="badge">16G-ER-D230-BR1</span> <span class="badge">16G-ER-D240-BR1</span> <span class="badge">16G-ER-D250-BR1</span> <span class="badge">16G-ER-D260-BR1</span> <span class="badge">16G-ER-D270-BR1</span> <span class="badge">16G-ER-D280-BR1</span> <span class="badge">16G-ER-D290-BR1</span> <span class="badge">16G-ER-D300-BR1</span> <span class="badge">16G-ER-D310-BR1</span> <span class="badge">16G-ER-D320-BR1</span> <span class="badge">16G-ER-D330-BR1</span> <span class="badge">16G-ER-D340-BR1</span> <span class="badge">16G-ER-D350-BR1</span> <span class="badge">16G-ER-D360-BR1</span> <span class="badge">16G-ER-D370-BR1</span> <span class="badge">16G-ER-D380-BR1</span> <span class="badge">16G-ER-D390-BR1</span> <span class="badge">16G-ER-D400-BR1</span> <span class="badge">16G-ER-D410-BR1</span> <span class="badge">16G-ER-D420-BR1</span> <span class="badge">16G-ER-D430-BR1</span> <span class="badge">16G-ER-D440-BR1</span> <span class="badge">16G-ER-D450-BR1</span> <span class="badge">16G-ER-D460-BR1</span> <span class="badge">16G-ER-D470-BR1</span> <span class="badge">16G-ER-D480-BR1</span> <span class="badge">16G-ER-D490-BR1</span> <span class="badge">16G-ER-D500-BR1</span> <span class="badge">16G-ER-D510-BR1</span> <span class="badge">16G-ER-D520-BR1</span> <span class="badge">16G-ER-D530-BR1</span> <span class="badge">16G-ER-D540-BR1</span> <span class="badge">16G-ER-D550-BR1</span> <span class="badge">16G-ER-D560-BR1</span> <span class="badge">16G-ER-D570-BR1</span> <span class="badge">16G-ER-D580-BR1</span> <span class="badge">16G-ER-D590-BR1</span> <span class="badge">16G-ER-D600-BR1</span></td></tr>
+<tr><td>wavelength_min_nm</td><td><span class="badge">1480.0</span> <span class="badge">1529.55</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1561.42</span> <span class="badge">1580.0</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1561.42</span> <span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1545.32</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span></td></tr>
+<tr><td>wavelength_band</td><td><span class="badge">DWDM</span> <span class="badge">CWDM</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">ITU-T G.694.1</span> <span class="badge">ITU-T G.694.2</span> <span class="badge">ITU-T G.959</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">14.025</span> <span class="badge">8.5</span> <span class="badge">4.25</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-13.0</span> <span class="badge">-14.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>SFP+</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8431, SFF-8432, SFF-8472, ITU-T G.694.1</td></tr>
+<tr><td>frequency_min_thz</td><td>192.0</td></tr>
+<tr><td>frequency_max_thz</td><td>196.0</td></tr>
+<tr><td>channel_spacing_ghz</td><td>100.0</td></tr>
+<tr><td>channel_total</td><td>41</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>2.2</td></tr>
+<tr><td>reach_km</td><td>40.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>0.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>4.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-2.0</td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td>800.0</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Title/overview references D200–D600 (41ch) and 13dB power budget. Transmission media stated as SM (2x LC). Power budget 6 – 13dB @ 16G FC and 6 – 14dB @ 8G/4G FC. Dispersion penalty Max 2dB stated without a paired penalized parameter value and operating condition per penalty schema. Footnote 1): Average power applies to output power and receiver power specs. Footnote 2): @ BER &lt; 1E-12 using PRBS 231-1 for minimum input power and overload. Power consumption stated as &lt; 2.2W. Nominal/transmit wavelengths 192.00 - 196.00THz (41ch); receiver wavelength range 1480 - 1580nm. CWDM: D250–D410 for 1550nm; D500–D600 for 1530nm; G.694.2 1551/1531nm ± 7nm. G.959 1500nm–1565nm allows D200–D600 for 1550nm single-channel. Storage temperature -40°C to +85°C. Brocade layer-1 tested and approved. RoHS-6/6 compliant.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>16G-ER-Dxxx-BR1, OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+<tr><td>suggestions</td><td>Consider mapping power budget (6–13/14 dB) to a dedicated field. Dispersion penalty Max 2dB could populate penalties if source later ties it to chromatic dispersion and a penalized RX metric. Separate storage vs operating temperature fields would reduce ambiguity in notes.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_center_nm</th><th>wavelength_band</th><th>standards_code</th><th>bit_rate_gbps</th><th>rx_sensitivity_dbm</th></tr><tr><td><strong>D200 DWDM 16G FC</strong></td><td>16G-ER-D200-BR1</td><td>1480.0</td><td>1580.0</td><td>1561.42</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D200 DWDM 8G FC</strong></td><td>16G-ER-D200-BR1</td><td>1480.0</td><td>1580.0</td><td>1561.42</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D200 DWDM 4G FC</strong></td><td>16G-ER-D200-BR1</td><td>1480.0</td><td>1580.0</td><td>1561.42</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D210 DWDM 16G FC</strong></td><td>16G-ER-D210-BR1</td><td>1480.0</td><td>1580.0</td><td>1560.61</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D210 DWDM 8G FC</strong></td><td>16G-ER-D210-BR1</td><td>1480.0</td><td>1580.0</td><td>1560.61</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D210 DWDM 4G FC</strong></td><td>16G-ER-D210-BR1</td><td>1480.0</td><td>1580.0</td><td>1560.61</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D220 DWDM 16G FC</strong></td><td>16G-ER-D220-BR1</td><td>1480.0</td><td>1580.0</td><td>1559.79</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D220 DWDM 8G FC</strong></td><td>16G-ER-D220-BR1</td><td>1480.0</td><td>1580.0</td><td>1559.79</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D220 DWDM 4G FC</strong></td><td>16G-ER-D220-BR1</td><td>1480.0</td><td>1580.0</td><td>1559.79</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D230 DWDM 16G FC</strong></td><td>16G-ER-D230-BR1</td><td>1480.0</td><td>1580.0</td><td>1558.98</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D230 DWDM 8G FC</strong></td><td>16G-ER-D230-BR1</td><td>1480.0</td><td>1580.0</td><td>1558.98</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D230 DWDM 4G FC</strong></td><td>16G-ER-D230-BR1</td><td>1480.0</td><td>1580.0</td><td>1558.98</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D240 DWDM 16G FC</strong></td><td>16G-ER-D240-BR1</td><td>1480.0</td><td>1580.0</td><td>1558.17</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D240 DWDM 8G FC</strong></td><td>16G-ER-D240-BR1</td><td>1480.0</td><td>1580.0</td><td>1558.17</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D240 DWDM 4G FC</strong></td><td>16G-ER-D240-BR1</td><td>1480.0</td><td>1580.0</td><td>1558.17</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D250 DWDM 16G FC</strong></td><td>16G-ER-D250-BR1</td><td>1480.0</td><td>1580.0</td><td>1557.36</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D250 DWDM 8G FC</strong></td><td>16G-ER-D250-BR1</td><td>1480.0</td><td>1580.0</td><td>1557.36</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D250 DWDM 4G FC</strong></td><td>16G-ER-D250-BR1</td><td>1480.0</td><td>1580.0</td><td>1557.36</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D260 DWDM 16G FC</strong></td><td>16G-ER-D260-BR1</td><td>1480.0</td><td>1580.0</td><td>1556.55</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D260 DWDM 8G FC</strong></td><td>16G-ER-D260-BR1</td><td>1480.0</td><td>1580.0</td><td>1556.55</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D260 DWDM 4G FC</strong></td><td>16G-ER-D260-BR1</td><td>1480.0</td><td>1580.0</td><td>1556.55</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D270 DWDM 16G FC</strong></td><td>16G-ER-D270-BR1</td><td>1480.0</td><td>1580.0</td><td>1555.75</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D270 DWDM 8G FC</strong></td><td>16G-ER-D270-BR1</td><td>1480.0</td><td>1580.0</td><td>1555.75</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D270 DWDM 4G FC</strong></td><td>16G-ER-D270-BR1</td><td>1480.0</td><td>1580.0</td><td>1555.75</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D280 DWDM 16G FC</strong></td><td>16G-ER-D280-BR1</td><td>1480.0</td><td>1580.0</td><td>1554.94</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D280 DWDM 8G FC</strong></td><td>16G-ER-D280-BR1</td><td>1480.0</td><td>1580.0</td><td>1554.94</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D280 DWDM 4G FC</strong></td><td>16G-ER-D280-BR1</td><td>1480.0</td><td>1580.0</td><td>1554.94</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D290 DWDM 16G FC</strong></td><td>16G-ER-D290-BR1</td><td>1480.0</td><td>1580.0</td><td>1554.13</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D290 DWDM 8G FC</strong></td><td>16G-ER-D290-BR1</td><td>1480.0</td><td>1580.0</td><td>1554.13</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D290 DWDM 4G FC</strong></td><td>16G-ER-D290-BR1</td><td>1480.0</td><td>1580.0</td><td>1554.13</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D300 DWDM 16G FC</strong></td><td>16G-ER-D300-BR1</td><td>1480.0</td><td>1580.0</td><td>1553.33</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D300 DWDM 8G FC</strong></td><td>16G-ER-D300-BR1</td><td>1480.0</td><td>1580.0</td><td>1553.33</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D300 DWDM 4G FC</strong></td><td>16G-ER-D300-BR1</td><td>1480.0</td><td>1580.0</td><td>1553.33</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D310 DWDM 16G FC</strong></td><td>16G-ER-D310-BR1</td><td>1480.0</td><td>1580.0</td><td>1552.52</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D310 DWDM 8G FC</strong></td><td>16G-ER-D310-BR1</td><td>1480.0</td><td>1580.0</td><td>1552.52</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D310 DWDM 4G FC</strong></td><td>16G-ER-D310-BR1</td><td>1480.0</td><td>1580.0</td><td>1552.52</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D320 DWDM 16G FC</strong></td><td>16G-ER-D320-BR1</td><td>1480.0</td><td>1580.0</td><td>1551.72</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D320 DWDM 8G FC</strong></td><td>16G-ER-D320-BR1</td><td>1480.0</td><td>1580.0</td><td>1551.72</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D320 DWDM 4G FC</strong></td><td>16G-ER-D320-BR1</td><td>1480.0</td><td>1580.0</td><td>1551.72</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D330 DWDM 16G FC</strong></td><td>16G-ER-D330-BR1</td><td>1480.0</td><td>1580.0</td><td>1550.92</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D330 DWDM 8G FC</strong></td><td>16G-ER-D330-BR1</td><td>1480.0</td><td>1580.0</td><td>1550.92</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D330 DWDM 4G FC</strong></td><td>16G-ER-D330-BR1</td><td>1480.0</td><td>1580.0</td><td>1550.92</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D340 DWDM 16G FC</strong></td><td>16G-ER-D340-BR1</td><td>1480.0</td><td>1580.0</td><td>1550.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D340 DWDM 8G FC</strong></td><td>16G-ER-D340-BR1</td><td>1480.0</td><td>1580.0</td><td>1550.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D340 DWDM 4G FC</strong></td><td>16G-ER-D340-BR1</td><td>1480.0</td><td>1580.0</td><td>1550.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D350 DWDM 16G FC</strong></td><td>16G-ER-D350-BR1</td><td>1480.0</td><td>1580.0</td><td>1549.32</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D350 DWDM 8G FC</strong></td><td>16G-ER-D350-BR1</td><td>1480.0</td><td>1580.0</td><td>1549.32</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D350 DWDM 4G FC</strong></td><td>16G-ER-D350-BR1</td><td>1480.0</td><td>1580.0</td><td>1549.32</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D360 DWDM 16G FC</strong></td><td>16G-ER-D360-BR1</td><td>1480.0</td><td>1580.0</td><td>1548.51</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D360 DWDM 8G FC</strong></td><td>16G-ER-D360-BR1</td><td>1480.0</td><td>1580.0</td><td>1548.51</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D360 DWDM 4G FC</strong></td><td>16G-ER-D360-BR1</td><td>1480.0</td><td>1580.0</td><td>1548.51</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D370 DWDM 16G FC</strong></td><td>16G-ER-D370-BR1</td><td>1480.0</td><td>1580.0</td><td>1547.72</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D370 DWDM 8G FC</strong></td><td>16G-ER-D370-BR1</td><td>1480.0</td><td>1580.0</td><td>1547.72</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D370 DWDM 4G FC</strong></td><td>16G-ER-D370-BR1</td><td>1480.0</td><td>1580.0</td><td>1547.72</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D380 DWDM 16G FC</strong></td><td>16G-ER-D380-BR1</td><td>1480.0</td><td>1580.0</td><td>1546.92</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D380 DWDM 8G FC</strong></td><td>16G-ER-D380-BR1</td><td>1480.0</td><td>1580.0</td><td>1546.92</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D380 DWDM 4G FC</strong></td><td>16G-ER-D380-BR1</td><td>1480.0</td><td>1580.0</td><td>1546.92</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D390 DWDM 16G FC</strong></td><td>16G-ER-D390-BR1</td><td>1480.0</td><td>1580.0</td><td>1546.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D390 DWDM 8G FC</strong></td><td>16G-ER-D390-BR1</td><td>1480.0</td><td>1580.0</td><td>1546.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D390 DWDM 4G FC</strong></td><td>16G-ER-D390-BR1</td><td>1480.0</td><td>1580.0</td><td>1546.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D400 DWDM 16G FC</strong></td><td>16G-ER-D400-BR1</td><td>1480.0</td><td>1580.0</td><td>1545.32</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D400 DWDM 8G FC</strong></td><td>16G-ER-D400-BR1</td><td>1480.0</td><td>1580.0</td><td>1545.32</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D400 DWDM 4G FC</strong></td><td>16G-ER-D400-BR1</td><td>1480.0</td><td>1580.0</td><td>1545.32</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D410 DWDM 16G FC</strong></td><td>16G-ER-D410-BR1</td><td>1480.0</td><td>1580.0</td><td>1544.53</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D410 DWDM 8G FC</strong></td><td>16G-ER-D410-BR1</td><td>1480.0</td><td>1580.0</td><td>1544.53</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D410 DWDM 4G FC</strong></td><td>16G-ER-D410-BR1</td><td>1480.0</td><td>1580.0</td><td>1544.53</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D420 DWDM 16G FC</strong></td><td>16G-ER-D420-BR1</td><td>1480.0</td><td>1580.0</td><td>1543.73</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D420 DWDM 8G FC</strong></td><td>16G-ER-D420-BR1</td><td>1480.0</td><td>1580.0</td><td>1543.73</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D420 DWDM 4G FC</strong></td><td>16G-ER-D420-BR1</td><td>1480.0</td><td>1580.0</td><td>1543.73</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D430 DWDM 16G FC</strong></td><td>16G-ER-D430-BR1</td><td>1480.0</td><td>1580.0</td><td>1542.94</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D430 DWDM 8G FC</strong></td><td>16G-ER-D430-BR1</td><td>1480.0</td><td>1580.0</td><td>1542.94</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D430 DWDM 4G FC</strong></td><td>16G-ER-D430-BR1</td><td>1480.0</td><td>1580.0</td><td>1542.94</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D440 DWDM 16G FC</strong></td><td>16G-ER-D440-BR1</td><td>1480.0</td><td>1580.0</td><td>1542.14</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D440 DWDM 8G FC</strong></td><td>16G-ER-D440-BR1</td><td>1480.0</td><td>1580.0</td><td>1542.14</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D440 DWDM 4G FC</strong></td><td>16G-ER-D440-BR1</td><td>1480.0</td><td>1580.0</td><td>1542.14</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D450 DWDM 16G FC</strong></td><td>16G-ER-D450-BR1</td><td>1480.0</td><td>1580.0</td><td>1541.35</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D450 DWDM 8G FC</strong></td><td>16G-ER-D450-BR1</td><td>1480.0</td><td>1580.0</td><td>1541.35</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D450 DWDM 4G FC</strong></td><td>16G-ER-D450-BR1</td><td>1480.0</td><td>1580.0</td><td>1541.35</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D460 DWDM 16G FC</strong></td><td>16G-ER-D460-BR1</td><td>1480.0</td><td>1580.0</td><td>1540.56</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D460 DWDM 8G FC</strong></td><td>16G-ER-D460-BR1</td><td>1480.0</td><td>1580.0</td><td>1540.56</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D460 DWDM 4G FC</strong></td><td>16G-ER-D460-BR1</td><td>1480.0</td><td>1580.0</td><td>1540.56</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D470 DWDM 16G FC</strong></td><td>16G-ER-D470-BR1</td><td>1480.0</td><td>1580.0</td><td>1539.77</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D470 DWDM 8G FC</strong></td><td>16G-ER-D470-BR1</td><td>1480.0</td><td>1580.0</td><td>1539.77</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D470 DWDM 4G FC</strong></td><td>16G-ER-D470-BR1</td><td>1480.0</td><td>1580.0</td><td>1539.77</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D480 DWDM 16G FC</strong></td><td>16G-ER-D480-BR1</td><td>1480.0</td><td>1580.0</td><td>1538.98</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D480 DWDM 8G FC</strong></td><td>16G-ER-D480-BR1</td><td>1480.0</td><td>1580.0</td><td>1538.98</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D480 DWDM 4G FC</strong></td><td>16G-ER-D480-BR1</td><td>1480.0</td><td>1580.0</td><td>1538.98</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D490 DWDM 16G FC</strong></td><td>16G-ER-D490-BR1</td><td>1480.0</td><td>1580.0</td><td>1538.19</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D490 DWDM 8G FC</strong></td><td>16G-ER-D490-BR1</td><td>1480.0</td><td>1580.0</td><td>1538.19</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D490 DWDM 4G FC</strong></td><td>16G-ER-D490-BR1</td><td>1480.0</td><td>1580.0</td><td>1538.19</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D500 DWDM 16G FC</strong></td><td>16G-ER-D500-BR1</td><td>1480.0</td><td>1580.0</td><td>1537.4</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D500 DWDM 8G FC</strong></td><td>16G-ER-D500-BR1</td><td>1480.0</td><td>1580.0</td><td>1537.4</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D500 DWDM 4G FC</strong></td><td>16G-ER-D500-BR1</td><td>1480.0</td><td>1580.0</td><td>1537.4</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D510 DWDM 16G FC</strong></td><td>16G-ER-D510-BR1</td><td>1480.0</td><td>1580.0</td><td>1536.61</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D510 DWDM 8G FC</strong></td><td>16G-ER-D510-BR1</td><td>1480.0</td><td>1580.0</td><td>1536.61</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D510 DWDM 4G FC</strong></td><td>16G-ER-D510-BR1</td><td>1480.0</td><td>1580.0</td><td>1536.61</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D520 DWDM 16G FC</strong></td><td>16G-ER-D520-BR1</td><td>1480.0</td><td>1580.0</td><td>1535.82</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D520 DWDM 8G FC</strong></td><td>16G-ER-D520-BR1</td><td>1480.0</td><td>1580.0</td><td>1535.82</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D520 DWDM 4G FC</strong></td><td>16G-ER-D520-BR1</td><td>1480.0</td><td>1580.0</td><td>1535.82</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D530 DWDM 16G FC</strong></td><td>16G-ER-D530-BR1</td><td>1480.0</td><td>1580.0</td><td>1535.04</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D530 DWDM 8G FC</strong></td><td>16G-ER-D530-BR1</td><td>1480.0</td><td>1580.0</td><td>1535.04</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D530 DWDM 4G FC</strong></td><td>16G-ER-D530-BR1</td><td>1480.0</td><td>1580.0</td><td>1535.04</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D540 DWDM 16G FC</strong></td><td>16G-ER-D540-BR1</td><td>1480.0</td><td>1580.0</td><td>1534.25</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D540 DWDM 8G FC</strong></td><td>16G-ER-D540-BR1</td><td>1480.0</td><td>1580.0</td><td>1534.25</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D540 DWDM 4G FC</strong></td><td>16G-ER-D540-BR1</td><td>1480.0</td><td>1580.0</td><td>1534.25</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D550 DWDM 16G FC</strong></td><td>16G-ER-D550-BR1</td><td>1480.0</td><td>1580.0</td><td>1533.47</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D550 DWDM 8G FC</strong></td><td>16G-ER-D550-BR1</td><td>1480.0</td><td>1580.0</td><td>1533.47</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D550 DWDM 4G FC</strong></td><td>16G-ER-D550-BR1</td><td>1480.0</td><td>1580.0</td><td>1533.47</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D560 DWDM 16G FC</strong></td><td>16G-ER-D560-BR1</td><td>1480.0</td><td>1580.0</td><td>1532.68</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D560 DWDM 8G FC</strong></td><td>16G-ER-D560-BR1</td><td>1480.0</td><td>1580.0</td><td>1532.68</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D560 DWDM 4G FC</strong></td><td>16G-ER-D560-BR1</td><td>1480.0</td><td>1580.0</td><td>1532.68</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D570 DWDM 16G FC</strong></td><td>16G-ER-D570-BR1</td><td>1480.0</td><td>1580.0</td><td>1531.9</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D570 DWDM 8G FC</strong></td><td>16G-ER-D570-BR1</td><td>1480.0</td><td>1580.0</td><td>1531.9</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D570 DWDM 4G FC</strong></td><td>16G-ER-D570-BR1</td><td>1480.0</td><td>1580.0</td><td>1531.9</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D580 DWDM 16G FC</strong></td><td>16G-ER-D580-BR1</td><td>1480.0</td><td>1580.0</td><td>1531.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D580 DWDM 8G FC</strong></td><td>16G-ER-D580-BR1</td><td>1480.0</td><td>1580.0</td><td>1531.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D580 DWDM 4G FC</strong></td><td>16G-ER-D580-BR1</td><td>1480.0</td><td>1580.0</td><td>1531.12</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D590 DWDM 16G FC</strong></td><td>16G-ER-D590-BR1</td><td>1480.0</td><td>1580.0</td><td>1530.33</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D590 DWDM 8G FC</strong></td><td>16G-ER-D590-BR1</td><td>1480.0</td><td>1580.0</td><td>1530.33</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D590 DWDM 4G FC</strong></td><td>16G-ER-D590-BR1</td><td>1480.0</td><td>1580.0</td><td>1530.33</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>D600 DWDM 16G FC</strong></td><td>16G-ER-D600-BR1</td><td>1480.0</td><td>1580.0</td><td>1529.55</td><td>DWDM</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>D600 DWDM 8G FC</strong></td><td>16G-ER-D600-BR1</td><td>1480.0</td><td>1580.0</td><td>1529.55</td><td>DWDM</td><td>ITU-T G.694.1</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>D600 DWDM 4G FC</strong></td><td>16G-ER-D600-BR1</td><td>1480.0</td><td>1580.0</td><td>1529.55</td><td>DWDM</td><td>ITU-T G.694.1</td><td>4.25</td><td>-14.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 08:28
+</footer>
+
+</div>
+</body>
+</html>

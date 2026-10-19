@@ -1,0 +1,10 @@
+{
+  "modes": [
+    {
+      "label": "100GBASE-LR 10km (1\u03bb PAM4)",
+      "standards_code": "100GBASE-LR",
+      "baud_rate_gbaud": 53.125,
+      "number_of_lanes": 1
+    }
+  ]
+}

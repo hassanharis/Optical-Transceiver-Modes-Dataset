@@ -1,0 +1,43 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\av02-0031en.pdf",
+  "page_count": 16,
+  "table_count": 7,
+  "markdown_chars": 43426,
+  "tables": [
+    {
+      "page": 8,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 11,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 11,
+      "label": null,
+      "rows": 9
+    },
+    {
+      "page": 12,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 12,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 13,
+      "label": null,
+      "rows": 21
+    },
+    {
+      "page": 13,
+      "label": null,
+      "rows": 23
+    }
+  ]
+}

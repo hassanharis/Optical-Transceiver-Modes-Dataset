@@ -1,0 +1,132 @@
+{
+  "modes": [
+    {
+      "label": "CFP2 to QSFP28 DAC 1m @ 100GbE",
+      "model": "SO-CFP2-QSFP28-1M",
+      "form_factor": "CFP2",
+      "host_interface_name": "MDIO",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 103.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC 1m @ OTU4",
+      "model": "SO-CFP2-QSFP28-1M",
+      "form_factor": "QSFP28",
+      "host_interface_name": "2-wire serial communication interface",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 112.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC 2m @ 100GbE",
+      "model": "SO-CFP2-QSFP28-2M",
+      "form_factor": "CFP2",
+      "host_interface_name": "MDIO",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 103.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC 2m @ OTU4",
+      "model": "SO-CFP2-QSFP28-2M",
+      "form_factor": "QSFP28",
+      "host_interface_name": "2-wire serial communication interface",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 112.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC 3m @ 100GbE",
+      "model": "SO-CFP2-QSFP28-3M",
+      "form_factor": "CFP2",
+      "host_interface_name": "MDIO",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 103.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC 3m @ OTU4",
+      "model": "SO-CFP2-QSFP28-3M",
+      "form_factor": "QSFP28",
+      "host_interface_name": "2-wire serial communication interface",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 112.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC 1m Dual CDR @ 100GbE",
+      "model": "SO-CFP2-QSFP28-1M-2",
+      "form_factor": "CFP2",
+      "host_interface_name": "MDIO",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 103.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC 1m Dual CDR @ OTU4",
+      "model": "SO-CFP2-QSFP28-1M-2",
+      "form_factor": "QSFP28",
+      "host_interface_name": "2-wire serial communication interface",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 112.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC 2m Dual CDR @ 100GbE",
+      "model": "SO-CFP2-QSFP28-2M-2",
+      "form_factor": "CFP2",
+      "host_interface_name": "MDIO",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 103.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC 2m Dual CDR @ OTU4",
+      "model": "SO-CFP2-QSFP28-2M-2",
+      "form_factor": "QSFP28",
+      "host_interface_name": "2-wire serial communication interface",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 112.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC 3m Dual CDR @ 100GbE",
+      "model": "SO-CFP2-QSFP28-3M-2",
+      "form_factor": "CFP2",
+      "host_interface_name": "MDIO",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 103.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC 3m Dual CDR @ OTU4",
+      "model": "SO-CFP2-QSFP28-3M-2",
+      "form_factor": "QSFP28",
+      "host_interface_name": "2-wire serial communication interface",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 112.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC Rx CDR family @ 100GbE",
+      "model": "SO-CFP2-QSFP28-XM",
+      "form_factor": "CFP2",
+      "host_interface_name": "MDIO",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 103.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC Rx CDR family @ OTU4",
+      "model": "SO-CFP2-QSFP28-XM",
+      "form_factor": "QSFP28",
+      "host_interface_name": "2-wire serial communication interface",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 112.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC Dual CDR family @ 100GbE",
+      "model": "SO-CFP2-QSFP28-XM-2",
+      "form_factor": "CFP2",
+      "host_interface_name": "MDIO",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 103.0
+    },
+    {
+      "label": "CFP2 to QSFP28 DAC Dual CDR family @ OTU4",
+      "model": "SO-CFP2-QSFP28-XM-2",
+      "form_factor": "QSFP28",
+      "host_interface_name": "2-wire serial communication interface",
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 112.0
+    }
+  ]
+}

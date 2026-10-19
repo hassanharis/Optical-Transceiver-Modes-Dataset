@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics [&#x27;TQD029-TUNC-SO&#x27;]</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics [&#x27;TQD029-TUNC-SO&#x27;]</div>
+  <div class="subtitle">QSFP-DD &middot; DWDM</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Model</div><div class="value">TQD029-TUNC-SO</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">QSFP-DD</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">OpenZR+, OpenROADM, QSFP-DD MSA, CMIS5.3, 400G OpenZR+/OpenROADM</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">DWDM</div></div>
+      <div class="spec-item"><div class="label">Frequency Min Thz</div><div class="value">191.25</div></div>
+      <div class="spec-item"><div class="label">Frequency Max Thz</div><div class="value">196.1</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">15.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">75.0</div></div>
+      <div class="spec-item"><div class="label">Bit Rate (Gbps)</div><div class="value">400.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">1.0</div></div>
+      <div class="spec-item"><div class="label">Tx In Band Osnr Db</div><div class="value">37.0</div></div>
+      <div class="spec-item"><div class="label">Fec Type</div><div class="value">OFEC</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Operating temperature footnote: module turns up from cold start at ambient as low as -5C and reaches specifications after self-heating to min temperature (+15C). Tx power minimum 1dBm without attenuation; provisionable attenuation up to 10dB from maximum available Tx power; defaults to maximum if not provisioned by host. Tx Out-Of-Band OSNR listed as TBD. Rx sensitivity values measured at OSNR &gt; 36dB. Rx @ OSNR and Rx OSNR @~1dB penalty footnote: specified as [Min OSNR Value @ Min Rx power for the OSNR value]. Absolute max: Rx signal input power +1dBm; Rx total input power 15dBm. Power consumption EOL: see ELECTICAL CHARACTERISTICS; increases with host interface and with extended CD search range beyond default. DP-QPSK FWHM 113GHz noted in OVERVIEW. Non-Muxponder mode and additional max CD range power figures TBD in electrical table.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">TQD029-TUNC-SO, OVERVIEW, TECHNICAL DATA, GENERIC, OPTICAL SPECIFICATION – NTWK/MEDIA CODES, ELECTICAL CHARACTERISTICS, APPLICATION SELECT TABLE - NORMALIZED APPLICATION DESCRIPTORS, ORDERING INFORMATION</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Per-media-code pairing of optical parameters (CDC default vs max, power, sensitivity) is not represented in the flat list schema; nested application profiles would reduce ambiguity. Distinguish rx_overload_dbm for per-channel vs total received power (+1dBm vs 15dBm).</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Channel Spacing (GHz)</th><th>Power (W)</th><th>Host Interface</th><th>Host Interface ID (hex)</th><th>host_interface_id</th><th>Media Interface</th><th>Media Interface ID (hex)</th><th>media_interface_id</th><th>frame</th><th>Standards code</th><th>Baud Rate (GBaud)</th><th>modulation_format</th><th>RX Sensitivity (dBm)</th><th>RX OSNR (dB)</th><th>RX Overload (dBm)</th><th>CD Tolerance (ps/nm)</th><th>Penalties</th></tr>
+      <tr><td><strong>OpenROADM 400G QPSK @ 400GAUI-8</strong></td><td>150.0</td><td>24.0</td><td>400GAUI-8</td><td>0x11</td><td>17</td><td>FLEXO-4e-DO-QPSK</td><td>0x64</td><td>100</td><td>1x 400GAUI-8</td><td>FLEXO-4e-DO-QPSK</td><td>118.2</td><td>QPSK-DP</td><td>-27.0</td><td>17.9</td><td>1.0</td><td>58000.0</td><td>rx_osnr_db +1.0 dB (val=18.7) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenROADM 400G QPSK @ 200GAUI-4</strong></td><td>150.0</td><td>24.0</td><td>200GAUI-4</td><td>0x0F</td><td>15</td><td>FLEXO-4e-DO-QPSK</td><td>0x64</td><td>100</td><td>2x 200GAUI-4</td><td>FLEXO-4e-DO-QPSK</td><td>118.2</td><td>QPSK-DP</td><td>-27.0</td><td>17.9</td><td>1.0</td><td>58000.0</td><td>rx_osnr_db +1.0 dB (val=18.7) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenROADM 400G QPSK @ 100GAUI-2</strong></td><td>150.0</td><td>24.0</td><td>100GAUI-2</td><td>0x0D</td><td>13</td><td>FLEXO-4e-DO-QPSK</td><td>0x64</td><td>100</td><td>4x 100GAUI-2</td><td>FLEXO-4e-DO-QPSK</td><td>118.2</td><td>QPSK-DP</td><td>-27.0</td><td>17.9</td><td>1.0</td><td>58000.0</td><td>rx_osnr_db +1.0 dB (val=18.7) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-66 @ 400GAUI-8</strong></td><td>75.0</td><td>23.5</td><td>400GAUI-8</td><td>0x11</td><td>17</td><td>FlexO-4e-MPCS066-OS</td><td>0xC0</td><td>192</td><td>1x 400GAUI-8</td><td>FlexO-4e-MPCS066-OS</td><td>65.7</td><td>PCS_66</td><td>-24.5</td><td>21.2</td><td>1.0</td><td>42000.0</td><td>rx_osnr_db +1.0 dB (val=22.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-66 @ 200GAUI-4</strong></td><td>75.0</td><td>23.5</td><td>200GAUI-4</td><td>0x0F</td><td>15</td><td>FlexO-4e-MPCS066-OS</td><td>0xC0</td><td>192</td><td>2x 200GAUI-4</td><td>FlexO-4e-MPCS066-OS</td><td>65.7</td><td>PCS_66</td><td>-24.5</td><td>21.2</td><td>1.0</td><td>42000.0</td><td>rx_osnr_db +1.0 dB (val=22.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-66 @ 100GAUI-2</strong></td><td>75.0</td><td>23.5</td><td>100GAUI-2</td><td>0x0D</td><td>13</td><td>FlexO-4e-MPCS066-OS</td><td>0xC0</td><td>192</td><td>4x 100GAUI-2</td><td>FlexO-4e-MPCS066-OS</td><td>65.7</td><td>PCS_66</td><td>-24.5</td><td>21.2</td><td>1.0</td><td>42000.0</td><td>rx_osnr_db +1.0 dB (val=22.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-75 @ 400GAUI-8</strong></td><td>87.5</td><td>24.0</td><td>400GAUI-8</td><td>0x11</td><td>17</td><td>FlexO-4e-MPCS075-OS</td><td>0xC2</td><td>194</td><td>1x 400GAUI-8</td><td>FlexO-4e-MPCS075-OS</td><td>75.0</td><td>PCS_75</td><td>-25.5</td><td>20.6</td><td>1.0</td><td>37000.0</td><td>rx_osnr_db +1.0 dB (val=21.4) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-75 @ 200GAUI-4</strong></td><td>87.5</td><td>24.0</td><td>200GAUI-4</td><td>0x0F</td><td>15</td><td>FlexO-4e-MPCS075-OS</td><td>0xC2</td><td>194</td><td>2x 200GAUI-4</td><td>FlexO-4e-MPCS075-OS</td><td>75.0</td><td>PCS_75</td><td>-25.5</td><td>20.6</td><td>1.0</td><td>37000.0</td><td>rx_osnr_db +1.0 dB (val=21.4) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-75 @ 100GAUI-2</strong></td><td>87.5</td><td>24.0</td><td>100GAUI-2</td><td>0x0D</td><td>13</td><td>FlexO-4e-MPCS075-OS</td><td>0xC2</td><td>194</td><td>4x 100GAUI-2</td><td>FlexO-4e-MPCS075-OS</td><td>75.0</td><td>PCS_75</td><td>-25.5</td><td>20.6</td><td>1.0</td><td>37000.0</td><td>rx_osnr_db +1.0 dB (val=21.4) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-87 @ 400GAUI-8</strong></td><td>100.0</td><td>24.0</td><td>400GAUI-8</td><td>0x11</td><td>17</td><td>FlexO-4e-MPCS087-OS</td><td>0xC9</td><td>201</td><td>1x 400GAUI-8</td><td>FlexO-4e-MPCS087-OS</td><td>87.4</td><td>PCS_87</td><td>-25.5</td><td>19.5</td><td>1.0</td><td>52000.0</td><td>rx_osnr_db +1.0 dB (val=20.3) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-87 @ 200GAUI-4</strong></td><td>100.0</td><td>24.0</td><td>200GAUI-4</td><td>0x0F</td><td>15</td><td>FlexO-4e-MPCS087-OS</td><td>0xC9</td><td>201</td><td>2x 200GAUI-4</td><td>FlexO-4e-MPCS087-OS</td><td>87.4</td><td>PCS_87</td><td>-25.5</td><td>19.5</td><td>1.0</td><td>52000.0</td><td>rx_osnr_db +1.0 dB (val=20.3) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-87 @ 100GAUI-2</strong></td><td>100.0</td><td>24.0</td><td>100GAUI-2</td><td>0x0D</td><td>13</td><td>FlexO-4e-MPCS087-OS</td><td>0xC9</td><td>201</td><td>4x 100GAUI-2</td><td>FlexO-4e-MPCS087-OS</td><td>87.4</td><td>PCS_87</td><td>-25.5</td><td>19.5</td><td>1.0</td><td>52000.0</td><td>rx_osnr_db +1.0 dB (val=20.3) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-98 @ 400GAUI-8</strong></td><td>112.5</td><td>25.0</td><td>400GAUI-8</td><td>0x11</td><td>17</td><td>FlexO-4e-MPCS098-OS</td><td>0xD8</td><td>216</td><td>1x 400GAUI-8</td><td>FlexO-4e-MPCS098-OS</td><td>97.9</td><td>PCS_98</td><td>-26.0</td><td>19.2</td><td>1.0</td><td>35000.0</td><td>rx_osnr_db +1.0 dB (val=20.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-98 @ 200GAUI-4</strong></td><td>112.5</td><td>25.0</td><td>200GAUI-4</td><td>0x0F</td><td>15</td><td>FlexO-4e-MPCS098-OS</td><td>0xD8</td><td>216</td><td>2x 200GAUI-4</td><td>FlexO-4e-MPCS098-OS</td><td>97.9</td><td>PCS_98</td><td>-26.0</td><td>19.2</td><td>1.0</td><td>35000.0</td><td>rx_osnr_db +1.0 dB (val=20.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-98 @ 100GAUI-2</strong></td><td>112.5</td><td>25.0</td><td>100GAUI-2</td><td>0x0D</td><td>13</td><td>FlexO-4e-MPCS098-OS</td><td>0xD8</td><td>216</td><td>4x 100GAUI-2</td><td>FlexO-4e-MPCS098-OS</td><td>97.9</td><td>PCS_98</td><td>-26.0</td><td>19.2</td><td>1.0</td><td>35000.0</td><td>rx_osnr_db +1.0 dB (val=20.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenZR+ 400G 16QAM Enhanced @ 400GAUI-8</strong></td><td>75.0</td><td>22.5</td><td>400GAUI-8</td><td>0x11</td><td>17</td><td>OpenZR+, MSA, Enhanced</td><td>0xC6</td><td>198</td><td>1x 400GAUI-8</td><td>OpenZR+, MSA, Enhanced</td><td>60.1</td><td>QAM_16-DP</td><td>-22.5</td><td>22.9</td><td>1.0</td><td>23000.0</td><td>rx_osnr_db +1.0 dB (val=23.6) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenZR+ 400G 16QAM Enhanced @ 200GAUI-4</strong></td><td>75.0</td><td>22.5</td><td>200GAUI-4</td><td>0x0F</td><td>15</td><td>OpenZR+, MSA, Enhanced</td><td>0xC6</td><td>198</td><td>2x 200GAUI-4</td><td>OpenZR+, MSA, Enhanced</td><td>60.1</td><td>QAM_16-DP</td><td>-22.5</td><td>22.9</td><td>1.0</td><td>23000.0</td><td>rx_osnr_db +1.0 dB (val=23.6) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenZR+ 400G 16QAM Enhanced @ 100GAUI-2</strong></td><td>75.0</td><td>22.5</td><td>100GAUI-2</td><td>0x0D</td><td>13</td><td>OpenZR+, MSA, Enhanced</td><td>0xC6</td><td>198</td><td>4x 100GAUI-2</td><td>OpenZR+, MSA, Enhanced</td><td>60.1</td><td>QAM_16-DP</td><td>-22.5</td><td>22.9</td><td>1.0</td><td>23000.0</td><td>rx_osnr_db +1.0 dB (val=23.6) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenZR+ 400G 16QAM @ 400GAUI-8</strong></td><td>75.0</td><td>22.5</td><td>400GAUI-8</td><td>0x11</td><td>17</td><td>ZR400-OFEC-16QAM</td><td>0x46</td><td>70</td><td>1x 400GAUI-8</td><td>ZR400-OFEC-16QAM</td><td>60.1</td><td>QAM_16-DP</td><td>-22.5</td><td>23.1</td><td>1.0</td><td>23000.0</td><td>rx_osnr_db +1.0 dB (val=23.8) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenZR+ 400G 16QAM @ 200GAUI-4</strong></td><td>75.0</td><td>22.5</td><td>200GAUI-4</td><td>0x0F</td><td>15</td><td>ZR400-OFEC-16QAM</td><td>0x46</td><td>70</td><td>2x 200GAUI-4</td><td>ZR400-OFEC-16QAM</td><td>60.1</td><td>QAM_16-DP</td><td>-22.5</td><td>23.1</td><td>1.0</td><td>23000.0</td><td>rx_osnr_db +1.0 dB (val=23.8) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenZR+ 400G 16QAM @ 100GAUI-2</strong></td><td>75.0</td><td>22.5</td><td>100GAUI-2</td><td>0x0D</td><td>13</td><td>ZR400-OFEC-16QAM</td><td>0x46</td><td>70</td><td>4x 100GAUI-2</td><td>ZR400-OFEC-16QAM</td><td>60.1</td><td>QAM_16-DP</td><td>-22.5</td><td>23.1</td><td>1.0</td><td>23000.0</td><td>rx_osnr_db +1.0 dB (val=23.8) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenZR+ 400G 16QAM-HB @ 400GAUI-8</strong></td><td>75.0</td><td>22.5</td><td>400GAUI-8</td><td>0x11</td><td>17</td><td>ZR400-OFEC-16QAM-HB</td><td>0x36</td><td>54</td><td>1x 400GAUI-8</td><td>ZR400-OFEC-16QAM-HB</td><td>60.1</td><td>QAM_16-DP</td><td>-22.5</td><td>23.1</td><td>1.0</td><td>23000.0</td><td>rx_osnr_db +1.0 dB (val=23.8) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenZR+ 400G 16QAM-HB @ 200GAUI-4</strong></td><td>75.0</td><td>22.5</td><td>200GAUI-4</td><td>0x0F</td><td>15</td><td>ZR400-OFEC-16QAM-HB</td><td>0x36</td><td>54</td><td>2x 200GAUI-4</td><td>ZR400-OFEC-16QAM-HB</td><td>60.1</td><td>QAM_16-DP</td><td>-22.5</td><td>23.1</td><td>1.0</td><td>23000.0</td><td>rx_osnr_db +1.0 dB (val=23.8) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>OpenZR+ 400G 16QAM-HB @ 100GAUI-2</strong></td><td>75.0</td><td>22.5</td><td>100GAUI-2</td><td>0x0D</td><td>13</td><td>ZR400-OFEC-16QAM-HB</td><td>0x36</td><td>54</td><td>4x 100GAUI-2</td><td>ZR400-OFEC-16QAM-HB</td><td>60.1</td><td>QAM_16-DP</td><td>-22.5</td><td>23.1</td><td>1.0</td><td>23000.0</td><td>rx_osnr_db +1.0 dB (val=23.8) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>400G PCS-101 OTN @ FOIC1.2</strong></td><td>125.0</td><td>24.5</td><td>FOIC1.2</td><td>0x3C</td><td>60</td><td>FlexO-4-MPCS101-OS</td><td>0xDC</td><td>220</td><td>4xFOIC1.2</td><td>FlexO-4-MPCS101-OS</td><td>100.8</td><td>PCS_101</td><td>-26.0</td><td>19.7</td><td>1.0</td><td>34000.0</td><td>rx_osnr_db +1.0 dB (val=20.4) [rx_power_dbm=-20.0]</td></tr>
+      <tr><td><strong>400G PCS-79 OTN @ FOIC1.2</strong></td><td>87.5</td><td>24.0</td><td>FOIC1.2</td><td>0x3C</td><td>60</td><td>FlexO-4-MPCS079-OS</td><td>0xC4</td><td>196</td><td>4xFOIC1.2</td><td>FlexO-4-MPCS079-OS</td><td>78.9</td><td>PCS_79</td><td>-25.0</td><td>20.5</td><td>1.0</td><td>58000.0</td><td>rx_osnr_db +1.0 dB (val=21.2) [rx_power_dbm=-20.0]</td></tr>
+      <tr><td><strong>400G PCS-69 OTN @ FOIC1.2</strong></td><td>75.0</td><td>23.5</td><td>FOIC1.2</td><td>0x3C</td><td>60</td><td>FlexO-4-MPCS069-OS</td><td>0xC1</td><td>193</td><td>4xFOIC1.2</td><td>FlexO-4-MPCS069-OS</td><td>69.1</td><td>PCS_69</td><td>-24.0</td><td>21.5</td><td>1.0</td><td>80000.0</td><td>rx_osnr_db +1.0 dB (val=22.2) [rx_power_dbm=-20.0]</td></tr>
+      <tr><td><strong>400G PCS-87 OTN @ FOIC1.2</strong></td><td>100.0</td><td>24.5</td><td>FOIC1.2</td><td>0x3C</td><td>60</td><td>FlexO-4-MPCS087-OS</td><td>0xCA</td><td>202</td><td>4xFOIC1.2</td><td>FlexO-4-MPCS087-OS</td><td>87.3</td><td>PCS_87</td><td>-25.5</td><td>20.1</td><td>1.0</td><td>52000.0</td><td>rx_osnr_db +1.0 dB (val=20.8) [rx_power_dbm=-20.0]</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>channel_spacing_ghz</td><td><span class="badge">6.25</span> <span class="badge">150.0</span> <span class="badge">75.0</span> <span class="badge">87.5</span> <span class="badge">100.0</span> <span class="badge">112.5</span> <span class="badge">125.0</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">22.5</span> <span class="badge">23.5</span> <span class="badge">24.0</span> <span class="badge">24.5</span> <span class="badge">25.0</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">400GAUI-8</span> <span class="badge">200GAUI-4</span> <span class="badge">100GAUI-2</span> <span class="badge">FOIC1.2</span></td></tr>
+      <tr><td>host_interface_id_hex</td><td><span class="badge">0x11</span> <span class="badge">0x0F</span> <span class="badge">0x0D</span> <span class="badge">0x3C</span></td></tr>
+      <tr><td>host_interface_id</td><td><span class="badge">17</span> <span class="badge">15</span> <span class="badge">13</span> <span class="badge">60</span></td></tr>
+      <tr><td>media_interface_name</td><td><span class="badge">FLEXO-4e-DO-QPSK</span> <span class="badge">FlexO-4e-MPCS066-OS</span> <span class="badge">FlexO-4e-MPCS075-OS</span> <span class="badge">FlexO-4e-MPCS087-OS</span> <span class="badge">FlexO-4e-MPCS098-OS</span> <span class="badge">FlexO-4-MPCS101-OS</span> <span class="badge">FlexO-4-MPCS079-OS</span> <span class="badge">FlexO-4-MPCS069-OS</span> <span class="badge">FlexO-4-MPCS087-OS</span> <span class="badge">OpenZR+, MSA, Enhanced</span> <span class="badge">ZR400-OFEC-16QAM</span> <span class="badge">ZR400-OFEC-16QAM-HB</span></td></tr>
+      <tr><td>media_interface_id_hex</td><td><span class="badge">0x64</span> <span class="badge">0xC0</span> <span class="badge">0xC2</span> <span class="badge">0xC9</span> <span class="badge">0xD8</span> <span class="badge">0xDC</span> <span class="badge">0xC4</span> <span class="badge">0xC1</span> <span class="badge">0xCA</span> <span class="badge">0xC6</span> <span class="badge">0x46</span> <span class="badge">0x36</span></td></tr>
+      <tr><td>media_interface_id</td><td><span class="badge">100</span> <span class="badge">192</span> <span class="badge">194</span> <span class="badge">201</span> <span class="badge">216</span> <span class="badge">220</span> <span class="badge">196</span> <span class="badge">193</span> <span class="badge">202</span> <span class="badge">198</span> <span class="badge">70</span> <span class="badge">54</span></td></tr>
+      <tr><td>frame</td><td><span class="badge">1x 400GAUI-8</span> <span class="badge">2x 200GAUI-4</span> <span class="badge">4x 100GAUI-2</span> <span class="badge">4xFOIC1.2</span> <span class="badge">FlexO-4(e)</span> <span class="badge">FlexO-4</span> <span class="badge">OpenZR400</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">OpenZR+</span> <span class="badge">OpenROADM</span> <span class="badge">FLEXO-4e-DO-QPSK</span> <span class="badge">FlexO-4e-MPCS066-OS</span> <span class="badge">FlexO-4e-MPCS075-OS</span> <span class="badge">FlexO-4e-MPCS087-OS</span> <span class="badge">FlexO-4e-MPCS098-OS</span> <span class="badge">FlexO-4-MPCS101-OS</span> <span class="badge">FlexO-4-MPCS079-OS</span> <span class="badge">FlexO-4-MPCS069-OS</span> <span class="badge">FlexO-4-MPCS087-OS</span> <span class="badge">OpenZR+, MSA, Enhanced</span> <span class="badge">ZR400-OFEC-16QAM</span> <span class="badge">ZR400-OFEC-16QAM-HB</span></td></tr>
+      <tr><td>baud_rate_gbaud</td><td><span class="badge">118.2</span> <span class="badge">65.7</span> <span class="badge">75.0</span> <span class="badge">87.4</span> <span class="badge">97.9</span> <span class="badge">100.8</span> <span class="badge">78.9</span> <span class="badge">69.1</span> <span class="badge">87.3</span> <span class="badge">60.1</span></td></tr>
+      <tr><td>modulation_format</td><td><span class="badge">QPSK-DP</span> <span class="badge">PCS_66</span> <span class="badge">PCS_75</span> <span class="badge">PCS_87</span> <span class="badge">PCS_98</span> <span class="badge">PCS_101</span> <span class="badge">PCS_79</span> <span class="badge">PCS_69</span> <span class="badge">QAM_16-DP</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-27.0</span> <span class="badge">-24.5</span> <span class="badge">-25.5</span> <span class="badge">-26.0</span> <span class="badge">-25.0</span> <span class="badge">-24.0</span> <span class="badge">-22.5</span></td></tr>
+      <tr><td>rx_osnr_db</td><td><span class="badge">36.0</span> <span class="badge">17.9</span> <span class="badge">18.7</span> <span class="badge">21.2</span> <span class="badge">22.0</span> <span class="badge">20.6</span> <span class="badge">21.4</span> <span class="badge">19.5</span> <span class="badge">20.3</span> <span class="badge">19.2</span> <span class="badge">20.0</span> <span class="badge">19.7</span> <span class="badge">20.4</span> <span class="badge">20.5</span> <span class="badge">21.2</span> <span class="badge">21.5</span> <span class="badge">22.2</span> <span class="badge">20.1</span> <span class="badge">20.8</span> <span class="badge">22.9</span> <span class="badge">23.6</span> <span class="badge">23.1</span> <span class="badge">23.8</span></td></tr>
+      <tr><td>rx_overload_dbm</td><td><span class="badge">1.0</span> <span class="badge">15.0</span></td></tr>
+      <tr><td>cd_tolerance_ps_nm</td><td><span class="badge">58000.0</span> <span class="badge">42000.0</span> <span class="badge">37000.0</span> <span class="badge">52000.0</span> <span class="badge">35000.0</span> <span class="badge">34000.0</span> <span class="badge">80000.0</span> <span class="badge">23000.0</span> <span class="badge">150000.0</span> <span class="badge">125000.0</span> <span class="badge">100000.0</span> <span class="badge">70000.0</span> <span class="badge">68000.0</span> <span class="badge">175000.0</span></td></tr>
+      <tr><td>penalties</td><td><span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 18.7, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0x64&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 22.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0xC0&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 21.4, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0xC2&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 20.3, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0xC9&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 20.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0xD8&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 20.4, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -20.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0xDC&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 21.2, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -20.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0xC4&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 22.2, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -20.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0xC1&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 20.8, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -20.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0xCA&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 23.6, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0xC6&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 23.8, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0x46&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 23.8, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION – NTWK/MEDIA CODES | Media code 0x36&#x27;}</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 10:54
+</footer>
+
+</div>
+</body>
+</html>

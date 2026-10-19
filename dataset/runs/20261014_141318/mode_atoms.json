@@ -1,0 +1,86 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "100Base-FXD",
+      "STM1/OC3",
+      "STM-1/OC-3",
+      "FE",
+      "100M Fast Ethernet"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-155M-L2D"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_min_nm": [
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1360.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF 50/125µm",
+      "MMF_OM1"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -19.0
+    ],
+    "tx_power_max_dbm": [
+      -14.0
+    ],
+    "rx_sensitivity_dbm": [
+      -31.0
+    ],
+    "rx_overload_dbm": [
+      -12.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -32.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Operating temperature printed as -0°C to +70°C. Storage temperature -40°C to +85°C not mapped to operating temp fields. Power consumption stated as < 1.0W. Power budget 0 – 12dB. Bit rate support 100 to 155Mbps (Mbps in source, not converted to Gbps). Transmitter min output printed as -19.0dB (footnote 1: average power; max as dBm). Receiver minimum input power -31dBm at 155Mbps, BER 1x10-12, PRBS 231-1. Receiver wavelength range 1260nm – 1600nm is receive-side range, distinct from transmit 1260–1360nm. Typical reach 2km@50/125 µm, 62.5/125µm. Technology Grey SFP. Transmission media MM (2x LC). No minimum distance / no minimum attenuation per overview.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-155M-L2D",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Consider a bit_rate_mbps field or allow Mbps literals; clarify whether -0°C should be stored as printed. Map power budget 0–12dB if needed for link planning."
+  }
+}

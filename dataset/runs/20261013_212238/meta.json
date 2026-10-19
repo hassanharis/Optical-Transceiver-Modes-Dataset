@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:22:38.731376+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-td8005-tunc-so-qsfp-dd800-800zr-r6.2.pdf",
+  "page_count": 4,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 6.495,
+    "extract_atoms": 59.213,
+    "store_run": 0.008,
+    "synthesize_modes": 59.826,
+    "store_modes": 0.004,
+    "total": 125.546
+  }
+}

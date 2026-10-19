@@ -1,0 +1,34 @@
+{
+  "modes": [
+    {
+      "label": "CMIS App 1 — 400GBASE-SR8",
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400GBASE-SR8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "400GBASE-SR8",
+      "bit_rate_gbps": 400.0,
+      "reach_km": 0.1,
+      "fec_type": "RS_GENERIC"
+    },
+    {
+      "label": "CMIS App 2 — 8×50GBASE-SR breakout",
+      "host_interface_name": "50GAUI-1",
+      "media_interface_name": "50GBASE-SR",
+      "frame": "8x 50GAUI-1 (1x 50G)",
+      "standards_code": "50GBASE-SR",
+      "bit_rate_gbps": 400.0,
+      "reach_km": 0.1,
+      "fec_type": "RS_GENERIC"
+    },
+    {
+      "label": "CMIS App 3 — 4×100GBASE-SR2",
+      "host_interface_name": "100GAUI-2",
+      "media_interface_name": "100GBASE-SR2",
+      "frame": "4x 100GAUI-2 (4x 100G)",
+      "standards_code": "100GBASE-SR2",
+      "bit_rate_gbps": 400.0,
+      "reach_km": 0.1,
+      "fec_type": "PFEC"
+    }
+  ]
+}

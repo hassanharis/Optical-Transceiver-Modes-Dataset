@@ -1,0 +1,100 @@
+{
+  "multi_valued": {
+    "model": [
+      "QT-WDM20-1413D",
+      "QT-WDM20-1413ID"
+    ],
+    "wavelength_min_nm": [
+      1470.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1510.0,
+      1360.0
+    ],
+    "wavelength_center_nm": [
+      1490.0,
+      1310.0
+    ],
+    "bit_rate_gbps": [
+      1.25,
+      1.063
+    ]
+  },
+  "general": {
+    "vendor": "QSFPTek",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472",
+      "SONET OC-24-LR-1",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "standards_code": [
+      "1000BASE-BX-U"
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -9.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -22.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -24.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "los_hysteresis_db": [
+      1.0,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "Primary P/N QT-WDM20-1413D: operating case 0 to +70°C per ordering. QT-WDM20-1413ID: -40°C to +85°C. Features also list extended -40 to +85°C as Industrial. Dual data-rate 1.25Gbps/1.063Gbps. Tx centre wavelength 1470–1510 nm (typ 1490); Rx centre 1260–1310–1360 nm. Average output power note 1: launched into SMF. Receiver sensitivity, overload note 3: PRBS 2^7-1 @1250Mbps, BER ≤1×10^-12. Supply Icc max 300 mA at 3.3 V (not stated as power in W). Duplex LC receptacle.",
+    "provenance_datasheet_sections": [
+      "BIDI SFP 1490nm-TX/1310nm-RX 20km SMF Transceiver",
+      "P/N: QT-WDM20-1413D",
+      "FEATURES",
+      "APPLICATIONS",
+      "1. Absolute Maximum Ratings",
+      "2. Recommended Operating Conditions",
+      "3. Optical and Electrical Characteristics",
+      "Notes:",
+      "7. Ordering information"
+    ]
+  }
+}

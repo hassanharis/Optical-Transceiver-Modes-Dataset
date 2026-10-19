@@ -1,0 +1,12 @@
+{
+  "modes": [
+    {
+      "label": "CVR-QSFP28-SFP28 (25G SFP28 on QSFP28 lane 1)",
+      "form_factor": "QSFP+",
+      "host_interface_name": "QSFP28",
+      "media_interface_name": "SFP28",
+      "standards_code": "SFF-8665",
+      "bit_rate_gbps": 25.0
+    }
+  ]
+}

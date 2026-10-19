@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T15:53:34.315692+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp28-32gfc-lr10-cxx.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.12,
+    "extract_atoms": 32.076,
+    "store_run": 0.005,
+    "synthesize_modes": 44.255,
+    "store_modes": 0.003,
+    "total": 81.459
+  }
+}

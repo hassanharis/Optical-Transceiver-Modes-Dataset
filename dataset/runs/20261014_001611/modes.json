@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "400G-PLR4 LR4 normal operation",
+      "power_consumption_w": 9.0,
+      "media_interface_name": "400G-PLR4",
+      "frame": "400GAUI-8",
+      "standards_code": "IEEE802.3bs",
+      "rx_sensitivity_dbm": -6.1
+    },
+    {
+      "label": "400G-PLR4 LR4 low power mode",
+      "power_consumption_w": 1.5,
+      "media_interface_name": "400G-PLR4",
+      "frame": "400GAUI-8",
+      "standards_code": "IEEE802.3bs",
+      "rx_sensitivity_dbm": -6.1
+    },
+    {
+      "label": "400G-PLR4 LR4 stressed receiver (SRS)",
+      "power_consumption_w": 9.0,
+      "media_interface_name": "400G-PLR4",
+      "frame": "400GAUI-8",
+      "standards_code": "IEEE802.3bs",
+      "rx_sensitivity_dbm": -4.1
+    }
+  ]
+}

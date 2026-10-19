@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "CWDM4 Lane L0",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "wavelength_center_nm": 1271.0,
+      "standards_code": "100GBASE-CWDM4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 2.5
+    },
+    {
+      "label": "CWDM4 Lane L1",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "wavelength_center_nm": 1291.0,
+      "standards_code": "100GBASE-CWDM4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 2.5
+    },
+    {
+      "label": "CWDM4 Lane L2",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "standards_code": "100GBASE-CWDM4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 2.5
+    },
+    {
+      "label": "CWDM4 Lane L3",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "wavelength_center_nm": 1331.0,
+      "standards_code": "100GBASE-CWDM4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 2.5
+    }
+  ]
+}

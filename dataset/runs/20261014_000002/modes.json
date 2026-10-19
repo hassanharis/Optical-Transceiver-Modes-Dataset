@@ -1,0 +1,74 @@
+{
+  "modes": [
+    {
+      "label": "0.5 m QSFP28 to 4\u00d7SFP28 100G CR4",
+      "model": "LQ-DAC14100-0M5N",
+      "form_factor": "QSFP28",
+      "standards_code": "100GEBASE-CR4",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "1 m QSFP28 to 4\u00d7SFP28 100G CR4",
+      "model": "LQ-DAC14100-1MN",
+      "form_factor": "QSFP28",
+      "standards_code": "100GEBASE-CR4",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "2 m QSFP28 to 4\u00d7SFP28 100G CR4",
+      "model": "LQ-DAC14100-2MN",
+      "form_factor": "QSFP28",
+      "standards_code": "100GEBASE-CR4",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "3 m QSFP28 to 4\u00d7SFP28 100G CR4",
+      "model": "LQ-DAC14100-3MN",
+      "form_factor": "QSFP28",
+      "standards_code": "100GEBASE-CR4",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "5 m QSFP28 to 4\u00d7SFP28 100G CR4",
+      "model": "LQ-DAC14100-5MN",
+      "form_factor": "QSFP28",
+      "standards_code": "100GEBASE-CR4",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "QSFP28 to 4\u00d7SFP28 100G CR4 (series)",
+      "model": "LQ-DAC14100-xMN",
+      "form_factor": "QSFP28",
+      "standards_code": "100GEBASE-CR4",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "25.78G SFP28 lane P802.3by",
+      "model": "LQ-DAC14100-xMN",
+      "form_factor": "SFP28",
+      "standards_code": "P802.3by",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "100G IEEE 802.3ba aggregate",
+      "model": "LQ-DAC14100-xMN",
+      "form_factor": "QSFP28",
+      "standards_code": "802.3ba",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "100GBASE-CR4 100G aggregate",
+      "model": "LQ-DAC14100-xMN",
+      "form_factor": "QSFP28",
+      "standards_code": "100GBASE-CR4",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "InfiniBand QDR 4\u00d725G per channel",
+      "model": "LQ-DAC14100-xMN",
+      "form_factor": "SFP28",
+      "standards_code": "InfiniBand QDR",
+      "bit_rate_gbps": 25.0
+    }
+  ]
+}

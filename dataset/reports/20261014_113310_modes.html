@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics</div>
+  <div class="subtitle">QSFP-DD &middot; grey</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">QSFP-DD</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">QSFP-DD MSA, CMIS4.0, 100GBASE-LR4, SFF-8679</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">grey</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">CS</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">8.0</div></div>
+      <div class="spec-item"><div class="label">Baud Rate (GBaud)</div><div class="value">25.78</div></div>
+      <div class="spec-item"><div class="label">Modulation Format</div><div class="value">NRZ</div></div>
+      <div class="spec-item"><div class="label">Reach (km)</div><div class="value">10.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">-0.7</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">4.5</div></div>
+      <div class="spec-item"><div class="label">RX Sensitivity (dBm)</div><div class="value">-8.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">4.5</div></div>
+      <div class="spec-item"><div class="label">Fec Type</div><div class="value">NONE</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-12</div></div>
+      <div class="spec-item"><div class="label">Number Of Lanes</div><div class="value">8</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Power consumption stated as &lt; 8W worst case. Power budget 0 – 7.3dB between transmitter and receiver w/o optical path penalties. Transmitter/receiver power per lane is average power (footnote 3). Minimum input power and overload specified at BER 1x10-12 (footnote 4). Storage temperature -40°C to +85°C. Dual CS interface: two SM fiber pairs, 200G to 2x 100G breakout; SO-QSFP28-LR4-10L recommended as matching optical performance on 100G Ethernet side. Aggregated line rate 200GbE (footnote 1); line rate per lane 25.78Gbps (footnote 2). DDM via I2C per QSFP-DD MSA.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">SO-QSFP-DD-2C-10-4, OVERVIEW, TECHNICAL DATA, APPLICATION CODE LIST, ORDERING INFORMATION</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Datasheet does not state host/media interface IDs in hex or decimal, OSNR, dispersion/PDL/PMD tolerance, or LOS thresholds. Power budget 7.3dB is distinct from insertion loss; consider mapping link power budget if schema is extended.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Wavelength Min</th><th>Wavelength Max</th><th>wavelength_center_nm</th><th>Channel Total</th><th>Host Interface</th><th>Media Interface</th><th>frame</th><th>Standards code</th><th>Bit Rate (Gbps)</th></tr>
+      <tr><td><strong>CMIS Application Code 1 — 2×100GBASE-R / 100GBASE-LR4 (Dual CS)</strong></td><td>SO-QSFP-DD-2C-10-4</td><td>1294.53</td><td>1296.59</td><td>1295.56</td><td>8</td><td>2x CAUI-4 (4x 25G)</td><td>100GBASE-LR4</td><td>2x 100GBASE-R</td><td>CMIS Application Code 1</td><td>200.0</td></tr>
+      <tr><td><strong>CMIS Application Code 1 — 2×100GBASE-R / 100GBASE-LR4 (Dual CS)</strong></td><td>SO-QSFP-DD-2C-10</td><td>1299.02</td><td>1301.09</td><td>1300.05</td><td>8</td><td>2x CAUI-4 (4x 25G)</td><td>100GBASE-LR4</td><td>2x 100GBASE-R</td><td>100GBASE-LR4 (Clause 88)</td><td>103.12</td></tr>
+      <tr><td><strong>LR4 transmit lane — 1304.58 nm</strong></td><td>SO-QSFP-DD-2C-10-4</td><td>1303.54</td><td>1305.63</td><td>1304.58</td><td>4</td><td>SFF-8679</td><td>100GBASE-LR4</td><td>8x 25.78G NRZ</td><td>100GBASE-LR4</td><td>25.78</td></tr>
+      <tr><td><strong>LR4 transmit lane — 1309.14 nm</strong></td><td>SO-QSFP-DD-2C-10-4</td><td>1308.09</td><td>1310.19</td><td>1309.14</td><td>4</td><td>CAUI-4</td><td>2x 100GBASE-R</td><td>2x 100GbE</td><td>100GBASE-LR4 (Clause 88)</td><td>25.78</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">SO-QSFP-DD-2C-10-4</span> <span class="badge">SO-QSFP-DD-2C-10</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">1294.53</span> <span class="badge">1299.02</span> <span class="badge">1303.54</span> <span class="badge">1308.09</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">1296.59</span> <span class="badge">1301.09</span> <span class="badge">1305.63</span> <span class="badge">1310.19</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">1295.56</span> <span class="badge">1300.05</span> <span class="badge">1304.58</span> <span class="badge">1309.14</span></td></tr>
+      <tr><td>channel_total</td><td><span class="badge">4</span> <span class="badge">8</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">2x CAUI-4 (4x 25G)</span> <span class="badge">CAUI-4</span> <span class="badge">SFF-8679</span></td></tr>
+      <tr><td>media_interface_name</td><td><span class="badge">100GBASE-LR4</span> <span class="badge">2x 100GBASE-R</span></td></tr>
+      <tr><td>frame</td><td><span class="badge">2x 100GBASE-R</span> <span class="badge">2x 100GbE</span> <span class="badge">8x 25.78G NRZ</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">100GBASE-LR4</span> <span class="badge">100GBASE-LR4 (Clause 88)</span> <span class="badge">CMIS Application Code 1</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">103.12</span> <span class="badge">25.78</span> <span class="badge">200.0</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 11:33
+</footer>
+
+</div>
+</body>
+</html>

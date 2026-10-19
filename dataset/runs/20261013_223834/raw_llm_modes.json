@@ -1,0 +1,108 @@
+{
+  "modes": [
+    {
+      "label": "400G-DR4 long mode (Appl 1)",
+      "host_interface_name": "400GAUI-4-L C2M",
+      "host_interface_id_hex": "0x50",
+      "host_interface_id": 80,
+      "media_interface_name": "400GBASE-DR4",
+      "media_interface_id_hex": "0x1C",
+      "media_interface_id": 28,
+      "frame": "2 x 400GbE",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 106.25,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "400G-DR4 short mode (Appl 2)",
+      "host_interface_name": "400GAUI-4-S C2M",
+      "host_interface_id_hex": "0x4F",
+      "host_interface_id": 79,
+      "media_interface_name": "400GBASE-DR4",
+      "media_interface_id_hex": "0x1C",
+      "media_interface_id": 28,
+      "frame": "2 x 400GbE",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 106.25,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "200G-DR2 long mode (Appl 3)",
+      "host_interface_name": "200GAUI-2-L C2M",
+      "host_interface_id_hex": "0x4E",
+      "host_interface_id": 78,
+      "media_interface_name": "400GBASE-DR4",
+      "media_interface_id_hex": "0x1C",
+      "media_interface_id": 28,
+      "frame": "4 x 200Gbe",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 106.25,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "200G-DR2 short mode (Appl 4)",
+      "host_interface_name": "200GAUI-2-S C2M",
+      "host_interface_id_hex": "0x4D",
+      "host_interface_id": 77,
+      "media_interface_name": "400GBASE-DR4",
+      "media_interface_id_hex": "0x1C",
+      "media_interface_id": 28,
+      "frame": "4 x 200Gbe",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 106.25,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "100G-DR long mode (Appl 5)",
+      "host_interface_name": "100GAUI-1-L C2M",
+      "host_interface_id_hex": "0x4C",
+      "host_interface_id": 76,
+      "media_interface_name": "100GBASE-DR",
+      "media_interface_id_hex": "0x14",
+      "media_interface_id": 20,
+      "frame": "8 x 100GbE",
+      "standards_code": "100GBASE-DR",
+      "bit_rate_gbps": 106.25,
+      "number_of_lanes": 1
+    },
+    {
+      "label": "100G-DR short mode (Appl 6)",
+      "host_interface_name": "100GAUI-1-S C2M",
+      "host_interface_id_hex": "0x4B",
+      "host_interface_id": 75,
+      "media_interface_name": "100GBASE-DR",
+      "media_interface_id_hex": "0x14",
+      "media_interface_id": 20,
+      "frame": "8 x 100GbE",
+      "standards_code": "100GBASE-DR",
+      "bit_rate_gbps": 106.25,
+      "number_of_lanes": 1
+    },
+    {
+      "label": "200G-DR4 (custom AppSel)",
+      "host_interface_name": "200GAUI-4 C2M",
+      "host_interface_id_hex": "0x0F",
+      "host_interface_id": 15,
+      "media_interface_name": "200GBASE-DR4",
+      "media_interface_id_hex": "0x17",
+      "media_interface_id": 23,
+      "frame": "4 x 200Gbe",
+      "standards_code": "200GBASE-DR4",
+      "bit_rate_gbps": 106.25,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "100G-PSM4 (custom AppSel)",
+      "host_interface_name": "CAUI-4 C2M",
+      "host_interface_id_hex": "0x0B",
+      "host_interface_id": 11,
+      "media_interface_name": "100G PSM4 MSA Spec",
+      "media_interface_id_hex": "0x0F",
+      "media_interface_id": 15,
+      "frame": "8x100G PAM4",
+      "standards_code": "100G PSM4",
+      "bit_rate_gbps": 106.25,
+      "number_of_lanes": 4
+    }
+  ]
+}

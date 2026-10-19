@@ -1,0 +1,120 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LP-SFP-MSRC"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "IEEE 802.3",
+    "IEEE 802.3-2002",
+    "IEEE 802.3ab",
+    "Gigabit Ethernet",
+    "1000BASE-T"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "RJ-45"
+  ],
+  "fiber_type": null,
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.05,
+    1.2
+  ],
+  "host_interface_name": [
+    "SERDES",
+    "SGMII"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "1000BASE-T",
+    "IEEE 802.3",
+    "1000 Mb/s"
+  ],
+  "baud_rate_gbaud": [
+    0.25
+  ],
+  "bit_rate_gbps": [
+    0.01,
+    1.0,
+    1.25
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM"
+  ],
+  "reach_km": [
+    0.1
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": null,
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": null,
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Copper (1000BASE-T) SFP transceiver over Category 5 UTP, not an optical module. LP-SFP-MSRC is 1000 Mbps only with SERDES host interface, 0~70°C commercial case (ordering row). Features cite 1.05 W typical dissipation; Table 1 notes 1.2 W max power over full voltage and temperature range and states power consumption and surge current are higher than SFP MSA limits. Electrical power section states LP-SFP-xxxx input voltage +5 V +/- 5% and that 3.3 V max is not allowed for continuous operation, while Table 1 is titled +3.3 V electrical power interface (Vcc 3.13–3.47 V). Symbol rate 250 Mbps on each of four cable pairs with 5-level PAM per IEEE 802.3. Line frequency 125 MHz (Table 3). Reach 100 m Category 5 UTP at BER < 10^-12 (Table 5); ordering variants also state Transmission Distance 0.1 Km. Industrial temperature -40 to +85°C applies to other orderable SKUs (e.g. MSRI), not LP-SFP-MSRC.",
+  "provenance_datasheet_sections": [
+    "LP-SFP-MSRC",
+    "Copper SFP Transceiver",
+    "Features",
+    "Applications",
+    "Description",
+    "Electrical Power Interface",
+    "Table 1. +3.3V Volt electrical power interface",
+    "High-Speed Electrical Interface",
+    "Table 3. High-speed electrical interface, transmission line-SFP",
+    "Table 4. High-speed electrical interface, host-SFP",
+    "General Specifications",
+    "Table 5. General specifications",
+    "Environmental Specifications",
+    "Table 6. Environmental specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Consider schema fields for copper PHY modules: cable media (e.g. Category 5 UTP), max cable length in m, host electrical interfaces (SERDES, SGMII), and supply current (mA) separate from optical parameters that remain null for copper SFPs."
+}

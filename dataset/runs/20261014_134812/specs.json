@@ -1,0 +1,87 @@
+{
+  "model": [
+    "SO-SFP-10GE-LR40"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ae",
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1270.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1355.0,
+    1565.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "10GBASE-LR",
+    "10GBASE-LW"
+  ],
+  "standards_code": [
+    "10GBASE-LR",
+    "10GBASE-LW",
+    "OTU1",
+    "OTU2",
+    "OTU2e"
+  ],
+  "bit_rate_gbps": [
+    0.6,
+    10.0,
+    10.3,
+    11.3
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    1.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -15.0
+  ],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -25.0
+  ],
+  "los_deassert_dbm": [
+    -16.0
+  ],
+  "penalties": [],
+  "notes": "Transmitter output power and receiver min/overload are average power (footnote 1). Minimum input power -15 dBm at 10.3 Gbps, BER 1x10^-12, PRBS 2^31-1, back-to-back (footnote 2). Power budget 4.5 – 16 dB (footnote 4). Dispersion penalty max 2 dB. Power consumption < 1.5 W. Storage temperature -40°C to +85°C. Operating temperature in table shown as -0°C to +70°C. Receiver wavelength range 1260 nm – 1565 nm; transmit wavelength 1270 nm – 1355 nm. MSA compliance SFF-8431, -8432, -8472. Optical performance per IEEE 802.3ae ER/EW-standard.",
+  "provenance_datasheet_sections": [
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-QSFP28-Dxx-A",
+      "SO-QSFP28-D21-A",
+      "SO-QSFP28-D22-A",
+      "SO-QSFP28-D23-A",
+      "SO-QSFP28-D24-A",
+      "SO-QSFP28-D25-A",
+      "SO-QSFP28-D26-A",
+      "SO-QSFP28-D27-A",
+      "SO-QSFP28-D28-A",
+      "SO-QSFP28-D29-A",
+      "SO-QSFP28-D30-A",
+      "SO-QSFP28-D31-A",
+      "SO-QSFP28-D32-A",
+      "SO-QSFP28-D33-A",
+      "SO-QSFP28-D34-A",
+      "SO-QSFP28-D35-A",
+      "SO-QSFP28-D36-A",
+      "SO-QSFP28-D37-A",
+      "SO-QSFP28-D38-A",
+      "SO-QSFP28-D39-A",
+      "SO-QSFP28-D40-A",
+      "SO-QSFP28-D41-A",
+      "SO-QSFP28-D42-A",
+      "SO-QSFP28-D43-A",
+      "SO-QSFP28-D44-A",
+      "SO-QSFP28-D45-A",
+      "SO-QSFP28-D46-A",
+      "SO-QSFP28-D47-A",
+      "SO-QSFP28-D48-A",
+      "SO-QSFP28-D49-A",
+      "SO-QSFP28-D50-A",
+      "SO-QSFP28-D51-A",
+      "SO-QSFP28-D52-A",
+      "SO-QSFP28-D53-A",
+      "SO-QSFP28-D54-A",
+      "SO-QSFP28-D55-A",
+      "SO-QSFP28-D56-A",
+      "SO-QSFP28-D57-A",
+      "SO-QSFP28-D58-A",
+      "SO-QSFP28-D59-A",
+      "SO-QSFP28-D60-A"
+    ],
+    "wavelength_center_nm": [
+      1560.61,
+      1559.79,
+      1558.98,
+      1558.17,
+      1557.36,
+      1556.55,
+      1555.75,
+      1554.94,
+      1554.13,
+      1553.33,
+      1552.52,
+      1551.72,
+      1550.92,
+      1550.12,
+      1549.32,
+      1548.51,
+      1547.72,
+      1546.92,
+      1546.12,
+      1545.32,
+      1544.53,
+      1543.73,
+      1542.94,
+      1542.14,
+      1541.35,
+      1540.56,
+      1539.77,
+      1538.98,
+      1538.19,
+      1537.4,
+      1536.61,
+      1535.82,
+      1535.04,
+      1534.25,
+      1533.47,
+      1532.68,
+      1531.9,
+      1531.12,
+      1530.33,
+      1529.55
+    ],
+    "media_interface_name": [
+      "100GBASE",
+      "100GbE"
+    ],
+    "standards_code": [
+      "G.694.1",
+      "100GBASE",
+      "100GbE"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      100.0
+    ],
+    "modulation_format": [
+      "PAM4",
+      "NRZ"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "SFF-8636",
+      "SFF-8679",
+      "ITU-T G.694.1",
+      "CAUI-4",
+      "IEEE P802.3bm Annex 83E",
+      "100GBASE",
+      "100GbE"
+    ],
+    "wavelength_min_nm": [
+      1528.0
+    ],
+    "wavelength_max_nm": [
+      1566.0
+    ],
+    "wavelength_band": [
+      "DWDM"
+    ],
+    "frequency_min_thz": [
+      192.1
+    ],
+    "frequency_max_thz": [
+      196.0
+    ],
+    "channel_spacing_ghz": [
+      100.0
+    ],
+    "channel_total": [
+      40
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      5.5
+    ],
+    "host_interface_name": [
+      "CAUI-4"
+    ],
+    "frame": [
+      "4x 25 Gbps NRZ"
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      -7.0
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_sensitivity_dbm": [
+      -9.0
+    ],
+    "rx_osnr_db": [
+      33.5
+    ],
+    "rx_overload_dbm": [
+      5.5
+    ],
+    "cd_tolerance_ps_nm": [
+      40.0
+    ],
+    "fec_type": [
+      "KP4"
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -15.0
+    ],
+    "los_deassert_dbm": [
+      -12.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Power consumption stated as < 5.5W. Footnote 1): Average power. Footnote 2): pre FEC BER < 2.4x10-4. Optical parameters provide BER 2.4 x 10^-4; host system shall not have FEC activated; KP4 FEC in module yields post-FEC BER better than 1 x 10^-12. Typical reach 80km requires EDFA and DCM. Input power @ OSNR 33.5dB: -3.0 to +4.5dBm. Input power unamplified: -9dBm to +4.5dBm. Damage threshold (max power) +5.5dBm. Transmit wavelengths 192.10 – 196.00 THz (40ch), 100GHz grid (G.694.1). Storage temperature -40°C to +85°C not mapped to operating temp fields.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP28-Dxx-A",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

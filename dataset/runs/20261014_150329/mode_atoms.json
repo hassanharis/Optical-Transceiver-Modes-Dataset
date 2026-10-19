@@ -1,0 +1,85 @@
+{
+  "multi_valued": {
+    "wavelength_max_nm": [
+      1360.0,
+      1600.0
+    ],
+    "standards_code": [
+      "100Base-LX",
+      "FE"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-GE-FE-LX"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_min_nm": [
+      1260.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "host_interface_name": [
+      "SGMII"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -15.0
+    ],
+    "tx_power_max_dbm": [
+      -8.0
+    ],
+    "rx_sensitivity_dbm": [
+      -31.0
+    ],
+    "rx_overload_dbm": [
+      -8.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -32.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Bit rate support stated as 125Mbps (not converted to Gbps per schema). Operating temperature printed as -0°C to +70°C. Transmitter output power minimum listed as -15.0dB (footnote 1: average power); maximum as -8.0dBm. Receiver minimum input power -31dBm at 125Mbps, BER 1x10-12, PRBS 2^31-1 (footnote 2). Power budget 0–16dB. Power consumption < 1.0W. Technology: Grey SFP. Storage temperature -40°C to +85°C (not normal operating range). DDM: Yes.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-GE-FE-LX",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Consider a bit_rate_mbps field or allow Mbps literals; clarify whether -0°C operating minimum should be stored as printed. Map link power budget (0–16dB) if a dedicated field is needed."
+  }
+}

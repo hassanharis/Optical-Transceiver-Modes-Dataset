@@ -1,0 +1,86 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP28-AOC1M",
+      "SO-SFP28-AOC2M",
+      "SO-SFP28-AOC3M",
+      "SO-SFP28-AOC4M",
+      "SO-SFP28-AOC5M",
+      "SO-SFP28-AOC6M",
+      "SO-SFP28-AOC7M",
+      "SO-SFP28-AOC8M",
+      "SO-SFP28-AOC9M",
+      "SO-SFP28-AOC10M",
+      "SO-SFP28-AOC12M",
+      "SO-SFP28-AOC15M",
+      "SO-SFP28-AOC20M"
+    ],
+    "standards_code": [
+      "IEEE802.3bj",
+      "25G Ethernet",
+      "Infiniband QDR",
+      "Infiniband SDR",
+      "Infiniband DDR"
+    ],
+    "reach_km": [
+      0.001,
+      0.002,
+      0.003,
+      0.004,
+      0.005,
+      0.006,
+      0.007,
+      0.008,
+      0.009,
+      0.01,
+      0.012,
+      0.015,
+      0.02
+    ],
+    "fec_type": [
+      "RS_GENERIC",
+      "RS_528_514"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFF"
+    ],
+    "standards_claimed": [
+      "SFF-8431"
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "fiber_type": [
+      "MMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [
+      "SFP28"
+    ],
+    "bit_rate_gbps": [
+      25.0
+    ],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "penalties": [],
+    "notes": "Active Optical Cable (AOC) with integrated SFP28 connectors and cable; not a discrete optical transceiver. Forward Error Correction (FEC) is required in the host equipment per IEEE802.3bj. Without FEC, BER will be less than 5 x 10^-5. Electrical interface: SFF-8431 MSA compliant. Digital diagnostics via I2C. Power stated as low power, <1W (no single numeric watt value). Storage temperature -20°C to +85°C. Interconnect lengths 1m to 20m (up to 20m). Vendor identified via smartoptics.com footer only.",
+    "provenance_datasheet_sections": [
+      "SO-SFP28-AOCxM",
+      "SFP28, 25G Ethernet, Active Optical Cable (AOC), 1m to 20m",
+      "OVERVIEW",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "ORDERING INFORMATION ORDERNG INFORMATION",
+      "MECHANICAL DRAWING"
+    ],
+    "suggestions": "Datasheet lacks optical parameters (wavelength, TX/RX power, sensitivity) typical for AOCs; consider vendor supplement. Form factor is SFP28 in text but schema enum has SFF only—mapped to SFF. Explicit manufacturer name not in body; vendor taken from website reference."
+  }
+}

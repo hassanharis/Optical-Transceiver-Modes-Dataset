@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:30:55.330738+00:00",
+  "source_file": "C:\\Haris\\datasheets\\l9-sc553101-20ppc.pdf",
+  "page_count": 4,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.04,
+    "extract_atoms": 26.568,
+    "store_run": 0.005,
+    "synthesize_modes": 13.201,
+    "store_modes": 0.004,
+    "total": 44.817
+  }
+}

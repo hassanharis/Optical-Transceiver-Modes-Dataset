@@ -1,0 +1,62 @@
+{
+  "multi_valued": {
+    "model": [
+      "Lx10G-ST11xx",
+      "RR10G-ST11xx"
+    ],
+    "form_factor": [
+      "Low Profile RJ",
+      "Low Rider RJ"
+    ]
+  },
+  "general": {
+    "vendor": "Cinch Connectivity Solutions",
+    "standards_claimed": [],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "wavelength_band": [],
+    "mounting_type": [
+      "solder",
+      "screw",
+      "mount_surface"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "frame": [],
+    "standards_code": [
+      "10G Ethernet"
+    ],
+    "bit_rate_gbps": [
+      10.3125
+    ],
+    "modulation_format": [],
+    "fec_type": [],
+    "penalties": [],
+    "notes": "Title states up to 50 Meters reach; schema field is km so not converted per exact-copy rule. Supply is +3.3 V per port; power in watts not stated. Max mechanical height 0.386 in. Ordering suffixes: N/T shell GND tabs; BLANK/B solder vs screw posts; H/M for -40 to 85 C with optional conformal coating. EN-60825/IEC-825/CDRH Class 1 compliant. Optional fiber pigtail and Parylene C coating.",
+    "provenance_datasheet_sections": [
+      "Lx10G-ST11xx Low Profile Optical Transceiver",
+      "Applications",
+      "Product Overview",
+      "Features",
+      "Ordering Information"
+    ],
+    "suggestions": "Add reach_m or allow reach with unit from source; add supply_voltage_v for 3.3 V modules without W rating."
+  }
+}

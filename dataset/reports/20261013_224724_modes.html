@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Finisar [&#x27;FTLC1154SDPLD&#x27;]</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Finisar [&#x27;FTLC1154SDPLD&#x27;]</div>
+  <div class="subtitle">QSFP28 &middot; LAN-WDM &middot; [4] channels</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Finisar</div></div>
+      <div class="spec-item"><div class="label">Model</div><div class="value">FTLC1154SDPLD</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">QSFP28</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">QSFP28 MSA, IEEE 802.3ba 100GBASE-LR4, IEEE 802.3bm CAUI-4, OTU4 4I1-9D1F, ITU-T G.959.1, ITU-T G.709, G.sup39, RoHS-6 Directive 2011/65/EU, SFF-8665, SFF-8679, 4WDM MSA</div></div>
+      <div class="spec-item"><div class="label">Emitter Type</div><div class="value">LASER_DFB</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">LAN-WDM</div></div>
+      <div class="spec-item"><div class="label">Channel Total</div><div class="value">4</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable_hot, pluggable</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF, SMF_G652</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-40.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">85.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">4.5</div></div>
+      <div class="spec-item"><div class="label">Host Interface</div><div class="value">CAUI-4</div></div>
+      <div class="spec-item"><div class="label">Pre Fec Ber Threshold</div><div class="value">1e-06</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-12</div></div>
+      <div class="spec-item"><div class="label">Transmitter Reflectance Db</div><div class="value">-12.0</div></div>
+      <div class="spec-item"><div class="label">Optical Extinction Ratio Db</div><div class="value">4.0, 6.5</div></div>
+      <div class="spec-item"><div class="label">Optical Return Loss Tolerance Db</div><div class="value">20.0</div></div>
+      <div class="spec-item"><div class="label">Number Of Lanes</div><div class="value">4</div></div>
+      <div class="spec-item"><div class="label">Side Mode Suppression Ratio Db</div><div class="value">30.0</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">1.5</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">FEATURES lists maximum link length 10 km on SMF; title and V. General Specifications list 20 km (Lmax1) on SMF per G.652. OTU4 receiver sensitivity and optical path penalty at BER 10^-6 (pre-FEC) per G.sup39; post-FEC BER 10^-12 required for OTU4 112 Gb/s per note in V. General Specifications. Power consumption ≤4.5 W when stabilized (Tx and Rx CDR locked); may be ≤5 W during locking acquisition. Supply current Icc max 1.6 A. Stressed Receiver Sensitivity (LR4) measured with vertical eye closure penalty 1.8 dB max, J2 0.30 UI, J9 0.47 UI; with 4WDM MSA conformance test signal at TP3 for 5x10^-5 BER.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">FTLC1154SDPLD, 100G 20km eLR4 QSFP28 Optical Transceiver Module (WDM-20), FEATURES, APPLICATIONS, Product Selection, II. Absolute Maximum Ratings, III. Electrical Characteristics  (EOL, TOP = -40 to +85 °C, VCC = 3.135 to 3.465 Volts), IV. Optical Characteristics (EOL, TOP = -40 to 85 °C, VCC = 3.315 to 3.465 Volts), OTU4 4I1-9D1F Operation, 100GBASE-LR4 Operation, V. General Specifications, VI. Environmental Specifications, XI. Mechanical Specifications</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Datasheet uses OTU4 code 4I1-9D1F in tables/headings and 4I19D1F in opening paragraph; both captured only where printed. Clarify whether photodetector is PIN. Explicit modulation format not stated. No structured penalty columns (e.g. Rx OSNR @ X dB penalty); Optical Path Penalty 1.5 dB max is a single limit without paired penalized OSNR/sensitivity rows.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Wavelength Min</th><th>Wavelength Max</th><th>Standards code</th><th>Baud Rate (GBaud)</th><th>Bit Rate (Gbps)</th><th>Reach (km)</th><th>TX Power Min (dBm)</th><th>TX Power Max (dBm)</th><th>RX Sensitivity (dBm)</th><th>RX Overload (dBm)</th><th>extinction_ratio_db</th><th>los_assert_dbm</th><th>los_deassert_dbm</th></tr>
+      <tr><td><strong>OTU4 4I1-9D1F</strong></td><td>1294.53</td><td>1310.19</td><td>OTU4 4I1-9D1F</td><td>27.9525</td><td>112.0</td><td>20.0</td><td>-0.6</td><td>4.0</td><td>-8.4</td><td>4.0</td><td>4.0</td><td>-13.6</td><td>-11.6</td></tr>
+      <tr><td><strong>100GBASE-LR4</strong></td><td>1294.53</td><td>1310.19</td><td>100GBASE-LR4</td><td>25.78125</td><td>103.1</td><td>20.0</td><td>-4.3</td><td>4.5</td><td>-8.6</td><td>4.5</td><td>4.0</td><td>-14.0</td><td>-13.5</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">1294.53</span> <span class="badge">1299.02</span> <span class="badge">1303.54</span> <span class="badge">1308.09</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">1296.59</span> <span class="badge">1301.09</span> <span class="badge">1305.63</span> <span class="badge">1310.19</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">100GBASE-LR4</span> <span class="badge">OTU4 4I1-9D1F</span> <span class="badge">4WDM</span></td></tr>
+      <tr><td>baud_rate_gbaud</td><td><span class="badge">25.78125</span> <span class="badge">27.9525</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">25.78</span> <span class="badge">27.95</span> <span class="badge">103.1</span> <span class="badge">112.0</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">10.0</span> <span class="badge">20.0</span></td></tr>
+      <tr><td>tx_power_min_dbm</td><td><span class="badge">-4.3</span> <span class="badge">-0.6</span></td></tr>
+      <tr><td>tx_power_max_dbm</td><td><span class="badge">4.0</span> <span class="badge">4.5</span> <span class="badge">10.0</span> <span class="badge">10.5</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-12.5</span> <span class="badge">-10.0</span> <span class="badge">-8.6</span> <span class="badge">-8.4</span></td></tr>
+      <tr><td>rx_overload_dbm</td><td><span class="badge">4.0</span> <span class="badge">4.5</span> <span class="badge">5.5</span> <span class="badge">10.0</span></td></tr>
+      <tr><td>extinction_ratio_db</td><td><span class="badge">4.0</span> <span class="badge">6.5</span></td></tr>
+      <tr><td>los_assert_dbm</td><td><span class="badge">-24.0</span> <span class="badge">-14.0</span> <span class="badge">-13.6</span></td></tr>
+      <tr><td>los_deassert_dbm</td><td><span class="badge">-13.5</span> <span class="badge">-11.6</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 22:47
+</footer>
+
+</div>
+</body>
+</html>

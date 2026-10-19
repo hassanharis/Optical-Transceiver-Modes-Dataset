@@ -1,0 +1,109 @@
+{
+  "model": [
+    "BIDI-SFP+-ER+-27",
+    "BIDI-SFP+-ER-27",
+    "BIDI-SFP+-ER-33"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ae",
+    "SFF-8431",
+    "10GBASE-ER",
+    "10GBASE-EW"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "APD"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1320.0
+  ],
+  "wavelength_max_nm": [
+    1280.0,
+    1340.0
+  ],
+  "wavelength_center_nm": [
+    1270.0,
+    1330.0
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "SFF-8431"
+  ],
+  "standards_code": [
+    "10GBASE-ER",
+    "10GBASE-EW",
+    "IEEE 802.3ae"
+  ],
+  "bit_rate_gbps": [
+    9.95,
+    9.953,
+    10.3125,
+    11.3
+  ],
+  "reach_km": [
+    60.0
+  ],
+  "tx_power_min_dbm": [
+    1.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -21.0
+  ],
+  "rx_overload_dbm": [
+    -7.0
+  ],
+  "extinction_ratio_db": [
+    5.0
+  ],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -22.0
+  ],
+  "receiver_reflectance_db": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    5.0
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "BIDI module: one variant uses 1270nm TX / 1330nm RX (BIDI-SFP+-ER-27); other uses 1330nm TX / 1270nm RX (BIDI-SFP+-ER-33). Product text lists '1330nm ADP photo-detector' (likely APD). Operating case temperature table lists Commercial Tc 0–70°C and Industrial TI -40–85°C; ordering info specifies 0°C to +70°C. Receiver sensitivity note: measured with worst ER=6; BER<10^-12; 2^31-1 PRBS. Dispersion penalty TDP max 3.2 dB listed without paired penalized parameter and operating condition for penalty schema. Average TX power figures noted informative only per IEEE 802.3ae.",
+  "provenance_datasheet_sections": [
+    "SFP+ 10GBASE-BX 1270nm-TX/1330nm-RX 60km Transceiver",
+    "P/N: BIDI-SFP+-ER+-27",
+    "Product Features",
+    "Applications",
+    "2. General Operating Characteristics",
+    "4. Optical Characteristics",
+    "7. Ordering Information"
+  ]
+}

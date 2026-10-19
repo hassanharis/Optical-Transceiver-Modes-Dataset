@@ -1,0 +1,90 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-SM311G-20C"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1360.0,
+    1610.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "bit_rate_gbps": [
+    0.1,
+    1.063,
+    1.25
+  ],
+  "reach_km": [
+    20.0
+  ],
+  "tx_power_min_dbm": [
+    -9.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -23.0
+  ],
+  "rx_overload_dbm": [
+    -1.0
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -38.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Datasheet title/part LS-SM311G-20C: standard operating case temperature 0 to +70°C per Recommended Operating Conditions and Ordering information. Extended (-20 to +85°C) and Industrial (-40 to +85°C) grades appear in the same document for other orderable parts (e.g. LS-SM311G-20I). Receiver sensitivity and overload per Note 3: PRBS 2^7-1 @1250Mbps, BER ≤1×10^-12. Average output power Note 1: launched into SMF. Supply current Icc max 300 mA at 3.135–3.465 V; power in watts not stated. Transmitter centre wavelength 1260–1360 nm (typ 1310 nm); receiver centre wavelength 1260–1610 nm. Spectral width (RMS) Δλ max 3 nm. SMSR row has no numeric limits.",
+  "provenance_datasheet_sections": [
+    "LS-SM311G-20C",
+    "1.25Gbps SFP Transceiver, Single Mode, 20km Reach",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Diagnostics",
+    "Ordering information"
+  ]
+}

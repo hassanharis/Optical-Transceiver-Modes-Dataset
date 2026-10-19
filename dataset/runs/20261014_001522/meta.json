@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T00:15:22.908468+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lqd-m31400-dr4c.pdf",
+  "page_count": 9,
+  "table_count": 13,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.685,
+    "extract_atoms": 12.19,
+    "store_run": 0.011,
+    "synthesize_modes": 18.042,
+    "store_modes": 0.004,
+    "total": 40.931
+  }
+}

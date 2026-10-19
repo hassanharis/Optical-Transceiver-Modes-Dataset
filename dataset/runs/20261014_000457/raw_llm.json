@@ -1,0 +1,156 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-M85200-SR4C"
+  ],
+  "form_factor": [
+    "QSFP56"
+  ],
+  "standards_claimed": [
+    "QSFP MSA",
+    "IEEE 802.3cd",
+    "CMIS V4.0",
+    "200GBASE-SR4"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF_OM5"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    4.1,
+    4.5
+  ],
+  "host_interface_name": [
+    "200GAUI-4"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "200GAUI-4"
+  ],
+  "standards_code": [
+    "200GBASE-SR4",
+    "IEEE 802.3cd",
+    "CMIS V4.0"
+  ],
+  "baud_rate_gbaud": [
+    26.5625
+  ],
+  "bit_rate_gbps": [
+    212.5,
+    103.125
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": null,
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    4
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -7,
+    -3
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    3
+  ],
+  "los_assert_dbm": [
+    -10
+  ],
+  "los_deassert_dbm": [
+    -8.5
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -12
+  ],
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3
+  ],
+  "optical_return_loss_tolerance_db": [
+    12
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Features state low power dissipation <5W and aggregate bit rates 212.5 Gb/s and 103.125 Gb/s if required. Maximum link length stated as 70 m on OM3 MMF and 100 m on OM4 and OM5 MMF (title: 100mReach); not given in km. Receiver Sensitivity (OMAouter) -7 dBm per Note3 measured with conformance test signal at TP3 for BER = 2.4E-4 Pre-FEC. Stressed Receiver Sensitivity (OMAouter) -3 dBm. Electrical BER Note2 max 2.4E-4 compliant with 200GBASE-SR4 electrical specification in IEEE 802.3cd. Optical connector described as single MPO12 receptacle and male MPO connector. RMS spectral width max 0.6 nm. Damage threshold (receiver) max 4 dBm. LPMode section references QSFP28 modules in error; product is QSFP56.",
+  "provenance_datasheet_sections": [
+    "LQ-M85200-SR4C",
+    "200GBASE-SR4 QSFP56, Optical Transceiver Module, 100mReach",
+    "Features",
+    "Applications",
+    "Description",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Note:",
+    "Optical Characteristics",
+    "Note3. Measured with conformance test signal at TP3 for BER = 2.4E-4 Pre-FEC",
+    "Optical Interface Lanes and Assignment",
+    "DIAGNOSTIC MONITORING INTERFACE",
+    "References",
+    "Ordering information"
+  ],
+  "suggestions": "Add reach_m or accept meter values for SR modules; map QSFP56 to form_factor enum; optional fields for OMAouter launch/receive limits and TDECQ."
+}

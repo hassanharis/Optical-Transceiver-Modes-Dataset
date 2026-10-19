@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"CPRI Option 10 @ 24.33G\",\n      \"form_factor\": \"SFP28\",\n      \"host_interface_name\": \"CPRI opt 10\",\n      \"standards_code\": \"CPRI Option 10\",\n      \"bit_rate_gbps\": 24.33,\n      \"rx_sensitivity_dbm\": -21.0\n    },\n    {\n      \"label\": \"25GE @ 25.78G (avg Rx)\",\n      \"form_factor\": \"SFP+\",\n      \"host_interface_name\": \"25GE\",\n      \"standards_code\": \"25GBASE-ER\",\n      \"bit_rate_gbps\": 25.78,\n      \"rx_sensitivity_dbm\": -21.0\n    },\n    {\n      \"label\": \"25GBASE-ER @ 25.78G (OMA Rx)\",\n      \"form_factor\": \"SFP28\",\n      \"host_interface_name\": \"25GBASE-ER\",\n      \"standards_code\": \"25GBASE-ER\",\n      \"bit_rate_gbps\": 25.78,\n      \"rx_sensitivity_dbm\": -19.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

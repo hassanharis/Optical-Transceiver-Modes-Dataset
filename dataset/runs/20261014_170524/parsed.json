@@ -1,0 +1,63 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\xp-t96-02-2-prod-spec.pdf",
+  "page_count": 7,
+  "table_count": 11,
+  "markdown_chars": 8659,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 18
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 3
+    }
+  ]
+}

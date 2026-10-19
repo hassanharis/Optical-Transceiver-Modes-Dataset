@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"2G FC\",\n      \"wavelength_min_nm\": 1544.5,\n      \"wavelength_max_nm\": 1557.5,\n      \"standards_code\": \"2G FC\",\n      \"bit_rate_gbps\": 2.125\n    },\n    {\n      \"label\": \"8G FC\",\n      \"wavelength_min_nm\": 1544.5,\n      \"wavelength_max_nm\": 1557.5,\n      \"standards_code\": \"8G FC\",\n      \"bit_rate_gbps\": 8.5\n    },\n    {\n      \"label\": \"4G FC\",\n      \"wavelength_min_nm\": 1544.5,\n      \"wavelength_max_nm\": 1557.5,\n      \"standards_code\": \"4G FC\",\n      \"bit_rate_gbps\": 2.125\n    },\n    {\n      \"label\": \"FICON\",\n      \"wavelength_min_nm\": 1544.5,\n      \"wavelength_max_nm\": 1557.5,\n      \"standards_code\": \"FICON\",\n      \"bit_rate_gbps\": 2.125\n    },\n    {\n      \"label\": \"Receiver wavelength range\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1620.0,\n      \"standards_code\": \"8G FC\",\n      \"bit_rate_gbps\": 8.5\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

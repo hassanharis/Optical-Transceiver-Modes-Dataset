@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"1000BASE-L40D 1.25G C-temp\",\n      \"model\": \"SO-SFP-1000BASE-L40D\",\n      \"wavelength_max_nm\": 1360.0,\n      \"standards_code\": \"1000BASE-L40D\",\n      \"bit_rate_gbps\": 1.25\n    },\n    {\n      \"label\": \"1G FC 1.0625G C-temp\",\n      \"model\": \"SO-SFP-1000BASE-L40D\",\n      \"wavelength_max_nm\": 1600.0,\n      \"standards_code\": \"1G FC\",\n      \"bit_rate_gbps\": 1.0625\n    },\n    {\n      \"label\": \"1000BASE-L40D 1.25G I-temp\",\n      \"model\": \"SO-SFP-1000BASE-L40D-I\",\n      \"wavelength_max_nm\": 1360.0,\n      \"standards_code\": \"1000BASE-L40D\",\n      \"bit_rate_gbps\": 1.25\n    },\n    {\n      \"label\": \"1G FC 1.0625G I-temp\",\n      \"model\": \"SO-SFP-1000BASE-L40D-I\",\n      \"wavelength_max_nm\": 1600.0,\n      \"standards_code\": \"1G FC\",\n      \"bit_rate_gbps\": 1.0625\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

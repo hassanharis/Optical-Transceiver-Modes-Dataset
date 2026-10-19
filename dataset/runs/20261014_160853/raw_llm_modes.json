@@ -1,0 +1,27 @@
+{
+  "modes": [
+    {
+      "label": "25GBASE-SR @ 25.78 Gbps",
+      "standards_code": "25GBASE-SR",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "25GbE / CPRI high rate (RS High, CDR engaged)",
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "25GbE / CPRI high rate (RS High, CDR engaged)",
+      "standards_code": "25GbE",
+      "bit_rate_gbps": 24.33
+    },
+    {
+      "label": "10GbE-LW/LR low rate (RS Low, CDR bypassed)",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "10GbE-LW/LR low rate (RS Low, CDR bypassed)",
+      "bit_rate_gbps": 10.31
+    }
+  ]
+}

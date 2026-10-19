@@ -1,0 +1,124 @@
+{
+  "modes": [
+    {
+      "label": "100GBASE-LR4 Lane 1 (per-lane average power)",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "wavelength_band": "grey",
+      "host_interface_name": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -10.6
+    },
+    {
+      "label": "100GBASE-LR4 Lane 2 (per-lane average power)",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "wavelength_band": "grey",
+      "host_interface_name": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -10.6
+    },
+    {
+      "label": "100GBASE-LR4 Lane 3 (per-lane average power)",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "wavelength_band": "grey",
+      "host_interface_name": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -10.6
+    },
+    {
+      "label": "100GBASE-LR4 Lane 4 (per-lane average power)",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "wavelength_band": "grey",
+      "host_interface_name": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -10.6
+    },
+    {
+      "label": "100GBASE-LR4 Lane 1 (OMA)",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "wavelength_band": "LAN-WDM",
+      "host_interface_name": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -1.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6
+    },
+    {
+      "label": "100GBASE-LR4 Lane 2 (OMA)",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "wavelength_band": "LAN-WDM",
+      "host_interface_name": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -1.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6
+    },
+    {
+      "label": "100GBASE-LR4 Lane 3 (OMA)",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "wavelength_band": "LAN-WDM",
+      "host_interface_name": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -1.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6
+    },
+    {
+      "label": "100GBASE-LR4 Lane 4 (OMA)",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "wavelength_band": "LAN-WDM",
+      "host_interface_name": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_min_dbm": -1.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6
+    },
+    {
+      "label": "100GbE aggregated host (103.12 Gbps)",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "wavelength_band": "grey",
+      "host_interface_name": "100GbE",
+      "bit_rate_gbps": 103.12,
+      "tx_power_min_dbm": -4.3,
+      "tx_power_max_dbm": 10.5,
+      "rx_sensitivity_dbm": -10.6
+    },
+    {
+      "label": "100GbE nominal rate (100 Gbps)",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "wavelength_band": "LAN-WDM",
+      "host_interface_name": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "tx_power_min_dbm": -1.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6
+    }
+  ]
+}

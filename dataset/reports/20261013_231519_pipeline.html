@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Finisar [&#x27;FTLX3671DTCxx&#x27;, &#x27;FTLX3671DTC20&#x27;, &#x27;FTLX3671DTC21&#x27;, &#x27;FTLX3671DTC22&#x27;, &#x27;FTLX3671DTC23&#x27;, &#x27;FTLX3671DTC24&#x27;, &#x27;FTLX3671DTC25&#x27;, &#x27;FTLX3671DTC26&#x27;, &#x27;FTLX3671DTC27&#x27;, &#x27;FTLX3671DTC28&#x27;, &#x27;FTLX3671DTC29&#x27;, &#x27;FTLX3671DTC30&#x27;, &#x27;FTLX3671DTC31&#x27;, &#x27;FTLX3671DTC32&#x27;, &#x27;FTLX3671DTC33&#x27;, &#x27;FTLX3671DTC34&#x27;, &#x27;FTLX3671DTC35&#x27;, &#x27;FTLX3671DTC36&#x27;, &#x27;FTLX3671DTC37&#x27;, &#x27;FTLX3671DTC38&#x27;, &#x27;FTLX3671DTC39&#x27;, &#x27;FTLX3671DTC40&#x27;, &#x27;FTLX3671DTC41&#x27;, &#x27;FTLX3671DTC42&#x27;, &#x27;FTLX3671DTC43&#x27;, &#x27;FTLX3671DTC44&#x27;, &#x27;FTLX3671DTC45&#x27;, &#x27;FTLX3671DTC46&#x27;, &#x27;FTLX3671DTC47&#x27;, &#x27;FTLX3671DTC48&#x27;, &#x27;FTLX3671DTC49&#x27;, &#x27;FTLX3671DTC50&#x27;, &#x27;FTLX3671DTC51&#x27;, &#x27;FTLX3671DTC52&#x27;, &#x27;FTLX3671DTC53&#x27;, &#x27;FTLX3671DTC54&#x27;, &#x27;FTLX3671DTC55&#x27;, &#x27;FTLX3671DTC56&#x27;, &#x27;FTLX3671DTC57&#x27;, &#x27;FTLX3671DTC58&#x27;, &#x27;FTLX3671DTC59&#x27;, &#x27;FTLX3671DTC60&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">ftlx3671dtcxx-transceiver-ds.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">14</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">9</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 23:15</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">Optical Transceivers 
+
+## FTLX3671DTCXX 
+
+## **Industrial Temperature DWDM 1.2G-11.3G, 40km SFP+ Transceiver** 
+
+FTLX3671DTCxx transceivers are Enhanced Small Form Factor Pluggable SFP+ transceivers designed for use in DWDM links up to 40km of G.652 single mode fiber, for multi-rate applications from 1.2 through 11.3 Gb/s, carrying 1G-10G Ethernet, 2x-10x Fibre Channel, 10G OTN traffic and CPRI options 2 through 8 traffic. The FTLX3671DTCxx transceivers are compliant with SFF-8431[1] and SFF-8432[2] . Digital diagnostics functions are available via a 2-wire serial interface, as specified in SFF84723.  FTLX3671DTCxx transceivers are RoHS compliant per Directive 2011/65/EU 4,5. 
+
+
+## FEATURES 
+
+## APPLICATIONS 
+
+- 100 GHz spacing, DWDM C-band 
+
+- Up to 40km link length 
+
+- PIN Receiver with Limiting Interface 
+
+- 1.2 through 11.3 Gb/s data rates 
+
+- -40/85°C case temperature range 
+
+   - DWDM 40km links for: 
+
+   - 2x through 10x Fibre Channel 
+
+   - 1G through 10G Ethernet 
+
+   - CPRI options 2 through 8 
+
+   - OTN OTU 1, 2 and 2f 
+
+- 1.6W max power consumption* 
+
+- at 85°C 
+
+- Single 3.3V power supply 
+
+- Cooled 1550nm EML laser 
+
+- Hot-pluggable SFP+ footprint 
+
+- Duplex LC connector 
+
+- Built-in digital diagnostic functions 
+
+- RoHS-6 compliant 
+
+**FTLX3671DTCXX** 
+
+## **Product Selection** 
+
+## **FTLX3671DTCxx** 
+
+xx=ITU-T Grid Channel (see next page) 
+
+## **Product Ordering Codes / Channel Selection** 
+
+|Channel|Product Code|Frequency&lt;br&gt;(THz)|Center Wave-&lt;br&gt;length&lt;br&gt;(nm)||Channel|Product Code|Frequency&lt;br&gt;(THz)|Center Wave-&lt;br&gt;length&lt;br&gt;(nm)|
+|---|---|---|---|---|---|---|---|---|
+|C20|FTLX3671DTC20|192.00|1561.42||C41|FTLX3671DTC41|194.10|1544.53|
+|C21|FTLX3671DTC21|192.10|1560.61||C42|FTLX3671DTC42|194.20|1543.73|
+|C22|FTLX3671DTC22|192.20|1559.79||C43|FTLX3671DTC43|194.30|1542.94|
+|C23|FTLX3671DTC23|192.30|1558.98||C44|FTLX3671DTC44|194.40|1542.14|
+|C24|FTLX3671DTC24|192.40|1558.17||C45|FTLX3671DTC45|194.50|1541.35|
+|C25|FTLX3671DTC25|192.50|1557.36||C46|FT
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Finisar"</span>,
+  <span class="key">"model"</span>: [
+    "FTLX3671DTCxx",
+    "FTLX3671DTC20",
+    "FTLX3671DTC21",
+    "FTLX3671DTC22",
+    "FTLX3671DTC23",
+    "FTLX3671DTC24",
+    "FTLX3671DTC25",
+    "FTLX3671DTC26",
+    "FTLX3671DTC27",
+    "FTLX3671DTC28",
+    "FTLX3671DTC29",
+    "FTLX3671DTC30",
+    "FTLX3671DTC31",
+    "FTLX3671DTC32",
+    "FTLX3671DTC33",
+    "FTLX3671DTC34",
+    "FTLX3671DTC35",
+    "FTLX3671DTC36",
+    "FTLX3671DTC37",
+    "FTLX3671DTC38",
+    "FTLX3671DTC39",
+    "FTLX3671DTC40",
+    "FTLX3671DTC41",
+    "FTLX3671DTC42",
+    "FTLX3671DTC43",
+    "FTLX3671DTC44",
+    "FTLX3671DTC45",
+    "FTLX3671DTC46",
+    "FTLX3671DTC47",
+    "FTLX3671DTC48",
+    "FTLX3671DTC49",
+    "FTLX3671DTC50",
+    "FTLX3671DTC51",
+    "FTLX3671DTC52",
+    "FTLX3671DTC53",
+    "FTLX3671DTC54",
+    "FTLX3671DTC55",
+    "FTLX3671DTC56",
+    "FTLX3671DTC57",
+    "FTLX3671DTC58",
+    "FTLX3671DTC59",
+    "FTLX3671DTC60"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP+"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "SFP MSA"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_EML"
+  ],
+  <span class="key">"photodetector_type"</span>: [
+    "PIN"
+  ],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1561.42</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1561.42</span>,
+    <span class="num">1560.61</span>,
+    <span class="num">1559.79</span>,
+    <span class="num">1558.98</span>,
+    <span class="num">1558.17</span>,
+    <span class="num">1557.36</span>,
+    <span class="num">1556.55</span>,
+    <span class="num">1555.75</span>,
+    <span class="num">1554.94</span>,
+    <span class="num">1554.13</span>,
+    <span class="num">1553.33</span>,
+    <span class="num">1552.52</span>,
+    <span class="num">1551.72</span>,
+    <span class="num">1550.92</span>,
+    <span class="num">1550.12</span>,
+    <span class="num">1549.32</span>,
+    <span class="num">1548.51</span>,
+    <span class="num">1547.72</span>,
+    <span class="num">1546.92</span>,
+    <span class="num">1546.12</span>,
+    <span class="num">1545.32</span>,
+    <span class="num">1544.53</span>,
+    <span class="num">1543.73</span>,
+    <span class="num">1542.94</span>,
+    <span class="num">1542.14</span>,
+    <span class="num">1541.35</span>,
+    <span class="num">1540.56</span>,
+    <span class="num">1539.77</span>,
+    <span class="num">1538.98</span>,
+    <span class="num">1538.19</span>,
+    <span class="num">1537.4</span>,
+    <span class="num">1536.61</span>,
+    <span class="num">1535.82</span>,
+    <span class="num">1535.04</span>,
+    <span class="num">1534.25</span>,
+    <span class="num">1533.47</span>,
+    <span class="num">1532.68</span>,
+    <span class="num">1531.9</span>,
+    <span class="num">1531.12</span>,
+    <span class="num">1530.33</span>,
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "C-band",
+    "DWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">192.0</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.0</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">41</span>
+  ],
+  <span class="key">"mounting_type"</span>: [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF_G652",
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-40.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">1.6</span>
+  ],
+  <span class="key">"host_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">1.2</span>,
+    <span class="num">1.2288</span>,
+    <span class="num">10.7</span>,
+    <span class="num">11.1</span>,
+    <span class="num">11.3</span>,
+    <span class="num">11.3176</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">40.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">1.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">4.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-16.0</span>,
+    <span class="num">-15.0</span>,
+    <span class="num">-14.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-1.0</span>,
+    <span class="num">0.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">800.0</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: <span class="null">null</span>,
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">8.2</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"los_deassert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: [
+    <span class="num">-27.0</span>
+  ],
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">8.2</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: [
+    <span class="num">30.0</span>
+  ],
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Center wavelength per ITU-T <span class="num">694.1</span>; EOL center wavelength λc±100pm. Optical wavelength row lists unit as dBm in table (likely typo); center wavelengths from Table <span class="num">1.</span> Sensitivity (0ps/nm): <span class="num">-16.0</span> dBm at <span class="num">1.2</span>–10.7 Gb/s BER&lt;10^-12; <span class="num">-15.0</span> dBm at <span class="num">11.1</span>–11.3 Gb/s BER&lt;10^-6. Sensitivity (800ps/nm): <span class="num">-15.0</span> dBm at <span class="num">1.2</span>–10.7 Gb/s; <span class="num">-14.0</span> dBm at <span class="num">11.1</span>–11.3 Gb/s. <span class="num">800</span> ps/nm max chromatic dispersion tolerance over <span class="num">40</span> km G.652 SMF. Receiver optical center wavelength range <span class="num">1260</span>–1600 nm. Average launch power when Tx OFF max <span class="num">-30</span> dBm. Power consumption <span class="num">1.6</span> W at <span class="num">85</span>°C case, BOL, <span class="num">3.3</span> V. Cooled <span class="num">1550</span> nm EML laser (nominal; per-channel λC in ordering table). Regulatory section references FTLF8538P5BCz (likely template error). Duplex LC connector stated in features."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "FTLX3671DTCXX",
+    "Industrial Temperature DWDM <span class="num">1.2</span>G-11.3G, <span class="num">40</span>km SFP+ Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "Product Ordering Codes / Channel Selection",
+    "III. Electrical Characteristics (TOP = <span class="num">-40</span> to <span class="num">85</span> °C)",
+    "IV. Optical Characteristics (TOP = <span class="num">-40</span> to <span class="num">85</span> °C, VCC = <span class="num">3.14</span> to <span class="num">3.46</span> Volts)",
+    "V. General Specifications",
+    "VII. Environmental Specifications",
+    "X. Mechanical Specifications"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Clarify whether bit_rate list should include only Table V bounds (1.2288–11.3176) vs sensitivity row rates (1.2÷10.7). Explicit modulation format and lane count are absent. No OSNR or FEC parameters in this legacy SFP+ DWDM datasheet."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">FTLX3671DTCxx</span> <span class="badge">FTLX3671DTC20</span> <span class="badge">FTLX3671DTC21</span> <span class="badge">FTLX3671DTC22</span> <span class="badge">FTLX3671DTC23</span> <span class="badge">FTLX3671DTC24</span> <span class="badge">FTLX3671DTC25</span> <span class="badge">FTLX3671DTC26</span> <span class="badge">FTLX3671DTC27</span> <span class="badge">FTLX3671DTC28</span> <span class="badge">FTLX3671DTC29</span> <span class="badge">FTLX3671DTC30</span> <span class="badge">FTLX3671DTC31</span> <span class="badge">FTLX3671DTC32</span> <span class="badge">FTLX3671DTC33</span> <span class="badge">FTLX3671DTC34</span> <span class="badge">FTLX3671DTC35</span> <span class="badge">FTLX3671DTC36</span> <span class="badge">FTLX3671DTC37</span> <span class="badge">FTLX3671DTC38</span> <span class="badge">FTLX3671DTC39</span> <span class="badge">FTLX3671DTC40</span> <span class="badge">FTLX3671DTC41</span> <span class="badge">FTLX3671DTC42</span> <span class="badge">FTLX3671DTC43</span> <span class="badge">FTLX3671DTC44</span> <span class="badge">FTLX3671DTC45</span> <span class="badge">FTLX3671DTC46</span> <span class="badge">FTLX3671DTC47</span> <span class="badge">FTLX3671DTC48</span> <span class="badge">FTLX3671DTC49</span> <span class="badge">FTLX3671DTC50</span> <span class="badge">FTLX3671DTC51</span> <span class="badge">FTLX3671DTC52</span> <span class="badge">FTLX3671DTC53</span> <span class="badge">FTLX3671DTC54</span> <span class="badge">FTLX3671DTC55</span> <span class="badge">FTLX3671DTC56</span> <span class="badge">FTLX3671DTC57</span> <span class="badge">FTLX3671DTC58</span> <span class="badge">FTLX3671DTC59</span> <span class="badge">FTLX3671DTC60</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1561.42</span> <span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1545.32</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span></td></tr>
+<tr><td>wavelength_band</td><td><span class="badge">C-band</span> <span class="badge">DWDM</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">SFF-8431</span> <span class="badge">SFF-8432</span> <span class="badge">SFF-8472</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">1.2</span> <span class="badge">1.2288</span> <span class="badge">10.7</span> <span class="badge">11.1</span> <span class="badge">11.3</span> <span class="badge">11.3176</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-16.0</span> <span class="badge">-15.0</span> <span class="badge">-14.0</span></td></tr>
+<tr><td>rx_overload_dbm</td><td><span class="badge">-1.0</span> <span class="badge">0.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Finisar</td></tr>
+<tr><td>form_factor</td><td>SFP+</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8431, SFF-8432, SFF-8472, SFP MSA</td></tr>
+<tr><td>emitter_type</td><td>LASER_EML</td></tr>
+<tr><td>photodetector_type</td><td>PIN</td></tr>
+<tr><td>wavelength_min_nm</td><td>1529.55</td></tr>
+<tr><td>wavelength_max_nm</td><td>1561.42</td></tr>
+<tr><td>frequency_min_thz</td><td>192.0</td></tr>
+<tr><td>frequency_max_thz</td><td>196.0</td></tr>
+<tr><td>channel_spacing_ghz</td><td>100.0</td></tr>
+<tr><td>channel_total</td><td>41</td></tr>
+<tr><td>mounting_type</td><td>pluggable_hot, pluggable</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF_G652, SMF</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>power_consumption_w</td><td>1.6</td></tr>
+<tr><td>reach_km</td><td>40.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>1.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>4.0</td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td>800.0</td></tr>
+<tr><td>extinction_ratio_db</td><td>8.2</td></tr>
+<tr><td>receiver_reflectance_db</td><td>-27.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>8.2</td></tr>
+<tr><td>side_mode_suppression_ratio_db</td><td>30.0</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Center wavelength per ITU-T 694.1; EOL center wavelength λc±100pm. Optical wavelength row lists unit as dBm in table (likely typo); center wavelengths from Table 1. Sensitivity (0ps/nm): -16.0 dBm at 1.2–10.7 Gb/s BER&lt;10^-12; -15.0 dBm at 11.1–11.3 Gb/s BER&lt;10^-6. Sensitivity (800ps/nm): -15.0 dBm at 1.2–10.7 Gb/s; -14.0 dBm at 11.1–11.3 Gb/s. 800 ps/nm max chromatic dispersion tolerance over 40 km G.652 SMF. Receiver optical center wavelength range 1260–1600 nm. Average launch power when Tx OFF max -30 dBm. Power consumption 1.6 W at 85°C case, BOL, 3.3 V. Cooled 1550 nm EML laser (nominal; per-channel λC in ordering table). Regulatory section references FTLF8538P5BCz (likely template error). Duplex LC connector stated in features.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>FTLX3671DTCXX, Industrial Temperature DWDM 1.2G-11.3G, 40km SFP+ Transceiver, FEATURES, APPLICATIONS, Product Ordering Codes / Channel Selection, III. Electrical Characteristics (TOP = -40 to 85 °C), IV. Optical Characteristics (TOP = -40 to 85 °C, VCC = 3.14 to 3.46 Volts), V. General Specifications, VII. Environmental Specifications, X. Mechanical Specifications</td></tr>
+<tr><td>suggestions</td><td>Clarify whether bit_rate list should include only Table V bounds (1.2288–11.3176) vs sensitivity row rates (1.2÷10.7). Explicit modulation format and lane count are absent. No OSNR or FEC parameters in this legacy SFP+ DWDM datasheet.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_center_nm</th><th>wavelength_band</th><th>standards_code</th><th>bit_rate_gbps</th><th>rx_sensitivity_dbm</th><th>rx_overload_dbm</th></tr><tr><td><strong>DWDM C20</strong></td><td>FTLX3671DTC20</td><td>1561.42</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C21</strong></td><td>FTLX3671DTC21</td><td>1560.61</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C22</strong></td><td>FTLX3671DTC22</td><td>1559.79</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C23</strong></td><td>FTLX3671DTC23</td><td>1558.98</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C24</strong></td><td>FTLX3671DTC24</td><td>1558.17</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C25</strong></td><td>FTLX3671DTC25</td><td>1557.36</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C26</strong></td><td>FTLX3671DTC26</td><td>1556.55</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C27</strong></td><td>FTLX3671DTC27</td><td>1555.75</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C28</strong></td><td>FTLX3671DTC28</td><td>1554.94</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C29</strong></td><td>FTLX3671DTC29</td><td>1554.13</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C30</strong></td><td>FTLX3671DTC30</td><td>1553.33</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C31</strong></td><td>FTLX3671DTC31</td><td>1552.52</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C32</strong></td><td>FTLX3671DTC32</td><td>1551.72</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C33</strong></td><td>FTLX3671DTC33</td><td>1550.92</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C34</strong></td><td>FTLX3671DTC34</td><td>1550.12</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C35</strong></td><td>FTLX3671DTC35</td><td>1549.32</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C36</strong></td><td>FTLX3671DTC36</td><td>1548.51</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C37</strong></td><td>FTLX3671DTC37</td><td>1547.72</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C38</strong></td><td>FTLX3671DTC38</td><td>1546.92</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C39</strong></td><td>FTLX3671DTC39</td><td>1546.12</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C40</strong></td><td>FTLX3671DTC40</td><td>1545.32</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C41</strong></td><td>FTLX3671DTC41</td><td>1544.53</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C42</strong></td><td>FTLX3671DTC42</td><td>1543.73</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C43</strong></td><td>FTLX3671DTC43</td><td>1542.94</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C44</strong></td><td>FTLX3671DTC44</td><td>1542.14</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C45</strong></td><td>FTLX3671DTC45</td><td>1541.35</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C46</strong></td><td>FTLX3671DTC46</td><td>1540.56</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C47</strong></td><td>FTLX3671DTC47</td><td>1539.77</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C48</strong></td><td>FTLX3671DTC48</td><td>1538.98</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C49</strong></td><td>FTLX3671DTC49</td><td>1538.19</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C50</strong></td><td>FTLX3671DTC50</td><td>1537.4</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C51</strong></td><td>FTLX3671DTC51</td><td>1536.61</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C52</strong></td><td>FTLX3671DTC52</td><td>1535.82</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C53</strong></td><td>FTLX3671DTC53</td><td>1535.04</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C54</strong></td><td>FTLX3671DTC54</td><td>1534.25</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C55</strong></td><td>FTLX3671DTC55</td><td>1533.47</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C56</strong></td><td>FTLX3671DTC56</td><td>1532.68</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C57</strong></td><td>FTLX3671DTC57</td><td>1531.9</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C58</strong></td><td>FTLX3671DTC58</td><td>1531.12</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C59</strong></td><td>FTLX3671DTC59</td><td>1530.33</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>DWDM C60</strong></td><td>FTLX3671DTC60</td><td>1529.55</td><td>C-band</td><td>SFF-8431</td><td>10.7</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>Rx 0ps/nm 11.1-11.3 Gb/s</strong></td><td>FTLX3671DTCxx</td><td>1561.42</td><td>DWDM</td><td>SFF-8432</td><td>11.3</td><td>-15.0</td><td>0.0</td></tr><tr><td><strong>Rx 800ps/nm 1.2-10.7 Gb/s</strong></td><td>FTLX3671DTCxx</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>1.2</td><td>-15.0</td><td>-1.0</td></tr><tr><td><strong>Rx 800ps/nm 11.1-11.3 Gb/s</strong></td><td>FTLX3671DTCxx</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>11.1</td><td>-14.0</td><td>0.0</td></tr><tr><td><strong>Data rate 1.2288 Gb/s</strong></td><td>FTLX3671DTCxx</td><td>1561.42</td><td>DWDM</td><td>SFF-8431</td><td>1.2288</td><td>-16.0</td><td>-1.0</td></tr><tr><td><strong>Data rate 11.3176 Gb/s</strong></td><td>FTLX3671DTCxx</td><td>1561.42</td><td>DWDM</td><td>SFF-8431</td><td>11.3176</td><td>-15.0</td><td>0.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 23:15
+</footer>
+
+</div>
+</body>
+</html>

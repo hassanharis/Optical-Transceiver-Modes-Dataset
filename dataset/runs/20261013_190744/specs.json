@@ -1,0 +1,129 @@
+{
+  "model": [
+    "BIDI-SFP+-LR-33"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP+ MSA",
+    "FC_PI_4 REV 7.0",
+    "INF-8074i"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1320.0
+  ],
+  "wavelength_max_nm": [
+    1280.0,
+    1340.0
+  ],
+  "wavelength_center_nm": [
+    1270.0,
+    1330.0
+  ],
+  "wavelength_band": [],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "SFP+"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "10GBASE-BX",
+    "1000 Base-LX",
+    "8XFC",
+    "4XFC",
+    "2XFC",
+    "1xFC"
+  ],
+  "bit_rate_gbps": [
+    10.3125,
+    10.7,
+    9.953,
+    8.5,
+    4.25,
+    2.125,
+    1.0625
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    10.0,
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -15.0
+  ],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    7.5
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -16.0
+  ],
+  "optical_extinction_ratio_db": [
+    7.5
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    5.0
+  ],
+  "total_jitter_ps": [
+    20.0
+  ],
+  "penalties": [],
+  "notes": "Product title and features specify up to 10 km on SMF; Recommended Operating Conditions list Transmission Distance (TD) Max 80 km with Note (1) measured with SMF. Features also list Industrial operating case temperature -40 to 85 °C; Recommended Operating Conditions Ambient Operating Temperature TA is 0 to 70 °C without air flow. Transmitter extinction ratio row labeled 10KM, Min 7.5 dB, Note (2) measured with RPBS 2^31-1 test pattern @10.3125Gbs. Receiver sensitivity and overload Note (1) measured with RPBS 2^31-1 test pattern @10.3125Gbs BER=<10^-12. Power dissipation stated as <1.5 W; ICC Typ 300 mA Max 450 mA at VCC 3.14–3.47 V. Bi-directional: 1330 nm DFB TX, 1270 nm PIN RX.",
+  "provenance_datasheet_sections": [
+    "SFP+ 10GBASE-BX 1330nm-TX/1270nm-RX 10km Transceiver",
+    "P/N: BIDI-SFP+-LR-33",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "1. Absolute Maximum Ratings",
+    "2. Recommended Operating Conditions",
+    "3. Specification of Transmitter",
+    "4. Specification of Receiver",
+    "5. Electrical Interface Characteristic",
+    "8. Ordering information"
+  ],
+  "suggestions": "Clarify whether TD Max 80 km is intentional or a datasheet typo versus 10 km reach. Add vendor legal name if present on other pages. post_fec_ber_target mapped from BER=<10^-12 test condition for receiver specs."
+}

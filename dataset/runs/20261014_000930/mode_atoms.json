@@ -1,0 +1,151 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "GAUI-8",
+      "CAUI-4",
+      "CEI-56G VSR PAM4",
+      "CEI-28G VSR TP4",
+      "QSFP-DD"
+    ],
+    "frame": [
+      "GAUI-8",
+      "CAUI-4"
+    ],
+    "standards_code": [
+      "OpenZR+",
+      "ZR+",
+      "400G-CFEC",
+      "400G-OFEC",
+      "300G-OFEC",
+      "200G-OFEC",
+      "100G-OFEC"
+    ],
+    "baud_rate_gbaud": [
+      53.1,
+      60.138547,
+      30.069274
+    ],
+    "bit_rate_gbps": [
+      400.0,
+      300.0,
+      200.0,
+      100.0
+    ],
+    "modulation_format": [
+      "QAM_16-DP",
+      "QAM_8-DP",
+      "QPSK-DP",
+      "PAM4"
+    ],
+    "tx_power_max_dbm": [
+      -10.0,
+      -9.0,
+      -8.0
+    ],
+    "rx_sensitivity_dbm": [
+      -21.0,
+      -23.0,
+      -26.0,
+      -31.0
+    ],
+    "cd_tolerance_ps_nm": [
+      2400.0,
+      13000.0,
+      40000.0,
+      50000.0,
+      100000.0
+    ],
+    "pmd_tolerance_ps": [
+      16.0,
+      22.0,
+      33.0
+    ],
+    "fec_type": [
+      "OFEC",
+      "CFEC"
+    ],
+    "los_assert_dbm": [
+      -21.0,
+      -23.0,
+      -26.0,
+      -31.0,
+      -33.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "LQD-DCO400-ZRC"
+    ],
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "OpenZR+ MSA technical specifications",
+      "IEEE Std 802.3-2018",
+      "OIF QSFP-DD MSA",
+      "CMIS 5.1",
+      "QSFP-DD MSA Hardware Specification, Revision 5.0"
+    ],
+    "wavelength_band": [
+      "C-band"
+    ],
+    "channel_spacing_ghz": [
+      75.0
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      22.0
+    ],
+    "reach_km": [
+      480.0
+    ],
+    "tx_in_band_osnr_db": [
+      40.0
+    ],
+    "tx_out_of_band_osnr_db": [
+      40.0
+    ],
+    "rx_overload_dbm": [
+      0.0
+    ],
+    "pdl_db": [
+      3.5
+    ],
+    "optical_return_loss_tolerance_db": [
+      20.0
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "los_hysteresis_db": [
+      1.0,
+      2.5,
+      4.5
+    ],
+    "penalties": [],
+    "notes": "Typical TX output signal power listed as –10, –9, or –8 dBm by line/FEC mode (not a min/max pair). Tx disabled and wavelength switching output ≤ –25 dBm. Reach stated as well beyond 480 km at 24 dB typical terrestrial span loss. CD, PMD, PDL, optical path OSNR, SOP change, and input power transient rows cite ≤0.5 dB or ≤1.3 dB additional OSNR penalty without tabulated penalized OSNR/sensitivity @ Rx power values. Laser frequency accuracy ±1.8 GHz; Rx carrier–LO frequency offset –3.6 to 3.8 GHz (table shows 3.6). Signaling rate per host lane 53.1 BPS (PAM4). Module supply 3.3 V; peak Icc up to 8.8 A. 100G-OFEC sensitivity not tabulated in Receiver Optical Specification.",
+    "provenance_datasheet_sections": [
+      "LQD-DCO400-ZRC",
+      "400G QSFP-DD ZR Multi-Rate Digial Coherent Optical Transceiver",
+      "Product Features",
+      "Applications",
+      "Compliance",
+      "Descriptions",
+      "Recommended Operating Conditions",
+      "Signaling rate per lane for 400G",
+      "Transmitter Optical Specifications",
+      "The Receiver Optical Specification",
+      "Module Requirements RX",
+      "Ordering information"
+    ],
+    "suggestions": "Add explicit C-band wavelength (nm) or ITU grid if present in other rev pages. Clarify whether 53.1 BPS is Gbaud. Separate host PAM4 lane rate from line-side coherent baud. Tabulate required Rx OSNR (dB/0.1 nm) per mode if available elsewhere."
+  }
+}

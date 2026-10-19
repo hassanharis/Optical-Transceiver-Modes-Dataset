@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:08:02.085721+00:00",
+  "source_file": "C:\\Haris\\datasheets\\op13ld8-005d-3-800g-lpo.pdf",
+  "page_count": 9,
+  "table_count": 10,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 14.147,
+    "extract_atoms": 34.124,
+    "store_run": 0.007,
+    "synthesize_modes": 15.022,
+    "store_modes": 0.004,
+    "total": 63.304
+  }
+}

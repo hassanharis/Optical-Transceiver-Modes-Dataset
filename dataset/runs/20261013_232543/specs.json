@@ -1,0 +1,79 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "L9-SC315501-60CTC"
+  ],
+  "form_factor": [
+    "1x9"
+  ],
+  "standards_claimed": [
+    "ITU-T G.957"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1270.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1350.0,
+    1610.0
+  ],
+  "wavelength_center_nm": [
+    1310.0,
+    1550.0
+  ],
+  "connector_type": [
+    "SC",
+    "Simplex SC"
+  ],
+  "temp_min_c": -10.0,
+  "temp_max_c": 70.0,
+  "standards_code": [
+    "ITU-T G.957",
+    "STM-1",
+    "OC-3"
+  ],
+  "reach_km": [
+    60.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -34.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Module is 1×9 bi-directional transceiver Tx1310/Rx1550 per title and ordering row L9-SC315501-60CTC. Operating data rate stated as up to 155Mbps and 155.52 Mbps (Recommended Operating Conditions); ordering table lists 155Mb/s. Rx sensitivity ordering S(dBm) is <-34; characteristic table lists Sensitivity typ -34 dBm at 60km. Features list standard operating case temperature 0 to +70°C; ordering row for this part lists Working Tem -10~70℃. Absolute/recommended tables also list TC 0–70°C and TI -40–85°C for industrial variant. Supply current Icc max 250 mA (no power in W stated). Signal Detect Range -45 to -35 dBm; not labeled as LOS assert/deassert. Central wavelength table rows: 1270–1350 nm (1310 FP) and 1510–1590 nm (1550 DFB); this SKU uses 1310 nm FP Tx.",
+  "provenance_datasheet_sections": [
+    "L9-SC315501-60CTC",
+    "Features",
+    "Applications",
+    "Standard",
+    "Ordering Information",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Transmitter Optical ,Electrical characteristics",
+    "Receiver Optical Electrical Characteristics"
+  ],
+  "suggestions": "Consider a separate field or unit tag for bit_rate when datasheets quote Mbps (e.g. 155.52). form_factor enum may include legacy 1×9/Bi-Di packages. Clarify mapping of Signal Detect Range vs LOS thresholds."
+}

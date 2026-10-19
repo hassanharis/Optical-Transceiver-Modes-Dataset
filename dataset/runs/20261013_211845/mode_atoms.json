@@ -1,0 +1,161 @@
+{
+  "multi_valued": {
+    "form_factor": [
+      "QSFP-DD",
+      "QSFP-DD800"
+    ],
+    "host_interface_name": [
+      "800GAUI-8",
+      "2x 400GAUI-4",
+      "8x 100GAUI-1",
+      "2x 400GAUI-4-L C2M",
+      "2x 400GAUI-4-S C2M",
+      "1x 800GAUI-8 L C2M",
+      "1x 800GAUI-8 S C2M",
+      "4x 200GAUI-2-L C2M",
+      "4x 200GAUI-2-S C2M",
+      "8 x 100GAUI-1-L C2M",
+      "8 x 100GAUI-1-S C2M"
+    ],
+    "media_interface_name": [
+      "400GBASE-DR4",
+      "800GBASE-DR8",
+      "200G-DR2",
+      "100GBASE-DR",
+      "2x 400GBASE-DR4",
+      "8x 100GBASE-DR"
+    ],
+    "media_interface_id_hex": [
+      "0x1C",
+      "0x56",
+      "0xC0",
+      "0x14"
+    ],
+    "media_interface_id": [
+      28,
+      86,
+      192,
+      20
+    ],
+    "frame": [
+      "800GAUI-8",
+      "2x 400GAUI-4",
+      "8x 100GAUI-1",
+      "2 x 400GBASE-R",
+      "800GBASE-R",
+      "4 x 200GBASE-R",
+      "8 x100GBASE-R"
+    ],
+    "standards_code": [
+      "CMIS5.0",
+      "400GBASE-DR4",
+      "800GBASE-DR8",
+      "100GBASE-DR",
+      "200G-DR2",
+      "RS-FEC",
+      "RS(528,514)",
+      "800GbE",
+      "2x400GbE",
+      "8x100GbE"
+    ],
+    "bit_rate_gbps": [
+      850.0,
+      800.0,
+      400.0,
+      100.0
+    ],
+    "rx_sensitivity_dbm": [
+      -6.0,
+      -3.9
+    ],
+    "fec_type": [
+      "RS_GENERIC",
+      "RS_528_514"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TD8002-S31C-SO"
+    ],
+    "standards_claimed": [
+      "QSFP-DD MSA",
+      "CMIS5.0",
+      "IEEE802.3bj"
+    ],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_center_nm": [
+      1311.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "MPO-12",
+      "MPO"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      14.0
+    ],
+    "baud_rate_gbaud": [
+      53.125
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      0.5
+    ],
+    "tx_power_min_dbm": [
+      -2.9
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_overload_dbm": [
+      4.0
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "los_assert_dbm": [
+      -16.0
+    ],
+    "los_deassert_dbm": [
+      -10.0
+    ],
+    "channel_insertion_loss_db": [
+      3.1
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Product description references TD8001-S31C-SO while ordering number is TD8002-S31C-SO. Power budget stated as 0 – 3.1 dB. Power consumption stated as < 14W. Storage temperature -40°C to +85°C (not operating). Receiver minimum input power given for Average (-6.0 dBm) and OMA (-3.9 dBm) per lane. Transmitter output power given for Average and OMA per lane. FEC required on host per IEEE802.3bj; optical parameters BER 2.4 x 10^-4. Media ID 0xC0 for 200G-DR2 noted as vendor-specific/undefined in MSA SFF-8024. Aggregated line rate footnote 1) 800GbE; line baud rate per lane footnote 2) 53.125Gbd.",
+    "provenance_datasheet_sections": [
+      "QSFP-DD 800G 2xDR4, CMIS5.0",
+      "TD8002-S31C-SO",
+      "TECHNICAL DATA",
+      "APPLICATION CODE LIST",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether channel_insertion_loss_db should map from 'Power budget' or remain separate. Host electrical interface IDs are not tabulated—only media IDs. Consider whether reach should be stored as 500 with a unit field vs 0.5 km. Include separate fields for OMA vs average TX/RX power if both are commonly needed."
+  }
+}

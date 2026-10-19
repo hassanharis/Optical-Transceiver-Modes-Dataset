@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "LS-SM316G-02C 6.144G 1310nm 0 to +70\u00b0C",
+      "model": "LS-SM316G-02C",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "bit_rate_gbps": 6.144
+    },
+    {
+      "label": "LS-SM316G-02I 6.144G 1310nm -40 to +85\u00b0C",
+      "model": "LS-SM316G-02I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "bit_rate_gbps": 6.144
+    }
+  ]
+}

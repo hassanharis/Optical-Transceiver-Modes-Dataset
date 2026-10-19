@@ -1,0 +1,115 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-10GE-BX20D-2733",
+      "SO-SFP-10GE-BX20D-3327",
+      "SO-SFP-10GE-BX20D-2733-I",
+      "SO-SFP-10GE-BX20D-3327-I"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1320.0
+    ],
+    "wavelength_max_nm": [
+      1280.0,
+      1340.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1330.0
+    ],
+    "standards_code": [
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "GbE",
+      "10GbE-LAN",
+      "10GbE-WAN",
+      "OTU1",
+      "OTU2",
+      "OTU2e",
+      "STM-64/OC192",
+      "STM-16/OC48",
+      "STM-4/OC12",
+      "1G FC",
+      "2G FC",
+      "4G FC",
+      "8G FC",
+      "10G FC",
+      "CPRI Opt 1",
+      "CPRI Opt 2",
+      "CPRI Opt 3",
+      "CPRI Opt 4",
+      "CPRI Opt 5",
+      "CPRI Opt 6",
+      "CPRI Opt 7",
+      "CPRI Opt 7A",
+      "CPRI Opt 8",
+      "OBSAI 1x",
+      "OBSAI 2x",
+      "OBSAI 4x",
+      "OBSAI 8x"
+    ],
+    "bit_rate_gbps": [
+      0.6,
+      11.3
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.5
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -2.0
+    ],
+    "tx_power_max_dbm": [
+      3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -14.0
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -18.0
+    ],
+    "penalties": [],
+    "notes": "BiDi pair: SO-SFP-10GE-BX20D-2733 (Tx/Rx 1270/1330 nm) and SO-SFP-10GE-BX20D-3327 (Tx/Rx 1330/1270 nm) on single fiber. Transmit wavelength 1260–1280 nm applies to -2733; 1320–1340 nm to -3327. Receiver wavelength ranges are swapped per variant. Industrial SKUs (-I): operating temperature -40°C to +85°C. Storage temperature -40°C to +85°C. Power budget 2.5–12 dB. Output power, minimum input power, and overload are average power. Minimum input power and overload measured @ 10.3 Gbps, BER ≤ 1×10⁻¹², PRBS 2³¹-1, back-to-back. Distance exceeds IEEE 802.3ae LR (10 km). DDM per SFF-8472.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-10GE-BX20D-2733/-3327",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

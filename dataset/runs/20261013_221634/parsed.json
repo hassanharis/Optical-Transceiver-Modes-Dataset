@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-ts2013-s31c-so-sfp28-25g-er-r6.1.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 5637,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 0,
+      "label": null,
+      "rows": 17
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

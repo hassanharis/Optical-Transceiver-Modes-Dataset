@@ -1,0 +1,53 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\Avago av02-1794en_ds_afbr-79q4xz.pdf",
+  "page_count": 18,
+  "table_count": 9,
+  "markdown_chars": 37040,
+  "tables": [
+    {
+      "page": 3,
+      "label": null,
+      "rows": 9
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 9
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 24
+    },
+    {
+      "page": 8,
+      "label": null,
+      "rows": 41
+    },
+    {
+      "page": 16,
+      "label": null,
+      "rows": 56
+    }
+  ]
+}

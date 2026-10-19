@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:16:21.736793+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-tqsfpdd4cczrp-r5.13.pdf",
+  "page_count": 4,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 9.831,
+    "extract_atoms": 47.446,
+    "store_run": 0.009,
+    "synthesize_modes": 79.961,
+    "store_modes": 0.008,
+    "total": 137.256
+  }
+}

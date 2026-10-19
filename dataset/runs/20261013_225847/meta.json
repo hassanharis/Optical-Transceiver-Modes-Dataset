@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:58:47.410105+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftlf1323f2xtr-transceiver-ds.pdf",
+  "page_count": 9,
+  "table_count": 6,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 8.294,
+    "extract_atoms": 31.797,
+    "store_run": 0.008,
+    "synthesize_modes": 45.627,
+    "store_modes": 0.004,
+    "total": 85.729
+  }
+}

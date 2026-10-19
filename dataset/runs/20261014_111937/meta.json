@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T11:19:37.728806+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-csfp-1000base-bx10d-43-o2.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.558,
+    "extract_atoms": 40.507,
+    "store_run": 0.003,
+    "synthesize_modes": 57.803,
+    "store_modes": 0.002,
+    "total": 102.873
+  }
+}

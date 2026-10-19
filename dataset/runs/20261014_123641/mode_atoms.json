@@ -1,0 +1,136 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-1000BASE-BX120D-5157",
+      "SO-SFP-1000BASE-BX120D-5751",
+      "SO-SFP-1000Base-BX120D-5157",
+      "SO-SFP-1000Base-BX120D-5751",
+      "SO-SFP-1000Base-BX120D-5157-E",
+      "SO-SFP-1000Base-BX120D-5751-E"
+    ],
+    "wavelength_min_nm": [
+      1504.0,
+      1564.0,
+      1490.0,
+      1550.0
+    ],
+    "wavelength_max_nm": [
+      1517.0,
+      1577.0,
+      1530.0,
+      1590.0
+    ],
+    "wavelength_center_nm": [
+      1510.0,
+      1570.0
+    ],
+    "standards_code": [
+      "1000BASE-BX120D",
+      "FE",
+      "GbE",
+      "1G FC"
+    ],
+    "bit_rate_gbps": [
+      0.1,
+      1.25
+    ],
+    "reach_km": [
+      120.0,
+      160.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "host_interface_name": [
+      "SFP"
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "modulation_format": [],
+    "tx_power_min_dbm": [
+      0.0
+    ],
+    "tx_power_max_dbm": [
+      5.0
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_sensitivity_dbm": [
+      -33.0
+    ],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [
+      -8.0
+    ],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -34.0
+    ],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Solution is a transceiver pair: SO-SFP-1000BASE-BX120D-5157 (nominal Tx/Rx 1510nm/1570nm; footnote 1 transmitter 1504–1517nm, receiver wavelength 1550–1590nm) and SO-SFP-1000BASE-BX120D-5751 (nominal Tx/Rx 1570nm/1510nm; footnote 2 transmitter 1564–1577nm, receiver 1490–1530nm). Extended operating temperature -20°C to +85°C (-E ordering codes). Storage temperature -40°C to +85°C. Power budget 13 – 33dB. Dispersion penalty Max 1dB. Receiver minimum input power and overload measured @ 1.25Gbps, BER ≤ 1x10-12, PRBS 27-1, back-to-back (footnote 4). Output power and receiver levels are average power (footnote 3). Overview states bridgeable distance up to 160km; technical data typical reach 120km.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-1000BASE-BX120D-5157 & -5751",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": ""
+  }
+}

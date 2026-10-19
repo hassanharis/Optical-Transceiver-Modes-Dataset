@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"BIDI SFP 1.25G 1490nm-TX/1550nm-RX 80km 0\u00b0C to +70\u00b0C\",\n      \"model\": \"QT- WDM-0280AD\",\n      \"wavelength_min_nm\": 1470.0,\n      \"wavelength_max_nm\": 1510.0,\n      \"bit_rate_gbps\": 1.25\n    },\n    {\n      \"label\": \"BIDI SFP 1.25G 1490nm-TX/1550nm-RX 80km -40\u00b0C to +85\u00b0C\",\n      \"model\": \"QT- WDM-0280AID\",\n      \"wavelength_min_nm\": 1470.0,\n      \"wavelength_max_nm\": 1510.0,\n      \"bit_rate_gbps\": 1.25\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

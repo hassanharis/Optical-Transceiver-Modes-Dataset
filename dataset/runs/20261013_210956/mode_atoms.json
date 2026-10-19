@@ -1,0 +1,140 @@
+{
+  "multi_valued": {
+    "model": [
+      "DOC001-xxxC-SO",
+      "DOC001-001C-SO",
+      "DOC001-1M5C-SO",
+      "DOC001-002C-SO",
+      "DOC001-2M5C-SO",
+      "DOC001-003C-SO"
+    ],
+    "form_factor": [
+      "OSFP",
+      "OSFP800"
+    ],
+    "host_interface_name": [
+      "800GAUI-8",
+      "400GAUI-4",
+      "200GAUI-2",
+      "100GAUI-2",
+      "100GAUI-1",
+      "50GAUI-1",
+      "800GAUI-8-S C2M",
+      "400GAUI-4-S C2M",
+      "100GAUI-1-S C2M",
+      "400GAUI-8 C2M",
+      "200GAUI-1-S C2M",
+      "200GAUI-4 C2M",
+      "100GAUI-2 C2M",
+      "50GAUI-1 C2M"
+    ],
+    "host_interface_id_hex": [
+      "0x51",
+      "0x4F",
+      "0x4B",
+      "0x11",
+      "0x4D",
+      "0x0F",
+      "0x0D"
+    ],
+    "host_interface_id": [
+      81,
+      79,
+      75,
+      17,
+      77,
+      15,
+      13
+    ],
+    "media_interface_name": [
+      "Active Cable assembly with BER<2.6e-4",
+      "Active Cable assembly with BER<1.0e-6"
+    ],
+    "media_interface_id_hex": [
+      "0x03",
+      "0x04",
+      "0x02"
+    ],
+    "media_interface_id": [
+      3,
+      4,
+      2
+    ],
+    "frame": [
+      "1x 800GBASE-R",
+      "2 x 400GBASE-R",
+      "8 x 100GBASE-R",
+      "1x 400GBASE-R",
+      "4 x 200GBASE-R",
+      "2x 200GBASE-R",
+      "2x 100GBASE-R",
+      "8 x 50GBASE-R"
+    ],
+    "standards_code": [
+      "800GBASE-R",
+      "400GBASE-R",
+      "100GBASE-R",
+      "200GBASE-R",
+      "50GBASE-R",
+      "CMIS 5.2",
+      "OSFP800"
+    ],
+    "bit_rate_gbps": [
+      800.0,
+      400.0,
+      100.0,
+      200.0,
+      50.0
+    ],
+    "pre_fec_ber_threshold": [
+      1e-08,
+      0.00026,
+      1e-06
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "standards_claimed": [
+      "CMIS 5.2",
+      "OSFP800 MSA",
+      "800GAUI-8",
+      "400GAUI-4",
+      "200GAUI-2",
+      "100GAUI-2",
+      "100GAUI-1",
+      "50GAUI-1"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      10.0
+    ],
+    "baud_rate_gbaud": [
+      50.0
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "fec_type": [
+      "RS_GENERIC"
+    ],
+    "post_fec_ber_target": [
+      1e-15
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "penalties": [],
+    "notes": "Active Electrical Cable (AEC), Twinax copper with DSP at each end; not an optical transceiver. Cable length 1 to 3 m (3.3 to 9.8 ft). Storage temperature -40°C to +85°C. Power consumption stated as <10.0 W per side. Product features cite BER < 10^-8 pre-FEC and BER < 10^-15 post-FEC; APPLICATION CODE LIST cites RS-FEC with BER<2.6e-4 or BER<1.0e-6 per application row. Aggregate bandwidth 800 Gbps; eight data lanes at 50 Gbd each direction.",
+    "provenance_datasheet_sections": [
+      "OSFP 800G AEC, CMIS 5.2",
+      "DOC001-xxxC-SO",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "ORDERING INFORMATION",
+      "APPLICATION CODE LIST",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider schema fields for cable_length_m, product_type (AEC/DAC), and electrical-only modules where optical parameters are intentionally null."
+  }
+}

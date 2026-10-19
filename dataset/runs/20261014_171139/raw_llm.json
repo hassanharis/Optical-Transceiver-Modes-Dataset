@@ -1,0 +1,198 @@
+{
+  "vendor": "Cisco",
+  "model": [
+    "QDD-400G-ZR-S",
+    "QDD-400G-ZRP-S"
+  ],
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "OIF MSA",
+    "OpenZR+ MSA",
+    "OpenROADM"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": [
+    "C-band"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": [
+    75,
+    50,
+    37.5
+  ],
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": null,
+  "fiber_type": null,
+  "temp_min_c": 15,
+  "temp_max_c": 75,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "400GE",
+    "4x 100GE",
+    "100GbE",
+    "200GbE",
+    "300GbE",
+    "400GbE"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": [
+    "400GE",
+    "4x100GE",
+    "3x100GE",
+    "2x100GE"
+  ],
+  "standards_code": [
+    "400ZR",
+    "OpenZR+",
+    "OpenROADM",
+    "400G-ZR",
+    "400G-ZR+"
+  ],
+  "baud_rate_gbaud": [
+    60,
+    30,
+    40
+  ],
+  "bit_rate_gbps": [
+    100,
+    200,
+    300,
+    400
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "QPSK",
+    "QAM_8",
+    "QAM_16"
+  ],
+  "reach_km": [
+    120
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": [
+    -8.5,
+    -10,
+    -8.0,
+    -10.0,
+    -11.0,
+    -13.0,
+    -8.6,
+    -10.2,
+    -10.4,
+    -11.9,
+    -6.2,
+    -7.7,
+    -9.0,
+    -10.5,
+    -11,
+    -5.9,
+    -7.5
+  ],
+  "tx_in_band_osnr_db": [
+    34,
+    42
+  ],
+  "tx_out_of_band_osnr_db": [
+    30,
+    42
+  ],
+  "rx_sensitivity_dbm": [
+    -12,
+    -15,
+    -20,
+    -16,
+    -21,
+    -19,
+    -22,
+    -23,
+    -18,
+    -28,
+    -24,
+    -25
+  ],
+  "rx_osnr_db": [
+    26,
+    23.7,
+    23.1,
+    20.8,
+    19.5,
+    15.3,
+    15.0,
+    17.4,
+    19.3,
+    11.8
+  ],
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    13
+  ],
+  "cd_tolerance_ps_nm": [
+    2400,
+    13000,
+    52000,
+    26000,
+    100000,
+    50000,
+    21000,
+    85000,
+    80000,
+    160000
+  ],
+  "pdl_db": null,
+  "pmd_tolerance_ps": [
+    33,
+    60,
+    80
+  ],
+  "fec_type": [
+    "CFEC",
+    "OFEC"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "The transmitter power values include typical and worst-case values with and without TX shaping as printed under Max Transmit Power. Symbol rates printed as raw baud counts were not converted to GBaud; only explicitly stated approximate GBaud values were extracted. Extended RX sensitivity values are specified at a 1dB OSNR penalty, but no supported penalty object was created because an operating condition from the schema's condition enumeration was not stated. Multichannel OSNR penalties are stated for adjacent-channel spacing or crosstalk conditions, which are not available condition parameters in the penalty schema. The normal operating case temperature is 15 to +75°C. +80°C is a short-term operating case temperature, and -5°C is only the minimum ambient cold-start temperature.",
+  "provenance_datasheet_sections": [
+    "Data sheet Cisco public",
+    "Product overview",
+    "QDD ZR overview",
+    "QDD ZR Plus overview",
+    "Features and benefits",
+    "Flexible modulation",
+    "Specification",
+    "Transmitter specifications",
+    "Rx parameter specifications",
+    "Rx Optical Polarization specifications",
+    "Rx Multichannel Interaction specifications",
+    "Physical",
+    "Ordering information"
+  ],
+  "suggestions": "Add fields for exact symbol rate in baud, typical versus worst-case transmitter power, TX-shaping state, extended RX sensitivity at OSNR penalty, state-of-polarization change rate, multichannel crosstalk tolerance, adjacent-channel spacing conditions, short-term temperature limits, and per-model/per-modulation parameter association."
+}

@@ -1,0 +1,130 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-10GE-BX10D-2733",
+    "SO-SFP-10GE-BX10D-3327",
+    "SO-SFP-10GE-BX10D-2733-I",
+    "SO-SFP-10GE-BX10D-3327-I"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "IEEE 802.3ae"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260,
+    1320
+  ],
+  "wavelength_max_nm": [
+    1280,
+    1340
+  ],
+  "wavelength_center_nm": [
+    1270,
+    1330
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "10GBASE-LR",
+    "10GBASE-LW"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [
+    "10GBASE-LR",
+    "10GBASE-LW"
+  ],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "10GBASE-LR",
+    "10GBASE-LW",
+    "IEEE 802.3ae"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    0.6,
+    11.3
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    10
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -14.0
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -30
+  ],
+  "los_deassert_dbm": [
+    -18
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "BiDi pair: SO-SFP-10GE-BX10D-2733 (Tx/Rx 1270/1330 nm per footnote 1) and SO-SFP-10GE-BX10D-3327 (Tx/Rx 1330/1270 nm per footnote 2). Transmit wavelength 1260–1280 nm (2733) and 1320–1340 nm (3327); receiver wavelength ranges are swapped. Power budget 0–9 dB. Operating temperature also offered as I-temp -40°C to +85°C (ordering codes with -I suffix). Storage temperature -40°C to +85°C. Transmitter output power and receiver min input/overload are average power (footnote 3). Receiver minimum input power -14.0 dBm and overload +0.5 dBm at 10.3 Gbps, BER ≤ 1×10⁻¹², PRBS 2³¹-1, back-to-back (footnote 4). IEEE 802.3ae 10GBASE-LR/LW is defined only at 1310 nm; standard cited for bridgeable distance. Protocol support includes GbE, 10GbE-LAN, 10GbE-WAN, OTU1, OTU2, OTU2e, STM-64/OC192, STM-16/OC48, STM-4/OC12, 1G/2G/4G/8G/10G FC, CPRI Opt 1–8 and 7A, OBSAI 1x/2x/4x/8x. DDM per SFF-8472.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-10GE-BX10D-2733/-3327",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": ""
+}

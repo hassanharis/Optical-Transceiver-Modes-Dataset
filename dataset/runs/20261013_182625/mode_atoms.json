@@ -1,0 +1,134 @@
+{
+  "multi_valued": {
+    "model": [
+      "16G-ER-Dxxx-BR2",
+      "16G-ER-D200-BR2",
+      "16G-ER-D210-BR2",
+      "16G-ER-D220-BR2",
+      "16G-ER-D230-BR2",
+      "16G-ER-D240-BR2",
+      "16G-ER-D250-BR2",
+      "16G-ER-D260-BR2",
+      "16G-ER-D270-BR2",
+      "16G-ER-D280-BR2",
+      "16G-ER-D290-BR2",
+      "16G-ER-D300-BR2",
+      "16G-ER-D310-BR2",
+      "16G-ER-D320-BR2",
+      "16G-ER-D330-BR2",
+      "16G-ER-D340-BR2",
+      "16G-ER-D350-BR2",
+      "16G-ER-D360-BR2",
+      "16G-ER-D370-BR2",
+      "16G-ER-D380-BR2",
+      "16G-ER-D390-BR2",
+      "16G-ER-D400-BR2",
+      "16G-ER-D410-BR2",
+      "16G-ER-D420-BR2",
+      "16G-ER-D430-BR2",
+      "16G-ER-D440-BR2",
+      "16G-ER-D450-BR2",
+      "16G-ER-D460-BR2",
+      "16G-ER-D470-BR2",
+      "16G-ER-D480-BR2",
+      "16G-ER-D490-BR2",
+      "16G-ER-D500-BR2",
+      "16G-ER-D510-BR2",
+      "16G-ER-D520-BR2",
+      "16G-ER-D530-BR2",
+      "16G-ER-D540-BR2",
+      "16G-ER-D550-BR2",
+      "16G-ER-D560-BR2",
+      "16G-ER-D570-BR2",
+      "16G-ER-D580-BR2",
+      "16G-ER-D590-BR2",
+      "16G-ER-D600-BR2"
+    ],
+    "wavelength_band": [
+      "DWDM",
+      "CWDM"
+    ],
+    "standards_code": [
+      "ITU-T G.694.1",
+      "ITU-T G.694.2",
+      "ITU-T G.959"
+    ],
+    "bit_rate_gbps": [
+      14.025,
+      8.5,
+      4.25
+    ],
+    "rx_sensitivity_dbm": [
+      -13.0,
+      -14.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472",
+      "ITU-T G.694.1"
+    ],
+    "wavelength_min_nm": [
+      1529.55
+    ],
+    "wavelength_max_nm": [
+      1561.42
+    ],
+    "frequency_min_thz": [
+      192.0
+    ],
+    "frequency_max_thz": [
+      196.0
+    ],
+    "channel_spacing_ghz": [
+      100.0
+    ],
+    "channel_total": [
+      41
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.2
+    ],
+    "reach_km": [
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      0.0
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_overload_dbm": [
+      -2.0
+    ],
+    "cd_tolerance_ps_nm": [
+      800.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "penalties": [],
+    "notes": "Title line states 13dB and D200-D600 (41ch). Power budget 6–13dB @ 16G FC and 6–14dB @ 8G/4G FC. Dispersion penalty max 2dB stated without paired penalized parameter and operating condition per penalty schema. Transmitter/receiver powers footnote 1): Average power. Receiver sensitivity footnote 2): @ BER < 1E-12 using PRBS 231-1. Nominal/transmit wavelengths 192.00–196.00 THz (41ch); receiver wavelength range 1480–1580nm. CWDM: 1550nm channels D250–D410; 1530nm channels D500–D600 (ITU G.694.2 1551/1531nm ±7nm). ITU-T G.959 1550nm single-channel 1500–1565nm implies D200–D600. Protocol support 16G FC, 8G FC, 4G FC; overview mentions 4G–16G FC/FICON and Brocade layer-1 tested. OWRAP/EWRAP loop-back with or without forwarding. Storage temperature -40°C to +85°C. MSA compliance listed as SFF-8431, -8432, -8472.",
+    "provenance_datasheet_sections": [
+      "16G-ER-Dxxx-BR2",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

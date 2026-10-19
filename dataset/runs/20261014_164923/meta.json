@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:49:23.814291+00:00",
+  "source_file": "C:\\Haris\\datasheets\\tq2024-bxxc-so-qsfp28-100g-bidi-40km-r6.2.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.858,
+    "extract_atoms": 19.996,
+    "store_run": 0.004,
+    "synthesize_modes": 13.828,
+    "store_modes": 0.004,
+    "total": 38.69
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\8g-er-dxxx-br1.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 6494,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 19
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

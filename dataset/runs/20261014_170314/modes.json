@@ -1,0 +1,76 @@
+{
+  "modes": [
+    {
+      "label": "XP-85B1-02D-4 @ 10.3125 Gbps (Commercial)",
+      "model": "XP-85B1-02D-4",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.4,
+      "tx_power_min_dbm": -7.3,
+      "tx_power_max_dbm": -0.5,
+      "rx_sensitivity_dbm": -9.9,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "XP-85B1-02D-4 @ 25.78 Gbps (Commercial)",
+      "model": "XP-85B1-02D-4",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -8.4,
+      "tx_power_max_dbm": 2.4,
+      "rx_sensitivity_dbm": -10.3,
+      "rx_overload_dbm": 2.4
+    },
+    {
+      "label": "XP-85B1-02DE-4 @ 10.3125 Gbps (Extended)",
+      "model": "XP-85B1-02DE-4",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.4,
+      "tx_power_min_dbm": -7.3,
+      "tx_power_max_dbm": -0.5,
+      "rx_sensitivity_dbm": -9.9,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "XP-85B1-02DE-4 @ 25.78 Gbps (Extended)",
+      "model": "XP-85B1-02DE-4",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -8.4,
+      "tx_power_max_dbm": 2.4,
+      "rx_sensitivity_dbm": -10.3,
+      "rx_overload_dbm": 2.4
+    },
+    {
+      "label": "XP-85B1-02DA-4 @ 10.3125 Gbps (Industrial)",
+      "model": "XP-85B1-02DA-4",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.4,
+      "tx_power_min_dbm": -7.3,
+      "tx_power_max_dbm": -0.5,
+      "rx_sensitivity_dbm": -9.9,
+      "rx_overload_dbm": -1.0
+    },
+    {
+      "label": "XP-85B1-02DA-4 @ 25.78 Gbps (Industrial)",
+      "model": "XP-85B1-02DA-4",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 25.78,
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -8.4,
+      "tx_power_max_dbm": 2.4,
+      "rx_sensitivity_dbm": -10.3,
+      "rx_overload_dbm": 2.4
+    }
+  ]
+}

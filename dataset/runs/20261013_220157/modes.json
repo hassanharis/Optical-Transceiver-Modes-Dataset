@@ -1,0 +1,44 @@
+{
+  "modes": [
+    {
+      "label": "CMIS App 1 — 4×100GBASE-DR",
+      "host_interface_name": "4x100GAUI-2",
+      "frame": "2x 50G",
+      "standards_code": "100GBASE-DR",
+      "bit_rate_gbps": 400.0,
+      "rx_sensitivity_dbm": -6.1,
+      "fec_type": "RS_GENERIC",
+      "number_of_lanes": 4
+    },
+    {
+      "label": "CMIS App 2 — 4×100GBASE-FR1",
+      "host_interface_name": "4x100GAUI-2",
+      "frame": "2x 50G",
+      "standards_code": "100GBASE-FR1",
+      "bit_rate_gbps": 400.0,
+      "rx_sensitivity_dbm": -6.1,
+      "fec_type": "RS_GENERIC",
+      "number_of_lanes": 4
+    },
+    {
+      "label": "CMIS App 3 — 4×100GBASE-LR1",
+      "host_interface_name": "4x100GAUI-2",
+      "frame": "2x 50G",
+      "standards_code": "100GBASE-LR1",
+      "bit_rate_gbps": 400.0,
+      "rx_sensitivity_dbm": -6.1,
+      "fec_type": "RS_GENERIC",
+      "number_of_lanes": 4
+    },
+    {
+      "label": "CMIS App 4 — 400GBASE-DR4",
+      "host_interface_name": "400GAUI-8",
+      "frame": "8x 50G",
+      "standards_code": "400GBASE-DR4",
+      "bit_rate_gbps": 400.0,
+      "rx_sensitivity_dbm": -6.1,
+      "fec_type": "RS_GENERIC",
+      "number_of_lanes": 8
+    }
+  ]
+}

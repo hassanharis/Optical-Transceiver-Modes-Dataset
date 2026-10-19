@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:33:58.683685+00:00",
+  "source_file": "C:\\Haris\\datasheets\\qxp29b4-10d-rx 100g qsfp28 lr4 rx.pdf",
+  "page_count": 7,
+  "table_count": 6,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 13.426,
+    "extract_atoms": 27.806,
+    "store_run": 0.005,
+    "synthesize_modes": 19.829,
+    "store_modes": 0.004,
+    "total": 61.071
+  }
+}

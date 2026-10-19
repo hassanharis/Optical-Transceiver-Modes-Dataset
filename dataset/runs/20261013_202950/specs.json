@@ -1,0 +1,50 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "CVR-CFP-QSFP28"
+  ],
+  "form_factor": [
+    "CFP",
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "CFP-MSA",
+    "QSFP28 MSA"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    5.5
+  ],
+  "host_interface_name": [
+    "CFP"
+  ],
+  "media_interface_name": [
+    "QSFP28"
+  ],
+  "frame": [
+    "10x 10G",
+    "4x 25G"
+  ],
+  "standards_code": [
+    "100G Ethernet",
+    "OTU4",
+    "100GbE ER4",
+    "100GbE LR4"
+  ],
+  "bit_rate_gbps": [
+    100.0
+  ],
+  "number_of_lanes": [
+    10,
+    4
+  ],
+  "penalties": [],
+  "notes": "Converter module (not an optical transceiver). Power consumption stated as < 5.5W. Storage temperature -40°C to +85°C. Does not include RS (Reed-Solomon) FEC encode/decode; intended for QSFP28 transceivers with interfaces that do not require FEC (e.g. 100GbE ER4/LR4 and OTU4). DDM via MDIO 2-Wire Interface. Safety/regulatory: TUV/UL/FDA (contact Smartoptics), RoHS.",
+  "provenance_datasheet_sections": [
+    "CVR-CFP-QSFP28",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ]
+}

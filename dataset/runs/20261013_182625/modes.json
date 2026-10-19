@@ -1,0 +1,172 @@
+{
+  "modes": [
+    {
+      "label": "16G-ER-D200-BR2 DWDM 16G FC",
+      "model": "16G-ER-D200-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 14.025,
+      "rx_sensitivity_dbm": -13.0
+    },
+    {
+      "label": "16G-ER-D200-BR2 DWDM 8G FC",
+      "model": "16G-ER-D200-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 8.5,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D200-BR2 DWDM 4G FC",
+      "model": "16G-ER-D200-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 4.25,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D210-BR2 DWDM 16G FC",
+      "model": "16G-ER-D210-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 14.025,
+      "rx_sensitivity_dbm": -13.0
+    },
+    {
+      "label": "16G-ER-D210-BR2 DWDM 8G FC",
+      "model": "16G-ER-D210-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 8.5,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D210-BR2 DWDM 4G FC",
+      "model": "16G-ER-D210-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 4.25,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D220-BR2 DWDM 16G FC",
+      "model": "16G-ER-D220-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 14.025,
+      "rx_sensitivity_dbm": -13.0
+    },
+    {
+      "label": "16G-ER-D220-BR2 DWDM 8G FC",
+      "model": "16G-ER-D220-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 8.5,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D220-BR2 DWDM 4G FC",
+      "model": "16G-ER-D220-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 4.25,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D230-BR2 DWDM 16G FC",
+      "model": "16G-ER-D230-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 14.025,
+      "rx_sensitivity_dbm": -13.0
+    },
+    {
+      "label": "16G-ER-D230-BR2 DWDM 8G FC",
+      "model": "16G-ER-D230-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 8.5,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D230-BR2 DWDM 4G FC",
+      "model": "16G-ER-D230-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 4.25,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D240-BR2 DWDM 16G FC",
+      "model": "16G-ER-D240-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 14.025,
+      "rx_sensitivity_dbm": -13.0
+    },
+    {
+      "label": "16G-ER-D240-BR2 DWDM 8G FC",
+      "model": "16G-ER-D240-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 8.5,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D240-BR2 DWDM 4G FC",
+      "model": "16G-ER-D240-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 4.25,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D250-BR2 DWDM 16G FC",
+      "model": "16G-ER-D250-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 14.025,
+      "rx_sensitivity_dbm": -13.0
+    },
+    {
+      "label": "16G-ER-D250-BR2 DWDM 8G FC",
+      "model": "16G-ER-D250-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 8.5,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D250-BR2 DWDM 4G FC",
+      "model": "16G-ER-D250-BR2",
+      "wavelength_band": "DWDM",
+      "standards_code": "ITU-T G.694.1",
+      "bit_rate_gbps": 4.25,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D250-BR2 CWDM 1550nm 16G FC",
+      "model": "16G-ER-D250-BR2",
+      "wavelength_band": "CWDM",
+      "standards_code": "ITU-T G.694.2",
+      "bit_rate_gbps": 14.025,
+      "rx_sensitivity_dbm": -13.0
+    },
+    {
+      "label": "16G-ER-D250-BR2 CWDM 1550nm 8G FC",
+      "model": "16G-ER-D250-BR2",
+      "wavelength_band": "CWDM",
+      "standards_code": "ITU-T G.694.2",
+      "bit_rate_gbps": 8.5,
+      "rx_sensitivity_dbm": -14.0
+    },
+    {
+      "label": "16G-ER-D250-BR2 CWDM 1550nm 4G FC",
+      "model": "16G-ER-D250-BR2",
+      "wavelength_band": "CWDM",
+      "standards_code": "ITU-T G.694.2",
+      "bit_rate_gbps": 4.25,
+      "rx_sensitivity_dbm": -14.0
+    }
+  ]
+}

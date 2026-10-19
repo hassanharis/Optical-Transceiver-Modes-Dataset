@@ -1,0 +1,59 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TSF088-ELEC-SO"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "IEEE 802.3",
+    "1000BASE-T IEEE 802.3",
+    "100BASE-T IEEE 802.3",
+    "10BASE-T IEEE 802.3"
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "RJ45"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.05
+  ],
+  "host_interface_name": [
+    "SGMII",
+    "SERDES"
+  ],
+  "standards_code": [
+    "1000BASE-T",
+    "100BASE-T",
+    "10BASE-T",
+    "10/100/1000BASE-T"
+  ],
+  "baud_rate_gbaud": [
+    1.25
+  ],
+  "bit_rate_gbps": [
+    1.0,
+    0.1,
+    0.01
+  ],
+  "reach_km": [
+    0.1
+  ],
+  "penalties": [],
+  "notes": "Copper (Grey SFP) electrical transceiver over CAT5 UTP or better; typical reach 100 m. Storage temperature -40°C to +85°C stated in technical data table cell alongside operating 0°C to +70°C and power < 1.05 W. SGMII physical layer at 1.25 Gb/s, 8B10B encoded at all times regardless of negotiated rate. Rx_LOS pin for link indication. Auto-negotiation on SGMII. Preferred master (master mode uses local clock). 10/100/1000 BASE-T requires SGMII with no clocks in host; 1000BASE-T when host uses SERDES interface. RoHS-6/6 compliant. 2-wire serial interface per SFF-8472.",
+  "provenance_datasheet_sections": [
+    "SFP 1000BASE-TX, SGMII, RX-LOS",
+    "TSF088-ELEC-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether reach_km should use 0.1 for 100 m copper. Add schema support for copper media (CAT5 UTP) and electrical host/media interfaces (RJ45, SGMII) distinct from optical MSA media codes."
+}

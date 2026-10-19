@@ -1,0 +1,124 @@
+{
+  "vendor": "Cinch Connectivity Solutions",
+  "model": [
+    "LxK-S-R2xx",
+    "RR-K-S-R2xx"
+  ],
+  "form_factor": [
+    "Low Rider RJ"
+  ],
+  "standards_claimed": [
+    "IEEE Gigabit Ethernet",
+    "IEEE 802.3z",
+    "ANSI 1x Fiber Channel",
+    "ANSI X3.297",
+    "FC-PH-2",
+    "EN-60825",
+    "IEC-825",
+    "CDRH Class 1"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [],
+  "wavelength_max_nm": [],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    2
+  ],
+  "mounting_type": [
+    "solder",
+    "screw"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM1",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "IEEE 802.3z",
+    "ANSI X3.297",
+    "FC-PH-2"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    1.25
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [
+    "NRZ"
+  ],
+  "reach_km": [
+    0.22,
+    0.275,
+    0.3,
+    0.5,
+    0.55
+  ],
+  "tx_power_min_dbm": [],
+  "tx_power_max_dbm": [],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -21.0
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [],
+  "los_deassert_dbm": [],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": [
+    2
+  ],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Dual RX-only module; title references 850 nm VCSEL on the link transmit side, not an on-module emitter. Optical sensitivity PI MIN -21 dBm, MAX 0 dBm per receivers table. BER=10^-12 at 1.25 Gbps, PRBS 2^7-1, NRZ, compliant with ANSI X3.297 / FC-PH-2. RX data outputs squelched when Signal Detect is deasserted. VCCTX = 3.135 V to 3.465 V; individual +3.3 V supply per port. Link distances depend on fiber bandwidth-length product (MHz*km).",
+  "provenance_datasheet_sections": [
+    "LxK-S-R2xx Low Profile Dual Channel Optical Receiver",
+    "Applications",
+    "Features",
+    "Ordering Information",
+    "Receivers: VCCTX = 3.135V to 3.465V, TA = Operating Temperature Range",
+    "Link Distances"
+  ],
+  "suggestions": ""
+}

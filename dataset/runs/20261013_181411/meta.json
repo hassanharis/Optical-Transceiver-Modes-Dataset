@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T18:14:11.870682+00:00",
+  "source_file": "C:\\Haris\\datasheets\\1.6t-osfp-2xfr4-op27pi8-02d-r.pdf",
+  "page_count": 8,
+  "table_count": 10,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.021,
+    "extract_atoms": 32.89,
+    "store_run": 0.004,
+    "synthesize_modes": 45.47,
+    "store_modes": 0.003,
+    "total": 88.387
+  }
+}

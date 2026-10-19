@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T11:58:59.973857+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-qsfp-lx4.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.459,
+    "extract_atoms": 39.747,
+    "store_run": 0.004,
+    "synthesize_modes": 37.195,
+    "store_modes": 0.003,
+    "total": 81.408
+  }
+}

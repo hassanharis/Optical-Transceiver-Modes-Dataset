@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "1310nm FP 155Mbps 20km commercial temp (PPC)",
+      "model": "L9-SC315501-20PPC",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "G.957",
+      "tx_power_max_dbm": -8.0
+    },
+    {
+      "label": "1550nm FP 155Mbps 20km commercial temp (PPC)",
+      "model": "L9-SC553101-20PPC",
+      "wavelength_min_nm": 1510.0,
+      "wavelength_max_nm": 1590.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "G.957",
+      "tx_power_max_dbm": -8.0
+    },
+    {
+      "label": "1310nm FP 155Mbps 20km extended temp (PPI)",
+      "model": "L9-SC315501-20PPI",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "G.957",
+      "tx_power_max_dbm": -8.0
+    },
+    {
+      "label": "1550nm FP 155Mbps 20km extended temp (PPI)",
+      "model": "L9-SC553101-20PPI",
+      "wavelength_min_nm": 1510.0,
+      "wavelength_max_nm": 1590.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "G.957",
+      "tx_power_max_dbm": -8.0
+    }
+  ]
+}

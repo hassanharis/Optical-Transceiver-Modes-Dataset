@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T00:20:48.475985+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ls-bl332710-10c.pdf",
+  "page_count": 8,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 7.843,
+    "extract_atoms": 16.254,
+    "store_run": 0.013,
+    "synthesize_modes": 27.011,
+    "store_modes": 0.003,
+    "total": 51.125
+  }
+}

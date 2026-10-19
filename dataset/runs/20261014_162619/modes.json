@@ -1,0 +1,56 @@
+{
+  "modes": [
+    {
+      "label": "SO-XFP-10GE-BX40D-2733 BiDi 1270nm Tx / 1330nm Rx",
+      "model": "SO-XFP-10GE-BX40D-2733",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "host_interface_name": [
+        "INF-8077i",
+        "XFP MSA"
+      ],
+      "standards_code": [
+        "10GBASE-ER",
+        "10GBASE-EW",
+        "10GbE-LAN",
+        "10GbE-WAN",
+        "OTU2",
+        "OTU2e",
+        "STM-64",
+        "OC192"
+      ],
+      "bit_rate_gbps": [
+        9.95,
+        11.1,
+        11.3
+      ]
+    },
+    {
+      "label": "SO-XFP-10GE-BX40D-3327 BiDi 1330nm Tx / 1270nm Rx",
+      "model": "SO-XFP-10GE-BX40D-3327",
+      "wavelength_min_nm": 1320.0,
+      "wavelength_max_nm": 1340.0,
+      "wavelength_center_nm": 1330.0,
+      "host_interface_name": [
+        "INF-8077i",
+        "XFP MSA"
+      ],
+      "standards_code": [
+        "10GBASE-ER",
+        "10GBASE-EW",
+        "10GbE-LAN",
+        "10GbE-WAN",
+        "OTU2",
+        "OTU2e",
+        "STM-64",
+        "OC192"
+      ],
+      "bit_rate_gbps": [
+        9.95,
+        11.1,
+        11.3
+      ]
+    }
+  ]
+}

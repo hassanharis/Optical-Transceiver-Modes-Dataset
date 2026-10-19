@@ -1,0 +1,104 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "DS5001-xxxC-SO",
+    "DS5001-05MC-SO",
+    "DS5001-001C-SO",
+    "DS5001-002C-SO",
+    "DS5001-003C-SO"
+  ],
+  "form_factor": [
+    "SFP56",
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFP56 MSA",
+    "SFF-8472",
+    "SFF-8431",
+    "IEEE 802.3cd"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [],
+  "wavelength_max_nm": [],
+  "wavelength_center_nm": [],
+  "wavelength_band": [],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "mounting_type": [],
+  "connector_type": [],
+  "fiber_type": [],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [],
+  "host_interface_name": [
+    "SFP56",
+    "GAUI-1"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [
+    "SFP56"
+  ],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [
+    "GAUI-1"
+  ],
+  "standards_code": [
+    "IEEE 802.3cd",
+    "GAUI-1",
+    "SFF-8472",
+    "SFF-8431"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    50.0,
+    56.0
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    0.0005,
+    0.003
+  ],
+  "tx_power_min_dbm": [],
+  "tx_power_max_dbm": [],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [],
+  "los_deassert_dbm": [],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Passive Twinax DAC; no optical TX/RX parameters in source. Cable length stated as 0.5 to 3 m (also 1.6 to 16.4 ft and 1.6 to 9.8 ft). Ordering table mixes SFP56 (DS5001-05MC-SO) and SFP28 (DS5001-001C/002C/003C-SO) descriptions. AWG26/30 cable; minimum bend radius AWG30 23 mm, AWG26 28 mm. RoSH compliant. Vendor name inferred only from smartoptics.com footer, not a formal manufacturer line in body text.",
+  "provenance_datasheet_sections": [
+    "SFP56 – SFP56 DAC, Passive",
+    "DS5001-XXXC-SO",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION",
+    "MECHANICAL DRAWING"
+  ],
+  "suggestions": "Clarify whether reach_km should apply to passive DAC cable length in meters. Add schema fields for cable AWG, bend radius, and passive/active if DAC-focused extractions are common. Require explicit vendor legal name in datasheet to avoid URL-only inference."
+}

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Finisar [&#x27;FTLF1318P3BTL&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">ftlf1318p3btl-transceiver-ds.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">12</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">7</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 22:57</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">Optical Transceivers 
+
+## FTLF1318P3BTL 
+
+## **Industrial Temperature 1.25 Gb/s RoHS Compliant  LongWavelength Pluggable SFP Transceiver** 
+
+FTLF1318P3BTL Small Form Factor Pluggable (SFP) transceivers are compatible with the Small Form Factor Pluggable Multi-Sourcing Agreement (MSA)[4] . They simultaneously comply with Gigabit Ethernet as specified in IEEE Std 802.31 and 1x Fibre Channel as defined in FC-PI-4 Rev. 8.003. The optical transceivers are compliant per the RoHS Directive 2011/65/ EU. See Finisar Application Note AN-2038 for more details. Digital diagnostics functions are available via the 2-wire serial bus specified in the SFP MSA. 
+
+
+## FEATURES 
+
+## APPLICATIONS 
+
+- Up to 1.25Gb/s bi-directional data links 
+
+- Hot-pluggable SFP footprint 
+
+   - 1.25Gb/s 1000Base-LX Ethernet 
+
+   - 1.06 Gb/s Fibre Channel 
+
+- Built-in digital diagnostic functions 
+
+- 1310nm Fabry-Perot laser transmitter 
+
+- Duplex LC connector 
+
+- RoHS compliant and Lead Free 
+
+- Up to 10 km on 9/125μm SMF 
+
+- Metal enclosure for lower EMI 
+
+- Single 3.3V power supply 
+
+- Low power dissipation &lt;600mW typical 
+
+- Industrial operating temperature range: -40°C to 85°C 
+
+**FTLF1318P3BTL** 
+
+## **Product Selection** 
+
+## **FTLF1318P3BTL** 
+
+## **I. Pin Descriptions** 
+
+
+**----- Start of picture text -----**&lt;br&gt;
+VeeT 20&lt;br&gt;1 VeeT&lt;br&gt;TD- 19&lt;br&gt;2 TXFault&lt;br&gt;TD+ 18&lt;br&gt;3 TX Disable&lt;br&gt;VeeT 17&lt;br&gt;4 MOD-DEF(2)&lt;br&gt;VccT 16&lt;br&gt;5 MOD-DEF(1)&lt;br&gt;Towards Towards&lt;br&gt;VccR 15&lt;br&gt;Bezel 6 MOD-DEF(0) ASIC&lt;br&gt;VeeR 14&lt;br&gt;7 Rate Select&lt;br&gt;RD+ 13&lt;br&gt;8 LOS&lt;br&gt;RD- 12&lt;br&gt;9 VeeR&lt;br&gt;VeeR 11&lt;br&gt;1 VeeR&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+Pinout of Connector Block on Host Board 
+
+2 
+
+**FTLF1318P3BTL** 
+
+
+**----- Start of picture text -----**&lt;br&gt;
+Pin Symbol Name/Description Notes&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+|Pin|Symbol|Name/Description|Notes|
+|---|---|---|---|
+|||||
+|1|VEET|Transmitter Ground (Common with Receiver Ground)|1|
+|2|TFAULT|Transmitter Fault.|2|
+|3|TDIS|Transmitter Disable. Laser output 
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Finisar"</span>,
+  <span class="key">"model"</span>: [
+    "FTLF1318P3BTL"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFF"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "Small Form Factor Pluggable Multi-Sourcing Agreement (MSA)",
+    "SFP MSA",
+    "IEEE Std <span class="num">802.3</span>",
+    "1000BASE-LX",
+    "Gigabit Ethernet",
+    "FC-PI-4 Rev. <span class="num">8.003</span>",
+    "1x Fibre Channel",
+    "RoHS Directive <span class="num">2011</span>/65/EU"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_FP"
+  ],
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1270</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1355</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1310</span>
+  ],
+  <span class="key">"wavelength_band"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: [
+    <span class="num">1</span>
+  ],
+  <span class="key">"mounting_type"</span>: [
+    "pluggable",
+    "pluggable_hot"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF",
+    "SMF <span class="num">9</span>/125μm"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-40</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">0.6</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "1000Base-LX",
+    "Gigabit Ethernet",
+    "1x Fibre Channel"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "1000BASE-LX",
+    "FC-PI-4 Rev. <span class="num">8.00</span>",
+    "IEEE <span class="num">802.3</span>"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">1.06</span>,
+    <span class="num">1.062</span>,
+    <span class="num">1.25</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">10</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-9.5</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">-3</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-21</span>,
+    <span class="num">-19</span>,
+    <span class="num">-14.5</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">9</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-30</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-19</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">9</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [
+    <span class="num">12</span>
+  ],
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">1</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: [
+    <span class="num">122.4</span>
+  ],
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Data rate table lists <span class="num">1062</span>–1250 Mb/sec; features cite <span class="num">1.06</span> Gb/s Fibre Channel and <span class="num">1.25</span> Gb/s Ethernet. Rx sensitivity <span class="num">-19</span> dBm @ <span class="num">1.25</span> Gb/s (Gigabit Ethernet) and <span class="num">-21</span> dBm @ <span class="num">1.06</span> Gb/s (1X Fibre Channel) per PRBS <span class="num">2</span>^7-1 at <span class="num">10</span>^-12 BER; Stressed RX sens. = <span class="num">1.25</span> Gb/s is <span class="num">-14.5</span> dBm. Link length <span class="num">10</span> km uses <span class="num">0.55</span> dB/km attenuation and is dispersion-limited per FC-PI-4 Rev. <span class="num">8.00</span> (indicative). Power: &#x27;&lt;600mW typical&#x27; dissipation; Icc max <span class="num">300</span> mA. Optical center wavelength λC table spans <span class="num">1265</span>–1600 nm; product is specified as <span class="num">1310</span> nm Fabry-Perot. Transmitter total jitter TX Δ TJ is specified in ns (50–119 ns), not ps. Digital diagnostic Tx power monitor range <span class="num">-11.5</span> to <span class="num">-1</span> dBm; Rx <span class="num">-23</span> to +2 dBm."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "FTLF1318P3BTL",
+    "Industrial Temperature <span class="num">1.25</span> Gb/s RoHS Compliant  LongWavelength Pluggable SFP Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics (TA = <span class="num">-40</span> to <span class="num">85</span> °C, VCC = <span class="num">3.0</span> to <span class="num">3.6</span> Volts)",
+    "IV. Optical Characteristics (Top =-40 to <span class="num">85</span>°C, VCC = <span class="num">3.00</span> to <span class="num">3.60</span> Volts)",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "IX. Digital Diagnostic Specifications"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Consider mapping SFP explicitly in form_factor enum. Clarify whether Return Loss <span class="num">12</span> dB maps to optical_return_loss_tolerance_db vs receiver_reflectance. Stressed sensitivity could be modeled as a penalty only if a penalty_db column is defined in source."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>host_interface_name</td><td><span class="badge">1000Base-LX</span> <span class="badge">Gigabit Ethernet</span> <span class="badge">1x Fibre Channel</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">1000BASE-LX</span> <span class="badge">FC-PI-4 Rev. 8.00</span> <span class="badge">IEEE 802.3</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">1.06</span> <span class="badge">1.062</span> <span class="badge">1.25</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-21.0</span> <span class="badge">-19.0</span> <span class="badge">-14.5</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Finisar</td></tr>
+<tr><td>model</td><td>FTLF1318P3BTL</td></tr>
+<tr><td>form_factor</td><td>SFF</td></tr>
+<tr><td>standards_claimed</td><td>Small Form Factor Pluggable Multi-Sourcing Agreement (MSA), SFP MSA, IEEE Std 802.3, 1000BASE-LX, Gigabit Ethernet, FC-PI-4 Rev. 8.003, 1x Fibre Channel, RoHS Directive 2011/65/EU</td></tr>
+<tr><td>emitter_type</td><td>LASER_FP</td></tr>
+<tr><td>wavelength_min_nm</td><td>1270.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>1355.0</td></tr>
+<tr><td>wavelength_center_nm</td><td>1310.0</td></tr>
+<tr><td>channel_total</td><td>1</td></tr>
+<tr><td>mounting_type</td><td>pluggable, pluggable_hot</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF, SMF 9/125μm</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>power_consumption_w</td><td>0.6</td></tr>
+<tr><td>reach_km</td><td>10.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-9.5</td></tr>
+<tr><td>tx_power_max_dbm</td><td>-3.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>0.0</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>extinction_ratio_db</td><td>9.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-30.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-19.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>9.0</td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td>12.0</td></tr>
+<tr><td>number_of_lanes</td><td>1</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>total_jitter_ps</td><td>122.4</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Data rate table lists 1062–1250 Mb/sec; features cite 1.06 Gb/s Fibre Channel and 1.25 Gb/s Ethernet. Rx sensitivity -19 dBm @ 1.25 Gb/s (Gigabit Ethernet) and -21 dBm @ 1.06 Gb/s (1X Fibre Channel) per PRBS 2^7-1 at 10^-12 BER; Stressed RX sens. = 1.25 Gb/s is -14.5 dBm. Link length 10 km uses 0.55 dB/km attenuation and is dispersion-limited per FC-PI-4 Rev. 8.00 (indicative). Power: &#x27;&lt;600mW typical&#x27; dissipation; Icc max 300 mA. Optical center wavelength λC table spans 1265–1600 nm; product is specified as 1310 nm Fabry-Perot. Transmitter total jitter TX Δ TJ is specified in ns (50–119 ns), not ps. Digital diagnostic Tx power monitor range -11.5 to -1 dBm; Rx -23 to +2 dBm.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>FTLF1318P3BTL, Industrial Temperature 1.25 Gb/s RoHS Compliant  LongWavelength Pluggable SFP Transceiver, FEATURES, APPLICATIONS, II. Absolute Maximum Ratings, III. Electrical Characteristics (TA = -40 to 85 °C, VCC = 3.0 to 3.6 Volts), IV. Optical Characteristics (Top =-40 to 85°C, VCC = 3.00 to 3.60 Volts), V. General Specifications, VI. Environmental Specifications, IX. Digital Diagnostic Specifications</td></tr>
+<tr><td>suggestions</td><td>Consider mapping SFP explicitly in form_factor enum. Clarify whether Return Loss 12 dB maps to optical_return_loss_tolerance_db vs receiver_reflectance. Stressed sensitivity could be modeled as a penalty only if a penalty_db column is defined in source.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>host_interface_name</th><th>standards_code</th><th>bit_rate_gbps</th><th>rx_sensitivity_dbm</th></tr><tr><td><strong>1.25 Gb/s Gigabit Ethernet (1000Base-LX)</strong></td><td>1000Base-LX</td><td>IEEE 802.3</td><td>1.25</td><td>-19.0</td></tr><tr><td><strong>1.06 Gb/s 1x Fibre Channel</strong></td><td>1x Fibre Channel</td><td>FC-PI-4 Rev. 8.00</td><td>1.062</td><td>-21.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 22:57
+</footer>
+
+</div>
+</body>
+</html>

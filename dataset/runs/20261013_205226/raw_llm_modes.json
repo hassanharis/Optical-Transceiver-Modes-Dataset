@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "Gigabit Ethernet / 1x FC receiver (1.25 Gbps)",
+      "model": "FNK-LT12x",
+      "form_factor": "Low Rider RJ",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": "IEEE-802.3z",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "Transmitter / Fast Ethernet test (125 Mbps)",
+      "model": "FNK-LT12x",
+      "form_factor": "Low Rider RJ",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1343.0,
+      "standards_code": "IEEE-802.3z",
+      "bit_rate_gbps": 0.125
+    }
+  ]
+}

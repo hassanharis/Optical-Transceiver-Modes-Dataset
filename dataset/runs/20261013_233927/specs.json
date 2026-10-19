@@ -1,0 +1,118 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LG-SC432G-20IMC1"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP-8472",
+    "ITU-T G.984.2",
+    "ITU-T G.984.3",
+    "MSA SFP-8472"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "APD-TIA",
+    "APD"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1480.0
+  ],
+  "wavelength_max_nm": [
+    1360.0,
+    1500.0
+  ],
+  "wavelength_center_nm": [
+    1310.0,
+    1490.0
+  ],
+  "wavelength_band": [
+    "O-band"
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "SC"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "host_interface_name": [
+    "SGMII",
+    "HSGMII",
+    "IIC",
+    "UART",
+    "TTL"
+  ],
+  "media_interface_name": [
+    "GPON"
+  ],
+  "standards_code": [
+    "G.984.2",
+    "G.984.3",
+    "SFP-8472",
+    "Class C+"
+  ],
+  "bit_rate_gbps": [
+    1.244,
+    2.488
+  ],
+  "reach_km": [
+    20.0
+  ],
+  "tx_power_min_dbm": [
+    3.0
+  ],
+  "tx_power_max_dbm": [
+    7.0
+  ],
+  "rx_sensitivity_dbm": [
+    -30.0
+  ],
+  "rx_overload_dbm": [
+    -12.0
+  ],
+  "post_fec_ber_target": [
+    1e-10
+  ],
+  "extinction_ratio_db": [
+    8.2
+  ],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -33.0
+  ],
+  "optical_extinction_ratio_db": [
+    8.2
+  ],
+  "optical_return_loss_tolerance_db": [
+    -20.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Transmitter average output power typ 4.5 dBm. Spectral width (-20 dB) max 1 nm. Average power of OFF transmitter max -39 dBm. Transmitter dispersion penalty (TDP) max 1 dB. Receiver sensitivity and overload measured with PRBS23, reference bit error ratio 1E-10 (Note 1). Burst mode dynamic range 15 dB. Optical eye diagram compliant with ITU-T G984.2. Power supply Icc max 800 mA at 3.3 V (not stated in W). DDM TX power monitor range -10 to 8 dBm; RX power -30 to -8 dBm. Maximum support up to 128 subscribers, 1024 TCont, 4096 Gem-Port. Ordering row lists GPON OLT Class C+.",
+  "provenance_datasheet_sections": [
+    "LG-SC432G-20IMC1",
+    "Features",
+    "Application",
+    "Description",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditioned",
+    "Optical Characteristics",
+    "Electrical Characteristics",
+    "Digital Diagnostic Monitoring Information",
+    "Ordering information"
+  ],
+  "suggestions": "Consider mapping GPON Class C+ to a dedicated field; burst dynamic range (15 dB) and OFF-state TX power (-39 dBm) are not in the current schema."
+}

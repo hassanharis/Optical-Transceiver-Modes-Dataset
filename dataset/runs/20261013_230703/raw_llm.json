@@ -1,0 +1,157 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLF8536P5XYZ",
+    "FTLF8536P5xyz",
+    "FTLF8536P5BCL",
+    "FTLF8536P5BCV",
+    "FTLF8536P5BNL",
+    "FTLF8536P5BNV",
+    "FTLF8536P5PCL",
+    "FTLF8536P5PCV",
+    "FTLF8536P5PNL",
+    "FTLF8536P5PNV"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "IEEE802.3by",
+    "SFF-8472 Rev 12.2",
+    "SFF-8402",
+    "SFF-8432",
+    "SFF-8431 Rev. 4.1",
+    "SFP MSA",
+    "SFF-8081"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 85,
+  "power_consumption_w": [
+    1
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "25GBASE-SR",
+    "25GE SR",
+    "10GE SR Lite",
+    "IEEE 802.3by",
+    "eCPRI",
+    "100G SR4 fan out to 4x25GE SR"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    25.78,
+    10.3
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    0.1,
+    0.07
+  ],
+  "tx_power_min_dbm": [
+    -8.4
+  ],
+  "tx_power_max_dbm": [
+    2.4
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -5.2,
+    -7.5,
+    -11.1
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    2.4
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [
+    5e-05
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    2
+  ],
+  "los_assert_dbm": [
+    -30
+  ],
+  "los_deassert_dbm": [
+    -13
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [
+    2
+  ],
+  "optical_return_loss_tolerance_db": [
+    12
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Reach stated as 100 m on OM4/M5F MMF and 70 m on OM3/M5E MMF (converted to km in reach_km). C-temp SKUs: 0°C to 70°C; E-temp SKUs: 0°C to 85°C (temp_max_c uses highest stated operating maximum). Stressed receiver OMA sensitivity -5.2 dBm @ 25.78 Gb/s and -7.5 dBm @ 10.3 Gb/s (dual rate) at BER 5E-5; unstressed OMA sensitivity -11.1 dBm @ 10.3 Gb/s is informative. Average receive power min -10.3 dBm @ 25.78 Gb/s is informative. Total power dissipation may exceed 1 W when establishing link at case temperature below 25°C. Receiver damage threshold 3.4 dBm (tolerance without damage; correct operation not required). Transmitter dispersion penalty (TDP) max 3.9 dB @ 10.3 Gb/s; TDEC max 4.3 dB @ 25.7 Gb/s. Spectral width (RMS) max 0.60 nm. Launch power in OMA minus TDEC -7.3 dBm. Average launch power of OFF transmitter max -30 dBm.",
+  "provenance_datasheet_sections": [
+    "FEATURES",
+    "APPLICATIONS",
+    "Product Selection",
+    "III. Electrical Characteristics (TA, VCC = 3.15 to 3.46 Volts)",
+    "IV. Optical Characteristics (TAVCC3 = 3.15 to 3.46 Volts)",
+    "V. General Specifications",
+    "VII. Environmental Specifications",
+    "XII. Ordering Information"
+  ],
+  "suggestions": "Add SFP28/SFP+ to form_factor enum. Consider reach_m or allow reach with unit in notes to avoid m-to-km conversion. Include OMA and stressed/unstressed sensitivity as distinct schema fields if needed."
+}

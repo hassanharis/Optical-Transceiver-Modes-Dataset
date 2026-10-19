@@ -1,0 +1,140 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-MR120D-Cxx",
+      "SO-SFP-MR120D-C27",
+      "SO-SFP-MR120D-C29",
+      "SO-SFP-MR120D-C31",
+      "SO-SFP-MR120D-C33",
+      "SO-SFP-MR120D-C35",
+      "SO-SFP-MR120D-C37",
+      "SO-SFP-MR120D-C39",
+      "SO-SFP-MR120D-C41",
+      "SO-SFP-MR120D-C43",
+      "SO-SFP-MR120D-C45",
+      "SO-SFP-MR120D-C47",
+      "SO-SFP-MR120D-C49",
+      "SO-SFP-MR120D-C51",
+      "SO-SFP-MR120D-C53",
+      "SO-SFP-MR120D-C55",
+      "SO-SFP-MR120D-C57",
+      "SO-SFP-MR120D-C59",
+      "SO-SFP-MR120D-C61"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1270.0,
+      1271.0
+    ],
+    "wavelength_max_nm": [
+      1600.0,
+      1610.0,
+      1611.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1290.0,
+      1310.0,
+      1330.0,
+      1350.0,
+      1370.0,
+      1390.0,
+      1410.0,
+      1430.0,
+      1450.0,
+      1470.0,
+      1490.0,
+      1510.0,
+      1530.0,
+      1550.0,
+      1570.0,
+      1590.0,
+      1610.0
+    ],
+    "standards_code": [
+      "FE",
+      "GbE",
+      "STM1/OC3",
+      "STM4/OC12",
+      "STM16/OC48",
+      "OTU1",
+      "1G FC",
+      "2G FC",
+      "CPRI Opt 1",
+      "CPRI Opt 2",
+      "CPRI Opt 3",
+      "OBSAI 1x",
+      "OBSAI 2x",
+      "G.694.2"
+    ],
+    "bit_rate_gbps": [
+      0.1,
+      2.7,
+      2.67
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472",
+      "G.694.2"
+    ],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      18
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      120.0
+    ],
+    "tx_power_min_dbm": [
+      4.0
+    ],
+    "tx_power_max_dbm": [
+      7.0
+    ],
+    "rx_sensitivity_dbm": [
+      -29.0
+    ],
+    "rx_overload_dbm": [
+      -9.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -42.0
+    ],
+    "los_deassert_dbm": [
+      -30.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Typical reach 120km dependent on actual optical path attenuation (footnote 1). Receiver minimum input power and overload measured at 2.5 Gbps using PRBS31 @ BER 1x10-12 (footnote 2). Transmitter output power and receiver levels are average power (footnote 3). Power budget stated as 16–33 dB; optical path penalty 1 dB. Power consumption stated as < 1W. Overview cites 33 dB power budget and beyond 120 km at 2.5 Gbps in high CWDM band; lower CWDM band higher attenuation/water peak must be considered. Storage temperature -40°C to +85°C. DDM Yes.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-MR120D-Cxx",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Datasheet does not state emitter/photodetector types, channel spacing in nm/GHz, or dispersion tolerance despite GENERAL DEFINITIONS describing dispersion penalty conceptually. Clarify whether 2.7 Gbps vs 2.67 Gbps is intentional across sections."
+  }
+}

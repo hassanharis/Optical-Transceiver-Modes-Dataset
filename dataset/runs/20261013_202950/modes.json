@@ -1,0 +1,39 @@
+{
+  "modes": [
+    {
+      "label": "CFP host 10\u00d710G (100G Ethernet)",
+      "form_factor": "CFP",
+      "frame": "10x 10G",
+      "standards_code": "100G Ethernet",
+      "number_of_lanes": 10
+    },
+    {
+      "label": "CFP host 10\u00d710G (OTU4)",
+      "form_factor": "CFP",
+      "frame": "10x 10G",
+      "standards_code": "OTU4",
+      "number_of_lanes": 10
+    },
+    {
+      "label": "QSFP28 media 4\u00d725G (OTU4)",
+      "form_factor": "QSFP28",
+      "frame": "4x 25G",
+      "standards_code": "OTU4",
+      "number_of_lanes": 4
+    },
+    {
+      "label": "QSFP28 media 4\u00d725G (100GbE ER4)",
+      "form_factor": "QSFP28",
+      "frame": "4x 25G",
+      "standards_code": "100GbE ER4",
+      "number_of_lanes": 4
+    },
+    {
+      "label": "QSFP28 media 4\u00d725G (100GbE LR4)",
+      "form_factor": "QSFP28",
+      "frame": "4x 25G",
+      "standards_code": "100GbE LR4",
+      "number_of_lanes": 4
+    }
+  ]
+}

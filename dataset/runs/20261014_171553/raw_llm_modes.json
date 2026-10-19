@@ -1,0 +1,414 @@
+{
+  "modes": [
+    {
+      "label": "400ZR unamplified 40 km",
+      "power_consumption_w": [
+        22.0,
+        22.5
+      ],
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400ZR",
+      "media_interface_id_hex": "3Fh",
+      "frame": "1 x 400GAUI-8",
+      "standards_code": [
+        "OIF 400ZR app code 0x001",
+        "ZR400-CFEC-16QAM"
+      ],
+      "baud_rate_gbaud": [
+        26.5625,
+        59.84375
+      ],
+      "bit_rate_gbps": 400.0,
+      "modulation_format": [
+        "PAM4",
+        "QAM_16"
+      ],
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 4.0,
+      "rx_osnr_db": 26.0,
+      "rx_osnr_tolerance_db_max": 26.0,
+      "cd_tolerance_ps_nm": [
+        -2400.0,
+        2400.0
+      ],
+      "pdl_db": null,
+      "pmd_tolerance_ps": 33.0,
+      "fec_type": "CFEC",
+      "pre_fec_ber_threshold": 0.017,
+      "los_assert_dbm": [
+        -20.0,
+        -18.0,
+        -16.0
+      ]
+    },
+    {
+      "label": "400ZR amplified 120 km",
+      "power_consumption_w": [
+        22.0,
+        22.5
+      ],
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400ZR",
+      "media_interface_id_hex": "3Eh",
+      "frame": "1 x 400GAUI-8",
+      "standards_code": [
+        "OIF 400ZR app code 0x001",
+        "ZR400-CFEC-16QAM"
+      ],
+      "baud_rate_gbaud": [
+        26.5625,
+        59.84375
+      ],
+      "bit_rate_gbps": 400.0,
+      "modulation_format": [
+        "PAM4",
+        "QAM_16"
+      ],
+      "reach_km": 120.0,
+      "tx_power_max_dbm": 1.0,
+      "rx_osnr_db": 26.0,
+      "rx_osnr_tolerance_db_max": 26.0,
+      "cd_tolerance_ps_nm": [
+        -2400.0,
+        2400.0
+      ],
+      "pdl_db": null,
+      "pmd_tolerance_ps": 33.0,
+      "fec_type": "CFEC",
+      "pre_fec_ber_threshold": 0.017,
+      "los_assert_dbm": [
+        -20.0,
+        -18.0,
+        -16.0
+      ]
+    },
+    {
+      "label": "400ZR+ 1x400 amplified",
+      "power_consumption_w": [
+        22.0,
+        22.5
+      ],
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400ZR+",
+      "media_interface_id_hex": "46h",
+      "frame": "1 x 400GAUI-8",
+      "standards_code": [
+        "OpenZR+ MSA",
+        "ZR400-OFEC-16QAM"
+      ],
+      "baud_rate_gbaud": [
+        26.5625,
+        60.138546798
+      ],
+      "bit_rate_gbps": 400.0,
+      "modulation_format": [
+        "PAM4",
+        "QAM_16"
+      ],
+      "reach_km": 450.0,
+      "tx_power_max_dbm": 1.0,
+      "rx_osnr_db": 24.0,
+      "rx_osnr_tolerance_db_max": 24.0,
+      "cd_tolerance_ps_nm": [
+        -26000.0,
+        20000.0,
+        26000.0
+      ],
+      "pdl_db": null,
+      "pmd_tolerance_ps": 66.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "los_assert_dbm": [
+        -20.0,
+        -18.0,
+        -16.0
+      ]
+    },
+    {
+      "label": "400ZR+ 4x100 DAC 1.25 amplified",
+      "power_consumption_w": [
+        23.0,
+        23.5
+      ],
+      "host_interface_name": "100GAUI-2",
+      "media_interface_name": "400ZR+",
+      "media_interface_id_hex": "46h",
+      "frame": "4 x 100GAUI-2",
+      "standards_code": [
+        "Open ZR+ MSA",
+        "ZR400-OFEC-16QAM"
+      ],
+      "baud_rate_gbaud": [
+        26.5625,
+        60.138546798
+      ],
+      "bit_rate_gbps": 400.0,
+      "modulation_format": [
+        "PAM4",
+        "QAM_16"
+      ],
+      "reach_km": 450.0,
+      "tx_power_max_dbm": 1.0,
+      "rx_osnr_db": 24.0,
+      "rx_osnr_tolerance_db_max": 24.0,
+      "cd_tolerance_ps_nm": [
+        -26000.0,
+        20000.0,
+        26000.0
+      ],
+      "pdl_db": null,
+      "pmd_tolerance_ps": 66.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "los_assert_dbm": [
+        -20.0,
+        -18.0,
+        -16.0
+      ]
+    },
+    {
+      "label": "400ZR+ 4x100 DAC 1.50 amplified",
+      "power_consumption_w": [
+        23.0,
+        23.5
+      ],
+      "host_interface_name": "100GAUI-2",
+      "media_interface_name": "400ZR+",
+      "media_interface_id_hex": "46h",
+      "frame": "4 x 100GAUI-2",
+      "standards_code": [
+        "Open ZR+ MSA",
+        "ZR400-OFEC-16QAM"
+      ],
+      "baud_rate_gbaud": [
+        26.5625,
+        60.138546798
+      ],
+      "bit_rate_gbps": 400.0,
+      "modulation_format": [
+        "PAM4",
+        "QAM_16"
+      ],
+      "reach_km": 450.0,
+      "tx_power_max_dbm": 1.0,
+      "rx_osnr_db": 24.0,
+      "rx_osnr_tolerance_db_max": 24.0,
+      "cd_tolerance_ps_nm": [
+        -26000.0,
+        20000.0,
+        26000.0
+      ],
+      "pdl_db": null,
+      "pmd_tolerance_ps": 66.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "los_assert_dbm": [
+        -20.0,
+        -18.0,
+        -16.0
+      ]
+    },
+    {
+      "label": "300ZR+ 3x100 amplified",
+      "power_consumption_w": null,
+      "host_interface_name": "100GAUI-2",
+      "media_interface_name": "300ZR+",
+      "media_interface_id_hex": "47h",
+      "frame": "3 x 100GAUI-2",
+      "standards_code": [
+        "Open ZR+ MSA",
+        "ZR300-OFEC-8QAM"
+      ],
+      "baud_rate_gbaud": [
+        26.5625,
+        60.138546798
+      ],
+      "bit_rate_gbps": 300.0,
+      "modulation_format": [
+        "PAM4",
+        "QAM_8"
+      ],
+      "reach_km": 600.0,
+      "tx_power_max_dbm": 1.0,
+      "rx_osnr_db": 21.0,
+      "rx_osnr_tolerance_db_max": 21.0,
+      "cd_tolerance_ps_nm": [
+        -50000.0,
+        40000.0,
+        50000.0
+      ],
+      "pdl_db": null,
+      "pmd_tolerance_ps": 83.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "los_assert_dbm": [
+        -23.0,
+        -21.0,
+        -19.0
+      ]
+    },
+    {
+      "label": "200ZR+ QPSK amplified",
+      "power_consumption_w": null,
+      "host_interface_name": [
+        "100GAUI-2",
+        "CAUI-4"
+      ],
+      "media_interface_name": "200ZR+",
+      "media_interface_id_hex": "48h",
+      "frame": [
+        "2 x 100GAUI-2",
+        "2 x CAUI-4"
+      ],
+      "standards_code": [
+        "OpenZR+ MSA",
+        "ZR200-OFEC-QPSK"
+      ],
+      "baud_rate_gbaud": [
+        26.5625,
+        25.78125,
+        60.138546798
+      ],
+      "bit_rate_gbps": 200.0,
+      "modulation_format": [
+        "PAM4",
+        "NRZ",
+        "QPSK"
+      ],
+      "reach_km": 1000.0,
+      "tx_power_max_dbm": 1.0,
+      "rx_osnr_db": 16.0,
+      "rx_osnr_tolerance_db_max": 16.0,
+      "cd_tolerance_ps_nm": [
+        -50000.0,
+        50000.0
+      ],
+      "pdl_db": null,
+      "pmd_tolerance_ps": 83.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "los_assert_dbm": [
+        -26.0,
+        -24.0,
+        -22.0
+      ]
+    },
+    {
+      "label": "200G ZR+ Extension 8QAM amplified",
+      "power_consumption_w": null,
+      "host_interface_name": "100GAUI-2",
+      "media_interface_name": "200ZR+",
+      "media_interface_id_hex": "48h",
+      "frame": "2 x 100GAUI-2",
+      "standards_code": "Open ZR+ Extension",
+      "baud_rate_gbaud": [
+        26.5625,
+        60.138546798
+      ],
+      "bit_rate_gbps": 200.0,
+      "modulation_format": [
+        "PAM4",
+        "QAM_8"
+      ],
+      "reach_km": 2000.0,
+      "tx_power_max_dbm": 1.0,
+      "rx_osnr_db": 16.0,
+      "rx_osnr_tolerance_db_max": 16.0,
+      "cd_tolerance_ps_nm": [
+        -50000.0,
+        50000.0
+      ],
+      "pdl_db": null,
+      "pmd_tolerance_ps": 83.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "los_assert_dbm": [
+        -26.0,
+        -24.0,
+        -22.0
+      ]
+    },
+    {
+      "label": "200G ZR+ Extension 16QAM amplified",
+      "power_consumption_w": null,
+      "host_interface_name": "100GAUI-2",
+      "media_interface_name": "200ZR+",
+      "media_interface_id_hex": "48h",
+      "frame": "2 x 100GAUI-2",
+      "standards_code": "Open ZR+ Extension",
+      "baud_rate_gbaud": [
+        26.5625,
+        60.138546798
+      ],
+      "bit_rate_gbps": 200.0,
+      "modulation_format": [
+        "PAM4",
+        "QAM_16"
+      ],
+      "reach_km": 2000.0,
+      "tx_power_max_dbm": 1.0,
+      "rx_osnr_db": 16.0,
+      "rx_osnr_tolerance_db_max": 16.0,
+      "cd_tolerance_ps_nm": [
+        -50000.0,
+        50000.0
+      ],
+      "pdl_db": null,
+      "pmd_tolerance_ps": 83.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "los_assert_dbm": [
+        -26.0,
+        -24.0,
+        -22.0
+      ]
+    },
+    {
+      "label": "100ZR+ amplified",
+      "power_consumption_w": null,
+      "host_interface_name": [
+        "100GAUI-2",
+        "CAUI-4"
+      ],
+      "media_interface_name": "100ZR+",
+      "media_interface_id_hex": "49h",
+      "frame": [
+        "1 x 100GAUI-2",
+        "1 x CAUI-4"
+      ],
+      "standards_code": [
+        "OpenZR+ MSA",
+        "ZR100-OFEC-QPSK"
+      ],
+      "baud_rate_gbaud": [
+        26.5625,
+        25.78125,
+        30.069273399
+      ],
+      "bit_rate_gbps": 100.0,
+      "modulation_format": [
+        "PAM4",
+        "NRZ",
+        "QPSK"
+      ],
+      "reach_km": 2000.0,
+      "tx_power_max_dbm": 1.0,
+      "rx_osnr_db": 12.5,
+      "rx_osnr_tolerance_db_max": 12.5,
+      "cd_tolerance_ps_nm": [
+        -80000.0,
+        80000.0,
+        100000.0
+      ],
+      "pdl_db": null,
+      "pmd_tolerance_ps": 100.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "los_assert_dbm": [
+        -26.0,
+        -24.0,
+        -22.0
+      ]
+    }
+  ]
+}

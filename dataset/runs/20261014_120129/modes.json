@@ -1,0 +1,11 @@
+{
+  "modes": [
+    {
+      "label": "SO-QSFP28-100G-DR",
+      "host_interface_name": "CEI-28G-VSR",
+      "standards_code": "100GBASE-DR",
+      "baud_rate_gbaud": 53.125,
+      "bit_rate_gbps": 103.12
+    }
+  ]
+}

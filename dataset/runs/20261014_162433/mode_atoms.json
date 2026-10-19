@@ -1,0 +1,96 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-XFP-10GE-BX20D-2733",
+      "SO-XFP-10GE-BX20D-3327"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1320.0
+    ],
+    "wavelength_max_nm": [
+      1280.0,
+      1340.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1330.0
+    ],
+    "media_interface_name": [
+      "10GBASE-LR",
+      "10GBASE-LW"
+    ],
+    "standards_code": [
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "10GbE-LAN",
+      "10GbE-WAN",
+      "OTU2",
+      "OTU2e",
+      "STM-64",
+      "OC192"
+    ],
+    "bit_rate_gbps": [
+      9.95,
+      11.1,
+      11.3
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "XFP"
+    ],
+    "standards_claimed": [
+      "INF-8077i",
+      "XFP MSA",
+      "IEEE 802.3ae",
+      "10GBASE-LR",
+      "10GBASE-LW"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.0
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -2.0
+    ],
+    "tx_power_max_dbm": [
+      3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -14.0
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -28.0
+    ],
+    "los_deassert_dbm": [
+      -16.0
+    ],
+    "penalties": [],
+    "notes": "BiDi pair: SO-XFP-10GE-BX20D-2733 uses Tx 1260–1280 nm / Rx 1320–1340 nm; SO-XFP-10GE-BX20D-3327 uses Tx 1320–1340 nm / Rx 1260–1280 nm. Power budget stated as 2.5 – 12dB. Power consumption stated as < 2W. Storage temperature -40°C to +85°C (not normal operating). Transmitter/receiver power and sensitivity footnote 3): Average power. Footnote 4): @ 10.3Gbps, BER ≤ 1x10-12, PRBS 231-1, back-to-back. IEEE 802.3ae 10GBASE-LR/LW defined only at 1310nm; standard referenced for bridgeable distance.",
+    "provenance_datasheet_sections": [
+      "SO-XFP-10GE-BX20D-2733/-3327 XFP, BiDi, 10G Multirate, 1270/1330nm, DDM, 12dB, 20km",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

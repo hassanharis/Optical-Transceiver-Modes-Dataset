@@ -1,0 +1,38 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ls-sc2510-20in2.pdf",
+  "page_count": 6,
+  "table_count": 6,
+  "markdown_chars": 6992,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 23
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 18
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 3
+    }
+  ]
+}

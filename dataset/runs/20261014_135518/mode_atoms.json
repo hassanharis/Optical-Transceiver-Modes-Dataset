@@ -1,0 +1,50 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "10GBASE-T",
+      "IEEE 802.3an"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-10GE-T"
+    ],
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "10G BASE-T IEEE 802.3an",
+      "SFP MSA"
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "RJ45"
+    ],
+    "temp_min_c": -10.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      2.5
+    ],
+    "bit_rate_gbps": [
+      10.0
+    ],
+    "reach_km": [
+      0.03
+    ],
+    "penalties": [],
+    "notes": "Copper/electrical transceiver (Grey SFP+); transmission media stated as Electrical (1x RJ45), not optical fiber. Typical reach stated as 30m and 30m (CAT6A/CAT7). Power consumption stated as < 2.5W (2.5W used as worst-case per GENERAL DEFINITIONS). Storage temperature -40°C to +85°C not mapped to operating temp fields. RX_LOS: Yes; DDM: No. Safety/regulatory: TUV/UL/FDA, RoHS (contact Smartoptics for latest certification). reach_km derived from explicit 30m distance statements.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-10GE-T SFP+, 10GBASE-T, 30m, RJ45",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Consider schema fields for copper/Ethernet media (CAT6A/CAT7), electrical reach in meters, and RX_LOS/DDM booleans. form_factor enum may include SFP+ explicitly."
+  }
+}

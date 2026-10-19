@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:24:30.734759+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-td8006-tunc-so-qsfp-dd800-800g-openroadm-pcs-r6.1.pdf",
+  "page_count": 5,
+  "table_count": 6,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 8.567,
+    "extract_atoms": 43.553,
+    "store_run": 0.009,
+    "synthesize_modes": 41.664,
+    "store_modes": 0.007,
+    "total": 93.8
+  }
+}

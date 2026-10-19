@@ -1,0 +1,99 @@
+{
+  "vendor": "QSFPTek",
+  "model": [
+    "QT-WDM-0240AD",
+    "QT-WDM-0240AID"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "SONET OC-24-LR-1",
+    "RoHS"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1290.0,
+    1480.0
+  ],
+  "wavelength_max_nm": [
+    1330.0,
+    1580.0
+  ],
+  "wavelength_center_nm": [
+    1310.0,
+    1550.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "SFP MSA"
+  ],
+  "standards_code": [
+    "SONET OC-24-LR-1"
+  ],
+  "bit_rate_gbps": [
+    1.25,
+    1.063
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    0.0
+  ],
+  "rx_sensitivity_dbm": [
+    -23.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    1.0,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Dual data-rate 1.25Gbps/1.063Gbps. Operating case temperature: Standard 0 to +70°C (QT-WDM-0240AD); Extended/Industrial -40 to +85°C (QT-WDM-0240AID). Receiver sensitivity and overload measured with PRBS 2^7-1 test pattern @1250Mbps, BER ≤1×10^-12. Average output power launched into SMF. Supply current Icc max 300 mA at Vcc 3.13–3.47 V (typical 3.3 V). BIDI: 1310nm TX / 1550nm RX per product title.",
+  "provenance_datasheet_sections": [
+    "BIDI SFP 1310nm-TX/1550nm-RX 40KM SMF Transceiver",
+    "P/N: QT- WDM-0240AD",
+    "FEATURES",
+    "APPLICATIONS",
+    "1. Absolute Maximum Ratings",
+    "2. Recommended Operating Conditions",
+    "3. Optical and Electrical Characteristics",
+    "Notes:",
+    "7. Ordering information"
+  ]
+}

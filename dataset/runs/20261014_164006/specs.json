@@ -1,0 +1,105 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-XFP-SR",
+    "SO-XFP-SR-E"
+  ],
+  "form_factor": [
+    "XFP"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ae SR/SW",
+    "INF-8077i",
+    "XFP-MSA"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM2",
+    "MMF_OM3"
+  ],
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "XFP"
+  ],
+  "media_interface_name": [
+    "10GBASE-SR",
+    "10GBASE-SW",
+    "1200-M5-SN-I",
+    "1200-M5E-SN-I",
+    "1200-M6-SN-I"
+  ],
+  "standards_code": [
+    "10GBASE-SR",
+    "10GBASE-SW",
+    "10GbE-LAN",
+    "10GbE-WAN",
+    "OTU2",
+    "OTU2e",
+    "STM-64",
+    "OC-192",
+    "10G FC"
+  ],
+  "bit_rate_gbps": [
+    9.95,
+    11.3
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    0.3,
+    0.082
+  ],
+  "tx_power_min_dbm": [
+    -7.3
+  ],
+  "tx_power_max_dbm": [
+    -1.0
+  ],
+  "rx_sensitivity_dbm": [
+    -11.1
+  ],
+  "rx_overload_dbm": [
+    -1.0
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -20.0
+  ],
+  "los_deassert_dbm": [
+    -10.0
+  ],
+  "los_hysteresis_db": [
+    1.0
+  ],
+  "penalties": [],
+  "notes": "Two ordering variants: SO-XFP-SR operating temperature 0°C to +70°C; SO-XFP-SR-E extended operating temperature -20°C to +85°C. Storage temperature -40°C to +85°C for both. Power consumption stated as < 1.5W. Power budget 0 – 3.8dB. Minimum input power -11.1dBm at 10.3Gbps (10GbE-LAN), PRBS 231-1, BER≤1x10-12. Transmitter min/max output power and receiver minimum input power and overload are average power (footnote 2). No minimum distance (no minimum attenuation). OM3 or higher-grade fiber recommended.",
+  "provenance_datasheet_sections": [
+    "SO-XFP-SR & -SR-E XFP, 10G Multirate, 850nm, MM, DDM, 3.8dB, 300m@OM3",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "XP-13B1-10D",
+    "XP-13B1-10DA",
+    "XP-13B1-10D-4",
+    "XP-13B1-10DA-4",
+    "XP-13B1-10D(A)"
+  ],
+  "form_factor": [
+    "SFP28",
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF 8472",
+    "SFP+ MSA",
+    "SFF-8431",
+    "IEEE 802.3 CC",
+    "RoHS"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1295.0
+  ],
+  "wavelength_max_nm": [
+    1325.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.2
+  ],
+  "standards_code": [
+    "SFF-8431",
+    "SFF 8472",
+    "IEEE 802.3 CC"
+  ],
+  "bit_rate_gbps": [
+    24.3,
+    25.78,
+    26.5,
+    10.0
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    2.0
+  ],
+  "rx_sensitivity_dbm": [
+    -13.3
+  ],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "post_fec_ber_target": [
+    5e-05
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -14.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Supports 24.3Gb/s to 26.5Gb/s bit rates (PRODUCT FEATURES). Power dissipation stated as < 1.2 W. Case operating temperature: Commercial 0°C to +70°C; Industrial -40°C to +85°C (PRODUCT FEATURES and Recommended Operating Conditions); temp_min_c/temp_max_c reflect Commercial Tcase from Section II. Rx Sensitivity Note 2: measured with PRBS 2^31-1 test pattern @25.78Gb/s, BER @5*10^-5. Ordering variants XP-13B1-10DA / XP-13B1-10DA-4 use Industrial -40~85°C; XP-13B1-10D-4 and XP-13B1-10DA-4 support 10G/25.78G. Transmitter Note 1: Class 1 Laser Safety per FDA/CDRH and IEC-825-1. Coupled fiber: 9/125um SMF.",
+  "provenance_datasheet_sections": [
+    "25Gb/s 1310nm SFP28 10km Transceiver",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "STANDARD",
+    "Ordering information",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Optical Characteristics",
+    "Notes:",
+    "Electrical Characteristics",
+    "Digital Diagnostic Functions"
+  ]
+}

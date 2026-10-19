@@ -1,0 +1,12 @@
+{
+  "modes": [
+    {
+      "label": "1.6T OSFP LRO 2*DR4",
+      "power_consumption_w": 18.0,
+      "standards_code": "2*DR4",
+      "bit_rate_gbps": 212.5,
+      "rx_sensitivity_dbm": -3.4,
+      "rx_overload_dbm": 4.0
+    }
+  ]
+}

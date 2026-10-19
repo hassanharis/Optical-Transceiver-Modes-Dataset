@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics</div>
+  <div class="subtitle">QSFP+ &middot; DWDM &middot; [40] channels</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">QSFP+</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">SFF-8636, SFF-8679, QSFP+ MSA specification, ITU-T 694.1</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">DWDM</div></div>
+      <div class="spec-item"><div class="label">Frequency Min Thz</div><div class="value">192.1</div></div>
+      <div class="spec-item"><div class="label">Frequency Max Thz</div><div class="value">196.0</div></div>
+      <div class="spec-item"><div class="label">Channel Spacing (GHz)</div><div class="value">100.0</div></div>
+      <div class="spec-item"><div class="label">Channel Total</div><div class="value">40</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">3.5</div></div>
+      <div class="spec-item"><div class="label">Reach (km)</div><div class="value">8.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">4.0</div></div>
+      <div class="spec-item"><div class="label">RX Sensitivity (dBm)</div><div class="value">-11.0</div></div>
+      <div class="spec-item"><div class="label">RX OSNR (dB)</div><div class="value">33.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">4.0</div></div>
+      <div class="spec-item"><div class="label">Fec Type</div><div class="value">KP4</div></div>
+      <div class="spec-item"><div class="label">Pre Fec Ber Threshold</div><div class="value">5e-05</div></div>
+      <div class="spec-item"><div class="label">Los Assert Dbm</div><div class="value">-15.0</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-11.0</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">1.0</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">42.5Gbps1) includes KP4 FEC; integrated FEC requires host signal without FEC coding. Output power and minimum input power/overload are average power2). Minimum input power -11 dBm and overload +4 dBm at pre FEC BER &lt; 5E-5 without dispersion and noise load3). Average Rx power -7 to +4 dBm at OSNR 33 dB for pre FEC BER &lt; 5E-5 without dispersion4). Dispersion tolerance -50 to +150 ps/nm (un-amplified) and -50 to +50 ps/nm (amplified). Dispersion penalty max 2 dB. Power budget 0 – 11 dB. Typical reach 8 km nominal w/o dispersion compensation and optical amplification; overview states use with optical amplifiers and DCU. Storage temperature -40°C to +85°C. Receiver wavelength range 1300 – 1570 nm. Transmit wavelengths 192.10 – 196.00 THz (40ch). DDM Yes.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION, GENERAL DEFINITIONS</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Wavelength Min</th><th>Wavelength Max</th><th>wavelength_center_nm</th><th>Host Interface</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>CD Tolerance (ps/nm)</th></tr>
+      <tr><td><strong>D9210 1560.61 nm unamplified</strong></td><td>SO-QSFP-40G-D9210</td><td>1529.55</td><td>1560.61</td><td>1560.61</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9210 1560.61 nm amplified</strong></td><td>SO-QSFP-40G-D9210</td><td>1529.55</td><td>1560.61</td><td>1560.61</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9220 1559.79 nm unamplified</strong></td><td>SO-QSFP-40G-D9220</td><td>1529.55</td><td>1560.61</td><td>1559.79</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9220 1559.79 nm amplified</strong></td><td>SO-QSFP-40G-D9220</td><td>1529.55</td><td>1560.61</td><td>1559.79</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9230 1558.98 nm unamplified</strong></td><td>SO-QSFP-40G-D9230</td><td>1529.55</td><td>1560.61</td><td>1558.98</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9230 1558.98 nm amplified</strong></td><td>SO-QSFP-40G-D9230</td><td>1529.55</td><td>1560.61</td><td>1558.98</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9240 1558.17 nm unamplified</strong></td><td>SO-QSFP-40G-D9240</td><td>1529.55</td><td>1560.61</td><td>1558.17</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9240 1558.17 nm amplified</strong></td><td>SO-QSFP-40G-D9240</td><td>1529.55</td><td>1560.61</td><td>1558.17</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9250 1557.36 nm unamplified</strong></td><td>SO-QSFP-40G-D9250</td><td>1529.55</td><td>1560.61</td><td>1557.36</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9250 1557.36 nm amplified</strong></td><td>SO-QSFP-40G-D9250</td><td>1529.55</td><td>1560.61</td><td>1557.36</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9260 1556.55 nm unamplified</strong></td><td>SO-QSFP-40G-D9260</td><td>1529.55</td><td>1560.61</td><td>1556.55</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9260 1556.55 nm amplified</strong></td><td>SO-QSFP-40G-D9260</td><td>1529.55</td><td>1560.61</td><td>1556.55</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9270 1555.75 nm unamplified</strong></td><td>SO-QSFP-40G-D9270</td><td>1529.55</td><td>1560.61</td><td>1555.75</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9270 1555.75 nm amplified</strong></td><td>SO-QSFP-40G-D9270</td><td>1529.55</td><td>1560.61</td><td>1555.75</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9280 1554.94 nm unamplified</strong></td><td>SO-QSFP-40G-D9280</td><td>1529.55</td><td>1560.61</td><td>1554.94</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9280 1554.94 nm amplified</strong></td><td>SO-QSFP-40G-D9280</td><td>1529.55</td><td>1560.61</td><td>1554.94</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9290 1554.13 nm unamplified</strong></td><td>SO-QSFP-40G-D9290</td><td>1529.55</td><td>1560.61</td><td>1554.13</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9290 1554.13 nm amplified</strong></td><td>SO-QSFP-40G-D9290</td><td>1529.55</td><td>1560.61</td><td>1554.13</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9300 1553.33 nm unamplified</strong></td><td>SO-QSFP-40G-D9300</td><td>1529.55</td><td>1560.61</td><td>1553.33</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9300 1553.33 nm amplified</strong></td><td>SO-QSFP-40G-D9300</td><td>1529.55</td><td>1560.61</td><td>1553.33</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9310 1552.52 nm unamplified</strong></td><td>SO-QSFP-40G-D9310</td><td>1529.55</td><td>1560.61</td><td>1552.52</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9310 1552.52 nm amplified</strong></td><td>SO-QSFP-40G-D9310</td><td>1529.55</td><td>1560.61</td><td>1552.52</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9320 1551.72 nm unamplified</strong></td><td>SO-QSFP-40G-D9320</td><td>1529.55</td><td>1560.61</td><td>1551.72</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9320 1551.72 nm amplified</strong></td><td>SO-QSFP-40G-D9320</td><td>1529.55</td><td>1560.61</td><td>1551.72</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9330 1550.92 nm unamplified</strong></td><td>SO-QSFP-40G-D9330</td><td>1529.55</td><td>1560.61</td><td>1550.92</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9330 1550.92 nm amplified</strong></td><td>SO-QSFP-40G-D9330</td><td>1529.55</td><td>1560.61</td><td>1550.92</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9340 1550.12 nm unamplified</strong></td><td>SO-QSFP-40G-D9340</td><td>1529.55</td><td>1560.61</td><td>1550.12</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9340 1550.12 nm amplified</strong></td><td>SO-QSFP-40G-D9340</td><td>1529.55</td><td>1560.61</td><td>1550.12</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9350 1549.32 nm unamplified</strong></td><td>SO-QSFP-40G-D9350</td><td>1529.55</td><td>1560.61</td><td>1549.32</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9350 1549.32 nm amplified</strong></td><td>SO-QSFP-40G-D9350</td><td>1529.55</td><td>1560.61</td><td>1549.32</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9360 1548.51 nm unamplified</strong></td><td>SO-QSFP-40G-D9360</td><td>1529.55</td><td>1560.61</td><td>1548.51</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9360 1548.51 nm amplified</strong></td><td>SO-QSFP-40G-D9360</td><td>1529.55</td><td>1560.61</td><td>1548.51</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9370 1547.72 nm unamplified</strong></td><td>SO-QSFP-40G-D9370</td><td>1529.55</td><td>1560.61</td><td>1547.72</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9370 1547.72 nm amplified</strong></td><td>SO-QSFP-40G-D9370</td><td>1529.55</td><td>1560.61</td><td>1547.72</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9380 1546.92 nm unamplified</strong></td><td>SO-QSFP-40G-D9380</td><td>1529.55</td><td>1560.61</td><td>1546.92</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9380 1546.92 nm amplified</strong></td><td>SO-QSFP-40G-D9380</td><td>1529.55</td><td>1560.61</td><td>1546.92</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9390 1546.12 nm unamplified</strong></td><td>SO-QSFP-40G-D9390</td><td>1529.55</td><td>1560.61</td><td>1546.12</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9390 1546.12 nm amplified</strong></td><td>SO-QSFP-40G-D9390</td><td>1529.55</td><td>1560.61</td><td>1546.12</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9400 1545.32 nm unamplified</strong></td><td>SO-QSFP-40G-D9400</td><td>1529.55</td><td>1560.61</td><td>1545.32</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9400 1545.32 nm amplified</strong></td><td>SO-QSFP-40G-D9400</td><td>1529.55</td><td>1560.61</td><td>1545.32</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9410 1544.53 nm unamplified</strong></td><td>SO-QSFP-40G-D9410</td><td>1529.55</td><td>1560.61</td><td>1544.53</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9410 1544.53 nm amplified</strong></td><td>SO-QSFP-40G-D9410</td><td>1529.55</td><td>1560.61</td><td>1544.53</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9420 1543.73 nm unamplified</strong></td><td>SO-QSFP-40G-D9420</td><td>1529.55</td><td>1560.61</td><td>1543.73</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9420 1543.73 nm amplified</strong></td><td>SO-QSFP-40G-D9420</td><td>1529.55</td><td>1560.61</td><td>1543.73</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9430 1542.94 nm unamplified</strong></td><td>SO-QSFP-40G-D9430</td><td>1529.55</td><td>1560.61</td><td>1542.94</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9430 1542.94 nm amplified</strong></td><td>SO-QSFP-40G-D9430</td><td>1529.55</td><td>1560.61</td><td>1542.94</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9440 1542.14 nm unamplified</strong></td><td>SO-QSFP-40G-D9440</td><td>1529.55</td><td>1560.61</td><td>1542.14</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9440 1542.14 nm amplified</strong></td><td>SO-QSFP-40G-D9440</td><td>1529.55</td><td>1560.61</td><td>1542.14</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9450 1541.35 nm unamplified</strong></td><td>SO-QSFP-40G-D9450</td><td>1529.55</td><td>1560.61</td><td>1541.35</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9450 1541.35 nm amplified</strong></td><td>SO-QSFP-40G-D9450</td><td>1529.55</td><td>1560.61</td><td>1541.35</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9460 1540.56 nm unamplified</strong></td><td>SO-QSFP-40G-D9460</td><td>1529.55</td><td>1560.61</td><td>1540.56</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9460 1540.56 nm amplified</strong></td><td>SO-QSFP-40G-D9460</td><td>1529.55</td><td>1560.61</td><td>1540.56</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9470 1539.77 nm unamplified</strong></td><td>SO-QSFP-40G-D9470</td><td>1529.55</td><td>1560.61</td><td>1539.77</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9470 1539.77 nm amplified</strong></td><td>SO-QSFP-40G-D9470</td><td>1529.55</td><td>1560.61</td><td>1539.77</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9480 1538.98 nm unamplified</strong></td><td>SO-QSFP-40G-D9480</td><td>1529.55</td><td>1560.61</td><td>1538.98</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9480 1538.98 nm amplified</strong></td><td>SO-QSFP-40G-D9480</td><td>1529.55</td><td>1560.61</td><td>1538.98</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9490 1538.19 nm unamplified</strong></td><td>SO-QSFP-40G-D9490</td><td>1529.55</td><td>1560.61</td><td>1538.19</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9490 1538.19 nm amplified</strong></td><td>SO-QSFP-40G-D9490</td><td>1529.55</td><td>1560.61</td><td>1538.19</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9500 1537.40 nm unamplified</strong></td><td>SO-QSFP-40G-D9500</td><td>1529.55</td><td>1560.61</td><td>1537.4</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9500 1537.40 nm amplified</strong></td><td>SO-QSFP-40G-D9500</td><td>1529.55</td><td>1560.61</td><td>1537.4</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9510 1536.61 nm unamplified</strong></td><td>SO-QSFP-40G-D9510</td><td>1529.55</td><td>1560.61</td><td>1536.61</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9510 1536.61 nm amplified</strong></td><td>SO-QSFP-40G-D9510</td><td>1529.55</td><td>1560.61</td><td>1536.61</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9520 1535.82 nm unamplified</strong></td><td>SO-QSFP-40G-D9520</td><td>1529.55</td><td>1560.61</td><td>1535.82</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9520 1535.82 nm amplified</strong></td><td>SO-QSFP-40G-D9520</td><td>1529.55</td><td>1560.61</td><td>1535.82</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9530 1535.04 nm unamplified</strong></td><td>SO-QSFP-40G-D9530</td><td>1529.55</td><td>1560.61</td><td>1535.04</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9530 1535.04 nm amplified</strong></td><td>SO-QSFP-40G-D9530</td><td>1529.55</td><td>1560.61</td><td>1535.04</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9540 1534.25 nm unamplified</strong></td><td>SO-QSFP-40G-D9540</td><td>1529.55</td><td>1560.61</td><td>1534.25</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9540 1534.25 nm amplified</strong></td><td>SO-QSFP-40G-D9540</td><td>1529.55</td><td>1560.61</td><td>1534.25</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9550 1533.47 nm unamplified</strong></td><td>SO-QSFP-40G-D9550</td><td>1529.55</td><td>1560.61</td><td>1533.47</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9550 1533.47 nm amplified</strong></td><td>SO-QSFP-40G-D9550</td><td>1529.55</td><td>1560.61</td><td>1533.47</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9560 1532.68 nm unamplified</strong></td><td>SO-QSFP-40G-D9560</td><td>1529.55</td><td>1560.61</td><td>1532.68</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9560 1532.68 nm amplified</strong></td><td>SO-QSFP-40G-D9560</td><td>1529.55</td><td>1560.61</td><td>1532.68</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9570 1531.90 nm unamplified</strong></td><td>SO-QSFP-40G-D9570</td><td>1529.55</td><td>1560.61</td><td>1531.9</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9570 1531.90 nm amplified</strong></td><td>SO-QSFP-40G-D9570</td><td>1529.55</td><td>1560.61</td><td>1531.9</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9580 1531.12 nm unamplified</strong></td><td>SO-QSFP-40G-D9580</td><td>1529.55</td><td>1560.61</td><td>1531.12</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9580 1531.12 nm amplified</strong></td><td>SO-QSFP-40G-D9580</td><td>1529.55</td><td>1560.61</td><td>1531.12</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9590 1530.33 nm unamplified</strong></td><td>SO-QSFP-40G-D9590</td><td>1529.55</td><td>1560.61</td><td>1530.33</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9590 1530.33 nm amplified</strong></td><td>SO-QSFP-40G-D9590</td><td>1529.55</td><td>1560.61</td><td>1530.33</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+      <tr><td><strong>D9600 1529.55 nm unamplified</strong></td><td>SO-QSFP-40G-D9600</td><td>1529.55</td><td>1560.61</td><td>1529.55</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>150</td></tr>
+      <tr><td><strong>D9600 1529.55 nm amplified</strong></td><td>SO-QSFP-40G-D9600</td><td>1529.55</td><td>1560.61</td><td>1529.55</td><td>QSFP+</td><td>G.694.1</td><td>42.5</td><td>50</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">SO-QSFP-40G-Dxxxx</span> <span class="badge">SO-QSFP-40G-D9210</span> <span class="badge">SO-QSFP-40G-D9220</span> <span class="badge">SO-QSFP-40G-D9230</span> <span class="badge">SO-QSFP-40G-D9240</span> <span class="badge">SO-QSFP-40G-D9250</span> <span class="badge">SO-QSFP-40G-D9260</span> <span class="badge">SO-QSFP-40G-D9270</span> <span class="badge">SO-QSFP-40G-D9280</span> <span class="badge">SO-QSFP-40G-D9290</span> <span class="badge">SO-QSFP-40G-D9300</span> <span class="badge">SO-QSFP-40G-D9310</span> <span class="badge">SO-QSFP-40G-D9320</span> <span class="badge">SO-QSFP-40G-D9330</span> <span class="badge">SO-QSFP-40G-D9340</span> <span class="badge">SO-QSFP-40G-D9350</span> <span class="badge">SO-QSFP-40G-D9360</span> <span class="badge">SO-QSFP-40G-D9370</span> <span class="badge">SO-QSFP-40G-D9380</span> <span class="badge">SO-QSFP-40G-D9390</span> <span class="badge">SO-QSFP-40G-D9400</span> <span class="badge">SO-QSFP-40G-D9410</span> <span class="badge">SO-QSFP-40G-D9420</span> <span class="badge">SO-QSFP-40G-D9430</span> <span class="badge">SO-QSFP-40G-D9440</span> <span class="badge">SO-QSFP-40G-D9450</span> <span class="badge">SO-QSFP-40G-D9460</span> <span class="badge">SO-QSFP-40G-D9470</span> <span class="badge">SO-QSFP-40G-D9480</span> <span class="badge">SO-QSFP-40G-D9490</span> <span class="badge">SO-QSFP-40G-D9500</span> <span class="badge">SO-QSFP-40G-D9510</span> <span class="badge">SO-QSFP-40G-D9520</span> <span class="badge">SO-QSFP-40G-D9530</span> <span class="badge">SO-QSFP-40G-D9540</span> <span class="badge">SO-QSFP-40G-D9550</span> <span class="badge">SO-QSFP-40G-D9560</span> <span class="badge">SO-QSFP-40G-D9570</span> <span class="badge">SO-QSFP-40G-D9580</span> <span class="badge">SO-QSFP-40G-D9590</span> <span class="badge">SO-QSFP-40G-D9600</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">1300.0</span> <span class="badge">1529.55</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">1570.0</span> <span class="badge">1560.61</span></td></tr>
+      <tr><td>wavelength_center_nm</td><td><span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1545.32</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">QSFP+</span> <span class="badge">40GBASE</span> <span class="badge">40GbE</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">G.694.1</span> <span class="badge">40GBASE</span> <span class="badge">40GbE</span> <span class="badge">KP4</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">42.5</span> <span class="badge">40.0</span></td></tr>
+      <tr><td>cd_tolerance_ps_nm</td><td><span class="badge">-50.0</span> <span class="badge">150.0</span> <span class="badge">50.0</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 11:27
+</footer>
+
+</div>
+</body>
+</html>

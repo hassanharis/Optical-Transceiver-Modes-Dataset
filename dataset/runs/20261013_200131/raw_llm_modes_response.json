@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"1442120G1 SFP 1000Base-BX-D 10km\",\n      \"model\": \"1442120G1\",\n      \"host_interface_name\": \"Gigabit Ethernet\",\n      \"standards_code\": \"1000Base-BX-D\"\n    },\n    {\n      \"label\": \"1442120G1-C SFP 1000Base-BX-D 10km\",\n      \"model\": \"1442120G1-C\",\n      \"host_interface_name\": \"Gigabit Ethernet\",\n      \"standards_code\": \"1000Base-BX-D\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

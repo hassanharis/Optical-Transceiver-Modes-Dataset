@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-ccs-strat-lxlx-st11-series.pdf",
+  "page_count": 3,
+  "table_count": 3,
+  "markdown_chars": 3765,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 3
+    }
+  ]
+}

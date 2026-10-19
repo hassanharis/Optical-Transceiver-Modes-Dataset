@@ -1,0 +1,25 @@
+{
+  "modes": [
+    {
+      "label": "100M Fast Ethernet",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "standards_code": "FE",
+      "bit_rate_gbps": 100.0
+    },
+    {
+      "label": "STM-1",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "standards_code": "STM1",
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "OC-3",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "standards_code": "OC3",
+      "bit_rate_gbps": 155.0
+    }
+  ]
+}

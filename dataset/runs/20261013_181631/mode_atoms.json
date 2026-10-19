@@ -1,0 +1,92 @@
+{
+  "multi_valued": {
+    "model": [
+      "AOP13LI8-XXX",
+      "AOP13LI8-001",
+      "AOP13LI8-005",
+      "AOP13LI8-010",
+      "AOP13LI8-030",
+      "AOP13LI8-050",
+      "AOP13LI8-100"
+    ],
+    "power_consumption_w": [
+      10.0,
+      11.0
+    ],
+    "host_interface_name": [
+      "OSFP MSA",
+      "60-pin edge connector"
+    ],
+    "standards_code": [
+      "IEEE 802.3dj-2024",
+      "OSFP MSA",
+      "OIF-CMIS",
+      "1.6T Ethernet"
+    ],
+    "bit_rate_gbps": [
+      212.5,
+      1600.0
+    ],
+    "reach_km": [
+      0.001,
+      0.005,
+      0.01,
+      0.03,
+      0.05,
+      0.1
+    ]
+  },
+  "general": {
+    "vendor": "XGIGA",
+    "form_factor": [
+      "OSFP"
+    ],
+    "standards_claimed": [
+      "OSFP MSA rev5.x",
+      "OIF-CMIS rev5.x",
+      "IEEE 802.3dj-2024"
+    ],
+    "emitter_type": [
+      "Silicon photonics modulator"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "channel_total": [
+      8
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "baud_rate_gbaud": [
+      106.25
+    ],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "penalties": [],
+    "notes": "Linear-drive (LPO) module; LPO module does not have a CDR. Forward error correction (FEC) is required to be implemented by the host. Power dissipation stated as < 11 W (Typical 10W) for single-ended; Maximum Power Consumption per End 11 W. Case operating temperature 0°C to 70°C without air flow. Optical transmission distance maximum 100 m per Recommended Operating Conditions; standard cable lengths 1, 5, 10, 30, 50, 100 meters on SMF. Maximum aggregate data rate 1.6 Tb/s; maximum data rate per lane 212.5 Gb/s. Each channel data rate 106.25 GBd @ PAM4 (optical). Power supply 3.3 V (3.135–3.465 V); ICC 3333 mA typical when Vcc is 3.3 V single-ended.",
+    "provenance_datasheet_sections": [
+      "PRODUCT FEATURES",
+      "REFERENCE STANDARD",
+      "APPLICATIONS",
+      "PRODUCT SPECIFICATION",
+      "I. Absolute Maximum Ratings",
+      "II. Recommended Operating Conditions",
+      "III. General Product Characteristics",
+      "IV. Pin Assignment",
+      "V. Host - Transceiver Interface Block Diagram",
+      "VI. Mechanical Specifications",
+      "VII. Regulatory Compliance"
+    ],
+    "suggestions": "Datasheet lacks optical link budget (Tx/Rx power, sensitivity, OSNR), wavelength, and host electrical interface IDs (e.g. CMIS application codes). reach_km converted from stated meter lengths for schema units; document prints distances in meters only."
+  }
+}

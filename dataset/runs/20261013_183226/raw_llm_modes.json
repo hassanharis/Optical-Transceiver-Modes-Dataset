@@ -1,0 +1,39 @@
+{
+  "modes": [
+    {
+      "label": "40GBASE-SR4 OM3 MMF (per-lane, Rec. Op.)",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.3
+    },
+    {
+      "label": "40GBASE-SR4 OM4 MMF (per-lane, Rec. Op.)",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.4
+    },
+    {
+      "label": "40 Gbps module OM3 MMF",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.3
+    },
+    {
+      "label": "40 Gbps module OM4 MMF",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.4
+    },
+    {
+      "label": "QSFP+ SR4 150 m (product title)",
+      "bit_rate_gbps": 40.0,
+      "reach_km": 0.15
+    },
+    {
+      "label": "Infiniband QDR OM3 MMF",
+      "bit_rate_gbps": 11.1,
+      "reach_km": 0.3
+    },
+    {
+      "label": "Infiniband QDR OM4 MMF",
+      "bit_rate_gbps": 11.1,
+      "reach_km": 0.4
+    }
+  ]
+}

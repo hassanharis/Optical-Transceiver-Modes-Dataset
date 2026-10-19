@@ -1,0 +1,92 @@
+{
+  "modes": [
+    {
+      "label": "400G QSFP-DD to 4x100G QSFP56 AOC 1m",
+      "model": "AQD003-001C-SO",
+      "form_factor": "QSFP-DD",
+      "power_consumption_w": 10.0,
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 400.0,
+      "reach_km": 0.001,
+      "fec_type": "RS_528_514",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "400G QSFP-DD to 4x100G QSFP56 AOC 2m",
+      "model": "AQD003-002C-SO",
+      "form_factor": "QSFP-DD",
+      "power_consumption_w": 10.0,
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 400.0,
+      "reach_km": 0.002,
+      "fec_type": "RS_528_514",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "400G QSFP-DD to 4x100G QSFP56 AOC 3m",
+      "model": "AQD003-003C-SO",
+      "form_factor": "QSFP-DD",
+      "power_consumption_w": 10.0,
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 400.0,
+      "reach_km": 0.003,
+      "fec_type": "RS_528_514",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "400G QSFP-DD to 4x100G QSFP56 AOC 5m",
+      "model": "AQD003-005C-SO",
+      "form_factor": "QSFP-DD",
+      "power_consumption_w": 10.0,
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 400.0,
+      "reach_km": 0.005,
+      "fec_type": "RS_528_514",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "400G QSFP-DD to 4x100G QSFP56 AOC 7m",
+      "model": "AQD003-007C-SO",
+      "form_factor": "QSFP-DD",
+      "power_consumption_w": 10.0,
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 400.0,
+      "reach_km": 0.007,
+      "fec_type": "RS_528_514",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "400G QSFP-DD to 4x100G QSFP56 AOC 10m",
+      "model": "AQD003-010C-SO",
+      "form_factor": "QSFP-DD",
+      "power_consumption_w": 10.0,
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 400.0,
+      "reach_km": 0.01,
+      "fec_type": "RS_528_514",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "400G QSFP-DD to 4x100G QSFP56 AOC 15m",
+      "model": "AQD003-015C-SO",
+      "form_factor": "QSFP-DD",
+      "power_consumption_w": 10.0,
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 400.0,
+      "reach_km": 0.015,
+      "fec_type": "RS_528_514",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "400G QSFP-DD to 4x100G QSFP56 AOC 30m",
+      "model": "AQD003-030C-SO",
+      "form_factor": "QSFP-DD",
+      "power_consumption_w": 10.0,
+      "standards_code": "IEEE802.3bj",
+      "bit_rate_gbps": 400.0,
+      "reach_km": 0.03,
+      "fec_type": "RS_528_514",
+      "number_of_lanes": 8
+    }
+  ]
+}

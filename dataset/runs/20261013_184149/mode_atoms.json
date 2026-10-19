@@ -1,0 +1,106 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1260.0,
+      1270.0
+    ],
+    "wavelength_max_nm": [
+      1355.0,
+      1610.0
+    ],
+    "standards_code": [
+      "25GBASE-LR",
+      "SFF-8472",
+      "SFF-8431"
+    ],
+    "bit_rate_gbps": [
+      25.78,
+      28.0
+    ]
+  },
+  "general": {
+    "model": [
+      "QT-SFP28-LR"
+    ],
+    "form_factor": [
+      "SFP28"
+    ],
+    "standards_claimed": [
+      "SFF 8472",
+      "SFP+ MSA",
+      "SFF-8431"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "host_interface_name": [
+      "25GBASE-LR"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -7.0
+    ],
+    "tx_power_max_dbm": [
+      2.0
+    ],
+    "rx_sensitivity_dbm": [
+      -11.0
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -13.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      1.0
+    ],
+    "penalties": [],
+    "notes": "Rx sensitivity note 2: measured with PRBS 2^31-1 test pattern at 25.78 Gb/s, BER < 10^-12. Transmitter output power note 1: Class 1 Laser Safety per FDA/CDRH and IEC-825-1. Power dissipation stated as < 1.0 W. Data rate in recommended operating conditions is 25.78 Gbps typ; product features and ordering list up to 28 Gb/s. Case operating temperature Commercial 0 to 70 °C.",
+    "provenance_datasheet_sections": [
+      "25GBASE-LR SFP28 1310nm 10km DDM SMF Transceiver",
+      "P/N: QT-SFP28-LR",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "2. Recommended Operating Conditions",
+      "3. Optical Characteristics",
+      "Notes:",
+      "7. Ordering information"
+    ],
+    "suggestions": "Vendor is not labeled explicitly (only qsfptek.com contact). Form factor SFP28 is used throughout but is outside the schema enum examples. post_fec_ber_target inferred from BER < 10^-12 in optical note 2 without explicit pre-FEC vs post-FEC labeling."
+  }
+}

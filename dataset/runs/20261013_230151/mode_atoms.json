@@ -1,0 +1,123 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1295.0,
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1325.0,
+      1370.0
+    ],
+    "media_interface_name": [
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "Fibre Channel"
+    ],
+    "standards_code": [
+      "16GFC",
+      "4x Fibre Channel",
+      "8x Fibre Channel",
+      "16x Fibre Channel",
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "FC-PI-5"
+    ],
+    "bit_rate_gbps": [
+      4.25,
+      8.5,
+      14.025
+    ],
+    "tx_power_max_dbm": [
+      2.0,
+      -1.0
+    ]
+  },
+  "general": {
+    "vendor": "Finisar",
+    "model": [
+      "FTLF1429P3BCV"
+    ],
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "FC-PI-5 Rev. 6.101",
+      "SFF-8472 Rev 11.03",
+      "SFF-8081",
+      "SFF-8432",
+      "SFF-8431 Rev. 4.14",
+      "RoHS Directive 2011/65/EU",
+      "Small Form Factor Pluggable (SFP) Transceiver Multi-source Agreement (MSA)",
+      "INF-8074",
+      "IEEE 802.3"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "Long-Wavelength"
+    ],
+    "mounting_type": [
+      "pluggable_hot",
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "host_interface_name": [
+      "SFP+"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -5.0
+    ],
+    "rx_overload_dbm": [
+      2.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -19.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      12.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Receiver sensitivity is specified as Unstressed Receiver OMA Sensitivity in mW (0.029 mW @ 4.25 Gb/s, 0.042 mW @ 8.5 Gb/s, 0.063 mW @ 14.025 Gb/s at 10^-12 BER), not in dBm. Section VI narrative states operating case temperature -5°C to +85°C while Case Operating Temperature tables list 0°C to 70°C. Electrical Characteristics header gives TOP = -5 to 85 °C for section III; Optical Characteristics and environmental table use TOP 0 to 70 °C. Transmitter output power ranges differ by rate: 14.025 Gb/s -5.0 to +2.0 dBm; 4.25/8.5 Gb/s -5.0 to -1.0 dBm. TDP (Transmitter and Dispersion Penalty) max 4.4 dB @ 14.025 Gb/s and 3.2 dB @ 8.5 Gb/s is not mapped to penalty objects per @-notation rule. Supply current Icc typ 200 mA max 300 mA; module power consumption never exceeds 1 W with established link.",
+    "provenance_datasheet_sections": [
+      "FTLF1429P3BCV",
+      "16GFC RoHS Compliant Long-Wavelength SFP+ Transceiver",
+      "FEATURES",
+      "APPLICATIONS",
+      "Product Selection",
+      "II. Absolute Maximum Ratings",
+      "III. Electrical Characteristics (TOP = -5 to 85 °C,  VCC = 3.00 to 3.60 Volts)",
+      "IV. Optical Characteristics (TOP = 0 to 70 °C , VCC = 3.15 to 3.45 Volts)",
+      "V. General Specifications",
+      "VI. Environmental Specifications",
+      "IX. Mechanical Specifications"
+    ],
+    "suggestions": "Consider schema fields for OMA sensitivity (mW/μW) and transmitter dispersion penalty (TDP in dB) common on FC/Ethernet SFP+ datasheets. Clarify whether legal entity should be Coherent Corp. when footer differs from Finisar branding."
+  }
+}

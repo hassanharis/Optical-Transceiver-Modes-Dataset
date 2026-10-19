@@ -1,0 +1,112 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1000BASE-BX80D-4955",
+    "SO-SFP-1000BASE-BX80D-5549",
+    "SO-SFP-1000Base-BX80D-4955",
+    "SO-SFP-1000Base-BX80D-5549",
+    "SO-SFP-1000Base-BX80D-4955-E",
+    "SO-SFP-1000Base-BX80D-5549-E"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1484.0,
+    1470.0,
+    1530.0,
+    1544.0
+  ],
+  "wavelength_max_nm": [
+    1491.0,
+    1510.0,
+    1580.0,
+    1557.0
+  ],
+  "wavelength_center_nm": [
+    1490.0,
+    1550.0
+  ],
+  "wavelength_band": [],
+  "channel_total": [
+    1
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [
+    "1000BASE-BX80D"
+  ],
+  "media_interface_name": [
+    "BiDi SFP"
+  ],
+  "frame": [],
+  "standards_code": [
+    "1000BASE-BX80D",
+    "FE",
+    "GbE",
+    "1G FC"
+  ],
+  "bit_rate_gbps": [
+    0.1,
+    1.25
+  ],
+  "modulation_format": [],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -26.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "fec_type": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -42.0
+  ],
+  "los_deassert_dbm": [
+    -27.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Product line is a BiDi transceiver pair: SO-SFP-1000BASE-BX80D-4955 (Tx/Rx 1490nm/1550nm) and SO-SFP-1000BASE-BX80D-5549 (Tx/Rx 1550nm/1490nm). Extended operating temperature option -20°C to +85°C (-E). Storage temperature -40°C to +85°C. Power budget 8 – 26dB. Dispersion penalty max 1dB. Transmitter output power, minimum input power, and overload are average power (footnote 3). Receiver minimum input power and overload measured @ 1.25Gbps, BER≤1x10-12, PRBS 2^7-1, back-to-back (footnote 4). Transmit wavelength 1484–1491nm (4955) and 1544–1557nm (5549). Receiver wavelength range 1530–1580nm (4955) and 1470–1510nm (5549). Power consumption stated as < 1.0W worst case.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1000BASE-BX80D-4955 & -5549",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider list types for temp_min_c/temp_max_c when C-temp and E-temp variants are on one datasheet. Power budget 8–26dB may warrant dedicated fields. Dispersion penalty max 1dB lacks paired penalized optical parameter for penalties array."
+}

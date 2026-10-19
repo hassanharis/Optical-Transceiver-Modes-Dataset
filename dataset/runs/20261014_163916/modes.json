@@ -1,0 +1,14 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-LRM",
+      "host_interface_name": "10GBASE-LRM",
+      "bit_rate_gbps": 10.312
+    },
+    {
+      "label": "10GbE-LAN",
+      "host_interface_name": "10GbE-LAN",
+      "bit_rate_gbps": 10.3
+    }
+  ]
+}

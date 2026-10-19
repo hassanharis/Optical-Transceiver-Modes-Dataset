@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:14:01.667337+00:00",
+  "source_file": "C:\\Haris\\datasheets\\AV02-3399EN_AFBR-710SMZ_Data_Sheet_2023-11-13.pdf",
+  "page_count": 22,
+  "table_count": 18,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 27.647,
+    "extract_atoms": 28.882,
+    "store_run": 0.012,
+    "synthesize_modes": 85.952,
+    "store_modes": 0.003,
+    "total": 142.495
+  }
+}

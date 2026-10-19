@@ -1,0 +1,53 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "SFF-8436",
+      "SFF-8418",
+      "SFF-8419",
+      "SFF-8636"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "CVR-QSFP-SFP+"
+    ],
+    "form_factor": [
+      "QSFP+"
+    ],
+    "standards_claimed": [
+      "QSFP+ MSA SFF-8436 (QSFP+ 4X 10 Gb/s Pluggable Transceiver)",
+      "SFP+ MSA SFF-8418 (SFP+ 10 Gb/s Electrical Interface)",
+      "SFF-8419 (SFP+ Power and Low Speed Interface)",
+      "SFF-8636 (Management Interface for Cabled Environments)"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      0.1
+    ],
+    "host_interface_name": [
+      "QSFP+"
+    ],
+    "media_interface_name": [
+      "SFP+"
+    ],
+    "bit_rate_gbps": [
+      10.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "penalties": [],
+    "notes": "QSFP+ to SFP+ adapter/converter; RF channel of SFP receptacle connected to lane 1 of QSFP+ only; three remaining QSFP+ RF channels not connected. Storage temperature -40 C to +85 C. Power consumption stated as <0.1 W. RoHS compliant. Host context Nx40GbE switch or NIC QSFP+ port; optical/electrical performance depends on inserted SFP+/AOC/DAC.",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-tqd016-s31c-so-qsfpdd-400g-lr4-mpo-c3-r6.4.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 6991,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 20
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 23
+    }
+  ]
+}

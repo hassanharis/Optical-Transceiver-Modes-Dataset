@@ -1,0 +1,39 @@
+{
+  "modes": [
+    {
+      "label": "2G FC",
+      "wavelength_min_nm": 1544.5,
+      "wavelength_max_nm": 1557.5,
+      "standards_code": "2G FC",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "8G FC",
+      "wavelength_min_nm": 1544.5,
+      "wavelength_max_nm": 1557.5,
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "4G FC",
+      "wavelength_min_nm": 1544.5,
+      "wavelength_max_nm": 1557.5,
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "FICON",
+      "wavelength_min_nm": 1544.5,
+      "wavelength_max_nm": 1557.5,
+      "standards_code": "FICON",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "Receiver wavelength range",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    }
+  ]
+}

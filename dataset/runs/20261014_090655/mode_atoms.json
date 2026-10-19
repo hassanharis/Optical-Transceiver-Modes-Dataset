@@ -1,0 +1,106 @@
+{
+  "multi_valued": {
+    "model": [
+      "LS-MM8510-S3C",
+      "LS-MM8510-S3I"
+    ],
+    "standards_code": [
+      "10GBASE-SR",
+      "10GBASE-SW"
+    ],
+    "bit_rate_gbps": [
+      1.0,
+      9.953,
+      10.3,
+      10.3125,
+      10.7
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFP+ MSA",
+      "SFF-8472",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      840.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM3"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      0.3
+    ],
+    "tx_power_min_dbm": [
+      -6.0
+    ],
+    "tx_power_max_dbm": [
+      -0.5
+    ],
+    "rx_sensitivity_dbm": [
+      -10.5
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      3.0
+    ],
+    "los_assert_dbm": [
+      -22.0
+    ],
+    "los_deassert_dbm": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "Ordering LS-MM8510-S3C: 0°C~+70°C; LS-MM8510-S3I: -40°C~+85°C. Product Features also list Standard 0 to +70°C and Industrial -40 to +85°C. Recommended Operating Conditions include Extended case -20 to +85°C. Note 1: average output power launched into MMF. Note 3: receiver sensitivity and overload measured with PRBS 2^31-1 @ 10312Mbps, BER ≤1×10^-12. Data Rate row units printed as bps; values 1.0–10.7 align with Gbps context. Reach stated as 300 m (0.3 km). Supply: +3.3 V, Icc max 260 mA; power in W not stated.",
+    "provenance_datasheet_sections": [
+      "LS-MM8510-S3C",
+      "10.3Gbps SFP+ Transceiver, Multi Mode, 300m Reach",
+      "Product Features",
+      "Applications",
+      "Description",
+      "Recommended Operating Conditions",
+      "Optical and Electrical Characteristics",
+      "Notes:",
+      "Diagnostics",
+      "Ordering information"
+    ],
+    "suggestions": "Add explicit SFP+ to form_factor enum if restricted. Clarify whether reach_km should accept meter-valued sources (300 m) without conversion."
+  }
+}

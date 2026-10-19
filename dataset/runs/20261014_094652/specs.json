@@ -1,0 +1,111 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LX-MM8510-S3C"
+  ],
+  "form_factor": [
+    "XFP"
+  ],
+  "standards_claimed": [
+    "XFP MSA",
+    "10G Small Form-Factor Pluggable (XFP) Multi-Source Agreement (MSA)",
+    "SONET OC-192",
+    "SDH STM-64",
+    "10GBASE-SR/SW",
+    "1200-MX-SN-I 10Gigabit Fiber Channel",
+    "G.709"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "standards_code": [
+    "10GBASE-SR/SW",
+    "OC-192",
+    "STM-64",
+    "1200-MX-SN-I",
+    "G.709",
+    "XFP MSA"
+  ],
+  "bit_rate_gbps": [
+    8.0,
+    9.953,
+    10.709,
+    11.09,
+    11.1,
+    11.3
+  ],
+  "reach_km": [
+    0.3
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    -0.5
+  ],
+  "rx_sensitivity_dbm": [
+    -11.1
+  ],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.0
+  ],
+  "los_assert_dbm": [
+    -26.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "los_hysteresis_db": [
+    0.5,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Average output power note 1: launched into MMF. Receiver sensitivity and overload note 3: PRBS 2^31-1 @9953Mbps, BER ≤1×10^-12. Power dissipation stated as <1.5W. Data rate operating range 8.0–11.1 Gbps; applications cite additional rates. No reference clock required. Single +3.3V supply; Icc max 500 mA in recommended operating conditions. Spectral Width (RMS) Δλ max 0.45 nm stated for transmitter but not in schema.",
+  "provenance_datasheet_sections": [
+    "LX-MM8510-S3C",
+    "10Gbps XFP Transceiver, Multi Mode, 300m Reach",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Ordering information"
+  ]
+}

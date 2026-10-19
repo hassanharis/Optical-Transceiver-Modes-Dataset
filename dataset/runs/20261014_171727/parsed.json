@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-sfp-l80d-dxxx.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 7794,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 19
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 43
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 20
+    }
+  ]
+}

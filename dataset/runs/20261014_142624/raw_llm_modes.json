@@ -1,0 +1,46 @@
+{
+  "modes": [
+    {
+      "label": "4G Fiber Channel",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -12.0
+    },
+    {
+      "label": "8G Fiber Channel",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5,
+      "reach_km": 0.1,
+      "rx_sensitivity_dbm": -11.0
+    },
+    {
+      "label": "16G FC OM2 25m",
+      "standards_code": "1600-SM-LC-L",
+      "bit_rate_gbps": 14.025,
+      "reach_km": 0.025,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "16G FC OM3 100m",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025,
+      "reach_km": 0.1,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "16G FC OM4 125m",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025,
+      "reach_km": 0.125,
+      "rx_sensitivity_dbm": -10.5
+    },
+    {
+      "label": "16G FC OM4 150m",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -10.5
+    }
+  ]
+}

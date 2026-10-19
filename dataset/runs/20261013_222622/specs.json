@@ -1,0 +1,132 @@
+{
+  "vendor": "Avago Technologies",
+  "model": [
+    "AFCT-57G5MZ"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP",
+    "SFP+",
+    "SFF-8472",
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8074",
+    "FC-PI-6",
+    "INF-8431"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1295.0
+  ],
+  "wavelength_max_nm": [
+    1325.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.2
+  ],
+  "host_interface_name": [
+    "3200-M5-SN-S",
+    "1600-M5-SN-S",
+    "800-M5-SN-S",
+    "3200-M5E-SN-I",
+    "1600-M5E-SN-I",
+    "800-M5E-SN-I",
+    "3200-M5F-SN-I",
+    "1600-M5F-SN-I",
+    "800-M5F-SN-I"
+  ],
+  "standards_code": [
+    "FC-PI-6",
+    "3200-M5-SN-S",
+    "1600-M5-SN-S",
+    "800-M5-SN-S",
+    "3200-M5E-SN-I",
+    "1600-M5E-SN-I",
+    "800-M5E-SN-I",
+    "3200-M5F-SN-I",
+    "1600-M5F-SN-I",
+    "800-M5F-SN-I"
+  ],
+  "bit_rate_gbps": [
+    8.5,
+    14.025,
+    28.05
+  ],
+  "modulation_format": [
+    "LINECODE_64B66B",
+    "LINECODE_8B10B"
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -8.4,
+    -5.0
+  ],
+  "tx_power_max_dbm": [
+    2.0
+  ],
+  "rx_overload_dbm": [
+    0.5,
+    2.0
+  ],
+  "fec_type": [
+    "RS_528_514"
+  ],
+  "pre_fec_ber_threshold": [
+    1e-06
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -11.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    26.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "32GFC (28.05 Gb/s) requires FEC RS(528,514) per FC-PI-6; 16GFC and 8GFC are not compatible with FEC per FC-PI-5. Unstressed receiver sensitivity is specified as minimum input OMA (72 µW at 28.05 Gb/s, 63 µW at 14.025 Gb/s, 42 µW at 8.5 Gb/s), not as rx_sensitivity_dbm. Max average Pout for 14.025 Gb/s and 8.5 Gb/s is limited per Note 1 (Class 1 safety or received power max) without a numeric max in Table 7 for those rows. Transmitter Distortion Penalty (TDP) max: 2.7 dB at 28.05 Gb/s, 4.4 dB at 14.025 Gb/s, 3.2 dB at 8.5 Gb/s—not mapped to penalty schema (no paired penalized OSNR/sensitivity at stated penalty dB and conditions). EEPROM lists 1 W power class; Table 5 transceiver power consumption max 1.2 W. Case operating temperature recommended 0°C to 70°C; absolute max case -40°C to 85°C.",
+  "provenance_datasheet_sections": [
+    "AFCT-57G5MZ",
+    "32GFC SFP+ for Single-Mode Optical Fiber Digital Diagnostic SFP, 1310nm, 32G/16G/8G Low Voltage (3.3V) Fibre Channel Optical Transceiver",
+    "Description",
+    "Features",
+    "Transmitter Section",
+    "Receiver Section:",
+    "Digital Diagnostics:",
+    "Low Speed Interfaces:",
+    "Table 4. Recommended Operating Conditions",
+    "Table 5. Transceiver Electrical Characteristics",
+    "Table 6. Transmitter and Receiver Electrical Characteristics",
+    "Table 7. Transmitter Optical Characteristics",
+    "Table 8. Receiver Optical and Electrical Characteristics",
+    "Rate Select Control",
+    "Customer Manufacturing Processes"
+  ],
+  "suggestions": "Consider accepting receiver unstressed sensitivity as OMA (µW) or a dedicated field; map Table 8 Return Loss (26 dB min) explicitly to receiver_reflectance vs optical_return_loss_tolerance. Include SFP/SFP+ in form_factor enum if not already."
+}

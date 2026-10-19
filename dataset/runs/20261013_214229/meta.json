@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:42:29.985172+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tq2015-m85i-so-qsfp28-100g-sr4-i-temp-r6.2.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.476,
+    "extract_atoms": 13.301,
+    "store_run": 0.01,
+    "synthesize_modes": 22.231,
+    "store_modes": 0.003,
+    "total": 39.022
+  }
+}

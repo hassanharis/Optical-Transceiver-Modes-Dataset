@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"800GBASE-DR8\",\n      \"host_interface_name\": \"2x400GAUI-4\",\n      \"media_interface_name\": \"800GBASE-DR8\",\n      \"standards_code\": \"DR8\",\n      \"bit_rate_gbps\": 800.0,\n      \"rx_sensitivity_dbm\": -3.9,\n      \"rx_overload_dbm\": 4.0\n    },\n    {\n      \"label\": \"2x400GBASE-DR4 breakout\",\n      \"host_interface_name\": \"2x400GAUI-4\",\n      \"media_interface_name\": \"2x400GBASE-DR4\",\n      \"standards_code\": \"400GBASE-DR4\",\n      \"bit_rate_gbps\": 400.0,\n      \"rx_sensitivity_dbm\": -3.9,\n      \"rx_overload_dbm\": 4.0\n    },\n    {\n      \"label\": \"400GBASE-DR4 per port\",\n      \"host_interface_name\": \"400GAUI-4 C2M\",\n      \"media_interface_name\": \"400GBASE-DR4\",\n      \"standards_code\": \"DR4\",\n      \"bit_rate_gbps\": 400.0,\n      \"rx_sensitivity_dbm\": -1.9,\n      \"rx_overload_dbm\": 5.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

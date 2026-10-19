@@ -1,0 +1,814 @@
+{
+  "modes": [
+    {
+      "label": "ITU CH17 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1563.86,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH17 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1563.86,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH18 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1563.05,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH18 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1563.05,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH19 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1562.23,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH19 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1562.23,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH20 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1561.42,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH20 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1561.42,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH21 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1560.61,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH21 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1560.61,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH22 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1559.79,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH22 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1559.79,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH23 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1558.98,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH23 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1558.98,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH24 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1558.17,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH24 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1558.17,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH25 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1557.36,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH25 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1557.36,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH26 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1556.55,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH26 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1556.55,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH27 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1555.75,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH27 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1555.75,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH28 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1554.94,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH28 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1554.94,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH29 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1554.13,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH29 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1554.13,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH30 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1553.33,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH30 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1553.33,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH31 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1552.52,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH31 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1552.52,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH32 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1551.72,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH32 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1551.72,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH33 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1550.92,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH33 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1550.92,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH34 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1550.12,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH34 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1550.12,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH35 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1549.32,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH35 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1549.32,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH36 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1548.51,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH36 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1548.51,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH37 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1547.72,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH37 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1547.72,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH38 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1546.92,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH38 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1546.92,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH39 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1546.12,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH39 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1546.12,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH40 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1545.32,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH40 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1545.32,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH41 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1544.53,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH41 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1544.53,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH42 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1543.73,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH42 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1543.73,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH43 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1542.94,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH43 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1542.94,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH44 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1542.14,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH44 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1542.14,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH45 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1541.35,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH45 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1541.35,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH46 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1540.56,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH46 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1540.56,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH47 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1539.77,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH47 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1539.77,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH48 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1538.98,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH48 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1538.98,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH49 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1538.19,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH49 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1538.19,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH50 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1537.4,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH50 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1537.4,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH51 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1536.61,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH51 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1536.61,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH52 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1535.82,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH52 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1535.82,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH53 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH53 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH54 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1534.25,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH54 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1534.25,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH55 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1533.47,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH55 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1533.47,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH56 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1532.68,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH56 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1532.68,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH57 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1531.9,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH57 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1531.9,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH58 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1531.12,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH58 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1531.12,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH59 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH59 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH60 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1529.55,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH60 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1529.55,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "ITU CH61 RS0 \u22644.25Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "ITU CH61 RS0 9.95\u201310.3125Gbps",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "C-band",
+      "power_consumption_w": 1.5,
+      "bit_rate_gbps": 10.3125
+    }
+  ]
+}

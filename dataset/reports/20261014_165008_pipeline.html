@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;TQ2034-BXXY-SO&#x27;, &#x27;TQ2034-BXXy-SO&#x27;, &#x27;TQ2034-BWXC-SO&#x27;, &#x27;TQ2034-BXWC-SO&#x27;, &#x27;TQ2034-BWXE-SO&#x27;, &#x27;TQ2034-BXWE-SO&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">tq2034-bxxy-so-qsfp28-100g-bidi-70km-r6.1.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">3</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 16:50</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+6.1 
+
+## **QSFP28 100GE BiDi 70km** QSFP28, BiDi, 100G Eth, 4LAN-WDM, SM, 70km, 27dB, LC 
+
+## TQ2034-BXXY-SO 
+
+The TQ2034-BXXy-SO is a bi-directional transceiver solution operating directly on a single-fiber without the need for a separate optical filter. This is achieved by having two transceivers that each inject four LAN-WDM wavelengths into the same single-fiber. The solution thus consists of two transceivers; TQ2034-BWXC-SO transmitting at the lower wavelengths 1274/1278/1282/1287nm and TQ2034-BXWy-SO transmitting at the high wavelengths 1296/1300/1305/1309nm. Using a single-fiber solution provides a cost-efficient solution for interconnect and it simplifies the patching since no separate transmit/receive direction has to be taken into account. 
+
+TQ2034-BXXy-SO has an optical performance enabling distances of up to 70km over a SingleMode (SM) G.652 fiber-pair cable. Forward Error Correction (FEC) is required to be implemented by the host in order to ensure reliable system operation. The FEC type shall be as defined in IEEE802.3bj, i.e. Reed Solomon RS(528,514). The optical parameters will provide a bit error ratio (BER) of 5 x 10-5. FEC will render in the required BER of better than 1 x 10-12. 
+
+Digital diagnostics functions (DDM) are available via an I2C interface, as specified by the QSFP28 MSA. The transceiver is available in two temperature range options, one being the Extended temperature range (E-temp): -20°C to 85°C (-20°F to 185°F). 
+
+## TECHNICAL DATA 
+
+||**Parameter**|**Value**|
+|---|---|---|
+||**Transmitter data:**||
+||Output power, per lane|Min: +1.0dBm5)|
+|||Max: +7.0dBm5)|
+||Output power, OMA|Min: +3.0dBm|
+|||Max: +8.8dBm|
+||Extinction Ration|Min: 8dB|
+||Transmit wavelengths|1274/1278/1282/1287nm1)|
+|||1296/1300/1305/1309nm2)|
+||**Receiver data:**||
+||Receiver sensitivity, OMA|-24dBm6)|
+||Minimum input power|-26.0dBm5)|
+||Overload (max power), average&lt;br&gt;power per lane|-5.0dBm6)|
+||Receiver wavelengths|1296/1300/1305/1309nm1)|
+|||1296/
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "TQ2034-BXXY-SO",
+    "TQ2034-BXXy-SO",
+    "TQ2034-BWXC-SO",
+    "TQ2034-BXWC-SO",
+    "TQ2034-BWXE-SO",
+    "TQ2034-BXWE-SO"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "QSFP28"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "QSFP28 MSA",
+    "SFF-8636"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1274.0</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1309.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1274.0</span>,
+    <span class="num">1278.0</span>,
+    <span class="num">1282.0</span>,
+    <span class="num">1287.0</span>,
+    <span class="num">1296.0</span>,
+    <span class="num">1300.0</span>,
+    <span class="num">1305.0</span>,
+    <span class="num">1309.0</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "LAN-WDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF",
+    "SMF_G652"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-20.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85.0</span>,
+  <span class="key">"power_consumption_w"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_name"</span>: [
+    "QSFP28"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "IEEE802.3bj",
+    "RS(528,<span class="num">514</span>)",
+    "100GE",
+    "4LAN-WDM",
+    "4WL"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">70.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">1.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">7.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-24.0</span>,
+    <span class="num">-26.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-5.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: [
+    "RS_528_514",
+    "RS_GENERIC"
+  ],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: [
+    <span class="num">5</span>e-05
+  ],
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">8.0</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-40.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-26.0</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">8.0</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>,
+    <span class="num">5.0</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"TQ2034-BXXy-SO is one half of a BiDi pair; TQ2034-BWXC-SO uses Tx wavelengths <span class="num">1274</span>/1278/1282/1287 nm and TQ2034-BXWy-SO uses <span class="num">1296</span>/1300/1305/1309 nm on a single fiber. Receiver wavelength rows list <span class="num">1296</span>/1300/1305/1309 nm for both footnotes <span class="num">1</span>) and <span class="num">2</span>) as printed. Output power per lane Min +1.0 dBm Max +7.0 dBm footnote <span class="num">5</span>); OMA output Min +3.0 dBm Max +8.8 dBm. Receiver sensitivity OMA <span class="num">-24</span> dBm and minimum input power <span class="num">-26.0</span> dBm footnote <span class="num">6</span>); overload <span class="num">-5.0</span> dBm footnote <span class="num">6</span>). Title line includes <span class="num">27</span>dB (not mapped to rx_osnr_db in technical table). FEC shall be as defined in IEEE802.3bj; optical parameters yield BER <span class="num">5</span> x <span class="num">10</span>-5 without stating that FEC is active for that figure. Two temperature options offered; only E-temp <span class="num">-20</span>°C to <span class="num">85</span>°C is numerically specified for this product text. Ordering -E suffix denotes extended temperature variants. Footnotes <span class="num">1</span>) <span class="num">2</span>) <span class="num">5</span>) <span class="num">6</span>) bodies not included in excerpt."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "QSFP28 <span class="num">100</span>GE BiDi <span class="num">70</span>km QSFP28, BiDi, <span class="num">100</span>G Eth, <span class="num">4</span>LAN-WDM, SM, <span class="num">70</span>km, <span class="num">27</span>dB, LC",
+    "TQ2034-BXXY-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Distinguish tx_power vs OMA min/max in schema. Add power_budget_db for title <span class="num">27</span>dB. Separate rx_sensitivity_oma_dbm vs rx_sensitivity_average_dbm. Include footnote text when present for provenance."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">TQ2034-BXXY-SO</span> <span class="badge">TQ2034-BXXy-SO</span> <span class="badge">TQ2034-BWXC-SO</span> <span class="badge">TQ2034-BXWC-SO</span> <span class="badge">TQ2034-BWXE-SO</span> <span class="badge">TQ2034-BXWE-SO</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1274.0</span> <span class="badge">1278.0</span> <span class="badge">1282.0</span> <span class="badge">1287.0</span> <span class="badge">1296.0</span> <span class="badge">1300.0</span> <span class="badge">1305.0</span> <span class="badge">1309.0</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">IEEE802.3bj</span> <span class="badge">RS(528,514)</span> <span class="badge">100GE</span> <span class="badge">4LAN-WDM</span> <span class="badge">4WL</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-24.0</span> <span class="badge">-26.0</span></td></tr>
+<tr><td>fec_type</td><td><span class="badge">RS_528_514</span> <span class="badge">RS_GENERIC</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>QSFP28</td></tr>
+<tr><td>standards_claimed</td><td>QSFP28 MSA, SFF-8636</td></tr>
+<tr><td>wavelength_min_nm</td><td>1274.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>1309.0</td></tr>
+<tr><td>wavelength_band</td><td>LAN-WDM</td></tr>
+<tr><td>channel_total</td><td>4</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF, SMF_G652</td></tr>
+<tr><td>temp_min_c</td><td>-20.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>host_interface_name</td><td>QSFP28</td></tr>
+<tr><td>bit_rate_gbps</td><td>100.0</td></tr>
+<tr><td>reach_km</td><td>70.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>1.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>7.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-5.0</td></tr>
+<tr><td>pre_fec_ber_threshold</td><td>5e-05</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>extinction_ratio_db</td><td>8.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-40.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-26.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>8.0</td></tr>
+<tr><td>number_of_lanes</td><td>4</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5, 5.0</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>TQ2034-BXXy-SO is one half of a BiDi pair; TQ2034-BWXC-SO uses Tx wavelengths 1274/1278/1282/1287 nm and TQ2034-BXWy-SO uses 1296/1300/1305/1309 nm on a single fiber. Receiver wavelength rows list 1296/1300/1305/1309 nm for both footnotes 1) and 2) as printed. Output power per lane Min +1.0 dBm Max +7.0 dBm footnote 5); OMA output Min +3.0 dBm Max +8.8 dBm. Receiver sensitivity OMA -24 dBm and minimum input power -26.0 dBm footnote 6); overload -5.0 dBm footnote 6). Title line includes 27dB (not mapped to rx_osnr_db in technical table). FEC shall be as defined in IEEE802.3bj; optical parameters yield BER 5 x 10-5 without stating that FEC is active for that figure. Two temperature options offered; only E-temp -20°C to 85°C is numerically specified for this product text. Ordering -E suffix denotes extended temperature variants. Footnotes 1) 2) 5) 6) bodies not included in excerpt.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>QSFP28 100GE BiDi 70km QSFP28, BiDi, 100G Eth, 4LAN-WDM, SM, 70km, 27dB, LC, TQ2034-BXXY-SO, TECHNICAL DATA, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+<tr><td>suggestions</td><td>Distinguish tx_power vs OMA min/max in schema. Add power_budget_db for title 27dB. Separate rx_sensitivity_oma_dbm vs rx_sensitivity_average_dbm. Include footnote text when present for provenance.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_center_nm</th><th>standards_code</th><th>rx_sensitivity_dbm</th><th>fec_type</th></tr><tr><td><strong>BiDi 100G 4LAN-WDM 70km (family)</strong></td><td>TQ2034-BXXY-SO</td><td>1274.0</td><td>4LAN-WDM</td><td>-24.0</td><td>RS_528_514</td></tr><tr><td><strong>BiDi 100G upper-wavelength unit (family)</strong></td><td>TQ2034-BXXy-SO</td><td>1296.0</td><td>4LAN-WDM</td><td>-24.0</td><td>RS_528_514</td></tr><tr><td><strong>BiDi 100G 4WL Tx lower band 70km</strong></td><td>TQ2034-BWXC-SO</td><td>1282.0</td><td>4LAN-WDM</td><td>-24.0</td><td>RS_528_514</td></tr><tr><td><strong>BiDi 100G 4WL Tx upper band 70km</strong></td><td>TQ2034-BXWC-SO</td><td>1305.0</td><td>4LAN-WDM</td><td>-24.0</td><td>RS_528_514</td></tr><tr><td><strong>BiDi 100G 4WL Tx lower band 70km E-temp</strong></td><td>TQ2034-BWXE-SO</td><td>1282.0</td><td>4LAN-WDM</td><td>-24.0</td><td>RS_528_514</td></tr><tr><td><strong>BiDi 100G 4WL Tx upper band 70km E-temp</strong></td><td>TQ2034-BXWE-SO</td><td>1305.0</td><td>4LAN-WDM</td><td>-24.0</td><td>RS_528_514</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 16:50
+</footer>
+
+</div>
+</body>
+</html>

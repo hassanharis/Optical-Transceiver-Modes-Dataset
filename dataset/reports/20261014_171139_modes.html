@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Cisco</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Cisco</div>
+  <div class="subtitle">QSFP-DD &middot; C-band</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Cisco</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">QSFP-DD</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">OIF MSA, OpenZR+ MSA, OpenROADM</div></div>
+      <div class="spec-item"><div class="label">Wavelength Band</div><div class="value">C-band</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">15.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">75.0</div></div>
+      <div class="spec-item"><div class="label">Reach (km)</div><div class="value">120.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">13.0</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">The transmitter power values include typical and worst-case values with and without TX shaping as printed under Max Transmit Power. Symbol rates printed as raw baud counts were not converted to GBaud; only explicitly stated approximate GBaud values were extracted. Extended RX sensitivity values are specified at a 1dB OSNR penalty, but no supported penalty object was created because an operating condition from the schema&#x27;s condition enumeration was not stated. Multichannel OSNR penalties are stated for adjacent-channel spacing or crosstalk conditions, which are not available condition parameters in the penalty schema. The normal operating case temperature is 15 to +75°C. +80°C is a short-term operating case temperature, and -5°C is only the minimum ambient cold-start temperature.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">Data sheet Cisco public, Product overview, QDD ZR overview, QDD ZR Plus overview, Features and benefits, Flexible modulation, Specification, Transmitter specifications, Rx parameter specifications, Rx Optical Polarization specifications, Rx Multichannel Interaction specifications, Physical, Ordering information</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Add fields for exact symbol rate in baud, typical versus worst-case transmitter power, TX-shaping state, extended RX sensitivity at OSNR penalty, state-of-polarization change rate, multichannel crosstalk tolerance, adjacent-channel spacing conditions, short-term temperature limits, and per-model/per-modulation parameter association.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Channel Spacing (GHz)</th><th>Host Interface</th><th>frame</th><th>Standards code</th><th>Baud Rate (GBaud)</th><th>Bit Rate (Gbps)</th><th>modulation_format</th><th>TX Power Max (dBm)</th><th>tx_in_band_osnr_db</th><th>tx_out_of_band_osnr_db</th><th>RX Sensitivity (dBm)</th><th>RX OSNR (dB)</th><th>CD Tolerance (ps/nm)</th><th>pmd_tolerance_ps</th><th>fec_type</th></tr>
+      <tr><td><strong>ZR 400G 16-QAM</strong></td><td>QDD-400G-ZR-S</td><td>75.0</td><td><span class="badge">400GE</span> <span class="badge">4x 100GE</span></td><td><span class="badge">400GE</span> <span class="badge">4x100GE</span></td><td><span class="badge">400ZR</span> <span class="badge">400G-ZR</span></td><td>60.0</td><td>400.0</td><td>QAM_16</td><td><span class="badge">-8.5</span> <span class="badge">-10.0</span></td><td>34.0</td><td>30.0</td><td><span class="badge">-12.0</span> <span class="badge">-15.0</span> <span class="badge">-20.0</span></td><td>26.0</td><td>2400.0</td><td>33.0</td><td>CFEC</td></tr>
+      <tr><td><strong>ZR+ 400G 16-QAM unshaped</strong></td><td>QDD-400G-ZRP-S</td><td>75.0</td><td>400GbE</td><td>400GE</td><td><span class="badge">OpenZR+</span> <span class="badge">400G-ZR+</span></td><td>60.0</td><td>400.0</td><td>QAM_16</td><td><span class="badge">-8.0</span> <span class="badge">-10.0</span></td><td>42.0</td><td>42.0</td><td><span class="badge">-12.0</span> <span class="badge">-16.0</span> <span class="badge">-20.0</span></td><td>23.7</td><td><span class="badge">13000.0</span> <span class="badge">52000.0</span></td><td>60.0</td><td>OFEC</td></tr>
+      <tr><td><strong>ZR+ 400G 16-QAM shaped</strong></td><td>QDD-400G-ZRP-S</td><td>75.0</td><td>400GbE</td><td>400GE</td><td><span class="badge">OpenZR+</span> <span class="badge">400G-ZR+</span></td><td>60.0</td><td>400.0</td><td>QAM_16</td><td><span class="badge">-11.0</span> <span class="badge">-13.0</span></td><td>42.0</td><td>42.0</td><td><span class="badge">-12.0</span> <span class="badge">-16.0</span> <span class="badge">-21.0</span></td><td>23.1</td><td><span class="badge">13000.0</span> <span class="badge">52000.0</span></td><td>60.0</td><td>OFEC</td></tr>
+      <tr><td><strong>ZR+ 300G 8-QAM unshaped</strong></td><td>QDD-400G-ZRP-S</td><td>75.0</td><td>300GbE</td><td>3x100GE</td><td><span class="badge">OpenZR+</span> <span class="badge">400G-ZR+</span></td><td>60.0</td><td>300.0</td><td>QAM_8</td><td><span class="badge">-8.6</span> <span class="badge">-10.2</span></td><td>42.0</td><td>42.0</td><td><span class="badge">-15.0</span> <span class="badge">-19.0</span> <span class="badge">-22.0</span></td><td>20.8</td><td><span class="badge">26000.0</span> <span class="badge">100000.0</span></td><td>60.0</td><td>OFEC</td></tr>
+      <tr><td><strong>ZR+ 300G 8-QAM shaped</strong></td><td>QDD-400G-ZRP-S</td><td>75.0</td><td>300GbE</td><td>3x100GE</td><td><span class="badge">OpenZR+</span> <span class="badge">400G-ZR+</span></td><td>60.0</td><td>300.0</td><td>QAM_8</td><td><span class="badge">-10.4</span> <span class="badge">-11.9</span></td><td>42.0</td><td>42.0</td><td><span class="badge">-15.0</span> <span class="badge">-19.0</span> <span class="badge">-23.0</span></td><td>19.5</td><td><span class="badge">26000.0</span> <span class="badge">100000.0</span></td><td>60.0</td><td>OFEC</td></tr>
+      <tr><td><strong>ZR+ 200G QPSK unshaped</strong></td><td>QDD-400G-ZRP-S</td><td>75.0</td><td>200GbE</td><td>2x100GE</td><td><span class="badge">OpenZR+</span> <span class="badge">400G-ZR+</span></td><td>60.0</td><td>200.0</td><td>QPSK</td><td><span class="badge">-6.2</span> <span class="badge">-7.7</span></td><td>42.0</td><td>42.0</td><td><span class="badge">-18.0</span> <span class="badge">-22.0</span> <span class="badge">-28.0</span></td><td>15.3</td><td><span class="badge">50000.0</span> <span class="badge">100000.0</span></td><td>60.0</td><td>OFEC</td></tr>
+      <tr><td><strong>ZR+ 200G QPSK shaped</strong></td><td>QDD-400G-ZRP-S</td><td>75.0</td><td>200GbE</td><td>2x100GE</td><td><span class="badge">OpenZR+</span> <span class="badge">400G-ZR+</span></td><td>60.0</td><td>200.0</td><td>QPSK</td><td><span class="badge">-9.0</span> <span class="badge">-10.5</span></td><td>42.0</td><td>42.0</td><td><span class="badge">-18.0</span> <span class="badge">-22.0</span> <span class="badge">-28.0</span></td><td>15.0</td><td><span class="badge">50000.0</span> <span class="badge">100000.0</span></td><td>60.0</td><td>OFEC</td></tr>
+      <tr><td><strong>ZR+ 200G 8-QAM shaped</strong></td><td>QDD-400G-ZRP-S</td><td>50.0</td><td>200GbE</td><td>2x100GE</td><td><span class="badge">OpenZR+</span> <span class="badge">400G-ZR+</span></td><td>40.0</td><td>200.0</td><td>QAM_8</td><td><span class="badge">-9.0</span> <span class="badge">-11.0</span></td><td>42.0</td><td>42.0</td><td><span class="badge">-16.0</span> <span class="badge">-20.0</span> <span class="badge">-28.0</span></td><td>17.4</td><td><span class="badge">26000.0</span> <span class="badge">100000.0</span></td><td>60.0</td><td>OFEC</td></tr>
+      <tr><td><strong>ZR+ 200G 16-QAM shaped</strong></td><td>QDD-400G-ZRP-S</td><td>50.0</td><td>200GbE</td><td>2x100GE</td><td><span class="badge">OpenZR+</span> <span class="badge">400G-ZR+</span></td><td>30.0</td><td>200.0</td><td>QAM_16</td><td><span class="badge">-8.0</span> <span class="badge">-10.0</span></td><td>42.0</td><td>42.0</td><td><span class="badge">-15.0</span> <span class="badge">-20.0</span> <span class="badge">-24.0</span></td><td>19.3</td><td><span class="badge">21000.0</span> <span class="badge">85000.0</span></td><td>60.0</td><td>OFEC</td></tr>
+      <tr><td><strong>ZR+ 100G QPSK unshaped</strong></td><td>QDD-400G-ZRP-S</td><td>37.5</td><td>100GbE</td><td></td><td><span class="badge">OpenZR+</span> <span class="badge">400G-ZR+</span></td><td>30.0</td><td>100.0</td><td>QPSK</td><td><span class="badge">-5.9</span> <span class="badge">-7.5</span></td><td>42.0</td><td>42.0</td><td><span class="badge">-20.0</span> <span class="badge">-25.0</span> <span class="badge">-28.0</span></td><td>11.8</td><td><span class="badge">80000.0</span> <span class="badge">160000.0</span></td><td>80.0</td><td>OFEC</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">QDD-400G-ZR-S</span> <span class="badge">QDD-400G-ZRP-S</span></td></tr>
+      <tr><td>channel_spacing_ghz</td><td><span class="badge">75.0</span> <span class="badge">50.0</span> <span class="badge">37.5</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">400GE</span> <span class="badge">4x 100GE</span> <span class="badge">100GbE</span> <span class="badge">200GbE</span> <span class="badge">300GbE</span> <span class="badge">400GbE</span></td></tr>
+      <tr><td>frame</td><td><span class="badge">400GE</span> <span class="badge">4x100GE</span> <span class="badge">3x100GE</span> <span class="badge">2x100GE</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">400ZR</span> <span class="badge">OpenZR+</span> <span class="badge">OpenROADM</span> <span class="badge">400G-ZR</span> <span class="badge">400G-ZR+</span></td></tr>
+      <tr><td>baud_rate_gbaud</td><td><span class="badge">60.0</span> <span class="badge">30.0</span> <span class="badge">40.0</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">100.0</span> <span class="badge">200.0</span> <span class="badge">300.0</span> <span class="badge">400.0</span></td></tr>
+      <tr><td>modulation_format</td><td><span class="badge">QPSK</span> <span class="badge">QAM_8</span> <span class="badge">QAM_16</span></td></tr>
+      <tr><td>tx_power_max_dbm</td><td><span class="badge">-8.5</span> <span class="badge">-10.0</span> <span class="badge">-8.0</span> <span class="badge">-10.0</span> <span class="badge">-11.0</span> <span class="badge">-13.0</span> <span class="badge">-8.6</span> <span class="badge">-10.2</span> <span class="badge">-10.4</span> <span class="badge">-11.9</span> <span class="badge">-6.2</span> <span class="badge">-7.7</span> <span class="badge">-9.0</span> <span class="badge">-10.5</span> <span class="badge">-11.0</span> <span class="badge">-5.9</span> <span class="badge">-7.5</span></td></tr>
+      <tr><td>tx_in_band_osnr_db</td><td><span class="badge">34.0</span> <span class="badge">42.0</span></td></tr>
+      <tr><td>tx_out_of_band_osnr_db</td><td><span class="badge">30.0</span> <span class="badge">42.0</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-12.0</span> <span class="badge">-15.0</span> <span class="badge">-20.0</span> <span class="badge">-16.0</span> <span class="badge">-21.0</span> <span class="badge">-19.0</span> <span class="badge">-22.0</span> <span class="badge">-23.0</span> <span class="badge">-18.0</span> <span class="badge">-28.0</span> <span class="badge">-24.0</span> <span class="badge">-25.0</span></td></tr>
+      <tr><td>rx_osnr_db</td><td><span class="badge">26.0</span> <span class="badge">23.7</span> <span class="badge">23.1</span> <span class="badge">20.8</span> <span class="badge">19.5</span> <span class="badge">15.3</span> <span class="badge">15.0</span> <span class="badge">17.4</span> <span class="badge">19.3</span> <span class="badge">11.8</span></td></tr>
+      <tr><td>cd_tolerance_ps_nm</td><td><span class="badge">2400.0</span> <span class="badge">13000.0</span> <span class="badge">52000.0</span> <span class="badge">26000.0</span> <span class="badge">100000.0</span> <span class="badge">50000.0</span> <span class="badge">21000.0</span> <span class="badge">85000.0</span> <span class="badge">80000.0</span> <span class="badge">160000.0</span></td></tr>
+      <tr><td>pmd_tolerance_ps</td><td><span class="badge">33.0</span> <span class="badge">60.0</span> <span class="badge">80.0</span></td></tr>
+      <tr><td>fec_type</td><td><span class="badge">CFEC</span> <span class="badge">OFEC</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/gpt-5.6-sol &middot; Run 2026-10-14 17:11
+</footer>
+
+</div>
+</body>
+</html>

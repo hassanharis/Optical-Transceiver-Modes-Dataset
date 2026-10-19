@@ -1,0 +1,193 @@
+{
+  "vendor": "Amphenol",
+  "model": [
+    "XP85PG1-02D"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "Fibre Channel FC-PI-7",
+    "Fibre Channel FC-PI-6",
+    "Fibre Channel FC-PI-5",
+    "SFF-8431 Low Speed Electrical Interface",
+    "SFF-8472 Management Interface",
+    "SFF-8432",
+    "SFF-8083",
+    "SFF-8081",
+    "SFF-8402 Mechanical Specifications",
+    "RoHS Compliant",
+    "SFP MSA"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "SFF-8431"
+  ],
+  "host_interface_id_hex": [
+    "03h"
+  ],
+  "host_interface_id": [
+    3
+  ],
+  "media_interface_name": [
+    "Fibre Channel -S",
+    "64GFC SW",
+    "Fibre Channel Shortwave laser w/o OFC(SN)",
+    "Fibre Channel M5, M5E"
+  ],
+  "media_interface_id_hex": [
+    "07h",
+    "51h"
+  ],
+  "media_interface_id": [
+    7
+  ],
+  "frame": null,
+  "standards_code": [
+    "FC-PI-7",
+    "FC-PI-6",
+    "FC-PI-5",
+    "64GFC",
+    "32GFC",
+    "16GFC",
+    "SFF-8472 Rev 12.3"
+  ],
+  "baud_rate_gbaud": [
+    28.9,
+    28.05,
+    14.025
+  ],
+  "bit_rate_gbps": null,
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4",
+    "NRZ"
+  ],
+  "reach_km": [
+    0.02,
+    0.035,
+    0.07,
+    0.1,
+    0.125
+  ],
+  "tx_power_min_dbm": [
+    -7.8,
+    -7.5,
+    -6.2,
+    -5.9,
+    -4.5
+  ],
+  "tx_power_max_dbm": [
+    -1.3,
+    2,
+    3,
+    4
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -10.5,
+    -10.2,
+    -7.7,
+    -7,
+    -5.8,
+    -2.4
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    0,
+    2,
+    3.5,
+    4
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-10,
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3
+  ],
+  "los_assert_dbm": [
+    -17
+  ],
+  "los_deassert_dbm": [
+    -13
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3
+  ],
+  "optical_return_loss_tolerance_db": [
+    12
+  ],
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": [
+    34
+  ],
+  "penalties": [],
+  "notes": "Ordering and features cite up to 100 m on multi-mode fiber; II. Recommended Operating Conditions lists reach in meters by rate and fiber grade (OM2/OM3/OM4/OM5). 64GFC BER 10^-10 with PRBS31Q; 32GFC/16GFC BER 10^-12 with PRBS31. Power dissipation stated as < 1.5 W; SFF-8431 Power Level 2/3 allows 1.5 W or 2 W max per A0h byte 118. Product features spell VSCEL; optical section implies VCSEL shortwave laser. Return loss of receiver 12 dB (min) across 64G/32G/16G tables. Tx optical power monitor not supported per VI. Reach_km converted from stated meter values (20, 35, 70, 100, 125 m).",
+  "provenance_datasheet_sections": [
+    "XP85PG1-02D",
+    "SFP64G Fibre Channel 850nm Transceiver",
+    "PRODUCT FEATURES",
+    "STANDARDS",
+    "ORDERING INFORMATION",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "64GFC Optical Parameters",
+    "32GFC Optical Parameters",
+    "16GFC Optical Parameters",
+    "IV. Electrical Characteristics",
+    "VI. Management Interface and Digital Diagnostic Functions",
+    "Rate Select",
+    "A0h Memory Map",
+    "A2h Memory Map"
+  ],
+  "suggestions": "Add explicit SFP to form_factor enum. Distinguish post_fec_ber_target from generic BER test requirements (FC PI BER vs FEC). Map return loss (dB min) to receiver_reflectance_db or a dedicated return_loss_db field. Allow reach in meters or a reach_m field to avoid unit conversion."
+}

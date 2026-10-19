@@ -1,0 +1,126 @@
+{
+  "multi_valued": {
+    "model": [
+      "LxK-LT12xx",
+      "LNK-LT12H",
+      "LNK-LT12M",
+      "LNK-LT12HB",
+      "LNK-LT12MB",
+      "LTK-LT12H",
+      "LTK-LT12M",
+      "LTK-LT12HB",
+      "LTK-LT12MB",
+      "LNK-LT12H-R6",
+      "LNK-LT12M-R6",
+      "LNK-LT12HB-R6",
+      "LNK-LT12MB-R6",
+      "LTK-LT12H-R6",
+      "LTK-LT12M-R6",
+      "LTK-LT12HB-R6",
+      "LTK-LT12MB-R6"
+    ],
+    "wavelength_min_nm": [
+      1285.0,
+      1270.0
+    ],
+    "wavelength_max_nm": [
+      1343.0,
+      1355.0
+    ],
+    "host_interface_name": [
+      "LVPECL",
+      "CML"
+    ],
+    "standards_code": [
+      "IEEE 802.3",
+      "Gigabit Ethernet",
+      "ANSI X3.297",
+      "Fibre Channel"
+    ]
+  },
+  "general": {
+    "vendor": "Stratos",
+    "form_factor": [
+      "Low Rider RJ"
+    ],
+    "standards_claimed": [
+      "IEEE 802.3",
+      "ANSI X3.297"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "mounting_type": [
+      "solder_post",
+      "screw_post"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "bit_rate_gbps": [
+      1.25
+    ],
+    "modulation_format": [
+      "NRZ"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -9.5
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -20.0
+    ],
+    "rx_overload_dbm": [
+      0.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -20.0
+    ],
+    "optical_extinction_ratio_db": [
+      9.0
+    ],
+    "optical_return_loss_tolerance_db": [
+      12.0
+    ],
+    "los_hysteresis_db": [
+      1.5,
+      2.25,
+      3.5
+    ],
+    "total_jitter_ps": [
+      80.0,
+      153.0
+    ],
+    "penalties": [],
+    "notes": "Minimum TX optical power can be factory-set higher (e.g. -6 dBm). BER=1E-12 @ 1.25 Gbps, PRBS7, NRZ for TX/RX optical specs; RX sensitivity also requires TX signal ER > 8 dB. RX outputs squelched when Signal Detect de-asserted. Supply Vcc 3.135–3.465 V (nominal 3.3 V); max supply current Icc 300 mA (general). Storage temperature -55 to +100 °C. Spectral width ΔλRMS 4 nm (TX). Link distance 10 km is typical with standard fiber and nominal connector losses. Family datasheet also describes LED, VCSEL, DFB on other part numbers; this variant is 1310 nm FP singlemode.",
+    "provenance_datasheet_sections": [
+      "Features & Benefits",
+      "General Specification",
+      "Link Distances",
+      "LxK-LT12xx (1.25 Gbps, Gigabit Ethernet, 1310 nm singlemode)",
+      "Pin-Out Signal Definition",
+      "RoHS Compliance",
+      "Low Rider Family Part Numbering, Footprint Compatible",
+      "Table B — Singlemode Base Part Selection Guide"
+    ]
+  }
+}

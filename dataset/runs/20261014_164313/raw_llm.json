@@ -1,0 +1,190 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-XFP-ZR-Dxxxx",
+    "SO-XFP-ZR-D9180",
+    "SO-XFP-ZR-D9190",
+    "SO-XFP-ZR-D9200",
+    "SO-XFP-ZR-D9210",
+    "SO-XFP-ZR-D9220",
+    "SO-XFP-ZR-D9230",
+    "SO-XFP-ZR-D9240",
+    "SO-XFP-ZR-D9250",
+    "SO-XFP-ZR-D9260",
+    "SO-XFP-ZR-D9270",
+    "SO-XFP-ZR-D9280",
+    "SO-XFP-ZR-D9290",
+    "SO-XFP-ZR-D9300",
+    "SO-XFP-ZR-D9310",
+    "SO-XFP-ZR-D9320",
+    "SO-XFP-ZR-D9330",
+    "SO-XFP-ZR-D9340",
+    "SO-XFP-ZR-D9350",
+    "SO-XFP-ZR-D9360",
+    "SO-XFP-ZR-D9370",
+    "SO-XFP-ZR-D9380",
+    "SO-XFP-ZR-D9390",
+    "SO-XFP-ZR-D9400",
+    "SO-XFP-ZR-D9410",
+    "SO-XFP-ZR-D9420",
+    "SO-XFP-ZR-D9430",
+    "SO-XFP-ZR-D9440",
+    "SO-XFP-ZR-D9450",
+    "SO-XFP-ZR-D9460",
+    "SO-XFP-ZR-D9470",
+    "SO-XFP-ZR-D9480",
+    "SO-XFP-ZR-D9490",
+    "SO-XFP-ZR-D9500",
+    "SO-XFP-ZR-D9510",
+    "SO-XFP-ZR-D9520",
+    "SO-XFP-ZR-D9530",
+    "SO-XFP-ZR-D9540",
+    "SO-XFP-ZR-D9550",
+    "SO-XFP-ZR-D9560",
+    "SO-XFP-ZR-D9570",
+    "SO-XFP-ZR-D9580",
+    "SO-XFP-ZR-D9590",
+    "SO-XFP-ZR-D9600",
+    "SO-XFP-ZR-D9610"
+  ],
+  "form_factor": [
+    "XFP"
+  ],
+  "standards_claimed": [
+    "INF-8077i",
+    "XFP-MSA",
+    "ITU-T G.694.1"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1520.0,
+    1528.77
+  ],
+  "wavelength_max_nm": [
+    1563.05,
+    1600.0
+  ],
+  "wavelength_center_nm": [],
+  "wavelength_band": [
+    "C-band",
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    191.8
+  ],
+  "frequency_max_thz": [
+    196.1
+  ],
+  "channel_spacing_ghz": [
+    100.0
+  ],
+  "channel_total": [
+    44
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    2.0
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "10GBASE-ZR",
+    "10GBASE-ZW",
+    "1200-SM-LL-L",
+    "P1L1-2D2",
+    "G.959.1",
+    "10GbE-LAN",
+    "10GbE-WAN",
+    "OTU2",
+    "OTU2e",
+    "STM-64",
+    "OC192",
+    "10G FC",
+    "CPRI Opt, 8",
+    "G.694.1"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    9.95,
+    11.1,
+    11.3,
+    10.7
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -23.0
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -10.0
+  ],
+  "cd_tolerance_ps_nm": [
+    1600.0
+  ],
+  "pdl_db": [
+    2.0
+  ],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -38.0
+  ],
+  "los_deassert_dbm": [
+    -26.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Transmitter output power min/max and receiver min/overload are average power (footnote 1). Receiver minimum input power and overload measured at 10.7Gbps, BER 1x10-12, PRBS 231-1 (footnote 2). Storage temperature -40°C to +85°C stated separately from operating 0°C to +70°C. Power budget between transmitter and receiver stated as 14–23dB without optical path penalties. Product title includes 24dB (not defined as a labeled parameter in TECHNICAL DATA). 10GBASE-ZR/ZW is defined only at 1550nm; bridgeable distance up to 80km for other DWDM wavelengths per industry standard reference. RoHS-6/6 compliant.",
+  "provenance_datasheet_sections": [
+    "SO-XFP-ZR-Dxxxx",
+    "XFP, 10G Multirate, DWDM, 100GHz, DDM, 24dB, 80km, D9180-D9610 (44ch)",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether headline 24dB is OSNR, margin, or link budget. Explicit rx_osnr and emitter/detector types would improve schema fill. Host/media MSA interface IDs not in this datasheet."
+}

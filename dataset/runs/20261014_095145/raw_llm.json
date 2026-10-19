@@ -1,0 +1,254 @@
+{
+  "vendor": "NADDOD",
+  "model": null,
+  "form_factor": [
+    "QSFP-DD"
+  ],
+  "standards_claimed": [
+    "QSFP-DD MSA",
+    "Open ZR+ MSA",
+    "OIF 400ZR MSA",
+    "OIF-CMIS-05.2",
+    "IA OIF-C-CMIS-01.2",
+    "QSFP-DD-Hardware-Rev6.3",
+    "IEEE Std 802.3-2018"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": [
+    "C-band"
+  ],
+  "frequency_min_thz": [
+    191.3
+  ],
+  "frequency_max_thz": [
+    196.1
+  ],
+  "channel_spacing_ghz": [
+    100.0,
+    75.0,
+    50.0,
+    3.125,
+    0.1
+  ],
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": null,
+  "temp_min_c": 0.0,
+  "temp_max_c": 75.0,
+  "power_consumption_w": [
+    21.0,
+    22.5,
+    22.0,
+    23.0
+  ],
+  "host_interface_name": [
+    "400GAUI-8",
+    "100GAUI-2",
+    "CAUI-4"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "ZR400-CFEC-16QAM",
+    "ZR400-OFEC-16QAM",
+    "ZR300-OFEC-8QAM",
+    "ZR200-OFEC-QPSK",
+    "ZR100-OFEC-QPSK",
+    "400ZR",
+    "400ZR+",
+    "300ZR+",
+    "200ZR+",
+    "100ZR+"
+  ],
+  "media_interface_id_hex": [
+    "3E",
+    "3F",
+    "46",
+    "47",
+    "48",
+    "49"
+  ],
+  "media_interface_id": [
+    62,
+    63,
+    70,
+    71,
+    72,
+    73
+  ],
+  "frame": [
+    "1 x 400GAUI-8",
+    "4 x 100GAUI-2",
+    "3 x 100GAUI-2",
+    "2 x 100GAUI-2",
+    "2 x CAUI-4",
+    "1 x 100GAUI-2",
+    "1 x CAUI-4"
+  ],
+  "standards_code": [
+    "Open ZR+",
+    "OIF 400ZR",
+    "400ZR",
+    "400ZR+",
+    "300ZR+",
+    "200ZR+",
+    "100ZR+",
+    "OIF 400ZR app code 0x01",
+    "OIF 400ZR app code 0x02",
+    "SFF-8024"
+  ],
+  "baud_rate_gbaud": [
+    59.84375,
+    60.138546798,
+    30.069273399
+  ],
+  "bit_rate_gbps": [
+    100.0,
+    200.0,
+    300.0,
+    400.0
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "QAM_16-DP",
+    "QAM_8-DP",
+    "QPSK-DP",
+    "QAM_16",
+    "QAM_8",
+    "QPSK",
+    "PAM4",
+    "NRZ"
+  ],
+  "reach_km": [
+    120.0,
+    30.0,
+    40.0,
+    450.0,
+    600.0,
+    1000.0,
+    2000.0
+  ],
+  "tx_power_min_dbm": [
+    -10.0,
+    -9.0,
+    -8.0,
+    -13.0
+  ],
+  "tx_power_max_dbm": [
+    -6.0,
+    -5.0,
+    -4.0,
+    -9.0
+  ],
+  "tx_in_band_osnr_db": [
+    40.0
+  ],
+  "tx_out_of_band_osnr_db": [
+    35.0
+  ],
+  "rx_sensitivity_dbm": [
+    -20.0,
+    -22.0
+  ],
+  "rx_osnr_db": [
+    26.0,
+    24.0,
+    21.0,
+    16.0,
+    12.5
+  ],
+  "rx_osnr_tolerance_db_max": [
+    26.0,
+    24.0,
+    21.0,
+    16.0,
+    12.5
+  ],
+  "rx_overload_dbm": [
+    0.0,
+    10.0
+  ],
+  "cd_tolerance_ps_nm": [
+    2400.0,
+    20000.0,
+    40000.0,
+    50000.0,
+    100000.0
+  ],
+  "pdl_db": [
+    3.0,
+    3.5
+  ],
+  "pmd_tolerance_ps": [
+    33.0,
+    66.0,
+    83.0,
+    100.0
+  ],
+  "fec_type": [
+    "OFEC",
+    "CFEC"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    0.017,
+    0.02,
+    0.02
+  ],
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -30.0,
+    -28.0,
+    -26.0,
+    -24.0,
+    -32.0
+  ],
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": [
+    -20.0
+  ],
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": [
+    20.0
+  ],
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    1.0,
+    1.5,
+    2.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Duplex LC connector. Type 2B QSFP-DD package. Dimensions 18.35 mm x 93.26 mm x 8.50 mm. TX VOA inside with 4dB attenuation window. For OIF 400ZR app code 0x02 frequency fixed at 193.7THz and not configurable; transmit output power not configurable for 0x02. Transmission distance 400G OIF 400ZR app code 0x02 stated as 30~40 (unit km implied by other rows). Rx sensitivity -20 dBm at Inband OSNR ≥34dB for app code 0x02; -22 dBm 400ZR+ point to point. Input power range min -12 dBm (400G) with OSNR>26dB (400ZR) or OSNR>24dB (400ZR+). OSNR Tolerance 400ZR+ measured back-to-back with short optical channel. CD tolerance 400ZR: ≤0.5 dB penalty to OSNR sensitivity when change in SOP ≤1rad/ms. DGD 400ZR: OSNR penalty＜0.5dB. Peak PDL ≤1.3dB or ≤1.8dB additional OSNR penalty per table notes. Tolerance to change in SOP 50 krad/s with ≤0.5 dB additional OSNR penalty. 200G/100G CAUI-4 modes Note2: not tested in standard PN. Power Note1: 4×100GbE typical 22W max 23W. CFEC NCG 10.8dB; OFEC NCG 11.6dB theoretical max pre-FEC BER 2.0E-2.",
+  "provenance_datasheet_sections": [
+    "400Gb/sQSFP-DDZR+CoherentOpticalTransceiver",
+    "Features",
+    "Applications",
+    "Compliance",
+    "Description",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Optical, Electrical Characteristic",
+    "- Receiver Operating Characteristic Optical",
+    "Operating Characteristic-Electrical highspeed",
+    "Digital Diagnostic Functions",
+    "Control and Status I/O Timing Characteristics",
+    "EEPROM Information"
+  ],
+  "suggestions": "Datasheet does not state orderable part number, explicit SMF/MMF, or wavelength in nm. Penalty rows cite dB magnitudes without paired penalized numeric thresholds in @column form; consider manual review for dispersion/PDL OSNR penalty objects. Clarify whether 30~40 reach uses km."
+}

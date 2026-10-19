@@ -1,0 +1,14 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-1000Base-TR commercial temp",
+      "model": "SO-SFP-1000Base-TR",
+      "standards_code": "1000BASE-T"
+    },
+    {
+      "label": "SO-SFP-1000Base-TR-I industrial temp",
+      "model": "SO-SFP-1000Base-TR-I",
+      "standards_code": "1000BASE-T"
+    }
+  ]
+}

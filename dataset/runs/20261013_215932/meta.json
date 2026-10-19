@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:59:32.688360+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tqd013-tunc-so-high-power-400g-zrp-qdd-cmis5p0-r6.11.pdf",
+  "page_count": 4,
+  "table_count": 6,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 7.26,
+    "extract_atoms": 48.74,
+    "store_run": 0.009,
+    "synthesize_modes": 76.216,
+    "store_modes": 0.011,
+    "total": 132.235
+  }
+}

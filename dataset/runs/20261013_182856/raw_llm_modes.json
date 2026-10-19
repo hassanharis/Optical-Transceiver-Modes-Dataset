@@ -1,0 +1,10 @@
+{
+  "modes": [
+    {
+      "label": "QT-SFP-10G-T 10GBASE-T SFP+ 30m",
+      "host_interface_name": "SFP+",
+      "standards_code": "10GBASE-T",
+      "bit_rate_gbps": 10.125
+    }
+  ]
+}

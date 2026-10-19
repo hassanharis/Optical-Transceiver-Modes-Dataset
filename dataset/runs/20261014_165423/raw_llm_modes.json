@@ -1,0 +1,555 @@
+{
+  "modes": [
+    {
+      "label": "OIF 400ZR 400G CFEC app 0x01 (amplified)",
+      "power_consumption_w": 17.5,
+      "host_interface_name": "400GBASE-R",
+      "media_interface_name": "OIF 400ZR",
+      "media_interface_id_hex": "0x3E",
+      "media_interface_id": 62,
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OIF 400ZR, app code 0x01",
+      "baud_rate_gbaud": 59.8,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "fec_type": "CFEC",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "OIF 400ZR 400G CFEC app 0x02 (unamplified)",
+      "power_consumption_w": 17.5,
+      "host_interface_name": "400GBASE-R",
+      "media_interface_name": "OIF 400ZR",
+      "media_interface_id_hex": "0x3F",
+      "media_interface_id": 63,
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OIF 400ZR, app code 0x02",
+      "baud_rate_gbaud": 59.8,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "fec_type": "CFEC",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "OIF 400ZR 400G CFEC 4×100G",
+      "power_consumption_w": 17.5,
+      "host_interface_name": "100GBASE-R",
+      "media_interface_name": "OIF 400ZR",
+      "media_interface_id_hex": "0x3E",
+      "media_interface_id": 62,
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "OIF 400ZR, app code 0x01",
+      "baud_rate_gbaud": 59.8,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "fec_type": "CFEC",
+      "number_of_lanes": 4
+    },
+    {
+      "label": "OpenZR+ 400G oFEC small PMD",
+      "power_consumption_w": 20.3,
+      "host_interface_name": "400GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "media_interface_id_hex": "0xC5",
+      "media_interface_id": 197,
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OpenZR+ MSA, (small PMD)",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "tx_power_min_dbm": -10.0,
+      "tx_power_max_dbm": -6.0,
+      "rx_sensitivity_dbm": -20.0,
+      "rx_osnr_db": 23.9,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 24.2,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=4"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.7,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=4"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ 400G oFEC 400GAUI-8",
+      "power_consumption_w": 20.6,
+      "host_interface_name": "400GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "media_interface_id_hex": "0xC0",
+      "media_interface_id": 192,
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "tx_power_min_dbm": -13.0,
+      "tx_power_max_dbm": -9.0,
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.4,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.9,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=5"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.4,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=5"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ 400G oFEC 4×100GAUI-2",
+      "power_consumption_w": 20.6,
+      "host_interface_name": "100GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "media_interface_id_hex": "0xC0",
+      "media_interface_id": 192,
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "tx_power_min_dbm": -13.0,
+      "tx_power_max_dbm": -9.0,
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.4,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 4,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.9,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=6"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.4,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=6"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ 300G oFEC 3×100GAUI-2",
+      "power_consumption_w": 20.8,
+      "host_interface_name": "100GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "media_interface_id_hex": "0xC1",
+      "media_interface_id": 193,
+      "frame": "3x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_8-DP",
+      "tx_power_min_dbm": -12.0,
+      "tx_power_max_dbm": -8.0,
+      "rx_sensitivity_dbm": -22.0,
+      "rx_osnr_db": 20.3,
+      "cd_tolerance_ps_nm": 26000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 4,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 20.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -17.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=7"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 21.3,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -19.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=7"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ 400G oFEC Enhanced mode1 400GAUI-8",
+      "power_consumption_w": 20.6,
+      "host_interface_name": "400GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "media_interface_id_hex": "0xCE",
+      "media_interface_id": 206,
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OpenZR+ MSA, Enhanced mode1",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "tx_power_min_dbm": -13.0,
+      "tx_power_max_dbm": -9.0,
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.1,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.6,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=8"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.1,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=8"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ 400G oFEC Enhanced mode1 4×100GAUI-2",
+      "power_consumption_w": 20.6,
+      "host_interface_name": "100GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "media_interface_id_hex": "0xCE",
+      "media_interface_id": 206,
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA, Enhanced mode1",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "tx_power_min_dbm": -13.0,
+      "tx_power_max_dbm": -9.0,
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.1,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 4,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.6,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=9"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.1,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=9"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ 300G oFEC Enhanced mode1 3×100GAUI-2",
+      "power_consumption_w": 20.8,
+      "host_interface_name": "100GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "media_interface_id_hex": "0xCF",
+      "media_interface_id": 207,
+      "frame": "3x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA, Enhanced mode1",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_8-DP",
+      "tx_power_min_dbm": -12.0,
+      "tx_power_max_dbm": -8.0,
+      "rx_sensitivity_dbm": -23.0,
+      "rx_osnr_db": 19.5,
+      "cd_tolerance_ps_nm": 26000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 4,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 20.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -17.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=10"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 20.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -19.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=10"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ 200G oFEC 2×100GAUI-2",
+      "power_consumption_w": 19.6,
+      "host_interface_name": "100GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "media_interface_id_hex": "0xC2",
+      "media_interface_id": 194,
+      "frame": "2x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QPSK-DP",
+      "tx_power_min_dbm": -10.5,
+      "tx_power_max_dbm": -6.5,
+      "rx_sensitivity_dbm": -29.0,
+      "rx_osnr_db": 15.0,
+      "cd_tolerance_ps_nm": 50000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 15.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -20.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=11"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -22.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=11"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ 200G oFEC 2×CAUI4 w/o FEC",
+      "power_consumption_w": 19.6,
+      "host_interface_name": "CAUI4",
+      "media_interface_name": "OpenZR+ MSA",
+      "media_interface_id_hex": "0xC2",
+      "media_interface_id": 194,
+      "frame": "2 x CAUI4 (4x 25G) w/o FEC",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 60.1,
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QPSK-DP",
+      "tx_power_min_dbm": -10.5,
+      "tx_power_max_dbm": -6.5,
+      "rx_sensitivity_dbm": -29.0,
+      "rx_osnr_db": 15.0,
+      "cd_tolerance_ps_nm": 50000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 15.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -20.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=12"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -22.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=12"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ 100G oFEC 100GAUI-2",
+      "power_consumption_w": 16.7,
+      "host_interface_name": "100GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "media_interface_id_hex": "0xC4",
+      "media_interface_id": 196,
+      "frame": "1x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 30.1,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QPSK-DP",
+      "tx_power_min_dbm": -6.0,
+      "tx_power_max_dbm": -2.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_osnr_db": 11.8,
+      "cd_tolerance_ps_nm": 80000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 12.3,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=13"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 12.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=13"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ 100G oFEC CAUI4 w/o FEC",
+      "power_consumption_w": 16.7,
+      "host_interface_name": "CAUI4",
+      "media_interface_name": "OpenZR+ MSA",
+      "media_interface_id_hex": "0xC4",
+      "media_interface_id": 196,
+      "frame": "1 x CAUI4 (4x 25G) w/o FEC",
+      "standards_code": "OpenZR+ MSA",
+      "baud_rate_gbaud": 30.1,
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QPSK-DP",
+      "tx_power_min_dbm": -6.0,
+      "tx_power_max_dbm": -2.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_osnr_db": 11.8,
+      "cd_tolerance_ps_nm": 80000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 12.3,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=14"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 12.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=14"
+        }
+      ]
+    }
+  ]
+}

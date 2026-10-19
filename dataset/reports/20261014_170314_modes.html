@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — XGIGA</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">XGIGA</div>
+  <div class="subtitle"></div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">XGIGA</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">SFF-8472, SFP+ MSA, SFF-8431</div></div>
+      <div class="spec-item"><div class="label">Emitter Type</div><div class="value">LASER_VCSEL</div></div>
+      <div class="spec-item"><div class="label">Photodetector Type</div><div class="value">PIN</div></div>
+      <div class="spec-item"><div class="label">Wavelength Min</div><div class="value">840.0</div></div>
+      <div class="spec-item"><div class="label">Wavelength Max</div><div class="value">860.0</div></div>
+      <div class="spec-item"><div class="label">Wavelength Center Nm</div><div class="value">850.0</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable_hot, pluggable</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">MMF, MMF_OM4</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-40.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">85.0</div></div>
+      <div class="spec-item"><div class="label">Power (W)</div><div class="value">1.0</div></div>
+      <div class="spec-item"><div class="label">Host Interface</div><div class="value">SFP+ MSA</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">5e-05</div></div>
+      <div class="spec-item"><div class="label">Los Assert Dbm</div><div class="value">-30.0</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-12.0</div></div>
+      <div class="spec-item"><div class="label">Optical Extinction Ratio Db</div><div class="value">3.0, 2.0</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">0.5</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Product features list VSCEL; VI section names VCSEL. Case Tcase: Commercial 0~70°C (XP-85B1-02D-4), Extended 0~85°C (XP-85B1-02DE-4), Industrial -40~85°C (XP-85B1-02DA-4). Transmission distance 100 m @25G OM4; 400 m @10G OM4. Power dissipation &lt;1W (rev 4.0 max 1W). 10G receiver RSENS -9.9 to -1.0 dBm per PRBS 2^31-1 @10.3125Gb/s; note text BER&lt;10 . (incomplete). 25G measured @25.78Gb/s BER&lt;5E-5. Damage threshold (Min) 3.4 dBm. Digital diagnostic alarm threshold table on p.6 appears corrupted in source (e.g. 54dBm) and was not used.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">10Gb/s &amp; 25Gb/s 850nm Multi-mode SFP28 Transceiver, PRODUCT FEATURES, APPLICATIONS, STANDARD, Ordering information, I. Absolute Maximum Ratings, II. Recommended Operating Conditions, III. Optical Characteristics, 1. Optical Characteristics for 10G Operation, 2. Optical Characteristics for 25G Operation, IV. Electrical Characteristics, VI. Digital Diagnostic Functions, VIII. Outline Dimensions, Appendix A. Document Revision</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Add optional fields for supply current (Icc max mA), spectral width RMS (nm), RIN (dB/Hz), and receiver damage threshold (dBm). Clarify whether reach_km should accept meters-as-printed when datasheets only state m.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Form Factor</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>Reach (km)</th><th>TX Power Min (dBm)</th><th>TX Power Max (dBm)</th><th>RX Sensitivity (dBm)</th><th>RX Overload (dBm)</th></tr>
+      <tr><td><strong>XP-85B1-02D-4 @ 10.3125 Gbps (Commercial)</strong></td><td>XP-85B1-02D-4</td><td>SFP28</td><td>SFF-8431</td><td>10.3125</td><td>0.4</td><td>-7.3</td><td>-0.5</td><td>-9.9</td><td>-1.0</td></tr>
+      <tr><td><strong>XP-85B1-02D-4 @ 25.78 Gbps (Commercial)</strong></td><td>XP-85B1-02D-4</td><td>SFP28</td><td>SFF-8431</td><td>25.78</td><td>0.1</td><td>-8.4</td><td>2.4</td><td>-10.3</td><td>2.4</td></tr>
+      <tr><td><strong>XP-85B1-02DE-4 @ 10.3125 Gbps (Extended)</strong></td><td>XP-85B1-02DE-4</td><td>SFP28</td><td>SFF-8431</td><td>10.3125</td><td>0.4</td><td>-7.3</td><td>-0.5</td><td>-9.9</td><td>-1.0</td></tr>
+      <tr><td><strong>XP-85B1-02DE-4 @ 25.78 Gbps (Extended)</strong></td><td>XP-85B1-02DE-4</td><td>SFP28</td><td>SFF-8431</td><td>25.78</td><td>0.1</td><td>-8.4</td><td>2.4</td><td>-10.3</td><td>2.4</td></tr>
+      <tr><td><strong>XP-85B1-02DA-4 @ 10.3125 Gbps (Industrial)</strong></td><td>XP-85B1-02DA-4</td><td>SFP28</td><td>SFF-8431</td><td>10.3125</td><td>0.4</td><td>-7.3</td><td>-0.5</td><td>-9.9</td><td>-1.0</td></tr>
+      <tr><td><strong>XP-85B1-02DA-4 @ 25.78 Gbps (Industrial)</strong></td><td>XP-85B1-02DA-4</td><td>SFP28</td><td>SFF-8431</td><td>25.78</td><td>0.1</td><td>-8.4</td><td>2.4</td><td>-10.3</td><td>2.4</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">XP-85B1-02D-4</span> <span class="badge">XP-85B1-02DE-4</span> <span class="badge">XP-85B1-02DA-4</span></td></tr>
+      <tr><td>form_factor</td><td><span class="badge">SFP28</span> <span class="badge">SFP+</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">SFF-8431</span> <span class="badge">SFF-8472</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">10.3125</span> <span class="badge">25.78</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">0.1</span> <span class="badge">0.4</span></td></tr>
+      <tr><td>tx_power_min_dbm</td><td><span class="badge">-7.3</span> <span class="badge">-8.4</span></td></tr>
+      <tr><td>tx_power_max_dbm</td><td><span class="badge">-0.5</span> <span class="badge">2.4</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-9.9</span> <span class="badge">-10.3</span></td></tr>
+      <tr><td>rx_overload_dbm</td><td><span class="badge">-1.0</span> <span class="badge">2.4</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 17:03
+</footer>
+
+</div>
+</body>
+</html>

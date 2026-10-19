@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-10GE-ER 10GBASE-ER",
+      "model": "SO-SFP-10GE-ER",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "SO-SFP-10GE-ER 10GBASE-EW",
+      "model": "SO-SFP-10GE-ER",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "standards_code": "10GBASE-EW",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "SO-SFP-10GE-ER-I 10GBASE-ER",
+      "model": "SO-SFP-10GE-ER-I",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "standards_code": "10GBASE-ER",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "SO-SFP-10GE-ER-I 10GBASE-EW",
+      "model": "SO-SFP-10GE-ER-I",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1565.0,
+      "standards_code": "10GBASE-EW",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "SO-SFP-10GE-ER receiver band",
+      "model": "SO-SFP-10GE-ER",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "IEEE 802.3ae ER/EW",
+      "bit_rate_gbps": 0.6
+    },
+    {
+      "label": "SO-SFP-10GE-ER-I receiver band",
+      "model": "SO-SFP-10GE-ER-I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "IEEE 802.3ae ER/EW",
+      "bit_rate_gbps": 0.6
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\lg-sc341g-20imb1.pdf",
+  "page_count": 7,
+  "table_count": 8,
+  "markdown_chars": 10535,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 9
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 13
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 21
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 3
+    }
+  ]
+}

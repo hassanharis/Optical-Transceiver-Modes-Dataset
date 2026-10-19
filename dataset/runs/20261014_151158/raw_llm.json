@@ -1,0 +1,225 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-L120DH-Dxxx",
+    "SO-SFP-L120DH-D919",
+    "SO-SFP-L120DH-D920",
+    "SO-SFP-L120DH-D921",
+    "SO-SFP-L120DH-D922",
+    "SO-SFP-L120DH-D923",
+    "SO-SFP-L120DH-D924",
+    "SO-SFP-L120DH-D925",
+    "SO-SFP-L120DH-D926",
+    "SO-SFP-L120DH-D927",
+    "SO-SFP-L120DH-D928",
+    "SO-SFP-L120DH-D929",
+    "SO-SFP-L120DH-D930",
+    "SO-SFP-L120DH-D931",
+    "SO-SFP-L120DH-D932",
+    "SO-SFP-L120DH-D933",
+    "SO-SFP-L120DH-D934",
+    "SO-SFP-L120DH-D935",
+    "SO-SFP-L120DH-D936",
+    "SO-SFP-L120DH-D937",
+    "SO-SFP-L120DH-D938",
+    "SO-SFP-L120DH-D939",
+    "SO-SFP-L120DH-D940",
+    "SO-SFP-L120DH-D941",
+    "SO-SFP-L120DH-D942",
+    "SO-SFP-L120DH-D943",
+    "SO-SFP-L120DH-D944",
+    "SO-SFP-L120DH-D945",
+    "SO-SFP-L120DH-D946",
+    "SO-SFP-L120DH-D947",
+    "SO-SFP-L120DH-D948",
+    "SO-SFP-L120DH-D949",
+    "SO-SFP-L120DH-D950",
+    "SO-SFP-L120DH-D951",
+    "SO-SFP-L120DH-D952",
+    "SO-SFP-L120DH-D953",
+    "SO-SFP-L120DH-D954",
+    "SO-SFP-L120DH-D955",
+    "SO-SFP-L120DH-D956",
+    "SO-SFP-L120DH-D957",
+    "SO-SFP-L120DH-D958",
+    "SO-SFP-L120DH-D959",
+    "SO-SFP-L120DH-D960"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "ITU-T G.694.1",
+    "G.694.1",
+    "SFF-8472",
+    "RoHS-6/6"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1528.0
+  ],
+  "wavelength_max_nm": [
+    1566.0
+  ],
+  "wavelength_center_nm": [
+    1562.23,
+    1561.42,
+    1560.61,
+    1559.79,
+    1558.98,
+    1558.17,
+    1557.36,
+    1556.55,
+    1555.75,
+    1554.94,
+    1554.13,
+    1553.33,
+    1552.52,
+    1551.72,
+    1550.92,
+    1550.12,
+    1549.32,
+    1548.51,
+    1547.72,
+    1546.92,
+    1546.12,
+    1545.32,
+    1544.53,
+    1543.73,
+    1542.94,
+    1542.14,
+    1541.35,
+    1540.56,
+    1539.77,
+    1538.98,
+    1538.19,
+    1537.4,
+    1536.61,
+    1535.82,
+    1535.04,
+    1534.25,
+    1533.47,
+    1532.68,
+    1531.9,
+    1531.12,
+    1530.33,
+    1529.55
+  ],
+  "wavelength_band": [
+    "DWDM"
+  ],
+  "frequency_min_thz": [
+    191.9
+  ],
+  "frequency_max_thz": [
+    196.0
+  ],
+  "channel_spacing_ghz": [
+    100.0
+  ],
+  "channel_total": [
+    42
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "G.694.1",
+    "FE",
+    "GbE",
+    "STM4/OC12",
+    "STM1/OC3",
+    "1G FC",
+    "CPRI Opt, 1, 2",
+    "OBSAI 1x"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    0.1,
+    1.25
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    120.0
+  ],
+  "tx_power_min_dbm": [
+    4.0
+  ],
+  "tx_power_max_dbm": [
+    7.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -37.0
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -10.0
+  ],
+  "cd_tolerance_ps_nm": [
+    2800.0
+  ],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -36.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Title/overview cite 41dB power budget and D9190-D9600 (42ch). TECHNICAL DATA lists power budget 17 – 41dB. Transmitter/receiver power values are average power (footnote 1). Minimum input power and overload are at 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back (footnote 2). Nominal/transmit wavelength stated as 191.90 - 196.0/196.00 THz (42ch); receiver wavelength range 1528nm – 1566nm. Dispersion tolerance labeled Typical 2800ps/nm. Power consumption < 1.5W. Storage temperature -40°C to +85°C. Ordering table lists C-temp and E-temp part number columns; E-temp operating range per GENERAL DEFINITIONS typically -20°C to +75°C. Safety/regulatory: TUV/UL/FDA (contact Smartoptics).",
+  "provenance_datasheet_sections": [
+    "SO-SFP-L120DH-Dxxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": null
+}

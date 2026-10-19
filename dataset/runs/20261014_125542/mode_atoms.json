@@ -1,0 +1,89 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-1000BASE-LXD",
+      "SO-SFP-1000Base-LXD",
+      "SO-SFP-1000Base-LXD-I"
+    ],
+    "standards_code": [
+      "100Base-LXD",
+      "1000Base-LXD",
+      "1G FC"
+    ],
+    "bit_rate_gbps": [
+      1.0625,
+      1.25
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_min_nm": [
+      1270.0
+    ],
+    "wavelength_max_nm": [
+      1355.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -9.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -21.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -35.0
+    ],
+    "los_deassert_dbm": [
+      -22.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Title: 1.0625/1.25Gbps, 12dB power budget, C-temp & I-temp. Bit rate support stated as 100Mbps to 1.25Gbps (100Mbps not entered in bit_rate_gbps to avoid unit conversion). Operating temperature -40°C to +85°C for LXD-I (-I). Storage temperature -40°C to +85°C. Power consumption < 1.0W. Power budget 0 – 12dB. Tx/Rx powers are average 1). Rx min input and overload @ 1.25Gbps, BER ≤ 1x10-12, PRBS 27-1, back-to-back 2). SM (2x LC). DDM Yes.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-1000BASE-LXD & LXD-I",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider a separate bit_rate_mbps list or paired unit fields for ranges like 100Mbps to 1.25Gbps. Consider temp_min_c/temp_max_c as list or variant keyed by ordering code for C-temp vs I-temp."
+  }
+}

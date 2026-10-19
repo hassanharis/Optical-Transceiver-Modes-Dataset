@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-LR",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "host_interface_name": "10GBASE-LR",
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "10GBASE-LW",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "host_interface_name": "10GBASE-LW",
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 10.0
+    },
+    {
+      "label": "OTU2",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "host_interface_name": "10GBASE-LR",
+      "standards_code": "OTU2",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "OTU2e",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "host_interface_name": "10GBASE-LR",
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "Multirate minimum (0.6 Gbps)",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "host_interface_name": "10GBASE-LR",
+      "standards_code": "OTU1",
+      "bit_rate_gbps": 0.6
+    },
+    {
+      "label": "Receiver wavelength range",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1565.0,
+      "host_interface_name": "10GBASE-LR",
+      "standards_code": "OTU2",
+      "bit_rate_gbps": 10.3
+    }
+  ]
+}

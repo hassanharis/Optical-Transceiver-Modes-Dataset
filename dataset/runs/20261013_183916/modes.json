@@ -1,0 +1,64 @@
+{
+  "modes": [
+    {
+      "label": "QT-WDM-0220BD Gigabit Ethernet",
+      "model": "QT-WDM-0220BD",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0220BD Fiber Channel",
+      "model": "QT-WDM-0220BD",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "Fiber Channel",
+      "standards_code": "Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "QT-WDM-0220BID Gigabit Ethernet",
+      "model": "QT-WDM-0220BID",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0220BID Fiber Channel",
+      "model": "QT-WDM-0220BID",
+      "wavelength_min_nm": 1480.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "host_interface_name": "Fiber Channel",
+      "standards_code": "Fiber Channel",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "QT-WDM-0220BD 1310nm RX",
+      "model": "QT-WDM-0220BD",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0220BID 1310nm RX",
+      "model": "QT-WDM-0220BID",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "host_interface_name": "Gigabit Ethernet",
+      "standards_code": "Gigabit Ethernet",
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

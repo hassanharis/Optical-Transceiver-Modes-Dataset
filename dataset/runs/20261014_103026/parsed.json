@@ -1,0 +1,53 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\qxp13ld4-005d.pdf",
+  "page_count": 8,
+  "table_count": 9,
+  "markdown_chars": 9225,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 17
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 13
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 26
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 4
+    }
+  ]
+}

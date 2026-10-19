@@ -1,0 +1,85 @@
+{
+  "multi_valued": {},
+  "general": {
+    "vendor": "LINK-PP",
+    "model": [
+      "L9-SD312M-20TTC"
+    ],
+    "form_factor": [
+      "1x9"
+    ],
+    "standards_claimed": [
+      "Multi-sourced 1x9 protocol",
+      "Class 1 Laser International Safety Standard IEC 825"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL",
+      "LASER_FP"
+    ],
+    "wavelength_min_nm": [
+      1260.0
+    ],
+    "wavelength_max_nm": [
+      1360.0
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "connector_type": [
+      "SC",
+      "ST",
+      "FC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      -8.0
+    ],
+    "tx_power_max_dbm": [
+      -3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -18.0
+    ],
+    "rx_overload_dbm": [
+      -3.0
+    ],
+    "extinction_ratio_db": [
+      10.0
+    ],
+    "los_assert_dbm": [
+      -18.0
+    ],
+    "los_deassert_dbm": [
+      -30.0
+    ],
+    "optical_extinction_ratio_db": [
+      10.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Data rate stated as DC–500K–2000 Kbps / up to 2 Mbps (not in Gbps). Optical parameters Note1: power launched into 9/125μm SMF; Note2: with 2 Mbps. Transmitter output spectral width (RMS) max 4.0 nm. Receiver operation center wavelength 1260–1620 nm. Supply 3.3 V or 5.0 V; max supply current 160 mA (Table 2/4). Order table lists 1310(FP) for this type; features mention VCSEL/FP laser diode. Industrial variant L9-SD312M-20TTI: -40°C to +85°C. Features also cite up to 2 km on 62.5/125μm MMF for series; this SKU is SM 20 km SC duplex 3.3 V.",
+    "provenance_datasheet_sections": [
+      "L9-SD312M-20TTC",
+      "1×9 2Mbps 1310nm 20km SC Transceiver Module",
+      "Product Features",
+      "Application",
+      "Product Description",
+      "Absolute Maximum Ratings",
+      "Optical Parameters",
+      "Table 3-- L9-SD312M-20TTC Transceiver Optical Characteristics",
+      "Table 4--- Transceiver Electrical Characteristics",
+      "Order Information"
+    ],
+    "suggestions": "Add bit_rate_mbps or allow numeric rate with explicit unit field; add legacy form factors (1x9); map supply current + voltage to optional power_consumption when only mA is given."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T12:40:17.841334+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-1000base-bx20d-34-43.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.808,
+    "extract_atoms": 34.567,
+    "store_run": 0.006,
+    "synthesize_modes": 42.446,
+    "store_modes": 0.003,
+    "total": 81.83
+  }
+}

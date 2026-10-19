@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"25GBASE-LR transmitter (Section 3)\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1355.0,\n      \"standards_code\": \"25GBASE-LR\",\n      \"bit_rate_gbps\": 25.78\n    },\n    {\n      \"label\": \"Receiver wavelength range (Section 3)\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1610.0,\n      \"standards_code\": \"SFF-8472\",\n      \"bit_rate_gbps\": 25.78\n    },\n    {\n      \"label\": \"SFF-8431 / up to 28 Gbps (product features)\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1355.0,\n      \"standards_code\": \"SFF-8431\",\n      \"bit_rate_gbps\": 28.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

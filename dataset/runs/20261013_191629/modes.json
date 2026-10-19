@@ -1,0 +1,166 @@
+{
+  "modes": [
+    {
+      "label": "BIDI-SFP+-ZR+-55 | 10GBASE-BX @ 10.3125 Gb/s",
+      "model": "BIDI-SFP+-ZR+-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "BIDI-SFP+-ZR+-55 | 10GBASE-BX @ 9.953 Gb/s",
+      "model": "BIDI-SFP+-ZR+-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "BIDI-SFP+-ZR+-55 | 8XFC @ 8.5 Gb/s",
+      "model": "BIDI-SFP+-ZR+-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "8XFC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "BIDI-SFP+-ZR+-55 | 4XFC @ 4.25 Gb/s",
+      "model": "BIDI-SFP+-ZR+-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "4XFC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "BIDI-SFP+-ZR+-55 | 2XFC @ 2.125 Gb/s",
+      "model": "BIDI-SFP+-ZR+-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "2XFC",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "BIDI-SFP+-ZR+-55 | 1xFC @ 1.0625 Gb/s",
+      "model": "BIDI-SFP+-ZR+-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1xFC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "BIDI-SFP+-ZR-55 | 10GBASE-BX @ 10.3125 Gb/s",
+      "model": "BIDI-SFP+-ZR-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "BIDI-SFP+-ZR-55 | 10GBASE-BX @ 9.953 Gb/s",
+      "model": "BIDI-SFP+-ZR-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "BIDI-SFP+-ZR-55 | 8XFC @ 8.5 Gb/s",
+      "model": "BIDI-SFP+-ZR-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "8XFC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "BIDI-SFP+-ZR-55 | 4XFC @ 4.25 Gb/s",
+      "model": "BIDI-SFP+-ZR-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "4XFC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "BIDI-SFP+-ZR-55 | 2XFC @ 2.125 Gb/s",
+      "model": "BIDI-SFP+-ZR-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "2XFC",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "BIDI-SFP+-ZR-55 | 1xFC @ 1.0625 Gb/s",
+      "model": "BIDI-SFP+-ZR-55",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1xFC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "BIDI-SFP+-ZR-49 | 10GBASE-BX @ 10.3125 Gb/s",
+      "model": "BIDI-SFP+-ZR-49",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "BIDI-SFP+-ZR-49 | 10GBASE-BX @ 9.953 Gb/s",
+      "model": "BIDI-SFP+-ZR-49",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "10GBASE-BX",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "BIDI-SFP+-ZR-49 | 8XFC @ 8.5 Gb/s",
+      "model": "BIDI-SFP+-ZR-49",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "8XFC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "BIDI-SFP+-ZR-49 | 4XFC @ 4.25 Gb/s",
+      "model": "BIDI-SFP+-ZR-49",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "4XFC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "BIDI-SFP+-ZR-49 | 2XFC @ 2.125 Gb/s",
+      "model": "BIDI-SFP+-ZR-49",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "2XFC",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "BIDI-SFP+-ZR-49 | 1xFC @ 1.0625 Gb/s",
+      "model": "BIDI-SFP+-ZR-49",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "standards_code": "1xFC",
+      "bit_rate_gbps": 1.0625
+    }
+  ]
+}

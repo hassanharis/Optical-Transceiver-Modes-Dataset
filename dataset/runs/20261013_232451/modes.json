@@ -1,0 +1,36 @@
+{
+  "modes": [
+    {
+      "label": "L9-FC315501-60CTC — 1310nm Tx FP, commercial temp",
+      "form_factor": "1x9",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "L9-FC553101-60CTC — 1550nm Tx DFB, commercial temp",
+      "form_factor": "1x9",
+      "wavelength_min_nm": 1510.0,
+      "wavelength_max_nm": 1590.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "L9-FC315501-60CTI — 1310nm Tx FP, industrial temp",
+      "form_factor": "1x9",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1610.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "L9-FC553101-60CTI — 1550nm Tx DFB, industrial temp",
+      "form_factor": "1x9",
+      "wavelength_min_nm": 1510.0,
+      "wavelength_max_nm": 1590.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "ITU-T G.957"
+    }
+  ]
+}

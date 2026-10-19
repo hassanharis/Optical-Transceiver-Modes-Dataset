@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"STM-1/OC-3 155Mbps\",\n      \"wavelength_min_nm\": 1500.0,\n      \"standards_code\": \"STM1/OC3\",\n      \"bit_rate_gbps\": 0.155\n    },\n    {\n      \"label\": \"STM-16/OC-48 2488Mbps\",\n      \"wavelength_min_nm\": 1500.0,\n      \"standards_code\": \"STM16/OC48\",\n      \"bit_rate_gbps\": 2.488\n    },\n    {\n      \"label\": \"STM-16/OC-48 Rx sensitivity @ 2488Mbps\",\n      \"wavelength_min_nm\": 1260.0,\n      \"standards_code\": \"STM16/OC48\",\n      \"bit_rate_gbps\": 2.488\n    },\n    {\n      \"label\": \"OTU1 2.67Gbps\",\n      \"wavelength_min_nm\": 1500.0,\n      \"standards_code\": \"OTU1\",\n      \"bit_rate_gbps\": 2.67\n    },\n    {\n      \"label\": \"Multirate maximum 2.7Gbps\",\n      \"wavelength_min_nm\": 1500.0,\n      \"standards_code\": \"GbE\",\n      \"bit_rate_gbps\": 2.7\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

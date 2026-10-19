@@ -1,0 +1,48 @@
+{
+  "modes": [
+    {
+      "label": "CWDM4 Lane 1 (1271 nm)",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "wavelength_center_nm": 1271.0,
+      "wavelength_band": "CWDM",
+      "standards_code": "100GBASE-CWDM4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_max_dbm": 2.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "CWDM4 Lane 2 (1291 nm)",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "wavelength_center_nm": 1291.0,
+      "wavelength_band": "CWDM",
+      "standards_code": "100GBASE-CWDM4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_max_dbm": 2.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "CWDM4 Lane 3 (1311 nm)",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "wavelength_band": "CWDM",
+      "standards_code": "100GBASE-CWDM4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_max_dbm": 2.5,
+      "fec_type": "RS_528_514"
+    },
+    {
+      "label": "CWDM4 Lane 4 (1331 nm)",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "wavelength_center_nm": 1331.0,
+      "wavelength_band": "CWDM",
+      "standards_code": "100GBASE-CWDM4",
+      "bit_rate_gbps": 25.78,
+      "tx_power_max_dbm": 2.5,
+      "fec_type": "RS_528_514"
+    }
+  ]
+}

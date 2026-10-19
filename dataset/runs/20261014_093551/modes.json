@@ -1,0 +1,16 @@
+{
+  "modes": [
+    {
+      "label": "LS-SM311G-20C Commercial 1.25G",
+      "model": "LS-SM311G-20C",
+      "wavelength_max_nm": 1360.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "LS-SM311G-20I Industrial 1.25G",
+      "model": "LS-SM311G-20I",
+      "wavelength_max_nm": 1360.0,
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

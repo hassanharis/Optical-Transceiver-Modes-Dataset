@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:24:38.469986+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Cloudtron-SFP-1G-13-80K-D.pdf",
+  "page_count": 8,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 9.858,
+    "extract_atoms": 17.07,
+    "store_run": 0.007,
+    "synthesize_modes": 67.628,
+    "store_modes": 0.004,
+    "total": 94.567
+  }
+}

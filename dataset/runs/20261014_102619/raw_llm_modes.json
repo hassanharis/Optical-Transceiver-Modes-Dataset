@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "62.5/125 \u03bcm NA 0.275 MMF",
+      "wavelength_center_nm": 1308.0,
+      "power_consumption_w": 0.15,
+      "media_interface_name": "100BASE-FX",
+      "standards_code": "100BASE-FX",
+      "tx_power_min_dbm": -20.0,
+      "tx_power_max_dbm": -14.0
+    },
+    {
+      "label": "50/125 \u03bcm NA 0.20 MMF",
+      "wavelength_center_nm": 1308.0,
+      "power_consumption_w": 0.15,
+      "media_interface_name": "100BASE-FX",
+      "standards_code": "100BASE-FX",
+      "tx_power_min_dbm": -24.0,
+      "tx_power_max_dbm": -17.0
+    }
+  ]
+}

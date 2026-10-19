@@ -1,0 +1,23 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\tq2034-bxxy-so-qsfp28-100g-bidi-70km-r6.1.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "markdown_chars": 5906,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 23
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 23
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "vendor": "Cinch Connectivity Solutions",
+  "model": [
+    "LxK-S-T2xx"
+  ],
+  "form_factor": [
+    "Low Rider RJ"
+  ],
+  "standards_claimed": [
+    "IEEE Gigabit Ethernet",
+    "IEEE 802.3z",
+    "1x Fiber Channel",
+    "ANSI X3.297",
+    "FC-PH-2",
+    "EN-60825",
+    "IEC-825",
+    "CDRH Class 1"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "mounting_type": [
+    "solder",
+    "screw"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM1",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "host_interface_name": [
+    "Gigabit Ethernet",
+    "1x Fiber Channel"
+  ],
+  "standards_code": [
+    "IEEE 802.3z",
+    "ANSI X3.297",
+    "FC-PH-2"
+  ],
+  "bit_rate_gbps": [
+    1.25
+  ],
+  "modulation_format": [
+    "NRZ"
+  ],
+  "tx_power_min_dbm": [
+    -9.5
+  ],
+  "tx_power_max_dbm": [
+    -4.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "number_of_lanes": [
+    2
+  ],
+  "total_jitter_ps": [
+    80.0,
+    153.0
+  ],
+  "penalties": [],
+  "notes": "Dual-channel optical transmitter only (no receiver photodetector or RX optical specs). VCCTX supply 3.135 V to 3.465 V per port; +3.3 V per port. Link distances in table are stated in meters (220M, 275M, 300M, 500M, 550M); headline states up to 550 meters. Optical table: ER min 9 dB; Coupled Power Ratio (CPR) min 9 dB; Total Jitter footnote [1] with BER=10^-12 at 1.25 Gbps, PRBS 2^7-1, NRZ, compliant with ANSI X3.297 / FC-PH-2. Ordering variants include Roughrider RR K-S-T2xx shell/mounting/temperature options (H/M: -40 to 85°C).",
+  "provenance_datasheet_sections": [
+    "LxK-S-T2xx Low Profile Dual Channel Optical Transmitter",
+    "Applications",
+    "Features",
+    "Ordering Information",
+    "Transmitters: VCCTX = 3.135V to 3.465V, TA = Operating Temperature Range",
+    "Link Distances"
+  ],
+  "suggestions": "Add schema fields for supply voltage (e.g. VCCTX min/max), coupled power ratio (CPR), max module height, and reach in meters when datasheets only quote M. Clarify whether post_fec_ber_target should capture BER=10^-12 compliance lines without explicit FEC."
+}

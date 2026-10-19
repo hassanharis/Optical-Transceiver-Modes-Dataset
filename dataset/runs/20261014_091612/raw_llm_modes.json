@@ -1,0 +1,34 @@
+{
+  "modes": [
+    {
+      "label": "LS-MM858G-S3C Fiber Channel 2.125G",
+      "model": "LS-MM858G-S3C",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "LS-MM858G-S3C Fiber Channel 4.25G",
+      "model": "LS-MM858G-S3C",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "LS-MM858G-S3C 8.5Gbps",
+      "model": "LS-MM858G-S3C",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "LS-MM858G-S3I Fiber Channel 2.125G",
+      "model": "LS-MM858G-S3I",
+      "bit_rate_gbps": 2.125
+    },
+    {
+      "label": "LS-MM858G-S3I Fiber Channel 4.25G",
+      "model": "LS-MM858G-S3I",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "LS-MM858G-S3I 8.5Gbps",
+      "model": "LS-MM858G-S3I",
+      "bit_rate_gbps": 8.5
+    }
+  ]
+}

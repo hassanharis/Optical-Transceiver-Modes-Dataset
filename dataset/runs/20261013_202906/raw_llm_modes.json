@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "CFP host 10x10G",
+      "frame": "10x 10G",
+      "standards_code": "100G Ethernet",
+      "fec_type": "RS_528_514",
+      "number_of_lanes": 10
+    },
+    {
+      "label": "QSFP28 media 4x25G FEC",
+      "frame": "4x 25G",
+      "standards_code": "IEEE802.3bj",
+      "fec_type": "RS_GENERIC",
+      "number_of_lanes": 4
+    }
+  ]
+}

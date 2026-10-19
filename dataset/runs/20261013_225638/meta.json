@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:56:38.171659+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftld10ce3c-transceiver-ds.pdf",
+  "page_count": 14,
+  "table_count": 13,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 16.504,
+    "extract_atoms": 27.083,
+    "store_run": 0.009,
+    "synthesize_modes": 42.833,
+    "store_modes": 0.004,
+    "total": 86.433
+  }
+}

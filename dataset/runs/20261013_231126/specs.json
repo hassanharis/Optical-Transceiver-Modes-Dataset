@@ -1,0 +1,135 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLX1672M3BCL"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "SFP MSA",
+    "SONET OC-192 IR-2",
+    "SONET OC-192 IR-3",
+    "SDH STM-64.2b",
+    "SDH STM-64.3b",
+    "OTN G959.1 P1S1-2D2b",
+    "10GBASE-ER",
+    "10GBASE-EW",
+    "8.5G Fibre Channel",
+    "10G Fibre Channel",
+    "RoHS Directive 2011/65/EU"
+  ],
+  "emitter_type": [
+    "LASER_EML"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1530.0
+  ],
+  "wavelength_max_nm": [
+    1565.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF_G652",
+    "SMF"
+  ],
+  "temp_min_c": -5.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.4,
+    1.5,
+    1.6,
+    1.7
+  ],
+  "host_interface_name": [
+    "XFI",
+    "SFP+"
+  ],
+  "standards_code": [
+    "10GBASE-ER",
+    "10GBASE-EW",
+    "OC-192",
+    "STM-64.2b",
+    "STM-64.3b",
+    "P1S1-2D2b",
+    "OTU1e",
+    "OTU2",
+    "OTU2e",
+    "8.5G Fibre Channel",
+    "10G Fibre Channel"
+  ],
+  "bit_rate_gbps": [
+    8.5,
+    9.95,
+    10.3,
+    10.7,
+    11.1,
+    11.3,
+    11.3168
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -1.0
+  ],
+  "tx_power_max_dbm": [
+    2.0
+  ],
+  "rx_sensitivity_dbm": [
+    -16.0,
+    -15.0,
+    -1.0
+  ],
+  "cd_tolerance_ps_nm": [
+    800.0
+  ],
+  "pre_fec_ber_threshold": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    8.2
+  ],
+  "los_deassert_dbm": [
+    -29.0
+  ],
+  "receiver_reflectance_db": [
+    -27.0
+  ],
+  "optical_extinction_ratio_db": [
+    8.2
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Copyright identifies Coherent Corp. (2023); product text brands Finisar. Tx wavelength table gives λC 1530–1565 nm; Features state cooled 1550 nm EML. Rx λC 1260–1600 nm. Sensitivity at BER<10^-12, PRBS 2^31-1, worst ER=8.2 dB. IV table lists Overload ROVL Max 2 dB (not dBm). LOS Assert LOSA 0.5 dB (not dBm). Path Penalty PP Max -21 dBm. Stressed sensitivity RSRS -1 dBm at 10.3 Gb/s OMA. 40 km link note references 800 ps/nm. Absolute max Rx optical damage threshold 5 dBm.",
+  "provenance_datasheet_sections": [
+    "FTLX1672M3BCL",
+    "10Gb/s, 40km Single Mode, Multi-Rate SFP+ Transceiver",
+    "FEATURES",
+    "APPLICATIONS",
+    "III. Electrical Characteristics (TOP = -5 to 70 °C )",
+    "IV. Optical Characteristics (TOP = -5 to 70 °C, VCC = 3.14 to 3.46 Volts))",
+    "V. General Specifications",
+    "VII. Environmental Specifications",
+    "II. Absolute Maximum Ratings"
+  ],
+  "suggestions": "Clarify mapping when overload or LOS assert use dB vs dBm. Table IV Path Penalty -21 dBm may need a dedicated schema field if not rx_sensitivity."
+}

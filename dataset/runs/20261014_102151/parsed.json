@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\Prolab SFP-1G-BX-U-20-DE-C.pdf",
+  "page_count": 6,
+  "table_count": 4,
+  "markdown_chars": 7694,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 21
+    }
+  ]
+}

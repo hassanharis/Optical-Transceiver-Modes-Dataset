@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "LS-BL315501-10C 1310nm TX 155Mbps",
+      "model": "LS-BL315501-10C",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "LS-BL315501-10I 1310nm TX 155Mbps",
+      "model": "LS-BL315501-10I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "LS-BL315501-10C 1550nm RX 155Mbps",
+      "model": "LS-BL315501-10C",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "LS-BL315501-10I 1550nm RX 155Mbps",
+      "model": "LS-BL315501-10I",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 155.0
+    },
+    {
+      "label": "LS-BL315501-10C 125Mbps",
+      "model": "LS-BL315501-10C",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 125.0
+    },
+    {
+      "label": "LS-BL315501-10I 125Mbps",
+      "model": "LS-BL315501-10I",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "bit_rate_gbps": 125.0
+    }
+  ]
+}

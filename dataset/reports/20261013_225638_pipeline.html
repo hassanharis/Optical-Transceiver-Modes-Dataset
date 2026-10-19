@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Finisar [&#x27;FTLD10CE3C&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">ftld10ce3c-transceiver-ds.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">14</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">13</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-13 22:56</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">Optical Transceivers 
+
+## FTLD10CE3C 
+
+## **100GBASE-SR10 100m CxP Optical Transceiver Module** 
+
+FTLD10CE3C second-generation CXP transceiver modules are designed for use in up to 136 Gigabit per second links over 12 duplex multimode fiber pairs. They are compliant with the IBTA CXP Specification1, IEEE 802.3ba 100GBASE-SR10 and CPPI electrical interfaces[2] . The transceiver is RoHS-6 compliant and lead-free per Directive 2002/95/EC[3] , and Finisar Application Note AN-2038[4] . They support Tx/Rx optical power monitoring functionality. For applications up to 14 Gb/s per channel please contact Finisar. 
+
+
+## FEATURES 
+
+## APPLICATIONS 
+
+- 12-channel full-duplex transceiver module 
+
+- Hot Pluggable CXP form factor 
+
+- Multirate capability: 1Gb/s to 11.3Gb/s per channel 
+
+- Maximum link length of 100m on OM3 Multimode Fiber (MMF) 
+
+- Unretimed CPPI electrical interface 
+
+- Requires 3.3V power supply only 
+
+   - Infiniband 12x SDR/DDR/QDR 
+
+   - 100GBASE-SR10 100G Ethernet 
+
+   - OTU4/OTU2e 
+
+   - 12x 10GBASE-SR Ethernet (compatible) 
+
+   - PCIe (Gen1/2/3) 
+
+   - SATA3 
+
+   - Proprietary protocols 
+
+- Low power dissipation: &lt; 3.5W 
+
+- Reliable VCSEL array technology 
+
+- Digital Diagnostics including Tx and Rx optical power monitoring 
+
+- Commercial operating case temperature range: 0ºC to 70ºC 
+
+- RoHS-6 Compliant (lead-free) 
+
+**FTLD10CE3C** 
+
+## **Product Selection** 
+
+## **FTLD10CE3C** 
+
+- E: Ethernet-compliant optical interface 3: Second generation product 
+
+- C: Commercial temperature rate 
+
+2 
+
+**FTLD10CE3C** 
+
+## **I. Pin Descriptions** 
+
+
+Figure 1 – CXP-compliant 84-pin connector 
+
+3 
+
+**FTLD10CE3C** 
+
+
+**----- Start of picture text -----**&lt;br&gt;
+Pin Symbol Name/Description Notes&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+
+|Pin|Symbol|Name/Description|Notes|
+|---|---|---|---|
+|||||
+|A1|GND|Ground|1|
+|A2|Tx1p|Transmitter Non-Inverted Data Input||
+|A3|Tx1n|Transmitter Inverted Data Input||
+|A4|GND|Ground|1|
+|A5|Tx3p|Transmitter Non-Inverted Data Input||
+|A6|Tx3n
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Finisar"</span>,
+  <span class="key">"model"</span>: [
+    "FTLD10CE3C"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "CXP"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "IBTA CXP Specification",
+    "IEEE <span class="num">802.3</span>ba <span class="num">100</span>GBASE-SR10",
+    "CPPI electrical interfaces",
+    "InfiniBand Architectural Release <span class="num">1.3</span>, Volume <span class="num">2</span>, CXP Specification Release",
+    "RoHS-6"
+  ],
+  <span class="key">"emitter_type"</span>: [
+    "LASER_VCSEL"
+  ],
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">840.0</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">860.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_band"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: [
+    <span class="num">12</span>
+  ],
+  <span class="key">"mounting_type"</span>: [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "MPO"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">3.5</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "CPPI",
+    "CXP electrical interface",
+    "84-pin edge connector"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: [
+    "100GBASE-SR10",
+    "Ethernet-compliant optical interface"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "100GBASE-SR10",
+    "CXP",
+    "CPPI",
+    "OTU4",
+    "OTU2e",
+    "12x10GBASE-SR"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [
+    <span class="num">11.3</span>
+  ],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">1.0</span>,
+    <span class="num">10.3</span>,
+    <span class="num">11.1</span>,
+    <span class="num">11.2</span>,
+    <span class="num">11.3</span>,
+    <span class="num">11.318</span>,
+    <span class="num">135.816</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">0.1</span>,
+    <span class="num">0.15</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-7.6</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">2.4</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-5.4</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">2.4</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: [
+    <span class="num">1</span>e-12,
+    <span class="num">1</span>e-06,
+    <span class="num">1</span>e-08
+  ],
+  <span class="key">"post_fec_ber_target"</span>: <span class="null">null</span>,
+  <span class="key">"extinction_ratio_db"</span>: [
+    <span class="num">3.0</span>
+  ],
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-30.0</span>,
+    <span class="num">-15.5</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-12.5</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: [
+    <span class="num">-12.0</span>
+  ],
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: [
+    <span class="num">3.0</span>
+  ],
+  <span class="key">"optical_return_loss_tolerance_db"</span>: [
+    <span class="num">12.0</span>
+  ],
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">12</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">1.0</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Link distance stated as <span class="num">100</span> m on OM3 MMF and <span class="num">150</span> m on OM4 MMF (reach_km recorded as <span class="num">0.1</span> and <span class="num">0.15</span>). Bit rate per lane table uses <span class="num">1000</span>–11318 Mb/sec. LOS Assert (LOSA) min −30.0 dBm, max −15.5 dBm. Page <span class="num">11</span> receiver notes include conflicting text referring to <span class="num">4</span> lasers/10.5 Gb/s (likely errata vs <span class="num">12</span>-channel <span class="num">11.3</span> Gb/s spec). Requires <span class="num">3.3</span> V supply only; <span class="num">12</span> V pins not connected. Multirate per channel <span class="num">1</span> Gb/s to <span class="num">11.3</span> Gb/s. Aggregate maximum data rate <span class="num">135.816</span> Gb/s. Copyright/footer references Coherent Corp.; product and certificates reference Finisar Corporation."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "FEATURES",
+    "APPLICATIONS",
+    "Product Selection",
+    "II. General Product Characteristics",
+    "III. Absolute Maximum Ratings",
+    "IV. Electrical Characteristics (TOP = <span class="num">0</span> to <span class="num">70</span>°C, VCC = <span class="num">3.3</span> ± <span class="num">5</span>% Volts)",
+    "Module-end, Typical Power Consumption",
+    "V. Optical Characteristics (TOP = <span class="num">0</span> to <span class="num">70</span>°C, VCC = <span class="num">3.3</span> ± <span class="num">5</span>% Volts)",
+    "VII. Environmental Specifications",
+    "x. References"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Add CXP to form_factor enum. Consider reach_m or allow explicit unit in reach field to avoid meter-to-km conversion. Distinguish LOS assert min/max vs single threshold in schema."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>host_interface_name</td><td><span class="badge">CPPI</span> <span class="badge">CXP electrical interface</span> <span class="badge">84-pin edge connector</span></td></tr>
+<tr><td>media_interface_name</td><td><span class="badge">100GBASE-SR10</span> <span class="badge">Ethernet-compliant optical interface</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">100GBASE-SR10</span> <span class="badge">CXP</span> <span class="badge">CPPI</span> <span class="badge">OTU4</span> <span class="badge">OTU2e</span> <span class="badge">12x10GBASE-SR</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">1.0</span> <span class="badge">10.3</span> <span class="badge">11.1</span> <span class="badge">11.2</span> <span class="badge">11.3</span> <span class="badge">11.318</span> <span class="badge">135.816</span></td></tr>
+<tr><td>reach_km</td><td><span class="badge">0.1</span> <span class="badge">0.15</span></td></tr>
+<tr><td>pre_fec_ber_threshold</td><td><span class="badge">1e-12</span> <span class="badge">1e-06</span> <span class="badge">1e-08</span></td></tr>
+<tr><td>los_assert_dbm</td><td><span class="badge">-30.0</span> <span class="badge">-15.5</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Finisar</td></tr>
+<tr><td>model</td><td>FTLD10CE3C</td></tr>
+<tr><td>form_factor</td><td>CXP</td></tr>
+<tr><td>standards_claimed</td><td>IBTA CXP Specification, IEEE 802.3ba 100GBASE-SR10, CPPI electrical interfaces, InfiniBand Architectural Release 1.3, Volume 2, CXP Specification Release, RoHS-6</td></tr>
+<tr><td>emitter_type</td><td>LASER_VCSEL</td></tr>
+<tr><td>wavelength_min_nm</td><td>840.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>860.0</td></tr>
+<tr><td>channel_total</td><td>12</td></tr>
+<tr><td>mounting_type</td><td>pluggable_hot, pluggable</td></tr>
+<tr><td>connector_type</td><td>MPO</td></tr>
+<tr><td>fiber_type</td><td>MMF, MMF_OM3, MMF_OM4</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>3.5</td></tr>
+<tr><td>baud_rate_gbaud</td><td>11.3</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-7.6</td></tr>
+<tr><td>tx_power_max_dbm</td><td>2.4</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-5.4</td></tr>
+<tr><td>rx_overload_dbm</td><td>2.4</td></tr>
+<tr><td>extinction_ratio_db</td><td>3.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-12.5</td></tr>
+<tr><td>receiver_reflectance_db</td><td>-12.0</td></tr>
+<tr><td>optical_extinction_ratio_db</td><td>3.0</td></tr>
+<tr><td>optical_return_loss_tolerance_db</td><td>12.0</td></tr>
+<tr><td>number_of_lanes</td><td>12</td></tr>
+<tr><td>los_hysteresis_db</td><td>1.0</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Link distance stated as 100 m on OM3 MMF and 150 m on OM4 MMF (reach_km recorded as 0.1 and 0.15). Bit rate per lane table uses 1000–11318 Mb/sec. LOS Assert (LOSA) min −30.0 dBm, max −15.5 dBm. Page 11 receiver notes include conflicting text referring to 4 lasers/10.5 Gb/s (likely errata vs 12-channel 11.3 Gb/s spec). Requires 3.3 V supply only; 12 V pins not connected. Multirate per channel 1 Gb/s to 11.3 Gb/s. Aggregate maximum data rate 135.816 Gb/s. Copyright/footer references Coherent Corp.; product and certificates reference Finisar Corporation.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>FEATURES, APPLICATIONS, Product Selection, II. General Product Characteristics, III. Absolute Maximum Ratings, IV. Electrical Characteristics (TOP = 0 to 70°C, VCC = 3.3 ± 5% Volts), Module-end, Typical Power Consumption, V. Optical Characteristics (TOP = 0 to 70°C, VCC = 3.3 ± 5% Volts), VII. Environmental Specifications, x. References</td></tr>
+<tr><td>suggestions</td><td>Add CXP to form_factor enum. Consider reach_m or allow explicit unit in reach field to avoid meter-to-km conversion. Distinguish LOS assert min/max vs single threshold in schema.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>host_interface_name</th><th>media_interface_name</th><th>standards_code</th><th>bit_rate_gbps</th><th>reach_km</th><th>pre_fec_ber_threshold</th><th>los_assert_dbm</th></tr><tr><td><strong>100GBASE-SR10 (OM3, 10.3 Gb/s per lane)</strong></td><td>CPPI</td><td>100GBASE-SR10</td><td>100GBASE-SR10</td><td>10.3</td><td>0.1</td><td>1e-12</td><td>-30.0</td></tr><tr><td><strong>100GBASE-SR10 (OM4, 10.3 Gb/s per lane)</strong></td><td>CPPI</td><td>100GBASE-SR10</td><td>100GBASE-SR10</td><td>10.3</td><td>0.15</td><td>1e-12</td><td>-30.0</td></tr><tr><td><strong>12x10GBASE-SR (10.3 Gb/s per lane)</strong></td><td>CPPI</td><td>Ethernet-compliant optical interface</td><td>12x10GBASE-SR</td><td>10.3</td><td>0.1</td><td>1e-12</td><td>-30.0</td></tr><tr><td><strong>Multirate CXP 11.1 Gb/s per lane</strong></td><td>84-pin edge connector</td><td>Ethernet-compliant optical interface</td><td>CXP</td><td>11.1</td><td>0.1</td><td>1e-06</td><td>-30.0</td></tr><tr><td><strong>Multirate CXP 11.2 Gb/s per lane</strong></td><td>84-pin edge connector</td><td>Ethernet-compliant optical interface</td><td>CXP</td><td>11.2</td><td>0.1</td><td>1e-06</td><td>-30.0</td></tr><tr><td><strong>Multirate CXP 11.3 Gb/s per lane</strong></td><td>84-pin edge connector</td><td>Ethernet-compliant optical interface</td><td>CXP</td><td>11.3</td><td>0.1</td><td>1e-08</td><td>-30.0</td></tr><tr><td><strong>OTU2e (11.1 Gb/s per lane)</strong></td><td>CPPI</td><td>Ethernet-compliant optical interface</td><td>OTU2e</td><td>11.1</td><td>0.1</td><td>1e-06</td><td>-30.0</td></tr><tr><td><strong>OTU4 (max lane rate)</strong></td><td>CPPI</td><td>Ethernet-compliant optical interface</td><td>OTU4</td><td>11.318</td><td>0.1</td><td>1e-08</td><td>-30.0</td></tr><tr><td><strong>100GBASE-SR10 aggregate (135.816 Gb/s)</strong></td><td>CXP electrical interface</td><td>100GBASE-SR10</td><td>100GBASE-SR10</td><td>135.816</td><td>0.1</td><td>1e-12</td><td>-15.5</td></tr><tr><td><strong>InfiniBand SDR (1 Gb/s per lane)</strong></td><td>CPPI</td><td>Ethernet-compliant optical interface</td><td>CPPI</td><td>1.0</td><td>0.1</td><td>1e-12</td><td>-15.5</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 22:56
+</footer>
+
+</div>
+</body>
+</html>

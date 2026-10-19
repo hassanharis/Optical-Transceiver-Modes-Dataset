@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "QT-WDM-0203BD Gigabit Ethernet",
+      "model": "QT-WDM-0203BD",
+      "wavelength_min_nm": 1510.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1000BASE-BX-U",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0203BD Fiber Channel",
+      "model": "QT-WDM-0203BD",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "SONET OC-24-LR-1",
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "QT-WDM-0203BID Gigabit Ethernet",
+      "model": "QT-WDM-0203BID",
+      "wavelength_min_nm": 1510.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1000BASE-BX-U",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0203BID Fiber Channel",
+      "model": "QT-WDM-0203BID",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1360.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "SONET OC-24-LR-1",
+      "bit_rate_gbps": 1.063
+    }
+  ]
+}

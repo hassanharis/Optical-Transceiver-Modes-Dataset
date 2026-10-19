@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "SO-SFP-10GE-LR20 multirate 1310nm 20km",
+      "model": "SO-SFP-10GE-LR20",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "SO-SFP-10GE-LR20-I multirate 1310nm 20km I-temp",
+      "model": "SO-SFP-10GE-LR20-I",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.3
+    }
+  ]
+}

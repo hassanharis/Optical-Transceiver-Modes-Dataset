@@ -1,0 +1,44 @@
+{
+  "modes": [
+    {
+      "label": "BiDi 25G 80km Tx 1295.56nm Rx 1309.14nm C-temp",
+      "model": "TS2015-BUVC-SO",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "power_consumption_w": 2.5,
+      "host_interface_name": "OIF CEI-28G-VSR",
+      "standards_code": "25GBASE 80km"
+    },
+    {
+      "label": "BiDi 25G 80km Tx 1309.14nm Rx 1295.56nm C-temp",
+      "model": "TS2015-BVUC-SO",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "power_consumption_w": 2.5,
+      "host_interface_name": "OIF CEI-28G-VSR",
+      "standards_code": "25GBASE 80km"
+    },
+    {
+      "label": "BiDi 25G 80km Tx 1295.56nm Rx 1309.14nm I-temp",
+      "model": "TS2015-BUVI-SO",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "power_consumption_w": 3.3,
+      "host_interface_name": "OIF CEI-28G-VSR",
+      "standards_code": "25GBASE 80km"
+    },
+    {
+      "label": "BiDi 25G 80km Tx 1309.14nm Rx 1295.56nm I-temp",
+      "model": "TS2015-BVUI-SO",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "power_consumption_w": 3.3,
+      "host_interface_name": "OIF CEI-28G-VSR",
+      "standards_code": "25GBASE 80km"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "QSFP28 host MSA",
+      "form_factor": "QSFP28",
+      "standards_code": "SFF-8665"
+    },
+    {
+      "label": "QSFP+ pluggable form factor",
+      "form_factor": "QSFP+",
+      "standards_code": "SFF-8665"
+    },
+    {
+      "label": "SFP28 media receptacle",
+      "form_factor": "SFP28",
+      "standards_code": "SFF-8402"
+    },
+    {
+      "label": "QSFP28 I2C management (DDMI)",
+      "form_factor": "QSFP28",
+      "standards_code": "SFF-8636"
+    }
+  ]
+}

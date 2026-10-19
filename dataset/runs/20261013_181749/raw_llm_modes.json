@@ -1,0 +1,22 @@
+{
+  "modes": [
+    {
+      "label": "2\u00d7DR4 MPO-12",
+      "model": "OP13LI8-005D",
+      "power_consumption_w": 10.0,
+      "media_interface_name": "2*DR4",
+      "standards_code": "2\u00d7DR4",
+      "rx_sensitivity_dbm": -3.4,
+      "rx_overload_dbm": 4.0
+    },
+    {
+      "label": "DR8 MPO-16",
+      "model": "OP13LI8-005D-2",
+      "power_consumption_w": 10.0,
+      "media_interface_name": "DR8",
+      "standards_code": "DR8",
+      "rx_sensitivity_dbm": -0.9,
+      "rx_overload_dbm": 4.2
+    }
+  ]
+}

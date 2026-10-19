@@ -1,0 +1,620 @@
+{
+  "modes": [
+    {
+      "label": "OIF 400ZR app 0x01 amplified 400G 80km",
+      "power_consumption_w": 23.1,
+      "host_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OIF 400ZR app code 0x01",
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 80.0,
+      "tx_power_min_dbm": -10.0,
+      "tx_power_max_dbm": -6.0,
+      "rx_sensitivity_dbm": -20.0,
+      "rx_osnr_db": 26.0,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 2400.0,
+      "fec_type": "CFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 26.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OIF 400ZR | OSNR tolerance 400G"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 27.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -15.0
+            }
+          ],
+          "source": "OIF 400ZR | OSNR tolerance 400G"
+        }
+      ]
+    },
+    {
+      "label": "OIF 400ZR app 0x02 unamplified 400G 25km",
+      "power_consumption_w": 23.1,
+      "host_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OIF 400ZR app code 0x02",
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 25.0,
+      "tx_power_min_dbm": -10.0,
+      "tx_power_max_dbm": -6.0,
+      "rx_sensitivity_dbm": -20.0,
+      "rx_osnr_db": 26.0,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 2400.0,
+      "fec_type": "CFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 26.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OIF 400ZR | OSNR tolerance 400G"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 27.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -15.0
+            }
+          ],
+          "source": "OIF 400ZR | OSNR tolerance 400G"
+        }
+      ]
+    },
+    {
+      "label": "OIF 400ZR extension 4x100G 400G 80km",
+      "power_consumption_w": 23.1,
+      "host_interface_name": "100GAUI-2",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "OIF 400ZR extension",
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 80.0,
+      "tx_power_min_dbm": -10.0,
+      "tx_power_max_dbm": -6.0,
+      "rx_sensitivity_dbm": -20.0,
+      "rx_osnr_db": 26.0,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 2400.0,
+      "fec_type": "CFEC",
+      "number_of_lanes": 4,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 26.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OIF 400ZR | OSNR tolerance 400G"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 27.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -15.0
+            }
+          ],
+          "source": "OIF 400ZR | OSNR tolerance 400G"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ appl 4 400G small PMD 120km",
+      "power_consumption_w": 23.1,
+      "host_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OpenZR+ MSA (small PMD)",
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 120.0,
+      "tx_power_min_dbm": -10.0,
+      "tx_power_max_dbm": -6.0,
+      "rx_sensitivity_dbm": -20.0,
+      "rx_osnr_db": 23.9,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 24.2,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=4"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.7,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=4"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ appl 5 400G 450km",
+      "power_consumption_w": 23.1,
+      "host_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 450.0,
+      "tx_power_min_dbm": -13.0,
+      "tx_power_max_dbm": -9.0,
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.4,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.9,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=5"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.4,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=5"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ appl 6 4x100G 400G 450km",
+      "power_consumption_w": 23.1,
+      "host_interface_name": "100GAUI-2",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 450.0,
+      "tx_power_min_dbm": -13.0,
+      "tx_power_max_dbm": -9.0,
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.4,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 4,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.9,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=6"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.4,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=6"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ appl 7 300G DP-8QAM 600km",
+      "power_consumption_w": 22.3,
+      "host_interface_name": "100GAUI-2",
+      "frame": "3x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_8-DP",
+      "reach_km": 600.0,
+      "tx_power_min_dbm": -12.0,
+      "tx_power_max_dbm": -8.0,
+      "rx_sensitivity_dbm": -22.0,
+      "rx_osnr_db": 20.3,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 26000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 3,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 20.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -17.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=7"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 21.3,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -19.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=7"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ appl 8 Enhanced 400G 450km",
+      "power_consumption_w": 23.1,
+      "host_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OpenZR+ MSA, Enhanced mode1",
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 450.0,
+      "tx_power_min_dbm": -13.0,
+      "tx_power_max_dbm": -9.0,
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.1,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 8,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.6,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=8"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.1,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=8"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ appl 9 Enhanced 4x100G 400G 450km",
+      "power_consumption_w": 23.1,
+      "host_interface_name": "100GAUI-2",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA, Enhanced mode1",
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16-DP",
+      "reach_km": 450.0,
+      "tx_power_min_dbm": -13.0,
+      "tx_power_max_dbm": -9.0,
+      "rx_sensitivity_dbm": -21.0,
+      "rx_osnr_db": 23.1,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 13000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 4,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 23.6,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -14.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=9"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 24.1,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -16.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=9"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ appl 10 Enhanced 300G DP-8QAM 600km",
+      "power_consumption_w": 22.3,
+      "host_interface_name": "100GAUI-2",
+      "frame": "3x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA, Enhanced mode1",
+      "bit_rate_gbps": 300.0,
+      "modulation_format": "QAM_8-DP",
+      "reach_km": 600.0,
+      "tx_power_min_dbm": -12.0,
+      "tx_power_max_dbm": -8.0,
+      "rx_sensitivity_dbm": -23.0,
+      "rx_osnr_db": 19.5,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 26000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 3,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 20.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -17.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=10"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 20.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -19.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=10"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ appl 11 200G DP-QPSK 1000km",
+      "power_consumption_w": 21.3,
+      "host_interface_name": "100GAUI-2",
+      "frame": "2x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 1000.0,
+      "tx_power_min_dbm": -10.5,
+      "tx_power_max_dbm": -6.5,
+      "rx_sensitivity_dbm": -29.0,
+      "rx_osnr_db": 15.0,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 50000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 15.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -20.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=11"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -22.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=11"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ appl 12 200G CAUI4 1000km",
+      "power_consumption_w": 21.3,
+      "host_interface_name": "CAUI4",
+      "frame": "2 x CAUI4 (4x 25G)",
+      "standards_code": "OpenZR+ MSA",
+      "bit_rate_gbps": 200.0,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 1000.0,
+      "tx_power_min_dbm": -10.5,
+      "tx_power_max_dbm": -6.5,
+      "rx_sensitivity_dbm": -29.0,
+      "rx_osnr_db": 15.0,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 50000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 15.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -20.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=12"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -22.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=12"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ appl 13 100G DP-QPSK 2000km",
+      "power_consumption_w": 18.2,
+      "host_interface_name": "100GAUI-2",
+      "frame": "1x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA",
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 2000.0,
+      "tx_power_min_dbm": -6.0,
+      "tx_power_max_dbm": -2.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_osnr_db": 11.8,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 80000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 1,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 12.3,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=13"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 12.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=13"
+        }
+      ]
+    },
+    {
+      "label": "OpenZR+ appl 14 100G CAUI4 2000km",
+      "power_consumption_w": 18.2,
+      "host_interface_name": "CAUI4",
+      "frame": "1 x CAUI4 (4x 25G)",
+      "standards_code": "OpenZR+ MSA",
+      "bit_rate_gbps": 100.0,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 2000.0,
+      "tx_power_min_dbm": -6.0,
+      "tx_power_max_dbm": -2.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_osnr_db": 11.8,
+      "rx_overload_dbm": 13.0,
+      "cd_tolerance_ps_nm": 80000.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 1,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 12.3,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=14"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 12.8,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OpenZR+ | Appl mode=14"
+        }
+      ]
+    }
+  ]
+}

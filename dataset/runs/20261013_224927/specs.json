@@ -1,0 +1,150 @@
+{
+  "vendor": "Finisar",
+  "model": [
+    "FTLC1155RGPL4"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA",
+    "CWDM4 MSA",
+    "IEEE P802.3bm",
+    "SFF-8665",
+    "RoHS-6 Directive 2011/65/EU"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1264.5,
+    1284.5,
+    1304.5,
+    1324.5
+  ],
+  "wavelength_max_nm": [
+    1277.5,
+    1297.5,
+    1317.5,
+    1337.5
+  ],
+  "wavelength_band": [
+    "CWDM",
+    "CWDM4"
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot",
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF_G652"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    4.5,
+    5.0
+  ],
+  "host_interface_name": [
+    "CAUI-4"
+  ],
+  "media_interface_name": [
+    "CWDM4"
+  ],
+  "frame": [
+    "4x25G"
+  ],
+  "standards_code": [
+    "CWDM4",
+    "KR4 FEC",
+    "RS-FEC (528,514)",
+    "IEEE P802.3bm Annex 83E",
+    "CAUI-4",
+    "4WDM MSA"
+  ],
+  "baud_rate_gbaud": [
+    25.78125,
+    24.33024,
+    10.3125
+  ],
+  "bit_rate_gbps": [
+    103.1,
+    25.78
+  ],
+  "reach_km": [
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0,
+    -4.0,
+    -2.0
+  ],
+  "tx_power_max_dbm": [
+    2.5
+  ],
+  "rx_sensitivity_dbm": [
+    -11.3,
+    -8.9
+  ],
+  "rx_overload_dbm": [
+    2.5,
+    3.5
+  ],
+  "fec_type": [
+    "KR4",
+    "RS_528_514"
+  ],
+  "pre_fec_ber_threshold": [
+    5e-05
+  ],
+  "post_fec_ber_target": [
+    5e-12
+  ],
+  "extinction_ratio_db": [
+    3.5
+  ],
+  "los_assert_dbm": [
+    -24.0,
+    -15.0
+  ],
+  "los_deassert_dbm": [
+    -13.5
+  ],
+  "transmitter_reflectance_db": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.5
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    1.5
+  ],
+  "penalties": [],
+  "notes": "Loss budget 5 dB on up to 2 km SMF with KR4 FEC; includes 2.5 dB optical coding gain from host RS-FEC (528,514) per Clause 91; maximum informative link length 2 km; bypass RS-FEC not supported; loss budget may include up to 1 dB MPI loss penalty. Unstressed receiver sensitivity at 5x10-5 BER; stressed SRS measured with 4WDM MSA conformance test signal at TP3 for 5x10-5 BER. TDP max 3 dB does not include MPI penalty. TxOMA2 and Launch Power (OMA-TDP) apply at maximum TDP. Power ≤4.5 W when stabilized (Tx and Rx CDR locked); may be ≤5 W during locking acquisition. Average launch power max 2.5 dBm with all channels on.",
+  "provenance_datasheet_sections": [
+    "FTLC1155RGPL4",
+    "2km 100G CWDM4 QSFP28 Optical Transceiver Module",
+    "FEATURES",
+    "Product Selection",
+    "II. Absolute Maximum Ratings",
+    "III. Electrical Characteristics  (EOL, TOP = -40 to 85 °C, VCC = 3.135 to 3.465 Volts)",
+    "IV. Optical Characteristics (EOL, TOP = -40 to 85 °C, VCC = 3.135 to 3.465 Volts)",
+    "V. General Specifications",
+    "VI. Environmental Specifications",
+    "XI. Mechanical Specifications",
+    "X. References"
+  ],
+  "suggestions": "Emitter laser type (DFB vs FP) and photodetector type (PIN) are implied by CWDM4 MSA but not named on this sheet; wavelength nominal centers could be added to schema when only ranges are given. Transmitter and Dispersion Penalty (3 dB max) does not map cleanly to penalties[] without an explicit penalized optical parameter and condition triple."
+}

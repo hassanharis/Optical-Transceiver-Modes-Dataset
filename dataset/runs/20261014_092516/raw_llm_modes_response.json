@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"LS-SM3101-20I Fast Ethernet 125Mbps\",\n      \"model\": \"LS-SM3101-20I\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1360.0,\n      \"standards_code\": \"Fast Ethernet\",\n      \"bit_rate_gbps\": 125.0\n    },\n    {\n      \"label\": \"LS-SM3101-20C SONET OC-3 155Mbps\",\n      \"model\": \"LS-SM3101-20C\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1610.0,\n      \"standards_code\": \"SONET OC-3\",\n      \"bit_rate_gbps\": 155.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

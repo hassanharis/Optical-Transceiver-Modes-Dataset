@@ -1,0 +1,98 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-155M-O-Cxx-E",
+    "SO-SFP-155M-O-C49-E",
+    "SO-SFP-155M-O-C51-E",
+    "SO-SFP-155M-O-C61-E",
+    "SO-SFP-155M-O-C62-E"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1484.5,
+    1504.5,
+    1604.5,
+    1618.5
+  ],
+  "wavelength_max_nm": [
+    1497.5,
+    1517.5,
+    1617.5,
+    1631.5,
+    1635.0
+  ],
+  "wavelength_center_nm": [
+    1491.0,
+    1511.0,
+    1611.0,
+    1625.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -20.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    0.9
+  ],
+  "host_interface_name": [
+    "100M Ethernet",
+    "STM1/OC3"
+  ],
+  "standards_code": [
+    "STM1",
+    "OC3"
+  ],
+  "bit_rate_gbps": [
+    125.0,
+    155.0,
+    100.0
+  ],
+  "reach_km": [
+    100.0
+  ],
+  "tx_power_min_dbm": [
+    -2.0
+  ],
+  "tx_power_max_dbm": [
+    1.0
+  ],
+  "rx_sensitivity_dbm": [
+    -36.0
+  ],
+  "rx_overload_dbm": [
+    1.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -25.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "los_hysteresis_db": [
+    1.0
+  ],
+  "notes": "Bit rates stated as 125Mbps / 155Mbps; overview also cites 100Mbps Ethernet. Tx output power min/max and rx min/overload are average power (footnote 1). Rx minimum input power -36dBm valid per footnote 2 at 125Mbps PRBS7 and BER 1x10-12. Nominal wavelengths 1491nm/1511nm/1611nm/1625nm map to orderable variants C49/C51/C61/C62-E and transmit wavelength ranges in footnotes 3–6. Power budget 0–34dB (footnote 7). DDM reports Rx power reliably down to -25dBm; below -25dBm reporting unreliable and Rx_LOS asserted; Rx sensitivity still valid down to -36dBm when Rx_LOS asserted. OTDR: dynamic range typ 65dB, dead zone max 30m, resolution max 10m, accuracy max 50m. Storage temperature -40°C to +85°C. Power consumption < 0.9W.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-155M-O-Cxx-E SFP, OSC/OTDR, 155Mbps, CWDM, SM, 100km, LC, E-temp",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Schema bit_rate_gbps conflicts with Mbps values in source; consider Mbps field or document unit. OTDR parameters (dynamic range, dead zone, resolution, accuracy) are not in schema. Power budget 0–34dB may warrant a dedicated field."
+}

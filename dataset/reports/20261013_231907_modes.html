@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Finisar</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Finisar</div>
+  <div class="subtitle">SFP+</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Finisar</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">SFP+</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">SFF-8431, SFF-8432, SFF-86908, SFF-8472, SFF-8690, G.698.1 DS100S1-2Dz(C), G.709, SONET OC-192, SDH STM-64, 10G Ethernet ZR, 10G Fibre Channel, RoHS Directive 2011/65/EU</div></div>
+      <div class="spec-item"><div class="label">Emitter Type</div><div class="value">MZM</div></div>
+      <div class="spec-item"><div class="label">Channel Spacing (GHz)</div><div class="value">50.0</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable_hot, pluggable</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">SMF_G652, SMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-5.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">85.0</div></div>
+      <div class="spec-item"><div class="label">Reach (km)</div><div class="value">80.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Min (dBm)</div><div class="value">-1.0</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">3.0</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">-7.0</div></div>
+      <div class="spec-item"><div class="label">Extinction Ratio Db</div><div class="value">8.2</div></div>
+      <div class="spec-item"><div class="label">Los Deassert Dbm</div><div class="value">-25.0</div></div>
+      <div class="spec-item"><div class="label">Receiver Reflectance Db</div><div class="value">-27.0</div></div>
+      <div class="spec-item"><div class="label">Optical Extinction Ratio Db</div><div class="value">8.2</div></div>
+      <div class="spec-item"><div class="label">Side Mode Suppression Ratio Db</div><div class="value">30.0</div></div>
+      <div class="spec-item"><div class="label">Los Hysteresis Db</div><div class="value">0.5</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">FTLX6871MNC: Linear RX interface; FTLX6872MNC: Limiting RX interface. Modules do not contain internal CDRs. Optical IV table lists receiver Optical Center Wavelength 1260–1600 with unit dBm (likely nm). Tx wavelength per ITU-T 694.1 with 50 GHz spacing 1528.77 to 1563.86 nm; center wavelength BOL/EOL given as z±1.5 Pm and z±2.5 Pm. Sensitivity/OSNR tables use dispersion -300 to 1450 ps/nm (9.95/10.3 Gb/s) or -300 to 1300 ps/nm (10.7–11.3 Gb/s) and OSNR&gt;30 dB where noted. All OSNR measurements 0.1 nm resolution. Average launch power when Tx OFF max -30 dBm. Receiver optical damage threshold 5 dBm (absolute max). Typical power consumption notes at 70°C case, BOL, 3.3 V.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">10Gb/s DWDM 80km Multi-Rate Tunable SFP+ Transceiver E-temp versions, FEATURES, APPLICATIONS, Product Selection, II. Absolute Maximum Ratings, III. Electrical Characteristics (TOP = -5 to 70 °C ), IV. Optical Characteristics (TOP = -5 to 85 °C, VCC = 3.14 to 3.46 Volts)), V. General Specifications, VI. Environmental Specifications, XI. The FTLX6871/72MNC modules do not contain Internal CDRs., XIII. Mechanical Specifications</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Clarify whether dispersion-penalty rows should map to dispersion_penalty_db with penalized_value equal to back-to-back sensitivity or only the penalty magnitude. Receiver wavelength row unit conflict (dBm vs nm). Duplicate rx_sensitivity values could be deduplicated to [-24.0, -23.0, -27.0].</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Wavelength Min</th><th>Wavelength Max</th><th>Wavelength Band</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>RX Sensitivity (dBm)</th><th>RX OSNR (dB)</th><th>CD Tolerance (ps/nm)</th><th>post_fec_ber_target</th><th>los_assert_dbm</th><th>Penalties</th></tr>
+      <tr><td><strong>FTLX6871MNC 9.95 Gb/s</strong></td><td>FTLX6871MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>9.95</td><td>-24.0</td><td>24.0</td><td>1450.0</td><td>1e-12</td><td>-34.0</td><td>dispersion_penalty_db +2.0 dB (val=-24.0) [rx_osnr_db=30.0, chromatic_dispersion_ps_nm=-300.0]; rx_osnr_db +4.0 dB (val=24.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>FTLX6872MNC 9.95 Gb/s</strong></td><td>FTLX6872MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>9.95</td><td>-24.0</td><td>24.0</td><td>1450.0</td><td>1e-12</td><td>-34.0</td><td>dispersion_penalty_db +2.0 dB (val=-24.0) [rx_osnr_db=30.0, chromatic_dispersion_ps_nm=-300.0]; rx_osnr_db +4.0 dB (val=24.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>FTLX6871MNC 10.3 Gb/s</strong></td><td>FTLX6871MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>10.3</td><td>-23.0</td><td>24.0</td><td>1450.0</td><td>1e-12</td><td>-34.0</td><td>dispersion_penalty_db +2.5 dB (val=-23.0) [rx_osnr_db=30.0, chromatic_dispersion_ps_nm=-300.0]; rx_osnr_db +4.0 dB (val=24.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>FTLX6872MNC 10.3 Gb/s</strong></td><td>FTLX6872MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>10.3</td><td>-23.0</td><td>24.0</td><td>1450.0</td><td>1e-12</td><td>-34.0</td><td>dispersion_penalty_db +2.5 dB (val=-23.0) [rx_osnr_db=30.0, chromatic_dispersion_ps_nm=-300.0]; rx_osnr_db +4.0 dB (val=24.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>FTLX6871MNC 10.7 Gb/s</strong></td><td>FTLX6871MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>10.7</td><td>-27.0</td><td>16.0</td><td>1300.0</td><td>0.0001</td><td>-34.0</td><td>dispersion_penalty_db +3.0 dB (val=-27.0) [rx_osnr_db=30.0, chromatic_dispersion_ps_nm=-300.0]; rx_osnr_db +4.0 dB (val=16.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>FTLX6872MNC 10.7 Gb/s</strong></td><td>FTLX6872MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>10.7</td><td>-27.0</td><td>16.0</td><td>1300.0</td><td>0.0001</td><td>-34.0</td><td>dispersion_penalty_db +3.0 dB (val=-27.0) [rx_osnr_db=30.0, chromatic_dispersion_ps_nm=-300.0]; rx_osnr_db +4.0 dB (val=16.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>FTLX6871MNC 11.1 Gb/s</strong></td><td>FTLX6871MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>11.1</td><td>-27.0</td><td>16.0</td><td>1300.0</td><td>0.0001</td><td>-34.0</td><td>dispersion_penalty_db +3.0 dB (val=-27.0) [rx_osnr_db=30.0, chromatic_dispersion_ps_nm=-300.0]; rx_osnr_db +4.0 dB (val=16.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>FTLX6872MNC 11.1 Gb/s</strong></td><td>FTLX6872MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>11.1</td><td>-27.0</td><td>16.0</td><td>1300.0</td><td>0.0001</td><td>-34.0</td><td>dispersion_penalty_db +3.0 dB (val=-27.0) [rx_osnr_db=30.0, chromatic_dispersion_ps_nm=-300.0]; rx_osnr_db +4.0 dB (val=16.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>FTLX6871MNC 11.3 Gb/s</strong></td><td>FTLX6871MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>11.3</td><td>-27.0</td><td>17.0</td><td>1300.0</td><td>0.0001</td><td>-34.0</td><td>dispersion_penalty_db +3.5 dB (val=-27.0) [rx_osnr_db=30.0, chromatic_dispersion_ps_nm=-300.0]; rx_osnr_db +4.0 dB (val=17.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>FTLX6872MNC 11.3 Gb/s</strong></td><td>FTLX6872MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>ITU-T G.698.1 DS100S1-2Dz(C)</td><td>11.3</td><td>-27.0</td><td>17.0</td><td>1300.0</td><td>0.0001</td><td>-34.0</td><td>dispersion_penalty_db +3.5 dB (val=-27.0) [rx_osnr_db=30.0, chromatic_dispersion_ps_nm=-300.0]; rx_osnr_db +4.0 dB (val=17.0) [rx_power_dbm=-18.0]</td></tr>
+      <tr><td><strong>FTLX6871MNC 8.5 Gb/s</strong></td><td>FTLX6871MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>10G Ethernet ZR</td><td>8.5</td><td>-24.0</td><td></td><td>-300.0</td><td>1e-12</td><td>-34.0</td><td></td></tr>
+      <tr><td><strong>FTLX6872MNC 8.5 Gb/s</strong></td><td>FTLX6872MNC</td><td>1528.77</td><td>1563.86</td><td>C-band</td><td>10G Ethernet ZR</td><td>8.5</td><td>-24.0</td><td></td><td>-300.0</td><td>1e-12</td><td>-34.0</td><td></td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">FTLX6871MNC</span> <span class="badge">FTLX6872MNC</span></td></tr>
+      <tr><td>wavelength_min_nm</td><td><span class="badge">1528.77</span> <span class="badge">1260.0</span></td></tr>
+      <tr><td>wavelength_max_nm</td><td><span class="badge">1563.86</span> <span class="badge">1600.0</span></td></tr>
+      <tr><td>wavelength_band</td><td><span class="badge">C-band</span> <span class="badge">DWDM</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">1.6</span> <span class="badge">1.7</span> <span class="badge">1.8</span> <span class="badge">1.9</span> <span class="badge">2.5</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">G.698.1 DS100S1-2Dz(C)</span> <span class="badge">10G Ethernet ZR</span> <span class="badge">ITU-T G.698.1 DS100S1-2Dz(C)</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">8.5</span> <span class="badge">9.95</span> <span class="badge">10.3</span> <span class="badge">10.7</span> <span class="badge">11.1</span> <span class="badge">11.3</span> <span class="badge">11.3168</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-24.0</span> <span class="badge">-23.0</span> <span class="badge">-27.0</span> <span class="badge">-24.0</span> <span class="badge">-23.0</span> <span class="badge">-27.0</span></td></tr>
+      <tr><td>rx_osnr_db</td><td><span class="badge">24.0</span> <span class="badge">16.0</span> <span class="badge">17.0</span></td></tr>
+      <tr><td>cd_tolerance_ps_nm</td><td><span class="badge">-300.0</span> <span class="badge">1450.0</span> <span class="badge">1300.0</span></td></tr>
+      <tr><td>post_fec_ber_target</td><td><span class="badge">1e-12</span> <span class="badge">0.0001</span></td></tr>
+      <tr><td>los_assert_dbm</td><td><span class="badge">-34.0</span> <span class="badge">-27.0</span></td></tr>
+      <tr><td>penalties</td><td><span class="badge">{&#x27;target_parameter&#x27;: &#x27;dispersion_penalty_db&#x27;, &#x27;penalty_db&#x27;: 2.0, &#x27;penalized_value&#x27;: -24.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;value&#x27;: 30.0}, {&#x27;parameter&#x27;: &#x27;chromatic_dispersion_ps_nm&#x27;, &#x27;value&#x27;: -300.0}], &#x27;source&#x27;: &#x27;IV. Optical Characteristics | Receiver Sensitivity 9.95 Gb/s&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;dispersion_penalty_db&#x27;, &#x27;penalty_db&#x27;: 2.5, &#x27;penalized_value&#x27;: -23.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;value&#x27;: 30.0}, {&#x27;parameter&#x27;: &#x27;chromatic_dispersion_ps_nm&#x27;, &#x27;value&#x27;: -300.0}], &#x27;source&#x27;: &#x27;IV. Optical Characteristics | Receiver Sensitivity 10.3 Gb/s&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;dispersion_penalty_db&#x27;, &#x27;penalty_db&#x27;: 3.0, &#x27;penalized_value&#x27;: -27.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;value&#x27;: 30.0}, {&#x27;parameter&#x27;: &#x27;chromatic_dispersion_ps_nm&#x27;, &#x27;value&#x27;: -300.0}], &#x27;source&#x27;: &#x27;IV. Optical Characteristics | Receiver Sensitivity 10.7 Gb/s&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;dispersion_penalty_db&#x27;, &#x27;penalty_db&#x27;: 3.0, &#x27;penalized_value&#x27;: -27.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;value&#x27;: 30.0}, {&#x27;parameter&#x27;: &#x27;chromatic_dispersion_ps_nm&#x27;, &#x27;value&#x27;: -300.0}], &#x27;source&#x27;: &#x27;IV. Optical Characteristics | Receiver Sensitivity 11.1 Gb/s&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;dispersion_penalty_db&#x27;, &#x27;penalty_db&#x27;: 3.5, &#x27;penalized_value&#x27;: -27.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;value&#x27;: 30.0}, {&#x27;parameter&#x27;: &#x27;chromatic_dispersion_ps_nm&#x27;, &#x27;value&#x27;: -300.0}], &#x27;source&#x27;: &#x27;IV. Optical Characteristics | Receiver Sensitivity 11.3 Gb/s&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 4.0, &#x27;penalized_value&#x27;: 24.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;IV. Optical Characteristics | OSNR Performance 9.95 Gb/s&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 4.0, &#x27;penalized_value&#x27;: 24.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;IV. Optical Characteristics | OSNR Performance 10.3 Gb/s&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 4.0, &#x27;penalized_value&#x27;: 16.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;IV. Optical Characteristics | OSNR Performance 10.7 Gb/s&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 4.0, &#x27;penalized_value&#x27;: 16.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;IV. Optical Characteristics | OSNR Performance 11.1 Gb/s&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 4.0, &#x27;penalized_value&#x27;: 17.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -18.0}], &#x27;source&#x27;: &#x27;IV. Optical Characteristics | OSNR Performance 11.3 Gb/s&#x27;}</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 23:19
+</footer>
+
+</div>
+</body>
+</html>

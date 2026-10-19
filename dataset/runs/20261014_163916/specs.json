@@ -1,0 +1,91 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-XFP-LRM"
+  ],
+  "form_factor": [
+    "XFP"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ae",
+    "10GBASE-LRM",
+    "INF-8077i",
+    "XFP-MSA"
+  ],
+  "wavelength_min_nm": [
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1360.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "channel_total": [
+    1
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM1",
+    "MMF_OM2",
+    "MMF_OM3"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    2.0
+  ],
+  "host_interface_name": [
+    "10GBASE-LRM",
+    "10GbE-LAN"
+  ],
+  "standards_code": [
+    "10GBASE-LRM"
+  ],
+  "bit_rate_gbps": [
+    10.312,
+    10.3
+  ],
+  "reach_km": [
+    0.3
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    0.5
+  ],
+  "rx_sensitivity_dbm": [
+    -8.4
+  ],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -20.0
+  ],
+  "los_deassert_dbm": [
+    -10.0
+  ],
+  "los_hysteresis_db": [
+    1.0
+  ],
+  "penalties": [],
+  "notes": "Technology: Grey XFP. Transmission media stated as MM (2x LC). Typical reach 300m @ OM1, OM2, OM3; overview also cites bridgeable distance up to 300m with OM3 or higher-grade fiber recommended. No minimum distance (no minimum attenuation). Power budget 0 – 1.9dB. Rx minimum input power and BER: at 10.3Gbps (10GbE-LAN), PRBS 231-1, BER ≤ 1×10^-12. Footnote 2): transmitter output power, receiver minimum input power, overload, and related values are average power. Storage temperature -40°C to +85°C (not operating). DDM via 2-wire serial per INF-8077i. Safety/regulatory: TUV/UL/FDA; RoHS.",
+  "provenance_datasheet_sections": [
+    "SO-XFP-LRM",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

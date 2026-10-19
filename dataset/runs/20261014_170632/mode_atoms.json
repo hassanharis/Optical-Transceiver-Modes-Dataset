@@ -1,0 +1,121 @@
+{
+  "multi_valued": {
+    "model": [
+      "XPBL-273396-10D",
+      "XPBL-332796-10D",
+      "XPBL-273396-10DA",
+      "XPBL-332796-10DA",
+      "XPBL-XXYY96-10D（A）"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1320.0
+    ],
+    "wavelength_max_nm": [
+      1280.0,
+      1340.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1330.0
+    ],
+    "standards_code": [
+      "802.3ae",
+      "10GBASE-LR/LW",
+      "10GBASE-BX",
+      "10GBASE-LR",
+      "10GBASE-LW",
+      "OTU2",
+      "OTU2e"
+    ],
+    "bit_rate_gbps": [
+      10.3125,
+      11.3
+    ]
+  },
+  "general": {
+    "vendor": "XGIGA",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8472",
+      "SFF-8431",
+      "IEEE 802.3ae",
+      "SFP+ MSA",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF 9/125μm"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "host_interface_name": [
+      "SFP+ MSA"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -6.0
+    ],
+    "tx_power_max_dbm": [
+      -1.0
+    ],
+    "rx_sensitivity_dbm": [
+      -14.4
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      3.5
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -17.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.5
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      5.0
+    ],
+    "penalties": [],
+    "notes": "Family XPBL-XXYY96-10D(A): XPBL-273396 uses 1270nm DFB TX and receives 1330nm; XPBL-332796 uses 1330nm DFB TX and receives 1270nm. Ordering table Commercial Tcase 0~70°C for -10D suffix; Industrial -40~85°C for -10DA suffix. Power dissipation stated as <1.0W (no exact W value). Case operating temperature also listed as Commercial 0°C to +70°C and Industrial -40°C to +85°C in PRODUCT FEATURES. Receiver sensitivity and overload measured with RPBS 2^31-1 @10.3125Gbs BER≤10^-12. Extinction ratio and eye mask per Note (2) same pattern. Average Launched Power(Laser Off) max -30 dBm. Spectrum Bandwidth(-20dB) max 1 nm. VCC 3.14–3.47 V typ 3.3 V; ICC max 300 mA.",
+    "provenance_datasheet_sections": [
+      "XPBL-XXYY96-10D （ A ）",
+      "10Gb/s BIDI SFP+ 10km Transceiver",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "STANDARD",
+      "PRODUCT DESCRIPTION",
+      "Ordering information",
+      "Ⅱ Recommended Operating Conditions",
+      "Ⅲ Optical Characteristics"
+    ],
+    "suggestions": "Add fields for BIDI TX/RX wavelength pairs per orderable part; laser-off output power; spectrum bandwidth at -20 dB; allow temp_min_c/temp_max_c as list or per-SKU objects when Commercial vs Industrial SKUs differ."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "multi_valued": {
+    "model": [
+      "FG-3600E",
+      "FG-3600E-DC",
+      "FG-3601E"
+    ],
+    "form_factor": [
+      "QSFP28",
+      "QSFP+",
+      "SFP28",
+      "SFP+",
+      "SFP"
+    ],
+    "power_consumption_w": [
+      672.0,
+      977.0
+    ],
+    "host_interface_name": [
+      "GE RJ45",
+      "25 GE SFP28",
+      "10 GE SFP+",
+      "GE SFP",
+      "100 GE QSFP28",
+      "40 GE QSFP+"
+    ],
+    "media_interface_name": [
+      "25 GE SFP28",
+      "10 GE SFP+",
+      "GE SFP",
+      "100 GE QSFP28",
+      "40 GE QSFP+"
+    ],
+    "bit_rate_gbps": [
+      1.0,
+      10.0,
+      25.0,
+      40.0,
+      100.0
+    ]
+  },
+  "general": {
+    "vendor": "Fortinet",
+    "wavelength_band": [
+      "CWDM4"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "mount_rack"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 40.0,
+    "reach_km": [
+      2.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "penalties": [],
+    "notes": "Source document is a FortiGate 3600E series NGFW appliance datasheet, not a dedicated optical transceiver module datasheet. Electrical power (672 W average / 977 W maximum) and operating temperature (0–40°C) apply to the FortiGate chassis. Transceiver-related strings (form factors, bit rates, LC on CWDM4, 2 KM, 4 channel parallel fiber) appear only in optional accessory ordering rows and included 2x SFP+ (SR 10 GE); no optical power, OSNR, sensitivity, wavelength nm, FEC, or penalty tables are stated for any transceiver SKU.",
+    "provenance_datasheet_sections": [
+      "DATA SHEET",
+      "FortiGate 3600E/-DC and 3601E",
+      "Interfaces",
+      "Hardware Features",
+      "SPECIFICATIONS",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Run extraction on an individual transceiver module datasheet (e.g. FN-TRAN-QSFP28-SR) rather than a host platform datasheet; optionally distinguish host platform fields from pluggable module fields in the schema."
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "vendor": "Stratos",
+  "model": [
+    "LxF-LP11xx",
+    "LNF-LP11H",
+    "LNF-LP11M",
+    "LNF-LP11HB",
+    "LNF-LP11MB",
+    "LTF-LP11H",
+    "LTF-LP11M",
+    "LTF-LP11HB",
+    "LTF-LP11MB",
+    "LNF-LP11H-R6",
+    "LNF-LP11M-R6",
+    "LNF-LP11HB-R6",
+    "LNF-LP11MB-R6",
+    "LTF-LP11H-R6",
+    "LTF-LP11M-R6",
+    "LTF-LP11HB-R6",
+    "LTF-LP11MB-R6"
+  ],
+  "form_factor": [
+    "Low Rider RJ"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3U",
+    "ISO / IEC 9314-3"
+  ],
+  "emitter_type": [
+    "LED"
+  ],
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1260,
+    1290
+  ],
+  "wavelength_max_nm": [
+    1330,
+    1380
+  ],
+  "wavelength_center_nm": [
+    1310
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "solder_post",
+    "screw_post",
+    "mount_surface"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF_OM1",
+    "MMF 50/125µm",
+    "MMF"
+  ],
+  "temp_min_c": -40,
+  "temp_max_c": 85,
+  "power_consumption_w": null,
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "IEEE 802.3U",
+    "FDDI PMD ISO / IEC 9314-3",
+    "Fast Ethernet"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    0.125
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "NRZ"
+  ],
+  "reach_km": [
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -20.0
+  ],
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -32,
+    -31.5
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    12
+  ],
+  "los_assert_dbm": [
+    -32.5,
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -32.0,
+    -45.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    12
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    1
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Optical Output Power typical -14.0 dBm; minimum TX can be factory-set higher (e.g. -17 dBm). RX sensitivity -32 dBm at BER 1E-12 @ 1.25 Gbps, PRBS7, NRZ, TX ER > 8 dB; with TX LED source derate RX sensitivity to -31.5 dBm. Optical Sensitivity note references TX FP source. Signal Detect thresholds: LSDT (decreasing light) min -45.0 max -32.5 dBm; LSDI (increasing light) min -45.0 max -32.0 dBm. Link distance 2000 m typical with standard fiber and nominal connector losses. Supply Icc 300 mA max (general); TX Icc 120–160 mA; RX Icc 70–120 mA. Family may use LED, VCSEL, FP, or DFB by part number; LxF-LP11xx is 1310 nm multimode LED.",
+  "provenance_datasheet_sections": [
+    "Features & Benefits",
+    "General Specification",
+    "Link Distances",
+    "LxF-LP11xx (125 Mbps, Fast Ethernet, 1310 nm multimode)",
+    "Low Rider Family Part Numbering, Footprint Compatible",
+    "Table A — Multimode Base Part Selection Guide",
+    "Part Numbers with internal circuits that contain 63/37 tin-lead solder",
+    "Part Numbers with internal circuits that contain SAC305 lead-free alloy solder (RoHS compliant)"
+  ],
+  "suggestions": null
+}

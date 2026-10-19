@@ -1,0 +1,123 @@
+{
+  "multi_valued": {
+    "model": [
+      "LG-SC432G-20CB1",
+      "LG-SC432G-20IB1"
+    ],
+    "wavelength_min_nm": [
+      1480.0,
+      1290.0
+    ],
+    "wavelength_max_nm": [
+      1500.0,
+      1330.0
+    ],
+    "wavelength_center_nm": [
+      1490.0,
+      1310.0
+    ],
+    "standards_code": [
+      "ITU-T G.984.2",
+      "GPON OLT B+",
+      "GPON OLT Class B+"
+    ],
+    "bit_rate_gbps": [
+      2.488,
+      1.244,
+      2.5,
+      1.25
+    ],
+    "tx_power_min_dbm": [
+      1.5,
+      3.0,
+      4.5,
+      6.0
+    ],
+    "tx_power_max_dbm": [
+      5.0,
+      7.0,
+      10.0
+    ],
+    "rx_sensitivity_dbm": [
+      -28.0,
+      -30.0,
+      -32.0,
+      -33.0,
+      -35.0
+    ],
+    "rx_overload_dbm": [
+      -8.0,
+      -12.0,
+      -15.0
+    ],
+    "post_fec_ber_target": [
+      1e-10,
+      0.0001
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFF"
+    ],
+    "standards_claimed": [
+      "ITU-T G.984.2 GPON OLT B+/C+/C++/D application"
+    ],
+    "emitter_type": [
+      "LASER_DFB"
+    ],
+    "photodetector_type": [
+      "APD-TIA",
+      "APD"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "SC",
+      "SC/UPC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "reach_km": [
+      20.0
+    ],
+    "extinction_ratio_db": [
+      8.2
+    ],
+    "los_assert_dbm": [
+      -33.0
+    ],
+    "los_deassert_dbm": [
+      -45.0
+    ],
+    "optical_extinction_ratio_db": [
+      8.2
+    ],
+    "optical_return_loss_tolerance_db": [
+      -15.0
+    ],
+    "side_mode_suppression_ratio_db": [
+      30.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      6.0
+    ],
+    "penalties": [],
+    "notes": "Module LG-SC432G-20CB1: operating case 0 to +70°C Standard; LG-SC432G-20IB1 variant -40 to +85°C Industrial. Optical tables list GPON class variants B+, C+, C++, D for mean launched power, sensitivity, and overload. Sensitivity conditions: PRBS223-1@1.244G, ER=10, BER<10-10 or BER<10-4. Title states 1490nm TX / 1310nm RX. Transmitter and dispersion Penalty max 1 dB. Mean Launched Power (TX Off) max -45 dBm. Spectral Width (-20dB) max 1 nm. Receiver Burst Mode Dynamic Range 15 dB. WDM Filter isolation to 1550nm 38 dB; to 1650nm 35 dB. Power Supply Current max 500 mA at 3.3 V.",
+    "provenance_datasheet_sections": [
+      "LG-SC432G-20CB1",
+      "Product Features",
+      "Applications",
+      "Recommended Operating Conditions",
+      "Optical Characteristics",
+      "Electrical Characteristics",
+      "Timing Characteristics",
+      "Ordering information"
+    ]
+  }
+}

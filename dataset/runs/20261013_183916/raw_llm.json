@@ -1,0 +1,139 @@
+{
+  "vendor": null,
+  "model": [
+    "QT-WDM-0220BD",
+    "QT-WDM-0220BID"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "SONET OC-24-LR-1",
+    "RoHS"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1480,
+    1260
+  ],
+  "wavelength_max_nm": [
+    1580,
+    1360
+  ],
+  "wavelength_center_nm": [
+    1550,
+    1310
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    1
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": null,
+  "host_interface_name": [
+    "Gigabit Ethernet",
+    "Fiber Channel"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "Gigabit Ethernet",
+    "Fiber Channel",
+    "OC-24-LR-1"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1.25,
+    1.063
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    20
+  ],
+  "tx_power_min_dbm": [
+    -9
+  ],
+  "tx_power_max_dbm": [
+    -3
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -22
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -3
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9
+  ],
+  "los_assert_dbm": [
+    -30
+  ],
+  "los_deassert_dbm": [
+    -24
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    9
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    1
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    1,
+    4
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Primary P/N QT-WDM-0220BD: operating case temperature 0 to +70°C. Ordering variant QT-WDM-0220BID: -40°C to +85°C extended temperature. Receiver sensitivity and overload per Note 3: PRBS 2^7-1 @ 1250 Mbps, BER ≤ 1×10^-12. Optical average output power per Note 1 launched into SMF. Supply Vcc 3.13–3.47 V (typ 3.3 V); Icc max 300 mA in recommended operating conditions—not stated as power in W. Absolute max storage temperature -40 to +85°C; operating humidity 5–85% not mapped in schema. BIDI: 1550 nm TX / 1310 nm RX on SMF, 20 km.",
+  "provenance_datasheet_sections": [
+    "BIDI SFP 1550nm-TX/1310nm-RX 20KM SMF Transceiver",
+    "P/N: QT- WDM-0220BD",
+    "FEATURES",
+    "APPLICATIONS",
+    "2. Recommended Operating Conditions",
+    "3. Optical and Electrical Characteristics",
+    "Notes:",
+    "7. Ordering information"
+  ],
+  "suggestions": "Consider mapping Icc (mA) and Vcc if electrical power (W) is needed. Extended-temp variant could be a separate SKU record or temp_min_c/temp_max_c as lists aligned to model variants."
+}

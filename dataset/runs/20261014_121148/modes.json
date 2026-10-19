@@ -1,0 +1,116 @@
+{
+  "modes": [
+    {
+      "label": "100G AOC 1m",
+      "model": "SO-QSFP28-AOC1M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.001
+    },
+    {
+      "label": "100G AOC 2m",
+      "model": "SO-QSFP28-AOC2M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.002
+    },
+    {
+      "label": "100G AOC 3m",
+      "model": "SO-QSFP28-AOC3M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.003
+    },
+    {
+      "label": "100G AOC 4m",
+      "model": "SO-QSFP28-AOC4M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.004
+    },
+    {
+      "label": "100G AOC 5m",
+      "model": "SO-QSFP28-AOC5M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.005
+    },
+    {
+      "label": "100G AOC 6m",
+      "model": "SO-QSFP28-AOC6M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.006
+    },
+    {
+      "label": "100G AOC 7m",
+      "model": "SO-QSFP28-AOC7M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.007
+    },
+    {
+      "label": "100G AOC 8m",
+      "model": "SO-QSFP28-AOC8M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.008
+    },
+    {
+      "label": "100G AOC 9m",
+      "model": "SO-QSFP28-AOC9M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.009
+    },
+    {
+      "label": "100G AOC 10m",
+      "model": "SO-QSFP28-AOC10M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.01
+    },
+    {
+      "label": "100G AOC 12m",
+      "model": "SO-QSFP28-AOC12M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.012
+    },
+    {
+      "label": "100G AOC 15m",
+      "model": "SO-QSFP28-AOC15M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.015
+    },
+    {
+      "label": "100G AOC 20m",
+      "model": "SO-QSFP28-AOC20M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.02
+    },
+    {
+      "label": "100G AOC 30m",
+      "model": "SO-QSFP28-AOC30M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.03
+    },
+    {
+      "label": "100G AOC 50m",
+      "model": "SO-QSFP28-AOC50M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.05
+    },
+    {
+      "label": "100G AOC 70m",
+      "model": "SO-QSFP28-AOC70M",
+      "standards_code": "100GbE",
+      "bit_rate_gbps": 100.0,
+      "reach_km": 0.07
+    }
+  ]
+}

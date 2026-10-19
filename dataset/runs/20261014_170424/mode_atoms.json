@@ -1,0 +1,108 @@
+{
+  "multi_valued": {
+    "model": [
+      "XP-85B1-02D",
+      "XP-85B1-02DE"
+    ],
+    "form_factor": [
+      "SFP28",
+      "SFP+"
+    ],
+    "wavelength_min_nm": [
+      770.0,
+      840.0
+    ],
+    "standards_code": [
+      "SFF-8431",
+      "SFF 8472"
+    ],
+    "bit_rate_gbps": [
+      25.78,
+      28.0
+    ]
+  },
+  "general": {
+    "vendor": "XGIGA",
+    "standards_claimed": [
+      "SFF 8472",
+      "SFF-8431",
+      "SFP+ MSA",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "wavelength_band": [],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM3",
+      "MMF_OM4"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 85.0,
+    "host_interface_name": [
+      "SFP+"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -8.4
+    ],
+    "tx_power_max_dbm": [
+      2.4
+    ],
+    "rx_overload_dbm": [
+      2.4
+    ],
+    "extinction_ratio_db": [
+      2.0
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      2.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Product features state power dissipation < 1W (no exact W value). Case operating temperature: Commercial 0°C to +70°C; Extensional 0°C to +85°C (ordering and recommended operating). Link length stated as maximum 70 m on OM3 or 100 m on OM4; recommended operating lists transmission distance up to 100 m (OM4 or 70 m OM3); ordering table lists transmission distance 10 km. Optical receiver table row 'Average Receiver Power @25.78Gb/s' (RxMAX) is -10.3 to 3 dBm, not labeled as Rx sensitivity. Note 2: measured with PRBS 2^31-1 @25.78Gb/s, BER < 10^-5. Datasheet text spells emitter as 'VSCEL'.",
+    "provenance_datasheet_sections": [
+      "28Gb/s 850nm Multi-mode SFP28 Transceiver",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "STANDARD",
+      "Ordering information",
+      "I. Absolute Maximum Ratings",
+      "II. Recommended Operating Conditions",
+      "III. Optical Characteristics",
+      "Notes:",
+      "IV. Electrical Characteristics",
+      "VI. Digital Diagnostic Functions",
+      "VIII. Outline Dimensions",
+      "IX. Regulatory Compliance",
+      "Appendix A. Document Revision"
+    ],
+    "suggestions": "Clarify whether ordering-table distance (10 km) is intentional vs link-length text (70 m/100 m). Consider mapping RxMAX row vs explicit Rx sensitivity if added in future revisions. Add schema field for supply current (Icc max 300 mA) if electrical limits are needed."
+  }
+}

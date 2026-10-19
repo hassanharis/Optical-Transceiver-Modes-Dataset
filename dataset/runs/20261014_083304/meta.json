@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T08:33:04.687593+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-16g-er-dxxx-r5.7.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.342,
+    "extract_atoms": 26.22,
+    "store_run": 0.005,
+    "synthesize_modes": 200.465,
+    "store_modes": 0.004,
+    "total": 232.035
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "modes": [
+    {
+      "label": "DQD004-xxxC-SO CMIS App 1 400GBASE-R",
+      "model": "DQD004-xxxC-SO",
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "CMIS Application Code 1"
+    },
+    {
+      "label": "DQD004-xxxC-SO CMIS App 2 4x100GBASE-R",
+      "model": "DQD004-xxxC-SO",
+      "host_interface_name": "4x100GAUI-2",
+      "media_interface_name": "100GAUI-2",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "CMIS Application Code 2"
+    },
+    {
+      "label": "DQD004-0M5C-SO CMIS App 1 400GBASE-R",
+      "model": "DQD004-0M5C-SO",
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "CMIS Application Code 1"
+    },
+    {
+      "label": "DQD004-0M5C-SO CMIS App 2 4x100GBASE-R",
+      "model": "DQD004-0M5C-SO",
+      "host_interface_name": "4x100GAUI-2",
+      "media_interface_name": "100GAUI-2",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "CMIS Application Code 2"
+    },
+    {
+      "label": "DQD004-001C-SO CMIS App 1 400GBASE-R",
+      "model": "DQD004-001C-SO",
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "CMIS Application Code 1"
+    },
+    {
+      "label": "DQD004-001C-SO CMIS App 2 4x100GBASE-R",
+      "model": "DQD004-001C-SO",
+      "host_interface_name": "4x100GAUI-2",
+      "media_interface_name": "100GAUI-2",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "CMIS Application Code 2"
+    },
+    {
+      "label": "DQD004-1M5C-SO CMIS App 1 400GBASE-R",
+      "model": "DQD004-1M5C-SO",
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "CMIS Application Code 1"
+    },
+    {
+      "label": "DQD004-1M5C-SO CMIS App 2 4x100GBASE-R",
+      "model": "DQD004-1M5C-SO",
+      "host_interface_name": "4x100GAUI-2",
+      "media_interface_name": "100GAUI-2",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "CMIS Application Code 2"
+    },
+    {
+      "label": "DQD004-002C-SO CMIS App 1 400GBASE-R",
+      "model": "DQD004-002C-SO",
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "CMIS Application Code 1"
+    },
+    {
+      "label": "DQD004-002C-SO CMIS App 2 4x100GBASE-R",
+      "model": "DQD004-002C-SO",
+      "host_interface_name": "4x100GAUI-2",
+      "media_interface_name": "100GAUI-2",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "CMIS Application Code 2"
+    },
+    {
+      "label": "DQD004-2M5C-SO CMIS App 1 400GBASE-R",
+      "model": "DQD004-2M5C-SO",
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "CMIS Application Code 1"
+    },
+    {
+      "label": "DQD004-2M5C-SO CMIS App 2 4x100GBASE-R",
+      "model": "DQD004-2M5C-SO",
+      "host_interface_name": "4x100GAUI-2",
+      "media_interface_name": "100GAUI-2",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "CMIS Application Code 2"
+    },
+    {
+      "label": "DQD004-003C-SO CMIS App 1 400GBASE-R",
+      "model": "DQD004-003C-SO",
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "CMIS Application Code 1"
+    },
+    {
+      "label": "DQD004-003C-SO CMIS App 2 4x100GBASE-R",
+      "model": "DQD004-003C-SO",
+      "host_interface_name": "4x100GAUI-2",
+      "media_interface_name": "100GAUI-2",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "CMIS Application Code 2"
+    },
+    {
+      "label": "DQD004-005C-SO CMIS App 1 400GBASE-R",
+      "model": "DQD004-005C-SO",
+      "host_interface_name": "400GAUI-8",
+      "media_interface_name": "400GAUI-8",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "CMIS Application Code 1"
+    },
+    {
+      "label": "DQD004-005C-SO CMIS App 2 4x100GBASE-R",
+      "model": "DQD004-005C-SO",
+      "host_interface_name": "4x100GAUI-2",
+      "media_interface_name": "100GAUI-2",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "CMIS Application Code 2"
+    }
+  ]
+}

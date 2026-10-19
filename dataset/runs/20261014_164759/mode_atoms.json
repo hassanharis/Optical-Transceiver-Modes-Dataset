@@ -1,0 +1,106 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      844.0,
+      900.0
+    ],
+    "wavelength_max_nm": [
+      863.0,
+      918.0
+    ],
+    "wavelength_center_nm": [
+      850.0,
+      908.0
+    ],
+    "host_interface_name": [
+      "100GBASE",
+      "100GbE"
+    ],
+    "reach_km": [
+      0.07,
+      0.1,
+      0.15
+    ],
+    "tx_power_min_dbm": [
+      -6.2,
+      -4.2
+    ],
+    "tx_power_max_dbm": [
+      4.0,
+      3.0
+    ],
+    "rx_sensitivity_dbm": [
+      -6.6,
+      -8.2
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TQ2016-MS2C-SO"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "SFF-8636",
+      "100GBASE"
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM3",
+      "MMF_OM4",
+      "MMF_OM5"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      4.0
+    ],
+    "standards_code": [
+      "100GBASE-SR1.2"
+    ],
+    "baud_rate_gbaud": [
+      26.5625
+    ],
+    "bit_rate_gbps": [
+      106.25
+    ],
+    "rx_overload_dbm": [
+      4.0
+    ],
+    "fec_type": [
+      "KP4"
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -5.9
+    ],
+    "penalties": [],
+    "notes": "Power consumption stated as < 4.0W. Typical reach: 70m @ OM3, 100m @ OM4, 150m @ OM5. Power budget 0 – 2.4dB. Host system shall not have FEC activated; module includes KP4 FEC. Optical parameters BER 2.4x10^-4 without relying on host FEC; FEC yields BER better than 1x10^-12. Footnote 3): average power, per lane. Footnote 4): received power below minimum input power cannot be compliant; above does not ensure compliance. Footnote 5): receiver sensitivity OMA and overload specified at BER 2.4x10^-4. Aggregated line rate 100GbE with FEC (footnote 1). Line baud rate 26.5625Gbd (footnote 2). Transmit/receiver wavelength ranges 844–863nm and 900–918nm; nominal λ1 850nm, λ2 908nm. Technology BiDi QSFP28; transmission media MM (2x LC).",
+    "provenance_datasheet_sections": [
+      "QSFP28 100GE SR1.2",
+      "QSFP28, 100G Eth, 100GBASE-SR1.2, MM, 850nm / 908nm, 100m, 2.4dB, LC",
+      "TQ2016-MS2C-SO",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Explicit lane count and modulation format are not stated; emitter/photodetector types not given. reach_km converted from stated meters (70m, 100m, 150m) because schema unit is km."
+  }
+}

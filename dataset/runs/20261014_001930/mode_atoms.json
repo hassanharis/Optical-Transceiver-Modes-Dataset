@@ -1,0 +1,99 @@
+{
+  "multi_valued": {
+    "model": [
+      "LS-BL315501-10C",
+      "LS-BL315501-10I"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1530.0
+    ],
+    "wavelength_max_nm": [
+      1360.0,
+      1570.0
+    ],
+    "wavelength_center_nm": [
+      1310.0,
+      1550.0
+    ],
+    "bit_rate_gbps": [
+      125.0,
+      155.0
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472"
+    ],
+    "emitter_type": [
+      "LASER_FP"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "standards_code": [
+      "SONET OC-3"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -14.0
+    ],
+    "tx_power_max_dbm": [
+      -8.0
+    ],
+    "rx_sensitivity_dbm": [
+      -32.0
+    ],
+    "rx_overload_dbm": [
+      -8.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      9.0
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -33.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "Primary part LS-BL315501-10C: 0°C to +70°C case temp, DDM. LS-BL315501-10I: -40°C to +85°C. Recommended operating also lists Extended case -20°C to +80°C. Data rates stated as 125Mbps/155Mbps (not Gbps). Receiver sensitivity and overload measured with PRBS 2^23-1 @ 155Mbps, BER ≤1×10^-12. TX average output power note 1: launched into SMF. Supply current Icc max 300 mA at 3.135–3.465 V (power in W not stated). Diagnostic TX power monitor range -14 to -8 dBm; RX power -32 to -6 dBm.",
+    "provenance_datasheet_sections": [
+      "LS-BL315501-10C",
+      "Product Features",
+      "Applications",
+      "Description",
+      "Recommended Operating Conditions",
+      "Optical and Electrical Characteristics",
+      "Notes:",
+      "Diagnostics",
+      "Ordering information"
+    ],
+    "suggestions": "Consider bit_rate_mbps or accept Mbps values in bit_rate_gbps with unit metadata. SMSR row present but no numeric limits. Industrial variant temp could be a separate SKU field."
+  }
+}

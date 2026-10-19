@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"10 Mbps Ethernet (Table 5)\",\n      \"power_consumption_w\": 1.05,\n      \"standards_code\": \"IEEE 802.3\",\n      \"bit_rate_gbps\": 0.01\n    },\n    {\n      \"label\": \"100 Mbps Fast Ethernet (Table 5)\",\n      \"power_consumption_w\": 1.05,\n      \"standards_code\": \"IEEE 802.3\",\n      \"bit_rate_gbps\": 0.1\n    },\n    {\n      \"label\": \"1000BASE-T 10/100/1000 SGMII\",\n      \"power_consumption_w\": 1.2,\n      \"standards_code\": \"1000BASE-T\",\n      \"bit_rate_gbps\": 1.0\n    },\n    {\n      \"label\": \"1000BASE-T only SERDES\",\n      \"power_consumption_w\": 1.05,\n      \"standards_code\": \"1000BASE-T only\",\n      \"bit_rate_gbps\": 1.0\n    },\n    {\n      \"label\": \"1.25 Gb/s bi-directional (Features)\",\n      \"power_consumption_w\": 1.05,\n      \"standards_code\": \"IEEE 802.3\",\n      \"bit_rate_gbps\": 1.25\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

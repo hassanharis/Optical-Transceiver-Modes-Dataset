@@ -1,0 +1,66 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-DAC11100-xMN",
+    "LQ-DAC11100-0M5N",
+    "LQ-DAC11100-1MN",
+    "LQ-DAC11100-2MN",
+    "LQ-DAC11100-3MN",
+    "LQ-DAC11100-5MN"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "SFF-8665",
+    "SFF8436"
+  ],
+  "channel_total": [
+    4
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    0.02
+  ],
+  "host_interface_name": [
+    "QSFP28"
+  ],
+  "standards_code": [
+    "SFF-8665",
+    "SFF8436"
+  ],
+  "bit_rate_gbps": [
+    25.0,
+    25.78,
+    40.0,
+    100.0
+  ],
+  "reach_km": [
+    0.0005,
+    0.001,
+    0.002,
+    0.003,
+    0.005
+  ],
+  "channel_insertion_loss_db": [
+    8.0,
+    22.48
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "penalties": [],
+  "notes": "Passive QSFP28-to-QSFP28 copper DAC; no optical TX/RX parameters apply. Features state copper link length up to 3 m (passive limiting) while ordering includes 5 m variants. Table.2 Data Rate lists Min 40 Gbps only (Typ/Max blank). Table.3 insertion loss SDD21 at 12.8906 GHz. Supply +3.3 V; I2C EEPROM interface stated but not in schema.",
+  "provenance_datasheet_sections": [
+    "LQ-DAC11100-xMN",
+    "Features",
+    "Applications",
+    "General Description",
+    "Recommended Operating Conditions Table.2 Recommended Operating Conditions",
+    "Product Characteristics Table.3 Product Characteristics",
+    "Mechanical Specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Consider schema fields for passive copper: cable length (m), differential impedance (Ω), COM (dB), supply voltage (V), and electrical insertion loss vs frequency."
+}

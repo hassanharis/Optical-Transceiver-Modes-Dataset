@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-tq2025-tunx-so-qsfp28-100g-coherent-dwdm-cmis-r6.10.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 7084,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 24
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

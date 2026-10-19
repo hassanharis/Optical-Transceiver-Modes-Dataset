@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "64GFC PAM4 (FC-PI-7)",
+      "form_factor": "SFP56",
+      "power_consumption_w": 1.4,
+      "standards_code": "64GFC",
+      "baud_rate_gbaud": 28.9,
+      "bit_rate_gbps": 57.8,
+      "modulation_format": "PAM4",
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -4.5,
+      "tx_power_max_dbm": 4.0,
+      "rx_sensitivity_dbm": -7.0,
+      "rx_overload_dbm": 4.0,
+      "fec_type": "KP4",
+      "post_fec_ber_target": 1e-12
+    },
+    {
+      "label": "32GFC NRZ (FC-PI-6)",
+      "form_factor": "SFP56",
+      "power_consumption_w": 1.4,
+      "standards_code": "32GFC",
+      "baud_rate_gbaud": 28.05,
+      "bit_rate_gbps": 28.05,
+      "modulation_format": "NRZ",
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -5.9,
+      "tx_power_max_dbm": 3.0,
+      "rx_sensitivity_dbm": -10.2,
+      "rx_overload_dbm": 3.0,
+      "fec_type": "RS_528_514",
+      "post_fec_ber_target": 1e-06
+    },
+    {
+      "label": "16GFC NRZ (FC-PI-5)",
+      "form_factor": "SFP56",
+      "power_consumption_w": 1.4,
+      "standards_code": "16GFC",
+      "baud_rate_gbaud": 14.025,
+      "bit_rate_gbps": 14.025,
+      "modulation_format": "NRZ",
+      "reach_km": 0.1,
+      "tx_power_min_dbm": -7.8,
+      "tx_power_max_dbm": 2.0,
+      "rx_sensitivity_dbm": -7.7,
+      "rx_overload_dbm": 0.0,
+      "fec_type": "RS_528_514",
+      "post_fec_ber_target": 1e-12
+    }
+  ]
+}

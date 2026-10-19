@@ -1,0 +1,31 @@
+{
+  "modes": [
+    {
+      "label": "400GBase-PLR4",
+      "frame": "8x53.125Gbps (PAM4)",
+      "standards_code": "400GBase-PLR4",
+      "baud_rate_gbaud": 53.125,
+      "bit_rate_gbps": 400.0,
+      "rx_sensitivity_dbm": -6.1,
+      "rx_overload_dbm": 4.8
+    },
+    {
+      "label": "400G PLR4 optical lane",
+      "frame": "4x100Gbps",
+      "standards_code": "PLR4",
+      "baud_rate_gbaud": 53.125,
+      "bit_rate_gbps": 106.25,
+      "rx_sensitivity_dbm": -4.1,
+      "rx_overload_dbm": 5.8
+    },
+    {
+      "label": "400GAUI-8 electrical",
+      "frame": "8x53.125Gbps (PAM4)",
+      "standards_code": "IEEE 802.3bs",
+      "baud_rate_gbaud": 26.5625,
+      "bit_rate_gbps": 425.0,
+      "rx_sensitivity_dbm": -6.1,
+      "rx_overload_dbm": 4.8
+    }
+  ]
+}

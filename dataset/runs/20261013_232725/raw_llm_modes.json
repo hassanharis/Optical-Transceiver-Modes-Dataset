@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "L9-SC315501-60CTC Tx1310 FP Commercial",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "L9-SC553101-60CTC Tx1550 DFB Commercial",
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "L9-SC315501-60CTI Tx1310 FP Industrial",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "standards_code": "ITU-T G.957"
+    },
+    {
+      "label": "L9-SC553101-60CTI Tx1550 DFB Industrial",
+      "standards_code": "ITU-T G.957"
+    }
+  ]
+}

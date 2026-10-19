@@ -1,0 +1,264 @@
+
+**----- Start of picture text -----**<br>
+1000BASE-T SFP Copper RJ-45 100m Transceiver www.qsfptek.com<br>**----- End of picture text -----**<br>
+
+
+## **100BASE-T SFP Copper RJ-45 100m Transceiver** 
+
+## **P/N: QT- SFP-M** 
+
+## **Features** 
+
+- Up to 1.25Gb/s bi-directional data links 
+
+- Hot-pluggable SFP footprint 
+
+- Extended case temperature range (0°C to +70°C ) 
+
+- Fully metallic enclosure for low EMI 
+
+- Low power dissipation (1.05 W typical) 
+
+- Compact RJ-45 connector assembly 
+
+- Access to physical layer IC via 2-wire serial bus 
+
+- 1000 BASE-T operation in host systems with SERDES interface 
+
+- 10/100/1000Mbps compliant in host systems with SGMII interface 
+
+## **Applications** 
+
+- 1.25 Gigabit Ethernet over Cat 5 cable 
+
+sales@qsfptek.com 
+
+1/6 
+
+Rev1.0 
+
+
+**----- Start of picture text -----**<br>
+1000BASE-T SFP Copper RJ-45 100m Transceiver www.qsfptek.com<br>**----- End of picture text -----**<br>
+
+
+## **Description** 
+
+QSFPTEK`s QT-SFP-M Copper Small Form Pluggable (SFP)transceivers is high performance, cost effective module compliant with the Gigabit Ethernet and 1000- BASE-T standards as specified in IEEE 802. 3-2002 and IEEE 802.3ab, which supporting 1000Mbps data- rate up to 100 meters reach over unshielded twisted-pair category 5 cable. The module supports1000 Mbps full duplex data-links with 5-level Pulse Amplitude Modulation (PAM) signals. All four pairs in the cable are used with symbol rate at 250Mbps on each pair. The module provides standard serial ID information compliant with SFP MSA, which can be accessed with address of A0h via the 2wire serial CMOS EEPROM protocol. The physical IC can also be accessed via 2wire serial bus at address A0h. 
+
+## **1. Pin Definitions** 
+
+
+sales@qsfptek.com 
+
+2/6 
+
+Rev1.0 
+
+
+**----- Start of picture text -----**<br>
+1000BASE-T SFP Copper RJ-45 100m Transceiver www.qsfptek.com<br>**----- End of picture text -----**<br>
+
+
+|**Pin**|**Signal Name**|**Description**|**Plug Seq.**|**Notes**|
+|---|---|---|---|---|
+|1|VEET|Transmitter Ground|1||
+|2|TX FAULT|Transmitter Fault Indication|3|Note1|
+|3|TX DISABLE|Transmitter Disable|3|Note2|
+|4|MOD_DEF(2)|SDA Serial Data Signal|3|Note3|
+|5|MOD_DEF(1)|SCL Serial Clock Signal|3|Note3|
+|6|MOD_DEF(0)|TTL Low|3|Note3|
+|7|Rate Select|Not Connected|3||
+|8|LOS|Loss of Signal|3|Note 4|
+|9|VEER|Receiverground|1||
+|10|VEER|Receiverground|1||
+|11|VEER|Receiverground|1||
+|12|RX-|Inv. Received Data Out|3|Note 5|
+|13|RX+|Received Data Out|3|Note 5|
+|14|VEER|Receiverground|1||
+|15|VCCR|Receiver Power Supply|2||
+|16|VCCT|Transmitter Power Supply|2||
+|17|VEET|Transmitter Ground|1||
+|18|TX+|Transmit Data In|3|Note 6|
+|19|TX-|Inv. Transmit Data In|3|Note 6|
+|20|VEET|Transmitter Ground|1||
+
+
+
+Notes: 
+
+- Plug Seq.: Pin engagement sequence during hot plugging. 
+
+- 1) TX Fault is an open collector output, which should be pulled up with a 4.7k~10kΩ resistor on the host board to a voltage between 2.0V and Vcc+0.3V. Logic 0 indicates normal operation; logic 1 indicates a laser fault of some kind. In the low state, the output will be pulled to less than 0.8V. 
+
+- 2) TX Disable is an input that is used to shut down the transmitter optical output. It is pulled up within the module with a 4.7 ¨C 10 K resistor. Its states are: 
+
+Low (0 to 0.8V): Transmitter on (>0.8, < 2.0V): Undefined High (2.0 to 3.465V): Transmitter Disabled Open: Transmitter Disabled 
+
+- 3) Mod-Def 0,1,2. These are the module definition pins. They should be pulled up with a 4.7K to 10K resistor on the host board. The pull-up voltage shall be VccT or VccR Mod-Def 0 is grounded by the module to indicate that the module is present Mod-Def 1 is the clock line of two wire serial interface for serial ID 
+
+   - Mod-Def 2 is the data line of two wire serial interface for serial ID 
+
+- 4) LOS (Loss of Signal) is an open collector/drain output, which should be pulled up with a 4.7K to 10K resistor. Pull up voltage between 2.0V and VccT, R+0.3V. When high, this output indicates the received optical power is below the worst-case receiver sensitivity (as defined by the standard in use). Low indicates normal operation. In the low state, the output will be pulled to <0.8V. 
+
+- 5) RD-/+: These are the differential receiver outputs. They are AC coupled 100 differential lines which should be terminated with 100 (differential) at the user SERDES. 
+
+- 6) TD-/+: These are the differential transmitter inputs. They are AC-coupled, differential lines with 100 differential termination inside the module. 
+
+sales@qsfptek.com 
+
+3/6 
+
+Rev1.0 
+
+
+**----- Start of picture text -----**<br>
+1000BASE-T SFP Copper RJ-45 100m Transceiver www.qsfptek.com<br>**----- End of picture text -----**<br>
+
+
+## **2. +3.3V Volt Electrical Power Interface** 
+
+The QT-SFP-M has an input voltage range of +5V +/- 5%. The 3.3V maximum voltage is not allowed for continuous operation. 
+
+|**+3.3V volt Electrical Power Interface**|**+3.3V volt Electrical Power Interface**|**+3.3V volt Electrical Power Interface**|**+3.3V volt Electrical Power Interface**|**+3.3V volt Electrical Power Interface**|**+3.3V volt Electrical Power Interface**|**+3.3V volt Electrical Power Interface**|
+|---|---|---|---|---|---|---|
+|**Parameter**|**Symbol**|**Min**|**Typ**|**Max**|**Units**|**Notes/Conditions**|
+|Supply Current|Is||320|375|mA|1.2W max power over full range of<br>voltage and temperature.<br>See caution note below|
+|Input Voltage|Vcc|3.13|3.3|3.47|V|Referenced to GND|
+|Maximum Voltage|Vmax|||4|V||
+|Surge Current|Isurge|||30|mA|Hot plug above steady state<br>current. See caution note below|
+
+
+
+Caution: Power consumption and surge current are higher than the specified values in the SFP MSA 
+
+## **3. Low-Speed Signals** 
+
+MOD_DEF(1) (SCL) and MOD_DEF(2) (SDA), are open drain CMOS signals (see section VII, “Serial Communication Protocol”). Both MOD_DEF(1) and MOD_DEF(2) must be pulled up to host_Vcc. 
+
+|**ow-Speed Signals**<br>D_DEF(1) (SCL) and MOD_DEF(2) (SDA), are open drain CMOS signals (see section VII, “Serial<br>munication Protocol”). Both MOD_DEF(1)and MOD_DEF(2)must bepulled upto host_Vcc.|**ow-Speed Signals**<br>D_DEF(1) (SCL) and MOD_DEF(2) (SDA), are open drain CMOS signals (see section VII, “Serial<br>munication Protocol”). Both MOD_DEF(1)and MOD_DEF(2)must bepulled upto host_Vcc.|**ow-Speed Signals**<br>D_DEF(1) (SCL) and MOD_DEF(2) (SDA), are open drain CMOS signals (see section VII, “Serial<br>munication Protocol”). Both MOD_DEF(1)and MOD_DEF(2)must bepulled upto host_Vcc.|**ow-Speed Signals**<br>D_DEF(1) (SCL) and MOD_DEF(2) (SDA), are open drain CMOS signals (see section VII, “Serial<br>munication Protocol”). Both MOD_DEF(1)and MOD_DEF(2)must bepulled upto host_Vcc.|**ow-Speed Signals**<br>D_DEF(1) (SCL) and MOD_DEF(2) (SDA), are open drain CMOS signals (see section VII, “Serial<br>munication Protocol”). Both MOD_DEF(1)and MOD_DEF(2)must bepulled upto host_Vcc.|**ow-Speed Signals**<br>D_DEF(1) (SCL) and MOD_DEF(2) (SDA), are open drain CMOS signals (see section VII, “Serial<br>munication Protocol”). Both MOD_DEF(1)and MOD_DEF(2)must bepulled upto host_Vcc.|
+|---|---|---|---|---|---|
+|**Low-Speed Signals, Electronic Characteristics**||||||
+|**Parameter**|**Symbol**|**Min**|**Max**|**Units**|**Notes/Conditions**|
+|SFP Output<br>LOW|VOL|0|0.5|V|4.7k to 10k pull-up to host_Vcc,<br>measured at host side of connector|
+|SFP Output<br>HIGH|VOH|host_Vcc<br>- 0.5|host_Vcc<br>+ 0.3|V|4.7k to 10k pull-up to host_Vcc,<br>measured at host side of connector|
+|SFP Input LOW|VIL|0|0.8|V|4.7k to 10k pull-up to Vcc, measured at<br>SFPside ofconnector|
+|SFP Input HIGH|VIH|2|Vcc +<br>0.3|V|4.7k to 10k pull-up to Vcc, measured at<br>SFP side of connector|
+
+
+
+## **4. High-Speed Electrical Interface** 
+
+All high-speed signals are AC-coupled internally. 
+
+|**igh-Speed Electrical Interface**<br>igh-speed signals are AC-coupled internally.|**igh-Speed Electrical Interface**<br>igh-speed signals are AC-coupled internally.|**igh-Speed Electrical Interface**<br>igh-speed signals are AC-coupled internally.|**igh-Speed Electrical Interface**<br>igh-speed signals are AC-coupled internally.|**igh-Speed Electrical Interface**<br>igh-speed signals are AC-coupled internally.|**igh-Speed Electrical Interface**<br>igh-speed signals are AC-coupled internally.|**igh-Speed Electrical Interface**<br>igh-speed signals are AC-coupled internally.|
+|---|---|---|---|---|---|---|
+|**High-Speed Electrical Interface Transmission Line-SFP**|||||||
+|**Parameter**|**Symbol**|**Min**|**Typ**|**Max**|**Units**|**Notes/Conditions**|
+|Line Frequency|fL||125||MHz|5-level encoding, per IEEE 802.3|
+|Tx Output<br>Impedance|Zout,TX||100||Ohm|Differential, for all Frequencies<br>between 1MHz and 125MHz|
+|Rx Input<br>Impedance|Zin,RX||100||Ohm|Differential, for all Frequencies<br>between 1MHz and 125MHz|
+
+
+
+sales@qsfptek.com 
+
+4/6 
+
+Rev1.0 
+
+
+**----- Start of picture text -----**<br>
+1000BASE-T SFP Copper RJ-45 100m Transceiver www.qsfptek.com<br>**----- End of picture text -----**<br>
+
+
+## **5. High-speed electrical interface, host-SFP** 
+
+|**igh-speed electrical interface, host-SFP**|**igh-speed electrical interface, host-SFP**|**igh-speed electrical interface, host-SFP**|**igh-speed electrical interface, host-SFP**|**igh-speed electrical interface, host-SFP**|**igh-speed electrical interface, host-SFP**|**igh-speed electrical interface, host-SFP**|
+|---|---|---|---|---|---|---|
+|**High-Speed Electrical Interface, Host-SFP**|||||||
+|**Parameter**|**Symbol**|**Min**|**Typ**|**Max**|**Units**|**Notes/Conditions**|
+|Single ended data input<br>swing|Vinsing|250||1200|mV|Single ended|
+|Single ended data output<br>swing|Voutsing|350||800|mV|Single ended|
+|Rise/Fall Time|Tr,Tf||175||psec|20%-80%|
+|Tx Input Impedance|Zin||50||Ohm|Single ended|
+|Rx Output Impedance|Zout||50||Ohm|Single ended|
+
+
+
+## **6. General Specifications** 
+
+|**eneral Specifications**|**eneral Specifications**|**eneral Specifications**|**eneral Specifications**|**eneral Specifications**|**eneral Specifications**|**eneral Specifications**|
+|---|---|---|---|---|---|---|
+|**General**|||||||
+|**Parameter**|**Symbol**|**Min**|**Typ**|**Max**|**Units**|**Notes/Conditions**|
+|Data Rate|BR|10||1,000|Mb/sec|IEEE 802.3 compatible.<br>See Notes 2 through 4 below|
+|Cable Length|L|||100|m|Category5 UTP. BER <10-12|
+
+
+
+**Notes:** 
+
+1. Clock tolerance is +/- 50 ppm 
+
+2. By default, the QT-SFP-M is a full duplex device in preferred master mode 
+
+3. Automatic crossover detection is enabled. External crossover cable is not required 
+
+4. 1000 BASE-T operation requires the host system to have an SGMII interface with no clocks, and the module PHY to be configured per Application Note AN-2036. With a SERDES that does not support SGMII, the module will operate at 1000BASE-T only. 
+
+## **7. Environmental Specifications** 
+
+|**nvironmental Specifications**|**nvironmental Specifications**|**nvironmental Specifications**|**nvironmental Specifications**|**nvironmental Specifications**|**nvironmental Specifications**|**nvironmental Specifications**|
+|---|---|---|---|---|---|---|
+|**Environmental Specifications**|||||||
+|**Parameter**|**Symbol**|**Min**|**Typ**|**Max**|**Units**|**Notes/Conditions**|
+|Operating Temperature|Top|0||70|°C|Case temperature|
+|Storage Temperature|Tsto|-40||85|°C|Ambient temperature|
+
+
+
+## **8. References** 
+
+1. Gigabit Interface Converter (SFP) Transceiver Multi-Source Agreement (MSA), 
+
+2. IEEE Std 802.3, 2002 Edition. IEEE Standards Department, 2002. 
+
+3. “AT24C01A/02/04/08/16 2-Wire Serial CMOS E2PROM”, Atmel Corporation. 
+
+4. “Alaska Ultra 88E1111 Integrated 10/100/1000 Gigabit Ethernet Transceiver”,Marvell Corporation. 
+
+## **9. Mechanical Specifications** 
+
+The host-side of the QT-SFP-M conforms to the mechanical specifications outlined in the SFP MSA1. The front portion of the SFP (part extending beyond the face plate of the host) is larger to accommodate the RJ-45 connector. 
+
+sales@qsfptek.com 
+
+5/6 
+
+Rev1.0 
+
+
+**----- Start of picture text -----**<br>
+1000BASE-T SFP Copper RJ-45 100m Transceiver www.qsfptek.com<br>**----- End of picture text -----**<br>
+
+
+
+**Figure 2.** QT-SFP-T **mechanical dimensions** 
+
+## **10. Ordering information** 
+
+|**Part**<br>**number**|**Operating**<br>**Case**<br>**temperature**|
+|---|---|
+|QT-SFP-M|Copper SFP, 1000M, RJ-45 connector,100M, 0°C to +70°C|
+|QT-SFP-T|Copper SFP,10/100/1000M, RJ-45 connector,100M, 0°C to +70°C|
+|QT-SFP-10G-T|Copper SFP,10.125 Gb/s, RJ-45 connector,30M, 0°C to +70°C|
+
+
+
+sales@qsfptek.com 
+
+6/6 
+
+Rev1.0 
+

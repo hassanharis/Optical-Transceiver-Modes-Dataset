@@ -1,0 +1,97 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-622M-L80D"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1520.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1585.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [
+    "STM1/OC3",
+    "STM4/OC12",
+    "FE"
+  ],
+  "media_interface_name": [
+    "STM4 L-4.2",
+    "OC12 LR-2"
+  ],
+  "standards_code": [
+    "STM4 L-4.2",
+    "OC12 LR-2"
+  ],
+  "bit_rate_gbps": [
+    0.125,
+    0.622
+  ],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    -3.0
+  ],
+  "tx_power_max_dbm": [
+    2.0
+  ],
+  "rx_sensitivity_dbm": [
+    -28.0,
+    -34.0,
+    -35.0
+  ],
+  "rx_overload_dbm": [
+    -8.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -42.0
+  ],
+  "los_deassert_dbm": [
+    -29.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Operating temperature printed as -0°C to +70°C. Transmitter output min printed as -3.0dB (footnote 1: average power; context dBm for max). Receiver minimum input power at BER 1x10-12, PRBS 223-1 (footnote 2). Power budget 10–25dB @ STM4/OC12. Storage temperature -40°C to +85°C. Typical reach 80km w/o dispersion compensation and optical amplification. DDM per SFF-8472.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-622M-L80D",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

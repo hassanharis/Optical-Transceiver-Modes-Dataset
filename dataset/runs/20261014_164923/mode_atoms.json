@@ -1,0 +1,140 @@
+{
+  "multi_valued": {
+    "model": [
+      "TQ2024-BXXC-SO",
+      "TQ2024-BWVC-SO",
+      "TQ2024-BVWC-SO"
+    ],
+    "wavelength_min_nm": [
+      1304.06,
+      1308.61
+    ],
+    "wavelength_max_nm": [
+      1305.1,
+      1309.66
+    ],
+    "wavelength_center_nm": [
+      1304.0,
+      1309.0
+    ],
+    "standards_code": [
+      "100G ER1-40",
+      "100GbE"
+    ],
+    "baud_rate_gbaud": [
+      50.0,
+      52.125
+    ],
+    "bit_rate_gbps": [
+      106.25,
+      25.78
+    ],
+    "fec_type": [
+      "KP4"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "QSFP28 MSA",
+      "SFF-8472",
+      "OIF CEI-28G-VSR"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "channel_total": [],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF",
+      "SMF_G652"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      4.5
+    ],
+    "host_interface_name": [
+      "OIF CEI-28G-VSR"
+    ],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [
+      "100G ER1-40"
+    ],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "roll_off_percent": [],
+    "modulation_format": [
+      "PAM4"
+    ],
+    "reach_km": [
+      40.0
+    ],
+    "tx_power_min_dbm": [
+      3.7
+    ],
+    "tx_power_max_dbm": [
+      7.1
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_sensitivity_dbm": [
+      -14.6
+    ],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [
+      -3.4
+    ],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [
+      -26.0
+    ],
+    "los_deassert_dbm": [
+      -17.0
+    ],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [
+      4
+    ],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "TQ2024-BXXC-SO denotes a BiDi pair (TQ2024-BWVC-SO Tx/Rx 1304/1309 nm and TQ2024-BVWC-SO Tx/Rx 1309/1304 nm) on one single fiber. Module includes KP4 FEC; host system shall not have FEC activated. Optical parameters give BER 2.4 x 10^-4; FEC yields BER better than 1 x 10^-12. Power budget 10.5 – 18.3 dB (w/o optical path penalties per GENERAL DEFINITIONS). Tx/Rx wavelength ranges and nominal Tx/Rx pairings differ by ordering variant (footnotes 1) and 2)). Aggregated 106.25 Gbps is 100GbE with FEC (footnote 3). Transmitter/receiver min/overload are average power per lane (footnote 5) at BER 2.4x10^-4 (footnote 6). Power consumption stated as < 4.5 W worst case.",
+    "provenance_datasheet_sections": [
+      "QSFP28 100GE BiDi 40km",
+      "QSFP28, BiDi, 100G Ethernet, 1304nm/1309nm, SM, 40km, 18.3dB, LC",
+      "TQ2024-BXXC-SO",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider a schema field for power budget min/max (dB). Clarify whether number_of_lanes is electrical (4x25.78 Gbps) or optical (single channel @ 50 Gbaud PAM4 per direction)."
+  }
+}

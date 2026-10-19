@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;SO-SFP-1000BASE-BX60D-35&#x27;, &#x27;SO-SFP-1000BASE-BX60D-53&#x27;, &#x27;SO-SFP-1000Base-BX60D-35&#x27;, &#x27;SO-SFP-1000Base-BX60D-33&#x27;, &#x27;SO-SFP-1000Base-BX60D-35-I&#x27;, &#x27;SO-SFP-1000BASE-BX60D-53-I&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">so-sfp-1000base-bx60d-35-53-r5.1.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">3</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 12:45</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.1 
+
+## **SO-SFP-1000BASE-BX60D-35 &amp; -53** 
+
+SFP BiDi, 1.063/1.25Gbps, 1310/1550nm, SM, DDM, 24/22dB, 60km, C-temp &amp; I-temp 
+
+## OVERVIEW 
+
+The SO-SFP-1000BASE-BX60D is a bi-directional transceiver solution operating directly on a single-fiber without the need for a separate optical filter. This is achieved by having two transceivers that inject different wavelengths into the same single-fiber. The solution thus consists of two transceivers; SO-SFP-1000BASE-BX60D-35 and SO-SFP-1000BASE-BX60D-53, operating at 1310nm and 1550nm respectively. Using a single-fiber solution provides a cost-efficient solution for interconnect and it simplifies the patching since no separate transmit/receive direction has to be taken into account. 
+
+The transceiver pair supports 1G Fiberchannel (1G FC) and 1G Ethernet (GbE) services, having an optical performance that provides a bridgeable distance of up to 60km. 
+
+The transceiver solution is available in two temperature range options, one being the Industrial temperature range (I-temp) of -40°C to +85°C (-40°F to +185°F). The transceivers provide digital diagnostic functions via a 2-wire serial interface as defined by the SFF-8472 specification. 
+
+## TECHNICAL DATA 
+
+|**Parameter**|**Value**&lt;br&gt;BiDi SFP&lt;br&gt;SM (1x LC)&lt;br&gt;60km&lt;br&gt;1310nm/1550nm &amp; 1550nm/1310nm&lt;br&gt;1.063Gbps / 1.25Gbps&lt;br&gt;GbE&lt;br&gt;1G FC&lt;br&gt;8 – 24dB1)/ 6 – 22dB2)&lt;br&gt;Max 1dB2)&lt;br&gt;&lt; 1.0W&lt;br&gt;0°C to +70°C&lt;br&gt;-40°C to +85°C (-I)&lt;br&gt;-40°C to +85°C|**Parameter**|**Value**|
+|---|---|---|---|
+|Technology||**Transmitter data:**||
+|Transmission media||Output power               -BX60D-35&lt;br&gt;-BX60D-53|Min: 0dBm3)|
+|Typical reach|||Max: +5.0dBm3)|
+|Nominal wavelength Tx/Rx|||Min: -2.0dBm3)|
+|Bit rate support|||Max: +3.0dBm3)|
+|Protocol support||Transmit wavelength   -BX60D-35&lt;br&gt;-BX60D-53|1290 – 1330nm|
+||||1480 – 1580nm|
+|Power budget||**Receiver data:**||
+|Dispersion penalty||Minimum input power  -BX60D-35|-24.0dBm3) 4)|
+|Power consumption||-BX60D-53|-24.0dBm3) 4)|
+|Operating t
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "SO-SFP-1000BASE-BX60D-35",
+    "SO-SFP-1000BASE-BX60D-53",
+    "SO-SFP-1000Base-BX60D-35",
+    "SO-SFP-1000Base-BX60D-33",
+    "SO-SFP-1000Base-BX60D-35-I",
+    "SO-SFP-1000BASE-BX60D-53-I"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  <span class="key">"emitter_type"</span>: [],
+  <span class="key">"photodetector_type"</span>: [],
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1290.0</span>,
+    <span class="num">1480.0</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1330.0</span>,
+    <span class="num">1580.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1310.0</span>,
+    <span class="num">1550.0</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [],
+  <span class="key">"frequency_min_thz"</span>: <span class="null">null</span>,
+  <span class="key">"frequency_max_thz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_spacing_ghz"</span>: <span class="null">null</span>,
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: [
+    "pluggable"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-40.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">85.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">1.0</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "1000BASE-BX",
+    "GbE",
+    "1G FC"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "1000BASE-BX",
+    "1G FC"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">1.063</span>,
+    <span class="num">1.25</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">60.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">0.0</span>,
+    <span class="num">-2.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">5.0</span>,
+    <span class="num">3.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-24.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-3.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: <span class="null">null</span>,
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: [],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-35.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-25.0</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"BiDi pair: SO-SFP-1000BASE-BX60D-35 TX/RX <span class="num">1310</span>/1550 nm; SO-SFP-1000BASE-BX60D-53 TX/RX <span class="num">1550</span>/1310 nm. Power budget <span class="num">8</span>–24 dB (1310 nm direction, <span class="num">-35</span>) and <span class="num">6</span>–22 dB (1550 nm direction, <span class="num">-53</span>). Dispersion penalty max <span class="num">1</span> dB stated for <span class="num">-53</span> direction. Standard operating temperature <span class="num">0</span>°C to +70°C; industrial (I-temp) <span class="num">-40</span>°C to +85°C. Transmitter/receiver levels footnote <span class="num">3</span>: average power. Receiver minimum input power footnote <span class="num">4</span>: @ <span class="num">1.25</span> Gbps, BER ≤ <span class="num">1</span>×10⁻¹², PRBS <span class="num">2</span>⁷-1, back-to-back. Power consumption listed as &lt; <span class="num">1.0</span> W. Ordering table lists SO-SFP-1000Base-BX60D-33 with <span class="num">1550</span>/1310 nm description (likely <span class="num">-53</span> variant). Fiber attenuation guidance ~0.4 dB/km at <span class="num">1310</span> nm and ~0.25 dB/km at <span class="num">1550</span> nm (link planning, not module spec)."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "SO-SFP-1000BASE-BX60D-35 &amp; <span class="num">-53</span>",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "POWER BUDGET INFORMATION",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Clarify whether temp_min_c/temp_max_c should represent C-temp only (0/70) vs envelope including I-temp (-40/85). Power budget min/max (8–24, <span class="num">6</span>–22 dB) has no dedicated schema field. Dispersion penalty max <span class="num">1</span> dB lacks paired penalized parameter for penalties[] structure."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">SO-SFP-1000BASE-BX60D-35</span> <span class="badge">SO-SFP-1000BASE-BX60D-53</span> <span class="badge">SO-SFP-1000Base-BX60D-35</span> <span class="badge">SO-SFP-1000Base-BX60D-33</span> <span class="badge">SO-SFP-1000Base-BX60D-35-I</span> <span class="badge">SO-SFP-1000BASE-BX60D-53-I</span></td></tr>
+<tr><td>wavelength_min_nm</td><td><span class="badge">1290.0</span> <span class="badge">1480.0</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1330.0</span> <span class="badge">1580.0</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1310.0</span> <span class="badge">1550.0</span></td></tr>
+<tr><td>host_interface_name</td><td><span class="badge">1000BASE-BX</span> <span class="badge">GbE</span> <span class="badge">1G FC</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">1000BASE-BX</span> <span class="badge">1G FC</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">1.063</span> <span class="badge">1.25</span></td></tr>
+<tr><td>tx_power_min_dbm</td><td><span class="badge">0.0</span> <span class="badge">-2.0</span></td></tr>
+<tr><td>tx_power_max_dbm</td><td><span class="badge">5.0</span> <span class="badge">3.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>SFP</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8431, SFF-8432, SFF-8472</td></tr>
+<tr><td>emitter_type</td><td></td></tr>
+<tr><td>photodetector_type</td><td></td></tr>
+<tr><td>wavelength_band</td><td></td></tr>
+<tr><td>mounting_type</td><td>pluggable</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>-40.0</td></tr>
+<tr><td>temp_max_c</td><td>85.0</td></tr>
+<tr><td>power_consumption_w</td><td>1.0</td></tr>
+<tr><td>modulation_format</td><td></td></tr>
+<tr><td>reach_km</td><td>60.0</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-24.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-3.0</td></tr>
+<tr><td>fec_type</td><td></td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>los_assert_dbm</td><td>-35.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-25.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>BiDi pair: SO-SFP-1000BASE-BX60D-35 TX/RX 1310/1550 nm; SO-SFP-1000BASE-BX60D-53 TX/RX 1550/1310 nm. Power budget 8–24 dB (1310 nm direction, -35) and 6–22 dB (1550 nm direction, -53). Dispersion penalty max 1 dB stated for -53 direction. Standard operating temperature 0°C to +70°C; industrial (I-temp) -40°C to +85°C. Transmitter/receiver levels footnote 3: average power. Receiver minimum input power footnote 4: @ 1.25 Gbps, BER ≤ 1×10⁻¹², PRBS 2⁷-1, back-to-back. Power consumption listed as &lt; 1.0 W. Ordering table lists SO-SFP-1000Base-BX60D-33 with 1550/1310 nm description (likely -53 variant). Fiber attenuation guidance ~0.4 dB/km at 1310 nm and ~0.25 dB/km at 1550 nm (link planning, not module spec).</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>SO-SFP-1000BASE-BX60D-35 &amp; -53, OVERVIEW, TECHNICAL DATA, POWER BUDGET INFORMATION, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+<tr><td>suggestions</td><td>Clarify whether temp_min_c/temp_max_c should represent C-temp only (0/70) vs envelope including I-temp (-40/85). Power budget min/max (8–24, 6–22 dB) has no dedicated schema field. Dispersion penalty max 1 dB lacks paired penalized parameter for penalties[] structure.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_center_nm</th><th>host_interface_name</th><th>standards_code</th><th>bit_rate_gbps</th><th>tx_power_min_dbm</th><th>tx_power_max_dbm</th></tr><tr><td><strong>BX60D-35 1000BASE-BX</strong></td><td>SO-SFP-1000BASE-BX60D-35</td><td>1290.0</td><td>1330.0</td><td>1310.0</td><td>1000BASE-BX</td><td>1000BASE-BX</td><td>1.25</td><td>0.0</td><td>5.0</td></tr><tr><td><strong>BX60D-35 1G FC</strong></td><td>SO-SFP-1000BASE-BX60D-35</td><td>1290.0</td><td>1330.0</td><td>1310.0</td><td>1G FC</td><td>1G FC</td><td>1.063</td><td>0.0</td><td>5.0</td></tr><tr><td><strong>BX60D-53 1000BASE-BX</strong></td><td>SO-SFP-1000BASE-BX60D-53</td><td>1480.0</td><td>1580.0</td><td>1550.0</td><td>1000BASE-BX</td><td>1000BASE-BX</td><td>1.25</td><td>-2.0</td><td>3.0</td></tr><tr><td><strong>BX60D-53 1G FC</strong></td><td>SO-SFP-1000BASE-BX60D-53</td><td>1480.0</td><td>1580.0</td><td>1550.0</td><td>1G FC</td><td>1G FC</td><td>1.063</td><td>-2.0</td><td>3.0</td></tr><tr><td><strong>BX60D-35 1000BASE-BX</strong></td><td>SO-SFP-1000Base-BX60D-35</td><td>1290.0</td><td>1330.0</td><td>1310.0</td><td>GbE</td><td>1000BASE-BX</td><td>1.25</td><td>0.0</td><td>5.0</td></tr><tr><td><strong>BX60D-35 1G FC</strong></td><td>SO-SFP-1000Base-BX60D-35</td><td>1290.0</td><td>1330.0</td><td>1310.0</td><td>1G FC</td><td>1G FC</td><td>1.063</td><td>0.0</td><td>5.0</td></tr><tr><td><strong>BX60D-33 1000BASE-BX</strong></td><td>SO-SFP-1000Base-BX60D-33</td><td>1480.0</td><td>1580.0</td><td>1550.0</td><td>1000BASE-BX</td><td>1000BASE-BX</td><td>1.25</td><td>-2.0</td><td>3.0</td></tr><tr><td><strong>BX60D-33 1G FC</strong></td><td>SO-SFP-1000Base-BX60D-33</td><td>1480.0</td><td>1580.0</td><td>1550.0</td><td>1G FC</td><td>1G FC</td><td>1.063</td><td>-2.0</td><td>3.0</td></tr><tr><td><strong>BX60D-35-I 1000BASE-BX</strong></td><td>SO-SFP-1000Base-BX60D-35-I</td><td>1290.0</td><td>1330.0</td><td>1310.0</td><td>GbE</td><td>1000BASE-BX</td><td>1.25</td><td>0.0</td><td>5.0</td></tr><tr><td><strong>BX60D-35-I 1G FC</strong></td><td>SO-SFP-1000Base-BX60D-35-I</td><td>1290.0</td><td>1330.0</td><td>1310.0</td><td>1G FC</td><td>1G FC</td><td>1.063</td><td>0.0</td><td>5.0</td></tr><tr><td><strong>BX60D-53-I 1000BASE-BX</strong></td><td>SO-SFP-1000BASE-BX60D-53-I</td><td>1480.0</td><td>1580.0</td><td>1550.0</td><td>GbE</td><td>1000BASE-BX</td><td>1.25</td><td>-2.0</td><td>3.0</td></tr><tr><td><strong>BX60D-53-I 1G FC</strong></td><td>SO-SFP-1000BASE-BX60D-53-I</td><td>1480.0</td><td>1580.0</td><td>1550.0</td><td>1G FC</td><td>1G FC</td><td>1.063</td><td>-2.0</td><td>3.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 12:45
+</footer>
+
+</div>
+</body>
+</html>

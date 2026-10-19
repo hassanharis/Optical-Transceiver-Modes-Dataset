@@ -1,0 +1,101 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1000BASE-BX40D-35",
+    "SO-SFP-1000BASE-BX40D-53",
+    "SO-SFP-1000Base-BX40D-35",
+    "SO-SFP-1000Base-BX40D-53",
+    "SO-SFP-1000Base-BX40D-35-I",
+    "SO-SFP-1000Base-BX40D-53-I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1290.0,
+    1480.0
+  ],
+  "wavelength_max_nm": [
+    1330.0,
+    1580.0
+  ],
+  "wavelength_center_nm": [
+    1310.0,
+    1550.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "media_interface_name": [
+    "1000BASE-BX40D"
+  ],
+  "standards_code": [
+    "1000BASE-BX40D",
+    "GbE",
+    "1G Ethernet",
+    "1G FC",
+    "1G Fiberchannel"
+  ],
+  "bit_rate_gbps": [
+    1.063,
+    1.25
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    -5.0,
+    -3.0
+  ],
+  "tx_power_max_dbm": [
+    0.0,
+    2.0
+  ],
+  "rx_sensitivity_dbm": [
+    -23.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -24.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Pair solution: SO-SFP-1000BASE-BX40D-35 (TX 1310nm / RX 1550nm) and SO-SFP-1000BASE-BX40D-53 (TX 1550nm / RX 1310nm). Footnote 1): SO-SFP-1000Base-BX40D-35 (1310nm direction). Footnote 2): SO-SFP-1000Base-BX40D-53 (1550nm direction). Transmitter output power footnote 3): Average power. Receiver minimum input power and overload footnote 4): @ 1.25Gbps, BER ≤ 1×10⁻¹², PRBS 27-1, back-to-back. Power budget in summary: 5–20 dB (footnote 1) / 3–18 dB (footnote 2); ordering lists 20 dB (-35) and 18 dB (-53). Operating temperature: 0°C to +70°C (-BxxC-) or -40°C to +85°C (-BxxI-). Power consumption stated as < 1.0 W. POWER BUDGET INFORMATION: fiber attenuation ~0.4 dB/km (1310 nm) and ~0.25 dB/km (1550 nm); power budget differs by direction.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1000BASE-BX40D-35 & -53",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "POWER BUDGET INFORMATION",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider list[float] for temp_min_c/temp_max_c when C-temp and I-temp variants are both documented; optional field for link power budget (dB) distinct from channel insertion loss."
+}

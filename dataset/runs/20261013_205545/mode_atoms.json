@@ -1,0 +1,82 @@
+{
+  "multi_valued": {
+    "standards_code": [
+      "SR4",
+      "SPI"
+    ],
+    "bit_rate_gbps": [
+      25.78125,
+      100.0
+    ],
+    "extinction_ratio_db": [
+      3.0,
+      5.0
+    ]
+  },
+  "general": {
+    "vendor": "Cinch Connectivity Solutions",
+    "model": [
+      "H28-100G-SR4"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "photodetector_type": [
+      "PIN",
+      "PIN_GaAs"
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "BGA",
+      "removable",
+      "solder-less",
+      "pin-less"
+    ],
+    "fiber_type": [
+      "MMF_OM3",
+      "MMF_OM4",
+      "MMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "media_interface_name": [
+      "SR4"
+    ],
+    "modulation_format": [
+      "NRZ"
+    ],
+    "tx_power_min_dbm": [
+      -2.0
+    ],
+    "tx_power_max_dbm": [
+      1.0
+    ],
+    "rx_sensitivity_dbm": [
+      -9.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "optical_extinction_ratio_db": [
+      3.0,
+      5.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "notes": "Receiver Input Sensitivity [1]: BER= 1E-12, PRBS7, NRZ, with optical signal ER > 4dB, all channels active, over full operating temperature range. Link Distance OM3 listed as symbol D in m with no numeric distance value in the extracted text. Optical Output Power and Extinction Ratio table columns are Min/Max without Typical values filled. Stratos brand. Aggregate data rate 100 Gbps from four channels at 25.78125 Gbps each. Internal CDR per channel. Low Profile < 0.20 in mated height.",
+    "provenance_datasheet_sections": [
+      "H28-100G-SR4",
+      "Features & Benefits",
+      "Operational Ratings",
+      "25.78G Tx Optical Eye, -40",
+      "Custom Fiber Flex Optical Pigtail"
+    ],
+    "suggestions": "Operational Ratings table OCR shows Link Distance OM3 (D, m) without a numeric value; include distance in source if present on the original PDF. Clarify whether form_factor should capture Quad Hybrid Optical Transceiver as a vendor-specific class."
+  }
+}

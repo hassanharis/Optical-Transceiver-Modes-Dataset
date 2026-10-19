@@ -1,0 +1,244 @@
+{
+  "modes": [
+    {
+      "label": "DWDM D9210 1560.61 nm",
+      "model": "SO-SFP-MR120D-D9210",
+      "wavelength_center_nm": 1560.61,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9220 1559.79 nm",
+      "model": "SO-SFP-MR120D-D9220",
+      "wavelength_center_nm": 1559.79,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9230 1558.98 nm",
+      "model": "SO-SFP-MR120D-D9230",
+      "wavelength_center_nm": 1558.98,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9240 1558.17 nm",
+      "model": "SO-SFP-MR120D-D9240",
+      "wavelength_center_nm": 1558.17,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9250 1557.36 nm",
+      "model": "SO-SFP-MR120D-D9250",
+      "wavelength_center_nm": 1557.36,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9260 1556.55 nm",
+      "model": "SO-SFP-MR120D-D9260",
+      "wavelength_center_nm": 1556.55,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9270 1555.75 nm",
+      "model": "SO-SFP-MR120D-D9270",
+      "wavelength_center_nm": 1555.75,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9280 1554.94 nm",
+      "model": "SO-SFP-MR120D-D9280",
+      "wavelength_center_nm": 1554.94,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9290 1554.13 nm",
+      "model": "SO-SFP-MR120D-D9290",
+      "wavelength_center_nm": 1554.13,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9300 1553.33 nm",
+      "model": "SO-SFP-MR120D-D9300",
+      "wavelength_center_nm": 1553.33,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9310 1552.52 nm",
+      "model": "SO-SFP-MR120D-D9310",
+      "wavelength_center_nm": 1552.52,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9320 1551.72 nm",
+      "model": "SO-SFP-MR120D-D9320",
+      "wavelength_center_nm": 1551.72,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9330 1550.92 nm",
+      "model": "SO-SFP-MR120D-D9330",
+      "wavelength_center_nm": 1550.92,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9340 1550.12 nm",
+      "model": "SO-SFP-MR120D-D9340",
+      "wavelength_center_nm": 1550.12,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9350 1549.32 nm",
+      "model": "SO-SFP-MR120D-D9350",
+      "wavelength_center_nm": 1549.32,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9360 1548.51 nm",
+      "model": "SO-SFP-MR120D-D9360",
+      "wavelength_center_nm": 1548.51,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9370 1547.72 nm",
+      "model": "SO-SFP-MR120D-D9370",
+      "wavelength_center_nm": 1547.72,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9380 1546.92 nm",
+      "model": "SO-SFP-MR120D-D9380",
+      "wavelength_center_nm": 1546.92,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9390 1546.12 nm",
+      "model": "SO-SFP-MR120D-D9390",
+      "wavelength_center_nm": 1546.12,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9400 1545.32 nm",
+      "model": "SO-SFP-MR120D-D9400",
+      "wavelength_center_nm": 1545.32,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9410 1544.53 nm",
+      "model": "SO-SFP-MR120D-D9410",
+      "wavelength_center_nm": 1544.53,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9420 1543.73 nm",
+      "model": "SO-SFP-MR120D-D9420",
+      "wavelength_center_nm": 1543.73,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9430 1542.94 nm",
+      "model": "SO-SFP-MR120D-D9430",
+      "wavelength_center_nm": 1542.94,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9440 1542.14 nm",
+      "model": "SO-SFP-MR120D-D9440",
+      "wavelength_center_nm": 1542.14,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9450 1541.35 nm",
+      "model": "SO-SFP-MR120D-D9450",
+      "wavelength_center_nm": 1541.35,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9460 1540.56 nm",
+      "model": "SO-SFP-MR120D-D9460",
+      "wavelength_center_nm": 1540.56,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9470 1539.77 nm",
+      "model": "SO-SFP-MR120D-D9470",
+      "wavelength_center_nm": 1539.77,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9480 1538.98 nm",
+      "model": "SO-SFP-MR120D-D9480",
+      "wavelength_center_nm": 1538.98,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9490 1538.19 nm",
+      "model": "SO-SFP-MR120D-D9490",
+      "wavelength_center_nm": 1538.19,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9500 1537.40 nm",
+      "model": "SO-SFP-MR120D-D9500",
+      "wavelength_center_nm": 1537.4,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9510 1536.61 nm",
+      "model": "SO-SFP-MR120D-D9510",
+      "wavelength_center_nm": 1536.61,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9520 1535.82 nm",
+      "model": "SO-SFP-MR120D-D9520",
+      "wavelength_center_nm": 1535.82,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9530 1535.04 nm",
+      "model": "SO-SFP-MR120D-D9530",
+      "wavelength_center_nm": 1535.04,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9540 1534.25 nm",
+      "model": "SO-SFP-MR120D-D9540",
+      "wavelength_center_nm": 1534.25,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9550 1533.47 nm",
+      "model": "SO-SFP-MR120D-D9550",
+      "wavelength_center_nm": 1533.47,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9560 1532.68 nm",
+      "model": "SO-SFP-MR120D-D9560",
+      "wavelength_center_nm": 1532.68,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9570 1531.90 nm",
+      "model": "SO-SFP-MR120D-D9570",
+      "wavelength_center_nm": 1531.9,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9580 1531.12 nm",
+      "model": "SO-SFP-MR120D-D9580",
+      "wavelength_center_nm": 1531.12,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9590 1530.33 nm",
+      "model": "SO-SFP-MR120D-D9590",
+      "wavelength_center_nm": 1530.33,
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "DWDM D9600 1529.55 nm",
+      "model": "SO-SFP-MR120D-D9600",
+      "wavelength_center_nm": 1529.55,
+      "bit_rate_gbps": 2.67
+    }
+  ]
+}

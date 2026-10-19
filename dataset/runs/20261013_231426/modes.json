@@ -1,0 +1,48 @@
+{
+  "modes": [
+    {
+      "label": "1271 nm Gray",
+      "model": "FTLX2471DC027",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "wavelength_center_nm": 1271.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.5,
+      "tx_power_min_dbm": -3.0,
+      "rx_sensitivity_dbm": -12.6
+    },
+    {
+      "label": "1291 nm Violet",
+      "model": "FTLX2471DC029",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "wavelength_center_nm": 1291.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.5,
+      "tx_power_min_dbm": -3.0,
+      "rx_sensitivity_dbm": -12.6
+    },
+    {
+      "label": "1311 nm Blue",
+      "model": "FTLX2471DC031",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "wavelength_center_nm": 1311.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.5,
+      "tx_power_min_dbm": -3.0,
+      "rx_sensitivity_dbm": -12.6
+    },
+    {
+      "label": "1331 nm Green",
+      "model": "FTLX2471DC033",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "wavelength_center_nm": 1331.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.5,
+      "tx_power_min_dbm": -3.0,
+      "rx_sensitivity_dbm": -12.6
+    }
+  ]
+}

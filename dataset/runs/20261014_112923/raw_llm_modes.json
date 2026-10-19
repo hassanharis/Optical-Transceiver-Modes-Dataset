@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "40G passive DAC (family)",
+      "model": "SO-QSFP-40G-PCUxM",
+      "standards_code": "40GBase",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "40G DAC 0.5m AWG30",
+      "model": "SO-QSFP-40G-PCU0.5M",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "40G DAC 1m AWG30",
+      "model": "SO-QSFP-40G-PCU1M",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "40G DAC 2m AWG30",
+      "model": "SO-QSFP-40G-PCU2M",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "40G DAC 3m AWG28",
+      "model": "SO-QSFP-40G-PCU3M",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 40.0
+    },
+    {
+      "label": "40G DAC 5m AWG26",
+      "model": "SO-QSFP-40G-PCU5M",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 40.0
+    }
+  ]
+}

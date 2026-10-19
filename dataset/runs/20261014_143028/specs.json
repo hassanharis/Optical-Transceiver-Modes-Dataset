@@ -1,0 +1,98 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1G-O-C49-E",
+    "SO-SFP-1G-O-C51-E",
+    "SO-SFP-1G-O-C61-E",
+    "SO-SFP-1G-O-C62-E",
+    "SO-SFP-1G-O-Cxx-E"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1484.5,
+    1504.5,
+    1604.5,
+    1618.5
+  ],
+  "wavelength_max_nm": [
+    1497.5,
+    1517.5,
+    1617.5,
+    1631.5,
+    1635.0
+  ],
+  "wavelength_center_nm": [
+    1490.0,
+    1491.0,
+    1510.0,
+    1511.0,
+    1610.0,
+    1611.0,
+    1625.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -20.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    0.9
+  ],
+  "host_interface_name": [
+    "100M Ethernet",
+    "1G Ethernet"
+  ],
+  "bit_rate_gbps": [
+    0.1,
+    0.125,
+    1.25
+  ],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    -2.0
+  ],
+  "tx_power_max_dbm": [
+    1.0
+  ],
+  "rx_sensitivity_dbm": [
+    -25.0
+  ],
+  "rx_overload_dbm": [
+    1.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -28.0
+  ],
+  "los_deassert_dbm": [
+    -25.0
+  ],
+  "los_hysteresis_db": [
+    1.0
+  ],
+  "penalties": [],
+  "notes": "Family SO-SFP-1G-O-Cxx-E: OSC at 100Mbps and 1Gbps Ethernet up to 80km; on data link disruption or failure to connect, transmitter switches to OTDR mode. Power budget 0–23dB. Transmitter/receiver min/max and overload per footnote 1) Average power; receiver min/overload per footnote 2) at 1.25Gbps PRBS7 and BER 1x10-12. Nominal/transmit wavelength rows 3)–6) map to SO-SFP-1G-O-C49-E, C51-E, C61-E, C62-E respectively. Receiver wavelength range 1260–1635nm. OTDR: dynamic range Typ 65dB, dead zone Max 30m, resolution Max 10m, accuracy Max 50m. Storage temperature -40°C to +85°C. DDM Yes. Ordering descriptions: FE/1G 23dB, OTDR 65dB, E-temp, LC.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1G-O-Cxx-E SFP, OSC/OTDR, 1Gbps, CWDM, SM, 80km, LC, E-temp",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

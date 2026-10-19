@@ -1,0 +1,141 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-155M-L80D-Cxx",
+      "SO-SFP-155M-L80D-C27",
+      "SO-SFP-155M-L80D-C29",
+      "SO-SFP-155M-L80D-C31",
+      "SO-SFP-155M-L80D-C33",
+      "SO-SFP-155M-L80D-C35",
+      "SO-SFP-155M-L80D-C37",
+      "SO-SFP-155M-L80D-C39",
+      "SO-SFP-155M-L80D-C41",
+      "SO-SFP-155M-L80D-C43",
+      "SO-SFP-155M-L80D-C45",
+      "SO-SFP-155M-L80D-C47",
+      "SO-SFP-155M-L80D-C49",
+      "SO-SFP-155M-L80D-C51",
+      "SO-SFP-155M-L80D-C53",
+      "SO-SFP-155M-L80D-C55",
+      "SO-SFP-155M-L80D-C57",
+      "SO-SFP-155M-L80D-C59",
+      "SO-SFP-155M-L80D-C61"
+    ],
+    "wavelength_min_nm": [
+      1270.0,
+      1271.0,
+      1100.0
+    ],
+    "wavelength_max_nm": [
+      1610.0,
+      1611.0,
+      1650.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1290.0,
+      1310.0,
+      1330.0,
+      1350.0,
+      1370.0,
+      1390.0,
+      1410.0,
+      1430.0,
+      1450.0,
+      1470.0,
+      1490.0,
+      1510.0,
+      1530.0,
+      1550.0,
+      1570.0,
+      1590.0,
+      1610.0
+    ],
+    "host_interface_name": [
+      "FE",
+      "STM1/OC3"
+    ],
+    "standards_code": [
+      "G.694.2",
+      "FE",
+      "STM1/OC3",
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "bit_rate_gbps": [
+      100.0,
+      155.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      18
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      -5.0
+    ],
+    "tx_power_max_dbm": [
+      0.0
+    ],
+    "rx_sensitivity_dbm": [
+      -34.0
+    ],
+    "rx_overload_dbm": [
+      -8.0
+    ],
+    "cd_tolerance_ps_nm": [
+      1600.0
+    ],
+    "post_fec_ber_target": [
+      1e-10
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -35.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Bit rate support stated as 100 to 155Mbps (not Gbps). Power budget 8–29dB stated but not in schema. Dispersion penalty max 1dB stated without paired penalized value and operating condition for penalty objects. Rx minimum input power @ 155Mbps, BER 1x10-10, PRBS 231-1. Transmitter output power footnote: average power. Operating temperature printed as -0°C to +70°C. Storage temperature -40°C to +85°C. DDM per SFF-8472. Transmit wavelength 1271nm–1611nm G.694.2; nominal 1270–1610nm (18ch). Title line: 29dB link budget reference.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-155M-L80D-Cxx",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Clarify whether bit_rate_gbps should accept Mbps-as-printed values. Add power_budget_db or map 29dB from title. Dispersion penalty Max 1dB could use a schema field for max dispersion penalty without full penalty tuple."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "modes": [
+    {
+      "label": "GbE",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "STM1/OC3",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "STM1/OC3",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "STM4/OC12",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "STM4/OC12",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "STM16/OC48",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "STM16/OC48",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "OTU1",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "OTU1",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "1G FC",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "2G FC",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "2G FC",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "CPRI Opt 1",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "CPRI Opt 1",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "CPRI Opt 2",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "CPRI Opt 2",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "CPRI Opt 3",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "CPRI Opt 3",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "OBSAI 1x",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "OBSAI 1x",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "OBSAI 2x",
+      "wavelength_max_nm": 1600.0,
+      "standards_code": "OBSAI 2x",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "1310nm transmit wavelength",
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 2.67
+    },
+    {
+      "label": "SO-SFP-MR2D ordering 2.7Gbps",
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 2.7
+    }
+  ]
+}

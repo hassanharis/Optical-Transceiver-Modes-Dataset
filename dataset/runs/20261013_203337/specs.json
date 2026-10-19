@@ -1,0 +1,43 @@
+{
+  "model": [
+    "CVR-QSFP28-SFP28-D"
+  ],
+  "form_factor": [
+    "QSFP28",
+    "QSFP+",
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "QSFP28 MSA SFF-8665",
+    "SFP28 MSA SFF-8402",
+    "SFF-8636"
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    0.3
+  ],
+  "standards_code": [
+    "SFF-8665",
+    "SFF-8402",
+    "SFF-8636"
+  ],
+  "bit_rate_gbps": [
+    10.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "notes": "Adapter/converter (QSFP28 host to SFP28/SFP+/SFP receptacle); RF channel of SFP28 connected to lane 1 of QSFP28 only; three remaining QSFP28 RF channels not connected. Operating temperature 0°C to +70°C; storage -40°C to +85°C. Power stated as <0.3W. I2C read of SFP28 registers via QSFP28 management SFF-8636. Ordering: 10G channel from SFP28 to lane 1 on QSFP28 with DDMI support. Brand website smartoptics.com referenced but manufacturer name not explicitly stated in body text.",
+  "provenance_datasheet_sections": [
+    "CVR-QSFP28-SFP28-D",
+    "OVERVIEW",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "This product is a mechanical/electrical adapter rather than an optical transceiver; many optical and FEC fields are appropriately null. Consider a separate schema or product_type field for converters/cables vs modules."
+}

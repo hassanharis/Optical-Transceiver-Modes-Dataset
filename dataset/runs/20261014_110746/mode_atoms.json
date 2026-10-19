@@ -1,0 +1,107 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1294.53,
+      1299.02,
+      1303.54,
+      1308.09
+    ],
+    "wavelength_max_nm": [
+      1296.59,
+      1301.09,
+      1305.63,
+      1310.19
+    ],
+    "wavelength_center_nm": [
+      1295.56,
+      1300.05,
+      1304.58,
+      1309.14
+    ],
+    "host_interface_name": [
+      "100GBASE-ER4",
+      "OTU4"
+    ],
+    "standards_code": [
+      "100GBASE-ER4",
+      "OTU4",
+      "4L1-9C1F"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      111.81,
+      25.78,
+      27.95
+    ],
+    "tx_power_min_dbm": [
+      -2.9,
+      -2.7
+    ],
+    "tx_power_max_dbm": [
+      8.9,
+      2.9
+    ],
+    "rx_sensitivity_dbm": [
+      -20.9,
+      -20.7
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-CFP-ER4"
+    ],
+    "form_factor": [
+      "CFP"
+    ],
+    "standards_claimed": [
+      "100GBASE-ER4",
+      "OTU4",
+      "CFP MSA's",
+      "4L1-9C1F"
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      4
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      12.0
+    ],
+    "reach_km": [
+      40.0
+    ],
+    "rx_overload_dbm": [
+      4.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "penalties": [],
+    "notes": "Power consumption listed as < 12W (worst case per GENERAL DEFINITIONS). Transmitter/receiver power specs are average power (footnote 3). Per-lane TX/RX limits specified at BER 1x10-12 (footnote 4). Power budget 0–18 dB (100GbE/OTU4) w/o optical path penalties per GENERAL DEFINITIONS. Aggregated line rates 103.12 Gbps (100GbE) and 111.81 Gbps (OTU4); per-lane 25.78 Gbps and 27.95 Gbps respectively. Storage temperature -40°C to +85°C (not normal operating). Ordering description wavelengths 1296/1300/1305/1309 nm. Title references 1310 nm application context.",
+    "provenance_datasheet_sections": [
+      "SO-CFP-ER4",
+      "CFP, 100GBASE-ER4, OTU4, 1310nm, SM, DDM, 40km",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider schema fields for power_budget_db (0–18 dB stated), storage_temperature_range, DDM (Yes), and aggregated vs per-lane bit-rate grouping. Clarify whether power_consumption should capture inequality bounds as printed (< 12W)."
+  }
+}

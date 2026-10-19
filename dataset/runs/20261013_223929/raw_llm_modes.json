@@ -1,0 +1,26 @@
+{
+  "modes": [
+    {
+      "label": "2x400G VR4",
+      "wavelength_min_nm": 844.0,
+      "wavelength_max_nm": 870.0,
+      "host_interface_name": "8x100G PAM4",
+      "media_interface_name": "2x400GBASE-VR4",
+      "frame": "8x100G",
+      "standards_code": "IEEE 802.3db",
+      "bit_rate_gbps": 800.0,
+      "rx_sensitivity_dbm": -4.4
+    },
+    {
+      "label": "8x100GbE breakout",
+      "wavelength_min_nm": 842.0,
+      "wavelength_max_nm": 948.0,
+      "host_interface_name": "IEEE 802.3ck",
+      "media_interface_name": "2x400G-VR4",
+      "frame": "8 x 100GbE",
+      "standards_code": "IEEE 802.3ck",
+      "bit_rate_gbps": 106.25,
+      "rx_sensitivity_dbm": -1.8
+    }
+  ]
+}

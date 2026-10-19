@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"Lx10G-ST11xx Low Profile RJ\",\n      \"model\": \"Lx10G-ST11xx\",\n      \"form_factor\": \"Low Profile RJ\"\n    },\n    {\n      \"label\": \"RR10G-ST11xx Low Rider RJ\",\n      \"model\": \"RR10G-ST11xx\",\n      \"form_factor\": \"Low Rider RJ\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

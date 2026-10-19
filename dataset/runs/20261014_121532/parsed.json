@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\so-qsfp28-dxx.pdf",
+  "page_count": 3,
+  "table_count": 4,
+  "markdown_chars": 8972,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 0,
+      "label": null,
+      "rows": 14
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 21
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

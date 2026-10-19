@@ -1,0 +1,68 @@
+{
+  "modes": [
+    {
+      "label": "QT-WDM-0280BD RX 1490nm @1.25G",
+      "model": "QT- WDM-0280BD",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0280BD TX 1550nm @1.25G",
+      "model": "QT- WDM-0280BD",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0280BD RX 1490nm @1.063G",
+      "model": "QT- WDM-0280BD",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "QT-WDM-0280BD TX 1550nm @1.063G",
+      "model": "QT- WDM-0280BD",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "QT-WDM-0280BID RX 1490nm @1.25G",
+      "model": "QT- WDM-0280BID",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0280BID TX 1550nm @1.25G",
+      "model": "QT- WDM-0280BID",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "QT-WDM-0280BID RX 1490nm @1.063G",
+      "model": "QT- WDM-0280BID",
+      "wavelength_min_nm": 1470.0,
+      "wavelength_max_nm": 1510.0,
+      "wavelength_center_nm": 1490.0,
+      "bit_rate_gbps": 1.063
+    },
+    {
+      "label": "QT-WDM-0280BID TX 1550nm @1.063G",
+      "model": "QT- WDM-0280BID",
+      "wavelength_min_nm": 1530.0,
+      "wavelength_max_nm": 1570.0,
+      "wavelength_center_nm": 1550.0,
+      "bit_rate_gbps": 1.063
+    }
+  ]
+}

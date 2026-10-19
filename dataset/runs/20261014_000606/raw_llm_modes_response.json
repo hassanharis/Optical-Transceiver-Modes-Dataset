@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"40GBASE-SR4 OM3 100m\",\n      \"standards_code\": \"40GBASE-SR4\",\n      \"bit_rate_gbps\": 41.25,\n      \"reach_km\": 0.1\n    },\n    {\n      \"label\": \"40GBASE-SR4 OM4 300m\",\n      \"standards_code\": \"40GBASE-SR4\",\n      \"bit_rate_gbps\": 41.25,\n      \"reach_km\": 0.3\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

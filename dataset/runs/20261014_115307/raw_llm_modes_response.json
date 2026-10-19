@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"40GbE OM3 300m\",\n      \"host_interface_name\": \"40GbE\",\n      \"standards_code\": \"40GBASE-eSR4\",\n      \"bit_rate_gbps\": 41.25,\n      \"reach_km\": 0.3\n    },\n    {\n      \"label\": \"40GbE OM4 400m\",\n      \"host_interface_name\": \"40GbE\",\n      \"standards_code\": \"40GBASE-eSR4\",\n      \"bit_rate_gbps\": 41.25,\n      \"reach_km\": 0.4\n    },\n    {\n      \"label\": \"Infiniband QDR/DDR OM3 300m\",\n      \"host_interface_name\": \"Infiniband QDR/DDR\",\n      \"standards_code\": \"eSR4\",\n      \"bit_rate_gbps\": 10.3125,\n      \"reach_km\": 0.3\n    },\n    {\n      \"label\": \"Infiniband QDR/DDR OM4 400m\",\n      \"host_interface_name\": \"Infiniband QDR/DDR\",\n      \"standards_code\": \"eSR4\",\n      \"bit_rate_gbps\": 10.3125,\n      \"reach_km\": 0.4\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

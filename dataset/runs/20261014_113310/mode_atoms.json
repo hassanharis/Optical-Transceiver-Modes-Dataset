@@ -1,0 +1,123 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-QSFP-DD-2C-10-4",
+      "SO-QSFP-DD-2C-10"
+    ],
+    "wavelength_min_nm": [
+      1294.53,
+      1299.02,
+      1303.54,
+      1308.09
+    ],
+    "wavelength_max_nm": [
+      1296.59,
+      1301.09,
+      1305.63,
+      1310.19
+    ],
+    "wavelength_center_nm": [
+      1295.56,
+      1300.05,
+      1304.58,
+      1309.14
+    ],
+    "channel_total": [
+      4,
+      8
+    ],
+    "host_interface_name": [
+      "2x CAUI-4 (4x 25G)",
+      "CAUI-4",
+      "SFF-8679"
+    ],
+    "media_interface_name": [
+      "100GBASE-LR4",
+      "2x 100GBASE-R"
+    ],
+    "frame": [
+      "2x 100GBASE-R",
+      "2x 100GbE",
+      "8x 25.78G NRZ"
+    ],
+    "standards_code": [
+      "100GBASE-LR4",
+      "100GBASE-LR4 (Clause 88)",
+      "CMIS Application Code 1"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      25.78,
+      200.0
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "QSFP-DD MSA",
+      "CMIS4.0",
+      "100GBASE-LR4",
+      "SFF-8679"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "grey"
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "CS"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      8.0
+    ],
+    "baud_rate_gbaud": [
+      25.78
+    ],
+    "modulation_format": [
+      "NRZ"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -0.7
+    ],
+    "tx_power_max_dbm": [
+      4.5
+    ],
+    "rx_sensitivity_dbm": [
+      -8.0
+    ],
+    "rx_overload_dbm": [
+      4.5
+    ],
+    "fec_type": [
+      "NONE"
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "penalties": [],
+    "notes": "Power consumption stated as < 8W worst case. Power budget 0 – 7.3dB between transmitter and receiver w/o optical path penalties. Transmitter/receiver power per lane is average power (footnote 3). Minimum input power and overload specified at BER 1x10-12 (footnote 4). Storage temperature -40°C to +85°C. Dual CS interface: two SM fiber pairs, 200G to 2x 100G breakout; SO-QSFP28-LR4-10L recommended as matching optical performance on 100G Ethernet side. Aggregated line rate 200GbE (footnote 1); line rate per lane 25.78Gbps (footnote 2). DDM via I2C per QSFP-DD MSA.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP-DD-2C-10-4",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "APPLICATION CODE LIST",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Datasheet does not state host/media interface IDs in hex or decimal, OSNR, dispersion/PDL/PMD tolerance, or LOS thresholds. Power budget 7.3dB is distinct from insertion loss; consider mapping link power budget if schema is extended."
+  }
+}

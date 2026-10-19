@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"LS-BL553101-10C Transmit 1550 nm\",\n      \"model\": \"LS-BL553101-10C\",\n      \"wavelength_min_nm\": 1530.0,\n      \"wavelength_max_nm\": 1570.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"bit_rate_gbps\": 155.0\n    },\n    {\n      \"label\": \"LS-BL553101-10C Receive 1310 nm\",\n      \"model\": \"LS-BL553101-10C\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1360.0,\n      \"wavelength_center_nm\": 1310.0,\n      \"bit_rate_gbps\": 155.0\n    },\n    {\n      \"label\": \"LS-BL553101-10I Transmit 1550 nm\",\n      \"model\": \"LS-BL553101-10I\",\n      \"wavelength_min_nm\": 1530.0,\n      \"wavelength_max_nm\": 1570.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"bit_rate_gbps\": 155.0\n    },\n    {\n      \"label\": \"LS-BL553101-10I Receive 1310 nm\",\n      \"model\": \"LS-BL553101-10I\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1360.0,\n      \"wavelength_center_nm\": 1310.0,\n      \"bit_rate_gbps\": 155.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

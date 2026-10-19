@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "400G-FR4 400GAUI-8",
+      "host_interface_name": "400GAUI-8",
+      "frame": "400GAUI-8",
+      "standards_code": "400GBASE-FR4",
+      "bit_rate_gbps": 425.0,
+      "rx_sensitivity_dbm": -4.5,
+      "fec_type": "RS_528_514",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "4x100G-FR 100GAUI-2 breakout",
+      "host_interface_name": "100GAUI-2",
+      "frame": "4x100GAUI-2",
+      "standards_code": "100G-FR",
+      "bit_rate_gbps": 100.0,
+      "rx_sensitivity_dbm": -4.5,
+      "fec_type": "RS_528_514",
+      "number_of_lanes": 4
+    }
+  ]
+}

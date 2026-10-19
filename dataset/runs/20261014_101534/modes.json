@@ -1,0 +1,112 @@
+{
+  "modes": [
+    {
+      "label": "Lane L0 (25.78125 Gbps)",
+      "model": "OPHW-S10-13-CQ",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "power_consumption_w": 6.0,
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6
+    },
+    {
+      "label": "Lane L1 (25.78125 Gbps)",
+      "model": "OPHW-S10-13-CQ",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "power_consumption_w": 6.0,
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6
+    },
+    {
+      "label": "Lane L2 (25.78125 Gbps)",
+      "model": "OPHW-S10-13-CQ",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "power_consumption_w": 6.0,
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6
+    },
+    {
+      "label": "Lane L3 (25.78125 Gbps)",
+      "model": "OPHW-S10-13-CQ",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "power_consumption_w": 6.0,
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6
+    },
+    {
+      "label": "Stressed receiver sensitivity (OMA)",
+      "model": "OPHW-S10-13-CQ",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1295.56,
+      "power_consumption_w": 6.0,
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -6.8
+    },
+    {
+      "label": "Low power mode",
+      "model": "OPHW-S10-13-CQ",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1295.56,
+      "power_consumption_w": 1.0,
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 103.125,
+      "tx_power_max_dbm": 10.5,
+      "rx_sensitivity_dbm": -8.6
+    },
+    {
+      "label": "100GBASE-LR4 aggregate (103.125 Gbps)",
+      "model": "OPHW-S10-13-CQ",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1295.56,
+      "power_consumption_w": 6.0,
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 103.125,
+      "tx_power_max_dbm": 10.5,
+      "rx_sensitivity_dbm": -8.6
+    },
+    {
+      "label": "OTU4 (111.81 Gbps)",
+      "model": "OPHW-S10-13-CQ",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1295.56,
+      "power_consumption_w": 6.0,
+      "standards_code": "OTU4",
+      "bit_rate_gbps": 111.81,
+      "tx_power_max_dbm": 10.5,
+      "rx_sensitivity_dbm": -8.6
+    },
+    {
+      "label": "CFP4-100G-LR4 100GBASE-LR4",
+      "model": "CFP4-100G-LR4",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1295.56,
+      "power_consumption_w": 6.0,
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 103.125,
+      "tx_power_max_dbm": 10.5,
+      "rx_sensitivity_dbm": -8.6
+    }
+  ]
+}

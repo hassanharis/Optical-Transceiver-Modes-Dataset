@@ -1,0 +1,148 @@
+{
+  "modes": [
+    {
+      "label": "LxS-ST11xx 4x FC 70 m (62.5/125)",
+      "model": "LxS-ST11xx",
+      "form_factor": "Low Profile",
+      "host_interface_name": "4x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 4.125,
+      "bit_rate_gbps": 4.25,
+      "reach_km": 0.07,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "LxS-ST11xx 4x FC 150 m (50/125)",
+      "model": "LxS-ST11xx",
+      "form_factor": "Low Profile",
+      "host_interface_name": "4x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 4.125,
+      "bit_rate_gbps": 4.25,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "LxS-ST11xx 2x FC 150 m (62.5/125)",
+      "model": "LxS-ST11xx",
+      "form_factor": "Low Profile",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "LxS-ST11xx 2x FC 300 m (50/125)",
+      "model": "LxS-ST11xx",
+      "form_factor": "Low Profile",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "ST11xx 4x FC 70 m (62.5/125)",
+      "model": "ST11xx",
+      "form_factor": "Low Profile",
+      "host_interface_name": "4x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 4.125,
+      "bit_rate_gbps": 4.25,
+      "reach_km": 0.07,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "ST11xx 4x FC 150 m (50/125)",
+      "model": "ST11xx",
+      "form_factor": "Low Profile",
+      "host_interface_name": "4x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 4.125,
+      "bit_rate_gbps": 4.25,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "ST11xx 2x FC 150 m (62.5/125)",
+      "model": "ST11xx",
+      "form_factor": "Low Profile",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "ST11xx 2x FC 300 m (50/125)",
+      "model": "ST11xx",
+      "form_factor": "Low Profile",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "Roughrider RR-ST11xx 4x FC 70 m (62.5/125)",
+      "model": "Roughrider RR-ST11xx",
+      "form_factor": "Low Rider",
+      "host_interface_name": "4x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 4.125,
+      "bit_rate_gbps": 4.25,
+      "reach_km": 0.07,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "Roughrider RR-ST11xx 4x FC 150 m (50/125)",
+      "model": "Roughrider RR-ST11xx",
+      "form_factor": "Low Rider",
+      "host_interface_name": "4x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 4.125,
+      "bit_rate_gbps": 4.25,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 4
+    },
+    {
+      "label": "Roughrider RR-ST11xx 2x FC 150 m (62.5/125)",
+      "model": "Roughrider RR-ST11xx",
+      "form_factor": "Low Rider",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.15,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    },
+    {
+      "label": "Roughrider RR-ST11xx 2x FC 300 m (50/125)",
+      "model": "Roughrider RR-ST11xx",
+      "form_factor": "Low Rider",
+      "host_interface_name": "2x Fiber Channel",
+      "standards_code": "ANSI X3.297 FC-PI",
+      "baud_rate_gbaud": 2.125,
+      "bit_rate_gbps": 2.125,
+      "reach_km": 0.3,
+      "rx_sensitivity_dbm": -15.0,
+      "number_of_lanes": 2
+    }
+  ]
+}

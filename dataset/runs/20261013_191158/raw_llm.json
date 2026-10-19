@@ -1,0 +1,138 @@
+{
+  "vendor": null,
+  "model": [
+    "BIDI-SFP+-ER-33",
+    "BIDI-SFP+-ER-27"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ae",
+    "SFF-8431"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1260.0,
+    1320.0
+  ],
+  "wavelength_max_nm": [
+    1280.0,
+    1340.0
+  ],
+  "wavelength_center_nm": [
+    1270.0,
+    1330.0
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.2
+  ],
+  "host_interface_name": [
+    "SFF-8431"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "10GBASE-ER",
+    "10GBASE-EW",
+    "10GBASE-BX"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    9.95,
+    9.953,
+    10.3125,
+    11.3
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    1.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -15.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    5.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -17.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -12.0
+  ],
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    5.0
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "BIDI module: one path uses 1330 nm TX / 1270 nm RX (BIDI-SFP+-ER-33); ordering also lists BIDI-SFP+-ER-27 (1270 nm TX variant per description). Product features cite industrial operating case temperature -40 to 85 °C (symbol TI in General Operating Characteristics); ordering table lists 0 °C to +70 °C for both part numbers. Power consumption stated as < 1.2 W. Transmitter average output power and receiver average receive power figures noted informative only per IEEE 802.3ae. Receiver sensitivity measured with worst ER=6, BER<10^-12, 2^31-1 PRBS. Dispersion penalty (TDP) max 3.2 dB stated without paired penalized optical parameter and operating condition. RMS spectral width max 1 nm. Optical rise/fall time (20%-80%) max 50 ps. RIN max -128 dB/Hz. Supply current Icc5 max 330 mA at 3.13-3.47 V Vcc.",
+  "provenance_datasheet_sections": [
+    "SFP+ 10GBASE-BX 1330nm-TX/1270nm-RX 40km Transceiver",
+    "P/N: BIDI-SFP+-ER-33",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "2. General Operating Characteristics",
+    "4. Optical Characteristics",
+    "7. Ordering Information"
+  ],
+  "suggestions": "Clarify whether vendor name appears on cover art only; add explicit modulation format and lane count if required for SFP+ 10G. TDP 3.2 dB could map to penalties if datasheet later ties it to RX sensitivity or OSNR at a defined CD."
+}

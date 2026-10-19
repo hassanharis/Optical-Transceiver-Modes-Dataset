@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Evidence from the datasheet pairs **1270** with **1610** (title, ordering: \u201c1270~1610nm\u201d / \u201c1270-1610nm\u201d) and **1260** with **1620** (receiver table, Centre Wavelength Min/Max). Those are separate specification contexts, not two orderable SKUs.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"CWDM product range 1270-1610 nm\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1610.0\n    },\n    {\n      \"label\": \"Receiver centre wavelength 1260-1620 nm\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1620.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

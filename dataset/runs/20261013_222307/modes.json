@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "TSF086-BCOC-SO 1G FC",
+      "model": "TSF086-BCOC-SO",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "TSF086-BCOC-SO GbE",
+      "model": "TSF086-BCOC-SO",
+      "wavelength_min_nm": 1270.0,
+      "wavelength_max_nm": 1350.0,
+      "wavelength_center_nm": 1310.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    },
+    {
+      "label": "TSF086-BOCC-SO 1G FC",
+      "model": "TSF086-BOCC-SO",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 1.0625
+    },
+    {
+      "label": "TSF086-BOCC-SO GbE",
+      "model": "TSF086-BOCC-SO",
+      "wavelength_min_nm": 1520.0,
+      "wavelength_max_nm": 1580.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "GbE",
+      "bit_rate_gbps": 1.25
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "multi_valued": {
+    "form_factor": [
+      "CFP2",
+      "QSFP28"
+    ],
+    "standards_code": [
+      "100G Ethernet",
+      "OTU4"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "CVR-CFP2-QSFP28"
+    ],
+    "standards_claimed": [
+      "CFP2-MSA",
+      "QSFP28 MSA"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.8
+    ],
+    "host_interface_name": [
+      "CFP2"
+    ],
+    "media_interface_name": [
+      "QSFP28"
+    ],
+    "bit_rate_gbps": [
+      100.0
+    ],
+    "notes": "Converter module (CFP2 host to QSFP28); not a standalone optical transceiver. Power consumption stated as < 1.8W. Storage temperature -40\u00b0C to +85\u00b0C. DDM via MDIO 2-Wire Interface. Safety/regulatory: TUV/UL/FDA (contact Smartoptics for latest certification), RoHS compliance.",
+    "provenance_datasheet_sections": [
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

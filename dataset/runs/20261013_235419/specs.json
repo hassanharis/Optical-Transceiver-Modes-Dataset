@@ -1,0 +1,103 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LP-SFP-TMRI",
+    "LP-SFP-TMRC",
+    "LP-SFP-MSRC",
+    "LP-SFP-TM8C",
+    "LP-SFP-MS8C",
+    "LP-SFP-MSRI",
+    "LP-SFP-TM8I",
+    "LP-SFP-MS8I",
+    "LP-SFP-TM8CNN",
+    "LP-SFP-TM8INN",
+    "LP-SFP-MS8CNY",
+    "LP-SFP-MS8INY",
+    "LP-SFP-MS8CNN",
+    "LP-SFP-MS8INN",
+    "LP-SFP-TM8CNY",
+    "LP-SFP-TM8INY",
+    "LP-SFP-TM8CYN",
+    "LP-SFP-MS8CYY",
+    "LP-SFP-MS8IYY",
+    "LP-SFP-MS8CYN",
+    "LP-SFP-TM8CYY",
+    "LP-SFP-TM8IYY"
+  ],
+  "form_factor": [
+    "SFP",
+    "Front Panel Plug RJ"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "Gigabit Interface Converter (SFP) Transceiver Multi-Source Agreement (MSA)",
+    "IEEE 802.3",
+    "IEEE 802.3-2002",
+    "IEEE 802.3ab",
+    "Gigabit Ethernet",
+    "1000BASE-T"
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "RJ-45"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "power_consumption_w": [
+    1.05,
+    1.2
+  ],
+  "host_interface_name": [
+    "SGMII",
+    "SERDES"
+  ],
+  "standards_code": [
+    "1000BASE-T",
+    "1000 BASE-T",
+    "10/100/1000Mbps",
+    "IEEE 802.3",
+    "IEEE 802.3ab"
+  ],
+  "baud_rate_gbaud": [
+    0.25
+  ],
+  "bit_rate_gbps": [
+    0.01,
+    0.1,
+    1.0,
+    1.25
+  ],
+  "modulation_format": [
+    "PAM",
+    "PAM5"
+  ],
+  "reach_km": [
+    0.1
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "penalties": [],
+  "notes": "Copper (1000BASE-T) SFP over Category 5 UTP; not an optical transceiver. Datasheet title and rev apply to LP-SFP-TMRI (-40 to +85°C, SGMII, Realtek RTL8213B per ordering table). Features also list Commercial case 0 to +70°C and Industrial -40 to +85°C for the family. Electrical Power Interface text states +5V +/- 5% input range and that 3.3V max is not allowed for continuous operation, while Table 1 specifies +3.3V electrical power interface (Vcc 3.13–3.47 V). Caution: power consumption and surge current exceed SFP MSA specified values. Table 5 data rate is 10–1,000 Mb/sec; reach 100 m at BER <10^-12. Host: 1000BASE-T with SGMII (no clocks) per AN-2036, or SERDES without SGMII for 1000BASE-T only. Line frequency 125 MHz (5-level encoding per IEEE 802.3). Symbol rate 250 Mbps on each of four cable pairs.",
+  "provenance_datasheet_sections": [
+    "LP-SFP-TMRI",
+    "Features",
+    "Applications",
+    "Description",
+    "Electrical Power Interface",
+    "Table 1. +3.3V Volt electrical power interface",
+    "High-Speed Electrical Interface",
+    "Table 3. High-speed electrical interface, transmission line-SFP",
+    "high-speed electrical interface, host-SFP",
+    "Table 4. High-speed electrical interface, host-SFP",
+    "General Specifications",
+    "Table 5. General specifications",
+    "Environmental Specifications",
+    "Table 6. Environmental specifications",
+    "Mechanical Specifications",
+    "Ordering information"
+  ],
+  "suggestions": "Add schema fields for copper/twisted-pair modules (cable category, max cable length in m, PHY IC, host electrical interfaces like SGMII/SERDES, line rate MHz) since optical and OSNR fields are not applicable."
+}

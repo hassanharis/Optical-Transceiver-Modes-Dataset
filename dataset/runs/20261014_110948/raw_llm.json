@@ -1,0 +1,122 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-CFP-SR10",
+    "TC0005-M85C-SO"
+  ],
+  "form_factor": [
+    "CFP"
+  ],
+  "standards_claimed": [
+    "100GBASE-SR10",
+    "CFP MSA's"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    10
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    8.0
+  ],
+  "host_interface_name": [
+    "100GBASE-SR10"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "100GBASE-SR10"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    103.125,
+    10.3125
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.1,
+    0.15
+  ],
+  "tx_power_min_dbm": [
+    -7.6
+  ],
+  "tx_power_max_dbm": [
+    2.4
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -9.5
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    2.4
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    10
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Aggregated line rate 103.125 Gbps for 100GbE; per-lane rate 10.3125 Gbps. Power budget stated as 0–1.9 dB in TECHNICAL DATA; ordering description lists 1.8 dB. Reach: 100 m @ OM3, 150 m @ OM4 (also described as up to 150 m over OM4-grade ribbon fiber). Tx output power and Rx min/overload are per lane, average power (footnote 3). Rx minimum input power specified at BER 1×10⁻¹² (footnote 4). Storage temperature −40°C to +85°C; operating 0°C to +70°C. Power consumption worst case < 8 W. 10× channels; break-out to 10× 10GbE. Single 24/20 lane optical fiber MPO connector.",
+  "provenance_datasheet_sections": [
+    "SO-CFP-SR10 CFP, 100GBASE-SR10, MM, DDM, 1.9dB, 100m, MPO",
+    "TC0005-M85C-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": null
+}

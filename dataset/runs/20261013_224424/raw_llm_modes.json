@@ -1,0 +1,84 @@
+{
+  "modes": [
+    {
+      "label": "40GBASE-ER4 CWDM lane 1 (1264.5\u20131277.5 nm)",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "standards_code": "40GBASE-ER4",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -19.0
+    },
+    {
+      "label": "40GBASE-ER4 CWDM lane 2 (1284.5\u20131297.5 nm)",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "standards_code": "40GBASE-ER4",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -19.0
+    },
+    {
+      "label": "40GBASE-ER4 CWDM lane 3 (1304.5\u20131317.5 nm)",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "standards_code": "40GBASE-ER4",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -19.0
+    },
+    {
+      "label": "40GBASE-ER4 CWDM lane 4 (1324.5\u20131337.5 nm)",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "standards_code": "40GBASE-ER4",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -19.0
+    },
+    {
+      "label": "40GBASE-ER4 stressed receiver (OMA)",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "standards_code": "40GBASE-ER42",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 5.0,
+      "rx_sensitivity_dbm": -16.8
+    },
+    {
+      "label": "SMF-28 link distance (Data Rate Specifications)",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "standards_code": "IEEE 802.3bm",
+      "bit_rate_gbps": 10.3125,
+      "reach_km": 0.3,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -19.0
+    },
+    {
+      "label": "40GBASE-ER4 aggregate (41.3 Gb/s)",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "standards_code": "XLPPI",
+      "bit_rate_gbps": 41.3,
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 10.5,
+      "rx_sensitivity_dbm": -19.0
+    },
+    {
+      "label": "40GBASE-ER4 aggregate (41.25 Gb/s max)",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "standards_code": "IEEE 802.3bm",
+      "bit_rate_gbps": 41.25,
+      "reach_km": 40.0,
+      "tx_power_max_dbm": 10.5,
+      "rx_sensitivity_dbm": -16.8
+    }
+  ]
+}

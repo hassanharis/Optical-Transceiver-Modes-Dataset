@@ -1,0 +1,364 @@
+{
+  "modes": [
+    {
+      "label": "DWDM 192.10 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D21-A",
+      "wavelength_center_nm": 1560.61,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 192.20 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D22-A",
+      "wavelength_center_nm": 1559.79,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 192.30 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D23-A",
+      "wavelength_center_nm": 1558.98,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 192.40 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D24-A",
+      "wavelength_center_nm": 1558.17,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 192.50 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D25-A",
+      "wavelength_center_nm": 1557.36,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 192.60 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D26-A",
+      "wavelength_center_nm": 1556.55,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 192.70 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D27-A",
+      "wavelength_center_nm": 1555.75,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 192.80 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D28-A",
+      "wavelength_center_nm": 1554.94,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 192.90 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D29-A",
+      "wavelength_center_nm": 1554.13,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 193.00 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D30-A",
+      "wavelength_center_nm": 1553.33,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 193.10 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D31-A",
+      "wavelength_center_nm": 1552.52,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 193.20 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D32-A",
+      "wavelength_center_nm": 1551.72,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 193.30 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D33-A",
+      "wavelength_center_nm": 1550.92,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 193.40 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D34-A",
+      "wavelength_center_nm": 1550.12,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 193.50 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D35-A",
+      "wavelength_center_nm": 1549.32,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 193.60 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D36-A",
+      "wavelength_center_nm": 1548.51,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 193.70 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D37-A",
+      "wavelength_center_nm": 1547.72,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 193.80 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D38-A",
+      "wavelength_center_nm": 1546.92,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 193.90 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D39-A",
+      "wavelength_center_nm": 1546.12,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 194.00 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D40-A",
+      "wavelength_center_nm": 1545.32,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 194.10 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D41-A",
+      "wavelength_center_nm": 1544.53,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 194.20 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D42-A",
+      "wavelength_center_nm": 1543.73,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 194.30 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D43-A",
+      "wavelength_center_nm": 1542.94,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 194.40 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D44-A",
+      "wavelength_center_nm": 1542.14,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 194.50 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D45-A",
+      "wavelength_center_nm": 1541.35,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 194.60 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D46-A",
+      "wavelength_center_nm": 1540.56,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 194.70 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D47-A",
+      "wavelength_center_nm": 1539.77,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 194.80 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D48-A",
+      "wavelength_center_nm": 1538.98,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 194.90 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D49-A",
+      "wavelength_center_nm": 1538.19,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 195.00 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D50-A",
+      "wavelength_center_nm": 1537.4,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 195.10 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D51-A",
+      "wavelength_center_nm": 1536.61,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 195.20 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D52-A",
+      "wavelength_center_nm": 1535.82,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 195.30 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D53-A",
+      "wavelength_center_nm": 1535.04,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 195.40 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D54-A",
+      "wavelength_center_nm": 1534.25,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 195.50 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D55-A",
+      "wavelength_center_nm": 1533.47,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 195.60 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D56-A",
+      "wavelength_center_nm": 1532.68,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 195.70 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D57-A",
+      "wavelength_center_nm": 1531.9,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 195.80 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D58-A",
+      "wavelength_center_nm": 1531.12,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 195.90 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D59-A",
+      "wavelength_center_nm": 1530.33,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "DWDM 196.00 THz 100GbE PAM4",
+      "model": "SO-QSFP28-D60-A",
+      "wavelength_center_nm": 1529.55,
+      "media_interface_name": "100GBASE",
+      "standards_code": "G.694.1",
+      "bit_rate_gbps": 103.12,
+      "modulation_format": "PAM4"
+    }
+  ]
+}

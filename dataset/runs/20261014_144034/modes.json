@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "STM4/OC12",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "host_interface_name": "STM4/OC12",
+      "standards_code": "STM4/OC12",
+      "rx_sensitivity_dbm": -37.0
+    },
+    {
+      "label": "STM1/OC3",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "host_interface_name": "STM1/OC3",
+      "standards_code": "STM1/OC3",
+      "rx_sensitivity_dbm": -38.0
+    },
+    {
+      "label": "100M FE",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1600.0,
+      "host_interface_name": "FE",
+      "standards_code": "FE",
+      "rx_sensitivity_dbm": -39.0
+    }
+  ]
+}

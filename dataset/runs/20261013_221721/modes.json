@@ -1,0 +1,40 @@
+{
+  "modes": [
+    {
+      "label": "TS2014-S30C-SO C-temp average power",
+      "model": "TS2014-S30C-SO",
+      "power_consumption_w": 2.5,
+      "standards_code": "25GE",
+      "tx_power_min_dbm": 2.0,
+      "tx_power_max_dbm": 7.0,
+      "rx_sensitivity_dbm": -31.0
+    },
+    {
+      "label": "TS2014-S30I-SO I-temp average power",
+      "model": "TS2014-S30I-SO",
+      "power_consumption_w": 3.5,
+      "standards_code": "25G Ethernet",
+      "tx_power_min_dbm": 2.0,
+      "tx_power_max_dbm": 7.0,
+      "rx_sensitivity_dbm": -28.1
+    },
+    {
+      "label": "TS2014-S30C-SO C-temp OMA",
+      "model": "TS2014-S30C-SO",
+      "power_consumption_w": 2.5,
+      "standards_code": "25GE",
+      "tx_power_min_dbm": 3.7,
+      "tx_power_max_dbm": 7.8,
+      "rx_sensitivity_dbm": -26.5
+    },
+    {
+      "label": "TS2014-S30I-SO I-temp OMA",
+      "model": "TS2014-S30I-SO",
+      "power_consumption_w": 3.5,
+      "standards_code": "25G Ethernet",
+      "tx_power_min_dbm": 3.7,
+      "tx_power_max_dbm": 7.8,
+      "rx_sensitivity_dbm": -26.5
+    }
+  ]
+}

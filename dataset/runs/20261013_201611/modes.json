@@ -1,0 +1,18 @@
+{
+  "modes": [
+    {
+      "label": "Fast Ethernet 125 Mbaud",
+      "power_consumption_w": 0.15,
+      "baud_rate_gbaud": 0.125,
+      "reach_km": 0.05,
+      "rx_sensitivity_dbm": -26.0
+    },
+    {
+      "label": "250 Mbaud",
+      "power_consumption_w": 0.15,
+      "baud_rate_gbaud": 0.25,
+      "reach_km": 0.05,
+      "rx_sensitivity_dbm": -22.0
+    }
+  ]
+}

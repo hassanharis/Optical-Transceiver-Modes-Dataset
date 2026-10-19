@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;TQD032-TUNC-SO&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">tqd032-tunc-so-qsfp-dd-400zr-r6.1.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">3</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">6</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 16:53</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+6.1 
+
+## **TQD032-TUNC-SO** 
+
+QSFP-DD OIF 400G-ZR Ethernet Coh Tunable Flexgrid 120km LC D9128-D9612, CMIS5.0 
+
+## OVERVIEW 
+
+The TQD032-TUNC-SO is a QSFP-DD form-factor (type 2) DWDM transceiver for 400 Gbps Ethernet applications. The transceiver is intended for use in interconnect applications between data centers with switches, routers etc. 
+
+TQD032-TUNC-SO supports both the amplified (Application Code 0x01) and the un-amplified (Application Code 0x02) use cases as defined in the OIF 400ZR specification.  Application code 3 is 
+
+The dispersion performance is in accordance with OIF 400ZR for distances up to 120km over a SingleMode (SM) fiber using a single optical carrier at 60Gbaud and 16QAM coherent modulation. The transmitter is tunable over the ITU C-Band at 100 GHz grid (75 GHz grid is optional). 
+
+The electrical interface is according to IEEE 802.3bs 400GAUI-8 enabling SO-TQSFP-DD-4CC-ZR to support 400G transport according to OIF-ZR specification. The 400GAUI-8 client/electrical interface is compatible with IEEE P802.3bs 8 lane 56G PAM-4, as used for “grey” datacenter optical transceivers, for example 400GBASE-DR4. 
+
+
+
+This transceiver provides digital diagnostic functions via a 2-wire serial interface and a management interface according to CMIS5.0. 
+
+The transceiver supports the commercial temperature range (C-temp): 0°C to 70°C (32°F to 158°F). 
+
+||**CMIS**&lt;br&gt;**Application**&lt;br&gt;**Code**|&lt;br&gt;**Host format**|**Electrical interface**|**Payload**|**FEC**|**Modulation**|&lt;br&gt;**Line Symbol**&lt;br&gt;**Baud Rate**|**MSA format**|**Media ID**&lt;br&gt;**(hex)**||
+|---|---|---|---|---|---|---|---|---|---|---|
+||1|400GBASE-R|1x 400GAUI-8 (8x 50G)|400G|CFEC|DP-16QAM|59.8GBd|OIF 400ZR, app code 0x01|0x3E||
+||2|400GBASE-R|1x 400GAUI-8 (8x 50G)|400G|CFEC|DP-16QAM|59.8GBd|OIF 400ZR, app code 0x02|0x3F||
+||3|4 × 100GBASE-R|4x 100GAUI-2 (2x 50G)|400G|CFEC|DP-16QAM|59.8GBd|OIF 400ZR, app code 0x01|0x3E||
+
+
+
+
+Subject to change without notice. For more information visit sma
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "TQD032-TUNC-SO"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "QSFP-DD",
+    "QSFP-DD_type-2",
+    "QSFP-DD_type-2A"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "OIF <span class="num">400</span>ZR",
+    "IEEE <span class="num">802.3</span>bs",
+    "IEEE P802.3bs",
+    "QSFP-DD MSA",
+    "CMIS5.0"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_max_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_center_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_band"</span>: [
+    "C-band",
+    "ITU C-Band",
+    "DWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">191.3</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.1</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">6.25</span>,
+    <span class="num">75</span>,
+    <span class="num">100</span>
+  ],
+  <span class="key">"channel_total"</span>: <span class="null">null</span>,
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">17.9</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "400GAUI-8",
+    "100GAUI-2",
+    "400GBASE-R",
+    "100GBASE-R"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: [
+    "OIF <span class="num">400</span>ZR, app code <span class="num">0</span>x01",
+    "OIF <span class="num">400</span>ZR, app code <span class="num">0</span>x02"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: [
+    "0x3E",
+    "0x3F"
+  ],
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: [
+    "1x <span class="num">400</span>GAUI-8",
+    "8x <span class="num">50</span>G",
+    "4x <span class="num">100</span>GAUI-2",
+    "2x <span class="num">50</span>G"
+  ],
+  <span class="key">"standards_code"</span>: [
+    "OIF <span class="num">400</span>ZR",
+    "app code <span class="num">0</span>x01",
+    "app code <span class="num">0</span>x02",
+    "400GBASE-R",
+    "4 × <span class="num">100</span>GBASE-R"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: [
+    <span class="num">59.8</span>,
+    <span class="num">60</span>
+  ],
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">400</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [
+    "QAM_16-DP",
+    "QAM_16"
+  ],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">120</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-10</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">-6</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: [
+    <span class="num">34</span>
+  ],
+  <span class="key">"tx_out_of_band_osnr_db"</span>: [
+    <span class="num">30</span>
+  ],
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-20</span>,
+    <span class="num">-21</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: [
+    <span class="num">26</span>
+  ],
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">1</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">4000</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: [
+    "CFEC"
+  ],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: <span class="null">null</span>,
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-28.0</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">8</span>,
+    <span class="num">2</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [
+    {
+      <span class="key">"target_parameter"</span>: <span class="str">"rx_osnr_db"</span>,
+      <span class="key">"penalty_db"</span>: <span class="num">0.5</span>,
+      <span class="key">"penalized_value"</span>: <span class="num">26.5</span>,
+      <span class="key">"conditions"</span>: [
+        {
+          <span class="key">"parameter"</span>: <span class="str">"rx_power_dbm"</span>,
+          <span class="key">"value"</span>: <span class="num">-14.0</span>
+        }
+      ],
+      <span class="key">"source"</span>: <span class="str">"OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1"</span>
+    },
+    {
+      <span class="key">"target_parameter"</span>: <span class="str">"rx_osnr_db"</span>,
+      <span class="key">"penalty_db"</span>: <span class="num">1.0</span>,
+      <span class="key">"penalized_value"</span>: <span class="num">27.0</span>,
+      <span class="key">"conditions"</span>: [
+        {
+          <span class="key">"parameter"</span>: <span class="str">"rx_power_dbm"</span>,
+          <span class="key">"value"</span>: <span class="num">-15.0</span>
+        }
+      ],
+      <span class="key">"source"</span>: <span class="str">"OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1"</span>
+    },
+    {
+      <span class="key">"target_parameter"</span>: <span class="str">"rx_osnr_db"</span>,
+      <span class="key">"penalty_db"</span>: <span class="num">0.5</span>,
+      <span class="key">"penalized_value"</span>: <span class="num">26.5</span>,
+      <span class="key">"conditions"</span>: [
+        {
+          <span class="key">"parameter"</span>: <span class="str">"rx_power_dbm"</span>,
+          <span class="key">"value"</span>: <span class="num">-14.0</span>
+        }
+      ],
+      <span class="key">"source"</span>: <span class="str">"OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2"</span>
+    },
+    {
+      <span class="key">"target_parameter"</span>: <span class="str">"rx_osnr_db"</span>,
+      <span class="key">"penalty_db"</span>: <span class="num">1.0</span>,
+      <span class="key">"penalized_value"</span>: <span class="num">27.0</span>,
+      <span class="key">"conditions"</span>: [
+        {
+          <span class="key">"parameter"</span>: <span class="str">"rx_power_dbm"</span>,
+          <span class="key">"value"</span>: <span class="num">-15.0</span>
+        }
+      ],
+      <span class="key">"source"</span>: <span class="str">"OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2"</span>
+    },
+    {
+      <span class="key">"target_parameter"</span>: <span class="str">"rx_osnr_db"</span>,
+      <span class="key">"penalty_db"</span>: <span class="num">0.5</span>,
+      <span class="key">"penalized_value"</span>: <span class="num">26.5</span>,
+      <span class="key">"conditions"</span>: [
+        {
+          <span class="key">"parameter"</span>: <span class="str">"rx_power_dbm"</span>,
+          <span class="key">"value"</span>: <span class="num">-14.0</span>
+        }
+      ],
+      <span class="key">"source"</span>: <span class="str">"OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3"</span>
+    },
+    {
+      <span class="key">"target_parameter"</span>: <span class="str">"rx_osnr_db"</span>,
+      <span class="key">"penalty_db"</span>: <span class="num">1.0</span>,
+      <span class="key">"penalized_value"</span>: <span class="num">27.0</span>,
+      <span class="key">"conditions"</span>: [
+        {
+          <span class="key">"parameter"</span>: <span class="str">"rx_power_dbm"</span>,
+          <span class="key">"value"</span>: <span class="num">-15.0</span>
+        }
+      ],
+      <span class="key">"source"</span>: <span class="str">"OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3"</span>
+    }
+  ],
+  <span class="key">"notes"</span>: <span class="str">"Overview states commercial C-temp <span class="num">0</span>°C to <span class="num">70</span>°C; GENERIC lists operating temperature +15°C to +75°C with footnote that module turns up from cold start at <span class="num">-5</span>°C and reaches spec after self-heating to min temperature. Nominal wavelengths line lists <span class="num">6.25</span>GHz Grid; OVERVIEW states tunable ITU C-Band at <span class="num">100</span> GHz grid (75 GHz grid optional). Title includes D9128-D9612. Rx sens measured at OSNR &gt; <span class="num">36</span>dB. Rx @ OSNR and Rx OSNR penalty columns per footnote <span class="num">2</span>: [Min OSNR Value @ Min Rx power for the OSNR value]. Tx power footnote: minimum without attenuation; up to <span class="num">10</span>dB attenuation from max; provisional range <span class="num">10</span>dB. Power consumption <span class="num">17.9</span>W @400G EOL; +0.6W if CD range doubled. Absolute max Rx signal +13dBm, Rx total +15dBm. Application code <span class="num">3</span> row uses host format <span class="num">4</span>x <span class="num">100</span>GAUI-2 in overview CMIS table but application optical table lists <span class="num">1</span>x <span class="num">400</span>GAUI-8 for all three codes. LOS assert set for <span class="num">400</span>G modes, configurable per module."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "TQD032-TUNC-SO",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "GENERIC",
+    "OPTICAL SPECIFICATION - APPLICATION CODES",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Clarify whether channel grid is <span class="num">6.25</span> GHz, <span class="num">75</span> GHz, or <span class="num">100</span> GHz as primary. Consider schema fields for storage temperature, receiver turn-up time, absolute maximum input power, and latency (8us stated in ordering)."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>form_factor</td><td><span class="badge">QSFP-DD</span> <span class="badge">QSFP-DD_type-2</span> <span class="badge">QSFP-DD_type-2A</span></td></tr>
+<tr><td>wavelength_band</td><td><span class="badge">C-band</span> <span class="badge">ITU C-Band</span> <span class="badge">DWDM</span></td></tr>
+<tr><td>channel_spacing_ghz</td><td><span class="badge">6.25</span> <span class="badge">75.0</span> <span class="badge">100.0</span></td></tr>
+<tr><td>host_interface_name</td><td><span class="badge">400GAUI-8</span> <span class="badge">100GAUI-2</span> <span class="badge">400GBASE-R</span> <span class="badge">100GBASE-R</span></td></tr>
+<tr><td>media_interface_name</td><td><span class="badge">OIF 400ZR, app code 0x01</span> <span class="badge">OIF 400ZR, app code 0x02</span></td></tr>
+<tr><td>media_interface_id_hex</td><td><span class="badge">0x3E</span> <span class="badge">0x3F</span></td></tr>
+<tr><td>frame</td><td><span class="badge">1x 400GAUI-8</span> <span class="badge">8x 50G</span> <span class="badge">4x 100GAUI-2</span> <span class="badge">2x 50G</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">OIF 400ZR</span> <span class="badge">app code 0x01</span> <span class="badge">app code 0x02</span> <span class="badge">400GBASE-R</span> <span class="badge">4 × 100GBASE-R</span></td></tr>
+<tr><td>baud_rate_gbaud</td><td><span class="badge">59.8</span> <span class="badge">60.0</span></td></tr>
+<tr><td>modulation_format</td><td><span class="badge">QAM_16-DP</span> <span class="badge">QAM_16</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-20.0</span> <span class="badge">-21.0</span></td></tr>
+<tr><td>number_of_lanes</td><td><span class="badge">8</span> <span class="badge">2</span></td></tr>
+<tr><td>penalties</td><td><span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 0.5, &#x27;penalized_value&#x27;: 26.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -14.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 27.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -15.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 0.5, &#x27;penalized_value&#x27;: 26.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -14.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 27.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -15.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 0.5, &#x27;penalized_value&#x27;: 26.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -14.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3&#x27;}</span> <span class="badge">{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 27.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -15.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3&#x27;}</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>model</td><td>TQD032-TUNC-SO</td></tr>
+<tr><td>standards_claimed</td><td>OIF 400ZR, IEEE 802.3bs, IEEE P802.3bs, QSFP-DD MSA, CMIS5.0</td></tr>
+<tr><td>frequency_min_thz</td><td>191.3</td></tr>
+<tr><td>frequency_max_thz</td><td>196.1</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>17.9</td></tr>
+<tr><td>bit_rate_gbps</td><td>400.0</td></tr>
+<tr><td>reach_km</td><td>120.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-10.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>-6.0</td></tr>
+<tr><td>tx_in_band_osnr_db</td><td>34.0</td></tr>
+<tr><td>tx_out_of_band_osnr_db</td><td>30.0</td></tr>
+<tr><td>rx_osnr_db</td><td>26.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>1.0</td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td>4000.0</td></tr>
+<tr><td>fec_type</td><td>CFEC</td></tr>
+<tr><td>los_assert_dbm</td><td>-28.0</td></tr>
+<tr><td>notes</td><td>Overview states commercial C-temp 0°C to 70°C; GENERIC lists operating temperature +15°C to +75°C with footnote that module turns up from cold start at -5°C and reaches spec after self-heating to min temperature. Nominal wavelengths line lists 6.25GHz Grid; OVERVIEW states tunable ITU C-Band at 100 GHz grid (75 GHz grid optional). Title includes D9128-D9612. Rx sens measured at OSNR &gt; 36dB. Rx @ OSNR and Rx OSNR penalty columns per footnote 2: [Min OSNR Value @ Min Rx power for the OSNR value]. Tx power footnote: minimum without attenuation; up to 10dB attenuation from max; provisional range 10dB. Power consumption 17.9W @400G EOL; +0.6W if CD range doubled. Absolute max Rx signal +13dBm, Rx total +15dBm. Application code 3 row uses host format 4x 100GAUI-2 in overview CMIS table but application optical table lists 1x 400GAUI-8 for all three codes. LOS assert set for 400G modes, configurable per module.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>TQD032-TUNC-SO, OVERVIEW, TECHNICAL DATA, GENERIC, OPTICAL SPECIFICATION - APPLICATION CODES, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+<tr><td>suggestions</td><td>Clarify whether channel grid is 6.25 GHz, 75 GHz, or 100 GHz as primary. Consider schema fields for storage temperature, receiver turn-up time, absolute maximum input power, and latency (8us stated in ordering).</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>form_factor</th><th>wavelength_band</th><th>channel_spacing_ghz</th><th>host_interface_name</th><th>media_interface_name</th><th>media_interface_id_hex</th><th>frame</th><th>standards_code</th><th>baud_rate_gbaud</th><th>modulation_format</th><th>rx_sensitivity_dbm</th><th>number_of_lanes</th><th>penalties</th></tr><tr><td><strong>CMIS app 1 — OIF 400ZR amplified 400GBASE-R</strong></td><td>QSFP-DD_type-2A</td><td>ITU C-Band</td><td>6.25</td><td>400GAUI-8</td><td>OIF 400ZR, app code 0x01</td><td><span class="badge">0x3E</span></td><td>1x 400GAUI-8</td><td>app code 0x01</td><td>59.8</td><td>QAM_16-DP</td><td>-20.0</td><td>8</td><td>[{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 0.5, &#x27;penalized_value&#x27;: 26.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -14.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1&#x27;}, {&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 27.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -15.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=1&#x27;}]</td></tr><tr><td><strong>CMIS app 2 — OIF 400ZR unamplified 400GBASE-R</strong></td><td>QSFP-DD_type-2A</td><td>ITU C-Band</td><td>6.25</td><td>400GAUI-8</td><td>OIF 400ZR, app code 0x02</td><td><span class="badge">0x3F</span></td><td>1x 400GAUI-8</td><td>app code 0x02</td><td>59.8</td><td>QAM_16-DP</td><td>-20.0</td><td>8</td><td>[{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 0.5, &#x27;penalized_value&#x27;: 26.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -14.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2&#x27;}, {&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 27.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -15.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=2&#x27;}]</td></tr><tr><td><strong>CMIS app 3 — OIF 400ZR amplified 4×100GBASE-R</strong></td><td>QSFP-DD_type-2A</td><td>ITU C-Band</td><td>6.25</td><td>100GAUI-2</td><td>OIF 400ZR, app code 0x01</td><td><span class="badge">0x3E</span></td><td>4x 100GAUI-2</td><td>4 × 100GBASE-R</td><td>59.8</td><td>QAM_16-DP</td><td>-21.0</td><td>2</td><td>[{&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 0.5, &#x27;penalized_value&#x27;: 26.5, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -14.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3&#x27;}, {&#x27;target_parameter&#x27;: &#x27;rx_osnr_db&#x27;, &#x27;penalty_db&#x27;: 1.0, &#x27;penalized_value&#x27;: 27.0, &#x27;conditions&#x27;: [{&#x27;parameter&#x27;: &#x27;rx_power_dbm&#x27;, &#x27;value&#x27;: -15.0}], &#x27;source&#x27;: &#x27;OPTICAL SPECIFICATION - APPLICATION CODES | Appl code=3&#x27;}]</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 16:53
+</footer>
+
+</div>
+</body>
+</html>

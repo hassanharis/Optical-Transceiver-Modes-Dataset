@@ -1,0 +1,86 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-1000Base-EZXD",
+    "SO-SFP-1000Base-EZXD-I"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "wavelength_min_nm": [
+    1500.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1580.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.0
+  ],
+  "standards_code": [
+    "1000BASE-EZXD",
+    "GbE",
+    "1G FC"
+  ],
+  "bit_rate_gbps": [
+    1.0625,
+    1.25
+  ],
+  "reach_km": [
+    120.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "rx_sensitivity_dbm": [
+    -32.0
+  ],
+  "rx_overload_dbm": [
+    -10.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -45.0
+  ],
+  "los_deassert_dbm": [
+    -33.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Title/subtitle: 1.0625/1.25Gbps, 32dB power budget, 120km, C-temp and I-temp. Power budget 15–32dB (w/o optical path penalties per definitions). Dispersion penalty max 1dB. Operating temperature also -40°C to +85°C for I-temp variant (SO-SFP-1000Base-EZXD-I). Storage temperature -40°C to +85°C. Transmitter/receiver power specs are average power (footnote 1). Minimum input power and overload (footnote 2): @ 1.25Gbps, BER ≤ 1×10^-12, PRBS 27-1, back-to-back. Transmission media stated as SM (2x LC). Nominal wavelength Tx/Rx: 1× 1550nm.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-1000BASE-EZXD & EZXD-I",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider list[float] for temp_min_c/temp_max_c when multiple temperature grades (C-temp vs I-temp) apply to different orderable SKUs. Power budget 15–32dB may warrant dedicated schema fields separate from insertion loss."
+}

@@ -1,0 +1,324 @@
+{
+  "modes": [
+    {
+      "label": "SO-QSFP-D20 40GbE DWDM 192.00 THz",
+      "model": "SO-QSFP-D20",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D21 40GbE DWDM 192.10 THz",
+      "model": "SO-QSFP-D21",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D22 40GbE DWDM 192.20 THz",
+      "model": "SO-QSFP-D22",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D23 40GbE DWDM 192.30 THz",
+      "model": "SO-QSFP-D23",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D24 40GbE DWDM 192.40 THz",
+      "model": "SO-QSFP-D24",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D25 40GbE DWDM 192.50 THz",
+      "model": "SO-QSFP-D25",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D26 40GbE DWDM 192.60 THz",
+      "model": "SO-QSFP-D26",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D27 40GbE DWDM 192.70 THz",
+      "model": "SO-QSFP-D27",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D28 40GbE DWDM 192.80 THz",
+      "model": "SO-QSFP-D28",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D29 40GbE DWDM 192.90 THz",
+      "model": "SO-QSFP-D29",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D30 40GbE DWDM 193.00 THz",
+      "model": "SO-QSFP-D30",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D31 40GbE DWDM 193.10 THz",
+      "model": "SO-QSFP-D31",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D32 40GbE DWDM 193.20 THz",
+      "model": "SO-QSFP-D32",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D33 40GbE DWDM 193.30 THz",
+      "model": "SO-QSFP-D33",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D34 40GbE DWDM 193.40 THz",
+      "model": "SO-QSFP-D34",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D35 40GbE DWDM 193.50 THz",
+      "model": "SO-QSFP-D35",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D36 40GbE DWDM 193.60 THz",
+      "model": "SO-QSFP-D36",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D37 40GbE DWDM 193.70 THz",
+      "model": "SO-QSFP-D37",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D38 40GbE DWDM 193.80 THz",
+      "model": "SO-QSFP-D38",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D39 40GbE DWDM 193.90 THz",
+      "model": "SO-QSFP-D39",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D40 40GbE DWDM 194.00 THz",
+      "model": "SO-QSFP-D40",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D41 40GbE DWDM 194.10 THz",
+      "model": "SO-QSFP-D41",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D42 40GbE DWDM 194.20 THz",
+      "model": "SO-QSFP-D42",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D43 40GbE DWDM 194.30 THz",
+      "model": "SO-QSFP-D43",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D44 40GbE DWDM 194.40 THz",
+      "model": "SO-QSFP-D44",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D45 40GbE DWDM 194.50 THz",
+      "model": "SO-QSFP-D45",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D46 40GbE DWDM 194.60 THz",
+      "model": "SO-QSFP-D46",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D47 40GbE DWDM 194.70 THz",
+      "model": "SO-QSFP-D47",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D48 40GbE DWDM 194.80 THz",
+      "model": "SO-QSFP-D48",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D49 40GbE DWDM 194.90 THz",
+      "model": "SO-QSFP-D49",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D50 40GbE DWDM 195.00 THz",
+      "model": "SO-QSFP-D50",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D51 40GbE DWDM 195.10 THz",
+      "model": "SO-QSFP-D51",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D52 40GbE DWDM 195.20 THz",
+      "model": "SO-QSFP-D52",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D53 40GbE DWDM 195.30 THz",
+      "model": "SO-QSFP-D53",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D54 40GbE DWDM 195.40 THz",
+      "model": "SO-QSFP-D54",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D55 40GbE DWDM 195.50 THz",
+      "model": "SO-QSFP-D55",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D56 40GbE DWDM 195.60 THz",
+      "model": "SO-QSFP-D56",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D57 40GbE DWDM 195.70 THz",
+      "model": "SO-QSFP-D57",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D58 40GbE DWDM 195.80 THz",
+      "model": "SO-QSFP-D58",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    },
+    {
+      "label": "SO-QSFP-D59 40GbE DWDM 195.90 THz",
+      "model": "SO-QSFP-D59",
+      "host_interface_name": "QSFP MSA",
+      "standards_code": "40GbE",
+      "bit_rate_gbps": 41.25,
+      "modulation_format": "PAM4"
+    }
+  ]
+}

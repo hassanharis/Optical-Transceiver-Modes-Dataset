@@ -1,0 +1,82 @@
+{
+  "modes": [
+    {
+      "label": "LS-SC5210-20IN1 \u2014 Receiver 9.953G",
+      "model": "LS-SC5210-20IN1",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "XGSPON",
+      "bit_rate_gbps": 9.95328,
+      "rx_sensitivity_dbm": -26.0,
+      "rx_overload_dbm": -5.0,
+      "post_fec_ber_target": 0.001,
+      "los_deassert_dbm": -27.0
+    },
+    {
+      "label": "LS-SC5210-20IN1 \u2014 Receiver 2.488G",
+      "model": "LS-SC5210-20IN1",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "XGSPON",
+      "bit_rate_gbps": 2.48832,
+      "rx_sensitivity_dbm": -27.5,
+      "rx_overload_dbm": -7.0,
+      "post_fec_ber_target": 0.0001,
+      "los_deassert_dbm": -28.5
+    },
+    {
+      "label": "LG-SC5210-20CN1 \u2014 Receiver 9.953G",
+      "model": "LG-SC5210-20CN1",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "XGSPON",
+      "bit_rate_gbps": 9.95328,
+      "rx_sensitivity_dbm": -26.0,
+      "rx_overload_dbm": -5.0,
+      "post_fec_ber_target": 0.001,
+      "los_deassert_dbm": -27.0
+    },
+    {
+      "label": "LG-SC5210-20CN1 \u2014 Receiver 2.488G",
+      "model": "LG-SC5210-20CN1",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "XGSPON",
+      "bit_rate_gbps": 2.48832,
+      "rx_sensitivity_dbm": -27.5,
+      "rx_overload_dbm": -7.0,
+      "post_fec_ber_target": 0.0001,
+      "los_deassert_dbm": -28.5
+    },
+    {
+      "label": "LG-SC5210-20IN1 \u2014 Receiver 9.953G",
+      "model": "LG-SC5210-20IN1",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "XGSPON",
+      "bit_rate_gbps": 9.95328,
+      "rx_sensitivity_dbm": -26.0,
+      "rx_overload_dbm": -5.0,
+      "post_fec_ber_target": 0.001,
+      "los_deassert_dbm": -27.0
+    },
+    {
+      "label": "LG-SC5210-20IN1 \u2014 Receiver 2.488G",
+      "model": "LG-SC5210-20IN1",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1280.0,
+      "wavelength_center_nm": 1270.0,
+      "standards_code": "XGSPON",
+      "bit_rate_gbps": 2.48832,
+      "rx_sensitivity_dbm": -27.5,
+      "rx_overload_dbm": -7.0,
+      "post_fec_ber_target": 0.0001,
+      "los_deassert_dbm": -28.5
+    }
+  ]
+}

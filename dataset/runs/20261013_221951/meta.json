@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:19:51.401550+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-ts5001-m85c-so-sfp56-sr-r6.0.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 3.568,
+    "extract_atoms": 20.079,
+    "store_run": 0.008,
+    "synthesize_modes": 16.452,
+    "store_modes": 0.002,
+    "total": 40.109
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "vendor": "XGIGA",
+  "model": [
+    "QXP29B4-10D-RX"
+  ],
+  "form_factor": [
+    "QSFP28"
+  ],
+  "standards_claimed": [
+    "100GBASE-LR4",
+    "ITU-T G.959.1",
+    "IEEE 802.3ba",
+    "IEEE 802.3bm",
+    "ITU-T G959.1",
+    "SFF-8636",
+    "QSFP28 MSA",
+    "RoHS Compliant"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": null,
+  "wavelength_max_nm": null,
+  "wavelength_center_nm": null,
+  "wavelength_band": [
+    "LAN WDM"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF",
+    "SMF 9/125μm"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    2
+  ],
+  "host_interface_name": [
+    "QSFP28 MSA"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "100GBASE-LR4"
+  ],
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "100GBASE-LR4",
+    "OTU4"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    103.125,
+    111.81,
+    25.78125,
+    27.9525
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    10
+  ],
+  "tx_power_min_dbm": null,
+  "tx_power_max_dbm": null,
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -10.6
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4.5
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -30
+  ],
+  "los_deassert_dbm": [
+    -12
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    -26
+  ],
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    4
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Receiver-only module (100Gb/s QSFP28 LR4 Receiver). Rx sensitivity note 1: measured with PRBS 2^31-1 test pattern, @25.78Gb/s, BER<10^-12 (datasheet note text partially garbled as 'BER<10 .'). Power dissipation stated as '< 2 W'. Case operating temperature without air flow. Supply current Icc max 600 mA.",
+  "provenance_datasheet_sections": [
+    "100Gb/s QSFP28 LR4 Receiver",
+    "PRODUCT FEATURES",
+    "APPLICATIONS",
+    "STANDARD",
+    "General Description",
+    "Ⅱ Recommended Operating Conditions",
+    "Ⅲ Optical Characteristics",
+    "Notes:",
+    "IV. Electrical Characteristics",
+    "VI. Digital Diagnostic Functions"
+  ],
+  "suggestions": null
+}

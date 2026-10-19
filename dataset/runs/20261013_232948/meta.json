@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:29:48.771654+00:00",
+  "source_file": "C:\\Haris\\datasheets\\l9-sc31551g-20ppi5.pdf",
+  "page_count": 7,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 7.784,
+    "extract_atoms": 28.614,
+    "store_run": 0.009,
+    "synthesize_modes": 34.895,
+    "store_modes": 0.006,
+    "total": 71.307
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "multi_valued": {
+    "host_interface_name": [
+      "100GBASE-SR4",
+      "100GbE"
+    ],
+    "standards_code": [
+      "100GBASE-SR4",
+      "IEEE 802.3bm"
+    ],
+    "bit_rate_gbps": [
+      103.12,
+      25.78,
+      100.0
+    ],
+    "reach_km": [
+      0.07,
+      0.1
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-QSFP28-SR4"
+    ],
+    "form_factor": [
+      "QSFP28"
+    ],
+    "standards_claimed": [
+      "100GBASE-SR4",
+      "IEEE 802.3bm",
+      "IEEE802.3bj",
+      "QSFP28 MSA"
+    ],
+    "wavelength_min_nm": [
+      840.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      4
+    ],
+    "connector_type": [
+      "MPO"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM3",
+      "MMF_OM4"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      3.5
+    ],
+    "tx_power_min_dbm": [
+      -6.0
+    ],
+    "tx_power_max_dbm": [
+      2.4
+    ],
+    "rx_sensitivity_dbm": [
+      -10.3
+    ],
+    "rx_overload_dbm": [
+      2.4
+    ],
+    "fec_type": [
+      "RS_528_514"
+    ],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -20.0
+    ],
+    "los_deassert_dbm": [
+      -12.0
+    ],
+    "number_of_lanes": [
+      4
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Title and ordering line state power budget 4.3dB and 100m@OM4. TECHNICAL DATA column header lists 70m @ OM3, 100m @ OM4, power budget 0 – 4.3dB. Storage temperature -40°C to +85°C (not normal operating). FEC required in host per IEEE802.3bj RS(528,514); optical parameters at BER 5x10^-5; FEC yields BER better than 1x10^-12. Footnote 3): average power. Footnote 4): receiver min/overload specified at BER 5x10^-5, PRBS 2^31-1. Transmitter max output printed as +2.4Bm (dBm implied). DDM Yes.",
+    "provenance_datasheet_sections": [
+      "SO-QSFP28-SR4",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Clarify whether reach_km should store literal meters (70, 100) when datasheet only states m. Distinguish power budget 4.3dB from channel_insertion_loss_db if both appear in marketing vs table."
+  }
+}

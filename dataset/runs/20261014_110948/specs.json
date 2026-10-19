@@ -1,0 +1,86 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-CFP-SR10",
+    "TC0005-M85C-SO"
+  ],
+  "form_factor": [
+    "CFP"
+  ],
+  "standards_claimed": [
+    "100GBASE-SR10",
+    "CFP MSA's"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "channel_total": [
+    10
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "MPO"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3",
+    "MMF_OM4"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    8.0
+  ],
+  "host_interface_name": [
+    "100GBASE-SR10"
+  ],
+  "standards_code": [
+    "100GBASE-SR10"
+  ],
+  "bit_rate_gbps": [
+    103.125,
+    10.3125
+  ],
+  "reach_km": [
+    0.1,
+    0.15
+  ],
+  "tx_power_min_dbm": [
+    -7.6
+  ],
+  "tx_power_max_dbm": [
+    2.4
+  ],
+  "rx_sensitivity_dbm": [
+    -9.5
+  ],
+  "rx_overload_dbm": [
+    2.4
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "number_of_lanes": [
+    10
+  ],
+  "penalties": [],
+  "notes": "Aggregated line rate 103.125 Gbps for 100GbE; per-lane rate 10.3125 Gbps. Power budget stated as 0–1.9 dB in TECHNICAL DATA; ordering description lists 1.8 dB. Reach: 100 m @ OM3, 150 m @ OM4 (also described as up to 150 m over OM4-grade ribbon fiber). Tx output power and Rx min/overload are per lane, average power (footnote 3). Rx minimum input power specified at BER 1×10⁻¹² (footnote 4). Storage temperature −40°C to +85°C; operating 0°C to +70°C. Power consumption worst case < 8 W. 10× channels; break-out to 10× 10GbE. Single 24/20 lane optical fiber MPO connector.",
+  "provenance_datasheet_sections": [
+    "SO-CFP-SR10 CFP, 100GBASE-SR10, MM, DDM, 1.9dB, 100m, MPO",
+    "TC0005-M85C-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

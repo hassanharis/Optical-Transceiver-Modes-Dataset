@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"40GBASE-SR4 OM3 MMF (per-lane, Rec. Op.)\",\n      \"bit_rate_gbps\": 10.3125,\n      \"reach_km\": 0.3\n    },\n    {\n      \"label\": \"40GBASE-SR4 OM4 MMF (per-lane, Rec. Op.)\",\n      \"bit_rate_gbps\": 10.3125,\n      \"reach_km\": 0.4\n    },\n    {\n      \"label\": \"40 Gbps module OM3 MMF\",\n      \"bit_rate_gbps\": 40.0,\n      \"reach_km\": 0.3\n    },\n    {\n      \"label\": \"40 Gbps module OM4 MMF\",\n      \"bit_rate_gbps\": 40.0,\n      \"reach_km\": 0.4\n    },\n    {\n      \"label\": \"QSFP+ SR4 150 m (product title)\",\n      \"bit_rate_gbps\": 40.0,\n      \"reach_km\": 0.15\n    },\n    {\n      \"label\": \"Infiniband QDR OM3 MMF\",\n      \"bit_rate_gbps\": 11.1,\n      \"reach_km\": 0.3\n    },\n    {\n      \"label\": \"Infiniband QDR OM4 MMF\",\n      \"bit_rate_gbps\": 11.1,\n      \"reach_km\": 0.4\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

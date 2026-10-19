@@ -1,0 +1,104 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-155M-L200D-Cxx",
+    "SO-SFP-155M-L200D-C47",
+    "SO-SFP-155M-L200D-C49",
+    "SO-SFP-155M-L200D-C51",
+    "SO-SFP-155M-L200D-C53",
+    "SO-SFP-155M-L200D-C55",
+    "SO-SFP-155M-L200D-C57",
+    "SO-SFP-155M-L200D-C59",
+    "SO-SFP-155M-L200D-C61"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "G.694.2"
+  ],
+  "wavelength_min_nm": [
+    1470.0,
+    1471.0
+  ],
+  "wavelength_max_nm": [
+    1610.0,
+    1611.0
+  ],
+  "wavelength_center_nm": [
+    1470.0,
+    1490.0,
+    1510.0,
+    1530.0,
+    1550.0,
+    1570.0,
+    1590.0,
+    1610.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "channel_total": [
+    8
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "standards_code": [
+    "G.694.2",
+    "SFF-8472",
+    "FE",
+    "STM-1",
+    "OC3",
+    "SDH",
+    "SONET",
+    "Fast Ethernet"
+  ],
+  "bit_rate_gbps": [
+    125.0,
+    155.0
+  ],
+  "reach_km": [
+    200.0
+  ],
+  "tx_power_min_dbm": [
+    3.0
+  ],
+  "tx_power_max_dbm": [
+    7.0
+  ],
+  "rx_sensitivity_dbm": [
+    -44.0
+  ],
+  "rx_overload_dbm": [
+    -10.0
+  ],
+  "post_fec_ber_target": [
+    1e-10
+  ],
+  "los_assert_dbm": [
+    -55.0
+  ],
+  "los_deassert_dbm": [
+    -45.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Title and table cite power budget 17–47 dB and optical path penalty 1 dB; reach 200 km is nominal and depends on actual optical path attenuation. Footnote 2): minimum input power, overload, and optical path penalty measured at 155 Mbps using PRBS23 @ BER 1x10-10. Footnote 3): transmitter output power is average power. Power consumption stated as < 1 W (not a single numeric watt value). Storage temperature -40°C to +85°C. Receiver wavelength range 1100–1650 nm. DDM Yes per SFF-8472. Lower CWDM wavelengths have higher attenuation on standard SM fiber.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-155M-L200D-Cxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Consider schema fields for optical power budget (dB), optical path penalty (dB), receiver passband wavelength range, storage temperature, and DDM compliance. Clarify whether bit_rate should allow Mbps units when datasheets only state Mbps."
+}

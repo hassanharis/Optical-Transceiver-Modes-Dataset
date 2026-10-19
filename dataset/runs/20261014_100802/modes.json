@@ -1,0 +1,10 @@
+{
+  "modes": [
+    {
+      "label": "800G LPO OSFP DR8",
+      "power_consumption_w": 7.5,
+      "standards_code": "DR8",
+      "bit_rate_gbps": 800.0
+    }
+  ]
+}

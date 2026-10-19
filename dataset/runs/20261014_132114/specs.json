@@ -1,0 +1,141 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-10G-ZR100"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1260.0,
+    1520.0
+  ],
+  "wavelength_max_nm": [
+    1580.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "GbE",
+    "10GbE-LAN",
+    "10GbE-WAN",
+    "STM-64/OC192",
+    "STM-4/OC12",
+    "STM-16/OC48",
+    "OTU1",
+    "OTU2",
+    "OTU2e",
+    "1G",
+    "2G",
+    "4G",
+    "8G",
+    "10G FC",
+    "CPRI Opt 1",
+    "CPRI Opt 2",
+    "CPRI Opt 3",
+    "CPRI Opt 4",
+    "CPRI Opt 5",
+    "CPRI Opt 6",
+    "CPRI Opt 7",
+    "CPRI Opt 7A",
+    "CPRI Opt 8",
+    "OBSAI 1x",
+    "OBSAI 2x",
+    "OBSAI 4x",
+    "OBSAI 8x"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    0.6,
+    11.3
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    100.0
+  ],
+  "tx_power_min_dbm": [
+    1.0
+  ],
+  "tx_power_max_dbm": [
+    5.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -25.0
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -8.0
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -26.0
+  ],
+  "los_deassert_dbm": [
+    -38.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Transmitter output power min is printed as +1.0dB (footnote 1: average power); max is +5.0dBm. Receiver minimum input power and overload at BER 10-12, 10.3Gbps PRBS231-1 (footnote 2). Power budget 13 – 26dB. Dispersion penalty max 3dB (no penalized value or operating condition table). Storage temperature -40°C to +85°C. Power consumption stated as < 1.5 W. DDM per SFF-8472.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-10G-ZR100",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Clarify whether transmitter min output +1.0dB is a typo for dBm. Dispersion penalty max 3dB could map to penalties if a penalized parameter and conditions are added in future schema extracts."
+}

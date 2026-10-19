@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"1.25GbE 2-km OM1\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1380.0,\n      \"power_consumption_w\": 0.382,\n      \"host_interface_name\": \"1.25-Gigabit Ethernet\",\n      \"media_interface_name\": \"2-km OM1\",\n      \"standards_code\": \"IEEE 802.3z\"\n    },\n    {\n      \"label\": \"1.25GbE 2-km OM4\",\n      \"wavelength_min_nm\": 1260.0,\n      \"wavelength_max_nm\": 1380.0,\n      \"power_consumption_w\": 0.382,\n      \"host_interface_name\": \"1.25-Gigabit Ethernet\",\n      \"media_interface_name\": \"2-km OM4\",\n      \"standards_code\": \"IEEE 802.3z\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

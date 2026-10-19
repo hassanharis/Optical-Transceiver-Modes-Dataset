@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;TQ2028-TUNC-SO&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">Smartoptics QSFP28 TQ2028-TUNC-SO .pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">4</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 10:58</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+6.4 
+
+## **QSFP28 100G COHERENT DWDM SFF-8636** QSFP28, 100GBASE-ZR Coh 50/100GHz Tunable 80km, 22dB, SFF, LC 
+
+## TQ2028-TUNC-SO 
+
+The TQ2028-TUNC-SO is a pluggable QSFP28 DWDM transceiver designed for high capacity 100 Gigabit Ethernet (100GbE) Data Center Interconnect (DCI) optical communication applications up to 80km over a singlemode fiber. 
+
+The transceiver utilizes a tunable DP-QPSK modulated 28 Gbps wavelength with ability to be tuned with either 50GHz or 100GHz spacing enabling up to 96 channels over a 50GHz DWDM grid system as specified in the ITU-T 694.1 standard. The media side is encoded with Staircase FEC (SC-FEC). 
+
+The electrical signals are transmitted and received from the host via a standard 38 pin connector described in the QSFP28 MSA (SFF-8679). The electrical interface is compliant to CAUI-4 (IEEE P802.3bm Annex 83E), splitting the 100Gbps signal in to four parallel 25 Gbps NRZ streams. 
+
+The management interface specification of the module is compliant to SFF-8636. For CMIS compliant version, see p/n: TQ2025TUNx-SO. 
+
+## TECHNICAL DATA 
+
+|**Parameter**|**Value**|
+|---|---|
+|Technology|DWDM QSFP28 100GBASE-ZR|
+|Transmission media|SM (2x LC)|
+|Typical reach, unamplified|80km1)|
+|Typical reach, amplified|120km2)|
+||300km3)|
+|Nominal wavelength|191.35 – 196.10 THz (96ch)|
+|Bit rate support|103.12Gbps|
+|Protocol support|100GbE|
+|Dispersion tolerance|±2400ps/nm; ±6000ps/nm3)|
+|Power budget|0 – 22dB|
+|Power consumption|&lt; 5.5W|
+|Operating temperature&lt;br&gt;Storage temperature|0°C to +70°C (TQ2028-TUNC-SO)|
+||-40°C to +85°C|
+
+
+
+- 1) Limited by power budget 
+
+- 2) Limited by dispersion compensation 
+
+- 3) Extended mode, set through the host when the transceiver is in Low Power mode. The Extended mode will increase the power consumption of the module by 0.2W. 
+
+- 4) Average power 
+
+- 5) Receiver Sensitivity at unamplified configurations; OSNR &gt;35dB/0.1nm 
+
+- 6) 100G DQPSK SC-FEC 
+
+- 7) Extended range; Rx signal input power range over which perf
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "TQ2028-TUNC-SO"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "QSFP28"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8636",
+    "SFF-8661",
+    "SFF-8665",
+    "SFF-8679",
+    "QSFP28 MSA",
+    "CAUI-4",
+    "IEEE P802.3bm Annex <span class="num">83</span>E",
+    "ITU-T G.694.1",
+    "100GBASE-ZR"
+  ],
+  <span class="key">"emitter_type"</span>: [],
+  <span class="key">"photodetector_type"</span>: [],
+  <span class="key">"wavelength_min_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_max_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_center_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_band"</span>: [
+    "DWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">191.35</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.1</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">50.0</span>,
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">96</span>
+  ],
+  <span class="key">"mounting_type"</span>: [
+    "pluggable"
+  ],
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">5.5</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "CAUI-4",
+    "QSFP28"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: [
+    "100GBASE-ZR"
+  ],
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: [
+    "4x <span class="num">25</span> Gbps NRZ"
+  ],
+  <span class="key">"standards_code"</span>: [
+    "100GBASE-ZR",
+    "SC-FEC",
+    "G.694.1",
+    "SFF-8636",
+    "SFF-8665",
+    "SFF-8661",
+    "SFF-8679",
+    "100GbE"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">103.12</span>,
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: [
+    "QPSK-DP",
+    "NRZ"
+  ],
+  <span class="key">"reach_km"</span>: [
+    <span class="num">80.0</span>,
+    <span class="num">120.0</span>,
+    <span class="num">300.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">-8.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">-4.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-30.0</span>,
+    <span class="num">-18.0</span>,
+    <span class="num">-22.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: [
+    <span class="num">16.5</span>
+  ],
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: [
+    <span class="num">16.5</span>
+  ],
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">3.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">2400.0</span>,
+    <span class="num">6000.0</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: [
+    "SCFEC"
+  ],
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: <span class="null">null</span>,
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"los_deassert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: [
+    <span class="num">4</span>
+  ],
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Typical reach <span class="num">80</span> km limited by power budget; <span class="num">120</span> km limited by dispersion compensation; <span class="num">300</span> km extended mode set through host in Low Power mode (+0.2 W power consumption). Power budget <span class="num">0</span>–22 dB. Transmitter/receiver output and input powers are average (footnote <span class="num">4</span>). Minimum input power unamplified at BER per general definitions (normally <span class="num">1</span>E-12) with OSNR &gt;35 dB/0.1 nm (footnotes <span class="num">5</span>–6); <span class="num">100</span>G DQPSK SC-FEC. Amplified minimum input <span class="num">-18</span> dBm; extended range <span class="num">-22</span> dBm with Rx input power range where performance guaranteed with &lt;1 dB OSNR penalty relative to Rx OSNR tolerance limit (footnote <span class="num">7</span>). Dispersion ±6000 ps/nm applies to extended mode (footnote <span class="num">3</span>). Storage temperature <span class="num">-40</span>°C to +85°C. Media FEC SC-FEC latency <span class="num">17</span> µs. Rx power monitor: signal <span class="num">-21</span> dBm to +3 dBm; total <span class="num">-21</span> dBm to +6 dBm."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "QSFP28 <span class="num">100</span>G COHERENT DWDM SFF-8636",
+    "TQ2028-TUNC-SO",
+    "TECHNICAL DATA",
+    "Safety/regulatory compliance",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Wavelength range is given only in THz (191.35–196.10); nm fields left <span class="null">null</span>. Consider mapping power budget <span class="num">0</span>–22 dB if added to schema. Footnote <span class="num">7</span> describes OSNR penalty qualitatively but lacks a tabular penalized value for structured penalties."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>channel_spacing_ghz</td><td><span class="badge">50.0</span> <span class="badge">100.0</span></td></tr>
+<tr><td>host_interface_name</td><td><span class="badge">CAUI-4</span> <span class="badge">QSFP28</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">100GBASE-ZR</span> <span class="badge">SC-FEC</span> <span class="badge">G.694.1</span> <span class="badge">SFF-8636</span> <span class="badge">SFF-8665</span> <span class="badge">SFF-8661</span> <span class="badge">SFF-8679</span> <span class="badge">100GbE</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">103.12</span> <span class="badge">100.0</span></td></tr>
+<tr><td>modulation_format</td><td><span class="badge">QPSK-DP</span> <span class="badge">NRZ</span></td></tr>
+<tr><td>reach_km</td><td><span class="badge">80.0</span> <span class="badge">120.0</span> <span class="badge">300.0</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-30.0</span> <span class="badge">-18.0</span> <span class="badge">-22.0</span></td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td><span class="badge">2400.0</span> <span class="badge">6000.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>model</td><td>TQ2028-TUNC-SO</td></tr>
+<tr><td>form_factor</td><td>QSFP28</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8636, SFF-8661, SFF-8665, SFF-8679, QSFP28 MSA, CAUI-4, IEEE P802.3bm Annex 83E, ITU-T G.694.1, 100GBASE-ZR</td></tr>
+<tr><td>emitter_type</td><td></td></tr>
+<tr><td>photodetector_type</td><td></td></tr>
+<tr><td>wavelength_band</td><td>DWDM</td></tr>
+<tr><td>frequency_min_thz</td><td>191.35</td></tr>
+<tr><td>frequency_max_thz</td><td>196.1</td></tr>
+<tr><td>channel_total</td><td>96</td></tr>
+<tr><td>mounting_type</td><td>pluggable</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>5.5</td></tr>
+<tr><td>media_interface_name</td><td>100GBASE-ZR</td></tr>
+<tr><td>frame</td><td>4x 25 Gbps NRZ</td></tr>
+<tr><td>tx_power_min_dbm</td><td>-8.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>-4.0</td></tr>
+<tr><td>rx_osnr_db</td><td>16.5</td></tr>
+<tr><td>rx_osnr_tolerance_db_max</td><td>16.5</td></tr>
+<tr><td>rx_overload_dbm</td><td>3.0</td></tr>
+<tr><td>fec_type</td><td>SCFEC</td></tr>
+<tr><td>number_of_lanes</td><td>4</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Typical reach 80 km limited by power budget; 120 km limited by dispersion compensation; 300 km extended mode set through host in Low Power mode (+0.2 W power consumption). Power budget 0–22 dB. Transmitter/receiver output and input powers are average (footnote 4). Minimum input power unamplified at BER per general definitions (normally 1E-12) with OSNR &gt;35 dB/0.1 nm (footnotes 5–6); 100G DQPSK SC-FEC. Amplified minimum input -18 dBm; extended range -22 dBm with Rx input power range where performance guaranteed with &lt;1 dB OSNR penalty relative to Rx OSNR tolerance limit (footnote 7). Dispersion ±6000 ps/nm applies to extended mode (footnote 3). Storage temperature -40°C to +85°C. Media FEC SC-FEC latency 17 µs. Rx power monitor: signal -21 dBm to +3 dBm; total -21 dBm to +6 dBm.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>QSFP28 100G COHERENT DWDM SFF-8636, TQ2028-TUNC-SO, TECHNICAL DATA, Safety/regulatory compliance, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+<tr><td>suggestions</td><td>Wavelength range is given only in THz (191.35–196.10); nm fields left null. Consider mapping power budget 0–22 dB if added to schema. Footnote 7 describes OSNR penalty qualitatively but lacks a tabular penalized value for structured penalties.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>channel_spacing_ghz</th><th>host_interface_name</th><th>standards_code</th><th>bit_rate_gbps</th><th>modulation_format</th><th>reach_km</th><th>rx_sensitivity_dbm</th><th>cd_tolerance_ps_nm</th></tr><tr><td><strong>Unamplified 80km (50GHz)</strong></td><td>50.0</td><td>CAUI-4</td><td>100GBASE-ZR</td><td>103.12</td><td>QPSK-DP</td><td>80.0</td><td>-30.0</td><td>2400.0</td></tr><tr><td><strong>Unamplified 80km (100GHz)</strong></td><td>100.0</td><td>CAUI-4</td><td>100GBASE-ZR</td><td>103.12</td><td>QPSK-DP</td><td>80.0</td><td>-30.0</td><td>2400.0</td></tr><tr><td><strong>Amplified 120km (50GHz)</strong></td><td>50.0</td><td>CAUI-4</td><td>100GBASE-ZR</td><td>103.12</td><td>QPSK-DP</td><td>120.0</td><td>-18.0</td><td>2400.0</td></tr><tr><td><strong>Amplified 120km (100GHz)</strong></td><td>100.0</td><td>CAUI-4</td><td>100GBASE-ZR</td><td>103.12</td><td>QPSK-DP</td><td>120.0</td><td>-18.0</td><td>2400.0</td></tr><tr><td><strong>Extended amplified 300km (50GHz)</strong></td><td>50.0</td><td>CAUI-4</td><td>100GBASE-ZR</td><td>103.12</td><td>QPSK-DP</td><td>300.0</td><td>-22.0</td><td>6000.0</td></tr><tr><td><strong>Extended amplified 300km (100GHz)</strong></td><td>100.0</td><td>CAUI-4</td><td>100GBASE-ZR</td><td>103.12</td><td>QPSK-DP</td><td>300.0</td><td>-22.0</td><td>6000.0</td></tr><tr><td><strong>QSFP28 host 100GbE NRZ</strong></td><td>50.0</td><td>QSFP28</td><td>100GbE</td><td>100.0</td><td>NRZ</td><td>80.0</td><td>-30.0</td><td>2400.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 10:58
+</footer>
+
+</div>
+</body>
+</html>

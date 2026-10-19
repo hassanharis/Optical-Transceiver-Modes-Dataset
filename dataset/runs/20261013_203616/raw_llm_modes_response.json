@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"DO-BL5324-20DC 1550T/1310R 1.25G Standard temp\",\n      \"model\": \"DO-BL5324-20DC\",\n      \"wavelength_min_nm\": 1530.0,\n      \"wavelength_max_nm\": 1570.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"bit_rate_gbps\": 1.25\n    },\n    {\n      \"label\": \"DO-BL5324-20DI 1550T/1310R 1.25G Industrial temp\",\n      \"model\": \"DO-BL5324-20DI\",\n      \"wavelength_min_nm\": 1530.0,\n      \"wavelength_max_nm\": 1570.0,\n      \"wavelength_center_nm\": 1550.0,\n      \"bit_rate_gbps\": 1.25\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "100GBASE-LR4 Lane L0",
+      "wavelength_min_nm": 1294.53,
+      "wavelength_max_nm": 1296.59,
+      "wavelength_center_nm": 1295.56,
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6,
+      "rx_overload_dbm": 4.5
+    },
+    {
+      "label": "100GBASE-LR4 Lane L1",
+      "wavelength_min_nm": 1299.02,
+      "wavelength_max_nm": 1301.09,
+      "wavelength_center_nm": 1300.05,
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6,
+      "rx_overload_dbm": 4.5
+    },
+    {
+      "label": "100GBASE-LR4 Lane L2",
+      "wavelength_min_nm": 1303.54,
+      "wavelength_max_nm": 1305.63,
+      "wavelength_center_nm": 1304.58,
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6,
+      "rx_overload_dbm": 4.5
+    },
+    {
+      "label": "100GBASE-LR4 Lane L3",
+      "wavelength_min_nm": 1308.09,
+      "wavelength_max_nm": 1310.19,
+      "wavelength_center_nm": 1309.14,
+      "host_interface_name": "CAUI-4",
+      "standards_code": "100GBASE-LR4",
+      "bit_rate_gbps": 25.78125,
+      "tx_power_max_dbm": 4.5,
+      "rx_sensitivity_dbm": -8.6,
+      "rx_overload_dbm": 4.5
+    }
+  ]
+}

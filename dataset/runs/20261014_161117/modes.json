@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "OIF 400ZR Amplified (Application Code 0x01)",
+      "wavelength_band": "ITU C-Band",
+      "channel_spacing_ghz": 100.0,
+      "standards_code": "Application Code 0x01",
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16",
+      "rx_sensitivity_dbm": -12.0,
+      "number_of_lanes": 8
+    },
+    {
+      "label": "OIF 400ZR Unamplified (Application Code 0x02)",
+      "wavelength_band": "ITU C-Band",
+      "channel_spacing_ghz": 100.0,
+      "standards_code": "Application Code 0x02",
+      "bit_rate_gbps": 400.0,
+      "modulation_format": "QAM_16",
+      "rx_sensitivity_dbm": -20.0,
+      "number_of_lanes": 8
+    }
+  ]
+}

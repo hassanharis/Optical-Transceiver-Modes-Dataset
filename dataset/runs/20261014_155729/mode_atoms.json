@@ -1,0 +1,87 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP28-BX20D-2733/3327-I",
+      "SO-SFP28-BX20D-2733-I",
+      "SO-SFP28-BX20D-3327-I",
+      "SO-SFP28-BX20D-2733",
+      "SO-SFP28-BX20D-3327"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1320.0
+    ],
+    "wavelength_max_nm": [
+      1280.0,
+      1340.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1330.0
+    ],
+    "standards_code": [
+      "25GE",
+      "CPRI opt 10"
+    ],
+    "bit_rate_gbps": [
+      25.78,
+      24.33
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP28"
+    ],
+    "standards_claimed": [
+      "SFP 8402",
+      "SFF-8472"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "power_consumption_w": [
+      1.5
+    ],
+    "reach_km": [
+      20.0
+    ],
+    "tx_power_min_dbm": [
+      0.0
+    ],
+    "tx_power_max_dbm": [
+      6.0
+    ],
+    "rx_sensitivity_dbm": [
+      -14.0
+    ],
+    "rx_overload_dbm": [
+      2.0
+    ],
+    "pre_fec_ber_threshold": [
+      5e-05
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -16.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Solution is a transceiver pair (SO-SFP28-BX20D-2733 at 1270nm Tx / 1330nm Rx range, SO-SFP28-BX20D-3327 at 1330nm Tx / 1270nm Rx range) on single fiber. Power budget 4.0–14.0 dB. Dispersion penalty max 2.7 dB (no paired penalized parameter/condition in source). Transmitter/receiver power and sensitivity footnote 3): average power; footnote 4): specified at 25GE and BER 5x10-5. FEC required in host per 25G Ethernet standards. Storage temperature -40°C to +85°C. Industrial (I-temp) operating range.",
+    "provenance_datasheet_sections": [
+      "SO-SFP28-BX20D-2733/3327-I",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

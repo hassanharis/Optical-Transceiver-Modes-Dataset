@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T00:06:54.706563+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lqd-cw400-lr4c.pdf",
+  "page_count": 10,
+  "table_count": 16,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 12.455,
+    "extract_atoms": 15.309,
+    "store_run": 0.007,
+    "synthesize_modes": 45.939,
+    "store_modes": 0.005,
+    "total": 73.716
+  }
+}

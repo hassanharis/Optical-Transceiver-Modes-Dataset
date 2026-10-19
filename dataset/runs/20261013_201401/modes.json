@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-SR OM3 300 m",
+      "power_consumption_w": 0.6,
+      "media_interface_name": "10GBASE-SR",
+      "standards_code": "10GBASE-SR",
+      "baud_rate_gbaud": 10.3125,
+      "reach_km": 0.3,
+      "tx_power_min_dbm": -4.3,
+      "rx_sensitivity_dbm": -11.1
+    },
+    {
+      "label": "10GBASE-SW OM4 400 m",
+      "power_consumption_w": 0.6,
+      "media_interface_name": "10GBASE-SW",
+      "standards_code": "10GBASE-SW",
+      "baud_rate_gbaud": 10.3125,
+      "reach_km": 0.4,
+      "tx_power_min_dbm": -4.3,
+      "rx_sensitivity_dbm": -11.1
+    }
+  ]
+}

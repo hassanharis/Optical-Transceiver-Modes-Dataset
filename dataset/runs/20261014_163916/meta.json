@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T16:39:16.420189+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-xfp-lrm.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.289,
+    "extract_atoms": 20.297,
+    "store_run": 0.005,
+    "synthesize_modes": 14.801,
+    "store_modes": 0.002,
+    "total": 39.395
+  }
+}

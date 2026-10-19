@@ -1,0 +1,141 @@
+{
+  "vendor": "Avago Technologies",
+  "model": [
+    "AFBR-5903Z",
+    "AFBR-5903EZ",
+    "AFBR-5903AZ"
+  ],
+  "form_factor": [
+    "2x5",
+    "2 x 5 DIP"
+  ],
+  "standards_claimed": [
+    "FDDI PMD",
+    "FDDI LCF-PMD",
+    "ISO/IEC 9314-3:1990",
+    "ANSI X3.166-1990",
+    "ATM 100 Mb/s physical layer",
+    "IEEE 802.3u 100 Base-FX",
+    "ATM Forum UNI Standard Version 3.0"
+  ],
+  "emitter_type": [
+    "LED_INGAASP",
+    "LED"
+  ],
+  "photodetector_type": [
+    "PIN_InGaAs",
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1270.0
+  ],
+  "wavelength_max_nm": [
+    1380.0
+  ],
+  "wavelength_center_nm": [
+    1308.0
+  ],
+  "mounting_type": [
+    "solder_post",
+    "solder_wave",
+    "hand solder"
+  ],
+  "connector_type": [
+    "MT-RJ"
+  ],
+  "fiber_type": [
+    "MMF_OM1",
+    "MMF 50/125µm",
+    "MMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    0.225,
+    0.415,
+    0.45,
+    0.6
+  ],
+  "standards_code": [
+    "FDDI PMD",
+    "FDDI LCF-PMD",
+    "100 Base-FX",
+    "ATM UNI"
+  ],
+  "baud_rate_gbaud": [
+    0.01,
+    0.125
+  ],
+  "bit_rate_gbps": [
+    0.1
+  ],
+  "modulation_format": [
+    "NRZI",
+    "NRZI_4B5B"
+  ],
+  "reach_km": [
+    2.0
+  ],
+  "tx_power_min_dbm": [
+    -23.5,
+    -22.5,
+    -20.0,
+    -19.0
+  ],
+  "tx_power_max_dbm": [
+    -14.0
+  ],
+  "rx_sensitivity_dbm": [
+    -34.5,
+    -33.5,
+    -31.8,
+    -31.0
+  ],
+  "rx_overload_dbm": [
+    -11.8,
+    -14.0
+  ],
+  "post_fec_ber_target": [
+    2.5e-10
+  ],
+  "extinction_ratio_db": [
+    -10.0
+  ],
+  "los_assert_dbm": [
+    -33.0
+  ],
+  "los_deassert_dbm": [
+    -45.0,
+    -38.0
+  ],
+  "optical_extinction_ratio_db": [
+    -10.0
+  ],
+  "number_of_lanes": [
+    1
+  ],
+  "los_hysteresis_db": [
+    1.5,
+    2.4
+  ],
+  "penalties": [],
+  "notes": "1300 nm product per Description. AFBR-5903Z/5903EZ ambient 0°C to +70°C; AFBR-5903AZ ambient -40°C to +85°C (Ordering Information, Recommended Operating Conditions). temp_min_c/temp_max_c reflect AFBR-5903Z/5903EZ. Tx output power rows differ for 62.5/125 µm NA=0.275 vs 50/125 µm NA=0.20 and BOL vs EOL. Signaling rate guaranteed 10 MBd to 125 MBd for FDDI/ATM 100 Mb/s. Rx sensitivity at BER better than or equal to 2.5 x 10^-10 per Note 19; window edge vs eye center per Notes 19–20. Signal Detect assert PA with PD+1.5 dB up to -33 dBm; deassert narrative cites typical -38 dBm. Extinction ratio also specified as minimum 10% (Note 12). Supply +3.3 V dc.",
+  "provenance_datasheet_sections": [
+    "Data Sheet",
+    "Description",
+    "Features",
+    "FDDI PMD, ATM and Fast Ethernet 2 km Backbone Links",
+    "Ordering Information",
+    "Transmitter Sections",
+    "Receiver Sections",
+    "Package",
+    "Transceiver Signaling Operating Rate Range and BER Performance",
+    "Recommended Operating Conditions",
+    "Transmitter Electrical Characteristics",
+    "Receiver Electrical Characteristics",
+    "Transmitter Optical Characteristics",
+    "Receiver Optical and Electrical Characteristics",
+    "Notes"
+  ],
+  "suggestions": "Consider temp_min_c/temp_max_c as list per orderable suffix (Z/EZ vs AZ). baud_rate_gbaud sourced from explicit 10 MBd and 125 MBd (÷1000). Connector MT-RJ not in schema connector_type enum."
+}

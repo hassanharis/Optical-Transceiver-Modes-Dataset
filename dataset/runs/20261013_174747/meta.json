@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-13T17:47:47.680115+00:00",
+  "source_file": "C:\\Users\\hhassan\\AppData\\Local\\Temp\\tmprh154p96.pdf",
+  "page_count": 8,
+  "table_count": 11,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 17.536,
+    "extract_atoms": 33.513,
+    "store_run": 0.006,
+    "total": 102.925,
+    "synthesize_modes": 51.867,
+    "store_modes": 0.003
+  },
+  "content_stats": {
+    "content_chars": 8745,
+    "content_headings": 29,
+    "provenance_chars": 2341,
+    "provenance_headings": 9
+  }
+}

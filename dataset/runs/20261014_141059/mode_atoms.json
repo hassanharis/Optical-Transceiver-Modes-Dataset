@@ -1,0 +1,106 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-155M-L260D-Cxx",
+      "SO-SFP-155M-L260D-C47",
+      "SO-SFP-155M-L260D-C49",
+      "SO-SFP-155M-L260D-C51",
+      "SO-SFP-155M-L260D-C53",
+      "SO-SFP-155M-L260D-C55",
+      "SO-SFP-155M-L260D-C57",
+      "SO-SFP-155M-L260D-C59",
+      "SO-SFP-155M-L260D-C61"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1470.0,
+      1471.0
+    ],
+    "wavelength_max_nm": [
+      1610.0,
+      1611.0,
+      1620.0
+    ],
+    "wavelength_center_nm": [
+      1470.0,
+      1490.0,
+      1510.0,
+      1530.0,
+      1550.0,
+      1570.0,
+      1590.0,
+      1610.0
+    ],
+    "host_interface_name": [
+      "FE",
+      "STM-1",
+      "OC3"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFP MSA",
+      "SFF-8472"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "channel_total": [
+      8
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "standards_code": [
+      "G.694.2"
+    ],
+    "reach_km": [
+      260.0
+    ],
+    "tx_power_min_dbm": [
+      1.0
+    ],
+    "tx_power_max_dbm": [
+      5.0
+    ],
+    "rx_sensitivity_dbm": [
+      -45.0
+    ],
+    "rx_overload_dbm": [
+      -10.0
+    ],
+    "post_fec_ber_target": [
+      1e-10
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -55.0
+    ],
+    "los_hysteresis_db": [
+      1.0
+    ],
+    "penalties": [],
+    "notes": "Typical reach 260 km depends on actual optical path attenuation (footnote 1). Receiver minimum input power and overload measured at 155 Mbps using PRBS23 @ BER 1x10-10 (footnote 2). Transmitter output power is average power (footnote 3). Power budget stated as 15 – 46 dB. Power consumption stated as < 1 W. Bit rates stated as 125 Mbps / 155 Mbps and 100/155 Mbps. Storage temperature -40°C to +85°C vs operating 0°C to +70°C. DDM Yes per SFF-8472. Safety/regulatory: TUV/UL/FDA, RoHS.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-155M-L260D-Cxx",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Consider a bit_rate_mbps field or allow literal rate strings; power_consumption as upper bound when given as '< 1 W'."
+  }
+}

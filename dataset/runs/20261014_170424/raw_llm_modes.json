@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "XP-85B1-02D Commercial 25.78G 850nm MMF",
+      "model": "XP-85B1-02D",
+      "form_factor": "SFP28",
+      "wavelength_min_nm": 840.0,
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 25.78
+    },
+    {
+      "label": "XP-85B1-02DE Extensional 25.78G 850nm MMF",
+      "model": "XP-85B1-02DE",
+      "form_factor": "SFP28",
+      "wavelength_min_nm": 840.0,
+      "standards_code": "SFF-8431",
+      "bit_rate_gbps": 25.78
+    }
+  ]
+}

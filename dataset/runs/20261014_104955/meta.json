@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T10:49:55.084668+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Smartoptics QSFP-DD TD8005-TUNC-SO.pdf",
+  "page_count": 4,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 8.923,
+    "extract_atoms": 41.174,
+    "store_run": 0.005,
+    "synthesize_modes": 39.602,
+    "store_modes": 0.004,
+    "total": 89.707
+  }
+}

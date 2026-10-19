@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T00:03:19.314553+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lq-lw100-lr4c.pdf",
+  "page_count": 12,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 11.008,
+    "extract_atoms": 20.558,
+    "store_run": 0.016,
+    "synthesize_modes": 17.68,
+    "store_modes": 0.005,
+    "total": 49.267
+  }
+}

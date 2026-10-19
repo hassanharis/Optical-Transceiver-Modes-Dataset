@@ -1,0 +1,144 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-SR OM1 160 MHz\u00b7km 26 m",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.026,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "10GBASE-SR OM1 200 MHz\u00b7km 33 m",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.033,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "10GBASE-SR OM2 400 MHz\u00b7km 66 m",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.066,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "10GBASE-SR OM2 500 MHz\u00b7km 82 m",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.082,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "10GBASE-SR OM3 300 m",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.3,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "10GBASE-SR OM4 400 m",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.4,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "10GBASE-SW max MMF link",
+      "standards_code": "10GBASE-SW",
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.4,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "1200-Mx-SN-I 10G Fibre Channel",
+      "standards_code": "1200-Mx-SN-I",
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.4,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "10GBASE-SR min bit rate 9.95 Gb/s",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 9.95,
+      "reach_km": 0.4,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "Receiver sensitivity OMA @ 10.3 Gb/s",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.3,
+      "reach_km": 0.4,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "Stressed receiver sensitivity OMA @ 10.3 Gb/s",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.3,
+      "reach_km": 0.4,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -7.5,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "Transmitter OMA launch limit",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.4,
+      "tx_power_max_dbm": -1.5,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "Optical extinction ratio typical",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.4,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 5.5,
+      "los_assert_dbm": -30.0
+    },
+    {
+      "label": "LOS assert upper bound",
+      "standards_code": "10GBASE-SR",
+      "bit_rate_gbps": 10.5,
+      "reach_km": 0.4,
+      "tx_power_max_dbm": -1.0,
+      "rx_sensitivity_dbm": -11.1,
+      "extinction_ratio_db": 3.0,
+      "los_assert_dbm": -23.0
+    }
+  ]
+}

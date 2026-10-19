@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:18:45.180210+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-td8002-s31c-so-qsfp-dd800-800g-2xdr4-r6.4.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.182,
+    "extract_atoms": 21.087,
+    "store_run": 0.01,
+    "synthesize_modes": 25.956,
+    "store_modes": 0.004,
+    "total": 51.239
+  }
+}

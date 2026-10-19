@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"LS-SM316G-10C 1310nm 6.144Gbps SM 10km Standard\",\n      \"model\": \"LS-SM316G-10C\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1350.0,\n      \"bit_rate_gbps\": 6.144\n    },\n    {\n      \"label\": \"LS-SM316G-10I 1310nm 6.144Gbps SM 10km Industrial\",\n      \"model\": \"LS-SM316G-10I\",\n      \"wavelength_min_nm\": 1270.0,\n      \"wavelength_max_nm\": 1350.0,\n      \"bit_rate_gbps\": 6.144\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

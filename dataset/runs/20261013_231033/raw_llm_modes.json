@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "RS0 1G \u2014 1000BASE-LX",
+      "wavelength_max_nm": 1355.0,
+      "media_interface_name": "1000BASE-LX",
+      "standards_code": "1000BASE-LX",
+      "bit_rate_gbps": 1.25,
+      "tx_power_min_dbm": -11.0,
+      "tx_power_max_dbm": -3.0,
+      "rx_sensitivity_dbm": -19.0,
+      "rx_overload_dbm": -3.0,
+      "extinction_ratio_db": 9.0
+    },
+    {
+      "label": "RS0 10G \u2014 10GBASE-LR/LW",
+      "wavelength_max_nm": 1355.0,
+      "media_interface_name": "10GBASE-LR",
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 10.3,
+      "tx_power_min_dbm": -8.2,
+      "tx_power_max_dbm": 0.5,
+      "rx_sensitivity_dbm": -12.6,
+      "rx_overload_dbm": 0.5,
+      "extinction_ratio_db": 3.5
+    }
+  ]
+}

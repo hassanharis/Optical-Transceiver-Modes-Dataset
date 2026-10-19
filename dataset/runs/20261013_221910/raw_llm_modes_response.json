@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Evidence from the datasheet: footnotes **1) 25GbE** and **2) CPRI opt 10** pair **25.78 Gbps** with **25GbE** and **24.33 Gbps** with **CPRI opt 10**; body text gives CPRI as **24.33024 Gbps**. DWDM/C-band and **\u00b1232 ps/nm** apply to the same product row for both applications.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"25GbE\",\n      \"wavelength_band\": \"DWDM\",\n      \"host_interface_name\": \"25GbE\",\n      \"standards_code\": \"25GbE\",\n      \"bit_rate_gbps\": 25.78,\n      \"cd_tolerance_ps_nm\": 232.0\n    },\n    {\n      \"label\": \"CPRI option 10\",\n      \"wavelength_band\": \"DWDM\",\n      \"host_interface_name\": \"CPRI opt 10\",\n      \"standards_code\": \"CPRI option 10\",\n      \"bit_rate_gbps\": 24.33024,\n      \"cd_tolerance_ps_nm\": 232.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

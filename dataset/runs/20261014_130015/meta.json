@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T13:00:15.821096+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-sfp-1000base-t.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.385,
+    "extract_atoms": 28.203,
+    "store_run": 0.007,
+    "synthesize_modes": 10.867,
+    "store_modes": 0.007,
+    "total": 43.469
+  }
+}

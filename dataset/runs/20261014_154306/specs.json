@@ -1,0 +1,136 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-MR50D-Cxx",
+    "SO-SFP-MR50D-C27",
+    "SO-SFP-MR50D-C29",
+    "SO-SFP-MR50D-C31",
+    "SO-SFP-MR50D-C33",
+    "SO-SFP-MR50D-C35",
+    "SO-SFP-MR50D-C37",
+    "SO-SFP-MR50D-C39",
+    "SO-SFP-MR50D-C41",
+    "SO-SFP-MR50D-C43",
+    "SO-SFP-MR50D-C45",
+    "SO-SFP-MR50D-C47",
+    "SO-SFP-MR50D-C49",
+    "SO-SFP-MR50D-C51",
+    "SO-SFP-MR50D-C53",
+    "SO-SFP-MR50D-C55",
+    "SO-SFP-MR50D-C57",
+    "SO-SFP-MR50D-C59",
+    "SO-SFP-MR50D-C61"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "G.694.2"
+  ],
+  "wavelength_min_nm": [
+    1270.0,
+    1271.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1610.0,
+    1611.0,
+    1600.0
+  ],
+  "wavelength_center_nm": [
+    1270.0,
+    1290.0,
+    1310.0,
+    1330.0,
+    1350.0,
+    1370.0,
+    1390.0,
+    1410.0,
+    1430.0,
+    1450.0,
+    1470.0,
+    1490.0,
+    1510.0,
+    1530.0,
+    1550.0,
+    1570.0,
+    1590.0,
+    1610.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "channel_total": [
+    18
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "host_interface_name": [
+    "SFP MSA"
+  ],
+  "standards_code": [
+    "FE",
+    "GbE",
+    "STM1/OC3",
+    "STM4/OC12",
+    "STM16/OC48",
+    "OTU1",
+    "1G FC",
+    "2G FC",
+    "CPRI Opt 1",
+    "CPRI Opt 2",
+    "CPRI Opt 3",
+    "OBSAI 1x",
+    "OBSAI 2x",
+    "G.694.2"
+  ],
+  "bit_rate_gbps": [
+    2.67,
+    2.7
+  ],
+  "reach_km": [
+    50.0
+  ],
+  "tx_power_min_dbm": [
+    -3.0
+  ],
+  "tx_power_max_dbm": [
+    2.0
+  ],
+  "rx_sensitivity_dbm": [
+    -20.0
+  ],
+  "rx_overload_dbm": [
+    -3.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -21.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Overview states 100Mbps–2.67Gbps and ~50 km at 2.5Gbps; ordering codes state 100Mbps–2.7Gbps. Power budget 5–17dB and optical path penalty 1dB stated in TECHNICAL DATA summary cell. Power consumption given as < 1W (not a numeric watt value). Storage temperature -40°C to +85°C. Typical reach 50km depends on actual optical path attenuation (footnote 1). Receiver minimum input power and overload measured at 2.5 Gbps using PRBS31 @ BER 1x10-12 (footnote 2). Transmitter output power is average power (footnote 3). Higher attenuation in lower CWDM band and water peak must be considered per OVERVIEW. DDM: Yes.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-MR50D-Cxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Add power_budget_db and optical_path_penalty_db fields; allow bit_rate_mbps for 100Mbps lower bound; clarify whether post_fec_ber_target applies when FEC is not listed."
+}

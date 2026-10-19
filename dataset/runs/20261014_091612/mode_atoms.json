@@ -1,0 +1,107 @@
+{
+  "multi_valued": {
+    "model": [
+      "LS-MM858G-S3C",
+      "LS-MM858G-S3I"
+    ],
+    "bit_rate_gbps": [
+      8.5,
+      8.0,
+      2.125,
+      4.25,
+      1.0,
+      10.3,
+      10.7,
+      10.312
+    ]
+  },
+  "general": {
+    "vendor": "LINK-PP",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFP+ MSA",
+      "SFF-8472",
+      "RoHS"
+    ],
+    "emitter_type": [
+      "LASER_VCSEL"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_min_nm": [
+      840.0
+    ],
+    "wavelength_max_nm": [
+      860.0
+    ],
+    "wavelength_center_nm": [
+      850.0
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM3"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "standards_code": [
+      "SFF-8472"
+    ],
+    "reach_km": [
+      0.3
+    ],
+    "tx_power_min_dbm": [
+      -6.0
+    ],
+    "tx_power_max_dbm": [
+      -0.5
+    ],
+    "rx_sensitivity_dbm": [
+      -10.5
+    ],
+    "rx_overload_dbm": [
+      0.5
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [
+      3.0
+    ],
+    "los_assert_dbm": [
+      -22.0
+    ],
+    "los_deassert_dbm": [
+      -12.0
+    ],
+    "optical_extinction_ratio_db": [
+      3.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      4.0
+    ],
+    "penalties": [],
+    "notes": "Title and primary ordering part LS-MM858G-S3C: operating case 0°C to +70°C. LS-MM858G-S3I ordering variant: -40°C to +85°C. Recommended operating also lists Extended case -20°C to +85°C. Receiver sensitivity, overload, and LOS levels per Note 3: PRBS 2^31-1 @ 10312Mbps, BER ≤1×10^-12. Average output power Note 1: launched into MMF. Supply current Icc max 260 mA (not stated in W). Data rate table unit printed as bps; values 1.0 / 10.3 / 10.7 treated as Gbps per context. SMSR row has no numeric limits in table.",
+    "provenance_datasheet_sections": [
+      "LS-MM858G-S3C 8Gbps SFP+ Transceiver, Multi Mode, 300m Reach",
+      "Product Features",
+      "Applications",
+      "Description",
+      "Recommended Operating Conditions",
+      "Optical and Electrical Characteristics",
+      "Notes:",
+      "Diagnostics",
+      "Ordering information"
+    ],
+    "suggestions": "Clarify whether form_factor should include SFP+ when not in the schema enum. reach_km requires converting stated 300 m to km. Confirm whether post_fec_ber_target applies without explicit FEC (BER ≤1×10^-12 at 10312 Mbps)."
+  }
+}

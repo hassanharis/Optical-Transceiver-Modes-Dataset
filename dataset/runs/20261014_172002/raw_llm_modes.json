@@ -1,0 +1,433 @@
+{
+  "modes": [
+    {
+      "label": "App 1: CAUI4 / OpenZR+ oFEC",
+      "host_interface_name": "CAUI4",
+      "media_interface_name": "OpenZR+",
+      "standards_code": "OpenZR+",
+      "baud_rate_gbaud": 30.1,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 450.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=1"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=1"
+        }
+      ]
+    },
+    {
+      "label": "App 2: CAUI4 KR4 FEC / OpenZR+ oFEC",
+      "host_interface_name": "CAUI4 KR4 FEC",
+      "media_interface_name": "OpenZR+",
+      "standards_code": "OpenZR+",
+      "baud_rate_gbaud": 30.1,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 450.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=2"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=2"
+        }
+      ]
+    },
+    {
+      "label": "App 3: 100GAUI-2 KP4 FEC / OpenZR+ oFEC",
+      "host_interface_name": "100GAUI-2 KP4 FEC",
+      "media_interface_name": "OpenZR+",
+      "standards_code": "OpenZR+",
+      "baud_rate_gbaud": 30.1,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 450.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=3"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=3"
+        }
+      ]
+    },
+    {
+      "label": "App 4: CAUI4 / FlexO-1 oFEC",
+      "host_interface_name": "CAUI4",
+      "media_interface_name": "FlexO-1",
+      "standards_code": "FlexO-1",
+      "baud_rate_gbaud": 31.6,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 450.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=4"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=4"
+        }
+      ]
+    },
+    {
+      "label": "App 5: CAUI4 KR4 FEC / FlexO-1 oFEC",
+      "host_interface_name": "CAUI4 KR4 FEC",
+      "media_interface_name": "FlexO-1",
+      "standards_code": "FlexO-1",
+      "baud_rate_gbaud": 31.6,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 450.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=5"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=5"
+        }
+      ]
+    },
+    {
+      "label": "App 6: 100GAUI-2 KP4 FEC / FlexO-1 oFEC",
+      "host_interface_name": "100GAUI-2 KP4 FEC",
+      "media_interface_name": "FlexO-1",
+      "standards_code": "FlexO-1",
+      "baud_rate_gbaud": 31.6,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 450.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=6"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=6"
+        }
+      ]
+    },
+    {
+      "label": "App 7: OTL4.4 / FlexO-1 oFEC",
+      "host_interface_name": "OTL4.4",
+      "media_interface_name": "FlexO-1",
+      "standards_code": "FlexO-1",
+      "baud_rate_gbaud": 31.6,
+      "modulation_format": "QPSK-DP",
+      "reach_km": 450.0,
+      "rx_sensitivity_dbm": -32.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "OFEC",
+      "pre_fec_ber_threshold": 0.02,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=7"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=7"
+        }
+      ]
+    },
+    {
+      "label": "App 8: CAUI4 / OTU4 SC-FEC",
+      "host_interface_name": "CAUI4",
+      "media_interface_name": "OTU4",
+      "standards_code": "OTU4",
+      "baud_rate_gbaud": 28.0,
+      "modulation_format": "DQPSK-DP",
+      "reach_km": 450.0,
+      "rx_sensitivity_dbm": -30.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "SCFEC",
+      "pre_fec_ber_threshold": 0.0045,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=8"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=8"
+        }
+      ]
+    },
+    {
+      "label": "App 9: CAUI4 KR4 FEC / OTU4 SC-FEC",
+      "host_interface_name": "CAUI4 KR4 FEC",
+      "media_interface_name": "OTU4",
+      "standards_code": "OTU4",
+      "baud_rate_gbaud": 28.0,
+      "modulation_format": "DQPSK-DP",
+      "reach_km": 450.0,
+      "rx_sensitivity_dbm": -30.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "SCFEC",
+      "pre_fec_ber_threshold": 0.0045,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=9"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=9"
+        }
+      ]
+    },
+    {
+      "label": "App 10: 100GAUI-2 KP4 FEC / OTU4 SC-FEC",
+      "host_interface_name": "100GAUI-2 KP4 FEC",
+      "media_interface_name": "OTU4",
+      "standards_code": "OTU4",
+      "baud_rate_gbaud": 28.0,
+      "modulation_format": "DQPSK-DP",
+      "reach_km": 450.0,
+      "rx_sensitivity_dbm": -30.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "SCFEC",
+      "pre_fec_ber_threshold": 0.0045,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=10"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=10"
+        }
+      ]
+    },
+    {
+      "label": "App 11: OTL4.4 / OTU4 SC-FEC",
+      "host_interface_name": "OTL4.4",
+      "media_interface_name": "OTU4",
+      "standards_code": "OTU4",
+      "baud_rate_gbaud": 28.0,
+      "modulation_format": "DQPSK-DP",
+      "reach_km": 450.0,
+      "rx_sensitivity_dbm": -30.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "SCFEC",
+      "pre_fec_ber_threshold": 0.0045,
+      "penalties": [
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 0.5,
+          "penalized_value": 16.0,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -23.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=11"
+        },
+        {
+          "target_parameter": "rx_osnr_db",
+          "penalty_db": 1.0,
+          "penalized_value": 16.5,
+          "conditions": [
+            {
+              "parameter": "rx_power_dbm",
+              "value": -25.0
+            }
+          ],
+          "source": "OPTICAL SPECIFICATION - APPLICATION CODES | Appl mode=11"
+        }
+      ]
+    }
+  ]
+}

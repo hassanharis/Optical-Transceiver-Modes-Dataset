@@ -1,0 +1,164 @@
+{
+  "multi_valued": {
+    "model": [
+      "CFP2-WDM-DETS-1HL=",
+      "CFP2-WDM-DS-1HL=",
+      "CFP2-LIC-UPG-200G"
+    ],
+    "wavelength_band": [
+      "C-band",
+      "DWDM"
+    ],
+    "power_consumption_w": [
+      17.0,
+      19.0,
+      19.5,
+      20.5
+    ],
+    "standards_code": [
+      "SC-FEC",
+      "Staircase-FEC",
+      "SD-FEC",
+      "IPoDWDM"
+    ],
+    "bit_rate_gbps": [
+      100.0,
+      200.0
+    ],
+    "modulation_format": [
+      "QPSK",
+      "QAM_8",
+      "QAM_16"
+    ],
+    "reach_km": [
+      2000.0,
+      400.0
+    ],
+    "tx_power_min_dbm": [
+      -10.0,
+      -5.0
+    ],
+    "tx_in_band_osnr_db": [
+      37.0,
+      34.3,
+      32.3
+    ],
+    "tx_out_of_band_osnr_db": [
+      45.0,
+      25.0,
+      20.0
+    ],
+    "rx_sensitivity_dbm": [
+      -30.0,
+      -29.0,
+      -24.0,
+      -22.0,
+      -21.0,
+      -18.0,
+      -13.0,
+      0.0,
+      1.0
+    ],
+    "rx_osnr_db": [
+      13.5,
+      12.3,
+      14.5,
+      21.5,
+      20.0
+    ],
+    "cd_tolerance_ps_nm": [
+      40000.0,
+      16000.0,
+      20000.0
+    ],
+    "fec_type": [
+      "SCFEC",
+      "SDFEC",
+      "FEC"
+    ],
+    "fec_overhead_percent": [
+      7.0,
+      15.0
+    ]
+  },
+  "general": {
+    "vendor": "Cisco",
+    "form_factor": [
+      "CFP2-DCO"
+    ],
+    "standards_claimed": [],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_min_nm": [],
+    "wavelength_max_nm": [],
+    "wavelength_center_nm": [],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [
+      50.0
+    ],
+    "channel_total": [
+      96
+    ],
+    "mounting_type": [
+      "pluggable"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF_G652",
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "host_interface_name": [],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "tx_power_max_dbm": [
+      1.0
+    ],
+    "rx_osnr_tolerance_db_max": [
+      0.5
+    ],
+    "rx_overload_dbm": [
+      13.0
+    ],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "pre_fec_ber_threshold": [],
+    "post_fec_ber_target": [],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [],
+    "los_deassert_dbm": [],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [
+      27.0
+    ],
+    "number_of_lanes": [],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "CFP2-WDM-DS-1HL= (non-TOF) has same specs as CFP2-WDM-DETS-1HL= except lower out-of-band OSNR (25 dB for -5 to +1 dBm Tx range, 20 dB for -10 to -5 dBm) vs 45 dB with TOF. Base license is 100G only; 200G via CFP2-LIC-UPG-200G. Line rate and modulation are software-settable. Receiver table lists power ranges with stated OSNR penalty conditions (0.3 dB, 0.5 dB, 1 dB) but does not pair penalized OSNR numeric values at specific Rx power using @ notation. Cold restart Tx turn-up 50-90 s; warm restart 4 s. Grid-less C-band tuning; 96x50 GHz example; tuning time 60 s with Tx at -40 dBm during tuning. Table 5 lists Cable Type LC and Connector LC-LC.",
+    "provenance_datasheet_sections": [
+      "Introduction",
+      "Product overview",
+      "Features and benefits",
+      "Product variants",
+      "Specifications",
+      "Physical specifications",
+      "Ordering information"
+    ],
+    "suggestions": "Penalty rows (e.g. With 0.5dB OSNR penalty: -18 to 0) could be modeled if schema allows penalized_value as Rx power range endpoints with penalty_db and target_parameter rx_sensitivity_dbm or path_penalty_db without @ OSNR cells."
+  }
+}

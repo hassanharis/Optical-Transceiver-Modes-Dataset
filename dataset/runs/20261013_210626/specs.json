@@ -1,0 +1,116 @@
+{
+  "vendor": "Cinch Connectivity Solutions",
+  "model": [
+    "LxS-ST11xx",
+    "ST11xx",
+    "Roughrider RR-ST11xx"
+  ],
+  "form_factor": [
+    "Low Profile",
+    "Low Rider"
+  ],
+  "standards_claimed": [
+    "ANSI Fiber Channel FC-PI / PH2",
+    "EN-60825",
+    "IEC-825",
+    "CDRH Class 1",
+    "ANSI X3.297 FC-PI"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "wavelength_band": [
+    "O-band"
+  ],
+  "mounting_type": [
+    "solder_post",
+    "screw_post",
+    "solder",
+    "screw"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM1",
+    "MMF 50/125µm"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "host_interface_name": [
+    "2x Fiber Channel",
+    "4x Fiber Channel"
+  ],
+  "standards_code": [
+    "FC-PI",
+    "PH2",
+    "FC-PH-2",
+    "FC-PH",
+    "ANSI X3.297 FC-PI"
+  ],
+  "baud_rate_gbaud": [
+    4.25,
+    2.125,
+    4.125,
+    2.0625,
+    1.0625
+  ],
+  "bit_rate_gbps": [
+    2.125,
+    4.25,
+    1.0625
+  ],
+  "modulation_format": [
+    "NRZ"
+  ],
+  "reach_km": [
+    0.07,
+    0.15,
+    0.3
+  ],
+  "tx_power_min_dbm": [
+    -9.5
+  ],
+  "tx_power_max_dbm": [
+    -4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -15.0,
+    -17.0
+  ],
+  "rx_overload_dbm": [
+    0.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    10.0
+  ],
+  "optical_extinction_ratio_db": [
+    10.0
+  ],
+  "number_of_lanes": [
+    2,
+    4
+  ],
+  "total_jitter_ps": [
+    85.0
+  ],
+  "penalties": [],
+  "notes": "Supply VCCTX/VCCRX 3.135V to 3.465V; +3.3 V per port. Optical sensitivity footnotes: (1) BER=10^-12 @ 2.125 GigaBaud, PRBS 2^7-1, NRZ, FC-PH-2; (2) BER=10^-12 @ 1.0625 GigaBaud, PRBS 2^7-1, NRZ, FC-PH; (3) sensitivity assumes extinction ratio 9 dB. Receiver table labels 4.125 GigaBaud / 2.0625 GigaBaud vs 4.25 / 2.125 GigaBaud elsewhere. Link distance table distances are 70M, 150M, 300M by fiber type and FC mode. Rx overload MAX 0 dBm at both listed baud rows. Tx OMA 196 µW at 4.25 and 2.125 GigaBaud; Rx OMA min 49 µW at same baud rates.",
+  "provenance_datasheet_sections": [
+    "LxS-ST11xx Low Profile Optical Transceiver",
+    "Applications",
+    "Features",
+    "Ordering Information",
+    "Transmitters: VCCTX = 3.135V to 3.465V, TA = Operating Temperature Range",
+    "Receivers: VCCRX = 3.135V to 3.465V, TA = Operating Temperature Range",
+    "Link Distances"
+  ],
+  "suggestions": "Clarify whether wavelength_band should be null for 850 nm MM (not CWDM LAN-WDM). Add schema fields for OMA (µW) and supply voltage. Distinguish 4.125 vs 4.25 GigaBaud in receiver sensitivity row."
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:29:46.675324+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Fortinet fortigate_3600e-dc Series.pdf",
+  "page_count": 7,
+  "table_count": 5,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 13.385,
+    "extract_atoms": 18.086,
+    "store_run": 0.007,
+    "synthesize_modes": 23.036,
+    "store_modes": 0.003,
+    "total": 54.517
+  }
+}

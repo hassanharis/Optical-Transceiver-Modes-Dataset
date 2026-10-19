@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;SO-SFP-L80D-Dxxx&#x27;, &#x27;SO-SFP-L80D-Dxxx-E&#x27;, &#x27;SO-SFP-L80D-D919&#x27;, &#x27;SO-SFP-L80D-D919-E&#x27;, &#x27;SO-SFP-L80D-D920&#x27;, &#x27;SO-SFP-L80D-D920-E&#x27;, &#x27;SO-SFP-L80D-D921&#x27;, &#x27;SO-SFP-L80D-D921-E&#x27;, &#x27;SO-SFP-L80D-D922&#x27;, &#x27;SO-SFP-L80D-D922-E&#x27;, &#x27;SO-SFP-L80D-D923&#x27;, &#x27;SO-SFP-L80D-D923-E&#x27;, &#x27;SO-SFP-L80D-D924&#x27;, &#x27;SO-SFP-L80D-D924-E&#x27;, &#x27;SO-SFP-L80D-D925&#x27;, &#x27;SO-SFP-L80D-D925-E&#x27;, &#x27;SO-SFP-L80D-D926&#x27;, &#x27;SO-SFP-L80D-D926-E&#x27;, &#x27;SO-SFP-L80D-D927&#x27;, &#x27;SO-SFP-L80D-D927-E&#x27;, &#x27;SO-SFP-L80D-D928&#x27;, &#x27;SO-SFP-L80D-D928-E&#x27;, &#x27;SO-SFP-L80D-D929&#x27;, &#x27;SO-SFP-L80D-D929-E&#x27;, &#x27;SO-SFP-L80D-D930&#x27;, &#x27;SO-SFP-L80D-D930-E&#x27;, &#x27;SO-SFP-L80D-D931&#x27;, &#x27;SO-SFP-L80D-D931-E&#x27;, &#x27;SO-SFP-L80D-D932&#x27;, &#x27;SO-SFP-L80D-D932-E&#x27;, &#x27;SO-SFP-L80D-D933&#x27;, &#x27;SO-SFP-L80D-D933-E&#x27;, &#x27;SO-SFP-L80D-D934&#x27;, &#x27;SO-SFP-L80D-D934-E&#x27;, &#x27;SO-SFP-L80D-D935&#x27;, &#x27;SO-SFP-L80D-D935-E&#x27;, &#x27;SO-SFP-L80D-D936&#x27;, &#x27;SO-SFP-L80D-D936-E&#x27;, &#x27;SO-SFP-L80D-D937&#x27;, &#x27;SO-SFP-L80D-D937-E&#x27;, &#x27;SO-SFP-L80D-D938&#x27;, &#x27;SO-SFP-L80D-D938-E&#x27;, &#x27;SO-SFP-L80D-D939&#x27;, &#x27;SO-SFP-L80D-D939-E&#x27;, &#x27;SO-SFP-L80D-D940&#x27;, &#x27;SO-SFP-L80D-D940-E&#x27;, &#x27;SO-SFP-L80D-D941&#x27;, &#x27;SO-SFP-L80D-D941-E&#x27;, &#x27;SO-SFP-L80D-D942&#x27;, &#x27;SO-SFP-L80D-D942-E&#x27;, &#x27;SO-SFP-L80D-D943&#x27;, &#x27;SO-SFP-L80D-D943-E&#x27;, &#x27;SO-SFP-L80D-D944&#x27;, &#x27;SO-SFP-L80D-D944-E&#x27;, &#x27;SO-SFP-L80D-D945&#x27;, &#x27;SO-SFP-L80D-D945-E&#x27;, &#x27;SO-SFP-L80D-D946&#x27;, &#x27;SO-SFP-L80D-D946-E&#x27;, &#x27;SO-SFP-L80D-D947&#x27;, &#x27;SO-SFP-L80D-D947-E&#x27;, &#x27;SO-SFP-L80D-D948&#x27;, &#x27;SO-SFP-L80D-D948-E&#x27;, &#x27;SO-SFP-L80D-D949&#x27;, &#x27;SO-SFP-L80D-D949-E&#x27;, &#x27;SO-SFP-L80D-D950&#x27;, &#x27;SO-SFP-L80D-D950-E&#x27;, &#x27;SO-SFP-L80D-D951&#x27;, &#x27;SO-SFP-L80D-D951-E&#x27;, &#x27;SO-SFP-L80D-D952&#x27;, &#x27;SO-SFP-L80D-D952-E&#x27;, &#x27;SO-SFP-L80D-D953&#x27;, &#x27;SO-SFP-L80D-D953-E&#x27;, &#x27;SO-SFP-L80D-D954&#x27;, &#x27;SO-SFP-L80D-D954-E&#x27;, &#x27;SO-SFP-L80D-D955&#x27;, &#x27;SO-SFP-L80D-D955-E&#x27;, &#x27;SO-SFP-L80D-D956&#x27;, &#x27;SO-SFP-L80D-D956-E&#x27;, &#x27;SO-SFP-L80D-D957&#x27;, &#x27;SO-SFP-L80D-D957-E&#x27;, &#x27;SO-SFP-L80D-D958&#x27;, &#x27;SO-SFP-L80D-D958-E&#x27;, &#x27;SO-SFP-L80D-D959&#x27;, &#x27;SO-SFP-L80D-D959-E&#x27;, &#x27;SO-SFP-L80D-D960&#x27;, &#x27;SO-SFP-L80D-D960-E&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">so-sfp-l80d-dxxx.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">3</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/gpt-5.6-sol</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 17:17</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.0 
+
+## **SO-SFP-L80D-Dxxx &amp; Dxxx-E** 
+
+SFP, 0.1 - 1.25Gbps, DWDM, 100GHz, DDM, 28dB, 80km, D9190-D9600 (42ch) 
+
+## OVERVIEW 
+
+The SO-SFP-L80D-Dxxx is a DWDM transceiver for services from 100 Mbps (Fast Ethernet) up to 1.25 Gbps (Gigabit Ethernet). 
+
+The optical performance enables a bridgeable distance of up to 80km. The transceiver is provided in 42 channel versions at the 100GHz DWDM grid as specified in the ITU-T 694.1 standard. 
+
+This transceiver supports digital diagnostic functions via a 2-wire serial interface as defined by the SFF-8472 specification. The transceiver is available in two temperature range options, one being an extended temperature range: -20°C to +75°C (-4°F to +167°F). 
+
+The transceiver module is compliant to RoHS-6/6 
+
+## TECHNICAL DATA 
+
+|**Parameter**|**Value**&lt;br&gt;DWDM SFP 100GHz&lt;br&gt;SM (2x LC)&lt;br&gt;80km&lt;br&gt;191.90 - 196.0THz (42ch)&lt;br&gt;0.1Gbps to 1.25Gbps&lt;br&gt;FE, GbE&lt;br&gt;STM4/OC12, STM1/OC3&lt;br&gt;1G FC&lt;br&gt;CPRI Opt, 1, 2&lt;br&gt;OBSAI 1x&lt;br&gt;8 – 28dB&lt;br&gt;Typical 2080ps/nm&lt;br&gt;&lt; 1.5W&lt;br&gt;0°C to +70°C 1&lt;br&gt;-20°C to +75°C (-E)&lt;br&gt;-40°C to +85°C|**Parameter**|**Value**|
+|---|---|---|---|
+|Technology||**Transmitter data:**||
+|Transmission media||Output power|Min: 0.0dBm1)|
+|Typical reach|||Max: +5.0dBm1)|
+|Nominal wavelength||Transmit wavelength|191.90 - 196.00THz, 100GHz (G.694.1)|
+|Bit rate support||**Receiver data:**||
+|Protocol support||Minimum input power|-28.0dBm1) 2)|
+|||Overload (max power)|-3.0dBm1) 2)|
+|||Wavelength range|1520nm – 1566nm|
+|||LOS Assert|Min -42dBm|
+|||LOS De-assert|Max -29dBm|
+|Power budget||LOS Hysteresis|Min 0.5dB|
+|Dispersion tolerance||||
+|Power consumption||DDM|Yes|
+|Operating temperature||MSA compliance|SFF-8431, -8432, -8472|
+|||1)Average power.&lt;br&gt;2)@ 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back.||
+|Storage temperature||||
+|||||
+
+
+
+**Safety/regulatory compliance:** TUV/UL/FDA (contact Smartoptics for latest certification information) RoHS compliance 
+
+
+Subject to change without notice. For more information visit s
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "SO-SFP-L80D-Dxxx",
+    "SO-SFP-L80D-Dxxx-E",
+    "SO-SFP-L80D-D919",
+    "SO-SFP-L80D-D919-E",
+    "SO-SFP-L80D-D920",
+    "SO-SFP-L80D-D920-E",
+    "SO-SFP-L80D-D921",
+    "SO-SFP-L80D-D921-E",
+    "SO-SFP-L80D-D922",
+    "SO-SFP-L80D-D922-E",
+    "SO-SFP-L80D-D923",
+    "SO-SFP-L80D-D923-E",
+    "SO-SFP-L80D-D924",
+    "SO-SFP-L80D-D924-E",
+    "SO-SFP-L80D-D925",
+    "SO-SFP-L80D-D925-E",
+    "SO-SFP-L80D-D926",
+    "SO-SFP-L80D-D926-E",
+    "SO-SFP-L80D-D927",
+    "SO-SFP-L80D-D927-E",
+    "SO-SFP-L80D-D928",
+    "SO-SFP-L80D-D928-E",
+    "SO-SFP-L80D-D929",
+    "SO-SFP-L80D-D929-E",
+    "SO-SFP-L80D-D930",
+    "SO-SFP-L80D-D930-E",
+    "SO-SFP-L80D-D931",
+    "SO-SFP-L80D-D931-E",
+    "SO-SFP-L80D-D932",
+    "SO-SFP-L80D-D932-E",
+    "SO-SFP-L80D-D933",
+    "SO-SFP-L80D-D933-E",
+    "SO-SFP-L80D-D934",
+    "SO-SFP-L80D-D934-E",
+    "SO-SFP-L80D-D935",
+    "SO-SFP-L80D-D935-E",
+    "SO-SFP-L80D-D936",
+    "SO-SFP-L80D-D936-E",
+    "SO-SFP-L80D-D937",
+    "SO-SFP-L80D-D937-E",
+    "SO-SFP-L80D-D938",
+    "SO-SFP-L80D-D938-E",
+    "SO-SFP-L80D-D939",
+    "SO-SFP-L80D-D939-E",
+    "SO-SFP-L80D-D940",
+    "SO-SFP-L80D-D940-E",
+    "SO-SFP-L80D-D941",
+    "SO-SFP-L80D-D941-E",
+    "SO-SFP-L80D-D942",
+    "SO-SFP-L80D-D942-E",
+    "SO-SFP-L80D-D943",
+    "SO-SFP-L80D-D943-E",
+    "SO-SFP-L80D-D944",
+    "SO-SFP-L80D-D944-E",
+    "SO-SFP-L80D-D945",
+    "SO-SFP-L80D-D945-E",
+    "SO-SFP-L80D-D946",
+    "SO-SFP-L80D-D946-E",
+    "SO-SFP-L80D-D947",
+    "SO-SFP-L80D-D947-E",
+    "SO-SFP-L80D-D948",
+    "SO-SFP-L80D-D948-E",
+    "SO-SFP-L80D-D949",
+    "SO-SFP-L80D-D949-E",
+    "SO-SFP-L80D-D950",
+    "SO-SFP-L80D-D950-E",
+    "SO-SFP-L80D-D951",
+    "SO-SFP-L80D-D951-E",
+    "SO-SFP-L80D-D952",
+    "SO-SFP-L80D-D952-E",
+    "SO-SFP-L80D-D953",
+    "SO-SFP-L80D-D953-E",
+    "SO-SFP-L80D-D954",
+    "SO-SFP-L80D-D954-E",
+    "SO-SFP-L80D-D955",
+    "SO-SFP-L80D-D955-E",
+    "SO-SFP-L80D-D956",
+    "SO-SFP-L80D-D956-E",
+    "SO-SFP-L80D-D957",
+    "SO-SFP-L80D-D957-E",
+    "SO-SFP-L80D-D958",
+    "SO-SFP-L80D-D958-E",
+    "SO-SFP-L80D-D959",
+    "SO-SFP-L80D-D959-E",
+    "SO-SFP-L80D-D960",
+    "SO-SFP-L80D-D960-E"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "ITU-T G.694.1",
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1520</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1566</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: [
+    <span class="num">1562.23</span>,
+    <span class="num">1561.42</span>,
+    <span class="num">1560.61</span>,
+    <span class="num">1559.79</span>,
+    <span class="num">1558.98</span>,
+    <span class="num">1558.17</span>,
+    <span class="num">1557.36</span>,
+    <span class="num">1556.55</span>,
+    <span class="num">1555.75</span>,
+    <span class="num">1554.94</span>,
+    <span class="num">1554.13</span>,
+    <span class="num">1553.33</span>,
+    <span class="num">1552.52</span>,
+    <span class="num">1551.72</span>,
+    <span class="num">1550.92</span>,
+    <span class="num">1550.12</span>,
+    <span class="num">1549.32</span>,
+    <span class="num">1548.51</span>,
+    <span class="num">1547.72</span>,
+    <span class="num">1546.92</span>,
+    <span class="num">1546.12</span>,
+    <span class="num">1545.32</span>,
+    <span class="num">1544.53</span>,
+    <span class="num">1543.73</span>,
+    <span class="num">1542.94</span>,
+    <span class="num">1542.14</span>,
+    <span class="num">1541.35</span>,
+    <span class="num">1540.56</span>,
+    <span class="num">1539.77</span>,
+    <span class="num">1538.98</span>,
+    <span class="num">1538.19</span>,
+    <span class="num">1537.4</span>,
+    <span class="num">1536.61</span>,
+    <span class="num">1535.82</span>,
+    <span class="num">1535.04</span>,
+    <span class="num">1534.25</span>,
+    <span class="num">1533.47</span>,
+    <span class="num">1532.68</span>,
+    <span class="num">1531.9</span>,
+    <span class="num">1531.12</span>,
+    <span class="num">1530.33</span>,
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_band"</span>: [
+    "DWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">191.9</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.0</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">100</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">42</span>
+  ],
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">-20</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">75</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">1.5</span>
+  ],
+  <span class="key">"host_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: [
+    "FE",
+    "GbE",
+    "STM4/OC12",
+    "STM1/OC3",
+    "1G FC",
+    "CPRI Opt, <span class="num">1</span>, <span class="num">2</span>",
+    "OBSAI <span class="num">1</span>x"
+  ],
+  <span class="key">"standards_code"</span>: <span class="null">null</span>,
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">0.1</span>,
+    <span class="num">1.25</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">80</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">0.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">5.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-28.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-3.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">2080</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: <span class="null">null</span>,
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: [
+    <span class="num">-42</span>
+  ],
+  <span class="key">"los_deassert_dbm"</span>: [
+    <span class="num">-29</span>
+  ],
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: [
+    <span class="num">0.5</span>
+  ],
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Power budget: <span class="num">8</span> – <span class="num">28</span>dB. Power consumption is stated as &lt; <span class="num">1.5</span>W. Dispersion tolerance is stated as Typical <span class="num">2080</span>ps/nm. Standard operating temperature is <span class="num">0</span>°C to +70°C; extended-temperature (-E) models are <span class="num">-20</span>°C to +75°C. Storage temperature is <span class="num">-40</span>°C to +85°C. Transmitter output power is average power. Receiver minimum input power and overload are specified at <span class="num">1.25</span>Gbps, BER <span class="num">1</span>x10-12, PRBS <span class="num">27</span>-1, back-to-back. LOS Assert is stated as Min <span class="num">-42</span>dBm; LOS De-assert as Max <span class="num">-29</span>dBm; LOS Hysteresis as Min <span class="num">0.5</span>dB."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "SO-SFP-L80D-Dxxx &amp; Dxxx-E",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Add fields for power-budget range, storage-temperature range, protocol support, diagnostic monitoring, and inequality or typical-value qualifiers."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">SO-SFP-L80D-Dxxx</span> <span class="badge">SO-SFP-L80D-Dxxx-E</span> <span class="badge">SO-SFP-L80D-D919</span> <span class="badge">SO-SFP-L80D-D919-E</span> <span class="badge">SO-SFP-L80D-D920</span> <span class="badge">SO-SFP-L80D-D920-E</span> <span class="badge">SO-SFP-L80D-D921</span> <span class="badge">SO-SFP-L80D-D921-E</span> <span class="badge">SO-SFP-L80D-D922</span> <span class="badge">SO-SFP-L80D-D922-E</span> <span class="badge">SO-SFP-L80D-D923</span> <span class="badge">SO-SFP-L80D-D923-E</span> <span class="badge">SO-SFP-L80D-D924</span> <span class="badge">SO-SFP-L80D-D924-E</span> <span class="badge">SO-SFP-L80D-D925</span> <span class="badge">SO-SFP-L80D-D925-E</span> <span class="badge">SO-SFP-L80D-D926</span> <span class="badge">SO-SFP-L80D-D926-E</span> <span class="badge">SO-SFP-L80D-D927</span> <span class="badge">SO-SFP-L80D-D927-E</span> <span class="badge">SO-SFP-L80D-D928</span> <span class="badge">SO-SFP-L80D-D928-E</span> <span class="badge">SO-SFP-L80D-D929</span> <span class="badge">SO-SFP-L80D-D929-E</span> <span class="badge">SO-SFP-L80D-D930</span> <span class="badge">SO-SFP-L80D-D930-E</span> <span class="badge">SO-SFP-L80D-D931</span> <span class="badge">SO-SFP-L80D-D931-E</span> <span class="badge">SO-SFP-L80D-D932</span> <span class="badge">SO-SFP-L80D-D932-E</span> <span class="badge">SO-SFP-L80D-D933</span> <span class="badge">SO-SFP-L80D-D933-E</span> <span class="badge">SO-SFP-L80D-D934</span> <span class="badge">SO-SFP-L80D-D934-E</span> <span class="badge">SO-SFP-L80D-D935</span> <span class="badge">SO-SFP-L80D-D935-E</span> <span class="badge">SO-SFP-L80D-D936</span> <span class="badge">SO-SFP-L80D-D936-E</span> <span class="badge">SO-SFP-L80D-D937</span> <span class="badge">SO-SFP-L80D-D937-E</span> <span class="badge">SO-SFP-L80D-D938</span> <span class="badge">SO-SFP-L80D-D938-E</span> <span class="badge">SO-SFP-L80D-D939</span> <span class="badge">SO-SFP-L80D-D939-E</span> <span class="badge">SO-SFP-L80D-D940</span> <span class="badge">SO-SFP-L80D-D940-E</span> <span class="badge">SO-SFP-L80D-D941</span> <span class="badge">SO-SFP-L80D-D941-E</span> <span class="badge">SO-SFP-L80D-D942</span> <span class="badge">SO-SFP-L80D-D942-E</span> <span class="badge">SO-SFP-L80D-D943</span> <span class="badge">SO-SFP-L80D-D943-E</span> <span class="badge">SO-SFP-L80D-D944</span> <span class="badge">SO-SFP-L80D-D944-E</span> <span class="badge">SO-SFP-L80D-D945</span> <span class="badge">SO-SFP-L80D-D945-E</span> <span class="badge">SO-SFP-L80D-D946</span> <span class="badge">SO-SFP-L80D-D946-E</span> <span class="badge">SO-SFP-L80D-D947</span> <span class="badge">SO-SFP-L80D-D947-E</span> <span class="badge">SO-SFP-L80D-D948</span> <span class="badge">SO-SFP-L80D-D948-E</span> <span class="badge">SO-SFP-L80D-D949</span> <span class="badge">SO-SFP-L80D-D949-E</span> <span class="badge">SO-SFP-L80D-D950</span> <span class="badge">SO-SFP-L80D-D950-E</span> <span class="badge">SO-SFP-L80D-D951</span> <span class="badge">SO-SFP-L80D-D951-E</span> <span class="badge">SO-SFP-L80D-D952</span> <span class="badge">SO-SFP-L80D-D952-E</span> <span class="badge">SO-SFP-L80D-D953</span> <span class="badge">SO-SFP-L80D-D953-E</span> <span class="badge">SO-SFP-L80D-D954</span> <span class="badge">SO-SFP-L80D-D954-E</span> <span class="badge">SO-SFP-L80D-D955</span> <span class="badge">SO-SFP-L80D-D955-E</span> <span class="badge">SO-SFP-L80D-D956</span> <span class="badge">SO-SFP-L80D-D956-E</span> <span class="badge">SO-SFP-L80D-D957</span> <span class="badge">SO-SFP-L80D-D957-E</span> <span class="badge">SO-SFP-L80D-D958</span> <span class="badge">SO-SFP-L80D-D958-E</span> <span class="badge">SO-SFP-L80D-D959</span> <span class="badge">SO-SFP-L80D-D959-E</span> <span class="badge">SO-SFP-L80D-D960</span> <span class="badge">SO-SFP-L80D-D960-E</span></td></tr>
+<tr><td>wavelength_center_nm</td><td><span class="badge">1562.23</span> <span class="badge">1561.42</span> <span class="badge">1560.61</span> <span class="badge">1559.79</span> <span class="badge">1558.98</span> <span class="badge">1558.17</span> <span class="badge">1557.36</span> <span class="badge">1556.55</span> <span class="badge">1555.75</span> <span class="badge">1554.94</span> <span class="badge">1554.13</span> <span class="badge">1553.33</span> <span class="badge">1552.52</span> <span class="badge">1551.72</span> <span class="badge">1550.92</span> <span class="badge">1550.12</span> <span class="badge">1549.32</span> <span class="badge">1548.51</span> <span class="badge">1547.72</span> <span class="badge">1546.92</span> <span class="badge">1546.12</span> <span class="badge">1545.32</span> <span class="badge">1544.53</span> <span class="badge">1543.73</span> <span class="badge">1542.94</span> <span class="badge">1542.14</span> <span class="badge">1541.35</span> <span class="badge">1540.56</span> <span class="badge">1539.77</span> <span class="badge">1538.98</span> <span class="badge">1538.19</span> <span class="badge">1537.4</span> <span class="badge">1536.61</span> <span class="badge">1535.82</span> <span class="badge">1535.04</span> <span class="badge">1534.25</span> <span class="badge">1533.47</span> <span class="badge">1532.68</span> <span class="badge">1531.9</span> <span class="badge">1531.12</span> <span class="badge">1530.33</span> <span class="badge">1529.55</span></td></tr>
+<tr><td>frame</td><td><span class="badge">FE</span> <span class="badge">GbE</span> <span class="badge">STM4/OC12</span> <span class="badge">STM1/OC3</span> <span class="badge">1G FC</span> <span class="badge">CPRI Opt, 1, 2</span> <span class="badge">OBSAI 1x</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">0.1</span> <span class="badge">1.25</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>SFP</td></tr>
+<tr><td>standards_claimed</td><td>ITU-T G.694.1, SFF-8431, SFF-8432, SFF-8472</td></tr>
+<tr><td>wavelength_min_nm</td><td>1520.0</td></tr>
+<tr><td>wavelength_max_nm</td><td>1566.0</td></tr>
+<tr><td>wavelength_band</td><td>DWDM</td></tr>
+<tr><td>frequency_min_thz</td><td>191.9</td></tr>
+<tr><td>frequency_max_thz</td><td>196.0</td></tr>
+<tr><td>channel_spacing_ghz</td><td>100.0</td></tr>
+<tr><td>channel_total</td><td>42</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>-20.0</td></tr>
+<tr><td>temp_max_c</td><td>75.0</td></tr>
+<tr><td>power_consumption_w</td><td>1.5</td></tr>
+<tr><td>reach_km</td><td>80.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>0.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>5.0</td></tr>
+<tr><td>rx_sensitivity_dbm</td><td>-28.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-3.0</td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td>2080.0</td></tr>
+<tr><td>los_assert_dbm</td><td>-42.0</td></tr>
+<tr><td>los_deassert_dbm</td><td>-29.0</td></tr>
+<tr><td>los_hysteresis_db</td><td>0.5</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Power budget: 8 – 28dB. Power consumption is stated as &lt; 1.5W. Dispersion tolerance is stated as Typical 2080ps/nm. Standard operating temperature is 0°C to +70°C; extended-temperature (-E) models are -20°C to +75°C. Storage temperature is -40°C to +85°C. Transmitter output power is average power. Receiver minimum input power and overload are specified at 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back. LOS Assert is stated as Min -42dBm; LOS De-assert as Max -29dBm; LOS Hysteresis as Min 0.5dB.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>SO-SFP-L80D-Dxxx &amp; Dxxx-E, OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION</td></tr>
+<tr><td>suggestions</td><td>Add fields for power-budget range, storage-temperature range, protocol support, diagnostic monitoring, and inequality or typical-value qualifiers.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_center_nm</th><th>frame</th><th>bit_rate_gbps</th></tr><tr><td><strong>D919 C-temp</strong></td><td>SO-SFP-L80D-D919</td><td>1562.23</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D919 E-temp</strong></td><td>SO-SFP-L80D-D919-E</td><td>1562.23</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D920 C-temp</strong></td><td>SO-SFP-L80D-D920</td><td>1561.42</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D920 E-temp</strong></td><td>SO-SFP-L80D-D920-E</td><td>1561.42</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D921 C-temp</strong></td><td>SO-SFP-L80D-D921</td><td>1560.61</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D921 E-temp</strong></td><td>SO-SFP-L80D-D921-E</td><td>1560.61</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D922 C-temp</strong></td><td>SO-SFP-L80D-D922</td><td>1559.79</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D922 E-temp</strong></td><td>SO-SFP-L80D-D922-E</td><td>1559.79</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D923 C-temp</strong></td><td>SO-SFP-L80D-D923</td><td>1558.98</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D923 E-temp</strong></td><td>SO-SFP-L80D-D923-E</td><td>1558.98</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D924 C-temp</strong></td><td>SO-SFP-L80D-D924</td><td>1558.17</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D924 E-temp</strong></td><td>SO-SFP-L80D-D924-E</td><td>1558.17</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D925 C-temp</strong></td><td>SO-SFP-L80D-D925</td><td>1557.36</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D925 E-temp</strong></td><td>SO-SFP-L80D-D925-E</td><td>1557.36</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D926 C-temp</strong></td><td>SO-SFP-L80D-D926</td><td>1556.55</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D926 E-temp</strong></td><td>SO-SFP-L80D-D926-E</td><td>1556.55</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D927 C-temp</strong></td><td>SO-SFP-L80D-D927</td><td>1555.75</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D927 E-temp</strong></td><td>SO-SFP-L80D-D927-E</td><td>1555.75</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D928 C-temp</strong></td><td>SO-SFP-L80D-D928</td><td>1554.94</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D928 E-temp</strong></td><td>SO-SFP-L80D-D928-E</td><td>1554.94</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D929 C-temp</strong></td><td>SO-SFP-L80D-D929</td><td>1554.13</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D929 E-temp</strong></td><td>SO-SFP-L80D-D929-E</td><td>1554.13</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D930 C-temp</strong></td><td>SO-SFP-L80D-D930</td><td>1553.33</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D930 E-temp</strong></td><td>SO-SFP-L80D-D930-E</td><td>1553.33</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D931 C-temp</strong></td><td>SO-SFP-L80D-D931</td><td>1552.52</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D931 E-temp</strong></td><td>SO-SFP-L80D-D931-E</td><td>1552.52</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D932 C-temp</strong></td><td>SO-SFP-L80D-D932</td><td>1551.72</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D932 E-temp</strong></td><td>SO-SFP-L80D-D932-E</td><td>1551.72</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D933 C-temp</strong></td><td>SO-SFP-L80D-D933</td><td>1550.92</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D933 E-temp</strong></td><td>SO-SFP-L80D-D933-E</td><td>1550.92</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D934 C-temp</strong></td><td>SO-SFP-L80D-D934</td><td>1550.12</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D934 E-temp</strong></td><td>SO-SFP-L80D-D934-E</td><td>1550.12</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D935 C-temp</strong></td><td>SO-SFP-L80D-D935</td><td>1549.32</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D935 E-temp</strong></td><td>SO-SFP-L80D-D935-E</td><td>1549.32</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D936 C-temp</strong></td><td>SO-SFP-L80D-D936</td><td>1548.51</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D936 E-temp</strong></td><td>SO-SFP-L80D-D936-E</td><td>1548.51</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D937 C-temp</strong></td><td>SO-SFP-L80D-D937</td><td>1547.72</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D937 E-temp</strong></td><td>SO-SFP-L80D-D937-E</td><td>1547.72</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D938 C-temp</strong></td><td>SO-SFP-L80D-D938</td><td>1546.92</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D938 E-temp</strong></td><td>SO-SFP-L80D-D938-E</td><td>1546.92</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D939 C-temp</strong></td><td>SO-SFP-L80D-D939</td><td>1546.12</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D939 E-temp</strong></td><td>SO-SFP-L80D-D939-E</td><td>1546.12</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D940 C-temp</strong></td><td>SO-SFP-L80D-D940</td><td>1545.32</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D940 E-temp</strong></td><td>SO-SFP-L80D-D940-E</td><td>1545.32</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D941 C-temp</strong></td><td>SO-SFP-L80D-D941</td><td>1544.53</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D941 E-temp</strong></td><td>SO-SFP-L80D-D941-E</td><td>1544.53</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D942 C-temp</strong></td><td>SO-SFP-L80D-D942</td><td>1543.73</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D942 E-temp</strong></td><td>SO-SFP-L80D-D942-E</td><td>1543.73</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D943 C-temp</strong></td><td>SO-SFP-L80D-D943</td><td>1542.94</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D943 E-temp</strong></td><td>SO-SFP-L80D-D943-E</td><td>1542.94</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D944 C-temp</strong></td><td>SO-SFP-L80D-D944</td><td>1542.14</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D944 E-temp</strong></td><td>SO-SFP-L80D-D944-E</td><td>1542.14</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D945 C-temp</strong></td><td>SO-SFP-L80D-D945</td><td>1541.35</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D945 E-temp</strong></td><td>SO-SFP-L80D-D945-E</td><td>1541.35</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D946 C-temp</strong></td><td>SO-SFP-L80D-D946</td><td>1540.56</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D946 E-temp</strong></td><td>SO-SFP-L80D-D946-E</td><td>1540.56</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D947 C-temp</strong></td><td>SO-SFP-L80D-D947</td><td>1539.77</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D947 E-temp</strong></td><td>SO-SFP-L80D-D947-E</td><td>1539.77</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D948 C-temp</strong></td><td>SO-SFP-L80D-D948</td><td>1538.98</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D948 E-temp</strong></td><td>SO-SFP-L80D-D948-E</td><td>1538.98</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D949 C-temp</strong></td><td>SO-SFP-L80D-D949</td><td>1538.19</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D949 E-temp</strong></td><td>SO-SFP-L80D-D949-E</td><td>1538.19</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D950 C-temp</strong></td><td>SO-SFP-L80D-D950</td><td>1537.4</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D950 E-temp</strong></td><td>SO-SFP-L80D-D950-E</td><td>1537.4</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D951 C-temp</strong></td><td>SO-SFP-L80D-D951</td><td>1536.61</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D951 E-temp</strong></td><td>SO-SFP-L80D-D951-E</td><td>1536.61</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D952 C-temp</strong></td><td>SO-SFP-L80D-D952</td><td>1535.82</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D952 E-temp</strong></td><td>SO-SFP-L80D-D952-E</td><td>1535.82</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D953 C-temp</strong></td><td>SO-SFP-L80D-D953</td><td>1535.04</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D953 E-temp</strong></td><td>SO-SFP-L80D-D953-E</td><td>1535.04</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D954 C-temp</strong></td><td>SO-SFP-L80D-D954</td><td>1534.25</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D954 E-temp</strong></td><td>SO-SFP-L80D-D954-E</td><td>1534.25</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D955 C-temp</strong></td><td>SO-SFP-L80D-D955</td><td>1533.47</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D955 E-temp</strong></td><td>SO-SFP-L80D-D955-E</td><td>1533.47</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D956 C-temp</strong></td><td>SO-SFP-L80D-D956</td><td>1532.68</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D956 E-temp</strong></td><td>SO-SFP-L80D-D956-E</td><td>1532.68</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D957 C-temp</strong></td><td>SO-SFP-L80D-D957</td><td>1531.9</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D957 E-temp</strong></td><td>SO-SFP-L80D-D957-E</td><td>1531.9</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D958 C-temp</strong></td><td>SO-SFP-L80D-D958</td><td>1531.12</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D958 E-temp</strong></td><td>SO-SFP-L80D-D958-E</td><td>1531.12</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D959 C-temp</strong></td><td>SO-SFP-L80D-D959</td><td>1530.33</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D959 E-temp</strong></td><td>SO-SFP-L80D-D959-E</td><td>1530.33</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D960 C-temp</strong></td><td>SO-SFP-L80D-D960</td><td>1529.55</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr><tr><td><strong>D960 E-temp</strong></td><td>SO-SFP-L80D-D960-E</td><td>1529.55</td><td>[&#x27;FE&#x27;, &#x27;GbE&#x27;, &#x27;STM4/OC12&#x27;, &#x27;STM1/OC3&#x27;, &#x27;1G FC&#x27;, &#x27;CPRI Opt, 1, 2&#x27;, &#x27;OBSAI 1x&#x27;]</td><td>[0.1, 1.25]</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/gpt-5.6-sol &middot; Run 2026-10-14 17:17
+</footer>
+
+</div>
+</body>
+</html>

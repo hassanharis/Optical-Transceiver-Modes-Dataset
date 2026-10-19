@@ -1,0 +1,124 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "L9-SC315501-20PPC",
+    "L9-SC553101-20PPC",
+    "L9-SC315501-20PPI",
+    "L9-SC553101-20PPI"
+  ],
+  "form_factor": [
+    "1x9"
+  ],
+  "standards_claimed": [
+    "ITU-T G.957"
+  ],
+  "emitter_type": [
+    "LASER_FP"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    1270,
+    1510,
+    1260
+  ],
+  "wavelength_max_nm": [
+    1350,
+    1590,
+    1610
+  ],
+  "wavelength_center_nm": [
+    1310,
+    1550
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "1×9 package"
+  ],
+  "connector_type": [
+    "SC"
+  ],
+  "fiber_type": null,
+  "temp_min_c": -40,
+  "temp_max_c": 85,
+  "power_consumption_w": null,
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "G.957",
+    "STM-1",
+    "OC-3"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": null,
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    20
+  ],
+  "tx_power_min_dbm": [
+    -15
+  ],
+  "tx_power_max_dbm": [
+    -8,
+    -3
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -32
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -3
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": [
+    8.2
+  ],
+  "los_assert_dbm": null,
+  "los_deassert_dbm": null,
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Operating data rate stated as 155Mbps (Features) and 155.52 Mbps (Recommended Operating Conditions); not given in Gbps. Ordering table Tx P(dBm) -15~-3 vs Transmitter Launch Optical Power Po -15 to -8 dBm (Note: 20km); both explicitly stated. PPI variants (…-20PPI) list Working Temp -40~85℃; PPC variants list -10~70℃. Absolute Maximum Ratings lists Operating Temperature TC 0~70℃ and TI -40~85℃. Recommended Operating Conditions lists TC 0~70℃ and TI -40~85℃. Receiver Signal Detect Range -45~-38 dBm; not labeled LOS assert/deassert. Supply current Icc max 250 mA; power in W not stated. Simplex SC optical interface stated in Features and Dimensions.",
+  "provenance_datasheet_sections": [
+    "L9-SC553101-20PPI",
+    "Features",
+    "Applications",
+    "Standard",
+    "Ordering Information",
+    "Absolute Maximum Ratings",
+    "Recommended Operating Conditions",
+    "Transmitter Optical ,Electrical characteristics",
+    "Receiver Optical Electrical Characteristics",
+    "Dimensions: Simplex SC receptacle optical interface"
+  ],
+  "suggestions": "Consider a bit_rate_mbps field or allow Mbps without conversion. form_factor enum could include 1x9. Signal Detect Range may map to LOS if vendor confirms assert vs deassert endpoints."
+}

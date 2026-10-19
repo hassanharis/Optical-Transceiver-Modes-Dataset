@@ -1,0 +1,9 @@
+{
+  "modes": [
+    {
+      "label": "N286-01G-SX-A 1000Base-SX MMF",
+      "host_interface_name": "1000Base-SX",
+      "standards_code": "1000Base-SX"
+    }
+  ]
+}

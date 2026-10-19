@@ -1,0 +1,11 @@
+{
+  "modes": [
+    {
+      "label": "OP13PI8-005D 1.6T 2x800G-DR4",
+      "model": "OP13PI8-005D",
+      "standards_code": "IEEE 802.3dj-2024",
+      "rx_sensitivity_dbm": -3.4,
+      "rx_overload_dbm": 4.0
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "4G Fibre Channel",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "host_interface_name": "SFF-8431",
+      "standards_code": "FC-PI-5",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "8G Fibre Channel",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "host_interface_name": "SFF-8431",
+      "standards_code": "FC-PI-5",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "16G FC 1600-SM-LC-L",
+      "wavelength_min_nm": 1295.0,
+      "wavelength_max_nm": 1325.0,
+      "host_interface_name": "1600-SM-LC-L",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    }
+  ]
+}

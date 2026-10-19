@@ -1,0 +1,454 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-ZR",
+      "wavelength_min_nm": 1450.0,
+      "wavelength_max_nm": 1620.0,
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3125
+    },
+    {
+      "label": "10GBASE-ZW",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 9.953
+    },
+    {
+      "label": "Data rate 8.0 Gbps (min)",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 8.0
+    },
+    {
+      "label": "Data rate 10.3 Gbps (typ)",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "Data rate 10.7 Gbps (max)",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "C Band",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.7
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 17",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1563.86,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 18",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1563.04,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 19",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1562.23,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 20",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1561.41,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 21",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1560.6,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 22",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1559.79,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 23",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1558.98,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 24",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1558.17,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 25",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1557.36,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 26",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1556.55,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 27",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1555.74,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 28",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1554.94,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 29",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1554.13,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 30",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1553.32,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 31",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1552.52,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 32",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1551.72,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 33",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1550.92,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 34",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1550.11,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 35",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1549.32,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 36",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1548.51,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 37",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1547.71,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 38",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1546.92,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 39",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1546.12,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 40",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1545.32,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 41",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1544.52,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 42",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1543.73,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 43",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1542.93,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 44",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1542.14,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 45",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1541.34,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 46",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1540.55,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 47",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1539.76,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 48",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1538.97,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 49",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1538.19,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 50",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1537.4,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 51",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1536.61,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 52",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1535.82,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 53",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 54",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1534.25,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 55",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1533.46,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 56",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1532.68,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 57",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1531.89,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 58",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1531.12,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 59",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 60",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1529.55,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    },
+    {
+      "label": "LS-DWxx10-80I ITU Ch 61",
+      "wavelength_min_nm": 1528.77,
+      "wavelength_max_nm": 1563.05,
+      "wavelength_center_nm": 1528.77,
+      "wavelength_band": "DWDM",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 10.3
+    }
+  ]
+}

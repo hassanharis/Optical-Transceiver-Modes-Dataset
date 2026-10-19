@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"1.6T 2xDR4 OSFP (average launch)\",\n      \"standards_code\": \"2xDR4\",\n      \"bit_rate_gbps\": 1600.0,\n      \"tx_power_min_dbm\": -2.8,\n      \"tx_power_max_dbm\": 4.0,\n      \"rx_sensitivity_dbm\": -3.4,\n      \"rx_overload_dbm\": 5.0\n    },\n    {\n      \"label\": \"Transmit OMA (max(TDECQ,TECQ) < 0.9 dB)\",\n      \"standards_code\": \"IEEE 802.3dj\",\n      \"bit_rate_gbps\": 212.5,\n      \"tx_power_min_dbm\": -0.3,\n      \"tx_power_max_dbm\": 4.2,\n      \"rx_sensitivity_dbm\": -0.9,\n      \"rx_overload_dbm\": 4.2\n    },\n    {\n      \"label\": \"Transmit OMA (0.9 dB \u2264 max(TDECQ,TECQ) \u2264 3.4 dB)\",\n      \"standards_code\": \"800G-DR4\",\n      \"bit_rate_gbps\": 212.5,\n      \"tx_power_min_dbm\": -1.2,\n      \"tx_power_max_dbm\": 4.2,\n      \"rx_sensitivity_dbm\": -0.9,\n      \"rx_overload_dbm\": 4.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

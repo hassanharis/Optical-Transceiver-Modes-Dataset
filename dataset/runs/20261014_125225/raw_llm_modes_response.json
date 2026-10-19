@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"SO-SFP-1000Base-L20D GbE 1.25G\",\n      \"model\": \"SO-SFP-1000Base-L20D\",\n      \"wavelength_max_nm\": 1360.0,\n      \"standards_code\": \"1000BASE-L20D\",\n      \"bit_rate_gbps\": 1.25\n    },\n    {\n      \"label\": \"SO-SFP-1000Base-L20D 1G FC 1.0625G\",\n      \"model\": \"SO-SFP-1000Base-L20D\",\n      \"wavelength_max_nm\": 1600.0,\n      \"standards_code\": \"1G FC\",\n      \"bit_rate_gbps\": 1.0625\n    },\n    {\n      \"label\": \"SO-SFP-1000Base-L20D-I GbE 1.25G\",\n      \"model\": \"SO-SFP-1000Base-L20D-I\",\n      \"wavelength_max_nm\": 1360.0,\n      \"standards_code\": \"1000BASE-L20D\",\n      \"bit_rate_gbps\": 1.25\n    },\n    {\n      \"label\": \"SO-SFP-1000Base-L20D-I 1G FC 1.0625G\",\n      \"model\": \"SO-SFP-1000Base-L20D-I\",\n      \"wavelength_max_nm\": 1600.0,\n      \"standards_code\": \"1G FC\",\n      \"bit_rate_gbps\": 1.0625\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

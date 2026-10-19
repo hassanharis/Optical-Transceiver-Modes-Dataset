@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"GPON\",\n      \"wavelength_min_nm\": 1290.0,\n      \"wavelength_max_nm\": 1330.0,\n      \"wavelength_center_nm\": 1310.0,\n      \"power_consumption_w\": 2.1,\n      \"host_interface_name\": \"SGMII\",\n      \"media_interface_name\": \"GPON\",\n      \"standards_code\": \"ITU-T G.984.2\",\n      \"bit_rate_gbps\": 1.244\n    },\n    {\n      \"label\": \"EPON\",\n      \"wavelength_min_nm\": 1480.0,\n      \"wavelength_max_nm\": 1500.0,\n      \"wavelength_center_nm\": 1490.0,\n      \"power_consumption_w\": 2.5,\n      \"host_interface_name\": \"1000BASE-X\",\n      \"media_interface_name\": \"EPON\",\n      \"standards_code\": \"IEEE 802.3AH\",\n      \"bit_rate_gbps\": 1.25\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

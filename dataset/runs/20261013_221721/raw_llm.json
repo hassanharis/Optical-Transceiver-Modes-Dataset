@@ -1,0 +1,135 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TS2014-S30x-SO",
+    "TS2014-S30C-SO",
+    "TS2014-S30I-SO"
+  ],
+  "form_factor": [
+    "SFP28"
+  ],
+  "standards_claimed": [
+    "SFF-8402",
+    "SFF-8472",
+    "SFF-8419",
+    "IEEE 802.3cc"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1299.02
+  ],
+  "wavelength_max_nm": [
+    1301.09
+  ],
+  "wavelength_center_nm": [
+    1300.05
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    1
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    2.5,
+    3.5
+  ],
+  "host_interface_name": [
+    "25GAUI"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "25GE",
+    "25G Ethernet"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    25.78
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    80
+  ],
+  "tx_power_min_dbm": [
+    2.0,
+    3.7
+  ],
+  "tx_power_max_dbm": [
+    7.0,
+    7.8
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -31,
+    -26.5,
+    -28.1
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -6.0
+  ],
+  "cd_tolerance_ps_nm": [],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [
+    5e-05
+  ],
+  "post_fec_ber_target": [],
+  "extinction_ratio_db": [
+    8
+  ],
+  "los_assert_dbm": [
+    -40
+  ],
+  "los_deassert_dbm": [
+    -29.5
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [
+    1
+  ],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Described as SFP+ form-factor for 25Gbps Ethernet. FEC required in host equipment. Optical parameters specified at 25.78Gbps (25GE) and BER 5x10-5. Power budget 13–30.2 dB. Dispersion penalty < 3.0 dB. TS2014-S30C-SO: operating temperature 0°C to +70°C, power consumption < 2.5W @ 0°C to +70°C. TS2014-S30I-SO: operating temperature -40°C to +85°C, power consumption < 3.5W @ -40°C to +85°C. Storage temperature -40°C to +85°C. Footnote 1): average power min for receiver sensitivity -31 dBm and minimum input power typical -28.1 dBm is informative. Footnote 2): OMA receiver sensitivity -26.5 dBm and -28.1 dBm are typical individual-component values. Tx output power min/max are average power; OMA min +3.7 dBm, max +7.8 dBm.",
+  "provenance_datasheet_sections": [
+    "SFP28 ZR 80km",
+    "SFP28, 25G Ethernet ZR, 1300nm, SM, 80km, 30dB, LC, C-temp, I-temp",
+    "TS2014-S30x-SO",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Clarify whether temp_min_c/temp_max_c should be per orderable SKU (C vs I). Dispersion penalty < 3.0 dB lacks paired penalized parameter and conditions for penalties[] schema. Consider separate fields for OMA vs average tx/rx power."
+}

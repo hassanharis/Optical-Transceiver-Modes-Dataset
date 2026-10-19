@@ -1,0 +1,118 @@
+{
+  "multi_valued": {
+    "model": [
+      "MIL-SxF-LT11M",
+      "MIL-SNF-LT11M",
+      "MIL-STF-LT11M"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1285.0
+    ],
+    "wavelength_max_nm": [
+      1355.0,
+      1380.0
+    ],
+    "standards_code": [
+      "IEEE 802.3u",
+      "FDDI PMD ISO / IEC 9314-3",
+      "ANSI X3.297",
+      "FC-PH-2"
+    ]
+  },
+  "general": {
+    "vendor": "Stratos",
+    "form_factor": [
+      "SFF"
+    ],
+    "standards_claimed": [
+      "IEEE 802.3u",
+      "MSA 2x5 footprint",
+      "IEEE",
+      "ANSI",
+      "FDDI PMD ISO / IEC 9314-3",
+      "ANSI X3.297",
+      "FC-PH-2"
+    ],
+    "emitter_type": [
+      "LED"
+    ],
+    "photodetector_type": [
+      "PIN"
+    ],
+    "wavelength_center_nm": [
+      1310.0
+    ],
+    "mounting_type": [
+      "Mounting Studs"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM1",
+      "MMF 50/125µm"
+    ],
+    "temp_min_c": -40.0,
+    "temp_max_c": 85.0,
+    "host_interface_name": [
+      "LVPECL"
+    ],
+    "bit_rate_gbps": [
+      0.125
+    ],
+    "modulation_format": [
+      "NRZ"
+    ],
+    "reach_km": [
+      2.0
+    ],
+    "tx_power_min_dbm": [
+      -20.0
+    ],
+    "tx_power_max_dbm": [
+      -13.0
+    ],
+    "rx_sensitivity_dbm": [
+      -32.0
+    ],
+    "rx_overload_dbm": [
+      -8.0
+    ],
+    "post_fec_ber_target": [
+      1e-10
+    ],
+    "extinction_ratio_db": [
+      12.0
+    ],
+    "los_assert_dbm": [
+      -32.0
+    ],
+    "los_deassert_dbm": [
+      -32.5
+    ],
+    "optical_extinction_ratio_db": [
+      12.0
+    ],
+    "los_hysteresis_db": [
+      0.5,
+      2.25,
+      3.5
+    ],
+    "penalties": [],
+    "notes": "Cinch Connectivity Solutions distributes this module. Ordering lists 125 Mbps and 1310 nm MMF; transmitter/receiver footnotes use BER = 10^-10 @ 1.25 Gbps, PRBS 27-1, NRZ. Optical sensitivity and TX power footnotes reference 62.5 MM fiber and FDDI/IEEE-802.3u or ANSI X3.297 / FC-PH-2. RX max optical input -8.0 dBm is the table Max for Optical Sensitivity PI. Supply current TX 180–230 mA, RX 150–170 mA at VCC 3.135–3.465 V; power in watts not stated. Conformal coating Parylene C (MIL-I-46058C Type XY). Link distance 2.0 km for 62.5/125 60 MHz·km and 50/125 500 MHz·km.",
+    "provenance_datasheet_sections": [
+      "MIL-SxF-LT11M Military SFF Optical Transceiver",
+      "Fast Ethernet Applications 3.3 V, 1310 nm LED, multimode, up to 2.0 km",
+      "Features & Benefits",
+      "Ordering Information",
+      "Recommended Operating Conditions",
+      "Transmitter[ 2]",
+      "Receiver[ 3]",
+      "Link Distance",
+      "Pin Functions"
+    ],
+    "suggestions": "Distinguish product rate (125 Mbps ordering) vs lab test rate (1.25 Gbps in footnotes) in schema. Add fields for spectral width, rise/fall time, and supply current if common for LED SFF modules."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "modes": [
+    {
+      "label": "CSFP BiDi 10km TX1550/RX1310 Commercial",
+      "model": "SO-CSFP-1000Base-BX10D-53-O2",
+      "wavelength_min_nm": 1540.0,
+      "wavelength_max_nm": 1560.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1000BASE-BX10D"
+    },
+    {
+      "label": "CSFP BiDi 10km TX1550/RX1310 Industrial (-I)",
+      "model": "SO-CSFP-1000Base-BX10D-53-O2-I",
+      "wavelength_min_nm": 1540.0,
+      "wavelength_max_nm": 1560.0,
+      "wavelength_center_nm": 1550.0,
+      "standards_code": "1000BASE-BX10D"
+    }
+  ]
+}

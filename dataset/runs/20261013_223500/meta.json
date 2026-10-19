@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:35:00.431271+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftcd4543e2pxm-transceiver-ds.pdf",
+  "page_count": 11,
+  "table_count": 9,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 14.298,
+    "extract_atoms": 25.607,
+    "store_run": 0.008,
+    "synthesize_modes": 31.823,
+    "store_modes": 0.004,
+    "total": 71.739
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-10GE-ZR",
+      "SO-SFP-10GE-ZR-I"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1528.0
+    ],
+    "host_interface_name": [
+      "10GBASE-ZR",
+      "10GBASE-ZW"
+    ],
+    "standards_code": [
+      "10GBASE-ZR",
+      "10GBASE-ZW",
+      "GbE",
+      "10GbE-LAN",
+      "10GbE-WAN",
+      "OTU1",
+      "OTU2",
+      "OTU2e",
+      "STM-64",
+      "OC192",
+      "STM-16",
+      "OC48",
+      "STM-4",
+      "OC12",
+      "1G FC",
+      "2G FC",
+      "4G FC",
+      "8G FC",
+      "10G FC",
+      "CPRI Opt",
+      "CPRI 1",
+      "CPRI 2",
+      "CPRI 3",
+      "CPRI 4",
+      "CPRI 5",
+      "CPRI 6",
+      "CPRI 7",
+      "CPRI 7A",
+      "CPRI 8",
+      "OBSAI 1x",
+      "OBSAI 2x",
+      "OBSAI 4x",
+      "OBSAI 8x"
+    ],
+    "bit_rate_gbps": [
+      0.6,
+      11.3
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP+"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_max_nm": [
+      1565.0
+    ],
+    "wavelength_center_nm": [
+      1550.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.5
+    ],
+    "media_interface_name": [],
+    "frame": [],
+    "modulation_format": [],
+    "reach_km": [
+      80.0
+    ],
+    "tx_power_min_dbm": [
+      0.0
+    ],
+    "tx_power_max_dbm": [
+      5.0
+    ],
+    "rx_sensitivity_dbm": [
+      -23.0
+    ],
+    "rx_overload_dbm": [
+      -8.0
+    ],
+    "cd_tolerance_ps_nm": [
+      1600.0
+    ],
+    "fec_type": [],
+    "pre_fec_ber_threshold": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -36.0
+    ],
+    "los_deassert_dbm": [
+      -24.0
+    ],
+    "penalties": [],
+    "notes": "Operating temperature for SO-SFP-10GE-ZR-I is -40°C to +85°C; standard SO-SFP-10GE-ZR is -0°C to +70°C. temp_min_c/temp_max_c reflect -ZR variant only. Power budget 13–23 dB. Dispersion penalty Max 3dB @ 1600ps/nm (no separate penalized optical parameter value stated). Receiver minimum input power -23.0dBm @ 10.3Gbps, BER 1x10-12, PRBS 2^31-1, back-to-back. Transmitter/receiver power values are average power. Title/ordering: 23dB, 80km. Storage temperature -40°C to +85°C. Optical performance per ZR/ZW-standard.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-10GE-ZR & -ZR-I SFP+, 10G Multirate, 1550nm, SM, DDM, 23dB, 80km",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Include list-valued operating temperature per order code (-ZR vs -ZR-I). Dispersion penalty row could map to penalties if penalized_value is defined as power-budget reduction in dB."
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-155M-O-Cxx-E",
+    "SO-SFP-155M-O-C49-E",
+    "SO-SFP-155M-O-C51-E",
+    "SO-SFP-155M-O-C61-E",
+    "SO-SFP-155M-O-C62-E"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1260,
+    1484.5,
+    1504.5,
+    1604.5,
+    1618.5
+  ],
+  "wavelength_max_nm": [
+    1497.5,
+    1517.5,
+    1617.5,
+    1631.5,
+    1635
+  ],
+  "wavelength_center_nm": [
+    1491,
+    1511,
+    1611,
+    1625
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -20,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    0.9
+  ],
+  "host_interface_name": [
+    "100M Ethernet",
+    "STM1/OC3"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "STM1",
+    "OC3"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    125,
+    155,
+    100
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    100
+  ],
+  "tx_power_min_dbm": [
+    -2
+  ],
+  "tx_power_max_dbm": [
+    1
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -36
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    1
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -25
+  ],
+  "los_deassert_dbm": [
+    -24
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    1
+  ],
+  "total_jitter_ps": null,
+  "penalties": null,
+  "notes": "Bit rates stated as 125Mbps / 155Mbps; overview also cites 100Mbps Ethernet. Tx output power min/max and rx min/overload are average power (footnote 1). Rx minimum input power -36dBm valid per footnote 2 at 125Mbps PRBS7 and BER 1x10-12. Nominal wavelengths 1491nm/1511nm/1611nm/1625nm map to orderable variants C49/C51/C61/C62-E and transmit wavelength ranges in footnotes 3–6. Power budget 0–34dB (footnote 7). DDM reports Rx power reliably down to -25dBm; below -25dBm reporting unreliable and Rx_LOS asserted; Rx sensitivity still valid down to -36dBm when Rx_LOS asserted. OTDR: dynamic range typ 65dB, dead zone max 30m, resolution max 10m, accuracy max 50m. Storage temperature -40°C to +85°C. Power consumption < 0.9W.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-155M-O-Cxx-E SFP, OSC/OTDR, 155Mbps, CWDM, SM, 100km, LC, E-temp",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ],
+  "suggestions": "Schema bit_rate_gbps conflicts with Mbps values in source; consider Mbps field or document unit. OTDR parameters (dynamic range, dead zone, resolution, accuracy) are not in schema. Power budget 0–34dB may warrant a dedicated field."
+}

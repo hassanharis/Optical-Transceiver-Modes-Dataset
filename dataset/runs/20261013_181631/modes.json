@@ -1,0 +1,58 @@
+{
+  "modes": [
+    {
+      "label": "AOP13LI8-001 1 m SMF",
+      "model": "AOP13LI8-001",
+      "power_consumption_w": 10.0,
+      "host_interface_name": "OSFP MSA",
+      "standards_code": "IEEE 802.3dj-2024",
+      "bit_rate_gbps": 212.5,
+      "reach_km": 0.001
+    },
+    {
+      "label": "AOP13LI8-005 5 m SMF",
+      "model": "AOP13LI8-005",
+      "power_consumption_w": 10.0,
+      "host_interface_name": "OSFP MSA",
+      "standards_code": "IEEE 802.3dj-2024",
+      "bit_rate_gbps": 212.5,
+      "reach_km": 0.005
+    },
+    {
+      "label": "AOP13LI8-010 10 m SMF",
+      "model": "AOP13LI8-010",
+      "power_consumption_w": 10.0,
+      "host_interface_name": "OSFP MSA",
+      "standards_code": "IEEE 802.3dj-2024",
+      "bit_rate_gbps": 212.5,
+      "reach_km": 0.01
+    },
+    {
+      "label": "AOP13LI8-030 30 m SMF",
+      "model": "AOP13LI8-030",
+      "power_consumption_w": 10.0,
+      "host_interface_name": "OSFP MSA",
+      "standards_code": "IEEE 802.3dj-2024",
+      "bit_rate_gbps": 212.5,
+      "reach_km": 0.03
+    },
+    {
+      "label": "AOP13LI8-050 50 m SMF",
+      "model": "AOP13LI8-050",
+      "power_consumption_w": 10.0,
+      "host_interface_name": "OSFP MSA",
+      "standards_code": "IEEE 802.3dj-2024",
+      "bit_rate_gbps": 212.5,
+      "reach_km": 0.05
+    },
+    {
+      "label": "AOP13LI8-100 100 m SMF",
+      "model": "AOP13LI8-100",
+      "power_consumption_w": 10.0,
+      "host_interface_name": "OSFP MSA",
+      "standards_code": "IEEE 802.3dj-2024",
+      "bit_rate_gbps": 212.5,
+      "reach_km": 0.1
+    }
+  ]
+}

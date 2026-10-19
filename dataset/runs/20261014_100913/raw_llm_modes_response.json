@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "From the datasheet, **OP13LD8-005D** is a single **800G LPO OSFP 2xDR4** module: 106.25 Gb/s per channel, **800G Ethernet**, dual **DR4** (dual MPO-12), typ/max power **7.5 W / &lt;8.5 W**, and standards **100G-DR-LPO / LPO MSA / IEEE802.3cu / 2xDR4** all apply to that same product\u2014not separate selectable modes. No amplified vs unamplified split and no per-mode penalty rows.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"800G LPO OSFP 2xDR4\",\n      \"power_consumption_w\": 7.5,\n      \"media_interface_name\": \"DR4\",\n      \"standards_code\": \"2xDR4\",\n      \"bit_rate_gbps\": 800.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

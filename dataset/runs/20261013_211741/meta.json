@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T21:17:41.886915+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-Stratos-MIL-SxK-ST31M.pdf",
+  "page_count": 7,
+  "table_count": 8,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 9.928,
+    "extract_atoms": 18.2,
+    "store_run": 0.007,
+    "synthesize_modes": 37.997,
+    "store_modes": 0.003,
+    "total": 66.135
+  }
+}

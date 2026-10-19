@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "Grouping follows the CMIS Application Code table (codes 1 and 2). No penalties were supplied; the output schema has no `penalties` field.\n\n```json\n{\n  \"modes\": [\n    {\n      \"label\": \"400GBASE-DR4 / 400GAUI-8 (CMIS App Code 1)\",\n      \"host_interface_name\": \"400GAUI-8\",\n      \"host_interface_id\": 1,\n      \"media_interface_name\": \"400GBASE-DR4\",\n      \"frame\": \"1x 400GAUI-8 (8x 50G)\",\n      \"standards_code\": \"400GBASE-DR4\",\n      \"bit_rate_gbps\": 425.0,\n      \"fec_type\": \"RS_GENERIC\",\n      \"number_of_lanes\": 8\n    },\n    {\n      \"label\": \"4x100GBASE-DR breakout / 100GAUI-2 (CMIS App Code 2)\",\n      \"host_interface_name\": \"100GAUI-2\",\n      \"host_interface_id\": 2,\n      \"media_interface_name\": \"100GBASE-DR\",\n      \"frame\": \"4x 100GAUI-2 (2x 50G)\",\n      \"standards_code\": \"100GBASE-DR (Clause 140)\",\n      \"bit_rate_gbps\": 425.0,\n      \"fec_type\": \"RS_GENERIC\",\n      \"number_of_lanes\": 4\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

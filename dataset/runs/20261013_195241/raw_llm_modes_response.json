@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"25GBASE-SR 100m OM4\",\n      \"media_interface_name\": \"25GBASE-SR\",\n      \"standards_code\": \"25GBASE-SR\",\n      \"baud_rate_gbaud\": 25.78125,\n      \"bit_rate_gbps\": 25.78125,\n      \"reach_km\": 0.1,\n      \"tx_power_max_dbm\": 2.4,\n      \"rx_sensitivity_dbm\": -5.2,\n      \"extinction_ratio_db\": 2.0\n    },\n    {\n      \"label\": \"25GBASE-SR 70m OM3\",\n      \"media_interface_name\": \"25GBASE-SR\",\n      \"standards_code\": \"25GBASE-SR\",\n      \"baud_rate_gbaud\": 25.78125,\n      \"bit_rate_gbps\": 25.78125,\n      \"reach_km\": 0.07,\n      \"tx_power_max_dbm\": 2.4,\n      \"rx_sensitivity_dbm\": -5.2,\n      \"extinction_ratio_db\": 2.0\n    },\n    {\n      \"label\": \"10GBASE-SR (rate select low)\",\n      \"media_interface_name\": \"10GBASE-SR\",\n      \"standards_code\": \"10GBASE-SR\",\n      \"baud_rate_gbaud\": 10.3125,\n      \"bit_rate_gbps\": 10.3125,\n      \"tx_power_max_dbm\": 0.0,\n      \"rx_sensitivity_dbm\": -11.1,\n      \"extinction_ratio_db\": 3.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

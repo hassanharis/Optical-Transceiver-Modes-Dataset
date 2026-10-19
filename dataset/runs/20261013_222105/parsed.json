@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-tsd001-s31c-so-sfp-dd-100g-dr-r6.0.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "markdown_chars": 5562,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 13
+    },
+    {
+      "page": 0,
+      "label": null,
+      "rows": 18
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:08:15.583692+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-tqd023-sl4c-so-qsfpdd-400g-er4-lite-c4-r6.1.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.192,
+    "extract_atoms": 27.826,
+    "store_run": 0.006,
+    "synthesize_modes": 122.451,
+    "store_modes": 0.003,
+    "total": 154.477
+  }
+}

@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "otse"
+version = "0.1.0"
+description = "Optical transceiver datasheet extraction and dataset composition tools"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dynamic = ["dependencies"]
+
+[project.scripts]
+otse-extract = "otse.pipeline.run:main"
+otse-app = "otse.launch:main"
+otse-export = "otse.scripts.export_all_modes:main"
+otse-composition = "otse.scripts.composition_report:main"
+
+[project.optional-dependencies]
+dev = ["ruff==0.16.1", "pytest==9.1.1"]
+
+[tool.setuptools.packages.find]
+where = ["software"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle
+    "F",   # pyflakes
+    "I",   # import sorting
+    "UP",  # pyupgrade
+    "B",   # bugbear
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Streamlit scripts execute top to bottom, so module-level statements follow imports.
+"software/otse/scripts/app.py" = ["E402"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["software"]

@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"4G Fibre Channel\",\n      \"wavelength_min_nm\": 1295.0,\n      \"wavelength_max_nm\": 1325.0,\n      \"host_interface_name\": \"SFF-8431\",\n      \"standards_code\": \"FC-PI-5\",\n      \"bit_rate_gbps\": 4.25\n    },\n    {\n      \"label\": \"8G Fibre Channel\",\n      \"wavelength_min_nm\": 1295.0,\n      \"wavelength_max_nm\": 1325.0,\n      \"host_interface_name\": \"SFF-8431\",\n      \"standards_code\": \"FC-PI-5\",\n      \"bit_rate_gbps\": 8.5\n    },\n    {\n      \"label\": \"16G FC 1600-SM-LC-L\",\n      \"wavelength_min_nm\": 1295.0,\n      \"wavelength_max_nm\": 1325.0,\n      \"host_interface_name\": \"1600-SM-LC-L\",\n      \"standards_code\": \"16G FC\",\n      \"bit_rate_gbps\": 14.025\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

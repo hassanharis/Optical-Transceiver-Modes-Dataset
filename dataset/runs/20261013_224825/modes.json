@@ -1,0 +1,56 @@
+{
+  "modes": [
+    {
+      "label": "100G CWDM4 lane 1 (1264.5–1277.5 nm)",
+      "wavelength_min_nm": 1264.5,
+      "wavelength_max_nm": 1277.5,
+      "host_interface_name": "4x25G retimed electrical interface",
+      "standards_code": "CWDM4",
+      "baud_rate_gbaud": 25.78125,
+      "bit_rate_gbps": 25.78125,
+      "tx_power_min_dbm": -5.0,
+      "rx_sensitivity_dbm": -11.3,
+      "fec_type": "RS_GENERIC",
+      "los_assert_dbm": -24.0
+    },
+    {
+      "label": "100G CWDM4 lane 2 (1284.5–1297.5 nm)",
+      "wavelength_min_nm": 1284.5,
+      "wavelength_max_nm": 1297.5,
+      "host_interface_name": "4x25G retimed electrical interface",
+      "standards_code": "CWDM4",
+      "baud_rate_gbaud": 25.78125,
+      "bit_rate_gbps": 25.78125,
+      "tx_power_min_dbm": -5.0,
+      "rx_sensitivity_dbm": -11.3,
+      "fec_type": "RS_GENERIC",
+      "los_assert_dbm": -24.0
+    },
+    {
+      "label": "100G CWDM4 lane 3 (1304.5–1317.5 nm)",
+      "wavelength_min_nm": 1304.5,
+      "wavelength_max_nm": 1317.5,
+      "host_interface_name": "4x25G retimed electrical interface",
+      "standards_code": "CWDM4",
+      "baud_rate_gbaud": 25.78125,
+      "bit_rate_gbps": 25.78125,
+      "tx_power_min_dbm": -5.0,
+      "rx_sensitivity_dbm": -11.3,
+      "fec_type": "RS_GENERIC",
+      "los_assert_dbm": -24.0
+    },
+    {
+      "label": "100G CWDM4 lane 4 (1324.5–1337.5 nm)",
+      "wavelength_min_nm": 1324.5,
+      "wavelength_max_nm": 1337.5,
+      "host_interface_name": "4x25G retimed electrical interface",
+      "standards_code": "CWDM4",
+      "baud_rate_gbaud": 25.78125,
+      "bit_rate_gbps": 25.78125,
+      "tx_power_min_dbm": -5.0,
+      "rx_sensitivity_dbm": -11.3,
+      "fec_type": "RS_GENERIC",
+      "los_assert_dbm": -24.0
+    }
+  ]
+}

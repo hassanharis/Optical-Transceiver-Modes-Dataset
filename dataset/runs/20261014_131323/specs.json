@@ -1,0 +1,105 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-100BASE-L200D-Cxx",
+    "SO-SFP-100Base-L200D-C47",
+    "SO-SFP-100Base-L200D-C49",
+    "SO-SFP-100Base-L200D-C51",
+    "SO-SFP-100Base-L200D-C53",
+    "SO-SFP-100Base-L200D-C55",
+    "SO-SFP-100Base-L200D-C57",
+    "SO-SFP-100Base-L200D-C59",
+    "SO-SFP-100Base-L200D-C61"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472",
+    "G.694.2"
+  ],
+  "wavelength_min_nm": [
+    1470.0,
+    1471.0,
+    1100.0
+  ],
+  "wavelength_max_nm": [
+    1610.0,
+    1611.0,
+    1650.0
+  ],
+  "wavelength_center_nm": [
+    1470.0,
+    1490.0,
+    1510.0,
+    1530.0,
+    1550.0,
+    1570.0,
+    1590.0,
+    1610.0
+  ],
+  "wavelength_band": [
+    "CWDM"
+  ],
+  "channel_total": [
+    8
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "standards_code": [
+    "G.694.2",
+    "FE",
+    "STM-1",
+    "OC3",
+    "100M Ethernet",
+    "STM-1/OC3"
+  ],
+  "bit_rate_gbps": [
+    0.1,
+    0.125,
+    0.155
+  ],
+  "reach_km": [
+    200.0
+  ],
+  "tx_power_min_dbm": [
+    3.0
+  ],
+  "tx_power_max_dbm": [
+    7.0
+  ],
+  "rx_sensitivity_dbm": [
+    -44.0
+  ],
+  "rx_overload_dbm": [
+    -10.0
+  ],
+  "post_fec_ber_target": [
+    1e-10
+  ],
+  "los_assert_dbm": [
+    -55.0
+  ],
+  "los_deassert_dbm": [
+    -45.0
+  ],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "penalties": [],
+  "notes": "Typical reach 200 km depends on actual optical path attenuation; lower CWDM wavelengths have higher attenuation on standard SM fiber. Power budget stated as 17–47 dB in summary column. Optical path penalty 1 dB. Receiver minimum input power, overload, and related receiver specs measured at 155 Mbps using PRBS23 @ BER 1×10⁻¹⁰ (footnote 2). Transmitter output power values are average power (footnote 3). Operating temperature 0°C to +70°C; storage -40°C to +85°C. Power consumption listed as < 1 W. DDM: Yes. Safety/regulatory: TUV/UL/FDA (contact Smartoptics for latest certification), RoHS.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-100BASE-L200D-Cxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

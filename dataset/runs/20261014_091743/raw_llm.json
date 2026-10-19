@@ -1,0 +1,133 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LS-MM858G-S3I",
+    "LS-MM858G-S3C"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP+ MSA",
+    "SFF-8472",
+    "SFP Multi-Source Agreement"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": null,
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM3"
+  ],
+  "temp_min_c": -40,
+  "temp_max_c": 85,
+  "power_consumption_w": null,
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": null,
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    1.0,
+    2.125,
+    4.25,
+    8.5,
+    10.3,
+    10.7,
+    10.312
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.3
+  ],
+  "tx_power_min_dbm": [
+    -6.0
+  ],
+  "tx_power_max_dbm": [
+    -0.5
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -10.5
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3.0
+  ],
+  "los_assert_dbm": [
+    -22
+  ],
+  "los_deassert_dbm": [
+    -12
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5,
+    4
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Datasheet title and ordering describe 300 m reach on OM3-MMF. Operating case temperature depends on variant: Standard 0 to +70°C (LS-MM858G-S3C), Extended -20 to +85°C, Industrial -40 to +85°C (LS-MM858G-S3I). Supply current Icc max 260 mA at 3.135–3.465 V (3.30 V typical); power in watts not stated. Receiver sensitivity and overload measured with PRBS 2^31-1 @ 10312 Mbps, BER ≤ 1×10^-12. Optical power launched into MMF (tx power note). Data Rate row lists unit as bps with Min 1.0, Typical 10.3, Max 10.7. SMSR row has no numeric limits (dashes only). Spectral width (RMS) Δλ max 0.45 nm not mapped in schema.",
+  "provenance_datasheet_sections": [
+    "LS-MM858G-S3I 8Gbps SFP+ Transceiver, Multi Mode, 300m Reach",
+    "Product Features",
+    "Applications",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical and Electrical Characteristics",
+    "Notes:",
+    "Diagnostics",
+    "Ordering information"
+  ],
+  "suggestions": "Consider adding spectral_width_rms_nm and supply_current_ma_max; clarify whether bit_rate row unit bps is a typo for Gbps."
+}

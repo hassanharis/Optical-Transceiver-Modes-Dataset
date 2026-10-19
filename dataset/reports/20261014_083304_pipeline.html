@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline Output — Smartoptics [&#x27;DS-16G-ER-Dxxx&#x27;, &#x27;DS-16G-ER-D6142&#x27;, &#x27;DS-16G-ER-D6061&#x27;, &#x27;DS-16G-ER-D5979&#x27;, &#x27;DS-16G-ER-D5898&#x27;, &#x27;DS-16G-ER-D5817&#x27;, &#x27;DS-16G-ER-D5736&#x27;, &#x27;DS-16G-ER-D5655&#x27;, &#x27;DS-16G-ER-D5575&#x27;, &#x27;DS-16G-ER-D5494&#x27;, &#x27;DS-16G-ER-D5413&#x27;, &#x27;DS-16G-ER-D5333&#x27;, &#x27;DS-16G-ER-D5252&#x27;, &#x27;DS-16G-ER-D5172&#x27;, &#x27;DS-16G-ER-D5092&#x27;, &#x27;DS-16G-ER-D5012&#x27;, &#x27;DS-16G-ER-D4932&#x27;, &#x27;DS-16G-ER-D4851&#x27;, &#x27;DS-16G-ER-D4772&#x27;, &#x27;DS-16G-ER-D4692&#x27;, &#x27;DS-16G-ER-D4532&#x27;, &#x27;DS-16G-ER-D4453&#x27;, &#x27;DS-16G-ER-D4373&#x27;, &#x27;DS-16G-ER-D4294&#x27;, &#x27;DS-16G-ER-D4214&#x27;, &#x27;DS-16G-ER-D4135&#x27;, &#x27;DS-16G-ER-D4056&#x27;, &#x27;DS-16G-ER-D3977&#x27;, &#x27;DS-16G-ER-D3898&#x27;, &#x27;DS-16G-ER-D3819&#x27;, &#x27;DS-16G-ER-D3740&#x27;, &#x27;DS-16G-ER-D3661&#x27;, &#x27;DS-16G-ER-D3582&#x27;, &#x27;DS-16G-ER-D3504&#x27;, &#x27;DS-16G-ER-D3425&#x27;, &#x27;DS-16G-ER-D3347&#x27;, &#x27;DS-16G-ER-D3268&#x27;, &#x27;DS-16G-ER-D3190&#x27;, &#x27;DS-16G-ER-D3112&#x27;, &#x27;DS-16G-ER-D3033&#x27;, &#x27;DS-16G-ER-D2955&#x27;]</title>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --card: #334155; --accent: #38bdf8; --accent2: #a78bfa; --accent3: #34d399; --accent4: #fb923c; --text: #e2e8f0; --muted: #94a3b8; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 1.6rem; color: var(--accent); }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .pipeline .stage-dot { padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--border); }
+  .pipeline .arrow { color: var(--muted); font-size: 1.2rem; }
+  .stage-dot.s1 { background: rgba(56,189,248,0.15); color: var(--accent); border-color: var(--accent); }
+  .stage-dot.s2 { background: rgba(167,139,250,0.15); color: var(--accent2); border-color: var(--accent2); }
+  .stage-dot.s3 { background: rgba(52,211,153,0.15); color: var(--accent3); border-color: var(--accent3); }
+  .stage-dot.s4 { background: rgba(251,146,60,0.15); color: var(--accent4); border-color: var(--accent4); }
+  .stage { margin-bottom: 2.5rem; }
+  .stage-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .stage-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+  .stage-num.n1 { background: var(--accent); color: var(--bg); }
+  .stage-num.n2 { background: var(--accent2); color: var(--bg); }
+  .stage-num.n3 { background: var(--accent3); color: var(--bg); }
+  .stage-num.n4 { background: var(--accent4); color: var(--bg); }
+  .stage-title { font-size: 1.1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+  .meta-item { background: var(--card); border-radius: 6px; padding: 0.6rem 0.8rem; }
+  .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 0.15rem; }
+  pre { font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; color: var(--muted); max-height: 300px; overflow-y: auto; }
+  pre .key { color: var(--accent); }
+  pre .str { color: var(--accent3); }
+  pre .num { color: var(--accent4); }
+  pre .null { color: #6b7280; }
+  .json-block { background: var(--card); border-radius: 6px; padding: 1rem; margin-top: 0.5rem; }
+  .md-excerpt { background: var(--card); border-radius: 6px; padding: 1rem; font-size: 0.78rem; color: var(--muted); max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+  .badge { display: inline-block; background: rgba(56,189,248,0.15); color: var(--accent); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .cols-2 { grid-template-columns: 1fr; } }
+  .section-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Spec Extraction Pipeline</h1>
+  <p>LLM-powered structured extraction from PDF datasheets</p>
+  <div class="pipeline">
+    <span class="stage-dot s1">PDF Parse</span>
+    <span class="arrow">&rarr;</span>
+    <span class="stage-dot s2">Atom Extraction</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s3">Mode Separation</span>
+    <span class="arrow">&rarr;</span><span class="stage-dot s4">Mode Synthesis</span>
+  </div>
+</header>
+
+<!-- STAGE 1: PDF PARSE -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n1">1</span>
+    <span class="stage-title">PDF Parse</span>
+  </div>
+  <div class="card">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Source</div><div class="value">ds-16g-er-dxxx-r5.7.pdf</div></div>
+      <div class="meta-item"><div class="label">Pages</div><div class="value">2</div></div>
+      <div class="meta-item"><div class="label">Tables Detected</div><div class="value">3</div></div>
+      <div class="meta-item"><div class="label">Model</div><div class="value">cursor/composer-2.5</div></div>
+      <div class="meta-item"><div class="label">Timestamp</div><div class="value">2026-10-14 08:33</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-label">Extracted Markdown (excerpt)</div>
+    <div class="md-excerpt">DATASHEET 
+
+5.7 
+
+
+## **DS-16G-ER-Dxxx** 
+
+SFP+, 16/8/4G FC, DWDM 100GHz grid, 192.00 - 196.00THz (41ch), 40km, 13dB, LC, D2955-D6142 
+
+## OVERVIEW 
+
+The DS-16G-ER-Dxxx is a versatile DWDM transceiver in SFP+ form-factor supporting a wide range of Fiber Channel (FC) services (4G to 16G). The transceiver has been layer-1 tested and approved by Cisco. 
+
+For diagnostic purposes, the transceiver supports optical (OWRAP) and electrical (EWRAP) loop-back functionality, with or without forwarding. The transceiver is provided in 41 channel versions at the 100GHz DWDM grid as specified in the ITU-T 694.1 standard. The transceiver can also be used in 1550/1530nm CWDM applications by selecting wavelength versions that match these. 
+
+The optical performance provides a bridgeable distance of up to 40km (without dispersion compensation) for 16G FC. This transceiver provides digital diagnostic functions via a 2-wire serial interface as defined by the SFF-8472 specification. 
+
+The transceiver module is compliant to RoHS-6/6. 
+
+## TECHNICAL DATA 
+
+|**Parameter**|**Value**||**Parameter**|**Value**|
+|---|---|---|---|---|
+|Technology|DWDM 100GHz SFP+||**Transmitter data:**||
+|Transmission media|SM (2x LC)||Output power|Min: 0.0dBm1)|
+|Typical reach|40km|||Max: +4.0dBm1)|
+|Nominal wavelengths|192.00 - 196.00THz (41ch)||Transmit wavelengths|192.00 - 196.00THz|
+|Bit rate support|14.025Gbps|||100GHz (ITU-T G.694.1)|
+||8.500Gbps||**Receiver data:**||
+||4.250Gbps||Minimum input power 16G FC|-13.0dBm1) 2)|
+|Protocol support|16G FC||8G FC|-14.0dBm1) 2)|
+||8G FC||4G FC|-14.0dBm1) 2)|
+||4G FC||Overload (max power)|-2.0dBm1) 2)|
+|Power budget|6 – 13dB @ 16G FC||Wavelength range|1480 - 1580nm|
+||6 – 14dB @ 8G/4G FC||DDM|Yes|
+|Dispersion tolerance|800ps/nm1)||MSA compliance|SFF-8431, -8432, -8472|
+|Dispersion penalty|Max 2dB||||
+|Power consumption|&lt; 2.2W||||
+|Operating temperature|0°C to +70°C||||
+|Storage temperature|-40°C to +85°C||||
+|1)Average power|||||
+|2)@ BER &lt; 1E-12 using PRBS 231-1||||OWR
+...</div>
+  </div>
+</div>
+
+<!-- STAGE 2: ATOM EXTRACTION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n2">2</span>
+    <span class="stage-title">Atom Extraction (LLM &rarr; JSON)</span>
+  </div>
+  <div class="card">
+    <div class="section-label">Raw LLM Output &mdash; Structured Parameters</div>
+    <div class="json-block"><pre>{
+  <span class="key">"vendor"</span>: <span class="str">"Smartoptics"</span>,
+  <span class="key">"model"</span>: [
+    "DS-16G-ER-Dxxx",
+    "DS-16G-ER-D6142",
+    "DS-16G-ER-D6061",
+    "DS-16G-ER-D5979",
+    "DS-16G-ER-D5898",
+    "DS-16G-ER-D5817",
+    "DS-16G-ER-D5736",
+    "DS-16G-ER-D5655",
+    "DS-16G-ER-D5575",
+    "DS-16G-ER-D5494",
+    "DS-16G-ER-D5413",
+    "DS-16G-ER-D5333",
+    "DS-16G-ER-D5252",
+    "DS-16G-ER-D5172",
+    "DS-16G-ER-D5092",
+    "DS-16G-ER-D5012",
+    "DS-16G-ER-D4932",
+    "DS-16G-ER-D4851",
+    "DS-16G-ER-D4772",
+    "DS-16G-ER-D4692",
+    "DS-16G-ER-D4532",
+    "DS-16G-ER-D4453",
+    "DS-16G-ER-D4373",
+    "DS-16G-ER-D4294",
+    "DS-16G-ER-D4214",
+    "DS-16G-ER-D4135",
+    "DS-16G-ER-D4056",
+    "DS-16G-ER-D3977",
+    "DS-16G-ER-D3898",
+    "DS-16G-ER-D3819",
+    "DS-16G-ER-D3740",
+    "DS-16G-ER-D3661",
+    "DS-16G-ER-D3582",
+    "DS-16G-ER-D3504",
+    "DS-16G-ER-D3425",
+    "DS-16G-ER-D3347",
+    "DS-16G-ER-D3268",
+    "DS-16G-ER-D3190",
+    "DS-16G-ER-D3112",
+    "DS-16G-ER-D3033",
+    "DS-16G-ER-D2955"
+  ],
+  <span class="key">"form_factor"</span>: [
+    "SFP+"
+  ],
+  <span class="key">"standards_claimed"</span>: [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "ITU-T G.694.1"
+  ],
+  <span class="key">"emitter_type"</span>: <span class="null">null</span>,
+  <span class="key">"photodetector_type"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_min_nm"</span>: [
+    <span class="num">1480.0</span>,
+    <span class="num">1529.55</span>
+  ],
+  <span class="key">"wavelength_max_nm"</span>: [
+    <span class="num">1561.42</span>,
+    <span class="num">1580.0</span>
+  ],
+  <span class="key">"wavelength_center_nm"</span>: <span class="null">null</span>,
+  <span class="key">"wavelength_band"</span>: [
+    "DWDM",
+    "CWDM"
+  ],
+  <span class="key">"frequency_min_thz"</span>: [
+    <span class="num">192.0</span>
+  ],
+  <span class="key">"frequency_max_thz"</span>: [
+    <span class="num">196.0</span>
+  ],
+  <span class="key">"channel_spacing_ghz"</span>: [
+    <span class="num">100.0</span>
+  ],
+  <span class="key">"channel_total"</span>: [
+    <span class="num">41</span>
+  ],
+  <span class="key">"mounting_type"</span>: <span class="null">null</span>,
+  <span class="key">"connector_type"</span>: [
+    "LC"
+  ],
+  <span class="key">"fiber_type"</span>: [
+    "SMF"
+  ],
+  <span class="key">"temp_min_c"</span>: <span class="num">0.0</span>,
+  <span class="key">"temp_max_c"</span>: <span class="num">70.0</span>,
+  <span class="key">"power_consumption_w"</span>: [
+    <span class="num">2.2</span>
+  ],
+  <span class="key">"host_interface_name"</span>: [
+    "16G FC",
+    "8G FC",
+    "4G FC",
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  <span class="key">"host_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"host_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_name"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id_hex"</span>: <span class="null">null</span>,
+  <span class="key">"media_interface_id"</span>: <span class="null">null</span>,
+  <span class="key">"frame"</span>: <span class="null">null</span>,
+  <span class="key">"standards_code"</span>: [
+    "16G FC",
+    "8G FC",
+    "4G FC",
+    "ITU-T G.694.1",
+    "100GHz"
+  ],
+  <span class="key">"baud_rate_gbaud"</span>: <span class="null">null</span>,
+  <span class="key">"bit_rate_gbps"</span>: [
+    <span class="num">14.025</span>,
+    <span class="num">8.5</span>,
+    <span class="num">4.25</span>
+  ],
+  <span class="key">"roll_off_percent"</span>: <span class="null">null</span>,
+  <span class="key">"modulation_format"</span>: <span class="null">null</span>,
+  <span class="key">"reach_km"</span>: [
+    <span class="num">40.0</span>
+  ],
+  <span class="key">"tx_power_min_dbm"</span>: [
+    <span class="num">0.0</span>
+  ],
+  <span class="key">"tx_power_max_dbm"</span>: [
+    <span class="num">4.0</span>
+  ],
+  <span class="key">"tx_in_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"tx_out_of_band_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_sensitivity_dbm"</span>: [
+    <span class="num">-13.0</span>,
+    <span class="num">-14.0</span>
+  ],
+  <span class="key">"rx_osnr_db"</span>: <span class="null">null</span>,
+  <span class="key">"rx_osnr_tolerance_db_max"</span>: <span class="null">null</span>,
+  <span class="key">"rx_overload_dbm"</span>: [
+    <span class="num">-2.0</span>
+  ],
+  <span class="key">"cd_tolerance_ps_nm"</span>: [
+    <span class="num">800.0</span>
+  ],
+  <span class="key">"pdl_db"</span>: <span class="null">null</span>,
+  <span class="key">"pmd_tolerance_ps"</span>: <span class="null">null</span>,
+  <span class="key">"fec_type"</span>: <span class="null">null</span>,
+  <span class="key">"fec_overhead_percent"</span>: <span class="null">null</span>,
+  <span class="key">"pre_fec_ber_threshold"</span>: <span class="null">null</span>,
+  <span class="key">"post_fec_ber_target"</span>: [
+    <span class="num">1</span>e-12
+  ],
+  <span class="key">"extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_assert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"los_deassert_dbm"</span>: <span class="null">null</span>,
+  <span class="key">"channel_insertion_loss_db"</span>: <span class="null">null</span>,
+  <span class="key">"receiver_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"transmitter_reflectance_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_extinction_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"optical_return_loss_tolerance_db"</span>: <span class="null">null</span>,
+  <span class="key">"number_of_lanes"</span>: <span class="null">null</span>,
+  <span class="key">"side_mode_suppression_ratio_db"</span>: <span class="null">null</span>,
+  <span class="key">"los_hysteresis_db"</span>: <span class="null">null</span>,
+  <span class="key">"total_jitter_ps"</span>: <span class="null">null</span>,
+  <span class="key">"penalties"</span>: [],
+  <span class="key">"notes"</span>: <span class="str">"Transmitter output power and receiver levels are average power (footnote <span class="num">1</span>). Receiver minimum input power and overload measured at BER &lt; <span class="num">1</span>E-12 using PRBS <span class="num">2</span>^31-1 (footnote <span class="num">2</span>). Power budget <span class="num">6</span>–13 dB @ <span class="num">16</span>G FC; <span class="num">6</span>–14 dB @ <span class="num">8</span>G/4G FC. Dispersion penalty max <span class="num">2</span> dB stated without paired penalized optical parameter. Typical reach <span class="num">40</span> km without dispersion compensation for <span class="num">16</span>G FC. Title line cites <span class="num">13</span> dB (power budget context). Storage temperature <span class="num">-40</span>°C to +85°C. Layer-1 tested and approved by Cisco. OWRAP/EWRAP loop-back with or without forwarding. RoHS-6/6. CWDM use at <span class="num">1550</span>/1530 nm by selecting matching wavelength versions. Ordering table lists DS-16G-ER-D6142 twice at different frequency/wavelength rows."</span>,
+  <span class="key">"provenance_datasheet_sections"</span>: [
+    "DS-16G-ER-Dxxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  <span class="key">"suggestions"</span>: <span class="str">"Clarify whether duplicate DS-16G-ER-D6142 rows in ordering table are errata. Emitter and photodetector types are not stated. No per-penalty-dB OSNR or sensitivity columns for penalties array."</span>
+}</pre></div>
+  </div>
+</div>
+
+
+<!-- STAGE 3: MODE SEPARATION -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n3">3</span>
+    <span class="stage-title">Mode Separation</span>
+  </div>
+  <div class="cols-2">
+    <div class="card">
+      <div class="section-label">Multi-Valued (need linking)</div>
+      <table>
+        <tr><th>Field</th><th>Values</th></tr>
+        <tr><td>model</td><td><span class="badge">DS-16G-ER-Dxxx</span> <span class="badge">DS-16G-ER-D6142</span> <span class="badge">DS-16G-ER-D6061</span> <span class="badge">DS-16G-ER-D5979</span> <span class="badge">DS-16G-ER-D5898</span> <span class="badge">DS-16G-ER-D5817</span> <span class="badge">DS-16G-ER-D5736</span> <span class="badge">DS-16G-ER-D5655</span> <span class="badge">DS-16G-ER-D5575</span> <span class="badge">DS-16G-ER-D5494</span> <span class="badge">DS-16G-ER-D5413</span> <span class="badge">DS-16G-ER-D5333</span> <span class="badge">DS-16G-ER-D5252</span> <span class="badge">DS-16G-ER-D5172</span> <span class="badge">DS-16G-ER-D5092</span> <span class="badge">DS-16G-ER-D5012</span> <span class="badge">DS-16G-ER-D4932</span> <span class="badge">DS-16G-ER-D4851</span> <span class="badge">DS-16G-ER-D4772</span> <span class="badge">DS-16G-ER-D4692</span> <span class="badge">DS-16G-ER-D4532</span> <span class="badge">DS-16G-ER-D4453</span> <span class="badge">DS-16G-ER-D4373</span> <span class="badge">DS-16G-ER-D4294</span> <span class="badge">DS-16G-ER-D4214</span> <span class="badge">DS-16G-ER-D4135</span> <span class="badge">DS-16G-ER-D4056</span> <span class="badge">DS-16G-ER-D3977</span> <span class="badge">DS-16G-ER-D3898</span> <span class="badge">DS-16G-ER-D3819</span> <span class="badge">DS-16G-ER-D3740</span> <span class="badge">DS-16G-ER-D3661</span> <span class="badge">DS-16G-ER-D3582</span> <span class="badge">DS-16G-ER-D3504</span> <span class="badge">DS-16G-ER-D3425</span> <span class="badge">DS-16G-ER-D3347</span> <span class="badge">DS-16G-ER-D3268</span> <span class="badge">DS-16G-ER-D3190</span> <span class="badge">DS-16G-ER-D3112</span> <span class="badge">DS-16G-ER-D3033</span> <span class="badge">DS-16G-ER-D2955</span></td></tr>
+<tr><td>wavelength_min_nm</td><td><span class="badge">1480.0</span> <span class="badge">1529.55</span></td></tr>
+<tr><td>wavelength_max_nm</td><td><span class="badge">1561.42</span> <span class="badge">1580.0</span></td></tr>
+<tr><td>wavelength_band</td><td><span class="badge">DWDM</span> <span class="badge">CWDM</span></td></tr>
+<tr><td>host_interface_name</td><td><span class="badge">16G FC</span> <span class="badge">8G FC</span> <span class="badge">4G FC</span> <span class="badge">SFF-8431</span> <span class="badge">SFF-8432</span> <span class="badge">SFF-8472</span></td></tr>
+<tr><td>standards_code</td><td><span class="badge">16G FC</span> <span class="badge">8G FC</span> <span class="badge">4G FC</span> <span class="badge">ITU-T G.694.1</span> <span class="badge">100GHz</span></td></tr>
+<tr><td>bit_rate_gbps</td><td><span class="badge">14.025</span> <span class="badge">8.5</span> <span class="badge">4.25</span></td></tr>
+<tr><td>rx_sensitivity_dbm</td><td><span class="badge">-13.0</span> <span class="badge">-14.0</span></td></tr>
+
+      </table>
+    </div>
+    <div class="card">
+      <div class="section-label">General (module-level)</div>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>vendor</td><td>Smartoptics</td></tr>
+<tr><td>form_factor</td><td>SFP+</td></tr>
+<tr><td>standards_claimed</td><td>SFF-8431, SFF-8432, SFF-8472, ITU-T G.694.1</td></tr>
+<tr><td>frequency_min_thz</td><td>192.0</td></tr>
+<tr><td>frequency_max_thz</td><td>196.0</td></tr>
+<tr><td>channel_spacing_ghz</td><td>100.0</td></tr>
+<tr><td>channel_total</td><td>41</td></tr>
+<tr><td>connector_type</td><td>LC</td></tr>
+<tr><td>fiber_type</td><td>SMF</td></tr>
+<tr><td>temp_min_c</td><td>0.0</td></tr>
+<tr><td>temp_max_c</td><td>70.0</td></tr>
+<tr><td>power_consumption_w</td><td>2.2</td></tr>
+<tr><td>reach_km</td><td>40.0</td></tr>
+<tr><td>tx_power_min_dbm</td><td>0.0</td></tr>
+<tr><td>tx_power_max_dbm</td><td>4.0</td></tr>
+<tr><td>rx_overload_dbm</td><td>-2.0</td></tr>
+<tr><td>cd_tolerance_ps_nm</td><td>800.0</td></tr>
+<tr><td>post_fec_ber_target</td><td>1e-12</td></tr>
+<tr><td>penalties</td><td></td></tr>
+<tr><td>notes</td><td>Transmitter output power and receiver levels are average power (footnote 1). Receiver minimum input power and overload measured at BER &lt; 1E-12 using PRBS 2^31-1 (footnote 2). Power budget 6–13 dB @ 16G FC; 6–14 dB @ 8G/4G FC. Dispersion penalty max 2 dB stated without paired penalized optical parameter. Typical reach 40 km without dispersion compensation for 16G FC. Title line cites 13 dB (power budget context). Storage temperature -40°C to +85°C. Layer-1 tested and approved by Cisco. OWRAP/EWRAP loop-back with or without forwarding. RoHS-6/6. CWDM use at 1550/1530 nm by selecting matching wavelength versions. Ordering table lists DS-16G-ER-D6142 twice at different frequency/wavelength rows.</td></tr>
+<tr><td>provenance_datasheet_sections</td><td>DS-16G-ER-Dxxx, OVERVIEW, TECHNICAL DATA, ORDERING INFORMATION, GENERAL DEFINITIONS</td></tr>
+<tr><td>suggestions</td><td>Clarify whether duplicate DS-16G-ER-D6142 rows in ordering table are errata. Emitter and photodetector types are not stated. No per-penalty-dB OSNR or sensitivity columns for penalties array.</td></tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- STAGE 4: MODE SYNTHESIS -->
+<div class="stage">
+  <div class="stage-header">
+    <span class="stage-num n4">4</span>
+    <span class="stage-title">Mode Synthesis (LLM Linking)</span>
+  </div>
+  <div class="card" style="overflow-x:auto;">
+    <div class="section-label">Synthesized Operating Modes</div>
+    <table><tr><th>label</th><th>model</th><th>wavelength_min_nm</th><th>wavelength_max_nm</th><th>wavelength_band</th><th>host_interface_name</th><th>standards_code</th><th>bit_rate_gbps</th><th>rx_sensitivity_dbm</th></tr><tr><td><strong>16G Fibre Channel</strong></td><td>DS-16G-ER-Dxxx</td><td>1480.0</td><td>1580.0</td><td>DWDM</td><td>16G FC</td><td>16G FC</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>8G Fibre Channel</strong></td><td>DS-16G-ER-Dxxx</td><td>1480.0</td><td>1580.0</td><td>DWDM</td><td>8G FC</td><td>8G FC</td><td>8.5</td><td>-14.0</td></tr><tr><td><strong>4G Fibre Channel</strong></td><td>DS-16G-ER-Dxxx</td><td>1480.0</td><td>1580.0</td><td>DWDM</td><td>4G FC</td><td>4G FC</td><td>4.25</td><td>-14.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-Dxxx</strong></td><td>DS-16G-ER-Dxxx</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8431</td><td>ITU-T G.694.1</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D6142</strong></td><td>DS-16G-ER-D6142</td><td>1561.42</td><td>1561.42</td><td>DWDM</td><td>SFF-8432</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D6061</strong></td><td>DS-16G-ER-D6061</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5979</strong></td><td>DS-16G-ER-D5979</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5898</strong></td><td>DS-16G-ER-D5898</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5817</strong></td><td>DS-16G-ER-D5817</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5736</strong></td><td>DS-16G-ER-D5736</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5655</strong></td><td>DS-16G-ER-D5655</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5575</strong></td><td>DS-16G-ER-D5575</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5494</strong></td><td>DS-16G-ER-D5494</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5413</strong></td><td>DS-16G-ER-D5413</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5333</strong></td><td>DS-16G-ER-D5333</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5252</strong></td><td>DS-16G-ER-D5252</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5172</strong></td><td>DS-16G-ER-D5172</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5092</strong></td><td>DS-16G-ER-D5092</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D5012</strong></td><td>DS-16G-ER-D5012</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D4932</strong></td><td>DS-16G-ER-D4932</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D4851</strong></td><td>DS-16G-ER-D4851</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D4772</strong></td><td>DS-16G-ER-D4772</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D4692</strong></td><td>DS-16G-ER-D4692</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D4532</strong></td><td>DS-16G-ER-D4532</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D4453</strong></td><td>DS-16G-ER-D4453</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D4373</strong></td><td>DS-16G-ER-D4373</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D4294</strong></td><td>DS-16G-ER-D4294</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D4214</strong></td><td>DS-16G-ER-D4214</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D4135</strong></td><td>DS-16G-ER-D4135</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D4056</strong></td><td>DS-16G-ER-D4056</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3977</strong></td><td>DS-16G-ER-D3977</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3898</strong></td><td>DS-16G-ER-D3898</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3819</strong></td><td>DS-16G-ER-D3819</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3740</strong></td><td>DS-16G-ER-D3740</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3661</strong></td><td>DS-16G-ER-D3661</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3582</strong></td><td>DS-16G-ER-D3582</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3504</strong></td><td>DS-16G-ER-D3504</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3425</strong></td><td>DS-16G-ER-D3425</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3347</strong></td><td>DS-16G-ER-D3347</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3268</strong></td><td>DS-16G-ER-D3268</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3190</strong></td><td>DS-16G-ER-D3190</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3112</strong></td><td>DS-16G-ER-D3112</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D3033</strong></td><td>DS-16G-ER-D3033</td><td>1529.55</td><td>1561.42</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr><tr><td><strong>DWDM channel DS-16G-ER-D2955</strong></td><td>DS-16G-ER-D2955</td><td>1529.55</td><td>1529.55</td><td>DWDM</td><td>SFF-8472</td><td>100GHz</td><td>14.025</td><td>-13.0</td></tr></table>
+  </div>
+</div>
+
+
+<footer>
+  Generated by Transceiver Spec Extraction Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-14 08:33
+</footer>
+
+</div>
+</body>
+</html>

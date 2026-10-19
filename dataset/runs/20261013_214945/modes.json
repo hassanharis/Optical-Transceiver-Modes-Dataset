@@ -1,0 +1,100 @@
+{
+  "modes": [
+    {
+      "label": "QSFP28 100GE O-DWDM O284/1312.58nm 40km",
+      "model": "TQ2030-O55C-SO",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1325.0,
+      "wavelength_center_nm": 1312.58,
+      "wavelength_band": "DWDM",
+      "media_interface_name": "100GBASE",
+      "standards_code": "100GBASE",
+      "baud_rate_gbaud": 56.25,
+      "bit_rate_gbps": 112.5
+    },
+    {
+      "label": "QSFP28 100GE O-DWDM O286/1311.43nm 40km",
+      "model": "TQ2030-O53C-SO",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1325.0,
+      "wavelength_center_nm": 1311.43,
+      "wavelength_band": "DWDM",
+      "media_interface_name": "100GBASE",
+      "standards_code": "100GBASE",
+      "baud_rate_gbaud": 56.25,
+      "bit_rate_gbps": 112.5
+    },
+    {
+      "label": "QSFP28 100GE O-DWDM O288/1310.28nm 40km",
+      "model": "TQ2030-O51C-SO",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1325.0,
+      "wavelength_center_nm": 1310.28,
+      "wavelength_band": "DWDM",
+      "media_interface_name": "100GBASE",
+      "standards_code": "100GBASE",
+      "baud_rate_gbaud": 56.25,
+      "bit_rate_gbps": 112.5
+    },
+    {
+      "label": "QSFP28 100GE O-DWDM O290/1309.14nm 40km",
+      "model": "TQ2030-O49C-SO",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1325.0,
+      "wavelength_center_nm": 1309.14,
+      "wavelength_band": "DWDM",
+      "media_interface_name": "100GBASE",
+      "standards_code": "100GBASE",
+      "baud_rate_gbaud": 56.25,
+      "bit_rate_gbps": 112.5
+    },
+    {
+      "label": "QSFP28 100GE O-DWDM O292/1308.00nm 40km",
+      "model": "TQ2030-O47C-SO",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1325.0,
+      "wavelength_center_nm": 1308.0,
+      "wavelength_band": "DWDM",
+      "media_interface_name": "100GBASE",
+      "standards_code": "100GBASE",
+      "baud_rate_gbaud": 56.25,
+      "bit_rate_gbps": 112.5
+    },
+    {
+      "label": "QSFP28 100GE O-DWDM O294/1306.85nm 40km",
+      "model": "TQ2030-O45C-SO",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1325.0,
+      "wavelength_center_nm": 1306.85,
+      "wavelength_band": "DWDM",
+      "media_interface_name": "100GBASE",
+      "standards_code": "100GBASE",
+      "baud_rate_gbaud": 56.25,
+      "bit_rate_gbps": 112.5
+    },
+    {
+      "label": "QSFP28 100GE O-DWDM O296/1305.72nm 40km",
+      "model": "TQ2030-O43C-SO",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1325.0,
+      "wavelength_center_nm": 1305.72,
+      "wavelength_band": "DWDM",
+      "media_interface_name": "100GBASE",
+      "standards_code": "100GBASE",
+      "baud_rate_gbaud": 56.25,
+      "bit_rate_gbps": 112.5
+    },
+    {
+      "label": "QSFP28 100GE O-DWDM O298/1304.58nm 40km",
+      "model": "TQ2030-O41C-SO",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1325.0,
+      "wavelength_center_nm": 1304.58,
+      "wavelength_band": "DWDM",
+      "media_interface_name": "100GBASE",
+      "standards_code": "100GBASE",
+      "baud_rate_gbaud": 56.25,
+      "bit_rate_gbps": 112.5
+    }
+  ]
+}

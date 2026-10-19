@@ -1,0 +1,179 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "TOC002-S31C-SO"
+  ],
+  "form_factor": [
+    "OSFP112"
+  ],
+  "standards_claimed": [
+    "OSFP MSA",
+    "CMIS5.0",
+    "IEEE802.3bj"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1304.5
+  ],
+  "wavelength_max_nm": [
+    1317.5
+  ],
+  "wavelength_center_nm": [
+    1311
+  ],
+  "wavelength_band": [
+    "grey",
+    "CWDM"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    4,
+    8
+  ],
+  "mounting_type": [
+    "pluggable"
+  ],
+  "connector_type": [
+    "MPO-12",
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    14
+  ],
+  "host_interface_name": [
+    "800GAUI-8",
+    "400GAUI-4",
+    "100GAUI-1",
+    "400GAUI-4-L C2M",
+    "400GAUI-4-S C2M",
+    "800GAUI-8 L C2M",
+    "800GAUI-8 S C2M",
+    "200GAUI-2-L C2M",
+    "200GAUI-2-S C2M",
+    "100GAUI-1-L C2M",
+    "100GAUI-1-S C2M"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": [
+    "400GBASE-DR4",
+    "800GBASE-DR8",
+    "200G-DR2",
+    "100GBASE-DR"
+  ],
+  "media_interface_id_hex": [
+    "0x1C",
+    "0x56",
+    "0xC0",
+    "0x14"
+  ],
+  "media_interface_id": [
+    28,
+    86,
+    192,
+    20
+  ],
+  "frame": [
+    "800GAUI-8",
+    "2x 400GAUI-4",
+    "8x 100GAUI-1",
+    "4x 200GAUI-2"
+  ],
+  "standards_code": [
+    "400GBASE-DR4",
+    "800GBASE-DR8",
+    "100GBASE-DR",
+    "200G-DR2",
+    "800GBASE-R",
+    "400GBASE-R",
+    "200GBASE-R",
+    "100GBASE-R"
+  ],
+  "baud_rate_gbaud": [
+    53.125
+  ],
+  "bit_rate_gbps": [
+    850,
+    800,
+    400,
+    200,
+    100
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4"
+  ],
+  "reach_km": [
+    0.5
+  ],
+  "tx_power_min_dbm": [
+    -2.9,
+    -0.8
+  ],
+  "tx_power_max_dbm": [
+    4.0,
+    4.2
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -6.0,
+    -3.9
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4.0
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": [
+    "RS_GENERIC",
+    "RS_528_514"
+  ],
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    0.00024
+  ],
+  "post_fec_ber_target": null,
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -16
+  ],
+  "los_deassert_dbm": [
+    -10
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": [
+    8
+  ],
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Transmission media table lists SM (2x MPO-12, APC); narrative also states optical interface is two duplex LC connectors (UPC). Power budget 0–3.1 dB. Bit rate 850 Gbps is aggregated line rate for 800GbE; 53.125 Gbd is line baud rate per lane. Pre-FEC BER 2.4×10^-4 stated for optical parameters. Technology listed as Grey with CWDM wavelengths for lane transport. Ordering description: 8x 1311nm, 2xMPO12.",
+  "provenance_datasheet_sections": [
+    "OSFP112 800G 2xDR4, CMIS5.0",
+    "TOC002-S31C-SO",
+    "TECHNICAL DATA",
+    "APPLICATION CODE LIST",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": null
+}

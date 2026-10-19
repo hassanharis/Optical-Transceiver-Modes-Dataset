@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T22:14:01.649965+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ds-ts2009-s31i-so-sfp28-25g-lr-i-r6.0.pdf",
+  "page_count": 3,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.356,
+    "extract_atoms": 23.267,
+    "store_run": 0.006,
+    "synthesize_modes": 36.834,
+    "store_modes": 0.003,
+    "total": 64.466
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T12:01:29.355259+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-qsfp28-100g-dr-r5.5.pdf",
+  "page_count": 2,
+  "table_count": 3,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 4.886,
+    "extract_atoms": 21.969,
+    "store_run": 0.004,
+    "synthesize_modes": 32.403,
+    "store_modes": 0.002,
+    "total": 59.265
+  }
+}

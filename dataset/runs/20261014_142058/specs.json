@@ -1,0 +1,216 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-16GFC-ER-Dxxxx",
+    "SO-SFP-16GFC-ER-D9200",
+    "SO-SFP-16GFC-ER-D9210",
+    "SO-SFP-16GFC-ER-D9220",
+    "SO-SFP-16GFC-ER-D9230",
+    "SO-SFP-16GFC-ER-D9240",
+    "SO-SFP-16GFC-ER-D9250",
+    "SO-SFP-16GFC-ER-D9260",
+    "SO-SFP-16GFC-ER-D9270",
+    "SO-SFP-16GFC-ER-D9280",
+    "SO-SFP-16GFC-ER-D9290",
+    "SO-SFP-16GFC-ER-D9300",
+    "SO-SFP-16GFC-ER-D9310",
+    "SO-SFP-16GFC-ER-D9320",
+    "SO-SFP-16GFC-ER-D9330",
+    "SO-SFP-16GFC-ER-D9340",
+    "SO-SFP-16GFC-ER-D9350",
+    "SO-SFP-16GFC-ER-D9360",
+    "SO-SFP-16GFC-ER-D9370",
+    "SO-SFP-16GFC-ER-D9380",
+    "SO-SFP-16GFC-ER-D9390",
+    "SO-SFP-16GFC-ER-D9400",
+    "SO-SFP-16GFC-ER-D9410",
+    "SO-SFP-16GFC-ER-D9420",
+    "SO-SFP-16GFC-ER-D9430",
+    "SO-SFP-16GFC-ER-D9440",
+    "SO-SFP-16GFC-ER-D9450",
+    "SO-SFP-16GFC-ER-D9460",
+    "SO-SFP-16GFC-ER-D9470",
+    "SO-SFP-16GFC-ER-D9480",
+    "SO-SFP-16GFC-ER-D9490",
+    "SO-SFP-16GFC-ER-D9500",
+    "SO-SFP-16GFC-ER-D9510",
+    "SO-SFP-16GFC-ER-D9520",
+    "SO-SFP-16GFC-ER-D9530",
+    "SO-SFP-16GFC-ER-D9540",
+    "SO-SFP-16GFC-ER-D9550",
+    "SO-SFP-16GFC-ER-D9560",
+    "SO-SFP-16GFC-ER-D9570",
+    "SO-SFP-16GFC-ER-D9580",
+    "SO-SFP-16GFC-ER-D9590",
+    "SO-SFP-16GFC-ER-D9600"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFP+ MSA",
+    "SFF-8472",
+    "ITU-T 694.1",
+    "RoHS-6/6"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1480.0
+  ],
+  "wavelength_max_nm": [
+    1580.0
+  ],
+  "wavelength_center_nm": [
+    1561.42,
+    1560.61,
+    1559.79,
+    1558.98,
+    1558.17,
+    1557.36,
+    1556.55,
+    1555.75,
+    1554.94,
+    1554.13,
+    1553.33,
+    1552.52,
+    1551.72,
+    1550.92,
+    1550.12,
+    1549.32,
+    1548.51,
+    1547.72,
+    1546.92,
+    1546.12,
+    1545.32,
+    1544.53,
+    1543.73,
+    1542.94,
+    1542.14,
+    1541.35,
+    1540.56,
+    1539.77,
+    1538.98,
+    1538.19,
+    1537.4,
+    1536.61,
+    1535.82,
+    1535.04,
+    1534.25,
+    1533.47,
+    1532.68,
+    1531.9,
+    1531.12,
+    1530.33,
+    1529.55
+  ],
+  "wavelength_band": [
+    "DWDM",
+    "CWDM"
+  ],
+  "frequency_min_thz": [
+    192.0
+  ],
+  "frequency_max_thz": [
+    196.0
+  ],
+  "channel_spacing_ghz": [
+    100.0
+  ],
+  "channel_total": [
+    41,
+    40
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    2.1
+  ],
+  "host_interface_name": [
+    "4G FC",
+    "8G FC",
+    "16G FC"
+  ],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "G.694.1",
+    "G.694.2",
+    "G.959"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [
+    4.25,
+    14.025
+  ],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -13.0,
+    -14.0
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -2.0
+  ],
+  "cd_tolerance_ps_nm": [
+    800.0
+  ],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -24.0
+  ],
+  "los_deassert_dbm": [
+    -14.0
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Power budget 6–13dB (footnote 1, 16G FC) and 6–14dB (footnote 2, 8G FC & 4G FC). Minimum input power -13dBm (16G FC) and -14dBm (8G/4G FC); footnotes 3) average power, 4) @ BER < 1E-12 using PRBS 231-1. Dispersion penalty max 2dB stated without paired penalized parameter and operating condition. Power consumption stated as < 2.1W. Nominal wavelengths 192.00–196.00 THz (41ch); transmit wavelengths 192.00–196.00 THz (40ch). Title mentions 14dB (context not fully specified in technical table). Storage temperature -40°C to +85°C. CWDM use: D250–D410 for 1550nm, D500–D600 for 1530nm; G.694.2 states 1551/1531nm ± 7nm. G.959 1500nm–1565nm for 1550nm single-channel (D200–D600).",
+  "provenance_datasheet_sections": [
+    "SO-SFP-16GFC-ER-Dxxxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Clarify whether dispersion penalty max 2dB applies to a specific bit rate/protocol. Host/media interface IDs and emitter/detector types are not in this excerpt."
+}

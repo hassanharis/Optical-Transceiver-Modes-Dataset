@@ -1,0 +1,10 @@
+{
+  "modes": [
+    {
+      "label": "100G SR4 per-lane 25.78G",
+      "standards_code": "SR4",
+      "bit_rate_gbps": 25.78125,
+      "extinction_ratio_db": 3.0
+    }
+  ]
+}

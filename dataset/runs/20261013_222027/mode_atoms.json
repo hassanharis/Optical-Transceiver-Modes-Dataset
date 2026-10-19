@@ -1,0 +1,95 @@
+{
+  "multi_valued": {
+    "wavelength_center_nm": [
+      1311.0,
+      1310.0
+    ],
+    "host_interface_name": [
+      "50GbE",
+      "50G Ethernet"
+    ],
+    "bit_rate_gbps": [
+      53.125,
+      50.0
+    ],
+    "rx_sensitivity_dbm": [
+      -8.4,
+      -10.8
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TS5003-S31C-SO"
+    ],
+    "form_factor": [
+      "SFP56"
+    ],
+    "standards_claimed": [
+      "50GBASE-LR",
+      "IEEE 50GBASE-LR"
+    ],
+    "wavelength_min_nm": [
+      1304.5
+    ],
+    "wavelength_max_nm": [
+      1317.5
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      1
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.8
+    ],
+    "standards_code": [
+      "50GBASE-LR"
+    ],
+    "reach_km": [
+      10.0
+    ],
+    "tx_power_min_dbm": [
+      -4.5
+    ],
+    "tx_power_max_dbm": [
+      4.2
+    ],
+    "rx_overload_dbm": [
+      4.2
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "los_assert_dbm": [
+      -30.0
+    ],
+    "los_deassert_dbm": [
+      -11.0
+    ],
+    "number_of_lanes": [
+      1
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "SFP+ form-factor; product name SFP56. Power budget 0–6.9 dB (w/o optical path penalties). Transmitter output power max printed as +4.2Bm. OMA: TX min -1.5 dBm, max +4.0 dBm; RX sensitivity OMA -8.4 dBm. Receiver wavelength range stated as 840–860 nm. Optical parameters at 53.125 Gbps (50GE) and BER 2.4E-4; FEC required to be implemented by the host. Footnote 1): average receive power (min) informative. Footnote 2): at 53.125 Gbps (50GE) and BER 2.4E-4. Storage temperature -40°C to +85°C not mapped to operating temp fields.",
+    "provenance_datasheet_sections": [
+      "SFP56 50G-LR",
+      "TS5003-S31C-SO",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Add fields for OMA (tx/rx), power budget (dB), and receiver wavelength range when distinct from TX. Clarify whether form_factor enum should include SFP56/SFP+."
+  }
+}

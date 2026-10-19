@@ -1,0 +1,126 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-XFP-LRM"
+  ],
+  "form_factor": [
+    "XFP"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ae",
+    "10GBASE-LRM",
+    "INF-8077i",
+    "XFP-MSA"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1260
+  ],
+  "wavelength_max_nm": [
+    1360
+  ],
+  "wavelength_center_nm": [
+    1310
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": [
+    1
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF_OM1",
+    "MMF_OM2",
+    "MMF_OM3"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    2.0
+  ],
+  "host_interface_name": [
+    "10GBASE-LRM",
+    "10GbE-LAN"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "10GBASE-LRM"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    10.312,
+    10.3
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    0.3
+  ],
+  "tx_power_min_dbm": [
+    -6.5
+  ],
+  "tx_power_max_dbm": [
+    0.5
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -8.4
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -20
+  ],
+  "los_deassert_dbm": [
+    -10
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": [
+    1
+  ],
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Technology: Grey XFP. Transmission media stated as MM (2x LC). Typical reach 300m @ OM1, OM2, OM3; overview also cites bridgeable distance up to 300m with OM3 or higher-grade fiber recommended. No minimum distance (no minimum attenuation). Power budget 0 – 1.9dB. Rx minimum input power and BER: at 10.3Gbps (10GbE-LAN), PRBS 231-1, BER ≤ 1×10^-12. Footnote 2): transmitter output power, receiver minimum input power, overload, and related values are average power. Storage temperature -40°C to +85°C (not operating). DDM via 2-wire serial per INF-8077i. Safety/regulatory: TUV/UL/FDA; RoHS.",
+  "provenance_datasheet_sections": [
+    "SO-XFP-LRM",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": null
+}

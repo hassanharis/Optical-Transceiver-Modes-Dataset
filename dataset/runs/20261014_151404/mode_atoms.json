@@ -1,0 +1,184 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-SFP-L160D-Cxx",
+      "SO-SFP-L160D-Cxx-E",
+      "SO-SFP-L160D-C27",
+      "SO-SFP-L160D-C27-E",
+      "SO-SFP-L160D-C29",
+      "SO-SFP-L160D-C29-E",
+      "SO-SFP-L160D-C31",
+      "SO-SFP-L160D-C31-E",
+      "SO-SFP-L160D-C33",
+      "SO-SFP-L160D-C33-E",
+      "SO-SFP-L160D-C35",
+      "SO-SFP-L160D-C35-E",
+      "SO-SFP-L160D-C37",
+      "SO-SFP-L160D-C37-E",
+      "SO-SFP-L160D-C39",
+      "SO-SFP-L160D-C39-E",
+      "SO-SFP-L160D-C41",
+      "SO-SFP-L160D-C41-E",
+      "SO-SFP-L160D-C43",
+      "SO-SFP-L160D-C43-E",
+      "SO-SFP-L160D-C45",
+      "SO-SFP-L160D-C45-E",
+      "SO-SFP-L160D-C47",
+      "SO-SFP-L160D-C47-E",
+      "SO-SFP-L160D-C49",
+      "SO-SFP-L160D-C49-E",
+      "SO-SFP-L160D-C51",
+      "SO-SFP-L160D-C51-E",
+      "SO-SFP-L160D-C53",
+      "SO-SFP-L160D-C53-E",
+      "SO-SFP-L160D-C55",
+      "SO-SFP-L160D-C55-E",
+      "SO-SFP-L160D-C57",
+      "SO-SFP-L160D-C57-E",
+      "SO-SFP-L160D-C59",
+      "SO-SFP-L160D-C59-E",
+      "SO-SFP-L160D-C61",
+      "SO-SFP-L160D-C61-E"
+    ],
+    "wavelength_min_nm": [
+      1260.0,
+      1270.0,
+      1271.0
+    ],
+    "wavelength_max_nm": [
+      1610.0,
+      1611.0,
+      1620.0
+    ],
+    "wavelength_center_nm": [
+      1270.0,
+      1290.0,
+      1310.0,
+      1330.0,
+      1350.0,
+      1370.0,
+      1390.0,
+      1410.0,
+      1430.0,
+      1450.0,
+      1470.0,
+      1490.0,
+      1510.0,
+      1530.0,
+      1550.0,
+      1570.0,
+      1590.0,
+      1610.0
+    ],
+    "host_interface_name": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "bit_rate_gbps": [
+      1.0625,
+      1.25
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472",
+      "G.694.2"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "CWDM"
+    ],
+    "frequency_min_thz": [],
+    "frequency_max_thz": [],
+    "channel_spacing_ghz": [],
+    "channel_total": [
+      18
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [],
+    "host_interface_id_hex": [],
+    "host_interface_id": [],
+    "media_interface_name": [],
+    "media_interface_id_hex": [],
+    "media_interface_id": [],
+    "frame": [],
+    "standards_code": [
+      "G.694.2"
+    ],
+    "baud_rate_gbaud": [],
+    "roll_off_percent": [],
+    "modulation_format": [],
+    "reach_km": [
+      160.0
+    ],
+    "tx_power_min_dbm": [
+      2.0
+    ],
+    "tx_power_max_dbm": [
+      7.0
+    ],
+    "tx_in_band_osnr_db": [],
+    "tx_out_of_band_osnr_db": [],
+    "rx_sensitivity_dbm": [
+      -36.0
+    ],
+    "rx_osnr_db": [],
+    "rx_osnr_tolerance_db_max": [],
+    "rx_overload_dbm": [
+      -10.0
+    ],
+    "cd_tolerance_ps_nm": [],
+    "pdl_db": [],
+    "pmd_tolerance_ps": [],
+    "fec_type": [],
+    "fec_overhead_percent": [],
+    "pre_fec_ber_threshold": [],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "extinction_ratio_db": [],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -37.0
+    ],
+    "channel_insertion_loss_db": [],
+    "receiver_reflectance_db": [],
+    "transmitter_reflectance_db": [],
+    "optical_extinction_ratio_db": [],
+    "optical_return_loss_tolerance_db": [],
+    "number_of_lanes": [],
+    "side_mode_suppression_ratio_db": [],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "total_jitter_ps": [],
+    "penalties": [],
+    "notes": "Summary line lists power budget 17–38 dB and dispersion penalty Max 1 dB. Power consumption stated as < 1W (no numeric Watt value). Extended operating temperature for -E ordering codes: -20°C to +85°C; overview also states extended range -20°C to 85°C. Storage temperature -40°C to +85°C appears in technical summary. Transmitter output power and receiver min/overload are average power (footnote 1). Receiver minimum input power, overload, and BER reference: @ 1.25Gbps, BER 1x10-12, PRBS 27-1, back-to-back (footnote 2). Protocols: Gigabit Ethernet (GbE) and 1G Fiber channel (1G FC). DDM per SFF-8472.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-L160D-Cxx & -Cxx-E",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ],
+    "suggestions": "Add optional power_budget_db min/max fields; allow temp_min_c/temp_max_c as lists for C-temp vs E-temp variants; capture storage temperature range separately."
+  }
+}

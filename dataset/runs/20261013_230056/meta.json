@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:00:56.809928+00:00",
+  "source_file": "C:\\Haris\\datasheets\\ftlf1429p3bce-transceiver-ds.pdf",
+  "page_count": 11,
+  "table_count": 6,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.314,
+    "extract_atoms": 19.917,
+    "store_run": 0.012,
+    "synthesize_modes": 20.438,
+    "store_modes": 0.003,
+    "total": 50.683
+  }
+}

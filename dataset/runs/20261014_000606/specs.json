@@ -1,0 +1,111 @@
+{
+  "vendor": "LINK-PP",
+  "model": [
+    "LQ-M8540-SR4C"
+  ],
+  "form_factor": [
+    "QSFP+"
+  ],
+  "standards_claimed": [
+    "IEEE 802.3ba",
+    "QSFP+ MSA",
+    "SFF-8436"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840.0
+  ],
+  "wavelength_max_nm": [
+    860.0
+  ],
+  "wavelength_center_nm": [
+    850.0
+  ],
+  "channel_total": [
+    4
+  ],
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "MTP/MPO"
+  ],
+  "fiber_type": [
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    1.5
+  ],
+  "media_interface_name": [
+    "40GBASE-SR4"
+  ],
+  "standards_code": [
+    "40GBASE-SR4",
+    "IEEE 802.3ba"
+  ],
+  "bit_rate_gbps": [
+    40.0,
+    41.25,
+    10.3125,
+    11.2
+  ],
+  "reach_km": [
+    0.1,
+    0.3
+  ],
+  "tx_power_min_dbm": [
+    -7.6
+  ],
+  "tx_power_max_dbm": [
+    1.0
+  ],
+  "rx_sensitivity_dbm": [
+    -9.5
+  ],
+  "rx_overload_dbm": [
+    2.4
+  ],
+  "extinction_ratio_db": [
+    3.0
+  ],
+  "los_assert_dbm": [
+    -30.0
+  ],
+  "los_deassert_dbm": [
+    -12.0
+  ],
+  "receiver_reflectance_db": [
+    -12.0
+  ],
+  "optical_extinction_ratio_db": [
+    3.0
+  ],
+  "optical_return_loss_tolerance_db": [
+    12.0
+  ],
+  "number_of_lanes": [
+    4
+  ],
+  "penalties": [],
+  "notes": "Receiver sensitivity specified as OMA, each lane. Transmission distance: 100 m on OM3, 300 m on OM4. Power dissipation stated as <1.5 W. Aggregate bit rate typical 41.25 Gbps; data rate per lane typical 10.3125 Gbps, max 11.2 Gbps. Transmitter table lists Per Lane Bit Rate symbol Er with typical 3 dB (extinction ratio). TDP (Transmitter and Dispersion Penalty) each lane max 3.5 dB without paired penalty-point conditions. Average launch power off each lane max -30 dBm. Spectral width (-20 dB) max 0.65 nm. Output eye diagram IEEE 802.3ba-2010 compliant.",
+  "provenance_datasheet_sections": [
+    "LQ-M8540-SR4C",
+    "40Gbps 850nm QSFP+ SR4 300m Transceiver",
+    "Product Features",
+    "Applications",
+    "Standard",
+    "Description",
+    "Recommended Operating Conditions",
+    "Optical Characteristics",
+    "Ordering information"
+  ]
+}

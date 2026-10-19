@@ -1,0 +1,31 @@
+{
+  "modes": [
+    {
+      "label": "OC-3 IR-1 / STM S-1.1",
+      "model": "FTLF1323P1XTR",
+      "wavelength_min_nm": 1261.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "OC-3 IR-1",
+      "bit_rate_gbps": 0.155,
+      "rx_sensitivity_dbm": -28.0
+    },
+    {
+      "label": "OC-3 SR / STM I-1",
+      "model": "FTLF1323P1XTR",
+      "wavelength_min_nm": 1261.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "OC-3 SR",
+      "bit_rate_gbps": 0.155,
+      "rx_sensitivity_dbm": -28.0
+    },
+    {
+      "label": "Fast Ethernet 125 Mb/s",
+      "model": "FTLF1323P1XTR",
+      "wavelength_min_nm": 1261.0,
+      "wavelength_max_nm": 1360.0,
+      "standards_code": "Fast Ethernet",
+      "bit_rate_gbps": 0.125,
+      "rx_sensitivity_dbm": -28.0
+    }
+  ]
+}

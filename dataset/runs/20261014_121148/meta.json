@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T12:11:48.376265+00:00",
+  "source_file": "C:\\Haris\\datasheets\\so-qsfp28-aocxm-r5.3.pdf",
+  "page_count": 2,
+  "table_count": 0,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 1.719,
+    "extract_atoms": 18.644,
+    "store_run": 0.008,
+    "synthesize_modes": 28.769,
+    "store_modes": 0.002,
+    "total": 49.143
+  }
+}

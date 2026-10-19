@@ -1,0 +1,988 @@
+{
+  "modes": [
+    {
+      "label": "D20S 1561.42nm 16G FC",
+      "model": "16G-ER-D20S--BR2",
+      "wavelength_center_nm": 1561.42,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D20S 1561.42nm 8G FC",
+      "model": "16G-ER-D20S--BR2",
+      "wavelength_center_nm": 1561.42,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D20S 1561.42nm 4G FC",
+      "model": "16G-ER-D20S--BR2",
+      "wavelength_center_nm": 1561.42,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D21S 1560.61nm 16G FC",
+      "model": "16G-ER-D21S--BR2",
+      "wavelength_center_nm": 1560.61,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D21S 1560.61nm 8G FC",
+      "model": "16G-ER-D21S--BR2",
+      "wavelength_center_nm": 1560.61,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D21S 1560.61nm 4G FC",
+      "model": "16G-ER-D21S--BR2",
+      "wavelength_center_nm": 1560.61,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D22S 1559.79nm 16G FC",
+      "model": "16G-ER-D22S--BR2",
+      "wavelength_center_nm": 1559.79,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D22S 1559.79nm 8G FC",
+      "model": "16G-ER-D22S--BR2",
+      "wavelength_center_nm": 1559.79,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D22S 1559.79nm 4G FC",
+      "model": "16G-ER-D22S--BR2",
+      "wavelength_center_nm": 1559.79,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D23S 1558.98nm 16G FC",
+      "model": "16G-ER-D23S--BR2",
+      "wavelength_center_nm": 1558.98,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D23S 1558.98nm 8G FC",
+      "model": "16G-ER-D23S--BR2",
+      "wavelength_center_nm": 1558.98,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D23S 1558.98nm 4G FC",
+      "model": "16G-ER-D23S--BR2",
+      "wavelength_center_nm": 1558.98,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D24S 1558.17nm 16G FC",
+      "model": "16G-ER-D24S--BR2",
+      "wavelength_center_nm": 1558.17,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D24S 1558.17nm 8G FC",
+      "model": "16G-ER-D24S--BR2",
+      "wavelength_center_nm": 1558.17,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D24S 1558.17nm 4G FC",
+      "model": "16G-ER-D24S--BR2",
+      "wavelength_center_nm": 1558.17,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D25S 1557.36nm 16G FC",
+      "model": "16G-ER-D25S--BR2",
+      "wavelength_center_nm": 1557.36,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D25S 1557.36nm 8G FC",
+      "model": "16G-ER-D25S--BR2",
+      "wavelength_center_nm": 1557.36,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D25S 1557.36nm 4G FC",
+      "model": "16G-ER-D25S--BR2",
+      "wavelength_center_nm": 1557.36,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D26S 1556.55nm 16G FC",
+      "model": "16G-ER-D26S--BR2",
+      "wavelength_center_nm": 1556.55,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D26S 1556.55nm 8G FC",
+      "model": "16G-ER-D26S--BR2",
+      "wavelength_center_nm": 1556.55,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D26S 1556.55nm 4G FC",
+      "model": "16G-ER-D26S--BR2",
+      "wavelength_center_nm": 1556.55,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D27S 1555.75nm 16G FC",
+      "model": "16G-ER-D27S--BR2",
+      "wavelength_center_nm": 1555.75,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D27S 1555.75nm 8G FC",
+      "model": "16G-ER-D27S--BR2",
+      "wavelength_center_nm": 1555.75,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D27S 1555.75nm 4G FC",
+      "model": "16G-ER-D27S--BR2",
+      "wavelength_center_nm": 1555.75,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D28S 1554.94nm 16G FC",
+      "model": "16G-ER-D28S--BR2",
+      "wavelength_center_nm": 1554.94,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D28S 1554.94nm 8G FC",
+      "model": "16G-ER-D28S--BR2",
+      "wavelength_center_nm": 1554.94,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D28S 1554.94nm 4G FC",
+      "model": "16G-ER-D28S--BR2",
+      "wavelength_center_nm": 1554.94,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D29S 1554.13nm 16G FC",
+      "model": "16G-ER-D29S--BR2",
+      "wavelength_center_nm": 1554.13,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D29S 1554.13nm 8G FC",
+      "model": "16G-ER-D29S--BR2",
+      "wavelength_center_nm": 1554.13,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D29S 1554.13nm 4G FC",
+      "model": "16G-ER-D29S--BR2",
+      "wavelength_center_nm": 1554.13,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D30S 1553.33nm 16G FC",
+      "model": "16G-ER-D30S--BR2",
+      "wavelength_center_nm": 1553.33,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D30S 1553.33nm 8G FC",
+      "model": "16G-ER-D30S--BR2",
+      "wavelength_center_nm": 1553.33,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D30S 1553.33nm 4G FC",
+      "model": "16G-ER-D30S--BR2",
+      "wavelength_center_nm": 1553.33,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D31S 1552.52nm 16G FC",
+      "model": "16G-ER-D31S--BR2",
+      "wavelength_center_nm": 1552.52,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D31S 1552.52nm 8G FC",
+      "model": "16G-ER-D31S--BR2",
+      "wavelength_center_nm": 1552.52,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D31S 1552.52nm 4G FC",
+      "model": "16G-ER-D31S--BR2",
+      "wavelength_center_nm": 1552.52,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D32S 1551.72nm 16G FC",
+      "model": "16G-ER-D32S--BR2",
+      "wavelength_center_nm": 1551.72,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D32S 1551.72nm 8G FC",
+      "model": "16G-ER-D32S--BR2",
+      "wavelength_center_nm": 1551.72,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D32S 1551.72nm 4G FC",
+      "model": "16G-ER-D32S--BR2",
+      "wavelength_center_nm": 1551.72,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D33S 1550.92nm 16G FC",
+      "model": "16G-ER-D33S--BR2",
+      "wavelength_center_nm": 1550.92,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D33S 1550.92nm 8G FC",
+      "model": "16G-ER-D33S--BR2",
+      "wavelength_center_nm": 1550.92,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D33S 1550.92nm 4G FC",
+      "model": "16G-ER-D33S--BR2",
+      "wavelength_center_nm": 1550.92,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D34S 1550.12nm 16G FC",
+      "model": "16G-ER-D34S--BR2",
+      "wavelength_center_nm": 1550.12,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D34S 1550.12nm 8G FC",
+      "model": "16G-ER-D34S--BR2",
+      "wavelength_center_nm": 1550.12,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D34S 1550.12nm 4G FC",
+      "model": "16G-ER-D34S--BR2",
+      "wavelength_center_nm": 1550.12,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D35S 1549.32nm 16G FC",
+      "model": "16G-ER-D35S--BR2",
+      "wavelength_center_nm": 1549.32,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D35S 1549.32nm 8G FC",
+      "model": "16G-ER-D35S--BR2",
+      "wavelength_center_nm": 1549.32,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D35S 1549.32nm 4G FC",
+      "model": "16G-ER-D35S--BR2",
+      "wavelength_center_nm": 1549.32,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D36S 1548.51nm 16G FC",
+      "model": "16G-ER-D36S--BR2",
+      "wavelength_center_nm": 1548.51,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D36S 1548.51nm 8G FC",
+      "model": "16G-ER-D36S--BR2",
+      "wavelength_center_nm": 1548.51,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D36S 1548.51nm 4G FC",
+      "model": "16G-ER-D36S--BR2",
+      "wavelength_center_nm": 1548.51,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D37S 1547.72nm 16G FC",
+      "model": "16G-ER-D37S--BR2",
+      "wavelength_center_nm": 1547.72,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D37S 1547.72nm 8G FC",
+      "model": "16G-ER-D37S--BR2",
+      "wavelength_center_nm": 1547.72,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D37S 1547.72nm 4G FC",
+      "model": "16G-ER-D37S--BR2",
+      "wavelength_center_nm": 1547.72,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D38S 1546.92nm 16G FC",
+      "model": "16G-ER-D38S--BR2",
+      "wavelength_center_nm": 1546.92,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D38S 1546.92nm 8G FC",
+      "model": "16G-ER-D38S--BR2",
+      "wavelength_center_nm": 1546.92,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D38S 1546.92nm 4G FC",
+      "model": "16G-ER-D38S--BR2",
+      "wavelength_center_nm": 1546.92,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D39S 1546.12nm 16G FC",
+      "model": "16G-ER-D39S--BR2",
+      "wavelength_center_nm": 1546.12,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D39S 1546.12nm 8G FC",
+      "model": "16G-ER-D39S--BR2",
+      "wavelength_center_nm": 1546.12,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D39S 1546.12nm 4G FC",
+      "model": "16G-ER-D39S--BR2",
+      "wavelength_center_nm": 1546.12,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D40S 1545.32nm 16G FC",
+      "model": "16G-ER-D40S--BR2",
+      "wavelength_center_nm": 1545.32,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D40S 1545.32nm 8G FC",
+      "model": "16G-ER-D40S--BR2",
+      "wavelength_center_nm": 1545.32,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D40S 1545.32nm 4G FC",
+      "model": "16G-ER-D40S--BR2",
+      "wavelength_center_nm": 1545.32,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D41S 1544.53nm 16G FC",
+      "model": "16G-ER-D41S--BR2",
+      "wavelength_center_nm": 1544.53,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D41S 1544.53nm 8G FC",
+      "model": "16G-ER-D41S--BR2",
+      "wavelength_center_nm": 1544.53,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D41S 1544.53nm 4G FC",
+      "model": "16G-ER-D41S--BR2",
+      "wavelength_center_nm": 1544.53,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D42S 1543.73nm 16G FC",
+      "model": "16G-ER-D42S--BR2",
+      "wavelength_center_nm": 1543.73,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D42S 1543.73nm 8G FC",
+      "model": "16G-ER-D42S--BR2",
+      "wavelength_center_nm": 1543.73,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D42S 1543.73nm 4G FC",
+      "model": "16G-ER-D42S--BR2",
+      "wavelength_center_nm": 1543.73,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D43S 1542.94nm 16G FC",
+      "model": "16G-ER-D43S--BR2",
+      "wavelength_center_nm": 1542.94,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D43S 1542.94nm 8G FC",
+      "model": "16G-ER-D43S--BR2",
+      "wavelength_center_nm": 1542.94,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D43S 1542.94nm 4G FC",
+      "model": "16G-ER-D43S--BR2",
+      "wavelength_center_nm": 1542.94,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D44S 1542.14nm 16G FC",
+      "model": "16G-ER-D44S--BR2",
+      "wavelength_center_nm": 1542.14,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D44S 1542.14nm 8G FC",
+      "model": "16G-ER-D44S--BR2",
+      "wavelength_center_nm": 1542.14,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D44S 1542.14nm 4G FC",
+      "model": "16G-ER-D44S--BR2",
+      "wavelength_center_nm": 1542.14,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D45S 1541.35nm 16G FC",
+      "model": "16G-ER-D45S--BR2",
+      "wavelength_center_nm": 1541.35,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D45S 1541.35nm 8G FC",
+      "model": "16G-ER-D45S--BR2",
+      "wavelength_center_nm": 1541.35,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D45S 1541.35nm 4G FC",
+      "model": "16G-ER-D45S--BR2",
+      "wavelength_center_nm": 1541.35,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D46S 1540.56nm 16G FC",
+      "model": "16G-ER-D46S--BR2",
+      "wavelength_center_nm": 1540.56,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D46S 1540.56nm 8G FC",
+      "model": "16G-ER-D46S--BR2",
+      "wavelength_center_nm": 1540.56,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D46S 1540.56nm 4G FC",
+      "model": "16G-ER-D46S--BR2",
+      "wavelength_center_nm": 1540.56,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D47S 1539.77nm 16G FC",
+      "model": "16G-ER-D47S--BR2",
+      "wavelength_center_nm": 1539.77,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D47S 1539.77nm 8G FC",
+      "model": "16G-ER-D47S--BR2",
+      "wavelength_center_nm": 1539.77,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D47S 1539.77nm 4G FC",
+      "model": "16G-ER-D47S--BR2",
+      "wavelength_center_nm": 1539.77,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D48S 1538.98nm 16G FC",
+      "model": "16G-ER-D48S--BR2",
+      "wavelength_center_nm": 1538.98,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D48S 1538.98nm 8G FC",
+      "model": "16G-ER-D48S--BR2",
+      "wavelength_center_nm": 1538.98,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D48S 1538.98nm 4G FC",
+      "model": "16G-ER-D48S--BR2",
+      "wavelength_center_nm": 1538.98,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D49S 1538.19nm 16G FC",
+      "model": "16G-ER-D49S--BR2",
+      "wavelength_center_nm": 1538.19,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D49S 1538.19nm 8G FC",
+      "model": "16G-ER-D49S--BR2",
+      "wavelength_center_nm": 1538.19,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D49S 1538.19nm 4G FC",
+      "model": "16G-ER-D49S--BR2",
+      "wavelength_center_nm": 1538.19,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D50S 1537.4nm 16G FC",
+      "model": "16G-ER-D50S--BR2",
+      "wavelength_center_nm": 1537.4,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D50S 1537.4nm 8G FC",
+      "model": "16G-ER-D50S--BR2",
+      "wavelength_center_nm": 1537.4,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D50S 1537.4nm 4G FC",
+      "model": "16G-ER-D50S--BR2",
+      "wavelength_center_nm": 1537.4,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D51S 1536.61nm 16G FC",
+      "model": "16G-ER-D51S--BR2",
+      "wavelength_center_nm": 1536.61,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D51S 1536.61nm 8G FC",
+      "model": "16G-ER-D51S--BR2",
+      "wavelength_center_nm": 1536.61,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D51S 1536.61nm 4G FC",
+      "model": "16G-ER-D51S--BR2",
+      "wavelength_center_nm": 1536.61,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D52S 1535.82nm 16G FC",
+      "model": "16G-ER-D52S--BR2",
+      "wavelength_center_nm": 1535.82,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D52S 1535.82nm 8G FC",
+      "model": "16G-ER-D52S--BR2",
+      "wavelength_center_nm": 1535.82,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D52S 1535.82nm 4G FC",
+      "model": "16G-ER-D52S--BR2",
+      "wavelength_center_nm": 1535.82,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D53S 1535.04nm 16G FC",
+      "model": "16G-ER-D53S--BR2",
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D53S 1535.04nm 8G FC",
+      "model": "16G-ER-D53S--BR2",
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D53S 1535.04nm 4G FC",
+      "model": "16G-ER-D53S--BR2",
+      "wavelength_center_nm": 1535.04,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D54S 1534.25nm 16G FC",
+      "model": "16G-ER-D54S--BR2",
+      "wavelength_center_nm": 1534.25,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D54S 1534.25nm 8G FC",
+      "model": "16G-ER-D54S--BR2",
+      "wavelength_center_nm": 1534.25,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D54S 1534.25nm 4G FC",
+      "model": "16G-ER-D54S--BR2",
+      "wavelength_center_nm": 1534.25,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D55S 1533.47nm 16G FC",
+      "model": "16G-ER-D55S--BR2",
+      "wavelength_center_nm": 1533.47,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D55S 1533.47nm 8G FC",
+      "model": "16G-ER-D55S--BR2",
+      "wavelength_center_nm": 1533.47,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D55S 1533.47nm 4G FC",
+      "model": "16G-ER-D55S--BR2",
+      "wavelength_center_nm": 1533.47,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D56S 1532.68nm 16G FC",
+      "model": "16G-ER-D56S--BR2",
+      "wavelength_center_nm": 1532.68,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D56S 1532.68nm 8G FC",
+      "model": "16G-ER-D56S--BR2",
+      "wavelength_center_nm": 1532.68,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D56S 1532.68nm 4G FC",
+      "model": "16G-ER-D56S--BR2",
+      "wavelength_center_nm": 1532.68,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D57S 1531.9nm 16G FC",
+      "model": "16G-ER-D57S--BR2",
+      "wavelength_center_nm": 1531.9,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D57S 1531.9nm 8G FC",
+      "model": "16G-ER-D57S--BR2",
+      "wavelength_center_nm": 1531.9,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D57S 1531.9nm 4G FC",
+      "model": "16G-ER-D57S--BR2",
+      "wavelength_center_nm": 1531.9,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D58S 1531.12nm 16G FC",
+      "model": "16G-ER-D58S--BR2",
+      "wavelength_center_nm": 1531.12,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D58S 1531.12nm 8G FC",
+      "model": "16G-ER-D58S--BR2",
+      "wavelength_center_nm": 1531.12,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D58S 1531.12nm 4G FC",
+      "model": "16G-ER-D58S--BR2",
+      "wavelength_center_nm": 1531.12,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D59S 1530.33nm 16G FC",
+      "model": "16G-ER-D59S--BR2",
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D59S 1530.33nm 8G FC",
+      "model": "16G-ER-D59S--BR2",
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D59S 1530.33nm 4G FC",
+      "model": "16G-ER-D59S--BR2",
+      "wavelength_center_nm": 1530.33,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    },
+    {
+      "label": "D60S 1529.55nm 16G FC",
+      "model": "16G-ER-D60S--BR2",
+      "wavelength_center_nm": 1529.55,
+      "wavelength_band": "DWDM",
+      "standards_code": "16G FC",
+      "bit_rate_gbps": 14.025
+    },
+    {
+      "label": "D60S 1529.55nm 8G FC",
+      "model": "16G-ER-D60S--BR2",
+      "wavelength_center_nm": 1529.55,
+      "wavelength_band": "DWDM",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 8.5
+    },
+    {
+      "label": "D60S 1529.55nm 4G FC",
+      "model": "16G-ER-D60S--BR2",
+      "wavelength_center_nm": 1529.55,
+      "wavelength_band": "DWDM",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 4.25
+    }
+  ]
+}

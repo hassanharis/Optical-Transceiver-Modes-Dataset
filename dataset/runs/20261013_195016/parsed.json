@@ -1,0 +1,88 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\AFBR-710ISMZ_Data_Sheet.pdf",
+  "page_count": 19,
+  "table_count": 16,
+  "markdown_chars": 44956,
+  "tables": [
+    {
+      "page": 5,
+      "label": null,
+      "rows": 27
+    },
+    {
+      "page": 7,
+      "label": null,
+      "rows": 23
+    },
+    {
+      "page": 8,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 8,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 9,
+      "label": null,
+      "rows": 19
+    },
+    {
+      "page": 9,
+      "label": null,
+      "rows": 7
+    },
+    {
+      "page": 10,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 11,
+      "label": "Table 52-9",
+      "rows": 24
+    },
+    {
+      "page": 12,
+      "label": null,
+      "rows": 13
+    },
+    {
+      "page": 13,
+      "label": null,
+      "rows": 8
+    },
+    {
+      "page": 13,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 14,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 15,
+      "label": null,
+      "rows": 43
+    },
+    {
+      "page": 16,
+      "label": null,
+      "rows": 29
+    },
+    {
+      "page": 17,
+      "label": null,
+      "rows": 10
+    },
+    {
+      "page": 17,
+      "label": null,
+      "rows": 23
+    }
+  ]
+}

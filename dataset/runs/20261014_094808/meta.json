@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T09:48:08.051075+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lx-sm3110-10c.pdf",
+  "page_count": 7,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 8.755,
+    "extract_atoms": 38.471,
+    "store_run": 0.006,
+    "synthesize_modes": 64.222,
+    "store_modes": 0.005,
+    "total": 111.461
+  }
+}

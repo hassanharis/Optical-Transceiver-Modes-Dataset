@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"1000BASE-T with SERDES host\",\n      \"power_consumption_w\": 1.05,\n      \"host_interface_name\": \"SERDES\",\n      \"standards_code\": \"1000BASE-T\",\n      \"bit_rate_gbps\": 1.25,\n      \"modulation_format\": \"PAM5\"\n    },\n    {\n      \"label\": \"10/100/1000Mbps with SGMII host\",\n      \"power_consumption_w\": 1.05,\n      \"host_interface_name\": \"SGMII\",\n      \"standards_code\": \"10/100/1000Mbps\",\n      \"bit_rate_gbps\": 1.0,\n      \"modulation_format\": \"PAM\"\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

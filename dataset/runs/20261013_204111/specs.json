@@ -1,0 +1,87 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "DS-16G-ER"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "RoHS-6/6"
+  ],
+  "wavelength_min_nm": [
+    1540.0,
+    1480.0
+  ],
+  "wavelength_max_nm": [
+    1560.0,
+    1580.0
+  ],
+  "wavelength_center_nm": [
+    1550.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "power_consumption_w": [
+    2.2
+  ],
+  "host_interface_name": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "standards_code": [
+    "16G FC",
+    "8G FC",
+    "4G FC",
+    "FICON"
+  ],
+  "bit_rate_gbps": [
+    14.025,
+    8.5,
+    4.25
+  ],
+  "reach_km": [
+    40.0
+  ],
+  "tx_power_min_dbm": [
+    0.0
+  ],
+  "tx_power_max_dbm": [
+    4.0
+  ],
+  "rx_sensitivity_dbm": [
+    -13.0,
+    -14.0
+  ],
+  "rx_overload_dbm": [
+    -2.0
+  ],
+  "cd_tolerance_ps_nm": [
+    800.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "penalties": [],
+  "notes": "Transmitter/receiver optical levels are average power (footnote 1). Receiver minimum input power and overload are at BER < 1E-12 using PRBS 2^31-1 (footnote 2). Power budget 6–13 dB @ 16G FC; 6–14 dB @ 8G/4G FC. Dispersion penalty max 2 dB (no paired penalized metric and operating point in source). Storage temperature -40°C to +85°C. Layer-1 tested and approved by Cisco. OWRAP/EWRAP loop-back with or without forwarding. Typical reach up to 40 km without dispersion compensation for 16G FC. Technology listed as Grey SFP+.",
+  "provenance_datasheet_sections": [
+    "DS-16G-ER",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ]
+}

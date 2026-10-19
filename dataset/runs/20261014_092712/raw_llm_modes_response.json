@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"LS-SM3106-40C Commercial Tx\",\n      \"model\": \"LS-SM3106-40C\",\n      \"wavelength_max_nm\": 1360.0\n    },\n    {\n      \"label\": \"LS-SM3106-40C Commercial Rx\",\n      \"model\": \"LS-SM3106-40C\",\n      \"wavelength_max_nm\": 1610.0\n    },\n    {\n      \"label\": \"LS-SM3106-40I Industrial Tx\",\n      \"model\": \"LS-SM3106-40I\",\n      \"wavelength_max_nm\": 1360.0\n    },\n    {\n      \"label\": \"LS-SM3106-40I Industrial Rx\",\n      \"model\": \"LS-SM3106-40I\",\n      \"wavelength_max_nm\": 1610.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

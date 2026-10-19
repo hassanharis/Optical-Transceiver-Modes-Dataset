@@ -1,0 +1,48 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ftl4e1qe1c-transceiver-ds.pdf",
+  "page_count": 8,
+  "table_count": 8,
+  "markdown_chars": 10680,
+  "tables": [
+    {
+      "page": 2,
+      "label": null,
+      "rows": 39
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 9
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 27
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 18
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 3
+    }
+  ]
+}

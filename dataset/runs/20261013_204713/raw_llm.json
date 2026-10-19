@@ -1,0 +1,221 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "DS-8G-ZR-Dxxxx",
+    "DS-8G-ZR-D6142",
+    "DS-8G-ZR-D6061",
+    "DS-8G-ZR-D5979",
+    "DS-8G-ZR-D5898",
+    "DS-8G-ZR-D5817",
+    "DS-8G-ZR-D5736",
+    "DS-8G-ZR-D5655",
+    "DS-8G-ZR-D5575",
+    "DS-8G-ZR-D5494",
+    "DS-8G-ZR-D5413",
+    "DS-8G-ZR-D5333",
+    "DS-8G-ZR-D5252",
+    "DS-8G-ZR-D5172",
+    "DS-8G-ZR-D5092",
+    "DS-8G-ZR-D5012",
+    "DS-8G-ZR-D4932",
+    "DS-8G-ZR-D4851",
+    "DS-8G-ZR-D4772",
+    "DS-8G-ZR-D4692",
+    "DS-8G-ZR-D4612",
+    "DS-8G-ZR-D4532",
+    "DS-8G-ZR-D4453",
+    "DS-8G-ZR-D4373",
+    "DS-8G-ZR-D4294",
+    "DS-8G-ZR-D4214",
+    "DS-8G-ZR-D4135",
+    "DS-8G-ZR-D4056",
+    "DS-8G-ZR-D3977",
+    "DS-8G-ZR-D3898",
+    "DS-8G-ZR-D3819",
+    "DS-8G-ZR-D3740",
+    "DS-8G-ZR-D3661",
+    "DS-8G-ZR-D3582",
+    "DS-8G-ZR-D3504",
+    "DS-8G-ZR-D3425",
+    "DS-8G-ZR-D3347",
+    "DS-8G-ZR-D3268",
+    "DS-8G-ZR-D3190",
+    "DS-8G-ZR-D3112",
+    "DS-8G-ZR-D3033",
+    "DS-8G-ZR-D2955"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472",
+    "ITU-T 694.1",
+    "RoHS-6/6"
+  ],
+  "emitter_type": null,
+  "photodetector_type": null,
+  "wavelength_min_nm": [
+    1529.55
+  ],
+  "wavelength_max_nm": [
+    1561.42
+  ],
+  "wavelength_center_nm": [
+    1561.42,
+    1560.61,
+    1559.79,
+    1558.98,
+    1558.17,
+    1557.36,
+    1556.55,
+    1555.75,
+    1554.94,
+    1554.13,
+    1553.33,
+    1552.52,
+    1551.72,
+    1550.92,
+    1550.12,
+    1549.32,
+    1548.51,
+    1547.72,
+    1546.92,
+    1546.12,
+    1545.32,
+    1544.53,
+    1543.73,
+    1542.94,
+    1542.14,
+    1541.35,
+    1540.56,
+    1539.77,
+    1538.98,
+    1538.19,
+    1537.4,
+    1536.61,
+    1535.82,
+    1535.04,
+    1534.25,
+    1533.47,
+    1532.68,
+    1531.9,
+    1531.12,
+    1530.33,
+    1529.55
+  ],
+  "wavelength_band": [
+    "DWDM",
+    "CWDM"
+  ],
+  "frequency_min_thz": [
+    192.0
+  ],
+  "frequency_max_thz": [
+    196.0
+  ],
+  "channel_spacing_ghz": [
+    100
+  ],
+  "channel_total": [
+    41
+  ],
+  "mounting_type": null,
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.7
+  ],
+  "host_interface_name": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "G.694.1",
+    "G.694.2",
+    "G.959",
+    "FC",
+    "FICON"
+  ],
+  "baud_rate_gbaud": null,
+  "bit_rate_gbps": [
+    2.125,
+    8.5,
+    2,
+    4,
+    8
+  ],
+  "roll_off_percent": null,
+  "modulation_format": null,
+  "reach_km": [
+    80
+  ],
+  "tx_power_min_dbm": [
+    -1.0
+  ],
+  "tx_power_max_dbm": [
+    3.0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -24.0
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    -7.0
+  ],
+  "cd_tolerance_ps_nm": [
+    -500,
+    1600
+  ],
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": null,
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": null,
+  "los_assert_dbm": [
+    -35.0
+  ],
+  "los_deassert_dbm": [
+    -27.0
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": null,
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": null,
+  "optical_return_loss_tolerance_db": null,
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Title/summary: D200–D600 (41ch), 23dB power budget, dispersion penalty Max 3dB (no paired penalized value/condition for penalty objects). Transmitter/receiver power footnote 1): Average power. Receiver footnote 2): @ 8.5Gbps, BER 1x10-12, PRBS 231-1, back-to-back. Power budget stated as 10–23dB in technical summary. Storage temperature -40°C to +85°C (separate from operating 0°C to +70°C). Receiver wavelength range 1480nm–1580nm. CWDM: 1550nm uses D250–D410; 1530nm uses D500–D600 (ITU G.694.2 1551/1531nm ±7nm). 1550nm single-channel ITU-T G.959 1500nm–1565nm: channels D200–D600. Power consumption < 1.7W worst case. DDM Yes. MSA compliance SFF-8431, -8432, -8472.",
+  "provenance_datasheet_sections": [
+    "DS-8G-ZR-Dxxxx",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Add power_budget_db min/max field; distinguish storage vs operating temperature; map post_fec_ber vs pre-FEC when only BER 1E-12 at PRBS is stated without FEC."
+}

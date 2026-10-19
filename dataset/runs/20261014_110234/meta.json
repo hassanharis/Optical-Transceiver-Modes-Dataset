@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T11:02:34.083949+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Smartoptics TS2017-S31C-SO.pdf",
+  "page_count": 2,
+  "table_count": 4,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 5.187,
+    "extract_atoms": 24.448,
+    "store_run": 0.009,
+    "synthesize_modes": 45.583,
+    "store_modes": 0.003,
+    "total": 75.23
+  }
+}

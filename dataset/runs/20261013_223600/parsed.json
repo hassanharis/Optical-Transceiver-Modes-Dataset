@@ -1,0 +1,43 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ftcd4543e3pxm-transceiver-ds.pdf",
+  "page_count": 10,
+  "table_count": 7,
+  "markdown_chars": 12453,
+  "tables": [
+    {
+      "page": 3,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 27
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 21
+    },
+    {
+      "page": 5,
+      "label": null,
+      "rows": 14
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 6,
+      "label": null,
+      "rows": 5
+    }
+  ]
+}

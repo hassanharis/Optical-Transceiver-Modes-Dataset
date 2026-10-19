@@ -1,0 +1,38 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\ds-td8006-tunc-so-qsfp-dd800-800g-openroadm-pcs-r6.1.pdf",
+  "page_count": 5,
+  "table_count": 6,
+  "markdown_chars": 12993,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 34
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 18
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 18
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 20
+    }
+  ]
+}

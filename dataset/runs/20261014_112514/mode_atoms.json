@@ -1,0 +1,62 @@
+{
+  "multi_valued": {
+    "model": [
+      "SO-QDD-4C-CUx-4",
+      "SO-QDD-4C-0CU5-4",
+      "SO-QDD-4C-CU1-4",
+      "SO-QDD-4C-1CU5-4",
+      "SO-QDD-4C-CU2-4",
+      "SO-QDD-4C-2CU5-4",
+      "SO-QDD-4C-CU3-4",
+      "SO-QDD-4C-CU5-4"
+    ],
+    "standards_code": [
+      "CMIS4",
+      "400GAUI-8",
+      "400G Ethernet"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "QSFP-DD MSA",
+      "Common Management Interface Specification (CMIS 4.0)"
+    ],
+    "mounting_type": [
+      "pluggable_hot"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      4.0
+    ],
+    "host_interface_name": [
+      "400GAUI-8"
+    ],
+    "frame": [
+      "400GAUI-8"
+    ],
+    "bit_rate_gbps": [
+      400.0
+    ],
+    "post_fec_ber_target": [
+      1e-15
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "penalties": [],
+    "notes": "Active Electrical Cable (AEC) / Direct Attach Cable (DAC) with coax interconnect between two QSFP-DD modules; not an optical transceiver. Cable length 0.5 to 5 meters (1.6 to 16.4 ft) stated in meters, not km. Power: <4W per side. Storage temperature -40°C to +85°C. Low latency stated as 15nm per end + 4.5nm/m (units as printed). AWG32 (most lengths) and AWG30 (5m SKU). I2C management interface. BER < 10^-15 (post FEC); FEC type not named.",
+    "provenance_datasheet_sections": [
+      "SO-QDD-4C-CUx-4",
+      "OVERVIEW",
+      "PRODUCT FEATURES",
+      "APPLICATIONS",
+      "ORDERING INFORMATION"
+    ],
+    "suggestions": "Consider schema fields for cable_length_m, product_class (AEC/DAC), wire_gauge (AWG), management_bus (I2C), storage_temp_c, and latency; power_consumption_w may need qualifier 'per side' and '<' bound."
+  }
+}

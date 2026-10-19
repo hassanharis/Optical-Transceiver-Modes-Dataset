@@ -1,0 +1,120 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-155M-L160D"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8432",
+    "SFF-8472"
+  ],
+  "emitter_type": [],
+  "photodetector_type": [],
+  "wavelength_min_nm": [
+    1480
+  ],
+  "wavelength_max_nm": [
+    1580
+  ],
+  "wavelength_center_nm": [
+    1550
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "frequency_min_thz": [],
+  "frequency_max_thz": [],
+  "channel_spacing_ghz": [],
+  "channel_total": [
+    1
+  ],
+  "mounting_type": [],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.0
+  ],
+  "host_interface_name": [],
+  "host_interface_id_hex": [],
+  "host_interface_id": [],
+  "media_interface_name": [],
+  "media_interface_id_hex": [],
+  "media_interface_id": [],
+  "frame": [],
+  "standards_code": [
+    "FE",
+    "STM1/OC3",
+    "STM-1/OC3"
+  ],
+  "baud_rate_gbaud": [],
+  "bit_rate_gbps": [],
+  "roll_off_percent": [],
+  "modulation_format": [],
+  "reach_km": [
+    160
+  ],
+  "tx_power_min_dbm": [
+    2.0
+  ],
+  "tx_power_max_dbm": [
+    7.0
+  ],
+  "tx_in_band_osnr_db": [],
+  "tx_out_of_band_osnr_db": [],
+  "rx_sensitivity_dbm": [
+    -35
+  ],
+  "rx_osnr_db": [],
+  "rx_osnr_tolerance_db_max": [],
+  "rx_overload_dbm": [
+    -10
+  ],
+  "cd_tolerance_ps_nm": [
+    3200
+  ],
+  "pdl_db": [],
+  "pmd_tolerance_ps": [],
+  "fec_type": [],
+  "fec_overhead_percent": [],
+  "pre_fec_ber_threshold": [],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [],
+  "los_assert_dbm": [
+    -45
+  ],
+  "los_deassert_dbm": [
+    -36
+  ],
+  "channel_insertion_loss_db": [],
+  "receiver_reflectance_db": [],
+  "transmitter_reflectance_db": [],
+  "optical_extinction_ratio_db": [],
+  "optical_return_loss_tolerance_db": [],
+  "number_of_lanes": [],
+  "side_mode_suppression_ratio_db": [],
+  "los_hysteresis_db": [
+    0.5
+  ],
+  "total_jitter_ps": [],
+  "penalties": [],
+  "notes": "Title/overview cite 37dB power budget and 17–37dB in technical table. Bit rate stated as 100 to 155Mbps (not Gbps). Transmitter output min printed as +2.0dB with footnote 1) Average power (max row uses dBm). Rx minimum input power -35dBm at 155Mbps, BER 1x10-12, PRBS 231-1 per footnotes 1) 2). Receiver wavelength range 1260nm–1600nm. Dispersion penalty max 1dB stated without paired penalized metric and operating condition for penalty schema. Storage temperature -40°C to +85°C. Power consumption < 1.0W. Operating temperature listed as -0°C to +70°C.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-155M-L160D",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION",
+    "GENERAL DEFINITIONS"
+  ],
+  "suggestions": "Consider a Mbps bit-rate field or allow SFP in form_factor enum. Clarify whether +2.0dB transmitter min is a typo for dBm."
+}

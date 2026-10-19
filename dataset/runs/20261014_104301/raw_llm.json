@@ -1,0 +1,177 @@
+{
+  "vendor": "Amphenol",
+  "model": [
+    "XP85PG1-02D-3"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "Fibre Channel FC-PI-7",
+    "FC-PI-6",
+    "FC-PI-5",
+    "SFF-8431 Low Speed Electrical Interface",
+    "SFF-8472 Management Interface",
+    "SFF-8432",
+    "SFF-8083",
+    "SFF-8081",
+    "SFF-8402 Mechanical Specifications",
+    "SFP MSA",
+    "RoHS Compliant"
+  ],
+  "emitter_type": [
+    "LASER_VCSEL"
+  ],
+  "photodetector_type": [
+    "PIN"
+  ],
+  "wavelength_min_nm": [
+    840
+  ],
+  "wavelength_max_nm": [
+    860
+  ],
+  "wavelength_center_nm": [
+    850
+  ],
+  "wavelength_band": [],
+  "frequency_min_thz": null,
+  "frequency_max_thz": null,
+  "channel_spacing_ghz": null,
+  "channel_total": null,
+  "mounting_type": [
+    "pluggable_hot"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "MMF",
+    "MMF 50/125µm",
+    "MMF_OM2",
+    "MMF_OM3",
+    "MMF_OM4",
+    "MMF_OM5"
+  ],
+  "temp_min_c": 0,
+  "temp_max_c": 70,
+  "power_consumption_w": [
+    1.5
+  ],
+  "host_interface_name": null,
+  "host_interface_id_hex": null,
+  "host_interface_id": null,
+  "media_interface_name": null,
+  "media_interface_id_hex": null,
+  "media_interface_id": null,
+  "frame": null,
+  "standards_code": [
+    "64GFC",
+    "32GFC",
+    "16GFC",
+    "FC-PI-7",
+    "FC-PI-6",
+    "FC-PI-5"
+  ],
+  "baud_rate_gbaud": [
+    28.9,
+    28.05,
+    14.025
+  ],
+  "bit_rate_gbps": [
+    64,
+    32,
+    16
+  ],
+  "roll_off_percent": null,
+  "modulation_format": [
+    "PAM4",
+    "NRZ"
+  ],
+  "reach_km": null,
+  "tx_power_min_dbm": [
+    -7.5,
+    -6.2,
+    -7.8
+  ],
+  "tx_power_max_dbm": [
+    4,
+    2,
+    0
+  ],
+  "tx_in_band_osnr_db": null,
+  "tx_out_of_band_osnr_db": null,
+  "rx_sensitivity_dbm": [
+    -7,
+    -10.2,
+    -10.5,
+    -2.4,
+    -5.8,
+    -7.7
+  ],
+  "rx_osnr_db": null,
+  "rx_osnr_tolerance_db_max": null,
+  "rx_overload_dbm": [
+    4,
+    2,
+    0,
+    3,
+    5
+  ],
+  "cd_tolerance_ps_nm": null,
+  "pdl_db": null,
+  "pmd_tolerance_ps": null,
+  "fec_type": null,
+  "fec_overhead_percent": null,
+  "pre_fec_ber_threshold": [
+    0.000131
+  ],
+  "post_fec_ber_target": [
+    1e-10,
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    3
+  ],
+  "los_assert_dbm": [
+    -17,
+    -30
+  ],
+  "los_deassert_dbm": [
+    -14
+  ],
+  "channel_insertion_loss_db": null,
+  "receiver_reflectance_db": [
+    12
+  ],
+  "transmitter_reflectance_db": null,
+  "optical_extinction_ratio_db": [
+    3
+  ],
+  "optical_return_loss_tolerance_db": [
+    12
+  ],
+  "number_of_lanes": null,
+  "side_mode_suppression_ratio_db": null,
+  "los_hysteresis_db": null,
+  "total_jitter_ps": null,
+  "penalties": [],
+  "notes": "Product footer lists XGIGA Communication Technology Co.,ltd as contact; module branding is Amphenol ICC Optical Module. Transmission distances are stated in meters (e.g. ordering 100 m OM4/OM5; 64GFC up to 70 m OM3, 100 m OM4/OM5). 64GFC BER range 10^-10 to 1.31x10^-4 with PRBS31Q per note 1; 32GFC/16GFC BER 10^-12 with PRBS31 per note 2. Receiver sensitivities and launch powers are often specified as OMAouter or OMA, not average power only. 64GFC Damage Threshold receiver tolerance 5 dBm average (note 1: tolerance without required correct operation). 16GFC max average launched power is lesser of table value or Class 1 laser safety limits.",
+  "provenance_datasheet_sections": [
+    "XP85PG1-02D-3",
+    "SFP64G Fibre Channel 850nm Transceiver",
+    "PRODUCT FEATURES",
+    "STANDARDS",
+    "ORDERING INFORMATION",
+    "II. Recommended Operating Conditions",
+    "III. Optical Characteristics",
+    "64GFC Optical Parameters",
+    "32GFC Optical Parameters",
+    "16GFC Optical Parameters (compliant with all other parameters in FC-PI-5)",
+    "IV. Electrical Characteristics",
+    "VI. Management Interface and Digital Diagnostic Functions",
+    "Rate Select",
+    "VII. Outline Dimensions"
+  ],
+  "suggestions": "Add reach_m or allow reach with unit field since Fibre Channel SFP datasheets specify distance only in meters. Distinguish OMA vs average power fields for tx/rx. Include VSCEL typo mapping to VCSEL in normalization layer."
+}

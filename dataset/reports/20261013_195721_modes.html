@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Smartoptics</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Smartoptics</div>
+  <div class="subtitle"></div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Smartoptics</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">QSFP-DD MSA, SFF-8665, CMIS4.0, SFF-8636, IEEE802.3bj</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">pluggable_hot</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">MMF</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">70.0</div></div>
+      <div class="spec-item"><div class="label">Host Interface</div><div class="value">100GAUI-2</div></div>
+      <div class="spec-item"><div class="label">Frame</div><div class="value">8x 26.5625GBd (PAM4) to 2x 26.5625GBd (PAM4)</div></div>
+      <div class="spec-item"><div class="label">Baud Rate (GBaud)</div><div class="value">26.5625</div></div>
+      <div class="spec-item"><div class="label">Modulation Format</div><div class="value">PAM4</div></div>
+      <div class="spec-item"><div class="label">Pre Fec Ber Threshold</div><div class="value">0.00024</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-12</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Active Optical Cable (AOC) break-out; direct-attach assembly with QSFP-DD and integrated QSFP56 connectors (not discrete transceivers). QSFP-DD: four asynchronous 100GAUI-2 streams aggregate 400G; each QSFP56: 100GAUI-2. FEC required in host per IEEE802.3bj; without FEC BER less than 2.4 x10[-4]; with FEC BER better than 1 x10[-12]. Power: QSFP-DD &lt;10W, QSFP56 &lt;3W. Storage temperature -20°C to +85°C. Cable lengths 1 to 30 meters (ordering table). Breakout point distances in mechanical table (e.g. 20cm for 1m total length). RoSH compliant.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">QSFP-DD-4XQSFP56 400G AOC, AQD003-XXXC-SO, PRODUCT FEATURES, APPLICATIONS, ORDERING INFORMATION, MECHANICAL DRAWING</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Vendor inferred from smartoptics.com footer only; no explicit manufacturer name in body. reach_km converted from stated meter lengths. Optical wavelength and detailed optical link budgets not specified for this MM AOC.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Form Factor</th><th>Power (W)</th><th>Standards code</th><th>Bit Rate (Gbps)</th><th>Reach (km)</th><th>fec_type</th><th>number_of_lanes</th></tr>
+      <tr><td><strong>400G QSFP-DD to 4x100G QSFP56 AOC 1m</strong></td><td>AQD003-001C-SO</td><td>QSFP-DD</td><td>10.0</td><td>IEEE802.3bj</td><td>400.0</td><td>0.001</td><td>RS_528_514</td><td>8</td></tr>
+      <tr><td><strong>400G QSFP-DD to 4x100G QSFP56 AOC 2m</strong></td><td>AQD003-002C-SO</td><td>QSFP-DD</td><td>10.0</td><td>IEEE802.3bj</td><td>400.0</td><td>0.002</td><td>RS_528_514</td><td>8</td></tr>
+      <tr><td><strong>400G QSFP-DD to 4x100G QSFP56 AOC 3m</strong></td><td>AQD003-003C-SO</td><td>QSFP-DD</td><td>10.0</td><td>IEEE802.3bj</td><td>400.0</td><td>0.003</td><td>RS_528_514</td><td>8</td></tr>
+      <tr><td><strong>400G QSFP-DD to 4x100G QSFP56 AOC 5m</strong></td><td>AQD003-005C-SO</td><td>QSFP-DD</td><td>10.0</td><td>IEEE802.3bj</td><td>400.0</td><td>0.005</td><td>RS_528_514</td><td>8</td></tr>
+      <tr><td><strong>400G QSFP-DD to 4x100G QSFP56 AOC 7m</strong></td><td>AQD003-007C-SO</td><td>QSFP-DD</td><td>10.0</td><td>IEEE802.3bj</td><td>400.0</td><td>0.007</td><td>RS_528_514</td><td>8</td></tr>
+      <tr><td><strong>400G QSFP-DD to 4x100G QSFP56 AOC 10m</strong></td><td>AQD003-010C-SO</td><td>QSFP-DD</td><td>10.0</td><td>IEEE802.3bj</td><td>400.0</td><td>0.01</td><td>RS_528_514</td><td>8</td></tr>
+      <tr><td><strong>400G QSFP-DD to 4x100G QSFP56 AOC 15m</strong></td><td>AQD003-015C-SO</td><td>QSFP-DD</td><td>10.0</td><td>IEEE802.3bj</td><td>400.0</td><td>0.015</td><td>RS_528_514</td><td>8</td></tr>
+      <tr><td><strong>400G QSFP-DD to 4x100G QSFP56 AOC 30m</strong></td><td>AQD003-030C-SO</td><td>QSFP-DD</td><td>10.0</td><td>IEEE802.3bj</td><td>400.0</td><td>0.03</td><td>RS_528_514</td><td>8</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">AQD003-XXXC-SO</span> <span class="badge">AQD003-001C-SO</span> <span class="badge">AQD003-002C-SO</span> <span class="badge">AQD003-003C-SO</span> <span class="badge">AQD003-005C-SO</span> <span class="badge">AQD003-007C-SO</span> <span class="badge">AQD003-010C-SO</span> <span class="badge">AQD003-015C-SO</span> <span class="badge">AQD003-030C-SO</span></td></tr>
+      <tr><td>form_factor</td><td><span class="badge">QSFP-DD</span> <span class="badge">QSFP56</span></td></tr>
+      <tr><td>power_consumption_w</td><td><span class="badge">10.0</span> <span class="badge">3.0</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">IEEE802.3bj</span> <span class="badge">RS(544,528)</span> <span class="badge">100GbE</span> <span class="badge">400G Ethernet</span></td></tr>
+      <tr><td>bit_rate_gbps</td><td><span class="badge">400.0</span> <span class="badge">100.0</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">0.001</span> <span class="badge">0.002</span> <span class="badge">0.003</span> <span class="badge">0.005</span> <span class="badge">0.007</span> <span class="badge">0.01</span> <span class="badge">0.015</span> <span class="badge">0.03</span></td></tr>
+      <tr><td>fec_type</td><td><span class="badge">RS_528_514</span></td></tr>
+      <tr><td>number_of_lanes</td><td><span class="badge">4</span> <span class="badge">8</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 19:57
+</footer>
+
+</div>
+</body>
+</html>

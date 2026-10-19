@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"10GBASE-LRM\",\n      \"host_interface_name\": \"10GBASE-LRM\",\n      \"bit_rate_gbps\": 10.312\n    },\n    {\n      \"label\": \"10GbE-LAN\",\n      \"host_interface_name\": \"10GbE-LAN\",\n      \"bit_rate_gbps\": 10.3\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

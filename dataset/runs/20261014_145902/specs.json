@@ -1,0 +1,92 @@
+{
+  "vendor": "Smartoptics",
+  "model": [
+    "SO-SFP-8GFC-L10D"
+  ],
+  "form_factor": [
+    "SFP+"
+  ],
+  "standards_claimed": [
+    "SFF-8431",
+    "SFF-8472",
+    "FC-PI-4 800-SM-LC-L",
+    "FC-PI-4 400-SM-LC-L",
+    "FC-PI-4 200-SM-LC-L",
+    "FC-PI-4 100-SM-LC-L"
+  ],
+  "wavelength_min_nm": [
+    1270.0,
+    1260.0
+  ],
+  "wavelength_max_nm": [
+    1355.0,
+    1565.0
+  ],
+  "wavelength_center_nm": [
+    1310.0
+  ],
+  "wavelength_band": [
+    "grey"
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": 0.0,
+  "temp_max_c": 70.0,
+  "media_interface_name": [
+    "FC-PI-4 800-SM-LC-L",
+    "FC-PI-4 400-SM-LC-L",
+    "FC-PI-4 200-SM-LC-L",
+    "FC-PI-4 100-SM-LC-L"
+  ],
+  "standards_code": [
+    "FC-PI-4 800-SM-LC-L",
+    "FC-PI-4 400-SM-LC-L",
+    "FC-PI-4 200-SM-LC-L",
+    "FC-PI-4 100-SM-LC-L"
+  ],
+  "bit_rate_gbps": [
+    0.6,
+    8.5,
+    0.614,
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ],
+  "reach_km": [
+    10.0
+  ],
+  "tx_power_min_dbm": [
+    -8.2
+  ],
+  "tx_power_max_dbm": [
+    0.5
+  ],
+  "rx_sensitivity_dbm": [
+    -15.0
+  ],
+  "rx_overload_dbm": [
+    0.5
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "los_assert_dbm": [
+    -29.0
+  ],
+  "los_deassert_dbm": [
+    -17.0
+  ],
+  "penalties": [],
+  "notes": "Power consumption stated as < 1W (no exact numeric value). Optical power budget 0–6.8 dB (min–max between transmitter and receiver w/o optical path penalties). Transmitter/receiver output and input powers are average power (footnote 1). Minimum input power -15 dBm at 8.5 Gbps, BER 1x10-12, back-to-back (footnote 2). No minimum distance / no minimum attenuation. Storage temperature -40°C to +85°C. Transmission media listed as SM (2x LC). DDM per SFF-8472.",
+  "provenance_datasheet_sections": [
+    "SO-SFP-8GFC-L10D",
+    "OVERVIEW",
+    "TECHNICAL DATA",
+    "ORDERING INFORMATION"
+  ]
+}

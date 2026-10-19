@@ -1,0 +1,96 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      1260.0,
+      1480.0
+    ],
+    "wavelength_max_nm": [
+      1580.0,
+      1600.0
+    ],
+    "host_interface_name": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "standards_code": [
+      "FE",
+      "STM-1",
+      "OC-3",
+      "100BASE"
+    ],
+    "bit_rate_gbps": [
+      0.1,
+      0.155
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "SO-SFP-100BASE-L160D"
+    ],
+    "form_factor": [
+      "SFP"
+    ],
+    "standards_claimed": [
+      "SFF-8431",
+      "SFF-8432",
+      "SFF-8472"
+    ],
+    "wavelength_center_nm": [
+      1550.0
+    ],
+    "wavelength_band": [
+      "grey"
+    ],
+    "connector_type": [
+      "LC"
+    ],
+    "fiber_type": [
+      "SMF"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      1.0
+    ],
+    "reach_km": [
+      160.0
+    ],
+    "tx_power_min_dbm": [
+      2.0
+    ],
+    "tx_power_max_dbm": [
+      7.0
+    ],
+    "rx_sensitivity_dbm": [
+      -35.0
+    ],
+    "rx_overload_dbm": [
+      -10.0
+    ],
+    "cd_tolerance_ps_nm": [
+      3200.0
+    ],
+    "post_fec_ber_target": [
+      1e-12
+    ],
+    "los_assert_dbm": [
+      -45.0
+    ],
+    "los_deassert_dbm": [
+      -36.0
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Title line lists 37dB power budget; TECHNICAL DATA states power budget 17 – 37dB. Transmitter minimum output is printed as +2.0dB (footnote 1: average power); maximum is +7.0dBm. Receiver minimum input power -35dBm at 155Mbps, BER 1x10-12, PRBS 231-1 (footnote 2). Dispersion penalty max 1dB stated without paired penalized parameter and operating condition for penalty objects. Power consumption < 1.0W. Storage temperature -40°C to +85°C (not operating). DDM per SFF-8472.",
+    "provenance_datasheet_sections": [
+      "SO-SFP-100BASE-L160D",
+      "OVERVIEW",
+      "TECHNICAL DATA",
+      "ORDERING INFORMATION"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T20:26:17.916877+00:00",
+  "source_file": "C:\\Haris\\datasheets\\Coherent ftlc1154rdpld-transceiver-ds.pdf",
+  "page_count": 9,
+  "table_count": 7,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 10.771,
+    "extract_atoms": 20.985,
+    "store_run": 0.007,
+    "synthesize_modes": 36.843,
+    "store_modes": 0.004,
+    "total": 68.609
+  }
+}

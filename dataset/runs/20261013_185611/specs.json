@@ -1,0 +1,94 @@
+{
+  "model": [
+    "QT- WDM-0280AD",
+    "QT- WDM-0280AID"
+  ],
+  "form_factor": [
+    "SFP"
+  ],
+  "standards_claimed": [
+    "SFP MSA",
+    "SFF-8472"
+  ],
+  "emitter_type": [
+    "LASER_DFB"
+  ],
+  "photodetector_type": [
+    "APD"
+  ],
+  "wavelength_min_nm": [
+    1470.0,
+    1530.0
+  ],
+  "wavelength_max_nm": [
+    1510.0,
+    1570.0
+  ],
+  "wavelength_center_nm": [
+    1490.0
+  ],
+  "connector_type": [
+    "LC"
+  ],
+  "fiber_type": [
+    "SMF"
+  ],
+  "temp_min_c": -40.0,
+  "temp_max_c": 85.0,
+  "standards_code": [
+    "SFF-8472"
+  ],
+  "bit_rate_gbps": [
+    1.25,
+    1.063
+  ],
+  "reach_km": [
+    80.0
+  ],
+  "tx_power_min_dbm": [
+    -2.0
+  ],
+  "tx_power_max_dbm": [
+    3.0
+  ],
+  "rx_sensitivity_dbm": [
+    -24.0
+  ],
+  "rx_overload_dbm": [
+    -9.0
+  ],
+  "post_fec_ber_target": [
+    1e-12
+  ],
+  "extinction_ratio_db": [
+    9.0
+  ],
+  "los_assert_dbm": [
+    -37.0
+  ],
+  "los_deassert_dbm": [
+    -31.0
+  ],
+  "optical_extinction_ratio_db": [
+    9.0
+  ],
+  "side_mode_suppression_ratio_db": [
+    30.0
+  ],
+  "los_hysteresis_db": [
+    1.0,
+    4.0
+  ],
+  "penalties": [],
+  "notes": "Dual data-rate 1.25 Gbps / 1.063 Gbps. Operating case temperature: Standard 0 to +70°C (QT- WDM-0280AD); Industrial -40 to +85°C (QT- WDM-0280AID). Rx sensitivity, overload, and BER ≤1×10^-12 measured with PRBS 2^7-1 @ 1250 Mbps. Title states 1550 nm RX; receiver centre wavelength table gives λc min 1530 nm, max 1570 nm. TX centre wavelength table: min 1470 nm, max 1510 nm (nominal 1490 nm in title/features). Spectral width (-20 dB) max 1 nm. Power supply Icc max 300 mA at 3.13–3.47 V (3.3 V typ); power in W not stated.",
+  "provenance_datasheet_sections": [
+    "BIDI SFP 1490nm-TX/1550nm-RX 80KM SMF Transceiver",
+    "P/N: QT- WDM-0280AD",
+    "FEATURES",
+    "APPLICATIONS",
+    "2. Recommended Operating Conditions",
+    "3. Optical and Electrical Characteristics",
+    "7. Ordering information"
+  ],
+  "suggestions": "Vendor is only implied via qsfptek.com contact; add explicit manufacturer field on datasheet. Clarify RX centre wavelength typical (1550 nm) vs table min/max. Distinguish standard vs industrial temp per orderable P/N in schema if multi-SKU tables are common."
+}

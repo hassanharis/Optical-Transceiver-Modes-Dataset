@@ -1,0 +1,37 @@
+{
+  "modes": [
+    {
+      "label": "8.5 Gbps Fiber Channel",
+      "power_consumption_w": 1.5,
+      "standards_code": "FC-PI-41",
+      "bit_rate_gbps": 8.5,
+      "tx_power_min_dbm": -8.4,
+      "tx_power_max_dbm": 0.5,
+      "rx_sensitivity_dbm": -13.8,
+      "post_fec_ber_target": 1e-12,
+      "extinction_ratio_db": 3.5
+    },
+    {
+      "label": "14.025 Gbps Fiber Channel",
+      "power_consumption_w": 1.5,
+      "standards_code": "FC-PI-41",
+      "bit_rate_gbps": 14.025,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 2.0,
+      "rx_sensitivity_dbm": -12.0,
+      "post_fec_ber_target": 1e-06,
+      "extinction_ratio_db": 3.5
+    },
+    {
+      "label": "28.05 Gbps Fiber Channel",
+      "power_consumption_w": 1.5,
+      "standards_code": "3200-SM-LC-L",
+      "bit_rate_gbps": 28.05,
+      "tx_power_min_dbm": -5.0,
+      "tx_power_max_dbm": 2.0,
+      "rx_sensitivity_dbm": -11.4,
+      "post_fec_ber_target": 1e-06,
+      "extinction_ratio_db": 4.0
+    }
+  ]
+}

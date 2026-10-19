@@ -1,0 +1,5 @@
+{
+  "finish_reason": "finished",
+  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"1.6T OSFP LRO 2*DR4\",\n      \"power_consumption_w\": 18.0,\n      \"standards_code\": \"2*DR4\",\n      \"bit_rate_gbps\": 212.5,\n      \"rx_sensitivity_dbm\": -3.4,\n      \"rx_overload_dbm\": 4.0\n    }\n  ]\n}\n```",
+  "reasoning_content": null
+}

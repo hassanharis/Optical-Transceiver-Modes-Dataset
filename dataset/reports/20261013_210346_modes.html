@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode Report — Cinch Connectivity Solutions</title>
+<style>
+  :root { --bg: #f8fafc; --surface: #ffffff; --card: #f1f5f9; --accent: #0369a1; --accent2: #7c3aed; --accent3: #047857; --accent4: #c2410c; --text: #1e293b; --muted: #64748b; --border: #cbd5e1; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.5rem; color: var(--accent); }
+  header .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+  header .model-name { font-size: 1.1rem; color: var(--accent3); margin-top: 0.5rem; font-weight: 600; }
+  .section { margin-bottom: 2rem; }
+  .section-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .section-icon { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; }
+  .section-icon.g { background: var(--accent); color: #fff; }
+  .section-icon.m { background: var(--accent4); color: #fff; }
+  .section-icon.mv { background: var(--accent2); color: #fff; }
+  .section-title { font-size: 1rem; font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.6rem; }
+  .spec-item { background: var(--card); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .spec-item .label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-item .value { font-size: 0.88rem; font-weight: 600; margin-top: 0.1rem; word-break: break-word; }
+  .spec-item.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 0.8rem; }
+  th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+  th { background: var(--card); color: var(--accent); font-weight: 600;}
+  th { white-space: normal; }
+  td { white-space: nowrap; }
+  tr:hover td { background: rgba(3,105,161,0.05); }
+  .badge { display: inline-block; background: rgba(3,105,161,0.1); color: var(--accent); padding: 0.15rem 0.45rem; border-radius: 3px; font-size: 0.72rem; margin: 0.1rem; border: 1px solid rgba(3,105,161,0.2); }
+  .note-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--accent2); border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.75rem; color: var(--text); }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Transceiver Mode Report</h1>
+  <div class="model-name">Cinch Connectivity Solutions</div>
+  <div class="subtitle">Low Rider RJ</div>
+</header>
+
+<!-- GENERAL SPECS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon g">G</span>
+    <span class="section-title">General Specifications</span>
+  </div>
+  <div class="card">
+    <div class="spec-grid">
+      <div class="spec-item"><div class="label">Vendor</div><div class="value">Cinch Connectivity Solutions</div></div>
+      <div class="spec-item"><div class="label">Form Factor</div><div class="value">Low Rider RJ</div></div>
+      <div class="spec-item"><div class="label">Standards</div><div class="value">ANSI Fiber Channel FC-PI / PH2, FC-PI-2, ANSI X3.297 FC-PI, ANSI X3.297 FC-PH-2, EN-60825, IEC-825, CDRH Class 1</div></div>
+      <div class="spec-item"><div class="label">Emitter Type</div><div class="value">LASER_VCSEL</div></div>
+      <div class="spec-item"><div class="label">Wavelength Center Nm</div><div class="value">850.0</div></div>
+      <div class="spec-item"><div class="label">Mounting Type</div><div class="value">solder_post, screw_post, solder, screw, mount_surface</div></div>
+      <div class="spec-item"><div class="label">Connector</div><div class="value">LC</div></div>
+      <div class="spec-item"><div class="label">Fiber Type</div><div class="value">MMF, MMF 50/125µm, MMF_OM1</div></div>
+      <div class="spec-item"><div class="label">Temp Min (°C)</div><div class="value">-40.0</div></div>
+      <div class="spec-item"><div class="label">Temp Max (°C)</div><div class="value">85.0</div></div>
+      <div class="spec-item"><div class="label">Modulation Format</div><div class="value">NRZ</div></div>
+      <div class="spec-item"><div class="label">TX Power Max (dBm)</div><div class="value">-1.5</div></div>
+      <div class="spec-item"><div class="label">RX Overload (dBm)</div><div class="value">0.0</div></div>
+      <div class="spec-item"><div class="label">Post Fec Ber Target</div><div class="value">1e-12</div></div>
+      <div class="spec-item"><div class="label">Extinction Ratio Db</div><div class="value">9.0</div></div>
+      <div class="spec-item"><div class="label">Optical Extinction Ratio Db</div><div class="value">9.0</div></div>
+      <div class="spec-item"><div class="label">Total Jitter Ps</div><div class="value">85.0</div></div>
+      <div class="spec-item wide"><div class="label">Notes</div><div class="value" style="font-weight:400; font-size:0.78rem;">Supply VCCTX/VCCRX 3.135V to 3.465V. Optical sensitivity and jitter assume extinction ratio 9 dB. Rx sensitivity: -15.0 dBm at 2.125 GigaBaud BER=10^-12 PRBS 2^7-1 NRZ FC-PI-2; -17.0 dBm at 1.0625 GigaBaud BER=10^-12 PRBS 2^7-1 NRZ FC-PH. Tx output power rows are variant-specific (standard, +2dB, +3dB, +5dB margin). Link distances in datasheet are 150M, 300M, 500M by fiber type and 1x vs 2x FC application. Max module height 0.386 inches. Rx optical sensitivity MAX column is 0 dBm.</div></div>
+      <div class="spec-item"><div class="label">Provenance Datasheet Sections</div><div class="value">LxLx-ST11xx Low Profile Optical Transceiver, Applications, Features, Ordering Information, Transmitters: VCCTX = 3.135V to 3.465V, TA = Operating Temperature Range, Link Distances</div></div>
+      <div class="spec-item"><div class="label">Suggestions</div><div class="value">Datasheet lists reach in meters (M); reach_km uses km equivalents. Stressed receiver sensitivity is given in µW OMA only, not mapped to rx_sensitivity_dbm. Form factor &#x27;Low Profile&#x27; is descriptive; only &#x27;Low Rider&#x27; matches schema enum.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPERATING MODES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon m">M</span>
+    <span class="section-title">Operating Modes</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Mode</th><th>Model</th><th>Host Interface</th><th>Standards code</th><th>Baud Rate (GBaud)</th><th>Reach (km)</th><th>TX Power Min (dBm)</th><th>RX Sensitivity (dBm)</th><th>number_of_lanes</th></tr>
+      <tr><td><strong>LxL-ST11xx 2x FC FC-PI 150m</strong></td><td>LxL-ST11xx</td><td>2x Fiber Channel</td><td>FC-PI</td><td>2.125</td><td>0.15</td><td>-10.0</td><td>-15.0</td><td>2</td></tr>
+      <tr><td><strong>LxL-ST11xx 1x FC FC-PH-2 300m</strong></td><td>LxL-ST11xx</td><td>1x Fiber Channel</td><td>FC-PH-2</td><td>1.0625</td><td>0.3</td><td>-10.0</td><td>-17.0</td><td>1</td></tr>
+      <tr><td><strong>LxL-ST11xx 2x FC FC-PI 300m</strong></td><td>LxL-ST11xx</td><td>2x Fiber Channel</td><td>FC-PI</td><td>2.125</td><td>0.3</td><td>-10.0</td><td>-15.0</td><td>2</td></tr>
+      <tr><td><strong>LxL-ST11xx 1x FC FC-PH-2 500m</strong></td><td>LxL-ST11xx</td><td>1x Fiber Channel</td><td>FC-PH-2</td><td>1.0625</td><td>0.5</td><td>-10.0</td><td>-17.0</td><td>1</td></tr>
+      <tr><td><strong>LxL2-ST11xx 2x FC FC-PI 150m</strong></td><td>LxL2-ST11xx</td><td>2x Fiber Channel</td><td>FC-PI</td><td>2.125</td><td>0.15</td><td>-8.0</td><td>-15.0</td><td>2</td></tr>
+      <tr><td><strong>LxL2-ST11xx 1x FC FC-PH-2 300m</strong></td><td>LxL2-ST11xx</td><td>1x Fiber Channel</td><td>FC-PH-2</td><td>1.0625</td><td>0.3</td><td>-8.0</td><td>-17.0</td><td>1</td></tr>
+      <tr><td><strong>LxL2-ST11xx 2x FC FC-PI 300m</strong></td><td>LxL2-ST11xx</td><td>2x Fiber Channel</td><td>FC-PI</td><td>2.125</td><td>0.3</td><td>-8.0</td><td>-15.0</td><td>2</td></tr>
+      <tr><td><strong>LxL2-ST11xx 1x FC FC-PH-2 500m</strong></td><td>LxL2-ST11xx</td><td>1x Fiber Channel</td><td>FC-PH-2</td><td>1.0625</td><td>0.5</td><td>-8.0</td><td>-17.0</td><td>1</td></tr>
+      <tr><td><strong>LxL3-ST11xx 2x FC FC-PI 150m</strong></td><td>LxL3-ST11xx</td><td>2x Fiber Channel</td><td>FC-PI</td><td>2.125</td><td>0.15</td><td>-7.0</td><td>-15.0</td><td>2</td></tr>
+      <tr><td><strong>LxL3-ST11xx 1x FC FC-PH-2 300m</strong></td><td>LxL3-ST11xx</td><td>1x Fiber Channel</td><td>FC-PH-2</td><td>1.0625</td><td>0.3</td><td>-7.0</td><td>-17.0</td><td>1</td></tr>
+      <tr><td><strong>LxL3-ST11xx 2x FC FC-PI 300m</strong></td><td>LxL3-ST11xx</td><td>2x Fiber Channel</td><td>FC-PI</td><td>2.125</td><td>0.3</td><td>-7.0</td><td>-15.0</td><td>2</td></tr>
+      <tr><td><strong>LxL3-ST11xx 1x FC FC-PH-2 500m</strong></td><td>LxL3-ST11xx</td><td>1x Fiber Channel</td><td>FC-PH-2</td><td>1.0625</td><td>0.5</td><td>-7.0</td><td>-17.0</td><td>1</td></tr>
+      <tr><td><strong>LxL5-ST11xx 2x FC FC-PI 150m</strong></td><td>LxL5-ST11xx</td><td>2x Fiber Channel</td><td>FC-PI</td><td>2.125</td><td>0.15</td><td>-5.0</td><td>-15.0</td><td>2</td></tr>
+      <tr><td><strong>LxL5-ST11xx 1x FC FC-PH-2 300m</strong></td><td>LxL5-ST11xx</td><td>1x Fiber Channel</td><td>FC-PH-2</td><td>1.0625</td><td>0.3</td><td>-5.0</td><td>-17.0</td><td>1</td></tr>
+      <tr><td><strong>LxL5-ST11xx 2x FC FC-PI 300m</strong></td><td>LxL5-ST11xx</td><td>2x Fiber Channel</td><td>FC-PI</td><td>2.125</td><td>0.3</td><td>-5.0</td><td>-15.0</td><td>2</td></tr>
+      <tr><td><strong>LxL5-ST11xx 1x FC FC-PH-2 500m</strong></td><td>LxL5-ST11xx</td><td>1x Fiber Channel</td><td>FC-PH-2</td><td>1.0625</td><td>0.5</td><td>-5.0</td><td>-17.0</td><td>1</td></tr>
+    </table>
+    <div class="note-box">
+      Modes were synthesized from multi-valued fields below using LLM-based linking.
+    </div>
+  </div>
+</div>
+
+<!-- MULTI-VALUED SOURCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon mv">&ctdot;</span>
+    <span class="section-title">Multi-Valued Fields (source for mode generation)</span>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Field</th><th>Values</th></tr>
+      <tr><td>model</td><td><span class="badge">LxLx-ST11xx</span> <span class="badge">LxL-ST11xx</span> <span class="badge">LxL2-ST11xx</span> <span class="badge">LxL3-ST11xx</span> <span class="badge">LxL5-ST11xx</span> <span class="badge">Roughrider</span> <span class="badge">RR</span></td></tr>
+      <tr><td>host_interface_name</td><td><span class="badge">1x Fiber Channel</span> <span class="badge">2x Fiber Channel</span> <span class="badge">Fiber Channel</span></td></tr>
+      <tr><td>standards_code</td><td><span class="badge">FC-PI</span> <span class="badge">FC-PH-2</span> <span class="badge">FC-PI-2</span> <span class="badge">FC-PH</span> <span class="badge">ANSI X3.297</span></td></tr>
+      <tr><td>baud_rate_gbaud</td><td><span class="badge">2.125</span> <span class="badge">1.0625</span></td></tr>
+      <tr><td>reach_km</td><td><span class="badge">0.15</span> <span class="badge">0.3</span> <span class="badge">0.5</span></td></tr>
+      <tr><td>tx_power_min_dbm</td><td><span class="badge">-10.0</span> <span class="badge">-8.0</span> <span class="badge">-7.0</span> <span class="badge">-5.0</span></td></tr>
+      <tr><td>rx_sensitivity_dbm</td><td><span class="badge">-15.0</span> <span class="badge">-17.0</span></td></tr>
+      <tr><td>number_of_lanes</td><td><span class="badge">1</span> <span class="badge">2</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Generated by OTSE Pipeline &middot; cursor/composer-2.5 &middot; Run 2026-10-13 21:03
+</footer>
+
+</div>
+</body>
+</html>

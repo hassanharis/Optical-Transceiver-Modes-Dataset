@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "label": "SFP28 DAC family (0.5\u20135 m)",
+      "model": "SO-SFP28-PCUxM"
+    },
+    {
+      "label": "0.5 m AWG30 passive DAC",
+      "model": "SO-SFP28-PCU0.5M"
+    },
+    {
+      "label": "1 m AWG30 passive DAC",
+      "model": "SO-SFP28-PCU1M"
+    },
+    {
+      "label": "2 m AWG30 passive DAC",
+      "model": "SO-SFP28-PCU2M"
+    },
+    {
+      "label": "3 m AWG30 passive DAC",
+      "model": "SO-SFP28-PCU3M"
+    },
+    {
+      "label": "5 m AWG26 passive DAC",
+      "model": "SO-SFP28-PCU5M"
+    }
+  ]
+}

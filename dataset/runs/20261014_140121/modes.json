@@ -1,0 +1,460 @@
+{
+  "modes": [
+    {
+      "label": "10GBASE-ZR multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "10GBASE-ZW multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "10GBASE-ZW",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "ZR/ZW-standard multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "ZR/ZW-standard",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "GbE multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "GbE",
+      "bit_rate_gbps": 0.6
+    },
+    {
+      "label": "10GbE-LAN multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "10GbE-LAN",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "10GbE-WAN multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "10GbE-WAN",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "OTU1 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "OTU1",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "OTU2 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "OTU2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "OTU2e multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "OTU2e",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "STM-64 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "STM-64",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "OC192 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "OC192",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "STM-16 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "STM-16",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "OC48 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "OC48",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "STM-4 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "STM-4",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "OC12 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "OC12",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "1G FC multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "1G FC",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "2G FC multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "2G FC",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "4G FC multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "4G FC",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "8G FC multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "8G FC",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "10G FC multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "10G FC",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CPRI Opt 1 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "CPRI Opt 1",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CPRI Opt 2 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "CPRI Opt 2",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CPRI Opt 3 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "CPRI Opt 3",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CPRI Opt 4 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "CPRI Opt 4",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CPRI Opt 5 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "CPRI Opt 5",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CPRI Opt 6 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "CPRI Opt 6",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CPRI Opt 7 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "CPRI Opt 7",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CPRI Opt 7A multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "CPRI Opt 7A",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "CPRI Opt 8 multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "CPRI Opt 8",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "OBSAI 1x multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "OBSAI 1x",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "OBSAI 2x multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "OBSAI 2x",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "OBSAI 4x multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "OBSAI 4x",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "OBSAI 8x multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx",
+      "standards_code": "OBSAI 8x",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "Industrial temp multirate DWDM",
+      "model": "SO-SFP-10GE-ZR-Dxxxx-I",
+      "standards_code": "ZR/ZW-standard",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 191.90 THz D9190",
+      "model": "SO-SFP-10GE-ZR-D9190",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 192.00 THz D9200",
+      "model": "SO-SFP-10GE-ZR-D9200",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 192.10 THz D9210",
+      "model": "SO-SFP-10GE-ZR-D9210",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 192.20 THz D9220",
+      "model": "SO-SFP-10GE-ZR-D9220",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 192.30 THz D9230",
+      "model": "SO-SFP-10GE-ZR-D9230",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 192.40 THz D9240",
+      "model": "SO-SFP-10GE-ZR-D9240",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 192.50 THz D9250",
+      "model": "SO-SFP-10GE-ZR-D9250",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 192.60 THz D9260",
+      "model": "SO-SFP-10GE-ZR-D9260",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 192.70 THz D9270",
+      "model": "SO-SFP-10GE-ZR-D9270",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 192.80 THz D9280",
+      "model": "SO-SFP-10GE-ZR-D9280",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 192.90 THz D9290",
+      "model": "SO-SFP-10GE-ZR-D9290",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 193.00 THz D9300",
+      "model": "SO-SFP-10GE-ZR-D9300",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 193.10 THz D9310",
+      "model": "SO-SFP-10GE-ZR-D9310",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 193.20 THz D9320",
+      "model": "SO-SFP-10GE-ZR-D9320",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 193.30 THz D9330",
+      "model": "SO-SFP-10GE-ZR-D9330",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 193.40 THz D9340",
+      "model": "SO-SFP-10GE-ZR-D9340",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 193.50 THz D9350",
+      "model": "SO-SFP-10GE-ZR-D9350",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 193.60 THz D9360",
+      "model": "SO-SFP-10GE-ZR-D9360",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 193.70 THz D9370",
+      "model": "SO-SFP-10GE-ZR-D9370",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 193.80 THz D9380",
+      "model": "SO-SFP-10GE-ZR-D9380",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 193.90 THz D9390",
+      "model": "SO-SFP-10GE-ZR-D9390",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 194.00 THz D9400",
+      "model": "SO-SFP-10GE-ZR-D9400",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 194.10 THz D9410",
+      "model": "SO-SFP-10GE-ZR-D9410",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 194.20 THz D9420",
+      "model": "SO-SFP-10GE-ZR-D9420",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 194.30 THz D9430",
+      "model": "SO-SFP-10GE-ZR-D9430",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 194.40 THz D9440",
+      "model": "SO-SFP-10GE-ZR-D9440",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 194.50 THz D9450",
+      "model": "SO-SFP-10GE-ZR-D9450",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 194.60 THz D9460",
+      "model": "SO-SFP-10GE-ZR-D9460",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 194.70 THz D9470",
+      "model": "SO-SFP-10GE-ZR-D9470",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 194.80 THz D9480",
+      "model": "SO-SFP-10GE-ZR-D9480",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 194.90 THz D9490",
+      "model": "SO-SFP-10GE-ZR-D9490",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 195.00 THz D9500",
+      "model": "SO-SFP-10GE-ZR-D9500",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 195.10 THz D9510",
+      "model": "SO-SFP-10GE-ZR-D9510",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 195.20 THz D9520",
+      "model": "SO-SFP-10GE-ZR-D9520",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 195.30 THz D9530",
+      "model": "SO-SFP-10GE-ZR-D9530",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 195.40 THz D9540",
+      "model": "SO-SFP-10GE-ZR-D9540",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 195.50 THz D9550",
+      "model": "SO-SFP-10GE-ZR-D9550",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 195.60 THz D9560",
+      "model": "SO-SFP-10GE-ZR-D9560",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 195.70 THz D9570",
+      "model": "SO-SFP-10GE-ZR-D9570",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 195.80 THz D9580",
+      "model": "SO-SFP-10GE-ZR-D9580",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 195.90 THz D9590",
+      "model": "SO-SFP-10GE-ZR-D9590",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    },
+    {
+      "label": "DWDM 196.00 THz D9600",
+      "model": "SO-SFP-10GE-ZR-D9600",
+      "standards_code": "10GBASE-ZR",
+      "bit_rate_gbps": 11.3
+    }
+  ]
+}

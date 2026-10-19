@@ -1,0 +1,88 @@
+{
+  "modes": [
+    {
+      "label": "IEEE 802.3u Fast Ethernet \u2014 MIL-SNF-LT11M",
+      "model": "MIL-SNF-LT11M",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": "IEEE 802.3u"
+    },
+    {
+      "label": "IEEE 802.3u Fast Ethernet \u2014 MIL-STF-LT11M",
+      "model": "MIL-STF-LT11M",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": "IEEE 802.3u"
+    },
+    {
+      "label": "IEEE 802.3u Fast Ethernet \u2014 MIL-SxF-LT11M",
+      "model": "MIL-SxF-LT11M",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": "IEEE 802.3u"
+    },
+    {
+      "label": "FDDI PMD \u2014 MIL-SNF-LT11M",
+      "model": "MIL-SNF-LT11M",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3"
+    },
+    {
+      "label": "FDDI PMD \u2014 MIL-STF-LT11M",
+      "model": "MIL-STF-LT11M",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3"
+    },
+    {
+      "label": "FDDI PMD \u2014 MIL-SxF-LT11M",
+      "model": "MIL-SxF-LT11M",
+      "wavelength_min_nm": 1285.0,
+      "wavelength_max_nm": 1355.0,
+      "standards_code": "FDDI PMD ISO / IEC 9314-3"
+    },
+    {
+      "label": "Receiver ANSI X3.297 \u2014 MIL-SNF-LT11M",
+      "model": "MIL-SNF-LT11M",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1380.0,
+      "standards_code": "ANSI X3.297"
+    },
+    {
+      "label": "Receiver ANSI X3.297 \u2014 MIL-STF-LT11M",
+      "model": "MIL-STF-LT11M",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1380.0,
+      "standards_code": "ANSI X3.297"
+    },
+    {
+      "label": "Receiver ANSI X3.297 \u2014 MIL-SxF-LT11M",
+      "model": "MIL-SxF-LT11M",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1380.0,
+      "standards_code": "ANSI X3.297"
+    },
+    {
+      "label": "Receiver FC-PH-2 \u2014 MIL-SNF-LT11M",
+      "model": "MIL-SNF-LT11M",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1380.0,
+      "standards_code": "FC-PH-2"
+    },
+    {
+      "label": "Receiver FC-PH-2 \u2014 MIL-STF-LT11M",
+      "model": "MIL-STF-LT11M",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1380.0,
+      "standards_code": "FC-PH-2"
+    },
+    {
+      "label": "Receiver FC-PH-2 \u2014 MIL-SxF-LT11M",
+      "model": "MIL-SxF-LT11M",
+      "wavelength_min_nm": 1260.0,
+      "wavelength_max_nm": 1380.0,
+      "standards_code": "FC-PH-2"
+    }
+  ]
+}

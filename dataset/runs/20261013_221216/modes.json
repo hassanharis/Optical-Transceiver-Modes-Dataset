@@ -1,0 +1,52 @@
+{
+  "modes": [
+    {
+      "label": "CMIS App 1 — 400GBASE-R OpenZR+ oFEC",
+      "host_interface_name": "400GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OpenZR+ MSA, extended",
+      "baud_rate_gbaud": 60.1,
+      "rx_sensitivity_dbm": -22.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "CMIS App 2 — 400GBASE-R OIF 400ZR CFEC",
+      "host_interface_name": "400GBASE-R",
+      "media_interface_name": "OIF 400ZR",
+      "frame": "1x 400GAUI-8 (8x 50G)",
+      "standards_code": "OIF 400ZR",
+      "baud_rate_gbaud": 59.8,
+      "rx_sensitivity_dbm": -20.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "CFEC",
+      "number_of_lanes": 8
+    },
+    {
+      "label": "CMIS App 3 — 2×200GBASE-R OpenZR+ oFEC",
+      "host_interface_name": "200GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "frame": "2x 200GAUI-4 (4x 50G)",
+      "standards_code": "OpenZR+ MSA, extended",
+      "baud_rate_gbaud": 60.1,
+      "rx_sensitivity_dbm": -22.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 4
+    },
+    {
+      "label": "CMIS App 4 — 4×100GBASE-R OpenZR+ oFEC",
+      "host_interface_name": "100GBASE-R",
+      "media_interface_name": "OpenZR+ MSA",
+      "frame": "4x 100GAUI-2 (2x 50G)",
+      "standards_code": "OpenZR+ MSA, extended",
+      "baud_rate_gbaud": 60.1,
+      "rx_sensitivity_dbm": -22.0,
+      "rx_overload_dbm": 13.0,
+      "fec_type": "OFEC",
+      "number_of_lanes": 2
+    }
+  ]
+}

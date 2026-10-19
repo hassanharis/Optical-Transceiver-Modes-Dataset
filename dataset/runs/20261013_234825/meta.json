@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T23:48:25.933800+00:00",
+  "source_file": "C:\\Haris\\datasheets\\lp-sfp-msrc.pdf",
+  "page_count": 8,
+  "table_count": 11,
+  "model_id": "cursor/composer-2.5",
+  "validation_passed": true,
+  "timings_seconds": {
+    "parse_pdf": 12.186,
+    "extract_atoms": 19.077,
+    "store_run": 0.007,
+    "synthesize_modes": 32.625,
+    "store_modes": 0.003,
+    "total": 63.897
+  }
+}

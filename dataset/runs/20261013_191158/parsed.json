@@ -1,0 +1,48 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\2021-09-28518060.pdf",
+  "page_count": 5,
+  "table_count": 8,
+  "markdown_chars": 6565,
+  "tables": [
+    {
+      "page": 1,
+      "label": null,
+      "rows": 4
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 11
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 5
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 16
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 6
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 15
+    },
+    {
+      "page": 4,
+      "label": null,
+      "rows": 3
+    }
+  ]
+}

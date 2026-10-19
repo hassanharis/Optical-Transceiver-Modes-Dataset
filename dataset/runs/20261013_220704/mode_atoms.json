@@ -1,0 +1,145 @@
+{
+  "multi_valued": {
+    "wavelength_min_nm": [
+      840.0,
+      900.0
+    ],
+    "wavelength_max_nm": [
+      868.0,
+      918.0
+    ],
+    "wavelength_center_nm": [
+      850.0,
+      908.0
+    ],
+    "host_interface_name": [
+      "400GAUI-8",
+      "4x100GAUI-2",
+      "8x 50GAUI-1",
+      "4x 100GAUI-2",
+      "8 x 50GBASE-R",
+      "4 x 100GBASE-R",
+      "1x 400GBASE-R"
+    ],
+    "media_interface_name": [
+      "400G SR4.2",
+      "4x 100G SR1.2",
+      "8x 50GBASE-SR",
+      "100G SR1.2"
+    ],
+    "frame": [
+      "8x 100G-SR1.2",
+      "400GAUI-8",
+      "4x100GAUI-2",
+      "8x 50GAUI-1 (8x 50G)",
+      "4x 100GAUI-2 (2x 50G)",
+      "1x 400GAUI-8 (8x50G)"
+    ],
+    "standards_code": [
+      "400G SR4.2",
+      "100G SR1.2",
+      "400GbE",
+      "4x100GbE",
+      "CMIS5.1",
+      "8x 50GBASE-SR"
+    ],
+    "bit_rate_gbps": [
+      425.0,
+      400.0
+    ],
+    "modulation_format": [
+      "PAM4",
+      "BiDi"
+    ],
+    "rx_sensitivity_dbm": [
+      -6.6,
+      -8.5
+    ],
+    "fec_type": [
+      "RS_GENERIC",
+      "RS_528_514",
+      "PFEC"
+    ]
+  },
+  "general": {
+    "vendor": "Smartoptics",
+    "model": [
+      "TQD022-MS2C-SO"
+    ],
+    "form_factor": [
+      "QSFP-DD"
+    ],
+    "standards_claimed": [
+      "QSFP-DD MSA",
+      "CMIS5.1",
+      "IEEE802.3bj"
+    ],
+    "emitter_type": [],
+    "photodetector_type": [],
+    "wavelength_band": [
+      "grey"
+    ],
+    "channel_total": [
+      8
+    ],
+    "mounting_type": [],
+    "connector_type": [
+      "MPO",
+      "MPO-12 UPC"
+    ],
+    "fiber_type": [
+      "MMF",
+      "MMF_OM4"
+    ],
+    "temp_min_c": 0.0,
+    "temp_max_c": 70.0,
+    "power_consumption_w": [
+      12.0
+    ],
+    "baud_rate_gbaud": [
+      26.56
+    ],
+    "reach_km": [
+      100.0
+    ],
+    "tx_power_min_dbm": [
+      -6.5
+    ],
+    "tx_power_max_dbm": [
+      4.0
+    ],
+    "rx_overload_dbm": [
+      4.5
+    ],
+    "pre_fec_ber_threshold": [
+      0.00024
+    ],
+    "extinction_ratio_db": [
+      3.0
+    ],
+    "los_assert_dbm": [
+      -24.6
+    ],
+    "los_deassert_dbm": [
+      -8.6
+    ],
+    "optical_extinction_ratio_db": [
+      3.0
+    ],
+    "number_of_lanes": [
+      8
+    ],
+    "los_hysteresis_db": [
+      0.5
+    ],
+    "penalties": [],
+    "notes": "Aggregated line rate 425Gbps (footnote 1). Line baud rate 26.56Gbd (footnote 2). Average receive power minimum -8.5dBm per lane is informative for signal strength; compliance not ensured solely by value above minimum (footnote 3). Receiver sensitivity OMA -6.6dBm per lane specified at BER 2.4x10-4 (footnote 4). FEC required by host per IEEE802.3bj Reed Solomon RS(528,514); optical parameters provide BER 2.4 x 10-4. Power budget 0 – 2.1dB. Power consumption < 12W. Storage temperature -40°C to +85°C. Transmitter OMA per lane Min -4.5dBm, Max +3.0dBm. Application codes 1,4,5: host shall apply FEC; codes 2,3: on-board FEC, host shall not provide FEC.",
+    "provenance_datasheet_sections": [
+      "TQD022-MS2C-SO",
+      "TECHNICAL DATA",
+      "APPLICATION CODE LIST",
+      "ORDERING INFORMATION",
+      "GENERAL DEFINITIONS"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "modes": [
+    {
+      "label": "SO-XFP-LR 10GBASE-LR",
+      "model": "SO-XFP-LR",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-LR 10GBASE-LW",
+      "model": "SO-XFP-LR",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-LR OC-192 SR-1",
+      "model": "SO-XFP-LR",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "OC-192 SR-1",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-LR STM I-64.1",
+      "model": "SO-XFP-LR",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "STM I-64.1",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-XFP-LR 10GFC 1200-SM-LL-L",
+      "model": "SO-XFP-LR",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "10GFC 1200-SM-LL-L",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-SFP-LR-I 10GBASE-LR",
+      "model": "SO-SFP-LR-I",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "10GBASE-LR",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-SFP-LR-I 10GBASE-LW",
+      "model": "SO-SFP-LR-I",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "10GBASE-LW",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-SFP-LR-I OC-192 SR-1",
+      "model": "SO-SFP-LR-I",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "OC-192 SR-1",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-SFP-LR-I STM I-64.1",
+      "model": "SO-SFP-LR-I",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "STM I-64.1",
+      "bit_rate_gbps": 9.95
+    },
+    {
+      "label": "SO-SFP-LR-I 10GFC 1200-SM-LL-L",
+      "model": "SO-SFP-LR-I",
+      "wavelength_min_nm": 1290.0,
+      "wavelength_max_nm": 1330.0,
+      "standards_code": "10GFC 1200-SM-LL-L",
+      "bit_rate_gbps": 9.95
+    }
+  ]
+}

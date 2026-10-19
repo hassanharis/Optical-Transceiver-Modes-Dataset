@@ -1,0 +1,38 @@
+{
+  "source_path": "C:\\Haris\\datasheets\\tqd011-tunc-so-qsfpdd-100g-openroadm-6.13.pdf",
+  "page_count": 4,
+  "table_count": 6,
+  "markdown_chars": 9219,
+  "tables": [
+    {
+      "page": 0,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 1,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 12
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 3
+    },
+    {
+      "page": 2,
+      "label": null,
+      "rows": 2
+    },
+    {
+      "page": 3,
+      "label": null,
+      "rows": 22
+    }
+  ]
+}
