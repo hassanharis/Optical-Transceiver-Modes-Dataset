@@ -44,6 +44,10 @@ def _is_scalar(value: Any) -> bool:
     return value is None or isinstance(value, (str, int, float, bool))
 
 
+def _is_printed_number(value: Any) -> bool:
+    return isinstance(value, dict) and "value" in value and "unit" in value
+
+
 def canonicalize_literal(field_name: str | None, literal: str) -> str:
     """Map a display literal using the harmonization lexicon."""
     if field_name is None:
@@ -96,6 +100,13 @@ def expand_literals(value: Any, field_name: str | None = None) -> list[str]:
     """Turn a JSON value into zero or more display literals for filtering."""
     if value is None:
         return []
+    if _is_printed_number(value):
+        number = value.get("canonical_value")
+        unit = value.get("canonical_unit")
+        if number is None:
+            number = value.get("value")
+            unit = value.get("unit")
+        return [f"{number} {unit}".strip()]
     if isinstance(value, list):
         out: list[str] = []
         for item in value:
@@ -116,13 +127,19 @@ def classify_values(values: Iterable[Any]) -> FieldKind:
             kinds.add(FieldKind.BOOLEAN)
         elif isinstance(raw, (int, float)) and not isinstance(raw, bool):
             kinds.add(FieldKind.NUMERIC)
+        elif _is_printed_number(raw):
+            kinds.add(FieldKind.NUMERIC)
         elif isinstance(raw, str):
             kinds.add(FieldKind.CATEGORICAL)
         elif isinstance(raw, list):
             if not raw:
                 continue
-            if all(_is_scalar(x) for x in raw):
-                if any(isinstance(x, (int, float)) and not isinstance(x, bool) for x in raw):
+            if all(_is_scalar(x) or _is_printed_number(x) for x in raw):
+                if any(
+                    _is_printed_number(x)
+                    or (isinstance(x, (int, float)) and not isinstance(x, bool))
+                    for x in raw
+                ):
                     kinds.add(FieldKind.NUMERIC)
                 if any(isinstance(x, str) for x in raw):
                     kinds.add(FieldKind.CATEGORICAL)

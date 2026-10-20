@@ -1,5 +1,0 @@
-{
-  "finish_reason": "finished",
-  "content": "```json\n{\n  \"modes\": [\n    {\n      \"label\": \"100M Fast Ethernet\",\n      \"wavelength_max_nm\": 1360.0,\n      \"standards_code\": \"FE\",\n      \"bit_rate_gbps\": 100.0\n    },\n    {\n      \"label\": \"100M 100Base-EXD\",\n      \"wavelength_max_nm\": 1360.0,\n      \"standards_code\": \"100Base-EXD\",\n      \"bit_rate_gbps\": 100.0\n    },\n    {\n      \"label\": \"155M STM-1/OC3\",\n      \"wavelength_max_nm\": 1600.0,\n      \"standards_code\": \"STM1/OC3\",\n      \"bit_rate_gbps\": 155.0\n    }\n  ]\n}\n```\n\n**Evidence (brief):** One part (`SO-SFP-155M-L40D`). Technical data lists **100\u2013155 Mbps**, **FE** and **STM1/OC3**, and **TX 1260\u20131360 nm** vs **RX 1260\u20131600 nm** (RX min power is specified **@ 155 Mbps**). **100Base-EXD** is in the title with the 100 M class. **STM-1** and **OC3** only appear as **STM-1/OC3** on one ordering line\u2014not as separate selectable rows\u2014so they are not split into extra modes. No penalties in the excerpt; none assigned.",
-  "reasoning_content": null
-}

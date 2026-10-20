@@ -3,12 +3,8 @@
 Takes the flat extracted specs and identifies which atomic values belong to
 the same logical operating mode (e.g. same table row, same application code).
 
-## Module-level context (single-valued, applies to all modes)
-
-```json
-{general}
-```
-
+Module and variant context is passed separately from the multi-valued atoms.
+Variants stay in that context; they are not turned into modes.
 """
 
 from __future__ import annotations
@@ -20,64 +16,15 @@ from pathlib import Path
 from typing import Any
 
 from openai import OpenAI
+
+from otse.pipeline.atom_extractor import BASE_URL, _parse_json_from_response
 from otse.pipeline.pdf_parser import ParsedDatasheet
-from otse.pipeline.atom_extractor import _parse_json_from_response, BASE_URL
+from otse.pipeline.prompts import LINKING_SYSTEM_PROMPT, LINKING_USER_PROMPT_TEMPLATE
 from otse.transceiver_models import MODE_FIELDS
 
 logger = logging.getLogger(__name__)
 
-# In pipeline/mode_linker.py
-
-LINKING_SYSTEM_PROMPT = """\
-You are given a pool of atomic parameter values extracted from an optical transceiver datasheet, \
-plus the original datasheet content for context.
-
-Task: group these multi-valued parameters into coherent operating modes. \
-Each mode represents one selectable configuration (e.g. a table row, an application code, \
-a host-to-media binding).
-
-Rules:
-- Each mode must include values that co-occur in the source (same row/section/application).
-- Interfaces can be multiple per mode.
-- For multiple model numbers, each model should be treated as a separate mode. 
-- Use the datasheet content to determine which values belong together.
-- Assign a short descriptive label to each mode.
-- Penalties: Assign mode-specific penalties (e.g. Rx OSNR @ 0.5dB penalty at a specific Rx power) to the respective mode under "penalties". Use each penalty's "source" (section | row label, e.g. "OpenZR+ | Appl mode=4") to decide which mode it belongs to, and copy the penalty objects unchanged. Penalties applying globally to the entire module across all modes should not be assigned to individual modes.
-- Return ONLY valid JSON matching the schema below.
-- for amplified and unamplified values, create separate modes.
-- Assignment of parameters to each mode should be performed on definitive evidence. Do not create modes based on speculation or guesswork.
-"""
-
-
-USER_PROMPT_TEMPLATE = """\
-## Multi-valued parameters to group
-
-```json
-{atoms}
-```
-
-## Original Datasheet Content
-
-{content}
-
----
-
-## Output Schema
-
-Return a JSON object:
-```json
-{{
-  "modes": [
-    {{
-      "label": "<short mode name>",
-      {field_template}
-    }}
-  ]
-}}
-```
-
-Group the multi-valued atoms into modes. Return only the JSON.
-"""
+USER_PROMPT_TEMPLATE = LINKING_USER_PROMPT_TEMPLATE
 
 
 def _chunk_by_sections(md_text: str) -> list[tuple[str, str]]:
@@ -178,9 +125,11 @@ def _build_field_template(multi: dict[str, Any]) -> str:
     lines = []
     for field in multi:
         if field == "penalties":
-            lines.append('      "penalties": [<list of penalty objects from pool belonging to this mode, or omit if none>]')
+            lines.append(
+                '      "penalties": [<penalty objects from the pool for this mode, or omit>]'
+            )
         else:
-            lines.append(f'      "{field}": "<value from pool>"')
+            lines.append(f'      "{field}": <one value from the {field} pool>')
     return ",\n".join(lines)
 
 
@@ -221,9 +170,10 @@ def synthesize_modes(
         content = content[:80_000] + "\n\n[...truncated...]"
 
     field_template = _build_field_template(multi)
+    context = {key: value for key, value in general.items() if key != "suggestions"}
     prompt = USER_PROMPT_TEMPLATE.format(
         atoms=json.dumps(multi, indent=2),
-        general=json.dumps(general, indent=2),
+        context=json.dumps(context, indent=2),
         content=content,
         field_template=field_template,
     )

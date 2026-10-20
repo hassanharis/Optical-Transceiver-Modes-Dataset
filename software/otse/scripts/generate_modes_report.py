@@ -22,13 +22,35 @@ def _load(run_dir: Path, name: str) -> dict | list | None:
     return None
 
 
+def _fmt_printed(value: dict) -> str:
+    if "value" not in value or "unit" not in value:
+        return json.dumps(value, ensure_ascii=False)
+    symbols = {"lt": "<", "le": "≤", "gt": ">", "ge": "≥"}
+    prefix = symbols.get(str(value.get("comparator") or ""), "")
+    text = f"{prefix}{value['value']} {value['unit']}".strip()
+    statistic = value.get("statistic")
+    if statistic:
+        text = f"{text} ({statistic})"
+    if value.get("canonical_value") is not None and value.get("canonical_unit"):
+        text = f"{text} -> {value['canonical_value']} {value['canonical_unit']}"
+    return text
+
+
+def _fmt_scalar(value) -> str:
+    if isinstance(value, dict):
+        return _fmt_printed(value)
+    return str(value)
+
+
 def _badges(values: list) -> str:
-    return " ".join(f'<span class="badge">{escape(str(v))}</span>' for v in values)
+    return " ".join(f'<span class="badge">{escape(_fmt_scalar(v))}</span>' for v in values)
 
 
 def _fmt_value(value) -> str:
     if isinstance(value, list):
-        return ", ".join(str(v) for v in value)
+        return ", ".join(_fmt_scalar(v) for v in value)
+    if isinstance(value, dict):
+        return _fmt_printed(value)
     return str(value) if value is not None else ""
 
 
@@ -52,7 +74,11 @@ _FIELD_DISPLAY = {
     "temp_min_c": "Temp Min (°C)",
     "temp_max_c": "Temp Max (°C)",
     "power_consumption_w": "Power (W)",
+    "power_consumption": "Power",
+    "supply_voltage": "Supply Voltage",
+    "supply_current": "Supply Current",
     "baud_rate_gbaud": "Baud Rate (GBaud)",
+    "baud_rate": "Baud Rate",
     "tx_power_min_dbm": "TX Power Min (dBm)",
     "tx_power_max_dbm": "TX Power Max (dBm)",
     "rx_osnr_db": "RX OSNR (dB)",
@@ -62,10 +88,18 @@ _FIELD_DISPLAY = {
     "notes": "Notes",
     "label": "Mode",
     "reach_km": "Reach (km)",
+    "reach": "Reach",
+    "cable_length": "Cable Length",
+    "variant_model": "Variant",
     "rx_sensitivity_dbm": "RX Sensitivity (dBm)",
     "cd_tolerance_ps_nm": "CD Tolerance (ps/nm)",
     "channel_spacing_ghz": "Channel Spacing (GHz)",
+    "channel_spacing": "Channel Spacing",
+    "frequency_min": "Frequency Min",
+    "frequency_max": "Frequency Max",
+    "frequency_center": "Frequency Center",
     "bit_rate_gbps": "Bit Rate (Gbps)",
+    "bit_rate": "Bit Rate",
     "modulation_formats": "Modulation",
     "fec_types": "FEC",
     "host_interface_name": "Host Interface",

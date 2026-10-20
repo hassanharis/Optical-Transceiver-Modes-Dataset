@@ -37,6 +37,15 @@ MODULE_IDENTITY_FIELDS = (
     "wavelength_center_nm",
     "frequency_min_thz",
     "frequency_max_thz",
+    "frequency_min",
+    "frequency_max",
+    "frequency_center",
+    "wavelength_tx_min_nm",
+    "wavelength_tx_max_nm",
+    "wavelength_tx_center_nm",
+    "wavelength_rx_min_nm",
+    "wavelength_rx_max_nm",
+    "wavelength_rx_center_nm",
     "channel_total",
 )
 
@@ -96,6 +105,29 @@ def _canonical_sku(name: str, skus: list[str]) -> str:
     return lookup.get(name.lower(), name)
 
 
+def _collect_skus(*sources: Any) -> list[str]:
+    names: list[str] = []
+    seen: set[str] = set()
+    for source in sources:
+        for name in _sku_names(source):
+            key = name.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            names.append(name)
+    return names
+
+
+def _variant_models(value: Any) -> list[str]:
+    if not isinstance(value, list):
+        return []
+    names: list[str] = []
+    for item in value:
+        if isinstance(item, dict):
+            names.extend(_sku_names(item.get("model")))
+    return names
+
+
 def discover_skus(
     specs: dict[str, Any],
     general: dict[str, Any],
@@ -106,15 +138,17 @@ def discover_skus(
         names = _sku_names(source)
         if names:
             return names
-    names: list[str] = []
-    seen: set[str] = set()
+    variant_names = _collect_skus(
+        _variant_models(specs.get("variants")),
+        _variant_models(general.get("variants")),
+    )
+    if variant_names:
+        return variant_names
+    mode_names: list[str] = []
     for mode in modes:
-        for name in _sku_names(mode.get("model")):
-            key = name.lower()
-            if key not in seen:
-                seen.add(key)
-                names.append(name)
-    return names
+        mode_names.extend(_sku_names(mode.get("model")))
+        mode_names.extend(_sku_names(mode.get("variant_model")))
+    return _collect_skus(mode_names)
 
 
 def mode_list(modes_data: Any) -> list[dict[str, Any]]:
@@ -136,7 +170,7 @@ def resolve_mode_skus(mode: dict[str, Any], skus: list[str]) -> list[str]:
     20260821_081405, 20260821_093751). A missing model is only valid when the
     run has a single SKU already sitting in general.
     """
-    declared = _sku_names(mode.get("model"))
+    declared = _sku_names(mode.get("model")) or _sku_names(mode.get("variant_model"))
     if declared:
         return [_canonical_sku(name, skus) for name in declared]
 

@@ -16,9 +16,15 @@ from typing import Any
 from openai import OpenAI
 from pydantic import ValidationError
 
-from otse.transceiver_models import TransceiverSpecs
 from otse.pipeline.pdf_parser import ParsedDatasheet
 from otse.pipeline.penalty_parser import extract_table_penalties, merge_penalties
+from otse.pipeline.prompts import (
+    EXTRACTION_SYSTEM_PROMPT,
+    EXTRACTION_USER_PROMPT_TEMPLATE,
+    extraction_schema_text,
+)
+from otse.pipeline.units import normalize_quantities
+from otse.transceiver_models import OrderableVariant, TransceiverSpecs
 
 logger = logging.getLogger(__name__)
 
@@ -46,6 +52,8 @@ def _coerce_types(raw: dict[str, Any]) -> dict[str, Any]:
     if isinstance(raw.get("penalties"), list):
         raw["penalties"] = _normalize_penalties(raw["penalties"])
 
+    _coerce_variant_lists(raw)
+    normalize_quantities(raw)
     return raw
 
 
@@ -85,118 +93,49 @@ def _expand_penalty(item: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def _normalize_penalties(items: list[Any]) -> list[dict[str, Any]]:
-    """Scalarize penalty points and drop qualifier-only entries.
+    """Scalarize penalty points.
 
-    Entries without a penalized_value (e.g. "CD range with <0.5dB OSNR penalty")
-    are tolerance qualifiers, not penalty points; those values belong in the
-    tolerance fields instead.
+    A point with a penalty magnitude and no degraded value is kept. Conditions
+    are optional.
     """
     out: list[dict[str, Any]] = []
     for item in items:
         if not isinstance(item, dict):
             continue
+        if item.get("conditions") is None:
+            item["conditions"] = []
         for point in _expand_penalty(item):
-            if point.get("penalized_value") is None:
-                logger.info("Dropping qualifier-only penalty (no penalized value): %s", point)
-                continue
+            if point.get("conditions") is None:
+                point["conditions"] = []
             out.append(point)
     return out
 
 
-SYSTEM_PROMPT = """\
-You are an optical-network transceiver datasheet extraction engine.
-Your task: extract only values explicitly stated in the datasheet text for the module and fill the JSON schema below.
+def _coerce_variant_lists(raw: dict[str, Any]) -> None:
+    """Wrap scalar variant fields the same way top-level list fields are wrapped."""
+    variants = raw.get("variants")
+    if isinstance(variants, dict):
+        variants = [variants]
+        raw["variants"] = variants
+    if not isinstance(variants, list):
+        return
+    list_fields = {
+        name
+        for name, info in OrderableVariant.model_fields.items()
+        if "list" in str(info.annotation).lower()
+    }
+    for variant in variants:
+        if not isinstance(variant, dict):
+            continue
+        for key, value in list(variant.items()):
+            if value is not None and key in list_fields and not isinstance(value, list):
+                variant[key] = [value]
 
-Rules:
-- Copy numeric values EXACTLY as printed. Do not invent, convert, or round.
-- If a value is not present in the source, use null.
-- Only extract values that are explicitly stated for this module. Do not guess, infer or invent values.
-- For list fields, collect ALL distinct values mentioned across the document.
-- "@" notation: "A@B" means value A measured AT condition B. Examples:
-  - "26dB@-12dBm" in an OSNR row = OSNR 26 dB at Rx power -12 dBm.
-  - "Rx OSNR @0.5dB penalty" column header = OSNR value at which a 0.5 dB penalty applies.
-  - "Rx sens @ high OSNR" = Rx sensitivity measured at high OSNR.
-- Penalties: a penalty point is a measured, degraded value paired with a penalty magnitude.
-    Only create a penalty point when THREE things are stated: a penalized value, a penalty magnitude in dB, and an operating condition.
-    Example source: column "Rx OSNR @0.5dB penalty", cell "24.2dB@-14dBm" with a footnote text indicating the condition. with rx power
-    -> {"target_parameter": "rx_osnr_db", "penalty_db": 0.5, "penalized_value": 24.2,
-        "conditions": [{"parameter": "rx_power_dbm", "value": -14.0}], "source": "<section> | <row label>"}
-     - Emit one penalty object per table row per penalty column.
-  
-- Return ONLY valid JSON matching the schema. No commentary outside the JSON block.
-- Do not ignore new line within a table cell. If a value is split across lines, concatenate it with a space.
-- There can be acronyms and its full form in the text. Extract either acronym or full form in the JSON.
-"""
 
-USER_PROMPT_TEMPLATE = """\
-## Target Schema
-
-```json
-{schema}
-```
-
-## Section Headings
-
-{headings}
-
-## Datasheet Content
-
-{content}
-
----
-
-Extract all parameters into the JSON schema above. Return only the JSON object.
-"""
+SYSTEM_PROMPT = EXTRACTION_SYSTEM_PROMPT
+USER_PROMPT_TEMPLATE = EXTRACTION_USER_PROMPT_TEMPLATE
 
 BASE_URL = "http://127.0.0.1:8080"
-
-
-def _format_type(info: dict[str, Any], defs: dict[str, Any]) -> str:
-    """Recursively resolve Pydantic schema type/anyOf/$ref into readable type strings."""
-    if "$ref" in info:
-        ref_name = info["$ref"].split("/")[-1]
-        ref_model = defs.get(ref_name, {})
-        props = ref_model.get("properties", {})
-        sub_fields = [f"{k}: {_format_type(v, defs)}" for k, v in props.items()]
-        return f"object{{{', '.join(sub_fields)}}}" if sub_fields else ref_name
-
-    if "enum" in info:
-        enum_vals = ", ".join(repr(v) for v in info["enum"])
-        return f"enum[{enum_vals}]"
-    if "anyOf" in info:
-        # Filter out 'null' to focus on the actual data types
-        non_nulls = [sub for sub in info["anyOf"] if sub.get("type") != "null"]
-        types = [_format_type(sub, defs) for sub in non_nulls]
-        return " | ".join(types) if types else "any"
-
-    typ = info.get("type")
-    if typ == "array":
-        items = info.get("items", {})
-        return f"list[{_format_type(items, defs)}]"
-    elif typ == "number":
-        return "float"
-    elif typ == "integer":
-        return "int"
-    elif typ == "string":
-        return "string"
-    elif typ == "boolean":
-        return "bool"
-    return typ or "any"
-
-
-def _build_schema_text() -> str:
-    """Generate a compact, human/LLM-readable schema description from TransceiverSpecs."""
-    schema = TransceiverSpecs.model_json_schema()
-    props = schema.get("properties", {})
-    defs = schema.get("$defs", {})
-    compact = {}
-
-    for name, info in props.items():
-        desc = info.get("description", "")
-        typ_str = _format_type(info, defs)
-        compact[name] = f"{typ_str} — {desc}" if desc else typ_str
-
-    return json.dumps(compact, ensure_ascii=False, indent=2)
 
 def _truncate(text: str, max_chars: int = 120_000) -> str:
     if len(text) <= max_chars:
@@ -254,7 +193,7 @@ def extract_atoms(
     client = OpenAI(base_url=f"{base_url}/v1", api_key="no-key", timeout=600.0)
 
     content = _truncate(parsed.markdown or parsed.full_text, max_chars)
-    schema_text = _build_schema_text()
+    schema_text = extraction_schema_text()
     headings = _extract_headings(parsed.markdown or parsed.full_text)
     prompt = USER_PROMPT_TEMPLATE.format(schema=schema_text, headings=headings, content=content)
 

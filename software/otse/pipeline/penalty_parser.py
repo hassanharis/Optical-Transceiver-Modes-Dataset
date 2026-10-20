@@ -32,6 +32,7 @@ _UNIT_TO_CONDITION = {
     "ps/nm": "chromatic_dispersion_ps_nm",
     "ps": "pmd_ps",
 }
+_DB_ONLY_RE = re.compile(rf"({_NUM})\s*dB(?!m)\b", re.I)
 
 
 def _clean(cell: str) -> str:
@@ -51,6 +52,18 @@ def _split_row(line: str) -> list[str]:
 
 def _is_separator(cells: list[str]) -> bool:
     return bool(cells) and all(re.fullmatch(r":?-{2,}:?", c) or c == "" for c in cells)
+
+
+def _magnitude_target(label: str) -> str | None:
+    """Map a penalty row that states only a magnitude in dB."""
+    text = label.lower()
+    if "tdp" in text or "transmitter and dispersion" in text:
+        return None
+    if "dispersion penalty" in text:
+        return "dispersion_penalty_db"
+    if "path penalty" in text:
+        return "path_penalty_db"
+    return None
 
 
 def _target_for(label: str) -> str | None:
@@ -137,6 +150,29 @@ def extract_table_penalties(md_text: str) -> list[dict[str, Any]]:
                     points.append(
                         _point(target, m.group(4), m.group(1), m.group(2), m.group(3), source)
                     )
+
+        for row in body:
+            row_label = row[0] if row else ""
+            magnitude_target = _magnitude_target(row_label)
+            if not magnitude_target:
+                continue
+            for cell in row[1:]:
+                if _VALUE_AT_COND_RE.search(cell) or _INLINE_PENALTY_RE.search(cell):
+                    continue
+                match = _DB_ONLY_RE.search(cell)
+                if not match:
+                    continue
+                source = " | ".join(p for p in (section, row_label) if p)
+                points.append(
+                    {
+                        "target_parameter": magnitude_target,
+                        "penalty_db": float(match.group(1)),
+                        "penalized_value": None,
+                        "conditions": [],
+                        "source": source,
+                    }
+                )
+                break
 
     return points
 

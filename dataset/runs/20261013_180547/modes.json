@@ -4,13 +4,13 @@
       "label": "100M Fast Ethernet",
       "wavelength_max_nm": 1360.0,
       "standards_code": "100Base-EXD",
-      "bit_rate_gbps": 100.0
+      "bit_rate_gbps": 0.1
     },
     {
       "label": "155M STM-1/OC-3",
       "wavelength_max_nm": 1600.0,
       "standards_code": "STM-1/OC3",
-      "bit_rate_gbps": 155.0
+      "bit_rate_gbps": 0.155
     }
   ]
 }
