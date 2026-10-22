@@ -1,6 +1,7 @@
 # Optical Transceiver Modes Dataset and OTSE
 
-<img width="1417" height="890" alt="Picture1" src="https://github.com/user-attachments/assets/0e0a7a30-24f0-40fd-aa9b-d503f439fb6b" />
+<img width="1557" height="890" alt="zg" src="https://github.com/user-attachments/assets/e8dbd238-4a46-4eae-92e7-d39a673f1e47" />
+
 
 This repository brings together a structured optical transceiver dataset and OTSE, the
 Optical Transceiver Spec Extractor used to build and inspect it. The goal is to turn
