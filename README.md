@@ -1,6 +1,6 @@
 # Optical Transceiver Modes Dataset and OTSE
 
-<img width="1557" height="890" alt="zg" src="https://github.com/user-attachments/assets/e8dbd238-4a46-4eae-92e7-d39a673f1e47" />
+<img width="1541" height="890" alt="zg" src="https://github.com/user-attachments/assets/a501ff52-0777-4dc7-834e-cb3c73750736" />
 
 
 This repository brings together a structured optical transceiver dataset and OTSE, the
