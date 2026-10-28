@@ -108,18 +108,10 @@ before applying replacement rules to run files.
 | Standards and metadata research | Examine vendor terminology, standards identifiers, missing values and differences in reported specifications. |
 | Human-in-the-loop QA | Audit replacement-rule changes and inspect newly encountered vendor terms before accepting a derived export. |
 | AI and extraction benchmarks | Study literal recovery, canonicalization and mode association, or use human-verified examples to develop training and evaluation datasets. |
+| Standards | By revealing performance trade-offs and gaps across operating modes, vendors, form factors, and technology generations, the dataset can provide quantitative evidence to inform future device-level standards—for example, defining interoperable mode profiles, minimum performance requirements, power-efficiency targets, and host-interface compatibility criteria. Such benchmarks can help standards bodies identify where existing specifications constrain interoperability or leave performance ambiguities, and guide the development of new coherent-transceiver requirements grounded in measurable network needs rather than vendor-specific claims.| 
 
-These are supported research directions and downstream applications, not bundled
-simulators or validated deployment recommendations. Matching a few datasheet values to
-a standard is not sufficient to demonstrate standards compliance or interoperability.
 
 ### Benchmarking and Future Work
-
-A useful evaluation should distinguish **literal extraction**, **canonical vocabulary
-alignment** and **mode association**. Report slot-level precision, recall or F1 before
-and after harmonization, vocabulary adherence, out-of-vocabulary vendor terms, missing
-field coverage and whether values were assigned to the correct mode. Publish the
-snapshot, deduplication policy, reference annotations and scoring rules with results.
 
 The rule-based lexicon provides a baseline for comparing normalization during extraction
 with a dedicated post-extraction stage. Potential extensions include retrieval-augmented
@@ -241,7 +233,6 @@ and [architecture](docs/architecture.md) for the component boundaries.
 | `raw_llm_modes.json` | Parsed raw mode-linking output |
 | `modes.json` | Synthesized operating modes |
 
-Artifacts are stage-dependent; incomplete or historical runs may omit some files.
 The lexicon's `run_artifacts` list specifies which JSON files replacement rules can
 modify. Archive originals before applying harmonization when literal-versus-canonical
 evaluation or reconstruction of the original model response matters.
